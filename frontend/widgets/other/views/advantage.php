@@ -18,7 +18,7 @@ $assets = Yii::getAlias('@web');
             <div class="punkt">
                 <div class="img"><img src="<?= $assets ?>/images/primushestva/feature-deagnostika.png?v=1" alt=""></div>
                 <h2>Диагностика 0 р</h2>
-                <p>Бесплатное* выявим причину неисправности в кратчайшие сроки.</p>
+                <p>Бесплатно* выявим причину неисправности в кратчайшие сроки.</p>
             </div>
             <div class="punkt">
                 <div class="img"><img src="<?= $assets ?>/images/primushestva/feature-payments.png?v=1" alt=""></div>
