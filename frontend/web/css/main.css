@@ -462,6 +462,7 @@ section .container .title span {
     line-height: 20px;
     margin-top: 5px;
     font-size: 11px;
+    text-align: left;
 }
 #primushestva .punkt a h2 {
     color: #333;
@@ -484,11 +485,12 @@ section .container .title span {
     background: #fff;
     width: 25%;
     float: left;
-    border-left: 1px solid #e1e1e1;
-    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
     counter-increment: tiles;
-    min-height: 280px;
+    min-height: 281px;
     position: relative;
+    box-sizing: border-box;
 }
 #neispravnost .punkt:first-child {
     width: 50%;
@@ -497,11 +499,7 @@ section .container .title span {
 #neispravnost .punkt:nth-child(4) {
     border-left: 0px;
 }
-#neispravnost .punkt:nth-child(1),
-#neispravnost .punkt:nth-child(2),
-#neispravnost .punkt:nth-child(3) {
-    border-top: 0px;
-}
+
 #neispravnost .punkt:after {
     content: '0' counter(tiles);
     position: absolute;
@@ -1013,8 +1011,9 @@ input#phone2::-webkit-input-placeholder {
 #inner-modeli .container ul {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
     background: #fff;
-    display: block;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 #inner-modeli .container ul li {
     float: left;
@@ -1177,6 +1176,9 @@ section#hlebniye-kroshki {
 #tseni h3 {
     padding: 0 8px;
 }
+#tseni .prochi-uslugi h3 {
+    padding-top: 20px;
+}
 table.pricelist {
     width: 100%;
 }
@@ -1285,7 +1287,8 @@ table.pricelist td.order .popup-zakaz:hover {
 #bran .brands .row:hover {}
 #bran .brands .row ul {
     width: 90%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 #bran .brands .row ul li {
     width: 20%;
@@ -1294,18 +1297,24 @@ table.pricelist td.order .popup-zakaz:hover {
 #bran .brands.in .row ul li {
     width: 25%;
     float: left;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 #bran .brands .row ul li a {
     padding: 15px 30px;
+    box-sizing: border-box;
     display: block;
     font-size: 12px;
     color: #333;
     text-align: left;
-    border: 1px solid #fff;
 }
-#bran .brands .row ul li a:hover {
-    color: #C65A1D;
+#bran .brands .row ul li:hover {
     border: 1px solid #C65A1D;
+    box-sizing: border-box;
+}
+#bran .brands .row ul li:hover a {
+    color: #C65A1D;
 }
 
 #banner .more {
@@ -1627,6 +1636,34 @@ body.video .happy-time img.clock-w {
 .is-sticky .st-set a {
     margin-top: 10px;
 }
+.inner-img {
+    display: none;
+}
+.ui-autocomplete-input {
+    border: 1px solid #C65A1D;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 14px;
+    outline: none;
+    min-height: 36px;
+    box-sizing: border-box;
+    width: 150px;
+    margin-left: 10px;
+}
+.ui-menu {
+    margin-top: 5px;
+    border: 1px solid #e1e1e1;
+}
+.ui-menu .ui-menu-item {
+    font-size: 12px;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 5px;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #C65A1D;
+    border-bottom: 1px solid #C65A1D;
+    color: #fff;
+}
 @media screen and (max-width: 1500px) {
     #neispravnost .punkt.contact > div {
         padding: 14px 25px;
@@ -1701,7 +1738,7 @@ body.video .happy-time img.clock-w {
         font-size: 30px;
     }
     #banner .right-text .happy-time p {
-        font-size: 14px;
+        font-size: 20px;
     }
     #primushestva .punkt {
         width: 33%;
@@ -1776,7 +1813,7 @@ body.video .happy-time img.clock-w {
         flex-wrap: wrap;
     }
     .header-bg {
-        height: 550px;
+        height: 490px;
     }
     .header-bg img {
         display: block;
@@ -1817,6 +1854,10 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 830px) {
+    
+    section .container .title {
+        width: 100%;
+    }
     #ask-form .container .right {
         width: 100%;
     }
@@ -2118,9 +2159,24 @@ body.video .happy-time img.clock-w {
     .banners #banner .right-text {
         width: 100%;
     }
-
+    
+    #tseni h3 {
+        padding-top: 20px;
+    }
 }
 @media screen and (max-width: 540px) {
+    .inner-img {
+        display: block;
+        text-align: center;
+    }
+    .inner-img img {
+        width: 40%;
+        margin-top: 10px;
+    }
+    #zakaz .right h3,
+    #zakaz .right span {
+        text-align: center;
+    }
     #neispravnost .punkt.promo {
         background: url(../images/promo-bg.jpg);
         background-position: -195px 0px;
@@ -2334,7 +2390,7 @@ body.video .happy-time img.clock-w {
         margin-bottom: 10px;
     }
     .header-bg {
-        height: 500px;
+        height: 480px;
     }
     input.phone {
         border: 1px solid #C65A1D;
@@ -2408,7 +2464,6 @@ body.video .happy-time img.clock-w {
     #ask-form .container .right input.phone {
         margin-left: 0px;
     }
-
 }
 
 

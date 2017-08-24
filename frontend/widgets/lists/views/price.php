@@ -52,7 +52,7 @@
         </div>
         <div>
             <div class="prochi-uslugi">
-                <h3 style="padding-top:20px;">Цены по прочим услугам</h3>
+                <h3>Цены по прочим услугам</h3>
                 <table class="pricelist">
                     <tbody>                        
                         <?php foreach ($otherServices as $usluga): ?>
