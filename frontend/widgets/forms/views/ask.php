@@ -39,7 +39,7 @@ $form = ActiveForm::begin([
             <div class="footer-logo">
                 <img src="/images/logo-footer.svg" alt="">
             </div>
-            <p>Ремонт кофемашин</p>
+            <p><a href="/">Ремонт кофемашин</a></p>
             <ul class="footer-menu">
                 <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
                 <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>
