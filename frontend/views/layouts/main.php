@@ -21,7 +21,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="icon" href="<?= $assets ?>/images/favicon.ico">
+        <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
         <link rel="stylesheet" href="<?= $assets ?>/css/main.css?v=14" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/css/animate.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/css/owl.carousel.min.css?v=1" type="text/css" />
