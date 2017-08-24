@@ -1,0 +1,1 @@
+<?php $this->title = $page['meta_title']; ?>
