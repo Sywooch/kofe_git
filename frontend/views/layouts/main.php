@@ -22,7 +22,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
-        <link rel="stylesheet" href="<?= $assets ?>/css/main.css?v=14" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets ?>/css/main.css?v=17" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/css/animate.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/css/owl.carousel.min.css?v=1" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/css/owl.theme.default.min.css?v=1" type="text/css" />
@@ -92,8 +92,8 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     <a class="phone moskva" href="tel:+74994509008">8(499) 450-90-08</a>
                 </div>
                 <div class="st-set">
-                    <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="images/telegram.png"></a>
-                    <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="images/vk.png"></a>
+                    <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
+                    <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
                 </div>
             </div>
         </section>
@@ -294,7 +294,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         echo '<script>$(".popup.good").addClass("active");</script>';
     }
     ?>
-    <?php $this->registerJsFile($assets . '/js/main.js?v=11'); ?>
+    <?php $this->registerJsFile($assets . '/js/main.js?v=17'); ?>
 
 </html>
 <?php $this->endPage() ?>
