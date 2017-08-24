@@ -2175,6 +2175,17 @@ body.video .happy-time img.clock-w {
         display: block;
         text-align: center;
     }
+    .inner-img.brend-logo {
+        overflow: hidden;
+        height: 80px;
+        margin-top: -18px;
+    }
+    .inner-img.brend-logo img {
+        margin-top: -10px;
+    }
+    #banner, #main {
+        margin-top: 0px;
+    }
     .inner-img img {
         width: 40%;
         margin-top: 10px;

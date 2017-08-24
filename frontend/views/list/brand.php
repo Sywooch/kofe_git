@@ -13,12 +13,12 @@ $this->title = $title;
             <img src="<?= $assets ?>/uploads/images/<?= !empty($model['image']) ? $model['image'] : 'coffee_machine.png' ?>" alt="">
         </div>
         <div class="right-text">
-            <div class="h1">
-                <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в Москве</h1>
-            </div>
-            <div class="inner-img">
+            <div class="inner-img brend-logo">
                 <img src="<?= $assets ?>/uploads/images/<?= $pageInfo['image']; ?>" alt="">
             </div>
+            <div class="h1">
+                <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в Москве</h1>
+            </div>            
             <?php if (!empty($pageInfo['description'])): ?>
             <?= $pageInfo['description']; ?>
             <?php else: ?>
