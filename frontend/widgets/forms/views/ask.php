@@ -41,14 +41,13 @@ $form = ActiveForm::begin([
             </div>
             <p>Ремонт кофемашин</p>
             <ul class="footer-menu">
-                <li><a href="#">Ремонт кофемашин AEG</a></li>
-                <li><a href="#">Ремонт кофемашин Melitta</a></li>
-                <li><a href="#">Ремонт кофемашин Delonghi</a></li>
-                <li><a href="#">Ремонт кофемашин AEG</a></li>
-                <li><a href="#">Все ремонтируемые бренды</a></li>
-
+                <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
+                <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>
+                <li><a href="/remont-kofemashin-melitta">Ремонт кофемашин Melitta</a></li>
+                <li><a href="/remont-kofemashin-saeco">Ремонт кофемашин Saeco</a></li>
+                <li><a href="/brendy">Все ремонтируемые бренды</a></li>
             </ul>
-            <a href="#">Наши Контакты</a>
+            <a href="/kontakty">Наши Контакты</a>
             <div class="tel"><a class="phone moskva" href="tel:+84994509008">8(499) 450-90-08</a></div>
         </div>
         <div class="clear"></div>
