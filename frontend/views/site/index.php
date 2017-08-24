@@ -15,7 +15,7 @@ $this->title = $page['meta_title'];
             </p>
             <div class="happy-time">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
-                <p>Счастливые часы! <br>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00.</p>
+                <p>Счастливые часы! <br>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00</p>
             </div>
 <?= \app\widgets\forms\CallBack::widget(); ?>
         </div>
