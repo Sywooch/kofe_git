@@ -20,7 +20,7 @@ $breadcrumbs = [
 <section id="bran">
     <div class="container">
         <p class="title">
-            <span>Поиск модели </span>
+            <span>Поиск бренда </span>
             <?=
             yii\jui\AutoComplete::widget([
                 'name' => 'models',
@@ -28,7 +28,7 @@ $breadcrumbs = [
                     'source' => $searches,
                     'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
                 ],
-                'options' => ['placeholder' => 'Название модели',],
+                'options' => ['placeholder' => 'Название бренда',],
                     ]
             );
             ?>
