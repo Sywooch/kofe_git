@@ -28,7 +28,8 @@ body {
     background-position: top center;
 }
 body.video {
-    background: #faf2ef;
+    background: #f8f2ef url(../images/bg-text.jpg) no-repeat;
+    background-position: top 800px center;
 }
 .container {
     width: 1100px;
@@ -209,9 +210,16 @@ span.brand-title {
 
 .banners #banner .left-img {
     width: 15%;
-    margin-left: 2%;
     margin-right: 0%;
+    margin-left: 0%;
     float: left;
+    text-align: center;
+    line-height: 215px;
+    width: 215px;
+    height: 215px;
+    background: #fff;
+    box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+    vertical-align: middle;
 }
 #banner .left-img {
     width: 35%;
@@ -223,9 +231,10 @@ span.brand-title {
     width: 100%;
 }
 .banners #banner .left-img img {
-    max-width: 255px;
-    max-height: 215px;
+    max-width: 75%;
+    max-height: 75%;
     width: auto;
+    vertical-align: middle;
 }
 .banners #banner .right-text {
     float: right;
@@ -1411,7 +1420,7 @@ video {
     position: absolute;
     height: 100%;
     display: block;
-    background: rgba(116, 94, 81, 0.6);
+    background: rgba(58, 37, 25, 0.82);
     z-index: 999;
 }
 body.video #header .nav ul li a,
@@ -1788,9 +1797,6 @@ body.video .happy-time img.clock-w {
     #banner,
     #main {
         margin-top: 18px;
-    }
-    #banner .left-img {
-        margin-top: 35px;
     }
     #zakaz .left {
         width: 300px;
@@ -2179,6 +2185,13 @@ body.video .happy-time img.clock-w {
     #tseni h3 {
         padding-top: 20px;
     }
+    #ask-form {
+        padding-bottom: 35px;
+    }
+    #footer {
+        margin-top: -35px;
+        background: none;
+    }
 }
 @media screen and (max-width: 540px) {
     .inner-img {
@@ -2352,7 +2365,12 @@ body.video .happy-time img.clock-w {
         margin-top: 3px;
         float: none;
     }
+    #ask-form {
+        padding-bottom: 80px;
+    }
     #footer {
+        margin-top: -80px;
+        background: none;
         min-height: 80px;
     }
     #footer .tel {
@@ -2452,7 +2470,7 @@ body.video .happy-time img.clock-w {
         width: 100%;
         text-align: center;
         margin-bottom: 0px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .punkt.contact input.phone2 {
         height: 20px;

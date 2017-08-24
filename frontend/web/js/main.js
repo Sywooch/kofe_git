@@ -67,11 +67,11 @@ $(document).ready(function () {
         autoplayTimeout: 4000,
         responsive: {
             0: {
-                items: 2,
+                items: 3,
                 autoplay: false
             },
             600: {
-                items: 4
+                items: 5
             },
             1000: {
                 items: 8
