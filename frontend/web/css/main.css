@@ -411,6 +411,8 @@ section .container .title span {
     margin-top: 0px;
     font-size: 26px;
     line-height: 30px;
+    font-family: 'NeuronExtraBold', cursive;
+    text-align: left;
 }
 #ask-form .container p {
     color: #fff;
@@ -1618,6 +1620,7 @@ body.video .happy-time img.clock-w {
 }
 #ask-form .container .left .tel .phone {
     font-size: 14px;
+    color: #fff;
 }
 .st-set {
     float: right;
