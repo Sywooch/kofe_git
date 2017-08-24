@@ -426,6 +426,7 @@ section .container .title span {
     right: 0px;
     bottom: 0px;
     margin-bottom: 15px;
+    font-size: 14px;
 }
 #ask-form .container .title span {
     font-size: 50px;
@@ -771,6 +772,9 @@ input#phone2::-webkit-input-placeholder {
     font-size: 18px;
     color: #fff;
     line-height: 35px;
+    font-weight: 200;
+}
+#ask-form .tel .phone {
     font-weight: 200;
 }
 #footer .tel .phone:before {
