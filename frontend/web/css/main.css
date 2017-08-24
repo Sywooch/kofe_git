@@ -686,10 +686,10 @@ input#phone2::-webkit-input-placeholder {
     display: block;
     margin-bottom: 20px;
     text-align: center;
-    padding-right: 20px;
 }
 #brands .brand img {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     -webkit-transition: all 0.5s ease-in-out;
@@ -1770,10 +1770,7 @@ body.video .happy-time img.clock-w {
     #neispravnost .punkt {
         width: 50%;
     }
-    #neispravnost .punkt.contact {
-        width: 100%;
-        min-height: 200px;
-    }
+    
     #header .logo {
         margin-right: 0px;
     }
@@ -1876,7 +1873,12 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 830px) {
-    
+    input.phone2 {
+        max-width: 200px;
+    }
+    .hero-form__btn {
+        width: 200px;
+    }
     section .container .title {
         width: 100%;
     }
@@ -1988,7 +1990,7 @@ body.video .happy-time img.clock-w {
         font-size: 12px;
     }
     .hero-form__btn {
-        width: 120px;
+        width: 166px;
     }
     .prochi-uslugi tr,
     #tseni .left, 
@@ -2185,6 +2187,9 @@ body.video .happy-time img.clock-w {
     #tseni h3 {
         padding-top: 20px;
     }
+    #tseni .right h3 {
+        padding-top: 0px;
+    }
     #ask-form {
         padding-bottom: 35px;
     }
@@ -2254,6 +2259,7 @@ body.video .happy-time img.clock-w {
     }
     #neispravnost .punkt.contact {
         text-align: center;
+        width: 100%;
     }
     #neispravnost .punkt.contact p {
         text-align: center;
@@ -2508,6 +2514,10 @@ body.video .happy-time img.clock-w {
     }
     #ask-form .container .right input.phone {
         margin-left: 0px;
+    }
+    #links ul li a {
+        padding: 20px 8px;
+        box-sizing: border-box;
     }
 }
 
