@@ -16,6 +16,9 @@
         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
+#header-sticky-wrapper {
+    height: 65px ! important;
+}
 body {
     padding: 0px;
     margin: 0px;
@@ -1302,6 +1305,8 @@ table.pricelist td.order .popup-zakaz:hover {
 #bran .brands .row ul li {
     width: 20%;
     float: left;
+    border: 1px solid #fff;
+    box-sizing: border-box;
 }
 #bran .brands.in .row ul li {
     width: 25%;
@@ -1824,7 +1829,7 @@ body.video .happy-time img.clock-w {
     }
     .header-bg {
         height: 505px;
-        
+
     }
     .header-bg img {
         display: block;
@@ -2412,7 +2417,7 @@ body.video .happy-time img.clock-w {
         margin-bottom: 10px;
     }
     .header-bg {
-        height: 505px;
+        height: 470px;
     }
     input.phone {
         border: 1px solid #C65A1D;
