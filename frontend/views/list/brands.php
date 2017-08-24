@@ -19,6 +19,20 @@ $breadcrumbs = [
 </section>
 <section id="bran">
     <div class="container">
+        <p class="title">
+            <span>Поиск модели </span>
+            <?=
+            yii\jui\AutoComplete::widget([
+                'name' => 'models',
+                'clientOptions' => [
+                    'source' => $searches,
+                    'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
+                ],
+                'options' => ['placeholder' => 'Название модели',],
+                    ]
+            );
+            ?>
+        </p>
         <div class="brands">
             <?php foreach ($sortedBrands as $latter => $brands): ?>
                 <div class="row">
@@ -41,7 +55,7 @@ $breadcrumbs = [
 <section id="ask">
     <div class="container">
         <div>
-            <h3>Не нашли нечего подходящего?</h3>
+            <h3>Не нашли ничего подходящего?</h3>
             <p>Закажите бесплатную консультацию.</p>
             <?= \app\widgets\forms\CallBack::widget(); ?>
         </div>

@@ -39,6 +39,7 @@ $this->title = $title;
                 </div>
                 <div class="clear"></div>
             </section>
+            <?= \app\widgets\other\Advantage::widget(); ?>
         </div>			
     </div>
     <div class="clear"></div>

@@ -71,10 +71,10 @@ $(document).ready(function () {
                 autoplay: false
             },
             600: {
-                items: 6
+                items: 4
             },
             1000: {
-                items: 8,
+                items: 8
             }
 
         }

@@ -607,7 +607,7 @@ section .container .title span {
 }
 
 #neispravnost .punkt.contact {
-    background: url(../images/contect-bg.jpg);
+    background: url(../images/contect-bg2.jpg);
     padding: 8px;
     background-position: right;
     width: 50%;
@@ -665,7 +665,7 @@ input#phone2::-webkit-input-placeholder {
     border: 1px solid #462917;
 }
 #brands .container {
-    padding: 50px 0px 0px;
+    padding: 50px 0px 20px;
 }
 #brands .brand a {
     display: block;
@@ -1066,6 +1066,9 @@ input#phone2::-webkit-input-placeholder {
     width: 30%;
     margin-right: 5%;
     margin-left: 0%;
+}
+#main .container .container {
+    width: 100%;
 }
 section#hlebniye-kroshki {
     margin-top: -35px;
@@ -1813,7 +1816,7 @@ body.video .happy-time img.clock-w {
         flex-wrap: wrap;
     }
     .header-bg {
-        height: 490px;
+        height: 505px;
     }
     .header-bg img {
         display: block;
@@ -1953,7 +1956,7 @@ body.video .happy-time img.clock-w {
         font-size: 18px;
     }
     .header-bg {
-        height: 500px;
+        height: 490px;
     }
     #links ul li {
         width: 33%;
@@ -2150,7 +2153,7 @@ body.video .happy-time img.clock-w {
     
     
     .header-bg {
-        height: 450px;
+        height: 440px;
     }
 
     #links ul li {
@@ -2390,7 +2393,7 @@ body.video .happy-time img.clock-w {
         margin-bottom: 10px;
     }
     .header-bg {
-        height: 480px;
+        height: 505px;
     }
     input.phone {
         border: 1px solid #C65A1D;

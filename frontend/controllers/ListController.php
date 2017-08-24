@@ -69,7 +69,8 @@ class ListController extends CController {
                 }
                 $pageInfo['title'] = mb_strtolower($pageInfo['title'], 'utf8');
                 if ($pageInfo['type'] == 2) {
-                    $h1 = $pageInfo['title'] . ' кофемашина ' . $page['title'];
+                    
+                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашина ' . $page['title'];
                     $title = $pageInfo['title'] . ' кофемашина ' . $page['title'] . ' в Москве';
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  кофемашина ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в Москве.';
                     $seoText = 'Если кофемашина ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в Москве и МО. Для ремонта  кофемашин ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели кофемашин  производства ' . $page['title'] . '.';
@@ -132,12 +133,16 @@ class ListController extends CController {
         $brands = \Yii::$app->db->createCommand($sql)->queryAll();
         $cnt = count($brands);
         $sortedBrands = [];
+        $searches = [];
         foreach ($brands as $brand) {
+            $searches[] = array(
+                'value' => $brand['title'], 'url' => $brand['url']
+            );
             $firstLatter = mb_substr($brand['title'], 0, 1, 'utf8');
             $sortedBrands[$firstLatter][] = $brand;
         }
         unset($brands);
-        return $this->render('brands', ['pageInfo' => $pageInfo, 'sortedBrands' => $sortedBrands, 'cnt' => $cnt]);
+        return $this->render('brands', ['pageInfo' => $pageInfo, 'sortedBrands' => $sortedBrands, 'cnt' => $cnt, 'searches' => $searches]);
     }
 
     public function actionBrand() {

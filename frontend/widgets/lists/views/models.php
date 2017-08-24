@@ -23,7 +23,7 @@ $assets = Yii::getAlias('@web');
                     <div class="symbol"><?= $latter; ?></div>
                     <ul>
                         <?php foreach ($brands as $brand): ?>
-                            <li class="bold"><a href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a></li>
+                        <li class="bold"><a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
