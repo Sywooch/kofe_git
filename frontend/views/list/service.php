@@ -16,7 +16,14 @@ $this->title = $title;
         <div class="right-bar">
             <section id="banner">
                 <div class="left-img">
-                    <img src="<?= $assets ?>/images/promo-bg.png" alt="<?= $pageInfo['title']; ?>">
+                    <?php if (!empty($modelImage)): ?>
+                        <div class="brand-model-image">
+                            <img src="<?= $assets ?>/uploads/images/<?= $brandImage; ?>" alt="<?= $pageInfo['title']; ?>">
+                            <img src="<?= $assets ?>/uploads/images/<?= $modelImage; ?>" alt="<?= $pageInfo['title']; ?>">
+                        </div>
+                    <?php else: ?>
+                        <img src="<?= $assets ?>/images/promo-bg.png" alt="<?= $pageInfo['title']; ?>">
+                    <?php endif; ?>
                 </div>
                 <div class="right-text">
                     <div class="h1">
@@ -29,7 +36,11 @@ $this->title = $title;
                 <div class="clear"></div>
             </section>
             <section id="zakaz">
-                <h3>Если ваша кофемашина Бренд Модель услуга закажите Бесплатную консультацию специалиста!</h3>
+                <?php if ($pageInfo['type'] == 2 && !in_array($pageInfo['id'], [17, 18]) && !empty($page)): ?>
+                    <h3>Если ваша кофемашина <?= $page['title']; ?> <?= mb_strtolower($pageInfo['title'], 'utf8'); ?> - закажите Бесплатную консультацию специалиста!</h3>
+                <?php else: ?>
+                    <h3>Закажите Бесплатную консультацию специалиста!</h3>
+                <?php endif; ?>
                 <div class="left">
                     Стоимость ремонта <span>от <?= round($pageInfo['price']); ?> р</span>
                 </div>

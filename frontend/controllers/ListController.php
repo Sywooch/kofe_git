@@ -46,23 +46,34 @@ class ListController extends CController {
         $seoText = '';
         $seoText2 = '';
         $h1 = '';
+        $brandImage = '';
+        $modelImage = '';
+        
         if (count($url) > 1) {
             array_pop($url);
             $page = (new \yii\db\Query())
-                    ->select(['title', 'url', 'id', 'type', 'parent'])
+                    ->select(['title', 'url', 'id', 'type', 'parent', 'image'])
                     ->from('{{%pages}}')
                     ->where(['url' => implode('/', $url)])
                     ->limit(1)
                     ->one();
-            $breadcrumbs['/' . $page['url']] = $page['title'];
+            if ($page['type'] == 'brand') {
+                $brandImage = $page['image'];
+                $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by sort limit 1';
+                $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $page['id']])->queryOne();
+                $modelImage = $model['image'];
+            }
+            $breadcrumbs['/' . $page['url']] = 'Ремонт кофемашин ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model') {
                 if ($page['type'] == 'model') {
                     $brand = (new \yii\db\Query())
-                            ->select(['title', 'url', 'id', 'type'])
+                            ->select(['title', 'url', 'id', 'type', 'image'])
                             ->from('{{%pages}}')
                             ->where(['id' => $page['parent']])
                             ->limit(1)
                             ->one();
+                    $brandImage = $brand['image'];
+                    $modelImage = $page['image'];
                     $breadcrumbs['/' . $brand['url']] = 'Ремонт кофемашин ' . $brand['title'];
                     unset($breadcrumbs['/' . $page['url']]);
                     $breadcrumbs['/' . $page['url']] = $page['title'];
@@ -70,7 +81,6 @@ class ListController extends CController {
                 }
                 $pageInfo['title'] = mb_strtolower($pageInfo['title'], 'utf8');
                 if ($pageInfo['type'] == 2) {
-                    
                     $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашина ' . $page['title'];
                     $title = $pageInfo['title'] . ' кофемашина ' . $page['title'] . ' в Москве';
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  кофемашина ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в Москве.';
@@ -120,7 +130,9 @@ class ListController extends CController {
 
         $breadcrumbs[] = $pageInfo['title'];
 
-        return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2, 'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title]);
+        return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2,
+            'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
+            'modelImage' => $modelImage, 'page' => (isset($page) ? $page : [])]);
     }
 
     public function actionBrands() {
