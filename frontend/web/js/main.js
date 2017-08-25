@@ -17,7 +17,9 @@ $(document).ready(function () {
         }, 400);
         return false;
     });
-
+    $("#select-region").click(function () {
+        $(".regions").toggleClass("active");
+    });
 
     $(".punkt.forma").click(function () {
         $(".phone").toggleClass("active");

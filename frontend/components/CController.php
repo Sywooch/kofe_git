@@ -39,6 +39,8 @@ class CController extends \yii\web\Controller {
 //                $this->setRegion(1);
 //            }
 //        }
+        if (empty(Yii::$app->session['region']))
+            $this->setRegion(1);
         if (isset($_GET['region'])) {
             $this->setRegion((int) $_GET['region']);
             header('Location: /' . Yii::$app->request->pathInfo);
