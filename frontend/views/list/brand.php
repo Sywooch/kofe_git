@@ -20,7 +20,7 @@ $this->title = $title;
                 <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в Москве</h1>
             </div>            
             <?php if (!empty($pageInfo['description'])): ?>
-            <?= $pageInfo['description']; ?>
+                <?= $pageInfo['description']; ?>
             <?php else: ?>
                 <p>  
                     Инжинеры нашего сервис центра выполнят ремонт кофемашины <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    
@@ -36,4 +36,9 @@ $this->title = $title;
 <?= \app\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url']]); ?>
+<?php if (!empty($pageInfo['full_description'])): ?>
+    <div class="container">
+        <?= $pageInfo['full_description']; ?>
+    </div>
+<?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>

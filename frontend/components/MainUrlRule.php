@@ -16,31 +16,34 @@ class MainUrlRule extends UrlRule {
     }
 
     public function createUrl($manager, $route, $params) {
-
-        return false;
+        if (isset($params['page'])) {
+            return Yii::$app->request->pathInfo . ($params['page'] == 1 ? '' : '?page=' . $params['page']);
+        } else {
+            return false;
+        }
     }
 
     public function parseRequest($manager, $request) {
         $pathInfo = strtolower($request->getPathInfo());
         if (empty($pathInfo))
             $pathInfo = '/';
-        
+
         $arrayUrl = explode('/', $pathInfo);
         $serv = $this->checkToService(end($arrayUrl));
         if (!empty($serv))
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
-        
+
         $page = $this->getPage($pathInfo);
-		
+
         if (empty($page))
             return ['site/error', []];
         else {
             return $this->turnToController($page);
         }
     }
-    
+
     protected function checkToService($url) {
-         $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
+        $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
         return Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
     }
 
