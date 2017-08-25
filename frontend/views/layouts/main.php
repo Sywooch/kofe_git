@@ -47,8 +47,8 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <section id="top">
             <div class="container">
                 <ul>
-                    <li><a href="#">Работаем без выходных с 08:00 до 22:00</a></li>
-                    <li class="selected-region">Ваш город: <span id="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
+                    <li>Работаем без выходных с 08:00 до 22:00</li>
+                    <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
                 </ul>
             </div>
         </section>
@@ -243,6 +243,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <section id="footer">
             <div class="container">
                 <p> © 1999 - 2017 RemontKofe.ru</p>
+                <p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p>
                 <div class="tel">
                     <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
@@ -260,7 +261,8 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             </div>
         </div>
         <div class="popup regions animated">
-            <div class="wight">                
+            <div class="wight">  
+                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
                 <h4>Ваш город: <?= Yii::$app->session['region']['title']; ?></h4>
                 <ul>
                     <?php foreach (Yii::$app->params['regions'] as $region): ?>

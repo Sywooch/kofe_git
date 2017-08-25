@@ -17,7 +17,7 @@ $(document).ready(function () {
         }, 400);
         return false;
     });
-    $("#select-region").click(function () {
+    $(".select-region").click(function () {
         $(".regions").toggleClass("active");
     });
 

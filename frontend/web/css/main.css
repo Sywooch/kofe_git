@@ -89,7 +89,15 @@ section {
 #top ul li {
     float: left;
 }
-#top ul li a {
+#top ul li:first-child {
+    line-height: 34px;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border: 0px;
+}
+#top ul li:last-child {
     line-height: 34px;
     color: #fff;
     font-size: 12px;
@@ -98,12 +106,12 @@ section {
     border-left: 1px solid #cfb8a7;
 }
 #top ul li span {
-    line-height: 34px;
-    color: #fff;
-    font-size: 12px;
-    margin-left: 15px;
-    padding-left: 15px;
-    border-left: 1px solid #cfb8a7;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+}
+.select-region {
+    cursor: pointer;
 }
 #top ul li a:hover {
     text-decoration: underline;
@@ -832,6 +840,21 @@ input#phone2::-webkit-input-placeholder {
     left: 0px;
     animation-name: fadeOutDownmy;
 }
+.popup.regions {
+
+}
+.popup.regions .wight div.close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 @keyframes fadeOutDownmy {
     from {
         opacity: 0;
@@ -1355,6 +1378,7 @@ table.pricelist td.order .popup-zakaz:hover {
     text-align: left;
     font-size: 12px;
     margin-bottom: 20px;
+    text-align: center;
 }
 #ask .container {
     background: #fff;
@@ -2488,12 +2512,12 @@ body.video .happy-time img.clock-w {
         float: none;
     }
     #ask-form {
-        padding-bottom: 80px;
+        padding-bottom: 115px;
     }
     #footer {
-        margin-top: -80px;
+        margin-top: -115px;
         background: none;
-        min-height: 80px;
+        min-height: 115px;
     }
     #footer .tel {
         float: none;
@@ -2635,6 +2659,9 @@ body.video .happy-time img.clock-w {
     #links ul li a {
         padding: 20px 8px;
         box-sizing: border-box;
+    }
+    .owl-carousel .owl-stage-outer {
+        max-height: 550px ! important;
     }
 }
 
