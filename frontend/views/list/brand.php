@@ -37,8 +37,10 @@ $this->title = $title;
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url']]); ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
-    <div class="container">
-        <?= $pageInfo['full_description']; ?>
-    </div>
+    <section id="text-block"> 
+        <div class="container">
+            <?= $pageInfo['full_description']; ?>
+        </div>
+    </section>   
 <?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
