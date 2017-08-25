@@ -63,7 +63,7 @@ class ListController extends CController {
                             ->where(['id' => $page['parent']])
                             ->limit(1)
                             ->one();
-                    $breadcrumbs['/' . $brand['url']] = $brand['title'];
+                    $breadcrumbs['/' . $brand['url']] = 'Ремонт кофемашин ' . $brand['title'];
                     unset($breadcrumbs['/' . $page['url']]);
                     $breadcrumbs['/' . $page['url']] = $page['title'];
                     $page['title'] = $brand['title'] . ' ' . $page['title'];
