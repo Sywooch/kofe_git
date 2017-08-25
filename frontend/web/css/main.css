@@ -1087,6 +1087,29 @@ input#phone2::-webkit-input-placeholder {
 #main .container .container {
     width: 100%;
 }
+.news-inner {
+    box-sizing: border-box;
+    line-height: 22px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 14px;
+}
+.news-inner h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+}
+.news-inner p {
+    text-align: left;
+    font-size: 16px;
+}
+.news-inner img {
+    max-width: 100%;
+    box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+}
+.news-inner h1 {
+    margin-top: 0px;
+}
 .news-list {
     width: 100%;
     box-sizing: border-box;
@@ -2161,6 +2184,9 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 680px) {
+    .news-inner h1 {
+        font-size: 24px;
+    }
     #header .nav {
         margin-top: 50px;
     }
