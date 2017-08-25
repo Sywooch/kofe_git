@@ -55,6 +55,14 @@ $(document).ready(function () {
         $("#text-block").toggleClass("active");
     });
 
+    $(".v-msk").click(function () {
+        $(".all-contact").removeClass("active");
+        $(".msk-contact").addClass("active");
+    });
+    $(".v-spb").click(function () {
+        $(".all-contact").removeClass("active");
+        $(".spb-contact").addClass("active");
+    });
 
 
 
