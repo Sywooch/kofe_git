@@ -18,7 +18,6 @@ $this->title = $title;
                 <div class="left-img">
                     <?php if (!empty($modelImage)): ?>
                         <div class="brand-model-image">
-                            <img src="<?= $assets ?>/uploads/images/<?= $brandImage; ?>" alt="<?= $pageInfo['title']; ?>">
                             <img src="<?= $assets ?>/uploads/images/<?= $modelImage; ?>" alt="<?= $pageInfo['title']; ?>">
                         </div>
                     <?php else: ?>

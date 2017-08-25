@@ -1113,9 +1113,23 @@ input#phone2::-webkit-input-placeholder {
 }
 #main #banner .left-img {
     float: right;
-    width: 30%;
-    margin-right: 5%;
+    width: 40%;
     margin-left: 0%;
+    margin-right: 0px;
+}
+.brand-model-image {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    height: 340px;
+    line-height: 340px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+}
+.brand-model-image img {
+    vertical-align: middle;
+    max-height: 85%;
+    max-width: 85%;
 }
 #main .container .container {
     width: 100%;
@@ -2041,6 +2055,10 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 830px) {
+    .brand-model-image {
+        height: 275px;
+        line-height: 275px;
+    }
     .news-list .newss {
         width: 49%;
     }
