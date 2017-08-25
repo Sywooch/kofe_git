@@ -24,7 +24,7 @@ $this->title = $page['meta_title'];
     <div class="clear"></div>
 </section>
 <?= \app\widgets\lists\PopularBrands::widget(); ?>
-<?= \app\widgets\lists\Neispravnost::widget(); ?>
+<?= \app\widgets\lists\Neispravnost::widget(['metrika' => 'call-me-home']); ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
 <section id="skidka">
     <div class="container">

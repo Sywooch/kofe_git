@@ -34,9 +34,14 @@ $this->title = $title;
                     Стоимость ремонта <span>от <?= round($pageInfo['price']); ?> р</span>
                 </div>
                 <div class="right">
+
                     <?= \app\widgets\forms\CallBack::widget(); ?>
 
                     <div class="clear"></div>
+
+                    <h3>Консультация и заказ</h3>
+                    <?= \app\widgets\forms\CallBack::widget(['metrika' => 'service-order-button']); ?>
+
                     <span>Специалист перезвонит в течение 5 минут.</span>
                 </div>
                 <div class="clear"></div>

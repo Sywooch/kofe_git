@@ -1,4 +1,4 @@
-<?php $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';?>
+<?php $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : ''; ?>
 <section id="neispravnost">
     <div class="container">
         <p class="title"><span>Выберите </span> неисправность</p>
@@ -29,14 +29,21 @@
                     use yii\widgets\ActiveForm;
                     use yii\widgets\MaskedInput;
 
-                    $form = ActiveForm::begin([
+$form = ActiveForm::begin([
                                 'id' => 'service-form',
                                 'options' => ['class' => 'global-form'],
                                 'enableClientValidation' => true,
                                 'fieldConfig' => [
                                     'template' => '{input}',
                                 ],
-                            ])
+                    ]);
+                    $position = \yii\web\View::POS_END;
+                    $validatejs = "$('#service-form').on('afterValidateAttribute', function(event, attribute, messages) {
+                    if(messages.length == 0){
+                        yaCounter45675441.reachGoal(\"$metrika\");
+                    }
+                });";
+                    $this->registerJs($validatejs, $position);
                     ?> 
                     <?=
                     $form->field($model, 'phone')->widget(MaskedInput::className(), [

@@ -3,7 +3,7 @@
 return [
     'adminEmail' => 'admin@example.com',
     'regions' => [
-        1 => ['id' => 1, 'title' => 'Москва и область', 'phone' => '8 (499) 955-40-97', 'titleRod' => 'Москве'],
-        2 => ['id' => 2, 'title' => '', 'phone' => '', 'titleRod' => ''],
+        1 => ['id' => 1, 'title' => 'Москва и область', 'phone' => '8 (499) 955-40-97', 'titleRod' => 'Москве', 'class' => 'moskva'],
+        2 => ['id' => 2, 'title' => 'Санкт-Петербург', 'phone' => '8 (812) 643-21-07', 'titleRod' => 'Санкт-Петербурге', 'class' => 'spb'],
     ],
 ];

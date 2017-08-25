@@ -11,7 +11,15 @@ $form = ActiveForm::begin([
             'fieldConfig' => [
                 'template' => '{input}',
             ],
-        ])
+        ]);
+
+$position = \yii\web\View::POS_END;
+$validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, attribute, messages) {
+                    if(messages.length == 0){
+                        yaCounter45675441.reachGoal(\"$metrika\");
+                    }
+                });";
+$this->registerJs($validatejs, $position);
 ?> 
 <?=
 

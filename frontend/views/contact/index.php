@@ -16,7 +16,7 @@ $breadcrumbs = [
         </div>
     </div>
 </section>
-<?php if (!empty($children)): ?>
+<?php if (!empty($children) && 2 == 1): ?>
     <section id="links">
         <div class="container">
             <p class="title"><span><?= $pageInfo['icon'] == 'rayon' ? 'Метро' : 'Районы' ?> </span></p>

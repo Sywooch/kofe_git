@@ -14,7 +14,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 <!DOCTYPE html>
 <html lang="en">
     <head>  
-    
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +48,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             <div class="container">
                 <ul>
                     <li><a href="#">Работаем без выходных с 08:00 до 22:00</a></li>
-                    <li><span>Москва и область</span></li>
+                    <li id="select-region"><span>Москва и область</span></li>
                 </ul>
             </div>
         </section>
@@ -62,7 +62,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                         <?php
                         if ($isModelPage) {
                             $sql = 'select image, title from {{%pages}} where id = ' . (int) $_GET['data']['parent'] . ' and active = 1 limit 1';
-                            $brand = \Yii::$app->db->createCommand($sql)->queryOne();                            
+                            $brand = \Yii::$app->db->createCommand($sql)->queryOne();
                         }
                         ?>
                         <span class="brand-title"><?= $isModelPage ? $brand['title'] : $_GET['data']['title'] ?></span>
@@ -87,9 +87,9 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="tel">
-                    <a class="phone moskva" href="tel:+74994509008">8(499) 450-90-08</a>
+                    <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="st-set">
                     <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
@@ -240,10 +240,12 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             </div>
         </section>
         <?= \app\widgets\forms\Ask::widget(); ?>
-       <section id="footer">
+        <section id="footer">
             <div class="container">
                 <p> © 1999 - 2017 RemontKofe.ru</p>
-                <div class="tel"><a class="phone moskva" href="tel:+84994509008">8(499) 450-90-08</a></div>
+                <div class="tel">
+                    <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                </div>
             </div>
         </section>
         <div id="scroller">
@@ -255,6 +257,18 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                 <h4>Произошла ошибка!</h4>
                 <p>Телефон — это поле обязательно.</p>
                 <div class="close">OK</div>
+            </div>
+        </div>
+        <div class="popup regions animated">
+            <div class="wight">                
+                <h4>Ваш город: <?= Yii::$app->session['region']['title']; ?></h4>
+                <ul>
+                    <?php foreach (Yii::$app->params['regions'] as $region): ?>
+                        <li>
+                            <a href="?region=<?= $region['id']; ?>"><?= $region['title']; ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>                
             </div>
         </div>
         <div class="popup good animated">

@@ -8,6 +8,7 @@ use yii\base\Widget;
 class Neispravnost extends Widget {
 
     public $page_id;
+    public $metrika = '';
 
     public function run() {
         $sql = 'SELECT price, title, url, description FROM {{%services}} WHERE type = 2';
@@ -19,7 +20,7 @@ class Neispravnost extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
-        return $this->render('neispravnost', ['model' => $model, 'rows' => $rows]);
+        return $this->render('neispravnost', ['model' => $model, 'rows' => $rows, 'metrika' => $this->metrika]);
     }
 
 }
