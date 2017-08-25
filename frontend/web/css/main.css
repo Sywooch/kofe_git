@@ -2206,6 +2206,18 @@ body.video .happy-time img.clock-w {
         display: block;
         text-align: center;
     }
+    .inner-img.modelss {
+        display: block;
+        text-align: center;
+        width: 214px;
+        height: 214px;
+        background: #fff;
+        vertical-align: middle;
+        line-height: 214px;
+        margin: 0 auto;
+        margin-top: 10px;
+        box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+    }
     .inner-img.brend-logo {
         overflow: hidden;
         height: 80px;
@@ -2220,6 +2232,11 @@ body.video .happy-time img.clock-w {
     .inner-img img {
         width: 40%;
         margin-top: 10px;
+    }
+    .inner-img.modelss img {
+        width: 50%;
+        margin-top: 10px;
+        vertical-align: middle;
     }
     #zakaz .right h3,
     #zakaz .right span {

@@ -34,7 +34,7 @@ $this->title = $title;
                     <?php endif; ?>
                 </h1>
             </div>
-            <div class="inner-img">
+            <div class="inner-img modelss">
                 <img src="<?= $assets ?>/uploads/images/<?= $img; ?>" alt="">
             </div>
             <?php if (!empty($pageInfo['description'])): ?>
