@@ -22,14 +22,14 @@ class NewsController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $where = ['active' => 1, 'type' => 'news'];
+        $where = ['active' => 1, 'type' => 'articles'];
         $order = 'date DESC';
 
         $query = \frontend\models\Pages::find();
         $query->where($where);        
         $countQuery = clone $query;
         $query->orderBy($order);
-        $pages = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+        $pages = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 1]);
         $models = $query->offset($pages->offset)
                 ->limit($pages->limit)
                 ->all();

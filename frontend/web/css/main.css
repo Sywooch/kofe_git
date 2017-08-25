@@ -1067,7 +1067,7 @@ input#phone2::-webkit-input-placeholder {
 }
 
 #main {
-    margin-top: 100px;
+    margin-top: 50px;
     clear: both;
 }
 #main #banner {
@@ -1080,7 +1080,6 @@ input#phone2::-webkit-input-placeholder {
 }
 #main #banner .left-img {
     float: right;
-    margin-top: -40px;
     width: 30%;
     margin-right: 5%;
     margin-left: 0%;
@@ -1088,10 +1087,81 @@ input#phone2::-webkit-input-placeholder {
 #main .container .container {
     width: 100%;
 }
+.news-list {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 20px;
+}
+.news-list .newss {
+    width: 32.3333%;
+    margin-left: 1%;
+    background: #fff;
+    height: auto;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.news-list .newss h3 {
+    margin: 0px;
+    padding: 10px 15px 5px;
+    color: #333;
+}
+.news-list .newss:hover {
+    box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.news-list .newss p {
+    margin: 0px;
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 15px 10px;
+    line-height: 20px;
+    color: #333;
+}
+.news-list .newss .img {
+    width: 100%;
+}
+.news-list .newss .img img {
+    width: 100%;
+}
 section#hlebniye-kroshki {
     margin-top: -35px;
 }
-
+.pagination {
+    float: right;
+    margin-bottom: 20px;
+}
+.pagination li {
+    float: left;
+    margin-left: 5px;
+    font-size: 24px;
+    background: #fff;
+    padding: 0px 10px;
+    line-height: 31px;
+}
+.pagination li:hover {
+    background: #C65A1D;
+    color: #fff;
+}
+.pagination li a {
+    line-height: 31px;
+    color: #333;
+}
+.pagination li.active a {
+    color: #C65A1D;
+}
+.pagination li:hover a {
+    color: #fff;
+}
 #zakaz {
     background: #fff;
     width: 100%;
@@ -1876,6 +1946,9 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 830px) {
+    .news-list .newss {
+        width: 49%;
+    }
     input.phone2 {
         max-width: 200px;
     }
@@ -2202,6 +2275,10 @@ body.video .happy-time img.clock-w {
     }
 }
 @media screen and (max-width: 540px) {
+    .news-list .newss {
+        width: 100%;
+        margin-left: 0px;
+    }
     .inner-img {
         display: block;
         text-align: center;

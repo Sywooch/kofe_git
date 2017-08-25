@@ -19,7 +19,7 @@
                                     <td class="name">
                                         <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $usluga['url']; ?>"><?= $usluga['title']; ?></a>                                       
                                     </td>
-                                    <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . ' р'; ?></td>
+                                    <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . '&nbsp;р'; ?></td>
                                     <td class="order">
                                         <div class="popup-zakaz">Заказать</div>
                                     </td>
@@ -38,7 +38,7 @@
                                 <td class="name">
                                     <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $neispravnost['url']; ?>"><?= $neispravnost['title']; ?></a>
                                 </td>
-                                <td class="price">от <?= round($neispravnost['price']); ?> р</td>
+                                <td class="price">от <?= round($neispravnost['price']); ?>&nbsp;р</td>
                                 <td class="order">
                                     <div class="popup-zakaz">Заказать</div>
                                 </td>
@@ -60,7 +60,7 @@
                                 <td class="name">
                                     <span class="price-color"><?= $usluga['title']; ?></span>                                        
                                 </td>
-                                <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . ' р'; ?></td>
+                                <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . '&nbsp;р'; ?></td>
                                 <td class="order">
                                     <div class="popup-zakaz">Заказать</div>
                                 </td>
