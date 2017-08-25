@@ -1191,46 +1191,48 @@ section#hlebniye-kroshki {
     display: block;
     margin: 50px 0px;
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
+    padding: 20px;
+    box-sizing: border-box;
 }
 #zakaz input.phone {
     width: 167px;
 }
 #zakaz .left {
-    width: 400px;
-    background: url(../images/zakaz-bg.svg) no-repeat;
-    display: block;
+    width: 40%;
+    background: url(../images/zakaz-bg.svg) center no-repeat;
+    background-size: 100%;
     float: right;
-    height: 100%;
     color: #fff;
-    min-height: 200px;
     text-align: center;
     font-family: 'NeuronExtraBold', cursive;
     line-height: 20px;
-    padding-top: 70px;
-    margin: 15px;
-    margin-right: 20px;
-    font-size: 24px
+    padding-top: 24px;
+    font-size: 20px;
+    height: 100px;
 }
 #zakaz .left span {
-    font-size: 40px;
+    font-size: 24px;
     line-height: 50px;
     width: 100%;
     display: block;
+    font-style: normal;
 }
 #zakaz .right {
     float: left;
     font-size: 14px;
-    margin-left: 20px;
+    width: 55%;
 }
-#zakaz .right h3 {
-    font-size: 25px;
+#zakaz h3 {
+    font-size: 22px;
+    margin: 0px;
+    margin-bottom: 10px;
+    line-height: 24px;
     font-family: 'NeuronExtraBold', cursive;
 }
-#zakaz .right span {
-    padding: 20px 0px;
-    display: block;
+#zakaz form#callback-form {
+    margin-top: 15px;
+    margin-bottom: 28px;
 }
-
 
 
 .left-bar {
@@ -1891,25 +1893,14 @@ body.video .happy-time img.clock-w {
     #main {
         margin-top: 18px;
     }
-    #zakaz .left {
-        width: 300px;
-        min-height: 150px;
-        padding-top: 45px;
-    }
-    #zakaz .right {
-        width: 260px;
-        font-size: 12px;
-    }
     #zakaz .right h3 {
         font-size: 18px;
     }
-    #zakaz input#phone {
-        max-width: 200px;
-        margin-bottom: 10px;
+    #zakaz input.phone,
+    #zakaz .hero-form__btn {
+        width: 150px;
     }
-    #zakaz input.hero-form__btn {
-        width: 232px;
-    }
+
     section .container .title {
         font-size: 22px;
     }
@@ -2237,12 +2228,13 @@ body.video .happy-time img.clock-w {
     }
     #zakaz .left {
         width: 465px;
-        min-height: 232px;
-        padding-top: 75px;
         margin-bottom: 0px;
     }
     #zakaz .right {
         width: 460px;
+    }
+    #zakaz form#callback-form {
+        margin-bottom: 10px;
     }
     #zakaz input#phone {
         width: 160px;
@@ -2525,8 +2517,6 @@ body.video .happy-time img.clock-w {
     }
     #zakaz .left {
         width: 265px;
-        min-height: 132px;
-        padding-top: 40px;
         font-size: 20px;
     }
     #zakaz .right {
@@ -2534,6 +2524,7 @@ body.video .happy-time img.clock-w {
     }
     #zakaz {
         margin: 0px;
+        text-align: center;
     }
     #brands .container {
         padding: 25px 0px;
@@ -2609,8 +2600,10 @@ body.video .happy-time img.clock-w {
     .punkt.contact .hero-form__btn {
         margin-left: 0%;
     }
-    #zakaz input.phone {
-        width: 211px;
+    #zakaz input.phone, #zakaz .hero-form__btn {
+        margin-left: 0px;
+        float: none;
+        width: 200px;
     }
     #hlebniye-kroshki ul {
         float: left;
