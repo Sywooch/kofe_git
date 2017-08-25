@@ -39,9 +39,6 @@ $this->title = $title;
 
                     <div class="clear"></div>
 
-                    <h3>Консультация и заказ</h3>
-                    <?= \app\widgets\forms\CallBack::widget(['metrika' => 'service-order-button']); ?>
-
                     <span>Специалист перезвонит в течение 5 минут.</span>
                 </div>
                 <div class="clear"></div>
