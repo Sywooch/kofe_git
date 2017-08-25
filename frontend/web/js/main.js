@@ -4,7 +4,12 @@ $(document).ready(function () {
 
     $("#header").sticky({topSpacing: 0});
 
-
+    $("#callback-form").on("afterValidate", function (event, messages) {
+        var attributes = $(this).data().attributes;
+        var settings = $(this).data().settings;
+        
+        return false;
+    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -90,7 +95,7 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                autoHeight:true,
+                autoHeight: true,
                 autoplay: false
             },
             600: {

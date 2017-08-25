@@ -1,4 +1,5 @@
-<?php $assets = Yii::getAlias('@web');
+<?php
+$assets = Yii::getAlias('@web');
 $this->title = $page['meta_title'];
 ?>
 <section id="banner">
@@ -11,13 +12,13 @@ $this->title = $page['meta_title'];
                 <h1><?= $_GET['data']['meta_h1']; ?></h1>
             </div>
             <p>
-<?= $_GET['data']['description']; ?>                
+                <?= $_GET['data']['description']; ?>                
             </p>
             <div class="happy-time">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
                 <p>Счастливые часы! <br>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00</p>
             </div>
-<?= \app\widgets\forms\CallBack::widget(); ?>
+            <?= \app\widgets\forms\CallBack::widget(['metrika' => 'home_order_button']); ?>
         </div>
     </div>
     <div class="clear"></div>
@@ -34,7 +35,7 @@ $this->title = $page['meta_title'];
 </section>
 <section id="text-block">
     <div class="container">
-<?= $_GET['data']['full_description']; ?>        
+        <?= $_GET['data']['full_description']; ?>        
     </div>
     <span class="more"><div>Читать далее</div></span>
 </section>

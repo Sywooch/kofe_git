@@ -44,6 +44,7 @@ class ListController extends CController {
         $url = Yii::$app->request->pathInfo;
         $url = explode('/', $url);
         $seoText = '';
+        $seoText2 = '';
         $h1 = '';
         if (count($url) > 1) {
             array_pop($url);
@@ -86,6 +87,9 @@ class ListController extends CController {
             if (!empty($seo['meta_text1'])) {
                 $seoText = $seo['meta_text1'];
             }
+            if (!empty($seo['meta_text2'])) {
+                $seoText2 = $seo['meta_text2'];
+            }
             if (!empty($seo['meta_h1'])) {
                 $h1 = $seo['meta_h1'];
             }
@@ -116,7 +120,7 @@ class ListController extends CController {
 
         $breadcrumbs[] = $pageInfo['title'];
 
-        return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title]);
+        return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2, 'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title]);
     }
 
     public function actionBrands() {

@@ -40,6 +40,11 @@ $this->title = $title;
                 <div class="clear"></div>
             </section>
             <?= \app\widgets\other\Advantage::widget(); ?>
+            <?php if (!empty($seoText2)): ?>
+                <div class="container">
+                    <?= $seoText2; ?>
+                </div>
+            <?php endif; ?>
         </div>			
     </div>
     <div class="clear"></div>

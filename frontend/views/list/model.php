@@ -51,6 +51,11 @@ $this->title = $title;
 </section>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url']]); ?>
+<?php if (!empty($pageInfo['full_description'])): ?>
+    <div class="container">
+        <?= $pageInfo['full_description']; ?>
+    </div>
+<?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
 
 <?= \app\widgets\lists\OtherModels::widget(['parent' => $pageInfo['parent'], 'modelId' => $pageInfo['id'], 'brand' => $brand]); ?>
