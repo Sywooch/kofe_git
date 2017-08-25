@@ -56,9 +56,11 @@ $this->title = $title;
             </section>
             <?= \app\widgets\other\Advantage::widget(); ?>
             <?php if (!empty($seoText2)): ?>
+            <section id="text-block">
                 <div class="container">
                     <?= $seoText2; ?>
                 </div>
+                </section>
             <?php endif; ?>
         </div>			
     </div>
