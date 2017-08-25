@@ -29,7 +29,7 @@ $this->title = $page['meta_title'];
 <section id="skidka">
     <div class="container">
         <h3>Счастливые часы!</h3>
-        <p>33% скидка на услуги с <?= date('H'); ?>:00.<?= date('H') + 1; ?>:00. До конца акции осталось <?= 60 - date('i'); ?> минут</p>
+        <p>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00. До конца акции осталось <?= 60 - date('i'); ?> минут</p>
         <span class="more"><div>Получить скидку</div></span>
     </div>
 </section>
