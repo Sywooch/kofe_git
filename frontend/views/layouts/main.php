@@ -263,7 +263,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <div class="popup regions animated">
             <div class="wight">  
                 <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
-                <h4>Ваш город: <?= Yii::$app->session['region']['title']; ?></h4>
+                <h4>Выберите ваш город</h4>
                 <ul>
                     <?php foreach (Yii::$app->params['regions'] as $region): ?>
                         <li>
