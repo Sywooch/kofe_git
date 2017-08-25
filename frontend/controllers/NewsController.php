@@ -29,7 +29,7 @@ class NewsController extends CController {
         $query->where($where);        
         $countQuery = clone $query;
         $query->orderBy($order);
-        $pages = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 1]);
+        $pages = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
         $models = $query->offset($pages->offset)
                 ->limit($pages->limit)
                 ->all();

@@ -5,9 +5,11 @@
             <?php foreach ($models as $model): ?>
                 <li class="newss">
                     <a href="/<?= $model['url']; ?>">
-                        <div class="img">
-                            <img src="/uploads/images/<?= $model['image']; ?>" alt="">
-                        </div>
+                        <?php if (!empty($model['image'])): ?>
+                            <div class="img">
+                                <img src="/uploads/images/<?= $model['image']; ?>" alt="">
+                            </div>
+                        <?php endif; ?>
                         <h3><?= $model['title']; ?></h3>
                         <p><?= $model['description']; ?></p>
                     </a>
