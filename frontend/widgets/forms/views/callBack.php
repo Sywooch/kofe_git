@@ -13,13 +13,13 @@ $form = ActiveForm::begin([
             ],
         ]);
 
-$position = View::POS_END;
+$position = \yii\web\View::POS_END;
 $validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, attribute, messages) {
                     if(messages.length == 0){
                         yaCounter45675441.reachGoal(\"$metrika\");
                     }
                 });";
-        $this->registerJs($validatejs, $position);
+$this->registerJs($validatejs, $position);
 ?> 
 <?=
 

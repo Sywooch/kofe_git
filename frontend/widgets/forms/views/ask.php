@@ -1,6 +1,6 @@
 <section id="ask-form">
     <div class="container">
-        
+
         <div class="right">
             <img src="/images/master.png">
             <p class="title"><span>Обращайтесь к профессионалам</span></p>
@@ -18,9 +18,16 @@ $form = ActiveForm::begin([
                         'fieldConfig' => [
                             'template' => '{input}',
                         ],
-                    ])
+            ]);
+            $position = \yii\web\View::POS_END;
+            $validatejs = "$('#ask-form').on('afterValidateAttribute', function(event, attribute, messages) {
+                    if(messages.length == 0){
+                        yaCounter45675441.reachGoal(\"ask-form\");
+                    }
+                });";
+            $this->registerJs($validatejs, $position);
             ?>
-                  
+
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
                 'name' => 'phone',
