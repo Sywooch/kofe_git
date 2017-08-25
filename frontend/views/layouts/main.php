@@ -48,7 +48,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             <div class="container">
                 <ul>
                     <li><a href="#">Работаем без выходных с 08:00 до 22:00</a></li>
-                    <li id="select-region"><span>Москва и область</span></li>
+                    <li class="selected-region">Ваш город: <span id="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
                 </ul>
             </div>
         </section>
