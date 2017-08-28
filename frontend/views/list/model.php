@@ -50,7 +50,7 @@ $this->title = $title;
     <div class="clear"></div>
 </section>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
-<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url']]); ?>
+<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
     <section id="text-block">    
         <div class="container">
