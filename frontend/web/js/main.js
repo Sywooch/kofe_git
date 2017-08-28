@@ -17,6 +17,15 @@ $(document).ready(function () {
         }, 400);
         return false;
     });
+    $("#show-services").click(function () {
+        if ($('#services-table:visible').length) {
+            $('#services-table').hide();
+            $(this).text("Показать цены по прочим услугам");
+        } else {
+            $('#services-table').show();
+            $(this).text("Цены по прочим услугам");
+        }
+    });
     $(".select-region").click(function () {
         $(".regions").toggleClass("active");
     });
