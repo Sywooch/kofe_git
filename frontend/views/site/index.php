@@ -9,7 +9,7 @@ $this->title = $page['meta_title'];
         </div>
         <div class="right-text">
             <div class="h1">
-                <h1><?= $_GET['data']['meta_h1']; ?></h1>
+                <h1>Ремонт кофемашин в <?= Yii::$app->session['region']['titleRod']; ?> с гарантией до 1 года!</h1>
             </div>
             <p>
                 <?= $_GET['data']['description']; ?>                

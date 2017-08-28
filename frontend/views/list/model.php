@@ -30,7 +30,7 @@ $this->title = $title;
                     <?php if (!empty($pageInfo['meta_h1'])): ?>
                         <?= $pageInfo['meta_h1']; ?>
                     <?php else: ?>
-                        Ремонт кофемашины  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в Москве
+                        Ремонт кофемашины  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?>
                     <?php endif; ?>
                 </h1>
             </div>

@@ -21,7 +21,7 @@ $breadcrumbs = [
                     Почта: <a href="mailto:zakaz@remontkofe.ru">zakaz@remontkofe.ru</a><br />
                     Номер телефона: <span class="moskva">8 (499)450-90-08</span><br />
                     Работаем без выходных с 08:00 до 22:00<br />
-                    Центральный офис:&nbsp;м. Фили, ул. Большая филевская 3
+                    Центральный офис:&nbsp;м Фили, м. Шелепиха ул. Заречная 1к2, вход со двора
                 </p>
                 <div class="map">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A491aa95e1bc192d0a1b6997ca799239d6ddde59426eb4d6d87042832d6436424&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>

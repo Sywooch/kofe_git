@@ -17,7 +17,7 @@ $this->title = $title;
                 <img src="<?= $assets ?>/uploads/images/<?= $pageInfo['image']; ?>" alt="">
             </div>
             <div class="h1">
-                <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в Москве</h1>
+                <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?></h1>
             </div>            
             <?php if (!empty($pageInfo['description'])): ?>
                 <?= $pageInfo['description']; ?>
