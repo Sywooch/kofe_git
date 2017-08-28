@@ -2920,3 +2920,6 @@ body.models .logo-breand {
     height: 100%;
     z-index: 1;
 }
+#banner .left-img img {
+    width: 100%;
+}

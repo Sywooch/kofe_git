@@ -22,14 +22,15 @@ class CController extends \yii\web\Controller {
 //        self::$menu = $rows;
 //        unset($rows);
         //Yii::$app->ipgeobase->updateDB();
-        $userIP = Yii::$app->getRequest()->getUserIP();
+        $userIP = Yii::$app->getRequest()->getUserIP();		
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
+
         if (empty(Yii::$app->session['region'])) {
             $regions = Yii::$app->params['regions'];
-            if (!empty($userRegionInfo->city)) {
-                if (isset($userRegionInfo->city)) {
+            if (!empty($userRegionInfo['city'])) {
+                if (isset($userRegionInfo['city'])) {
                     foreach ($regions as $region) {
-                        if (stripos($region['title'], $userRegionInfo->city) !== false) {
+                        if (stripos($region['title'], $userRegionInfo['city']) !== false) {
                             $this->setRegion($region['id']);
                             break;
                         }
