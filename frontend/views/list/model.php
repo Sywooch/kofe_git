@@ -13,7 +13,7 @@ if (!empty($pageInfo['image'])) {
 }
 $breadcrumbs = [
     '/' . $brand['url'] => 'Ремонт кофемашин ' . $brand['title'],
-    $brand['title'] . ' ' . $pageInfo['title'],
+    $pageInfo['title'],
 ];
 $this->title = $title;
 ?>
