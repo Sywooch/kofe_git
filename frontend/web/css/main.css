@@ -16,6 +16,10 @@
         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
+
+#banner .left-img img {
+    width: 100%;
+}
 #header-sticky-wrapper {
     height: 65px ! important;
 }
@@ -475,11 +479,13 @@ section .container .title span {
     width: 70%;
     margin-top: 10px;
 }
-#primushestva .punkt h2 {
+#primushestva .punkt .h2 {
     padding: 0px 30px;
     margin-bottom: 0px;
     font-size: 20px;
     margin-top: 0px;
+    font-weight: bold;
+    font-family: 'NeuronExtraBold', cursive;
 }
 #primushestva .punkt p {
     padding: 0px 30px;
@@ -1123,10 +1129,11 @@ input#phone2::-webkit-input-placeholder {
     box-sizing: border-box;
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
 }
-.brand-model-image img {
+#banner .left-img .brand-model-image img {
     vertical-align: middle;
     max-height: 85%;
     max-width: 85%;
+    width: auto;
 }
 #main .container .container {
     width: 100%;
@@ -2562,7 +2569,7 @@ body.video .happy-time img.clock-w {
         float:left;
         min-height: 80px;
     }
-    #primushestva .punkt h2 {
+    #primushestva .punkt .h2 {
         padding: 0px;
         margin-top: 0px;
     }
@@ -2826,15 +2833,7 @@ body.models .logo-breand {
     padding: 20px 0px 20px;
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
 }
-#otzvi h3 {
-    border-bottom: 1px solid #c65a1d;
-    padding-bottom: 10px;
-    width: 35%;
-    margin-bottom: 5px;
-}
-#otzvi h3:first-letter {
-    color:#f80000;
-}
+
 #otzvi .owl-carousel.owl-drag .owl-item {
     padding: 10px;
     background: rgba(255, 255, 255, 0.78);
@@ -2846,6 +2845,17 @@ body.models .logo-breand {
 #otzvi .otziv p {
     margin: 0px;
     font-size: 14px;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #c65a1d;
+    padding-bottom: 10px;
+    width: 35%;
+    margin-bottom: 5px;
+    font-family: 'NeuronExtraBold', cursive;
+    font-size: 18px;
+}
+#otzvi .h3:first-letter {
+    color:#f80000;
 }
 #otzvi span.data {
     font-size: 14px;
@@ -2862,7 +2872,7 @@ body.models .logo-breand {
     .owl-nav {
         display: none;
     }
-    #otzvi h3 {
+    #otzvi .otziv .h3 {
         width: 65%;
     }
 }
@@ -2919,7 +2929,4 @@ body.models .logo-breand {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-#banner .left-img img {
-    width: 100%;
 }

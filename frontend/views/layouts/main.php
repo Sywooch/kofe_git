@@ -114,7 +114,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                 <div class="owl-carousel otziv owl-theme">
                     <div>
                         <span class="data">20.08.2017</span>
-                        <h3>Шумилин Николай</h3>
+                        <p class="h3">Шумилин Николай</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -134,7 +134,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">18.08.2017</span>
-                        <h3>Иванов Илья</h3>
+                        <p class="h3">Иванов Илья</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -155,7 +155,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">15.08.2017</span>
-                        <h3>Медведев Гавриил</h3>
+                        <p class="h3">Медведев Гавриил</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -177,7 +177,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">14.08.2017</span>
-                        <h3>Игорь Коржов</h3>
+                        <p class="h3">Игорь Коржов</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -196,7 +196,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">11.08.2017</span>
-                        <h3>Бубнов Артур</h3>
+                        <p class="h3">Бубнов Артур</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -210,7 +210,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">9.08.2017</span>
-                        <h3>Яковлев Александр</h3>
+                        <p class="h3">Яковлев Александр</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
@@ -224,7 +224,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                     </div>
                     <div>
                         <span class="data">9.08.2017</span>
-                        <h3>Гусев Сергей</h3>
+                        <p class="h3">Гусев Сергей</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
                             <i class="n-rating-stars__item"></i>
