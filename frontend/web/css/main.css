@@ -16,7 +16,9 @@
         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
-
+.will-active-m {
+    display: none;
+}
 #banner .left-img img {
     width: 100%;
 }
@@ -2404,6 +2406,7 @@ body.video .happy-time img.clock-w {
 @media screen and (max-width: 540px) {
     .will-active-m {
         clear: both;
+        display: block;
     }
     .all-contact h2 {
         font-size: 18px;
