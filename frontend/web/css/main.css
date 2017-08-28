@@ -1345,6 +1345,7 @@ section#hlebniye-kroshki {
 }
 #tseni .prochi-uslugi h3 {
     padding-top: 20px;
+    cursor: pointer;
 }
 table.pricelist {
     width: 100%;
