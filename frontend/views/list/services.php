@@ -2,7 +2,7 @@
 $breadcrumbs = [
     $pageInfo['title'],
 ];
-$this->pageTitle = $pageInfo['meta_title'];
+$this->title = $pageInfo['meta_title'];
 ?>
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
