@@ -54,6 +54,8 @@ return [
                 //'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 'sitemap.xml' => 'page/sitemap',
                 'karta-sayta' => 'page/sitemap-html',
+                'minify-css' => 'page/css',
+                'minify-js' => 'page/js',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],
