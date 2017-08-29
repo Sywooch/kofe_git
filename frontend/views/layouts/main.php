@@ -23,9 +23,9 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
-        <link rel="stylesheet" href="<?= $assets ?>/css/all.css?v=17" type="text/css" />
+        <link rel="stylesheet" async href="<?= $assets ?>/css/all.css?v=17" type="text/css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+        <link async href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
