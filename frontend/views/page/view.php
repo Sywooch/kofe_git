@@ -11,7 +11,7 @@ $breadcrumbs = [
     <div class="container">
         <div class="full-text">
             <div class="h1">
-                <h1>О компании </h1>
+                <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title'] ?></h1>
             </div>
             <?= $model['description']; ?>
 
