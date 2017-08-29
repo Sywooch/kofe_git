@@ -21,6 +21,7 @@ return [
                 'yii\web\JqueryAsset' => [
                     'js' => []
                 ],
+                'yii\jui\JuiAsset' => ['sourcePath' => null, 'js' => [],],
             ],
         ],
         'ipgeobase' => [

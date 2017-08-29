@@ -61,6 +61,7 @@ class PageController extends CController {
             'owl.carousel.min.css',
             'owl.theme.default.min.css',
             'font-awesome.min.css',
+            'jquery-ui.css',
         ];
         $cssPath = Yii::getAlias('@frontend') . '/web/css/';
         file_put_contents($cssPath . 'all.css', '');
@@ -78,6 +79,7 @@ class PageController extends CController {
             'yii.validation.js',
             'owl.carousel.min.js',
             'jquery.sticky.js',
+            'jquery-ui.js',
             'main.js',
         ];
         $jsPath = Yii::getAlias('@frontend') . '/web/js/';
