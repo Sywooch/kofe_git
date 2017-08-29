@@ -19,18 +19,20 @@ class PageController extends CController {
         // setup the URL, the JavaScript and the form data
         $url = 'https://javascript-minifier.com/raw';
         $js = file_get_contents($file);
-        $data = array(
-            'input' => $js,
-        );
+
         // init the request, set some info, send it and finally close it
         $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt_array($ch, [
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POST => true,
+            CURLOPT_HTTPHEADER => ["Content-Type: application/x-www-form-urlencoded"],
+            CURLOPT_POSTFIELDS => http_build_query(["input" => $js])
+        ]);
         $minified = curl_exec($ch);
         curl_close($ch);
         // output the $minified
-        return $minified;
+        return $minified . "\r\n";
     }
 
     private function minifyCss($file) {
@@ -68,17 +70,20 @@ class PageController extends CController {
     }
 
     public function actionJs() {
-        $cssFiles = [
-            'main.css',
-            'animate.css',
-            'owl.carousel.min.css',
-            'owl.theme.default.min.css',
-            'font-awesome.min.css',
+        $jsFiles = [
+            'jquery.js',
+            'jquery.inputmask.bundle.js',
+            'yii.activeForm.js',
+            'yii.js',
+            'yii.validation.js',
+            'owl.carousel.min.js',
+            'jquery.sticky.js',
+            'main.js',
         ];
-        $cssPath = Yii::getAlias('@frontend') . '/web/css/';
-        file_put_contents($cssPath . 'all.css', '');
-        foreach ($cssFiles as $cssFile) {
-            file_put_contents($cssPath . 'all.css', $this->minifyCss($cssPath . $cssFile), FILE_APPEND);
+        $jsPath = Yii::getAlias('@frontend') . '/web/js/';
+        file_put_contents($jsPath . 'all.js', '');
+        foreach ($jsFiles as $jsFile) {
+            file_put_contents($jsPath . 'all.js', $this->minifyJs($jsPath . $jsFile), FILE_APPEND);
         }
     }
 
@@ -126,7 +131,7 @@ class PageController extends CController {
         ini_set("memory_limit", '1024M');
         ini_set("display_errors", false);
         error_reporting(false);
-        $hostname = 'http://remontkofe.ru';        
+        $hostname = 'http://remontkofe.ru';
         $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
         $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\'';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();

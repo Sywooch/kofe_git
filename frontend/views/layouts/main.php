@@ -109,8 +109,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             <div class="container">
                 <p class="title"><span>Отзывы   </span> клиентов</p>
                 <div class="owl-carousel otziv owl-theme">
-                    <div>
-                        <span class="data">20.08.2017</span>
+                    <div>                        
                         <p class="h3">Шумилин Николай</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -129,8 +128,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                             приветливый оператор, далее приехал курьер, всё очень быстро сделали<br>
                             Большое спасибо!</p>
                     </div>
-                    <div>
-                        <span class="data">18.08.2017</span>
+                    <div>                        
                         <p class="h3">Иванов Илья</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -150,8 +148,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                             которые были ясны уже вечером, мне сказали что уже завтра машина будет готова,
                             и учитывая их очень конкурентноспособные цены, меня всё очень устроило!</p>
                     </div>
-                    <div>
-                        <span class="data">15.08.2017</span>
+                    <div>                        
                         <p class="h3">Медведев Гавриил</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -172,8 +169,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                             сделали всё очень оперативно, обратно машину доставили ккурьером, всё очень понравилось,
                             большое спасибо!</p>
                     </div>
-                    <div>
-                        <span class="data">14.08.2017</span>
+                    <div>                        
                         <p class="h3">Игорь Коржов</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -191,8 +187,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                             Спасибо. Буду рекомендовать вас своим знакомым. Желаю вам успехов! <br>
                             С уважением, Игорь К.!</p>
                     </div>
-                    <div>
-                        <span class="data">11.08.2017</span>
+                    <div>                        
                         <p class="h3">Бубнов Артур</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -205,8 +200,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                         <p><b>Достоинства:</b> Быстро</p>
                         <p><b>Комментарий:</b> Есть кофемашина Saeco lirika one touch проблема была следующая после длительного использования, стало очень плохо подаваться кофе. Капало медленно очень. Пытались почистить ражок не помогло. Обратился в эту компанию. Помогли быстро в день заказа приехал курьер и отвез кофемашинку на диагностику примерно через два часа от звонились и сообщили результаты диагностики. Дал согласие на ремонт вечером следующего дня привезли исправную кофемашину. Пользуемся около недели всё хорошо.</p>
                     </div>
-                    <div>
-                        <span class="data">9.08.2017</span>
+                    <div>                        
                         <p class="h3">Яковлев Александр</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -219,8 +213,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
                         <p><b>Достоинства:</b> Не дорого</p>
                         <p><b>Комментарий:</b> В заведении сломалась кофемашина WMF Presto. Не работала подсветка с одной стороны, кофемолка издавала шумы и не работала, также было подача кофе. Сдал технику на диагностику через курьера, в этот же день позвонили и огласили цену ремонта. Был обрадован, ожидал что будет дороже. Через два дня сам заехал в пункт выдачи техники проверили на месте всё работает. Сейчас работает отлично. Спасибо вам.</p>
                     </div>
-                    <div>
-                        <span class="data">9.08.2017</span>
+                    <div>                        
                         <p class="h3">Гусев Сергей</p>
                         <div class="n-rating-stars" data-bem="{}" data-rate="5">
                             <i class="n-rating-stars__item"></i>
@@ -279,6 +272,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             </div>
         </div>
         <?= \app\widgets\forms\Order::widget(); ?>
+        <?php $this->registerJsFile($assets . '/js/all.js?v=17'); ?>
         <?php $this->endBody() ?>
         <script>(function(w, d, s, h, id) { w.roistatProjectId = id; w.roistatHost = h; var p = d.location.protocol == "https:" ? "https://" : "http://"; var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init"; var js = d.createElement(s); js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2); })(window, document, 'script', 'cloud.roistat.com', '5c65647cc157513c77ba30d0814ea7bd');</script>
         <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45675441 = new Ya.Metrika({ id:45675441, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex" }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script> <noscript><div><img src="https://mc.yandex.ru/watch/45675441?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -300,14 +294,12 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <!-- END JIVOSITE INTEGRATION WITH ROISTAT --> 
     </body>
 
-    <?php $this->registerJsFile($assets . '/js/jquery.sticky.js'); ?>
-    <?php $this->registerJsFile($assets . '/js/owl.carousel.min.js'); ?>
     <?php
     if (Yii::$app->session->getFlash('success')) {
         echo '<script>$(".popup.good").addClass("active");</script>';
     }
     ?>
-    <?php $this->registerJsFile($assets . '/js/main.js?v=17'); ?>
+    
 
 </html>
 <?php $this->endPage() ?>

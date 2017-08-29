@@ -15,13 +15,13 @@ return [
             'bundles' => [
                 'yii\bootstrap\BootstrapPluginAsset' => ['js' => []],
                 'yii\bootstrap\BootstrapAsset' => ['css' => []],
-            //'yii\widgets\MaskedInputAsset' => ['js' => []],
-            //'yii\web\YiiAsset' => ['js' => []],
-            //'yii\validators\ValidationAsset' => ['js' => []],
-            //'yii\widgets\ActiveFormAsset' => ['js' => []],
-//                'yii\web\JqueryAsset' => [
-//                    'js' => []
-//                ],
+            'yii\widgets\MaskedInputAsset' => ['js' => []],
+            'yii\web\YiiAsset' => ['js' => []],
+            'yii\validators\ValidationAsset' => ['js' => []],
+            'yii\widgets\ActiveFormAsset' => ['js' => []],
+                'yii\web\JqueryAsset' => [
+                    'js' => []
+                ],
             ],
         ],
         'ipgeobase' => [
