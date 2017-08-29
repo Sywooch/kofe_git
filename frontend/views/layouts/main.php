@@ -23,7 +23,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
         <link rel="stylesheet" href="<?= $assets ?>/css/all.css?v=17" type="text/css" />
-        
+
         <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
@@ -251,17 +251,19 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             </div>
         </div>
         <div class="popup regions animated">
-            <div class="wight">  
-                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
-                <h4>Выберите ваш город</h4>
-                <ul>
-                    <?php foreach (Yii::$app->params['regions'] as $region): ?>
-                        <li>
-                            <a href="?region=<?= $region['id']; ?>"><?= $region['title']; ?></a>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>                
-            </div>
+            <noindex>
+                <div class="wight">  
+                    <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
+                    <h4>Выберите ваш город</h4>
+                    <ul>
+                        <?php foreach (Yii::$app->params['regions'] as $region): ?>
+                            <li>
+                                <a rel="nofollow" href="?region=<?= $region['id']; ?>"><?= $region['title']; ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>                
+                </div>
+            </noindex>
         </div>
         <div class="popup good animated">
             <div class="wight">
@@ -299,7 +301,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         echo '<script>$(".popup.good").addClass("active");</script>';
     }
     ?>
-    
+
 
 </html>
 <?php $this->endPage() ?>
