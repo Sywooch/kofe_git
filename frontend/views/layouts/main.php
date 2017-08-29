@@ -99,7 +99,11 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         if (!Yii::$app->user->isGuest) {
             $domain = $_SERVER['SERVER_NAME'];
             if (isset($_GET['data']['is_service'])) {
-                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '">Ред. страницу</a>';
+                if (count(explode('/', Yii::$app->request->pathInfo)) > 1)
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '">Ред. страницу</a>';
+                else {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. страницу</a>';
+                }
             } else {
                 echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. страницу</a>';
             }
