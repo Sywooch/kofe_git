@@ -1,2 +1,12 @@
-User-agent: *
-Disallow: /
+User-agent: Googlebot 
+Disallow: *?region=*
+
+Sitemap: http://remontkofe.ru/sitemap.xml
+
+User-agent: Yandex 
+Disallow: *?region=*
+Crawl-delay: 1
+Host: remontkofe.ru
+
+User-agent: * 
+Disallow: *?region=*
