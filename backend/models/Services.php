@@ -27,7 +27,7 @@ class Services extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'url', 'type'], 'required'],
-            [['is_popular', 'price', 'description', 'text'], 'default'],
+            [['is_popular', 'price', 'description', 'text', 'meta_keywords', 'meta_description'], 'default'],
             [['url'], 'unique'],
             [['title'], 'string', 'max' => 255]
         ];

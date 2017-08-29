@@ -12,15 +12,15 @@ use dosamigos\ckeditor\CKEditor;
 <div class="services-form">
 
     <?php $form = ActiveForm::begin(); ?>
-    
-    <?= $form->field($model,'type') ->dropdownlist(yii\helpers\ArrayHelper::map(\app\models\ServiceTypes::find()->all(), 'id', 'name')); ?>
-    
+
+    <?= $form->field($model, 'type')->dropdownlist(yii\helpers\ArrayHelper::map(\app\models\ServiceTypes::find()->all(), 'id', 'name')); ?>
+
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
-    
+
     <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
-    
+
     <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
-    
+
     <?=
     $form->field($model, 'description')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
@@ -31,7 +31,7 @@ use dosamigos\ckeditor\CKEditor;
         ]
     ])
     ?>
-    
+
     <?=
     $form->field($model, 'text')->widget(CKEditor::className(), [
         'options' => ['rows' => 6],
@@ -42,7 +42,11 @@ use dosamigos\ckeditor\CKEditor;
         ]
     ])
     ?>
-    
+
+    <?= $form->field($model, 'meta_keywords')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'meta_description')->textarea(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'is_popular')->checkbox() ?>
 
     <div class="form-group">
