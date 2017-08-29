@@ -9,16 +9,15 @@ return [
     'basePath' => dirname(__DIR__),
     //'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'components' => [        
-        
+    'components' => [
         'assetManager' => [
             'bundles' => [
                 'yii\bootstrap\BootstrapPluginAsset' => ['js' => []],
                 'yii\bootstrap\BootstrapAsset' => ['css' => []],
-            'yii\widgets\MaskedInputAsset' => ['js' => []],
-            'yii\web\YiiAsset' => ['js' => []],
-            'yii\validators\ValidationAsset' => ['js' => []],
-            'yii\widgets\ActiveFormAsset' => ['js' => []],
+                'yii\widgets\MaskedInputAsset' => ['js' => []],
+                'yii\web\YiiAsset' => ['js' => []],
+                'yii\validators\ValidationAsset' => ['js' => []],
+                'yii\widgets\ActiveFormAsset' => ['js' => []],
                 'yii\web\JqueryAsset' => [
                     'js' => []
                 ],
