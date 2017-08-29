@@ -11,6 +11,7 @@ $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
 ?>
+<?php \yii\widgets\Spaceless::begin(); ?>	
 <!DOCTYPE html>
 <html lang="en">
     <head>  
@@ -28,7 +29,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
-    </head>
+    </head>    
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
         <?php if ($isHome): ?>
             <div class="header-bg">
@@ -304,4 +305,5 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 
 
 </html>
+<?php \yii\widgets\Spaceless::end(); ?>
 <?php $this->endPage() ?>
