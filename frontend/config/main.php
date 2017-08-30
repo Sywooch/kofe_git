@@ -52,7 +52,7 @@ return [
                 //'<controller:\w+>/<id:\d+>' => '<controller>/view',
                 //'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 //'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                'sitemap.xml' => 'page/sitemap',
+                'sitemap.xml' => 'page/sitemap2',
                 'karta-sayta' => 'page/sitemap-html',
                 'minify-css' => 'page/css',
                 'minify-js' => 'page/js',
