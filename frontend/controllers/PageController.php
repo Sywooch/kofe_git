@@ -102,8 +102,8 @@ class PageController extends CController {
         $a = 1;
         $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
         foreach ($pages as $key => $page) {
-            if ($n == 0) {
-                $L = $hostname . '/sitemap' . $a . '.xml.gz';
+            if ($n == 0) {               
+                $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';
                 $sitemap = $xmlIndex->addChild('sitemap');
                 $sitemap->addChild('loc', $L);
                 $sitemap->addChild('lastmod', date("Y-m-d", time()));
@@ -117,6 +117,7 @@ class PageController extends CController {
             if ($page['type'] == 'model' || $page['type'] == 'brand') {
                 foreach ($services as $service) {
                     if ($n == 0) {
+                        $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';                        
                         $sitemap = $xmlIndex->addChild('sitemap');
                         $sitemap->addChild('loc', $L);
                         $sitemap->addChild('lastmod', date("Y-m-d", time()));
