@@ -100,9 +100,41 @@ class PageController extends CController {
         $n = 0;
         $numPages = ceil((count($pages) * count($services) + count($services)) / $per);
         $a = 1;
-        $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+        $urls = [];
         foreach ($pages as $key => $page) {
-            if ($n == 0) {               
+            $urls[] = $page['url'];
+            if ($page['type'] == 'model' || $page['type'] == 'brand') {
+                foreach ($services as $service) {
+                    $urls[] = $service['url'];
+                }
+            }
+        }       
+        $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');        
+        for ($b = 1; $b <= $numPages; $b++) {
+            $xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+            foreach ($urls as $key => $siteUrl) {
+                $url = $xml->addChild('url');
+                $url->addChild('loc', $hostname . '/' . $siteUrl);
+                $url->addChild('lastmod', date("Y-m-d", time()));
+                unset($urls[$key]);
+                $n++;
+                if ($n == $per){
+                    $n = 0;
+                    break;
+                }                    
+            }            
+            file_put_contents($path . 'sitemap' . $b . '.xml.gz', gzencode($xml->asXML(), 9));
+            $L = $hostname . '/uploads/sitemap' . $b . '.xml.gz';
+            $sitemap = $xmlIndex->addChild('sitemap');
+            $sitemap->addChild('loc', $L);
+            $sitemap->addChild('lastmod', date("Y-m-d", time()));
+        }
+        header('content-type:text/xml');
+        echo $xmlIndex->asXML();
+        exit;
+
+        foreach ($pages as $key => $page) {
+            if ($n == 0) {
                 $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';
                 $sitemap = $xmlIndex->addChild('sitemap');
                 $sitemap->addChild('loc', $L);
@@ -117,7 +149,7 @@ class PageController extends CController {
             if ($page['type'] == 'model' || $page['type'] == 'brand') {
                 foreach ($services as $service) {
                     if ($n == 0) {
-                        $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';                        
+                        $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';
                         $sitemap = $xmlIndex->addChild('sitemap');
                         $sitemap->addChild('loc', $L);
                         $sitemap->addChild('lastmod', date("Y-m-d", time()));
@@ -131,7 +163,7 @@ class PageController extends CController {
                         file_put_contents($siteMapXML, gzencode($xml->asXML(), 9));
                         $n = 0;
                         $a++;
-                    }                    
+                    }
                 }
             }
             if ($n == $per) {
@@ -139,7 +171,7 @@ class PageController extends CController {
                 file_put_contents($siteMapXML, gzencode($xml->asXML(), 9));
                 $n = 0;
                 $a++;
-            }            
+            }
         }
         header('content-type:text/xml');
         echo $xmlIndex->asXML();
