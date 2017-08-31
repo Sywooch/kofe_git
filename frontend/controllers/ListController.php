@@ -176,7 +176,7 @@ class ListController extends CController {
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         //$h1 = '';
-        $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by sort limit 1';
+        $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by id limit 1';
         $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $pageInfo['id']])->queryOne();
 
         return $this->render('brand', ['pageInfo' => $pageInfo, 'model' => $model, 'title' => $title]);
