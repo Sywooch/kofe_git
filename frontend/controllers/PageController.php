@@ -105,11 +105,14 @@ class PageController extends CController {
             $urls[] = $page['url'];
             if ($page['type'] == 'model' || $page['type'] == 'brand') {
                 foreach ($services as $service) {
-                    $urls[] = $service['url'];
+                    $urls[] = $page['url'] . '/' . $service['url'];
                 }
             }
-        }       
-        $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');        
+        }
+        foreach ($services as $service) {
+            $urls[] = $service['url'];
+        }
+        $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
         for ($b = 1; $b <= $numPages; $b++) {
             $xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             foreach ($urls as $key => $siteUrl) {
@@ -118,60 +121,16 @@ class PageController extends CController {
                 $url->addChild('lastmod', date("Y-m-d", time()));
                 unset($urls[$key]);
                 $n++;
-                if ($n == $per){
+                if ($n == $per) {
                     $n = 0;
                     break;
-                }                    
-            }            
+                }
+            }
             file_put_contents($path . 'sitemap' . $b . '.xml.gz', gzencode($xml->asXML(), 9));
             $L = $hostname . '/uploads/sitemap' . $b . '.xml.gz';
             $sitemap = $xmlIndex->addChild('sitemap');
             $sitemap->addChild('loc', $L);
             $sitemap->addChild('lastmod', date("Y-m-d", time()));
-        }
-        header('content-type:text/xml');
-        echo $xmlIndex->asXML();
-        exit;
-
-        foreach ($pages as $key => $page) {
-            if ($n == 0) {
-                $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';
-                $sitemap = $xmlIndex->addChild('sitemap');
-                $sitemap->addChild('loc', $L);
-                $sitemap->addChild('lastmod', date("Y-m-d", time()));
-            }
-            if ($n == 0)
-                $xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
-            $url = $xml->addChild('url');
-            $url->addChild('loc', $hostname . '/' . $page['url']);
-            $url->addChild('lastmod', date("Y-m-d", time()));
-            $n++;
-            if ($page['type'] == 'model' || $page['type'] == 'brand') {
-                foreach ($services as $service) {
-                    if ($n == 0) {
-                        $L = $hostname . '/uploads/sitemap' . $a . '.xml.gz';
-                        $sitemap = $xmlIndex->addChild('sitemap');
-                        $sitemap->addChild('loc', $L);
-                        $sitemap->addChild('lastmod', date("Y-m-d", time()));
-                    }
-                    $n++;
-                    $urlService = $xml->addChild('url');
-                    $urlService->addChild('loc', $hostname . '/' . $page['url'] . '/' . $service['url']);
-                    $urlService->addChild('lastmod', date("Y-m-d", time()));
-                    if ($n == $per) {
-                        $siteMapXML = $path . 'sitemap' . $a . '.xml.gz';
-                        file_put_contents($siteMapXML, gzencode($xml->asXML(), 9));
-                        $n = 0;
-                        $a++;
-                    }
-                }
-            }
-            if ($n == $per) {
-                $siteMapXML = $path . 'sitemap' . $a . '.xml.gz';
-                file_put_contents($siteMapXML, gzencode($xml->asXML(), 9));
-                $n = 0;
-                $a++;
-            }
         }
         header('content-type:text/xml');
         echo $xmlIndex->asXML();
