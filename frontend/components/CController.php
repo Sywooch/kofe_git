@@ -22,7 +22,7 @@ class CController extends \yii\web\Controller {
 //        self::$menu = $rows;
 //        unset($rows);
         //Yii::$app->ipgeobase->updateDB();
-        $userIP = Yii::$app->getRequest()->getUserIP();		
+        $userIP = Yii::$app->getRequest()->getUserIP();
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
 
         if (empty(Yii::$app->session['region'])) {
@@ -101,6 +101,14 @@ class CController extends \yii\web\Controller {
             ),
         );
         file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
+    }
+
+    public static function getSiteConfig() {
+        $host = Yii::$app->request->hostInfo;
+        $hostArr = explode('.', $host);
+        $ad = '.' . end($hostArr);
+        $host = str_replace([$ad, 'http://', 'https://'], '', $host);
+        return Yii::$app->params['siteConfigs'][$host];
     }
 
 }

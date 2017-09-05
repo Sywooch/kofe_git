@@ -10,8 +10,12 @@ $assets = Yii::getAlias('@web');
 $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
+$siteConfig = app\components\CController::getSiteConfig();
+//$str = 'class="spb-kofeform-group field-serviceform-phone required"';
+//preg_match_all('/class\="(.*)? (.*) (.*)/', $str, $o);
+//print_r($o);exit;
 ?>
-<?php \yii\widgets\Spaceless::begin(); ?>	
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>  
@@ -35,7 +39,6 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
             <div class="header-bg">
                 <img src="/uploads/images/bg-header-video.jpg"/>
                 <video poster="" id="bgvid" playsinline autoplay muted loop>
-                    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
                     <source src="<?= $assets ?>/video/v2.webm" type="video/webm">
                     <source src="<?= $assets ?>/video/v2.mp4" type="video/mp4">
                 </video>
@@ -309,5 +312,5 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 
 
 </html>
-<?php \yii\widgets\Spaceless::end(); ?>
+<?php \app\widgets\other\Replace::end(); ?>
 <?php $this->endPage() ?>
