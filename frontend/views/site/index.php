@@ -23,9 +23,10 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
     </div>
     <div class="clear"></div>
-</section>
-<?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]); ?>
+</section> 
+<?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
 <?= \app\widgets\lists\Neispravnost::widget(['metrika' => 'call-me-home']); ?>
+<?= $siteConfig['mono'] ? \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]) : ''; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
 <section id="skidka">
     <div class="container">

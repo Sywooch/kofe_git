@@ -1,5 +1,6 @@
 <?php 
 $siteConfig = app\components\CController::getSiteConfig();
+echo $siteConfig['brand-id'];
 ?>
 <section id="banner">
     <div class="container">

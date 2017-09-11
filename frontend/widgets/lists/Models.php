@@ -14,8 +14,9 @@ class Models extends Widget {
     public $mono = false;
 
     public function run() {
-        $sql = 'select id, title, url, image from {{%pages}} where parent =:parent and type =:type and active = 1 order by title limit 15';
+        $sql = 'select id, title, url, image from {{%pages}} where parent =:parent and type =:type and active = 1 order by title' . ($this->mono ? ' limit 15' : '');
         $rows = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $this->parent, 'type' => $this->type])->queryAll();
+        
         $sortedRows = [];
         $searches = [];
         foreach ($rows as $row) {
