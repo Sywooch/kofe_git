@@ -29,6 +29,19 @@ class ListController extends CController {
                         ]
         );
     }
+    
+    public function actionAllModels() {        
+        \Yii::$app->view->registerMetaTag([
+            'name' => 'keywords',
+            'content' => ''
+        ]);
+        \Yii::$app->view->registerMetaTag([
+            'name' => 'description',
+            'content' => ''
+        ]);     
+        
+        return $this->render('all-models');
+    }
 
     public function actionService() {
         $pageInfo = $_GET['data'];

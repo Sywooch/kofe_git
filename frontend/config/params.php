@@ -20,6 +20,13 @@ return [
             'id' => 2,            
             'sitePrefix' => 'spb-kofe',
         ],       
-       
+       'support-delonghi' => [
+            //'spb-multi' => false,
+            'stickyMenu' => false,
+            'mono' => true,
+           'brand-id' => 13292,
+            'id' => 3,            
+            'sitePrefix' => 'delonghi',
+        ],
     ],
 ];

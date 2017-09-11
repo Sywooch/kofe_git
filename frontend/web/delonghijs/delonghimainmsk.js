@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /*http://digitalbush.com/projects/masked-input-plugin/*/
 
-    
+    $("").sticky({topSpacing: 0});
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
@@ -115,28 +115,6 @@ $(document).ready(function () {
             },
             1000: {
                 items: 2,
-            }
-
-        }
-    });
-    
-    $('.owl-carousel.modelslider').owlCarousel({
-        loop: true,
-        dots: false,
-        margin: 20,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        responsive: {
-            0: {
-                items: 2,
-                autoplay: false
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
             }
 
         }

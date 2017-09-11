@@ -17,7 +17,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <p>Мы, сервисный центр по ремонту кофемашин &laquo;РемонтКофе&raquo; - команда профессионалов, которые знают все о кофемашинах от А до Я. Наши мастера работают как на выезде, так и в сервисном центре, осуществляя ремонт кофемашин любой сложности.</p>
 
             <div class="clear">&nbsp;</div>
-            <?php if (!isset($siteConfig['spb-multi'])): ?>
+            <?php if (!isset($siteConfig['spb-multi']) && !$siteConfig['mono']): ?>
                 <div class="msk-contact all-contact<?= Yii::$app->session['region']['id'] == 1 ? ' active' : ''; ?>">
                     <h2>Наш адрес в <div class="will-active-m"></div><span class="v-msk active">Москве</span> <span class="v-spb">Санкт-Петербурге</span></h2>
                     <p>
@@ -47,7 +47,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
             <?php endif; ?>
             <div class="spb-contact all-contact<?= Yii::$app->session['region']['id'] == 2 ? ' active' : ''; ?>">
-                <h2>Наш адрес в <div class="will-active-m"></div><span class="v-spb active">Санкт-Петербурге</span> <?php if (!isset($siteConfig['spb-multi'])): ?><span class="v-msk">Москве</span><?php endif; ?> </h2>
+                <h2>Наш адрес в <div class="will-active-m"></div><span class="v-spb active">Санкт-Петербурге</span> <?php if (!isset($siteConfig['spb-multi']) && !$siteConfig['mono']): ?><span class="v-msk">Москве</span><?php endif; ?> </h2>
                 <p>
                     Почта: <a href="mailto:zakaz@remontkofe.ru">zakaz@remontkofe.ru</a><br />
                     Номер телефона: <span class="spb">8 (812) 643-21-07</span><br />

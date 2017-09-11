@@ -11,6 +11,8 @@ $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
 $siteConfig = app\components\CController::getSiteConfig();
+if ($siteConfig['mono'])
+    $mono_brand = \app\components\CController::$monoBrand;
 ?>
 <?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
@@ -38,6 +40,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.mp4" type="video/mp4">
                 </video>
             </div>
+        <?php else: ?>
+            <?php if ($isHome): ?><div class="header-bg"></div><?php endif; ?>
         <?php endif; ?>
         <?php $this->beginBody() ?>
         <section id="top">
@@ -83,7 +87,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <ul>
                         <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
                         <li><a href="/o-kompanii">О компании</a></li>                        
-                        <li><a href="/brendy">Все бренды</a></li>
+                        <?php if($siteConfig['mono']): ?><li><a href="/models">Все модели</a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>

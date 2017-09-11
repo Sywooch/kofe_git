@@ -56,6 +56,7 @@ return [
                 'karta-sayta' => 'page/sitemap-html',
                 'minify-css' => 'page/css',
                 'minify-js' => 'page/js',
+                'models' => 'list/all-models',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],

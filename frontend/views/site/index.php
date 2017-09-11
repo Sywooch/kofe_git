@@ -24,7 +24,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\PopularBrands::widget(); ?>
+<?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]); ?>
 <?= \app\widgets\lists\Neispravnost::widget(['metrika' => 'call-me-home']); ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
 <section id="skidka">

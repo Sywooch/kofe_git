@@ -23,7 +23,7 @@ class PageController extends CController {
             $siteConfig = self::getSiteConfig();
             $classes = [
                 '.logos', '.spb-contact', '.otziv', '.v-msk', '.all-contact', '.more', '.phone', '.popup-zakaz', '.active-bg', '.nav', '.mobile-menu', '.nav-icon2', '.close', '.popup',
-                '.zakrit', '.punkt', '.forma', '.regions', '.select-region'
+                '.zakrit', '.punkt', '.forma', '.regions', '.select-region', '.modelslider'
             ];
             foreach ($classes as $cl) {
                 $repClasses[] = '.' . $siteConfig['sitePrefix'] . ltrim($cl, '.');
