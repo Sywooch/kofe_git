@@ -24,7 +24,10 @@ class CController extends \yii\web\Controller {
         //Yii::$app->ipgeobase->updateDB();
         $userIP = Yii::$app->getRequest()->getUserIP();
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
-
+        $siteConfig = self::getSiteConfig();
+        if (isset($siteConfig['spb-multi'])) {
+            $this->setRegion(2);
+        }
         if (empty(Yii::$app->session['region'])) {
             $regions = Yii::$app->params['regions'];
             if (!empty($userRegionInfo['city'])) {
