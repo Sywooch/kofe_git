@@ -8,27 +8,18 @@ return [
     ],
     'siteConfigs' => [
         'remontkofe' => [
-            'id' => 1,
-            'regExp' => [
-                'pattern' => ['/>\s+</', '/class="(.)/', '/id="(.)/', '/class="(.)[s(.)]+/'],
-                'replacement' => ['><', 'class="%s$1', 'id="%s$1', 'class="%s$1 %s$2'],
-            ],
-            'sitePrefix' => 'remont',
-            'cssPath' => 'css/%s.css',
-            'jsPath' => 'js/%s.js',
-            'imagePath' => '%simages/',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 1,            
+            'sitePrefix' => 'remont',            
         ],
         'spb-remont-kofe' => [
-            'id' => 2,
-            'regExp' => [
-                'pattern' => ['/>\s+</', '/class="(.+?) (.+?)/', '/id="(.+?)/'],
-                'replacement' => ['><', 'class="%s$1 %s$2', 'id="%s$1'],
-            ],
-            'sitePrefix' => 'spb-kofe',            
-            'cssPath' => 'css/%s.css',
-            'jsPath' => 'js/%s.js',
-            'imagePath' => '%simages/',
-            'uploadsPath' => '%suploads/',
-        ],
+            'spb-multi' => true,
+            'stickyMenu' => false,
+            'mono' => false,
+            'id' => 2,            
+            'sitePrefix' => 'spb-kofe',
+        ],       
+       
     ],
 ];

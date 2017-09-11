@@ -12,7 +12,7 @@ $assets = Yii::getAlias('@web');
                     'source' => $searches,
                     'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
                 ],
-                'options' => ['placeholder' => 'Название модели',],
+                'options' => ['placeholder' => 'Название модели', 'class' => 'ui-autocomplete-input',],
                     ]
             );
             ?>
@@ -23,8 +23,8 @@ $assets = Yii::getAlias('@web');
                     <div class="symbol"><?= $latter; ?></div>
                     <ul>
                         <?php foreach ($brands as $brand): ?>
-                        <li class="bold"><a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a></li>
-                        <?php endforeach; ?>
+                            <li class="bold"><a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a></li>
+                            <?php endforeach; ?>
                     </ul>
                 </div>
             <?php endforeach; ?>

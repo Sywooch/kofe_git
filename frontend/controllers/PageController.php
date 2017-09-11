@@ -19,7 +19,19 @@ class PageController extends CController {
         // setup the URL, the JavaScript and the form data
         $url = 'https://javascript-minifier.com/raw';
         $js = file_get_contents($file);
-
+        if (strpos($file, 'main.js') !== false) {
+            $siteConfig = self::getSiteConfig();
+            $classes = [
+                '.logos', '.spb-contact', '.otziv', '.v-msk', '.all-contact', '.more', '.phone', '.popup-zakaz', '.active-bg', '.nav', '.mobile-menu', '.nav-icon2', '.close', '.popup',
+                '.zakrit', '.punkt', '.forma', '.regions', '.select-region'
+            ];
+            foreach ($classes as $cl) {
+                $repClasses[] = '.' . $siteConfig['sitePrefix'] . ltrim($cl, '.');
+            }
+            $rep = ["'open'", '"active"', '"open"', "'active'"];
+            $js = str_replace($rep, ["'" . $siteConfig['sitePrefix'] . "open'", '"' . $siteConfig['sitePrefix'] . 'active"', '"' . $siteConfig['sitePrefix'] . 'open"', "'" . $siteConfig['sitePrefix'] . "active'"], $js);
+            $js = str_replace($classes, $repClasses, $js);
+        }
         // init the request, set some info, send it and finally close it
         $ch = curl_init($url);
         curl_setopt_array($ch, [
@@ -55,6 +67,7 @@ class PageController extends CController {
     }
 
     public function actionCss() {
+        $siteConfig = self::getSiteConfig();
         $cssFiles = [
             'main.css',
             'animate.css',
@@ -63,14 +76,31 @@ class PageController extends CController {
             'font-awesome.min.css',
             'jquery-ui.css',
         ];
-        $cssPath = Yii::getAlias('@frontend') . '/web/css/';
-        file_put_contents($cssPath . 'all.css', '');
+        $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
+        file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
         foreach ($cssFiles as $cssFile) {
-            file_put_contents($cssPath . 'all.css', $this->minifyCss($cssPath . $cssFile), FILE_APPEND);
+            $css = file_get_contents($cssPath . $siteConfig['sitePrefix'] . $cssFile);
+            if (strpos($cssFile, 'owl') !== false) {
+                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $css, FILE_APPEND);
+            } else {
+                $oParser = new \Sabberworm\CSS\Parser($css);
+                $oCss = $oParser->parse();
+                foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
+                    foreach ($oBlock->getSelectors() as $oSelector) {
+                        if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
+                            $s = $oSelector->getSelector();
+                            $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                            $oSelector->setSelector($s);
+                        }
+                    }
+                }
+                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact()), FILE_APPEND);
+            }
         }
     }
 
     public function actionJs() {
+        $siteConfig = self::getSiteConfig();
         $jsFiles = [
             'jquery.js',
             'jquery.inputmask.bundle.js',
@@ -82,10 +112,11 @@ class PageController extends CController {
             'jquery-ui.js',
             'main.js',
         ];
-        $jsPath = Yii::getAlias('@frontend') . '/web/js/';
-        file_put_contents($jsPath . 'all.js', '');
+        $jsPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
+        $js = Yii::getAlias('@frontend') . '/web/js/';
+        file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', '');
         foreach ($jsFiles as $jsFile) {
-            file_put_contents($jsPath . 'all.js', $this->minifyJs($jsPath . $jsFile), FILE_APPEND);
+            file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);
         }
     }
 

@@ -1,11 +1,12 @@
 <?php
 $assets = Yii::getAlias('@web');
 $this->title = $page['meta_title'];
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section id="banner">
     <div class="container">
         <div class="left-img">
-            <img src="<?= $assets ?>/images/coffee_machine.png" alt="">
+            <img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt="">
         </div>
         <div class="right-text">
             <div class="h1">

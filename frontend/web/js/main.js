@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     /*http://digitalbush.com/projects/masked-input-plugin/*/
 
-    $("#header").sticky({topSpacing: 0});
+    
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {

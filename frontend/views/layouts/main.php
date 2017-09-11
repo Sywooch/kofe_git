@@ -11,15 +11,11 @@ $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
 $siteConfig = app\components\CController::getSiteConfig();
-//$str = 'class="spb-kofeform-group field-serviceform-phone required"';
-//preg_match_all('/class\="(.*)? (.*) (.*)/', $str, $o);
-//print_r($o);exit;
 ?>
 <?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>  
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,20 +23,19 @@ $siteConfig = app\components\CController::getSiteConfig();
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
-        <link rel="stylesheet" async href="<?= $assets ?>/css/all.css?v=17" type="text/css" />
-
+        <link rel="stylesheet" async href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>css/<?= $siteConfig['sitePrefix']; ?>all.css?v=17" type="text/css" />
         <link async href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
     </head>    
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
-        <?php if ($isHome): ?>
-            <div class="header-bg">
-                <img src="/uploads/images/bg-header-video.jpg"/>
+        <?php if ($isHome && !$siteConfig['mono']): ?>
+            <div class="header-bg">                
+                <img src="/uploads/images/bg-header-video.jpg"/>                
                 <video poster="" id="bgvid" playsinline autoplay muted loop>
-                    <source src="<?= $assets ?>/video/v2.webm" type="video/webm">
-                    <source src="<?= $assets ?>/video/v2.mp4" type="video/mp4">
+                    <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.webm" type="video/webm">
+                    <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.mp4" type="video/mp4">
                 </video>
             </div>
         <?php endif; ?>
@@ -56,7 +51,12 @@ $siteConfig = app\components\CController::getSiteConfig();
         <section id="header">
             <div class="container">
                 <div class="logo">
-                    <a href="/"><img src="<?= $assets ?>/images/logo.svg?v=1" alt="ремонт кофемашин"></a>
+                    <?php if(isset($siteConfig['spb-multi'])): ?>
+                    <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
+                    <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
+                    <?php else: ?>
+                    <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a>
+                    <?php endif; ?>
                 </div>
                 <?php if ($isModelPage || $isBrandPage): ?>
                     <div class="logo-breand">
@@ -66,8 +66,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             $brand = \Yii::$app->db->createCommand($sql)->queryOne();
                         }
                         ?>
-                        <span class="brand-title"><?= $isModelPage ? $brand['title'] : $_GET['data']['title'] ?></span>
-                        <!--<img src="<?= $assets ?>/uploads/images/<?= $isModelPage ? $brand['image'] : $_GET['data']['image'] ?>" alt="">-->
+                        <span class="brand-title"><?= $isModelPage ? $brand['title'] : $_GET['data']['title'] ?></span>                        
                     </div>
                 <?php endif; ?>
                 <div class="mobile-menu">
@@ -88,13 +87,12 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>
-
                 <div class="tel">
                     <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="st-set">
-                    <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
-                    <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
+                    <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>telegram.png"></a>
+                    <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>vk.png"></a>
                 </div>
             </div>
         </section>
@@ -282,7 +280,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
         <?= \app\widgets\forms\Order::widget(); ?>
-        <?php $this->registerJsFile($assets . '/js/all.js?v=17'); ?>
+        <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
         <?php $this->endBody() ?>
         <script>(function(w, d, s, h, id) { w.roistatProjectId = id; w.roistatHost = h; var p = d.location.protocol == "https:" ? "https://" : "http://"; var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init"; var js = d.createElement(s); js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2); })(window, document, 'script', 'cloud.roistat.com', '5c65647cc157513c77ba30d0814ea7bd');</script>
         <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45675441 = new Ya.Metrika({ id:45675441, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex" }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script> <noscript><div><img src="https://mc.yandex.ru/watch/45675441?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -303,14 +301,12 @@ $siteConfig = app\components\CController::getSiteConfig();
         </script>
         <!-- END JIVOSITE INTEGRATION WITH ROISTAT --> 
     </body>
-
     <?php
     if (Yii::$app->session->getFlash('success')) {
-        echo '<script>$(".popup.good").addClass("active");</script>';
+        echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
     }
     ?>
-
-
+    <?php if($siteConfig['stickyMenu']): ?><script>$("#header").sticky({topSpacing: 0});</script><?php endif; ?>
 </html>
-<?php \app\widgets\other\Replace::end(); ?>
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>

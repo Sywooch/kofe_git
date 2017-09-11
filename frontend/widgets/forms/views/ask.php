@@ -1,8 +1,12 @@
+<?php
+$siteConfig = app\components\CController::getSiteConfig();
+?>
 <section id="ask-form">
     <div class="container">
-
         <div class="right">
-            <img src="/images/master.png">
+            <?php if (!$siteConfig['mono']): ?>
+                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>master.png">
+            <?php endif; ?>
             <p class="title"><span>Обращайтесь к профессионалам</span></p>
             <p class="info">Оставьте онлайн заявку сейчас<br> Все остальное сделаем мы сами!</p>
             <?php
@@ -44,7 +48,7 @@ $form = ActiveForm::begin([
         </div>
         <div class="left">
             <div class="footer-logo">
-                <img src="/images/logo-footer.svg" alt="">
+                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg" alt="">
             </div>
             <p><a href="/">Ремонт кофемашин</a></p>
             <ul class="footer-menu">

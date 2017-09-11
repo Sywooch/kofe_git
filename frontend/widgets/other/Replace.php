@@ -12,8 +12,8 @@ class Replace extends Widget {
         ob_start();
         ob_implicit_flush(false);
     }
-    
-    private function getReplacement() {        
+
+    private function getReplacement() {
         $replacement = [];
         foreach ($this->params['regExp']['replacement'] as $r) {
             $replacement[] = str_replace('%s', $this->params['sitePrefix'], $r);
@@ -26,9 +26,24 @@ class Replace extends Widget {
      * Stops capturing an output and echoes cleaned result.
      */
     public function run() {
-        if (!empty($this->params))
-            echo trim(preg_replace($this->params['regExp']['pattern'], $this->getReplacement(), ob_get_clean()));
-        else
+        if (!empty($this->params)) {
+            libxml_use_internal_errors(true);
+            $html = ob_get_clean();
+            $dom = new \DomDocument();
+            $dom->loadHTML($html);
+            $xpath = new \DomXpath($dom);
+            $res = $xpath->query('//@class');
+            foreach ($res as $attr) {
+                $value = explode(' ', $attr->value);
+                foreach ($value as &$set) {
+                    if (strpos($set, 'owl') === false)
+                        $set = $this->params['sitePrefix'] . trim($set);
+                }
+                unset($set);
+                $attr->value = implode(' ', $value);
+            }
+            echo trim(preg_replace('/>\s+</', '><', html_entity_decode($dom->saveHTML(), ENT_COMPAT, 'UTF-8')));
+        } else
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
     }
 
