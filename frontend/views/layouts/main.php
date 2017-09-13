@@ -34,7 +34,9 @@ if ($siteConfig['mono'])
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
             
         <?php $this->beginBody() ?>
+        <?php if ($isHome): ?>
         <div class="bg-all">
+        <?php endif; ?>
             <?php if ($isHome && !$siteConfig['mono']): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
                 <video poster="" id="bgvid" playsinline autoplay muted loop>

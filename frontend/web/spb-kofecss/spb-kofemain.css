@@ -16,6 +16,43 @@
         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
+.will-active-m {
+    display: none;
+}
+#banner .left-img img {
+    width: 100%;
+}
+#header-sticky-wrapper {
+    height: 65px ! important;
+}
+section#photo {
+    margin-bottom: 20px;
+}
+.bg-all {
+    position: relative;
+    overflow:hidden;
+    padding-bottom: 20px;
+}
+.bg-all > img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+.bg-all video {
+    position: absolute;
+    z-index: -1;
+}
+.video .bg-all:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: block;
+    background: rgba(58, 37, 25, 0.82);
+    z-index: -1;
+    top: 0px;
+}
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
     fill:#673B14;
@@ -521,7 +558,7 @@ section#primushestva .container .title {
     width: 100%;
     text-align: center;
 }
-#primushestva .punkt div.img img {
+#primushestva .punkt div.img svg {
     width: 35%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1083,7 +1120,6 @@ input#phone2::-webkit-input-placeholder {
 }
 
 #hlebniye-kroshki ul {
-    float: left;
     margin-top: 20px;
 }
 #hlebniye-kroshki ul li {
@@ -1340,6 +1376,7 @@ section#hlebniye-kroshki {
     margin-bottom: 10px;
     line-height: 24px;
     font-family: 'NeuronExtraBold', cursive;
+    text-align: center ! important;
 }
 #zakaz form#callback-form {
     margin-top: 15px;
@@ -1412,6 +1449,7 @@ section#hlebniye-kroshki {
 }
 #tseni .prochi-uslugi h3 {
     padding-top: 20px;
+    text-align: center;
 }
 table.pricelist {
     width: 100%;
@@ -2094,7 +2132,7 @@ video {
         background-size: cover;
         transition: 1s opacity;
     }
-    .header-bg video {
+    video {
         display: none;
     }
     #links ul li {
@@ -2160,7 +2198,7 @@ video {
         width: 65%;
     }
     #banner .right-text p {
-        font-size: 12px;
+        font-size: 14px;
     }
     input#phone {
         width: 120px;
@@ -2346,7 +2384,6 @@ video {
         margin-top: 70px;
     }
     section#hlebniye-kroshki {
-        display: none;
     }
     #ask-form .container .right > img {
         display: none;
@@ -2457,8 +2494,16 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    #banner .right-text .h1 h1, #banner .full-text .h1 h1 {
+        font-size: 28px;
+    }
+    #primushestva .punkt div.img svg {
+        width: 75%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
     #footer p:nth-child(2) {
-        display: block;
+        display: nome;
     }
     .will-active-m {
         clear: both;
@@ -2466,6 +2511,9 @@ video {
     .all-contact h2 {
         font-size: 18px;
         line-height: 32px;
+    }
+    #banner {
+        margin-bottom: 0px;
     }
     #banner .all-contact p {
         margin-top: 10px;
@@ -2787,7 +2835,6 @@ video {
         width: 200px;
     }
     #hlebniye-kroshki ul {
-        float: left;
         clear: both;
         margin-bottom: 12px;
     }
