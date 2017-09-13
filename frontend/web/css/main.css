@@ -649,7 +649,7 @@ section .container .title span {
 }
 #neispravnost .punkt.contact > div {
     border: 2px solid #fff;
-    padding: 35px 25px;
+    padding: 53px 25px;
 }
 #neispravnost .punkt.contact > div div.big-text {
     font-size: 18px;
@@ -1895,7 +1895,7 @@ body.video .happy-time img.clock-w {
 }
 @media screen and (max-width: 1500px) {
     #neispravnost .punkt.contact > div {
-        padding: 14px 25px;
+        padding: 37px 25px;
     }
     .container {
         width: 980px;
