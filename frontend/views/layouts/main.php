@@ -32,80 +32,78 @@ if ($siteConfig['mono'])
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
     </head>    
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
-        <?php if ($isHome && !$siteConfig['mono']): ?>
-            <div class="header-bg">                
+            
+        <?php $this->beginBody() ?>
+        <div class="bg-all">
+            <?php if ($isHome && !$siteConfig['mono']): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
                 <video poster="" id="bgvid" playsinline autoplay muted loop>
                     <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.webm" type="video/webm">
                     <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.mp4" type="video/mp4">
                 </video>
-            </div>
-        <?php else: ?>
-            <?php if ($isHome): ?><div class="header-bg"></div><?php endif; ?>
-        <?php endif; ?>
-        <?php $this->beginBody() ?>
-        <section id="top">
-            <div class="container">
-                <ul>
-                    <li>Работаем без выходных с 08:00 до 22:00</li>
-                    <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
-                </ul>
-            </div>
-        </section>
-        <section id="header">
-            <div class="container">
-                <div class="logo">
-                    <?php if(isset($siteConfig['spb-multi'])): ?>
-                    <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
-                    <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
-                    <?php else: ?>
-                    <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a>
-                    <?php endif; ?>
-                </div>
-                <?php if ($isModelPage || $isBrandPage): ?>
-                    <div class="logo-breand">
-                        <?php
-                        if ($isModelPage) {
-                            $sql = 'select image, title from {{%pages}} where id = ' . (int) $_GET['data']['parent'] . ' and active = 1 limit 1';
-                            $brand = \Yii::$app->db->createCommand($sql)->queryOne();
-                        }
-                        ?>
-                        <span class="brand-title"><?= $isModelPage ? $brand['title'] : $_GET['data']['title'] ?></span>                        
-                    </div>
-                <?php endif; ?>
-                <div class="mobile-menu">
-                    <div class="nav-icon2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="nav">
+            <?php endif; ?>
+            <section id="top">
+                <div class="container">
                     <ul>
-                        <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
-                        <li><a href="/o-kompanii">О компании</a></li>                        
-                        <?php if($siteConfig['mono']): ?><li><a href="/models">Все модели</a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
-                        <li><a href="/kontakty">Контакты</a></li>
+                        <li>Работаем без выходных с 08:00 до 22:00</li>
+                        <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
                     </ul>
                 </div>
-                <div>
-                    <div class="tel">
-                        <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+            </section>
+            <section id="header">
+                <div class="container">
+                    <div class="logo">
+                        <?php if(isset($siteConfig['spb-multi'])): ?>
+                        <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
+                        <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
+                        <?php else: ?>
+                        <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a>
+                        <?php endif; ?>
                     </div>
-                    <div class="st-set">
-                        <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
-                        <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
+                    <?php if ($isModelPage || $isBrandPage): ?>
+                        <div class="logo-breand">
+                            <?php
+                            if ($isModelPage) {
+                                $sql = 'select image, title from {{%pages}} where id = ' . (int) $_GET['data']['parent'] . ' and active = 1 limit 1';
+                                $brand = \Yii::$app->db->createCommand($sql)->queryOne();
+                            }
+                            ?>
+                            <span class="brand-title"><?= $isModelPage ? $brand['title'] : $_GET['data']['title'] ?></span>                        
+                        </div>
+                    <?php endif; ?>
+                    <div class="mobile-menu">
+                        <div class="nav-icon2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="clear"></div>
-                    <span class="time-work">Работаем без выходных с 08:00 до 22:00</span>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
+                            <li><a href="/o-kompanii">О компании</a></li>                        
+                            <?php if($siteConfig['mono']): ?><li><a href="/models">Все модели</a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
+                            <li><a href="/kontakty">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="tel">
+                            <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                        </div>
+                        <div class="st-set">
+                            <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
+                            <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
+                        </div>
+                        <div class="clear"></div>
+                        <span class="time-work">Работаем без выходных с 08:00 до 22:00</span>
+                        <div class="clear"></div>
+                    </div>
                     <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-            </div>
-        </section>
+            </section>
         <?php
         if (!Yii::$app->user->isGuest) {
             $domain = $_SERVER['SERVER_NAME'];

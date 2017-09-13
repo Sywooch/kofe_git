@@ -16,6 +16,12 @@
         url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
+.video .bg-all {
+    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
+    background-size: 10%;
+    padding-bottom: 2px;
+}
+
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
     fill:#3163a2;
@@ -1672,16 +1678,7 @@ video {
     position: absolute;
     overflow: hidden;
 }
-.header-bg:after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    display: block;
-    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-    background-size: 10%;
-    z-index: 999;
-}
+
 
 .header-bg img {
     display: none;
@@ -2136,13 +2133,16 @@ video {
         border-left: 1px solid #e1e1e1;
     }
     #header .logo {
-        width: 65px;
+        width: 140px;
+    }
+    .time-work {
+        margin-top: -10px;
     }
     .video #banner {
         margin-top: 50px;
     }
     #banner .left-img {
-        width: 27%;
+        width: 33%;
     }
     #primushestva .punkt p {
         padding: 0px 30px;
@@ -2243,6 +2243,7 @@ video {
     }
     .is-sticky #header .logo a {
         width: 120px;
+        margin-top: 0px;
     }
     .container {
         width: 650px;
@@ -2253,7 +2254,7 @@ video {
     #banner .right-text {
         margin-right: 0%;
         width: 60%;
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .banners #banner .right-text {
         margin-right: 0%;
@@ -2269,7 +2270,7 @@ video {
         width: 150px;
     }
     #banner .left-img {
-        width: 30%;
+        width: 33%;
         margin-left: 0%;
     }
     .banners #banner .left-img {
@@ -2329,7 +2330,8 @@ video {
         width: 33%;
     }
     #header .logo {
-        width: 80px;
+        width: 125px;
+        margin-top: 0px;
     }
     input.phone {
         width: 160px;
@@ -2346,6 +2348,7 @@ video {
     }
     #header .container {
         position: relative;
+        padding-top: 10px;
     }
     #header .nav {
         position: absolute;
@@ -2433,6 +2436,11 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
+    .video .bg-all {
+        background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
+        background-size: 30%;
+        padding-bottom: 2px;
+    }
     .models-gl {
         width: 33.33333%;
     }
@@ -2477,6 +2485,7 @@ video {
     }
     #banner .right-text {
         width: 100%;
+        margin-top: 0px;
     }
     #banner .right-text .happy-time {
         min-height: 50px;
@@ -2575,6 +2584,10 @@ video {
     }
     #ask-form .container .right {
         min-height: 10px;
+    }
+    .time-work {
+        margin-top: 10px;
+        display: none;
     }
 }
 @media screen and (max-width: 540px) {
@@ -2713,7 +2726,9 @@ video {
     #zakaz .h3 {
         text-align: center;
     }
-
+    #banner .right-text{
+        padding-top: 0px;
+    }
     #neispravnost .punkt.contact {
         text-align: center;
         width: 100%;
@@ -2955,10 +2970,6 @@ video {
         float: none;
         min-height: 30px;
         clear: both;
-    }
-    .time-work {
-        margin-top: 10px;
-        display: none;
     }
     #hlebniye-kroshki ul li {
         padding: 0px 15px 0px 0px;
