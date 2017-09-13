@@ -5,6 +5,7 @@ $url = explode('/', $url);
 array_pop($url);
 $url = implode('/', $url);
 $this->title = $title;
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
@@ -65,4 +66,5 @@ $this->title = $title;
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\PopularBrands::widget(); ?>
+<?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
+<?= $siteConfig['mono'] ? \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]) : ''; ?>

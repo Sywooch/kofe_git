@@ -13,7 +13,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <h1>Ремонт кофемашин в <?= Yii::$app->session['region']['titleRod']; ?> с гарантией до 1 года!</h1>
             </div>
             <p>
-                <?= $_GET['data']['description']; ?>                
+                <?= strip_tags($_GET['data']['description'], '<p><a><img><div></span>'); ?>                
             </p>
             <div class="happy-time">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
