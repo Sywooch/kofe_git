@@ -340,7 +340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #banner .right-text .h1 {
     font-size: 40px;
     font-family: 'NeuronExtraBold', cursive;
-    color: #58b0e2;
+    color: #0c3363;
 }
 #banner .full-text .h1 {
     font-size: 40px;
@@ -486,16 +486,21 @@ section .container .title span {
     text-align: left;
     line-height: 30px;
     color: #fff;
-    margin-top: 25px;
     border-bottom: 0px;
 }
 #ask-form .container p.info {
     color: #fff;
     margin-top: 0px;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 30px;
     font-family: 'NeuronExtraBold', cursive;
     text-align: left;
+}
+#ask-formm {
+}
+#ask-formm div {
+    float: left;
+    margin-right: 10px;
 }
 #ask-form .container p {
     color: #fff;
@@ -503,6 +508,7 @@ section .container .title span {
 #ask-form .container .left p {
     color: #fff;
     margin-bottom: 0px;
+    display: none;
 }
 #ask-form .container p.data {
     position: absolute;
@@ -540,6 +546,11 @@ section#primushestva .container .title {
     text-align: center;
 }
 #primushestva .punkt div.img img {
+    width: 35%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#primushestva .punkt div.img svg {
     width: 35%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1330,7 +1341,8 @@ section#hlebniye-kroshki {
 }
 #zakaz .left {
     width: 40%;
-    background: url(../images/zakaz-bg.svg) center no-repeat;
+    background: #3163a2;
+    border-radius: 5px;
     background-size: 100%;
     float: right;
     color: #fff;
@@ -1388,8 +1400,8 @@ section#hlebniye-kroshki {
     padding-left: 20px;
 }
 .left-bar .left-menu li.active a {
-    color: #58b0e2;
-    border-bottom: 1px solid #58b0e2;
+    color: #3163a2;
+    border-bottom: 1px solid #3163a2;
 }
 .left-bar .left-menu  .other {
     font-size: 12px;
@@ -1431,6 +1443,7 @@ section#hlebniye-kroshki {
 }
 #tseni .prochi-uslugi h3 {
     padding-top: 20px;
+    text-align: center;
 }
 table.pricelist {
     width: 100%;
@@ -1695,7 +1708,7 @@ video {
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #58b0e2;
+    background: #3163a2;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1786,7 +1799,7 @@ video {
     float: right;
     width: 800px;
     box-sizing: border-box;
-    min-height: 320px;
+    min-height: 190px;
 }
 #ask-form .container .right > img {
     float: left;
@@ -1833,10 +1846,14 @@ video {
 }
 #ask-form .container .left .footer-logo {
     text-align: center;
-    margin-bottom: 20px;
+    height: 80px;
+    vertical-align: middle;
+    line-height: 80px;
 }
 #ask-form .container .left .footer-logo img {
-    width: 90%;
+    max-width: 90%;
+    max-height: 90%;
+    vertical-align: middle;
 }
 #ask-form .container .left .footer-menu {
     font-size: 14px;
@@ -1844,6 +1861,7 @@ video {
     line-height: 22px;
     padding-left: 10px;
     margin-bottom: 10px;
+    display: none;
 }
 #ask-form .container .left .footer-menu a {
     color: #fff;
@@ -1856,7 +1874,7 @@ video {
 #ask-form .container .left > a {
     color: #fff;
     margin-bottom: 20px;
-    display: block;
+    display: none;
 }
 #ask-form .container .left > p > a {
     color: #fff;
@@ -1988,18 +2006,16 @@ video {
         width: 100%;
         display: block;
         line-height: 200px;
-        opacity: 0.6;
         -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     .models-gl:hover div.img {
-        opacity: 1;
         -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     .models-gl div.img img {
         max-height: 80%;
@@ -2244,7 +2260,7 @@ video {
         width: 65%;
     }
     #banner .right-text p {
-        font-size: 12px;
+        font-size: 14px;
     }
     input#phone {
         width: 120px;
@@ -2445,7 +2461,7 @@ video {
         margin-top: 70px;
     }
     section#hlebniye-kroshki {
-        display: none;
+        
     }
     #ask-form .container .right > img {
         display: none;
@@ -2554,8 +2570,25 @@ video {
         margin-top: -35px;
         background: none;
     }
+    .owl-nav {
+        display: none ! important;
+    }
+    #ask-form .container .right {
+        min-height: 10px;
+    }
 }
 @media screen and (max-width: 540px) {
+    #banner {
+        margin-bottom: 0px;
+    }
+    .video #banner {
+        margin-bottom: 40px;
+    }
+    #primushestva .punkt div.img svg {
+        width: 75%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
     .models-gl {
         width: 50%;
         display: none;
@@ -2582,7 +2615,7 @@ video {
         border-right: 1px solid #e1e1e1;
     }
     #footer p:nth-child(2) {
-        display: block;
+        display: none;
     }
     .will-active-m {
         clear: both;
@@ -2673,6 +2706,14 @@ video {
     #ask .container > div h3 {
         text-align: center;
     }
+    #banner .right-text .h1 h1,
+    #banner .full-text .h1 h1 {
+        font-size: 28px;
+    }
+    #zakaz .h3 {
+        text-align: center;
+    }
+
     #neispravnost .punkt.contact {
         text-align: center;
         width: 100%;
@@ -2911,9 +2952,13 @@ video {
         width: 200px;
     }
     #hlebniye-kroshki ul {
-        float: left;
+        float: none;
+        min-height: 30px;
         clear: both;
-        margin-bottom: 12px;
+    }
+    .time-work {
+        margin-top: 10px;
+        display: none;
     }
     #hlebniye-kroshki ul li {
         padding: 0px 15px 0px 0px;
@@ -2946,6 +2991,10 @@ video {
     }
     #primushestva .punkt div.img img {
         width: 75%;
+    }
+    #ask-formm div {
+        float: none;
+        margin-right: 0px;
     }
 }
 

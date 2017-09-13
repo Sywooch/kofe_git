@@ -91,13 +91,19 @@ if ($siteConfig['mono'])
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="tel">
-                    <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                <div>
+                    <div class="tel">
+                        <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    </div>
+                    <div class="st-set">
+                        <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
+                        <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
+                    </div>
+                    <div class="clear"></div>
+                    <span class="time-work">Работаем без выходных с 08:00 до 22:00</span>
+                    <div class="clear"></div>
                 </div>
-                <div class="st-set">
-                    <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>telegram.png"></a>
-                    <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>vk.png"></a>
-                </div>
+                <div class="clear"></div>
             </div>
         </section>
         <?php
@@ -242,7 +248,7 @@ if ($siteConfig['mono'])
         <?= \app\widgets\forms\Ask::widget(); ?>
         <section id="footer">
             <div class="container">
-                <p> © 1999 - 2017 RemontKofe.ru</p>
+                <p> © 2010 - 2017 RemontKofe.ru</p>
                 <p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p>
                 <div class="tel">
                     <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -286,24 +292,14 @@ if ($siteConfig['mono'])
         <?= \app\widgets\forms\Order::widget(); ?>
         <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
         <?php $this->endBody() ?>
-        <script>(function(w, d, s, h, id) { w.roistatProjectId = id; w.roistatHost = h; var p = d.location.protocol == "https:" ? "https://" : "http://"; var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init"; var js = d.createElement(s); js.async = 1; js.src = p + h + u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2); })(window, document, 'script', 'cloud.roistat.com', '5c65647cc157513c77ba30d0814ea7bd');</script>
+
         <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45675441 = new Ya.Metrika({ id:45675441, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex" }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script> <noscript><div><img src="https://mc.yandex.ru/watch/45675441?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
         <!-- BEGIN JIVOSITE CODE {literal} -->
         <script type='text/javascript'>
             (function(){ var widget_id = 'AjgqSJG9aU'; var d = document; var w = window; function l(){
             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss); }if (d.readyState == 'complete'){l(); } else{if (w.attachEvent){w.attachEvent('onload', l); } else{w.addEventListener('load', l, false); }}})();</script>
         <!-- {/literal} END JIVOSITE CODE -->
-        <!-- BEGIN JIVOSITE INTEGRATION WITH ROISTAT -->
-        <script type='text/javascript'>
-            var getCookie = window.getCookie = function (name) {
-            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-            return matches ? decodeURIComponent(matches[1]) : undefined;
-            };
-            function jivo_onLoadCallback() {
-            jivo_api.setUserToken(getCookie('roistat_visit'));
-            }
-        </script>
-        <!-- END JIVOSITE INTEGRATION WITH ROISTAT --> 
+
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {

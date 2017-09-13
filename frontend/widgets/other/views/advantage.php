@@ -9,7 +9,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -24,7 +24,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -39,7 +39,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -54,7 +54,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -69,7 +69,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -84,7 +84,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -99,7 +99,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -114,7 +114,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
                 <div class="punkt">
                     <div class="img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="35%" height="35%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                              viewBox="0 0 5729 5729"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">

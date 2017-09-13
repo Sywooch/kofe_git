@@ -85,7 +85,8 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 3,
-                autoplay: false
+                autoplay: false,
+                navigation: false
             },
             600: {
                 items: 5
@@ -108,7 +109,8 @@ $(document).ready(function () {
             0: {
                 items: 1,
                 autoHeight: true,
-                autoplay: false
+                autoplay: false,
+                navigation: false
             },
             600: {
                 items: 1
