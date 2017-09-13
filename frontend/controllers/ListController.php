@@ -29,8 +29,8 @@ class ListController extends CController {
                         ]
         );
     }
-    
-    public function actionAllModels() {        
+
+    public function actionAllModels() {
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
             'content' => ''
@@ -38,8 +38,8 @@ class ListController extends CController {
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => ''
-        ]);     
-        
+        ]);
+
         return $this->render('all-models');
     }
 
@@ -61,7 +61,7 @@ class ListController extends CController {
         $h1 = '';
         $brandImage = '';
         $modelImage = '';
-        
+
         if (count($url) > 1) {
             array_pop($url);
             $page = (new \yii\db\Query())
@@ -145,8 +145,8 @@ class ListController extends CController {
         $breadcrumbs[] = $pageInfo['title'];
 
         return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2,
-            'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
-            'modelImage' => $modelImage, 'page' => (isset($page) ? $page : [])]);
+                    'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
+                    'modelImage' => $modelImage, 'page' => (isset($page) ? $page : [])]);
     }
 
     public function actionBrands() {
