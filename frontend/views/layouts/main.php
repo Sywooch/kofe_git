@@ -55,7 +55,7 @@ if ($siteConfig['mono'])
             <section id="header">
                 <div class="container">
                     <div class="logo">
-                        <?php if(isset($siteConfig['spb-multi'])): ?>
+                        <?php if(isset($siteConfig['change-logo'])): ?>
                         <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
                         <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a><?php endif; ?>
                         <?php else: ?>
