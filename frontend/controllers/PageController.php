@@ -68,18 +68,20 @@ class PageController extends CController {
 
     public function actionCss() {
         $siteConfig = self::getSiteConfig();
-        $cssFiles = [
-            'main.css',
-            'animate.css',
-            'owl.carousel.min.css',
-            'owl.theme.default.min.css',
-            'font-awesome.min.css',
-            'jquery-ui.css',
-        ];
+        $allcssFiles = [
+            '/allcss/main.css',
+            '/allcss/animate.css',
+            '/allcss/owl.carousel.min.css',            
+            '/allcss/font-awesome.min.css',
+            '/allcss/jquery-ui.css',
+            '/' . $siteConfig['sitePrefix'] . 'css/main.css',
+            '/' . $siteConfig['sitePrefix'] . 'css/owl.theme.default.min.css',
+        ];        
         $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
+        $allcssPath = Yii::getAlias('@frontend') . '/web';
         file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
-        foreach ($cssFiles as $cssFile) {
-            $css = file_get_contents($cssPath . $siteConfig['sitePrefix'] . $cssFile);
+        foreach ($allcssFiles as $cssFile) {
+            $css = file_get_contents($allcssPath . $cssFile);
             if (strpos($cssFile, 'owl') !== false) {
                 file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $css, FILE_APPEND);
             } else {

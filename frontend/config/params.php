@@ -28,5 +28,13 @@ return [
             'id' => 3,
             'sitePrefix' => 'delonghi',
         ],
+        'support-saeco' => [
+            //'spb-multi' => false,
+            'stickyMenu' => false,
+            'mono' => true,
+            'brand-id' => 13332,
+            'id' => 3,
+            'sitePrefix' => 'saeco',
+        ],
     ],
 ];
