@@ -22,7 +22,7 @@ return [
             'change-logo' => true,
         ],
         'support-delonghi' => [
-            'spb-multi' => true,
+            //'spb-multi' => true,
             'stickyMenu' => false,
             'mono' => true,
             'brand-id' => 13292,
@@ -31,7 +31,7 @@ return [
             'change-logo' => true,
         ],
         'support-saeco' => [
-            'spb-multi' => true,
+            //'spb-multi' => true,
             'stickyMenu' => false,
             'mono' => true,
             'brand-id' => 13332,
