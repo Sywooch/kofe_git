@@ -248,3 +248,32 @@ section .container .title {
     border-bottom: 2px solid #0c3363;
     color: #0c3363;
 }
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #0c3363;
+}

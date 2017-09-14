@@ -59,7 +59,7 @@ body.video {
     width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
-
+    position: relative;
 }
 
 .container a:hover {
@@ -157,9 +157,11 @@ section {
     padding-top: 30px;
 }
 .time-work {
-    float: right;
+    position: absolute;
     font-size: 12px;
-    margin-top: -32px;
+    right: 0px;
+    top: 0px;
+    margin-top: 60px;
 }
 .video .time-work {
     color: #fff;
@@ -686,23 +688,16 @@ section#neispravnost .container .title {
     font-size: 18px;
     font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
-    color: #fff;
 }
 #neispravnost .punkt.contact > div p {
-    color: #fff;
     font-size: 12px;
 }
 input#phone2 {
     background: none;
-    border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #fff;
     max-width: 134px;
     margin-bottom: 20px;
-}
-input#phone2::-webkit-input-placeholder {
-    color: #fff;
 }
 #neispravnost input.hero-form__btn {
     font-size: 12px;
@@ -2024,7 +2019,7 @@ video {
         width: 140px;
     }
     .time-work {
-        margin-top: -10px;
+        margin-top: 55px;
     }
     .video #banner {
         margin-top: 50px;
@@ -2468,7 +2463,6 @@ video {
         min-height: 10px;
     }
     .time-work {
-        margin-top: 10px;
         display: none;
     }
 }
@@ -2895,17 +2889,11 @@ video {
 
 input.phone2 {
     background: none;
-    border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #fff;
     max-width: 134px;
     margin-bottom: 20px;
 }
-input.phone2::-webkit-input-placeholder {color:#fff;}
-input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
-input.phone2:-ms-input-placeholder      {color:#fff;}
 body.models #header .logo img {
     display: none;
 }

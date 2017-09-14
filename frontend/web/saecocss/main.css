@@ -47,7 +47,7 @@
   background: #ef464d;
 }
 #primushestva .punkt .h2 {
-	color: #ef464d;
+	color: #333;
 }
 #neispravnost .punkt a .big-text {
     color: #ef464d;
@@ -112,7 +112,7 @@ input#phone:focus {
     color: #d71921;
 }
 #neispravnost .punkt a .price {
-    color: #d71921;
+    color: #e2676c;
 }
 #neispravnost .punkt a .price .new {
     background: #d71921;
@@ -211,7 +211,6 @@ table.pricelist td.order .popup-zakaz {
 
 
 
-
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         color: #d71921;
@@ -248,4 +247,33 @@ table.pricelist td.order .popup-zakaz {
 section .container .title {
     border-bottom: 2px solid #bf161e;
     color: #bf161e;
+}
+
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #bf161e;
+}
+#neispravnost .punkt.contact > div p {
+    color: #bf161e;
+}
+
+input#phone2 {
+    border: 1px solid #bf161e;
+    color: #bf161e;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #bf161e;
+}
+
+input.phone2 {
+    border: 1px solid #bf161e;
+    color: #bf161e;
+}
+input.phone2::-webkit-input-placeholder {color:#bf161e;}
+input.phone2::-moz-placeholder          {color:#bf161e;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#bf161e;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#bf161e;}
+
+#scroller{
+    background: #bf161e;
 }
