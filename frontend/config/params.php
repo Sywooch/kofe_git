@@ -21,7 +21,7 @@ return [
             'sitePrefix' => 'spb-kofe',
         ],
         'support-delonghi' => [
-            //'spb-multi' => false,
+            'spb-multi' => true,
             'stickyMenu' => false,
             'mono' => true,
             'brand-id' => 13292,
@@ -29,7 +29,7 @@ return [
             'sitePrefix' => 'delonghi',
         ],
         'support-saeco' => [
-            //'spb-multi' => false,
+            'spb-multi' => true,
             'stickyMenu' => false,
             'mono' => true,
             'brand-id' => 13332,

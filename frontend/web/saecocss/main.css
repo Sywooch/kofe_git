@@ -1,0 +1,251 @@
+#neispravnost .punkt.promo {
+    background: url(../saecoimages/saecopromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../saecoimages/saecocontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../saecoimages/saecobgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #d71921 url(../saecoimages/saecobg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #d71921 url(../saecoimages/saecobg-footer.svg);
+    background-size: 180px;
+}
+#header .logo {
+	margin-top: 0px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#ef464d;
+}
+.time-work {
+    color: #ef464d;
+}
+#header .nav ul li a {
+    color: #ef464d;
+}
+.tel .phone {
+    color: #ef464d;
+}
+.tel .phone:hover {
+    color: #ef464d;
+}
+.tel .phone:before {
+		background: #ef464d;
+}
+#banner .full-text .h1 {
+	color: #ef464d;
+}
+.hero-form__btn {
+  border: 1px solid #ef464d;
+  background: #ef464d;
+}
+#primushestva .punkt .h2 {
+	color: #ef464d;
+}
+#neispravnost .punkt a .big-text {
+    color: #ef464d;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #ef464d;
+}
+.more a {
+    color: #ef464d;
+    border: 1px solid #ef464d;
+}
+#zakaz .left {
+    background: #ef464d;
+}
+.left-bar .left-menu li.active a {
+    color: #ef464d;
+    border-bottom: 1px solid #ef464d;
+}
+.nav-icon2 span {
+    background: #ef464d;
+}
+#ask-form .container .right button {
+    border: 1px solid #ef464d;
+    background: #ef464d;
+}
+
+
+
+.container a {
+    color: #d71921;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #d71921;
+}
+#banner .right-text ul li:before {
+    background: #d71921;
+}
+input#phone {
+    border: 1px solid #d71921;
+}
+input.phone {
+    border: 1px solid #d71921;
+}
+input#phone:focus {
+    border: 1px solid #d71921;
+}
+.hero-form__btn:hover {
+    background: #d71921;
+    border: 1px solid #d71921;
+}
+#banner .right-text .happy-time p {
+	color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #d71921;
+}
+#primushestva .punkt:hover .h2 {
+    color: #d71921;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #d71921;
+}
+#neispravnost .punkt a .price {
+    color: #d71921;
+}
+#neispravnost .punkt a .price .new {
+    background: #d71921;
+}
+#neispravnost .punkt a ul li:before {
+    background: #d71921;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #d71921;
+}
+.more a:hover {
+    background: #d71921;
+    color: #fff;
+    border: 1px solid #d71921;
+}
+#footer {
+    background: #d71921;
+}
+#footer .tel .phone:before {
+    color: #d71921;
+}
+.popup .wight div.close {
+    background-color: #d71921;
+}
+#hlebniye-kroshki ul li {
+    color: #d71921;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #d71921;
+}
+.pagination li:hover {
+    background: #d71921;
+}
+.pagination li.active a {
+    color: #d71921;
+}
+.left-bar .left-menu {
+    border: 4px solid #d71921;
+}
+.left-bar .left-menu li a {
+    color: #d71921;
+}
+.left-bar .left-menu li a:hover {
+    color: #d71921;
+}
+.left-bar .left-menu  .other {
+	background: #d71921;
+}
+table.pricelist td {
+    color: #d71921;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #d71921;
+}
+#bran .brands .row:hover div {
+    color: #d71921;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #d71921;
+}
+#bran .brands .row ul li:hover a {
+    color: #d71921;
+}
+.more div {
+    color: #d71921;
+    border: 1px solid #d71921;
+}
+.more div:hover {
+    background: #d71921;
+    border: 1px solid #d71921;
+}
+#links ul li a {
+    color: #d71921;
+}
+#links ul li a:hover {
+    color: #d71921;
+}
+#ask-form .container .right button:hover {
+    background: #d71921;
+}
+.ui-autocomplete-input {
+    border: 1px solid #d71921;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #d71921;
+    border-bottom: 1px solid #d71921;
+}
+.all-contact h2 span.active {
+    background: #d71921;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #d71921;
+}
+
+
+
+
+
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #d71921;
+    }
+}
+@media screen and (max-width: 830px) {
+	#header .nav {
+        background: #d71921;
+	}
+}
+
+
+
+@media screen and (max-width: 680px) {
+		.video .bg-all {
+        background: #d71921 url(../saecoimages/saecobg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+		#neispravnost .punkt.promo {
+        background: url(../saecoimages/saecopromobg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #d71921;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #bf161e;
+}
+section .container .title {
+    border-bottom: 2px solid #bf161e;
+    color: #bf161e;
+}

@@ -17,14 +17,11 @@
     font-weight:normal;font-style:normal
 }
 .video .bg-all {
-    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-    background-size: 10%;
     padding-bottom: 2px;
 }
 
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
-    fill:#3163a2;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -64,9 +61,7 @@ body.video {
     box-sizing: border-box;
 
 }
-.container a {
-    color: #58b0e2;
-}
+
 .container a:hover {
     color: #333;
 }
@@ -162,7 +157,6 @@ section {
     padding-top: 30px;
 }
 .time-work {
-    color: #3163a2;
     float: right;
     font-size: 12px;
     margin-top: -32px;
@@ -179,6 +173,7 @@ section {
 }
 #header .logo img {
     vertical-align: middle;
+    max-width: 100%;
 }
 #header .nav {
     float: left;
@@ -211,7 +206,6 @@ section {
 }
 
 #header .nav ul li a {
-    color: #3163a2;
     text-transform: uppercase;
     font-size: 14px;
     position: relative;
@@ -222,32 +216,25 @@ section {
 }
 
 
-#header .nav ul li.active a:after,
-#header .nav ul li a:hover:after {
-    background: #58b0e2;
-}
+
 #header .tel {
     float: right;
     margin-top: 0px;
 }
 .tel .phone {
     font-size: 20px;
-    color: #3163a2;
     line-height: 26px;
     font-weight: 700;
 }
 .video .tel .phone {
     color: #fff;
 }
-.tel .phone:hover {
-    color: #3163a2;
-}
+
 .tel .phone:before {
     content:"\f095";
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #3163a2;
     color: #fff;
     text-align: center;
     padding-top: 5px;
@@ -346,12 +333,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #banner .right-text .h1 {
     font-size: 40px;
     font-family: 'NeuronExtraBold', cursive;
-    color: #0c3363;
 }
 #banner .full-text .h1 {
     font-size: 40px;
     font-family: 'Lobster', cursive;
-    color: #3163a2;
 }
 #banner .right-text ul {
     padding-top: 30px;
@@ -369,7 +354,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     height: 5px;
     display: block;
     position: absolute;
-    background: #58b0e2;
     left: 0px;
     top: 45%;
     border-radius: 50%;
@@ -383,7 +367,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     float: left;
 }
 input#phone {
-    border: 1px solid #58b0e2;
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 16px;
@@ -395,7 +378,6 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border: 1px solid #58b0e2;
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 16px;
@@ -415,26 +397,17 @@ input.phone {
 .popup .hero-form__btn {
     width: 130px;
 }
-input#phone:focus {
-    border: 1px solid #58b0e2;
-}
 input#phone::-webkit-input-placeholder {
     font-size: 12px;
 }
 .hero-form__btn {
     width: 167px;
     height: 36px;
-    border: 1px solid #3163a2;
-    background: #3163a2;
     border-radius: 3px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     outline: none;
-}
-.hero-form__btn:hover {
-    background: #58b0e2;
-    border: 1px solid #58b0e2;
 }
 #banner .right-text .happy-time {
     margin-bottom: 35px;
@@ -444,13 +417,9 @@ input#phone::-webkit-input-placeholder {
     font-size: 22px;
     font-family: 'NeuronExtraBold', cursive;
     font-weight: bold;
-    color: #58b0e2;
     margin: 0px;
     margin-bottom: 30px;
     width: 100%;
-}
-#banner .right-text .happy-time p span {
-    color: #58b0e2;
 }
 .happy-time img {
     width: 48px;
@@ -477,10 +446,8 @@ section .container .title {
     font-size: 26px;
     margin-bottom: 15px;
     font-family: 'NeuronExtraBold', cursive;
-    border-bottom: 2px solid #0c3363;
     padding-bottom: 10px;
     width: 40%;
-    color: #0c3363;
 }
 section .container .title span {
     font-weight: bold;
@@ -567,7 +534,6 @@ section#primushestva .container .title {
     font-size: 20px;
     margin-top: 0px;
     font-weight: bold;
-    color: #3163a2;
     font-family: 'NeuronExtraBold', cursive;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
@@ -576,7 +542,6 @@ section#primushestva .container .title {
     transition: all 0.3s ease-in-out;
 }
 #primushestva .punkt:hover .h2 {
-    color: #58b0e2;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -640,10 +605,6 @@ section#neispravnost .container .title {
     font-size: 18px;
     font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
-    color: #3163a2;
-}
-#neispravnost .punkt a:hover .big-text {
-    color: #58b0e2;
 }
 #neispravnost .punkt a ul {
     margin-top: 20px;
@@ -655,7 +616,6 @@ section#neispravnost .container .title {
     color: #333;
 }
 #neispravnost .punkt a .price {
-    color: #58b0e2;
     font-weight: bold;
     font-size: 18px;
     position: absolute;
@@ -664,7 +624,6 @@ section#neispravnost .container .title {
     white-space: nowrap;
 }
 #neispravnost .punkt a .price .new {
-    background: #58b0e2;
     color: #fff;
     border-radius: 2px;
     padding: 5px 10px;
@@ -694,25 +653,11 @@ section#neispravnost .container .title {
     border-radius: 50%;
     margin: 7px 0 0 -10px;
     overflow: hidden;
-    background: #58b0e2;
 }
-#neispravnost .punkt.promo {
-    background: url(../delonghiimages/delonghipromo_bg.jpg);
-}
+
 #neispravnost .punkt.promo a {
-    border: 8px solid #3163a2;
     min-height: 194px;
 } 
-/*#neispravnost .punkt.promo a:after {
-        content: ' ';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 240px;
-  height: 80%;
-  background: url(../images/promo-bg.png) no-repeat;
-  background-size: 100%;
-}*/
 #neispravnost .punkt.promo:after {
     color: rgba(255, 255, 255, 0.18);
 }
@@ -724,13 +669,10 @@ section#neispravnost .container .title {
 #neispravnost .punkt.promo a ul li:before,
 #neispravnost .punkt.promo a .price .new {
     background: #fff;
-    color: #58b0e2;
 }
 
 #neispravnost .punkt.contact {
-    background: url(../delonghiimages/delonghicontect-bg2.jpg);
     padding: 8px;
-    background-position: right;
     width: 50%;
 }
 #neispravnost .punkt.contact input.hero-form__btn {
@@ -775,15 +717,8 @@ input#phone2::-webkit-input-placeholder {
 .more a {
     display: inline-block;
     font-size: 14px;
-    color: #3163a2;
     border-radius: 2px;
     padding: 8px 25px;
-    border: 1px solid #3163a2;
-}
-.more a:hover {
-    background: #58b0e2;
-    color: #fff;
-    border: 1px solid #58b0e2;
 }
 #brands .container {
     padding: 20px 15px 20px 15px;
@@ -812,7 +747,6 @@ input#phone2::-webkit-input-placeholder {
     transition: all 0.3s ease-in-out;
 }
 #skidka {
-    background: url(../delonghiimages/delonghibg-sale.jpg) center no-repeat;
     min-height: 330px;
 }
 #skidka .container {
@@ -862,7 +796,6 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
 }
 #footer {
-    background: #58b0e2;
     position: relative;
     min-height: 35px;
     display: none;
@@ -898,7 +831,6 @@ input#phone2::-webkit-input-placeholder {
     padding-top: 0px;
     display: block;
     background: #fff;
-    color: #58b0e2;
     text-align: center;
     line-height: 26px;
     font-size: 16px;
@@ -1017,7 +949,6 @@ input#phone2::-webkit-input-placeholder {
     text-align: center;
 }
 .popup .wight div.close {
-    background-color: #58b0e2;
     color: white;
     border: none;
     box-shadow: none;
@@ -1125,7 +1056,6 @@ input#phone2::-webkit-input-placeholder {
     float: left;
     padding: 5px 15px;
     font-size: 12px;
-    color: #58b0e2;
     position: relative;
 }
 #hlebniye-kroshki ul li:first-child {
@@ -1136,7 +1066,6 @@ input#phone2::-webkit-input-placeholder {
     color: #333;
 }
 #hlebniye-kroshki ul li a:hover {
-    color: #58b0e2;
     text-decoration: underline;
 }
 #hlebniye-kroshki ul li:after {
@@ -1320,15 +1249,11 @@ section#hlebniye-kroshki {
     line-height: 31px;
 }
 .pagination li:hover {
-    background: #58b0e2;
     color: #fff;
 }
 .pagination li a {
     line-height: 31px;
     color: #333;
-}
-.pagination li.active a {
-    color: #58b0e2;
 }
 .pagination li:hover a {
     color: #fff;
@@ -1347,7 +1272,6 @@ section#hlebniye-kroshki {
 }
 #zakaz .left {
     width: 40%;
-    background: #3163a2;
     border-radius: 5px;
     background-size: 100%;
     float: right;
@@ -1391,28 +1315,21 @@ section#hlebniye-kroshki {
 .left-bar .left-menu {
     width: 100%;
     background: #fff;
-    border: 4px solid #58b0e2;
 }
 .left-bar .left-menu li a {
     padding: 15px 10px;
     display: block;
     font-size: 14px;
-    color: #58b0e2;
     border-bottom: 1px solid #F6F2EF;
     border-top: 1px solid #EFEFEF;
 }
 .left-bar .left-menu li a:hover {
-    color: #58b0e2;
     padding-left: 20px;
 }
-.left-bar .left-menu li.active a {
-    color: #3163a2;
-    border-bottom: 1px solid #3163a2;
-}
+
 .left-bar .left-menu  .other {
     font-size: 12px;
     padding: 15px;
-    background: #58b0e2;
 }
 .left-bar .left-menu  .other a {
     width: 100%;
@@ -1461,7 +1378,6 @@ table.pricelist td {
     padding: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #58b0e2;
 }
 .prochi-uslugi tr {
     float: left;
@@ -1479,7 +1395,6 @@ table.pricelist td.price {
 }
 table.pricelist td.order .popup-zakaz {
     color: #fff;
-    background: #58b0e2;
     padding: 5px 10px;
     border-radius: 3px;
     float: right;
@@ -1554,9 +1469,7 @@ table.pricelist td.order .popup-zakaz:hover {
     font-family: 'NeuronExtraBold', cursive;
     color: rgba(51, 51, 51, 0.57);
 }
-#bran .brands .row:hover div {
-    color: #58b0e2;
-}
+
 #bran .brands .row:hover {}
 #bran .brands .row ul {
     width: 90%;
@@ -1585,11 +1498,7 @@ table.pricelist td.order .popup-zakaz:hover {
     text-align: left;
 }
 #bran .brands .row ul li:hover {
-    border: 1px solid #58b0e2;
     box-sizing: border-box;
-}
-#bran .brands .row ul li:hover a {
-    color: #58b0e2;
 }
 
 #banner .more {
@@ -1599,15 +1508,11 @@ table.pricelist td.order .popup-zakaz:hover {
 .more div {
     display: inline-block;
     font-size: 14px;
-    color: #58b0e2;
     border-radius: 2px;
     padding: 8px 25px;
-    border: 1px solid #58b0e2;
 }
 .more div:hover {
-    background: #58b0e2;
     color: #fff;
-    border: 1px solid #58b0e2;
     cursor: pointer;
 }
 #map {
@@ -1648,14 +1553,11 @@ table.pricelist td.order .popup-zakaz:hover {
     width: 100%;
     padding: 20px 10px;
     display: block;
-    color: #58b0e2;
     font-size: 14px;
     box-sizing: border-box;
 
 }
-#links ul li a:hover {
-    color: #58b0e2;
-}
+
 video { 
     position: absolute;
     top: 50%;
@@ -1705,7 +1607,6 @@ video {
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #3163a2;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1783,11 +1684,7 @@ video {
     left: calc(50% - 2px);
     top: 14px;
 }
-#ask-form {
-    box-sizing: border-box;
-    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-    background-size: 180px;
-}
+
 #ask-form .container {
     padding-top: 20px;
     position: relative;
@@ -1821,8 +1718,6 @@ video {
 #ask-form .container .right button {
     width: auto;
     height: 36px;
-    border: 1px solid #3163a2;
-    background: #3163a2;
     border-radius: 3px;
     color: #fff;
     font-size: 16px;
@@ -1833,7 +1728,6 @@ video {
 }
 #ask-form .container .right button:hover {
     border: 1px solid #fff;
-    background: #58b0e2;
     color: #ffffff;
 }
 #ask-form .container .left {
@@ -1912,7 +1806,6 @@ video {
     display: none;
 }
 .ui-autocomplete-input {
-    border: 1px solid #58b0e2;
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 14px;
@@ -1932,8 +1825,6 @@ video {
     padding: 5px;
 }
 .ui-menu .ui-menu-item:hover {
-    background: #58b0e2;
-    border-bottom: 1px solid #58b0e2;
     color: #fff;
 }
 .all-contact {
@@ -1959,9 +1850,6 @@ video {
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 5px;
-}
-.all-contact h2 span.active {
-    background: #58b0e2;
 }
 .all-contact.active {
     display: block;
@@ -2207,7 +2095,6 @@ video {
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         padding-left: 10px;
-        color: #58b0e2;
     }
 }
 @media screen and (max-width: 830px) {
@@ -2353,7 +2240,6 @@ video {
     #header .nav {
         position: absolute;
         float: none;
-        background: #58b0e2;
         width: 100%;
         z-index: 99999;
         box-sizing: border-box;
@@ -2436,11 +2322,7 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
-    .video .bg-all {
-        background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-        background-size: 30%;
-        padding-bottom: 2px;
-    }
+
     .models-gl {
         width: 33.33333%;
     }
@@ -2684,10 +2566,7 @@ video {
     #zakaz .right span {
         text-align: center;
     }
-    #neispravnost .punkt.promo {
-        background: url(../delonghiimages/delonghipromo_bg.jpg);
-        background-position: 0px 0px;
-    }
+    
     table.pricelist td {
         font-size: 11px;
         padding: 5px;
@@ -2920,7 +2799,6 @@ video {
         height: 540px;
     }
     input.phone {
-        border: 1px solid #58b0e2;
         border-radius: 3px;
         padding: 5px 15px;
         font-size: 16px;
@@ -3098,7 +2976,6 @@ body.models .logo-breand {
     font-size: 14px;
 }
 #otzvi .otziv .h3 {
-    border-bottom: 1px solid #58b0e2;
     padding-bottom: 10px;
     width: 35%;
     margin-bottom: 5px;
@@ -3180,47 +3057,4 @@ body.models .logo-breand {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-.color {
-    position: fixed;
-    z-index: 99999999;
-    left: 0;
-    top: 50%;
-}
-.color div {
-    width: 30px;
-    height: 30px;
-    display: block;
-}
-.color div:nth-child(1) {
-    background: #fff;
-}
-.color div:nth-child(2) {
-    background: #3163a2;
-}
-.color div:nth-child(3) {
-    background: #bac9df;
-}
-.color div:nth-child(4) {
-    background: #58b0e2;
-}
-.color div:nth-child(5) {
-    background: #58b0e2;
-}
-.color div:nth-child(6) {
-    background: #eae7de;
-}
-.color div:nth-child(7) {
-    background: #c7a17a;
 }
