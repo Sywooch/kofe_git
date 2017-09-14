@@ -67,6 +67,7 @@ class PageController extends CController {
     }
 
     public function actionCss() {
+        set_time_limit(0);
         $siteConfig = self::getSiteConfig();
         $allcssFiles = [
             '/allcss/main.css',
@@ -102,6 +103,7 @@ class PageController extends CController {
     }
 
     public function actionJs() {
+        set_time_limit(0);
         $siteConfig = self::getSiteConfig();
         $jsFiles = [
             'jquery.js',

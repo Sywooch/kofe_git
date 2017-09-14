@@ -189,8 +189,22 @@ class ListController extends CController {
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         //$h1 = '';
-        $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by id limit 1';
+        $sql = 'SELECT p.image            
+                    FROM
+                        `yu_specs` s
+                    LEFT JOIN yu_pages p ON p.id = s.model_id
+                    WHERE
+                        s.spec_name LIKE \'%Тип%\'
+                    AND s.spec_value LIKE \'%эспрессо%\'
+                    AND s.spec_value LIKE \'%автоматическое%\'
+                    AND p.parent = ' . (int) $pageInfo['id'] . '
+                    ORDER BY
+                            p.sort limit 1;';
         $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $pageInfo['id']])->queryOne();
+        if (empty($model)) {
+            $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by id limit 1';
+            $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $pageInfo['id']])->queryOne();
+        }
 
         return $this->render('brand', ['pageInfo' => $pageInfo, 'model' => $model, 'title' => $title]);
     }

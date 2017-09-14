@@ -49,7 +49,7 @@ $this->title = $title;
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\ModelSpecs::widget(); ?>
+<?= \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]); ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
