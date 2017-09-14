@@ -19,6 +19,7 @@ return [
             'mono' => false,
             'id' => 2,
             'sitePrefix' => 'spb-kofe',
+            'change-logo' => true,
         ],
         'support-delonghi' => [
             'spb-multi' => true,
@@ -27,6 +28,7 @@ return [
             'brand-id' => 13292,
             'id' => 3,
             'sitePrefix' => 'delonghi',
+            'change-logo' => true,
         ],
         'support-saeco' => [
             'spb-multi' => true,
@@ -35,6 +37,7 @@ return [
             'brand-id' => 13332,
             'id' => 3,
             'sitePrefix' => 'saeco',
+            'change-logo' => true,
         ],
     ],
 ];
