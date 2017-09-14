@@ -1,4 +1,7 @@
-<?php $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : ''; ?>
+<?php 
+$prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
+$siteConfig = app\components\CController::getSiteConfig();
+?>
 <section id="neispravnost">
     <div class="container">
         <p class="title"><span>Выберите </span> неисправность</p>
@@ -61,6 +64,6 @@ $form = ActiveForm::begin([
             </div>
             <div class="clear"></div>
         </div>
-        <span class="more"><a href="/uslugi-i-ceny">Все услуги и цены</a></span>
+        <?php if(!$siteConfig['mono']): ?><span class="more"><a href="/uslugi-i-ceny">Все услуги и цены</a></span><?php endif; ?>
     </div>
 </section>
