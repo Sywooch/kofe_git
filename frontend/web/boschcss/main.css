@@ -1,0 +1,286 @@
+#neispravnost .punkt.promo {
+    background: url(../boschimages/boschpromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../boschimages/boschcontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../boschimages/boschbgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #013b69 url(../boschimages/boschbg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #013b69 url(../boschimages/boschbg-footer.svg);
+    background-size: 180px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#215f8b;
+}
+.time-work {
+    color: #215f8b;
+}
+#header .nav ul li a {
+    color: #215f8b;
+}
+.tel .phone {
+    color: #215f8b;
+}
+.tel .phone:hover {
+    color: #215f8b;
+}
+.tel .phone:before {
+        background: #215f8b;
+}
+#banner .full-text .h1 {
+    color: #215f8b;
+}
+.hero-form__btn {
+  border: 1px solid #215f8b;
+  background: #215f8b;
+}
+#primushestva .punkt .h2 {
+    color: #215f8b;
+}
+#neispravnost .punkt a .big-text {
+    color: #215f8b;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #215f8b;
+}
+.more a {
+    color: #215f8b;
+    border: 1px solid #215f8b;
+}
+#zakaz .left {
+    background: #215f8b;
+}
+.left-bar .left-menu li.active a {
+    color: #215f8b;
+    border-bottom: 1px solid #215f8b;
+}
+.nav-icon2 span {
+    background: #215f8b;
+}
+#ask-form .container .right button {
+    border: 1px solid #215f8b;
+    background: #215f8b;
+}
+
+
+.container a {
+    color: #013b69;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #013b69;
+}
+#banner .right-text ul li:before {
+    background: #013b69;
+}
+input#phone {
+    border: 1px solid #013b69;
+}
+input.phone {
+    border: 1px solid #013b69;
+}
+input#phone:focus {
+    border: 1px solid #013b69;
+}
+.hero-form__btn:hover {
+    background: #013b69;
+    border: 1px solid #013b69;
+}
+#banner .right-text .happy-time p {
+    color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #013b69;
+}
+#primushestva .punkt:hover .h2 {
+    color: #013b69;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #013b69;
+}
+#neispravnost .punkt a .price {
+    color: #e2676c;
+}
+#neispravnost .punkt a .price .new {
+    background: #013b69;
+}
+#neispravnost .punkt a ul li:before {
+    background: #013b69;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #013b69;
+}
+.more a:hover {
+    background: #013b69;
+    color: #fff;
+    border: 1px solid #013b69;
+}
+#footer {
+    background: #013b69;
+}
+#footer .tel .phone:before {
+    color: #013b69;
+}
+.popup .wight div.close {
+    background-color: #013b69;
+}
+#hlebniye-kroshki ul li {
+    color: #013b69;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #013b69;
+}
+.pagination li:hover {
+    background: #013b69;
+}
+.pagination li.active a {
+    color: #013b69;
+}
+.left-bar .left-menu {
+    border: 4px solid #013b69;
+}
+.left-bar .left-menu li a {
+    color: #013b69;
+}
+.left-bar .left-menu li a:hover {
+    color: #013b69;
+}
+.left-bar .left-menu  .other {
+    background: #013b69;
+}
+table.pricelist td {
+    color: #013b69;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #013b69;
+}
+#bran .brands .row:hover div {
+    color: #013b69;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #013b69;
+}
+#bran .brands .row ul li:hover a {
+    color: #013b69;
+}
+.more div {
+    color: #013b69;
+    border: 1px solid #013b69;
+}
+.more div:hover {
+    background: #013b69;
+    border: 1px solid #013b69;
+}
+#links ul li a {
+    color: #013b69;
+}
+#links ul li a:hover {
+    color: #013b69;
+}
+#ask-form .container .right button:hover {
+    background: #013b69;
+}
+.ui-autocomplete-input {
+    border: 1px solid #013b69;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #013b69;
+    border-bottom: 1px solid #013b69;
+}
+.all-contact h2 span.active {
+    background: #013b69;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #013b69;
+}
+
+
+
+
+
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #013b69;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #013b69;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+        .video .bg-all {
+        background: #013b69 url(../boschimages/boschbg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+        #neispravnost .punkt.promo {
+        background: url(../boschimages/boschpromo_bg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #013b69;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #0c3363;
+}
+section .container .title {
+    border-bottom: 2px solid #0c3363;
+    color: #0c3363;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #0c3363;
+}
+
+.options h3 {
+    color: #0c3363;
+}
+#header .logo {
+        margin-top: 0px;
+}

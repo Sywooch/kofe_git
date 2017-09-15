@@ -1,0 +1,286 @@
+#neispravnost .punkt.promo {
+    background: url(../philipsimages/philipspromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../philipsimages/philipscontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../philipsimages/philipsbgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #0066a1 url(../philipsimages/philipsbg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #0066a1 url(../philipsimages/philipsbg-footer.svg);
+    background-size: 180px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#3182b1;
+}
+.time-work {
+    color: #3182b1;
+}
+#header .nav ul li a {
+    color: #3182b1;
+}
+.tel .phone {
+    color: #3182b1;
+}
+.tel .phone:hover {
+    color: #3182b1;
+}
+.tel .phone:before {
+        background: #3182b1;
+}
+#banner .full-text .h1 {
+    color: #3182b1;
+}
+.hero-form__btn {
+  border: 1px solid #3182b1;
+  background: #3182b1;
+}
+#primushestva .punkt .h2 {
+    color: #3182b1;
+}
+#neispravnost .punkt a .big-text {
+    color: #3182b1;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #3182b1;
+}
+.more a {
+    color: #3182b1;
+    border: 1px solid #3182b1;
+}
+#zakaz .left {
+    background: #3182b1;
+}
+.left-bar .left-menu li.active a {
+    color: #3182b1;
+    border-bottom: 1px solid #3182b1;
+}
+.nav-icon2 span {
+    background: #3182b1;
+}
+#ask-form .container .right button {
+    border: 1px solid #3182b1;
+    background: #3182b1;
+}
+
+
+.container a {
+    color: #0066a1;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #0066a1;
+}
+#banner .right-text ul li:before {
+    background: #0066a1;
+}
+input#phone {
+    border: 1px solid #0066a1;
+}
+input.phone {
+    border: 1px solid #0066a1;
+}
+input#phone:focus {
+    border: 1px solid #0066a1;
+}
+.hero-form__btn:hover {
+    background: #0066a1;
+    border: 1px solid #0066a1;
+}
+#banner .right-text .happy-time p {
+    color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #0066a1;
+}
+#primushestva .punkt:hover .h2 {
+    color: #0066a1;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #0066a1;
+}
+#neispravnost .punkt a .price {
+    color: #e2676c;
+}
+#neispravnost .punkt a .price .new {
+    background: #0066a1;
+}
+#neispravnost .punkt a ul li:before {
+    background: #0066a1;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #0066a1;
+}
+.more a:hover {
+    background: #0066a1;
+    color: #fff;
+    border: 1px solid #0066a1;
+}
+#footer {
+    background: #0066a1;
+}
+#footer .tel .phone:before {
+    color: #0066a1;
+}
+.popup .wight div.close {
+    background-color: #0066a1;
+}
+#hlebniye-kroshki ul li {
+    color: #0066a1;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #0066a1;
+}
+.pagination li:hover {
+    background: #0066a1;
+}
+.pagination li.active a {
+    color: #0066a1;
+}
+.left-bar .left-menu {
+    border: 4px solid #0066a1;
+}
+.left-bar .left-menu li a {
+    color: #0066a1;
+}
+.left-bar .left-menu li a:hover {
+    color: #0066a1;
+}
+.left-bar .left-menu  .other {
+    background: #0066a1;
+}
+table.pricelist td {
+    color: #0066a1;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #0066a1;
+}
+#bran .brands .row:hover div {
+    color: #0066a1;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #0066a1;
+}
+#bran .brands .row ul li:hover a {
+    color: #0066a1;
+}
+.more div {
+    color: #0066a1;
+    border: 1px solid #0066a1;
+}
+.more div:hover {
+    background: #0066a1;
+    border: 1px solid #0066a1;
+}
+#links ul li a {
+    color: #0066a1;
+}
+#links ul li a:hover {
+    color: #0066a1;
+}
+#ask-form .container .right button:hover {
+    background: #0066a1;
+}
+.ui-autocomplete-input {
+    border: 1px solid #0066a1;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #0066a1;
+    border-bottom: 1px solid #0066a1;
+}
+.all-contact h2 span.active {
+    background: #0066a1;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #0066a1;
+}
+
+
+
+
+
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #0066a1;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #0066a1;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+        .video .bg-all {
+        background: #0066a1 url(../philipsimages/philipsbg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+        #neispravnost .punkt.promo {
+        background: url(../philipsimages/philipspromo_bg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #0066a1;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #0066a1;
+}
+section .container .title {
+    border-bottom: 2px solid #0066a1;
+    color: #0066a1;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #0066a1;
+}
+
+.options h3 {
+    color: #0066a1;
+}
+#header .logo {
+        margin-top: 4px;
+}

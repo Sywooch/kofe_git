@@ -277,3 +277,7 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 #scroller{
     background: #0c3363;
 }
+
+.options h3 {
+	color: #0c3363;
+}

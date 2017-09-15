@@ -838,7 +838,6 @@ input#phone2 {
     position: fixed;
     right: 46px;
     bottom: 50%;
-    background: #2e5690;
     color: #fff;
     line-height: 46px;
     text-align: center;
@@ -3045,4 +3044,19 @@ body.models .logo-breand {
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.harakteristiki {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #e1e1e1;
+}
+.harakteristiki .name {
+    width: 40%;
+    color: #333;
+}
+.harakteristiki .op {
+    width: 40%;
+    color: #333;
 }

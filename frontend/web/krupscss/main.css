@@ -1,0 +1,308 @@
+#neispravnost .punkt.promo {
+    background: url(../krupsimages/krupspromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../krupsimages/krupscontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../krupsimages/krupsbgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #333 url(../krupsimages/krupsbg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #333 url(../krupsimages/krupsbg-footer.svg);
+    background-size: 180px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#525352;
+}
+.time-work {
+    color: #525352;
+}
+#header .nav ul li a {
+    color: #525352;
+}
+.tel .phone {
+    color: #525352;
+}
+.tel .phone:hover {
+    color: #525352;
+}
+.tel .phone:before {
+        background: #525352;
+}
+#banner .full-text .h1 {
+    color: #525352;
+}
+.hero-form__btn {
+  border: 1px solid #525352;
+  background: #525352;
+}
+#primushestva .punkt .h2 {
+    color: #525352;
+}
+#neispravnost .punkt a .big-text {
+    color: #525352;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #525352;
+}
+.more a {
+    color: #525352;
+    border: 1px solid #525352;
+}
+#zakaz .left {
+    background: #525352;
+}
+.left-bar .left-menu li.active a {
+    color: #525352;
+    border-bottom: 1px solid #525352;
+}
+.nav-icon2 span {
+    background: #525352;
+}
+#ask-form .container .right button {
+    border: 1px solid #525352;
+    background: #525352;
+}
+
+
+.container a {
+    color: #333;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #333;
+}
+#banner .right-text ul li:before {
+    background: #333;
+}
+input#phone {
+    border: 1px solid #333;
+}
+input.phone {
+    border: 1px solid #333;
+}
+input#phone:focus {
+    border: 1px solid #333;
+}
+.hero-form__btn:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#banner .right-text .happy-time p {
+    color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #333;
+}
+#primushestva .punkt:hover .h2 {
+    color: #333;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #333;
+}
+#neispravnost .punkt a .price {
+    color: #e2676c;
+}
+#neispravnost .punkt a .price .new {
+    background: #333;
+}
+#neispravnost .punkt a ul li:before {
+    background: #333;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #333;
+}
+.more a:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+#footer {
+    background: #333;
+}
+#footer .tel .phone:before {
+    color: #333;
+}
+.popup .wight div.close {
+    background-color: #333;
+}
+#hlebniye-kroshki ul li {
+    color: #333;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #333;
+}
+.pagination li:hover {
+    background: #333;
+}
+.pagination li.active a {
+    color: #333;
+}
+.left-bar .left-menu {
+    border: 4px solid #333;
+}
+.left-bar .left-menu li a {
+    color: #333;
+}
+.left-bar .left-menu li a:hover {
+    color: #333;
+}
+.left-bar .left-menu  .other {
+    background: #333;
+}
+table.pricelist td {
+    color: #333;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #333;
+}
+#bran .brands .row:hover div {
+    color: #333;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #333;
+}
+#bran .brands .row ul li:hover a {
+    color: #333;
+}
+.more div {
+    color: #333;
+    border: 1px solid #333;
+}
+.more div:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#links ul li a {
+    color: #333;
+}
+#links ul li a:hover {
+    color: #333;
+}
+#ask-form .container .right button:hover {
+    background: #333;
+}
+.ui-autocomplete-input {
+    border: 1px solid #333;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #333;
+    border-bottom: 1px solid #333;
+}
+.all-contact h2 span.active {
+    background: #333;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #333;
+}
+
+
+#header .logo {
+        margin-top: 0px;
+}
+
+#neispravnost .punkt.promo a .big-text, #neispravnost .punkt.promo a ul li, #neispravnost .punkt.promo a .price {
+    color: #333;
+}
+
+#skidka .container {
+    color: #525352;
+}
+#skidka .more div {
+    border: #525352 1px solid;
+    color: #525352;
+}
+#skidka .more div:hover {
+    color: #fff;
+}
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #333;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #333;
+    }
+    #header .nav ul li a, .is-sticky #header .nav ul li a {
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid #4c525e;
+    }
+    #header .logo {
+        margin-top: 15px;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+        .video .bg-all {
+        background: #333 url(../krupsimages/krupsbg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+        #neispravnost .punkt.promo {
+        background: url(../krupsimages/krupspromobg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #333;
+    }
+    #footer {
+        background: none;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #333;
+}
+section .container .title {
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #333;
+}
+
+.options h3 {
+    color: #333;
+}
