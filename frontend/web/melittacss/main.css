@@ -9,66 +9,66 @@
     background: url(../melittaimages/melittabgsale.jpg) center no-repeat;
 }
 .video .bg-all {
-    background: #690101 url(../melittaimages/melittabg-footer.svg);
+    background: #5c5c5c url("../borkimages/borkbg-footer.svg");
     background-size: 10%;
 }
 #ask-form {
     box-sizing: border-box;
-    background: #690101 url(../melittaimages/melittabg-footer.svg);
+    background: #5c5c5c url("../borkimages/borkbg-footer.svg");
     background-size: 180px;
 }
 
 #primushestva .punkt .fil1 {
-    fill:#ed1d24;
+    fill:#d00c0e;
 }
 .time-work {
-    color: #ed1d24;
+    color: #333;
 }
 #header .nav ul li a {
-    color: #ed1d24;
+    color: #d00c0e;
 }
 .tel .phone {
-    color: #ed1d24;
+    color: #333;
 }
 .tel .phone:hover {
-    color: #ed1d24;
+    color: #d00c0e;
 }
 .tel .phone:before {
-        background: #ed1d24;
+        background: #d00c0e;
 }
 #banner .full-text .h1 {
-    color: #ed1d24;
+    color: #d00c0e;
 }
 .hero-form__btn {
-  border: 1px solid #ed1d24;
-  background: #ed1d24;
+  border: 1px solid #d00c0e;
+  background: #d00c0e;
 }
 #primushestva .punkt .h2 {
-    color: #ed1d24;
+    color: #d00c0e;
 }
 #neispravnost .punkt a .big-text {
-    color: #ed1d24;
+    color: #d00c0e;
 }
 #neispravnost .punkt.promo a {
-    border: 8px solid #ed1d24;
+    border: 8px solid #d00c0e;
 }
 .more a {
-    color: #ed1d24;
-    border: 1px solid #ed1d24;
+    color: #d00c0e;
+    border: 1px solid #d00c0e;
 }
 #zakaz .left {
-    background: #ed1d24;
+    background: #d00c0e;
 }
 .left-bar .left-menu li.active a {
-    color: #ed1d24;
-    border-bottom: 1px solid #ed1d24;
+    color: #d00c0e;
+    border-bottom: 1px solid #d00c0e;
 }
 .nav-icon2 span {
-    background: #ed1d24;
+    background: #d00c0e;
 }
 #ask-form .container .right button {
-    border: 1px solid #ed1d24;
-    background: #ed1d24;
+    border: 1px solid #d00c0e;
+    background: #d00c0e;
 }
 
 
