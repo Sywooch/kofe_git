@@ -1,0 +1,315 @@
+#neispravnost .punkt.promo {
+    background: url(../simonelliimages/simonellipromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../simonelliimages/simonellicontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../simonelliimages/simonellibgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #d82f3e url(../simonelliimages/simonellibg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #d82f3e url(../simonelliimages/simonellibg-footer.svg);
+    background-size: 180px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#d82f3e;
+}
+.time-work {
+    color: #333;
+}
+#header .nav ul li a {
+    color: #d82f3e;
+}
+.tel .phone {
+    color: #333;
+}
+.tel .phone:hover {
+    color: #333;
+}
+.tel .phone:before {
+        background: #fff;
+        color: #333;
+}
+#banner .full-text .h1 {
+    color: #333;
+}
+.hero-form__btn {
+  border: 1px solid #333;
+  background: #333;
+}
+#primushestva .punkt .h2 {
+    color: #333;
+}
+#neispravnost .punkt a .big-text {
+    color: #333;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #333;
+}
+.more a {
+    color: #333;
+    border: 1px solid #333;
+}
+#zakaz .left {
+    background: #333;
+}
+.left-bar .left-menu li.active a {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+.nav-icon2 span {
+    background: #333;
+}
+#ask-form .container .right button {
+    border: 1px solid #333;
+    background: #333;
+}
+
+
+.container a {
+    color: #d82f3e;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #d82f3e;
+}
+#banner .right-text ul li:before {
+    background: #d82f3e;
+}
+input#phone {
+    border: 1px solid #d82f3e;
+}
+input.phone {
+    border: 1px solid #d82f3e;
+}
+input#phone:focus {
+    border: 1px solid #d82f3e;
+}
+.hero-form__btn:hover {
+    background: #d82f3e;
+    border: 1px solid #d82f3e;
+}
+#banner .right-text .happy-time p {
+    color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #d82f3e;
+}
+#primushestva .punkt:hover .h2 {
+    color: #d82f3e;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #d82f3e;
+}
+#neispravnost .punkt a .price {
+    color: #e2676c;
+}
+#neispravnost .punkt a .price .new {
+    background: #d82f3e;
+}
+#neispravnost .punkt a ul li:before {
+    background: #d82f3e;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #d82f3e;
+}
+.more a:hover {
+    background: #d82f3e;
+    color: #fff;
+    border: 1px solid #d82f3e;
+}
+#footer {
+    background: #d82f3e;
+}
+#footer .tel .phone:before {
+    color: #d82f3e;
+}
+.popup .wight div.close {
+    background-color: #d82f3e;
+}
+#hlebniye-kroshki ul li {
+    color: #d82f3e;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #d82f3e;
+}
+.pagination li:hover {
+    background: #d82f3e;
+}
+.pagination li.active a {
+    color: #d82f3e;
+}
+.left-bar .left-menu {
+    border: 4px solid #d82f3e;
+}
+.left-bar .left-menu li a {
+    color: #d82f3e;
+}
+.left-bar .left-menu li a:hover {
+    color: #d82f3e;
+}
+.left-bar .left-menu  .other {
+    background: #d82f3e;
+}
+table.pricelist td {
+    color: #d82f3e;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #d82f3e;
+}
+#bran .brands .row:hover div {
+    color: #d82f3e;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #d82f3e;
+}
+#bran .brands .row ul li:hover a {
+    color: #d82f3e;
+}
+.more div {
+    color: #d82f3e;
+    border: 1px solid #d82f3e;
+}
+.more div:hover {
+    background: #d82f3e;
+    border: 1px solid #d82f3e;
+}
+#links ul li a {
+    color: #d82f3e;
+}
+#links ul li a:hover {
+    color: #d82f3e;
+}
+#ask-form .container .right button:hover {
+    background: #d82f3e;
+}
+.ui-autocomplete-input {
+    border: 1px solid #d82f3e;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #d82f3e;
+    border-bottom: 1px solid #d82f3e;
+}
+.all-contact h2 span.active {
+    background: #d82f3e;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #d82f3e;
+}
+
+
+#header .logo {
+        margin-top: 0px;
+        width: 150px;
+}
+#skidka .container {
+    color: #d82f3e;
+}
+#skidka .more div {
+    border: #d82f3e 1px solid;
+    color: #d82f3e;
+}
+#skidka .more div:hover {
+    color: #fff;
+}
+#neispravnost .punkt.promo a .big-text,
+#neispravnost .punkt.promo a ul li,
+#neispravnost .punkt.promo a .price {
+    color: #fff;
+}
+
+
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #d82f3e;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #d82f3e;
+    }
+    #header .nav ul li a, .is-sticky #header .nav ul li a {
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid #4c525e;
+            color: #fff;
+    }
+    #header .logo {
+        margin-top: 8px;
+        width: 150px;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+        .video .bg-all {
+        background: #d82f3e url(../simonelliimages/simonellibg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+        #neispravnost .punkt.promo {
+        background: url(../simonelliimages/simonellipromobg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #d82f3e;
+    }
+    #footer {
+        background: none;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #d82f3e;
+}
+section .container .title {
+    border-bottom: 2px solid #d82f3e;
+    color: #d82f3e;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #d82f3e;
+}
+
+.options h3 {
+    color: #d82f3e;
+}

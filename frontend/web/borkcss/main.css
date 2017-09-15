@@ -1,0 +1,315 @@
+#neispravnost .punkt.promo {
+    background: url(../borkimages/borkpromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../borkimages/borkcontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    background: url(../borkimages/borkbgsale.jpg) center no-repeat;
+}
+.video .bg-all {
+    background: #5c5c5c url(../borkimages/borkbg-footer.svg);
+    background-size: 10%;
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #5c5c5c url(../borkimages/borkbg-footer.svg);
+    background-size: 180px;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#5c5c5c;
+}
+.time-work {
+    color: #333;
+}
+#header .nav ul li a {
+    color: #5c5c5c;
+}
+.tel .phone {
+    color: #333;
+}
+.tel .phone:hover {
+    color: #333;
+}
+.tel .phone:before {
+        background: #fff;
+        color: #333;
+}
+#banner .full-text .h1 {
+    color: #333;
+}
+.hero-form__btn {
+  border: 1px solid #333;
+  background: #333;
+}
+#primushestva .punkt .h2 {
+    color: #333;
+}
+#neispravnost .punkt a .big-text {
+    color: #333;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #333;
+}
+.more a {
+    color: #333;
+    border: 1px solid #333;
+}
+#zakaz .left {
+    background: #333;
+}
+.left-bar .left-menu li.active a {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+.nav-icon2 span {
+    background: #333;
+}
+#ask-form .container .right button {
+    border: 1px solid #333;
+    background: #333;
+}
+
+
+.container a {
+    color: #5c5c5c;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #5c5c5c;
+}
+#banner .right-text ul li:before {
+    background: #5c5c5c;
+}
+input#phone {
+    border: 1px solid #5c5c5c;
+}
+input.phone {
+    border: 1px solid #5c5c5c;
+}
+input#phone:focus {
+    border: 1px solid #5c5c5c;
+}
+.hero-form__btn:hover {
+    background: #5c5c5c;
+    border: 1px solid #5c5c5c;
+}
+#banner .right-text .happy-time p {
+    color: #fff;
+}
+#banner .right-text .happy-time p span {
+    color: #5c5c5c;
+}
+#primushestva .punkt:hover .h2 {
+    color: #5c5c5c;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #5c5c5c;
+}
+#neispravnost .punkt a .price {
+    color: #e2676c;
+}
+#neispravnost .punkt a .price .new {
+    background: #5c5c5c;
+}
+#neispravnost .punkt a ul li:before {
+    background: #5c5c5c;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #5c5c5c;
+}
+.more a:hover {
+    background: #5c5c5c;
+    color: #fff;
+    border: 1px solid #5c5c5c;
+}
+#footer {
+    background: #5c5c5c;
+}
+#footer .tel .phone:before {
+    color: #5c5c5c;
+}
+.popup .wight div.close {
+    background-color: #5c5c5c;
+}
+#hlebniye-kroshki ul li {
+    color: #5c5c5c;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #5c5c5c;
+}
+.pagination li:hover {
+    background: #5c5c5c;
+}
+.pagination li.active a {
+    color: #5c5c5c;
+}
+.left-bar .left-menu {
+    border: 4px solid #5c5c5c;
+}
+.left-bar .left-menu li a {
+    color: #5c5c5c;
+}
+.left-bar .left-menu li a:hover {
+    color: #5c5c5c;
+}
+.left-bar .left-menu  .other {
+    background: #5c5c5c;
+}
+table.pricelist td {
+    color: #5c5c5c;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #5c5c5c;
+}
+#bran .brands .row:hover div {
+    color: #5c5c5c;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #5c5c5c;
+}
+#bran .brands .row ul li:hover a {
+    color: #5c5c5c;
+}
+.more div {
+    color: #5c5c5c;
+    border: 1px solid #5c5c5c;
+}
+.more div:hover {
+    background: #5c5c5c;
+    border: 1px solid #5c5c5c;
+}
+#links ul li a {
+    color: #5c5c5c;
+}
+#links ul li a:hover {
+    color: #5c5c5c;
+}
+#ask-form .container .right button:hover {
+    background: #5c5c5c;
+}
+.ui-autocomplete-input {
+    border: 1px solid #5c5c5c;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #5c5c5c;
+    border-bottom: 1px solid #5c5c5c;
+}
+.all-contact h2 span.active {
+    background: #5c5c5c;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #5c5c5c;
+}
+
+
+#header .logo {
+        margin-top: 0px;
+        width: 150px;
+}
+#skidka .container {
+    color: #5c5c5c;
+}
+#skidka .more div {
+    border: #5c5c5c 1px solid;
+    color: #5c5c5c;
+}
+#skidka .more div:hover {
+    color: #fff;
+}
+#neispravnost .punkt.promo a .big-text,
+#neispravnost .punkt.promo a ul li,
+#neispravnost .punkt.promo a .price {
+    color: #fff;
+}
+
+
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #5c5c5c;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #5c5c5c;
+    }
+    #header .nav ul li a, .is-sticky #header .nav ul li a {
+            border-bottom: 1px solid #fff;
+            border-top: 1px solid #4c525e;
+            color: #fff;
+    }
+    #header .logo {
+        margin-top: 8px;
+        width: 150px;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+        .video .bg-all {
+        background: #5c5c5c url(../borkimages/borkbg-footer.svg);
+        background-size: 30%;
+    }
+}
+@media screen and (max-width: 540px) {
+        #neispravnost .punkt.promo {
+        background: url(../borkimages/borkpromobg.jpg);
+        background-position: 0px 0px;
+    }
+    input.phone {
+        border: 1px solid #5c5c5c;
+    }
+    #footer {
+        background: none;
+    }
+}
+
+
+#banner .right-text .h1 {
+    color: #5c5c5c;
+}
+section .container .title {
+    border-bottom: 2px solid #5c5c5c;
+    color: #5c5c5c;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #5c5c5c;
+}
+
+.options h3 {
+    color: #5c5c5c;
+}
