@@ -70,7 +70,9 @@ class CController extends \yii\web\Controller {
     }
 
     public function setRegion($regionID) {
+        $siteConfig = self::getSiteConfig();
         $regions = Yii::$app->params['regions'];
+        $regions[$regionID]['phone'] = $siteConfig['phone-' . $regionID];        
         Yii::$app->session['region'] = $regions[$regionID];
         if (Yii::$app->session['region'] === $regions[$regionID])
             return true;

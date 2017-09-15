@@ -58,11 +58,15 @@ class SeoController extends Controller {
     public function actionCreate($url) {
         $model = new Seo();
         $model->url = $url;
+        
         $m = $this->findModelbyUrl($url);
 
         if ($m !== null)
             return $this->redirect(['seo/update', 'url' => $url, 'id' => 0]);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->site_id = $_GET['site_id'];
+            $model->save();
+            
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

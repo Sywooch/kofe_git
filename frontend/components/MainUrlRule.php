@@ -24,6 +24,7 @@ class MainUrlRule extends UrlRule {
     }
 
     public function parseRequest($manager, $request) {
+        $replaceUrl = Yii::$app->params['replace-url'];
         $pathInfo = strtolower($request->getPathInfo());
         if (empty($pathInfo))
             $pathInfo = '/';
@@ -54,8 +55,19 @@ class MainUrlRule extends UrlRule {
     }
 
     private function getPage($url) {
+        $siteConfig = self::getSiteConfig();
         $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
-        return Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        
+        return $page;
+    }
+    
+    public static function getSiteConfig() {
+        $host = Yii::$app->request->hostInfo;
+        $hostArr = explode('.', $host);
+        $ad = '.' . end($hostArr);
+        $host = str_replace([$ad, 'http://', 'https://'], '', $host);
+        return Yii::$app->params['siteConfigs'][$host];
     }
 
 }

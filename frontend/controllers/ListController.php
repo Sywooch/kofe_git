@@ -45,10 +45,11 @@ class ListController extends CController {
 
     public function actionService() {
         $pageInfo = $_GET['data'];
+        $siteConfig = self::getSiteConfig();
         $seo = (new \yii\db\Query())
                 ->select(['*'])
                 ->from('{{%seo}}')
-                ->where(['url' => Yii::$app->request->pathInfo])
+                ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
                 ->limit(1)
                 ->one();
         $title = '';
@@ -127,7 +128,7 @@ class ListController extends CController {
                     $seoText = 'Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' кофемашин - быстро, качественно с гарантией.';
                 }
             } else {
-                $seoText = $pageInfo['text'];
+                $seoText = $seo['meta_text1'];
             }
         }
 
