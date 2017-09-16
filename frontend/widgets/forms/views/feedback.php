@@ -1,6 +1,7 @@
 <?php 
 $assets = Yii::getAlias('@web'); 
 $regions = \Yii::$app->params['regions'];
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="<?= $class; ?>">
     <div class="call-widget__right-col">

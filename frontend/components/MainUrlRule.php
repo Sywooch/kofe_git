@@ -24,12 +24,21 @@ class MainUrlRule extends UrlRule {
     }
 
     public function parseRequest($manager, $request) {
-        $replaceUrl = Yii::$app->params['replace-url'];
+        $siteConfig = self::getSiteConfig();
         $pathInfo = strtolower($request->getPathInfo());
+        $arrayUrl = explode('/', $pathInfo);
+        if ($siteConfig['mono']) {
+            if (strpos($pathInfo, 'remont-kofemashin-') !== false)
+                return ['site/error', []];
+            $replaceUrl = Yii::$app->params['replace-url'];
+            $brand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();            
+            $pathInfo = str_replace($replaceUrl, $brand['url'] . '/', $pathInfo);            
+        }
+
         if (empty($pathInfo))
             $pathInfo = '/';
 
-        $arrayUrl = explode('/', $pathInfo);
+        
         $serv = $this->checkToService(end($arrayUrl));
         if (!empty($serv))
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
@@ -74,7 +83,7 @@ class MainUrlRule extends UrlRule {
         }
         return $page;
     }
-    
+
     public static function getSiteConfig() {
         $host = Yii::$app->request->hostInfo;
         $hostArr = explode('.', $host);

@@ -1,7 +1,11 @@
 <?php
 $assets = Yii::getAlias('@web');
-$this->title = $page['meta_title'];
 $siteConfig = app\components\CController::getSiteConfig();
+if ($siteConfig['mono'])
+    $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт кофемашин ' . \app\components\CController::$monoBrand['title'] . ' в Москве срочно и по лучшим ценам!';
+else {
+    $this->title = $page['meta_title'];
+}
 ?>
 <section id="banner">
     <div class="container">
@@ -10,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
         <div class="right-text">
             <div class="h1">
-                <h1>Ремонт кофемашин в <?= Yii::$app->session['region']['titleRod']; ?> с гарантией до 1 года!</h1>
+                <h1>Ремонт кофемашин<?= $siteConfig['mono'] ? ' ' . \app\components\CController::$monoBrand['title'] : ''; ?> в <?= Yii::$app->session['region']['titleRod']; ?> с гарантией до 1 года!</h1>
             </div>
             <p>
                 <?= strip_tags($_GET['data']['description'], '<p><a><img><div></span>'); ?>                
@@ -38,7 +42,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 </section>
 <section id="text-block">
     <div class="container">
-        <?= $_GET['data']['full_description']; ?>        
+        <?= strip_tags($_GET['data']['full_description'], '<p><a><img><div></span>'); ?>        
     </div>
     <span class="more"><div>Читать далее</div></span>
 </section>

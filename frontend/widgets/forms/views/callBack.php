@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
 
+$siteConfig = app\components\CController::getSiteConfig();
 $form = ActiveForm::begin([
             'id' => 'callback-form',
             'options' => ['class' => 'global-form'],
@@ -19,7 +20,8 @@ $validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, 
                         yaCounter45675441.reachGoal(\"$metrika\");
                     }
                 });";
-$this->registerJs($validatejs, $position);
+if (!$siteConfig['mono'])
+    $this->registerJs($validatejs, $position);
 ?> 
 <?=
 

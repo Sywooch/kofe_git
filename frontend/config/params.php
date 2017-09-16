@@ -27,7 +27,7 @@ return [
             'change-logo' => true,
         ],
         'support-delonghi' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -38,7 +38,7 @@ return [
             'change-logo' => true,
         ],
         'support-saeco' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -49,7 +49,7 @@ return [
             'change-logo' => true,
         ],
         'philips-coffee-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -60,7 +60,7 @@ return [
             'change-logo' => true,
         ],
         'service-jura' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -71,7 +71,7 @@ return [
             'change-logo' => true,
         ],
         'support-bosch' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -82,7 +82,7 @@ return [
             'change-logo' => true,
         ],
         'service-krups' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -93,7 +93,7 @@ return [
             'change-logo' => true,
         ],
         'support-melitta' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -104,7 +104,7 @@ return [
             'change-logo' => true,
         ],
         'service-nivona' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -115,7 +115,7 @@ return [
             'change-logo' => true,
         ],
         'service-siemens' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -126,7 +126,7 @@ return [
             'change-logo' => true,
         ],
         'support-gaggia' => [
-           'phone-1' => '8 (499) 450-90-08',
+           'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -137,7 +137,7 @@ return [
             'change-logo' => true,
         ],
         'wmf-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -147,8 +147,8 @@ return [
             'sitePrefix' => 'wmf',
             'change-logo' => true,
         ],
-        'la-chimbali-remont' => [
-            'phone-1' => '8 (499) 450-90-08',
+        'la-cimbali-center' => [
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -159,7 +159,7 @@ return [
             'change-logo' => true,
         ],
         'schaerer-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -169,8 +169,8 @@ return [
             'sitePrefix' => 'schaerer',
             'change-logo' => true,
         ],
-        'frankie-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+        'franke-service-center' => [
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -181,7 +181,7 @@ return [
             'change-logo' => true,
         ],
         'remont-faema' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -192,7 +192,7 @@ return [
             'change-logo' => true,
         ],
         'support-miele' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -203,7 +203,7 @@ return [
             'change-logo' => true,
         ],
         'rancilio-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -214,7 +214,7 @@ return [
             'change-logo' => true,
         ],
         'nuova-simonelli-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -225,7 +225,7 @@ return [
             'change-logo' => true,
         ],
         'bork-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -236,7 +236,7 @@ return [
             'change-logo' => true,
         ],
         'promac-service' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
             'stickyMenu' => false,
@@ -247,7 +247,7 @@ return [
             'change-logo' => true,
         ],
         'support-delonghi-spb' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             'spb' => true,
             'stickyMenu' => false,

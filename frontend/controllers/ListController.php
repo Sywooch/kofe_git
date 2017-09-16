@@ -63,6 +63,22 @@ class ListController extends CController {
         $brandImage = '';
         $modelImage = '';
 
+        if ($siteConfig['mono']) {
+            $sql = 'SELECT p.image            
+                    FROM
+                        `yu_specs` s
+                    LEFT JOIN yu_pages p ON p.id = s.model_id
+                    WHERE
+                        s.spec_name LIKE \'%Тип%\'
+                    AND s.spec_value LIKE \'%эспрессо%\'
+                    AND s.spec_value LIKE \'%автоматическое%\'
+                    AND p.parent = ' . (int) self::$monoBrand['id'] . '
+                    ORDER BY
+                            p.sort limit 1;';
+            $model = \Yii::$app->db->createCommand($sql)->queryOne();
+            $modelImage = $model['image'];
+        }
+
         if (count($url) > 1) {
             array_pop($url);
             $page = (new \yii\db\Query())
@@ -120,10 +136,16 @@ class ListController extends CController {
         } else {
             if (empty($seo['meta_text1'])) {
                 if ($pageInfo['type'] == 2) {
+                    if ($siteConfig['mono']) {
+                        $h1 = 'Кофемашина ' . self::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8');
+                    }
                     $metaDesc = 'Если кофемашина ' . mb_strtolower($pageInfo['title'], 'utf8') . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $title = $pageInfo['title'] . ' кофемашина в ' . Yii::$app->session['region']['titleRod'];
                     $seoText = 'Если кофемашина ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  кофемашин мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели кофемашин  производства.';
                 } else {
+                    if ($siteConfig['mono']) {
+                        $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . self::$monoBrand['title'];
+                    }
                     $title = $pageInfo['title'] . ' кофемашин. Ремонт кофемашин в СЦ';
                     $seoText = 'Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' кофемашин - быстро, качественно с гарантией.';
                 }
@@ -177,6 +199,9 @@ class ListController extends CController {
     }
 
     public function actionBrand() {
+        $siteConfig = self::getSiteConfig();
+        if ($siteConfig['mono'])
+            throw new NotFoundHttpException('The requested page does not exist.');
         $pageInfo = $_GET['data'];
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
