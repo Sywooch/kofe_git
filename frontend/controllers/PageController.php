@@ -72,12 +72,12 @@ class PageController extends CController {
         $allcssFiles = [
             '/allcss/main' . (isset($siteConfig['spb']) ? '_1' : '') . '.css',
             '/allcss/animate.css',
-            '/allcss/owl.carousel.min.css',            
+            '/allcss/owl.carousel.min.css',
             '/allcss/font-awesome.min.css',
             '/allcss/jquery-ui.css',
             '/' . $siteConfig['sitePrefix'] . 'css/main.css',
             '/' . $siteConfig['sitePrefix'] . 'css/owl.theme.default.min.css',
-        ];        
+        ];
         $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
         $allcssPath = Yii::getAlias('@frontend') . '/web';
         file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
@@ -125,6 +125,45 @@ class PageController extends CController {
     }
 
     public function actionSitemap2() {
+
+        $siteConfig = self::getSiteConfig();
+
+        if ($siteConfig['mono']) {
+            set_time_limit(0);
+            ini_set("memory_limit", '1024M');
+            ini_set("display_errors", false);
+            error_reporting(false);
+            $hostname = Yii::$app->request->hostInfo;
+            $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+            $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND (parent = ' . self::$monoBrand['id'] . ' OR id = ' . self::$monoBrand['id'] . ')';
+            $pages = Yii::$app->db->createCommand($sql)->queryAll();
+            $url = $xmlIndex->addChild('url');
+            $url->addChild('loc', $hostname);
+            $url->addChild('lastmod', date("Y-m-d", time()));
+            $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1';
+            $services = Yii::$app->db->createCommand($sql)->queryAll();
+            foreach ($pages as $page) {
+                $url = $xmlIndex->addChild('url');
+                $url->addChild('loc', $hostname . '/' . $page['url']);
+                $url->addChild('lastmod', date("Y-m-d", time()));
+                if ($page['type'] == 'model' || $page['type'] == 'brand') {
+                    foreach ($services as $service) {
+                        $urlService = $xmlIndex->addChild('url');
+                        $urlService->addChild('loc', $hostname . '/' . $page['url'] . '/' . $service['url']);
+                        $urlService->addChild('lastmod', date("Y-m-d", time()));
+                    }
+                }
+            }
+            foreach ($services as $service) {
+                $url = $xmlIndex->addChild('url');
+                $url->addChild('loc', $hostname . '/' . $service['url']);
+                $url->addChild('lastmod', date("Y-m-d", time()));
+            }
+            header('content-type:text/xml');
+            echo $xmlIndex->asXML();
+            exit;
+        }
+
         $path = Yii::getAlias('@frontend') . '/web/uploads/';
         $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' ORDER BY id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();

@@ -1,7 +1,11 @@
 <?php
 $assets = Yii::getAlias('@web');
-$this->title = $page['meta_title'];
 $siteConfig = app\components\CController::getSiteConfig();
+if ($siteConfig['mono'])
+    $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт кофемашин ' . \app\components\CController::$monoBrand['title'] . ' в Москве срочно и по лучшим ценам!';
+else {
+    $this->title = $page['meta_title'];
+}
 ?>
 <section id="banner">
     <div class="container">

@@ -25,6 +25,7 @@ class MainUrlRule extends UrlRule {
 
     public function parseRequest($manager, $request) {
         $replaceUrl = Yii::$app->params['replace-url'];
+        
         $pathInfo = strtolower($request->getPathInfo());
         if (empty($pathInfo))
             $pathInfo = '/';
