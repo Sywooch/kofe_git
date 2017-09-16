@@ -72,7 +72,7 @@ class CController extends \yii\web\Controller {
     public function setRegion($regionID) {
         $siteConfig = self::getSiteConfig();
         $regions = Yii::$app->params['regions'];
-        $regions[$regionID]['phone'] = $siteConfig['phone-' . $regionID];        
+        $regions[$regionID]['phone'] = $siteConfig['phone-' . $regionID];
         Yii::$app->session['region'] = $regions[$regionID];
         if (Yii::$app->session['region'] === $regions[$regionID])
             return true;
@@ -92,6 +92,14 @@ class CController extends \yii\web\Controller {
     }
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
+        $userIP = Yii::$app->getRequest()->getUserIP();
+        $connection = Yii::$app->db;
+        $connection->createCommand()->insert('yu_orders', [
+            'phone' => $phone,
+            'date' => date('Y-m-d H:i:s'),
+            'ip' => $userIP,
+            'site' => 'remontkofe.ru',
+        ])->execute();
         $roistatData = array(
             'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
             'key' => 'NTc2Njc6NTQzMjg6ZjcwODJmMzM1ODgyZDQ5MDdiYWFlNGQxY2ZlZDk4OWE=', // Замените SECRET_KEY на секретный ключ в разделе Каталог интеграций -> Ваша CRM -> Настройки -> Ключ для интеграции.
