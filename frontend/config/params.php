@@ -169,7 +169,7 @@ return [
             'sitePrefix' => 'schaerer',
             'change-logo' => true,
         ],
-        'franke-service' => [
+        'franke-service-center' => [
             'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
