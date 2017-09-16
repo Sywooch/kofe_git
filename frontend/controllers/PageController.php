@@ -135,7 +135,7 @@ class PageController extends CController {
             error_reporting(false);
             $hostname = Yii::$app->request->hostInfo;
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
-            $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND (parent = ' . self::$monoBrand['id'] . ' OR id = ' . self::$monoBrand['id'] . ')';
+            $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND (parent = ' . self::$monoBrand['id'] . ')';
             $pages = Yii::$app->db->createCommand($sql)->queryAll();
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);
@@ -144,6 +144,7 @@ class PageController extends CController {
             $services = Yii::$app->db->createCommand($sql)->queryAll();
             foreach ($pages as $page) {
                 $url = $xmlIndex->addChild('url');
+                $page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
                 $url->addChild('loc', $hostname . '/' . $page['url']);
                 $url->addChild('lastmod', date("Y-m-d", time()));
                 if ($page['type'] == 'model' || $page['type'] == 'brand') {

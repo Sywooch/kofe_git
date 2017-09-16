@@ -5,6 +5,7 @@ namespace app\widgets\lists;
 use yii\base\Widget;
 use yii\helpers\Html;
 use app\components\CController;
+use Yii;
 
 class Models extends Widget {
 
@@ -14,6 +15,7 @@ class Models extends Widget {
     public $mono = false;
 
     public function run() {
+        $siteConfig = CController::getSiteConfig();
         if (!$this->mono) {
             $sql = 'select id, title, url, image from {{%pages}} where parent =:parent and type =:type and active = 1 order by title' . ($this->mono ? ' limit 15' : '');
         } else {
@@ -38,6 +40,8 @@ class Models extends Widget {
         $sortedRows = [];
         $searches = [];
         foreach ($rows as $row) {
+            if ($siteConfig['mono'])
+                $row['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $row['url']);
             $searches[] = array(
                 'value' => $row['title'], 'url' => $row['url']
             );

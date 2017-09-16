@@ -1,5 +1,6 @@
 <?php
 $assets = Yii::getAlias('@web');
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section id="bran">
     <div class="container">
@@ -19,10 +20,15 @@ $assets = Yii::getAlias('@web');
         </p>
         <div class="brands in">
             <?php foreach ($sortedBrands as $latter => $brands): ?>
+
                 <div class="row">
                     <div class="symbol"><?= $latter; ?></div>
                     <ul>
                         <?php foreach ($brands as $brand): ?>
+                            <?php
+                            if ($siteConfig['mono'])
+                                $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
+                            ?>
                             <li class="bold"><a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a></li>
                             <?php endforeach; ?>
                     </ul>

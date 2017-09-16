@@ -7,7 +7,7 @@
         use yii\helpers\Html;
         use yii\widgets\ActiveForm;
         use yii\widgets\MaskedInput;
-
+$siteConfig = app\components\CController::getSiteConfig();
 $form = ActiveForm::begin([
                     'id' => 'order-form',
                     'options' => ['class' => 'global-form'],
@@ -22,6 +22,7 @@ $form = ActiveForm::begin([
                         yaCounter45675441.reachGoal(\"popup-prices\");
                     }
                 });";
+        if (!$siteConfig['mono'])
         $this->registerJs($validatejs, $position);
         ?> 
         <?=

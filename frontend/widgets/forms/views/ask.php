@@ -29,7 +29,8 @@ $form = ActiveForm::begin([
                         yaCounter45675441.reachGoal(\"ask-form\");
                     }
                 });";
-            $this->registerJs($validatejs, $position);
+            if (!$siteConfig['mono'])
+                $this->registerJs($validatejs, $position);
             ?>
 
             <?=
@@ -59,7 +60,7 @@ $form = ActiveForm::begin([
                     <li><a href="/remont-kofemashin-saeco">Ремонт кофемашин Saeco</a></li>
                     <li><a href="/brendy">Все ремонтируемые бренды</a></li>
                 </ul>            
-            <a href="/kontakty">Наши Контакты</a>
+                <a href="/kontakty">Наши Контакты</a>
             <?php endif; ?>
             <div class="tel"><a class="phone moskva" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
         </div>
