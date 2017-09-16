@@ -199,6 +199,9 @@ class ListController extends CController {
     }
 
     public function actionBrand() {
+        $siteConfig = self::getSiteConfig();
+        if ($siteConfig['mono'])
+            throw new NotFoundHttpException('The requested page does not exist.');
         $pageInfo = $_GET['data'];
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
