@@ -114,11 +114,11 @@ if ($siteConfig['mono'])
                     if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
                         echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. мета теги, тайтл и т.д.</a>';
                     } else {
-                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. мета теги, тайтл и т.д.</a>';
+                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. мета теги, тайтл и т.д.</a><br>';
                         echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. услугу</a>';
                     }
                 } else {
-                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. мета теги, тайтл и т.д.</a>';
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. мета теги, тайтл и т.д.</a><br>';
                     if (!empty($_GET['data']))
                         echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. страницу</a>';
                 }

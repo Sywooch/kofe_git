@@ -26,7 +26,7 @@ class CController extends \yii\web\Controller {
         $userIP = Yii::$app->getRequest()->getUserIP();
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
-        if (isset($siteConfig['spb-multi'])) {
+        if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
             $this->setRegion(2);
         }
         if ($siteConfig['mono'])
