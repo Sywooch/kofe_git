@@ -44,14 +44,17 @@ if ($siteConfig['mono'])
                     <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.mp4" type="video/mp4">
                 </video>
             <?php endif; ?>
-            <section id="top">
-                <div class="container">
-                    <ul>
-                        <li>Работаем без выходных с 08:00 до 22:00</li>
-                        <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
-                    </ul>
-                </div>
-            </section>
+            <?php if (!$siteConfig['mono']): ?>  
+                <section id="top">
+                    <div class="container">
+                        <ul>
+                            <li>Работаем без выходных с 08:00 до 22:00</li>
+
+                            <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
+                        </ul>
+                    </div>
+                </section>
+            <?php endif; ?>
             <section id="header">
                 <div class="container">
                     <div class="logo">
@@ -95,10 +98,12 @@ if ($siteConfig['mono'])
                         <div class="tel">
                             <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
-                        <div class="st-set">
-                            <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
-                            <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
-                        </div>
+                        <?php if (!$siteConfig['mono']): ?> 
+                            <div class="st-set">
+                                <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
+                                <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
+                            </div>
+                        <?php endif; ?>
                         <div class="clear"></div>
                         <span class="time-work">Работаем без выходных с 08:00 до 22:00</span>
                         <div class="clear"></div>
@@ -126,135 +131,137 @@ if ($siteConfig['mono'])
             }
             ?>
             <?= $content; ?>
-            <section id="otzvi">
-                <div class="container">
-                    <p class="title"><span>Отзывы   </span> клиентов</p>
-                    <div class="owl-carousel otziv owl-theme">
-                        <div>                        
-                            <p class="h3">Шумилин Николай</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+            <?php if (!$siteConfig['mono']): ?>
+                <section id="otzvi">
+                    <div class="container">
+                        <p class="title"><span>Отзывы   </span> клиентов</p>
+                        <div class="owl-carousel otziv owl-theme">
+                            <div>                        
+                                <p class="h3">Шумилин Николай</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM00012</p>
+                                <p><b>Достоинства:</b> Скорость выполнения работа</p>
+                                <p><b>Комментарий:</b> Сломалась у меня моя рабочая кофе машина, вся кофейня основана на ней,
+                                    срочно занялся поиском компании которая сможет мне её отремонтировать, причем
+                                    довольно таки быстро, так как я не мог останавливать работу моего Кофе-шопа,
+                                    и доставлять неудобства моим постоянным клиентам,
+                                    в общем, наткнулся на компанию "РемонтКофе" позвонил по телефону, ответил мне
+                                    приветливый оператор, далее приехал курьер, всё очень быстро сделали<br>
+                                    Большое спасибо!</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM00012</p>
-                            <p><b>Достоинства:</b> Скорость выполнения работа</p>
-                            <p><b>Комментарий:</b> Сломалась у меня моя рабочая кофе машина, вся кофейня основана на ней,
-                                срочно занялся поиском компании которая сможет мне её отремонтировать, причем
-                                довольно таки быстро, так как я не мог останавливать работу моего Кофе-шопа,
-                                и доставлять неудобства моим постоянным клиентам,
-                                в общем, наткнулся на компанию "РемонтКофе" позвонил по телефону, ответил мне
-                                приветливый оператор, далее приехал курьер, всё очень быстро сделали<br>
-                                Большое спасибо!</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Иванов Илья</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Иванов Илья</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM00099</p>
+                                <p><b>Достоинства:</b> Kонкурентноспособные цены</p>
+                                <p><b>Комментарий:</b> Сломал домашнюю кофейную машину, долго думал куда обратиться,
+                                    коллега по бизнесу Николай посоветовал мне обратиться в компанию,
+                                    услугами которой он ранее уже пользовался, "РемонтКофе"
+                                    Позвонил им, ответил оператор, который проконсультировал меня 
+                                    по вероятным причинам поломки и отправил ко мне курьера, 
+                                    который приехал и забрал агрегат, по итогам диагностики
+                                    которые были ясны уже вечером, мне сказали что уже завтра машина будет готова,
+                                    и учитывая их очень конкурентноспособные цены, меня всё очень устроило!</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM00099</p>
-                            <p><b>Достоинства:</b> Kонкурентноспособные цены</p>
-                            <p><b>Комментарий:</b> Сломал домашнюю кофейную машину, долго думал куда обратиться,
-                                коллега по бизнесу Николай посоветовал мне обратиться в компанию,
-                                услугами которой он ранее уже пользовался, "РемонтКофе"
-                                Позвонил им, ответил оператор, который проконсультировал меня 
-                                по вероятным причинам поломки и отправил ко мне курьера, 
-                                который приехал и забрал агрегат, по итогам диагностики
-                                которые были ясны уже вечером, мне сказали что уже завтра машина будет готова,
-                                и учитывая их очень конкурентноспособные цены, меня всё очень устроило!</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Медведев Гавриил</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Медведев Гавриил</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM00051</p>
+                                <p><b>Достоинства:</b> Возможность вызова курьера</p>
+                                <p><b>Комментарий:</b> Жена каким-то волшебным образом умудрилась сломать нашу эсспрессо машину, 
+                                    она перестала включаться вообще, после следствия, выяснилось что она, 
+                                    хотела помолоть сахар в кофемолке, но только после поняла, что это глупая затея, 
+                                    в общем обратился в сервисный центр "РемонтКофе" судя по всему ребята уже давно 
+                                    работают в этой сфере, да и отзывы у них хорошие. По результатам диагностики,
+                                    инженер сообщил мне, что в сахар попала малая доля влаги, и мотор кофемолки
+                                    вклинило из-за него. Так же обнаружилось ещё пара возрастных проблем машины,
+                                    сделали всё очень оперативно, обратно машину доставили ккурьером, всё очень понравилось,
+                                    большое спасибо!</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM00051</p>
-                            <p><b>Достоинства:</b> Возможность вызова курьера</p>
-                            <p><b>Комментарий:</b> Жена каким-то волшебным образом умудрилась сломать нашу эсспрессо машину, 
-                                она перестала включаться вообще, после следствия, выяснилось что она, 
-                                хотела помолоть сахар в кофемолке, но только после поняла, что это глупая затея, 
-                                в общем обратился в сервисный центр "РемонтКофе" судя по всему ребята уже давно 
-                                работают в этой сфере, да и отзывы у них хорошие. По результатам диагностики,
-                                инженер сообщил мне, что в сахар попала малая доля влаги, и мотор кофемолки
-                                вклинило из-за него. Так же обнаружилось ещё пара возрастных проблем машины,
-                                сделали всё очень оперативно, обратно машину доставили ккурьером, всё очень понравилось,
-                                большое спасибо!</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Игорь Коржов</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Игорь Коржов</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM150010</p>
+                                <p><b>Достоинства:</b> Отзывчевость</p>
+                                <p><b>Комментарий:</b> Здравствуйте! Обратился в этот сервис с поломкой бака для воды ( треснул ).
+                                    Так как машинка у меня не из дешевых, ребята сказали, что придётся не много подождать.
+                                    Я честно говоря не так много пью кофе, поэтому без проблем согласился на ожидание.
+                                    Прошло около 2-х дней, как мне позвонил манеджер Василий и сказал, что моя машинка готова.
+                                    Спасибо. Буду рекомендовать вас своим знакомым. Желаю вам успехов! <br>
+                                    С уважением, Игорь К.!</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM150010</p>
-                            <p><b>Достоинства:</b> Отзывчевость</p>
-                            <p><b>Комментарий:</b> Здравствуйте! Обратился в этот сервис с поломкой бака для воды ( треснул ).
-                                Так как машинка у меня не из дешевых, ребята сказали, что придётся не много подождать.
-                                Я честно говоря не так много пью кофе, поэтому без проблем согласился на ожидание.
-                                Прошло около 2-х дней, как мне позвонил манеджер Василий и сказал, что моя машинка готова.
-                                Спасибо. Буду рекомендовать вас своим знакомым. Желаю вам успехов! <br>
-                                С уважением, Игорь К.!</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Бубнов Артур</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Бубнов Артур</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM150268</p>
+                                <p><b>Достоинства:</b> Быстро</p>
+                                <p><b>Комментарий:</b> Есть кофемашина Saeco lirika one touch проблема была следующая после длительного использования, стало очень плохо подаваться кофе. Капало медленно очень. Пытались почистить ражок не помогло. Обратился в эту компанию. Помогли быстро в день заказа приехал курьер и отвез кофемашинку на диагностику примерно через два часа от звонились и сообщили результаты диагностики. Дал согласие на ремонт вечером следующего дня привезли исправную кофемашину. Пользуемся около недели всё хорошо.</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM150268</p>
-                            <p><b>Достоинства:</b> Быстро</p>
-                            <p><b>Комментарий:</b> Есть кофемашина Saeco lirika one touch проблема была следующая после длительного использования, стало очень плохо подаваться кофе. Капало медленно очень. Пытались почистить ражок не помогло. Обратился в эту компанию. Помогли быстро в день заказа приехал курьер и отвез кофемашинку на диагностику примерно через два часа от звонились и сообщили результаты диагностики. Дал согласие на ремонт вечером следующего дня привезли исправную кофемашину. Пользуемся около недели всё хорошо.</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Яковлев Александр</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Яковлев Александр</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM150359</p>
+                                <p><b>Достоинства:</b> Не дорого</p>
+                                <p><b>Комментарий:</b> В заведении сломалась кофемашина WMF Presto. Не работала подсветка с одной стороны, кофемолка издавала шумы и не работала, также было подача кофе. Сдал технику на диагностику через курьера, в этот же день позвонили и огласили цену ремонта. Был обрадован, ожидал что будет дороже. Через два дня сам заехал в пункт выдачи техники проверили на месте всё работает. Сейчас работает отлично. Спасибо вам.</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM150359</p>
-                            <p><b>Достоинства:</b> Не дорого</p>
-                            <p><b>Комментарий:</b> В заведении сломалась кофемашина WMF Presto. Не работала подсветка с одной стороны, кофемолка издавала шумы и не работала, также было подача кофе. Сдал технику на диагностику через курьера, в этот же день позвонили и огласили цену ремонта. Был обрадован, ожидал что будет дороже. Через два дня сам заехал в пункт выдачи техники проверили на месте всё работает. Сейчас работает отлично. Спасибо вам.</p>
-                        </div>
-                        <div>                        
-                            <p class="h3">Гусев Сергей</p>
-                            <div class="n-rating-stars" data-bem="{}" data-rate="5">
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
-                                <i class="n-rating-stars__item"></i>
+                            <div>                        
+                                <p class="h3">Гусев Сергей</p>
+                                <div class="n-rating-stars" data-bem="{}" data-rate="5">
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                    <i class="n-rating-stars__item"></i>
+                                </div>
+                                <p><b>Номер заказа:</b> KM150397</p>
+                                <p><b>Достоинства:</b> Удобно</p>
+                                <p><b>Комментарий:</b> Кофеварка филипс последнее время начала выдавать очень горькое кофе с каким-то послевкусием. Сам открывать чистить не рискнул, побоялся. Позвонил в сервисный центр “Ремонт Кофе” обозначил что требуется чистка. Менеджер компании согласился и предложил курьерскую службу, которая у них бесплатная. Позже позвонили и сказали что требуется только чистка, которая не очень дорогая. На следующий день привезли исправную кофеварку</p>
                             </div>
-                            <p><b>Номер заказа:</b> KM150397</p>
-                            <p><b>Достоинства:</b> Удобно</p>
-                            <p><b>Комментарий:</b> Кофеварка филипс последнее время начала выдавать очень горькое кофе с каким-то послевкусием. Сам открывать чистить не рискнул, побоялся. Позвонил в сервисный центр “Ремонт Кофе” обозначил что требуется чистка. Менеджер компании согласился и предложил курьерскую службу, которая у них бесплатная. Позже позвонили и сказали что требуется только чистка, которая не очень дорогая. На следующий день привезли исправную кофеварку</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            <?php endif; ?>
             <?= \app\widgets\forms\Ask::widget(); ?>
             <section id="footer">
                 <div class="container">
-                    <p> © 2010 - 2017 RemontKofe.ru</p>
-                    <p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p>
+                    <p> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
+                    <?php if (!$siteConfig['mono']): ?><p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p><?php endif; ?>
                     <div class="tel">
                         <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
@@ -296,17 +303,7 @@ if ($siteConfig['mono'])
             </div>
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
-            <?php $this->endBody() ?>
-            <!-- BEGIN JIVOSITE CODE {literal} -->
-            <script type='text/javascript'>
-                (function(){ var widget_id = 'AjgqSJG9aU'; var d = document; var w = window; function l(){
-                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/' + widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss); }if (d.readyState == 'complete'){l(); } else{if (w.attachEvent){w.attachEvent('onload', l); } else{w.addEventListener('load', l, false); }}})();</script>
-            <!-- {/literal} END JIVOSITE CODE -->
-<script type="text/javascript">
-var __cs = __cs || [];
-__cs.push(["setCsAccount", "g1Ypo3BZg4SGeif24ZMy9iqGKzmOvzfO"]);
-</script>
-<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
+            <?php $this->endBody() ?>            
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {

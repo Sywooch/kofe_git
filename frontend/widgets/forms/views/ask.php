@@ -44,22 +44,24 @@ $form = ActiveForm::begin([
             ?>
             <?= Html::submitButton('Оставить онлайн заявку', ['class' => 'btn', 'type' => 'button']) ?>                
             <?php ActiveForm::end() ?>
-            <p class="data"> © 2010 - 2017 RemontKofe.ru</p>
+            <p class="data"> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
         </div>
         <div class="left">
             <div class="footer-logo">
                 <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg" alt="">
             </div>
-            <p><a href="/">Ремонт кофемашин</a></p>
-            <ul class="footer-menu">
-                <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
-                <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>
-                <li><a href="/remont-kofemashin-melitta">Ремонт кофемашин Melitta</a></li>
-                <li><a href="/remont-kofemashin-saeco">Ремонт кофемашин Saeco</a></li>
-                <li><a href="/brendy">Все ремонтируемые бренды</a></li>
-            </ul>
+            <?php if (!$siteConfig['mono']): ?>
+                <p><a href="/">Ремонт кофемашин</a></p>
+                <ul class="footer-menu">
+                    <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
+                    <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>
+                    <li><a href="/remont-kofemashin-melitta">Ремонт кофемашин Melitta</a></li>
+                    <li><a href="/remont-kofemashin-saeco">Ремонт кофемашин Saeco</a></li>
+                    <li><a href="/brendy">Все ремонтируемые бренды</a></li>
+                </ul>            
             <a href="/kontakty">Наши Контакты</a>
-            <div class="tel"><a class="phone moskva" href="tel:+84994509008">8(499) 450-90-08</a></div>
+            <?php endif; ?>
+            <div class="tel"><a class="phone moskva" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
         </div>
         <div class="clear"></div>
     </div>
