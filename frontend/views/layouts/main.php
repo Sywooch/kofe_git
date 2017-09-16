@@ -24,7 +24,7 @@ if ($siteConfig['mono'])
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="icon" href="<?= $assets ?>/images/favicon.ico?v=3">
+        <link rel="icon" href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>favicon.ico?v=3">
         <link rel="stylesheet" async href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>css/<?= $siteConfig['sitePrefix']; ?>all.css?v=18" type="text/css" />
         <link async href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
