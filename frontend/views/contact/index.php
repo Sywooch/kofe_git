@@ -26,7 +26,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         Центральный офис: м. Войковская, 4-й войковский проезд 6к2
                     </p>
                     <div class="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A491aa95e1bc192d0a1b6997ca799239d6ddde59426eb4d6d87042832d6436424&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5f5860252f4cb5593d5da22cd0aa71e65ebf9ee9a6f2d34ebffc20ca3d411c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             <?php else: ?>
@@ -38,7 +38,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         Центральный офис: м. Садовая, Московский проспект 2/6, подезд 6, этаж 3
                     </p>
                     <div class="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A491aa95e1bc192d0a1b6997ca799239d6ddde59426eb4d6d87042832d6436424&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef863b008884b6b061a3182be8f2ee3235ee72e0176c43a2c9681fa7d00a56c5&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             <?php endif; ?>

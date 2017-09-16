@@ -147,7 +147,7 @@ return [
             'sitePrefix' => 'wmf',
             'change-logo' => true,
         ],
-        'la-chimbali-remont' => [
+        'la-cimbali-remont' => [
             'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
@@ -169,7 +169,7 @@ return [
             'sitePrefix' => 'schaerer',
             'change-logo' => true,
         ],
-        'frankie-service' => [
+        'franke-service' => [
             'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
             //'spb-multi' => true,
