@@ -223,7 +223,10 @@ table.pricelist td.order .popup-zakaz {
 #neispravnost .punkt.promo a .big-text,
 #neispravnost .punkt.promo a ul li,
 #neispravnost .punkt.promo a .price {
-    color: #fff;
+    color: #333;
+}
+#neispravnost .punkt.promo a ul li:before {
+    background: #ef4023;
 }
 
 

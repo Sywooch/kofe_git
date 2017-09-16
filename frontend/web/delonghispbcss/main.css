@@ -1,20 +1,20 @@
 #neispravnost .punkt.promo {
-    background: url(../delonghispbimages/delonghipromo_bg.jpg);
+    background: url(../delonghispbimages/delonghispbpromo_bg.jpg);
 }
 #neispravnost .punkt.contact {
-    background: url(../delonghispbimages/delonghicontect-bg2.jpg);
+    background: url(../delonghispbimages/delonghispbcontect-bg2.jpg);
     background-position: right;
 }
 #skidka {
-    background: url(../delonghispbimages/delonghibg-sale.jpg) center no-repeat;
+    background: url(../delonghispbimages/delonghispbbg-sale.jpg) center no-repeat;
 }
 .video .bg-all {
-    background: #58b0e2 url(../delonghispbimages/delonghibg-footer.svg);
+    background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
     background-size: 10%;
 }
 #ask-form {
     box-sizing: border-box;
-    background: #58b0e2 url(../delonghispbimages/delonghibg-footer.svg);
+    background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
     background-size: 180px;
 }
 
@@ -226,13 +226,13 @@ table.pricelist td.order .popup-zakaz {
 
 @media screen and (max-width: 680px) {
 		.video .bg-all {
-        background: #58b0e2 url(../delonghispbimages/delonghibg-footer.svg);
+        background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
         background-size: 30%;
     }
 }
 @media screen and (max-width: 540px) {
 		#neispravnost .punkt.promo {
-        background: url(../delonghispbimages/delonghipromo_bg.jpg);
+        background: url(../delonghispbimages/delonghispbpromo_bg.jpg);
         background-position: 0px 0px;
     }
     input.phone {
