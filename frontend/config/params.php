@@ -246,5 +246,16 @@ return [
             'sitePrefix' => 'promac',
             'change-logo' => true,
         ],
+        'support-delonghi-spb' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'spb' => true,
+            'stickyMenu' => false,
+            'mono' => true,
+            'brand-id' => 13292,
+            'id' => 23,
+            'sitePrefix' => 'delonghispb',
+            'change-logo' => true,
+        ],
     ],
 ];
