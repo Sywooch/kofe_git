@@ -394,6 +394,7 @@ span.brand-title {
 }
 #banner .full-text p {
     font-size: 15px;
+    clear: both;
     float: left;
 }
 input#phone {

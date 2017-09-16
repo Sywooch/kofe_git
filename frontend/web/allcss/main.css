@@ -367,6 +367,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #banner .full-text p {
     font-size: 15px;
     float: left;
+    clear: both;
 }
 input#phone {
     border-radius: 3px;
