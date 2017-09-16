@@ -17,14 +17,25 @@ $siteConfig = app\components\CController::getSiteConfig();
             <p>Мы, сервисный центр по ремонту кофемашин &laquo;РемонтКофе&raquo; - команда профессионалов, которые знают все о кофемашинах от А до Я. Наши мастера работают как на выезде, так и в сервисном центре, осуществляя ремонт кофемашин любой сложности.</p>
 
             <div class="clear">&nbsp;</div>
-            <?php if ($siteConfig['mono']): ?>
+            <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?>
                 <div class="msk-contact all-contact active">
-                    <h2>Наш адрес в <div class="will-active-m"></div><span class="v-msk active">Москве</span> <span class="v-spb">Санкт-Петербурге</span></h2>
-                    <p>
-                        Почта: <a href="mailto:zakaz@remontkofe.ru">zakaz@remontkofe.ru</a><br />
-                        Номер телефона: <span class="moskva">8 (499)450-90-08</span><br />
+                    <h2>Наш адрес в Москве</h2>
+                    <p>                        
+                        Номер телефона: <span class="moskva"><?= Yii::$app->session['region']['phone']; ?></span><br />
                         Работаем без выходных с 08:00 до 22:00<br />
-                        Центральный офис:&nbsp;м Фили, м. Шелепиха ул. Заречная 1к2, вход со двора
+                        Центральный офис: м. Войковская, 4-й войковский проезд 6к2
+                    </p>
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A491aa95e1bc192d0a1b6997ca799239d6ddde59426eb4d6d87042832d6436424&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
+                </div>
+            <?php else: ?>
+                <div class="msk-contact all-contact active">
+                    <h2>Наш адрес в Санкт-Петербурге</h2>
+                    <p>                        
+                        Номер телефона: <span class="moskva"><?= Yii::$app->session['region']['phone']; ?></span><br />
+                        Работаем без выходных с 08:00 до 22:00<br />
+                        Центральный офис: м. Садовая, Московский проспект 2/6, подезд 6, этаж 3
                     </p>
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A491aa95e1bc192d0a1b6997ca799239d6ddde59426eb4d6d87042832d6436424&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false"></script>

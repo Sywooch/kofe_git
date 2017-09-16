@@ -13,6 +13,6 @@ $assets = Yii::getAlias('@web');
             <?php endforeach; ?>
             <div class="clear"></div>
         </div>
-        <span class="more"><a href="/models">Все модели</a></span>
+        <span class="more"><a href="/models">Показать все обслуживаемые модели</a></span>
     </div>
 </section>

@@ -16,6 +16,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $this->title = $title;
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
@@ -49,9 +50,10 @@ $this->title = $title;
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]); ?>
+<?= !$siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
+<?= $siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
     <section id="text-block">    
         <div class="container">

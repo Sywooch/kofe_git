@@ -48,7 +48,7 @@ if ($siteConfig['mono'])
                 <section id="top">
                     <div class="container">
                         <ul>
-                            <li>Работаем без выходных с 08:00 до 22:00</li>
+                            <li>Ежедневно с 08:00 до 22:00</li>
 
                             <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
                         </ul>
