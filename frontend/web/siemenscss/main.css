@@ -22,7 +22,7 @@
     fill:#41aaaa;
 }
 .time-work {
-    color: #b71b1f;
+    color: #333;
 }
 #header .nav ul li a {
     color: #41aaaa;
@@ -34,8 +34,8 @@
     color: #50bed7;
 }
 .tel .phone:before {
-        background: #fff;
-        color: #50bed7;
+        background: #50bed7;
+        color: #fff;
 }
 #banner .full-text .h1 {
     color: #50bed7;
@@ -238,7 +238,7 @@ table.pricelist td.order .popup-zakaz {
     }
     #header .nav ul li a, .is-sticky #header .nav ul li a {
             border-bottom: 1px solid #fff;
-            border-top: 1px solid #4c525e;
+            border-top: 1px solid #58a0a0;
             color: #fff;
     }
     #header .logo {

@@ -284,3 +284,6 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 #header .logo {
         margin-top: 0px;
 }
+#neispravnost .punkt.promo a .big-text, #neispravnost .punkt.promo a ul li, #neispravnost .punkt.promo a .price {
+    color: #333;
+}

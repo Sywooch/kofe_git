@@ -1,254 +1,253 @@
 #neispravnost .punkt.promo {
-    background: url(../saecoimages/saecopromobg.jpg);
+    background: url(../delonghispbimages/delonghispbpromo_bg.jpg);
 }
 #neispravnost .punkt.contact {
-    background: url(../saecoimages/saecocontectbg2.jpg);
+    background: url(../delonghispbimages/delonghispbcontect-bg2.jpg);
     background-position: right;
 }
 #skidka {
-    background: url(../saecoimages/saecobgsale.jpg) center no-repeat;
+    background: url(../delonghispbimages/delonghispbbg-sale.jpg) center no-repeat;
 }
 .video .bg-all {
-    background: #d71921 url(../saecoimages/saecobg-footer.svg);
+    background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
     background-size: 10%;
 }
 #ask-form {
     box-sizing: border-box;
-    background: #d71921 url(../saecoimages/saecobg-footer.svg);
+    background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
     background-size: 180px;
-}
-#header .logo {
-	margin-top: 0px;
 }
 
 #primushestva .punkt .fil1 {
-    fill:#ef464d;
+    fill:#3163a2;
 }
 .time-work {
-    color: #ef464d;
+    color: #3163a2;
 }
 #header .nav ul li a {
-    color: #ef464d;
+    color: #3163a2;
 }
 .tel .phone {
-    color: #ef464d;
+    color: #3163a2;
 }
 .tel .phone:hover {
-    color: #ef464d;
+    color: #3163a2;
 }
 .tel .phone:before {
-		background: #ef464d;
+		background: #3163a2;
 }
 #banner .full-text .h1 {
-	color: #ef464d;
+	color: #3163a2;
 }
 .hero-form__btn {
-  border: 1px solid #ef464d;
-  background: #ef464d;
+  border: 1px solid #3163a2;
+  background: #3163a2;
 }
 #primushestva .punkt .h2 {
-	color: #333;
+	color: #3163a2;
 }
 #neispravnost .punkt a .big-text {
-    color: #ef464d;
+    color: #3163a2;
 }
 #neispravnost .punkt.promo a {
-    border: 8px solid #ef464d;
+    border: 8px solid #3163a2;
 }
 .more a {
-    color: #ef464d;
-    border: 1px solid #ef464d;
+    color: #3163a2;
+    border: 1px solid #3163a2;
 }
 #zakaz .left {
-    background: #ef464d;
+    background: #3163a2;
 }
 .left-bar .left-menu li.active a {
-    color: #ef464d;
-    border-bottom: 1px solid #ef464d;
+    color: #3163a2;
+    border-bottom: 1px solid #3163a2;
 }
 .nav-icon2 span {
-    background: #ef464d;
+    background: #3163a2;
 }
 #ask-form .container .right button {
-    border: 1px solid #ef464d;
-    background: #ef464d;
+    border: 1px solid #3163a2;
+    background: #3163a2;
 }
-
 
 
 .container a {
-    color: #d71921;
+    color: #58b0e2;
 }
 #header .nav ul li.active a:after,
 #header .nav ul li a:hover:after {
-    background: #d71921;
+    background: #58b0e2;
 }
 #banner .right-text ul li:before {
-    background: #d71921;
+    background: #58b0e2;
 }
 input#phone {
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 input.phone {
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 input#phone:focus {
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 .hero-form__btn:hover {
-    background: #d71921;
-    border: 1px solid #d71921;
+    background: #58b0e2;
+    border: 1px solid #58b0e2;
 }
 #banner .right-text .happy-time p {
 	color: #fff;
 }
 #banner .right-text .happy-time p span {
-    color: #d71921;
+    color: #58b0e2;
 }
 #primushestva .punkt:hover .h2 {
-    color: #d71921;
+    color: #58b0e2;
 }
 #neispravnost .punkt a:hover .big-text {
-    color: #d71921;
+    color: #58b0e2;
 }
 #neispravnost .punkt a .price {
-    color: #e2676c;
+    color: #58b0e2;
 }
 #neispravnost .punkt a .price .new {
-    background: #d71921;
+    background: #58b0e2;
 }
 #neispravnost .punkt a ul li:before {
-    background: #d71921;
+    background: #58b0e2;
 }
 #neispravnost .punkt.promo a ul li:before,
 #neispravnost .punkt.promo a .price .new {
-    color: #d71921;
+    color: #58b0e2;
 }
 .more a:hover {
-    background: #d71921;
+    background: #58b0e2;
     color: #fff;
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 #footer {
-    background: #d71921;
+    background: #58b0e2;
 }
 #footer .tel .phone:before {
-    color: #d71921;
+    color: #58b0e2;
 }
 .popup .wight div.close {
-    background-color: #d71921;
+    background-color: #58b0e2;
 }
 #hlebniye-kroshki ul li {
-    color: #d71921;
+    color: #58b0e2;
 }
 #hlebniye-kroshki ul li a:hover {
-    color: #d71921;
+    color: #58b0e2;
 }
 .pagination li:hover {
-    background: #d71921;
+    background: #58b0e2;
 }
 .pagination li.active a {
-    color: #d71921;
+    color: #58b0e2;
 }
 .left-bar .left-menu {
-    border: 4px solid #d71921;
+    border: 4px solid #58b0e2;
 }
 .left-bar .left-menu li a {
-    color: #d71921;
+    color: #58b0e2;
 }
 .left-bar .left-menu li a:hover {
-    color: #d71921;
+    color: #58b0e2;
 }
 .left-bar .left-menu  .other {
-	background: #d71921;
+	background: #58b0e2;
 }
 table.pricelist td {
-    color: #d71921;
+    color: #58b0e2;
 }
 table.pricelist td.order .popup-zakaz {
-    background: #d71921;
+    background: #58b0e2;
 }
 #bran .brands .row:hover div {
-    color: #d71921;
+    color: #58b0e2;
 }
 #bran .brands .row ul li:hover {
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 #bran .brands .row ul li:hover a {
-    color: #d71921;
+    color: #58b0e2;
 }
 .more div {
-    color: #d71921;
-    border: 1px solid #d71921;
+    color: #58b0e2;
+    border: 1px solid #58b0e2;
 }
 .more div:hover {
-    background: #d71921;
-    border: 1px solid #d71921;
+    background: #58b0e2;
+    border: 1px solid #58b0e2;
 }
 #links ul li a {
-    color: #d71921;
+    color: #58b0e2;
 }
 #links ul li a:hover {
-    color: #d71921;
+    color: #58b0e2;
 }
 #ask-form .container .right button:hover {
-    background: #d71921;
+    background: #58b0e2;
 }
 .ui-autocomplete-input {
-    border: 1px solid #d71921;
+    border: 1px solid #58b0e2;
 }
 .ui-menu .ui-menu-item:hover {
-    background: #d71921;
-    border-bottom: 1px solid #d71921;
+    background: #58b0e2;
+    border-bottom: 1px solid #58b0e2;
 }
 .all-contact h2 span.active {
-    background: #d71921;
+    background: #58b0e2;
 }
 #otzvi .otziv .h3 {
-    border-bottom: 1px solid #d71921;
+    border-bottom: 1px solid #58b0e2;
 }
+
 
 
 
 
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
-        color: #d71921;
+        color: #58b0e2;
     }
 }
 @media screen and (max-width: 830px) {
 	#header .nav {
-        background: #d71921;
+        background: #58b0e2;
 	}
-}
 
+
+
+
+}
 
 
 @media screen and (max-width: 680px) {
 		.video .bg-all {
-        background: #d71921 url(../saecoimages/saecobg-footer.svg);
+        background: #58b0e2 url(../delonghispbimages/delonghispbbg-footer.svg);
         background-size: 30%;
     }
 }
 @media screen and (max-width: 540px) {
 		#neispravnost .punkt.promo {
-        background: url(../saecoimages/saecopromobg.jpg);
+        background: url(../delonghispbimages/delonghispbpromo_bg.jpg);
         background-position: 0px 0px;
     }
     input.phone {
-        border: 1px solid #d71921;
+        border: 1px solid #58b0e2;
     }
 }
 
 
 #banner .right-text .h1 {
-    color: #bf161e;
+    color: #0c3363;
 }
 section .container .title {
-    border-bottom: 2px solid #bf161e;
-    color: #bf161e;
+    border-bottom: 2px solid #0c3363;
+    color: #0c3363;
 }
-
 
 #neispravnost .punkt.contact > div div.big-text {
     color: #fff;
@@ -274,10 +273,11 @@ input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
 input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
 input.phone2:-ms-input-placeholder      {color:#fff;}
 
+
 #scroller{
-    background: #bf161e;
+    background: #0c3363;
 }
 
 .options h3 {
-	color: #bf161e;
+	color: #0c3363;
 }

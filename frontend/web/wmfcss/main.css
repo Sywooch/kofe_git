@@ -29,7 +29,7 @@
 }
 .tel .phone {
     color: #333;
-}
+}   
 .tel .phone:hover {
     color: #333;
 }
@@ -211,13 +211,14 @@ table.pricelist td.order .popup-zakaz {
         width: 60px;
 }
 #skidka .container {
-    color: #71b430;
+    color: #333;
 }
 #skidka .more div {
-    border: #71b430 1px solid;
-    color: #71b430;
+    border: #333 1px solid;
+    color: #333;
 }
 #skidka .more div:hover {
+    border: #fff 1px solid;
     color: #fff;
 }
 #neispravnost .punkt.promo a .big-text,
@@ -226,7 +227,9 @@ table.pricelist td.order .popup-zakaz {
     color: #fff;
 }
 
-
+#neispravnost .punkt a .price {
+    color: #71b430;
+}
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         color: #71b430;
