@@ -4,6 +4,7 @@ namespace app\widgets\lists;
 
 use Yii;
 use yii\base\Widget;
+use app\components\CController;
 
 class Neispravnost extends Widget {
 
@@ -11,6 +12,7 @@ class Neispravnost extends Widget {
     public $metrika = '';
 
     public function run() {
+        $siteConfig = CController::getSiteConfig();
         $sql = 'SELECT price, title, url, description FROM {{%services}} WHERE type = 2';
         $rows = Yii::$app->db->createCommand($sql)->queryAll();
         if (empty($rows))
