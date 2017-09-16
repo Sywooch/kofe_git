@@ -48,8 +48,7 @@ if ($siteConfig['mono'])
                 <section id="top">
                     <div class="container">
                         <ul>
-                            <li>Ежедневно с 08:00 до 22:00</li>
-
+                            <li>Работаем без выходных с 08:00 до 22:00</li>
                             <li class="selected-region">Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></li>
                         </ul>
                     </div>
@@ -105,7 +104,7 @@ if ($siteConfig['mono'])
                             </div>
                         <?php endif; ?>
                         <div class="clear"></div>
-                        <span class="time-work">Работаем без выходных с 08:00 до 22:00</span>
+                        <span class="time-work">Ежедневно с 08:00 до 22:00</span>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
