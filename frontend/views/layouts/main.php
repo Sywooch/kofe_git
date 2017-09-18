@@ -277,21 +277,23 @@ if ($siteConfig['mono'])
                     <div class="close">OK</div>
                 </div>
             </div>
-            <div class="popup regions animated">
-                <noindex>
-                    <div class="wight">  
-                        <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
-                        <h4>Выберите ваш город</h4>
-                        <ul>
-                            <?php foreach (Yii::$app->params['regions'] as $region): ?>
-                                <li>
-                                    <a rel="nofollow" href="?region=<?= $region['id']; ?>"><?= $region['title']; ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>                
-                    </div>
-                </noindex>
-            </div>
+            <?php if (isset($siteConfig['region-sel'])): ?>
+                <div class="popup regions animated">
+                    <noindex>
+                        <div class="wight">  
+                            <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>              
+                            <h4>Выберите ваш город</h4>
+                            <ul>
+                                <?php foreach (Yii::$app->params['regions'] as $region): ?>
+                                    <li>
+                                        <a rel="nofollow" href="?region=<?= $region['id']; ?>"><?= $region['title']; ?></a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>                
+                        </div>
+                    </noindex>
+                </div>
+            <?php endif; ?>
             <div class="popup good animated">
                 <div class="wight">
                     <i class="fa fa-check" aria-hidden="true"></i>

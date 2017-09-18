@@ -15,6 +15,7 @@ return [
             'mono' => false,
             'id' => 1,
             'sitePrefix' => 'remont',
+            'region-sel' => true,
         ],
         'spb-remont-kofe' => [
             'phone-1' => '8 (499) 450-90-08',
