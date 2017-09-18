@@ -11,6 +11,10 @@ $brand = app\components\CController::$monoBrand;
                 <li><a href="/">Ремонт кофемашин</a></li>
             <?php endif; ?>
             <?php foreach ($data as $url => $title): ?>
+                <?php
+                if ($siteConfig['mono'])
+                    $url = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $url);
+                ?>
                 <?php if (end($data) == $title): ?>                
                     <li><?= $title; ?></li>
                 <?php else: ?>
