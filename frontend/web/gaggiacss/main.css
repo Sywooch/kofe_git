@@ -33,9 +33,13 @@
 .tel .phone:hover {
     color: #333;
 }
-.tel .phone:before {
+.video .tel .phone:before {
         background: #fff;
         color: #333;
+}
+.tel .phone:before {
+        background: #333;
+        color: #fff;
 }
 #banner .full-text .h1 {
     color: #333;

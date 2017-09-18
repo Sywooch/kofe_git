@@ -195,7 +195,8 @@ section {
     color: #372727;
     float: right;
     font-size: 12px;
-    margin-top: -20px;
+    display: block;
+    margin-top: 60px;
 }
 .video .time-work {
     color: #fff;
@@ -1308,6 +1309,7 @@ input#phone2::-webkit-input-placeholder {
     width: 100%;
 }
 section#hlebniye-kroshki {
+    clear: both;
 }
 .pagination {
     float: right;
@@ -2151,6 +2153,9 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    .time-work {
+        margin-top: 77px;
+    }
     .brand-model-image {
         height: 275px;
         line-height: 275px;
@@ -3057,35 +3062,3 @@ body.models .logo-breand {
 
 
 
-.color {
-    position: fixed;
-    z-index: 99999999;
-    left: 0;
-    top: 50%;
-}
-.color div {
-    width: 30px;
-    height: 30px;
-    display: block;
-}
-.color div:nth-child(1) {
-    background: #fff;
-}
-.color div:nth-child(2) {
-    background: #673b14;
-}
-.color div:nth-child(3) {
-    background: #dc8067;
-}
-.color div:nth-child(4) {
-    background: #372727;
-}
-.color div:nth-child(5) {
-    background: #673b14;
-}
-.color div:nth-child(6) {
-    background: #eae7de;
-}
-.color div:nth-child(7) {
-    background: #c7a17a;
-}

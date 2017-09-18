@@ -258,10 +258,11 @@ span.brand-title {
 #banner {
     margin-top: 50px;
     clear: both;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
 }
 .video #banner {
     margin-top: 90px;
+    margin-bottom: 60px;
 }
 
 .banners #banner .left-img {
@@ -2127,6 +2128,9 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    .punkt.contact .hero-form__btn {
+        font-size: 12px;
+    }
     .brand-model-image {
         height: 275px;
         line-height: 275px;
@@ -2514,6 +2518,9 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    #tseni .prochi-uslugi h3 {
+        font-size: 16px;
+    }
     #banner {
         margin-bottom: 0px;
     }
@@ -2879,6 +2886,7 @@ video {
     }
     .punkt.contact .hero-form__btn {
         margin-left: 0%;
+        font-size: 12px;
     }
     #zakaz input.phone, #zakaz .hero-form__btn {
         margin-left: 0px;

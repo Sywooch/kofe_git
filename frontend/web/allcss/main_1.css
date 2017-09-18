@@ -294,9 +294,9 @@ span.brand-title {
     position: absolute;
     z-index: 0;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+3,0+75 */
-background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(255,255,255,0) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .banners #banner .left-img img {
@@ -367,6 +367,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #banner .full-text p {
     font-size: 15px;
     float: left;
+    clear: both;
 }
 input#phone {
     border-radius: 3px;
@@ -568,6 +569,8 @@ section#neispravnost .container .title {
 #neispravnost .container > div {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
     background: #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 #neispravnost .punkt {
     background: #fff;
@@ -576,7 +579,7 @@ section#neispravnost .container .title {
     border-right: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     counter-increment: tiles;
-    min-height: 281px;
+    min-height: 250px;
     position: relative;
     box-sizing: border-box;
 }
@@ -622,7 +625,7 @@ section#neispravnost .container .title {
     font-size: 18px;
     position: absolute;
     margin-top: 20px;
-    bottom: 35px;
+    bottom: 18px;
     white-space: nowrap;
 }
 #neispravnost .punkt a .price .new {
@@ -658,7 +661,8 @@ section#neispravnost .container .title {
 }
 
 #neispravnost .punkt.promo a {
-    min-height: 194px;
+    min-height: 180px;
+    box-sizing: border-box;
 } 
 #neispravnost .punkt.promo:after {
     color: rgba(255, 255, 255, 0.18);
@@ -794,6 +798,7 @@ input#phone2 {
     position: relative;
     min-height: 35px;
     display: none;
+    background: none ! important;
 }
 #footer p {
     float: left;
@@ -1454,6 +1459,10 @@ table.pricelist td.order .popup-zakaz:hover {
     display: flex;
     flex-wrap: wrap;
 }
+#bran .row {
+    display: flex;
+    flex-wrap: wrap;
+}
 #bran .brands .row div {
     width: 10%;
     display: block;
@@ -1855,7 +1864,20 @@ video {
 }
 
 
-
+.harakteristiki {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #e1e1e1;
+}
+.harakteristiki .name {
+    width: 40%;
+    color: #333;
+}
+.harakteristiki .op {
+    width: 40%;
+    color: #333;
+}
 
     .models-gl {
         float: left;
@@ -1876,9 +1898,10 @@ video {
         color: #333;
         font-size: 14px;
         border-top: 1px solid #e1e1e1;
-        padding: 10px 0px;
+        padding: 10px 5px;
         width: 100%;
         display: block;
+        box-sizing: border-box;
     }
     .models-gl div.img {
         height: 200px;
@@ -1902,9 +1925,17 @@ video {
         width: auto;
         vertical-align: middle;
     }
+    
 @media screen and (max-width: 1500px) {
+
+    #neispravnost .punkt a {
+        padding: 25px 20px;
+    }
+    #neispravnost .gaggiapunkt.gaggiapromo a {
+        min-height: 180px;
+    }
     #neispravnost .punkt.contact > div {
-        padding: 14px 25px;
+        padding: 37px 25px;
     }
     .container {
         width: 980px;
@@ -1932,6 +1963,9 @@ video {
 
 }
 @media screen and (max-width: 1030px) {
+    #neispravnost .punkt a ul {
+        margin-top: 10px;
+    }
     .models-gl {
         width: 25%;
     }
@@ -1995,6 +2029,7 @@ video {
     }
     #neispravnost .punkt {
         width: 50%;
+        min-height: 230px;
     }
     
     #header .logo {
@@ -2317,6 +2352,7 @@ video {
 }
 @media screen and (max-width: 680px) {
 
+
     .models-gl {
         width: 33.33333%;
     }
@@ -2463,6 +2499,18 @@ video {
     }
     .time-work {
         display: none;
+    }
+    .harakteristiki {
+        width: 100%;
+        border-left: 0px;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .harakteristiki h3 {
+        margin-top: 0px;
+        padding: 5px 0px 0px;
+    }
+    #skidka {
+        min-height: 100px;
     }
 }
 @media screen and (max-width: 540px) {
@@ -2705,7 +2753,7 @@ video {
         text-align: left;
     }
     #neispravnost .punkt a {
-        padding: 15px 25px;
+        padding: 25px 20px;
     }
     #neispravnost .punkt a .big-text {
         font-size: 20px;
@@ -2878,6 +2926,9 @@ video {
         float: none;
         margin-right: 0px;
     }
+    #skidka .container h3 {
+        font-size: 38px;
+    }
 }
 
 
@@ -3046,17 +3097,6 @@ body.models .logo-breand {
     z-index: 1;
 }
 
-.harakteristiki {
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-    border-right: 1px solid #e1e1e1;
-}
-.harakteristiki .name {
-    width: 40%;
-    color: #333;
-}
-.harakteristiki .op {
-    width: 40%;
-    color: #333;
-}
+.models-gl:nth-last-child(2) {
+        border-right: 1px solid #e1e1e1;
+    }
