@@ -81,10 +81,13 @@ class ListController extends CController {
 
         if (count($url) > 1) {
             array_pop($url);
+            if ($siteConfig['mono']) {
+               $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
+            }
             $page = (new \yii\db\Query())
                     ->select(['title', 'url', 'id', 'type', 'parent', 'image'])
                     ->from('{{%pages}}')
-                    ->where(['url' => implode('/', $url)])
+                    ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
                     ->one();
             if ($page['type'] == 'brand') {
