@@ -14,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] ?></h1>
             </div>
 
-            <?= !empty($pageInfo['meta_text1']) ? $pageInfo['meta_text1'] : '<p>Мы, сервисный центр по ремонту кофемашин &laquo;РемонтКофе&raquo; - команда профессионалов, которые знают все о кофемашинах от А до Я. Наши мастера работают как на выезде, так и в сервисном центре, осуществляя ремонт кофемашин любой сложности.</p>' ?>
+            <?= !empty($pageInfo['description']) ? $pageInfo['description'] : '<p>Мы, сервисный центр по ремонту кофемашин &laquo;РемонтКофе&raquo; - команда профессионалов, которые знают все о кофемашинах от А до Я. Наши мастера работают как на выезде, так и в сервисном центре, осуществляя ремонт кофемашин любой сложности.</p>' ?>
             
             <div class="clear">&nbsp;</div>
             <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?>
