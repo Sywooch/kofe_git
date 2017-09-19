@@ -13,11 +13,11 @@ use dosamigos\ckeditor\CKEditor
 
     <?php $form = ActiveForm::begin(); ?>   
 
-    <?= $form->field($model, 'meta_title')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'meta_title')->textInput(['maxlength' => true]) ?><span id="cnt-title" style="float: right;margin-top: -41px;margin-right: -16px;">0</span>
 
     <?= $form->field($model, 'meta_keywords')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'meta_description')->textarea(['maxlength' => true]) ?>
+    <?= $form->field($model, 'meta_description')->textarea(['maxlength' => true]) ?><span id="cnt-desc" style="float: right;margin-top: -41px;margin-right: -16px;">0</span>
 
     <?= $form->field($model, 'meta_h1')->textInput(['maxlength' => true]) ?>
 

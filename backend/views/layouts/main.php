@@ -81,3 +81,13 @@ AppAsset::register($this);
 </body>
 </html>
 <?php $this->endPage() ?>
+<script>
+$("#seo-meta_title").keyup(function() {
+    var el = $(this);
+    $("#cnt-title").text(el.val().length);
+});
+$("#seo-meta_description").keyup(function() {
+    var el = $(this);
+    $("#cnt-desc").text(el.val().length);
+});
+</script>
