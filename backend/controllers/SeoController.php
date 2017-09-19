@@ -59,10 +59,10 @@ class SeoController extends Controller {
         $model = new Seo();
         $model->url = $url;
         
-        $m = $this->findModelbyUrl($url);
+        $m = $this->findModelbyUrl($url, $_GET['site_id']);
 
         if ($m !== null)
-            return $this->redirect(['seo/update', 'url' => $url, 'id' => 0]);
+            return $this->redirect(['seo/update', 'url' => $url, 'id' => 0, 'site_id' => $_GET['site_id']]);
         if ($model->load(Yii::$app->request->post())) {
             $model->site_id = $_GET['site_id'];
             $model->save();
@@ -81,7 +81,7 @@ class SeoController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id) {
+    public function actionUpdate($id) {        
         if (isset($_GET['url'])) {
             $model = $this->findModelbyUrl(urldecode($_GET['url']), $_GET['site_id']);            
             if ($model === null) {
@@ -112,7 +112,7 @@ class SeoController extends Controller {
         return $this->redirect(['index']);
     }
 
-    protected function findModelbyUrl($url, $id) {
+    protected function findModelbyUrl($url, $id) {        
         $model = Seo::findOne(['url' => $url, 'site_id' => $id]);
         return $model;
     }
