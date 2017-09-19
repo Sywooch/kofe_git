@@ -31,16 +31,23 @@ class ListController extends CController {
     }
 
     public function actionAllModels() {
+        $siteConfig = self::getSiteConfig();
+        $seo = (new \yii\db\Query())
+                ->select(['*'])
+                ->from('{{%seo}}')
+                ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
+                ->limit(1)
+                ->one();
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
-            'content' => ''
+            'content' => $seo['meta_keywords'] ?: ''
         ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => ''
+            'content' => $seo['meta_description'] ?: ''
         ]);
 
-        return $this->render('all-models');
+        return $this->render('all-models', ['seo' => $seo]);
     }
 
     public function actionService() {
