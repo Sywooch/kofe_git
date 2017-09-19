@@ -160,8 +160,11 @@ class ListController extends CController {
                 } else {
                     if ($siteConfig['mono']) {
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . self::$monoBrand['title'];
+                        $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . self::$monoBrand['title'] . ' - срочный ремонт в ' . Yii::$app->session['region']['titleRod'];
+                        $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . self::$monoBrand['title'] . ' - быстро, качественно с гарантией по самой низкой цене в Москве.';
+                    } else {
+                        $title = $pageInfo['title'] . ' кофемашин. Ремонт кофемашин в СЦ';
                     }
-                    $title = $pageInfo['title'] . ' кофемашин. Ремонт кофемашин в СЦ';
                     $seoText = 'Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' кофемашин - быстро, качественно с гарантией.';
                 }
             } else {

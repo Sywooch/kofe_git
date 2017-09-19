@@ -65,6 +65,7 @@ class MainUrlRule extends UrlRule {
 
     private function getPage($url) {
         $siteConfig = self::getSiteConfig();
+        //echo $siteConfig['id'];exit;
         $seo = (new \yii\db\Query())
                 ->select(['*'])
                 ->from('{{%seo}}')
