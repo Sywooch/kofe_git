@@ -12,8 +12,10 @@ $text = !empty($seo['meta_text1']) ? $seo['meta_text1'] : 'Опытные мас
             <div class="h1">                
                 <h1><?= $h1; ?></h1>
             </div>            
-            <p><?= $text; ?>
-                <a class="phone moskva" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
+            <p>
+                <?= $text; ?>                
+            </p>
+            <a class="phone moskva" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
         </div>
     </div>
     <div class="clear"></div>
