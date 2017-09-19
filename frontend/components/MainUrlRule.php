@@ -72,7 +72,7 @@ class MainUrlRule extends UrlRule {
                 ->limit(1)
                 ->one();
         $sql = 'select * from {{%pages}} where lower(url) =:url AND site_id =:id limit 1';
-        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url, 'id' => $siteConfig['id']])->queryOne();
+        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
         if (!empty($seo)) {
             $page['meta_key'] = $seo['meta_keywords'];
             $page['meta_desc'] = $seo['meta_description'];
