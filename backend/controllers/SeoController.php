@@ -83,7 +83,7 @@ class SeoController extends Controller {
      */
     public function actionUpdate($id) {
         if (isset($_GET['url'])) {
-            $model = $this->findModelbyUrl(urldecode($_GET['url']));            
+            $model = $this->findModelbyUrl(urldecode($_GET['url']), $_GET['site_id']);            
             if ($model === null) {
                 throw new NotFoundHttpException('The requested page does not exist.');
             }
@@ -112,8 +112,8 @@ class SeoController extends Controller {
         return $this->redirect(['index']);
     }
 
-    protected function findModelbyUrl($url) {
-        $model = Seo::findOne(['url' => $url]);
+    protected function findModelbyUrl($url, $id) {
+        $model = Seo::findOne(['url' => $url, 'site_id' => $id]);
         return $model;
     }
 
