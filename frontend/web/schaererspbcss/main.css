@@ -292,3 +292,12 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 .models-gl:hover span {
     background: #333;
 }
+
+#neispravnost .punkt.promo a .big-text, 
+#neispravnost .punkt.promo a ul li, 
+#neispravnost .punkt.promo a .price {
+    color: #333;
+}
+#neispravnost .punkt.promo a ul li:before {
+    background: #333;
+}

@@ -210,11 +210,15 @@ table.pricelist td.order .popup-zakaz {
 }
 
 
+    #header .logo {
+        width: 95px;
+        height: auto;
+    }
 
 
 @media screen and (max-width: 1030px) {
     #header .logo {
-        width: 140px;
+        width: 95px;
         height: 45px;
     }
 }
@@ -228,7 +232,7 @@ table.pricelist td.order .popup-zakaz {
         background: #333;
     }
     #header .logo {
-        width: 140px;
+        width: 95px;
         height: auto;
     }
 
@@ -288,5 +292,14 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
     background: #d00c0e;
 }
 .models-gl:hover span {
+    background: #333;
+}
+
+#neispravnost .punkt.promo a .big-text, 
+#neispravnost .punkt.promo a ul li, 
+#neispravnost .punkt.promo a .price {
+    color: #333;
+}
+#neispravnost .punkt.promo a ul li:before {
     background: #333;
 }
