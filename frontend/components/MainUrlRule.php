@@ -41,7 +41,7 @@ class MainUrlRule extends UrlRule {
         
         $serv = $this->checkToService(end($arrayUrl));
         
-        if ($serv)
+        if ($serv !== false)
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
 
         $page = $this->getPage($pathInfo);
