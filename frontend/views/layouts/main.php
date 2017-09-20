@@ -33,7 +33,7 @@ if ($siteConfig['mono'])
         <style>#banner ul {list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 10px;
-} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: left;clear: both;margin-bottom: 15px;}</style>
+} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}</style>
     </head>    
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
 
