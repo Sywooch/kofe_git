@@ -57,7 +57,7 @@ body.video {
     /*background: url(../images/bg-text.jpg) top 800px center no-repeat #f8f2ef;*/
 }
 .video .bg-all {
-    background: #58b0e2 url(../images/bg_main_slider.jpg) center bottom;
+    background: url(../images/bg_main_slider.jpg) center bottom;
 }
 .container {
     width: 1100px;
