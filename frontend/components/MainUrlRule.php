@@ -58,6 +58,7 @@ class MainUrlRule extends UrlRule {
 
         $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
         $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        
         if (!empty($page)) {
             $seo = (new \yii\db\Query())
                     ->select(['*'])
@@ -66,12 +67,12 @@ class MainUrlRule extends UrlRule {
                     ->limit(1)
                     ->one();
             if (!empty($seo)) {
-                $page['meta_key'] = $seo['meta_keywords'] ?: $page['meta_key'];
-                $page['meta_desc'] = $seo['meta_description'] ?: $page['meta_desc'];
+                $page['meta_key'] = $seo['meta_keywords'] ?: $page['meta_keywords'];
+                $page['meta_desc'] = $seo['meta_description'] ?: $page['meta_description'];
                 $page['meta_title'] = $seo['meta_title'] ?: $page['meta_title'];
                 $page['meta_h1'] = $seo['meta_h1'] ?: $page['meta_h1'];
                 $page['description'] = $seo['meta_text1'] ?: $page['description'];
-                $page['full_description'] = $seo['meta_text2'] ?: $page['full_description'];
+                //$page['full_description'] = $seo['meta_text2'] ?: $page['full_description'];
             }
         }
 
