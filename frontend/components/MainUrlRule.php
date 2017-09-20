@@ -31,14 +31,14 @@ class MainUrlRule extends UrlRule {
             if (strpos($pathInfo, 'remont-kofemashin-') !== false)
                 return ['site/error', []];
             $replaceUrl = Yii::$app->params['replace-url'];
-            $brand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();            
-            $pathInfo = str_replace($replaceUrl, $brand['url'] . '/', $pathInfo);            
+            $brand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
+            $pathInfo = str_replace($replaceUrl, $brand['url'] . '/', $pathInfo);
         }
 
         if (empty($pathInfo))
             $pathInfo = '/';
 
-        
+
         $serv = $this->checkToService(end($arrayUrl));
         if (!empty($serv))
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
@@ -53,8 +53,24 @@ class MainUrlRule extends UrlRule {
     }
 
     protected function checkToService($url) {
+        $siteConfig = self::getSiteConfig();
+        $seo = (new \yii\db\Query())
+                ->select(['*'])
+                ->from('{{%seo}}')
+                ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
+                ->limit(1)
+                ->one();
         $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
-        return Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        if (!empty($seo)) {
+            $page['meta_key'] = $seo['meta_keywords'];
+            $page['meta_desc'] = $seo['meta_description'];
+            $page['meta_title'] = $seo['meta_title'];
+            $page['meta_h1'] = $seo['meta_h1'];
+            $page['description'] = $seo['meta_text1'];
+            $page['full_description'] = $seo['meta_text2'];
+        }
+        return $page;
     }
 
     protected function turnToController($pageInfo) {
@@ -65,7 +81,6 @@ class MainUrlRule extends UrlRule {
 
     private function getPage($url) {
         $siteConfig = self::getSiteConfig();
-        //echo $siteConfig['id'];exit;
         $seo = (new \yii\db\Query())
                 ->select(['*'])
                 ->from('{{%seo}}')
