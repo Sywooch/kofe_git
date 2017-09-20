@@ -38,9 +38,9 @@ class MainUrlRule extends UrlRule {
         if (empty($pathInfo))
             $pathInfo = '/';
 
-        
+
         $serv = $this->checkToService(end($arrayUrl));
-        
+
         if ($serv !== false)
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
 
@@ -55,23 +55,26 @@ class MainUrlRule extends UrlRule {
 
     protected function checkToService($url) {
         $siteConfig = self::getSiteConfig();
-        $seo = (new \yii\db\Query())
-                ->select(['*'])
-                ->from('{{%seo}}')
-                ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
-                ->limit(1)
-                ->one();
+
         $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
         $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
-        if (!empty($seo)) {
-            $page['meta_key'] = $seo['meta_keywords'];
-            $page['meta_desc'] = $seo['meta_description'];
-            $page['meta_title'] = $seo['meta_title'];
-            $page['meta_h1'] = $seo['meta_h1'];
-            $page['description'] = $seo['meta_text1'];
-            $page['full_description'] = $seo['meta_text2'];
+        if (!empty($page)) {
+            $seo = (new \yii\db\Query())
+                    ->select(['*'])
+                    ->from('{{%seo}}')
+                    ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
+                    ->limit(1)
+                    ->one();
+            if (!empty($seo)) {
+                $page['meta_key'] = $seo['meta_keywords'];
+                $page['meta_desc'] = $seo['meta_description'];
+                $page['meta_title'] = $seo['meta_title'];
+                $page['meta_h1'] = $seo['meta_h1'];
+                $page['description'] = $seo['meta_text1'];
+                $page['full_description'] = $seo['meta_text2'];
+            }
         }
-        
+
         return $page;
     }
 
