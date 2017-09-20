@@ -38,9 +38,10 @@ class MainUrlRule extends UrlRule {
         if (empty($pathInfo))
             $pathInfo = '/';
 
-
+        
         $serv = $this->checkToService(end($arrayUrl));
-        if (!empty($serv))
+        
+        if ($serv)
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
 
         $page = $this->getPage($pathInfo);
@@ -70,6 +71,7 @@ class MainUrlRule extends UrlRule {
             $page['description'] = $seo['meta_text1'];
             $page['full_description'] = $seo['meta_text2'];
         }
+        
         return $page;
     }
 

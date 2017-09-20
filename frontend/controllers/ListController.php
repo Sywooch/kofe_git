@@ -175,11 +175,11 @@ class ListController extends CController {
         $title = $seo['meta_title'] ?: $title;       
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
-            'content' => count($url) > 1 ? ($seo['meta_keywords'] ?: $metaKey) : ($pageInfo['meta_key'] ?: $metaKey)
+            'content' => count($url) > 1 ? ($seo['meta_keywords'] ?: $metaKey) : (isset($pageInfo['meta_key']) ? $pageInfo['meta_key'] : $metaKey)
         ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => count($url) > 1 ? ($seo['meta_description'] ?: $metaDesc) : ($pageInfo['meta_desc'] ?: $metaDesc)
+            'content' => count($url) > 1 ? ($seo['meta_description'] ?: $metaDesc) : (isset($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc)
         ]);
 
 
