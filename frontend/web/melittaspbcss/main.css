@@ -1,0 +1,292 @@
+#neispravnost .punkt.promo {
+    background: url(../melittaspbimages/melittaspbpromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../melittaspbimages/melittaspbcontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    /*background: url(../images/mid-banner1-bg.jpg) center no-repeat;*/
+}
+.video .bg-all {
+    /*background: #333 url(../images/bg_main_slider.jpg) center center;*/
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #333 url(../images/footer-bg.jpg) center center;
+}
+.video #primushestva .container:before {
+    background: url(../melittaspbimages/melittaspbservice-img.jpg);
+}
+.models-gl span {
+    background: #d00c0e;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#d00c0e;
+}
+.time-work {
+    color: #fff;
+}
+#header {
+    background: #d00c0e;
+}
+#header .nav ul li a {
+    color: #fff;
+}
+.tel .phone {
+    color: #fff;
+}
+.tel .phone:hover {
+    color: #fff;
+}
+.tel .phone:before {
+        background: #fff;
+        color: #d00c0e;
+}
+#banner .full-text .h1 {
+    color: #d00c0e;
+}
+.hero-form__btn {
+  border: 1px solid #d00c0e;
+  background: #d00c0e;
+}
+#primushestva .punkt .h2 {
+    color: #333;
+}
+#primushestva .punkt:hover .h2 {
+    color: #d00c0e;
+}
+#neispravnost .punkt a .big-text {
+    color: #d00c0e;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #d00c0e;
+}
+.more a {
+    color: #d00c0e;
+    border: 1px solid #d00c0e;
+}
+#zakaz .left {
+    background: url(../melittaspbimages/melittaspbchek.svg);
+    background-size: 100% 100%;
+}
+.field-callbackform-phone:before,
+.field-orderform-phone:before {
+    background: #d00c0e;
+}
+.nav-icon2 span {
+    background: #fff;
+}
+#ask-form .container .right button {
+    border: 1px solid #d00c0e;
+    background: #d00c0e;
+}
+.video #banner .right-text .h1,
+.video #banner .right-text p {
+    color: #d00c0e;
+}
+#banner .right-text .happy-time p {
+    color: #d00c0e;
+}
+
+.container a {
+    color: #d00c0e;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #333;
+}
+#banner .right-text ul li:before {
+    background: #333;
+}
+input#phone {
+    border: 1px solid #333;
+}
+input.phone {
+    border: 1px solid #d00c0e;
+}
+input#phone:focus {
+    border: 1px solid #333;
+}
+.hero-form__btn:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#banner .right-text .happy-time p span {
+    color: #333;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #333;
+}
+#neispravnost .punkt a .price {
+    color: #333;
+}
+#neispravnost .punkt a .price .new {
+    background: #333;
+}
+#neispravnost .punkt a ul li:before {
+    background: #333;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #333;
+}
+.more a:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+#footer .tel .phone:before {
+    color: #333;
+}
+.popup .wight div.close {
+    background-color: #333;
+}
+#hlebniye-kroshki ul li {
+    color: #333;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #333;
+}
+.pagination li:hover {
+    background: #333;
+}
+.pagination li.active a {
+    color: #333;
+}
+.left-bar .left-menu {
+    /*border: 4px solid #333;*/
+}
+
+.left-bar .left-menu  .other {
+    background: #333;
+}
+table.pricelist td {
+    color: #333;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #d00c0e;
+}
+#bran .brands .row:hover div {
+    color: #d00c0e;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #d00c0e;
+}
+#bran .brands .row ul li:hover a {
+    color: #d00c0e;
+}
+.more div {
+    color: #d00c0e;
+    border: 1px solid #d00c0e;
+}
+.more div:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#links ul li a {
+    color: #333;
+}
+#links ul li a:hover {
+    color: #333;
+}
+#ask-form .container .right button:hover {
+    background: #333;
+}
+.ui-autocomplete-input {
+    border: 1px solid #d00c0e;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #333;
+    border-bottom: 1px solid #333;
+}
+.all-contact h2 span.active {
+    background: #333;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #333;
+}
+
+
+
+
+@media screen and (max-width: 1030px) {
+    #header .logo {
+        width: 140px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #333;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #333;
+    }
+    #header .logo {
+        width: 140px;
+        height: auto;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+}
+@media screen and (max-width: 540px) {
+}
+
+
+#banner .right-text .h1 {
+    color: #d00c0e;
+}
+section .container .title {
+    border-bottom: 2px solid #d00c0e;
+    color: #d00c0e;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #d00c0e;
+}
+
+.options h3 {
+    color: #d00c0e;
+}
+.models-gl {
+    background: #d00c0e;
+}
+.models-gl:hover span {
+    background: #333;
+}

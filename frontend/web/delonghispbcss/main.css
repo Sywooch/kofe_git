@@ -1,37 +1,43 @@
 #neispravnost .punkt.promo {
-    background: url(../delonghiimages/delonghipromo_bg.jpg);
+    background: url(../delonghispbimages/delonghispbpromo_bg.jpg);
 }
 #neispravnost .punkt.contact {
-    background: url(../delonghiimages/delonghicontect-bg2.jpg);
+    background: url(../delonghispbimages/delonghispbcontect-bg2.jpg);
     background-position: right;
 }
 #skidka {
-    background: url(../delonghiimages/delonghibg-sale.jpg) center no-repeat;
+    /*background: url(../images/mid-banner1-bg.jpg) center no-repeat;*/
 }
 .video .bg-all {
-    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-    background-size: 10%;
+    /*background: #58b0e2 url(../images/bg_main_slider.jpg) center center;*/
 }
 #ask-form {
     box-sizing: border-box;
-    background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-    background-size: 180px;
+    background: #58b0e2 url(../images/footer-bg.jpg) center center;
+}
+
+.models-gl span {
+    background: #3163a2;
 }
 
 #primushestva .punkt .fil1 {
     fill:#3163a2;
 }
 .time-work {
-    color: #3163a2;
+    color: #fff;
+}
+#header {
+    background: #58b0e2;
+        box-shadow: 1px 1px 18px rgba(0,0,0,.15);
 }
 #header .nav ul li a {
-    color: #3163a2;
+    color: #fff;
 }
 .tel .phone {
-    color: #3163a2;
+    color: #fff;
 }
 .tel .phone:hover {
-    color: #3163a2;
+    color: #fff;
 }
 .tel .phone:before {
 		background: #3163a2;
@@ -57,23 +63,26 @@
     border: 1px solid #3163a2;
 }
 #zakaz .left {
-    background: #3163a2;
-}
-.left-bar .left-menu li.active a {
-    color: #3163a2;
-    border-bottom: 1px solid #3163a2;
+    background: url(../delonghispbimages/delonghispbchek.svg);
+    background-size: 100% 100%;
 }
 .nav-icon2 span {
-    background: #3163a2;
+    background: #fff;
 }
 #ask-form .container .right button {
     border: 1px solid #3163a2;
     background: #3163a2;
 }
-
+.video #banner .right-text .h1,
+.video #banner .right-text p {
+    color: #0c3363;
+}
+#banner .right-text .happy-time p {
+    color: #0c3363;
+}
 
 .container a {
-    color: #58b0e2;
+    color: #3163a2;
 }
 #header .nav ul li.active a:after,
 #header .nav ul li a:hover:after {
@@ -86,7 +95,7 @@ input#phone {
     border: 1px solid #58b0e2;
 }
 input.phone {
-    border: 1px solid #58b0e2;
+    border: 1px solid #3163a2;
 }
 input#phone:focus {
     border: 1px solid #58b0e2;
@@ -94,9 +103,6 @@ input#phone:focus {
 .hero-form__btn:hover {
     background: #58b0e2;
     border: 1px solid #58b0e2;
-}
-#banner .right-text .happy-time p {
-	color: #fff;
 }
 #banner .right-text .happy-time p span {
     color: #58b0e2;
@@ -125,9 +131,7 @@ input#phone:focus {
     color: #fff;
     border: 1px solid #58b0e2;
 }
-#footer {
-    background: #58b0e2;
-}
+
 #footer .tel .phone:before {
     color: #58b0e2;
 }
@@ -147,14 +151,9 @@ input#phone:focus {
     color: #58b0e2;
 }
 .left-bar .left-menu {
-    border: 4px solid #58b0e2;
+    /*border: 4px solid #58b0e2;*/
 }
-.left-bar .left-menu li a {
-    color: #58b0e2;
-}
-.left-bar .left-menu li a:hover {
-    color: #58b0e2;
-}
+
 .left-bar .left-menu  .other {
 	background: #58b0e2;
 }
@@ -162,7 +161,7 @@ table.pricelist td {
     color: #58b0e2;
 }
 table.pricelist td.order .popup-zakaz {
-    background: #58b0e2;
+    background: #3163a2;
 }
 #bran .brands .row:hover div {
     color: #58b0e2;
@@ -215,7 +214,7 @@ table.pricelist td.order .popup-zakaz {
 }
 @media screen and (max-width: 830px) {
 	#header .nav {
-        background: #58b0e2;
+        background: #333;
 	}
 
 
@@ -225,19 +224,8 @@ table.pricelist td.order .popup-zakaz {
 
 
 @media screen and (max-width: 680px) {
-		.video .bg-all {
-        background: #58b0e2 url(../delonghiimages/delonghibg-footer.svg);
-        background-size: 30%;
-    }
 }
 @media screen and (max-width: 540px) {
-		#neispravnost .punkt.promo {
-        background: url(../delonghiimages/delonghipromo_bg.jpg);
-        background-position: 0px 0px;
-    }
-    input.phone {
-        border: 1px solid #58b0e2;
-    }
 }
 
 

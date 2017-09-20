@@ -18,6 +18,7 @@
 }
 .video .bg-all {
     padding-bottom: 2px;
+        box-shadow: 1px 1px 18px rgba(0,0,0,.15);
 }
 
 .fil0 {fill:none}
@@ -50,10 +51,13 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background: #fff url(../delonghiimages/delonghibg.svg);
-    background-size: 10%;
+    background-image: url(../images/bg-body_wood_bg.png);
 }
 body.video {
+    /*background: url(../images/bg-text.jpg) top 800px center no-repeat #f8f2ef;*/
+}
+.video .bg-all {
+    background: #58b0e2 url(../images/bg_main_slider.jpg) center bottom;
 }
 .container {
     width: 1100px;
@@ -79,6 +83,18 @@ h2 {
 }
 h3 {
     font-family: 'NeuronExtraBold', cursive;
+}
+#banner h2 {
+    font-family: 'NeuronExtraBold', cursive;
+    clear: both;
+    padding-top: 15px;
+    margin: 0px;
+}
+#banner h3 {
+    font-family: 'NeuronExtraBold', cursive;
+    clear: both;
+    padding-top: 15px;
+    margin: 0px;
 }
 p {
     text-align: justify;
@@ -148,30 +164,30 @@ section {
     border: 0px;
 }
 #header {
-    height: 60px;
-
+    padding-bottom: 13px;
+    background: #333;
 }
 #header .container {
     display: block;
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .time-work {
     position: absolute;
     font-size: 12px;
     right: 0px;
     top: 0px;
-    margin-top: 60px;
+    margin-top: 45px;
 }
 .video .time-work {
     color: #fff;
 }
 #header .logo {
-    width: 180px;
+    width: 120px;
     position: relative;
     float: left;
     margin-right: 25px;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 #header .logo img {
     vertical-align: middle;
@@ -258,10 +274,11 @@ span.brand-title {
 #banner {
     margin-top: 50px;
     clear: both;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
 }
 .video #banner {
     margin-top: 90px;
+    margin-bottom: 65px;
 }
 
 .banners #banner .left-img {
@@ -277,12 +294,16 @@ span.brand-title {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
     vertical-align: middle;
 }
+
 #banner .left-img {
     width: 28%;
     margin-left: 6%;
     margin-right: 5%;
-    float: left;
+    float: right;
     position: relative;
+}
+#banner p {
+    margin: 0px;
 }
 .video #banner .left-img:before {
     content: '';
@@ -309,11 +330,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     float: right;
     width: 67%;
     margin-right: 6%;
+    margin-left: 0px;
 }
 #banner .right-text {
-    float: right;
+    float: left;
     width: 50%;
-    margin-right: 10%;
+    margin-left: 5%;
 }
 #banner .right-text .h1 h1 {
     font-size: 40px;
@@ -321,7 +343,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     margin-right: 10px;
     font-weight: 200;
 }
-
+#main #banner .right-text .h1 h1 {
+    font-size: 30px;
+}
 #banner .full-text .h1 h1 {
     float: left;
     font-size: 40px;
@@ -362,12 +386,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 #banner .right-text p {
     font-size: 15px;
-    float: left;
+    margin-bottom: 20px;
 }
 #banner .full-text p {
     font-size: 15px;
     float: left;
     clear: both;
+    margin-bottom: 15px;
 }
 input#phone {
     border-radius: 3px;
@@ -381,30 +406,76 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     padding: 5px 15px;
     font-size: 16px;
-    max-width: 80%;
-    float: left;
-    width: 45%;
+    width: 172px;
     margin-right: 10px;
     outline: none;
     min-height: 35px;
     box-sizing: border-box;
     margin-bottom: 10px;
     margin-left: 0%;
+    position: relative;
+}
+.field-callbackform-phone {
+    position: relative;
+}
+.field-callbackform-phone:before {
+    content:"\f095";
+    width: 35px;
+    height: 35px;
+    padding-top: 8px;
+    background: #3163a2;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px ! important;
+    float: left;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.field-orderform-phone:before {
+    content:"\f095";
+    width: 35px;
+    height: 35px;
+    padding-top: 8px;
+    background: #3163a2;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px ! important;
+    float: left;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.field-orderform-phone {
+    text-align: left;
+    float: left;
 }
 .popup input.phone {
-    width: 180px;
+    width: 170px;
 }
 .popup .hero-form__btn {
-    width: 130px;
+    width: 100px;
+    font-size: 14px;
 }
 input#phone::-webkit-input-placeholder {
     font-size: 12px;
 }
 .hero-form__btn {
-    width: 167px;
+    width: 206px;
     height: 36px;
     border-radius: 3px;
     color: #fff;
@@ -412,9 +483,19 @@ input#phone::-webkit-input-placeholder {
     cursor: pointer;
     outline: none;
 }
+#zakaz .hero-form__btn {
+    width: 202px;
+}
+#neispravnost .punkt.contact .hero-form__btn {
+    font-size: 14px;
+    width: 166px;
+}
 #banner .right-text .happy-time {
-    margin-bottom: 35px;
-    clear: both;
+    float: left;
+    width: 245px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding-right: 40px;
 }
 #banner .right-text .happy-time p {
     font-size: 22px;
@@ -492,6 +573,10 @@ section .container .title span {
     bottom: 0px;
     margin-bottom: 15px;
     font-size: 14px;
+    display: none;
+}
+#footer .tel .phone:before {
+    color: #1d1313 ! important;
 }
 #ask-form .container .title span {
     font-size: 50px;
@@ -505,8 +590,10 @@ section#primushestva .container .title {
     margin-top: 0px;
 }
 #primushestva .punkt {
-    width: 25%;
+    width: 50%;
     display: block;
+    box-sizing: border-box;
+    padding: 0px 20px;
     float: left;
     margin-bottom: 15px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -515,11 +602,15 @@ section#primushestva .container .title {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-
+#skidka {
+    background: url(../images/mid-banner1-bg.jpg) center no-repeat;
+}
 
 #primushestva .punkt div.img {
-    width: 100%;
+    width: 70px;
+    float: left;
     text-align: center;
+    margin-right: 15px;
 }
 #primushestva .punkt div.img img {
     width: 35%;
@@ -527,18 +618,16 @@ section#primushestva .container .title {
     margin-bottom: 10px;
 }
 #primushestva .punkt div.img svg {
-    width: 35%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100%;
 }
 #primushestva .punkt .h2 {
     padding: 0px 30px;
     margin-bottom: 0px;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: 5px;
     font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
-    text-align: center;
+    text-align: left;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -555,7 +644,7 @@ section#primushestva .container .title {
     line-height: 20px;
     margin-top: 5px;
     font-size: 11px;
-    text-align: center;
+    text-align: left;
 }
 #primushestva .punkt a p {
     color: #333;
@@ -749,9 +838,31 @@ input#phone2 {
     min-height: 330px;
 }
 #skidka .container {
-    padding: 88px 0px;
-    text-align: center;
+    padding: 150px 0px;
+    text-align: right;
     color: #fff;
+}
+#skidka .container:after {
+    content: '';
+    background: url(../images/milk-pour2.png) no-repeat;
+    background-size: 100%;
+    width: 208px;
+    height: 255px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    margin-left: 15px;
+}
+#skidka .container:before{
+    content: '';
+    background: url(../images/pour-cup.png) no-repeat bottom;
+    background-size: 100%;
+    width: 176px;
+    height: 190px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 40px;
 }
 #skidka .container h3 {
     font-size: 45px;
@@ -759,7 +870,7 @@ input#phone2 {
     margin: 0px;
 }
 #skidka .container p {
-    text-align: center;
+    text-align: right;
     font-weight: 200;
     font-size: 18px;
 }
@@ -767,9 +878,13 @@ input#phone2 {
     color: #fff;
     border: #fff 1px solid;
 }
+#skidka .more {
+    text-align: right;
+}
 #skidka .more div {
     border: #fff 1px solid;
     color: #fff;
+    text-align: right;
 }
 
 #text-block .container {
@@ -796,28 +911,29 @@ input#phone2 {
 }
 #footer {
     position: relative;
-    min-height: 35px;
-    display: none;
-    background: none ! important;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background: #1d1313;
 }
 #footer p {
     float: left;
     padding: 0px;
     margin: 0px;
-    color: #fff;
+    color: #c7a17a;
     line-height: 35px;
-    font-family: 'NeuronExtraBold', cursive;
+    font-size: 14px;
 }
 #footer .tel {
     float: right;
     padding: 0px;
     margin: 0px;
     line-height: 35px;
-    font-family: 'NeuronExtraBold', cursive;
+    font-size: 14px;
 }
 #footer .tel .phone {
-    font-size: 18px;
-    color: #fff;
+    font-size: 14px;
+    color: #c7a17a;
     line-height: 35px;
     font-weight: 200;
 }
@@ -830,7 +946,7 @@ input#phone2 {
     border-radius: 50%;
     padding-top: 0px;
     display: block;
-    background: #fff;
+    background: #c7a17a;
     text-align: center;
     line-height: 26px;
     font-size: 16px;
@@ -1138,6 +1254,7 @@ input#phone2 {
     float: left;
     margin-right: 0px;
     width: 50%;
+    margin-left: 0px;
 }
 #main #banner .left-img {
     float: right;
@@ -1268,9 +1385,10 @@ section#hlebniye-kroshki {
 }
 #zakaz input.phone {
     width: 167px;
+    float: left;
 }
 #zakaz .left {
-    width: 40%;
+    width: 32%;
     border-radius: 5px;
     background-size: 100%;
     float: right;
@@ -1278,9 +1396,9 @@ section#hlebniye-kroshki {
     text-align: center;
     font-family: 'NeuronExtraBold', cursive;
     line-height: 20px;
-    padding-top: 24px;
+    padding-top: 40px;
     font-size: 20px;
-    height: 100px;
+    height: 135px;
 }
 #zakaz .left span {
     font-size: 24px;
@@ -1300,6 +1418,7 @@ section#hlebniye-kroshki {
     margin-bottom: 10px;
     line-height: 24px;
     font-family: 'NeuronExtraBold', cursive;
+    float: left;
 }
 #zakaz form#callback-form {
     margin-top: 15px;
@@ -1313,17 +1432,41 @@ section#hlebniye-kroshki {
 }
 .left-bar .left-menu {
     width: 100%;
-    background: #fff;
+    background: #000;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+.left-bar .left-menu ul {
+    padding: 10px 0px;
+    background: url(../images/bg-sale.jpg) center center;
+    background-size: auto 100%;
 }
 .left-bar .left-menu li a {
-    padding: 15px 10px;
+    padding: 5px 15px;
     display: block;
-    font-size: 14px;
-    border-bottom: 1px solid #F6F2EF;
-    border-top: 1px solid #EFEFEF;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+.left-bar .left-menu li a:after {
+    content:"\f105";
+    position: absolute;
+    right: 0px;
+    margin-right: 15px;
+    font: normal normal normal 12px/1 FontAwesome;
+    top: 50%;
+    margin-top: -6px;
 }
 .left-bar .left-menu li a:hover {
     padding-left: 20px;
+    background: #fff;
+    color: #333;
+}
+.left-bar .left-menu li.active a {
+    background: #fff;
+    padding-left: 20px;
+    color: #333;
 }
 
 .left-bar .left-menu  .other {
@@ -1333,8 +1476,22 @@ section#hlebniye-kroshki {
 .left-bar .left-menu  .other a {
     width: 100%;
     display: block;
-    line-height: 28px;
+    line-height: 16px;
     color: #fff;
+    padding: 4px 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+.left-bar .left-menu  .other a:hover {
+    padding-left: 5px;
+}
+.left-bar .left-menu  .other a:after {
+    content:"\f105";
+    position: absolute;
+    right: 0px;
+    font: normal normal normal 12px/1 FontAwesome;
+    top: 50%;
+    margin-top: -6px;
 }
 #tseni .container {
     padding: 10px 0px;
@@ -1447,6 +1604,9 @@ table.pricelist td.order .popup-zakaz:hover {
 #ask {
     margin: 20px 0px;
 }
+#ask .hero-form__btn {
+    width: 215px;
+}
 #bran {
     margin: 20px 0px;
 }
@@ -1462,6 +1622,9 @@ table.pricelist td.order .popup-zakaz:hover {
 #bran .row {
     display: flex;
     flex-wrap: wrap;
+}
+#bran .container > .row {
+    margin-left: -1%;
 }
 #bran .brands .row div {
     width: 10%;
@@ -1689,7 +1852,7 @@ video {
 }
 
 #ask-form .container {
-    padding-top: 20px;
+    padding-top: 40px;
     position: relative;
 }
 #ask-form .container .right {
@@ -1779,6 +1942,7 @@ video {
     bottom: 0px;
     left: 0px;
     margin-bottom: 15px;
+    display: none;
 }
 #ask-form .container .left .tel .phone {
     font-size: 14px;
@@ -1878,54 +2042,95 @@ video {
     width: 40%;
     color: #333;
 }
-
-    .models-gl {
-        float: left;
-        width: 20%;
-        height: auto;
-        display: block;
-        background: #fff;
-        text-align: center;
-        margin-bottom: 20px;
-        border: 1px solid #e1e1e1;
-        box-sizing: border-box;
-        border-right: 0px;
-    }
-    .models-gl:nth-child(5n) {
-        border-right: 1px solid #e1e1e1;
-    }
-    .models-gl span {
-        color: #333;
-        font-size: 14px;
-        border-top: 1px solid #e1e1e1;
-        padding: 10px 5px;
-        width: 100%;
-        display: block;
-        box-sizing: border-box;
-    }
-    .models-gl div.img {
-        height: 200px;
-        width: 100%;
-        display: block;
-        line-height: 200px;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-    }
-    .models-gl:hover div.img {
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-    }
-    .models-gl div.img img {
-        max-height: 80%;
-        max-width: 80%;
-        width: auto;
-        vertical-align: middle;
-    }
-    
+.video #banner .left-img:before {
+    background: url(../images/zerno.png) no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 44px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-right: -80px;
+    margin-bottom: -20px;
+}
+.video #primushestva {
+    background: #fff;
+}
+.video #primushestva .container {
+    padding-right: 240px;
+}
+.video #primushestva .container:before {
+    content: '';
+    background: url(../images/service-img.jpg) no-repeat;
+    background-size: 100%;
+    width: 259px;
+    height: 405px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.models-gl {
+    float: left;
+    width: 19%;
+    height: auto;
+    display: block;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-right: 0px;
+    margin-left: 1%;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #3163a2;
+}
+.models-gl:hover {
+    box-shadow: 1px 1px 18px rgba(0,0,0,.15);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.models-gl span {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 5px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.models-gl div.img {
+    height: 200px;
+    width: 100%;
+    display: block;
+    line-height: 200px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #fff;
+}
+.models-gl:hover div.img {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.models-gl div.img img {
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    vertical-align: middle;
+}
+.banners input.phone {
+    float: left;
+}
 @media screen and (max-width: 1500px) {
 
     #neispravnost .punkt a {
@@ -1963,20 +2168,25 @@ video {
 
 }
 @media screen and (max-width: 1030px) {
+    #zakaz .left {
+        width: 36%;
+    }
+    #banner .right-text .happy-time {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .video #primushestva .container {
+        padding-right: 15px;
+    }
+    .video #primushestva .container:before {
+        display: none;
+    }
     #neispravnost .punkt a ul {
         margin-top: 10px;
     }
     .models-gl {
-        width: 25%;
-    }
-    .models-gl:nth-child(5n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(4n) {
-        border-right: 1px solid #e1e1e1;
-    }
-    .models-gl:last-child {
-        border-right: 1px solid #e1e1e1;
+        width: 24%;
     }
     section#hlebniye-kroshki {
         margin-top: -10px;
@@ -2019,13 +2229,17 @@ video {
     }
     #banner .right-text .h1 h1,
     #banner .right-text .h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
     #banner .right-text .happy-time p {
         font-size: 20px;
     }
     #primushestva .punkt {
-        width: 33%;
+        width: 50%;
+        padding: 0px;
+    }
+    #primushestva .punkt div.img {
+        width: 55px;
     }
     #neispravnost .punkt {
         width: 50%;
@@ -2051,9 +2265,13 @@ video {
     }
     #header .logo {
         width: 140px;
+        height: 55px;
+    }
+    #header .logo img {
+        max-height: 100%;
     }
     .time-work {
-        margin-top: 55px;
+        margin-top: 45px;
     }
     .video #banner {
         margin-top: 50px;
@@ -2071,11 +2289,12 @@ video {
     #zakaz .right h3 {
         font-size: 18px;
     }
-    #zakaz input.phone,
-    #zakaz .hero-form__btn {
+    #zakaz input.phone {
         width: 150px;
     }
-
+    #zakaz .hero-form__btn {
+        width: 184px;
+    }
     section .container .title {
         font-size: 22px;
     }
@@ -2127,6 +2346,30 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    .field-callbackform-phone {
+        float: left;
+    }
+    #primushestva .punkt .h2,
+    #primushestva .punkt p {
+        padding: 0px;
+    }
+    #primushestva .punkt div.img {
+        margin-bottom: 10px;
+        width: 50px;
+        margin-right: 10px;
+    }
+    #skidka .container {
+        padding: 100px 0px;
+        text-align: center;
+    }
+    #skidka .container p,
+    #skidka .more {
+        text-align: center;
+    }
+    #skidka .container:before,
+    #skidka .container:after {
+        display: none;
+    }
     .brand-model-image {
         height: 275px;
         line-height: 275px;
@@ -2136,9 +2379,6 @@ video {
     }
     input.phone2 {
         max-width: 200px;
-    }
-    .hero-form__btn {
-        width: 200px;
     }
     section .container .title {
         width: 100%;
@@ -2169,15 +2409,20 @@ video {
     }
     #banner .right-text {
         margin-right: 0%;
+        margin-left: 0%;
         width: 60%;
         padding-top: 0px;
     }
     .banners #banner .right-text {
         margin-right: 0%;
+        margin-left: 0%;
         width: 65%;
     }
     #banner .right-text p {
         font-size: 14px;
+    }
+    .time-work {
+        display: none;
     }
     input#phone {
         width: 120px;
@@ -2187,10 +2432,12 @@ video {
     }
     #banner .left-img {
         width: 33%;
+        margin-right: 0%;
         margin-left: 0%;
     }
     .banners #banner .left-img {
         width: 31%;
+        margin-right: 0%;
         margin-left: 0%;
     }
     .tel .phone {
@@ -2302,8 +2549,8 @@ video {
         padding: 15px;
         width: 100%;
         display: block;
-        border-bottom: 1px solid #77b3d6;
-        border-top: 1px solid #078dda;
+        border-bottom: 1px solid #4c4f50;
+        border-top: 1px solid #292828;
         margin: 0px;
     }
     #header .nav ul li:first-child a {
@@ -2354,22 +2601,7 @@ video {
 
 
     .models-gl {
-        width: 33.33333%;
-    }
-    .models-gl:nth-child(5n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(4n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(3n) {
-        border-right: 1px solid #e1e1e1;
-    }
-    .models-gl:last-child {
-        border-right: 1px solid #e1e1e1;
-    }
-    body {
-        background-size: 30%;
+        width: 32.33333%;
     }
     #footer p:nth-child(2) {
         display: none;
@@ -2432,6 +2664,9 @@ video {
     }
     #zakaz .right {
         width: 460px;
+        text-align: center;
+        padding: 0px 40px;
+        box-sizing: border-box;
     }
     #zakaz form#callback-form {
         margin-bottom: 10px;
@@ -2489,7 +2724,6 @@ video {
     }
     #footer {
         margin-top: -35px;
-        background: none;
     }
     .owl-nav {
         display: none ! important;
@@ -2512,13 +2746,45 @@ video {
     #skidka {
         min-height: 100px;
     }
+    #zakaz .h3 {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 540px) {
+    .field-orderform-phone {
+        float: none;
+        width: 190px;
+        margin: 0 auto;
+    }
+    .field-orderform-phone:before {
+        float: left;
+    }
+    .field-callbackform-phone {
+        width: 240px;
+        margin: 0 auto;
+        float: none;
+    }
+    .field-callbackform-phone:before {
+        float: left;
+    }
+    #zakaz .field-callbackform-phone {
+        width: 195px;
+    }
+
+    .popup input.phone {
+        width: 155px;
+    }
+    .popup .hero-form__btn {
+        width: 155px;
+        width: 190px;
+    }
+
     #banner {
         margin-bottom: 0px;
     }
     .video #banner {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
     #primushestva .punkt div.img svg {
         width: 75%;
@@ -2526,7 +2792,7 @@ video {
         margin-bottom: 10px;
     }
     .models-gl {
-        width: 50%;
+        width: 49%;
         display: none;
     }
     .models-gl:nth-child(1),
@@ -2534,21 +2800,6 @@ video {
     .models-gl:nth-child(3),
     .models-gl:nth-child(4){
         display: block ! important;
-    }
-    .models-gl:nth-child(5n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(4n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(3n) {
-        border-right: 0px solid #e1e1e1;
-    }
-    .models-gl:nth-child(2n) {
-        border-right: 1px solid #e1e1e1;
-    }
-    .models-gl:last-child {
-        border-right: 1px solid #e1e1e1;
     }
     #footer p:nth-child(2) {
         display: none;
@@ -2802,6 +3053,7 @@ video {
     }
     #zakaz .right {
         width: 265px;
+        padding: 0px;
     }
     #zakaz {
         margin: 0px;
@@ -2840,22 +3092,18 @@ video {
         height: 540px;
     }
     input.phone {
-        border-radius: 3px;
         padding: 5px 15px;
-        font-size: 16px;
-        max-width: 80%;
+        font-size: 14px;
         float: left;
-        width: 80%;
+        width: 205px;
         margin-right: 0px;
         outline: none;
-        min-height: 36px;
+        min-height: 35px;
         box-sizing: border-box;
         margin-bottom: 10px;
-        margin-left: 10%;
     }
-    .popup input.phone,
-    .popup .hero-form__btn {
-        width: 80%;
+    #neispravnost .punkt.contact .hero-form__btn {
+        width: 182px;
     }
     .hero-form__btn {
         width: 80%;
@@ -2880,10 +3128,15 @@ video {
     .punkt.contact .hero-form__btn {
         margin-left: 0%;
     }
-    #zakaz input.phone, #zakaz .hero-form__btn {
+    #zakaz input.phone {
         margin-left: 0px;
         float: none;
-        width: 200px;
+        width: 160px;
+    }
+    #zakaz .hero-form__btn {
+        margin-left: 0px;
+        float: none;
+        width: 196px;
     }
     #hlebniye-kroshki ul {
         float: none;
@@ -3074,7 +3327,17 @@ body.models .logo-breand {
 }
 @media screen and (max-width: 540px) {
     #ask input.phone {
-        width: 80%;
+        width: 165px;
+    }
+    #ask .field-callbackform-phone {
+        width: 200px;
+    }
+    #ask .hero-form__btn {
+        width: 200px;
+        margin-left: 30px;
+    }
+    .video #primushestva {
+        background: none;
     }
 }
 #modeli ul {
@@ -3097,6 +3360,3 @@ body.models .logo-breand {
     z-index: 1;
 }
 
-.models-gl:nth-last-child(2) {
-        border-right: 1px solid #e1e1e1;
-    }

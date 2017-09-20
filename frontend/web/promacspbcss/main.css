@@ -1,0 +1,303 @@
+#neispravnost .punkt.promo {
+    background: url(../promacspbimages/promacspbpromobg.jpg);
+}
+#neispravnost .punkt.contact {
+    background: url(../promacspbimages/promacspbcontectbg2.jpg);
+    background-position: right;
+}
+#skidka {
+    /*background: url(../images/mid-banner1-bg.jpg) center no-repeat;*/
+}
+.video .bg-all {
+    /*background: #333 url(../images/bg_main_slider.jpg) center center;*/
+}
+#ask-form {
+    box-sizing: border-box;
+    background: #333 url(../images/footer-bg.jpg) center center;
+}
+.video #primushestva .container:before {
+    background: url(../promacspbimages/promacspbservice-img.jpg);
+}
+.models-gl span {
+    background: #a1190d;
+}
+
+#primushestva .punkt .fil1 {
+    fill:#a1190d;
+}
+.time-work {
+    color: #fff;
+}
+#header {
+    background: #a1190d;
+}
+#header .nav ul li a {
+    color: #fff;
+}
+.tel .phone {
+    color: #fff;
+}
+.tel .phone:hover {
+    color: #fff;
+}
+.tel .phone:before {
+        background: #fff;
+        color: #a1190d;
+}
+#banner .full-text .h1 {
+    color: #a1190d;
+}
+.hero-form__btn {
+  border: 1px solid #a1190d;
+  background: #a1190d;
+}
+#primushestva .punkt .h2 {
+    color: #333;
+}
+#primushestva .punkt:hover .h2 {
+    color: #a1190d;
+}
+#neispravnost .punkt a .big-text {
+    color: #a1190d;
+}
+#neispravnost .punkt.promo a {
+    border: 8px solid #a1190d;
+}
+.more a {
+    color: #a1190d;
+    border: 1px solid #a1190d;
+}
+#zakaz .left {
+    background: url(../promacspbimages/promacspbchek.svg);
+    background-size: 100% 100%;
+}
+.field-callbackform-phone:before,
+.field-orderform-phone:before {
+    background: #a1190d;
+}
+.nav-icon2 span {
+    background: #fff;
+}
+#ask-form .container .right button {
+    border: 1px solid #a1190d;
+    background: #a1190d;
+}
+.video #banner .right-text .h1,
+.video #banner .right-text p {
+    color: #a1190d;
+}
+#banner .right-text .happy-time p {
+    color: #a1190d;
+}
+
+.container a {
+    color: #a1190d;
+}
+#header .nav ul li.active a:after,
+#header .nav ul li a:hover:after {
+    background: #333;
+}
+#banner .right-text ul li:before {
+    background: #333;
+}
+input#phone {
+    border: 1px solid #333;
+}
+input.phone {
+    border: 1px solid #a1190d;
+}
+input#phone:focus {
+    border: 1px solid #333;
+}
+.hero-form__btn:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#banner .right-text .happy-time p span {
+    color: #333;
+}
+#neispravnost .punkt a:hover .big-text {
+    color: #333;
+}
+#neispravnost .punkt a .price {
+    color: #333;
+}
+#neispravnost .punkt a .price .new {
+    background: #333;
+}
+#neispravnost .punkt a ul li:before {
+    background: #333;
+}
+#neispravnost .punkt.promo a ul li:before,
+#neispravnost .punkt.promo a .price .new {
+    color: #333;
+}
+.more a:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+#footer .tel .phone:before {
+    color: #333;
+}
+.popup .wight div.close {
+    background-color: #333;
+}
+#hlebniye-kroshki ul li {
+    color: #333;
+}
+#hlebniye-kroshki ul li a:hover {
+    color: #333;
+}
+.pagination li:hover {
+    background: #333;
+}
+.pagination li.active a {
+    color: #333;
+}
+.left-bar .left-menu {
+    /*border: 4px solid #333;*/
+}
+
+.left-bar .left-menu  .other {
+    background: #333;
+}
+table.pricelist td {
+    color: #333;
+}
+table.pricelist td.order .popup-zakaz {
+    background: #a1190d;
+}
+#bran .brands .row:hover div {
+    color: #a1190d;
+}
+#bran .brands .row ul li:hover {
+    border: 1px solid #a1190d;
+}
+#bran .brands .row ul li:hover a {
+    color: #a1190d;
+}
+.more div {
+    color: #a1190d;
+    border: 1px solid #a1190d;
+}
+.more div:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+#links ul li a {
+    color: #333;
+}
+#links ul li a:hover {
+    color: #333;
+}
+#ask-form .container .right button:hover {
+    background: #333;
+}
+.ui-autocomplete-input {
+    border: 1px solid #a1190d;
+}
+.ui-menu .ui-menu-item:hover {
+    background: #333;
+    border-bottom: 1px solid #333;
+}
+.all-contact h2 span.active {
+    background: #333;
+}
+#otzvi .otziv .h3 {
+    border-bottom: 1px solid #333;
+}
+
+
+#header .logo {
+    margin-top: 9px;
+}
+
+@media screen and (max-width: 1030px) {
+    #header .logo {
+        width: 140px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 830px) {
+    table.pricelist td.name a:hover {
+        color: #333;
+    }
+}
+@media screen and (max-width: 830px) {
+    #header .nav {
+        background: #333;
+    }
+    #header .logo {
+        width: 140px;
+        height: auto;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+}
+@media screen and (max-width: 540px) {
+}
+
+
+#banner .right-text .h1 {
+    color: #a1190d;
+}
+section .container .title {
+    border-bottom: 2px solid #a1190d;
+    color: #a1190d;
+}
+
+#neispravnost .punkt.contact > div div.big-text {
+    color: #fff;
+}
+#neispravnost .punkt.contact > div p {
+    color: #fff;
+}
+
+input#phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input#phone2::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input.phone2 {
+    border: 1px solid #fff;
+    color: #fff;
+}
+input.phone2::-webkit-input-placeholder {color:#fff;}
+input.phone2::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.phone2:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.phone2:-ms-input-placeholder      {color:#fff;}
+
+
+#scroller{
+    background: #a1190d;
+}
+
+.options h3 {
+    color: #a1190d;
+}
+.models-gl {
+    background: #a1190d;
+}
+.models-gl:hover span {
+    background: #333;
+}
+
+#neispravnost .punkt.promo a .big-text, 
+#neispravnost .punkt.promo a ul li, 
+#neispravnost .punkt.promo a .price {
+    color: #333;
+}
+#neispravnost .punkt.promo a ul li:before {
+    background: #333;
+}
