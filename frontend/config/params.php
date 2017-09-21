@@ -19,7 +19,7 @@ return [
         ],
         'spb-remont-kofe' => [
             'phone-1' => '8 (499) 450-90-08',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-2' => '8 (812) 701-00-02',
             'spb-multi' => true,
             'stickyMenu' => false,
             'mono' => false,
