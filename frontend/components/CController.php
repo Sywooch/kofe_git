@@ -27,7 +27,9 @@ class CController extends \yii\web\Controller {
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
-            $this->setRegion(2);
+            $this->setRegion (2);
+        } elseif (!isset($siteConfig['spb']) && $siteConfig['mono']) {
+            $this->setRegion (1);
         }
         if ($siteConfig['mono'])
             self::$monoBrand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
@@ -125,6 +127,16 @@ class CController extends \yii\web\Controller {
         $ad = '.' . end($hostArr);
         $host = str_replace([$ad, 'http://', 'https://'], '', $host);
         return Yii::$app->params['siteConfigs'][$host];
+    }
+
+    public static function seoShuffle(&$items, $int) {
+        mt_srand($int);
+        for ($i = count($items) - 1; $i > 0; $i--) {
+            $j = mt_rand(0, $i);
+            $tmp = $items[$i];
+            $items[$i] = $items[$j];
+            $items[$j] = $tmp;
+        }
     }
 
 }

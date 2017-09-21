@@ -22,6 +22,7 @@ class Neispravnost extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
+        CController::seoShuffle($rows, $siteConfig['id']);
         return $this->render('neispravnost', ['model' => $model, 'rows' => $rows, 'metrika' => $this->metrika]);
     }
 
