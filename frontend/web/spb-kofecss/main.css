@@ -196,7 +196,7 @@ section {
     float: right;
     font-size: 12px;
     display: block;
-    margin-top: 60px;
+    margin-top: -20px;
 }
 .video .time-work {
     color: #fff;
@@ -614,7 +614,7 @@ section#neispravnost .container .title {
     border-right: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     counter-increment: tiles;
-    min-height: 281px;
+    min-height: 250px;
     position: relative;
     box-sizing: border-box;
 }
@@ -637,7 +637,7 @@ section#neispravnost .container .title {
     color: rgba(0,0,0,0.04);
 }
 #neispravnost .punkt a {
-    padding: 35px 25px;
+    padding: 25px 20px;
     height: 100%;
     display: block;
 }
@@ -665,7 +665,7 @@ section#neispravnost .container .title {
     font-size: 18px;
     position: absolute;
     margin-top: 20px;
-    bottom: 35px;
+    bottom: 20px;
     white-space: nowrap;
 }
 #neispravnost .punkt a .price .new {
@@ -706,7 +706,7 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.promo a {
     border: 8px solid #372727;
-    min-height: 194px;
+    min-height: 180px;
 } 
 /*#neispravnost .punkt.promo a:after {
         content: ' ';
@@ -1979,7 +1979,7 @@ video {
 }
 @media screen and (max-width: 1500px) {
     #neispravnost .punkt.contact > div {
-        padding: 14px 25px;
+        padding: 35px 25px;
     }
     .container {
         width: 980px;
@@ -2153,9 +2153,6 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
-    .time-work {
-        margin-top: 77px;
-    }
     .brand-model-image {
         height: 275px;
         line-height: 275px;
