@@ -300,10 +300,11 @@ span.brand-title {
 #banner {
     margin-top: 50px;
     clear: both;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
 }
 .video #banner {
     margin-top: 90px;
+    margin-bottom: 65px;
 }
 
 .banners #banner .left-img {

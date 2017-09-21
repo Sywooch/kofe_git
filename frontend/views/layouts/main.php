@@ -260,6 +260,22 @@ if ($siteConfig['mono'])
                     </div>
                 </section>
             <?php endif; ?>
+
+            <?php if ($siteConfig['mono']): ?>
+                <section id="ask2">
+                    <div class="container">
+                        <div class="img"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt=""></div>
+                        <div class="info">
+                            <div class="h2">
+                                Не нашли свою поломку?
+                            </div>
+                            <p>Свяжитесь с нами по телефону <b>8(812) 406-00-01</b> сейчас и мы поможем разобраться</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+            <?php endif; ?>
+
             <?= \app\widgets\forms\Ask::widget(); ?>
             <section id="footer">
                 <div class="container">

@@ -1926,6 +1926,41 @@ video {
         width: auto;
         vertical-align: middle;
     }
+
+#ask2 {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+#ask2 .container {
+    background: #c7a17a;
+    color: #fff;
+    border-radius: 3px;
+}
+#ask2 .container .h2 {
+    font-family: "NeuronExtraBold",cursive;
+    font-size: 40px;
+}
+#ask2 .container p {
+    font-size: 25px;
+    line-height: 38px;
+    text-align: left;
+}
+#ask2 .container .info {
+    float: right;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 20px 85px 20px 0px;
+}
+#ask2 .container .img {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+#ask2 .container .img img {
+    width: 85%;
+    margin-top: -100px;
+    margin-bottom: -50px;
+}
     
 @media screen and (max-width: 1500px) {
 
@@ -1961,9 +1996,23 @@ video {
         margin-right: 75px;
         margin-left: 35px;
     }
+    #ask2 .container .h2 {
+        font-size: 35px;
+    }
+    #ask2 .container p {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0px;
+    }
 
 }
 @media screen and (max-width: 1030px) {
+    #ask2 {
+        margin-top: 50px;
+    }
+    #ask2 .container .img img {
+        margin-top: -55px;
+    }
     #neispravnost .punkt a ul {
         margin-top: 10px;
     }
@@ -2128,6 +2177,12 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #ask2 .container .h2 {
+        font-size: 26px;
+    }
+    #ask2 .container p {
+        font-size: 14px;
+    }
     .punkt.contact .hero-form__btn {
         font-size: 12px;
     }
@@ -2355,8 +2410,22 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
-
-
+    #ask2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #ask2 .container .img {
+        display: none;
+    }
+    #ask2 .container .info {
+        float: none;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    #ask2 .container .info p {
+        text-align: center;
+    }
     .models-gl {
         width: 33.33333%;
     }
