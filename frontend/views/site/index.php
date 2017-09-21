@@ -21,7 +21,7 @@ else {
             </p>
             <div class="happy-time">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
-                <p>Счастливые часы! <br>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00</p>
+                <p>Акция дня! <br>25% скидка на услуги сегодня</p>
             </div>
             <?= \app\widgets\forms\CallBack::widget(['metrika' => 'home_order_button']); ?>
         </div>
@@ -35,9 +35,15 @@ else {
 <?= \app\widgets\other\Advantage::widget(); ?>
 <section id="skidka">
     <div class="container">
-        <h3>Счастливые часы!</h3>
-        <p>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00. До конца акции осталось <?= 60 - date('i'); ?> минут</p>
-        <span class="more"><div>Получить скидку</div></span>
+        <?php if ($siteConfig['mono']): ?>
+        <h3>Сегодня скидка!</h3>
+        <p>Дарим 25% скидку на услуги ремонта кофемашин <?= \app\components\CController::$monoBrand['title'] ?> только сегодня!</p>
+            <span class="more"><div>Получить скидку</div></span>        
+        <?php else: ?>
+            <h3>Счастливые часы!</h3>
+            <p>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00. До конца акции осталось <?= 60 - date('i'); ?> минут</p>
+            <span class="more"><div>Получить скидку</div></span>
+        <?php endif; ?>
     </div>
 </section>
 <section id="text-block">
