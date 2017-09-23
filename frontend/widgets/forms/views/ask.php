@@ -45,7 +45,7 @@ $form = ActiveForm::begin([
             ?>
             <?= Html::submitButton('Оставить онлайн заявку', ['class' => 'btn', 'type' => 'button']) ?>                
             <?php ActiveForm::end() ?>
-            <p class="data"> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
+            <p class="data"> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
         </div>
         <div class="left">
             <div class="footer-logo">

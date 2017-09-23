@@ -279,7 +279,7 @@ if ($siteConfig['mono'])
             <?= \app\widgets\forms\Ask::widget(); ?>
             <section id="footer">
                 <div class="container">
-                    <p> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
+                    <p> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
                     <?php if (!$siteConfig['mono']): ?><p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p><?php endif; ?>
                     <div class="tel">
                         <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
