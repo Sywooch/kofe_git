@@ -91,9 +91,9 @@ if ($siteConfig['mono'])
                     </div>
                     <div class="nav">
                         <ul>
-                            <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
+                            <li><a href="/uslugi-i-ceny"><?=$siteConfig['mono'] ? 'Прайс-лист' : 'Услуги и цены' ?></a></li>
                             <li><a href="/o-kompanii">О компании</a></li>                        
-                            <?php if ($siteConfig['mono']): ?><li><a href="/models">Все модели</a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
+                            <?php if ($siteConfig['mono']): ?><li><a href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
                             <li><a href="/kontakty">Контакты</a></li>
                         </ul>
                     </div>
