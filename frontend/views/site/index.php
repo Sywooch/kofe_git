@@ -40,7 +40,7 @@ else {
         <p>Дарим 25% скидку на услуги ремонта кофемашин <?= \app\components\CController::$monoBrand['title'] ?> только сегодня!</p>
             <span class="more"><div>Получить скидку</div></span>        
         <?php else: ?>
-            <h3>Счастливые часы!</h3>
+            <span class="h3">Счастливые часы!</span>
             <p>33% скидка на услуги с <?= date('H'); ?>:00 до <?= date('H') + 1; ?>:00. До конца акции осталось <?= 60 - date('i'); ?> минут</p>
             <span class="more"><div>Получить скидку</div></span>
         <?php endif; ?>
