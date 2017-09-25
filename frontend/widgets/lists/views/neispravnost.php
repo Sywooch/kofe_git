@@ -16,7 +16,7 @@ if ($siteConfig['mono'])
                         <div class="price">
                             <?php if ($key == 0): ?>
                                 <div class="new">от <?= round($row['price']); ?> р</div>
-                                <div class="old">от 700 р</div>
+                                <div class="old">от 650 р</div>
                             <?php else: ?>
                                 от <?= round($row['price']); ?> р
                             <?php endif; ?>
