@@ -28,7 +28,7 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>favicon.ico?v=4">
-        <link rel="stylesheet" async href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>css/<?= $siteConfig['sitePrefix']; ?>all.css?v=20" type="text/css" />
+        <link rel="stylesheet" async href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>css/<?= $siteConfig['sitePrefix']; ?>all.css?v=21" type="text/css" />
         <link async href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
