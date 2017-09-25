@@ -16,9 +16,9 @@ else {
             <div class="h1">
                 <h1>Ремонт кофемашин<?= $siteConfig['mono'] ? ' ' . \app\components\CController::$monoBrand['title'] : ''; ?> в <?= Yii::$app->session['region']['titleRod']; ?> с гарантией до 1 года!</h1>
             </div>
-            <p>
+            
                 <?= strip_tags($_GET['data']['description'], '<p><a><img><div></span>'); ?>                
-            </p>
+           
             <div class="happy-time">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
                 <p>Акция дня! <br>25% скидка на услуги сегодня</p>
