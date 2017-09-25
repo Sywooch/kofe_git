@@ -301,3 +301,18 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 #neispravnost .punkt.promo a ul li:before {
     background: #333;
 }
+
+
+#ask2 .container .img img {
+    margin-top: -15px;
+}
+@media screen and (max-width: 1030px) {
+    #ask2 .container .img img {
+        margin-top: -5px;
+    }
+}
+@media screen and (max-width: 830px) {
+    #ask2 .container .img img {
+        margin-top: -5px;
+    }
+}

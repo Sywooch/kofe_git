@@ -579,7 +579,7 @@ section .container .title span {
     color: #1d1313 ! important;
 }
 #ask-form .container .title span {
-    font-size: 50px;
+    font-size: 44px;
     text-align: left;
     line-height: 44px;
 }
@@ -2147,30 +2147,31 @@ video {
     background: #c7a17a;
     color: #fff;
     border-radius: 3px;
+    width: 850px;
 }
 #ask2 .container .h2 {
     font-family: "NeuronExtraBold",cursive;
     font-size: 40px;
 }
 #ask2 .container p {
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 22px;
     text-align: left;
 }
 #ask2 .container .info {
     float: right;
-    width: 60%;
+    width: 68%;
     box-sizing: border-box;
     padding: 20px 85px 20px 0px;
 }
 #ask2 .container .img {
     float: left;
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 #ask2 .container .img img {
     width: 85%;
-    margin-top: -100px;
+    margin-top: -85px;
     margin-bottom: -50px;
 }
 
@@ -2178,7 +2179,9 @@ video {
 
 
 @media screen and (max-width: 1500px) {
-
+    #ask-form .container .title span {
+        font-size: 40px;
+    }
     #neispravnost .punkt a {
         padding: 25px 20px;
     }
@@ -2205,19 +2208,11 @@ video {
         font-size: 14px;
     }
     #ask-form .container .right {
-        width: 770px;
+        width: 750px;
     }
     #ask-form .container .right > img {
         margin-right: 75px;
         margin-left: 35px;
-    }
-    #ask2 .container .h2 {
-        font-size: 35px;
-    }
-    #ask2 .container p {
-        font-size: 18px;
-        line-height: 26px;
-        margin: 0px;
     }
 
 }
@@ -2225,8 +2220,24 @@ video {
     #ask2 {
         margin-top: 50px;
     }
+    #ask2 .container {
+        width: 780px;
+    }
+    #ask2 .container .img {
+        width: 27%;
+    }
     #ask2 .container .img img {
         margin-top: -55px;
+    }
+    #ask2 .container .h2 {
+        margin-bottom: 15px;
+    }
+    #ask2 .container p {
+        font-size: 18px;
+    }
+    #ask2 .container .info {
+        padding: 15px 85px 15px 0px;
+        width: 72%;
     }
     #zakaz .left {
         width: 36%;
@@ -2259,8 +2270,15 @@ video {
         margin-left: 25px;
         max-height: 350px;
     }
+    #ask-form .container .left .footer-logo {
+        text-align: left;
+    }
+    #ask-form .container .left .footer-logo img {
+        max-width: 80%;
+        max-height: 80%;
+    }
     #ask-form .container .title span {
-        font-size: 38px;
+        font-size: 32px;
         line-height: 30px;
     }
     #ask-form .container p.info {
@@ -2406,11 +2424,18 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #ask2 .container {
+        width: 650px;
+    }
     #ask2 .container .h2 {
         font-size: 26px;
     }
     #ask2 .container p {
         font-size: 14px;
+    }
+    #ask2 .container .img img {
+        margin-top: -40px;
+        margin-bottom: -40px;
     }
     .field-callbackform-phone {
         float: left;
@@ -2460,7 +2485,7 @@ video {
         display: block;
     }
     #ask-form .container .title span {
-        font-size: 45px;
+        font-size: 34px;
         line-height: 40px;
     }
     .is-sticky #header .logo a {
@@ -2664,9 +2689,19 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
+    #ask2 b {
+        display: block;
+        width: 100%;
+    }
+    #ask2 br {
+        display: none;
+    }
     #ask2 {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    #ask2 .container {
+        width: 500px;
     }
     #ask2 .container .img {
         display: none;
@@ -2831,6 +2866,10 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+
+    #ask2 .container {
+        width: 300px;
+    }
     .field-orderform-phone {
         float: none;
         width: 190px;
@@ -3440,3 +3479,145 @@ body.models .logo-breand {
     z-index: 1;
 }
 
+
+
+
+.boschspb .colorbg {
+    background: #215f8b ! important;
+}
+.boschspb .colortext {
+    color: #215f8b ! important;
+}
+
+.siemensspb .colorbg {
+    background: #41aaaa ! important;
+}
+.siemensspb  .colortext {
+    color: #41aaaa ! important;
+}
+
+.delonghispb .colorbg {
+    background: #215f8b ! important;
+}
+.delonghispb .colortext {
+    color: #215f8b ! important;
+}
+
+.saecospb .colorbg {
+    background: #d71921 ! important;
+}
+.saecospb .colortext {
+    color: #d71921 ! important;
+}
+
+.philipsspb .colorbg {
+    background: #3182b1 ! important;
+}
+.philipsspb .colortext {
+    color: #3182b1 ! important;
+}
+
+.juraspb .colorbg {
+    background: #e30613 ! important;
+}
+.juraspb .colortext {
+    color: #e30613 ! important;
+}
+
+.krupsspb .colorbg {
+    background: #525352 ! important;
+}
+.krupsspb .colortext {
+    color: #525352 ! important;
+}
+
+.melittaspb .colorbg {
+    background: #d00c0e ! important;
+}
+.melittaspb .colortext {
+    color: #d00c0e ! important;
+}
+
+.nivonaspb .colorbg {
+    background: #af0917 ! important;
+}
+.nivonaspb .colortext {
+    color: #af0917 ! important;
+}
+
+.gaggiaspb .colorbg {
+    background: #ef4023 ! important;
+}
+.gaggiaspb .colortext {
+    color: #ef4023 ! important;
+}
+
+.wmfspb .colorbg {
+    background: #71b430 ! important;
+}
+.wmfspb .colortext {
+    color: #71b430 ! important;
+}
+
+.cimbalispb .colorbg {
+    background: #e2271c ! important;
+}
+.cimbalispb .colortext {
+    color: #e2271c ! important;
+}
+
+.schaererspb .colorbg {
+    background: #e2271c ! important;
+}
+.schaererspb .colortext {
+    color: #e2271c ! important;
+}
+
+.frankespb .colorbg {
+    background: #e2271c ! important;
+}
+.frankespb .colortext {
+    color: #e2271c ! important;
+}
+
+.faemaspb .colorbg {
+    background: #870c28 ! important;
+}
+.faemaspb .colortext {
+    color: #870c28 ! important;
+}
+
+.mielespb .colorbg {
+    background: #a20001 ! important;
+}
+.mielespb .colortext {
+    color: #a20001 ! important;
+}
+
+.ranciliospb .colorbg {
+    background: #007845 ! important;
+}
+.ranciliospb .colortext {
+    color: #007845 ! important;
+}
+
+.simonellispb .colorbg {
+    background: #dd3333 ! important;
+}
+.simonellispb .colortext {
+    color: #dd3333 ! important;
+}
+
+.borkspb .colorbg {
+    background: #5c5c5c ! important;
+}
+.borkspb .colortext {
+    color: #5c5c5c ! important;
+}
+
+.promacspb .colorbg {
+    background: #a1190d ! important;
+}
+.promacspb .colortext {
+    color: #a1190d ! important;
+}
