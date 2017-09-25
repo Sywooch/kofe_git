@@ -3,6 +3,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section id="inner-modeli">
     <div class="container">
+        <p class="title">Похожие модели</p>
         <ul>
             <?php foreach ($rows as $row): ?>
             <?php
