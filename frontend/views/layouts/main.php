@@ -13,6 +13,9 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 if ($siteConfig['mono'])
     $mono_brand = \app\components\CController::$monoBrand;
+$sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
+$js = \Yii::$app->db->createCommand($sql)->queryOne();
+
 ?>
 <?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
@@ -30,10 +33,10 @@ if ($siteConfig['mono'])
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
-        <style>#banner ul {list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 10px;
-}#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}</style>
+        <style>#ask-text {font-size: 22px !important;}#banner ul {list-style-type: disc;
+                                                           padding-left: 20px;
+                                                           margin-bottom: 10px;
+            }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}</style>
     </head>    
     <body id="index" class="home<?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
 
@@ -91,9 +94,9 @@ if ($siteConfig['mono'])
                     </div>
                     <div class="nav">
                         <ul>
-                            <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
+                            <li><a href="/uslugi-i-ceny"><?= $siteConfig['mono'] ? 'Прайс-лист' : 'Услуги и цены' ?></a></li>
                             <li><a href="/o-kompanii">О компании</a></li>                        
-                            <?php if ($siteConfig['mono']): ?><li><a href="/models">Все модели</a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
+                            <?php if ($siteConfig['mono']): ?><li><a href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li><?php else: ?><li><a href="/brendy">Все бренды</a></li><?php endif; ?>
                             <li><a href="/kontakty">Контакты</a></li>
                         </ul>
                     </div>
@@ -269,7 +272,7 @@ if ($siteConfig['mono'])
                             <div class="h2">
                                 Не нашли свою поломку?
                             </div>
-                            <p>Свяжитесь с нами по телефону <b><?= Yii::$app->session['region']['phone']; ?></b> сейчас и мы поможем разобраться</p>
+                            <p id="ask-text">Свяжитесь с нами по телефону <b><?= Yii::$app->session['region']['phone']; ?></b> сейчас и мы поможем разобраться</p>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -279,7 +282,7 @@ if ($siteConfig['mono'])
             <?= \app\widgets\forms\Ask::widget(); ?>
             <section id="footer">
                 <div class="container">
-                    <p> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
+                    <p> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
                     <?php if (!$siteConfig['mono']): ?><p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p><?php endif; ?>
                     <div class="tel">
                         <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -331,6 +334,7 @@ if ($siteConfig['mono'])
         echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
     }
     ?>
+    <?= $js['content']; ?>
     <?php if ($siteConfig['stickyMenu']): ?><script>$("#header").sticky({topSpacing: 0});</script><?php endif; ?>
 </html>
 <?php $this->endPage() ?>

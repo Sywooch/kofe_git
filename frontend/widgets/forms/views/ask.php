@@ -7,8 +7,14 @@ $siteConfig = app\components\CController::getSiteConfig();
             <?php if (!$siteConfig['mono']): ?>
                 <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>master.png">
             <?php endif; ?>
-            <p class="title"><span>Обращайтесь к профессионалам</span></p>
-            <p class="info">Оставьте онлайн заявку сейчас все остальное сделаем мы сами!</p>
+            <?php if ($siteConfig['mono']): ?>
+                <p class="title"><span>Специализируемся на ремонте <?= app\components\CController::$monoBrand['title']; ?></span></p>
+                <p class="info">Оставьте онлайн заявку сейчас и получите бонус!</p>
+            <?php else: ?>
+                <p class="title"><span>Обращайтесь к профессионалам</span></p>
+                <p class="info">Оставьте онлайн заявку сейчас все остальное сделаем мы сами!</p>
+            <?php endif; ?>
+
             <?php
 
             use yii\helpers\Html;
@@ -45,7 +51,7 @@ $form = ActiveForm::begin([
             ?>
             <?= Html::submitButton('Оставить онлайн заявку', ['class' => 'btn', 'type' => 'button']) ?>                
             <?php ActiveForm::end() ?>
-            <p class="data"> © 2010 - 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
+            <p class="data"> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
         </div>
         <div class="left">
             <div class="footer-logo">

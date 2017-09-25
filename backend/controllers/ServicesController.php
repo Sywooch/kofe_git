@@ -20,8 +20,8 @@ class ServicesController extends Controller {
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                    [
-                        'actions' => ['index', 'create', 'update', 'delete', 'view', 'linking', 'get-links', 'get-row', 'save-services'],
+                        [
+                        'actions' => ['index', 'create', 'update', 'delete', 'view', 'linking', 'get-links', 'get-row', 'save-services', 'js'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -35,17 +35,46 @@ class ServicesController extends Controller {
             ],
         ];
     }
-	
-	public function actionSaveServices() {
-		'DELETE FROM yu_prices WHERE page_id = ' . $_POST['Pages']['parent'];
-		\Yii::$app->db->createCommand('DELETE FROM yu_prices WHERE page_id = ' . $_POST['Pages']['parent'])->execute();		
-		foreach($_POST['price'] as $service_id => $regions) {			
-			foreach($regions as $region_id => $price) {
-				$sql = "INSERT INTO `yu_prices` (service_id, region_id, price, page_id) VALUES ('$service_id', '$region_id', '$price', '{$_POST['Pages']['parent']}');";
-				\Yii::$app->db->createCommand($sql)->execute();
-			}
-		}
-	}
+
+    public function actionJs() {
+        if (isset($_GET['id'])) {
+            $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $_GET['id'] . ' LIMIT 1';
+            $row = \Yii::$app->db->createCommand($sql)->queryOne();
+            return $row['content'];
+            \Yii::$app->end();
+        }
+        if (isset($_POST['js'])) {
+            $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $_POST['site'] . ' LIMIT 1';
+            $row = \Yii::$app->db->createCommand($sql)->queryOne();
+            if (empty($row)) {                
+                \Yii::$app->db->createCommand()->insert('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js']])->execute();
+            } else {
+                \Yii::$app->db->createCommand()->update('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js']], ['id' => $row['id']])->execute();
+            }
+            $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . $row['site_id'] . ' LIMIT 1';
+            $row = \Yii::$app->db->createCommand($sql)->queryOne();
+            echo $row['content'];
+            \Yii::$app->end();
+        }
+        $sites = [];
+        foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
+            $sites[$config['id']] = $title . '.ru';
+        }
+        return $this->render('js', [
+                    'sites' => $sites,
+        ]);
+    }
+
+    public function actionSaveServices() {
+        'DELETE FROM yu_prices WHERE page_id = ' . $_POST['Pages']['parent'];
+        \Yii::$app->db->createCommand('DELETE FROM yu_prices WHERE page_id = ' . $_POST['Pages']['parent'])->execute();
+        foreach ($_POST['price'] as $service_id => $regions) {
+            foreach ($regions as $region_id => $price) {
+                $sql = "INSERT INTO `yu_prices` (service_id, region_id, price, page_id) VALUES ('$service_id', '$region_id', '$price', '{$_POST['Pages']['parent']}');";
+                \Yii::$app->db->createCommand($sql)->execute();
+            }
+        }
+    }
 
     public function actionGetRow($id) {
         $regions = \Yii::$app->params['regions'];
