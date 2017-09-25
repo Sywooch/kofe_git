@@ -89,12 +89,14 @@ h3 {
     clear: both;
     padding-top: 15px;
     margin: 0px;
+    font-weight: normal ! important;
 }
 #banner h3 {
     font-family: 'NeuronExtraBold', cursive;
     clear: both;
     padding-top: 15px;
     margin: 0px;
+    font-weight: normal ! important;
 }
 p {
     text-align: justify;
@@ -533,9 +535,6 @@ section .container .title {
     padding-bottom: 10px;
     width: 40%;
 }
-section .container .title span {
-    font-weight: bold;
-}
 #ask-form .container .title {
     width: 100%;
     margin: 0px;
@@ -625,7 +624,6 @@ section#primushestva .container .title {
     margin-bottom: 0px;
     font-size: 20px;
     margin-top: 5px;
-    font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
     text-align: left;
     -webkit-transition: all 0.3s ease-in-out;
@@ -697,7 +695,6 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;
-    font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
 }
 #neispravnost .punkt a ul {
@@ -901,6 +898,7 @@ input#phone2 {
 #text-block h3 {
     font-size: 20px;
     display: block;
+    font-weight: normal;
 }
 #text-block ul {
     list-style-type: disc ! important;
@@ -2049,18 +2047,7 @@ video {
     width: 40%;
     color: #333;
 }
-.video #banner .left-img:before {
-    background: url(../images/zerno.png) no-repeat;
-    background-size: 100%;
-    width: 80px;
-    height: 44px;
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    margin-right: -80px;
-    margin-bottom: -20px;
-}
+
 .video #primushestva {
     background: #fff;
 }
@@ -2428,10 +2415,10 @@ video {
         width: 650px;
     }
     #ask2 .container .h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #ask2 .container p {
-        font-size: 14px;
+        font-size: 18px;
     }
     #ask2 .container .img img {
         margin-top: -40px;
