@@ -103,13 +103,7 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
                     <div>
                         <div class="tel">
                             <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                        </div>
-                        <?php if (!$siteConfig['mono']): ?> 
-                            <div class="st-set">
-                                <a target="_blank" class="telegram" href="https://t.me/Remontkofe_bot"><img src="/images/telegram.png"></a>
-                                <a target="_blank" class="vk" href="https://vk.me/-152167342"><img src="/images/vk.png"></a>
-                            </div>
-                        <?php endif; ?>
+                        </div>                        
                         <div class="clear"></div>
                         <span class="time-work">Ежедневно с 08:00 до 22:00</span>
                         <div class="clear"></div>
