@@ -45,8 +45,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <?php if (isset($siteConfig['spb-multi']) && !$siteConfig['mono']): ?>                
                 <div class="spb-contact all-contact active">
                     <h2>Наш адрес в Санкт-Петербурге</h2>
-                    <p>
-                        Почта: <a href="mailto:zakaz@remontkofe.ru">zakaz@remontkofe.ru</a><br />
+                    <p>                        
                         Номер телефона: <span class="spb"><?= $siteConfig['phone-2']; ?></span><br />
                         Работаем без выходных с 08:00 до 22:00<br />
                         Центральный офис: м. Садовая, Московский проспект 2/6, подьезд 6, этаж 3
