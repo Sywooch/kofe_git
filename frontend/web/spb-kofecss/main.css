@@ -343,7 +343,7 @@ span.brand-title {
     margin-right: 10%;
 }
 #banner .right-text .h1 h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin: 0px;
     margin-right: 10px;
     font-weight: 200;
@@ -1987,7 +1987,7 @@ video {
     }
     #banner .right-text .h1 h1,
     #banner .right-text .h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     #banner .right-text .happy-time p {
         font-size: 20px;
@@ -2049,7 +2049,7 @@ video {
     }
     #banner .right-text .h1 h1,
     #banner .right-text .h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
     #banner .right-text .happy-time p {
         font-size: 20px;
@@ -2191,7 +2191,7 @@ video {
         width: 650px;
     }
     #banner .right-text .h1 h1, #banner .right-text .h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     #banner .right-text {
         margin-right: 0%;
@@ -2500,7 +2500,7 @@ video {
 }
 @media screen and (max-width: 540px) {
     #banner .right-text .h1 h1, #banner .full-text .h1 h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
     #primushestva .punkt div.img svg {
         width: 75%;

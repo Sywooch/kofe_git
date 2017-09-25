@@ -1935,30 +1935,31 @@ video {
     background: #c7a17a;
     color: #fff;
     border-radius: 3px;
+    width: 850px;
 }
 #ask2 .container .h2 {
     font-family: "NeuronExtraBold",cursive;
     font-size: 40px;
 }
 #ask2 .container p {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 22px;
     text-align: left;
 }
 #ask2 .container .info {
     float: right;
-    width: 60%;
+    width: 68%;
     box-sizing: border-box;
     padding: 20px 85px 20px 0px;
 }
 #ask2 .container .img {
     float: left;
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 #ask2 .container .img img {
     width: 85%;
-    margin-top: -100px;
+    margin-top: -85px;
     margin-bottom: -50px;
 }
     
@@ -1996,22 +1997,30 @@ video {
         margin-right: 75px;
         margin-left: 35px;
     }
-    #ask2 .container .h2 {
-        font-size: 35px;
-    }
-    #ask2 .container p {
-        font-size: 18px;
-        line-height: 26px;
-        margin: 0px;
-    }
 
 }
 @media screen and (max-width: 1030px) {
     #ask2 {
         margin-top: 50px;
     }
+    #ask2 .container {
+        width: 780px;
+    }
+    #ask2 .container .img {
+        width: 27%;
+    }
     #ask2 .container .img img {
         margin-top: -55px;
+    }
+    #ask2 .container .h2 {
+        margin-bottom: 15px;
+    }
+    #ask2 .container p {
+        font-size: 18px;
+    }
+    #ask2 .container .info {
+        padding: 15px 85px 15px 0px;
+        width: 72%;
     }
     #neispravnost .punkt a ul {
         margin-top: 10px;
@@ -2177,11 +2186,18 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #ask2 .container {
+        width: 650px;
+    }
     #ask2 .container .h2 {
         font-size: 26px;
     }
     #ask2 .container p {
         font-size: 14px;
+    }
+    #ask2 .container .img img {
+        margin-top: -40px;
+        margin-bottom: -40px;
     }
     .punkt.contact .hero-form__btn {
         font-size: 12px;
@@ -2410,9 +2426,19 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
+    #ask2 b {
+        display: block;
+        width: 100%;
+    }
+    #ask2 br {
+        display: none;
+    }
     #ask2 {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    #ask2 .container {
+        width: 500px;
     }
     #ask2 .container .img {
         display: none;
@@ -2587,6 +2613,9 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    #ask2 .container {
+        width: 300px;
+    }
     #tseni .prochi-uslugi h3 {
         font-size: 16px;
     }
@@ -3177,3 +3206,153 @@ body.models .logo-breand {
 .models-gl:nth-last-child(2) {
         border-right: 1px solid #e1e1e1;
     }
+
+
+
+
+
+
+
+
+
+
+
+.bosch .colorbg {
+    background: #215f8b ! important;
+}
+.bosch .colortext {
+    color: #215f8b ! important;
+}
+
+.siemens .colorbg {
+    background: #41aaaa ! important;
+}
+.siemens  .colortext {
+    color: #41aaaa ! important;
+}
+
+.delonghi .colorbg {
+    background: #215f8b ! important;
+}
+.delonghi .colortext {
+    color: #215f8b ! important;
+}
+
+.saeco .colorbg {
+    background: #d71921 ! important;
+}
+.saeco .colortext {
+    color: #d71921 ! important;
+}
+
+.philips .colorbg {
+    background: #3182b1 ! important;
+}
+.philips .colortext {
+    color: #3182b1 ! important;
+}
+
+.jura .colorbg {
+    background: #e30613 ! important;
+}
+.jura .colortext {
+    color: #e30613 ! important;
+}
+
+.krups .colorbg {
+    background: #525352 ! important;
+}
+.krups .colortext {
+    color: #525352 ! important;
+}
+
+.melitta .colorbg {
+    background: #d00c0e ! important;
+}
+.melitta .colortext {
+    color: #d00c0e ! important;
+}
+
+.nivona .colorbg {
+    background: #af0917 ! important;
+}
+.nivona .colortext {
+    color: #af0917 ! important;
+}
+
+.gaggia .colorbg {
+    background: #ef4023 ! important;
+}
+.gaggia .colortext {
+    color: #ef4023 ! important;
+}
+
+.wmf .colorbg {
+    background: #71b430 ! important;
+}
+.wmf .colortext {
+    color: #71b430 ! important;
+}
+
+.cimbali .colorbg {
+    background: #e2271c ! important;
+}
+.cimbali .colortext {
+    color: #e2271c ! important;
+}
+
+.schaerer .colorbg {
+    background: #e2271c ! important;
+}
+.schaerer .colortext {
+    color: #e2271c ! important;
+}
+
+.franke .colorbg {
+    background: #e2271c ! important;
+}
+.franke .colortext {
+    color: #e2271c ! important;
+}
+
+.faema .colorbg {
+    background: #870c28 ! important;
+}
+.faema .colortext {
+    color: #870c28 ! important;
+}
+
+.miele .colorbg {
+    background: #a20001 ! important;
+}
+.miele .colortext {
+    color: #a20001 ! important;
+}
+
+.rancilio .colorbg {
+    background: #007845 ! important;
+}
+.rancilio .colortext {
+    color: #007845 ! important;
+}
+
+.simonelli .colorbg {
+    background: #d82f3e ! important;
+}
+.simonelli .colortext {
+    color: #d82f3e ! important;
+}
+
+.bork .colorbg {
+    background: #5c5c5c ! important;
+}
+.bork .colortext {
+    color: #5c5c5c ! important;
+}
+
+.promac .colorbg {
+    background: #a1190d ! important;
+}
+.promac .colortext {
+    color: #a1190d ! important;
+}

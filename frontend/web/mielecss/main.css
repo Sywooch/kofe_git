@@ -313,3 +313,17 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 .options h3 {
     color: #a20001;
 }
+
+#ask2 .container .img img {
+    margin-top: -15px;
+}
+@media screen and (max-width: 1030px) {
+    #ask2 .container .img img {
+        margin-top: -5px;
+    }
+}
+@media screen and (max-width: 830px) {
+    #ask2 .container .img img {
+        margin-top: -5px;
+    }
+}
