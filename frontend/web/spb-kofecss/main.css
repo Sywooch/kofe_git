@@ -1,4 +1,4 @@
-/*testy*/
+/*karochi*/
 @font-face {
     font-family: NeuronExtraBold;
     src: url(../fonts/NeuronExtraBold.otf);
@@ -252,7 +252,9 @@ section {
     color: #fff;
 }
 
-
+.karochi {
+    display: block;
+}
 #header .nav ul li.active a:after,
 #header .nav ul li a:hover:after {
     background: #673b14;
