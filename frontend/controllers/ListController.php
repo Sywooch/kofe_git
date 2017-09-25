@@ -170,6 +170,9 @@ class ListController extends CController {
             } else {
                 $seoText = $seo['meta_text1'];
             }
+            if(!empty($seo['meta_h1'])) {
+                $h1 = $seo['meta_h1'];
+            }
         }
 
         $title = $seo['meta_title'] ?: $title;       
