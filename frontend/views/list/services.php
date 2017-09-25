@@ -1,6 +1,7 @@
 <?php
+$siteConfig = app\components\CController::getSiteConfig();
 $breadcrumbs = [
-    $pageInfo['title'],
+    ($siteConfig['mono'] ? 'Прайс-лист' : $pageInfo['title']),
 ];
 $this->title = $pageInfo['meta_title'];
 ?>
