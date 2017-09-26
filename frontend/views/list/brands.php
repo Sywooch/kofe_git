@@ -3,6 +3,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $this->title = $pageInfo['meta_title'];
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
@@ -53,12 +54,14 @@ $this->title = $pageInfo['meta_title'];
 
     </div>
 </section>
+<?php if (!$siteConfig['mono']): ?>
 <section id="ask">
     <div class="container">
         <div>
-            <h3>Не нашли ничего подходящего?</h3>
-            <p>Закажите бесплатную консультацию.</p>
+            <h3>Закажите бесплатную консультацию.</h3>
+            <p>Мы свяжемся с Вами в течение 5 минут.</p>
             <?= \app\widgets\forms\CallBack::widget(); ?>
         </div>
     </div>
 </section>
+<?php endif; ?>

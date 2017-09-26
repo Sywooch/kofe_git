@@ -1,6 +1,6 @@
 <?php
 $this->title = $model['meta_title'];
-
+$siteConfig = app\components\CController::getSiteConfig();
 $breadcrumbs = [
     $model['title'],
 ];
@@ -21,6 +21,7 @@ $breadcrumbs = [
     <span class="more"><div>Заказать ремонт</div></span>
 </section>
 <?= \app\widgets\other\Advantage::widget(); ?>
+<?php if (!$siteConfig['mono']): ?>
 <section id="ask">
     <div class="container">
         <div>
@@ -30,3 +31,4 @@ $breadcrumbs = [
         </div>
     </div>
 </section>
+<?php endif; ?>

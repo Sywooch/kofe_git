@@ -72,23 +72,16 @@ $siteConfig = app\components\CController::getSiteConfig();
             <?php endif; ?>
         </div>
     </div>
-
     <div class="clear">&nbsp;</div>
 </section>
-
-
-
-
-
-
-
-
+<?php if (!$siteConfig['mono']): ?>
 <section id="ask">
     <div class="container">
         <div>
-            <h3>Заказать звонок</h3>
-            <p>Закажите бесплатную консультацию.</p>
+            <h3>Закажите бесплатную консультацию.</h3>
+            <p>Мы свяжемся с Вами в течение 5 минут.</p>
             <?= \app\widgets\forms\CallBack::widget(); ?>
         </div>
     </div>
 </section>
+<?php endif; ?>

@@ -68,6 +68,7 @@ class PageController extends CController {
 
     public function actionCss() {
         set_time_limit(0);
+        ini_set('memory_limit','1024M');
         foreach (Yii::$app->params['siteConfigs'] as $conf) {
             if ($conf['sitePrefix'] == 'remont')
                 continue;

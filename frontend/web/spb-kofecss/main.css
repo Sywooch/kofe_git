@@ -108,12 +108,15 @@ div {
 }
 h1 {
     font-family: 'NeuronExtraBold', cursive;
+    font-weight: normal ! important;
 }
 h2 {
     font-family: 'NeuronExtraBold', cursive;
+    font-weight: normal ! important;
 }
 h3 {
     font-family: 'NeuronExtraBold', cursive;
+    font-weight: normal ! important;
 }
 p {
     text-align: justify;
@@ -462,7 +465,6 @@ input#phone::-webkit-input-placeholder {
 #banner .right-text .happy-time p {
     font-size: 22px;
     font-family: 'NeuronExtraBold', cursive;
-    font-weight: bold;
     color: #372727;
     margin: 0px;
     margin-bottom: 30px;
@@ -500,9 +502,6 @@ section .container .title {
     padding-bottom: 10px;
     width: 40%;
     color: #372727;
-}
-section .container .title span {
-    font-weight: bold;
 }
 #ask-form .container .title {
     width: 100%;
@@ -574,7 +573,6 @@ section#primushestva .container .title {
     margin-bottom: 0px;
     font-size: 20px;
     margin-top: 0px;
-    font-weight: bold;
     color: #372727;
     font-family: 'NeuronExtraBold', cursive;
     text-align: center;
@@ -646,7 +644,6 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;
-    font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
     color: #372727;
 }
@@ -654,7 +651,7 @@ section#neispravnost .container .title {
     color: #673b14;
 }
 #neispravnost .punkt a ul {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 12px;
 }
 #neispravnost .punkt a ul li {
@@ -668,7 +665,7 @@ section#neispravnost .container .title {
     font-size: 18px;
     position: absolute;
     margin-top: 20px;
-    bottom: 20px;
+    bottom: 15px;
     white-space: nowrap;
 }
 #neispravnost .punkt a .price .new {
@@ -750,7 +747,6 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.contact > div div.big-text {
     font-size: 18px;
-    font-weight: bold;
     font-family: 'NeuronExtraBold', cursive;
     color: #fff;
 }
@@ -828,10 +824,11 @@ input#phone2::-webkit-input-placeholder {
     text-align: center;
     color: #fff;
 }
-#skidka .container h3 {
+#skidka .container .h3 {
     font-size: 45px;
     font-weight: 200;
     margin: 0px;
+    font-family: "NeuronExtraBold",cursive;
 }
 #skidka .container p {
     text-align: center;
@@ -861,6 +858,7 @@ input#phone2::-webkit-input-placeholder {
 #text-block h3 {
     font-size: 20px;
     display: block;
+    font-weight: normal;
 }
 #text-block ul {
     list-style-type: disc ! important;
@@ -1469,6 +1467,10 @@ table.pricelist td {
     box-sizing: border-box;
     font-size: 14px;
     color: #673b14;
+}
+#tseni tbody {
+    display: flex;
+    flex-wrap: wrap;
 }
 .prochi-uslugi tr {
     float: left;
@@ -2876,6 +2878,9 @@ video {
     }
     #primushestva .punkt div.img img {
         width: 75%;
+    }
+    #skidka .container .h3 {
+        font-size: 38px;
     }
 }
 

@@ -288,6 +288,11 @@ span.brand-title {
     float: left;
     position: relative;
 }
+#banner ul {
+    clear: both;
+    width: 100%;
+    box-sizing: border-box;
+}
 .video #banner .left-img:before {
     content: '';
     width: 130%;
@@ -611,7 +616,7 @@ section#neispravnost .container .title {
     font-family: 'NeuronExtraBold', cursive;
 }
 #neispravnost .punkt a ul {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 12px;
 }
 #neispravnost .punkt a ul li {
@@ -624,7 +629,7 @@ section#neispravnost .container .title {
     font-size: 18px;
     position: absolute;
     margin-top: 20px;
-    bottom: 18px;
+    bottom: 15px;
     white-space: nowrap;
 }
 #neispravnost .punkt a .price .new {
@@ -752,10 +757,11 @@ input#phone2 {
     text-align: center;
     color: #fff;
 }
-#skidka .container h3 {
+#skidka .container .h3 {
     font-size: 45px;
     font-weight: 200;
     margin: 0px;
+    font-family: "NeuronExtraBold",cursive;
 }
 #skidka .container p {
     text-align: center;
@@ -1957,8 +1963,54 @@ video {
 }
 #ask2 .container .img img {
     width: 85%;
-    margin-top: -85px;
+    margin-top: -55px;
     margin-bottom: -50px;
+}
+#ask2 .hero-form__btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+
+#garantiya {
+    background: #e8d7c3;
+    padding-top: 30px;
+}
+#garantiya .img {
+    float: left;
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+}
+#garantiya .img > img {
+    width: 100%;
+}
+#garantiya .img .logos {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 12px 35px 0px 0px;
+}
+#garantiya .img .logos img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#garantiya .text {
+    float: right;
+    width: 580px;
+    padding: 60px 40px 20px 20px;
+}
+#garantiya .container .h2 {
+    font-family: "NeuronExtraBold",cursive;
+    font-size: 40px;
+}
+#garantiya .container p {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
 }
     
 @media screen and (max-width: 1500px) {
@@ -1997,9 +2049,29 @@ video {
         margin-right: 75px;
         margin-left: 35px;
     }
-
+    #garantiya .text {
+        width: 500px;
+    }
 }
 @media screen and (max-width: 1030px) {
+    #garantiya .text {
+        padding-top: 20px;
+    }
+    #garantiya .img {
+        width: 300px;
+        height: 240px;
+    }
+    #garantiya .container .h2 {
+        font-size: 30px;
+    }
+    #garantiya .img .logos {
+        width: 65px;
+        height: 30px;
+        margin: 8px 20px 0px 0px;
+    }
+    #garantiya .container p {
+        font-size: 18px;
+    }
     #ask2 {
         margin-top: 50px;
     }
@@ -2010,7 +2082,7 @@ video {
         width: 27%;
     }
     #ask2 .container .img img {
-        margin-top: -55px;
+        margin-top: -30px;
     }
     #ask2 .container .h2 {
         margin-bottom: 15px;
@@ -2186,6 +2258,17 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #garantiya .img {
+        width: 250px;
+    }
+    #garantiya .text {
+        width: 400px;
+        padding: 10px 20px 10px 10px;
+    }
+    #garantiya .img .logos {
+        width: 50px;
+        height: 25px;
+    }
     #ask2 .container {
         width: 650px;
     }
@@ -2196,7 +2279,7 @@ video {
         font-size: 18px;
     }
     #ask2 .container .img img {
-        margin-top: -40px;
+        margin-top: -10px;
         margin-bottom: -40px;
     }
     .punkt.contact .hero-form__btn {
@@ -2426,6 +2509,15 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
+    #garantiya {
+        display: none;
+    }
+    #ask2 .global-form {
+        text-align: left;
+    }
+    #ask2 .form-group.field-callbackform-phone.required {
+        margin-left: 65px;
+    }
     #ask2 b {
         display: block;
         width: 100%;
@@ -2613,6 +2705,15 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    #ask2 .global-form {
+        text-align: center;
+    }
+    #ask2 .form-group.field-callbackform-phone.required {
+        margin-left: 0px;
+    }
+    #ask2 .hero-form__btn {
+        margin-left: 0px;
+    }
     #ask2 .container {
         width: 300px;
     }
@@ -3033,7 +3134,7 @@ video {
         float: none;
         margin-right: 0px;
     }
-    #skidka .container h3 {
+    #skidka .container .h3 {
         font-size: 38px;
     }
 }
@@ -3357,3 +3458,4 @@ body.models .logo-breand {
 .promac .colortext {
     color: #a1190d ! important;
 }
+

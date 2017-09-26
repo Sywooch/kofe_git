@@ -21,12 +21,14 @@ $this->title = $pageInfo['meta_title'];
     <div class="clear"></div>
 </section>
 <?= \app\widgets\lists\Price::widget(); ?>
+<?php if (!$siteConfig['mono']): ?>
 <section id="ask">
     <div class="container">
         <div>
-            <h3>Не нашли ничего подходящего?</h3>
-            <p>Закажите бесплатную консультацию.</p>
+            <h3>Закажите бесплатную консультацию.</h3>
+            <p>Мы свяжемся с Вами в течение 5 минут.</p>
             <?= \app\widgets\forms\CallBack::widget(); ?>
         </div>
     </div>
 </section>
+<?php endif; ?>
