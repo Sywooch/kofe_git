@@ -13,7 +13,7 @@
     ?>
     <div class="form-group field-pages-meta_desc">
         <label class="control-label" for="pages-meta_desc">JS</label>
-        <textarea  id="site-js" class="form-control" name="js" maxlength="500" aria-invalid="false"></textarea>
+        <textarea  id="site-js" class="form-control" name="js" maxlength="10000" aria-invalid="false"></textarea>
         <div class="help-block"></div>
     </div>
     <div class="form-group">
