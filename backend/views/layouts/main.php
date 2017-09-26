@@ -94,7 +94,10 @@ Breadcrumbs::widget([
     $("#select-site").on("change", function () {
         var id = $(this).val();
         $.get('/services/js', {id: id}, function (resp) {
-            $("#site-js").val(resp);
+            var j = JSON.parse(resp);
+            $("#site-js").val(j.content);
+            $("#site-robots").val(j.robots);
+            $("#yandex-verification").val(j.yandex);
         });
     });
     $("#site-save").on("click", function () {
@@ -102,8 +105,11 @@ Breadcrumbs::widget([
         var site = $("#select-site").val();
         var robots = $("#site-robots").val();
         var yandex = $("#yandex-verification").val();
-        $.post("/services/js", {js: js, site: site}, function (resp) {
-            $("#site-js").val(resp);
+        $.post("/services/js", {js: js, site: site, robots: robots, yandex: yandex}, function (resp) {
+            var j = JSON.parse(resp);
+            $("#site-js").val(j.content);
+            $("#site-robots").val(j.robots);
+            $("#yandex-verification").val(j.yandex);
         });
     });
 </script>

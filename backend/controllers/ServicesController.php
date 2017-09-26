@@ -20,7 +20,7 @@ class ServicesController extends Controller {
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                        [
+                    [
                         'actions' => ['index', 'create', 'update', 'delete', 'view', 'linking', 'get-links', 'get-row', 'save-services', 'js'],
                         'allow' => true,
                         'roles' => ['@'],
@@ -40,20 +40,20 @@ class ServicesController extends Controller {
         if (isset($_GET['id'])) {
             $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $_GET['id'] . ' LIMIT 1';
             $row = \Yii::$app->db->createCommand($sql)->queryOne();
-            return $row['content'];
+            return json_encode($row);
             \Yii::$app->end();
         }
         if (isset($_POST['js'])) {
             $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $_POST['site'] . ' LIMIT 1';
             $row = \Yii::$app->db->createCommand($sql)->queryOne();
-            if (empty($row)) {                
-                \Yii::$app->db->createCommand()->insert('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js']])->execute();
+            if (empty($row)) {
+                \Yii::$app->db->createCommand()->insert('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js'], 'robots' => $_POST['robots'], 'yandex' => $_POST['yandex']])->execute();
             } else {
-                \Yii::$app->db->createCommand()->update('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js']], ['id' => $row['id']])->execute();
+                \Yii::$app->db->createCommand()->update('{{%js}}', ['site_id' => (int) $_POST['site'], 'content' => $_POST['js'], 'robots' => $_POST['robots'], 'yandex' => $_POST['yandex']], ['id' => $row['id']])->execute();
             }
             $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . $row['site_id'] . ' LIMIT 1';
             $row = \Yii::$app->db->createCommand($sql)->queryOne();
-            echo $row['content'];
+            echo json_encode($row);
             \Yii::$app->end();
         }
         $sites = [];

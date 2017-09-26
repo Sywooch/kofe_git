@@ -8,6 +8,7 @@ class CController extends \yii\web\Controller {
 
     public static $menu = [];
     public static $monoBrand = null;
+    public static $js;
 
     public function beforeAction($event) {
 
@@ -23,13 +24,16 @@ class CController extends \yii\web\Controller {
 //        self::$menu = $rows;
 //        unset($rows);
         //Yii::$app->ipgeobase->updateDB();
+        
         $userIP = Yii::$app->getRequest()->getUserIP();
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
+        $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
+        self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
-            $this->setRegion (2);
+            $this->setRegion(2);
         } elseif (!isset($siteConfig['spb']) && $siteConfig['mono']) {
-            $this->setRegion (1);
+            $this->setRegion(1);
         }
         if ($siteConfig['mono'])
             self::$monoBrand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
