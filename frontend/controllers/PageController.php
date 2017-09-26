@@ -128,6 +128,11 @@ class PageController extends CController {
             file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);
         }
     }
+    
+    public function actionRobots() {
+        echo 'dsasd';
+        exit;
+    }
 
     public function actionSitemap2() {
 

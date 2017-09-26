@@ -13,8 +13,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 if ($siteConfig['mono'])
     $mono_brand = \app\components\CController::$monoBrand;
-$sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
-$js = \Yii::$app->db->createCommand($sql)->queryOne();
+$js = app\components\CController::$js;
 
 ?>
 <?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
@@ -24,9 +23,10 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
-        <title><?= Html::encode($this->title) ?></title>
-        <?php $this->head() ?>
+              <title><?= Html::encode($this->title) ?></title>
+              <?php $this->head() ?>
         <link rel="icon" href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>favicon.ico?v=4">
         <link rel="stylesheet" async href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>css/<?= $siteConfig['sitePrefix']; ?>all.css?v=23" type="text/css" />
         <link async href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
@@ -34,8 +34,8 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>#banner ul {list-style-type: disc;
-                                                           padding-left: 20px;
-                                                           margin-bottom: 10px;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
             }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}</style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
@@ -301,14 +301,14 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
             <?php $this->endBody() ?>    
-                <?= $js['content']; ?>
+            <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {
         echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
     }
     ?>
-    
+
     <?php if ($siteConfig['stickyMenu']): ?><script>$("#header").sticky({topSpacing: 0});</script><?php endif; ?>
 </html>
 <?php $this->endPage() ?>
