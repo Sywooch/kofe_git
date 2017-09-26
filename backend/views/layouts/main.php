@@ -100,6 +100,8 @@ Breadcrumbs::widget([
     $("#site-save").on("click", function () {
         var js = $("#site-js").val();
         var site = $("#select-site").val();
+        var robots = $("#site-robots").val();
+        var yandex = $("#yandex-verification").val();
         $.post("/services/js", {js: js, site: site}, function (resp) {
             $("#site-js").val(resp);
         });

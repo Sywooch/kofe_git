@@ -339,14 +339,15 @@ $js = \Yii::$app->db->createCommand($sql)->queryOne();
             </div>
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
-            <?php $this->endBody() ?>            
+            <?php $this->endBody() ?>    
+                <?= $js['content']; ?>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {
         echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
     }
     ?>
-    <?= $js['content']; ?>
+    
     <?php if ($siteConfig['stickyMenu']): ?><script>$("#header").sticky({topSpacing: 0});</script><?php endif; ?>
 </html>
 <?php $this->endPage() ?>
