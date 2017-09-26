@@ -37,7 +37,7 @@ else {
     <div class="container">
         <?php if ($siteConfig['mono'] || isset($siteConfig['spb-multi'])): ?>
         <span class="h3">Дарим 25%</span>
-        <p>Сегодня скидка все услуги ремонта кофемашин <?= \app\components\CController::$monoBrand['title'] ?> только сегодня!</p>
+        <p>Сегодня скидка на все услуги по ремонту кофемашин <?= \app\components\CController::$monoBrand['title'] ?></p>
             <span class="more"><div>Получить скидку</div></span>        
         <?php else: ?>
             <span class="h3">Счастливые часы!</span>
