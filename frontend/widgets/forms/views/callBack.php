@@ -27,8 +27,10 @@ if (!$siteConfig['mono'])
 
 $form->field($model, 'phone')->widget(MaskedInput::className(), [
     'name' => 'phone',
+    
     'mask' => '+7 (999) 999-99-99',
     'options' => [
+        'id' => 'mask-' . $id,
         'placeholder' => 'Ваш телефон',
         'class' => 'phone',
         'type' => 'tel'
