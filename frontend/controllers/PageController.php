@@ -130,7 +130,11 @@ class PageController extends CController {
     }
     
     public function actionRobots() {
-        echo 'dsasd';
+        $robots = "User-agent: * \r\nDisallow: /";
+        if (!empty(CController::$js['robots']))
+            $robots = CController::$js['robots'];
+        header("Content-Type: text/plain");
+        echo $robots;       
         exit;
     }
 

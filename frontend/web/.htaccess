@@ -18,6 +18,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # otherwise forward it to index.php
 RewriteRule . index.php
-
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
 
 Redirect 301 http://frankie-service.ru/ http://franke-service-center.ru
