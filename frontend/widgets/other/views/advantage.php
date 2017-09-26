@@ -196,8 +196,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Экспресс ремонт </p>
-                    <p>Выполняем ремонт в короткие сроки </p>
+                    <p class="h2">Срочный экспресс ремонт</p>
+                    <p>Выполняем ремонт качественно и в короткие сроки.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -212,7 +212,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </svg>
                     </div>
                     <p class="h2">Гарантийные обязательства</p>
-                    <p>На все виды работ предоставляется гарантия до 12 месяцев</p>
+                    <p>На все виды работ предоставляется гарантия до 12 месяцев.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -226,8 +226,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Бесплатная диагностика </p>
-                    <p>Выявляет неисправную деталь и изношенные элементы </p>
+                    <p class="h2">Бесплатная <br>диагностика</p>
+                    <p>Выявляет неисправную деталь и изношенные элементы.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -241,8 +241,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Форма оплаты  </p>
-                    <p>К оплате принимается наличный и безналичный расчет </p>
+                    <p class="h2">Любая форма <br>оплаты</p>
+                    <p>К оплате принимается наличный и безналичный расчет.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -256,8 +256,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Доставка кофемашины </p>
-                    <p>Бесплатная доставка устройства в мастерскую в день обращения </p>
+                    <p class="h2">Доставка<br> кофемашины</p>
+                    <p>Бесплатная доставка устройства в мастерскую в день обращения.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -272,7 +272,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </svg>
                     </div>
                     <p class="h2">Оперативный выезд мастера</p>
-                    <p>Выезд на дом в удобное для клиента время </p>
+                    <p>Выезд мастера на дом или в офис в удобное для клиента время.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -286,8 +286,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Фирменные комплектующие </p>
-                    <p>Собственный склад качественных запчастей по низким ценам</p>
+                    <p class="h2">Фирменные комплектующие</p>
+                    <p>Собственный склад качественных запчастей по низким ценам.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">
@@ -301,8 +301,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </g>
                         </svg>
                     </div>
-                    <p class="h2">Минимальные цены </p>
-                    <p>Никаких переплат и скрытых платежей</p>
+                    <p class="h2">Самая низкая <br>стоимость</p>
+                    <p>Никаких переплат и скрытых платежей. Всё чисто и прозрачно.</p>
                 </div>
             </div>
         </div>
