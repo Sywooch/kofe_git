@@ -598,6 +598,9 @@ section#primushestva .container .title {
     font-size: 11px;
     text-align: center;
 }
+#main #primushestva .punkt p {
+    padding: 0px 20px;
+}
 #primushestva .punkt a p {
     color: #333;
 }
@@ -2099,6 +2102,9 @@ video {
     }
     #primushestva .punkt p {
         padding: 0px 30px;
+    }
+    #main #primushestva .punkt p {
+        padding: 0px 15px;
     }
     #banner,
     #main {

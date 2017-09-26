@@ -549,6 +549,9 @@ section#primushestva .container .title {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+#main #primushestva .punkt .h2 {
+    padding: 0px 20px;
+}
 #primushestva .punkt:hover .h2 {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -561,6 +564,9 @@ section#primushestva .container .title {
     margin-top: 5px;
     font-size: 11px;
     text-align: center;
+}
+#main #primushestva .punkt p {
+    padding: 0px 20px;
 }
 #primushestva .punkt a p {
     color: #333;
@@ -2195,6 +2201,9 @@ video {
     }
     #primushestva .punkt p {
         padding: 0px 30px;
+    }
+    #main #primushestva .punkt p {
+        padding: 0px 15px;
     }
     #banner,
     #main {
