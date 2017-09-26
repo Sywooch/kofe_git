@@ -214,14 +214,17 @@ table.pricelist td.order .popup-zakaz {
 }
 
 #skidka .container {
-    color: #525352;
+    color: #fff;
 }
 #skidka .more div {
-    border: #525352 1px solid;
-    color: #525352;
+    border: #fff 1px solid;
+    color: #333;
+    background: #fff;
 }
 #skidka .more div:hover {
     color: #fff;
+    background: #333;
+    border: #333 1px solid;
 }
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {

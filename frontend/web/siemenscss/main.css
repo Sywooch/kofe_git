@@ -211,14 +211,17 @@ table.pricelist td.order .popup-zakaz {
         width: 150px;
 }
 #skidka .container {
-    color: #41aaaa;
+    color: #fff;
 }
 #skidka .more div {
-    border: #41aaaa 1px solid;
-    color: #41aaaa;
+    border: #fff 1px solid;
+    color: #333;
+    background: #fff;
 }
 #skidka .more div:hover {
     color: #fff;
+    background: #41aaaa;
+    border: #41aaaa 1px solid;
 }
 #neispravnost .punkt.promo a .big-text,
 #neispravnost .punkt.promo a ul li,
