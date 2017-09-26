@@ -12,7 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <p class="info">Оставьте онлайн заявку сейчас и получите бонус!</p>
             <?php else: ?>
                 <p class="title"><span>Обращайтесь к профессионалам</span></p>
-                <p class="info">Оставьте онлайн заявку сейчас все остальное сделаем мы сами!</p>
+                <p class="info">Оставьте онлайн заявку сейчас <br>Все остальное сделаем мы сами!</p>
             <?php endif; ?>
 
             <?php

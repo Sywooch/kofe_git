@@ -1090,7 +1090,7 @@ input#phone2 {
     display: none;
 }
 #inner-modeli .container {
-    padding: 50px 0px;
+    padding: 0px 0px;
 }
 #inner-modeli .container ul {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
@@ -1386,6 +1386,7 @@ table.pricelist td {
 .prochi-uslugi tr {
     float: left;
     width: 50%;
+    -moz-min-height: 61px;
 }
 .prochi-uslugi tr td.name {
     width: 360px;

@@ -275,8 +275,11 @@ section {
 .video .tel .phone {
     color: #fff;
 }
-.tel .phone:hover {
+.video .tel .phone:hover {
     color: #fff;
+}
+.tel .phone:hover {
+    color: #673b14;
 }
 .tel .phone:before {
     content:"\f095";
@@ -1015,6 +1018,7 @@ input#phone2::-webkit-input-placeholder {
 .popup .wight h4 {
     font-size: 25px;
     font-family: 'NeuronExtraBold', cursive;
+    margin-bottom: 0px;
 }
 .popup.good .wight h4 {
     margin: 0px;
@@ -1467,6 +1471,7 @@ table.pricelist td {
     box-sizing: border-box;
     font-size: 14px;
     color: #673b14;
+    width: 470px;
 }
 #tseni tbody {
     display: flex;
@@ -1475,16 +1480,17 @@ table.pricelist td {
 .prochi-uslugi tr {
     float: left;
     width: 50%;
+    -moz-min-height: 61px;
 }
 .prochi-uslugi tr td.name {
-    width: 360px;
+    width: 470px;
 }
 table.pricelist td a {
     color: #333;
 }
 table.pricelist td.order,
 table.pricelist td.price {
-    width: 82px;
+    width: 95px;
 }
 table.pricelist td.order .popup-zakaz {
     color: #fff;
@@ -1518,7 +1524,7 @@ table.pricelist td.order .popup-zakaz:hover {
 }
 .popup.phone .wight p {
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -2579,9 +2585,10 @@ video {
         font-size: 11px;
         padding: 5px;
         line-height: 15px;
+        width: 370px;
     }
     .prochi-uslugi tr td.name {
-        width: auto;
+        width: 370px;
     }
     #ask-form .container .title span, 
     #ask-form .container .title {
