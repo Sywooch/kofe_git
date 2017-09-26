@@ -6,7 +6,7 @@ use yii\widgets\MaskedInput;
 
 $siteConfig = app\components\CController::getSiteConfig();
 $form = ActiveForm::begin([
-            'id' => 'callback-form',
+            'id' => $id,
             'options' => ['class' => 'global-form'],
             'enableClientValidation' => true,
             'fieldConfig' => [

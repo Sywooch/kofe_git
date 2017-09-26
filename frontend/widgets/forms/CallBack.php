@@ -11,6 +11,7 @@ class CallBack extends Widget {
 
     public $class = 'call-widget';
     public $metrika = '';
+    public $id = 'callback-form';
 
     public function run() {
         $model = new \frontend\models\CallBackForm();
@@ -18,7 +19,7 @@ class CallBack extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             \Yii::$app->getSession()->setFlash('success', 'seccess');
         }
-        return $this->render('callBack', ['model' => $model, 'class' => $this->class, 'metrika' => $this->metrika]);
+        return $this->render('callBack', ['model' => $model, 'class' => $this->class, 'metrika' => $this->metrika, 'id' => $this->id]);
     }
 
 }
