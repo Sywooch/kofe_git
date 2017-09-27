@@ -71,7 +71,7 @@
     background: url(../promacspbimages/promacspbchek.svg);
     background-size: 100% 100%;
 }
-.field-callbackform-phone:before,
+.form-group:before,
 .field-orderform-phone:before {
     background: #a1190d;
 }
