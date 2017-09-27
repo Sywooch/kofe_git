@@ -71,7 +71,7 @@
     background: url(../melittaspbimages/melittaspbchek.svg);
     background-size: 100% 100%;
 }
-.field-callbackform-phone:before,
+.form-group:before,
 .field-orderform-phone:before {
     background: #d00c0e;
 }

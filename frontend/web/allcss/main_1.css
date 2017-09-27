@@ -421,10 +421,10 @@ input.phone {
     margin-left: 0%;
     position: relative;
 }
-.field-callbackform-phone {
+.form-group {
     position: relative;
 }
-.field-callbackform-phone:before {
+.form-group:before {
     content:"\f095";
     width: 35px;
     height: 35px;
@@ -442,6 +442,10 @@ input.phone {
     -moz-osx-font-smoothing:grayscale;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+#ask-form .form-group:before,
+#neispravnost .form-group:before {
+    display: none ! important;
 }
 .field-orderform-phone:before {
     content:"\f095";
@@ -486,7 +490,7 @@ input#phone::-webkit-input-placeholder {
     outline: none;
 }
 #zakaz .hero-form__btn {
-    width: 202px;
+    width: 206px;
 }
 #neispravnost .punkt.contact .hero-form__btn {
     font-size: 14px;
@@ -701,7 +705,7 @@ section#neispravnost .container .title {
     font-family: 'NeuronExtraBold', cursive;
 }
 #neispravnost .punkt a ul {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 12px;
 }
 #neispravnost .punkt a ul li {
@@ -838,7 +842,7 @@ input#phone2 {
     min-height: 330px;
 }
 #skidka .container {
-    padding: 150px 0px;
+    padding: 130px 0px;
     text-align: right;
     color: #fff;
 }
@@ -865,7 +869,7 @@ input#phone2 {
     margin-bottom: 40px;
 }
 #skidka .container .h3 {
-    font-size: 45px;
+    font-size: 56px;
     font-weight: 200;
     margin: 0px;
     font-family: "NeuronExtraBold",cursive;
@@ -873,7 +877,9 @@ input#phone2 {
 #skidka .container p {
     text-align: right;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 32px;
+    line-height: 34px;
+    margin: 0px;
 }
 #skidka .container a {
     color: #fff;
@@ -1394,7 +1400,7 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 #zakaz input.phone {
-    width: 167px;
+    width: 172px;
     float: left;
 }
 #zakaz .left {
@@ -2178,11 +2184,11 @@ video {
 #ask2 input.phone {
     border: 1px solid #333;
 }
-#ask2 .field-callbackform-phone:before, 
+#ask2 .form-group:before, 
 #ask2 .field-orderform-phone:before {
     background: #333;
 }
-#ask2 .field-callbackform-phone {
+#ask2 .form-group {
     float: left;
 }
 
@@ -2216,7 +2222,7 @@ video {
 #garantiya .text {
     float: right;
     width: 580px;
-    padding: 70px 40px 20px 20px;
+    padding: 60px 40px 20px 20px;
 }
 #garantiya .container .h2 {
     font-family: "NeuronExtraBold",cursive;
@@ -2224,11 +2230,14 @@ video {
 }
 #garantiya .container p {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 26px;
     text-align: left;
 }
 
 @media screen and (max-width: 1500px) {
+    #neispravnost .gaggiaspbpunkt a ul {
+        margin-top: 5px;
+    }
     #ask-form .container .title span {
         font-size: 40px;
     }
@@ -2264,9 +2273,30 @@ video {
         margin-right: 75px;
         margin-left: 35px;
     }
+    #garantiya .text {
+        width: 500px;
+    }
 
 }
 @media screen and (max-width: 1030px) {
+    #garantiya .text {
+        padding-top: 20px;
+    }
+    #garantiya .img {
+        width: 300px;
+        height: 240px;
+    }
+    #garantiya .container .h2 {
+        font-size: 30px;
+    }
+    #garantiya .img .logos {
+        width: 65px;
+        height: 30px;
+        margin: 8px 20px 0px 0px;
+    }
+    #garantiya .container p {
+        font-size: 18px;
+    }
     #ask2 {
         margin-top: 50px;
     }
@@ -2477,6 +2507,17 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #garantiya .img {
+        width: 250px;
+    }
+    #garantiya .text {
+        width: 400px;
+        padding: 10px 20px 10px 10px;
+    }
+    #garantiya .img .logos {
+        width: 50px;
+        height: 25px;
+    }
     #ask2 .container {
         width: 650px;
     }
@@ -2490,7 +2531,7 @@ video {
         margin-top: -10px;
         margin-bottom: -40px;
     }
-    .field-callbackform-phone {
+    .form-group {
         float: left;
     }
     #primushestva .punkt .h2,
@@ -2742,10 +2783,13 @@ video {
     }
 }
 @media screen and (max-width: 680px) {
+    #garantiya {
+        display: none;
+    }
     #ask2 .global-form {
         text-align: left;
     }
-    #ask2 .form-group.field-callbackform-phone.required {
+    #ask2 .form-group.form-group.required {
         margin-left: 50px;
     }
     #ask2 b {
@@ -2928,7 +2972,7 @@ video {
     #ask2 .global-form {
         text-align: center;
     }
-    #ask2 .form-group.field-callbackform-phone.required {
+    #ask2 .form-group.form-group.required {
         margin-left: 28px;
     }
     #ask2 input.phone {
@@ -2948,15 +2992,15 @@ video {
     .field-orderform-phone:before {
         float: left;
     }
-    .field-callbackform-phone {
+    .form-group {
         width: 240px;
         margin: 0 auto;
         float: none;
     }
-    .field-callbackform-phone:before {
+    .form-group:before {
         float: left;
     }
-    #zakaz .field-callbackform-phone {
+    #zakaz .form-group {
         width: 195px;
     }
 
@@ -3518,7 +3562,7 @@ body.models .logo-breand {
     #ask input.phone {
         width: 165px;
     }
-    #ask .field-callbackform-phone {
+    #ask .form-group {
         width: 200px;
     }
     #ask .hero-form__btn {

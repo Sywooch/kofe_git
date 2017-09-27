@@ -71,7 +71,7 @@
     background: url(../nivonaspbimages/nivonaspbchek.svg);
     background-size: 100% 100%;
 }
-.field-callbackform-phone:before,
+.form-group:before,
 .field-orderform-phone:before {
     background: #af0917;
 }
