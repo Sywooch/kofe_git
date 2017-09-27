@@ -490,7 +490,7 @@ input#phone::-webkit-input-placeholder {
     outline: none;
 }
 #zakaz .hero-form__btn {
-    width: 202px;
+    width: 206px;
 }
 #neispravnost .punkt.contact .hero-form__btn {
     font-size: 14px;
@@ -705,7 +705,7 @@ section#neispravnost .container .title {
     font-family: 'NeuronExtraBold', cursive;
 }
 #neispravnost .punkt a ul {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 12px;
 }
 #neispravnost .punkt a ul li {
@@ -842,7 +842,7 @@ input#phone2 {
     min-height: 330px;
 }
 #skidka .container {
-    padding: 150px 0px;
+    padding: 130px 0px;
     text-align: right;
     color: #fff;
 }
@@ -1400,7 +1400,7 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 #zakaz input.phone {
-    width: 167px;
+    width: 172px;
     float: left;
 }
 #zakaz .left {
