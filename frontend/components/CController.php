@@ -93,10 +93,10 @@ class CController extends \yii\web\Controller {
                 $results[] = $array;
             foreach ($array as $subarray)
                 $results = array_merge($results, $this->search($subarray, $key, $value));
-        }
+        }        
         return $results;
     }
-
+    
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
         $userIP = Yii::$app->getRequest()->getUserIP();
         $connection = Yii::$app->db;
@@ -106,23 +106,25 @@ class CController extends \yii\web\Controller {
             'ip' => $userIP,
             'site' => 'remontkofe.ru',
         ])->execute();
-        $roistatData = array(
-            'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
-            'key' => 'NTc2Njc6NTQzMjg6ZjcwODJmMzM1ODgyZDQ5MDdiYWFlNGQxY2ZlZDk4OWE=', // Замените SECRET_KEY на секретный ключ в разделе Каталог интеграций -> Ваша CRM -> Настройки -> Ключ для интеграции.
-            'title' => $title,
-            'comment' => 'Заявка, {city}, {landingPage}, {source}' . $comment,
-            'name' => $name,
-            'email' => $email,
-            'phone' => preg_replace("/\D/", "", $phone),
-            'is_need_callback' => '0', // Для автоматического использования обратного звонка при отправке контакта и сделки нужно поменять 0 на 1.
-            'callback_phone' => '', // Переопределяет номер, указанный в настройках обратного звонка.
-            'fields' => array(
-                // Массив дополнительных полей. Если дополнительные поля не нужны, оставьте массив пустым.
-                // Примеры дополнительных полей смотрите в таблице ниже.
-                "charset" => "UTF-8", // Сервер преобразует значения полей из указанной кодировки в UTF-8.
-            ),
-        );
-        file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
+   
+        return \Yii::$app->getResponse()->redirect(\Yii::$app->getRequest()->getUrl());
+//        $roistatData = array(
+//            'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
+//            'key' => 'NTc2Njc6NTQzMjg6ZjcwODJmMzM1ODgyZDQ5MDdiYWFlNGQxY2ZlZDk4OWE=', // Замените SECRET_KEY на секретный ключ в разделе Каталог интеграций -> Ваша CRM -> Настройки -> Ключ для интеграции.
+//            'title' => $title,
+//            'comment' => 'Заявка, {city}, {landingPage}, {source}' . $comment,
+//            'name' => $name,
+//            'email' => $email,
+//            'phone' => preg_replace("/\D/", "", $phone),
+//            'is_need_callback' => '0', // Для автоматического использования обратного звонка при отправке контакта и сделки нужно поменять 0 на 1.
+//            'callback_phone' => '', // Переопределяет номер, указанный в настройках обратного звонка.
+//            'fields' => array(
+//                // Массив дополнительных полей. Если дополнительные поля не нужны, оставьте массив пустым.
+//                // Примеры дополнительных полей смотрите в таблице ниже.
+//                "charset" => "UTF-8", // Сервер преобразует значения полей из указанной кодировки в UTF-8.
+//            ),
+//        );
+//        file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
     }
 
     public static function getSiteConfig() {
