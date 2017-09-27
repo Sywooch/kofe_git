@@ -55,16 +55,18 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="clear"></div>
             </section>
             <?= \app\widgets\other\Advantage::widget(); ?>
-            <?php if (!empty($seoText2)): ?>
-            <section id="text-block">
-                <div class="container">
-                    <?= $seoText2; ?>
-                </div>
-                </section>
-            <?php endif; ?>
+
         </div>			
     </div>
     <div class="clear"></div>
 </section>
 <?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
 <?= $siteConfig['mono'] ? \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]) : ''; ?>
+
+<?php if (!empty($seoText2)): ?>
+    <section id="text-block">
+        <div class="container">
+            <?= $seoText2; ?>
+        </div>
+    </section>
+<?php endif; ?>
