@@ -28,10 +28,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="right-text">
                     <div class="h1">
                         <h1><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
-                    </div>
-                    <p>
-                        <?= $seoText; ?>
-                    </p>
+                    </div>                    
+                    <?= $seoText; ?>                    
                 </div>
                 <div class="clear"></div>
             </section>

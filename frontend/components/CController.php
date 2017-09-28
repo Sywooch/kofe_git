@@ -24,7 +24,7 @@ class CController extends \yii\web\Controller {
 //        self::$menu = $rows;
 //        unset($rows);
         //Yii::$app->ipgeobase->updateDB();
-        
+
         $userIP = Yii::$app->getRequest()->getUserIP();
         $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
@@ -93,38 +93,32 @@ class CController extends \yii\web\Controller {
                 $results[] = $array;
             foreach ($array as $subarray)
                 $results = array_merge($results, $this->search($subarray, $key, $value));
-        }        
+        }
         return $results;
     }
-    
+
+    public static function sendMessage($msg, $chat_id) {
+        $url = 'https://api.telegram.org/bot361996498:AAElIAPqMYKtwZWyHs1qTPgNxOFAscy25x4/sendMessage?chat_id=' . $chat_id . '&text=';
+        if ($msg)
+            file_get_contents($url . urlencode($msg));
+    }
+
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
+        $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
         $connection = Yii::$app->db;
         $connection->createCommand()->insert('yu_orders', [
             'phone' => $phone,
             'date' => date('Y-m-d H:i:s'),
             'ip' => $userIP,
-            'site' => 'remontkofe.ru',
+            'site' => Yii::$app->request->hostInfo,
         ])->execute();
-   
-        return \Yii::$app->getResponse()->redirect(\Yii::$app->getRequest()->getUrl());
-//        $roistatData = array(
-//            'roistat' => isset($_COOKIE['roistat_visit']) ? $_COOKIE['roistat_visit'] : null,
-//            'key' => 'NTc2Njc6NTQzMjg6ZjcwODJmMzM1ODgyZDQ5MDdiYWFlNGQxY2ZlZDk4OWE=', // Замените SECRET_KEY на секретный ключ в разделе Каталог интеграций -> Ваша CRM -> Настройки -> Ключ для интеграции.
-//            'title' => $title,
-//            'comment' => 'Заявка, {city}, {landingPage}, {source}' . $comment,
-//            'name' => $name,
-//            'email' => $email,
-//            'phone' => preg_replace("/\D/", "", $phone),
-//            'is_need_callback' => '0', // Для автоматического использования обратного звонка при отправке контакта и сделки нужно поменять 0 на 1.
-//            'callback_phone' => '', // Переопределяет номер, указанный в настройках обратного звонка.
-//            'fields' => array(
-//                // Массив дополнительных полей. Если дополнительные поля не нужны, оставьте массив пустым.
-//                // Примеры дополнительных полей смотрите в таблице ниже.
-//                "charset" => "UTF-8", // Сервер преобразует значения полей из указанной кодировки в UTF-8.
-//            ),
-//        );
-//        file_get_contents("https://cloud.roistat.com/api/proxy/1.0/leads/add?" . http_build_query($roistatData));
+        $msg = "Телефон: " . $phone;
+        $msg .= "\r\nСтраница: " . $title;
+        $msg .= "\r\nАйпи: " . $userIP;
+        $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
+        self::sendMessage($msg, '@remontkofe_ru_admin');
+        //return \Yii::$app->getResponse()->redirect(\Yii::$app->getRequest()->getUrl());
     }
 
     public static function getSiteConfig() {
