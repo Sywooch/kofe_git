@@ -428,7 +428,6 @@ input#phone::-webkit-input-placeholder {
 #banner .right-text .happy-time p {
     font-size: 22px;
     font-family: 'NeuronExtraBold', cursive;
-    font-weight: bold;
     margin: 0px;
     margin-bottom: 30px;
     width: 100%;
@@ -953,6 +952,8 @@ input#phone2 {
 .popup .wight h4 {
     font-size: 25px;
     font-family: 'NeuronExtraBold', cursive;
+    font-weight: normal;
+    margin-bottom: 0px;
 }
 .popup.good .wight h4 {
     margin: 0px;
@@ -1437,7 +1438,7 @@ table.pricelist td.order .popup-zakaz:hover {
 }
 .popup.phone .wight p {
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -2717,6 +2718,9 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    .popup.phone .wight p {
+        font-size: 14px;
+    }
     #ask2 .global-form {
         text-align: center;
     }
@@ -3471,3 +3475,6 @@ body.models .logo-breand {
     color: #a1190d ! important;
 }
 
+#neispravnost .punkt.contact:after {
+    display: none;
+}

@@ -2515,6 +2515,9 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    .popup.phone .wight p {
+        font-size: 14px;
+    }
     #banner .right-text .h1 h1, #banner .full-text .h1 h1 {
         font-size: 24px;
     }
@@ -3077,6 +3080,8 @@ body.models .logo-breand {
 
 
 
-
+#neispravnost .punkt.contact:after {
+    display: none;
+}
 
 
