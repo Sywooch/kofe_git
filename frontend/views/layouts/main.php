@@ -334,7 +334,7 @@ $js = app\components\CController::$js;
             <?php if ($siteConfig['mono']): ?>
                 <section id="ask2">
                     <div class="container colorbg">
-                        <div class="img"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt=""></div>
+                        <div class="img"><img style="width: 100%;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt=""></div>
                         <div class="info">
                             <div class="h2">
                                 Не нашли свою поломку?
