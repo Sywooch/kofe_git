@@ -36,7 +36,7 @@ class Seo extends \yii\db\ActiveRecord
             [['meta_title'], 'string', 'max' => 300],
             [['meta_keywords', 'meta_h1'], 'string', 'max' => 255],
             [['meta_description'], 'string', 'max' => 500],
-            [['meta_text1', 'meta_text2'], 'string', 'max' => 1000]
+            [['meta_text1', 'meta_text2'], 'string', 'max' => 5000]
         ];
     }
 

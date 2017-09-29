@@ -28,10 +28,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="right-text">
                     <div class="h1">
                         <h1><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
-                    </div>
-                    <p>
-                        <?= $seoText; ?>
-                    </p>
+                    </div>                    
+                    <?= $seoText; ?>                    
                 </div>
                 <div class="clear"></div>
             </section>
@@ -55,16 +53,18 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="clear"></div>
             </section>
             <?= \app\widgets\other\Advantage::widget(); ?>
-            <?php if (!empty($seoText2)): ?>
-            <section id="text-block">
-                <div class="container">
-                    <?= $seoText2; ?>
-                </div>
-                </section>
-            <?php endif; ?>
+
         </div>			
     </div>
     <div class="clear"></div>
 </section>
 <?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
 <?= $siteConfig['mono'] ? \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]) : ''; ?>
+
+<?php if (!empty($seoText2)): ?>
+    <section id="text-block">
+        <div class="container">
+            <?= $seoText2; ?>
+        </div>
+    </section>
+<?php endif; ?>
