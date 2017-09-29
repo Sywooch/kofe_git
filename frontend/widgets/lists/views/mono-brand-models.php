@@ -7,6 +7,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <p class="title"><span>Ремонтируем модели <?= \app\components\CController::$monoBrand['title']; ?>: </span></p>
         <div class="row">                    
             <?php foreach ($rows as $row): ?>
+            <img  style="opacity: 0;position: absolute;z-index: -999999999;" src="/uploads/images/<?= $row['image']; ?>" alt="">
                 <?php
                 if ($siteConfig['mono'])
                     $row['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $row['url']);
