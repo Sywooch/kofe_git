@@ -213,7 +213,13 @@ table.pricelist td.order .popup-zakaz {
 #header .logo {
     margin-top: 6px;
 }
-
+#banner .left-img {
+    height: 330px;
+    line-height: 350px;
+}
+#banner .left-img img {
+    vertical-align: bottom;
+}
 @media screen and (max-width: 1030px) {
     #header .logo {
         width: 140px;
@@ -232,6 +238,10 @@ table.pricelist td.order .popup-zakaz {
     #header .logo {
         width: 140px;
         height: auto;
+    }
+    #banner .left-img {
+        height: 270px;
+        line-height: 290px;
     }
 
 

@@ -279,8 +279,8 @@ span.brand-title {
     margin-bottom: 10px;
 }
 .video #banner {
-    margin-top: 90px;
-    margin-bottom: 65px;
+    margin-top: 60px;
+    margin-bottom: 35px;
 }
 
 .banners #banner .left-img {
@@ -317,9 +317,9 @@ span.brand-title {
     position: absolute;
     z-index: 0;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+3,0+75 */
-background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 3%, rgba(255,255,255,0) 60%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-radial-gradient(ellipse at center,rgba(255, 255, 255, 0.38) 0%,rgb(113, 71, 52) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(ellipse at center,rgba(255, 255, 255, 0.38) 0%,rgb(113, 71, 52) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,rgba(255, 255, 255, 0.38) 0%,rgb(113, 71, 52) 3%,rgba(255,255,255,0) 60%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .banners #banner .left-img img {
@@ -496,20 +496,37 @@ input#phone::-webkit-input-placeholder {
     font-size: 14px;
     width: 166px;
 }
+#neispravnost .punkt.contact:after {
+    display: none;
+}
 #banner .right-text .happy-time {
     float: left;
     width: 245px;
+    border: 5px solid #71b430;
+    border-right: 0px;
     box-sizing: border-box;
-    margin-right: 20px;
-    padding-right: 40px;
+    height: 111px;
+    padding: 10px;
+    padding-right: 30px;
 }
 #banner .right-text .happy-time p {
     font-size: 22px;
     font-family: 'NeuronExtraBold', cursive;
     font-weight: bold;
     margin: 0px;
-    margin-bottom: 30px;
     width: 100%;
+    color: #fff ! important;
+}
+#banner form#callback-form {
+    border: 5px solid #71b430;
+    padding: 10px;
+    float: left;
+    border-left: 0px;
+    box-sizing: border-box;
+    height: 111px;
+}
+#banner form#callback-form input.phone {
+    margin-right: 0px;
 }
 .happy-time img {
     width: 48px;
@@ -1131,10 +1148,7 @@ input#phone2 {
 }
 .video #banner .right-text .h1,
 .video #banner .right-text p {
-    color: #fff;
-}
-.video #banner .right-text > p {
-    color: #333 ! important;
+    color: #fff ! important;
 }
 #modeli .container {
     text-align: center;
@@ -2257,6 +2271,9 @@ video {
     #banner .right-text .h1 {
         font-size: 35px;
     }
+    #banner .right-text .happy-time {
+        padding-right: 45px;
+    }
     #banner .right-text .happy-time p {
         font-size: 20px;
     }
@@ -2326,6 +2343,14 @@ video {
         margin: 0px;
         padding: 0px;
         width: 100%;
+        height: auto;
+        border: 0px;
+    }
+    #banner form#callback-form {
+        border: 0px;
+        height: auto;
+        padding: 0px;
+        margin-top: 10px;
     }
     .video #primushestva .container {
         padding-right: 15px;
@@ -2507,6 +2532,9 @@ video {
     }
 }
 @media screen and (max-width: 830px) {
+    #banner form#callback-form input.phone {
+        margin-right: 10px;
+    }
     #garantiya .img {
         width: 250px;
     }
@@ -2969,6 +2997,12 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
+    #banner form#callback-form {
+        float: none;
+    }
+    #banner form#callback-form input.phone {
+        margin-right: 0px;
+    }
     #ask2 .global-form {
         text-align: center;
     }
@@ -2996,6 +3030,9 @@ video {
         width: 240px;
         margin: 0 auto;
         float: none;
+    }
+    #neispravnost .punkt.contact .form-group {
+        width: auto;
     }
     .form-group:before {
         float: left;
@@ -3411,10 +3448,15 @@ video {
     #ask-formm div {
         float: none;
         margin-right: 0px;
+        width: auto;
     }
     #skidka .container .h3 {
         font-size: 38px;
     }
+    #skidka .container p {
+        font-size: 26px;
+    }
+
 }
 
 
@@ -3565,6 +3607,9 @@ body.models .logo-breand {
     #ask .form-group {
         width: 200px;
     }
+    .popup .form-group {
+        margin-left: 37px;
+    }
     #ask .hero-form__btn {
         width: 200px;
         margin-left: 30px;
@@ -3602,12 +3647,18 @@ body.models .logo-breand {
 .boschspb .colortext {
     color: #215f8b ! important;
 }
+.boschspb .colorborder {
+    border-color: #215f8b ! important;
+}
 
 .siemensspb .colorbg {
     background: #41aaaa ! important;
 }
 .siemensspb  .colortext {
     color: #41aaaa ! important;
+}
+.siemensspb .colorborder {
+    border-color: #41aaaa ! important;
 }
 
 .delonghispb .colorbg {
@@ -3616,12 +3667,18 @@ body.models .logo-breand {
 .delonghispb .colortext {
     color: #215f8b ! important;
 }
+.delonghispb .colorborder {
+    border-color: #215f8b ! important;
+}
 
 .saecospb .colorbg {
     background: #d71921 ! important;
 }
 .saecospb .colortext {
     color: #d71921 ! important;
+}
+.saecospb .colorborder {
+    border-color: #d71921 ! important;
 }
 
 .philipsspb .colorbg {
@@ -3630,12 +3687,18 @@ body.models .logo-breand {
 .philipsspb .colortext {
     color: #3182b1 ! important;
 }
+.philipsspb .colorborder {
+    border-color: #3182b1 ! important;
+}
 
 .juraspb .colorbg {
     background: #e30613 ! important;
 }
 .juraspb .colortext {
     color: #e30613 ! important;
+}
+.juraspb .colorborder {
+    border-color: #e30613 ! important;
 }
 
 .krupsspb .colorbg {
@@ -3644,12 +3707,18 @@ body.models .logo-breand {
 .krupsspb .colortext {
     color: #525352 ! important;
 }
+.krupsspb .colorborder {
+    border-color: #525352 ! important;
+}
 
 .melittaspb .colorbg {
     background: #d00c0e ! important;
 }
 .melittaspb .colortext {
     color: #d00c0e ! important;
+}
+.melittaspb .colorborder {
+    border-color: #d00c0e ! important;
 }
 
 .nivonaspb .colorbg {
@@ -3658,12 +3727,18 @@ body.models .logo-breand {
 .nivonaspb .colortext {
     color: #af0917 ! important;
 }
+.nivonaspb .colorborder {
+    border-color: #af0917 ! important;
+}
 
 .gaggiaspb .colorbg {
     background: #ef4023 ! important;
 }
 .gaggiaspb .colortext {
     color: #ef4023 ! important;
+}
+.gaggiaspb .colorborder {
+    border-color: #ef4023 ! important;
 }
 
 .wmfspb .colorbg {
@@ -3672,12 +3747,18 @@ body.models .logo-breand {
 .wmfspb .colortext {
     color: #71b430 ! important;
 }
+.wmfspb .colorborder {
+    border-color: #71b430 ! important;
+}
 
 .cimbalispb .colorbg {
     background: #e2271c ! important;
 }
 .cimbalispb .colortext {
     color: #e2271c ! important;
+}
+.cimbalispb .colorborder {
+    border-color: #e2271c ! important;
 }
 
 .schaererspb .colorbg {
@@ -3686,12 +3767,18 @@ body.models .logo-breand {
 .schaererspb .colortext {
     color: #e2271c ! important;
 }
+.schaererspb .colorborder {
+    border-color: #e2271c ! important;
+}
 
 .frankespb .colorbg {
     background: #e2271c ! important;
 }
 .frankespb .colortext {
     color: #e2271c ! important;
+}
+.frankespb .colorborder {
+    border-color: #e2271c ! important;
 }
 
 .faemaspb .colorbg {
@@ -3700,12 +3787,18 @@ body.models .logo-breand {
 .faemaspb .colortext {
     color: #870c28 ! important;
 }
+.faemaspb .colorborder {
+    border-color: #870c28 ! important;
+}
 
 .mielespb .colorbg {
     background: #a20001 ! important;
 }
 .mielespb .colortext {
     color: #a20001 ! important;
+}
+.mielespb .colorborder {
+    border-color: #a20001 ! important;
 }
 
 .ranciliospb .colorbg {
@@ -3714,12 +3807,18 @@ body.models .logo-breand {
 .ranciliospb .colortext {
     color: #007845 ! important;
 }
+.ranciliospb .colorborder {
+    border-color: #007845 ! important;
+}
 
 .simonellispb .colorbg {
     background: #dd3333 ! important;
 }
 .simonellispb .colortext {
     color: #dd3333 ! important;
+}
+.simonellispb .colorborder {
+    border-color: #dd3333 ! important;
 }
 
 .borkspb .colorbg {
@@ -3728,10 +3827,16 @@ body.models .logo-breand {
 .borkspb .colortext {
     color: #5c5c5c ! important;
 }
+.borkspb .colorborder {
+    border-color: #5c5c5c ! important;
+}
 
 .promacspb .colorbg {
     background: #a1190d ! important;
 }
 .promacspb .colortext {
     color: #a1190d ! important;
+}
+.promacspb .colorborder {
+    border-color: #a1190d ! important;
 }

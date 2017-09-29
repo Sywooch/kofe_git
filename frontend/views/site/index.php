@@ -19,7 +19,7 @@ else {
             
                 <?= strip_tags($_GET['data']['description'], '<p><a><img><div></span>'); ?>                
            
-            <div class="happy-time">
+            <div class="happy-time colorborder">
                 <img src="<?= $assets ?>/images/clock.svg" alt="">
                 <p>Акция дня! <br>25% скидка на услуги сегодня</p>
             </div>
