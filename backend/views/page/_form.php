@@ -12,7 +12,7 @@ use dosamigos\datetimepicker\DateTimePicker;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <?php
-$elements = \Yii::$app->db->createCommand('select id,parent, title from {{%pages}}')->queryAll();
+$elements = \Yii::$app->db->createCommand('select id,parent, title from {{%pages}} where type != \'model\'')->queryAll();
 $tree = $model->build_tree($elements);
 unset($elements);
 $data = [

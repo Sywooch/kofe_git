@@ -48,7 +48,7 @@ else {
 </section>
 <section id="text-block">
     <div class="container">
-        <?= strip_tags($_GET['data']['full_description'], '<p><a><img><div><span><h2><h1><h3>'); ?>        
+        <?= strip_tags($_GET['data']['full_description'], '<p><a><img><div><span><h2><h1><h3><ul><li>'); ?>        
     </div>
     <span class="more"><div>Читать далее</div></span>
 </section>
