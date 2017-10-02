@@ -40,9 +40,9 @@ $js = app\components\CController::$js;
         </style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt="">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>contectbg2.jpg" alt="">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>bgsale.jpg" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>contectbg2.jpg" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>bgsale.jpg" alt="">
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
