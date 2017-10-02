@@ -28,11 +28,26 @@ $data = [
     'brand' => 'Бренд',
     'model' => 'Модель',
 ];
+$sites = [0 => 'Нет'];
+foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
+    $sites[$config['id']] = $title . '.ru';
+}
+if ($model->isNewRecord)
+    $model->site_id = 0;
 ?>
 <div class="pages-form">
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
-
+    <?=
+    $form->field($model, 'site_id')->widget(Select2::classname(), [
+        'data' => $sites,
+        'language' => 'ru',
+        'options' => ['placeholder' => '--'],
+        'pluginOptions' => [
+            'allowClear' => false
+        ],
+    ]);
+    ?>
     <?=
     $form->field($model, 'type')->widget(Select2::classname(), [
         'data' => $data,
@@ -55,7 +70,7 @@ $data = [
     ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
-    
+
     <?= $form->field($model, 'full_title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
