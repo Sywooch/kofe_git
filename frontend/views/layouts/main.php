@@ -26,134 +26,23 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="icon" href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>favicon.ico?v=4">
+        <link rel="icon" type="image/x-icon" href="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>favicon.ico">
 
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
-            /* cyrillic-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/ek4gzZ-GeXAPcSbHtCeQI_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-            }
-            /* cyrillic */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-            }
-            /* greek-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/-2n2p-_Y08sg57CNWQfKNvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-            /* greek */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-            /* vietnamese */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/NdF9MtnOpLzo-noMoG0miPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-            }
-            /* latin-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-                unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-            }
-            /* latin */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
-                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-            }
-            /* cyrillic-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/77FXFjRbGzN4aCrSFhlh3hJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-            }
-            /* cyrillic */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/isZ-wbCXNKAbnjo6_TwHThJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-            }
-            /* greek-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/UX6i4JxQDm3fVTc1CPuwqhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+1F00-1FFF;
-            }
-            /* greek */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/jSN2CGVDbcVyCnfJfjSdfBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+0370-03FF;
-            }
-            /* vietnamese */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/PwZc-YbIL414wB9rB1IAPRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-            }
-            /* latin-ext */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/97uahxiqZRoncBaCEI3aWxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-                unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-            }
-            /* latin */
-            @font-face {
-                font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-            }
             <?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
             #banner ul {list-style-type: disc;
                         padding-left: 20px;
                         margin-bottom: 10px;
-            }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}</style>
+            }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}
+        </style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt="">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>contectbg2.jpg" alt="">
-        <img style="opacity: 0;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>bgsale.jpg" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>coffee_machine.png" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>contectbg2.jpg" alt="">
+        <img style="opacity: 0;width:100%;position: absolute;z-index: -999999999;" src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>bgsale.jpg" alt="">
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
