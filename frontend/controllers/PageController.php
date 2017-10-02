@@ -297,6 +297,7 @@ class PageController extends CController {
     }
 
     public function actionView() {
+        //throw new NotFoundHttpException('The requested page does not exist.');
         $pageInfo = $_GET['data'];
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',

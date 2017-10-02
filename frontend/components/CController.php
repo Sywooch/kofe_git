@@ -26,7 +26,7 @@ class CController extends \yii\web\Controller {
         //Yii::$app->ipgeobase->updateDB();
 
         $userIP = Yii::$app->getRequest()->getUserIP();
-        $userRegionInfo = Yii::$app->ipgeobase->getLocation($userIP, true);
+        $userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
