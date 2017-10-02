@@ -624,11 +624,12 @@ input#phone::-webkit-input-placeholder {
 #banner .right-text .happy-time p {
     font-size: 22px;
     font-family: 'NeuronExtraBold', cursive;
+    font-weight: bold;
     margin: 0px;
     width: 100%;
     color: #fff ! important;
 }
-.video #banner form#callback-form {
+#banner form#callback-form {
     border: 5px solid #71b430;
     padding: 10px;
     float: left;
@@ -636,7 +637,7 @@ input#phone::-webkit-input-placeholder {
     box-sizing: border-box;
     height: 111px;
 }
-.video #banner form#callback-form input.phone {
+#banner form#callback-form input.phone {
     margin-right: 0px;
 }
 .happy-time img {
@@ -1192,8 +1193,6 @@ input#phone2 {
 .popup .wight h4 {
     font-size: 25px;
     font-family: 'NeuronExtraBold', cursive;
-    font-weight: normal;
-    margin-bottom: 0px;
 }
 .popup.good .wight h4 {
     margin: 0px;
@@ -1728,7 +1727,7 @@ table.pricelist td.order .popup-zakaz:hover {
 }
 .popup.phone .wight p {
     text-align: left;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -2392,6 +2391,9 @@ video {
     }
     .header-bg {
         height: 535px;
+    }
+    .tel .phone {
+        font-size: 14px;
     }
     #ask-form .container .right {
         width: 750px;
@@ -3107,9 +3109,6 @@ video {
     }
 }
 @media screen and (max-width: 540px) {
-    .popup.phone .wight p {
-        font-size: 14px;
-    }
     #banner form#callback-form {
         float: none;
     }
