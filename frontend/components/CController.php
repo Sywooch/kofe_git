@@ -41,21 +41,21 @@ class CController extends \yii\web\Controller {
         }
         if ($siteConfig['mono'])
             self::$monoBrand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
-        if (empty(Yii::$app->session['region'])) {
-            $regions = Yii::$app->params['regions'];
-            if (!empty($userRegionInfo['city'])) {
-                if (isset($userRegionInfo['city'])) {
-                    foreach ($regions as $region) {
-                        if (stripos($region['title'], $userRegionInfo['city']) !== false) {
-                            $this->setRegion($region['id']);
-                            break;
-                        }
-                    }
-                }
-            } else {
-                $this->setRegion(1);
-            }
-        }
+//        if (empty(Yii::$app->session['region'])) {
+//            $regions = Yii::$app->params['regions'];
+//            if (!empty($userRegionInfo['city'])) {
+//                if (isset($userRegionInfo['city'])) {
+//                    foreach ($regions as $region) {
+//                        if (stripos($region['title'], $userRegionInfo['city']) !== false) {
+//                            $this->setRegion($region['id']);
+//                            break;
+//                        }
+//                    }
+//                }
+//            } else {
+//                $this->setRegion(1);
+//            }
+//        }
         if (empty(Yii::$app->session['region']))
             $this->setRegion(1);
         if (isset($_GET['region'])) {

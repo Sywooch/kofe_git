@@ -9,6 +9,13 @@ return [
     'basePath' => dirname(__DIR__),
     //'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'bootstrap' => ['debug'],
+    'modules' => [
+        'debug' => [
+            'class' => 'yii\debug\Module',
+            'allowedIPs' => ['80.80.218.7', '127.0.0.1', '::1']
+        ]
+    ],
     'components' => [
         'assetManager' => [
             'bundles' => [
@@ -32,15 +39,15 @@ return [
           'identityClass' => 'common\models\User',
           'enableAutoLogin' => true,
           ], */
-        'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
-            'targets' => [
-                [
-                    'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
-                ],
-            ],
-        ],
+//        'log' => [
+//            'traceLevel' => YII_DEBUG ? 3 : 0,
+//            'targets' => [
+//                [
+//                    'class' => 'yii\log\FileTarget',
+//                    'levels' => ['error', 'warning'],
+//                ],
+//            ],
+//        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
