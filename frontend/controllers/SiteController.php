@@ -55,8 +55,13 @@ class SiteController extends CController {
     }
 
     public function actionError() {
-        header("HTTP/1.0 404 Not Found");
-        return $this->render('error');
+        //$this->redirect(Yii::app()->homeUrl);
+        
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: " . Yii::$app->request->hostInfo);
+        exit();
+        //header("HTTP/1.0 404 Not Found");
+        //return $this->render('error');
     }
 
 }
