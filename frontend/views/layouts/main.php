@@ -304,7 +304,7 @@ $js = app\components\CController::$js;
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
             <?php $this->endBody() ?>    
-            <?= !empty($js['content']) ? $js['content'] : ''; ?>
+            <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
             <script>$("form").each(function () {
                     $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
     </body>
