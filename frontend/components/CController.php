@@ -11,7 +11,7 @@ class CController extends \yii\web\Controller {
     public static $js;
     
     public static function replaceJS($js) {
-        return str_replace(['https://mc.yandex.ru/metrika/watch.js', 'https://app.comagic.ru/static/cs.min.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js', Yii::$app->request->hostInfo . '/uploads/js/cs.min.js'], $js);
+        return str_replace(['https://mc.yandex.ru/metrika/watch.js', '//app.comagic.ru/static/cs.min.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js', Yii::$app->request->hostInfo . '/uploads/js/cs.min.js'], $js);
     }
 
     public function beforeAction($event) {
