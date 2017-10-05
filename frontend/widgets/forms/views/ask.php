@@ -35,8 +35,8 @@ $form = ActiveForm::begin([
                         yaCounter45675441.reachGoal(\"ask-form\");
                     }
                 });";
-            if (!$siteConfig['mono'])
-                $this->registerJs($validatejs, $position);
+            //if (!$siteConfig['mono'])
+                //$this->registerJs($validatejs, $position);
             ?>
 
             <?=
