@@ -149,7 +149,7 @@ class PageController extends CController {
             error_reporting(false);
             $hostname = Yii::$app->request->hostInfo;
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
-            $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND (parent = ' . self::$monoBrand['id'] . ')';
+            $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND (parent = ' . self::$monoBrand['id'] . ' OR site_id = ' . $siteConfig['id'] . ')';
             $pages = Yii::$app->db->createCommand($sql)->queryAll();
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);

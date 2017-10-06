@@ -20,8 +20,8 @@ $validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, 
                         yaCounter45675441.reachGoal(\"$metrika\");
                     }
                 });";
-if (!$siteConfig['mono'])
-    $this->registerJs($validatejs, $position);
+//if (!$siteConfig['mono'])
+    //$this->registerJs($validatejs, $position);
 ?> 
 <?=
 

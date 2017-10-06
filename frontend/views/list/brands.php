@@ -11,7 +11,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="container">
         <div class="full-text">
             <div class="h1">
-                <h1>Поддерживаем <?= $cnt; ?> брендов </h1>
+                <h1><?= $h1; ?></h1>
             </div>            
             <?= $pageInfo['description']; ?>            
         </div>

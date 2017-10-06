@@ -158,7 +158,6 @@ class ListController extends CController {
                         $metaDesc = 'Если кофемашина ' . mb_strtolower($pageInfo['title'], 'utf8') . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                         $title = $pageInfo['title'] . ' кофемашина в ' . Yii::$app->session['region']['titleRod'];
                     }
-                    
                 } else {
                     if ($siteConfig['mono']) {
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . self::$monoBrand['title'];
@@ -175,12 +174,12 @@ class ListController extends CController {
             if (!empty($seo['meta_text2'])) {
                 $seoText2 = $seo['meta_text2'];
             }
-            if(!empty($seo['meta_h1'])) {
+            if (!empty($seo['meta_h1'])) {
                 $h1 = $seo['meta_h1'];
             }
         }
 
-        $title = $seo['meta_title'] ?: $title;       
+        $title = $seo['meta_title'] ?: $title;
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
             'content' => count($url) > 1 ? ($seo['meta_keywords'] ?: $metaKey) : (isset($pageInfo['meta_key']) ? $pageInfo['meta_key'] : $metaKey)
@@ -200,6 +199,7 @@ class ListController extends CController {
 
     public function actionBrands() {
         $pageInfo = $_GET['data'];
+
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
             'content' => $pageInfo['meta_key']
@@ -221,7 +221,11 @@ class ListController extends CController {
             $sortedBrands[$firstLatter][] = $brand;
         }
         unset($brands);
-        return $this->render('brands', ['pageInfo' => $pageInfo, 'sortedBrands' => $sortedBrands, 'cnt' => $cnt, 'searches' => $searches]);
+        $h1 = 'Поддерживаем ' . $cnt . ' брендов ';
+        if (!empty($pageInfo['meta_h1'])) {
+            $h1 = $pageInfo['meta_h1'];
+        }
+        return $this->render('brands', ['pageInfo' => $pageInfo, 'sortedBrands' => $sortedBrands, 'cnt' => $cnt, 'h1' => $h1, 'searches' => $searches]);
     }
 
     public function actionBrand() {

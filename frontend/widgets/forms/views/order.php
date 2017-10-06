@@ -22,8 +22,8 @@ $form = ActiveForm::begin([
                         yaCounter45675441.reachGoal(\"popup-prices\");
                     }
                 });";
-        if (!$siteConfig['mono'])
-        $this->registerJs($validatejs, $position);
+        //if (!$siteConfig['mono'])
+        //$this->registerJs($validatejs, $position);
         ?> 
         <?=
         $form->field($model, 'phone')->widget(MaskedInput::className(), [
