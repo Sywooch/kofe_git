@@ -60,8 +60,8 @@ class SiteController extends CController {
         //header("HTTP/1.1 301 Moved Permanently");
         //header("Location: " . Yii::$app->request->hostInfo);
         //exit();
-        //header("HTTP/1.0 404 Not Found");
-        //return $this->render('error');
+        header("HTTP/1.0 404 Not Found");
+        return $this->render('error');
     }
 
 }
