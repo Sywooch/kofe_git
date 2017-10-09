@@ -55,7 +55,7 @@ $form = ActiveForm::begin([
         </div>
         <div class="left">
             <div class="footer-logo">
-                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg" alt="">
+                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="">
             </div>
             <?php if (!$siteConfig['mono']): ?>
                 <p><a href="/">Ремонт кофемашин</a></p>
