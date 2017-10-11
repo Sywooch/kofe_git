@@ -87,6 +87,7 @@ class ListController extends CController {
         }
 
         if (count($url) > 1) {
+            $arrayUrl = $url;
             array_pop($url);
             if ($siteConfig['mono']) {
                 $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
@@ -124,13 +125,23 @@ class ListController extends CController {
                     $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашина ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашина ' . $page['title'] . ' - ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  кофемашина ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
-                    
                     $seoText = '<p>Если кофемашина ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  кофемашин ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели кофемашин  производства ' . $page['title'] . '.</p>';
                 } else {
                     $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . $page['title'] . '. Ремонт кофемашин в СЦ';
                     $metaDesc = 'Качественная ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины ' . $page['title'] . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' - быстро, качественно с гарантией.</p>';
+                }
+                if ($siteConfig['mono']) {
+                    $text = (new \yii\db\Query())
+                            ->select(['*'])
+                            ->from('{{%seo}}')
+                            ->where(['url' => end($arrayUrl), 'site_id' => $siteConfig['id']])
+                            ->limit(1)
+                            ->one();
+                    if (!empty($text) && !empty($text['text1'])) {
+                        $seoText = str_replace(self::$monoBrand['title'], $page['title'], $text['text1']);
+                    }
                 }
             } else {
                 $seoText = '';
@@ -150,7 +161,7 @@ class ListController extends CController {
                     if ($siteConfig['mono']) {
                         $h1 = 'Кофемашина ' . self::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8');
                     }
-                    if ($siteConfig['mono']) {                        
+                    if ($siteConfig['mono']) {
                         $title = 'Кофемашина ' . self::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8') . ' - срочный ремонт в ' . Yii::$app->session['region']['titleRod'];
                         $metaDesc = 'Если кофемашина ' . self::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8') . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                         $seoText = '<p>Если кофемашина ' . mb_strtolower($pageInfo['title'], 'utf-8') . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в Москве. Для ремонта кофемашин ' . self::$monoBrand['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели кофемашин производства ' . self::$monoBrand['title'] . '.</p>';

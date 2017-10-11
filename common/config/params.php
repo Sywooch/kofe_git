@@ -470,7 +470,7 @@ return [
             'sitePrefix' => 'promacspb',
         //'change-logo' => true,
         ],
-        'spb-remont-mobe' => [
+        'repair-mobiles' => [
             'phone-1' => '8 (499) 450-90-08',
             'phone-2' => '8 (812) 701-00-02',
             'spb-multi' => true,
@@ -478,6 +478,7 @@ return [
             'mono' => false,
             'id' => 43,
             'sitePrefix' => 'spb-mobe',
+            'category_id' => 1,
         ],
     ],
 ];
