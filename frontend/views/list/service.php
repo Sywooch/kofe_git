@@ -22,7 +22,13 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <img src="<?= $assets ?>/uploads/images/<?= $modelImage; ?>" alt="<?= $pageInfo['title']; ?>">
                         </div>
                     <?php else: ?>
-                        <img src="<?= $assets ?>/images/promo-bg.png" alt="<?= $pageInfo['title']; ?>">
+                        <?php 
+                            $src = $assets . '/images/promo-bg.png';
+                            if(is_file(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'promo-bg.png')) {
+                                $src = $assets . '/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'promo-bg.png';
+                            }
+                         ?>
+                        <img src="<?= $src ?>" alt="<?= $pageInfo['title']; ?>">
                     <?php endif; ?>
                 </div>
                 <div class="right-text">
