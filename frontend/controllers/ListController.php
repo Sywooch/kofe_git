@@ -132,15 +132,15 @@ class ListController extends CController {
                     $metaDesc = 'Качественная ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины ' . $page['title'] . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' - быстро, качественно с гарантией.</p>';
                 }
-                if ($siteConfig['mono']) {
+                if ($siteConfig['mono']) {                    
                     $text = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('{{%seo}}')
                             ->where(['url' => end($arrayUrl), 'site_id' => $siteConfig['id']])
                             ->limit(1)
-                            ->one();
-                    if (!empty($text) && !empty($text['text1'])) {
-                        $seoText = str_replace(self::$monoBrand['title'], $page['title'], $text['text1']);
+                            ->one();                    
+                    if (!empty($text) && !empty($text['meta_text1'])) {
+                        $seoText = str_replace(self::$monoBrand['title'], $page['title'], $text['meta_text1']);
                     }
                 }
             } else {
