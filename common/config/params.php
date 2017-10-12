@@ -19,6 +19,8 @@ return [
             'id' => 1,
             'sitePrefix' => 'remont',
             'region-sel' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Заречная',
         ],
         'spb-remont-kofe' => [
             'phone-1' => '8 (499) 450-90-08',
@@ -29,6 +31,8 @@ return [
             'id' => 2,
             'sitePrefix' => 'spb-kofe',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'СПБ Садовая',
         ],
         'support-delonghi' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -40,6 +44,8 @@ return [
             'id' => 3,
             'sitePrefix' => 'delonghi',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'support-saeco' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -51,6 +57,8 @@ return [
             'id' => 4,
             'sitePrefix' => 'saeco',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'philips-coffee-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -62,6 +70,8 @@ return [
             'id' => 5,
             'sitePrefix' => 'philips',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'service-jura' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -73,6 +83,8 @@ return [
             'id' => 6,
             'sitePrefix' => 'jura',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'support-bosch' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -84,6 +96,7 @@ return [
             'id' => 7,
             'sitePrefix' => 'bosch',
             'change-logo' => true,
+            'order-title' => 'МСК Войковская',
         ],
         'service-krups' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -95,6 +108,8 @@ return [
             'id' => 8,
             'sitePrefix' => 'krups',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'support-melitta' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -106,6 +121,8 @@ return [
             'id' => 9,
             'sitePrefix' => 'melitta',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'service-nivona' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -117,6 +134,8 @@ return [
             'id' => 10,
             'sitePrefix' => 'nivona',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'service-siemens' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -128,6 +147,8 @@ return [
             'id' => 11,
             'sitePrefix' => 'siemens',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'support-gaggia' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -139,6 +160,8 @@ return [
             'id' => 12,
             'sitePrefix' => 'gaggia',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'wmf-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -150,6 +173,8 @@ return [
             'id' => 13,
             'sitePrefix' => 'wmf',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'la-cimbali-center' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -161,6 +186,8 @@ return [
             'id' => 14,
             'sitePrefix' => 'cimbali',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'schaerer-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -172,6 +199,8 @@ return [
             'id' => 15,
             'sitePrefix' => 'schaerer',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'franke-service-center' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -183,6 +212,7 @@ return [
             'id' => 16,
             'sitePrefix' => 'franke',
             'change-logo' => true,
+            'order-title' => 'МСК Войковская',
         ],
         'remont-faema' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -194,6 +224,8 @@ return [
             'id' => 17,
             'sitePrefix' => 'faema',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'support-miele' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -205,6 +237,8 @@ return [
             'id' => 18,
             'sitePrefix' => 'miele',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'rancilio-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -216,6 +250,8 @@ return [
             'id' => 19,
             'sitePrefix' => 'rancilio',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'nuova-simonelli-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -227,6 +263,8 @@ return [
             'id' => 20,
             'sitePrefix' => 'simonelli',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'bork-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -238,6 +276,8 @@ return [
             'id' => 21,
             'sitePrefix' => 'bork',
             'change-logo' => true,
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
         ],
         'promac-service' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -248,7 +288,9 @@ return [
             'brand-id' => 13687,
             'id' => 22,
             'sitePrefix' => 'promac',
+            'category_id' => 7,
             'change-logo' => true,
+            'order-title' => 'МСК Войковская',
         ],
         'repair-delonghi' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -259,6 +301,8 @@ return [
             'brand-id' => 13292,
             'id' => 23,
             'sitePrefix' => 'delonghispb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'saeco-repair' => [
@@ -270,6 +314,8 @@ return [
             'brand-id' => 13332,
             'id' => 24,
             'sitePrefix' => 'saecospb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'philips-help' => [
@@ -281,6 +327,8 @@ return [
             'brand-id' => 13238,
             'id' => 25,
             'sitePrefix' => 'philipsspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'jura-fix' => [
@@ -292,6 +340,8 @@ return [
             'brand-id' => 13202,
             'id' => 26,
             'sitePrefix' => 'juraspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'repair-bosch' => [
@@ -303,6 +353,8 @@ return [
             'brand-id' => 13182,
             'id' => 27,
             'sitePrefix' => 'boschspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'support-krups' => [
@@ -314,6 +366,8 @@ return [
             'brand-id' => 13169,
             'id' => 28,
             'sitePrefix' => 'krupsspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'repair-melitta' => [
@@ -325,6 +379,8 @@ return [
             'brand-id' => 13231,
             'id' => 29,
             'sitePrefix' => 'melittaspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'nivona-repair' => [
@@ -336,6 +392,8 @@ return [
             'brand-id' => 13682,
             'id' => 30,
             'sitePrefix' => 'nivonaspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'siemens-help' => [
@@ -347,6 +405,8 @@ return [
             'brand-id' => 13777,
             'id' => 31,
             'sitePrefix' => 'siemensspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'gaggia-fix' => [
@@ -358,6 +418,8 @@ return [
             'brand-id' => 13527,
             'id' => 32,
             'sitePrefix' => 'gaggiaspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'service-wmf' => [
@@ -369,6 +431,8 @@ return [
             'brand-id' => 13868,
             'id' => 33,
             'sitePrefix' => 'wmfspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'remont-la-cimbali' => [
@@ -380,6 +444,8 @@ return [
             'brand-id' => 13607,
             'id' => 34,
             'sitePrefix' => 'cimbalispb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'schaerer-remont' => [
@@ -391,6 +457,8 @@ return [
             'brand-id' => 13746,
             'id' => 35,
             'sitePrefix' => 'schaererspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'franke-remont' => [
@@ -402,6 +470,8 @@ return [
             'brand-id' => 13537,
             'id' => 36,
             'sitePrefix' => 'frankespb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'faema-remont' => [
@@ -413,6 +483,8 @@ return [
             'brand-id' => 13499,
             'id' => 37,
             'sitePrefix' => 'faemaspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'miele-fix' => [
@@ -424,6 +496,8 @@ return [
             'brand-id' => 13650,
             'id' => 38,
             'sitePrefix' => 'mielespb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'remont-rancilio' => [
@@ -435,6 +509,8 @@ return [
             'brand-id' => 13694,
             'id' => 39,
             'sitePrefix' => 'ranciliospb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'remont-nuova-simonelli' => [
@@ -446,6 +522,8 @@ return [
             'brand-id' => 13670,
             'id' => 40,
             'sitePrefix' => 'simonellispb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'support-bork' => [
@@ -457,6 +535,8 @@ return [
             'brand-id' => 13368,
             'id' => 41,
             'sitePrefix' => 'borkspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'remont-promac' => [
@@ -468,12 +548,13 @@ return [
             'brand-id' => 13687,
             'id' => 42,
             'sitePrefix' => 'promacspb',
+            'category_id' => 7,
+            'order-title' => 'СПБ ТЦ ПИК',
         //'change-logo' => true,
         ],
         'repair-mobiles' => [
             'phone-1' => '8 (499) 450-90-08',
-            'phone-2' => '8 (812) 701-00-02',
-            'spb-multi' => true,
+            'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'mono' => false,
             'id' => 43,
