@@ -1,20 +1,20 @@
 /*karochi*/
 @font-face {
     font-family: NeuronExtraBold;
-    src: url(../fonts/NeuronExtraBold.otf);
+    src: url(/fonts/NeuronExtraBold.otf);
 }
 @font-face {
     font-family: NeuronLight;
-    src: url(../fonts/NeuronLight.otf);
+    src: url(/fonts/NeuronLight.otf);
 }
 @font-face {
     font-family:'FontAwesome';
-    src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-        url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-        url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-        url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-        url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src:url('/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+        url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+        url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+        url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+        url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
 /* cyrillic-ext */
@@ -195,7 +195,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background: #fff url(../spb-kofeimages/spb-kofebg.svg);
+    background: #fff url(/spb-kofeimages/spb-kofebg.svg);
     background-size: 10%;
 }
 body.video {
@@ -820,7 +820,7 @@ section#neispravnost .container .title {
     background: #372727;
 }
 #neispravnost .punkt.promo {
-    background: url(../images/promo-bg.jpg);
+    background: url(/images/promo-bg.jpg);
 }
 #neispravnost .punkt.promo a {
     border: 8px solid #372727;
@@ -833,7 +833,7 @@ section#neispravnost .container .title {
   right: 0;
   width: 240px;
   height: 80%;
-  background: url(../images/promo-bg.png) no-repeat;
+  background: url(/images/promo-bg.png) no-repeat;
   background-size: 100%;
 }*/
 #neispravnost .punkt.promo:after {
@@ -851,7 +851,7 @@ section#neispravnost .container .title {
 }
 
 #neispravnost .punkt.contact {
-    background: url(../images/contect-bg2.jpg);
+    background: url(/images/contect-bg2.jpg);
     padding: 8px;
     background-position: right;
     width: 50%;
@@ -934,7 +934,7 @@ input#phone2::-webkit-input-placeholder {
     transition: all 0.3s ease-in-out;
 }
 #skidka {
-    background: url(../images/bg-sale.jpg) center no-repeat;
+    background: url(/images/bg-sale.jpg) center no-repeat;
     min-height: 252px;
 }
 #skidka .container {
@@ -1192,7 +1192,7 @@ input#phone2::-webkit-input-placeholder {
 .is-sticky #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo-mini.svg) center no-repeat;
+    background: url(/images/logo-mini.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -1471,7 +1471,7 @@ section#hlebniye-kroshki {
 }
 #zakaz .left {
     width: 40%;
-    background: url(../images/zakaz-bg.svg) center no-repeat;
+    background: url(/images/zakaz-bg.svg) center no-repeat;
     background-size: 100%;
     float: right;
     color: #fff;
@@ -1923,7 +1923,7 @@ video {
 }
 #ask-form {
     box-sizing: border-box;
-    background: #372727 url(../images/bg-footer.svg);
+    background: #372727 url(/images/bg-footer.svg);
     background-size: 180px;
 }
 #ask-form .container {
@@ -2699,7 +2699,7 @@ video {
         text-align: center;
     }
     #neispravnost .punkt.promo {
-        background: url(../images/promo-bg.jpg);
+        background: url(/images/promo-bg.jpg);
         background-position: -195px 0px;
     }
     table.pricelist td {
@@ -3037,7 +3037,7 @@ body.models #header .logo img {
 body.models #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo2.svg) center no-repeat;
+    background: url(/images/logo2.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -3132,7 +3132,7 @@ body.models .logo-breand {
 }
 
 .n-rating-stars[data-rate='1'] .n-rating-stars__item:nth-child(-n+1), .n-rating-stars[data-rate='2'] .n-rating-stars__item:nth-child(-n+2), .n-rating-stars[data-rate='3'] .n-rating-stars__item:nth-child(-n+3), .n-rating-stars[data-rate='4'] .n-rating-stars__item:nth-child(-n+4), .n-rating-stars[data-rate='5'] .n-rating-stars__item, .n-rating-stars__item:before {
-    background-image: url(../images/star2.svg);
+    background-image: url(/images/star2.svg);
 }
 .n-product-review-item__stat .n-rating-stars {
     height: 22px;
@@ -3146,7 +3146,7 @@ body.models .logo-breand {
     height: 13px;
     vertical-align: middle;
     border-right: 1px solid transparent;
-    background: url(../images/star1.svg) no-repeat;
+    background: url(/images/star1.svg) no-repeat;
     background-repeat: no-repeat;
 }
 .n-rating-stars__item {

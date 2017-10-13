@@ -1,19 +1,19 @@
 @font-face {
     font-family: NeuronExtraBold;
-    src: url(../fonts/NeuronExtraBold.otf);
+    src: url(/fonts/NeuronExtraBold.otf);
 }
 @font-face {
     font-family: NeuronLight;
-    src: url(../fonts/NeuronLight.otf);
+    src: url(/fonts/NeuronLight.otf);
 }
 @font-face {
     font-family:'FontAwesome';
-    src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-        url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-        url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-        url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-        url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src:url('/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+        url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+        url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+        url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+        url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
 /* cyrillic-ext */
@@ -162,7 +162,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background: #fff url(../delonghiimages/delonghibg.svg);
+    background: #fff url(/delonghiimages/delonghibg.svg);
     background-size: 10%;
 }
 body.video {
@@ -1123,7 +1123,7 @@ input#phone2 {
 .is-sticky #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo-mini.svg) center no-repeat;
+    background: url(/images/logo-mini.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -3283,7 +3283,7 @@ body.models #header .logo img {
 body.models #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo2.svg) center no-repeat;
+    background: url(/images/logo2.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -3377,7 +3377,7 @@ body.models .logo-breand {
 }
 
 .n-rating-stars[data-rate='1'] .n-rating-stars__item:nth-child(-n+1), .n-rating-stars[data-rate='2'] .n-rating-stars__item:nth-child(-n+2), .n-rating-stars[data-rate='3'] .n-rating-stars__item:nth-child(-n+3), .n-rating-stars[data-rate='4'] .n-rating-stars__item:nth-child(-n+4), .n-rating-stars[data-rate='5'] .n-rating-stars__item, .n-rating-stars__item:before {
-    background-image: url(../images/star2.svg);
+    background-image: url(/images/star2.svg);
 }
 .n-product-review-item__stat .n-rating-stars {
     height: 22px;
@@ -3391,7 +3391,7 @@ body.models .logo-breand {
     height: 13px;
     vertical-align: middle;
     border-right: 1px solid transparent;
-    background: url(../images/star1.svg) no-repeat;
+    background: url(/images/star1.svg) no-repeat;
     background-repeat: no-repeat;
 }
 .n-rating-stars__item {
