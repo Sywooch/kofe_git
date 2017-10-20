@@ -96,6 +96,7 @@ return [
             'id' => 7,
             'sitePrefix' => 'bosch',
             'change-logo' => true,
+			'category_id' => 7,
             'order-title' => 'МСК Войковская',
         ],
         'service-krups' => [
@@ -212,6 +213,7 @@ return [
             'id' => 16,
             'sitePrefix' => 'franke',
             'change-logo' => true,
+			'category_id' => 7,
             'order-title' => 'МСК Войковская',
         ],
         'remont-faema' => [
