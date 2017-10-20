@@ -76,19 +76,23 @@ $(document).ready(function () {
 
 
     $('.owl-carousel.logos').owlCarousel({
-        loop: true,
+        loop: false,
         dots: false,
         margin: 20,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
         responsive: {
             0: {
                 items: 3,
-                autoplay: false
+                autoplay: false,
+                loop: true,
+                autoplayTimeout: 4000,
+                nav: true
             },
             600: {
-                items: 5
+                items: 5,
+                autoplay: true,
+                loop: true,
+                autoplayTimeout: 4000,
+                nav: true
             },
             1000: {
                 items: 7

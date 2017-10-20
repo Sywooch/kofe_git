@@ -1926,7 +1926,7 @@ video {
     transition: .25s ease-in-out;
 }
 .video .nav-icon2 span {
-    background: #000;
+    background: #fff;
 }
 .nav-icon2 span:nth-child(even) {
     left: 50%;
@@ -2620,8 +2620,8 @@ body.models .logo-breand {
         padding: 15px;
         width: 100%;
         display: block;
-        border-bottom: 1px solid #673b1f;
-        border-top: 1px solid #77655a;
+        border-bottom: 1px solid #003e67;
+        border-top: 1px solid #00243c;
         margin: 0px;
     }
     #header .nav ul li:first-child a {
