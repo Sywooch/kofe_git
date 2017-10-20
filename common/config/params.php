@@ -558,6 +558,7 @@ return [
             'phone-1' => '8 (499) 450-90-08',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
+            'change-logo' => true,
             'mono' => false,
             'id' => 43,
             'sitePrefix' => 'spb-mobe',
