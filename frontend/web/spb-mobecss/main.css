@@ -192,7 +192,7 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    /*background: #fff url(../spb-kofeimages/spb-kofebg.svg);*/
+    background: #fff;
     background-size: 10%;
 }
 body.video {
@@ -1531,9 +1531,9 @@ section#hlebniye-kroshki {
     width: 167px;
 }
 #zakaz .left {
+    background: #2f2d3b url("../spb-mobeimages/spb-mobepattern-2.png") center no-repeat;
     width: 40%;
-    background: url(../images/zakaz-bg.svg) center no-repeat;
-    background-size: 100%;
+    background-size: 400%;
     float: right;
     color: #fff;
     text-align: center;
@@ -1543,6 +1543,7 @@ section#hlebniye-kroshki {
     padding-top: 24px;
     font-size: 20px;
     height: 100px;
+    border-radius: 25px;
 }
 #zakaz .left span {
     font-size: 24px;
