@@ -37,6 +37,9 @@ $js = app\components\CController::$js;
                         padding-left: 20px;
                         margin-bottom: 10px;
             }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}
+            #brands .owl-stage .owl-item {
+                max-width: 135px ! important;
+            }
         </style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
@@ -108,7 +111,7 @@ $js = app\components\CController::$js;
                             <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>                        
                         <div class="clear"></div>
-                        <span class="time-work">Ежедневно с 08:00 до 22:00</span>                      
+                        <span class="time-work">Ежедневно с 08:00 до 22:00</span>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
