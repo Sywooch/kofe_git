@@ -108,8 +108,7 @@ $js = app\components\CController::$js;
                             <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>                        
                         <div class="clear"></div>
-                        <span class="time-work">Ежедневно с 08:00 до 22:00</span>
-                        <span class="time-work mobile">08:00 - 22:00</span>
+                        <span class="time-work">Ежедневно с 08:00 до 22:00</span>                      
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
