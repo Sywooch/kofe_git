@@ -7,7 +7,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <p class="title"><span>Поддерживаем  </span> бренды</p>
         <div class="owl-carousel logos owl-theme">
             <?php foreach ($rows as $key => $row): ?>
-                <?php if (isset($siteConfig['1-line']) && $siteConfig['1-line'] === true): ?>
+                <?php if (isset($siteConfig['1-line']) && $siteConfig['1-line'] === true && 2 == 1): ?>
                     <div class="item brand">                    
                         <a href="/<?= $row['url']; ?>"><img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>"></a>
                     </div>
