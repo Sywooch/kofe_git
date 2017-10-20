@@ -109,6 +109,7 @@ $js = app\components\CController::$js;
                         </div>                        
                         <div class="clear"></div>
                         <span class="time-work">Ежедневно с 08:00 до 22:00</span>
+                        <span class="time-work mobile">08:00 - 22:00</span>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
