@@ -51,7 +51,6 @@ $siteConfig = app\components\CController::getSiteConfig();
     </div>
     <div class="clear"></div>
 </section>
-<?= !$siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
 <?= $siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
@@ -63,5 +62,5 @@ $siteConfig = app\components\CController::getSiteConfig();
     </section>
 <?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
-
+<?= !$siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
 <?= \app\widgets\lists\OtherModels::widget(['parent' => $pageInfo['parent'], 'modelId' => $pageInfo['id'], 'brand' => $brand]); ?>
