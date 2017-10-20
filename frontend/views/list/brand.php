@@ -1,7 +1,7 @@
 <?php
 $assets = Yii::getAlias('@web');
 $breadcrumbs = [
-    'Ремонт кофемашин ' . $pageInfo['title'],
+    app\components\CController::$category['full_title'] . ' ' . $pageInfo['title'],
 ];
 $this->title = $title;
 ?>
@@ -17,13 +17,13 @@ $this->title = $title;
                 <img src="<?= $assets ?>/uploads/images/<?= $pageInfo['image']; ?>" alt="">
             </div>
             <div class="h1">
-                <h1>Ремонт кофемашин <?= $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?></h1>
+                <h1><?= app\components\CController::$category['full_title']; ?> <?= $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?></h1>
             </div>            
             <?php if (!empty($pageInfo['description'])): ?>
                 <?= $pageInfo['description']; ?>
             <?php else: ?>
                 <p>  
-                    Инженеры нашего сервис центра выполнят ремонт кофемашины <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    
+                    Инженеры нашего сервис центра выполнят <?= mb_strtolower(app\components\CController::$category['rod_title'], 'utf-8'); ?> <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    
                 </p>
             <?php endif; ?>
             <div class="clear"></div>

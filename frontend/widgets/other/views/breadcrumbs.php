@@ -7,12 +7,12 @@ $brand = app\components\CController::$monoBrand;
         <ul itemscope itemtype="http://schema.org/BreadcrumbList">
             <?php if ($siteConfig['mono']): ?>
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/">Ремонт кофемашин <?= $brand['title']; ?></a>
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><?= app\components\CController::$category['full_title']; ?> <?= $brand['title']; ?></a>
                     <meta itemprop="position" content="0" />
                 </li>
             <?php else: ?>
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/">Ремонт кофемашин</a>
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><?= app\components\CController::$category['full_title']; ?></a>
                     <meta itemprop="position" content="0" />
                 </li>
             <?php endif; ?>

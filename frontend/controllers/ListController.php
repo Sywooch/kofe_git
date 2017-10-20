@@ -220,7 +220,7 @@ class ListController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $sql = 'SELECT title, url FROM {{%pages}} WHERE type = \'brand\' AND active = 1 ORDER BY title';
+        $sql = 'SELECT title, url FROM {{%pages}} WHERE type = \'brand\' AND active = 1 and category_id = ' . CController::$category['id'] . ' ORDER BY title';
         $brands = \Yii::$app->db->createCommand($sql)->queryAll();
         $cnt = count($brands);
         $sortedBrands = [];

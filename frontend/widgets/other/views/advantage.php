@@ -45,7 +45,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="punkt">
                     <div class="img"><img src="<?= $assets ?>/images/primushestva/feature-device.png?v=1" alt=""></div>
                     <p class="h2">Цена </p>
-                    <p>Наши цены на ремонт кофемашин лояльнее чем у конкурентов.</p>
+                    <p>Наши цены на <?= mb_strtolower(app\components\CController::$category['full_title'], 'utf-8'); ?> лояльнее чем у конкурентов.</p>
                 </div>
             </div>
         </div>
@@ -241,7 +241,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </svg>
                     </div>
                     <p class="h2">Цена </p>
-                    <p>Наши цены на ремонт кофемашин лояльнее чем у конкурентов.</p>
+                    <p>Наши цены на <?= mb_strtolower(app\components\CController::$category['full_title'], 'utf-8'); ?> лояльнее чем у конкурентов.</p>
                 </div>
                 <div class="punkt">
                     <div class="img">

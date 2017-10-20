@@ -58,7 +58,7 @@ $form = ActiveForm::begin([
                 <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="">
             </div>
             <?php if (!$siteConfig['mono']): ?>
-                <p><a href="/">Ремонт кофемашин</a></p>
+                <p><a href="/"><?= app\components\CController::$category['full_title']; ?></a></p>
                 <ul class="footer-menu">
                     <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
                     <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>

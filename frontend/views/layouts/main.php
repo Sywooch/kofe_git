@@ -32,7 +32,7 @@ $js = app\components\CController::$js;
 <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
-            <?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
+<?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
             #banner ul {list-style-type: disc;
                         padding-left: 20px;
                         margin-bottom: 10px;
@@ -47,7 +47,7 @@ $js = app\components\CController::$js;
         <?php if ($isHome): ?>
             <div class="bg-all">
             <?php endif; ?>
-            <?php if ($isHome && !$siteConfig['mono']): ?>  
+            <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
                 <video poster="" id="bgvid" playsinline autoplay muted loop>
                     <source src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>video/<?= $siteConfig['sitePrefix']; ?>.webm" type="video/webm">
@@ -68,10 +68,10 @@ $js = app\components\CController::$js;
                 <div class="container">
                     <div class="logo">
                         <?php if (isset($siteConfig['change-logo'])): ?>
-                            <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="ремонт кофемашин"></a><?php endif; ?>
-                            <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=3" alt="ремонт кофемашин"></a><?php endif; ?>
+                            <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="<?= app\components\CController::$category['full_title']; ?>"></a><?php endif; ?>
+                            <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=3" alt="<?= app\components\CController::$category['full_title']; ?>"></a><?php endif; ?>
                         <?php else: ?>
-                            <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="ремонт кофемашин"></a>
+                            <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="<?= app\components\CController::$category['full_title']; ?>"></a>
                         <?php endif; ?>
                     </div>
                     <?php if ($isModelPage || $isBrandPage): ?>

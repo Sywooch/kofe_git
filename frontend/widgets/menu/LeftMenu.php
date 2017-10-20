@@ -12,7 +12,7 @@ class LeftMenu extends Widget {
     public $prefUrl = '';
 
     public function run() {
-        $sql = 'SELECT title, url, type, id FROM {{%services}} WHERE is_popular = 1';
+        $sql = 'SELECT title, url, type, id FROM {{%services}} WHERE is_popular = 1 and category_id = ' . CController::$category['id'];
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
         return $this->render('leftMenu', ['rows' => $rows, 'id' => $this->id, 'prefUrl' => $this->prefUrl]);
     }

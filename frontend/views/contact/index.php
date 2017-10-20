@@ -48,7 +48,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <p>                        
                         Номер телефона: <span class="spb"><?= $siteConfig['phone-2']; ?></span><br />
                         Работаем без выходных с 08:00 до 22:00<br />
-                        Центральный офис: м. Садовая, Московский проспект 2, подьезд 6, этаж 3
+                        Центральный офис: м. Садовая, Московский проспект 2/6, подъезд 6, этаж 3
                     </p>
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A02bc0b2650178a379cf8906d1dfb2db1b82cbeb05854924c3f4516592b4e158f&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>

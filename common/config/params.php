@@ -559,7 +559,9 @@ return [
             'mono' => false,
             'id' => 43,
             'sitePrefix' => 'spb-mobe',
+            '1-line' => true,
             'category_id' => 1,
+            'order-title' => 'МСК ТЦ ПИК',
         ],
     ],
 ];

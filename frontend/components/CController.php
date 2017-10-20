@@ -9,29 +9,19 @@ class CController extends \yii\web\Controller {
     public static $menu = [];
     public static $monoBrand = null;
     public static $js;
-    
-    public static function replaceJS($js) {
+    public static $category;
+
+        public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
     }
 
     public function beforeAction($event) {
-
-//        $sql = 'select title, url, id, parent, icon from {{%pages}} WHERE type=\'category\' and active = 1';
-//        $models = \Yii::$app->db->createCommand($sql)->queryAll();
-//        $rows = [];
-//        foreach ($models as $key => $model) {
-//            if ($model['parent'] == 0) {
-//                $rows[$key] = $model;
-//                $rows[$key]['catChilds'] = $this->search($models, 'parent', $model['id']);
-//            }
-//        }
-//        self::$menu = $rows;
-//        unset($rows);
         //Yii::$app->ipgeobase->updateDB();
-
-        $userIP = Yii::$app->getRequest()->getUserIP();
-        $userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
         $siteConfig = self::getSiteConfig();
+        
+        $userIP = Yii::$app->getRequest()->getUserIP();
+        //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
+        
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
@@ -108,6 +98,7 @@ class CController extends \yii\web\Controller {
     }
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
+        $siteConfig = self::getSiteConfig();
         $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
         $connection = Yii::$app->db;
@@ -122,6 +113,7 @@ class CController extends \yii\web\Controller {
         $msg .= "\r\nАйпи: " . $userIP;
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         self::sendMessage($msg, '@remontkofe_ru_admin');
+        file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']));
         //return \Yii::$app->getResponse()->redirect(\Yii::$app->getRequest()->getUrl());
     }
 

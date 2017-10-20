@@ -14,9 +14,9 @@ class Price extends Widget {
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
-        $uslugi = Yii::$app->db->createCommand('SELECT id, title, url, price, is_popular FROM {{%services}} WHERE type = 1')->queryAll();
+        $uslugi = Yii::$app->db->createCommand('SELECT id, title, url, price, is_popular FROM {{%services}} WHERE type = 1 and category_id = ' . CController::$category['id'])->queryAll();
         CController::seoShuffle($uslugi, $siteConfig['id']);        
-        $neispravnosti = Yii::$app->db->createCommand('SELECT id, title, url, price, is_popular FROM {{%services}} WHERE type = 2')->queryAll();
+        $neispravnosti = Yii::$app->db->createCommand('SELECT id, title, url, price, is_popular FROM {{%services}} WHERE type = 2 and category_id = ' . CController::$category['id'])->queryAll();
         CController::seoShuffle($neispravnosti, $siteConfig['id']);
         $model = new \frontend\models\ServiceForm();
         if ($model->load(Yii::$app->request->post())) {

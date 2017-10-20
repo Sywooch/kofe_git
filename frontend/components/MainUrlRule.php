@@ -25,6 +25,8 @@ class MainUrlRule extends UrlRule {
 
     public function parseRequest($manager, $request) {
         $siteConfig = self::getSiteConfig();
+        $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
+        CController::$category = \Yii::$app->db->createCommand($sql)->queryOne();
         $pathInfo = strtolower($request->getPathInfo());
         $arrayUrl = explode('/', $pathInfo);
         if ($siteConfig['mono']) {
@@ -56,8 +58,8 @@ class MainUrlRule extends UrlRule {
     protected function checkToService($url) {
         $siteConfig = self::getSiteConfig();
 
-        $sql = 'select * from {{%services}} where lower(url) =:url limit 1';
-        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
+        $sql = 'select * from {{%services}} where lower(url) =:url and category_id =:category_id limit 1';
+        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url, 'category_id' => CController::$category['id']])->queryOne();
         
         if (!empty($page)) {
             $seo = (new \yii\db\Query())

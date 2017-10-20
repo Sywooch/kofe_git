@@ -12,7 +12,7 @@ if (!empty($pageInfo['image'])) {
     $img = 'coffee_machine.png';
 }
 $breadcrumbs = [
-    '/' . $brand['url'] => 'Ремонт кофемашин ' . $brand['title'],
+    '/' . $brand['url'] => app\components\CController::$category['full_title'] . ' ' . $brand['title'],
     $pageInfo['title'],
 ];
 $this->title = $title;
@@ -32,7 +32,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php if (!empty($pageInfo['meta_h1'])): ?>
                         <?= $pageInfo['meta_h1']; ?>
                     <?php else: ?>
-                        Ремонт кофемашины  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?>
+                        <?= app\components\CController::$category['rod_title']; ?>  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?>
                     <?php endif; ?>
                 </h1>
             </div>
@@ -43,7 +43,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <?= $pageInfo['description']; ?>
             <?php else: ?>
                 <p>
-                    Ремонт кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в короткие сроки. Устраняем неисправности любой сложности с гарантией качества комплектующих и выполненных работ.               
+                    <?= app\components\CController::$category['rod_title']; ?> <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в короткие сроки. Устраняем неисправности любой сложности с гарантией качества комплектующих и выполненных работ.               
                 </p>
             <?php endif; ?>
             <?= \app\widgets\forms\CallBack::widget(); ?>
