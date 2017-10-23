@@ -677,6 +677,7 @@ section#primushestva .container .title {
 #primushestva .punkt div.img {
     width: 100%;
     text-align: center;
+    max-height: 118px;
 }
 #primushestva .punkt div.img svg {
     width: 35%;
@@ -1057,6 +1058,7 @@ input#phone2::-webkit-input-placeholder {
     top: 0px;
     left: 0px;
     animation-name: fadeOutDownmy;
+    display: none;
 }
 .popup.regions a {
     padding: 10px 5px;
@@ -1091,6 +1093,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .popup.active {
     animation-name: fadeIn;
+    display: block;
 }
 .popup.good .wight {
     width: 380px;

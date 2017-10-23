@@ -238,6 +238,9 @@ table.pricelist td.order .popup-zakaz {
     input.phone {
         border: 1px solid #d71921;
     }
+    #header .logo {
+        margin-top: 10px;
+    }
 }
 
 
