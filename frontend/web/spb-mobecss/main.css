@@ -724,6 +724,7 @@ section#primushestva .container .title {
 #primushestva .punkt div.img {
     width: 100%;
     text-align: center;
+    max-height: 118px;
 }
 #primushestva .punkt div.img svg {
     width: 35%;

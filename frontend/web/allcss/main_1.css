@@ -743,6 +743,7 @@ section#primushestva .container .title {
     float: left;
     text-align: center;
     margin-right: 15px;
+    max-height: 118px;
 }
 #primushestva .punkt div.img img {
     width: 35%;
@@ -1117,6 +1118,7 @@ input#phone2 {
     top: 0px;
     left: 0px;
     animation-name: fadeOutDownmy;
+    display: none;
 }
 .popup.regions a {
     padding: 10px 5px;
@@ -1151,6 +1153,7 @@ input#phone2 {
 }
 .popup.active {
     animation-name: fadeIn;
+    display: block;
 }
 .popup.good .wight {
     width: 380px;
