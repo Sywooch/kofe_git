@@ -632,12 +632,12 @@ input#phone::-webkit-input-placeholder {
 #banner form#callback-form {
     padding: 10px;
     float: left;
-    border-left: 0px;
     box-sizing: border-box;
     height: 111px;
 }
 .video #banner form#callback-form {
     border: 5px solid #71b430;
+    border-left: 0px;
 }
 #banner form#callback-form input.phone {
     margin-right: 0px;
@@ -2468,6 +2468,10 @@ video {
         height: auto;
         padding: 0px;
         margin-top: 10px;
+    }
+    .video #banner form#callback-form {
+        border: 0px;
+        
     }
     .video #primushestva .container {
         padding-right: 15px;
