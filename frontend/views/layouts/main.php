@@ -119,7 +119,7 @@ $js = app\components\CController::$js;
             </section>
             <?php
             if (!Yii::$app->user->isGuest) {
-                echo '<div style="float: left;" class="container">';
+                echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
                 $domain = $_SERVER['SERVER_NAME'];
                 if (isset($_GET['data']['is_service'])) {
                     if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
