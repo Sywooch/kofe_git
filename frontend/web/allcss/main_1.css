@@ -3955,3 +3955,8 @@ body.models .logo-breand {
 .promacspb .colorborder {
     border-color: #a1190d ! important;
 }
+
+#banner ul li {
+    float: left;
+    width: 100%;
+}

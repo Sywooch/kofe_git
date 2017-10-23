@@ -3590,3 +3590,8 @@ body.models .logo-breand {
 #neispravnost .punkt.contact:after {
     display: none;
 }
+
+#banner ul li {
+    float: left;
+    width: 100%;
+}
