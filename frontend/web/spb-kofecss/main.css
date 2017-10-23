@@ -726,6 +726,8 @@ section#neispravnost .container .title {
 #neispravnost .container > div {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
     background: #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 #neispravnost .punkt {
     background: #fff;
@@ -760,6 +762,8 @@ section#neispravnost .container .title {
     padding: 25px 20px;
     height: 100%;
     display: block;
+    box-sizing: border-box;
+    padding-bottom: 40px ! important;
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;

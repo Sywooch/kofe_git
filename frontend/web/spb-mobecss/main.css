@@ -814,6 +814,7 @@ section#neispravnost .container .title {
     height: 100%;
     display: block;
     box-sizing: border-box;
+    padding-bottom: 40px ! important;
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;

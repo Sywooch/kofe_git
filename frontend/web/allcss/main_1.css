@@ -831,6 +831,8 @@ section#neispravnost .container .title {
     padding: 35px 25px;
     height: 100%;
     display: block;
+    box-sizing: border-box;
+    padding-bottom: 40px ! important;
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;
@@ -2471,7 +2473,7 @@ video {
     }
     .video #banner form#callback-form {
         border: 0px;
-        
+
     }
     .video #primushestva .container {
         padding-right: 15px;
