@@ -547,6 +547,7 @@ span.brand-title {
     font-size: 15px;
     clear: both;
     float: left;
+    width: 100%;
 }
 input#phone {
     border: 1px solid #673b14;
@@ -2174,7 +2175,7 @@ video {
 .all-contact p {
     font-size: 18px;
     line-height: 28px;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 
@@ -3325,6 +3326,11 @@ body.models .logo-breand {
 
 #banner ul {
     position: relative;
+    display: block;
+}
+#banner ul li {
+    float: left;
+    width: 100%;
 }
 
 #banner h2, #banner h3 {
