@@ -2561,6 +2561,9 @@ body.models .logo-breand {
     }
 }
 @media screen and (max-width: 830px) {
+    .bg-all {
+        background-size: auto 200%;
+    }
     .video #banner .left-img {
         opacity: 0.3;
     }
@@ -2997,7 +3000,6 @@ body.models .logo-breand {
         text-align: center;
     }
     #neispravnost .punkt.promo {
-        background: url(../images/promo-bg.jpg);
         background-position: -195px 0px;
     }
     table.pricelist td {
@@ -3433,3 +3435,6 @@ body.models .logo-breand {
 }
 
 
+.mobi-tels {
+    display: none;
+}
