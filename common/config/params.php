@@ -566,5 +566,17 @@ return [
             'category_id' => 1,
             'order-title' => 'МСК ТЦ ПИК',
         ],
+        'repair-laptops' => [
+            'phone-1' => '8 (495) 181-00-07',
+            'phone-2' => '8 (812) 701-00-02',            
+            'stickyMenu' => false,
+            'change-logo' => true,
+            'mono' => false,
+            'id' => 44,
+            'sitePrefix' => 'laprops',
+            '1-line' => true,
+            'category_id' => 1,
+            'order-title' => 'МСК ТЦ ПИК',
+        ],
     ],
 ];
