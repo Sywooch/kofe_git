@@ -104,7 +104,7 @@ class ListController extends CController {
                 $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $page['id']])->queryOne();
                 $modelImage = $model['image'];
             }
-            $breadcrumbs['/' . $page['url']] = 'Ремонт кофемашин ' . $page['title'];
+            $breadcrumbs['/' . $page['url']] = CController::$category['full_title'] . ' ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model') {
                 if ($page['type'] == 'model') {
                     $brand = (new \yii\db\Query())
@@ -115,7 +115,7 @@ class ListController extends CController {
                             ->one();
                     $brandImage = $brand['image'];
                     $modelImage = $page['image'];
-                    $breadcrumbs['/' . $brand['url']] = 'Ремонт кофемашин ' . $brand['title'];
+                    $breadcrumbs['/' . $brand['url']] = CController::$category['full_title'] . ' ' . $brand['title'];
                     unset($breadcrumbs['/' . $page['url']]);
                     $breadcrumbs['/' . $page['url']] = $page['title'];
                     $page['title'] = $brand['title'] . ' ' . $page['title'];
