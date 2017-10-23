@@ -41,6 +41,7 @@ $this->title = $title;
         <div class="container">
             <?= $pageInfo['full_description']; ?>
         </div>
+        <span class="more"><div>Читать далее</div></span>
     </section>   
 <?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
