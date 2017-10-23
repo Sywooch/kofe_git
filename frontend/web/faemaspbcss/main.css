@@ -297,6 +297,6 @@ input.phone2:-ms-input-placeholder      {color:#fff;}
 #neispravnost .punkt.promo a .big-text, #neispravnost .punkt.promo a ul li, #neispravnost .punkt.promo a .price {
     color: #000;
 }
-#neispravnost .punkt.promo a ul li:before, #neispravnost .punkt.promo a .price .new {
+#neispravnost .punkt.promo a ul li:before{
     background: #000;
 }
