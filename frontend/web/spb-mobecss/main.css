@@ -1123,6 +1123,7 @@ input#phone2::-webkit-input-placeholder {
     top: 0px;
     left: 0px;
     animation-name: fadeOutDownmy;
+    display: none;
 }
 .popup.regions a {
     padding: 10px 5px;
@@ -1157,6 +1158,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .popup.active {
     animation-name: fadeIn;
+    display: block;
 }
 .popup.good .wight {
     width: 380px;
