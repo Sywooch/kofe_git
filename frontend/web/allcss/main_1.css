@@ -3968,3 +3968,31 @@ body.models .logo-breand {
     float: left;
     width: 100%;
 }
+.mobi-tels {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .mobi-tels {
+        margin-top: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px 5px;
+        display: block;
+    }
+    a.mobi-numbers {
+        color: #ffffff ! important;
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-weight: bold;
+    }
+    span.mobi-time {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+}

@@ -3337,3 +3337,7 @@ body.models .logo-breand {
 #banner h2, #banner h3 {
     font-family: "Open Sans",sans-serif ! important;
 }
+
+.mobi-tels {
+    display: none;
+}

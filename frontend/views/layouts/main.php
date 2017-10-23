@@ -117,6 +117,10 @@ $js = app\components\CController::$js;
                     <div class="clear"></div>
                 </div>
             </section>
+            <div class="container mobi-tels">
+                <a class="mobi-numbers" href="tel:88124160001">+8 (812) 4160001</a>
+                <span class="mobi-time">Ежедневно с 08:00 до 22:00</span>
+            </div>
             <?php
             if (!Yii::$app->user->isGuest) {
                 echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
