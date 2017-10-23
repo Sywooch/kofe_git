@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
 
             <?= !empty($pageInfo['description']) ? $pageInfo['description'] : '<p>Мы, сервисный центр по ремонту кофемашин &laquo;РемонтКофе&raquo; - команда профессионалов, которые знают все о кофемашинах от А до Я. Наши мастера работают как на выезде, так и в сервисном центре, осуществляя ремонт кофемашин любой сложности.</p>' ?>
-            
+
             <div class="clear">&nbsp;</div>
             <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?>
                 <div class="msk-contact all-contact active">
@@ -29,7 +29,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5f5860252f4cb5593d5da22cd0aa71e65ebf9ee9a6f2d34ebffc20ca3d411c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
-            <?php elseif(isset($siteConfig['spb'])): ?>
+            <?php elseif (isset($siteConfig['spb'])): ?>
                 <div class="msk-contact all-contact active">
                     <h2>Наш адрес в Санкт-Петербурге</h2>
                     <p>                        
@@ -70,18 +70,31 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
+            <?php if (isset($siteConfig['category_id']) && $siteConfig['category_id'] == 1): ?>                
+                <div class="spb-contact all-contact active">
+                    <h2>Наш адрес в Москве</h2>
+                    <p>                        
+                        Номер телефона: <span class="spb"><?= $siteConfig['phone-1']; ?></span><br />
+                        Работаем без выходных с 08:00 до 22:00<br />
+                        Центральный офис: м Фили, м. Шелепиха ул. Заречная 1к2, вход со двора
+                    </p>
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A80a5761082e8feb488ee844ffe181aed36c78bbb421ef3139be059a805401e2e&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>                    
+                </div>
+            <?php endif; ?>
         </div>
     </div>
     <div class="clear">&nbsp;</div>
 </section>
 <?php if (!$siteConfig['mono']): ?>
-<section id="ask">
-    <div class="container">
-        <div>
-            <h3>Закажите бесплатную консультацию.</h3>
-            <p>Мы свяжемся с Вами в течение 5 минут.</p>
-            <?= \app\widgets\forms\CallBack::widget(); ?>
+    <section id="ask">
+        <div class="container">
+            <div>
+                <h3>Закажите бесплатную консультацию.</h3>
+                <p>Мы свяжемся с Вами в течение 5 минут.</p>
+                <?= \app\widgets\forms\CallBack::widget(); ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 <?php endif; ?>

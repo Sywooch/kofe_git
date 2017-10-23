@@ -555,7 +555,7 @@ return [
         //'change-logo' => true,
         ],
         'repair-mobiles' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 181-00-07',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
