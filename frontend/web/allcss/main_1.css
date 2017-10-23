@@ -630,12 +630,14 @@ input#phone::-webkit-input-placeholder {
     color: #fff ! important;
 }
 #banner form#callback-form {
-    border: 5px solid #71b430;
     padding: 10px;
     float: left;
     border-left: 0px;
     box-sizing: border-box;
     height: 111px;
+}
+.video #banner form#callback-form {
+    border: 5px solid #71b430;
 }
 #banner form#callback-form input.phone {
     margin-right: 0px;
@@ -1529,7 +1531,7 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 #zakaz input.phone {
-    width: 172px;
+    width: 185px;
     float: left;
 }
 #zakaz .left {
