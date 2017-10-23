@@ -72,7 +72,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <?php endif; ?>
             <?php if (isset($siteConfig['category_id']) && $siteConfig['category_id'] == 1): ?>                
                 <div class="spb-contact all-contact active">
-                    <h2>Наш адрес в Москве</h2>
+                    <h2><b>Наш адрес в Москве</b></h2>
                     <p>                        
                         Номер телефона: <span class="spb"><?= $siteConfig['phone-1']; ?></span><br />
                         Работаем без выходных с 08:00 до 22:00<br />
