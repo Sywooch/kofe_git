@@ -17,13 +17,14 @@ class Models extends Widget {
     public function run() {
         $siteConfig = CController::getSiteConfig();
         if (!$this->mono) {
-            $sql = 'select id, title, url, image from {{%pages}} where parent =:parent and type =:type and active = 1 order by title' . ($this->mono ? ' limit 15' : '');
+            $sql = 'select id, title, url, image, yandexId from {{%pages}} where parent =:parent and type =:type and active = 1 order by title' . ($this->mono ? ' limit 15' : '');
         } else {
             $sql = 'SELECT
                             p.title,
                             p.url,
                             p.image,
-                            p.id
+                            p.id,
+                            p.yandexId
                     FROM
                             `yu_specs` s
                     LEFT JOIN yu_pages p ON p.id = s.model_id

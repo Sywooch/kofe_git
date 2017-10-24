@@ -29,13 +29,19 @@ $siteConfig = app\components\CController::getSiteConfig();
                             if ($siteConfig['mono'])
                                 $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
                             ?>
-                            <li class="bold">
+                            <li<?= !Yii::$app->user->isGuest ? ' style="border: 1px solid #01375a;"' : '' ?> class="bold">
                                 <a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a>
                                 <?php if (!Yii::$app->user->isGuest): ?>
-                                    <div id="edits">
-                                        <a id="update-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Редактировать" src="/images/edit.svg"/></a>
-                                        <a id="delete-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Удалить" src="/images/remove.svg"/></a>
-                                        <a id="view-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Просмотр" src="/images/eyes.svg"/></a>
+                                    <?php
+                                    $domain = $_SERVER['SERVER_NAME'];
+                                    $yaId = explode(',', $brand['yandexId']);
+                                    ?>
+                                    <img style="width: 100px;" src="/uploads/images/<?= $brand['image']; ?>">
+                                    <div class="edits">
+                                        <a class="update-model" target="_blank" href="http://admin.<?= $domain; ?>/page/update/<?= $brand['id']; ?>"><img title="Редактировать" src="/images/edit.svg"/></a>
+                                        <a class="delete-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Удалить" src="/images/remove.svg"/></a>
+                                        <a class="view-model" target="_blank" href="/<?= $brand['url']; ?>""><img title="Просмотр" src="/images/eyes.svg"/></a>
+                                        <a class="yandex-model" target="_blank" href="https://market.yandex.ru/product/<?= $yaId[0]; ?>"><img title="Просмотр" src="/images/ya.svg"/></a>
                                     </div>
                                 <?php endif; ?>
                             </li>

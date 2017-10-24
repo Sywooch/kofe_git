@@ -51,7 +51,8 @@ class ModelController extends CController {
         if (!Yii::$app->user->isGuest && Yii::$app->request->isAjax) {
             $model = $this->findModel($id);
             if ($model !== null) {
-                $model->delete();
+                $model->active = 0;
+                $model->save(false);
                 echo 'success';
             } else {
                 echo 'error';

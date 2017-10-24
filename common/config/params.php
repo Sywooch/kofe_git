@@ -564,7 +564,7 @@ return [
             'sitePrefix' => 'spb-mobe',
             '1-line' => true,
             'category_id' => 1,
-            'order-title' => 'МСК ТЦ ПИК',
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'repair-laptops' => [
             'phone-1' => '8 (495) 181-00-07',
@@ -576,7 +576,7 @@ return [
             'sitePrefix' => 'laprops',
             '1-line' => true,
             'category_id' => 3,
-            'order-title' => 'МСК ТЦ ПИК',
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
     ],
 ];

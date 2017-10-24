@@ -390,11 +390,18 @@ $js = app\components\CController::$js;
                 <div id="loadings"><img src="/images/loading.gif"></div>
                 <script>
                     $(document).ready(function () {
-                        $("#delete-model").on("click", function () {
+                        $(".<?= $siteConfig['sitePrefix']; ?>delete-model").on("click", function () {
                             var id = $(this).data("id");
-                            if (confirm("?")) {
-                                $.get("/model/delete", {id: id}, function (resp) {
-                                    alert(resp);
+                            var el = $(this).parents("li");
+                            //if (confirm("?"))
+                            {
+                                //$("#loadings").show();
+                                $.get("/model-delete", {id: id}, function (resp) {
+                                    if (resp == 'success') {
+                                        el.css("background-color", "rgba(241, 162, 162, 0.53)");
+                                        //el.remove();
+                                    }
+                                    //$("#loadings").hide();
                                 });
                             }
                             return false;
@@ -402,19 +409,18 @@ $js = app\components\CController::$js;
                     });
                 </script>
                 <style> 
-                    #edits {
+                    .<?= $siteConfig['sitePrefix']; ?>edits {
                         width: auto ! important;
-                        float: right;
-                        margin-top: -35px;
+                        float: right;                        
                         margin-right: 15px;
                     }
-                    #edits a {
+                    .<?= $siteConfig['sitePrefix']; ?>edits a {
                         float: left;
                         width: 20px;
                         padding: 0px ! important;
                         margin-left: 5px;
                     }
-                    #edits a img {
+                    .<?= $siteConfig['sitePrefix']; ?>edits a img {
                         width: 100%;
                     }
                     #loadings {
