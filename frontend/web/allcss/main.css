@@ -3474,6 +3474,9 @@ body.models .logo-breand {
         display: block;
         font-size: 12px;
     }
+    #footer {
+        background: none ! important;
+    }
 }
 
 
