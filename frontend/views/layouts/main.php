@@ -386,6 +386,7 @@ $js = app\components\CController::$js;
             <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
             <script type="text/javascript">
                 $(document).ready(function() {$("body").on("click", "#bt-open", function() {$("#openinfo").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");return false;});});
+                $("#show-services2").click(function(){$("#services-table2:visible").length?($("#services-table2").hide(),$(this).text("Показать цены по прочим неисправностям")):($("#services-table2").show(),$(this).text("Цены по прочим неисправностям"))});
                 $("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
             <?php if (!Yii::$app->user->isGuest): ?>
                 <div id="loadings"><img src="/images/loading.gif"></div>

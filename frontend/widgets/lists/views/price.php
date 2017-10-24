@@ -85,8 +85,8 @@
         <?php if (!empty($neis)): ?>
             <div>
                 <div class="prochi-uslugi">
-                    <h3 id="show-services"><?= $brandPage ? 'Показать цены по прочим неисправностям' : 'Цены по прочим неисправностям'; ?></h3>
-                    <table id="services-table" class="pricelist"<?= $brandPage ? ' style="display: none;"' : ''; ?>>
+                    <h3 id="show-services2"><?= $brandPage ? 'Показать цены по прочим неисправностям' : 'Цены по прочим неисправностям'; ?></h3>
+                    <table id="services-table2" class="pricelist"<?= $brandPage ? ' style="display: none;"' : ''; ?>>
                         <tbody>                        
                             <?php foreach ($neis as $nei): ?>
                                 <tr>
