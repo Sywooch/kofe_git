@@ -13,7 +13,7 @@ class Neispravnost extends Widget {
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
-        $sql = 'SELECT price, title, url, description FROM {{%services}} WHERE type = 2 and category_id = ' . CController::$category['id'];
+        $sql = 'SELECT price, title, url, description FROM {{%services}} WHERE type = 2 and is_popular = 1 and category_id = ' . CController::$category['id'];
         $rows = Yii::$app->db->createCommand($sql)->queryAll();
         if (empty($rows))
             return '';
