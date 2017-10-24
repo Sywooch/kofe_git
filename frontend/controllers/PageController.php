@@ -129,8 +129,11 @@ class PageController extends CController {
         }
     }
 
-    public function actionFavicon() {
-        echo 'dsf';
+    public function actionFavicon() {        
+        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';        
+        header('Content-Type: image/x-icon');
+        header('Content-Length: ' . filesize($file));
+        readfile($file);
         Yii::$app->end();
     }
 
