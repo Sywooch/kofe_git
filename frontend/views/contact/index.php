@@ -28,7 +28,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="map">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5f5860252f4cb5593d5da22cd0aa71e65ebf9ee9a6f2d34ebffc20ca3d411c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
-                    <div id="adresss">
+                    <div style="display: none;" id="adresss">
                         <div class="seriy">
                             <h2>г. Москва, Алтуфьевское шоссу 72</h2>
                             <b>
