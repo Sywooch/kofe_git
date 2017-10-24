@@ -131,11 +131,12 @@ class PageController extends CController {
 
     public function actionFavicon() {     
         $siteConfig = self::getSiteConfig();
-        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';        
+        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';       
+        $fp = fopen($file, 'rb');
         header('Content-Type: image/x-icon');
         header('Content-Length: ' . filesize($file));
-        readfile($file);
-        Yii::$app->end();
+        fpassthru($fp);
+        exit();
     }
 
     public function actionRobots() {
