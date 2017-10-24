@@ -15,6 +15,8 @@ use dosamigos\ckeditor\CKEditor;
 
     <?= $form->field($model, 'type')->dropdownlist(yii\helpers\ArrayHelper::map(\app\models\ServiceTypes::find()->all(), 'id', 'name')); ?>
 
+    <?= $form->field($model, 'category_id')->dropdownlist(yii\helpers\ArrayHelper::map(\app\models\Categories::find()->all(), 'id', 'title')); ?>
+    
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
