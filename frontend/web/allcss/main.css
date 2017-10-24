@@ -3446,172 +3446,21 @@ body.models .logo-breand {
 
 
 
-
-
-
-.bosch .colorbg {
-    background: #215f8b ! important;
-}
-.bosch .colortext {
-    color: #215f8b ! important;
-}
-
-.siemens .colorbg {
-    background: #41aaaa ! important;
-}
-.siemens  .colortext {
-    color: #41aaaa ! important;
-}
-
-.delonghi .colorbg {
-    background: #215f8b ! important;
-}
-.delonghi .colortext {
-    color: #215f8b ! important;
-}
-
-.saeco .colorbg {
-    background: #d71921 ! important;
-}
-.saeco .colortext {
-    color: #d71921 ! important;
-}
-
-.philips .colorbg {
-    background: #3182b1 ! important;
-}
-.philips .colortext {
-    color: #3182b1 ! important;
-}
-
-.jura .colorbg {
-    background: #e30613 ! important;
-}
-.jura .colortext {
-    color: #e30613 ! important;
-}
-
-.krups .colorbg {
-    background: #525352 ! important;
-}
-.krups .colortext {
-    color: #525352 ! important;
-}
-
-.melitta .colorbg {
-    background: #d00c0e ! important;
-}
-.melitta .colortext {
-    color: #d00c0e ! important;
-}
-
-.nivona .colorbg {
-    background: #af0917 ! important;
-}
-.nivona .colortext {
-    color: #af0917 ! important;
-}
-
-.gaggia .colorbg {
-    background: #ef4023 ! important;
-}
-.gaggia .colortext {
-    color: #ef4023 ! important;
-}
-
-.wmf .colorbg {
-    background: #71b430 ! important;
-}
-.wmf .colortext {
-    color: #71b430 ! important;
-}
-
-.cimbali .colorbg {
-    background: #e2271c ! important;
-}
-.cimbali .colortext {
-    color: #e2271c ! important;
-}
-
-.schaerer .colorbg {
-    background: #e2271c ! important;
-}
-.schaerer .colortext {
-    color: #e2271c ! important;
-}
-
-.franke .colorbg {
-    background: #e2271c ! important;
-}
-.franke .colortext {
-    color: #e2271c ! important;
-}
-
-.faema .colorbg {
-    background: #870c28 ! important;
-}
-.faema .colortext {
-    color: #870c28 ! important;
-}
-
-.miele .colorbg {
-    background: #a20001 ! important;
-}
-.miele .colortext {
-    color: #a20001 ! important;
-}
-
-.rancilio .colorbg {
-    background: #007845 ! important;
-}
-.rancilio .colortext {
-    color: #007845 ! important;
-}
-
-.simonelli .colorbg {
-    background: #d82f3e ! important;
-}
-.simonelli .colortext {
-    color: #d82f3e ! important;
-}
-
-.bork .colorbg {
-    background: #5c5c5c ! important;
-}
-.bork .colortext {
-    color: #5c5c5c ! important;
-}
-
-.promac .colorbg {
-    background: #a1190d ! important;
-}
-.promac .colortext {
-    color: #a1190d ! important;
-}
-
-#neispravnost .punkt.contact:after {
-    display: none;
-}
-
-#banner ul li {
-    float: left;
-    width: 100%;
-}
-
-
 .mobi-tels {
     display: none;
 }
 @media screen and (max-width: 540px) {
     .mobi-tels {
         margin-top: 10px;
-        border: 1px solid #fff;
         border-radius: 5px;
         padding: 10px 5px;
         display: block;
+        border: 1px solid #fff;
+    }
+    .video a.mobi-numbers {
+        color: #ffffff ! important;
     }
     a.mobi-numbers {
-        color: #ffffff ! important;
         font-size: 26px;
         text-align: center;
         width: 100%;
@@ -3626,3 +3475,223 @@ body.models .logo-breand {
         font-size: 12px;
     }
 }
+
+
+.bosch .colorbg {
+    background: #215f8b ! important;
+}
+.bosch .colortext {
+    color: #215f8b ! important;
+}
+.bosch .colorborder {
+    border-color: #215f8b ! important;
+}
+
+.siemens .colorbg {
+    background: #41aaaa ! important;
+}
+.siemens  .colortext {
+    color: #41aaaa ! important;
+}
+.siemens .colorborder {
+    border-color: #41aaaa ! important;
+}
+
+.delonghi .colorbg {
+    background: #215f8b ! important;
+}
+.delonghi .colortext {
+    color: #215f8b ! important;
+}
+.delonghi .colorborder {
+    border-color: #215f8b ! important;
+}
+
+.saeco .colorbg {
+    background: #d71921 ! important;
+}
+.saeco .colortext {
+    color: #d71921 ! important;
+}
+.saeco .colorborder {
+    border-color: #d71921 ! important;
+}
+
+.philips .colorbg {
+    background: #3182b1 ! important;
+}
+.philips .colortext {
+    color: #3182b1 ! important;
+}
+.philips .colorborder {
+    border-color: #3182b1 ! important;
+}
+
+.jura .colorbg {
+    background: #e30613 ! important;
+}
+.jura .colortext {
+    color: #e30613 ! important;
+}
+.jura .colorborder {
+    border-color: #e30613 ! important;
+}
+
+.krups .colorbg {
+    background: #525352 ! important;
+}
+.krups .colortext {
+    color: #525352 ! important;
+}
+.krups .colorborder {
+    border-color: #525352 ! important;
+}
+
+.melitta .colorbg {
+    background: #d00c0e ! important;
+}
+.melitta .colortext {
+    color: #d00c0e ! important;
+}
+.melitta .colorborder {
+    border-color: #d00c0e ! important;
+}
+
+.nivona .colorbg {
+    background: #af0917 ! important;
+}
+.nivona .colortext {
+    color: #af0917 ! important;
+}
+.nivona .colorborder {
+    border-color: #af0917 ! important;
+}
+
+.gaggia .colorbg {
+    background: #ef4023 ! important;
+}
+.gaggia .colortext {
+    color: #ef4023 ! important;
+}
+.gaggia .colorborder {
+    border-color: #ef4023 ! important;
+}
+
+.wmf .colorbg {
+    background: #71b430 ! important;
+}
+.wmf .colortext {
+    color: #71b430 ! important;
+}
+.wmf .colorborder {
+    border-color: #71b430 ! important;
+}
+
+.cimbali .colorbg {
+    background: #e2271c ! important;
+}
+.cimbali .colortext {
+    color: #e2271c ! important;
+}
+.cimbali .colorborder {
+    border-color: #e2271c ! important;
+}
+
+.schaerer .colorbg {
+    background: #e2271c ! important;
+}
+.schaerer .colortext {
+    color: #e2271c ! important;
+}
+.schaerer .colorborder {
+    border-color: #e2271c ! important;
+}
+
+.franke .colorbg {
+    background: #e2271c ! important;
+}
+.franke .colortext {
+    color: #e2271c ! important;
+}
+.franke .colorborder {
+    border-color: #e2271c ! important;
+}
+
+.faema .colorbg {
+    background: #870c28 ! important;
+}
+.faema .colortext {
+    color: #870c28 ! important;
+}
+.faema .colorborder {
+    border-color: #870c28 ! important;
+}
+
+.miele .colorbg {
+    background: #a20001 ! important;
+}
+.miele .colortext {
+    color: #a20001 ! important;
+}
+.miele .colorborder {
+    border-color: #a20001 ! important;
+}
+
+.rancilio .colorbg {
+    background: #007845 ! important;
+}
+.rancilio .colortext {
+    color: #007845 ! important;
+}
+.rancilio .colorborder {
+    border-color: #007845 ! important;
+}
+
+.simonelli .colorbg {
+    background: #d82f3e ! important;
+}
+.simonelli .colortext {
+    color: #d82f3e ! important;
+}
+.simonelli .colorborder {
+    border-color: #d82f3e ! important;
+}
+
+.bork .colorbg {
+    background: #5c5c5c ! important;
+}
+.bork .colortext {
+    color: #5c5c5c ! important;
+}
+.bork .colorborder {
+    border-color: #5c5c5c ! important;
+}
+
+.promac .colorbg {
+    background: #a1190d ! important;
+}
+.promac .colortext {
+    color: #a1190d ! important;
+}
+.promac .colorborder {
+    border-color: #a1190d ! important;
+}
+
+#neispravnost .punkt.contact:after {
+    display: none;
+}
+
+.video a.mobi-numbers,
+.video span.mobi-time {
+    color: #ffffff ! important;
+}
+.video .mobi-tels {
+    border: 1px solid #fff ! important;
+}
+
+#banner ul li {
+    float: left;
+    width: 100%;
+}
+
+

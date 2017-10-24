@@ -117,9 +117,9 @@ $js = app\components\CController::$js;
                     <div class="clear"></div>
                 </div>
             </section>
-            <div class="container mobi-tels">
-                <a class="mobi-numbers" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                <span class="mobi-time">Ежедневно с 08:00 до 22:00</span>
+            <div class="container mobi-tels colorborder">
+                <a class="mobi-numbers colortext" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                <span class="mobi-time colortext">Ежедневно с 08:00 до 22:00</span>
             </div>
             <?php
             if (!Yii::$app->user->isGuest) {
