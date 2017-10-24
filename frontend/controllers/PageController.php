@@ -68,7 +68,7 @@ class PageController extends CController {
 
     public function actionCss() {
         set_time_limit(0);
-        ini_set('memory_limit','1024M');
+        ini_set('memory_limit', '1024M');
         foreach (Yii::$app->params['siteConfigs'] as $conf) {
             if ($conf['sitePrefix'] == 'remont')
                 continue;
@@ -128,13 +128,18 @@ class PageController extends CController {
             file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);
         }
     }
-    
+
+    public function actionFavicon() {
+        echo 'dsf';
+        Yii::$app->end();
+    }
+
     public function actionRobots() {
         $robots = "User-agent: * \r\nDisallow: /";
         if (!empty(CController::$js['robots']))
             $robots = CController::$js['robots'];
         header("Content-Type: text/plain");
-        echo $robots;       
+        echo $robots;
         exit;
     }
 

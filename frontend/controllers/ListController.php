@@ -70,22 +70,7 @@ class ListController extends CController {
         $brandImage = '';
         $modelImage = '';
 
-        if ($siteConfig['mono']) {
-            $sql = 'SELECT p.image            
-                    FROM
-                        `yu_specs` s
-                    LEFT JOIN yu_pages p ON p.id = s.model_id
-                    WHERE
-                        s.spec_name LIKE \'%Тип%\'
-                    AND s.spec_value LIKE \'%эспрессо%\'
-                    AND s.spec_value LIKE \'%автоматическое%\'
-                    AND p.parent = ' . (int) self::$monoBrand['id'] . '
-                    ORDER BY
-                            p.sort limit 1;';
-            $model = \Yii::$app->db->createCommand($sql)->queryOne();
-            $modelImage = $model['image'];
-        }
-
+        
         if (count($url) > 1) {
             $arrayUrl = $url;
             array_pop($url);
@@ -189,6 +174,22 @@ class ListController extends CController {
             if (!empty($seo['meta_h1'])) {
                 $h1 = $seo['meta_h1'];
             }
+        }
+        
+        if ($siteConfig['mono']) {
+            $sql = 'SELECT p.image            
+                    FROM
+                        `yu_specs` s
+                    LEFT JOIN yu_pages p ON p.id = s.model_id
+                    WHERE
+                        s.spec_name LIKE \'%Тип%\'
+                    AND s.spec_value LIKE \'%эспрессо%\'
+                    AND s.spec_value LIKE \'%автоматическое%\'
+                    AND p.parent = ' . (int) self::$monoBrand['id'] . '
+                    ORDER BY
+                            p.sort limit 1;';
+            $model = \Yii::$app->db->createCommand($sql)->queryOne();
+            $modelImage = $model['image'];
         }
 
         $title = $seo['meta_title'] ?: $title;
