@@ -912,7 +912,7 @@ section#neispravnost .container .title {
     background: url(/spb-mobeimages/spb-mobecontect-bg2.jpg);
     padding: 8px;
     background-position: right;
-    width: 50%;
+    width: 25%;
     border: 0px;
 }
 #neispravnost .punkt.contact input.hero-form__btn {
@@ -920,7 +920,7 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.contact > div {
     border: 2px solid #fff;
-    padding: 50px 25px;
+    padding: 20px 15px;
     border-bottom-right-radius: 20px;
     box-sizing: border-box;
     height: 230px;
@@ -934,7 +934,7 @@ section#neispravnost .container .title {
 #neispravnost .punkt.contact > div p {
     color: #fff;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
 }
 input#phone2 {
     background: none;
@@ -2193,7 +2193,7 @@ input.phone2 {
     color: #fff;
     line-height: 48px;
     max-width: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     outline: none;
 }
@@ -2251,7 +2251,7 @@ body.models .logo-breand {
 }
 @media screen and (max-width: 1500px) {
     #neispravnost .punkt.contact > div {
-        padding: 35px 25px;
+        padding: 18px 8px;
     }
     .container {
         width: 980px;
@@ -2282,8 +2282,12 @@ body.models .logo-breand {
 
 }
 @media screen and (max-width: 1030px) {
+    #neispravnost .punkt.contact {
+        width: 100%;
+    }
     #neispravnost .punkt.contact > div {
-        padding: 20px 25px;
+        padding: 45px 25px;
+        border-bottom-left-radius: 20px;
     }
     #neispravnost .punkt.contact > div p {
         margin-bottom: 10px;
@@ -2689,7 +2693,7 @@ body.models .logo-breand {
     }
     #neispravnost .punkt.contact > div {
         height: auto;
-        padding: 20px 15px;
+        padding: 60px 15px;
     }
     h2 {
         text-align: left ! important;
@@ -2814,6 +2818,11 @@ body.models .logo-breand {
     }
 }
 @media screen and (max-width: 540px) {
+
+    #neispravnost .punkt.contact > div {
+        height: auto;
+        padding: 20px 15px;
+    }
     #footer .tel .phone {
         font-size: 16px;
     }
