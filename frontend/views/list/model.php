@@ -18,7 +18,7 @@ $breadcrumbs = [
 $this->title = $title;
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<img  style="opacity: 0;position: absolute;z-index: -999999999;width: 100%;height: 100%" src="<?= $assets ?>/uploads/images/<?= $img; ?>" alt="">
+<img  style="opacity: 0;position: absolute;z-index: -999999999;width: 100%;height: 100%;left: 0px;top: 0px;" src="<?= $assets ?>/uploads/images/<?= $img; ?>" alt="">
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="banner">
