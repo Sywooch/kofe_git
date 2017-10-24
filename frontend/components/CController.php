@@ -113,7 +113,7 @@ class CController extends \yii\web\Controller {
         $msg .= "\r\nАйпи: " . $userIP;
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         self::sendMessage($msg, '@remontkofe_ru_admin');
-        file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']));
+        file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
         //return \Yii::$app->getResponse()->redirect(\Yii::$app->getRequest()->getUrl());
     }
 
