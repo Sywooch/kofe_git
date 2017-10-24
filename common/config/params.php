@@ -575,7 +575,7 @@ return [
             'id' => 44,
             'sitePrefix' => 'laprops',
             '1-line' => true,
-            'category_id' => 1,
+            'category_id' => 3,
             'order-title' => 'МСК ТЦ ПИК',
         ],
     ],

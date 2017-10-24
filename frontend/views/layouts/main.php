@@ -118,7 +118,7 @@ $js = app\components\CController::$js;
                 </div>
             </section>
             <div class="container mobi-tels">
-                <a class="mobi-numbers" href="tel:88124160001">+8 (812) 4160001</a>
+                <a class="mobi-numbers" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 <span class="mobi-time">Ежедневно с 08:00 до 22:00</span>
             </div>
             <?php
@@ -227,7 +227,7 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                 </section>
-            <?php elseif($siteConfig['category_id'] == 1): ?>
+            <?php elseif ($siteConfig['category_id'] == 1): ?>
                 <section id="otzvi">
                     <div class="container">
                         <p class="title"><span>Отзывы   </span> клиентов</p>
@@ -386,6 +386,53 @@ $js = app\components\CController::$js;
             <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
             <script>$("form").each(function () {
                     $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+            <?php if (!Yii::$app->user->isGuest): ?>
+                <div id="loadings"><img src="/images/loading.gif"></div>
+                <script>
+                    $(document).ready(function () {
+                        $("#delete-model").on("click", function () {
+                            var id = $(this).data("id");
+                            if (confirm("?")) {
+                                $.get("/model/delete", {id: id}, function (resp) {
+                                    alert(resp);
+                                });
+                            }
+                            return false;
+                        });
+                    });
+                </script>
+                <style> 
+                    #edits {
+                        width: auto ! important;
+                        float: right;
+                        margin-top: -35px;
+                        margin-right: 15px;
+                    }
+                    #edits a {
+                        float: left;
+                        width: 20px;
+                        padding: 0px ! important;
+                        margin-left: 5px;
+                    }
+                    #edits a img {
+                        width: 100%;
+                    }
+                    #loadings {
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;
+                        top: 0px;
+                        left: 0px;
+                        padding-top: 15%;
+                        text-align: center;
+                        z-index: 99999999;
+                        background: rgba(0, 0, 0, 0.33);
+                        display: none;
+                    }
+                    #loadings img {
+                    }
+                </style>
+            <?php endif; ?>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {

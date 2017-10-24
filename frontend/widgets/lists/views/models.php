@@ -29,8 +29,17 @@ $siteConfig = app\components\CController::getSiteConfig();
                             if ($siteConfig['mono'])
                                 $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
                             ?>
-                            <li class="bold"><a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a></li>
-                            <?php endforeach; ?>
+                            <li class="bold">
+                                <a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a>
+                                <?php if (!Yii::$app->user->isGuest): ?>
+                                    <div id="edits">
+                                        <a id="update-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Редактировать" src="/images/edit.svg"/></a>
+                                        <a id="delete-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Удалить" src="/images/remove.svg"/></a>
+                                        <a id="view-model" data-id="<?= $brand['id']; ?>" href="#"><img title="Просмотр" src="/images/eyes.svg"/></a>
+                                    </div>
+                                <?php endif; ?>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             <?php endforeach; ?>
