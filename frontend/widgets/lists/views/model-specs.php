@@ -1,5 +1,5 @@
-<section id="tseni" class="options">
-    <div class="container">
+<section id="tseni" class="options harakteristika">
+    <div class="container" id="openinfo">
         <div>
             <div class="rochi-uslugi">
                 <?php foreach ($specs as $gr => $features): ?>
@@ -19,6 +19,7 @@
                 <?php endforeach; ?>
                 <div class="clear"></div>
             </div>
+            <span id="bt-open" class="more"><div>Полные характеристики</div></span>
         </div>
     </div>
 </section>

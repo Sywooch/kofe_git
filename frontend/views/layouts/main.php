@@ -384,8 +384,9 @@ $js = app\components\CController::$js;
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
             <?php $this->endBody() ?>    
             <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
-            <script>$("form").each(function () {
-                    $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+            <script type="text/javascript">
+                $(document).ready(function() {$("body").on("click", "#bt-open", function() {$("#openinfo").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");return false;});});
+                $("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
             <?php if (!Yii::$app->user->isGuest): ?>
                 <div id="loadings"><img src="/images/loading.gif"></div>
                 <script>
