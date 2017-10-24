@@ -3212,3 +3212,71 @@ body.models .logo-breand {
 .mobi-tels {
     display: none;
 }
+@media screen and (max-width: 540px) {
+    .mobi-tels {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        top: 0px;
+        background: #000000;
+        padding: 5px 20px;
+        text-align: center;
+    }
+    .container.mobi-tels a {
+        color: #ffffff;
+        font-family: "NeuronExtraBold",cursive;
+        font-size: 20px;
+    }
+    .mobi-tels span {
+        display: none;
+    }
+
+    #header .logo {
+        width: 70px;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: -66px;
+    }
+    .mobile-menu {
+        display: block;
+        float: left;
+        cursor: pointer;
+        margin-top: 25px;
+        margin-left: 5px;
+    }
+    #header .tel {
+        margin-top: 21px;
+    }
+    .tel .phone:before {
+        content:"\f095";
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #673b14;
+        color: #fff;
+        text-align: center;
+        padding-top: 5px;
+        box-sizing: border-box;
+        font-size: 16px !important;
+        font-size: inherit;
+        float: left;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-right: 0px;
+    }
+    section#hlebniye-kroshki {
+        margin-top: 0px;
+    }
+    .video .tel .phone:before {
+        background: #ffffff;
+        color: #000;
+    }
+    .time-work {
+        display: none;
+    }
+}

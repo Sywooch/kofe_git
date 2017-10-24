@@ -3761,8 +3761,37 @@ body.models .logo-breand {
     z-index: 1;
 }
 
+.mobi-tels {
+    display: none;
+}
 
 
+@media screen and (max-width: 540px) {
+    .mobi-tels {
+        margin-top: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 10px 5px;
+        display: block;
+    }
+    .video a.mobi-numbers {
+        color: #ffffff ! important;
+    }
+    a.mobi-numbers {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-weight: bold;
+    }
+    span.mobi-time {
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+}
 
 .boschspb .colorbg {
     background: #215f8b ! important;
@@ -3827,7 +3856,7 @@ body.models .logo-breand {
 .krupsspb .colorbg {
     background: #525352 ! important;
 }
-.krupsspb .colortext {
+.krupspb .colortext {
     color: #525352 ! important;
 }
 .krupsspb .colorborder {
@@ -3935,13 +3964,13 @@ body.models .logo-breand {
 }
 
 .simonellispb .colorbg {
-    background: #dd3333 ! important;
+    background: #d82f3e ! important;
 }
 .simonellispb .colortext {
-    color: #dd3333 ! important;
+    color: #d82f3e ! important;
 }
 .simonellispb .colorborder {
-    border-color: #dd3333 ! important;
+    border-color: #d82f3e ! important;
 }
 
 .borkspb .colorbg {
@@ -3964,35 +3993,17 @@ body.models .logo-breand {
     border-color: #a1190d ! important;
 }
 
+
 #banner ul li {
     float: left;
     width: 100%;
 }
-.mobi-tels {
-    display: none;
-}
 
-@media screen and (max-width: 540px) {
-    .mobi-tels {
-        margin-top: 10px;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 10px 5px;
-        display: block;
-    }
-    a.mobi-numbers {
-        color: #ffffff ! important;
-        font-size: 26px;
-        text-align: center;
-        width: 100%;
-        display: block;
-        font-weight: bold;
-    }
-    span.mobi-time {
-        color: #fff;
-        text-align: center;
-        width: 100%;
-        display: block;
-        font-size: 12px;
-    }
+
+.video a.mobi-numbers,
+.video span.mobi-time {
+    color: #ffffff ! important;
+}
+.video .mobi-tels {
+    border: 1px solid #fff ! important;
 }
