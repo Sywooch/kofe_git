@@ -43,13 +43,13 @@ $form = ActiveForm::begin([
                                 ],
                     ]);
                     $position = \yii\web\View::POS_END;
-                    $validatejs = "$('#service-form').on('afterValidateAttribute', function(event, attribute, messages) {
-                    if(messages.length == 0){
-                        yaCounter45675441.reachGoal(\"$metrika\");
-                    }
-                });";
-                    if (!$siteConfig['mono'])
-                        $this->registerJs($validatejs, $position);
+//                    $validatejs = "$('#service-form').on('afterValidateAttribute', function(event, attribute, messages) {
+//                    if(messages.length == 0){
+//                        yaCounter45675441.reachGoal(\"$metrika\");
+//                    }
+//                });";
+//                    if (!$siteConfig['mono'])
+//                        $this->registerJs($validatejs, $position);
                     ?> 
                     <?=
                     $form->field($model, 'phone')->widget(MaskedInput::className(), [
