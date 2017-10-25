@@ -15,11 +15,11 @@ $form = ActiveForm::begin([
         ]);
 
 $position = \yii\web\View::POS_END;
-$validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, attribute, messages) {
-                    if(messages.length == 0){
-                        yaCounter45675441.reachGoal(\"$metrika\");
-                    }
-                });";
+//$validatejs = "$('#callback-form').on('afterValidateAttribute', function(event, attribute, messages) {
+//                    if(messages.length == 0){
+//                        yaCounter45675441.reachGoal(\"$metrika\");
+//                    }
+//                });";
 //if (!$siteConfig['mono'])
     //$this->registerJs($validatejs, $position);
 ?> 
