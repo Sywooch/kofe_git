@@ -74,7 +74,7 @@ class PageController extends CController {
                 continue;
             $siteConfig = $conf;
             $allcssFiles = [
-                '/allcss/main' . (isset($siteConfig['spb']) ? '_1' : (isset($siteConfig['spb-multi']) || $siteConfig['category_id'] == 1 ? '_2' : '')) . '.css',
+                '/allcss/main' . (isset($siteConfig['spb']) ? '_1' : (isset($siteConfig['spb-multi']) || in_array($siteConfig['category_id'], [1, 2, 3, 4, 5]) ? '_2' : '')) . '.css',
                 '/allcss/animate.css',
                 '/allcss/owl.carousel.min.css',
                 '/allcss/font-awesome.min.css',
