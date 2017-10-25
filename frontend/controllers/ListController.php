@@ -267,6 +267,7 @@ class ListController extends CController {
                     AND s.spec_value LIKE \'%эспрессо%\'
                     AND s.spec_value LIKE \'%автоматическое%\'
                     AND p.parent = ' . (int) $pageInfo['id'] . '
+                    AND p.active = 1    
                     ORDER BY
                             p.sort limit 1;';
         $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $pageInfo['id']])->queryOne();

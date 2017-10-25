@@ -33,6 +33,7 @@ class Models extends Widget {
                     AND s.spec_value LIKE \'%эспрессо%\'
                     AND s.spec_value LIKE \'%автоматическое%\'
                     AND p.parent = ' . (int) $this->parent . '
+                    AND p.active = 1
                     ORDER BY
                             p.sort limit 15;';
         }
