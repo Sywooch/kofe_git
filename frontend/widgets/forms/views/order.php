@@ -17,11 +17,11 @@ $form = ActiveForm::begin([
                     ],
         ]);
         $position = \yii\web\View::POS_END;
-        $validatejs = "$('#order-form').on('afterValidateAttribute', function(event, attribute, messages) {
-                    if(messages.length == 0){
-                        yaCounter45675441.reachGoal(\"popup-prices\");
-                    }
-                });";
+//        $validatejs = "$('#order-form').on('afterValidateAttribute', function(event, attribute, messages) {
+//                    if(messages.length == 0){
+//                        yaCounter45675441.reachGoal(\"popup-prices\");
+//                    }
+//                });";
         //if (!$siteConfig['mono'])
         //$this->registerJs($validatejs, $position);
         ?> 

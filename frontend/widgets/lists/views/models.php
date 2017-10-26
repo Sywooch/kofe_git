@@ -30,7 +30,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
                             ?>
                             <li<?= !Yii::$app->user->isGuest ? ' style="border: 1px solid #01375a;"' : '' ?> class="bold">
-                                <a href="/<?= $brand['url']; ?>"><?= str_replace('/', ' / ', $brand['title']); ?></a>
+                                <a href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></a>
                                 <?php if (!Yii::$app->user->isGuest): ?>
                                     <?php
                                     $domain = $_SERVER['SERVER_NAME'];
