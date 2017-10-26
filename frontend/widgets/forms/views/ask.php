@@ -51,6 +51,7 @@ $form = ActiveForm::begin([
             ?>
             <?= Html::submitButton('Оставить онлайн заявку', ['class' => 'btn', 'type' => 'button']) ?>                
             <?php ActiveForm::end() ?>
+            <a class="politica" href="javascript:void(0)">Политика конфиденциальности и обработки персональных данных</a>
             <p class="data"> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?></p>
         </div>
         <div class="left">

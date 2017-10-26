@@ -1070,7 +1070,8 @@ input#phone2 {
     font-size: 25px;
     font-family: 'NeuronExtraBold', cursive;
     font-weight: normal;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 .popup.good .wight h4 {
     margin: 0px;
@@ -1554,10 +1555,14 @@ table.pricelist td.order .popup-zakaz:hover {
     padding: 0px 28px;
 }
 .popup.phone .wight p {
-    text-align: left;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 14px;
+    clear: both;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    line-height: 18px;
+}
+form#order-form {
+    margin-top: 25px;
 }
 #ask .container {
     background: #fff;
@@ -3813,3 +3818,153 @@ body.models .logo-breand {
         width: 100%;
     }
 }
+
+
+
+.container a.politica {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 5px;
+    clear: both;
+}
+a.politica {
+    font-size: 12px;
+    color: #333;
+    padding-top: 5px;
+    clear: both;
+    display: block;
+}
+@media screen and (max-width: 540px) {
+    .container a.politica {
+        text-align: center;
+    }
+}
+
+
+.popup.politica-info {
+    z-index: 999999;
+}
+.popup.politica-info .wight div.politic-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #f6394f;
+    color: #fff;
+}
+.popup.politica-info .wight div.politic-close:hover {
+    background: #333;
+}
+
+.popup.politica-info .wight {
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -30%;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 99;
+    margin-top: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 20px;
+}
+.popup.politica-info .wight .full-text {
+    overflow-y: scroll;
+    height: 90%;
+    width: 100%;
+    display: block;
+    padding-right: 15px;
+}
+.popup.politica-info .wight .full-text p:first-child {
+    margin-top: 0px;
+    padding-top: 0px;
+} 
+.popup.politica-info .wight p,
+.popup.politica-info .wight h4 {
+    text-align: left;
+}
+.popup.politica-info .wight .full-text h4 {
+    font-size: 20px;
+}
+.popup.politica-info .wight p {
+    font-size: 14px;
+}
+@media screen and (max-width: 1565px) {
+    .popup.politica-info .wight .full-text {
+        height: 85%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .popup.politica-info .wight {
+        width: 90%;
+        margin-left: -45%;
+    }
+    .popup.politica-info .wight > h4 {
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .popup.politica-info .wight > h4 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .popup.politica-info .wight > h4 {
+        font-size: 16px;
+    }
+    .popup.politica-info .wight .full-text h4 {
+        font-size: 14px;
+    }
+    .popup.politica-info .wight .full-text p {
+        font-size: 12px;
+    }
+    .popup.politica-info .wight .full-text {
+        height: 81%;
+    }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
+}
+
+
+#neispravnost .punkt.contact a {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 0px ! important;
+    margin-top: 5px;
+}
+#neispravnost .punkt.contact input.phone2 {
+    margin-bottom: 5px;
+}
+#neispravnost .punkt.contact > div p {
+    line-height: 15px;
+}
+
+
