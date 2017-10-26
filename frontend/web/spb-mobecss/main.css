@@ -3355,7 +3355,7 @@ body.models .logo-breand {
 .harakteristika .rochi-uslugi {
     overflow: hidden;
     position: relative;
-    max-height: 350px;
+    max-height: 300px;
     -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
