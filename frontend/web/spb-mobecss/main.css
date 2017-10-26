@@ -3350,3 +3350,35 @@ body.models .logo-breand {
 .mobi-tels {
     display: none;
 }
+
+
+.harakteristika .rochi-uslugi {
+    overflow: hidden;
+    position: relative;
+    max-height: 350px;
+    -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+.harakteristika table,
+.harakteristika table tr {
+    width: 100%;
+}
+.harakteristika table td {
+    width: 50%;
+    float: left;
+}
+.harakteristika .more div {
+    margin-bottom: 15px;
+}
+.harakteristika .active .rochi-uslugi {
+    max-height: 3000px ! important;
+    -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+.harakteristika .active #bt-open {
+    display: none;
+}
