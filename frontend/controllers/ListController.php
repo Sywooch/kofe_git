@@ -70,7 +70,7 @@ class ListController extends CController {
         $brandImage = '';
         $modelImage = '';
 
-        
+
         if (count($url) > 1) {
             $arrayUrl = $url;
             array_pop($url);
@@ -117,13 +117,13 @@ class ListController extends CController {
                     $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ' ' . $page['title'] . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' - быстро, качественно с гарантией.</p>';
                 }
-                if ($siteConfig['mono']) {                    
+                if ($siteConfig['mono']) {
                     $text = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('{{%seo}}')
                             ->where(['url' => end($arrayUrl), 'site_id' => $siteConfig['id']])
                             ->limit(1)
-                            ->one();                    
+                            ->one();
                     if (!empty($text) && !empty($text['meta_text1'])) {
                         $seoText = str_replace(self::$monoBrand['title'], $page['title'], $text['meta_text1']);
                     }
@@ -175,7 +175,7 @@ class ListController extends CController {
                 $h1 = $seo['meta_h1'];
             }
         }
-        
+
         if ($siteConfig['mono']) {
             $sql = 'SELECT p.image            
                     FROM
@@ -282,15 +282,31 @@ class ListController extends CController {
     public function actionModel() {
         $pageInfo = $_GET['data'];
         $brand = Yii::$app->db->createCommand('SELECT id, url, title FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
+        $categorySEO = [
+            1 => [
+                'title' => 'Ремонт телефонов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией',
+                'meta_description' => 'Ремонт сотового телефона ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
+            ],
+            7 => [
+                'title' => 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера',
+                'meta_description' => $pageInfo['meta_desc'] ?: 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, выезд мастера по ' . Yii::$app->session['region']['titleRod'] . ', гарантия на выполненные работы, низкая цена.'
+            ]
+        ];
+        $metaDesc = '';
+        $title = '';
+        if (isset($categorySEO[self::$category['id']])) {
+            $metaDesc = $categorySEO[self::$category['id']]['meta_description'];
+            $title = $categorySEO[self::$category['id']]['title'];
+        }
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
             'content' => $pageInfo['meta_key']
         ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc'] ?: 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, выезд мастера по ' . Yii::$app->session['region']['titleRod'] . ', гарантия на выполненные работы, низкая цена.'
+            'content' => $metaDesc
         ]);
-        $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера';
+
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         return $this->render('model', ['pageInfo' => $pageInfo, 'brand' => $brand, 'title' => $title]);
