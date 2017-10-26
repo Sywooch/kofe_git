@@ -13,7 +13,7 @@ $breadcrumbs = [
             <div class="h1">
                 <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title'] ?></h1>
             </div>
-            <?= $model['description']; ?>
+            <?= str_replace('#domain#', Yii::$app->request->hostInfo, $model['description']); ?>
 
         </div>
     </div>
