@@ -66,44 +66,56 @@ class PageController extends CController {
         return $minified;
     }
 
+    private function minify($siteConfig) {
+        $allcssFiles = [
+            '/allcss/main' . (isset($siteConfig['spb']) ? '_1' : (isset($siteConfig['spb-multi']) || in_array($siteConfig['category_id'], [1, 2, 3, 4, 5]) ? '_2' : '')) . '.css',
+            '/allcss/animate.css',
+            '/allcss/owl.carousel.min.css',
+            '/allcss/font-awesome.min.css',
+            '/allcss/jquery-ui.css',
+            '/' . $siteConfig['sitePrefix'] . 'css/main.css',
+            '/' . $siteConfig['sitePrefix'] . 'css/owl.theme.default.min.css',
+        ];
+        $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
+        $allcssPath = Yii::getAlias('@frontend') . '/web';
+        file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
+        foreach ($allcssFiles as $cssFile) {
+            $css = file_get_contents($allcssPath . $cssFile);
+            if (strpos($cssFile, 'owl') !== false) {
+                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $css, FILE_APPEND);
+            } else {
+                $oParser = new \Sabberworm\CSS\Parser($css);
+                $oCss = $oParser->parse();
+                foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
+                    foreach ($oBlock->getSelectors() as $oSelector) {
+                        if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
+                            $s = $oSelector->getSelector();
+                            $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                            $oSelector->setSelector($s);
+                        }
+                    }
+                }
+                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact()), FILE_APPEND);
+            }
+        }
+    }
+
     public function actionCss() {
         set_time_limit(0);
         ini_set('memory_limit', '1024M');
+        if (isset($_GET['site'])) {
+            if (isset(Yii::$app->params['siteConfigs'][$_GET['site']])) {
+                $conf = Yii::$app->params['siteConfigs'][$_GET['site']];
+                $this->minify($conf);
+            } else {
+                echo '.!.';
+            }
+            exit;
+        }
         foreach (Yii::$app->params['siteConfigs'] as $conf) {
             if ($conf['sitePrefix'] == 'remont')
                 continue;
-            $siteConfig = $conf;
-            $allcssFiles = [
-                '/allcss/main' . (isset($siteConfig['spb']) ? '_1' : (isset($siteConfig['spb-multi']) || in_array($siteConfig['category_id'], [1, 2, 3, 4, 5]) ? '_2' : '')) . '.css',
-                '/allcss/animate.css',
-                '/allcss/owl.carousel.min.css',
-                '/allcss/font-awesome.min.css',
-                '/allcss/jquery-ui.css',
-                '/' . $siteConfig['sitePrefix'] . 'css/main.css',
-                '/' . $siteConfig['sitePrefix'] . 'css/owl.theme.default.min.css',
-            ];
-            $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
-            $allcssPath = Yii::getAlias('@frontend') . '/web';
-            file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
-            foreach ($allcssFiles as $cssFile) {
-                $css = file_get_contents($allcssPath . $cssFile);
-                if (strpos($cssFile, 'owl') !== false) {
-                    file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $css, FILE_APPEND);
-                } else {
-                    $oParser = new \Sabberworm\CSS\Parser($css);
-                    $oCss = $oParser->parse();
-                    foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
-                        foreach ($oBlock->getSelectors() as $oSelector) {
-                            if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
-                                $s = $oSelector->getSelector();
-                                $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
-                                $oSelector->setSelector($s);
-                            }
-                        }
-                    }
-                    file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact()), FILE_APPEND);
-                }
-            }
+            $this->minify($conf);
         }
     }
 
@@ -129,9 +141,9 @@ class PageController extends CController {
         }
     }
 
-    public function actionFavicon() {     
+    public function actionFavicon() {
         $siteConfig = self::getSiteConfig();
-        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';       
+        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';
         $fp = fopen($file, 'rb');
         header('Content-Type: image/x-icon');
         header('Content-Length: ' . filesize($file));
