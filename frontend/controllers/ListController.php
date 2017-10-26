@@ -282,9 +282,12 @@ class ListController extends CController {
     public function actionModel() {
         $pageInfo = $_GET['data'];
         $brand = Yii::$app->db->createCommand('SELECT id, url, title FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
+        $regionTitle = Yii::$app->session['region']['titleRod'];
+        if (Yii::$app->session['region']['titleRod'] == 'Москве')
+            $regionTitle = 'Москве и МО';
         $categorySEO = [
             1 => [
-                'title' => 'Ремонт телефонов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией',
+                'title' => 'Ремонт телефонов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
                 'meta_description' => 'Ремонт сотового телефона ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
             ],
             7 => [
