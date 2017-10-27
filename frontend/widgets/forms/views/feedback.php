@@ -48,6 +48,6 @@ $form = ActiveForm::begin([
         <?= Html::submitButton('Отправить') ?>
         </fieldset>
 <?php ActiveForm::end() ?>
-<a class="politica" href="javascript:void(0)" >Вы подтверждаете своё согласие на обработку персональных данных согласно политике.</a>
+<!--<a class="politica" href="javascript:void(0)" >Вы подтверждаете своё согласие на обработку персональных данных согласно политике.</a>-->
     </div>
 </div>

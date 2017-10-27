@@ -40,4 +40,4 @@ $form->field($model, 'phone')->widget(MaskedInput::className(), [
 <?= Html::submitButton('Заказать', ['class' => 'hero-form__btn']) ?>
 
 <?php ActiveForm::end() ?>
-<a class="politica" href="javascript:void(0)">Вы подтверждаете своё согласие на обработку персональных данных согласно политике.</a>
+<!--<a class="politica" href="javascript:void(0)">Вы подтверждаете своё согласие на обработку персональных данных согласно политике.</a>-->

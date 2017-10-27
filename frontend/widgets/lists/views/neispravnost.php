@@ -63,7 +63,7 @@ $form = ActiveForm::begin([
                     ?>
                     <?= Html::submitButton('Перезвоните мне', ['class' => 'hero-form__btn', 'type' => 'button']) ?>                    
                     <?php ActiveForm::end() ?>
-                    <a class="politica" href="javascript:void(0)">Вы подтверждаете своё согласие на обработку персональных данных.</a>
+                    <!--<a class="politica" href="javascript:void(0)">Вы подтверждаете своё согласие на обработку персональных данных.</a>-->
                 </div>
             </div>
             <div class="clear"></div>
