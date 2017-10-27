@@ -135,7 +135,7 @@ section#photo {
     position: relative;
     overflow:hidden;
     padding-bottom: 20px;
-    background: #01375a;
+    background: #01375a url("/spb-mobeimages/spb-mobepattern-1.png") center no-repeat;
 }
 .video .bg-all {
     padding-bottom: 0px;
@@ -606,6 +606,16 @@ input#phone::-webkit-input-placeholder {
     background: #00e38b;
     border: 1px solid #00e38b;
 }
+.contact .hero-form__btn {
+    height: 40px;
+    margin-bottom: 5px;
+}
+#neispravnost .punkt a.politica {
+    padding: 0px;
+    padding: 0px ! important;
+    height: auto ! important;
+    color: #f5f5f5 ! important;
+}
 #banner .right-text .happy-time {
     margin-bottom: 35px;
     clear: both;
@@ -910,7 +920,7 @@ section#neispravnost .container .title {
 
 #neispravnost .punkt.contact {
     background: url(/spb-mobeimages/spb-mobecontect-bg2.jpg);
-    padding: 8px;
+    padding: 5px;
     background-position: right;
     width: 25%;
     border: 0px;
@@ -920,10 +930,10 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.contact > div {
     border: 2px solid #fff;
-    padding: 20px 15px;
+    padding: 10px 15px;
     border-bottom-right-radius: 20px;
     box-sizing: border-box;
-    height: 230px;
+    height: 240px;
 }
 #neispravnost .punkt.contact > div div.big-text {
     font-size: 18px;
@@ -1205,7 +1215,8 @@ input#phone2::-webkit-input-placeholder {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 .popup.good .wight h4 {
     margin: 0px;
@@ -1710,10 +1721,12 @@ table.pricelist td.order .popup-zakaz:hover {
     padding: 0px 28px;
 }
 .popup.phone .wight p {
-    text-align: left;
-    font-size: 16px;
-    margin-bottom: 20px;
     text-align: center;
+    font-size: 14px;
+    clear: both;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    line-height: 18px;
 }
 #ask .container {
     background: #fff;
@@ -1999,8 +2012,7 @@ video {
 }
 #ask-form {
     box-sizing: border-box;
-    background: #1e1e1e url(/spb-mobeimages/spb-mobepattern-2.png) center  no-repeat;
-    background-size: 100%;
+    background: #01375a url("/spb-mobeimages/spb-mobepattern-1.png") center no-repeat;
 }
 #ask-form .container {
     padding-top: 20px;
@@ -2191,7 +2203,7 @@ input.phone2 {
     border-radius: 25px;
     padding: 0px 15px;
     color: #fff;
-    line-height: 48px;
+    line-height: 38px;
     max-width: 180px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -2945,7 +2957,10 @@ body.models .logo-breand {
         padding: 20px 0px;
     }
     #skidka .container p {
-        font-size: 32px;
+        font-size: 16px;
+    }
+    #skidka {
+        min-height: 230px;
     }
     #text-block .container,
     #text-block .container p {
@@ -3207,7 +3222,7 @@ body.models .logo-breand {
         width: 75%;
     }
     #skidka .container .h3 {
-        font-size: 38px;
+        font-size: 30px;
     }
     #neispravnost .punkt.contact > div {
         border-bottom-left-radius: 20px;
@@ -3381,4 +3396,141 @@ body.models .logo-breand {
 }
 .harakteristika .active #bt-open {
     display: none;
+}
+
+
+.container a.politica {
+    font-size: 12px;
+    color: #757575;
+    padding-top: 5px;
+    clear: both;
+}
+a.politica {
+    font-size: 12px;
+    color: #757575;
+    padding-top: 5px;
+    clear: both;
+}
+#ask-form .container a.politica {
+    clear: inherit;
+}
+@media screen and (max-width: 540px) {
+    .container a.politica {
+        text-align: center;
+    }
+}
+
+
+
+
+.popup.politica-info {
+    z-index: 999999;
+}
+.popup.politica-info .wight div.politic-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: #f6394f;
+    color: #fff;
+}
+.popup.politica-info .wight div.politic-close:hover {
+    background: #333;
+}
+
+.popup.politica-info .wight {
+    width: 60%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -30%;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 99;
+    margin-top: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 20px;
+}
+.popup.politica-info .wight .full-text {
+    overflow-y: scroll;
+    height: 90%;
+    width: 100%;
+    display: block;
+    padding-right: 15px;
+}
+.popup.politica-info .wight .full-text p:first-child {
+    margin-top: 0px;
+    padding-top: 0px;
+} 
+.popup.politica-info .wight p,
+.popup.politica-info .wight h4 {
+    text-align: left;
+}
+.popup.politica-info .wight .full-text h4 {
+    font-size: 20px;
+}
+.popup.politica-info .wight p {
+    font-size: 14px;
+}
+@media screen and (max-width: 1565px) {
+    .popup.politica-info .wight .full-text {
+        height: 85%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .popup.politica-info .wight {
+        width: 90%;
+        margin-left: -45%;
+    }
+    .popup.politica-info .wight > h4 {
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .popup.politica-info .wight > h4 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .popup.politica-info .wight > h4 {
+        font-size: 14px;
+    }
+    .popup.politica-info .wight .full-text h4 {
+        font-size: 12px;
+    }
+    .popup.politica-info .wight .full-text p {
+        font-size: 12px;
+    }
+    .popup.politica-info .wight .full-text {
+        height: 81%;
+    }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
 }

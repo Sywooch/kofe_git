@@ -38,6 +38,7 @@ $form = ActiveForm::begin([
         <?= Html::submitButton('Заказать', ['class' => 'hero-form__btn', 'type' => 'button']) ?>        
         <?php ActiveForm::end() ?>
         <p>Мы свяжемся с Вами в течение 5 минут.</p>
+        <a class="politica" href="javascript:void(0)" >Вы подтверждаете своё согласие на обработку персональных данных согласно политике.</a>
         <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
     </div>
     <div class="zakrit"></div>
