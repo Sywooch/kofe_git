@@ -53,7 +53,7 @@ return [
                 //'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 //'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 'favicon.ico' => 'page/favicon',
-                //'robots.txt' => 'page/robots',
+                'robots.txt' => 'page/robots',
                 'sitemap.xml' => 'page/sitemap2',
                 'karta-sayta' => 'page/sitemap-html',
                 'minify-css' => 'page/css',
