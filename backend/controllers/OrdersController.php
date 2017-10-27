@@ -8,6 +8,7 @@ use app\models\OrdersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use \yii\filters\AccessControl;
 
 /**
  * OrdersController implements the CRUD actions for Orders model.
