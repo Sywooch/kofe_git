@@ -33,7 +33,11 @@ AppAsset::register($this);
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
-            $menuItems = [
+            
+            if (Yii::$app->user->isGuest) {
+                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+            } else {
+                $menuItems = [
                     ['label' => 'Главная', 'url' => ['/site/index']],
                     ['label' => 'Заказы', 'url' => ['/orders/index']],
                     ['label' => 'Страницы', 'url' => ['/page/index']],
@@ -41,9 +45,6 @@ AppAsset::register($this);
                     ['label' => 'Привязка услуг', 'url' => ['/services/linking']],
                     ['label' => 'Ява скрипты', 'url' => ['/services/js']],
             ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
                 $menuItems[] = '<li>'
                         . Html::beginForm(['/site/logout'], 'post')
                         . Html::submitButton(
