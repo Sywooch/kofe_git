@@ -11,6 +11,7 @@ class Price extends Widget {
 
     public $urlPrefix = '';
     public $brandPage = false;
+    public $prefix = '';
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
@@ -25,7 +26,7 @@ class Price extends Widget {
         if ($siteConfig['mono'])
             $this->urlPrefix = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $this->urlPrefix);
         return $this->render('price', ['model' => $model, 'uslugi' => $uslugi,
-                    'neispravnosti' => $neispravnosti, 'urlPrefix' => $this->urlPrefix, 'brandPage' => $this->brandPage]);
+                    'neispravnosti' => $neispravnosti, 'urlPrefix' => $this->urlPrefix, 'brandPage' => $this->brandPage, 'prefix' => $this->prefix]);
     }
 
 }
