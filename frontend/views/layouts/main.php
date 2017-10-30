@@ -17,7 +17,7 @@ $js = app\components\CController::$js;
 ?>
 <?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="ru"> 
     <head>  
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
