@@ -117,10 +117,12 @@ $js = app\components\CController::$js;
                     <div class="clear"></div>
                 </div>
             </section>
-            <div class="container mobi-tels colorborder">
-                <a class="mobi-numbers colortext" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                <span class="mobi-time colortext">Ежедневно с 08:00 до 22:00</span>
-            </div>
+            <?php if ($siteConfig['category_id'] == 7): ?>
+                <div class="container mobi-tels colorborder">
+                    <a class="mobi-numbers colortext" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    <span class="mobi-time colortext">Ежедневно с 08:00 до 22:00</span>
+                </div>
+            <?php endif; ?>
             <?php
             if (!Yii::$app->user->isGuest) {
                 echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
@@ -141,7 +143,7 @@ $js = app\components\CController::$js;
             }
             ?>
             <?= $content; ?>
-            <?php if (!$siteConfig['mono'] && $siteConfig['category_id'] != 1 && $siteConfig['category_id'] != 3 ): ?>
+            <?php if (!$siteConfig['mono'] && $siteConfig['category_id'] != 1 && $siteConfig['category_id'] != 3): ?>
                 <section id="otzvi">
                     <div class="container">
                         <p class="title"><span>Отзывы   </span> клиентов</p>
@@ -297,7 +299,7 @@ $js = app\components\CController::$js;
                                 <p><b>Достоинства:</b>Хороший сервис за небольшие деньги</p>
                                 <p><b>Комментарий:</b>За последние недели мой ноутбук Microsoft Surface стал сильно греться при работе, а в один прекрасный момент и вовсе не захотел включаться. Обратился в сервисный центр «Repair-laptops» потому что он находится совсем рядом с моим домом, да и отзывы на него довольно таки неплохие были. Провели диагностику, специалист сказал, что нужно очистить от пыли и завтра ноутбук можно забирать. Утром позвонил менеджер сервисного центра, как и было обещано, сказал что все готово. Процедура оказалась совсем недорогой, мой ноут работает почти как новенький, совсем не греется. Рекомендую данный сервис всем владельцам ноутбуков.</p>
                             </div>
-                             <div>                        
+                            <div>                        
                                 <p class="h3">Катин Дмитрий</p>
                                 <div class="n-rating-stars" data-bem="{}" data-rate="5">
                                     <i class="n-rating-stars__item"></i>
@@ -479,9 +481,21 @@ $js = app\components\CController::$js;
             <?php $this->endBody() ?>    
             <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
             <script type="text/javascript">
-                $(document).ready(function() {$(".<?= $siteConfig['sitePrefix']; ?>politic-close").click(function () {$(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");});$(".<?= $siteConfig['sitePrefix']; ?>politica").click(function () {$(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");});$("body").on("click", "#bt-open", function() {$("#openinfo").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");return false;});});
-                $("#show-services2").click(function(){$("#services-table2:visible").length?($("#services-table2").hide(),$(this).text("Показать цены по прочим неисправностям")):($("#services-table2").show(),$(this).text("Цены по прочим неисправностям"))});
-                $("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+                $(document).ready(function () {
+                    $(".<?= $siteConfig['sitePrefix']; ?>politic-close").click(function () {
+                        $(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");});$(".<?= $siteConfig['sitePrefix']; ?>politica").click(function () {
+                        $(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");
+                    });$("body").on("click", "#bt-open", function () {
+                        $("#openinfo").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");
+                        return false;
+                    });
+                });
+                $("#show-services2").click(function () {
+                    $("#services-table2:visible").length ? ($("#services-table2").hide(), $(this).text("Показать цены по прочим неисправностям")) : ($("#services-table2").show(), $(this).text("Цены по прочим неисправностям"))
+                });
+                $("form").each(function () {
+                    $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+                });</script>
             <?php if (!Yii::$app->user->isGuest): ?>
                 <div id="loadings"><img src="/images/loading.gif"></div>
                 <script>
@@ -535,10 +549,10 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
-                <script src="/js/wow.min.js"></script>
-                  <script>
-                  new WOW().init();
-                  </script>
+            <script src="/js/wow.min.js"></script>
+            <script>
+              new WOW().init();
+            </script>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {
