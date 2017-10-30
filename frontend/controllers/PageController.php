@@ -137,6 +137,9 @@ class PageController extends CController {
         $js = Yii::getAlias('@frontend') . '/web/js/';
         file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', '');
         foreach ($jsFiles as $jsFile) {
+            if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js'){
+                $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
+            }
             file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);
         }
     }
