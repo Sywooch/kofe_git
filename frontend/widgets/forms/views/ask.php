@@ -36,7 +36,7 @@ $form = ActiveForm::begin([
                     }
                 });";
             //if (!$siteConfig['mono'])
-                //$this->registerJs($validatejs, $position);
+            //$this->registerJs($validatejs, $position);
             ?>
 
             <?=
@@ -58,13 +58,12 @@ $form = ActiveForm::begin([
             <div class="footer-logo">
                 <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="">
             </div>
-            <?php if (!$siteConfig['mono']): ?>
+            <?php if (!$siteConfig['mono'] && !empty($brands)): ?>
                 <p><a href="/"><?= app\components\CController::$category['full_title']; ?></a></p>
                 <ul class="footer-menu">
-                    <li><a href="/remont-kofemashin-gaggia">Ремонт кофемашин Gaggia</a></li>
-                    <li><a href="/remont-kofemashin-jura">Ремонт кофемашин Jura</a></li>
-                    <li><a href="/remont-kofemashin-melitta">Ремонт кофемашин Melitta</a></li>
-                    <li><a href="/remont-kofemashin-saeco">Ремонт кофемашин Saeco</a></li>
+                    <?php foreach ($brands as $brand): ?>
+                        <li><a href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['title']; ?> <?= $brand['title']; ?></a></li>
+                    <?php endforeach; ?>       
                     <li><a href="/brendy">Все ремонтируемые бренды</a></li>
                 </ul>            
                 <a href="/kontakty">Наши Контакты</a>

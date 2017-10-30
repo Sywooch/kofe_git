@@ -17,7 +17,9 @@ class Ask extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
-        return $this->render('ask', ['model' => $model, 'class' => $this->class]);
+        $sql = 'SELECT title, url, id FROM {{%pages}} WHERE icon = 1 and category_id = ' . CController::$category['id'];
+        $brands = Yii::$app->db->createCommand($sql)->queryAll();
+        return $this->render('ask', ['model' => $model, 'class' => $this->class, 'brands' => $brands]);
     }
 
 }
