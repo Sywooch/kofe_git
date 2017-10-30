@@ -62,7 +62,7 @@ $form = ActiveForm::begin([
                 <p><a href="/"><?= app\components\CController::$category['full_title']; ?></a></p>
                 <ul class="footer-menu">
                     <?php foreach ($brands as $brand): ?>
-                        <li><a href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['title']; ?> <?= $brand['title']; ?></a></li>
+                        <li><a href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['full_title']; ?> <?= $brand['title']; ?></a></li>
                     <?php endforeach; ?>       
                     <li><a href="/brendy">Все ремонтируемые бренды</a></li>
                 </ul>            
