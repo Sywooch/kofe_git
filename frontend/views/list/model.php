@@ -1,6 +1,6 @@
 <?php
 $assets = Yii::getAlias('@web');
-
+$siteConfig = app\components\CController::getSiteConfig();
 use yii\imagine\Image;
 
 if (!empty($pageInfo['image'])) {
@@ -13,7 +13,7 @@ if (!empty($pageInfo['image'])) {
 }
 $breadcrumbs = [
     '/' . $brand['url'] => app\components\CController::$category['full_title'] . ' ' . $brand['title'],
-    $pageInfo['title'],
+    in_array($siteConfig['category_id'], [1]) ? 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] : $pageInfo['title'],
 ];
 $this->title = $title;
 $siteConfig = app\components\CController::getSiteConfig();

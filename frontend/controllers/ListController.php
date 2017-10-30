@@ -102,7 +102,7 @@ class ListController extends CController {
                     $modelImage = $page['image'];
                     $breadcrumbs['/' . $brand['url']] = CController::$category['full_title'] . ' ' . $brand['title'];
                     unset($breadcrumbs['/' . $page['url']]);
-                    $breadcrumbs['/' . $page['url']] = $page['title'];
+                    $breadcrumbs['/' . $page['url']] = (in_array($siteConfig['category_id'], [1]) ? 'Ремонт ' . $brand['title'] . ' ' : '') . $page['title'];
                     $page['title'] = $brand['title'] . ' ' . $page['title'];
                 }
                 $pageInfo['title'] = mb_strtolower($pageInfo['title'], 'utf8');
