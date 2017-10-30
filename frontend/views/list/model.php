@@ -1,6 +1,6 @@
 <?php
 $assets = Yii::getAlias('@web');
-
+$siteConfig = app\components\CController::getSiteConfig();
 use yii\imagine\Image;
 
 if (!empty($pageInfo['image'])) {
@@ -13,7 +13,7 @@ if (!empty($pageInfo['image'])) {
 }
 $breadcrumbs = [
     '/' . $brand['url'] => app\components\CController::$category['full_title'] . ' ' . $brand['title'],
-    $pageInfo['title'],
+    in_array($siteConfig['category_id'], [1]) ? 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] : $pageInfo['title'],
 ];
 $this->title = $title;
 $siteConfig = app\components\CController::getSiteConfig();
@@ -52,7 +52,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="clear"></div>
 </section>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
-<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
+<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true, 'prefix' => ' ' . $brand['title'] . ' ' . $pageInfo['title']]); ?>
 <?= $siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
     <section id="text-block">    

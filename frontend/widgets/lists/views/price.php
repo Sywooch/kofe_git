@@ -17,7 +17,7 @@
                             <?php if ($usluga['is_popular'] == 1): ?>
                                 <tr>
                                     <td class="name">
-                                        <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $usluga['url']; ?>"><?= $usluga['title']; ?></a>                                       
+                                        <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $usluga['url']; ?>"><?= $usluga['title'] . $prefix; ?></a>                                       
                                     </td>
                                     <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . '&nbsp;р'; ?></td>
                                     <td class="order">
@@ -46,7 +46,7 @@
                                 <?php if ($neispravnost['is_popular'] == 1): ?>
                                     <tr>
                                         <td class="name">
-                                            <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $neispravnost['url']; ?>"><?= $neispravnost['title']; ?></a>
+                                            <a href="/<?= !empty($urlPrefix) ? $urlPrefix . '/' : ''; ?><?= $neispravnost['url']; ?>"><?= $neispravnost['title'] . $prefix; ?></a>
                                         </td>
                                         <td class="price">от <?= round($neispravnost['price']); ?>&nbsp;р</td>
                                         <td class="order">
@@ -69,7 +69,7 @@
                         <?php foreach ($otherServices as $usluga): ?>
                             <tr>
                                 <td class="name">
-                                    <span class="price-color"><?= $usluga['title']; ?></span>                                        
+                                    <span class="price-color"><?= $usluga['title'] . $prefix; ?></span>                                        
                                 </td>
                                 <td class="price"><?= $usluga['price'] == 0 ? 'Бесплатно*' : 'от ' . round($usluga['price']) . '&nbsp;р'; ?></td>
                                 <td class="order">
@@ -91,7 +91,7 @@
                             <?php foreach ($neis as $nei): ?>
                                 <tr>
                                     <td class="name">
-                                        <span class="price-color"><?= $nei['title']; ?></span>                                        
+                                        <span class="price-color"><?= $nei['title'] . $prefix; ?></span>                                        
                                     </td>
                                     <td class="price"><?= $nei['price'] == 0 ? 'Бесплатно*' : 'от ' . round($nei['price']) . '&nbsp;р'; ?></td>
                                     <td class="order">

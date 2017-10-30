@@ -192,7 +192,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
-            <?php if (isset($siteConfig['category_id']) && $siteConfig['category_id'] == 1): ?>                
+            <?php if (isset($siteConfig['category_id']) && in_array($siteConfig['category_id'], [1, 2, 3])): ?>                
                 <div class="spb-contact all-contact active">
                     <h2><b>Наш адрес в Москве</b></h2>
                     <p>                        
