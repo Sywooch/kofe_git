@@ -67,7 +67,7 @@ $js = app\components\CController::$js;
                     </div>
                 </section>
             <?php endif; ?>
-            <section id="header">
+            <section id="header" class="wow bounceInUp ">
                 <div class="container">
                     <div class="logo">
                         <?php if (isset($siteConfig['change-logo'])): ?>
@@ -567,6 +567,10 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
+                <script src="/js/wow.min.js"></script>
+                  <script>
+                  new WOW().init();
+                  </script>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {

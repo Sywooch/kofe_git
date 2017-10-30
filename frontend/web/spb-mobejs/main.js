@@ -1,51 +1,4 @@
 $(document).ready(function () {
-    function Utils() {
-    }
-    Utils.prototype = {
-        constructor: Utils,
-        isElementInView: function (element, fullyInView) {
-            var pageTop = $(window).scrollTop();
-            var pageBottom = pageTop + $(window).height();
-            var elementTop = $(element).offset().top;
-            var elementBottom = elementTop + $(element).height();
-            if (fullyInView === true) {
-                return ((pageTop < elementTop) && (pageBottom > elementBottom));
-            } else {
-                return ((elementBottom <= pageBottom) && (elementTop >= pageTop));
-            }
-        }
-    };
-    var Utils = new Utils();
-    $(window).scroll(function () {
-        var isElementInView = Utils.isElementInView($('#primushestva'), false);
-        if (isElementInView) {
-            $('#primushestva').addClass("active");
-        };
-        var isElementInView2 = Utils.isElementInView($('#neispravnost .container'), false);
-        if (isElementInView2) {
-            $('#neispravnost .container').addClass("active");
-        };
-        var isElementInView3 = Utils.isElementInView($('#brands'), false);
-        if (isElementInView3) {
-            $('#brands').addClass("active");
-        };
-        var isElementInView4 = Utils.isElementInView($('#skidka'), false);
-        if (isElementInView4) {
-            $('#skidka').addClass("active");
-        };
-        var isElementInView5 = Utils.isElementInView($('#text-block'), false);
-        if (isElementInView5) {
-            $('#text-block').addClass("active");
-        };
-        var isElementInView6 = Utils.isElementInView($('#otzvi'), false);
-        if (isElementInView6) {
-            $('#otzvi').addClass("active");
-        };
-        var isElementInView7 = Utils.isElementInView($('#ask-form'), false);
-        if (isElementInView7) {
-            $('#ask-form').addClass("active");
-        };
-    });
 
     /*http://digitalbush.com/projects/masked-input-plugin/*/
 
@@ -123,22 +76,26 @@ $(document).ready(function () {
 
 
     $('.owl-carousel.logos').owlCarousel({
-        loop: true,
+        loop: false,
         dots: false,
         margin: 20,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
         responsive: {
             0: {
                 items: 3,
-                autoplay: false
+                autoplay: false,
+                loop: true,
+                autoplayTimeout: 4000,
+                nav: true
             },
             600: {
-                items: 5
+                items: 5,
+                autoplay: true,
+                loop: true,
+                autoplayTimeout: 4000,
+                nav: true
             },
             1000: {
-                items: 8
+                items: 7
             }
 
         }
