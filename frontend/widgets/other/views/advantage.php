@@ -50,7 +50,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
     </section>
-<?php elseif ($siteConfig['category_id'] == 1): ?>
+<?php elseif (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6])): ?>
     <section id="primushestva">
         <div class="container">
             <p class="title"><span>Наши</span> преимущества</p>
