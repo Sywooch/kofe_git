@@ -599,7 +599,7 @@ return [
             'id' => 46,
             'sitePrefix' => 'tablets',
             '1-line' => true,
-            'category_id' => 4,
+            'category_id' => 2,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'repair-cameras' => [
