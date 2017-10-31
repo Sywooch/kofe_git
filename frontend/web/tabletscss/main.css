@@ -2924,6 +2924,10 @@ body.models .logo-breand {
     }
 }
 @media screen and (max-width: 540px) {
+    
+    .time-work span {
+        display: none;
+    }
     #footer .tel .phone {
         font-size: 16px;
     }

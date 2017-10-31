@@ -2019,7 +2019,7 @@ video {
     transition: .25s ease-in-out;
 }
 .video .nav-icon2 span {
-    background: #000;
+    background: #f6394f;
 }
 .nav-icon2 span:nth-child(even) {
     left: 50%;
@@ -2906,6 +2906,10 @@ body.models .logo-breand {
     }
 }
 @media screen and (max-width: 540px) {
+    
+    .time-work span {
+        display: none;
+    }
     #footer .tel .phone {
         font-size: 16px;
     }
