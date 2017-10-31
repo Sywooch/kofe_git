@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @font-face {
     font-family:'FontAwesome';
-    src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-        url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-        url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-        url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-        url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src:url('/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+        url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+        url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+        url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+        url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight:normal;font-style:normal
 }
 /* cyrillic-ext */
@@ -135,7 +135,23 @@ section#photo {
     position: relative;
     overflow:hidden;
     padding-bottom: 20px;
-    background: #ffc341;
+    background: url(/tabletsimages/bgs.svg);
+    background-size: 100%;
+    background-position: bottom;
+    animation-name: bgs;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bgs {
+    from {background-position: top;}
+    to {background-position: bottom;}
+}
+
+/* Standard syntax */
+@keyframes bgs {
+    from {background-position: top;}
+    to {background-position: bottom;}
 }
 .video .bg-all {
     padding-bottom: 0px;
@@ -165,14 +181,14 @@ section#photo {
 }
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
-    fill:#01375a;
+    fill:#2176a1;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 #primushestva .punkt:hover .fil1 {
-    fill:#333;
+    fill:#444;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -191,11 +207,13 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    /*background: #fff url(../spb-kofeimages/spb-kofebg.svg);*/
-    background-size: 10%;
+    color: #444;
+}
+body {
+    background: url(/tabletsimages/contact_bg.jpg) no-repeat;
 }
 body.video {
+    background-position: 0px 470px;
 }
 .container {
     width: 1100px;
@@ -210,7 +228,7 @@ body.video {
     height: auto;
 }
 .container a:hover {
-    color: #333;
+    color: #444;
 }
 .mobile-menu {
     display: none;
@@ -315,6 +333,9 @@ section {
     top: 0px;
     margin-top: 60px;
 }
+.video .time-work {
+    color: #fff;
+}
 #header .logo {
     width: 140px;
     position: relative;
@@ -351,6 +372,9 @@ section {
     right: 0px;
     margin-top: -7.5px;
 }
+.video #header .nav ul li:after {
+    background: #fff;
+}
 #header .nav ul li:last-child:after {
     display: none;
 }
@@ -363,7 +387,7 @@ section {
     font-weight: bold;
 }
 .video #header .nav ul li a {
-    color: #000;
+    color: #fff;
 }
 
 .karochi {
@@ -384,10 +408,11 @@ section {
     font-weight: 700;
 }
 .video .tel .phone {
-    color: #000;
+    color: #fff;
 }
 .video .tel .phone:hover {
-    color: #000;
+    color: #fff;
+    text-decoration: underline;
 }
 .tel .phone:hover {
     color: #000;
@@ -397,7 +422,7 @@ section {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #00b06c;
+    background: #f88225;
     color: #fff;
     text-align: center;
     padding-top: 5px;
@@ -411,6 +436,9 @@ section {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
+}
+.video .tel .phone:before {
+    background: #444;
 }
 span.brand-title {
     font-size: 35px;
@@ -460,8 +488,20 @@ span.brand-title {
     position: absolute;
     left: 0px;
     bottom: 0px;
-    margin-bottom: -4px;
-    width: 40%;
+    width: 42%;
+    animation-name: left-image;
+    animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes left-image {
+    from {opacity: 0; margin-left: -300px;}
+    to {opacity: 1; margin-left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes left-image {
+    from {opacity: 0; margin-left: -300px;}
+    to {opacity: 1; margin-left: 0px;}
 }
 .banners #banner .left-img img {
     max-width: 75%;
@@ -483,12 +523,37 @@ span.brand-title {
     float: none;
     margin-left: 50%;
     position: relative;
+    animation-name: right-text;
+    animation-duration: 1s;
+}
+@-webkit-keyframes right-text {
+    from {opacity: 0; margin-top: -30px;}
+    to {opacity: 1; margin-top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes right-text {
+    from {opacity: 0; margin-top: -30px;}
+    to {opacity: 1; margin-top: 0px;}
+}
+#brands .container {
+    animation-name: banners;
+    min-height: 360px;
+    animation-duration: 1s;
+}
+@-webkit-keyframes banners {
+    from {margin-top: 50px;}
+    to {margin-top: 0px;}
+}
+@keyframes banners {
+    from {margin-top: 50px;}
+    to {margin-top: 0px;}
 }
 #banner .right-text .h1 h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 0px;
     margin-right: 10px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 #banner .full-text .h1 h1 {
@@ -504,12 +569,12 @@ span.brand-title {
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #f6394f;
+    color: #2176a1;
 }
 #banner .full-text .h1 {
     font-size: 40px;
     font-family: 'Lobster', cursive;
-    color: #f6394f;
+    color: #2176a1;
 }
 #banner .right-text ul {
     padding-top: 30px;
@@ -556,7 +621,7 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border: 1px solid #000;
+    border: 1px solid #444;
     border-radius: 25px;
     padding: 5px 15px;
     font-size: 16px;
@@ -586,8 +651,8 @@ input#phone::-webkit-input-placeholder {
 .hero-form__btn {
     width: 180px;
     height: 50px;
-    border: 1px solid #00b06c;
-    background: #00b06c;
+    border: 1px solid #2176a1;
+    background: #2176a1;
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
@@ -595,9 +660,13 @@ input#phone::-webkit-input-placeholder {
     outline: none;
     font-weight: bold;
 }
+.video .hero-form__btn {
+    background: none;
+    border: 2px solid #fff;
+}
 .hero-form__btn:hover {
-    background: #00e38b;
-    border: 1px solid #00e38b;
+    background: #444;
+    border: 1px solid #444;
 }
 #banner .right-text .happy-time {
     margin-bottom: 35px;
@@ -642,12 +711,12 @@ section .container .title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     padding-bottom: 20px;
-    color: #2f2d3b;
+    color: #2176a1;
     position: relative;
 }
 section .container .title:after {
     content: '';
-    background: url(../camerasimages/camerasseparator.png) no-repeat;
+    background: url(/tabletsimages/tabletsseparator.png) no-repeat;
     position: absolute;
     left: 0px;
     width: 70px;
@@ -720,9 +789,46 @@ section#primushestva .container .title {
     text-align: center;
 }
 #primushestva .punkt div.img svg {
-    width: 35%;
+    width: 30%;
     margin-top: 10px;
     margin-bottom: 10px;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+#primushestva.active .punkt div.img svg {
+    width: 35%;
+    animation-name: icons;
+    animation-duration: 2s;
+}
+@-webkit-keyframes icons {
+    0% {
+        width: 30%;
+    }
+    60% {
+        width: 40%;
+    }
+    85% {
+        width: 35%;
+    }
+    100% {
+        width: 35%;
+    }
+}
+@-webkit-keyframes icons {
+    0% {
+        width: 30%;
+    }
+    60% {
+        width: 40%;
+    }
+    85% {
+        width: 35%;
+    }
+    100% {
+        width: 35%;
+    }
 }
 #primushestva .punkt .h2 {
     padding: 0px 30px;
@@ -756,7 +862,7 @@ section#primushestva .container .title {
     padding: 0px 10px;
 }
 #primushestva .punkt a p {
-    color: #333;
+    color: #444;
 }
 #neispravnost .container {
     padding: 20px 15px 20px 15px;
@@ -810,8 +916,8 @@ section#neispravnost .container .title {
 #neispravnost .punkt a .big-text {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #008451;
+    font-weight: 800;
+    color: #f45840;
 }
 #neispravnost .punkt a:hover .big-text {
     color: #de0000;
@@ -824,7 +930,7 @@ section#neispravnost .container .title {
 #neispravnost .punkt a ul li {
     font-size: 14px;
     line-height: 22px;
-    color: #333;
+    color: #444;
 }
 #neispravnost .punkt a .price {
     color: #525357;
@@ -869,7 +975,7 @@ section#neispravnost .container .title {
     background: #2f2d3b;
 }
 #neispravnost .punkt.promo {
-    background: url(../camerasimages/cameraspromo-bg.jpg);
+    background: url(/tabletsimages/tabletspromo-bg.jpg);
     border: 0px;
 }
 #neispravnost .punkt.promo a {
@@ -882,7 +988,7 @@ section#neispravnost .container .title {
   right: 0;
   width: 240px;
   height: 80%;
-  background: url(../images/promo-bg.png) no-repeat;
+  background: url(/images/promo-bg.png) no-repeat;
   background-size: 100%;
 }*/
 #neispravnost .punkt.promo:after {
@@ -900,7 +1006,11 @@ section#neispravnost .container .title {
 }
 
 #neispravnost .punkt.contact {
-    background: url(../camerasimages/camerascontect-bg2.jpg);
+    background: #f98f1c;
+    background: -moz-linear-gradient(-45deg, #f98f1c 0%, #f45442 100%);
+    background: -webkit-linear-gradient(-45deg, #f98f1c 0%,#f45442 100%);
+    background: linear-gradient(135deg, #f98f1c 0%,#f45442 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98f1c', endColorstr='#f45442',GradientType=1 );
     padding: 8px;
     background-position: right;
     width: 50%;
@@ -932,7 +1042,7 @@ input#phone2 {
     border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #333;
+    color: #444;
     max-width: 134px;
     margin-bottom: 20px;
 }
@@ -960,10 +1070,10 @@ input#phone2::-webkit-input-placeholder {
     height: 50px;
     line-height: 50px;
     font-weight: bold;
-    background: #7bca4f;
+    background: #f45840;
 }
 .more a:hover {
-    background: #8ad660;
+    background: #f88225;
     color: #fff;
 }
 #brands .container {
@@ -993,13 +1103,13 @@ input#phone2::-webkit-input-placeholder {
     transition: all 0.3s ease-in-out;
 }
 #skidka {
-    background: url(../camerasimages/camerasbg-sale.jpg) center no-repeat;
+    background: url(/tabletsimages/tabletsbg-sale.jpg) center no-repeat;
     min-height: 252px;
 }
 #skidka .container {
     padding: 45px 0px;
     text-align: center;
-    color: #fff;
+    color: #151515;
 }
 #skidka .container .h3 {
     font-size: 45px;
@@ -1013,6 +1123,12 @@ input#phone2::-webkit-input-placeholder {
     font-weight: 200;
     font-size: 24px;
     line-height: 32px;
+    opacity: 1;
+}
+#skidka.active .container p {
+    animation-name: skidkap;
+    animation-delay: 0;
+    animation-direction: 1s;
 }
 #skidka .container a {
     color: #fff;
@@ -1044,7 +1160,7 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
 }
 #footer {
-    background: #f6394f;
+    background: #2176a1;
     position: relative;
     min-height: 35px;
     display: none;
@@ -1095,7 +1211,7 @@ input#phone2::-webkit-input-placeholder {
     position: fixed;
     right: 46px;
     bottom: 50%;
-    background: #f6394f;
+    background: #2176a1;
     color: #fff;
     line-height: 46px;
     text-align: center;
@@ -1121,7 +1237,7 @@ input#phone2::-webkit-input-placeholder {
 .popup.regions a {
     padding: 10px 5px;
     display: block;
-    color: #333;
+    color: #444;
 }
 .popup.regions .wight div.close {
     width: 40px;
@@ -1203,7 +1319,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: center;
 }
 .popup .wight div.close {
-    background-color: #f6394f;
+    background-color: #2176a1;
     color: white;
     border: none;
     box-shadow: none;
@@ -1253,7 +1369,7 @@ input#phone2::-webkit-input-placeholder {
 .is-sticky #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo-mini.svg) center no-repeat;
+    background: url(/images/logo-mini.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -1263,7 +1379,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .video #banner .right-text .h1,
 .video #banner .right-text p {
-    color: #000;
+    color: #fff;
 }
 #modeli .container {
     text-align: center;
@@ -1279,7 +1395,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 10px 0px;
     display: block;
     font-size: 12px;
-    color: #333;
+    color: #444;
     padding-bottom: 15px;
 }
 #modeli .container div ul li a img {
@@ -1318,7 +1434,7 @@ input#phone2::-webkit-input-placeholder {
 }
 #hlebniye-kroshki ul li a {
     font-size: 12px;
-    color: #333;
+    color: #444;
 }
 #hlebniye-kroshki ul li a:hover {
     color: #673b14;
@@ -1334,7 +1450,7 @@ input#phone2::-webkit-input-placeholder {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    color: #333;
+    color: #444;
     top: 50%;
     margin-top: -6px;
 }
@@ -1365,7 +1481,7 @@ input#phone2::-webkit-input-placeholder {
     margin-bottom: 5px;
 }
 #inner-modeli .container ul li a {
-    color: #333;
+    color: #444;
     padding: 10px 0px;
     background: #fff;
     display: block;
@@ -1466,7 +1582,7 @@ input#phone2::-webkit-input-placeholder {
 .news-list .newss h3 {
     margin: 0px;
     padding: 10px 15px 5px;
-    color: #333;
+    color: #444;
 }
 .news-list .newss:hover {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
@@ -1481,7 +1597,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: left;
     padding: 0px 15px 10px;
     line-height: 20px;
-    color: #333;
+    color: #444;
 }
 .news-list .newss .img {
     width: 100%;
@@ -1510,7 +1626,7 @@ section#hlebniye-kroshki {
 }
 .pagination li a {
     line-height: 31px;
-    color: #333;
+    color: #444;
 }
 .pagination li.active a {
     color: #673b14;
@@ -1531,18 +1647,19 @@ section#hlebniye-kroshki {
     width: 167px;
 }
 #zakaz .left {
+    background: #f45840 url(/tabletsimages/tabletspattern-2.png) center no-repeat;
     width: 40%;
-    background: url(../images/zakaz-bg.svg) center no-repeat;
-    background-size: 100%;
+    background-size: 190%;
     float: right;
     color: #fff;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-weight: 400;
     line-height: 20px;
     padding-top: 24px;
     font-size: 20px;
     height: 100px;
+    border-radius: 25px;
 }
 #zakaz .left span {
     font-size: 24px;
@@ -1590,12 +1707,12 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 .left-bar .left-menu li a:hover {
-    color: #f6394f;
+    color: #2176a1;
     padding-left: 20px;
 }
 .left-bar .left-menu li.active a {
-    color: #f6394f;
-    border-bottom: 1px solid #f6394f;
+    color: #2176a1;
+    border-bottom: 1px solid #2176a1;
 }
 .left-bar .left-menu  .other {
     font-size: 12px;
@@ -1649,7 +1766,7 @@ table.pricelist td {
     padding: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #7bca4f;
+    color: #f45840;
     width: 470px;
 }
 .prochi-uslugi tr {
@@ -1661,7 +1778,7 @@ table.pricelist td {
     width: 470px;
 }
 table.pricelist td a {
-    color: #333;
+    color: #444;
 }
 table.pricelist td.order,
 table.pricelist td.price {
@@ -1669,14 +1786,14 @@ table.pricelist td.price {
 }
 table.pricelist td.order .popup-zakaz {
     color: #fff;
-    background: #f6394f;
+    background: #2176a1;
     padding: 5px 10px;
     border-radius: 3px;
     float: right;
     cursor: pointer;
 }
 table.pricelist td.order .popup-zakaz:hover {
-    background: #333;
+    background: #444;
 }
 
 .popup.phone .wight div.close {
@@ -1692,7 +1809,7 @@ table.pricelist td.order .popup-zakaz:hover {
     margin-right: 10px;
 }
 .popup.phone .wight div.close:hover {
-    background: #333;
+    background: #444;
 }
 .popup.phone .wight {
     padding: 0px 28px;
@@ -1747,7 +1864,7 @@ table.pricelist td.order .popup-zakaz:hover {
     color: rgba(51, 51, 51, 0.57);
 }
 #bran .brands .row:hover div {
-    color: #f6394f;
+    color: #2176a1;
 }
 #bran .brands .row:hover {}
 #bran .brands .row ul {
@@ -1773,7 +1890,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
     display: block;
     font-size: 12px;
-    color: #333;
+    color: #444;
     text-align: left;
 }
 #bran .brands .row ul li:hover {
@@ -1781,7 +1898,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
 }
 #bran .brands .row ul li:hover a {
-    color: #f6394f;
+    color: #2176a1;
 }
 
 #banner .more {
@@ -1799,10 +1916,11 @@ table.pricelist td.order .popup-zakaz:hover {
     line-height: 50px;
     box-sizing: border-box;
     font-weight: bold;
-    background: #7bca4f;
+    background: #f45840;
 }
 .more div:hover {
-    background: #8ad660;
+    background: #f88225;
+    color: #444;
 }
 #map {
     padding: 0px;
@@ -1987,8 +2105,8 @@ video {
 }
 #ask-form {
     box-sizing: border-box;
-    background: #1e1e1e url(../camerasimages/cameraspattern-2.png) center  no-repeat;
-    background-size: 100%;
+    background: #1e1e1e url(/tabletsimages/tabletspattern-2.png);
+    background-size: 50%;
 }
 #ask-form .container {
     padding-top: 20px;
@@ -2022,8 +2140,8 @@ video {
 #ask-form .container .right button {
     width: auto;
     height: 50px;
-    border: 1px solid #7bca4f;
-    background: #7bca4f;
+    border: 1px solid #f45840;
+    background: #f45840;
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
@@ -2034,8 +2152,9 @@ video {
     font-weight: bold;
 }
 #ask-form .container .right button:hover {
-    border: 1px solid #8ad660;
-    background: #8ad660;
+    border: 1px solid #f88225;
+    background: #f88225;
+    color: #fff;
 }
 #ask-form .container .left {
     float: left;
@@ -2107,7 +2226,7 @@ video {
     display: none;
 }
 .ui-autocomplete-input {
-    border: 1px solid #7bca4f;
+    border: 1px solid #f45840;
     border-radius: 18px;
     padding: 5px 15px;
     font-size: 14px;
@@ -2199,7 +2318,7 @@ body.models #header .logo img {
 body.models #header .logo a {
     content: '';
     display: block;
-    background: url(../images/logo2.svg) center no-repeat;
+    background: url(/images/logo2.svg) center no-repeat;
     background-size: 100%;
     height: 45px;
     width: 150px;
@@ -2437,10 +2556,13 @@ body.models .logo-breand {
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         padding-left: 10px;
-        color: #f6394f;
+        color: #2176a1;
     }
 }
 @media screen and (max-width: 830px) {
+    .bg-all {
+        background-size: auto 200%;
+    }
     .video #banner .left-img {
         opacity: 0.3;
     }
@@ -2802,6 +2924,10 @@ body.models .logo-breand {
     }
 }
 @media screen and (max-width: 540px) {
+    
+    .time-work span {
+        display: none;
+    }
     #footer .tel .phone {
         font-size: 16px;
     }
@@ -2877,7 +3003,6 @@ body.models .logo-breand {
         text-align: center;
     }
     #neispravnost .punkt.promo {
-        background: url(../images/promo-bg.jpg);
         background-position: -195px 0px;
     }
     table.pricelist td {
@@ -3248,7 +3373,7 @@ body.models .logo-breand {
 }
 
 .n-rating-stars[data-rate='1'] .n-rating-stars__item:nth-child(-n+1), .n-rating-stars[data-rate='2'] .n-rating-stars__item:nth-child(-n+2), .n-rating-stars[data-rate='3'] .n-rating-stars__item:nth-child(-n+3), .n-rating-stars[data-rate='4'] .n-rating-stars__item:nth-child(-n+4), .n-rating-stars[data-rate='5'] .n-rating-stars__item, .n-rating-stars__item:before {
-    background-image: url(../images/star2.svg);
+    background-image: url(/images/star2.svg);
 }
 .n-product-review-item__stat .n-rating-stars {
     height: 22px;
@@ -3262,7 +3387,7 @@ body.models .logo-breand {
     height: 13px;
     vertical-align: middle;
     border-right: 1px solid transparent;
-    background: url(../images/star1.svg) no-repeat;
+    background: url(/images/star1.svg) no-repeat;
     background-repeat: no-repeat;
 }
 .n-rating-stars__item {
@@ -3292,7 +3417,7 @@ body.models .logo-breand {
     padding: 0px 10px;
 }
 .price-color {
-    color: #333;
+    color: #444;
 }
 .zakrit {
     position: fixed;
@@ -3313,3 +3438,25 @@ body.models .logo-breand {
 }
 
 
+.mobi-tels {
+    display: none;
+}
+
+#banner h2, #banner h3 {
+    font-family: "Open Sans",sans-serif ! important;
+}
+div#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0px;
+    left: 0px;
+}
+
+#banner ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
