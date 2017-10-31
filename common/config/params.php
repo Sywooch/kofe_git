@@ -611,7 +611,7 @@ return [
             'id' => 47,
             'sitePrefix' => 'cameras',
             '1-line' => true,
-            'category_id' => 4,
+            'category_id' => 5,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'ifixme' => [
