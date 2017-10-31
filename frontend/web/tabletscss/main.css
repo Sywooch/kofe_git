@@ -188,7 +188,7 @@ section#photo {
     transition: all 0.3s ease-in-out;
 }
 #primushestva .punkt:hover .fil1 {
-    fill:#333;
+    fill:#444;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -207,7 +207,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: #444;
 }
 body {
     background: url(/tabletsimages/contact_bg.jpg) no-repeat;
@@ -228,7 +228,7 @@ body.video {
     height: auto;
 }
 .container a:hover {
-    color: #333;
+    color: #444;
 }
 .mobile-menu {
     display: none;
@@ -422,7 +422,7 @@ section {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #2176a1;
+    background: #f88225;
     color: #fff;
     text-align: center;
     padding-top: 5px;
@@ -436,6 +436,9 @@ section {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
+}
+.video .tel .phone:before {
+    background: #444;
 }
 span.brand-title {
     font-size: 35px;
@@ -618,7 +621,7 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border: 1px solid #333;
+    border: 1px solid #444;
     border-radius: 25px;
     padding: 5px 15px;
     font-size: 16px;
@@ -657,9 +660,13 @@ input#phone::-webkit-input-placeholder {
     outline: none;
     font-weight: bold;
 }
+.video .hero-form__btn {
+    background: none;
+    border: 2px solid #fff;
+}
 .hero-form__btn:hover {
-    background: #333;
-    border: 1px solid #333;
+    background: #444;
+    border: 1px solid #444;
 }
 #banner .right-text .happy-time {
     margin-bottom: 35px;
@@ -855,7 +862,7 @@ section#primushestva .container .title {
     padding: 0px 10px;
 }
 #primushestva .punkt a p {
-    color: #333;
+    color: #444;
 }
 #neispravnost .container {
     padding: 20px 15px 20px 15px;
@@ -909,8 +916,8 @@ section#neispravnost .container .title {
 #neispravnost .punkt a .big-text {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #008451;
+    font-weight: 800;
+    color: #f45840;
 }
 #neispravnost .punkt a:hover .big-text {
     color: #de0000;
@@ -923,7 +930,7 @@ section#neispravnost .container .title {
 #neispravnost .punkt a ul li {
     font-size: 14px;
     line-height: 22px;
-    color: #333;
+    color: #444;
 }
 #neispravnost .punkt a .price {
     color: #525357;
@@ -999,7 +1006,11 @@ section#neispravnost .container .title {
 }
 
 #neispravnost .punkt.contact {
-    background: url(/tabletsimages/tabletscontect-bg2.jpg);
+    background: #f98f1c;
+    background: -moz-linear-gradient(-45deg, #f98f1c 0%, #f45442 100%);
+    background: -webkit-linear-gradient(-45deg, #f98f1c 0%,#f45442 100%);
+    background: linear-gradient(135deg, #f98f1c 0%,#f45442 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98f1c', endColorstr='#f45442',GradientType=1 );
     padding: 8px;
     background-position: right;
     width: 50%;
@@ -1031,7 +1042,7 @@ input#phone2 {
     border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #333;
+    color: #444;
     max-width: 134px;
     margin-bottom: 20px;
 }
@@ -1059,10 +1070,10 @@ input#phone2::-webkit-input-placeholder {
     height: 50px;
     line-height: 50px;
     font-weight: bold;
-    background: #afb42b;
+    background: #f45840;
 }
 .more a:hover {
-    background: #bbc200;
+    background: #f88225;
     color: #fff;
 }
 #brands .container {
@@ -1226,7 +1237,7 @@ input#phone2::-webkit-input-placeholder {
 .popup.regions a {
     padding: 10px 5px;
     display: block;
-    color: #333;
+    color: #444;
 }
 .popup.regions .wight div.close {
     width: 40px;
@@ -1384,7 +1395,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 10px 0px;
     display: block;
     font-size: 12px;
-    color: #333;
+    color: #444;
     padding-bottom: 15px;
 }
 #modeli .container div ul li a img {
@@ -1423,7 +1434,7 @@ input#phone2::-webkit-input-placeholder {
 }
 #hlebniye-kroshki ul li a {
     font-size: 12px;
-    color: #333;
+    color: #444;
 }
 #hlebniye-kroshki ul li a:hover {
     color: #673b14;
@@ -1439,7 +1450,7 @@ input#phone2::-webkit-input-placeholder {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    color: #333;
+    color: #444;
     top: 50%;
     margin-top: -6px;
 }
@@ -1470,7 +1481,7 @@ input#phone2::-webkit-input-placeholder {
     margin-bottom: 5px;
 }
 #inner-modeli .container ul li a {
-    color: #333;
+    color: #444;
     padding: 10px 0px;
     background: #fff;
     display: block;
@@ -1571,7 +1582,7 @@ input#phone2::-webkit-input-placeholder {
 .news-list .newss h3 {
     margin: 0px;
     padding: 10px 15px 5px;
-    color: #333;
+    color: #444;
 }
 .news-list .newss:hover {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
@@ -1586,7 +1597,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: left;
     padding: 0px 15px 10px;
     line-height: 20px;
-    color: #333;
+    color: #444;
 }
 .news-list .newss .img {
     width: 100%;
@@ -1615,7 +1626,7 @@ section#hlebniye-kroshki {
 }
 .pagination li a {
     line-height: 31px;
-    color: #333;
+    color: #444;
 }
 .pagination li.active a {
     color: #673b14;
@@ -1636,7 +1647,7 @@ section#hlebniye-kroshki {
     width: 167px;
 }
 #zakaz .left {
-    background: #afb42b url(/tabletsimages/tabletspattern-2.png) center no-repeat;
+    background: #f45840 url(/tabletsimages/tabletspattern-2.png) center no-repeat;
     width: 40%;
     background-size: 190%;
     float: right;
@@ -1755,7 +1766,7 @@ table.pricelist td {
     padding: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #afb42b;
+    color: #f45840;
     width: 470px;
 }
 .prochi-uslugi tr {
@@ -1767,7 +1778,7 @@ table.pricelist td {
     width: 470px;
 }
 table.pricelist td a {
-    color: #333;
+    color: #444;
 }
 table.pricelist td.order,
 table.pricelist td.price {
@@ -1782,7 +1793,7 @@ table.pricelist td.order .popup-zakaz {
     cursor: pointer;
 }
 table.pricelist td.order .popup-zakaz:hover {
-    background: #333;
+    background: #444;
 }
 
 .popup.phone .wight div.close {
@@ -1798,7 +1809,7 @@ table.pricelist td.order .popup-zakaz:hover {
     margin-right: 10px;
 }
 .popup.phone .wight div.close:hover {
-    background: #333;
+    background: #444;
 }
 .popup.phone .wight {
     padding: 0px 28px;
@@ -1879,7 +1890,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
     display: block;
     font-size: 12px;
-    color: #333;
+    color: #444;
     text-align: left;
 }
 #bran .brands .row ul li:hover {
@@ -1905,11 +1916,11 @@ table.pricelist td.order .popup-zakaz:hover {
     line-height: 50px;
     box-sizing: border-box;
     font-weight: bold;
-    background: #afb42b;
+    background: #f45840;
 }
 .more div:hover {
-    background: #bbc200;
-    color: #333;
+    background: #f88225;
+    color: #444;
 }
 #map {
     padding: 0px;
@@ -2129,8 +2140,8 @@ video {
 #ask-form .container .right button {
     width: auto;
     height: 50px;
-    border: 1px solid #afb42b;
-    background: #afb42b;
+    border: 1px solid #f45840;
+    background: #f45840;
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
@@ -2141,8 +2152,8 @@ video {
     font-weight: bold;
 }
 #ask-form .container .right button:hover {
-    border: 1px solid #bbc200;
-    background: #bbc200;
+    border: 1px solid #f88225;
+    background: #f88225;
     color: #fff;
 }
 #ask-form .container .left {
@@ -2215,7 +2226,7 @@ video {
     display: none;
 }
 .ui-autocomplete-input {
-    border: 1px solid #afb42b;
+    border: 1px solid #f45840;
     border-radius: 18px;
     padding: 5px 15px;
     font-size: 14px;
@@ -3402,7 +3413,7 @@ body.models .logo-breand {
     padding: 0px 10px;
 }
 .price-color {
-    color: #333;
+    color: #444;
 }
 .zakrit {
     position: fixed;
@@ -3429,4 +3440,19 @@ body.models .logo-breand {
 
 #banner h2, #banner h3 {
     font-family: "Open Sans",sans-serif ! important;
+}
+div#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0px;
+    left: 0px;
+}
+
+#banner ul li {
+    float: left;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
 }
