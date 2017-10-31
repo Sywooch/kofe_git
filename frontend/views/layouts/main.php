@@ -49,7 +49,7 @@ $js = app\components\CController::$js;
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
-            <?php if ($siteConfig['category_id'] == 2): ?><div id="particles-js"></div><?php endif; ?>
+            <?php if (in_array($siteConfig['category_id'], [2])): ?><div id="particles-js"></div><?php endif; ?>
             <?php endif; ?>
             <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
