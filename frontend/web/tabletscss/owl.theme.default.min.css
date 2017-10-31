@@ -24,16 +24,16 @@
     height: 40px;
     box-sizing: border-box;
     border-radius: 50%;
-    background: #afb42b;
-    border: 1px solid #afb42b;
+    background: #f45840;
+    border: 1px solid #f45840;
     padding: 5px;
     float: right;
     margin-right: 10px;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
-    color: #afb42b;
-    border: 1px solid #afb42b;
+    color: #f45840;
+    border: 1px solid #f45840;
     text-decoration: none;
 }
 .owl-next:before {
