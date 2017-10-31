@@ -3418,6 +3418,9 @@ a.politica {
     .container a.politica {
         text-align: center;
     }
+    .time-work span {
+        display: none;
+    }
 }
 
 
