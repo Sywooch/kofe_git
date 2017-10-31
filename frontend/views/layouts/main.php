@@ -144,7 +144,7 @@ $js = app\components\CController::$js;
             }
             ?>
             <?= $content; ?>
-            <?php if (!$siteConfig['mono'] && $siteConfig['category_id'] != 1 && $siteConfig['category_id'] != 3): ?>
+            <?php if (!$siteConfig['mono'] && $siteConfig['category_id'] != 1 && $siteConfig['category_id'] != 3 && $siteConfig['category_id'] != 4 && $siteConfig['category_id'] != 5): ?>
                 <section id="otzvi">
                     <div class="container">
                         <p class="title"><span>Отзывы   </span> клиентов</p>
