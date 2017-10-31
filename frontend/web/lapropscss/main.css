@@ -1104,33 +1104,14 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    opacity: 0;
-}
-#skidka.active .container .h3 {
     opacity: 1;
-    animation-name: skidkah3;
-    animation-delay: 0;
-    animation-direction: 1s;
-}
-@keyframes skidkah3 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 #skidka .container p {
     text-align: center;
     font-weight: 200;
     font-size: 24px;
     line-height: 32px;
-    opacity: 0;
-}
-#skidka.active .container p {
-    animation-name: skidkap;
-    animation-delay: 0;
-    animation-direction: 1s;
+    opacity: 1;
 }
 #skidka .container a {
     color: #fff;
