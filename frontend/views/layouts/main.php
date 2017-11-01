@@ -317,12 +317,14 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
+                <?php if (in_array($siteConfig['category_id'], [2])): ?>
             <script src="/js/particles.js"></script>
             <script src="/js/app.js"></script>
             <script src="/js/wow.min.js"></script>
             <script>
                     new WOW().init();
             </script>
+            <?php endif; ?>
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {
