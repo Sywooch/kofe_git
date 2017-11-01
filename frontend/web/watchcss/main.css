@@ -135,7 +135,7 @@ section#photo {
     position: relative;
     overflow:hidden;
     padding-bottom: 20px;
-    background: url(/watchimages/bgs.svg);
+    background: url(/watchimages/bgs.svg) no-repeat;
     background-size: 100%;
     background-position: bottom;
     animation-name: bgs;
@@ -181,14 +181,14 @@ section#photo {
 }
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
-    fill:#cbb097;
+    fill:#9da2b6;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 #primushestva .punkt:hover .fil1 {
-    fill:#413d4b;
+    fill:#202132;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -207,7 +207,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color: #413d4b;
+    color: #202132;
 }
 body {
     background: #fff;
@@ -225,7 +225,7 @@ body {
     height: auto;
 }
 .container a:hover {
-    color: #413d4b;
+    color: #202132;
 }
 .mobile-menu {
     display: none;
@@ -334,7 +334,7 @@ section {
     color: #fff;
 }
 #header .logo {
-    width: 100px;
+    width: 170px;
     position: relative;
     float: left;
     margin-right: 100px;
@@ -370,7 +370,7 @@ section {
     margin-top: -7.5px;
 }
 .video #header .nav ul li:after {
-    background: #413d4b;
+    background: #9da2b6;
 }
 #header .nav ul li:last-child:after {
     display: none;
@@ -384,7 +384,7 @@ section {
     font-weight: bold;
 }
 .video #header .nav ul li a {
-    color: #413d4b;
+    color: #fff;
 }
 
 .karochi {
@@ -419,7 +419,7 @@ section {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #413d4b;
+    background: #202132;
     color: #fff;
     text-align: center;
     padding-top: 5px;
@@ -435,7 +435,7 @@ section {
     -moz-osx-font-smoothing:grayscale;
 }
 .video .tel .phone:before {
-    background: #413d4b;
+    background: #9da2b6;
 }
 span.brand-title {
     font-size: 35px;
@@ -451,6 +451,7 @@ span.brand-title {
     position: relative;
 }
 .video #banner {
+    padding-top: 60px;
     margin-bottom: 0px;
 }
 .video #banner .container {
@@ -551,6 +552,10 @@ span.brand-title {
     margin-right: 10px;
     font-weight: 700;
 }
+.video #banner .right-text .h1 h1 {
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+}
 
 #banner .full-text .h1 h1 {
     font-size: 36px;
@@ -565,12 +570,12 @@ span.brand-title {
     font-size: 40px;
     font-family: 'Prata', serif;
     font-weight: 400;
-    color: #413d4b;
+    color: #202132;
 }
 #banner .full-text .h1 {
     font-size: 40px;
     font-family: 'Lobster', cursive;
-    color: #413d4b;
+    color: #202132;
 }
 #banner .right-text ul {
     padding-top: 30px;
@@ -617,11 +622,10 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border: 1px solid #413d4b;
-    border-radius: 25px;
+    border: 1px solid #202132;
     padding: 5px 15px;
     font-size: 16px;
-    height: 50px;
+    height: 40px;
     max-width: 80%;
     float: left;
     width: 45%;
@@ -646,10 +650,9 @@ input#phone::-webkit-input-placeholder {
 }
 .hero-form__btn {
     width: 180px;
-    height: 50px;
-    border: 1px solid #413d4b;
-    background: #413d4b;
-    border-radius: 25px;
+    height: 40px;
+    border: 1px solid #202132;
+    background: #202132;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -657,12 +660,16 @@ input#phone::-webkit-input-placeholder {
     font-weight: bold;
 }
 .video .hero-form__btn {
-    background: none;
-    border: 2px solid #fff;
+    background: #9da2b6;
+    border: 2px solid #9da2b6;
+    color: #3d3950;
 }
 .hero-form__btn:hover {
-    background: #413d4b;
-    border: 1px solid #413d4b;
+    background: #202132;
+    border: 1px solid #202132;
+}
+.video .hero-form__btn:hover {
+    color: #fff;
 }
 #banner .right-text .happy-time {
     margin-bottom: 35px;
@@ -707,8 +714,9 @@ section .container .title {
     font-family: 'Prata', serif;
     font-weight: 400;
     padding-bottom: 20px;
-    color: #413d4b;
+    color: #202132;
     position: relative;
+    padding-left: 78px;
 }
 section .container .title:after {
     content: '';
@@ -716,8 +724,9 @@ section .container .title:after {
     position: absolute;
     left: 0px;
     width: 70px;
-    height: 15px;
+    height: 63px;
     bottom: 0px;
+    background-size: 100%;
 }
 #ask-form .container .title:after {
     display: none;
@@ -728,7 +737,7 @@ section .container .title:after {
     box-sizing: border-box;
     text-align: left;
     line-height: 30px;
-    color: #fff;
+    color: #f3f4f7;
     margin-top: 25px;
     border:0px;
 }
@@ -858,7 +867,7 @@ section#primushestva .container .title {
     padding: 0px 10px;
 }
 #primushestva .punkt a p {
-    color: #413d4b;
+    color: #202132;
 }
 #neispravnost .container {
     padding: 20px 15px 20px 15px;
@@ -926,7 +935,7 @@ section#neispravnost .container .title {
 #neispravnost .punkt a ul li {
     font-size: 14px;
     line-height: 22px;
-    color: #413d4b;
+    color: #202132;
 }
 #neispravnost .punkt a .price {
     color: #525357;
@@ -1034,7 +1043,7 @@ input#phone2 {
     border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #413d4b;
+    color: #202132;
     max-width: 134px;
     margin-bottom: 20px;
 }
@@ -1062,10 +1071,10 @@ input#phone2::-webkit-input-placeholder {
     height: 50px;
     line-height: 50px;
     font-weight: bold;
-    background: #fea700;
+    background: #9da2b6;
 }
 .more a:hover {
-    background: #413d4b;
+    background: #202132;
     color: #fff;
 }
 #brands .container {
@@ -1152,7 +1161,7 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
 }
 #footer {
-    background: #413d4b;
+    background: #202132;
     position: relative;
     min-height: 35px;
     display: none;
@@ -1203,7 +1212,7 @@ input#phone2::-webkit-input-placeholder {
     position: fixed;
     right: 46px;
     bottom: 50%;
-    background: #413d4b;
+    background: #202132;
     color: #fff;
     line-height: 46px;
     text-align: center;
@@ -1229,7 +1238,7 @@ input#phone2::-webkit-input-placeholder {
 .popup.regions a {
     padding: 10px 5px;
     display: block;
-    color: #413d4b;
+    color: #202132;
 }
 .popup.regions .wight div.close {
     width: 40px;
@@ -1311,7 +1320,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: center;
 }
 .popup .wight div.close {
-    background-color: #413d4b;
+    background-color: #202132;
     color: white;
     border: none;
     box-shadow: none;
@@ -1369,9 +1378,11 @@ input#phone2::-webkit-input-placeholder {
 .is-sticky #header .logo img {
     display: none;
 }
-.video #banner .right-text .h1,
+.video #banner .right-text .h1 {
+    color: #fff;
+}
 .video #banner .right-text p {
-    color: #413d4b;
+    color: #9da2b6;
 }
 #modeli .container {
     text-align: center;
@@ -1387,7 +1398,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 10px 0px;
     display: block;
     font-size: 12px;
-    color: #413d4b;
+    color: #202132;
     padding-bottom: 15px;
 }
 #modeli .container div ul li a img {
@@ -1426,7 +1437,7 @@ input#phone2::-webkit-input-placeholder {
 }
 #hlebniye-kroshki ul li a {
     font-size: 12px;
-    color: #413d4b;
+    color: #202132;
 }
 #hlebniye-kroshki ul li a:hover {
     color: #673b14;
@@ -1442,7 +1453,7 @@ input#phone2::-webkit-input-placeholder {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    color: #413d4b;
+    color: #202132;
     top: 50%;
     margin-top: -6px;
 }
@@ -1473,7 +1484,7 @@ input#phone2::-webkit-input-placeholder {
     margin-bottom: 5px;
 }
 #inner-modeli .container ul li a {
-    color: #413d4b;
+    color: #202132;
     padding: 10px 0px;
     background: #fff;
     display: block;
@@ -1574,7 +1585,7 @@ input#phone2::-webkit-input-placeholder {
 .news-list .newss h3 {
     margin: 0px;
     padding: 10px 15px 5px;
-    color: #413d4b;
+    color: #202132;
 }
 .news-list .newss:hover {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
@@ -1589,7 +1600,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: left;
     padding: 0px 15px 10px;
     line-height: 20px;
-    color: #413d4b;
+    color: #202132;
 }
 .news-list .newss .img {
     width: 100%;
@@ -1618,7 +1629,7 @@ section#hlebniye-kroshki {
 }
 .pagination li a {
     line-height: 31px;
-    color: #413d4b;
+    color: #202132;
 }
 .pagination li.active a {
     color: #673b14;
@@ -1639,7 +1650,7 @@ section#hlebniye-kroshki {
     width: 167px;
 }
 #zakaz .left {
-    background: #fea700 url(/watchimages/watchpattern-2.png) center no-repeat;
+    background: #9da2b6 url(/watchimages/watchpattern-2.png) center no-repeat;
     width: 40%;
     background-size: 190%;
     float: right;
@@ -1699,12 +1710,12 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 .left-bar .left-menu li a:hover {
-    color: #413d4b;
+    color: #202132;
     padding-left: 20px;
 }
 .left-bar .left-menu li.active a {
-    color: #413d4b;
-    border-bottom: 1px solid #413d4b;
+    color: #202132;
+    border-bottom: 1px solid #202132;
 }
 .left-bar .left-menu  .other {
     font-size: 12px;
@@ -1758,7 +1769,7 @@ table.pricelist td {
     padding: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #413d4b;
+    color: #202132;
     width: 470px;
 }
 .prochi-uslugi tr {
@@ -1770,7 +1781,7 @@ table.pricelist td {
     width: 470px;
 }
 table.pricelist td a {
-    color: #413d4b;
+    color: #202132;
 }
 table.pricelist td.order,
 table.pricelist td.price {
@@ -1778,14 +1789,14 @@ table.pricelist td.price {
 }
 table.pricelist td.order .popup-zakaz {
     color: #fff;
-    background: #413d4b;
+    background: #202132;
     padding: 5px 10px;
     border-radius: 3px;
     float: right;
     cursor: pointer;
 }
 table.pricelist td.order .popup-zakaz:hover {
-    background: #413d4b;
+    background: #202132;
 }
 
 .popup.phone .wight div.close {
@@ -1801,7 +1812,7 @@ table.pricelist td.order .popup-zakaz:hover {
     margin-right: 10px;
 }
 .popup.phone .wight div.close:hover {
-    background: #413d4b;
+    background: #202132;
 }
 .popup.phone .wight {
     padding: 0px 28px;
@@ -1856,7 +1867,7 @@ table.pricelist td.order .popup-zakaz:hover {
     color: rgba(51, 51, 51, 0.57);
 }
 #bran .brands .row:hover div {
-    color: #413d4b;
+    color: #202132;
 }
 #bran .brands .row:hover {}
 #bran .brands .row ul {
@@ -1882,7 +1893,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
     display: block;
     font-size: 12px;
-    color: #413d4b;
+    color: #202132;
     text-align: left;
 }
 #bran .brands .row ul li:hover {
@@ -1890,7 +1901,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
 }
 #bran .brands .row ul li:hover a {
-    color: #413d4b;
+    color: #202132;
 }
 
 #banner .more {
@@ -1901,17 +1912,16 @@ table.pricelist td.order .popup-zakaz:hover {
     display: inline-block;
     font-size: 16px;
     color: #fff;
-    border-radius: 25px;
     cursor: pointer;
     width: 200px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     box-sizing: border-box;
     font-weight: bold;
-    background: #fea700;
+    background: #9da2b6;
 }
 .more div:hover {
-    background: #413d4b;
+    background: #202132;
     color: #fff;
 }
 #map {
@@ -2097,7 +2107,7 @@ video {
 }
 #ask-form {
     box-sizing: border-box;
-    background: #413d4b;
+    background: #202132;
     position: relative;
 }
 #ask-form .container {
@@ -2118,7 +2128,6 @@ video {
 #ask-form .container .right input {
     border: 0px;
     width: 100%;
-    border-radius: 0px;
     max-width: 230px;
     outline: none;
     box-sizing: border-box;
@@ -2127,14 +2136,12 @@ video {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     float: none;
-    border-radius: 25px;
 }
 #ask-form .container .right button {
     width: auto;
-    height: 50px;
-    border: 1px solid #fea700;
-    background: #fea700;
-    border-radius: 25px;
+    height: 40px;
+    border: 1px solid #9da2b6;
+    background: #9da2b6;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -2144,8 +2151,8 @@ video {
     font-weight: bold;
 }
 #ask-form .container .right button:hover {
-    border: 1px solid #413d4b;
-    background: #413d4b;
+    border: 1px solid #9da2b6;
+    background: #202132;
     color: #fff;
 }
 #ask-form .container .left {
@@ -2218,7 +2225,7 @@ video {
     display: none;
 }
 .ui-autocomplete-input {
-    border: 1px solid #fea700;
+    border: 1px solid #9da2b6;
     border-radius: 18px;
     padding: 5px 15px;
     font-size: 14px;
@@ -2350,8 +2357,7 @@ body.models .logo-breand {
 }
 
     .popup .hero-form__btn {
-        background: #422045;
-        border-color: #422045;
+        color: #FFF;
     }
 @media screen and (max-width: 1500px) {
     #neispravnost .punkt.contact > div {
@@ -2553,7 +2559,7 @@ body.models .logo-breand {
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         padding-left: 10px;
-        color: #413d4b;
+        color: #202132;
     }
 }
 @media screen and (max-width: 830px) {
@@ -3413,7 +3419,7 @@ body.models .logo-breand {
     padding: 0px 10px;
 }
 .price-color {
-    color: #413d4b;
+    color: #202132;
 }
 .zakrit {
     position: fixed;
