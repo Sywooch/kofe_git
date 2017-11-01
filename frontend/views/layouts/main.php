@@ -51,6 +51,16 @@ $js = app\components\CController::$js;
             <div class="bg-all">
 
                 <?php if (in_array($siteConfig['category_id'], [2])): ?><div id="particles-js"></div><?php endif; ?>
+                <?php if (in_array($siteConfig['category_id'], [4])): ?>
+                <div id="signals">
+                  <span class="signal s1"></span>
+                  <span class="signal s2"></span>
+                  <span class="signal s3"></span>
+                  <span class="signal s4"></span>
+                  <span class="signal s5"></span>
+                  <span class="signal s6"></span>
+                </div>
+                <?php endif; ?>
 
             <?php endif; ?>
             <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  

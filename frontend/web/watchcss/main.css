@@ -1,5 +1,5 @@
 /*karochi*/
-@import url('https://fonts.googleapis.com/css?family=Prata&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @font-face {
     font-family:'FontAwesome';
     src:url('/fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -135,7 +135,7 @@ section#photo {
     position: relative;
     overflow:hidden;
     padding-bottom: 20px;
-    background: url(/watchimages/bgs.svg) no-repeat;
+    background: #3d3950;
     background-size: 100%;
     background-position: bottom;
     animation-name: bgs;
@@ -234,15 +234,15 @@ div {
     box-sizing: border-box;
 }
 h1 {
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 h2 {
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 h3 {
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 p {
@@ -439,7 +439,7 @@ section {
 }
 span.brand-title {
     font-size: 35px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 #banner {
@@ -451,7 +451,7 @@ span.brand-title {
     position: relative;
 }
 .video #banner {
-    padding-top: 60px;
+    margin-top: 80px;
     margin-bottom: 0px;
 }
 .video #banner .container {
@@ -568,7 +568,7 @@ span.brand-title {
 }
 #banner .right-text .h1 {
     font-size: 40px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #202132;
 }
@@ -585,7 +585,7 @@ span.brand-title {
     font-size: 15px;
     line-height: 25px;
     position: relative;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 #banner .right-text ul li:before {
@@ -613,7 +613,7 @@ input#phone {
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 16px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     max-width: 135px;
     float: left;
@@ -677,7 +677,7 @@ input#phone::-webkit-input-placeholder {
 }
 #banner .right-text .happy-time p {
     font-size: 22px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #2f2d3b;
     margin: 0px;
@@ -711,7 +711,7 @@ input#phone::-webkit-input-placeholder {
 section .container .title {
     font-size: 28px;
     margin-bottom: 15px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     padding-bottom: 20px;
     color: #202132;
@@ -746,7 +746,7 @@ section .container .title:after {
     margin-top: 0px;
     font-size: 22px;
     line-height: 30px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: left;
 }
@@ -841,7 +841,7 @@ section#primushestva .container .title {
     font-size: 20px;
     margin-top: 0px;
     color: #2f2d3b;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
@@ -920,7 +920,7 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #2f1834;
 }
@@ -1029,7 +1029,7 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.contact > div div.big-text {
     font-size: 18px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fff;
 }
@@ -1064,12 +1064,11 @@ input#phone2::-webkit-input-placeholder {
     display: inline-block;
     font-size: 16px;
     color: #fff;
-    border-radius: 25px;
     text-align: center;
     box-sizing: border-box;
     width: 200px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     font-weight: bold;
     background: #9da2b6;
 }
@@ -1116,7 +1115,7 @@ input#phone2::-webkit-input-placeholder {
     font-size: 45px;
     font-weight: 200;
     margin: 0px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 #skidka .container p {
@@ -1172,7 +1171,7 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
     color: #fff;
     line-height: 35px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 #footer .tel {
@@ -1180,7 +1179,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 0px;
     margin: 0px;
     line-height: 35px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 #footer .tel .phone {
@@ -1309,7 +1308,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .popup .wight h4 {
     font-size: 25px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin-bottom: 0px;
 }
@@ -1681,7 +1680,7 @@ section#hlebniye-kroshki {
     margin: 0px;
     margin-bottom: 10px;
     line-height: 24px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center ! important;
 }
@@ -1837,7 +1836,7 @@ table.pricelist td.order .popup-zakaz:hover {
     font-size: 14px;
 }
 #ask .container > div h3 {
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin-top: 0px;
 }
@@ -1862,7 +1861,7 @@ table.pricelist td.order .popup-zakaz:hover {
     border-right: 1px solid #e1e1e1;
     text-align: center;
     font-size: 28px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgba(51, 51, 51, 0.57);
 }
@@ -2039,7 +2038,7 @@ video {
     transition: .25s ease-in-out;
 }
 .video .nav-icon2 span {
-    background: #000;
+    background: #9da2b6;
 }
 .nav-icon2 span:nth-child(even) {
     left: 50%;
@@ -2472,7 +2471,7 @@ body.models .logo-breand {
     
     #header .logo {
         margin-right: 25px;
-        width: 100px;
+        width: 140px;
     }
     #header .nav ul li a {
         font-size: 12px;
@@ -2739,8 +2738,8 @@ body.models .logo-breand {
         padding: 15px;
         width: 100%;
         display: block;
-        border-bottom: 1px solid #673b1f;
-        border-top: 1px solid #77655a;
+        border-bottom: 1px solid #9da2b6;
+        border-top: 1px solid #202132;
         margin: 0px;
     }
     #header .nav ul li:first-child a {
@@ -3039,6 +3038,7 @@ body.models .logo-breand {
     #ask .container > div p,
     #ask .container > div h3 {
         text-align: center;
+        border: 0px ! important;
     }
     #neispravnost .punkt.contact {
         text-align: center;
@@ -3052,7 +3052,7 @@ body.models .logo-breand {
         padding: 20px 0px;
     }
     #skidka .container p {
-        font-size: 32px;
+        font-size: 18px;
     }
     #text-block .container,
     #text-block .container p {
@@ -3134,6 +3134,7 @@ body.models .logo-breand {
     section .container .title {
         width: 100%;
         text-align: center;
+        padding: 0px;
     }
     #neispravnost .punkt:first-child {
         width: 100%;
@@ -3314,7 +3315,7 @@ body.models .logo-breand {
         width: 75%;
     }
     #skidka .container .h3 {
-        font-size: 38px;
+        font-size: 30px;
     }
     #neispravnost .punkt.contact > div {
         border-bottom-left-radius: 20px;
@@ -3348,7 +3349,7 @@ body.models .logo-breand {
 }
 #otzvi .otziv .h3 {
     margin-bottom: 5px;
-    font-family: 'Prata', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
@@ -3408,6 +3409,10 @@ body.models .logo-breand {
     #ask input.phone {
         width: 80%;
     }
+    section .container .title:after {
+        z-index: -9;
+        opacity: 0.3;
+    }
 }
 #modeli ul {
     display: flex;
@@ -3462,4 +3467,128 @@ div#particles-js {
     width: 100%;
     position: relative;
     box-sizing: border-box;
+}
+
+
+
+#signals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-top: 350px;
+    margin-left: -650px;
+}
+
+#signals span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    border-radius: 500px;
+    -webkit-animation: signal 1s infinite alternate ease-in-out;
+    -moz-animation: signal 1s infinite alternate ease-in-out;
+    -ms-animation: signal 1s infinite alternate ease-in-out;
+    -o-animation: signal 1s infinite alternate ease-in-out;
+    animation: signal 1s infinite alternate ease-in-out;
+}
+
+#signals span.s1, #signals span.s2, #signals span.s3, #signals span.s4, #signals span.s5, #signals span.s6 {
+    border: 2px solid #464259;
+    border-color: #464259;
+}
+
+#signals span.s1 {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -ms-animation-delay: .3s;
+    -o-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+#signals span.s2 {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -ms-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+#signals span.s3 {
+    width: 500px;
+    height: 500px;
+    margin-top: -250px;
+    margin-left: -250px;
+    -webkit-animation-delay: .9s;
+    -moz-animation-delay: .9s;
+    -ms-animation-delay: .9s;
+    -o-animation-delay: .9s;
+    animation-delay: .9s;
+}
+
+#signals span.s4 {
+    width: 700px;
+    height: 700px;
+    margin-top: -350px;
+    margin-left: -350px;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+#signals span.s5 {
+    width: 900px;
+    height: 900px;
+    margin-top: -450px;
+    margin-left: -450px;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -ms-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+#signals span.s6 {
+    width: 1100px;
+    height: 1100px;
+    margin-top: -550px;
+    margin-left: -550px;
+    -webkit-animation-delay: 1.8s;
+    -moz-animation-delay: 1.8s;
+    -ms-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+@-webkit-keyframes signal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes signal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes signal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes signal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#banner .right-text .happy-time p {
+    color: #fff;
 }
