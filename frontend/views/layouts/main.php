@@ -49,9 +49,17 @@ $js = app\components\CController::$js;
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
-
                 <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?><div id="particles-js"></div><?php endif; ?>
-
+                <?php if (in_array($siteConfig['category_id'], [4])): ?>
+                    <div id="signals">
+                        <span class="signal s1"></span>
+                        <span class="signal s2"></span>
+                        <span class="signal s3"></span>
+                        <span class="signal s4"></span>
+                        <span class="signal s5"></span>
+                        <span class="signal s6"></span>
+                    </div>
+                <?php endif; ?>
             <?php endif; ?>
             <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
@@ -317,13 +325,13 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
-                <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?>
-            <script src="/js/particles.js"></script>
-            <script src="/js/app.js"></script>
-            <script src="/js/wow.min.js"></script>
-            <script>
-                    new WOW().init();
-            </script>
+            <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?>
+                <script src="/js/particles.js"></script>
+                <script src="/js/app.js"></script>
+                <script src="/js/wow.min.js"></script>
+                <script>
+                        new WOW().init();
+                </script>
             <?php endif; ?>
     </body>
     <?php

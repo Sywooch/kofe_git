@@ -82,7 +82,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                          </g>
                         </svg>
                     </div>
-                    <p class="h2">Квалифицированные мастера </p>
+                    <p class="h2">Опытные мастера </p>
                     <p>Быстро выявляем неисправную деталь и изношенные элементы</p>
                 </div>
                 <div class="punkt">
