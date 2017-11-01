@@ -49,7 +49,7 @@ $js = app\components\CController::$js;
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
-                <?php if (in_array($siteConfig['category_id'], [2, 5])): ?><div id="particles-js"></div><?php endif; ?>
+                <?php if (in_array($siteConfig['category_id'], [2])): ?><div id="particles-js"></div><?php endif; ?>
                 <?php if (in_array($siteConfig['category_id'], [4])): ?>
                     <div id="signals">
                         <span class="signal s1"></span>
@@ -325,13 +325,17 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
-            <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?>
+            <?php if (in_array($siteConfig['category_id'], [2, 4])): ?>
                 <script src="/js/particles.js"></script>
                 <script src="/js/app.js"></script>
                 <script src="/js/wow.min.js"></script>
                 <script>
                         new WOW().init();
                 </script>
+            <?php endif; ?>
+            <?php if (in_array($siteConfig['category_id'], [5])): ?>
+                <script src="/js/particles.js"></script>
+                <script src="/js/app2.js"></script>
             <?php endif; ?>
     </body>
     <?php
