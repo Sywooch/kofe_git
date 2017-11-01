@@ -60,6 +60,7 @@ return [
                 'minify-js' => 'page/js',
                 'models' => 'list/all-models',         
                 'model-delete' => 'model/delete',
+                'order-send' => 'page/send',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],

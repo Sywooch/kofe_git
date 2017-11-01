@@ -15,6 +15,15 @@ class PageController extends CController {
 
     public $services;
 
+    public function actionSend() {
+        if (Yii::$app->request->isAjax && isset($_POST['phone']) && isset($_POST['title'])) {
+            self::sendToRoistat($_POST['phone'], $_POST['title']);
+            Yii::$app->end();
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+
     private function minifyJs($file) {
         // setup the URL, the JavaScript and the form data
         $url = 'https://javascript-minifier.com/raw';
@@ -137,7 +146,7 @@ class PageController extends CController {
         $js = Yii::getAlias('@frontend') . '/web/js/';
         file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', '');
         foreach ($jsFiles as $jsFile) {
-            if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js'){
+            if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js') {
                 $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
             }
             file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);

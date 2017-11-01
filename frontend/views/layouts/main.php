@@ -49,7 +49,7 @@ $js = app\components\CController::$js;
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
-            <?php if ($siteConfig['category_id'] == 2): ?><div id="particles-js"></div><?php endif; ?>
+                <?php if ($siteConfig['category_id'] == 2): ?><div id="particles-js"></div><?php endif; ?>
             <?php endif; ?>
             <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  
                 <img src="/uploads/images/bg-header-video.jpg"/>                
@@ -486,9 +486,16 @@ $js = app\components\CController::$js;
                     $(".<?= $siteConfig['sitePrefix']; ?>politic-close").click(function () {
                         $(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");});$(".<?= $siteConfig['sitePrefix']; ?>politica").click(function () {
                         $(".<?= $siteConfig['sitePrefix']; ?>politica-info").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");
-                    });$("body").on("click", "#bt-open", function () {
+                    });
+                    $("body").on("click", "#bt-open", function () {
                         $("#openinfo").toggleClass("<?= $siteConfig['sitePrefix']; ?>active");
                         return false;
+                    });
+                    $('body').on("keyup", ".<?= $siteConfig['sitePrefix']; ?>phone", function () {
+                        var v = $(this).val().substring(4, 6);                        
+                        if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                            $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+                        }
                     });
                 });
                 $("#show-services2").click(function () {
@@ -554,7 +561,7 @@ $js = app\components\CController::$js;
             <script src="/js/app.js"></script>
             <script src="/js/wow.min.js"></script>
             <script>
-              new WOW().init();
+                    new WOW().init();
             </script>
     </body>
     <?php
