@@ -1,5 +1,5 @@
 /*karochi*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Prata&subset=cyrillic');
 @font-face {
     font-family:'FontAwesome';
     src:url('/fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -135,7 +135,23 @@ section#photo {
     position: relative;
     overflow:hidden;
     padding-bottom: 20px;
-    background: url(/watchimages/bg.jpg);
+    background: url(/watchimages/bgs.svg);
+    background-size: 100%;
+    background-position: bottom;
+    animation-name: bgs;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bgs {
+    from {background-position: top;}
+    to {background-position: bottom;}
+}
+
+/* Standard syntax */
+@keyframes bgs {
+    from {background-position: top;}
+    to {background-position: bottom;}
 }
 .video .bg-all {
     padding-bottom: 0px;
@@ -165,14 +181,14 @@ section#photo {
 }
 .fil0 {fill:none}
 #primushestva .punkt .fil1 {
-    fill:#422046;
+    fill:#cbb097;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 #primushestva .punkt:hover .fil1 {
-    fill:#444;
+    fill:#413d4b;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -191,13 +207,10 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    color: #444;
+    color: #413d4b;
 }
 body {
-    background: url(/watchimages/contact_bg.jpg) no-repeat;
-}
-body.video {
-    background-position: 0px 470px;
+    background: #fff;
 }
 .container {
     width: 1100px;
@@ -212,7 +225,7 @@ body.video {
     height: auto;
 }
 .container a:hover {
-    color: #444;
+    color: #413d4b;
 }
 .mobile-menu {
     display: none;
@@ -221,15 +234,15 @@ div {
     box-sizing: border-box;
 }
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 700;
 }
 h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 p {
@@ -357,7 +370,7 @@ section {
     margin-top: -7.5px;
 }
 .video #header .nav ul li:after {
-    background: #fff;
+    background: #413d4b;
 }
 #header .nav ul li:last-child:after {
     display: none;
@@ -371,7 +384,7 @@ section {
     font-weight: bold;
 }
 .video #header .nav ul li a {
-    color: #fff;
+    color: #413d4b;
 }
 
 .karochi {
@@ -406,7 +419,7 @@ section {
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #444;
+    background: #413d4b;
     color: #fff;
     text-align: center;
     padding-top: 5px;
@@ -422,11 +435,11 @@ section {
     -moz-osx-font-smoothing:grayscale;
 }
 .video .tel .phone:before {
-    background: #444;
+    background: #413d4b;
 }
 span.brand-title {
     font-size: 35px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 #banner {
@@ -550,14 +563,14 @@ span.brand-title {
 }
 #banner .right-text .h1 {
     font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
-    color: #422046;
+    color: #413d4b;
 }
 #banner .full-text .h1 {
     font-size: 40px;
     font-family: 'Lobster', cursive;
-    color: #422046;
+    color: #413d4b;
 }
 #banner .right-text ul {
     padding-top: 30px;
@@ -567,7 +580,7 @@ span.brand-title {
     font-size: 15px;
     line-height: 25px;
     position: relative;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 #banner .right-text ul li:before {
@@ -595,7 +608,7 @@ input#phone {
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     max-width: 135px;
     float: left;
@@ -604,7 +617,7 @@ input#phone {
     min-height: 24px;
 }
 input.phone {
-    border: 1px solid #444;
+    border: 1px solid #413d4b;
     border-radius: 25px;
     padding: 5px 15px;
     font-size: 16px;
@@ -634,8 +647,8 @@ input#phone::-webkit-input-placeholder {
 .hero-form__btn {
     width: 180px;
     height: 50px;
-    border: 1px solid #422046;
-    background: #422046;
+    border: 1px solid #413d4b;
+    background: #413d4b;
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
@@ -648,8 +661,8 @@ input#phone::-webkit-input-placeholder {
     border: 2px solid #fff;
 }
 .hero-form__btn:hover {
-    background: #444;
-    border: 1px solid #444;
+    background: #413d4b;
+    border: 1px solid #413d4b;
 }
 #banner .right-text .happy-time {
     margin-bottom: 35px;
@@ -657,7 +670,7 @@ input#phone::-webkit-input-placeholder {
 }
 #banner .right-text .happy-time p {
     font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     color: #2f2d3b;
     margin: 0px;
@@ -691,10 +704,10 @@ input#phone::-webkit-input-placeholder {
 section .container .title {
     font-size: 28px;
     margin-bottom: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     padding-bottom: 20px;
-    color: #422046;
+    color: #413d4b;
     position: relative;
 }
 section .container .title:after {
@@ -724,7 +737,7 @@ section .container .title:after {
     margin-top: 0px;
     font-size: 22px;
     line-height: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     text-align: left;
 }
@@ -819,7 +832,7 @@ section#primushestva .container .title {
     font-size: 20px;
     margin-top: 0px;
     color: #2f2d3b;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out;
@@ -845,7 +858,7 @@ section#primushestva .container .title {
     padding: 0px 10px;
 }
 #primushestva .punkt a p {
-    color: #444;
+    color: #413d4b;
 }
 #neispravnost .container {
     padding: 20px 15px 20px 15px;
@@ -898,8 +911,8 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt a .big-text {
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
+    font-family: 'Prata', serif;
+    font-weight: 700;
     color: #2f1834;
 }
 #neispravnost .punkt a:hover .big-text {
@@ -913,7 +926,7 @@ section#neispravnost .container .title {
 #neispravnost .punkt a ul li {
     font-size: 14px;
     line-height: 22px;
-    color: #444;
+    color: #413d4b;
 }
 #neispravnost .punkt a .price {
     color: #525357;
@@ -1007,7 +1020,7 @@ section#neispravnost .container .title {
 }
 #neispravnost .punkt.contact > div div.big-text {
     font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     color: #fff;
 }
@@ -1021,7 +1034,7 @@ input#phone2 {
     border: 1px solid #fff;
     border-radius: 3px;
     padding: 7px 15px;
-    color: #444;
+    color: #413d4b;
     max-width: 134px;
     margin-bottom: 20px;
 }
@@ -1052,7 +1065,7 @@ input#phone2::-webkit-input-placeholder {
     background: #fea700;
 }
 .more a:hover {
-    background: #444;
+    background: #413d4b;
     color: #fff;
 }
 #brands .container {
@@ -1094,7 +1107,7 @@ input#phone2::-webkit-input-placeholder {
     font-size: 45px;
     font-weight: 200;
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 700;
 }
 #skidka .container p {
@@ -1139,7 +1152,7 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
 }
 #footer {
-    background: #422046;
+    background: #413d4b;
     position: relative;
     min-height: 35px;
     display: none;
@@ -1150,7 +1163,7 @@ input#phone2::-webkit-input-placeholder {
     margin: 0px;
     color: #fff;
     line-height: 35px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 #footer .tel {
@@ -1158,7 +1171,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 0px;
     margin: 0px;
     line-height: 35px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
 }
 #footer .tel .phone {
@@ -1190,7 +1203,7 @@ input#phone2::-webkit-input-placeholder {
     position: fixed;
     right: 46px;
     bottom: 50%;
-    background: #422046;
+    background: #413d4b;
     color: #fff;
     line-height: 46px;
     text-align: center;
@@ -1216,7 +1229,7 @@ input#phone2::-webkit-input-placeholder {
 .popup.regions a {
     padding: 10px 5px;
     display: block;
-    color: #444;
+    color: #413d4b;
 }
 .popup.regions .wight div.close {
     width: 40px;
@@ -1287,7 +1300,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .popup .wight h4 {
     font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     margin-bottom: 0px;
 }
@@ -1298,7 +1311,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: center;
 }
 .popup .wight div.close {
-    background-color: #422046;
+    background-color: #413d4b;
     color: white;
     border: none;
     box-shadow: none;
@@ -1358,7 +1371,7 @@ input#phone2::-webkit-input-placeholder {
 }
 .video #banner .right-text .h1,
 .video #banner .right-text p {
-    color: #fff;
+    color: #413d4b;
 }
 #modeli .container {
     text-align: center;
@@ -1374,7 +1387,7 @@ input#phone2::-webkit-input-placeholder {
     padding: 10px 0px;
     display: block;
     font-size: 12px;
-    color: #444;
+    color: #413d4b;
     padding-bottom: 15px;
 }
 #modeli .container div ul li a img {
@@ -1413,7 +1426,7 @@ input#phone2::-webkit-input-placeholder {
 }
 #hlebniye-kroshki ul li a {
     font-size: 12px;
-    color: #444;
+    color: #413d4b;
 }
 #hlebniye-kroshki ul li a:hover {
     color: #673b14;
@@ -1429,7 +1442,7 @@ input#phone2::-webkit-input-placeholder {
     text-rendering:auto;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    color: #444;
+    color: #413d4b;
     top: 50%;
     margin-top: -6px;
 }
@@ -1460,7 +1473,7 @@ input#phone2::-webkit-input-placeholder {
     margin-bottom: 5px;
 }
 #inner-modeli .container ul li a {
-    color: #444;
+    color: #413d4b;
     padding: 10px 0px;
     background: #fff;
     display: block;
@@ -1561,7 +1574,7 @@ input#phone2::-webkit-input-placeholder {
 .news-list .newss h3 {
     margin: 0px;
     padding: 10px 15px 5px;
-    color: #444;
+    color: #413d4b;
 }
 .news-list .newss:hover {
     box-shadow: 1px 1px 18px rgba(0,0,0,0.15);
@@ -1576,7 +1589,7 @@ input#phone2::-webkit-input-placeholder {
     text-align: left;
     padding: 0px 15px 10px;
     line-height: 20px;
-    color: #444;
+    color: #413d4b;
 }
 .news-list .newss .img {
     width: 100%;
@@ -1605,7 +1618,7 @@ section#hlebniye-kroshki {
 }
 .pagination li a {
     line-height: 31px;
-    color: #444;
+    color: #413d4b;
 }
 .pagination li.active a {
     color: #673b14;
@@ -1657,7 +1670,7 @@ section#hlebniye-kroshki {
     margin: 0px;
     margin-bottom: 10px;
     line-height: 24px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     text-align: center ! important;
 }
@@ -1686,12 +1699,12 @@ section#hlebniye-kroshki {
     box-sizing: border-box;
 }
 .left-bar .left-menu li a:hover {
-    color: #422046;
+    color: #413d4b;
     padding-left: 20px;
 }
 .left-bar .left-menu li.active a {
-    color: #422046;
-    border-bottom: 1px solid #422046;
+    color: #413d4b;
+    border-bottom: 1px solid #413d4b;
 }
 .left-bar .left-menu  .other {
     font-size: 12px;
@@ -1745,7 +1758,7 @@ table.pricelist td {
     padding: 8px;
     box-sizing: border-box;
     font-size: 14px;
-    color: #444;
+    color: #413d4b;
     width: 470px;
 }
 .prochi-uslugi tr {
@@ -1757,7 +1770,7 @@ table.pricelist td {
     width: 470px;
 }
 table.pricelist td a {
-    color: #444;
+    color: #413d4b;
 }
 table.pricelist td.order,
 table.pricelist td.price {
@@ -1765,14 +1778,14 @@ table.pricelist td.price {
 }
 table.pricelist td.order .popup-zakaz {
     color: #fff;
-    background: #422046;
+    background: #413d4b;
     padding: 5px 10px;
     border-radius: 3px;
     float: right;
     cursor: pointer;
 }
 table.pricelist td.order .popup-zakaz:hover {
-    background: #444;
+    background: #413d4b;
 }
 
 .popup.phone .wight div.close {
@@ -1788,7 +1801,7 @@ table.pricelist td.order .popup-zakaz:hover {
     margin-right: 10px;
 }
 .popup.phone .wight div.close:hover {
-    background: #444;
+    background: #413d4b;
 }
 .popup.phone .wight {
     padding: 0px 28px;
@@ -1813,7 +1826,7 @@ table.pricelist td.order .popup-zakaz:hover {
     font-size: 14px;
 }
 #ask .container > div h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     margin-top: 0px;
 }
@@ -1838,12 +1851,12 @@ table.pricelist td.order .popup-zakaz:hover {
     border-right: 1px solid #e1e1e1;
     text-align: center;
     font-size: 28px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 400;
     color: rgba(51, 51, 51, 0.57);
 }
 #bran .brands .row:hover div {
-    color: #422046;
+    color: #413d4b;
 }
 #bran .brands .row:hover {}
 #bran .brands .row ul {
@@ -1869,7 +1882,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
     display: block;
     font-size: 12px;
-    color: #444;
+    color: #413d4b;
     text-align: left;
 }
 #bran .brands .row ul li:hover {
@@ -1877,7 +1890,7 @@ table.pricelist td.order .popup-zakaz:hover {
     box-sizing: border-box;
 }
 #bran .brands .row ul li:hover a {
-    color: #422046;
+    color: #413d4b;
 }
 
 #banner .more {
@@ -1898,7 +1911,7 @@ table.pricelist td.order .popup-zakaz:hover {
     background: #fea700;
 }
 .more div:hover {
-    background: #444;
+    background: #413d4b;
     color: #fff;
 }
 #map {
@@ -2084,12 +2097,7 @@ video {
 }
 #ask-form {
     box-sizing: border-box;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#422047+0,1e1122+100 */
-background: rgb(66,32,71); /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, rgba(66,32,71,1) 0%, rgba(30,17,34,1) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(66,32,71,1) 0%,rgba(30,17,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, rgba(66,32,71,1) 0%,rgba(30,17,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422047', endColorstr='#1e1122',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #413d4b;
     position: relative;
 }
 #ask-form .container {
@@ -2136,8 +2144,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422047', end
     font-weight: bold;
 }
 #ask-form .container .right button:hover {
-    border: 1px solid #444;
-    background: #444;
+    border: 1px solid #413d4b;
+    background: #413d4b;
     color: #fff;
 }
 #ask-form .container .left {
@@ -2545,7 +2553,7 @@ body.models .logo-breand {
 @media screen and (min-width: 830px) {
     table.pricelist td.name a:hover {
         padding-left: 10px;
-        color: #422046;
+        color: #413d4b;
     }
 }
 @media screen and (max-width: 830px) {
@@ -3333,7 +3341,7 @@ body.models .logo-breand {
 }
 #otzvi .otziv .h3 {
     margin-bottom: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prata', serif;
     font-weight: 700;
     font-size: 18px;
 }
@@ -3405,7 +3413,7 @@ body.models .logo-breand {
     padding: 0px 10px;
 }
 .price-color {
-    color: #444;
+    color: #413d4b;
 }
 .zakrit {
     position: fixed;

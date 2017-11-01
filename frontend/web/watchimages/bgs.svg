@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 21921"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#373435;stroke-width:20}
+    .str1 {stroke:#464259;stroke-width:20}
+    .fil2 {fill:none}
+    .fil1 {fill:#3D3950}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M0 0l21000 0 0 21921 -21000 0 0 -21921z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M21000 20637l-21000 1284 0 -21921 21000 0 0 20637z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M0 0l21000 0 0 21921 -21000 0 0 -21921z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="0,0 21000,0 21000,21921 0,21921 "/>
+  <g style="clip-path:url(#id0)">
+   <g id="_2394241805168">
+    <polygon id="1" class="fil1" points="21000,20637 0,21921 0,-13351 21000,-14855 "/>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <g>
+     <g>
+      <ellipse class="fil2 str0" transform="matrix(-0.998445 0.16761 -0.150433 -1.7849 7477.12 27328.1)" rx="265" ry="123"/>
+      <path class="fil2 str1" d="M6875 18206c567,0 1026,459 1026,1026 0,566 -459,1026 -1026,1026 -566,0 -1025,-460 -1025,-1026 0,-567 459,-1026 1025,-1026z"/>
+      <path class="fil2 str1" d="M6875 17404c1010,0 1828,818 1828,1828 0,1009 -818,1827 -1828,1827 -1009,0 -1827,-818 -1827,-1827 0,-1010 818,-1828 1827,-1828z"/>
+      <path class="fil2 str1" d="M6875 16439c1543,0 2793,1250 2793,2793 0,1542 -1250,2793 -2793,2793 -1542,0 -2792,-1251 -2792,-2793 0,-1543 1250,-2793 2792,-2793z"/>
+      <path class="fil2 str1" d="M6875 15612c1999,0 3620,1621 3620,3620 0,1999 -1621,3619 -3620,3619 -1999,0 -3619,-1620 -3619,-3619 0,-1999 1620,-3620 3619,-3620z"/>
+      <path class="fil2 str1" d="M6875 14810c2442,0 4422,1980 4422,4422 0,2442 -1980,4421 -4422,4421 -2442,0 -4421,-1979 -4421,-4421 0,-2442 1979,-4422 4421,-4422z"/>
+      <path class="fil2 str1" d="M6875 14009c2885,0 5224,2338 5224,5223 0,2885 -2339,5223 -5224,5223 -2884,0 -5223,-2338 -5223,-5223 0,-2885 2339,-5223 5223,-5223z"/>
+      <path class="fil2 str1" d="M6875 12924c3484,0 6308,2824 6308,6308 0,3484 -2824,6308 -6308,6308 -3483,0 -6308,-2824 -6308,-6308 0,-3484 2825,-6308 6308,-6308z"/>
+      <path class="fil2 str1" d="M6875 11674c4174,0 7558,3384 7558,7558 0,4174 -3384,7558 -7558,7558 -4174,0 -7557,-3384 -7557,-7558 0,-4174 3383,-7558 7557,-7558z"/>
+      <path class="fil2 str1" d="M6875 10377c4891,0 8855,3964 8855,8855 0,4890 -3964,8854 -8855,8854 -4890,0 -8854,-3964 -8854,-8854 0,-4891 3964,-8855 8854,-8855z"/>
+     </g>
+    </g>
+   </g>
+   <g style="clip-path:url(#id2)">
+    <polygon class="fil2" points="21000,20637 0,21921 0,-13351 21000,-14855 "/>
+   </g>
+  </g>
+  <polygon class="fil2" points="0,0 21000,0 21000,21921 0,21921 "/>
+ </g>
+</svg>
