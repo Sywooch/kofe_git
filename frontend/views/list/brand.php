@@ -34,7 +34,7 @@ $this->title = $title;
 </section>
 <div class="clear"></div>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
-<?php if(app\components\CController::$category['id'] != 3) {echo \app\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]);} ?>
+<?php if(app\components\CController::$category['id'] != 3 && app\components\CController::$category['id'] != 4) {echo \app\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]);} ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
 <?php if (!empty($pageInfo['full_description'])): ?>
     <section id="text-block"> 
