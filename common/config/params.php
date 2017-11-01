@@ -623,7 +623,7 @@ return [
             'id' => 48,
             'sitePrefix' => 'ifixme',
             '1-line' => false,
-            'category_id' => 4,
+            'category_id' => 6,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
     ],
