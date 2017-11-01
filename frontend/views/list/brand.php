@@ -4,13 +4,18 @@ $breadcrumbs = [
     app\components\CController::$category['full_title'] . ' ' . $pageInfo['title'],
 ];
 $this->title = $title;
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="clear"></div>
 <?= \app\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="banner">
     <div class="container">
         <div class="left-img">
-            <img src="<?= $assets ?>/uploads/images/<?= !empty($model['image']) ? $model['image'] : 'coffee_machine.png' ?>" alt="">
+            <?php if ($siteConfig['category_id'] == 4): ?>
+                <img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/innerwatch.png">
+            <?php else: ?>
+                <img src="<?= $assets ?>/uploads/images/<?= !empty($model['image']) ? $model['image'] : 'coffee_machine.png' ?>" alt="">
+            <?php endif; ?>
         </div>
         <div class="right-text">
             <div class="inner-img brend-logo">
@@ -34,12 +39,14 @@ $this->title = $title;
 </section>
 <div class="clear"></div>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
-<?php if(app\components\CController::$category['id'] != 3 && app\components\CController::$category['id'] != 4) {echo \app\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]);} ?>
+<?php if (app\components\CController::$category['id'] != 3 && app\components\CController::$category['id'] != 4) {
+    echo \app\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]);
+} ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true]); ?>
-<?php if (!empty($pageInfo['full_description'])): ?>
+        <?php if (!empty($pageInfo['full_description'])): ?>
     <section id="text-block"> 
         <div class="container">
-            <?= $pageInfo['full_description']; ?>
+    <?= $pageInfo['full_description']; ?>
         </div>
         <span class="more"><div>Читать далее</div></span>
     </section>   
