@@ -2109,6 +2109,7 @@ video {
     box-sizing: border-box;
     background: #202132;
     position: relative;
+    overflow: hidden;
 }
 #ask-form .container {
     padding-top: 20px;

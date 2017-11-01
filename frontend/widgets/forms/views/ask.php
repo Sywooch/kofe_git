@@ -2,7 +2,7 @@
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section id="ask-form">
-    <?php if (in_array($siteConfig['category_id'], [5])): ?><div id="particles-js"></div><?php endif; ?>
+    <?php if (in_array($siteConfig['category_id'], [5, 4])): ?><div id="particles-js"></div><?php endif; ?>
     <div class="container">
         <div class="right">
             <?php if (!$siteConfig['mono']): ?>
