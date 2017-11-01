@@ -50,7 +50,7 @@ $js = app\components\CController::$js;
         <?php if ($isHome): ?>
             <div class="bg-all">
 
-                <?php if (in_array($siteConfig['category_id'], [2])): ?><div id="particles-js"></div><?php endif; ?>
+                <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?><div id="particles-js"></div><?php endif; ?>
 
             <?php endif; ?>
             <?php if ($isHome && isset($siteConfig['spb-multi'])): ?>  
@@ -317,7 +317,7 @@ $js = app\components\CController::$js;
                     }
                 </style>
             <?php endif; ?>
-                <?php if (in_array($siteConfig['category_id'], [2])): ?>
+                <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?>
             <script src="/js/particles.js"></script>
             <script src="/js/app.js"></script>
             <script src="/js/wow.min.js"></script>
