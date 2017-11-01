@@ -49,7 +49,7 @@ $js = app\components\CController::$js;
         <?php $this->beginBody() ?>
         <?php if ($isHome): ?>
             <div class="bg-all">
-                <?php if (in_array($siteConfig['category_id'], [2, 4, 5])): ?><div id="particles-js"></div><?php endif; ?>
+                <?php if (in_array($siteConfig['category_id'], [2, 5])): ?><div id="particles-js"></div><?php endif; ?>
                 <?php if (in_array($siteConfig['category_id'], [4])): ?>
                     <div id="signals">
                         <span class="signal s1"></span>
