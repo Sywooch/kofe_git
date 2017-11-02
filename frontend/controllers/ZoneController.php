@@ -11,7 +11,7 @@ use SimpleXMLElement;
 /**
  * Site controller
  */
-class ZonaController extends CController {
+class ZoneController extends CController {
 
     public function actionView() {
         //throw new NotFoundHttpException('The requested page does not exist.');
