@@ -95,7 +95,7 @@ class Pages extends \yii\db\ActiveRecord {
             $uploadedFile = UploadedFile::getInstance($this, 'image');
             $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
             
-            if ($uploadedFile->tempName !== null) {
+            if (isset($uploadedFile->tempName) && $uploadedFile->tempName !== null) {
                 if (!empty($this->image) && file_exists($path . $this->image))
                     unlink($path . $this->image);
                 $this->image = $uploadedFile;
