@@ -248,7 +248,7 @@ $js = app\components\CController::$js;
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
             <?php $this->endBody() ?>    
-            <?= !empty($js['content']) ? \app\components\CController::replaceJS($js['content']) : ''; ?>
+            <?= !empty($js['content']) ? $js['content'] : ''; ?>
             <script type="text/javascript">
                 $(document).ready(function () {
                     $(".<?= $siteConfig['sitePrefix']; ?>politic-close").click(function () {
