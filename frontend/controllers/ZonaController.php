@@ -27,7 +27,7 @@ class ZonaController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $q = 'SELECT id, title, url FROM {{%pages}} WHERE parent = ' . (int) $pageInfo['id'];
+        $q = 'SELECT id, title, url FROM {{%pages}} WHERE parent = ' . (int) $pageInfo['id'] . ' and type = \'zone2\'';
         $childs = Yii::$app->db->createCommand($q)->queryAll();
         return $this->render('view', ['model' => $pageInfo, 'childs' => $childs]);
     }
