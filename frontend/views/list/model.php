@@ -13,7 +13,7 @@ if (!empty($pageInfo['image'])) {
 }
 $breadcrumbs = [
     '/' . $brand['url'] => app\components\CController::$category['full_title'] . ' ' . $brand['title'],
-    in_array($siteConfig['category_id'], [1]) ? 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] : $pageInfo['title'],
+    in_array($siteConfig['category_id'], [1, 2, 3, 4, 5]) ? 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] : $pageInfo['title'],
 ];
 $this->title = $title;
 $siteConfig = app\components\CController::getSiteConfig();
