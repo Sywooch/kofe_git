@@ -23,8 +23,7 @@ $breadcrumbs = [
             </ul>
         </div>
     </div>
-    <div class="clear"></div>
-    <span class="more"><div>Заказать ремонт</div></span>
+    <div class="clear"></div>    
 </section>
 <?= \app\widgets\lists\Price::widget(['half' => true]); ?>
 <?php if (!$siteConfig['mono']): ?>
