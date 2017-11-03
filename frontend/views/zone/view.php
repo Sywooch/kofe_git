@@ -17,7 +17,7 @@ $breadcrumbs = [
             <ul class="">
                 <?php foreach ($childs as $child): ?>
                     <li>
-                        <a href="/<?= $child['url']; ?>"><?= $child['url']; ?></a>
+                        <a href="/<?= $child['url']; ?>"><?= $child['title']; ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -26,7 +26,7 @@ $breadcrumbs = [
     <div class="clear"></div>
     <span class="more"><div>Заказать ремонт</div></span>
 </section>
-<?= \app\widgets\other\Advantage::widget(); ?>
+<?= \app\widgets\lists\Price::widget(['half' => true]); ?>
 <?php if (!$siteConfig['mono']): ?>
     <section id="ask">
         <div class="container">
