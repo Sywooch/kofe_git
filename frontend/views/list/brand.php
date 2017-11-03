@@ -12,7 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="container">
         <div class="left-img">
             <?php if ($siteConfig['category_id'] == 4): ?>
-                <img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/innerwatch.png">
+                <img src="<?= $assets ?>/uploads/images/<?= $pageInfo['image']; ?>">
             <?php else: ?>
                 <img src="<?= $assets ?>/uploads/images/<?= !empty($model['image']) ? $model['image'] : 'coffee_machine.png' ?>" alt="">
             <?php endif; ?>
