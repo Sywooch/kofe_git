@@ -18,6 +18,11 @@ class CController extends \yii\web\Controller {
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
         $siteConfig = self::getSiteConfig();
+        if (empty(self::$category)) {
+            $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
+            self::$category = \Yii::$app->db->createCommand($sql)->queryOne();
+        }
+        
 
         $userIP = Yii::$app->getRequest()->getUserIP();
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
