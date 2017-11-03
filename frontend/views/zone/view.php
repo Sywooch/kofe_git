@@ -17,7 +17,10 @@ $breadcrumbs = [
             <ul class="">
                 <?php foreach ($childs as $child): ?>
                     <li>
-                        <a href="/<?= $child['url']; ?>"><?= $child['title']; ?></a>
+                        <a href="/<?= $child['url']; ?>"><?php 
+                        $t = explode(' - ', $child['title']);
+                        echo $t[0];
+                        ?></a>
                     </li>
                 <?php endforeach; ?>
             </ul>
