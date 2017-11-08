@@ -125,7 +125,7 @@ class ListController extends CController {
                             ->limit(1)
                             ->one();
                     if (!empty($text) && !empty($text['meta_text1'])) {
-                        $seoText = str_replace(self::$monoBrand['title'], $page['title'], $text['meta_text1']);
+                        $seoText = str_ireplace(self::$monoBrand['title'], $page['title'], $text['meta_text1']);
                     }
                 }
             } else {
