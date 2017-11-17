@@ -25,8 +25,10 @@ class MainUrlRule extends UrlRule {
 
     public function parseRequest($manager, $request) {
         $siteConfig = self::getSiteConfig();
-        $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
-        CController::$category = \Yii::$app->db->createCommand($sql)->queryOne();
+        if (!isset($siteConfig['multi_category'])) {
+            $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
+            CController::$category = \Yii::$app->db->createCommand($sql)->queryOne();
+        }
         $pathInfo = strtolower($request->getPathInfo());
         $arrayUrl = explode('/', $pathInfo);
         if ($siteConfig['mono']) {
@@ -57,10 +59,24 @@ class MainUrlRule extends UrlRule {
 
     protected function checkToService($url) {
         $siteConfig = self::getSiteConfig();
-
+        $category_id = CController::$category['id'];
+        if (isset($siteConfig['multi_category']) && !empty($url)) {
+            $category_url = explode('-', $url);            
+            if (isset($category_url[1]))
+                $category_url = $category_url[0] . '-' . $category_url[1];
+            else
+                return false;
+            $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
+            $category = Yii::$app->db->createCommand($sql)->bindValues(['url' => $category_url])->queryOne();
+            if (!empty($category)) {
+                CController::$category = $category;
+                $category_id = $category['id'];
+                $url = str_replace($category_url . '-', '', $url);
+            }
+        }
         $sql = 'select * from {{%services}} where lower(url) =:url and category_id =:category_id limit 1';
-        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url, 'category_id' => CController::$category['id']])->queryOne();
-        
+        $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url, 'category_id' => $category_id])->queryOne();
+
         if (!empty($page)) {
             $seo = (new \yii\db\Query())
                     ->select(['*'])
@@ -72,9 +88,10 @@ class MainUrlRule extends UrlRule {
                 $page['meta_key'] = $seo['meta_keywords'] ?: $page['meta_keywords'];
                 $page['meta_desc'] = $seo['meta_description'] ?: $page['meta_description'];
                 $page['meta_title'] = $seo['meta_title'] ?: $page['meta_title'];
-                $page['meta_h1'] = !empty($seo['meta_h1']) ? $seo['meta_h1'] : $page['meta_h1'];
+                $page['meta_h1'] = !empty($seo['meta_h1']) ? $seo['meta_h1'] : isset($page['meta_h1']) ? $page['meta_h1'] : '';
                 $page['description'] = $seo['meta_text1'] ?: $page['description'];
-                //$page['full_description'] = $seo['meta_text2'] ?: $page['full_description'];
+                if (isset($siteConfig['multi_category']))
+                    $page['full_description'] = $seo['meta_text2'] ?: $page['full_description'];
             }
         }
 

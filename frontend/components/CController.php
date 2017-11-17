@@ -18,15 +18,23 @@ class CController extends \yii\web\Controller {
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
         $siteConfig = self::getSiteConfig();
-        if (empty(self::$category)) {
+        if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
+            Yii::$app->view->theme = new \yii\base\Theme([
+                'pathMap' => [
+                    '@app/views' => '@app/themes/' . $siteConfig['theme'],
+                ],
+            ]);
+            Yii::setAlias('@' . $siteConfig['theme'], dirname(__DIR__) . '/themes/' . $siteConfig['theme']);
+        }
+        if (isset($siteConfig['multi_category'])) {
+            self::$menu = $this->getMenu();
+        }
+        if (empty(self::$category) && !isset($siteConfig['multi_category'])) {
             $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
             self::$category = \Yii::$app->db->createCommand($sql)->queryOne();
         }
-        
-
         $userIP = Yii::$app->getRequest()->getUserIP();
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
-
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
@@ -62,7 +70,27 @@ class CController extends \yii\web\Controller {
         return parent::beforeAction($event);
     }
 
-    function mb_ucfirst($string, $encoding) {
+    private function getMenu() {
+        $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE (type = \'category\' or type = \'model\') and show_in_menu = 1 AND active = 1 ORDER BY sort';
+        $rows = \Yii::$app->db->createCommand($q)->queryAll();        
+        return $this->buildTree($rows);
+    }
+
+    private function buildTree(array $elements, $parentId = 0) {
+        $branch = [];
+        foreach ($elements as $element) {
+            if ($element['parent'] == $parentId) {
+                $children = $this->buildTree($elements, $element['id']);
+                if ($children) {
+                    $element['children'] = $children;
+                }
+                $branch[] = $element;
+            }
+        }
+        return $branch;
+    }
+
+    public function mb_ucfirst($string, $encoding) {
         $strlen = mb_strlen($string, $encoding);
         $firstChar = mb_substr($string, 0, 1, $encoding);
         $then = mb_substr($string, 1, $strlen - 1, $encoding);

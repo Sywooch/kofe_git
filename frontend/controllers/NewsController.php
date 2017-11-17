@@ -22,7 +22,7 @@ class NewsController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $where = ['active' => 1, 'type' => 'articles'];
+        $where = ['active' => 1, 'type' => 'news'];
         $order = 'date DESC';
 
         $query = \frontend\models\Pages::find();
