@@ -175,12 +175,12 @@ class PageController extends CController {
     public function actionSitemap2() {
 
         $siteConfig = self::getSiteConfig();
+        set_time_limit(0);
+        ini_set("memory_limit", '2048M');
+        ini_set("display_errors", false);
+        error_reporting(false);
 
         if ($siteConfig['mono']) {
-            set_time_limit(0);
-            ini_set("memory_limit", '1024M');
-            ini_set("display_errors", false);
-            error_reporting(false);
             $hostname = Yii::$app->request->hostInfo;
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND url != \'/\' AND category_id = ' . $siteConfig['category_id'] . ' AND (parent = ' . self::$monoBrand['id'] . ' OR site_id = ' . $siteConfig['id'] . ')';
@@ -232,9 +232,11 @@ class PageController extends CController {
                 }
             }
         }
+        unset($pages);
         foreach ($services as $service) {
             $urls[] = $service['url'];
         }
+        unset($services);
         $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
         for ($b = 1; $b <= $numPages; $b++) {
             $xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
