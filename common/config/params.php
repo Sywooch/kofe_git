@@ -555,7 +555,7 @@ return [
         //'change-logo' => true,
         ],
         'repair-mobiles' => [
-            'phone-1' => '8 (495) 181-00-07',
+            'phone-1' => '8 (495) 432-00-03',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
@@ -567,7 +567,7 @@ return [
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'repair-laptops' => [
-            'phone-1' => '8 (495) 181-00-07',
+            'phone-1' => '8 (495) 152-80-00',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
@@ -579,7 +579,7 @@ return [
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'repair-watch' => [
-            'phone-1' => '8 (495) 181-00-07',
+            'phone-1' => '8 (495) 256-00-80',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
@@ -591,7 +591,7 @@ return [
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'tablets-repair' => [
-            'phone-1' => '8 (495) 181-00-07',
+            'phone-1' => '8 (495) 432-00-20',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
@@ -603,7 +603,7 @@ return [
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'repair-cameras' => [
-            'phone-1' => '8 (495) 181-00-07',
+            'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (812) 701-00-02',            
             'stickyMenu' => false,
             'change-logo' => true,
@@ -623,8 +623,10 @@ return [
             'id' => 48,
             'sitePrefix' => 'ifixme',
             '1-line' => false,
-            'category_id' => 6,
+            'category_id' => 0,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
+            'theme' => 'ifixme',
+            'multi_category' => true
         ],
     ],
 ];
