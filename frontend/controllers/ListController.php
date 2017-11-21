@@ -132,6 +132,20 @@ class ListController extends CController {
                     $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ' ' . $page['title'] . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' - быстро, качественно с гарантией.</p>';
                 }
+                if ($page['type'] == 'model') {
+                    $brandId = $page['parent'];
+                    $sql = 'select model_text from {{%unique_text}} where brand_id = ' . $brandId . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
+                    $uniqueText = \Yii::$app->db->createCommand($sql)->queryOne();
+                    if (!empty($uniqueText))
+                        $seoText = str_replace(['#brand_en#', '#model_en#'], [$page['title']], $uniqueText['model_text']);
+                } elseif ($page['type'] == 'brand') {
+                    $brandId = $page['id'];
+                    $sql = 'select barnd_text from {{%unique_text}} where brand_id = ' . $brandId . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
+                    $uniqueText = \Yii::$app->db->createCommand($sql)->queryOne();
+                    if (!empty($uniqueText))
+                        $seoText = str_replace(['#brand_en#'], [$page['title']], $uniqueText['barnd_text']);
+                }
+
                 if ($siteConfig['mono']) {
                     $text = (new \yii\db\Query())
                             ->select(['*'])
