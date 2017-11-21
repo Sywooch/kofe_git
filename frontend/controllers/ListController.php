@@ -309,6 +309,22 @@ class ListController extends CController {
                 'title' => 'Ремонт телефонов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
                 'meta_description' => 'Ремонт сотового телефона ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
             ],
+            2 => [
+                'title' => 'Ремонт планшетов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
+                'meta_description' => 'Ремонт планшета ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
+            ],
+            3 => [
+                'title' => 'Ремонт ноутбуков ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
+                'meta_description' => 'Ремонт ноутбука ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
+            ],
+            4 => [
+                'title' => 'Ремонт часов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
+                'meta_description' => 'Ремонт часов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
+            ],
+            5 => [
+                'title' => 'Ремонт фотоаппаратов ' . $brand['title'] . ' ' . $pageInfo['title'] . ' ➤ в ' . $regionTitle . ' с гарантией',
+                'meta_description' => 'Ремонт фотоаппарата ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, бесплатная курьерская служба, гарантия на выполненные работы, лучшие цены.'
+            ],
             7 => [
                 'title' => 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера',
                 'meta_description' => $pageInfo['meta_desc'] ?: 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в сервис центре, выезд мастера по ' . Yii::$app->session['region']['titleRod'] . ', гарантия на выполненные работы, низкая цена.'

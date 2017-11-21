@@ -52,6 +52,14 @@ class SiteController extends Controller {
             ],
         ];
     }
+    
+    public static function getSiteConfig() {
+        $host = Yii::$app->request->hostInfo;
+        $hostArr = explode('.', $host);
+        $ad = '.' . end($hostArr);
+        $host = str_replace([$ad, 'http://', 'https://', 'admin.'], '', $host);
+        return Yii::$app->params['siteConfigs'][$host];
+    }
 
     public function actionUrl() {
         $uploadedFile = UploadedFile::getInstanceByName('upload');
