@@ -180,7 +180,7 @@ class ListController extends CController {
                     } else {
                         //if (isset(CController::$category['3_title']))
                         $title = $pageInfo['title'] . ' - в Москве! Качественно, с гарантией до 1 года!';
-                        $metaDesc = $pageInfo['title'] . 'в сервисном центре ' . $_SERVER['HTTP_HOST'] . '. Качественный сервис по лучшим ценам в Москве!"';
+                        $metaDesc = $pageInfo['title'] . 'в сервисном центре "' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '". Качественный сервис по лучшим ценам в Москве!"';
                     }
                     if (isset(CController::$category['3_title']))
                         $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' - быстро, качественно с гарантией.</p>';
