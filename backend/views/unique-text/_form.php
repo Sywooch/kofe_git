@@ -11,11 +11,14 @@ $config = backend\controllers\SiteController::getSiteConfig();
 /* @var $this yii\web\View */
 /* @var $model app\models\UniqueText */
 /* @var $form yii\widgets\ActiveForm */
+$model->site_id = $config['id'];
 ?>
 
 <div class="unique-text-form">
 
     <?php $form = ActiveForm::begin(); ?>
+    
+    <?= $form->field($model, 'site_id')->hiddenInput() ?>
     
     <?=
     $form->field($model, 'service_id')->widget(Select2::classname(), [

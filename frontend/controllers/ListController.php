@@ -134,13 +134,13 @@ class ListController extends CController {
                 }
                 if ($page['type'] == 'model') {
                     $brandId = $page['parent'];
-                    $sql = 'select model_text from {{%unique_text}} where brand_id = ' . $brandId . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
+                    $sql = 'select model_text from {{%unique_text}} where site_id = ' . $siteConfig['id'] . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
                     $uniqueText = \Yii::$app->db->createCommand($sql)->queryOne();
                     if (!empty($uniqueText))
                         $seoText = str_replace(['#brand_en#', '#model_en#'], [$page['title']], $uniqueText['model_text']);
                 } elseif ($page['type'] == 'brand') {
                     $brandId = $page['id'];
-                    $sql = 'select barnd_text from {{%unique_text}} where brand_id = ' . $brandId . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
+                    $sql = 'select barnd_text from {{%unique_text}} where site_id = ' . $siteConfig['id'] . ' and service_id = ' . $pageInfo['id'] . ' limit 1';
                     $uniqueText = \Yii::$app->db->createCommand($sql)->queryOne();
                     if (!empty($uniqueText))
                         $seoText = str_replace(['#brand_en#'], [$page['title']], $uniqueText['barnd_text']);

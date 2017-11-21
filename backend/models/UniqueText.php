@@ -29,7 +29,7 @@ class UniqueText extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['brand_id', 'barnd_text', 'model_text', 'service_id'], 'required'],
+            [['brand_id', 'barnd_text', 'model_text', 'service_id', 'site_id'], 'required'],
             [['brand_id', 'service_id'], 'integer'],
             [['barnd_text', 'model_text'], 'string', 'max' => 5000],
         ];
