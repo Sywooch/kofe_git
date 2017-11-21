@@ -178,9 +178,9 @@ class ListController extends CController {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - срочный ремонт в ' . Yii::$app->session['region']['titleRod'];
                         $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - быстро, качественно с гарантией по самой низкой цене в Москве.';
                     } else {
-                        if (isset(CController::$category['3_title']))
-                            $title = $pageInfo['title'] . ' ' . CController::$category['3_title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';                        
-                        $metaDesc = $pageInfo['title'] . ' в Москве! Качественно, с гарантией до 1 года!';
+                        //if (isset(CController::$category['3_title']))
+                        $title = $pageInfo['title'] . ' - в Москве! Качественно, с гарантией до 1 года!';
+                        $metaDesc = $pageInfo['title'] . 'в сервисном центре ' . $_SERVER['HTTP_HOST'] . '. Качественный сервис по лучшим ценам в Москве!"';
                     }
                     if (isset(CController::$category['3_title']))
                         $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' - быстро, качественно с гарантией.</p>';
@@ -295,7 +295,7 @@ class ListController extends CController {
             $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by id limit 1';
             $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $pageInfo['id']])->queryOne();
         }
-        
+
         return $this->render('brand', ['pageInfo' => $pageInfo, 'model' => $model, 'title' => $title]);
     }
 
