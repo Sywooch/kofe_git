@@ -1,5 +1,6 @@
 <?php 
 $assets = Yii::getAlias('@web');
+$this->title = $page['meta_title'];
 ?>
 <section id="number-4">
     <div class="container">

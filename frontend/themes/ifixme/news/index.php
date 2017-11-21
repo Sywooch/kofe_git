@@ -2,6 +2,7 @@
 $breadcrumbs = [
     $model['title'],
 ];
+$this->title = $model['meta_title'];
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-20">

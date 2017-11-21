@@ -3,6 +3,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $lastId = 0;
+$this->title = $pageInfo['meta_title'];
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-19">

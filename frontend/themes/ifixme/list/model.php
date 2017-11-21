@@ -3,6 +3,7 @@ $breadcrumbs = [
     '/' . $brand['url'] => $brand['full_title'],
     $pageInfo['title'],
 ];
+$this->title = $pageInfo['meta_title'];
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(/ifixme/images/upload/banner.png);">
