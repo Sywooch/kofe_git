@@ -42,6 +42,8 @@ AppAsset::register($this);
                     ['label' => 'Заказы', 'url' => ['/orders/index']],
                     ['label' => 'Страницы', 'url' => ['/page/index']],
                     ['label' => 'Услуги', 'url' => ['/services/index']],
+                    ['label' => 'Отзывы', 'url' => ['/reviews/index']],
+                    ['label' => 'Текст', 'url' => ['/unique-text/index']],
                     ['label' => 'Привязка услуг', 'url' => ['/services/linking']],
                     ['label' => 'Ява скрипты', 'url' => ['/services/js']],
             ];
