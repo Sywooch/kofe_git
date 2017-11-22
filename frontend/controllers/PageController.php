@@ -214,6 +214,11 @@ class PageController extends CController {
         }
 
         $path = Yii::getAlias('@frontend') . '/web/uploads/';
+        if (is_file($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml')) {
+            header('content-type:text/xml');
+            echo file_get_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml');
+            exit;
+        }           
         $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND category_id = ' . $siteConfig['category_id'] . ' AND url != \'/\' ORDER BY id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
         $sql = 'SELECT url, type, id FROM {{%services}}';
@@ -257,8 +262,13 @@ class PageController extends CController {
             $sitemap->addChild('loc', $L);
             $sitemap->addChild('lastmod', date("Y-m-d", time()));
         }
+        if (!file_exists($path . '/' . $siteConfig['sitePrefix'])) {
+            mkdir($path . '/' . $siteConfig['sitePrefix'], 0777, true);
+        }
+        $xml = $xmlIndex->asXML();
+        file_put_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml', $xml);
         header('content-type:text/xml');
-        echo $xmlIndex->asXML();
+        echo $xml;
         exit;
     }
 
