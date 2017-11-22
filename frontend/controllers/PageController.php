@@ -259,7 +259,7 @@ class PageController extends CController {
                     break;
                 }
             }
-            file_put_contents($path . 'sitemap' . $b . '.xml.gz', gzencode($xml->asXML(), 9));
+            file_put_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap' . $b . '.xml.gz', gzencode($xml->asXML(), 9));
             $L = $hostname . '/uploads/' . $siteConfig['sitePrefix'] . '/sitemap' . $b . '.xml.gz';
             $sitemap = $xmlIndex->addChild('sitemap');
             $sitemap->addChild('loc', $L);
