@@ -221,7 +221,7 @@ class PageController extends CController {
             header('content-type:text/xml');
             echo file_get_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml');
             exit;
-        }           
+        }
         $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND category_id = ' . $siteConfig['category_id'] . ' AND url != \'/\' ORDER BY id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
         $sql = 'SELECT url, type, id FROM {{%services}}';
@@ -247,6 +247,9 @@ class PageController extends CController {
         unset($services);
         $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
         for ($b = 1; $b <= $numPages; $b++) {
+            if (is_file($path . '/' . $siteConfig['sitePrefix'] . '/sitemap' . $b . '.xml.gz')) {
+                continue;
+            }
             $xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             foreach ($urls as $key => $siteUrl) {
                 $url = $xml->addChild('url');
@@ -265,7 +268,7 @@ class PageController extends CController {
             $sitemap->addChild('loc', $L);
             $sitemap->addChild('lastmod', date("Y-m-d", time()));
         }
-        
+
         $xml = $xmlIndex->asXML();
         file_put_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml', $xml);
         header('content-type:text/xml');
