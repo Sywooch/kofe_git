@@ -214,6 +214,9 @@ class PageController extends CController {
         }
 
         $path = Yii::getAlias('@frontend') . '/web/uploads/';
+        if (!file_exists($path . '/' . $siteConfig['sitePrefix'])) {
+            mkdir($path . '/' . $siteConfig['sitePrefix'], 0777, true);
+        }
         if (is_file($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml')) {
             header('content-type:text/xml');
             echo file_get_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml');
@@ -257,14 +260,12 @@ class PageController extends CController {
                 }
             }
             file_put_contents($path . 'sitemap' . $b . '.xml.gz', gzencode($xml->asXML(), 9));
-            $L = $hostname . '/uploads/sitemap' . $b . '.xml.gz';
+            $L = $hostname . '/uploads/' . $siteConfig['sitePrefix'] . '/sitemap' . $b . '.xml.gz';
             $sitemap = $xmlIndex->addChild('sitemap');
             $sitemap->addChild('loc', $L);
             $sitemap->addChild('lastmod', date("Y-m-d", time()));
         }
-        if (!file_exists($path . '/' . $siteConfig['sitePrefix'])) {
-            mkdir($path . '/' . $siteConfig['sitePrefix'], 0777, true);
-        }
+        
         $xml = $xmlIndex->asXML();
         file_put_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml', $xml);
         header('content-type:text/xml');
