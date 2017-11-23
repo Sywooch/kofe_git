@@ -19,8 +19,8 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="clear">&nbsp;</div>
             <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?>
                 <div class="msk-contact all-contact active">
-                    <h2>Наш адрес в Москве</h2>
-                    <?php if ($siteConfig['id'] != 3): ?>
+                    <h2>Наши адреса в Москве</h2>
+                    <?php if ($siteConfig['id'] != 3 && 3 == 1): ?>
                         <p>                        
                             Номер телефона: <span class="moskva"><?= Yii::$app->session['region']['phone']; ?></span><br />
                             Работаем без выходных с 08:00 до 22:00<br />
