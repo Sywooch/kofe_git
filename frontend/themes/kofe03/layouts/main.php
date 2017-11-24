@@ -573,13 +573,15 @@ $js = app\components\CController::$js;
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-3.1.1.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.validate.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.maskedinput.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/swiper.jquery.min.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.cookie.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/plugins.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/sly.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/swiper.jquery.min.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js?v=1"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';

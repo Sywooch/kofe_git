@@ -413,6 +413,10 @@ class ListController extends CController {
             $metaDesc = $categorySEO[self::$category['id']]['meta_description'];
             $title = $categorySEO[self::$category['id']]['title'];
         }
+        if ($siteConfig['theme'] == 'ifixme') {
+            $title = 'Устранение неисправностей ' . $pageInfo['title'] . ' - Срочный ремонт в Москве!';
+            $metaDesc = 'Сервисный центр iFixMe выполняет ремонт ' . $pageInfo['title'] . ' по самым лучшим ценам и с гарантией качества! Проводим весь спектр услуг! Имеется курьерская служба.';
+        }
         \Yii::$app->view->registerMetaTag([
             'name' => 'keywords',
             'content' => $pageInfo['meta_key']
@@ -421,7 +425,7 @@ class ListController extends CController {
             'name' => 'description',
             'content' => $metaDesc
         ]);
-
+        
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         return $this->render('model', [

@@ -1,6 +1,6 @@
 <?php
 
-namespace remont_coffee\widgets\forms;
+namespace kofe03\widgets\forms;
 
 use Yii;
 use yii\base\Widget;
@@ -9,11 +9,12 @@ use app\components\CController;
 class MainPageForm extends Widget {
 
     public function run() {
+        
         $model = new \frontend\models\AskForm();
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
-        }
+        }        
         return $this->render('mainPageForm', ['model' => $model]);
     }
 
