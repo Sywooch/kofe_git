@@ -424,7 +424,12 @@ class ListController extends CController {
 
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
-        return $this->render('model', ['pageInfo' => $pageInfo, 'brand' => $brand, 'title' => $title, 'seoText' => $categorySEO[$pageInfo['parent']]]);
+        return $this->render('model', [
+                    'pageInfo' => $pageInfo,
+                    'brand' => $brand,
+                    'title' => $title,
+                    'seoText' => isset($categorySEO[$pageInfo['parent']]) ? $categorySEO[$pageInfo['parent']] : ['text1' => '', 'text2' => '']
+        ]);
     }
 
 }
