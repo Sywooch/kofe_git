@@ -628,5 +628,31 @@ return [
             'theme' => 'ifixme',
             'multi_category' => true
         ],
+        'remont' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 49,
+            'sitePrefix' => 'remont_coffee',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'remont_coffee',
+            'order-title' => 'МСК Заречная',
+            //'multi_category' => true
+        ],
+        'kofe03' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 49,
+            'sitePrefix' => 'kofe03',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'kofe03',
+            'order-title' => 'МСК Заречная',
+            //'multi_category' => true
+        ],
     ],
 ];

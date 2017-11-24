@@ -9,7 +9,7 @@ $this->title = $pageInfo['meta_title'];
 <section id="number-5" style="background-image: url(/ifixme/images/upload/banner.png);">
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
-        <?= $pageInfo['description']; ?>        
+        <?= !empty($pageInfo['description']) ? $pageInfo['description'] : (!empty($seoText['text1']) ? $seoText['text1'] : '') ; ?>        
         <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
         <div class="clear"></div>
     </div>
@@ -26,7 +26,7 @@ $this->title = $pageInfo['meta_title'];
 </section>
 <section id="number-15" class="active">
     <div class="container">
-        <?= $pageInfo['full_description']; ?>
+        <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : (!empty($seoText['text2']) ? $seoText['text2'] : '') ; ?>
     </div>
     <div class="bottom-btn">
         <span>Развернуть описание</span>
