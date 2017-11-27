@@ -1,0 +1,538 @@
+section.promo.about_promo.school h1 {
+    text-align: center!important;
+    font-size: 65px;
+    line-height: 60px;
+    color: #fff;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    margin-bottom: 20px;
+}
+
+section.promo.about_promo.school {
+    text-align: center!important;
+}
+
+
+section.promo.about_promo.school .header_buttons {
+    width: 320px;
+    position: relative;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+section.promo.about_promo.school .header_buttons .green_button {
+    float: left;
+    width: 129px;
+    height: 40px;
+    text-align: center;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    color: #fff;
+    line-height: 38px;
+    background: url("../img/school_new/button_add.png") no-repeat top center;
+    margin-right: 5px;
+}
+
+section.promo.about_promo.school .header_buttons .green_button:hover {
+    opacity: 0.9;
+}
+
+section.promo.about_promo.school .header_buttons .white_button {
+    float: left;
+    width: 175px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    color: #fff;
+    line-height: 38px;
+    border-radius: 4px;
+}
+
+section.promo.about_promo.school .header_buttons .white_button:hover {
+    opacity: 0.9;
+}
+
+.section-inner h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+section.school-top {
+    height: 640px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    background: url("../img/school_new/school-line.jpg") no-repeat center 291px #fff;
+}
+
+section.school-top .section-inner {
+    padding-left: 78px;
+    padding-right: 78px;
+
+}
+
+section.school-top .top-header {
+    height: 140px;
+    padding-top: 48px;
+}
+
+section.school-top .top-header h3 {
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+}
+
+section.school-top .top-header .click_block {
+    display: inline-block;
+    color: #4084c4;
+    cursor: pointer;
+}
+
+section.school-top .top-header .click_block.active {
+    color: rgb(255, 181, 0);
+    border: 3px solid rgb(255, 181, 0);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+
+section.school-top .top-body {
+    height: 500px;
+    padding-top: 43px;
+}
+
+section.school-top .top-body-col-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section.school-top .top-body-col-title {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+<!-- -->
+
+section.school-tab1 {
+    height: 610px;
+    width: 100%;
+    background-color: #fff;
+}
+
+section.school-tab1 #tab-1-1 {
+    background: url("../img/school_new/school-tab1-1.jpg") no-repeat;
+    height: 570px;
+}
+
+section.school-tab1 #tab-1-2 {
+    background: url("../img/school_new/school-tab1-2.jpg") no-repeat;
+    height: 570px;
+}
+
+
+section.school-tab1 .section-inner {
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-top: 50px;
+}
+
+section.school-tab1 .section-inner .tab-inner-button {
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+section.school-tab1 h3 {
+    color: #fff;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+section.school-tab1 .school-tab1-inner-body {
+    padding-right: 60px;
+    display: inline-block;
+}
+
+section.school-tab1 .school-tab1-inner-body img {
+    float: left;
+    margin-right: 25px;
+}
+
+section.school-tab1 .school-tab1-inner-body p {
+    color: #fff;
+    font-family: "Proxima Nova-regular", "Open Sans";
+    font-size: 18px;
+}
+
+section.school-tab1 .school-tab1-inner-body ul {
+    list-style-image: url("../img/icons/list-square.jpg");
+    padding-left: 20px;
+}
+
+section.school-tab1 .school-tab1-inner-body ul li {
+    color: #fff;
+    font-family: "Proxima Nova-regular", "Open Sans";
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+<!-- -->
+
+section.school-schema {
+    height: 950px;
+    width: 100%;
+    background-color: #4c5052;
+    background: url("../img/school_new/school-schema.png") no-repeat center 240px rgb(76, 80, 82);
+    position: relative;
+}
+
+section.school-schema .section-inner {
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-top: 100px;
+}
+
+section.school-schema h3 {
+    color: #ffffff;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+    line-height: 50px;
+}
+
+section.school-schema .list-item {
+    position: absolute;
+    font-family: "Proxima Nova-regular", "Open Sans";
+    color: #e9e9e9;
+    font-size: 16px;
+    line-height: 24px;
+
+    top:100px;
+    left: 100px;
+}
+
+section.school-schema .list-item.item-1 {
+    width: 165px;
+
+    left: 280px;
+    top: 340px;
+}
+section.school-schema .list-item.item-2 {
+    width: 145px;
+
+    top: 340px;
+    left: 820px;
+}
+section.school-schema .list-item.item-3 {
+    width: 200px;
+
+    top: 560px;
+    left: 610px;
+}
+section.school-schema .list-item.item-4 {
+    width: 200px;
+
+    top: 760px;
+    left: 200px;
+}
+section.school-schema .list-item.item-5 {
+    width: 200px;
+
+    top: 735px;
+    left: 610px;
+}
+
+<!-- -->
+
+section.school-adv {
+    height: 750px;
+    width: 100%;
+    background-color: #fff;
+}
+
+section.school-adv .section-inner {
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 90px;
+}
+
+section.school-adv h3 {
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+section.school-adv .section-inner strong{
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+<!-- -->
+
+section.school-form {
+    height: 510px;
+    width: 100%;
+    background-color: #707374;
+    background: url("../img/school_new/school-form.jpg") no-repeat;
+}
+
+section.school-form .section-inner {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
+}
+
+section.school-form .section-inner .school-form-width {
+    width: 676px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+section.school-form .section-inner .school-form-width p {
+    text-align: center;
+    font-size: 21px;
+    font-family: "Proxima Nova", "Open Sans";
+    color: #fff;
+    line-height: 18px;
+    margin-top: 14px;
+}
+
+section.school-form .section-inner .school-form-width input {
+    height: 42px;
+}
+
+section.school-form .section-inner .school-form-width .btn-default {
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+}
+
+section.school-form .section-inner .school-form-width .white_button{
+    margin: 0 auto;
+    width: 175px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Proxima Nova Bold", "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 38px;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+section.header span.phone {
+    min-width: auto;
+}
+
+section.header div.col-xs-3 {
+    padding:0;
+}
+
+section.school-form h3 {
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+    line-height: 45px;;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+<!-- -->
+
+section.school-tab2 {
+    height: 934px;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+
+section.school-tab2 #tab-2-1 {
+    background: url("../img/school_new/school-tab2-1.jpg") no-repeat left 142px;
+    height: 934px;
+}
+
+section.school-tab2 #tab-2-2 {
+    background: url("../img/school_new/school-tab2-2.png") no-repeat right 45px;
+    height: 934px;
+}
+
+section.school-tab2 #tab-2-3 {
+    background: url("../img/school_new/school-tab2-1.jpg") no-repeat left 142px;
+    height: 934px;
+}
+
+section.school-tab2 .section-inner {
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 80px;
+}
+
+#tab-2-1 .section-inner strong {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+
+#tab-2-2 .section-inner {
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 80px;
+}
+
+section.school-tab2 .tab2-separator {
+    width: 100%;
+    /*height: 120px;*/
+    height: 200px;
+    float: left;
+}
+
+
+
+section.school-tab2 h3 {
+    margin-bottom: 30px;
+}
+
+<!-- -->
+
+section.school-adv2 {
+    height: 555px;
+    width: 100%;
+    background-color: #fff;
+}
+
+section.school-adv2 .section-inner {
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 80px;
+}
+
+section.school-adv2 .section-inner strong {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+<!-- -->
+
+section.school-map {
+    height: 786px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid rgb(246, 244, 240);
+}
+
+section.school-map .section-inner {
+    padding-left: 78px;
+    padding-right: 78px;
+    padding-top: 90px;
+}
+
+section.school-map .description{
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 60px;
+    height: 225px;
+    background-color: #f4f4f4;
+}
+
+section.school-map h3 {
+    font-family: "Proxima Nova Bold", "Open Sans";
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+
+
+.nav-tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-tabs li {
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+
+.nav-tabs.nav-justified  li {
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+    position: relative;
+}
+
+.nav-tabs.nav-justified > li > a {
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+    height: 50px;
+    line-height: 30px;
+    font-size: 21px;
+}
+
+.nav-tabs.nav-justified  li .pipka {
+    display: none;
+}
+
+.nav-tabs.nav-justified  li.active .pipka {
+    background: url("../img/school_new/pipka.png") no-repeat;
+    width: 16px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+
+.nav-tabs li a{
+    background: #f5f5f4;
+    color: #4c5052;
+    border-radius: 0px!important;
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+
+.nav-tabs li.active a{
+    background: #ffb500;
+    color: #fff;
+    border-radius: 0px!important;
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+
+
+
+.nav-tabs li.active a:hover {
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}
+
+.nav-tabs li.active a:focus {
+    border: none!important;
+    border-bottom: none!important;
+    border-top: none!important;
+}

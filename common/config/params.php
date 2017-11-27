@@ -654,5 +654,18 @@ return [
             'order-title' => 'МСК Заречная',
             //'multi_category' => true
         ],
+        'coffee-help' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 51,
+            'sitePrefix' => 'coffee_help',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'coffee_help',
+            'order-title' => 'МСК Заречная',
+            //'multi_category' => true
+        ],
     ],
 ];
