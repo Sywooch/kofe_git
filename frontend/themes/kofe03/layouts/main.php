@@ -255,7 +255,7 @@ $js = app\components\CController::$js;
                         </nav>
                     </div>
                     <div class="connect">
-                        <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 7:00 до 23:00</span> <br class="connect_br">без выходных и праздничных дней</div>
+                        <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 08:00 до 22:00</span> <br class="connect_br">без выходных и праздничных дней</div>
                         <div class="connect__contact">
                             <a class="connect__email" href="#"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4d6c1c9d6d1d78ad6d1">[email&#160;protected]</span></a>
                         </div>

@@ -5,7 +5,7 @@
                 <div class="text">
                     <div class="name">
                         <h2>
-                            <a href="/kontakty">Наш адрес в Москва</a>
+                            <a href="/kontakty">Наш адрес в Москве</a>
                         </h2>
                     </div>
                     <div class="description">

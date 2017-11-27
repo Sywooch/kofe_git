@@ -1,5 +1,5 @@
 <div class="seo-link link-toggle">
-    <h2 class="seo-link__title">Ремонт ноутбуков  в Москве, рядом с метро</h2>
+    <h2 class="seo-link__title">Ремонт кофемашин  в Москве, рядом с метро</h2>
     <hr>
     <ul class="seo-link__lists">
         <li class="seo-link__list"><a> Авиамоторная</a></li>

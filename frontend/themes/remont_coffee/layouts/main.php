@@ -126,7 +126,7 @@ $js = app\components\CController::$js;
                             <li id="menu-item-30342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30342"><a href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
                         </ul>
                         <br>
-                        <p>remomont.coffee © <?= date('Y'); ?></p>
+                        <p>remont.coffee © <?= date('Y'); ?></p>
                     </div>
                 </div>
             </div>
