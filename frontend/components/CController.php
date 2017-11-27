@@ -72,7 +72,7 @@ class CController extends \yii\web\Controller {
 
     private function getMenu() {
         $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE (type = \'category\' or type = \'model\') and show_in_menu = 1 AND active = 1 ORDER BY sort';
-        $rows = \Yii::$app->db->createCommand($q)->queryAll();        
+        $rows = \Yii::$app->db->createCommand($q)->queryAll();
         return $this->buildTree($rows);
     }
 
@@ -149,6 +149,8 @@ class CController extends \yii\web\Controller {
         if ($siteConfig['category_id'] == 7) {
             $groupName = '@remontkofe_ru_admin';
             file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
+        } elseif ($siteConfig['site_id'] == 49 || $siteConfig['site_id'] == 50) {
+            $groupName = '-1001240519113';
         } else {
             $groupName = '@site_orders';
         }

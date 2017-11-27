@@ -646,7 +646,7 @@ return [
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
             'mono' => false,
-            'id' => 49,
+            'id' => 50,
             'sitePrefix' => 'kofe03',
             'region-sel' => true,
             'category_id' => 7,
