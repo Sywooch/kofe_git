@@ -126,7 +126,7 @@ $js = app\components\CController::$js;
                             <li id="menu-item-30342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30342"><a href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
                         </ul>
                         <br>
-                        <p>ООО "Горизонт", ИНН 7810486984, КПП 780401001, ОГРН 1077847562242</p>
+                        <p>remomont.coffee © <?= date('Y'); ?></p>
                     </div>
                 </div>
             </div>
