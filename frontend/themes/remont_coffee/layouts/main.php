@@ -133,6 +133,9 @@ $js = app\components\CController::$js;
         </div>
     </body>
 </html>
+<script>$("form").each(function () {
+                    $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+                });</script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>

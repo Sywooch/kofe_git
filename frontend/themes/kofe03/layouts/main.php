@@ -276,6 +276,9 @@ $js = app\components\CController::$js;
 
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
+                <script>$("form").each(function () {
+                    $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+                });</script>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
