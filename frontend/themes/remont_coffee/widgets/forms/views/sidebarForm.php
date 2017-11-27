@@ -5,7 +5,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <div class="gl-contact" style="background: #fdfdfd url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg') center 97% no-repeat;background-size: 65%;">
     <div class="wrapper">
         <div class="heading">
-            <a href="kontaktnaya-informaciya.html" title="Контактная информация" style="line-height: 20px;">
+            <a href="/kontakty" title="Контактная информация" style="line-height: 20px;">
                 <b>Многоканальный номер телефона сервисного центра  </b>              
             </a>
         </div>
