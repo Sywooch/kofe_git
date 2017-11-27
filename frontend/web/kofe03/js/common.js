@@ -1,23 +1,4 @@
-var $iphone = $('#my-nav');
-var $iphoneWrap = $iphone.parent();
-$iphone.sly({
-    horizontal: 1,
-    itemNav: 'basic',
-    smart: 1,
-    activateOn: 'click',
-    mouseDragging: 1,
-    touchDragging: 1,
-    releaseSwing: 1,
-    startAt: 0,
-    scrollBy: 1,
-    activatePageOn: 'click',
-    speed: 300,
-    elasticBounds: 1,
-    easing: 'easeOutExpo',
-    dragHandle: 1,
-    dynamicHandle: 1,
-    clickBar: 1,
-});
+
 $(window).on('load', function () {
     $('body').addClass('page_ready');
 });
@@ -26,7 +7,7 @@ $(function () {
     $('.header__burger').on('click', function () {
         $('body').toggleClass('page_open');
         if ($('body').hasClass('page_open')) {
-            $('.header__panel').height(117);
+            $('.header__panel').height(69);
         } else {
             $('.header__panel').height(0);
             closeMenu();

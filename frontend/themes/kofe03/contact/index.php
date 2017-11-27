@@ -3,44 +3,42 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<noindex>
-    <div class="hidden-xs hidden-sm" style="width: 100%; height: 350px; position: relative;">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6plQNknR2aah8dUh14bAKjBf-QuO78LD&amp;width=100%25&amp;height=370&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-    </div>
-</noindex>
-<div class="container">
-    <div class="bl-contact">
-        <div class="heading" style="margin-top: 45px;">Авторизованный сервисный центр  в Москве</div>
-        <div class="list">
-            <ul>
-                <li class="phone">
-                    <div class="name">+7 (495) 649-61-92</div>
-                    <div class="description"><a href="#">Оформить обратный звонок</a></div>
-                </li>
-                <li class="address">
-                    <div class="name">ул. Народного Ополчения, 34/3</div>
-                    <div class="description"><a href="#">Оформить выезд или доставку</a></div>
-                </li>
-                <li class="schedule">
-                    <div class="name">Круглосуточно</div>
-                    <div class="description"><a href="#">Определение неисправности</a></div>
-                </li>
-            </ul>
+<main class="layout__content" role="main">
+    <header class="layout__head">
+        <div class="layout__inner">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="/"><span itemprop="title">Главная</span></a></li>
+                </ul>
+                <span class="breadcrumbs__current">Контакты</span>
+            </nav>
         </div>
-        <style type="text/css"></style>
-        <div class="list places" style="border-top: none">
-            <ul>
-                <li class="contact-mini-text" style="width:100%">
-                    <div class="name">
-                        <span>Нет времени посетить наш офис? Бесплатная доставка в сервис и обратно, а так же диагностика 0 руб.!</span>
-                        <hr>
-                        <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> В отличие от других сервисных ценров, у нас нет скрытых позиций в прайс-листе, все работы обсуждаются исключительно заранее и индивидуально, в &nbsp;&nbsp;&nbsp;зависимости от модели ноутбука ! И мы никогда не берем деньги за диагностику и доставку! </div>
-                        <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> Предварительная экспресс-диагностика у нас составляет 30 мин.</div>
-                        <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> На наших территориях есть бесплатные гостевые парковки, а так же платные городские.</div>
+    </header>
+    <div class="content">
+        <div class="content__inner">
+            <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $pageInfo['url']]); ?>
+            <main class="content__main" role="main">
+                <article class="post">
+                    <header class="post__header">
+                        <h1>Контакты</h1>
+                    </header>
+                    <div class="post__content">
+                        <p>Компания &laquo;Вежливый сервис 5+&raquo;</p>
+                        <p>Телефон:&nbsp;<a href='tel:+74952284282'>8(495)228-42-82</a></p>
+                        <ul>
+                            <li>г. Москва, ул. Садовая-Черногрязская, д. 8 м. Красные ворота</li>
+                            <li>г. Санкт-Петербург, ул. Салова 36б</li>
+                        </ul>
+                        <p>Email: <a class="post__email" href="../cdn-cgi/l/email-protection.html#51383f373e1123343c2324227f2324" target="_blank" rel="noopener noreferrer"><span class="__cf_email__" data-cfemail="7b12151d143b091e16090e0855090e">[email&#160;protected]</span></a></p>
+                        <p>Время работы: 7:00 &ndash; 23:00</p>
+                        <div class="post__maps">
+                            <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZd6mYiq" width="100%" height="400" frameborder="0"></iframe>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </article>
+            </main>
         </div>
-        <?= remont_coffee\widgets\other\Subways::widget(); ?>
     </div>
-</div>
+    <?= kofe03\widgets\other\Feedback::widget(); ?>
+    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
+</main>

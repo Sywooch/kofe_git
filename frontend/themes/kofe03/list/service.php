@@ -1,34 +1,35 @@
 <?php
-$assets = '/' . Yii::getAlias('@web');
+$assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<div class="bl-heading" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-heading.jpg);">
-    <div class="container">
-        <div class="heading">Авторизованный сервисный центр </div>
-        <h1 class="heading-description"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
-    </div>
-</div>
-<?= remont_coffee\widgets\other\Advantage::widget(); ?>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <span><?= $pageInfo['title']; ?></span>
-            </div>
-            <?php if (!empty($pageInfo['image'])): ?>
-                <div class="hero" style="float: left;">
-                    <img src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">
+<main class="layout__content" role="main">
+    <section class="office">
+        <div class="office__inner">
+            <div class="my-tseni">
+                <div class="office__container">
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+
+                        </ul>                        
+                        <span class="breadcrumbs__current"><?= $pageInfo['title']; ?></span>
+                    </nav>
+                    <h1 class="office__title"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
+                    <article class="office__post">
+                        <?= $seoText; ?>
+                    </article>
                 </div>
-            <?php endif; ?>
-            <div class="clear"></div>
-            <?= remont_coffee\widgets\lists\ServiceChildren::widget(['parent' => $pageInfo['id']]); ?>
-            <div class="clear"></div>
-            <?= remont_coffee\widgets\lists\RandomServices::widget(); ?>
+                <div class="office__request">
+                    <div class="office__brands">
+                        Стоимость ремонта <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> р</span>
+                    </div>
+                    <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
+                </div>
+            </div>
         </div>
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
-    </div>   
-</div>
+    </section>
+    <?= kofe03\widgets\other\Advantage::widget(); ?>
+    <?= kofe03\widgets\lists\PopularServices::widget(); ?>
+    <?= kofe03\widgets\other\Feedback::widget(); ?>
+    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
+</main>

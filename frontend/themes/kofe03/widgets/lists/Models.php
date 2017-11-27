@@ -1,6 +1,6 @@
 <?php
 
-namespace remont_coffee\widgets\lists;
+namespace kofe03\widgets\lists;
 
 use yii\base\Widget;
 use yii\helpers\Html;

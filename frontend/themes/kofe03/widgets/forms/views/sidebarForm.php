@@ -2,70 +2,48 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="gl-contact" style="background: #fdfdfd url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg') center 97% no-repeat;background-size: 65%;">
-    <div class="wrapper">
-        <div class="heading">
-            <a href="kontaktnaya-informaciya.html" title="Контактная информация" style="line-height: 20px;">
-                <b>Многоканальный номер телефона сервисного центра  </b>              
-            </a>
-        </div>
-        <div class="data">
-            <ul>
-                <li><a style="font-size:20px; cursor: default;  color: #222;"><b>8 (495) 055-15-69</b></a></li>
-                <li>
-                    <span style="font-size:14px; color: #222">Время работы с 09:00 до 21:00</span>
-                    <hr>
-                </li>
-                <li style="font-size: 14px">Срочный и квалифицированный ремонт  в день обращения. Уточняйте по телефону.</li>
-            </ul>
-        </div>
-        <br/> 
-        <strong>
-            <span style="display: none; padding-bottom: 10px; font-size: 16px">Техническая поддержка</span>
-        </strong>
-        <div class="wpcf7">
-            <?php
+<div class="popup popup_request">
+    <div class="popup__bg"></div>
+    <div class="popup__main">
+        <?php
 
-            use yii\helpers\Html;
-            use yii\widgets\ActiveForm;
-            use yii\widgets\MaskedInput;
+        use yii\helpers\Html;
+        use yii\widgets\ActiveForm;
+        use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-                        'id' => 'sidebar-form',
-                        'options' => ['class' => 'global-form'],
-                        'enableClientValidation' => true,
-                        'fieldConfig' => [                            
-                            'template' => '{input}',
-                        ],
-            ]);
-            ?>
-            <p class="wpcf7-form">
-                <span class="wpcf7-form-control-wrap your-phone">
+                    'id' => 'popup-form',
+                    'options' => ['class' => 'form form_request callback'],
+                    'enableClientValidation' => true,
+                    'fieldConfig' => [
+                        'template' => '{input}',
+                    ],
+        ]);
+        ?>    
+        <div class="form__box">
+            <h3 class="form__title">Заявка на ремонт</h3>
+            <div class="form__row">
+                <label class="form__element form__element_input">
                     <?=
                     $form->field($model, 'phone')->widget(MaskedInput::className(), [
                         'name' => 'phone',
                         'mask' => '+7 (999) 999-99-99',
                         'options' => [
                             'placeholder' => 'Ваш телефон',
-                            'class' => 'wpcf7-form-control wpcf7-text wpcf7-validates-as-required input phone', 'type' => 'tel',
+                            'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
                             'size' => 40,
                         ],
                     ])->label('')
                     ?>
-                </span>
-                <br>
-                <?= Html::submitInput('Отправить', ['class' => 'wpcf7-form-control wpcf7-submit submit', 'type' => 'submit']) ?>
-            </p>
-            <div class="wpcf7-response-output wpcf7-display-none"></div>
-            <?php ActiveForm::end() ?>
+                </label>
+            </div>
+            <div class="form__row form__row_submit">
+                <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+            </div>
+            <span id="messenger"></span>
+            <div class="personalData"><input type="checkbox" name="personalData" checked="checked"/><span>Согласен с условиями <a href="obrabotka-personalnyh-dannyh/index.html" target="_blank">обработки персональных данных</a></span></div>
         </div>
-        <div class="links" style="margin-top: 0;">
-            <ul>
-                <li>
-                    <div class="name"><a href="kontaktnaya-informaciya.html">Адрес сервисного центра</a></div>
-                    <div class="description">ул. Николоямская, д. 62</div>
-                </li>
-            </ul>
-        </div>
+        <?php ActiveForm::end() ?>
+        <div class="popup__close"></div>
     </div>
 </div>

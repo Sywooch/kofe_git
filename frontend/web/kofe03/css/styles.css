@@ -1563,7 +1563,7 @@ label.error
     }
     .page_open .header
     {
-        min-height: 190px;
+        min-height: 73px;
         max-height: 1300px;
 
         border-bottom: 0;
@@ -1587,6 +1587,9 @@ label.error
     /*padding: 0 0 0 70px;*/
 
     text-decoration: none;
+}
+.page_scrolled .header__site {
+    top: 8px;
 }
 @media screen and (max-width: 762px)
 {
@@ -1681,7 +1684,7 @@ label.error
     }
     .page_open .header__panel
     {
-        height: 117px;
+        height: 69px;
     }
 }
 
@@ -2060,8 +2063,9 @@ label.error
 
     border-bottom: 1px solid #e9eaec;
 }
-.page_scrolled .menu
+.page_scrolled .header-fix
 {
+    background: #fff;
     position: fixed;
     top: 0;
     right: 0; 
@@ -2223,7 +2227,7 @@ label.error
     position: relative;
     z-index: 50;
 
-    padding-bottom: 2px;
+
 
     color: #3ea2ee; 
     border-color: #e9eaec;
@@ -2790,7 +2794,8 @@ label.error
 {
     float: right;
 
-    margin: 15px 0 0;
+    margin: 0px 0 0;
+    width: 0px;
 
     -webkit-transition: -webkit-transform .25s ease-out;
             transition: -webkit-transform .25s ease-out;
@@ -2799,19 +2804,27 @@ label.error
     -webkit-transform: scale(0);
         -ms-transform: scale(0);
             transform: scale(0);
+
+    -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 }
 .page_scrolled .menu__addition
 {
+    margin: 12px 0 0;
+    width: 175px;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1000px) {
     .menu__addition {
-        margin: 15px 0 0 20px;
-        -webkit-transform: scale(1) !important;
-            -ms-transform: scale(1) !important;
-                transform: scale(1) !important;
+        display: none;
     }
 }
 @media screen and (max-width: 600px)
@@ -2845,12 +2858,16 @@ label.error
 }
 .connect_header
 {
-    position: absolute;
+    position: relative;
+    float: right;
     top: 18px;
     right: 20px; 
 
-    float: none;
 }
+.page_scrolled .connect_header {
+    top: 4px;
+}
+
 @media screen and (max-width: 999px)
 {
     .connect
@@ -2867,8 +2884,10 @@ label.error
         justify-content: space-between;
     }
     .connect_header
-    {
+    {   
+        position: absolute;
         top: 26px; 
+        float: none;
 
         display: block;
     }
@@ -2979,7 +2998,7 @@ label.error
 }
 .connect_header .connect__call
 {
-    width: 278px;
+    width: 195px;
     height: 44px;
     margin-right: 10px;
 }

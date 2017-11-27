@@ -1,6 +1,6 @@
 <?php
 
-namespace remont_coffee\widgets\forms;
+namespace kofe03\widgets\forms;
 
 use Yii;
 use yii\base\Widget;

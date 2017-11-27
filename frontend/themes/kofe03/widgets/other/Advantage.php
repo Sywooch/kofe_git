@@ -1,6 +1,6 @@
 <?php
 
-namespace remont_coffee\widgets\other;
+namespace kofe03\widgets\other;
 
 use yii\base\Widget;
 use yii\helpers\Html;

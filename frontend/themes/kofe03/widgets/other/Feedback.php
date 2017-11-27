@@ -4,11 +4,11 @@ namespace kofe03\widgets\other;
 
 use yii\base\Widget;
 
-class Subways extends Widget {
+class Feedback extends Widget {
 
     public function run() {
         
-        return $this->render('subways');
+        return $this->render('feedback');
     }
 
 }
