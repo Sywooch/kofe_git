@@ -146,10 +146,10 @@ class CController extends \yii\web\Controller {
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
-        if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['site_id'], [49, 50])) {
+        if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50])) {
             $groupName = '@remontkofe_ru_admin';
             file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
-        } elseif (in_array($siteConfig['site_id'], [49, 50])) {
+        } elseif (in_array($siteConfig['id'], [49, 50])) {
             $groupName = '-1001240519113';
         } else {
             $groupName = '@site_orders';
