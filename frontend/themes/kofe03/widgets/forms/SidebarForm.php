@@ -10,7 +10,7 @@ class SidebarForm extends Widget {
 
     public function run() {
         $model = new \frontend\models\OrderForm();
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }

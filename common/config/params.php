@@ -660,10 +660,10 @@ return [
             'stickyMenu' => true,
             'mono' => false,
             'id' => 51,
-            'sitePrefix' => 'coffee_help',
+            'sitePrefix' => 'coffeHelp',
             'region-sel' => true,
             'category_id' => 7,
-            'theme' => 'coffee_help',
+            'theme' => 'coffeHelp',
             'order-title' => 'МСК Заречная',
             //'multi_category' => true
         ],

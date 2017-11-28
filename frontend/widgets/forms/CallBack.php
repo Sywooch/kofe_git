@@ -18,7 +18,7 @@ class CallBack extends Widget {
             $model = new \frontend\models\CallBackForm();
         else
             $model = new \frontend\models\CallBackTopForm();
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             \app\components\CController::sendToRoistat($model->phone);
             \Yii::$app->getSession()->setFlash('success', 'seccess');
             //return Yii::$app->getResponse()->redirect(['my-account/change-details']);

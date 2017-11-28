@@ -32,7 +32,7 @@ $js = app\components\CController::$js;
          <div class="container">
             <div class="navbar">
                <div class="col-xs-2">
-                  <div class="navbar-logo"><!--<img src="img/logo-navbar.png">--></div>
+                  <div class="navbar-logo"><!--<img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/logo-navbar.png">--></div>
                </div>
                <div class="col-xs-7">
                   <div class="navbar-top-form">
@@ -69,7 +69,7 @@ $js = app\components\CController::$js;
                </div>
                <div class="container">
                   <div class="row row_header_line">
-                     <div class="logo"> <a href="index.html"><!--<img src="img/logo2.png" alt="СЦ &laquo;Технобыт&raquo;" title="СЦ &laquo;Технобыт&raquo;">--></a></div>
+                     <div class="logo"> <a href="/"></a></div>
                      <div class="top-menu-container">
                         <div class="clock-work-conteiner">
                            <div class="clock-work l"> Работаем без перерывов и выходных<br> <span>с 7:00 до 22:00</span></div>
@@ -103,7 +103,7 @@ $js = app\components\CController::$js;
                   <div class="row">
                      <div class="container">
                         <div class="carousel-inner">
-                            <img style="margin-top: 65px;" src="img/slider/slider1.jpg" alt="Оригинальные запчасти" width="820">
+                            <img style="margin-top: 65px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/slider/slider1.jpg" alt="Оригинальные запчасти" width="820">
                             <div class="carousel-caption">
                                <h1>Ремонт кофемашин в Москве с гарантией до 1 года!</h1>
                                <p>Мы ремонтируем технику, используя только оригинальные запчасти, рекомендованные производителями. На услуги и детали даем гарантию, потому что уверены в качестве на 100%.</p>
@@ -116,47 +116,47 @@ $js = app\components\CController::$js;
                   <div class="row sub-level">
                      <div class="col-sm-4">
                         <h3><i>Работаем</i> <span>оперативно</span></h3>
-                        <img src="img/who/clock_icon.png">
+                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/who/clock_icon.png">
                         <p> Принимаем заявку, проводим диагностику, предлагаем решения – за 1 час.</p>
                      </div>
                      <div class="col-sm-4">
                         <h3><i>Работаем с</i> <span>гарантией</span></h3>
-                        <img src="img/who/contract_icon.png">
+                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/who/contract_icon.png">
                         <p> Если возникает гарантийный случай — все бесплатно исправляем.</p>
                      </div>
                      <div class="col-sm-4">
                         <h3><i>Цены не</i> <span>задираем</span></h3>
-                        <img src="img/who/commerse_icon.png">
+                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/who/commerse_icon.png">
                         <p> Качественный ремонт не всегда дорогой, и мы тому подтверждение.</p>
                      </div>
                   </div>
                   <div class="row service3">
-                    <a class="col-sm-4 panel-body panel_fridge" href="#">
+                      <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
                     </a>
-                    <a class="col-sm-4 panel-body panel_washer" href="#">
+                    <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
                     </a>
-                    <a class="col-sm-4 panel-body panel_dishwasher" href="#">
+                    <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
                     </a>
-                    <a class="col-sm-4 panel-body panel_fridge" href="#">
+                    <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
                     </a>
-                    <a class="col-sm-4 panel-body panel_washer" href="#">
+                    <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
                     </a>
-                    <a class="col-sm-4 panel-body panel_dishwasher" href="#">
+                    <a class="col-sm-4 panel-body" style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/bg_kofe1.png) no-repeat;" href="#">
                         <div class="bg_line">
                            <p>Не включается</p>
                         </div>
@@ -165,35 +165,35 @@ $js = app\components\CController::$js;
                </section>
                <section class="brend my">
                    <h3>Поддерживаем бренды</h3>
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/aeg.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/ardo.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/asko.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/beko.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/bosch.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/brandt.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/candy.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/electrolux.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/elenberg.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/gorenje.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/hansa.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/hoover.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/hotpoint-ariston.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/indesit.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/kaiser.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/kuppersberg.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/kuppersbusch.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/lg.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/miele.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/neff.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/samsung.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/siemens.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/smeg.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/vestel.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/vestfrost.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/whirlpool.gif"/></a> 
-                   <a href="#" class="brand-page-link"><img src="img/brands/md/zanussi.gif"/></a>
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/aeg.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/ardo.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/asko.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/beko.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/bosch.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/brandt.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/candy.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/electrolux.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/elenberg.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/gorenje.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/hansa.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/hoover.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/hotpoint-ariston.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/indesit.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/kaiser.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/kuppersberg.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/kuppersbusch.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/lg.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/miele.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/neff.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/samsung.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/siemens.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/smeg.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/vestel.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/vestfrost.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/whirlpool.gif"/></a> 
+                   <a href="#" class="brand-page-link"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/brands/md/zanussi.gif"/></a>
                    <p class="moar-brands">и других бренды.</p>
-                   <button class="all-brands-show">Все бренды <img src="img/expand-arrow.png"/></button>
+                   <button class="all-brands-show">Все бренды <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/expand-arrow.png"/></button>
                 </section>
             </div>
          </div>
@@ -313,9 +313,9 @@ $js = app\components\CController::$js;
                </div>
                <div class="col-xs-3">
                   <h5>Контактная информация</h5>
-                  <p><img src="img/icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">ул. Народного Ополчения, 34, с.2, офис 105</p>
+                  <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">ул. Народного Ополчения, 34, с.2, офис 105</p>
                   <div class="footer-phone-cont">
-                     <img src="img/icons/phone_footer.png" style="margin-right: 15px;"/>
+                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/icons/phone_footer.png" style="margin-right: 15px;"/>
                      <div class="footer-phone">
                         <nobr> <a href="tel:+74951339049" class="phone-c">+7 (495) 133-90-49</a></nobr>
                         <nobr> <a href="tel:+79299468413" class="phone-c">+7 (929) 946-84-13</a></nobr>
@@ -358,7 +358,7 @@ $js = app\components\CController::$js;
                   <form id="form-modal-form"> 
                     <input type="text" name="phone" placeholder="Номер телефона">
                     <input type="button" class="call-master" value="Вызвать мастера"></form>
-                  <img data-remodal-action="close" class="remodal-close" src="img/close_modal.png"/>
+                  <img data-remodal-action="close" class="remodal-close" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/close_modal.png"/>
                </div>
             </div>
          </div>
@@ -366,14 +366,14 @@ $js = app\components\CController::$js;
             <div class="modal-content">
                <p class="modal-title">Ваша заявка принята</p>
                <p class="modal-desc">Мы перезвоним вам в течение 1 минуты</p>
-               <input type="submit" data-remodal-action="confirm" class="call-master remodal-confirm" value="Закрыть"> <img data-remodal-action="close" class="remodal-close" src="img/close_modal.png"/>
+               <input type="submit" data-remodal-action="confirm" class="call-master remodal-confirm" value="Закрыть"> <img data-remodal-action="close" class="remodal-close" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/close_modal.png"/>
             </div>
          </div>
          <div class="remodal" data-remodal-id="call-modal-error">
             <div class="modal-content">
                <p class="modal-title">Ошибка</p>
                <p class="modal-desc">Проверьте введенный Вами номер. Возможно, вы уже оставили заявку с этого номера.</p>
-               <input type="submit" data-remodal-action="confirm" class="call-master remodal-confirm" value="Закрыть"> <img data-remodal-action="close" class="remodal-close" src="img/close_modal.png"/>
+               <input type="submit" data-remodal-action="confirm" class="call-master remodal-confirm" value="Закрыть"> <img data-remodal-action="close" class="remodal-close" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/close_modal.png"/>
             </div>
          </div>
       </footer>
