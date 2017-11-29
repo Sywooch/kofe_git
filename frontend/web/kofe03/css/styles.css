@@ -3037,7 +3037,7 @@ label.error
 }
 .connect__phone a[href^="tel"]{
 	font-family: 'Proxima Nova Bold', Arial, sans-serif;
-	font-size: 23px;
+	font-size: 20px;
 	line-height: 1;
 	color: #1f5f9e;
 	text-decoration: none;
@@ -4495,7 +4495,7 @@ label.error
     .reviews_context .articles__item,
     .reviews_context .consultation__item
     {
-        width: 25%;
+        width: 33.33333%;
     }
 }
 @media screen and (max-width: 999px)
@@ -4541,8 +4541,27 @@ label.error
 .reviews__carousel .reviews__box {
     height: 270px;
 }
+.reviews__box p,
+.reviews__carousel .reviews__box p {
+    text-align: left;
+    margin: 0px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.reviews__box p {
+    -webkit-line-clamp: 2;
+}
+.reviews__carousel .reviews__box p b {
+    min-width: 96px;
+    display: inline-block;
+}
 .reviews__carousel  .reviews__rating {
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .reviews__box:hover,
 .articles__box:hover,
@@ -4724,26 +4743,6 @@ label.error
     width: 15px;
 }
 
-.reviews__text
-{
-    font-size: 17px;
-    line-height: 20px;
-    overflow: hidden;
-    height: 110px;
-    margin: 0 0 15px;
-    text-overflow: ellipsis;
-}
-.reviews__text:before
-{
-    display: block;
-    width: 20px;
-    height: 14px;
-    margin: 0 auto 15px;
-
-    content: '';
-
-    background: url('../images/ico_quote6170.svg?v=1485504369723') no-repeat 50% 0;
-}
 .reviews_context .reviews__text,
 .reviews__single .reviews__text
 {
@@ -4759,6 +4758,10 @@ label.error
 .reviews__single .reviews__text:before
 {
     display: none;
+}
+
+.reviews__text_popup p{
+        margin: 2px 0;
 }
 
 .reviews__single .reviews__text_popup::-webkit-scrollbar {
@@ -7613,4 +7616,31 @@ img.banner{max-width: 100%;height: auto!important;}
 }
 img.brands__name {
     max-width: 90%;
+}
+.pagination {
+    position: relative;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.pagination li {
+    float: none;
+    display: inline-flex;
+}
+.pagination li.disabled {
+    padding: 5px 20px;
+}
+.pagination li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.pagination li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }

@@ -8,9 +8,11 @@
                         <article class="swiper-slide reviews__item">
                             <div class="reviews__box">
                                 <h4 class="reviews__name"><?= $row['username']; ?></h4>
-                                <time class="reviews__time"><?= date('d.m.Y', strtotime($row['username'])); ?></time>
                                 <div class="reviews__rating reviews__rating_5"></div>
-                                <p class="reviews__text"><?= $row['message']; ?></p>
+                                <?= $row['message']; ?>
+                                <div class="reviews__more">
+                                   <a class="reviews__full js-popup" data-popup="review_<?= $row['id']; ?>" href="#">Развернуть</a>
+                                </div>
                             </div>
                         </article>
                     <?php endforeach; ?>
@@ -23,4 +25,25 @@
     <p class="reviews__actions">
         <a class="reviews__all" href="/otzyvy">Все отзывы</a>
     </p>
+    <?php foreach ($rows as $row): ?>
+    <div class="popup popup_reviews popup_review_<?= $row['id']; ?>">
+       <div class="popup__bg"></div>
+       <div class="popup__main">
+          <div class="popup__review">
+             <div class="reviews">
+                <div class="reviews__single reviews__single_zoon">
+                   <div class="reviews__container">
+                      <h4 class="reviews__name"><?= $row['username']; ?></h4>
+                      <div class="reviews__rating reviews__rating_5"></div>
+                      <div class="reviews__text_popup">
+                         <?= $row['message']; ?>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="popup__close"></div>
+       </div>
+    </div>
+    <?php endforeach; ?>
 </section>

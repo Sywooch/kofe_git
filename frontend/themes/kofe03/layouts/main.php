@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                            </a>
                         </div>
                         <div class="connect connect_header">
-                           <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 7:00 до 23:00</span><br class="connect_br">без выходных и праздничных дней
+                           <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 08:00 до 22:00</span><br class="connect_br">без выходных и праздничных дней
                            </div>
                            <div class="connect__call">
                               <span class="connect__phone connect__phone_active" data-phone="moscow">

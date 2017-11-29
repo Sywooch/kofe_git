@@ -17,11 +17,10 @@
                     <article class="reviews__item">
                         <div class="reviews__box">
                             <h4 class="reviews__name"><?= $row['username']; ?></h4>
-                            <time class="reviews__time"><?= date('d.m.Y', strtotime($row['date'])); ?><</time>
                             <div class="reviews__rating reviews__rating_<?= $row['rating']; ?>"></div>
-                            <p class="reviews__text"><?= $row['message']; ?></p>
+                            <?= $row['message']; ?>
                             <div class="reviews__more">
-                                <a class="reviews__full js-popup" data-popup="review_1" href="#">Еще</a>
+                                <a class="reviews__full js-popup" data-popup="review_<?= $row['id']; ?>" href="#">Еще</a>
                             </div>
                         </div>
                     </article>
@@ -32,6 +31,27 @@
                 ]);
                 ?>
             </div>
+            <?php foreach ($rows as $row): ?>
+            <div class="popup popup_reviews popup_review_<?= $row['id']; ?>">
+               <div class="popup__bg"></div>
+               <div class="popup__main">
+                  <div class="popup__review">
+                     <div class="reviews">
+                        <div class="reviews__single reviews__single_zoon">
+                           <div class="reviews__container">
+                              <h4 class="reviews__name"><?= $row['username']; ?></h4>
+                              <div class="reviews__rating reviews__rating_5"></div>
+                              <div class="reviews__text_popup">
+                                 <?= $row['message']; ?>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="popup__close"></div>
+               </div>
+            </div>
+            <?php endforeach; ?>
         </div>
     </section>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
