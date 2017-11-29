@@ -12,7 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 'source' => $searches,
                 'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
             ],
-            'options' => ['placeholder' => 'Название модели', 'class' => 'ui-autocomplete-input',],
+            'options' => ['placeholder' => 'Название модели', 'class' => 'form__input ui-autocomplete-input',],
                 ]
         );
         ?>

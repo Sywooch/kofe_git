@@ -307,7 +307,18 @@ $js = app\components\CController::$js;
             <div class="layout__loading">
                 <img class="layout__loader" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/loaderd8b8.svg?v=1485518639218" alt="">
             </div>
-
+			
+			<div class="popup popup_request_full">
+               <div class="popup__bg"></div>
+               <div class="popup__main">
+                  <h3 class="form__title">Заявка отправлена</h3>
+				  <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/tick.svg" />
+                  <p class="form__text">
+                     Спасибо за заявку, наш оператор свяжется с вами в течение 30 минут.
+                  </p>
+                  <div class="popup__close"></div>
+               </div>
+            </div>
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
                 
@@ -326,7 +337,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js?v=1"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
+    echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
 <script>$("form").each(function () {

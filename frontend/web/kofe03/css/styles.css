@@ -986,8 +986,8 @@ img[align='right']
 
 .form__title
 {
-    margin: 0 0 10px;
-
+    margin: 0px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -996,7 +996,7 @@ img[align='right']
     font-size: 14px; 
     line-height: 1.25;
 
-    color: #909baf;
+    color: #3d4859;
 }
 .popup__main .form__text {
     padding: 5px 15px;
@@ -3653,6 +3653,7 @@ label.error
 {
     padding: 2px 0 0;
 }
+
 @media screen and (max-width: 600px)
 {
     .footer__item
@@ -3666,23 +3667,17 @@ label.error
 .footer__page,
 .footer__type
 {
-    line-height: 62px;
+    line-height: 18px;
 
     display: block;
 
     text-decoration: none; 
 
     color: inherit;
+    padding: 15px 10px;
+    text-align: left;
 }
 
-@media screen and (max-width: 600px)
-{
-    .footer__page
-    {
-        line-height: 20px;
-        margin-bottom: 15px;
-    }
-}
 
 .footer__label
 {
@@ -7316,7 +7311,7 @@ table.no-border td {
     display: flex;
         flex-direction: column;
 
-    max-width: 94%;
+    max-width: 320px;
     max-height: 92%;
 
     -webkit-transition: .25s linear;
@@ -7332,6 +7327,12 @@ table.no-border td {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+        border: 1px solid #e9eaec;
+            border-radius: 5px;
+}
+.popup__main img {
+    max-width: 45px;
+    margin: 0 auto;
 }
 .lt-ie10 .popup__main
 {
