@@ -10,7 +10,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 </noindex>
 <div class="container">
     <div class="bl-contact">
-        <div class="heading" style="margin-top: 45px;">Авторизованный сервисный центр  в Москве</div>
+        <div class="heading" style="margin-top: 45px;">Авторизованный сервисный центр в Москве</div>
         <div class="list">
             <ul>
                 <li class="phone">
@@ -34,7 +34,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     <div class="name">
                         <span>Нет времени посетить наш офис? Бесплатная доставка в сервис и обратно, а так же диагностика 0 руб.!</span>
                         <hr>
-                        <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> В отличие от других сервисных ценров, у нас нет скрытых позиций в прайс-листе, все работы обсуждаются исключительно заранее и индивидуально, в &nbsp;&nbsp;&nbsp;зависимости от модели ноутбука ! И мы никогда не берем деньги за диагностику и доставку! </div>
+                        <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> В отличие от других сервисных ценров, у нас нет скрытых позиций в прайс-листе, все работы обсуждаются исключительно заранее и индивидуально, в &nbsp;&nbsp;&nbsp;зависимости от модели кофесашины ! И мы никогда не берем деньги за диагностику и доставку! </div>
                         <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> Предварительная экспресс-диагностика у нас составляет 30 мин.</div>
                         <div><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/arrow.png" /> На наших территориях есть бесплатные гостевые парковки, а так же платные городские.</div>
                     </div>
