@@ -320,7 +320,7 @@ class ListController extends CController {
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
             $regionTitle = 'Москве и МО';
         $siteConfig = self::getSiteConfig();
-        if ($siteConfig['theme'] == 'ifixme') {
+        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
             $categorySEO = [
                 1 => [
                     'text1' => '<p>Сервисное предприятие реализует комплекс услуг по приятной стоимости и с отличным качеством. У нас Вы получите превосходное сервисное обслуживание по стандартам мирового качества.</p>',
@@ -413,7 +413,7 @@ class ListController extends CController {
             $metaDesc = $categorySEO[self::$category['id']]['meta_description'];
             $title = $categorySEO[self::$category['id']]['title'];
         }
-        if ($siteConfig['theme'] == 'ifixme') {
+        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
             $title = 'Устранение неисправностей ' . $pageInfo['title'] . ' - Срочный ремонт в Москве!';
             $metaDesc = 'Сервисный центр iFixMe выполняет ремонт ' . $pageInfo['title'] . ' по самым лучшим ценам и с гарантией качества! Проводим весь спектр услуг! Имеется курьерская служба.';
         }
