@@ -1,25 +1,23 @@
 <?php
+$assets = '/' . Yii::getAlias('@web');
 $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<section class="office-content">
-    <div class="office__inner">
-        <h2 style="margin:20px 0 20px 0;"><?= !empty($title) ? $title : 'Цены по услугам' ?></h2>
-        <table align="center my">
-            <tbody>
-                <?php foreach ($rows as $key => $row): ?>
-                    <tr valign="TOP">
-                        <td>
-                            <?php if ($row['is_popular'] == 1): ?>
-                                <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
-                            <?php else: ?>
-                                <?= $row['title']; ?>
-                            <?php endif; ?>
-                        </td>
-                        <td><span><?= number_format($row['price'], 0, ' ', ' '); ?> р</span> <a class="button button_warning js-popup" href="#" data-popup="request">Заказать</a></td>
-                    </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+<h3><?= !empty($title) ? $title : 'Цены по услугам' ?></h3>
+<section class="price_table">
+    <div class="break_price">
+        <?php foreach ($rows as $key => $row): ?>
+            <div class="row">
+                <div class="col-xs-10 name_price"> 
+                    <?php if ($row['is_popular'] == 1): ?>
+                        <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
+                    <?php else: ?>
+                        <?= $row['title']; ?>
+                    <?php endif; ?>                    
+                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/right-arrow-table.png"/>
+                </div>
+                <div class="col-xs-2 col_price"> <?= number_format($row['price'], 0, ' ', ' '); ?> руб.</div>
+            </div>
+        <?php endforeach; ?>
     </div>
 </section>

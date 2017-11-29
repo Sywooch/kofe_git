@@ -166,9 +166,11 @@ $js = app\components\CController::$js;
                                           <ul class="menu__list">
                                              <li class="menu__item"><a class="menu__link" href="/rozhkovye">Рожковые</a></li>
                                              <li class="menu__item"><a class="menu__link" href="/porcionnye">Порционные</a></li>
-                                             <li class="menu__item"><a class="menu__link" href="/kapsulnye">Капсульные</a></li>
                                              <li class="menu__item"><a class="menu__link" href="/ehspresso-kombajny">Эспрессо-комбайны</a></li>
-                                             <li class="menu__item"><a class="menu__link" href="/avtomaticheskie">Автоматические</a></li>
+                                             <li class="menu__item"><a class="menu__link" href="/avtomaticheskie">Автоматические</a></li>                                             
+                                             <li class="menu__item"><a class="menu__link" href="/chaldovye">Чалдовые</a></li>
+                                             <li class="menu__item"><a class="menu__link" href="/kapelnye">Капельные</a></li>
+                                             <li class="menu__item"><a class="menu__link" href="/poluavtomaticheskie">Полуавтоматические</a></li>
                                           </ul>
                                        </div>
                                     </div>

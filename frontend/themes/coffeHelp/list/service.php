@@ -3,33 +3,45 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<main class="layout__content" role="main">
-    <section class="office">
-        <div class="office__inner">
-            <div class="my-tseni">
-                <div class="office__container">
-                    <nav class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-
-                        </ul>                        
-                        <span class="breadcrumbs__current"><?= $pageInfo['title']; ?></span>
-                    </nav>
-                    <h1 class="office__title"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
-                    <article class="office__post">
-                        <?= $seoText; ?>
-                    </article>
-                </div>
-                <div class="office__request">
-                    <div class="office__brands">
-                        Стоимость ремонта <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> р</span>
-                    </div>
-                    <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
+<div class="bg">
+    <div class="promo_bg"  style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/promo/parallax/bg_header_washer.jpg) no-repeat; background-position: left top;"></div>        
+    <div class="container theme-showcase" role="main">            
+        <section class="promo">
+            <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Главная</a></li>
+                        <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
+                            <li><a href="/<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                        <?php endforeach; ?>                        
+                    </ol>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h1>
+                        <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
+                    </h1>
+                    <span class="section-promo-desc">
+                        <?= $seoText; ?>
+                    </span>
+                </div>
+                <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+            </div>
+        </section>
+        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>                
+        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>        
+    </div>
+</div>
+<div class="container theme-showcase" role="main">
+    <hr class="big_line">
+    <section class="about">
+        <div class="row">
+            <?php if (!empty($seoText2)){echo $seoText2;} ?>
         </div>
     </section>
-    <?= kofe03\widgets\other\Advantage::widget(); ?>
-    <?= kofe03\widgets\lists\PopularServices::widget(); ?>
-    <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
-</main>
+    <section class="order">
+        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+    </section>
+</div>

@@ -9,6 +9,7 @@ class AskForm extends Model {
 
     public $phone;
     public $message;
+    public $name;
     /**
      * @inheritdoc
      */

@@ -6,16 +6,15 @@ use Yii;
 use yii\base\Widget;
 use app\components\CController;
 
-class MainPageForm extends Widget {
+class SidebarForm2 extends Widget {
 
     public function run() {
-        
-        $model = new \frontend\models\AskForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+        $model = new \frontend\models\CallBackForm();
+        if ($model->load(Yii::$app->request->post())) {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
-        }        
-        return $this->render('mainPageForm', ['model' => $model]);
+        }
+        return $this->render('sidebarForm2', ['model' => $model]);
     }
 
 }

@@ -2,10 +2,7 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="popup popup_request">
-    <div class="popup__bg"></div>
-    <div class="popup__main">
-        <?php
+<?php
 
         use yii\helpers\Html;
         use yii\widgets\ActiveForm;
@@ -13,37 +10,53 @@ $siteConfig = app\components\CController::getSiteConfig();
 
 $form = ActiveForm::begin([
                     'id' => 'popup-form',
-                    'options' => ['class' => 'form form_request callback'],
+                    //'options' => ['class' => 'form form_request callback'],
                     'enableClientValidation' => true,
                     'fieldConfig' => [
                         'template' => '{input}',
                     ],
         ]);
-        ?>    
-        <div class="form__box">
-            <h3 class="form__title">Заявка на ремонт</h3>
-            <div class="form__row">
-                <label class="form__element form__element_input">
+        ?>
+    <div id="form_order" class="order_form">
+        <h3>Онлайн-заказ</h3>
+        <div class="row">
+            <div class="col-xs-12" style="padding-right: 14px;">
+                <div class="input-group-lg"> <input id="order_name" type="text" class="form-control" placeholder="Как вас зовут?" name="name"></div>
+                <br>
+                <div class="input-group-lg"> 
                     <?=
                     $form->field($model, 'phone')->widget(MaskedInput::className(), [
                         'name' => 'phone',
                         'mask' => '+7 (999) 999-99-99',
                         'options' => [
                             'placeholder' => 'Ваш телефон',
-                            'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
+                            'class' => 'form-control', 'type' => 'tel',
                             'size' => 40,
                         ],
                     ])->label('')
                     ?>
-                </label>
+                    
+                </div>
+                <br>
             </div>
-            <div class="form__row form__row_submit">
-                <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+            <div class="col-xs-12">
+                <div class="input-group-lg">
+                    <?= $form->field($model, 'comment')->textarea(['class' => 'form-control', 'placeholder' => 'Опишите пожалуйста, что нужно сделать', 'style' => 'height: 110px;', 'rows' => 4]); ?>
+                </div>
             </div>
-            <span id="messenger"></span>
-            <div class="personalData"><input type="checkbox" name="personalData" checked="checked"/><span>Согласен с условиями <a href="obrabotka-personalnyh-dannyh/index.html" target="_blank">обработки персональных данных</a></span></div>
         </div>
-        <?php ActiveForm::end() ?>
-        <div class="popup__close"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="text-align: center;"> 
+                <?= Html::submitButton('ОТПРАВИТЬ ЗАЯВКУ', ['class' => 'btn btn-default call-master', 'type' => 'submit']) ?>
+            </div>
+            <div class="col-xs-12" style="text-align: center;">
+                <p>Работаем с физическими и юридическими лицами. Наличный и безналичный расчет.</p>
+            </div>
+        </div>
     </div>
-</div>
+<?php ActiveForm::end() ?>

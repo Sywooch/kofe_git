@@ -655,7 +655,7 @@ return [
             //'multi_category' => true
         ],
         'coffee-help' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
             'mono' => false,
