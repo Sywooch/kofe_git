@@ -984,10 +984,13 @@ img[align='right']
     box-shadow: none;
 }
 
-.form__title
+.popup__main .form__title
 {
     margin: 0px;
     padding-top: 20px;
+    text-align: center;
+}
+.form__title {
     text-align: center;
 }
 
@@ -1684,7 +1687,11 @@ label.error
     }
     .page_open .header__panel
     {
-        height: 69px;
+        height: 69px ! important;
+    }
+    .page_open .header__panel:hover
+    {
+        height: auto ! important;
     }
 }
 
@@ -2065,6 +2072,7 @@ label.error
 }
 .page_scrolled .header-fix
 {
+    border-bottom: 1px solid #e9eaec;
     background: #fff;
     position: fixed;
     top: 0;
@@ -3534,7 +3542,7 @@ label.error
     content: '';
 
     border-bottom: 1px solid #e9eaec;
-    background: url('../images/footer_decor6170.png?v=1485504369723') repeat-x 50% 100%;
+    background: url('../images/footer_decor6170.png') repeat-x 50% 100%;
 }
 .callbackForm + .footer:before
 {
@@ -4900,7 +4908,7 @@ label.error
 
 .reviews__all
 {
-    font-size: 13px; 
+    font-size: 14px; 
 
     min-width: 160px;
 }
@@ -7311,7 +7319,6 @@ table.no-border td {
     display: flex;
         flex-direction: column;
 
-    max-width: 320px;
     max-height: 92%;
 
     -webkit-transition: .25s linear;
@@ -7660,5 +7667,8 @@ img.brands__name {
     color: #fff;
 }
 .field-askform2-agree {
+    float: left;
+}
+.form-group {
     float: left;
 }
