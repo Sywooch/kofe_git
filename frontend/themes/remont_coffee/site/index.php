@@ -5,8 +5,8 @@ $this->title = $page['meta_title'];
 ?>
 <div class="container-fluid hidden-xs hidden-sm">
     <div class="row hero" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
-        <div class="container">
-            <div class="hero-text" style="padding-left: 0;">
+        <div class="container banner">
+            <div class="hero-text">
                 <div class="heading">Авторизованный сервисный центр</div>
                 <div class="heading">
                     <h1><?= $page['meta_h1']; ?></h1>
