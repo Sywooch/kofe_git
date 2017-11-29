@@ -35,7 +35,7 @@ class Reviews extends \yii\db\ActiveRecord
             [['date'], 'safe'],
             [['active', 'rating'], 'integer'],
             [['username', 'email'], 'string', 'max' => 255],
-            [['message'], 'string', 'max' => 500],
+            [['message'], 'string', 'max' => 5000],
         ];
     }
 
