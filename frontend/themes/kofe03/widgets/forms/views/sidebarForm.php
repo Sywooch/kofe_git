@@ -41,7 +41,9 @@ $form = ActiveForm::begin([
                 <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
             </div>
             <span id="messenger"></span>
-            <div class="personalData"><input type="checkbox" name="personalData" checked="checked"/><span>Согласен с условиями <a href="/polzovatelskoe-soglashenie" target="_blank">обработки персональных данных</a></span></div>
+            <div class="personalData">
+               <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?><span>Согласен с условиями <a href="/polzovatelskoe-soglashenie" target="_blank">обработки персональных данных</a></span>
+            </div>
         </div>
         <?php ActiveForm::end() ?>
         <div class="popup__close"></div>
