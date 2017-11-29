@@ -34,5 +34,4 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
 </section>
 <section id="number-23">
     <a href="#" id="gotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-    <p>Вернуться <br>наверх</p>
 </section>

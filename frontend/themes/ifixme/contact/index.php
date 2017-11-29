@@ -80,5 +80,4 @@ $this->title = $pageInfo['meta_title'];
 </section>
 <section id="number-23">
     <a id="gotop" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-    <p>Вернуться <br>наверх</p>
 </section>

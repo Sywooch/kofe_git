@@ -24,7 +24,6 @@ $this->title = $pageInfo['meta_title'];
                 </div>
                 <div class="info">
                     <div class="name"><?= $row['username']; ?></div>
-                    <span><?= date('d.m.Y', strtotime($row['date'])); ?></span>
                     <p><?= $row['message']; ?></p>
                 </div>
                 <div class="clear"></div>
@@ -98,5 +97,4 @@ $form = ActiveForm::begin([
 </section>
 <section id="number-23">
     <a id="gotop" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-    <p>Вернуться <br>наверх</p>
 </section>

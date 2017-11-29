@@ -17,7 +17,6 @@
                 </div>
                 <div class="info">
                     <div class="name"><?= $row['username']; ?></div>
-                    <span><?= date('d.m.Y', strtotime($row['date'])); ?></span>
                     <p><?= $row['message']; ?></p>
                 </div>
                 <div class="clear"></div>

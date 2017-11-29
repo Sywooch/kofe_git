@@ -12,7 +12,10 @@
                     <tr>
                         <td><?= $service['title']; ?> <?= !empty($service['description']) ? '<span>' . $service['description'] . '</span>' : ''; ?></td>
                         <td><?= number_format((!empty($service['model_price']) ? $service['model_price'] : $service['price']), 0, ' ', ' '); ?> руб.</td> 
-                        <td><?= $service['time']; ?></td>
+                        <td>
+                            <time><?= $service['time']; ?></time>
+                            <a class="btn green out-icon open-popup" data-tab="popup2" onclick="return false;" href="#">ЗАКАЗАТЬ СЕЙЧАС</a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </table>

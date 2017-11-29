@@ -7004,8 +7004,6 @@ position: relative;
 
 .office-content table {
     border-collapse: collapse;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
 }
 .office-content table tbody {
     display: flex;
@@ -7015,9 +7013,11 @@ position: relative;
     float: left;
     width: 50%;
     display: inline-block;
-    border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    border-left: 1px solid #ccc;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: -1px;
+    margin-right: -1px;
 }
 .office-content table tr:hover{
 	background: #1f5f9e;
@@ -7153,7 +7153,8 @@ table.no-border td {
 	margin-bottom: 25px;
 }
 .office__brands > img {
-    max-width: 220px;
+    max-width: 200px;
+    max-height: 200px;
 }
 .office__brands > span {
     font-size: 35px;
@@ -7609,4 +7610,7 @@ img.banner{max-width: 100%;height: auto!important;}
     .search-brends .right input {
         margin-left: 0px;
     }
+}
+img.brands__name {
+    max-width: 90%;
 }

@@ -13,7 +13,6 @@ $assets = Yii::getAlias('@web');
                 </div>
                 <div class="info">
                     <p><?= $row['title']; ?></p>
-                    <span><?= date('d.m.Y', strtotime($row['date'])); ?></span>
                 </div>
                 <span class="clear"></span>
             </a>

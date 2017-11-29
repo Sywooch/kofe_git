@@ -1,6 +1,6 @@
 <section id="number-11">
     <div class="container">
-        <div class="title">Частные проблемы</div>
+        <div class="title">Частые неисправности</div>
         <?php foreach ($rows as $group => $neisps): ?>
             <div class="item">
                 <span><?= $group; ?></span>

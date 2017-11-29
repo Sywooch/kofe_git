@@ -78,40 +78,16 @@ $js = app\components\CController::$js;
                     <div class="boxcontact">
                         <div class="left">
                             <span class="name">Сервисный центр</span>
-                            <a href="#">Москва, ул. Сиреневая 236, корпус 3</a>
-                            <span class="times">Ежедневно с 10:00 до 20:00</span>
+                            <a href="/kontakty">Москва, ул. Заречная 1к2.</a>
+                            <span class="times">Ежедневно с 08:00 до 22:00</span>
                         </div>
                         <div class="right">
                             <span class="name">Телефон</span>
-                            <a href="#">+7 (495) 900 80 80</a>
+                            <a href="tel:+74951520707">+7 (495) 152 07 07</a>
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="boxcontact">
-                        <div class="left">
-                            <span class="name">Сервисный центр</span>
-                            <a href="#">Москва, ул. Сиреневая 236, корпус 3</a>
-                            <span class="times">Ежедневно с 10:00 до 20:00</span>
-                        </div>
-                        <div class="right">
-                            <span class="name">Телефон</span>
-                            <a href="#">+7 (495) 900 80 80</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="boxcontact">
-                        <div class="left">
-                            <span class="name">Сервисный центр</span>
-                            <a href="#">Москва, ул. Сиреневая 236, корпус 3</a>
-                            <span class="times">Ежедневно с 10:00 до 20:00</span>
-                        </div>
-                        <div class="right">
-                            <span class="name">Телефон</span>
-                            <a href="#">+7 (495) 900 80 80</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                    <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
                 <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
                 <div class="clear"></div>
@@ -141,9 +117,38 @@ $js = app\components\CController::$js;
         <?= $content; ?>
         <footer>
             <div class="container">
+                <div class="body">
+                    <div class="left">
+                        <span>Сэкономьте <br>свое время</span>
+                        <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
+                        <a class="btn out-icon green open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
+                        <img src="<?= $assets ?>/ifixme/images/master.png">
+                    </div>
+                    <div class="right">
+                        <div class="title">Наш сервисный центр</div>
+                        <div class="content">
+                            <ul class="footer-map-menu">
+                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">На Заречной </a></li>
+                            </ul>
+                            <div id="local1" class="footer-map active">
+                                <div class="info">
+                                    <div class="img"><img src="<?= $assets ?>/ifixme/images/contact.jpg" alt=""></div>
+                                    <div class="text">
+                                        <p>Москва, ул. Заречная 1к2. М. Фили, Шелепиха</p>
+                                        <a href="tel:+74951520707">+7 (495) 152 07 07</a>
+                                        <span>Ежедневно с 08:00 до 22:00</span>
+                                    </div>
+                                </div>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
                 <div class="bottom-menu">
                     <div class="logo">
                         <a href="/"><img src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
+                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
                     <div class="nav">
                         <div class="menu-toggle">
@@ -167,58 +172,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="body">
-                    <div class="left">
-                        <span>Сэкономьте <br>свое время</span>
-                        <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
-                        <a class="btn out-icon green open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
-                        <img src="<?= $assets ?>/ifixme/images/master.png">
-                    </div>
-                    <div class="right">
-                        <div class="title">Наши сервисные центры</div>
-                        <div class="content">
-                            <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">На Сиреневой</a></li>
-                                <li><a onclick="return false;" href="#" data-tab="local2">На Ленина</a></li>
-                                <li><a onclick="return false;" href="#" data-tab="local3">На Георгевской</a></li>
-                            </ul>
-                            <div id="local1" class="footer-map active">
-                                <div class="info">
-                                    <div class="img"><img src="http://icanchoose.ru/file/widget/54f95ab7.jpg" alt=""></div>
-                                    <div class="text">
-                                        <p>Москва, ул. Сиреневая 236,  корпус 3</p>
-                                        <a href="#">+7 (495) 900 80 80</a>
-                                        <span>Ежедневно с 10:00 до 20:00</span>
-                                    </div>
-                                </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
-                            </div>
-                            <div id="local2" class="footer-map">
-                                <div class="info">
-                                    <div class="img"><img src="http://icanchoose.ru/file/widget/54f95ab7.jpg" alt=""></div>
-                                    <div class="text">
-                                        <p>Москва, ул. Сиреневая 236,  корпус 3</p>
-                                        <a href="#">+7 (495) 900 81 80</a>
-                                        <span>Ежедневно с 10:00 до 20:00</span>
-                                    </div>
-                                </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
-                            </div>
-                            <div id="local3" class="footer-map">
-                                <div class="info">
-                                    <div class="img"><img src="http://icanchoose.ru/file/widget/54f95ab7.jpg" alt=""></div>
-                                    <div class="text">
-                                        <p>Москва, ул. Сиреневая 236,  корпус 3</p>
-                                        <a href="#">+7 (495) 900 82 80</a>
-                                        <span>Ежедневно с 10:00 до 20:00</span>
-                                    </div>
-                                </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer">
+                <!--<div class="footer">
                     <div class="left">
                         <span>Мы в социальных сетях</span>
                         <ul>
@@ -233,7 +187,7 @@ $js = app\components\CController::$js;
                     <div class="right">
                         <span>© <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
-                </div>
+                </div>-->
             </div>
         </footer>
 
