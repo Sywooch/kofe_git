@@ -22,8 +22,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="search-brends">
         <div class="left"><?= $latter; ?></div>
         <div class="right">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">Bork</a></li>
+            <ul class="menu__list">                
                 <?php foreach ($brands as $brand): ?>
                     <?php
                     if ($siteConfig['mono'])
