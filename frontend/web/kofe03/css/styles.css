@@ -305,7 +305,7 @@ h1,
 .poster p {
     color: #fff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .poster h1,
     .poster p {
         color: #3d4859;
@@ -6461,7 +6461,7 @@ a.blog__more {
     display: inline-block;
 
     box-sizing: border-box;
-    width: 15%;
+    width: 19%;
     margin: 0 0 20px;
     padding: 0 20px;
 
@@ -7034,6 +7034,8 @@ position: relative;
     box-sizing: border-box;
     float: left;
     height: 100%;
+    vertical-align: middle;
+    display: inline-block;
 }
 .office-content table td:nth-child(1) {
     width: 70%;
@@ -7066,6 +7068,9 @@ table.no-border td {
 @media (max-width: 1260px) {
     .office-content table tr {
         width: 100%;
+    }
+    .office-content table tr:last-child {
+        margin-bottom: 0px;
     }
 }
 @media (min-width: 481px) {
@@ -7444,7 +7449,7 @@ table.no-border td {
     width: 50%;
 }
 }
-@media screen and (max-width: 480px)
+@media screen and (max-width: 1000px)
 {
 	.similar-articles {
     width: 100%;
@@ -7626,6 +7631,7 @@ img.brands__name {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    padding-top: 20px;
 }
 .pagination li {
     float: none;
@@ -7633,14 +7639,22 @@ img.brands__name {
 }
 .pagination li.disabled {
     padding: 5px 20px;
+    border: 1px solid #e9eaec;
+    border-radius: 5px;
 }
 .pagination li a {
     text-decoration: none;
     padding: 5px 20px;
     display: block;
     border-radius: 5px;
+    border: 1px solid #e9eaec;
 }
 
 .pagination li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #f42b36;
+}
+.pagination li.active a {
+    background: #f42b36;
+    color: #fff;
 }
