@@ -305,7 +305,7 @@ h1,
 .poster p {
     color: #fff;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .poster h1,
     .poster p {
         color: #3d4859;
@@ -986,8 +986,8 @@ img[align='right']
 
 .form__title
 {
-    margin: 0 0 10px;
-
+    margin: 0px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -996,7 +996,7 @@ img[align='right']
     font-size: 14px; 
     line-height: 1.25;
 
-    color: #909baf;
+    color: #3d4859;
 }
 .popup__main .form__text {
     padding: 5px 15px;
@@ -3653,6 +3653,7 @@ label.error
 {
     padding: 2px 0 0;
 }
+
 @media screen and (max-width: 600px)
 {
     .footer__item
@@ -3666,23 +3667,17 @@ label.error
 .footer__page,
 .footer__type
 {
-    line-height: 62px;
+    line-height: 18px;
 
     display: block;
 
     text-decoration: none; 
 
     color: inherit;
+    padding: 15px 10px;
+    text-align: left;
 }
 
-@media screen and (max-width: 600px)
-{
-    .footer__page
-    {
-        line-height: 20px;
-        margin-bottom: 15px;
-    }
-}
 
 .footer__label
 {
@@ -6461,7 +6456,7 @@ a.blog__more {
     display: inline-block;
 
     box-sizing: border-box;
-    width: 15%;
+    width: 19%;
     margin: 0 0 20px;
     padding: 0 20px;
 
@@ -7034,6 +7029,8 @@ position: relative;
     box-sizing: border-box;
     float: left;
     height: 100%;
+    vertical-align: middle;
+    display: inline-block;
 }
 .office-content table td:nth-child(1) {
     width: 70%;
@@ -7066,6 +7063,9 @@ table.no-border td {
 @media (max-width: 1260px) {
     .office-content table tr {
         width: 100%;
+    }
+    .office-content table tr:last-child {
+        margin-bottom: 0px;
     }
 }
 @media (min-width: 481px) {
@@ -7311,7 +7311,7 @@ table.no-border td {
     display: flex;
         flex-direction: column;
 
-    max-width: 94%;
+    max-width: 320px;
     max-height: 92%;
 
     -webkit-transition: .25s linear;
@@ -7327,6 +7327,12 @@ table.no-border td {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+        border: 1px solid #e9eaec;
+            border-radius: 5px;
+}
+.popup__main img {
+    max-width: 45px;
+    margin: 0 auto;
 }
 .lt-ie10 .popup__main
 {
@@ -7444,7 +7450,7 @@ table.no-border td {
     width: 50%;
 }
 }
-@media screen and (max-width: 480px)
+@media screen and (max-width: 1000px)
 {
 	.similar-articles {
     width: 100%;
@@ -7626,6 +7632,7 @@ img.brands__name {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    padding-top: 20px;
 }
 .pagination li {
     float: none;
@@ -7633,14 +7640,22 @@ img.brands__name {
 }
 .pagination li.disabled {
     padding: 5px 20px;
+    border: 1px solid #e9eaec;
+    border-radius: 5px;
 }
 .pagination li a {
     text-decoration: none;
     padding: 5px 20px;
     display: block;
     border-radius: 5px;
+    border: 1px solid #e9eaec;
 }
 
 .pagination li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #f42b36;
+}
+.pagination li.active a {
+    background: #f42b36;
+    color: #fff;
 }

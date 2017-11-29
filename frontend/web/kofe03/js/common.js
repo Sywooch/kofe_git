@@ -265,7 +265,11 @@ $(window).on('load resize', function () {
         e.preventDefault();
         $('.popup').removeClass('popup_active');
         $('body').addClass('popup-open');
-        var popupNow = '.popup_' + $(this).data('popup');
+		var title = $(this).find(".menu__action-text").text();
+		var popupNow = '.popup_' + $(this).data('popup');
+		if(title == "")
+			title = $(this).text();
+		$(popupNow).find("h3").text(title);        
         $(popupNow).addClass('popup_active');
     });
     $('.popup__close, .popup__bg').on('click', function () {

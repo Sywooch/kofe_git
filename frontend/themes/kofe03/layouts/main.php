@@ -42,6 +42,25 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
+	<?php
+            if (!Yii::$app->user->isGuest) {
+                echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
+                $domain = $_SERVER['SERVER_NAME'];
+                if (isset($_GET['data']['is_service'])) {
+                    if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
+                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
+                    } else {
+                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                        echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                    }
+                } else {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                    if (!empty($_GET['data']))
+                        echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                }
+                echo '</div>';
+            }
+            ?>
         <?php $this->beginBody() ?>
         <div class="layout" id="top">
             <header class="header">
@@ -59,7 +78,7 @@ $js = app\components\CController::$js;
                            <li class="nav__item">
                               <a class="nav__link" href="/uslugi-i-ceny">Услуги и цены</a>
                            </li>
-                           <li class="nav__item nav__item_desktop">
+                           <li class="nav__item">
                               <a class="nav__link" href="/o-kompanii">О компании</a>
                            </li>
                            <li class="nav__item nav__item_desktop">
@@ -67,6 +86,19 @@ $js = app\components\CController::$js;
                            </li>
                            <li class="nav__item nav__item_desktop">
                               <a class="nav__link" href="/kontakty">Контакты</a>
+                           </li>
+                           <li class="nav__item nav__item_more">
+                              <a class="nav__link" href="#"><span class="nav__label">Ещё</span></a>
+                              <div class="nav__subnav">
+                                 <ul class="nav__sublist">
+                                    <li class="nav__subitem nav__subitem_active">
+                                       <a class="nav__sublink" href="/garantiya">Гарантия</a>
+                                    </li>
+                                    <li class="nav__subitem">
+                                       <a class="nav__sublink" href="/kontakty">Контакты</a>
+                                    </li>
+                                 </ul>
+                              </div>
                            </li>
                         </ul>
                      </div>
@@ -275,7 +307,18 @@ $js = app\components\CController::$js;
             <div class="layout__loading">
                 <img class="layout__loader" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/loaderd8b8.svg?v=1485518639218" alt="">
             </div>
-
+			
+			<div class="popup popup_request_full">
+               <div class="popup__bg"></div>
+               <div class="popup__main">
+                  <h3 class="form__title">Заявка отправлена</h3>
+				  <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/tick.svg" />
+                  <p class="form__text">
+                     Спасибо за заявку, наш оператор свяжется с вами в течение 30 минут.
+                  </p>
+                  <div class="popup__close"></div>
+               </div>
+            </div>
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
                 
@@ -294,7 +337,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js?v=1"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
+    echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
 <script>$("form").each(function () {
