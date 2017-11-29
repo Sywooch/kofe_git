@@ -215,12 +215,18 @@ a:hover {
 .row.hero {
     height: 390px
 }
+.row.hero .container.banner {
+    min-height: 390px;
+    padding-top: 35px;
+    box-sizing: border-box;
+}
 .hero-text {
     color: #fff;
     padding-top: 4%;
-    height: 100%;
-    width: 100%;
     float: left;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #0000006e;
 }
 .hero-text .heading {
     font-size: 28px
@@ -1336,11 +1342,11 @@ button {
     position: relative;
 }
 #my-reviews .item {
-    float: left;
     box-sizing: border-box;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
+    width: 100%;
 }
 #my-reviews .item p {
     margin: 0px;

@@ -144,8 +144,8 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/sly.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/plugins.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.sticky.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/global.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/global.js"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';

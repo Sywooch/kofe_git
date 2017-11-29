@@ -136,6 +136,12 @@ $(document).ready(function () {
     $(".navigation_open").click(function () {
         $(".gl-header .navigation").slideToggle("fast");
     });
+    $(".prices .button a").click(function () {
+        $(".pricelist").addClass("active");
+        $(this).parent(".button").hide();
+        return false;
+    });
+
 
 //Сокрытие seo ссылок
 
