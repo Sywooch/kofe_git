@@ -7,7 +7,11 @@ $this->title = $page['meta_title'];
     <div class="row">
         <div class="container">
             <div class="carousel-inner">
-                <img style="margin-top: 65px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/slider/slider1.jpg" alt="Оригинальные запчасти" width="820">
+                <?php if ($siteConfig['id'] == 53): ?>
+                    <img style="margin-top: 85px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/j/slider/1.png" alt="Оригинальные запчасти" width="560">
+                <?php else: ?>
+                    <img style="margin-top: 65px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/slider/slider1.jpg" alt="Оригинальные запчасти" width="820">
+                <?php endif; ?>
                 <div class="carousel-caption">
                     <h1><?= $page['meta_h1']; ?></h1>
                     <?= $page['description']; ?>
