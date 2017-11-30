@@ -3,26 +3,26 @@
         <h3 class="content__subtitle">Обслуживаемые города <b>МО</b></h3>
         <div class="citys">
             <ul>
-                <li><a href="/">Балашиха</a></li>
-                <li><a href="/">Химки</a></li>
-                <li><a href="/">Подольск</a></li>
-                <li><a href="/">Королёв</a></li>
-                <li><a href="/">Люберцы</a></li>
-                <li><a href="/">Мытищи</a></li>
-                <li><a href="/">Электросталь</a></li>
-                <li><a href="/">Железнодорожный</a></li>
-                <li><a href="/">Коломна</a></li>
-                <li><a href="/">Одинцово</a></li>
-                <li><a href="/">Красногорск</a></li>
-                <li><a href="/">Серпухов</a></li>
-                <li><a href="/">Орехово-Зуево	</a></li>
-                <li><a href="/">Щёлково</a></li>
-                <li><a href="/">Домодедово</a></li>
-                <li><a href="/">Жуковский</a></li>
-                <li><a href="/">Сергиев Посад</a></li>
-                <li><a href="/">Пушкино</a></li>
-                <li><a href="/">Раменское</a></li>
-                <li><a href="/">Ногинск</a></li>
+                <li><a href="/balashiha">Балашиха</a></li>
+                <li><a href="/himki">Химки</a></li>
+                <li><a href="/podolsk">Подольск</a></li>
+                <li><a href="/korolyov">Королёв</a></li>
+                <li><a href="/lyubercy">Люберцы</a></li>
+                <li><a href="/mytishchi">Мытищи</a></li>
+                <li><a href="/ehlektrostal">Электросталь</a></li>
+                <li><a href="/zheleznodorozhnyj">Железнодорожный</a></li>
+                <li><a href="/kolomna">Коломна</a></li>
+                <li><a href="/odincovo">Одинцово</a></li>
+                <li><a href="/krasnogorsk">Красногорск</a></li>
+                <li><a href="/serpuhov">Серпухов</a></li>
+                <li><a href="/orekhovo-zuevo">Орехово-Зуево	</a></li>
+                <li><a href="/shchyolkovo">Щёлково</a></li>
+                <li><a href="/domodedovo">Домодедово</a></li>
+                <li><a href="/zhukovskij">Жуковский</a></li>
+                <li><a href="/sergiev-posad">Сергиев Посад</a></li>
+                <li><a href="/pushkino">Пушкино</a></li>
+                <li><a href="/ramenskoe">Раменское</a></li>
+                <li><a href="/noginsk">Ногинск</a></li>
             </ul>
         </div>
     </div>
