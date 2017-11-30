@@ -23,16 +23,14 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                         <h1>Контакты</h1>
                     </header>
                     <div class="post__content">
-                        <p>Компания &laquo;Вежливый сервис 5+&raquo;</p>
-                        <p>Телефон:&nbsp;<a href='tel:+74952284282'>8(495)228-42-82</a></p>
+                        <p>Сервисный центр "Kofe03.ru"</p>
+                        <p>Телефон:&nbsp;<a href='tel:+74951350003'>8 (495) 135-00-03</a></p>
                         <ul>
-                            <li>г. Москва, ул. Садовая-Черногрязская, д. 8 м. Красные ворота</li>
-                            <li>г. Санкт-Петербург, ул. Салова 36б</li>
+                            <li>г. Москва, пл. Победы, д. 1А </li>
                         </ul>
-                        <p>Email: <a class="post__email" href="../cdn-cgi/l/email-protection.html#51383f373e1123343c2324227f2324" target="_blank" rel="noopener noreferrer"><span class="__cf_email__" data-cfemail="7b12151d143b091e16090e0855090e">[email&#160;protected]</span></a></p>
-                        <p>Время работы: 7:00 &ndash; 23:00</p>
+                        <p>Время работы: 08:00 &ndash; 22:00</p>
                         <div class="post__maps">
-                            <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZd6mYiq" width="100%" height="400" frameborder="0"></iframe>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30af65369578d250a40a2d07c009ccc057a8edb2b2fd99fe638d341eca27f3cd&amp;width=662&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                         </div>
                     </div>
                 </article>
