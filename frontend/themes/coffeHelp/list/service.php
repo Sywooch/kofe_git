@@ -3,8 +3,7 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<div class="bg">
-    <div class="promo_bg"  style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/promo/parallax/bg_header_washer.jpg) no-repeat; background-position: left top;"></div>        
+<div class="inner-bg">  
     <div class="container theme-showcase" role="main">            
         <section class="promo">
             <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
@@ -34,14 +33,16 @@ $this->title = $title;
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>        
     </div>
 </div>
-<div class="container theme-showcase" role="main">
-    <hr class="big_line">
-    <section class="about">
-        <div class="row">
-            <?php if (!empty($seoText2)){echo $seoText2;} ?>
-        </div>
-    </section>
-    <section class="order">
-        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-    </section>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">
+        <section class="about">
+            <div class="row">
+                <?php if (!empty($seoText2)){echo $seoText2;} ?>
+            </div>
+        </section>
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
 </div>

@@ -51,7 +51,7 @@ $js = app\components\CController::$js;
                         <div class="navbar-phone">
                             <span class="phone_big_top">
                                 <nobr>
-                                    <a class="phone-c" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                    <a class="phone-c" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
                                 </nobr>
                             </span>
                         </div>
@@ -59,7 +59,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <div class="bg">
+        <div class="<?php if ($isHome): ?>bg<?php endif; ?> inner-bg" >
             <div class="sliderbg">
                 <section class="header 1">
                     <div class="row row_top_menu">

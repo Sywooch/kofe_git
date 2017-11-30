@@ -16,56 +16,26 @@ $this->title = $page['meta_title'];
         </div>
     </div>
 </section>
-<section class="who_main">
+<section class="who_main container">
     <?= coffeHelp\widgets\other\Advantage::widget(); ?>
     <?= coffeHelp\widgets\lists\TopServices::widget(); ?>    
 </section>
 <?= coffeHelp\widgets\lists\PopularBrands::widget(); ?>
 
-<div class="container theme-showcase" role="main">
-    <hr class="big_line">
-    <section class="about">
-        <div class="row">
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">
+        <section class="about">
             <div class="row">
-                <div class="col-xs-12">
-                    <?= $page['full_description']; ?>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="order">
-        <div class="row">
-            <div class="col-xs-5 form_order_bg">
-                <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-            </div>
-            <div class="col-xs-7 goroda">
-                <h3>Обслуживаемые города МО</h3>
                 <div class="row">
-                    <a href="#">Балашиха</a>
-                    <a href="#">Химки</a>
-                    <a href="#">Подольск</a>
-                    <a href="#">Королёв</a>
-                    <a href="#">Люберцы</a>
-                    <a href="#">Мытищи</a>
-                    <a href="#">Электросталь</a>
-                    <a href="#">Железнодорожный</a>
-                    <a href="#">Коломна</a>
-                    <a href="#">Одинцово</a>
-                    <a href="#">Красногорск</a>
-                    <a href="#">Серпухов</a>
-                    <a href="#">Орехово-Зуево   </a>
-                    <a href="#">Щёлково</a>
-                    <a href="#">Домодедово</a>
-                    <a href="#">Жуковский</a>
-                    <a href="#">Сергиев Посад</a>
-                    <a href="#">Пушкино</a>
-                    <a href="#">Раменское</a>
-                    <a href="#">Ногинск</a>
+                    <div class="col-xs-12">
+                        <?= $page['full_description']; ?>
+                    </div>
                 </div>
-                <div class="map">
-                    <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZd6mYiq" width="100%" height="282" frameborder="0"></iframe>
-                </div>
-            </div> 
-        </div>
-    </section>
+            </div>
+        </section>
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>            
+        </section>
+    </div>
 </div>

@@ -1427,7 +1427,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
-	background-color: #fff
+	background-color: #f7f4ef;
 }
 
 button,
@@ -3241,7 +3241,10 @@ input[type=search] {
 }
 
 .form-group {
-	margin-bottom: 15px
+	margin-bottom: 15px;
+}
+.section_form_order_bottom .form-group {
+	float: left;
 }
 
 .checkbox,
@@ -10067,7 +10070,8 @@ section.who .panel-body {
 section.brend {
 	background: #fff;
 	margin-bottom: 0;
-	padding-bottom: 0
+	padding-bottom: 0;
+	padding-left: 0.25;
 }
 section.brend.my {
 	background: none;
@@ -12113,7 +12117,8 @@ section.price .section_form_order_bottom {
 body section.slider {
 	height: 520px;
 	margin-top: -38px;
-	position: relative
+	position: relative;
+	background: #000;
 }
 
 .second_navigation {
@@ -12214,12 +12219,16 @@ section.who_main p {
 	height: 42px;
 	font-size: 14px
 }
+.form-group.field-orderform-phone.required {
+	margin: 0px;
+}
 
-#form_order .input-group-lg>.form-control {
+#form_order .input-group-lg>.form-control,
+.form-group.field-orderform-phone.required input  {
 	height: 52px
 }
 
-#form_order textarea {
+#form_order textarea{
 	height: 123px!important
 }
 
@@ -12233,12 +12242,13 @@ section.who_main .row.shadow {
 }
 
 .service3 .panel-body {
-	min-height: 218px;
+	min-height: 200px;
 	padding: 0;
 	border-right: 3px solid #fff;
 	border-bottom: 3px solid #fff;
+	background-size: 100%;
 }
-.service3 .panel-body:nth-child(3n) {
+.service3 .panel-body:nth-child(4n) {
 	border-right: 0px;
 }
 
@@ -12354,7 +12364,7 @@ section.header .logo {
 
 section.promo {
 	padding: 0 20px 0 355px;
-	min-height: 440px
+	min-height: 350px
 }
 section.promo.widthsto {
 	padding: 0 20px;
@@ -12363,8 +12373,9 @@ section.promo.widthsto {
 
 #big-header-image {
 	position: absolute;
-	left: 20px;
-	top: 35px
+  left: 15px;
+  top: 65px;
+  width: 290px;
 }
 
 section.who {
@@ -12657,14 +12668,13 @@ section.who_main p {
 }
 
 .panel-body .bg_line {
-	width: 255px;
-	height: 55px;
-	margin-top: 125px
+	margin-top: 110px;
+	width: 170px;
 }
 .panel-body .bg_line p {
 	color: #fff;
 	font-size: 16px;
-	padding: 15px 25px;
+	padding: 10px 15px;
 	display: inline-block;
 	margin-top: 0px;
 	width: auto;
@@ -12912,7 +12922,7 @@ section.promo a {
 .form-order-cont form input[type=text] {
 	min-width: 215px
 }
-
+/*
 .form-order-cont form input:last-child {
 	font-size: 18px;
 	color: #fff;
@@ -12920,10 +12930,10 @@ section.promo a {
 	text-align: center;
 	background: #ffb500
 }
-
 .form-order-cont form input:last-child:hover {
 	background: #ffbf22
-}
+}*/
+
 
 .modal {
 	display: none;
@@ -12987,6 +12997,13 @@ textarea {
 	border-radius: 5px;
 	outline: 0
 }
+.field-orderform-comment textarea {
+	margin: 0px;
+}
+#form-modal .has-error input,
+.has-error textarea {
+	border: 2px solid #ff0000;
+}
 
 #form-modal-form {
 	position: relative
@@ -12996,7 +13013,7 @@ textarea {
 	margin-bottom: 0;
 	padding-right: 20px
 }
-
+/*
 #form-modal .modal-content .call-master {
 	margin: 0;
 	height: 38px!important;
@@ -13007,7 +13024,7 @@ textarea {
 	bottom: -55px;
 	left: 0
 }
-
+*/
 #form-modal textarea {
 	resize: none;
 	height: 155px;
@@ -13750,14 +13767,14 @@ section.brend a.brand-page-link {
 	display: block;
 	position: relative;
 	float: left;
-	width: 19.3%;
-	height: 55px;
+	width: 12%;
+	height: 80px;
 	border: 1px solid #e3e3e3;
-	margin-right: 5px;
+	margin-right: 0.5%;
 	margin-bottom: 5px
 }
 section.brend.my a.brand-page-link {
-	width: 19.6%;
+	width: 12%;
 	background: #fff;
 }
 
@@ -13767,7 +13784,9 @@ section.brend a.brand-page-link img {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	right: 0
+	right: 0;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 section.brend a.brand-page-link:hover {
@@ -13778,13 +13797,11 @@ section.brend a.brand-page-link:last-of-type {
 	margin-bottom: 20px
 }
 
-section.brend a.brand-page-link:nth-of-type(5n) {
+section.brend a.brand-page-link:nth-of-type(8n) {
 	margin-right: 0
 }
 
-section.brend a.brand-page-link:nth-of-type(n+6) {
-	display: none
-}
+
 
 section.brand p,
 section.brend p {
@@ -13901,19 +13918,10 @@ div.col-xs-10.name_price span {
 	display: block
 }
 
-.sliderbg {
-	background: linear-gradient(to bottom, #fff 0, #fff 189px, #010101 195px, #010101 760px, #f7f4ef 760px, #f7f4ef 100%);
-	-webkit-transition: all .6s ease;
-	-moz-transition: all .6s ease;
-	-o-transition: all .6s ease;
-	transition: all .6s ease
-}
 
 
-div.bg {
-	background: url(../img/bg.jpg) #f6f7f8 repeat-x;
-	background-position-y: -45px
-}
+
+
 
 p.desc-table {
 	color: #818b8d;
@@ -14754,4 +14762,68 @@ section.school-map h3 {
 .accordion__active-elem {
     background: #5cb426;
     color: #fff;
+}
+.all-brands-show {
+	display: inline-block;
+	width: 100%;
+	clear: both;
+	margin: 20px 0px 40px;
+}
+.inner-bg {
+	background-color: #f6f7f8;
+}
+.bg {
+	background-color: #fff;
+}
+.my-footer-block {
+	background-color: #fff;
+}
+
+.search-brends {
+	display: flex;
+	padding: 10px;
+	border-radius: 3px;
+}
+.search-brends:nth-child(odd) {
+	background-color: #ffb50017;
+}
+.search-brends  .my-input {
+	margin-top: 10px;
+}
+.search-brends .left {
+	width: 55px;
+	font-size: 64px;
+	color: #5cb42687;
+	line-height: 65px;
+}
+.search-brends .right {
+	width: 715px;
+}
+ul.menu__list {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+li.menu__item {
+	text-align: center;
+    float: left;
+    display: inline-block;
+    width: 20%;
+    border: 1px dashed #5cb426;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    position: relative;
+}
+li.menu__item a {
+    padding: 5px 5px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+li.menu__item:hover {
+    border: 1px dashed #ffb500;
+    z-index: 9;
+}
+.office__inner {
+	margin-bottom: 20px;
 }

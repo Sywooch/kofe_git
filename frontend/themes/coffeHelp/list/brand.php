@@ -3,8 +3,7 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<div class="bg">
-    <div class="promo_bg"  style="background: url(<?= $assets . $siteConfig['theme'] . '/'; ?>img/promo/parallax/bg_header_washer.jpg) no-repeat; background-position: left top;"></div>        
+<div class="inner-bg">    
     <div class="container theme-showcase" role="main">            
         <section class="promo">
             <?php if (!empty($pageInfo['image'])): ?>
@@ -39,9 +38,9 @@ $this->title = $title;
             </div>
         </section>
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>
-        <section class="who">
+        <section class="who equipment">
             <div class="row">
-                <div class="col-sm-9 left-col body">
+                <div class="col-sm-9 left-col">
                     <?= coffeHelp\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
                     <?= coffeHelp\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам']); ?>
                     <?= coffeHelp\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неиправностям']); ?>
@@ -60,25 +59,27 @@ $this->title = $title;
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>        
     </div>
 </div>
-<div class="container theme-showcase" role="main">
-    <hr class="big_line">
-    <section class="about">
-        <div class="row">
-            <?php if (!empty($pageInfo['full_description'])): ?>
-                <?= $pageInfo['full_description']; ?>
-            <?php else: ?>                
-                <h3>Поддерживаем качество сервиса на уровне мировых стандартов</h3>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p> СЦ &laquo;Технобыт&raquo; работает круглосуточно, 7 дней в неделю и отдыхает только 1 января.<br> Ответим каждому, приедем быстро, осмотрим тщательно, починим качественно.<br> Всегда бесплатно: консультации по эксплуатации, гарантия на работы и детали.<br></p>
-                        <p> Компания СЦ &laquo;Технобыт&raquo; предоставляет полный спектр услуг по ремонту бытовой техники практически всех марок и моделей как отечественного, так и импортного производства.</p>
-                        <p> Многолетний опыт работы и высокий профессионализм наших инженеров позволяет точно на месте определить характер неисправности и устранить поломку в максимально короткий срок.</p>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">
+        <section class="about">
+            <div class="row">
+                <?php if (!empty($pageInfo['full_description'])): ?>
+                    <?= $pageInfo['full_description']; ?>
+                <?php else: ?>                
+                    <h3>Поддерживаем качество сервиса на уровне мировых стандартов</h3>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p> СЦ &laquo;Технобыт&raquo; работает круглосуточно, 7 дней в неделю и отдыхает только 1 января.<br> Ответим каждому, приедем быстро, осмотрим тщательно, починим качественно.<br> Всегда бесплатно: консультации по эксплуатации, гарантия на работы и детали.<br></p>
+                            <p> Компания СЦ &laquo;Технобыт&raquo; предоставляет полный спектр услуг по ремонту бытовой техники практически всех марок и моделей как отечественного, так и импортного производства.</p>
+                            <p> Многолетний опыт работы и высокий профессионализм наших инженеров позволяет точно на месте определить характер неисправности и устранить поломку в максимально короткий срок.</p>
+                        </div>
                     </div>
-                </div>
-            <?php endif; ?>
-        </div>
-    </section>
-    <section class="order">
-        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-    </section>
+                <?php endif; ?>
+            </div>
+        </section>
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
 </div>

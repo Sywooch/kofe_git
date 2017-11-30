@@ -22,7 +22,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                 <div class="row contacts-container">
                     <div class="col-lg-6 l">
                         <p>Единый справочный телефон</p>
-                        <div class="phone one"> <a href="tel:+74951339049" class="phone-h"><span class="header-phone-code-part">+7 (495) </span> <span class="header-phone-number-part"> 133-90-49</span></a></div>
+                        <div class="phone one"> <a href="tel:+74951339049" class="phone-h">+7 (495) 133-90-49</a></div>
                         <a href="mailto:service@technobit24.ru"><span>service@technobit24.ru</span></a>
                     </div>
                     <div class="col-lg-6 r"> Сервисный центр &laquo;Технобыт&raquo;<br/> Работаем с 7:00 до 22:00, без выходных<br/> Наши специалисты выезжают на заказы по всей Москве и до 30 км от МКАД</div>
@@ -50,8 +50,11 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
     <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>    
 </div>
 </div>
-<div class="container theme-showcase" role="main">    
-    <section class="order">
-        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-    </section>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">    
+        <hr class="big_line">
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
 </div>

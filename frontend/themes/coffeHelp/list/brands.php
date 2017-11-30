@@ -63,14 +63,16 @@ $this->title = $pageInfo['meta_title'];
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>
     </div>
 </div>
-<div class="container theme-showcase" role="main">
-    <hr class="big_line">
-    <section class="about">
-        <div class="row">
-            <?= $pageInfo['full_description']; ?>
-        </div>
-    </section>
-    <section class="order">
-        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-    </section>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">
+        <section class="about">
+            <div class="row">
+                <?= $pageInfo['full_description']; ?>
+            </div>
+        </section>
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
 </div>

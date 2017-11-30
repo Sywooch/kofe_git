@@ -8,7 +8,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="break_price">
         <?php foreach ($rows as $key => $row): ?>
             <div class="row">
-                <div class="col-xs-10 name_price"> 
+                <div class="col-xs-9 name_price"> 
                     <?php if ($row['is_popular'] == 1): ?>
                         <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
                     <?php else: ?>
@@ -16,7 +16,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>                    
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/right-arrow-table.png"/>
                 </div>
-                <div class="col-xs-2 col_price"> <?= number_format($row['price'], 0, ' ', ' '); ?> руб.</div>
+                <div class="col-xs-3 col_price"> <span><?= number_format($row['price'], 0, ' ', ' '); ?> руб.</span><a href="#call-modal-form">Заказать</a></div>
             </div>
         <?php endforeach; ?>
     </div>

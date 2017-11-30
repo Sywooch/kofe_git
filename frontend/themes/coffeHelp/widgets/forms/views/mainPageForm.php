@@ -20,7 +20,7 @@ $form = ActiveForm::begin([
                     ],
         ]);
         ?>
-        <?= $form->field($model, 'name')->textInput(['placeholder' => 'Как вас зовут?']); ?> 
+        
         <?=
         $form->field($model, 'phone')->widget(MaskedInput::className(), [
             'name' => 'phone',

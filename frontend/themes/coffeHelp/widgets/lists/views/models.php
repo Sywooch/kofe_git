@@ -3,8 +3,6 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="search-brends">
-    <div class="left"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/search.svg" alt=""></div>
-    <div class="right">
         <?=
         yii\jui\AutoComplete::widget([
             'name' => 'models',
@@ -12,11 +10,10 @@ $siteConfig = app\components\CController::getSiteConfig();
                 'source' => $searches,
                 'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
             ],
-            'options' => ['placeholder' => 'Название модели', 'class' => 'ui-autocomplete-input',],
+            'options' => ['placeholder' => 'Название модели', 'class' => 'my-input ui-autocomplete-input',],
                 ]
         );
         ?>
-    </div>
 </div>
 <?php foreach ($sortedBrands as $latter => $brands): ?>
     <div class="search-brends">

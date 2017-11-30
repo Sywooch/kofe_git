@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
 ?>
-<div class="bg">
+<div class="inner-bg">
     <div class="container theme-showcase" role="main">        
         <section class="promo widthsto">
             <div class="row">
@@ -39,9 +39,11 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>
     </div>
 </div>
-<div class="container theme-showcase" role="main">
-    <hr class="big_line">    
-    <section class="order">
-        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
-    </section>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">    
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
 </div>
