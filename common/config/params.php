@@ -642,7 +642,7 @@ return [
             //'multi_category' => true
         ],
         'kofe03' => [
-            'phone-1' => '8 (499) 450-90-08',
+            'phone-1' => '8 (495) 135-00-03',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
             'mono' => false,
