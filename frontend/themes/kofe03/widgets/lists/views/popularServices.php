@@ -25,7 +25,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="breaking__content">
                 <div class="breaking__main">
                     <div class="breaking__column">
-                        <h3 class="breaking__label">Обычно ломается</h3>
+                        <h3 class="breaking__label">Частые неисправности</h3>
                         <ul class="breaking__list breaking__list_accordion">
                             <li class="breaking__item" data-breaking="01">
                                 <a class="breaking__name" href="#">Не работает</a>
@@ -109,9 +109,16 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="breaking__column">
                         <h3 class="breaking__label">Чаще необходимо</h3>
                         <ul class="breaking__list">
-                            <?php foreach ($rows as $row): ?>
-                                <li class="breaking__item"><?= $row['title']; ?> — <?= number_format($row['price'], 0, ' ', ' '); ?>&#160;₽</li>
-                            <?php endforeach; ?>
+                            <ul class="breaking__list">
+                                <li class="breaking__item">Диагностика - 0 ₽</li>
+                                <li class="breaking__item">Декальценация - 790 ₽</li>
+                                <li class="breaking__item">Замена ТЭНа - 890 ₽</li>
+                                <li class="breaking__item">Ремонт капучинатора - 890 ₽</li>
+                                <li class="breaking__item">Замена жерновов - 890 ₽</li>
+                                <li class="breaking__item">Ремонт кофемолки - 790 ₽</li>
+                                <li class="breaking__item">Ремонт гидросистемы - 990 ₽</li>
+                                <li class="breaking__item">Ремонт насоса - 790 ₽</li>
+                            </ul>                            
                         </ul>
                     </div>
                 </div>

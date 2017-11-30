@@ -3,32 +3,45 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
 ?>
-<main class="layout__content" role="main">
-    <header class="layout__head">
-        <div class="layout__inner">
-            <nav class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="/"><span itemprop="title">Главная</span></a></li>
-                </ul>
-                <span class="breadcrumbs__current"><?= $model['title']; ?></span>
-            </nav>
-        </div>
-    </header>
-    <div class="content">
-        <div class="content__inner">
-            <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $model['url']]); ?>
-            <main class="content__main" role="main">
-                <article class="post">
-                    <header class="post__header">
-                        <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
-                    </header>
-                    <div class="post__content">
-                        <?= $model['description']; ?>
+<div class="bg">
+    <div class="container theme-showcase" role="main">        
+        <section class="promo widthsto">
+            <div class="row">
+                <div class="col-md-9 col-sm-12">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Главная</a></li>
+                        <li><?= $model['title']; ?></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-12">
+                    <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>                    
+                </div>
+                <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+            </div>
+        </section>
+        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>
+        <section class="who equipment">
+            <div class="row">
+                <div class="col-sm-9 left-col">
+                    <div class="row">
+                        <div class="col-sm-12 left-col w">                            
+                            <?= $model['description']; ?>                            
+                        </div>
                     </div>
-                </article>
-            </main>
-        </div>
+                    <?= coffeHelp\widgets\forms\MainPageForm::widget(); ?>
+                </div>
+                <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage3']); ?>
+            </div>
+        </section>
+
+        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>
     </div>
-    <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
-</main>
+</div>
+<div class="container theme-showcase" role="main">
+    <hr class="big_line">    
+    <section class="order">
+        <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+    </section>
+</div>

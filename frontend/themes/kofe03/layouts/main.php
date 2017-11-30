@@ -287,15 +287,12 @@ $js = app\components\CController::$js;
                                 <li class="footer__item"><a class="footer__page" href="/dostavka">Доставка</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/otzyvy">Отзывы</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/oplata">Оплата</a></li>
-                                <li class="footer__item"><a class="footer__page" href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
+                                <li class="footer__item"><a class="footer__page" href="/policy">Пользовательское соглашение</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="connect">
-                        <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 08:00 до 22:00</span> <br class="connect_br">без выходных и праздничных дней</div>
-                        <div class="connect__contact">
-                            <a class="connect__email" href="#"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4d6c1c9d6d1d78ad6d1">[email&#160;protected]</span></a>
-                        </div>
+                        <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 08:00 до 22:00</span> <br class="connect_br">без выходных и праздничных дней</div>                        
                         <div class="connect__call">
                             <span class="connect__phone connect__phone_active" data-phone="moscow">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>

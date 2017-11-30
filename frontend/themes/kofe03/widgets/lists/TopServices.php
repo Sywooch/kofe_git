@@ -12,6 +12,7 @@ class TopServices extends Widget {
         $siteConfig = CController::getSiteConfig();
         $sql = 'SELECT title, url, image, description, price FROM {{%services}} WHERE is_popular = 1 AND type = 2 AND category_id = ' . $siteConfig['category_id'] . ' LIMIT 8';
         $services = Yii::$app->db->createCommand($sql)->queryAll();
+        CController::seoShuffle($services, $siteConfig['id']);
         return $this->render('topServices', ['services' => $services]);
     }
 
