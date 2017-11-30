@@ -189,18 +189,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <div class="remodal" data-remodal-id="call-modal-form">
-            <div id="form-modal">
-                <div class="modal-content">
-                    <p class="modal-title">Вызов мастера</p>
-                    <p class="modal-desc">Мы перезвоним вам в течение минуты для подтверждения заказа.</p>
-                    <form id="form-modal-form"> 
-                        <input type="text" name="phone" placeholder="Номер телефона">
-                        <input type="button" class="call-master" value="Вызвать мастера"></form>
-                    <img data-remodal-action="close" class="remodal-close" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/close_modal.png"/>
-                </div>
-            </div>
-        </div>
+        <?= coffeHelp\widgets\forms\FooterForm::widget(); ?>
         <div class="remodal" data-remodal-id="call-modal-success">
             <div class="modal-content">
                 <p class="modal-title">Ваша заявка принята</p>
