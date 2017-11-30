@@ -287,7 +287,7 @@ $js = app\components\CController::$js;
                                 <li class="footer__item"><a class="footer__page" href="/dostavka">Доставка</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/otzyvy">Отзывы</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/oplata">Оплата</a></li>
-                                <li class="footer__item"><a class="footer__page" href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
+                                <li class="footer__item"><a class="footer__page" href="/policy">Пользовательское соглашение</a></li>
                             </ul>
                         </nav>
                     </div>
