@@ -8,3 +8,175 @@ and open the template in the editor.
     Author     : Dilshod
 */
 
+.container-fluid {
+	background-color: #5bc2e7;
+}
+.row.hero {
+	background: none ! important;
+}
+.bl-heading {
+	background: #5bc2e7 ! important;
+}
+.row.hero .row,
+body > .row {
+	height: 100px ! important;
+	margin-top: -100px ! important;
+  position: relative;
+  background-image: none! important;
+  background-color: rgba(75,177,214,.65) ! important;
+  box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.45);
+}
+.container {
+	z-index: 9;
+}
+.futures a {
+	color: #fff;
+}
+
+.hero-text {
+	    background-color: #5bc2e7;
+}
+.hero-form button,
+.button a, .button input,
+.gl-contact input[type=submit] {
+	font-size: 16px;
+	padding: 10px 20px;
+	  background-color: #eea70e;
+    background-image: linear-gradient(to bottom, #ffc21f, #eea70e);
+        color: #000!important;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ! important;
+}
+.controls.center button i {
+	  background-color: #eea70e;
+    background-image: linear-gradient(to bottom, #ffc21f, #eea70e);
+        color: #000!important;
+}
+.hero-form button:hover,
+.button a:hover, .button input:hover,
+.gl-contact input:hover[type=submit],
+.controls.center button i:hover {
+	background: -webkit-linear-gradient(top,#ffce2a,#ffce2a);
+    background: #ffce2a;
+    background: -moz-linear-gradient(top,#ffce2a 0,#ffce2a 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ffce2a),color-stop(100%,#ffce2a));
+    background: -o-linear-gradient(top,#ffce2a 0,#ffce2a 100%);
+    background: -ms-linear-gradient(top,#ffce2a 0,#ffce2a 100%);
+    background: linear-gradient(180deg,#ffce2a 0,#ffce2a);
+}
+.form-group input {
+	padding: 10px 10px ! important;
+}
+#main-form {
+	min-height: 55px;
+}
+.hero-text .heading h1,
+.heading-description {
+	    font-family: 'Exo 2';
+	    margin-top: 0px;
+	    font-size: 45px;
+}
+.hero-text .heading,
+.bl-heading .heading {
+	font-size: 20px;
+}
+.futures div {
+	    border-left: solid 1px #9fd7eb;
+}
+a,
+.logo-phone a,
+#main-menu ul li a {
+    color: #301d0f;
+    font-family: 'Exo 2';
+}
+.logo-phone a:hover {
+	text-decoration: underline;
+}
+.bl-text .heading:after {
+	background-color: #f8b818;
+}
+.faults .list ul li:before,
+.top-advantages .item:before {
+	    color: #f8b818;
+}
+.gl-footer {
+	    background: #50b6db;
+}
+.gl-footer .navigation p {
+	color: #fff;
+}
+.scrollbar .handle {
+	    background: #50b6db;
+}
+.menu-line {
+	border: 0px;
+	margin-bottom: -26px;
+}
+.menu-line .navigation {
+	font-size: 16px;
+	padding: 0px 20px;
+	background-color: #eea70e;
+  background-image: linear-gradient(to bottom, #ffc21f, #eea70e);
+  color: #000!important;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ! important;
+}
+#main-menu ul .current-menu-item a,
+.gl-footer .top .navigation ul li.current-menu-item a {
+	background: #eeeeee69;
+}
+#main-menu ul li a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+#my-reviews .item {
+	border: 0px;
+	margin: 0px;
+	padding: 20px;
+}
+#my-reviews .item:nth-child(odd) {
+	background-color: #50b6db1f;
+}
+.futures .mobile {
+	background-image: url(../images/j/time.svg);
+}
+.futures .delivery {
+	    background-image: url(../images/j/car.svg);
+}
+.futures .parts {
+	background-image: url(../images/j/settings.svg);
+}
+.gl-contact .wrapper {
+	text-align: center;
+}
+.navbar-default .navbar-brand {
+	color: #301d0f;
+}
+.navbar-default .navbar-toggle {
+	border-color: #301d0f;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #301d0f;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #301d0f;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #fff;
+}
+@media screen and (max-width: 540px) {
+	.phone-mobile {
+	    color: #efa90f;
+	}
+}
+.seo-link__btn {
+	    border: 1px dotted #50b6db;
+    border-radius: 4px;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+.banner-images {
+	position: absolute;
+	width: 45%;
+	right: 0px;
+	margin-right: 5%;
+	bottom: 0px;
+}

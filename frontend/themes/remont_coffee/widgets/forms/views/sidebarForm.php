@@ -2,7 +2,7 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="gl-contact" style="background: #fdfdfd url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg') center 97% no-repeat;background-size: 65%;">
+<div class="gl-contact" style="background: #fdfdfd url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo.svg') center 97% no-repeat;background-size: 65%;">
     <div class="wrapper">
         <div class="heading">
             <a href="/kontakty" title="Контактная информация" style="line-height: 20px;">

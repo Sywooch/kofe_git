@@ -14,6 +14,9 @@ $this->title = $page['meta_title'];
                 <div class="description"><?= $page['description']; ?></div>
                 <?= remont_coffee\widgets\forms\MainPageForm::widget(); ?>
             </div>
+            <?php if ($siteConfig['id'] == 53): ?>
+                <img class="banner-images" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/j/kofe.png">
+            <?php endif; ?>
         </div>
         <?= remont_coffee\widgets\other\Advantage::widget(); ?>
     </div>

@@ -37,7 +37,7 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/home.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 49): ?>
+        <?php if ($siteConfig['id'] == 53): ?>
             <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
         <?php endif; ?>
     </head>
@@ -46,7 +46,7 @@ $js = app\components\CController::$js;
         <div class="container header">
             <div class="row logo-line">
                 <div class="logo-image">
-                    <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg" /></a>
+                    <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo.svg" /></a>
                 </div>
                 <a href="/" class="phone-mobile"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
                 <div class="top-advantages">
