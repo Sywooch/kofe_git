@@ -98,9 +98,9 @@ $js = app\components\CController::$js;
                             <div class="container">
                                 <div class="navbar">
                                     <ul class="nav navbar-nav">
-                                        <li><a class="coffee-machine" href="#">Типы кофемашин</a></li>
-                                        <li><a class="lists" href="#">Услуги</a></li>
-                                        <li><a class="tools" href="#">Неисправности</a></li>
+                                        <li><a class="coffee-machine" href="/tipy-kofemashin">Типы кофемашин</a></li>
+                                        <li><a class="lists" href="/brendy">Все бренды</a></li>
+                                        <li><a class="tools" href="/uslugi-i-ceny">Услуги и цены</a></li>
                                     </ul>
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="order-now"> <a href="#call-modal-form">Заказать ремонт</a></li>
