@@ -27,6 +27,9 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
+        <?php if ($siteConfig['id'] == 53): ?>
+            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
+        <?php endif; ?>
     </head>
     <body role="document">
         <div id="top-bar" class="navbar navbar-default navbar-fixed-top">
