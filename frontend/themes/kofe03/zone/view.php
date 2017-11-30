@@ -29,6 +29,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             </main>
         </div>
     </div>
+    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>
