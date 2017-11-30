@@ -6,8 +6,8 @@ return [
     'user.passwordResetTokenExpire' => 3600,
     'regions' => [
         1 =>
-            ['title' => 'Москва', 'tel' => '8 (495) 646-85-07', 'id' => 1, 'address' => 'ул. Барклая 7, БЦ Рубин, офис 507', 'mode' => 'с 10 до 20 ежедневно'],
-            ['title' => 'Санкт-Петербург', 'tel' => '8 (812) 603-41-07', 'id' => 2, 'address' => 'м. Петроградская, ул. Ординарная 21', 'mode' => 'с 10 до 20 ежедневно'],
+        ['title' => 'Москва', 'tel' => '8 (495) 646-85-07', 'id' => 1, 'address' => 'ул. Барклая 7, БЦ Рубин, офис 507', 'mode' => 'с 10 до 20 ежедневно'],
+        ['title' => 'Санкт-Петербург', 'tel' => '8 (812) 603-41-07', 'id' => 2, 'address' => 'м. Петроградская, ул. Ординарная 21', 'mode' => 'с 10 до 20 ежедневно'],
     //['title' => 'Екатеринбург', 'tel' => '+7 495 995-25-03', 'id' => 3],
     ],
     'siteConfigs' => [
@@ -96,7 +96,7 @@ return [
             'id' => 7,
             'sitePrefix' => 'bosch',
             'change-logo' => true,
-			'category_id' => 7,
+            'category_id' => 7,
             'order-title' => 'МСК Войковская',
         ],
         'service-krups' => [
@@ -213,7 +213,7 @@ return [
             'id' => 16,
             'sitePrefix' => 'franke',
             'change-logo' => true,
-			'category_id' => 7,
+            'category_id' => 7,
             'order-title' => 'МСК Войковская',
         ],
         'remont-faema' => [
@@ -556,7 +556,7 @@ return [
         ],
         'repair-mobiles' => [
             'phone-1' => '8 (495) 432-00-03',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -568,7 +568,7 @@ return [
         ],
         'repair-laptops' => [
             'phone-1' => '8 (495) 152-80-00',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -580,7 +580,7 @@ return [
         ],
         'repair-watch' => [
             'phone-1' => '8 (495) 256-00-80',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -592,7 +592,7 @@ return [
         ],
         'tablets-repair' => [
             'phone-1' => '8 (495) 432-00-20',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -604,7 +604,7 @@ return [
         ],
         'repair-cameras' => [
             'phone-1' => '8 (495) 320-80-08',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -616,7 +616,7 @@ return [
         ],
         'ifixme' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
@@ -639,7 +639,7 @@ return [
             'category_id' => 7,
             'theme' => 'remont_coffee',
             'order-title' => 'МСК Заречная',
-            //'multi_category' => true
+        //'multi_category' => true
         ],
         'kofe03' => [
             'phone-1' => '8 (495) 135-00-03',
@@ -652,7 +652,7 @@ return [
             'category_id' => 7,
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
-            //'multi_category' => true
+        //'multi_category' => true
         ],
         'coffee-help' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
@@ -665,7 +665,7 @@ return [
             'category_id' => 7,
             'theme' => 'coffeHelp',
             'order-title' => 'МСК Заречная',
-            //'multi_category' => true
+        //'multi_category' => true
         ],
         'fixkofe' => [
             'phone-1' => '8 (499) 450-90-08',
@@ -678,7 +678,20 @@ return [
             'category_id' => 7,
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
-            //'multi_category' => true
+        //'multi_category' => true
         ],
-        
+        'coffee-support' => [
+            'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 53,
+            'sitePrefix' => 'coffeHelp',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'coffeHelp',
+            'order-title' => 'МСК Заречная',
+        //'multi_category' => true
+        ],
+    ]
 ];
