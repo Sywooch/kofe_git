@@ -247,8 +247,8 @@ $(document).ready(function () {
         $('.popup, .popup .inner').removeClass('active');
     });
     $('.zakaz').click(function () {
-        $('.popup .start').removeClass('active');
-        $('.popup .finish').addClass('active');
+        //$('.popup .start').removeClass('active');
+        
     });
 
     $("#gotop").click(function () {
