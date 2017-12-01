@@ -278,11 +278,15 @@ $(document).ready(function () {
     });
     $(".fancybox").fancybox();
 
-    $('.contact-menu li').removeClass('active');
-    $('#number-18 .item').removeClass('active');
+    $('.contact-menu a').click(function () {
+        var tab_id = $(this).attr('data-tab');
 
-    $(this).parent().addClass('active');
-    $("#" + tab_id).addClass('active');
+        $('.contact-menu li').removeClass('active');
+        $('#number-18 .item').removeClass('active');
+
+        $(this).parent().addClass('active');
+        $("#" + tab_id).addClass('active');
+    });
 });
 
 $(".fancybox").fancybox();
