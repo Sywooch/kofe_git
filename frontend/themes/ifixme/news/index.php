@@ -3,6 +3,7 @@ $breadcrumbs = [
     $model['title'],
 ];
 $this->title = $model['meta_title'];
+$assets = Yii::getAlias('@web');
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-20">
@@ -11,7 +12,7 @@ $this->title = $model['meta_title'];
         <div class="news-all">
             <?php foreach ($models as $model): ?>
                 <a href="/<?= $model['url']; ?>" class="item">
-                    <div class="img"><img src="https://cnet1.cbsistatic.com/img/m5LLFsvNhyq9dBZ7zMPOEriuI14=/fit-in/970x0/2017/10/31/e73ffb33-1690-4ebc-91d8-7317faf392b0/iphone-x-52.jpg" alt=""></div>
+                    <div class="img"><img src="<?= $assets ?>/uploads/images/<?= $model['image']; ?>" alt=""></div>
                     <p><?= $model['title']; ?></p>
                     <span>Подробнее</span>
                 </a>
