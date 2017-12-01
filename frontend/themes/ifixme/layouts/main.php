@@ -249,7 +249,7 @@ $js = app\components\CController::$js;
 <script>$("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
     });</script>
-<script src="<?= $assets ?>/ifixme/js/main.js?v=3"></script>
+<script src="<?= $assets ?>/ifixme/js/main.js?v=4"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup, #popup2").addClass("active");</script>';

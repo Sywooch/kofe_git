@@ -248,7 +248,7 @@ $(document).ready(function () {
     });
     $('.zakaz').click(function () {
         //$('.popup .start').removeClass('active');
-        
+
     });
 
     $("#gotop").click(function () {
@@ -269,72 +269,70 @@ $(document).ready(function () {
     $('.contact-menu a').click(function () {
         var tab_id = $(this).attr('data-tab');
 
-		$(this).parent().addClass('active');
-		$("#"+tab_id).addClass('active');
-	});
-  $('.open-botton').click(function(){
-  	$('.content-services').removeClass('active');
-  	$(this).parent().addClass('active');
-  });
-	$(".fancybox").fancybox();
-
-        $('.contact-menu li').removeClass('active');
-        $('#number-18 .item').removeClass('active');
-
         $(this).parent().addClass('active');
         $("#" + tab_id).addClass('active');
     });
-
+    $('.open-botton').click(function () {
+        $('.content-services').removeClass('active');
+        $(this).parent().addClass('active');
+    });
     $(".fancybox").fancybox();
 
-    $(".open-adress").click(function () {
-        $('.open-foto, .content-foto').removeClass("active");
-        if ($(".open-adress, .content-adress").hasClass("active"))
-            $('.open-adress, .content-adress').removeClass("active");
-        else {
-            $('.open-adress, .content-adress').addClass("active");
-        }
-    });
-    $(".open-foto").click(function () {
-        $('.open-adress, .content-adress').removeClass("active");
-        if ($(".open-foto, .content-foto").hasClass("active"))
-            $('.open-foto, .content-foto').removeClass("active");
-        else {
-            $('.open-foto, .content-foto').addClass("active");
-        }
-    });
-    $("#more-comments").click(function () {
-        var lastId = $(this).data('last');
-        console.log(lastId);
-        var el = $(this);
-        $.get('/reviews', {lastId: lastId}, function (response) {
-            var obj = jQuery.parseJSON(response);
-            var html = '';
-            $.each(obj, function (i, item) {
-                html += '<div class="item">'+
-                '<div class="stars">' +
-                        '<span>' + obj[i].rating + '</span>' +
-                        '<div class="n-rating-stars" data-bem="{}" data-rate="' + obj[i].rating + '">' +
-                        '<i class="n-rating-stars__item"></i>' +
-                        '<i class="n-rating-stars__item"></i>' +
-                        '<i class="n-rating-stars__item"></i>' +
-                        '<i class="n-rating-stars__item"></i>' +
-                        '<i class="n-rating-stars__item"></i>' +
-                        '</div>' +
-                        '</div>' +
-                        '<div class="info">' +
-                        '<div class="name">' + obj[i].username + '</div>' +
-                        '<p>' + obj[i].message + '</p>' +
-                        '</div>' +
-                        '<div class="clear"></div>' +
-                        '</div>';
-                lastId = obj[i].id;
-            });
-            $("#reviews-here").append(html);
-            if(obj.length < 10)
-                $("#more-comments").remove();
-            el.attr('data-last', lastId);
-        });
-    });
+    $('.contact-menu li').removeClass('active');
+    $('#number-18 .item').removeClass('active');
+
+    $(this).parent().addClass('active');
+    $("#" + tab_id).addClass('active');
 });
 
+$(".fancybox").fancybox();
+
+$(".open-adress").click(function () {
+    $('.open-foto, .content-foto').removeClass("active");
+    if ($(".open-adress, .content-adress").hasClass("active"))
+        $('.open-adress, .content-adress').removeClass("active");
+    else {
+        $('.open-adress, .content-adress').addClass("active");
+    }
+});
+$(".open-foto").click(function () {
+    $('.open-adress, .content-adress').removeClass("active");
+    if ($(".open-foto, .content-foto").hasClass("active"))
+        $('.open-foto, .content-foto').removeClass("active");
+    else {
+        $('.open-foto, .content-foto').addClass("active");
+    }
+});
+$("#more-comments").click(function () {
+    var lastId = $(this).data('last');
+    console.log(lastId);
+    var el = $(this);
+    $.get('/reviews', {lastId: lastId}, function (response) {
+        var obj = jQuery.parseJSON(response);
+        var html = '';
+        $.each(obj, function (i, item) {
+            html += '<div class="item">' +
+                    '<div class="stars">' +
+                    '<span>' + obj[i].rating + '</span>' +
+                    '<div class="n-rating-stars" data-bem="{}" data-rate="' + obj[i].rating + '">' +
+                    '<i class="n-rating-stars__item"></i>' +
+                    '<i class="n-rating-stars__item"></i>' +
+                    '<i class="n-rating-stars__item"></i>' +
+                    '<i class="n-rating-stars__item"></i>' +
+                    '<i class="n-rating-stars__item"></i>' +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="info">' +
+                    '<div class="name">' + obj[i].username + '</div>' +
+                    '<p>' + obj[i].message + '</p>' +
+                    '</div>' +
+                    '<div class="clear"></div>' +
+                    '</div>';
+            lastId = obj[i].id;
+        });
+        $("#reviews-here").append(html);
+        if (obj.length < 10)
+            $("#more-comments").remove();
+        el.attr('data-last', lastId);
+    });
+});
