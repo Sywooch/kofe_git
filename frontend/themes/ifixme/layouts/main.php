@@ -246,7 +246,7 @@ $js = app\components\CController::$js;
 <script>
                                     new WOW().init();
 </script>
-<script src="<?= $assets ?>/ifixme/js/main.js"></script>
+<script src="<?= $assets ?>/ifixme/js/main.js?v=2"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';

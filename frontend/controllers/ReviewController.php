@@ -28,11 +28,16 @@ class ReviewController extends CController {
         ]);
         $query = \app\models\Reviews::find()->where(['active' => 1]);
         $countQuery = clone $query;
-        $pagination = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 9]);
+        $pagination = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
         $reviews = $query->offset($pagination->offset)
                 ->limit($pagination->limit)
                 ->all();        
         return $this->render('index', ['pageInfo' => $pageInfo, 'rows' => $reviews, 'model' => $model, 'pagination' => $pagination]);
+    }
+    
+    public function actionGet($lastId) {
+        $q = 'SELECT rating, username, message, id FROM {{%reviews}} WHERE active = 1 AND id > ' . (int) $lastId . ' LIMIT 10';
+        return json_encode(Yii::$app->db->createCommand($q)->queryAll());
     }
 
 }
