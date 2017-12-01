@@ -67,7 +67,7 @@ class SiteController extends Controller {
         $file = time() . "_" . $uploadedFile->name;
 
         $url = Yii::$app->urlManager->createAbsoluteUrl('/uploads/ckeditor/' . $file);
-        $uploadPath = Yii::getAlias('@frontend') . '/web/uploads/ckeditor/' . $file;
+        $uploadPath = Yii::getAlias('@backend') . '/web/uploads/ckeditor/' . $file;
         //extensive suitability check before doing anything with the file…
         if ($uploadedFile == null) {
             $message = "No file uploaded.";
