@@ -155,9 +155,9 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-xs-3">
                         <h5>Контактная информация</h5>
-                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">ул. Народного Ополчения, 34, с.2, офис 105</p>
+                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">ул. Народного Ополчения, 34, с.2, офис 105</p>
                         <div class="footer-phone-cont">
-                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/icons/phone_footer.png" style="margin-right: 15px;"/>
+                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
                                 <nobr> <a href="tel:+74951339049" class="phone-c">+7 (495) 133-90-49</a></nobr>
                                 <nobr> <a href="tel:+79299468413" class="phone-c">+7 (929) 946-84-13</a></nobr>

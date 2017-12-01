@@ -1,10 +1,222 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 30.11.2017, 16:09:42
-    Author     : Dilshod
-*/
-
+.row_top_menu,
+.navbar-default {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#041a3f+0,051838+77,02122b+100 */
+background: rgb(4,26,63); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(4,26,63,1) 0%, rgba(5,24,56,1) 77%, rgba(2,18,43,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(4,26,63,1) 0%,rgba(5,24,56,1) 77%,rgba(2,18,43,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(4,26,63,1) 0%,rgba(5,24,56,1) 77%,rgba(2,18,43,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041a3f', endColorstr='#02122b',GradientType=0 ); /* IE6-9 */
+}
+section.header ul.top_menu_big li a,
+.top_menu_right_info {
+	color: #fff;
+	border-bottom: 0px;
+}
+section.header .row {
+	position: relative;
+}
+section.header .row.row_top_menu:after {
+	width: 100%;
+	height: 3px;
+	background-image: url(../img/j/border.png);
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	content: '';
+}
+.top_menu_right_info {
+	background-image: url(../img/j/checkin-header.svg);
+}
+section.header ul.top_menu_big li a:hover, section.header ul.top_menu_small li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.navbar-second {
+background-color: #d5ad6f;
+	border: 1px solid #d3a864;
+}
+.navbar-second .order-now {
+	background-color: #d9b37587;
+	border-left: 1px solid #deb682;
+}
+.navbar-second .order-now:hover {
+	background-color: #bd9046;
+}
+.navbar-second ul.navbar-nav a {
+	line-height: 45px;
+}
+body section.slider {
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002660+0,041833+100 */
+background: rgb(0,38,96); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,38,96,1) 0%, rgba(4,24,51,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,38,96,1) 0%,rgba(4,24,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,38,96,1) 0%,rgba(4,24,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', endColorstr='#041833',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+body section.slider:after {
+	width: 100%;
+	height: 3px;
+	background-image: url(../img/j/border.png);
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	content: '';
+}
+body section.slider:before {
+	width: 100%;
+	height: 3px;
+	background-image: url(../img/j/border.png);
+	display: block;
+	position: absolute;
+	top: 0px;
+	content: '';
+}
+.carousel-caption h1 {
+	color: #e0b978;
+}
+.nav li a:hover, .nav>li>a:focus {
+	color: #fff;
+	text-decoration: underline;
+}
+.bs-docs-footer,
+.section_form_order_n .form-order,
+.form-order-cont {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002660+0,041833+100 */
+background: rgb(0,38,96); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(0,38,96,1) 0%, rgba(4,24,51,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,38,96,1) 0%,rgba(4,24,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(0,38,96,1) 0%,rgba(4,24,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', endColorstr='#041833',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.my-footer-block {
+	position: relative;
+}
+#top-bar:after ,
+.my-footer-block:after {
+	width: 100%;
+	height: 3px;
+	background-image: url(../img/j/border.png);
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	content: '';
+	z-index: 0;
+}
+section.order {
+	position: relative;
+	z-index: 2;
+}
+.big_line {
+	background-image: url(../img/j/border.png);
+	height: 3px;
+}
+.remodal-cancel, input.call-master, input.call-master:focus, input.call-master:hover {
+	background-color: #d5ad6f;
+	border-color: #d5ad6f;
+	color: #fff ! important;
+}
+.my-input, .tb_sidebar_form input, .tb_sidebar_form textarea,
+#form-modal input, textarea {
+	border-color: #d5ad6f;
+}
+.form-order-cont form input {
+	color: #fff;
+}
+.form-order-cont form .form-group  input {
+	color: #000;
+}
+section.who {
+	    border-left: 3px solid #031835;
+	        border-right: 3px solid #031835;
+	        border-radius: 3px;
+}
+.bs-docs-footer h5 {
+	color: #ead39f;
+}
+.bs-docs-footer a,
+.bs-docs-footer {
+	color: #7d98cd;
+	border-color: #7d98cd;
+}
+.bs-docs-footer a:hocer {
+	color: #ead39f;
+	border-color: #ead39f;
+}
+hr {
+	border: 0px;
+	height: 3px;
+	width: 100%;
+	display: block;
+	background-image: url(../img/j/border.png);
+}
+.bs-docs-footer hr {
+ margin: 0px;
+}
+div.row.service-info {
+    padding: 15px 0 15px;
+}
+div.footer-phone a.phone-c {
+	color: #ead39f;
+}
+.tb_sidebar_form input[type=button] {
+	    background: #d5ad6f;
+	        font-family: "Proxima Nova Regular", Arial, sans-serif ! important;
+	        font-weight: 200;
+	        font-size: 16px;
+}
+.break_price .col_price {
+	    background-color: #d5ad6f!important;
+}
+section.who .break_price div.row:hover .col_price, section.who .break_price div.row:hover .name_price {
+    background-color: #d5ad6f;
+    color: #fff ! important;
+}
+.panel-body .bg_line {
+	background-color: #d5ad6f
+}
+.navbar-top-form span {
+	color: #fff ! important
+}
+span.phone_big_top a.phone-c {
+	color: #d5ad6f
+}
+#top-bar .navbar-top-form .btn-small {
+	background-color: #d5ad6f
+}
+.btn-default {
+	    background-color: #d5ad6f;
+    border-color: #d5ad6f;
+}
+.caller #caller_phone {
+	border-color: #d5ad6f;
+}
+.caller #caller_button:hover {
+	    background: #031431;
+}
+section.who:before {
+	width: 100%;
+	height: 3px;
+	background-image: url(../img/j/border.png);
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	content: '';
+}
+.btn-default:hover {
+    background-color: #031c41;
+}
+.goroda div a:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/j/mapstar.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 5px;
+}
