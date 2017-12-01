@@ -249,7 +249,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets ?>/ifixme/js/main.js?v=3"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$(".popup .finish, .popup, .popup2").addClass("active");</script>';
+    echo '<script>$(".popup .finish, .popup, #popup2").addClass("active");</script>';
 }
 ?>
 <?php $this->endBody() ?>    
