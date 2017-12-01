@@ -25,7 +25,7 @@ class ZoneController extends CController {
         ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc']
+            'content' => $pageInfo['meta_desc'] ?: 'Необходим ремонт кофемашины рядом с метро ' . $pageInfo['title'] . '? Выезд мастера или курьера в день обращения! Срочный ремонт! Бесплатная диагностика!'
         ]);
         $q = 'SELECT id, title, url FROM {{%pages}} WHERE parent = ' . (int) $pageInfo['id'] . ' and type = \'zone2\'';
         $childs = Yii::$app->db->createCommand($q)->queryAll();
