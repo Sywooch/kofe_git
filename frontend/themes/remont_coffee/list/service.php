@@ -19,6 +19,9 @@ $this->title = $title;
             <div class="heading">
                 <span><?= $pageInfo['title']; ?></span>
             </div>
+            <?php if (!empty($pageInfo['description'])): ?>
+                <?= $pageInfo['description']; ?>
+            <?php endif; ?>
             <?php if (!empty($pageInfo['image'])): ?>
                 <div class="hero" style="float: left;">
                     <img src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">

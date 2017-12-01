@@ -9,7 +9,7 @@ $assets = Yii::getAlias('@web');
         <?php foreach ($rows as $row): ?>
             <a href="/<?= $row['url']; ?>" class="item">
                 <div class="img">
-                    <img src="<?= $assets ?>/ifixme/uploads/images/<?= $row['image']; ?>">
+                    <img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>">
                 </div>
                 <div class="info">
                     <p><?= $row['title']; ?></p>

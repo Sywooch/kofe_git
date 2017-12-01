@@ -30,13 +30,8 @@ $this->title = $pageInfo['meta_title'];
             </div>
             <?php $lastId = $row['id']; ?>
         <?php endforeach; ?>
-        <div id="reviews-here"></div>
-        <?=
-        \yii\widgets\LinkPager::widget([
-            'pagination' => $pagination,
-        ]);
-        ?>
-        <?php if (count($rows) >= 10 && 2 == 1): ?>
+        <div id="reviews-here"></div>        
+        <?php if (count($rows) >= 10): ?>
             <div class="for-center">
                 <div id="more-comments" data-last="<?= $lastId; ?>">Показать еще</div>
             </div>
