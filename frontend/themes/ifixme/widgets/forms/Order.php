@@ -18,7 +18,7 @@ class Order extends Widget {
         else
             $model = new \frontend\models\OrderForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            //\app\components\CController::sendToRoistat($model->phone);
+            \app\components\CController::sendToRoistat($model->phone);
             \Yii::$app->getSession()->setFlash('success', 'seccess');
         }
         return $this->render('order', ['model' => $model, 'class' => $this->class, 'id' => $this->id]);
