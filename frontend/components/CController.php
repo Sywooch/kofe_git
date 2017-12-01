@@ -154,6 +154,8 @@ class CController extends \yii\web\Controller {
         } else {
             $groupName = '@site_orders';
         }
+        if($siteConfig['id'] == 48)
+            $groupName = 'ifixme_orders';
         self::sendMessage($msg, $groupName); //        
     }
 
