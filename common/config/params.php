@@ -693,5 +693,18 @@ return [
             'order-title' => 'МСК Заречная',
         //'multi_category' => true
         ],
+        'spb.remont' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 54,
+            'sitePrefix' => 'remont_coffee',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'remont_coffee',
+            'order-title' => 'МСК Заречная',
+        //'multi_category' => true
+        ],
     ]
 ];

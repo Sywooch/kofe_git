@@ -37,7 +37,7 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/home.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 53): ?>
+        <?php if ($siteConfig['id'] == 54): ?>
             <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
         <?php endif; ?>
     </head>
