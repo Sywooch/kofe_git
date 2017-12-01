@@ -697,6 +697,10 @@ header {
     position: relative;
     border: 0px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
 }
 .btn:before {
 	content: '';
@@ -2799,7 +2803,7 @@ nav .container > ul > li > ul li a span {
 	}
 }
 #number-16 .container h1 {
-	font-size: 63px;
+	font-size: 44px;
 	font-weight: 200;
 	width: 100%;
 	border-bottom: 1px solid #ebebeb;
@@ -4779,4 +4783,124 @@ header .menu-toggle span {
 }
 .rating-container .filled-stars {
 	-webkit-text-stroke: 1px #90bf00;
+}
+
+
+#number-26 {
+	padding: 50px 0px;
+}
+.open-botton {
+	background-color: #f1eedf;
+	padding: 26px 35px;
+	border-radius: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 15px;
+	position: relative;
+}
+.open-botton:after {
+	content: "\f107";
+	position: absolute;
+	right: 0px;
+	color: #000;
+	font: normal normal normal 25px/1 FontAwesome;
+  margin-right: 35px;
+  top: 50%;
+  margin-top: -13px;
+}
+.active .open-botton:after {
+	content: "\f106";
+	color: #00000080;
+}
+.open-botton:hover {
+	background-color: #eae5cc;
+}
+.my-table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 100%;
+    display: none;
+}
+.active .my-table {
+	display: block;
+}
+.my-table tbody {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 25px;
+}
+.my-table tr {
+	  float: left;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.my-table tr td {
+    padding: 15px 10px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.my-table tr:hover {
+	background-color: #ff8a0024
+}
+.my-table tr td:first-child {
+	width: 70%;
+}
+.my-table tr td:first-child a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #90bf00;
+}
+.my-table tr td:nth-child(2) {
+	width: 30%;
+	border-left: 1px solid #ccc;
+	text-align: center;
+}
+.my-table tr td:nth-child(2) a {
+	display: none;
+	float: none;
+	line-height: 35px;
+}
+.my-table tr:hover td:nth-child(2) a {
+	display: block;
+}
+@media (min-width: 681px) {
+.my-table tr:hover td:nth-child(2) span {
+	display: none;
+}
+}
+@media (max-width: 1030px) {
+
+	.my-table tr {
+		float: none;
+		width: 100%;
+	}
+}
+@media (max-width: 680px) {
+	.open-botton {
+		padding: 15px 20px;
+		    border-radius: 5px;
+		        margin-bottom: 5px;
+	}
+	.my-table {
+		margin-bottom: 20px;
+	}
+	.my-table tbody {
+		padding: 0px;
+	}
+	.my-table tr td {
+		    padding: 10px 5px;
+	}
+	.my-table tr td:nth-child(2) a {
+		display: block;
+		line-height: 18px;
+		padding: 0px 10px;
+		border-radius: 3px;
+		font-size: 10px;
+	}
 }

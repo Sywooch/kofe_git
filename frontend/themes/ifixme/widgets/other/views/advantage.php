@@ -7,14 +7,14 @@ $assets = Yii::getAlias('@web');
             <img src="<?= $assets ?>/ifixme/images/icon/laptop.svg" alt="">
             <div class="info">
                 <div>Заявка</div>
-                <p>Вы можете заказать звонок или связаться с нами по контактным телефонам</p>
+                <p>Оперативно реагируем на заявки с сайта</p>
             </div>
         </div>
         <div class="item">
             <img src="<?= $assets ?>/ifixme/images/icon/klava.svg" alt="">
             <div class="info">
                 <div>Диагностика</div>
-                <p>Мы проведем диагностику, и скажем сроки и стоимость дальнейших работ</p>
+                <p>Проведем бесплатную и быструю диагностику</p>
             </div>
         </div>
         <div class="item">
@@ -28,7 +28,7 @@ $assets = Yii::getAlias('@web');
             <img src="<?= $assets ?>/ifixme/images/icon/goodjob.svg" alt="">
             <div class="info">
                 <div>Гарантия</div>
-                <p>Проверка устройства и выдача всех необходимых документов по гарантии</p>
+                <p>Проверка устройства и выдача гарантии сроком до 3х лет</p>
             </div>
         </div>
         <div class="clear"></div>

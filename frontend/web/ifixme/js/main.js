@@ -276,7 +276,10 @@
 		$(this).parent().addClass('active');
 		$("#"+tab_id).addClass('active');
 	});
-
+  $('.open-botton').click(function(){
+  	$('.content-services').removeClass('active');
+  	$(this).parent().addClass('active');
+  });
 	$(".fancybox").fancybox();
 
 	$(".open-adress").click(function () {
