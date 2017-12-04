@@ -71,6 +71,11 @@ class Pages extends \yii\db\ActiveRecord {
         ];
     }
     
+    public static function getCategoryServices($category_id) {
+        $sql = 'SELECT url, is_popular, title, price FROM {{%services}} WHERE category_id = ' . (int) $category_id . ' AND type = 1';
+        return \Yii::$app->db->createCommand($sql)->queryAll();
+    }
+    
     public static function getModelServices($model_id, $category_id) {
         $sql = 'SELECT
                     s.description, s.id, s.title, s.url, s.time, s.`group`, s.price, p.price as model_price
