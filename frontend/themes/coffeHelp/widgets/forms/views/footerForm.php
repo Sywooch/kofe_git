@@ -33,7 +33,7 @@ $form = ActiveForm::begin([
                 ],
             ])->label('')
             ?>            
-            <?= Html::submitInput('Вызвать мастер', ['class' => 'call-master', 'type' => 'button']) ?>
+            <?= Html::submitInput('Вызвать мастера', ['class' => 'call-master', 'type' => 'button']) ?>
             <?php ActiveForm::end() ?>
             <img data-remodal-action="close" class="remodal-close" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/close_modal.png"/>
         </div>

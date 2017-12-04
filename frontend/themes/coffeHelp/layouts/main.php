@@ -79,7 +79,7 @@ $js = app\components\CController::$js;
                             <div class="top-menu-container">
                                 <div class="clock-work-conteiner">
                                     <div class="clock-work l"> Работаем без перерывов и выходных<br> <span>с 7:00 до 22:00</span></div>
-                                    <div class="clock-work r checkin-visit"> Выезжаем по всей Москве<br> и до 30 км от МКАД.</div>
+                                    <div class="clock-work r checkin-visit"> Выезжаем по <?= Yii::$app->session['region']['id'] == 1 ? 'всей Москве <br> и Московской области' : 'всему Санкт-Петербургу <br> и Ленинградской области'; ?></div>
                                 </div>
                             </div>
                             <div class="header-ordering">
@@ -101,7 +101,19 @@ $js = app\components\CController::$js;
                             <div class="container">
                                 <div class="navbar">
                                     <ul class="nav navbar-nav">
-                                        <li><a class="coffee-machine" href="/tipy-kofemashin">Типы кофемашин</a></li>
+                                        <li>
+                                            <a class="coffee-machine" href="#">Типы кофемашин</a>
+                                            <ul>
+                                                <li><a href="/ehspresso-kombayny">Эспрессо-комбайны</a></li>
+                                                <li><a href="/avtomaticheskie">Автоматические</a></li>
+                                                <li><a href="/poluavtomaticheskie">Полуавтоматические</a></li>
+                                                <li><a href="/rozhkovye">Рожковые</a></li>
+                                                <li><a href="/kapelnye">Капельные</a></li>
+                                                <li><a href="/porcionnye">Порционные</a></li>
+                                                <li><a href="/kapelnye">Капельные</a></li>
+                                                <li><a href="/chaldovye">Чалдовые</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a class="lists" href="/brendy">Все бренды</a></li>
                                         <li><a class="tools" href="/uslugi-i-ceny">Услуги и цены</a></li>
                                     </ul>
@@ -138,17 +150,17 @@ $js = app\components\CController::$js;
                         <div class="row">
                             <div class="col-xs-5">
                                 <ul>
-                                    <li><a href="#">Вопросы ответы</a></li>
-                                    <li><a href="#">Диагностика</a></li>
-                                    <li><a href="#">Срочный ремонт</a></li>
-                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="/voprosy-i-otvety">Вопросы ответы</a></li>
+                                    <li><a href="/diagnostika">Диагностика</a></li>
+                                    <li><a href="/srochnyj-remont">Срочный ремонт</a></li>
+                                    <li><a href="/dostavka">Доставка</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-5">
                                 <ul>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Оплата</a></li>
-                                    <li><a href="#">Пользовательское соглашение</a></li>
+                                    <li><a href="/otzyvy">Отзывы</a></li>
+                                    <li><a href="/oplata">Оплата</a></li>
+                                    <li><a href="/politica">Пользовательское соглашение</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -166,7 +178,7 @@ $js = app\components\CController::$js;
                     </div>
                 </div>
                 <hr>
-                <div class="row service-info"> © 2017 </div>
+                <div class="row service-info">Сервисный центр - <?= ucfirst($_SERVER['HTTP_HOST']) ?> 2017 © - Ремонт и обслуживание всех брендов кофемашин</div>
             </div>
         </div>
         <div id="caller_widget" data-toggle="modal" data-target="#callerModal">

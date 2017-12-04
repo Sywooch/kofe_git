@@ -8717,7 +8717,8 @@ span.order a:hover {
 
 .nav li {
 	margin-left: 25px;
-	margin-right: 0
+	margin-right: 0;
+	position: relative;
 }
 
 .nav li:first-child {
@@ -8730,6 +8731,38 @@ span.order a:hover {
 	background-color: transparent;
 	color: #f29f0e;
 	font-weight: 400
+}
+
+.navbar-second ul.navbar-nav ul {
+    background: #fff;
+    padding: 0px;
+    list-style: none;
+    min-width: 248px;
+    position: absolute;
+    display: none;
+}
+.navbar-second ul.navbar-nav li:hover ul {
+	display: block;
+}
+
+.navbar-second ul.navbar-nav ul li {
+    margin: 0px;
+    margin-left: 0px;
+}
+
+.navbar-second ul.navbar-nav ul li a {
+    color: #000;
+    line-height: 28px;
+    padding: 5px 15px;
+    display: block;
+    font-weight: 200;
+    font-family: arial;
+    font-size: 14px;
+    border-bottom: 1px solid #cbc9ca;
+}
+.navbar-second ul.navbar-nav ul li a:hover {
+	color: #fff;
+	background-color: #4c5052
 }
 
 .nav .open>a,
@@ -14826,4 +14859,15 @@ li.menu__item:hover {
 }
 .office__inner {
 	margin-bottom: 20px;
+}
+
+
+.btn {
+	background-color: #ffb500; color: #fff;
+}
+
+
+
+section.who .break_price div.row:hover .col_price {
+	    background-color: #5cb426!important;
 }
