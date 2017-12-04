@@ -1,9 +1,10 @@
+<?php $this->title = $pageInfo['meta_title']; ?>
 <section id="number-26">
     <div class="container">
         <?php foreach (app\components\CController::$menu as $key => $category): ?>
             <div class="content-services<?= $key == 0 ? ' active' : '' ?>">
                 <div class="open-botton">
-                    <p>Услуги <?= $category['title']; ?></p>
+                    <p>Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></p>
                 </div>
                 <?php $services = frontend\models\Pages::getCategoryServices($category['id']); ?>
                 <table class="my-table">
