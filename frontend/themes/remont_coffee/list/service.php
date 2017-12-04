@@ -15,15 +15,17 @@ $this->title = $title;
         <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
     </div>
     <div class="left">
-        <div class="bl-text">
+        <div class="bl-text seoshnikka">
             <div class="heading">
                 <span><?= $pageInfo['title']; ?></span>
             </div>
             <?php if (!empty($pageInfo['description'])): ?>
-                <?= $pageInfo['description']; ?>
+                <div class="textss">
+                    <?= $pageInfo['description']; ?>
+                </div>
             <?php endif; ?>
             <?php if (!empty($pageInfo['image'])): ?>
-                <div class="hero" style="float: left;">
+                <div class="hero">
                     <img src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">
                 </div>
             <?php endif; ?>
