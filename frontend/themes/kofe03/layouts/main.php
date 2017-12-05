@@ -402,7 +402,7 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                     <div class="footer__copyright">2000 - <?= date('Y'); ?> © <?php if ($siteConfig['id'] == 52): ?>fixkofe.ru<?php else: ?>kofe03.ru<?php endif; ?> <br>
-                        <a style="color: #fff" href="/policy">Пользовательское соглашение</a>
+                        <a href="/policy">Пользовательское соглашение</a>
                     </div>
                 </div>
             </footer>
