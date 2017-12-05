@@ -28,7 +28,7 @@ class ReviewController extends CController {
         ]);
         $query = \app\models\Reviews::find()->where(['active' => 1]);
         $countQuery = clone $query;
-        $pagination = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 10]);
+        $pagination = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 1000]);
         $reviews = $query->offset($pagination->offset)
                 ->limit($pagination->limit)
                 ->all();        
