@@ -135,13 +135,15 @@ class CController extends \yii\web\Controller {
         if (isset($_POST['h1']))
             $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
-        $connection = Yii::$app->db;
-        $connection->createCommand()->insert('yu_orders', [
-            'phone' => $phone,
-            'date' => date('Y-m-d H:i:s'),
-            'ip' => $userIP,
-            'site' => Yii::$app->request->hostInfo,
-        ])->execute();
+        if ($siteConfig['category_id'] == 7) {
+            $connection = Yii::$app->db;
+            $connection->createCommand()->insert('yu_orders', [
+                'phone' => $phone,
+                'date' => date('Y-m-d H:i:s'),
+                'ip' => $userIP,
+                'site' => Yii::$app->request->hostInfo,
+            ])->execute();
+        }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
