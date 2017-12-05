@@ -40,9 +40,9 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=1" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 52): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
-        <?php endif; ?>
+
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
+
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
         <?php
@@ -111,8 +111,7 @@ $js = app\components\CController::$js;
                     <div class="header__inner">
                         <div class="header__main">
                             <a class="header__site" href="/">
-                                <span class="header__name"><?php if ($siteConfig['id'] == 52): ?>FixKofe<?php else: ?>Кофе03<?php endif; ?></span>
-                                <span class="header__slogan">Заботливый сервис</span>
+                                <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>logo.svg" alt="">
                             </a>
                             <div class="header__burger">
                                 <div class="header__burger-ico"></div>
@@ -287,27 +286,24 @@ $js = app\components\CController::$js;
                                 <li class="footer__item"><a class="footer__page" href="/dostavka">Доставка</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/otzyvy">Отзывы</a></li>
                                 <li class="footer__item"><a class="footer__page" href="/oplata">Оплата</a></li>
-                                <li class="footer__item"><a class="footer__page" href="/policy">Пользовательское соглашение</a></li>
+                                <li class="footer__item"><a class="footer__page" href="/kontakty">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="connect">
-                        <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 08:00 до 22:00</span> <br class="connect_br">без выходных и праздничных дней</div>                        
                         <div class="connect__call">
                             <span class="connect__phone connect__phone_active" data-phone="moscow">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
-                            <a class="connect__recall js-popup" data-popup="request" href="#recall">Перезвоните мне</a>
+                            <p style="margin-top: 0px;"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></p>
                         </div>
                     </div>
-                    <div class="footer__copyright"><?= date('Y'); ?> <?php if ($siteConfig['id'] == 52): ?>«fixkofe.ru»<?php else: ?>«kofe03.ru»<?php endif; ?> ©</div>
+                    <div class="footer__copyright">2000 - <?= date('Y'); ?> © <?php if ($siteConfig['id'] == 52): ?>fixkofe.ru<?php else: ?>kofe03.ru<?php endif; ?> <br>
+                        <a style="color: #fff" href="/policy">Пользовательское соглашение</a>
+                    </div>
                 </div>
             </footer>
-            <!--
-            <div class="layout__loading">
-                <img class="layout__loader" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/loaderd8b8.svg?v=1485518639218" alt="">
-            </div>
-            -->
+
             <div class="popup popup_request_full">
                 <div class="popup__bg"></div>
                 <div class="popup__main">
