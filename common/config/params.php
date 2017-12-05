@@ -678,6 +678,7 @@ return [
             'category_id' => 7,
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
+            'spb' => true,
         //'multi_category' => true
         ],
         'coffee-support' => [
@@ -691,6 +692,7 @@ return [
             'category_id' => 7,
             'theme' => 'coffeHelp',
             'order-title' => 'МСК Заречная',
+            'spb' => true,
         //'multi_category' => true
         ],
         'spb.remont' => [
@@ -704,6 +706,7 @@ return [
             'category_id' => 7,
             'theme' => 'remont_coffee',
             'order-title' => 'МСК Заречная',
+            'spb' => true,
         //'multi_category' => true
         ],
     ]
