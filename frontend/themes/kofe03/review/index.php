@@ -1,3 +1,6 @@
+<?php
+$this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
+?>
 <main class="layout__content" role="main">
     <header class="layout__head">
         <div class="layout__inner">
