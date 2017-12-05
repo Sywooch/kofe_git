@@ -20,7 +20,7 @@ class LeftMenu extends Widget {
             'dostavka' => 'Доставка',
             'otzyvy' => 'Отзывы',
             'oplata' => 'Оплата',
-            'polzovatelskoe-soglashenie' => 'Пользовательское соглашение',
+            'policy' => 'Пользовательское соглашение',
             'kontakty' => 'Контакты',
         ];
         return $this->render('leftMenu', ['rows' => $menus, 'curUrl' => $this->curUrl]);
