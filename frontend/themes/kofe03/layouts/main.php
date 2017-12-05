@@ -140,6 +140,7 @@ $js = app\components\CController::$js;
                                     <span class="connect__phone connect__phone_active" data-phone="moscow">
                                         <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                     </span>
+                                    <p>c 09:00 до 20:00</p>
                                     <a class="connect__recall js-popup" data-popup="request" href="#recall">Перезвоните мне</a>
                                 </div>
                             </div>

@@ -2965,6 +2965,9 @@ label.error
     color: #909baf;
     background: url('../images/ico_time6170.svg?v=1485504369723') no-repeat 0 49%;
 }
+.page_scrolled .connect__schedule {
+    display: none;
+}
 .connect__adress
 {
     font-size: 14px;
@@ -3073,8 +3076,19 @@ label.error
 {
     width: 210px;
     height: 44px;
-    padding-top: 2px;
+    padding-top: 4px;
     text-align: right;
+}
+.connect_header .connect__call p {
+    margin: 0px;
+    margin-top: -10px;
+    display: none;
+}
+.page_scrolled .connect__call a.connect__recall {
+    display: none;
+}
+.page_scrolled .connect__call p {
+    display: block;
 }
 @media screen and (max-width: 999px)
 {
