@@ -19,7 +19,7 @@ $form = ActiveForm::begin([
     ]);
     ?>    
     <div class="form__box">
-        <h3 class="form__title">Заявка на ремонт</h3>
+        <h3 class="form__title">Закажите ремонт сейчас и получите средство по уходу за кофемашиной в подарок! 🎁</h3>
         <div class="form__row">
             <label class="form__element form__element_input">
                 <?=

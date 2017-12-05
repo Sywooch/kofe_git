@@ -303,7 +303,7 @@ h1,
 }
 .poster h1,
 .poster p {
-    color: #fff;
+    color: #301d0f;
 }
 @media screen and (max-width: 1000px) {
     .poster h1,
@@ -963,6 +963,11 @@ img[align='right']
 {
     width: 294px;
     margin: 0 auto;
+}
+.poster__request .form_request {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 18px;
 }
 .form_request_full,
 .form_request_success
@@ -4067,8 +4072,10 @@ label.error
 
 .poster__content
 {
-    max-width: 430px;
-    padding: 15px 0 0;
+    max-width: 675px;
+    padding: 20px;
+    background: #ffffffa8;
+    border-radius: 20px;
 }
 @media screen and (max-width: 999px)
 {
@@ -4081,7 +4088,7 @@ label.error
 .poster__title
 {
     font-family: 'Proxima Nova Extrabold', Arial, sans-serif; 
-    font-size: 38px;
+    font-size: 30px;
     line-height: .85;
 
     margin: 0 0 10px;
@@ -4090,7 +4097,8 @@ label.error
 {
     .poster__title
     {
-        font-size: 46px;
+        font-size: 34px;
+        line-height: 37px;
     }
 }
 @media screen and (max-width: 762px)
@@ -7773,4 +7781,39 @@ img.brands__name {
     background-repeat: no-repeat;
     color: #301d0f;
     outline: none;
+}
+.poster__text {
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+}
+.poster__text ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.poster__text ul li {
+    padding-left: 30px;
+    position: relative;
+}
+
+
+
+.poster__text ul li:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -8px;
+    background: url(../images/tick-2.svg);
+    box-sizing: 100%;
+    background-repeat: no-repeat;
+}
+
+.poster__text ul li span.minus {
+    text-decoration: line-through red;
 }
