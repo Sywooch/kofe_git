@@ -142,14 +142,24 @@ class PageController extends CController {
             'jquery-ui.js',
             'main.js',
         ];
+        if (isset($siteConfig['jsFiles']) && !empty($siteConfig['jsFiles']))
+            $jsFiles = $siteConfig['jsFiles'];
+        $allJS = $siteConfig['sitePrefix'] . 'all.js';
+        if (isset($siteConfig['mainJSFileName']) && !empty($siteConfig['mainJSFileName']))
+            $allJS = $siteConfig['mainJSFileName'] . '.js';
+        
         $jsPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
         $js = Yii::getAlias('@frontend') . '/web/js/';
-        file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', '');
+        if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
+            $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/js/';
+            $jsPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/js/';
+        }
+        file_put_contents($jsPath . $allJS, '');
         foreach ($jsFiles as $jsFile) {
-            if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js') {
+            if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js' && !isset($siteConfig['theme'])) {
                 $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
             }
-            file_put_contents($jsPath . $siteConfig['sitePrefix'] . 'all.js', $this->minifyJs($js . $jsFile), FILE_APPEND);
+            file_put_contents($jsPath . $allJS, $this->minifyJs($js . $jsFile), FILE_APPEND);
         }
     }
 
