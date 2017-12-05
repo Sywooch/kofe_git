@@ -639,7 +639,6 @@ return [
             'category_id' => 7,
             'theme' => 'remont_coffee',
             'order-title' => 'МСК Заречная',
-        //'multi_category' => true
         ],
         'kofe03' => [
             'phone-1' => '8 (495) 135-00-03',
@@ -652,7 +651,6 @@ return [
             'category_id' => 7,
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
-        //'multi_category' => true
         ],
         'coffee-help' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
@@ -665,7 +663,6 @@ return [
             'category_id' => 7,
             'theme' => 'coffeHelp',
             'order-title' => 'МСК Заречная',
-        //'multi_category' => true
         ],
         'fixkofe' => [
             'phone-1' => '8 (499) 450-90-08',
@@ -679,11 +676,10 @@ return [
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
             'spb' => true,
-        //'multi_category' => true
         ],
         'coffee-support' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-2' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
             'stickyMenu' => true,
             'mono' => false,
             'id' => 53,
@@ -693,7 +689,6 @@ return [
             'theme' => 'coffeHelp',
             'order-title' => 'МСК Заречная',
             'spb' => true,
-        //'multi_category' => true
         ],
         'spb.remont' => [
             'phone-1' => '8 (499) 450-90-08',
@@ -707,7 +702,6 @@ return [
             'theme' => 'remont_coffee',
             'order-title' => 'МСК Заречная',
             'spb' => true,
-        //'multi_category' => true
         ],
     ]
 ];
