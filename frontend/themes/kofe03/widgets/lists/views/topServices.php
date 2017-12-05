@@ -12,6 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <div class="popular__cover" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $service['image']; ?>);"></div>
                         <div class="popular__text">
                             <p class="popular__name"><?= $service['title']; ?></p>
+                            <p><?= $service['description']; ?></p>
                             <p class="popular__price"><?= number_format($service['price'], 0, ' ', ' '); ?> р.</p>
                         </div>
                     </a>
