@@ -13,7 +13,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <div class="popular__text">
                             <p class="popular__name"><?= $service['title']; ?></p>
                             <p><?= $service['description']; ?></p>
-                            <p class="popular__price"><?= number_format($service['price'], 0, ' ', ' '); ?> р.</p>
+                            <p class="popular__price">от <?= number_format($service['price'], 0, ' ', ' '); ?> р.</p>
                         </div>
                     </a>
                 </li>
