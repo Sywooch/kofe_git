@@ -665,6 +665,17 @@ return [
                 'common.js'
             ],
             'mainJSFileName' => 'scripts',
+            'css' => [
+                'files' => [
+                    'swiper.min.css',
+                    'styles.css',
+                    'sity.css',
+                    'jquery-ui.css',
+                    'spb.css',
+                ],
+                'replaceClasses' => false,
+                'mainFileName' => 'all'
+            ],
         ],
         'coffee-help' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',

@@ -85,13 +85,24 @@ class PageController extends CController {
             '/' . $siteConfig['sitePrefix'] . 'css/main.css',
             '/' . $siteConfig['sitePrefix'] . 'css/owl.theme.default.min.css',
         ];
+
         $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/';
         $allcssPath = Yii::getAlias('@frontend') . '/web';
-        file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', '');
+        $allCSS = $siteConfig['sitePrefix'] . 'all.css';
+        if (isset($siteConfig['css']['files']) && !empty($siteConfig['css']['files']))
+            $allcssFiles = $siteConfig['css']['files'];
+        if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
+            $cssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/css/';
+            $allcssPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/css/';
+        }
+        if (isset($siteConfig['css']['mainFileName']) && !empty($siteConfig['css']['mainFileName']))
+            $allCSS = $siteConfig['css']['mainFileName'] . '.css';
+        file_put_contents($cssPath . $allCSS, '');
+        //print_r($allcssFiles);exit;
         foreach ($allcssFiles as $cssFile) {
             $css = file_get_contents($allcssPath . $cssFile);
             if (strpos($cssFile, 'owl') !== false) {
-                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $css, FILE_APPEND);
+                file_put_contents($cssPath . $allCSS, $css, FILE_APPEND);
             } else {
                 $oParser = new \Sabberworm\CSS\Parser($css);
                 $oCss = $oParser->parse();
@@ -99,12 +110,13 @@ class PageController extends CController {
                     foreach ($oBlock->getSelectors() as $oSelector) {
                         if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
                             $s = $oSelector->getSelector();
-                            $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                            if (isset($siteConfig['css']['replaceClasses']) && $siteConfig['css']['replaceClasses'] === true)
+                                $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
                             $oSelector->setSelector($s);
                         }
                     }
                 }
-                file_put_contents($cssPath . $siteConfig['sitePrefix'] . 'all.css', $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact()), FILE_APPEND);
+                file_put_contents($cssPath . $allCSS, $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact()), FILE_APPEND);
             }
         }
     }
@@ -147,7 +159,7 @@ class PageController extends CController {
         $allJS = $siteConfig['sitePrefix'] . 'all.js';
         if (isset($siteConfig['mainJSFileName']) && !empty($siteConfig['mainJSFileName']))
             $allJS = $siteConfig['mainJSFileName'] . '.js';
-        
+
         $jsPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';
         $js = Yii::getAlias('@frontend') . '/web/js/';
         if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
