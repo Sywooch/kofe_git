@@ -40,9 +40,9 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=1" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-
+        <?php if ($siteConfig['id'] == 52): ?>
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
-
+<?php endif; ?>
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
         <?php

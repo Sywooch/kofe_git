@@ -303,7 +303,7 @@ h1,
 }
 .poster h1,
 .poster p {
-    color: #301d0f;
+    color: #3d4859;
 }
 @media screen and (max-width: 1000px) {
     .poster h1,
@@ -2125,7 +2125,7 @@ label.error
 
     list-style: none;
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 760px)
 {
     .menu__tabs
     {
@@ -2254,7 +2254,7 @@ label.error
     color: #3ea2ee; 
     border-color: #e9eaec;
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 760px)
 {
     .menu__type {
         line-height: 20px;
@@ -2291,7 +2291,7 @@ label.error
 
     vertical-align: middle;
 }
-@media screen and (max-width: 762px)
+@media screen and (max-width: 940px)
 {
     .menu__ico
     {
@@ -2608,6 +2608,28 @@ label.error
     width: 14.285%;
     float: left;
     line-height: 22px;
+}
+@media (max-width: 1100px) {
+    .out-imgb .menu__item {
+        width: 20%;
+        display: none;
+    }
+    .out-imgb .menu__item:nth-child(-n+20) {
+        display: block;
+    } 
+    #myBrend {
+        display: inline-block;
+    }
+}
+@media (max-width: 825px) {
+    .out-imgb .menu__item {
+        width: 25%;
+    }
+}
+@media (max-width: 675px) {
+    .out-imgb .menu__item {
+        width: 33.333%;
+    }
 }
 .menu__info
 {
@@ -2930,11 +2952,8 @@ label.error
     }
     .connect_header
     {   
-        position: absolute;
-        top: 26px; 
-        float: none;
-
-        display: block;
+        float: right;
+        top: 18px;
     }
 }
 @media screen and (max-width: 762px)
@@ -2973,6 +2992,11 @@ label.error
 .page_scrolled .connect__schedule {
     display: none;
 }
+@media (max-width: 1155px) {
+    .connect__schedule {
+        display: none;
+    }
+}
 .connect__adress
 {
     font-size: 14px;
@@ -2987,6 +3011,11 @@ label.error
     color: #909baf;
     margin-top: 12px;
         margin-right: 30px;
+}
+@media screen and (max-width:785px) {
+    .connect__adress {
+        display: none;
+    }
 }
 .connect__adress span {
     padding-left: 20px;
@@ -3092,8 +3121,17 @@ label.error
 .page_scrolled .connect__call a.connect__recall {
     display: none;
 }
+
 .page_scrolled .connect__call p {
     display: block;
+}
+@media (max-width: 1155px) {
+    .connect__call a.connect__recall {
+        display: none;
+    }
+    .connect_header .connect__call p {
+        display: block;
+    }
 }
 @media screen and (max-width: 999px)
 {
@@ -4076,6 +4114,11 @@ label.error
     padding: 20px;
     background: #ffffffa8;
     border-radius: 20px;
+}
+@media screen and (max-width: 1155px) {
+    .poster__content {
+        max-width: 450px;
+    }
 }
 @media screen and (max-width: 999px)
 {
@@ -7771,6 +7814,12 @@ img.brands__name {
     display: inline-block;
     clear: both;
     margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+
+    .form-brend {
+        display: none;
+    }
 }
 .form-brend input {
     height: 60px;
