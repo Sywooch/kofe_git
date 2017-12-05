@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section class="popular">
     <div class="popular__inner">
-        <h2 class="content__title">Ремонтируем</h2>
+        <h2 class="content__title">Реанимируем, если Ваша кофемашина:</h2>
         <ul class="popular__list">
             <?php foreach ($services as $service): ?>
                 <li class="popular__item">
