@@ -44,9 +44,9 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <li class="breaking__item" data-breaking="03">
                                 <a class="breaking__name" href="#">Не качает воду</a>
                                 <div class="breaking__text">Проблема может быть в:</br>
-                                    — протечтке;</br>
+                                    — протечке;</br>
                                     — датчике уровня воды;</br>
-                                    — панеле управления.
+                                    — панели управления.
                                 </div>
                             </li>
                             <li class="breaking__item" data-breaking="04">
@@ -61,7 +61,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 <a class="breaking__name" href="#">Не видит воду</a>
                                 <div class="breaking__text">Проблема может быть в:</br>
                                     — датчике уровня воды;</br>
-                                    — влаге внутри корпуса.
+                                    — влаги внутри корпуса.
                                 </div>
                             </li>
                             <li class="breaking__item" data-breaking="06">
@@ -85,7 +85,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                     — поврежденном уплотнении резервуара воды;</br>
                                     — уплотнительных прокладках;</br>
                                     — уплотнении дозатора;</br>
-                                    — неплотной посадке соединительных трубок.</br>
+                                    — неплотной посадки соединительных трубок.</br>
                                 </div>
                             </li>
                             <li class="breaking__item" data-breaking="09">
@@ -100,7 +100,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 <a class="breaking__name" href="#">Не реагирует на кнопки</a>
                                 <div class="breaking__text">Проблема может быть в:</br>
                                     — блоке управления;</br>
-                                    — затитых, грязных кнопках;</br>
+                                    — забитых, грязных кнопках;</br>
                                     — сгоревшем предохранителе.
                                 </div>
                             </li>
