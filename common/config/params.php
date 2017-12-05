@@ -651,6 +651,20 @@ return [
             'category_id' => 7,
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
+            'jsFiles' => [
+                'jquery-1.11.3.min.js',
+                'yii.activeForm.js',
+                'yii.js',
+                'jquery.inputmask.bundle.js',
+                'yii.validation.js',
+                'jquery.cookie.js',
+                'plugins.js',
+                'sly.min.js',
+                'swiper.jquery.min.js',
+                'jquery-ui.js',
+                'common.js'
+            ],
+            'mainJSFileName' => 'scripts',
         ],
         'coffee-help' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
@@ -676,6 +690,20 @@ return [
             'theme' => 'kofe03',
             'order-title' => 'МСК Заречная',
             'spb' => true,
+            'jsFiles' => [
+                'jquery-1.11.3.min.js',
+                'yii.activeForm.js',
+                'yii.js',
+                'jquery.inputmask.bundle.js',
+                'yii.validation.js',
+                'jquery.cookie.js',
+                'plugins.js',
+                'sly.min.js',
+                'swiper.jquery.min.js',
+                'jquery-ui.js',
+                'common.js'
+            ],
+            'mainJSFileName' => 'scripts',
         ],
         'coffee-support' => [
             'phone-1' => '<span class="header-phone-code-part">8 (499) </span> <span class="header-phone-number-part">450-90-08</span>',
