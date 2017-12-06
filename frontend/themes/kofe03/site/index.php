@@ -6,7 +6,6 @@ $this->title = $page['meta_title'];
 <main class="layout__content" role="main">
     <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
         <div class="poster__inner">
-            <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name">Гарантированный ремонт кофемашин в специализированном сервисном центре<!--<?= $page['meta_h1']; ?>--></h1>
                 <div class="poster__text" itemprop="description">
@@ -24,9 +23,9 @@ $this->title = $page['meta_title'];
                     <!--<?= $page['description']; ?>-->
                 </div>
             </div>
-            <div class="poster__actions">
-                <a class="poster_button js-popup" data-popup="request" href="#">Заказать</a>
-            </div>
+
+            <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
+            <div class="clear"></div>
         </div>
     </aside>
     <?= kofe03\widgets\lists\TopServices::widget(); ?>
