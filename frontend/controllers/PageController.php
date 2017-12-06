@@ -374,10 +374,10 @@ class PageController extends CController {
         $siteConfig = self::getSiteConfig();
         if ($pageInfo['site_id'] > 0 && $pageInfo['site_id'] != $siteConfig['id'])
             throw new NotFoundHttpException('The requested page does not exist.');
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
