@@ -12,10 +12,13 @@ $this->title = $title;
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
                             <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                                <?php if (end($breadcrumbs) == $breadcrumb): ?>
+                                    <span class="breadcrumbs__current"><?= $breadcrumb; ?></span>
+                                <?php else: ?>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                                <?php endif; ?>
                             <?php endforeach; ?>
-                        </ul>                        
-                        <span class="breadcrumbs__current"><?= $pageInfo['title']; ?></span>
+                        </ul>
                     </nav>
                     <h1 class="office__title"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
                     <article class="office__post">
