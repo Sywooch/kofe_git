@@ -10,7 +10,10 @@ $this->title = $title;
                 <div class="office__container">
                     <nav class="breadcrumbs">
                         <ul class="breadcrumbs__list">
-
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                            <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
+                                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                            <?php endforeach; ?>
                         </ul>                        
                         <span class="breadcrumbs__current"><?= $pageInfo['title']; ?></span>
                     </nav>
