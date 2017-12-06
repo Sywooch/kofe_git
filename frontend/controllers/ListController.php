@@ -14,10 +14,10 @@ class ListController extends CController {
 
     public function actionCategory() {
         $pageInfo = $_GET['data'];
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
@@ -29,10 +29,10 @@ class ListController extends CController {
 
     public function actionServices() {
         $pageInfo = $_GET['data'];
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
@@ -53,10 +53,10 @@ class ListController extends CController {
                 ->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])
                 ->limit(1)
                 ->one();
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $seo['meta_keywords'] ?: ''
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $seo['meta_keywords'] ?: ''
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $seo['meta_description'] ?: ''
@@ -227,10 +227,10 @@ class ListController extends CController {
         }
 
         $title = $seo['meta_title'] ?: $title;
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => count($url) > 1 ? ($seo['meta_keywords'] ?: $metaKey) : (isset($pageInfo['meta_key']) ? $pageInfo['meta_key'] : $metaKey)
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => count($url) > 1 ? ($seo['meta_keywords'] ?: $metaKey) : (isset($pageInfo['meta_key']) ? $pageInfo['meta_key'] : $metaKey)
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => count($url) > 1 ? ($seo['meta_description'] ?: $metaDesc) : (isset($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc)
@@ -247,10 +247,10 @@ class ListController extends CController {
     public function actionBrands() {
         $pageInfo = $_GET['data'];
 
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
@@ -280,10 +280,10 @@ class ListController extends CController {
         if ($siteConfig['mono'])
             throw new NotFoundHttpException('The requested page does not exist.');
         $pageInfo = $_GET['data'];
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc'] ?: 'Любой ремонт кофемашин ' . $pageInfo['title'] . ' в сервис центре, выезд мастера на дом или офис. Качество, гарантия, низкая цена.'
@@ -417,10 +417,10 @@ class ListController extends CController {
             $title = 'Устранение неисправностей ' . $pageInfo['title'] . ' - Срочный ремонт в Москве!';
             $metaDesc = 'Сервисный центр iFixMe выполняет ремонт ' . $pageInfo['title'] . ' по самым лучшим ценам и с гарантией качества! Проводим весь спектр услуг! Имеется курьерская служба.';
         }
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $metaDesc

@@ -14,10 +14,10 @@ class NewsController extends CController {
 
     public function actionIndex() {
         $pageInfo = $_GET['data'];
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'keywords',
-            'content' => $pageInfo['meta_key']
-        ]);
+//        \Yii::$app->view->registerMetaTag([
+//            'name' => 'keywords',
+//            'content' => $pageInfo['meta_key']
+//        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
@@ -43,10 +43,10 @@ class NewsController extends CController {
     
     public function actionView() {
         $pageInfo = $_GET['data'];
-		\Yii::$app->view->registerMetaTag([
-			'name' => 'keywords',
-			'content' => $pageInfo['meta_key']
-		]);
+//		\Yii::$app->view->registerMetaTag([
+//			'name' => 'keywords',
+//			'content' => $pageInfo['meta_key']
+//		]);
 		\Yii::$app->view->registerMetaTag([
 			'name' => 'description',
 			'content' => $pageInfo['meta_desc']
