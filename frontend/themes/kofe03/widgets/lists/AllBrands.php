@@ -12,7 +12,7 @@ class AllBrands extends Widget {
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
-        $sql = 'SELECT title, url FROM {{%pages}} WHERE type = \'brand\' AND active = 1 AND category_id = ' . $siteConfig['category_id'] . ' ORDER BY title';
+        $sql = 'SELECT title, url, sort FROM {{%pages}} WHERE type = \'brand\' AND active = 1 AND category_id = ' . $siteConfig['category_id'] . ' ORDER BY title';
         $brands = Yii::$app->db->createCommand($sql)->queryAll();
         return $this->render('allBrands', ['brands' => $brands, 'h' => $this->h]);
     }

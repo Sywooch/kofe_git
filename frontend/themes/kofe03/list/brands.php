@@ -3,25 +3,49 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $pageInfo['meta_title'];
 ?>
-<div class="bl-heading" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-heading.jpg);">
-    <div class="container">
-        <div class="heading">Авторизованный сервисный центр </div>
-        <h1 class="heading-description"><?= $pageInfo['meta_h1']; ?></h1>
-    </div>
-</div>
-<?= remont_coffee\widgets\other\Advantage::widget(); ?>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <span><?= $pageInfo['title']; ?></span>
-            </div>
-            <?= remont_coffee\widgets\lists\AllBrands::widget(['h' => false]); ?>
+<main class="layout__content" role="main">
+    <header class="layout__head">
+        <div class="layout__inner">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="#"><span itemprop="title">Главная</span></a></li>
+                </ul>
+                <span class="breadcrumbs__current">Бренды</span>
+            </nav>
         </div>
-        <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
-    </div>   
-</div>
+    </header>
+    <div class="content">
+        <div class="content__inner">
+            <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $pageInfo['url']]); ?>
+            <main class="content__main office-content" role="main">
+                <article class="post width100">
+                    <header class="post__header">
+                        <h1>Бренды</h1>
+                    </header>
+                    <div class="post__content">
+                        <div class="search-brends">
+                            <div class="left"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/search.svg" alt=""></div>
+                            <div class="right">
+                                <?=
+                                yii\jui\AutoComplete::widget([
+                                    'name' => 'models',
+                                    'clientOptions' => [
+                                        'source' => $searches,
+                                        'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
+                                    ],
+                                    'options' => ['placeholder' => 'Поиск брендов..', 'class' => 'form__input'],
+                                        ]
+                                );
+                                ?>
+                            </div>
+                        </div>
+                        <?= kofe03\widgets\lists\PopularBrands::widget(['view' => 'popular-brands-list']); ?>
+                        <?= kofe03\widgets\lists\PopularBrands::widget(['view' => 'popular-brands-list', 'sort' => 'other']); ?>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+    <?= kofe03\widgets\other\Feedback::widget(); ?>
+    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
+</main>
