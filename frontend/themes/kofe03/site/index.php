@@ -25,7 +25,7 @@ $this->title = $page['meta_title'];
                 </div>
             </div>
             <div class="poster__actions">
-                <a class="poster_button js-popup" data-popup="request" href="#">Вызвать курьера</a>
+                <a class="poster_button js-popup" data-popup="request" href="#">Заказать</a>
             </div>
         </div>
     </aside>
