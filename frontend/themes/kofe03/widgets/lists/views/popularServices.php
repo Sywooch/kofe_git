@@ -111,13 +111,13 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <ul class="breaking__list">
                             <ul class="breaking__list">
                                 <li class="breaking__item">Диагностика - 0 ₽</li>
-                                <li class="breaking__item">Декальценация - 790 ₽</li>
-                                <li class="breaking__item">Замена ТЭНа - 890 ₽</li>
-                                <li class="breaking__item">Ремонт капучинатора - 890 ₽</li>
-                                <li class="breaking__item">Замена жерновов - 890 ₽</li>
+                                <li class="breaking__item">Декальценация - 590 ₽</li>
+                                <li class="breaking__item">Замена ТЭНа - 750 ₽</li>
+                                <li class="breaking__item">Ремонт капучинатора - 850 ₽</li>
+                                <li class="breaking__item">Замена жерновов - 750 ₽</li>
                                 <li class="breaking__item">Ремонт кофемолки - 790 ₽</li>
                                 <li class="breaking__item">Ремонт гидросистемы - 990 ₽</li>
-                                <li class="breaking__item">Ремонт насоса - 790 ₽</li>
+                                <li class="breaking__item">Ремонт насоса - 700 ₽</li>
                             </ul>                            
                         </ul>
                     </div>
