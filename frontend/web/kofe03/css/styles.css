@@ -4310,13 +4310,7 @@ label.error
         width: 50% !important;
     }
 }
-@media screen and (max-width: 600px)
-{
-    .popular__item
-    {
-        width: 100% !important;
-    }
-}
+
 
 .popular__cover
 {
@@ -4507,6 +4501,20 @@ label.error
     .features
     {
         padding: 20px 0;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .popular__item
+    {
+        width: 100% !important;
+    }
+    .popular__text {
+        padding: 10px;
+        height: auto;
+    }
+    .popular__text p {
+        margin: 0px;
     }
 }
 
@@ -7957,6 +7965,7 @@ img.brands__name {
 
 .top-menu-mobi {
     display: none;
+        border-top: 1px solid #e9eaec;
 }
 .top-menu-mobi a {
     display: block;
