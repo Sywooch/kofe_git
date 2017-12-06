@@ -1569,14 +1569,14 @@ label.error
 
     background: #fff;
 }
-@media screen and (max-width: 600px)
+@media screen and (max-width: 700px)
 {
     .header
     {
         overflow: hidden;
 
-        min-height: 73px;
-        max-height: 73px;
+        min-height: 135px;
+        max-height: 135px;
         margin-top: -37px;
 
         -webkit-transition: .25s ease-out;
@@ -1713,7 +1713,7 @@ label.error
     }
     .page_open .header__panel
     {
-        height: 69px ! important;
+        height: 55px ! important;
     }
     .page_open .header__panel:hover
     {
@@ -2153,6 +2153,13 @@ label.error
         justify-content: space-between;
     }
 }
+@media screen and (max-width: 760px)
+{
+    .menu__tabs
+    {
+        height: 55px;
+    }
+}
 
 .menu__tab
 {
@@ -2194,6 +2201,12 @@ label.error
     top: 66px;
     right: 15px; 
     left: 15px;
+}
+@media screen and (max-width: 760px) {
+    .menu__tab:after
+{
+    top: 53px;
+}
 }
 @media screen and (max-width: 480px)
 {
@@ -7938,6 +7951,29 @@ img.brands__name {
 }
 @media (max-width: 1100px) {
     .menu_active .menu__footer.vse-brendi {
+        display: block;
+    }
+}
+
+.top-menu-mobi {
+    display: none;
+}
+.top-menu-mobi a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Proxima Nova Extrabold', Arial, sans-serif;
+}
+.top-menu-mobi span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -11px;
+}
+@media (max-width: 600px) {
+    .top-menu-mobi {
         display: block;
     }
 }

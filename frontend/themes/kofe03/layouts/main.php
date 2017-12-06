@@ -144,12 +144,12 @@ $js = app\components\CController::$js;
                                     <a class="connect__recall js-popup" data-popup="request" href="#recall">Перезвоните мне</a>
                                 </div>
                             </div>
-                            <div class="top-menu-mobi">
-                                <a href="tel:84951350003">8 (495) 135-00-03</a>
-                                <span class="nav__text"><i class="nav__ico nav__ico_pin"></i> Москва и область</span>
-                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="top-menu-mobi">
+                    <a href="tel:84951350003">8 (495) 135-00-03</a>
+                    <span class="nav__text"><i class="nav__ico nav__ico_pin"></i> Москва и область</span>
                 </div>
                 <div class="header__panel">
                     <nav class="menu" role="navigation">
