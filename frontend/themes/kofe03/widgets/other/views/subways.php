@@ -4,7 +4,7 @@
         <div class="citys">
             <ul>
                 <?php foreach ($rows as $row): ?>
-                    <li><a href="/<?= $row['url']; ?>"><?= $row['title']; ?></a></li>
+                <li><a href="/<?= $row['url']; ?>"><?= str_replace(['Ремонт кофемашин в городе ', '!'], '', $row['title']); ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>
