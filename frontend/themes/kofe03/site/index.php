@@ -23,7 +23,7 @@ $this->title = $page['meta_title'];
     <div class="poster__inner">
         <div class="poster__content">
             <div class="poster__text">
-                <?= $page['description']; ?>
+                <?= $page['full_description']; ?>
             </div>
         </div>
     </div>
