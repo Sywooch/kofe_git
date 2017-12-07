@@ -220,6 +220,7 @@ $js = app\components\CController::$js;
             </div>
         </div>
     </footer>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
 </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>

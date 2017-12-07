@@ -134,6 +134,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
 

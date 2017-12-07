@@ -228,7 +228,7 @@ $js = app\components\CController::$js;
             </div>
             <div class="close"></div>
         </div>
-
+<?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
 <script src="<?= $assets ?>/ifixme/js/jquery-1.11.3.min.js"></script>
