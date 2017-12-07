@@ -17,7 +17,7 @@ $this->title = $page['meta_title'];
             <div class="clear"></div>
         </div>
     </aside>
-    <?= kofe03\widgets\lists\TopServices::widget(); ?>
+    <?= kofe03\widgets\lists\TopServices::widget(); ?>    
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
     <div class="poster__inner">        
@@ -30,4 +30,5 @@ $this->title = $page['meta_title'];
     <?= kofe03\widgets\lists\LastReviews::widget(); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
     <?= kofe03\widgets\other\Subways::widget(); ?>
+    <?= kofe03\widgets\lists\Parnery::widget(); ?>
 </main>
