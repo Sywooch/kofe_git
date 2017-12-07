@@ -432,7 +432,7 @@ $js = app\components\CController::$js;
             </div>
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
-
+    <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=1"></script>
