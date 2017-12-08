@@ -68,6 +68,8 @@ $this->title = $title;
             </article>
         </div>
     </section>
+
+    
     <?= kofe03\widgets\other\Advantage::widget(); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неиправностям']); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
