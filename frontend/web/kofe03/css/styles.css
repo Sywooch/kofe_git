@@ -804,13 +804,13 @@ img[align='right']
 .poster_button
 {
     color: #fff; 
-    background: #f42b36;
+    background: #13ce66;
 }
 .button_warning:hover,
 .poster_button:hover
 {
     color: #fff; 
-    background: #e22f39;
+    background: #0c9e4d;
 }
 .button_lined,
 .reviews__all,
@@ -994,6 +994,11 @@ img[align='right']
     width: 350px;
     margin: 0 auto;
     margin-top: 18px;
+}
+@media (max-width: 805px) {
+    .poster__request .form_request {
+        margin-top: 0px;
+    }
 }
 .form_request_full,
 .form_request_success
@@ -1528,7 +1533,6 @@ label.error
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
 }
-
 .layout__head
 {
     padding: 20px 0;
@@ -5677,7 +5681,7 @@ label.error
 
     box-sizing: border-box;
     height: 96px;
-    padding: 0 10px;
+    padding: 0 5px;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -8041,3 +8045,57 @@ img.brands__name {
     }
 }
 
+
+.all-ds {
+    padding: 20px 0px;
+}
+.all-ds .con-infos .left {
+    float: left;
+    width: 75%;
+    padding: 15px 0px;
+}
+.all-ds .con-infos:after {
+    clear: both;
+    width: 100%;
+    display: block;
+    height: 1px;
+    content: '';
+}
+.all-ds .con-infos .right {
+    width: 25%;
+    float: right;
+    height: 200px;
+    text-align: center;
+}
+.all-ds .con-infos .right img {
+    max-width: 80%;
+    max-height: 90%;
+}
+
+.my-bg-logos {
+    position: relative;
+    overflow: hidden;
+    
+
+}
+.my-bg-logos .bg-brend {
+    position: absolute;
+    background-size: 3%;
+    width: 3840px;
+    height: 3840px;
+    transform:  rotate(-45deg);
+    margin-left: -960px;
+    margin-top: -960px;
+    background-position: 0px;
+    background-repeat: space;
+}
+.my-bg-logos .bg-brend:before {
+    background: #ffffffe8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    left: 0px;
+    top: 0px;
+}

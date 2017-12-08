@@ -18,7 +18,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
         <div class="content__inner">
             <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $pageInfo['url']]); ?>
             <main class="content__main" role="main">
-                <article class="post">
+                <article class="post" style="width: 100%;">
                     <header class="post__header">
                         <h1>Контакты</h1>
                     </header>
