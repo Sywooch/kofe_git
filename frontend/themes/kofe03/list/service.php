@@ -23,12 +23,13 @@ $this->title = $title;
                     <h1 class="office__title"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
                     <article class="office__post">
                         <?= $seoText; ?>
+
+                        <div class="tseni-na-uslugi">
+                            Стоимость ремонта: <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?><b>₽</b></span>
+                        </div>
                     </article>
                 </div>
                 <div class="office__request">
-                    <div class="office__brands">
-                        Стоимость ремонта <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> р</span>
-                    </div>
                     <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
                 </div>
             </div>

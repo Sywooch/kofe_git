@@ -8099,3 +8099,25 @@ img.brands__name {
     left: 0px;
     top: 0px;
 }
+
+
+.tseni-na-uslugi {
+    border-radius: 5px;
+    display: inline-block;
+    background: #13ce66;
+    padding: 8px 20px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Proxima Nova Extrabold', Arial, sans-serif;
+}
+.tseni-na-uslugi span {
+    font-size: 50px;
+    margin-top: 7px;
+    float: right;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.tseni-na-uslugi span b {
+    font-size: 25px;
+    margin-left: 3px;
+}
