@@ -28,9 +28,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                         <ul>
                             <li>г. Москва, Большой Кисловский пер., 5 - 7С2</li>
                         </ul>
-                        <p>Время работы: 08:00 &ndash; 22:00</p>
+                        <p>Время работы: 09:00 &ndash; 20:00</p>
                         <div class="post__maps">
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A82f1d81ac409732fa4a65cee20c92773a717ed2644039a9e4b2c1918268e4e73&amp;width=662&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A82f1d81ac409732fa4a65cee20c92773a717ed2644039a9e4b2c1918268e4e73&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                         </div>
                         <?= $pageInfo['description']; ?>
                     </div>

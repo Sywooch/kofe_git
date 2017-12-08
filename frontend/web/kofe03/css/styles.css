@@ -7867,6 +7867,7 @@ img.banner{max-width: 100%;height: auto!important;}
 }
 img.brands__name {
     max-width: 90%;
+    max-height: 90px;
 }
 .partnyori-logo img.brands__name {
     max-height: 70px;
