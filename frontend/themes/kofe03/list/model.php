@@ -66,5 +66,4 @@ $this->title = $title;
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам']); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>
