@@ -36,7 +36,7 @@ $form = ActiveForm::begin([
             </label>
         </div>
         <div class="form__row form__row_submit">
-            <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+            <?= Html::submitInput('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
         </div>
         <span id="messenger"></span>
         

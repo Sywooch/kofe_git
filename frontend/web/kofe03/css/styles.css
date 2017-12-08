@@ -882,7 +882,7 @@ img[align='right']
 .poster_button
 {
     line-height: 50px; 
-
+    font-size: 18px ! important;
     height: 50px;
 }
 .button_text,
@@ -3163,6 +3163,7 @@ label.error
     height: 34px;
 
     vertical-align: middle;
+    text-align: right;
 }
 .connect_header .connect__call
 {
@@ -4177,7 +4178,7 @@ label.error
 {
     max-width: 675px;
     padding: 20px;
-    background: #ffffffa8;
+    background: #fffffff0;
     border-radius: 20px;
     float: left;
 }
@@ -5641,7 +5642,7 @@ label.error
     position: relative;
 
     margin: 0 20px;
-    padding: 0 10%;
+    padding: 0 5%;
 
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
@@ -7867,6 +7868,9 @@ img.banner{max-width: 100%;height: auto!important;}
 img.brands__name {
     max-width: 90%;
 }
+.partnyori-logo img.brands__name {
+    max-height: 70px;
+}
 .pagination {
     position: relative;
     clear: both;
@@ -8102,24 +8106,12 @@ img.brands__name {
 
 
 .tseni-na-uslugi {
+    color: #ffffff;
+    background: #13ce66;
+    padding: 2px 15px;
     border-radius: 5px;
     display: inline-block;
-    background: #13ce66;
-    padding: 8px 20px;
-    font-size: 25px;
-    color: #fff;
-    font-family: 'Proxima Nova Extrabold', Arial, sans-serif;
-}
-.tseni-na-uslugi span {
-    font-size: 50px;
-    margin-top: 7px;
     float: right;
-    margin-left: 10px;
-    line-height: 30px;
-}
-.tseni-na-uslugi span b {
-    font-size: 25px;
-    margin-left: 3px;
 }
 
 .dop-span-h1 {

@@ -8,6 +8,7 @@ $this->title = $page['meta_title'];
         <div class="poster__inner">
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name"><?= $page['meta_h1']; ?></h1>
+                <div class="clear"></div>
                 <div class="poster__text" itemprop="description">
                     <?= $page['description']; ?>
                 </div>

@@ -8,6 +8,7 @@ $this->title = $title;
         <div class="poster__inner">
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
+                <div class="clear"></div>
                 <div class="poster__text" itemprop="description">
                     <p>Почему выбирают нас?</p>
 

@@ -405,7 +405,7 @@ $js = app\components\CController::$js;
                             <span class="connect__phone connect__phone_active" data-phone="moscow">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
-                            <p style="margin-top: 0px;"> <?= Yii::$app->session['region']['title']; ?></p>
+                            <p style="margin-top: 0px; text-align: right;"> <?= Yii::$app->session['region']['title']; ?></p>
                         </div>
                     </div>
                     <div class="footer__copyright">2000 - <?= date('Y'); ?> © <?php if ($siteConfig['id'] == 52): ?>fixkofe.ru<?php else: ?>kofe03.ru<?php endif; ?> <br>
