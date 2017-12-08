@@ -14,7 +14,7 @@ $this->title = $title;
                         </ul>
                         <span class="breadcrumbs__current">Ремонт кофемашин <?= $pageInfo['title']; ?></span>
                     </nav>
-                    <h1 class="office__title"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
+                    <h1 class="office__title"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title']; ?></h1>
                     <article class="office__post">
                         <?php if (!empty($pageInfo['description'])): ?>
                             <?= $pageInfo['description']; ?>
