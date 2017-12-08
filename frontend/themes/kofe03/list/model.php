@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
 <main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
+    <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
         <div class="poster__inner">
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
@@ -27,7 +27,7 @@ $this->title = $title;
         </div>
     </aside>
     <section class="office my-bg-logos">
-        <div class="bg-brend" style="<?php if (!empty($pageInfo['image'])): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>); <?php endif; ?>"></div>
+        <div class="bg-brend" style="<?php if (!empty($brand['image'])): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brand['image']; ?>); <?php endif; ?>"></div>
         <div class="office__inner">
             <article class="office__post">
                 <div class="all-ds">
