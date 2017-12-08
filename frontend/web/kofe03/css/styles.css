@@ -8127,8 +8127,8 @@ img.brands__name {
     font-size: 34px;
     line-height: 37px;
     font-family: 'Proxima Nova Extrabold', Arial, sans-serif;
-    margin-left: 10px;
 }
 .poster__content > h1 {
     float: left;
+    margin-right: 10px;
 }
