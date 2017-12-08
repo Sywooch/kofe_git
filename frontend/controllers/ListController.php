@@ -315,7 +315,7 @@ class ListController extends CController {
 
     public function actionModel() {
         $pageInfo = $_GET['data'];
-        $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
+        $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title, image FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
         $regionTitle = Yii::$app->session['region']['titleRod'];
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
             $regionTitle = 'Москве и МО';
