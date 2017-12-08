@@ -21,9 +21,7 @@ $this->title = $page['meta_title'];
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
     <div class="poster__inner">        
-            <div class="poster__text">
-                <?= $page['full_description']; ?>
-            </div>        
+        <?= $page['full_description']; ?>
     </div>
 
 
