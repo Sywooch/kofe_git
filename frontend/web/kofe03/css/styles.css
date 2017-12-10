@@ -995,11 +995,6 @@ img[align='right']
     margin: 0 auto;
     margin-top: 18px;
 }
-@media (max-width: 805px) {
-    .poster__request .form_request {
-        margin-top: 0px;
-    }
-}
 .form_request_full,
 .form_request_success
 {
@@ -1621,17 +1616,20 @@ label.error
     z-index: 150;
     top: 15px;
     left: 20px;
-
-    height: 54px;
+    line-height: 58px;
+    height: 58px;
+    width: 180px;
     /*padding: 0 0 0 70px;*/
-
+    display: block;
     text-decoration: none;
+    vertical-align: middle;
 }
 .header__site img {
     max-height: 100%;
     display: block;
     height: 100%;
     max-width: 100%;
+    vertical-align: middle;
 }
 .page_scrolled .header__site {
     top: 8px;
@@ -1648,6 +1646,10 @@ label.error
     .header__site
     {
         top: 9px;
+    }
+    .header__site img  {
+        height: 80%;
+        margin-top: 4px;
     }
 }
 
@@ -4149,6 +4151,9 @@ label.error
 }
 @media screen and (max-width: 600px)
 {
+    .poster__inner {
+        padding: 10px 10px;
+    }
     .poster__request
     {
         width: 100%;
@@ -4216,8 +4221,13 @@ label.error
 {
     .poster__title
     {
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 20px;
+        line-height: 22px;
+        width: 100%;
+        text-align: center;
+    }
+    .poster p {
+        text-align: center;
     }
 }
 
@@ -7694,7 +7704,7 @@ table.no-border td {
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
     border: 1px solid #e9eaec;
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
     width: 50%;
     box-sizing: border-box;
 }
@@ -8046,7 +8056,7 @@ img.brands__name {
         width: 100%;
     }
     .poster {
-        background: #1f5f9e ! important;
+        background: #fff ! important;
     }
 }
 
@@ -8058,6 +8068,11 @@ img.brands__name {
     float: left;
     width: 75%;
     padding: 15px 0px;
+}
+@media (max-width: 600px) {
+    .all-ds .con-infos .left {
+        width: 100%;
+    }
 }
 .all-ds .con-infos:after {
     clear: both;
@@ -8121,7 +8136,35 @@ img.brands__name {
     line-height: 37px;
     font-family: 'Proxima Nova Extrabold', Arial, sans-serif;
 }
+@media (max-width:1260px) {
+    .dop-span-h1 {
+        display: none;
+    }
+}
 .poster__content > h1 {
     float: left;
     margin-right: 10px;
+}
+.for_mobi {
+    display: none;
+}
+@media (max-width:600px) {
+    .for_mobi {
+        display: block;
+    }
+    .for_pc {
+        display: none;
+    }
+}
+
+
+.poster__inner .image.for_mobi {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.poster__inner .image.for_mobi img {
+    max-width: 30%;
+    margin-top: -5%;
+    margin-bottom: -5%;
 }

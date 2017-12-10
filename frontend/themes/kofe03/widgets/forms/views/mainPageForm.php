@@ -35,6 +35,15 @@ $form = ActiveForm::begin([
                 ?>
             </label>
         </div>
+        <div class="poster__text for_mobi" itemprop="description">
+            <ul>
+                <li>Диагностика - <span class="minus">1500р</span> 0р</li>
+                <li>Забор и доставка кофемашины - <span class="minus">1000р</span> 0р</li>
+                <li>На время ремонта предоставляем кофемашину - БЕСПЛАТНО!</li>
+                <li>Гарантия 24 месяца* (в зависимости от типа ремонта)</li>
+                <li>Срочный ремонт за 24 часа</li>
+            </ul>
+        </div>
         <div class="form__row form__row_submit">
             <?= Html::submitInput('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
         </div>
