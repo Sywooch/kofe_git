@@ -3904,11 +3904,17 @@ footer .connect__call p {
     .footer__item
     {
         width: 50%;
-
+        float: left;
         text-align: left;
     }
 }
-
+.footer__list.for_mobi:after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 1px;
+    clear: both;
+}
 .footer__page,
 .footer__type
 {
