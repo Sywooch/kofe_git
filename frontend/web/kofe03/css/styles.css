@@ -1743,7 +1743,7 @@ label.error
     }
     .page_open .header__panel
     {
-        height: 55px ! important;
+        height: 40px ! important;
     }
     .page_open .header__panel:hover
     {
@@ -2188,7 +2188,7 @@ label.error
 {
     .menu__tabs
     {
-        height: 55px;
+        height: 40px;
     }
 }
 
@@ -2236,7 +2236,7 @@ label.error
 @media screen and (max-width: 760px) {
     .menu__tab:after
 {
-    top: 53px;
+    top: 38px;
 }
 }
 @media screen and (max-width: 480px)
@@ -8004,7 +8004,8 @@ img.brands__name {
 }
 
 .poster__text ul li span.minus {
-    text-decoration: line-through red;
+    text-decoration: line-through;
+    text-decoration-color: #000;
 }
 
 @media screen and (max-width: 600px) {
