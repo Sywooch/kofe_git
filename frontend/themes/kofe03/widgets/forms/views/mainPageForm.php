@@ -38,15 +38,15 @@ $form = ActiveForm::begin([
         <div class="poster__text for_mobi" itemprop="description">
             <ul>
                 <li>Диагностика - <span class="minus">1500р</span> 0р</li>
-                <li>Забор и доставка кофемашины - <span class="minus">1000р</span> 0р</li>
+                <li>Выезд и доставка - <span class="minus">1000р</span> 0р</li>
                 <li>Подменная кофемашина - <span class="minus">2000р</span> 0р</li>
-                <li>Гарантия от 6 до 24 месяцев</li>
-                <li>Срочный ремонт за 24 часа</li>
-                <li>Бесплатная парковка рядом с СЦ</li>
+                <li>Гарантия <span class="minus">от 3 до 6 мес</span> от 6 до 24 мес.</li>
+                <li>Срочный ремонт за <span class="minus">48 часов</span> 24 часа</li>
+                <li>Бесплатная парковка рядом с нами!</li>
             </ul>
         </div>
         <div class="form__row form__row_submit">
-            <?= Html::submitInput('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+            <?= Html::submitButton('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
         </div>
         <span id="messenger"></span>
         

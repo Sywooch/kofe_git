@@ -8005,7 +8005,7 @@ img.brands__name {
 
 .poster__text ul li span.minus {
     text-decoration: line-through;
-    text-decoration-color: #000;
+    text-decoration-color: #f42b36;
 }
 
 @media screen and (max-width: 600px) {
