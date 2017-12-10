@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
 <main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
+    <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
         <div class="poster__inner">
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
@@ -12,7 +12,7 @@ $this->title = $title;
                 <div class="tseni-na-uslugi">
                     Стоимость услуги: <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> ₽</span>
                 </div>
-                <div class="poster__text" itemprop="description">
+                <div class="poster__text for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>
 
                     <ul>

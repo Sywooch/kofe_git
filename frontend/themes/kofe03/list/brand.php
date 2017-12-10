@@ -77,12 +77,12 @@ $this->title = $title;
 
     
     <?= kofe03\widgets\other\Advantage::widget(); ?>
-    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неиправностям']); ?>
+    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неисправностям']); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
-    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам']); ?>
+    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам', 'dopClass' => 'other-table']); ?>
     <section class="office-content">
         <div class="office__inner">
-            <h2 style="margin:20px 0 0 0;">Модели <?= $pageInfo['title']; ?></h2>
+            <h2 style="margin:20px 0 0 0;">Ремонтируем модели <?= $pageInfo['title']; ?></h2>
             <?= kofe03\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
         </div>
     </section>

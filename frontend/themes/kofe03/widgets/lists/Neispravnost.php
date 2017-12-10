@@ -12,6 +12,7 @@ class Neispravnost extends Widget {
     public $type = 2;
     public $title = '';
     public $is_popular = true;
+    public $dopClass;
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
@@ -19,7 +20,7 @@ class Neispravnost extends Widget {
         $rows = Yii::$app->db->createCommand($sql)->queryAll();
         if (empty($rows))
             return '';        
-        return $this->render($this->view, ['rows' => $rows, 'title' => $this->title]);
+        return $this->render($this->view, ['rows' => $rows, 'title' => $this->title, 'class' => $this->dopClass]);
     }
 
 }

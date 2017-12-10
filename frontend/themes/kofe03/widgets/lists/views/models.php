@@ -29,7 +29,14 @@ $siteConfig = app\components\CController::getSiteConfig();
                         $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
                     ?>
                     <li class="menu__item">
-                        <a class="menu__link" href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></a>                        
+                        <a class="menu__link" href="/<?= $brand['url']; ?>">
+                            <div class="img">
+                                <?php if(!empty($brand['image'])): ?>
+                                    <img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
+                                <?php endif; ?>
+                            </div>
+                            <span><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></span>
+                        </a>                        
                     </li>
                 <?php endforeach; ?>               
             </ul>

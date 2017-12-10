@@ -9,7 +9,12 @@ $this->title = $title;
             <div class="poster__content">
                 <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
                 <div class="clear"></div>
-                <div class="poster__text" itemprop="description">
+                <div class="image model_img for_mobi">
+                    <?php if (!empty($pageInfo['image'])): ?>
+                        <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="poster__text for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>
 
                     <ul>
@@ -51,7 +56,7 @@ $this->title = $title;
                                 </p>
                             <?php endif; ?>
                         </div>
-                        <div class="right">
+                        <div class="right for_pc">
                             <?php if (!empty($pageInfo['image'])): ?>
                                 <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
                             <?php endif; ?>
@@ -62,8 +67,8 @@ $this->title = $title;
         </div>
     </section>
     <?= kofe03\widgets\other\Advantage::widget(); ?>
-    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неиправностям']); ?>    
+    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неисправностям']); ?>    
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
-    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам']); ?>
+    <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => false, 'title' => 'Цены по прочим услугам', 'dopClass' => 'other-table']); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
 </main>

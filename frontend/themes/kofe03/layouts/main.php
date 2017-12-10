@@ -77,6 +77,9 @@ $js = app\components\CController::$js;
                                     <a class="nav__link" href="/uslugi-i-ceny">Услуги и цены</a>
                                 </li>
                                 <li class="nav__item">
+                                    <a class="nav__link" href="/uslugi-i-ceny">Статус ремонта</a>
+                                </li>
+                                <li class="nav__item">
                                     <a class="nav__link" href="/o-kompanii">О компании</a>
                                 </li>
                                 <li class="nav__item nav__item_desktop">
@@ -111,6 +114,7 @@ $js = app\components\CController::$js;
                             <div class="header__burger">
                                 <div class="header__burger-ico"></div>
                             </div>
+                            <div class="for_mobi phone_icon"><a href="tel:84951350003"></a></div>
                             <div class="menu__addition">
                                 <a class="button button_warning js-popup" data-popup="request" href="#">
                                     <img class="button__ico" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/ico_bellfa5f.svg?v=1485518639601" alt="">
@@ -130,7 +134,7 @@ $js = app\components\CController::$js;
                                     <br> 
                                     <a href="/kontakty">Большой Кисловский пер., 5 - 7С2</a>
                                 </div>
-                                <div class="connect__schedule">Работаем ежедневно <span class="color-red">c 09:00 до 20:00</span><br class="connect_br">без выходных и праздничных дней</div>
+                                <div class="connect__schedule">Работаем ежедневно <span class="color-green">c 09:00 до 20:00</span><br class="connect_br">без выходных и праздничных дней</div>
                                 <div class="connect__call">
                                     <span class="connect__phone connect__phone_active" data-phone="moscow">
                                         <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -146,6 +150,13 @@ $js = app\components\CController::$js;
                     <a href="tel:84951350003">8 (495) 135-00-03</a>
                     <span class="nav__text">Звоните ежедневно с 9:00 до 21:00<br>м. Арбатская. Большой Кисловский пер., 5 - 7С2</span>
                 </div>
+                <ul class="footer__list for_mobi">
+                    <li class="footer__item"><a class="footer__page" href="/uslugi-i-ceny">Услуги и цены</a></li>
+                    <li class="footer__item"><a class="footer__page" href="/uslugi-i-ceny">Статус ремонта</a></li>
+                    <li class="footer__item"><a class="footer__page" href="/o-kompanii">О компании</a></li>
+                    <li class="footer__item"><a class="footer__page" href="/garantiya">Гарантия</a></li>
+                    <li class="footer__item"><a class="footer__page" href="/kontakty">Контакты</a></li>
+                </ul>
                 <div class="header__panel">
                     <nav class="menu" role="navigation">
                         <div class="menu__inner">
@@ -405,7 +416,7 @@ $js = app\components\CController::$js;
                             <span class="connect__phone connect__phone_active" data-phone="moscow">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
-                            <p style="margin-top: 0px; text-align: right;"> <?= Yii::$app->session['region']['title']; ?></p>
+                            <p> <?= Yii::$app->session['region']['title']; ?></p>
                         </div>
                     </div>
                     <div class="footer__copyright">2000 - <?= date('Y'); ?> © <?php if ($siteConfig['id'] == 52): ?>fixkofe.ru<?php else: ?>kofe03.ru<?php endif; ?> <br>
