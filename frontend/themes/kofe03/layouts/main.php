@@ -144,7 +144,7 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="top-menu-mobi">
                     <a href="tel:84951350003">8 (495) 135-00-03</a>
-                    <span class="nav__text">Звоните ежедневно с 9:00 до 21:00</span>
+                    <span class="nav__text">Звоните ежедневно с 9:00 до 21:00<br>Наш адрес: Большой Кисловский пер., 5 - 7С2</span>
                 </div>
                 <div class="header__panel">
                     <nav class="menu" role="navigation">
