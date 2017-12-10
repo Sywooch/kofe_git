@@ -1337,28 +1337,28 @@ label.error
 {
     font-family: 'Proxima Nova Regular', Arial, sans-serif; 
 
-    color: #909baf;
+    color: #000;
 }
 
 .form__input:-moz-placeholder
 {
     font-family: 'Proxima Nova Regular', Arial, sans-serif; 
 
-    color: #909baf;
+    color: #000;
 }
 
 .form__input::-moz-placeholder
 {
     font-family: 'Proxima Nova Regular', Arial, sans-serif; 
 
-    color: #909baf;
+    color: #000;
 }
 
 .form__input:-ms-input-placeholder
 {
     font-family: 'Proxima Nova Regular', Arial, sans-serif; 
 
-    color: #909baf;
+    color: #000;
 }
 
 .form__symbol
@@ -8002,10 +8002,18 @@ img.brands__name {
     box-sizing: 100%;
     background-repeat: no-repeat;
 }
-
 .poster__text ul li span.minus {
-    text-decoration: line-through;
-    text-decoration-color: #f42b36;
+    position: relative;
+    display: inline-block;
+}
+.poster__text ul li span.minus:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    display: block;
+    top: 50%;
+    position: absolute;
+    background: red;
 }
 
 @media screen and (max-width: 600px) {
