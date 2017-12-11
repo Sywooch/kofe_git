@@ -16,7 +16,8 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             </div>
             <div class="row">
                 <div class="col-md-9 col-sm-12">
-                    <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>                    
+                    <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>       
+                    <?= $model['description']; ?>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
             </div>
@@ -27,7 +28,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                 <div class="col-sm-9 left-col">
                     <div class="row">
                         <div class="col-sm-12 left-col w">                            
-                            <?= $model['description']; ?>                            
+                            <?= $model['full_description']; ?>                            
                         </div>
                     </div>
                     <?= coffeHelp\widgets\forms\MainPageForm::widget(); ?>
