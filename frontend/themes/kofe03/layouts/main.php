@@ -77,7 +77,7 @@ $js = app\components\CController::$js;
                                     <a class="nav__link" href="/uslugi-i-ceny">Услуги и цены</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="/uslugi-i-ceny">Статус ремонта</a>
+                                    <a class="nav__link js-popup" data-popup="request" href="#">Статус ремонта</a>
                                 </li>
                                 <li class="nav__item">
                                     <a class="nav__link" href="/o-kompanii">О компании</a>
@@ -152,7 +152,7 @@ $js = app\components\CController::$js;
                 </div>
                 <ul class="footer__list for_mobi">
                     <li class="footer__item"><a class="footer__page" href="/uslugi-i-ceny">Услуги и цены</a></li>
-                    <li class="footer__item"><a class="footer__page" href="/uslugi-i-ceny">Статус ремонта</a></li>
+                    <li class="footer__item"><a class="footer__page js-popup" data-popup="request" href="#">Статус ремонта</a>
                     <li class="footer__item"><a class="footer__page" href="/o-kompanii">О компании</a></li>
                     <li class="footer__item"><a class="footer__page" href="/garantiya">Гарантия</a></li>
                     <li class="footer__item"><a class="footer__page" href="/kontakty">Контакты</a></li>
