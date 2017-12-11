@@ -14,6 +14,9 @@ $this->title = $title;
                         <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
                     <?php endif; ?>
                 </div>
+                <div class="tseni-na-uslugi">
+                    Стоимость услуги: <span>от 578 ₽</span>
+                </div>
                 <div class="poster__text for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>
 
