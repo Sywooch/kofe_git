@@ -7,6 +7,8 @@ use yii\base\Widget;
 use app\components\CController;
 
 class MainPageForm extends Widget {
+    
+    public $h1;
 
     public function run() {
         
@@ -16,7 +18,7 @@ class MainPageForm extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }        
-        return $this->render('mainPageForm', ['model' => $model]);
+        return $this->render('mainPageForm', ['model' => $model, 'h1' => $this->h1]);
     }
 
 }

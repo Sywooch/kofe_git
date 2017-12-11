@@ -10,7 +10,7 @@ $this->title = $title;
                 <h1 class="poster__title" itemprop="name"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
                 <div class="clear"></div>
                 <div class="tseni-na-uslugi">
-                    Стоимость услуги: <span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> ₽</span>
+                    Стоимость услуги: <span><?= $pageInfo['price'] > 0 ? ' от ' : ''; ?><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> ₽</span>
                 </div>
                 <div class="poster__text for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>

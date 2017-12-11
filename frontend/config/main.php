@@ -9,7 +9,7 @@ return [
     'basePath' => dirname(__DIR__),
     //'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'components' => [
+    'bootstrap' => ['devicedetect'],  'components' => [
         'assetManager' => [
             'bundles' => [
                 'yii\bootstrap\BootstrapPluginAsset' => ['js' => []],
@@ -65,6 +65,9 @@ return [
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],
+        'devicedetect' => [
+		'class' => 'alexandernst\devicedetect\DeviceDetect'
+	],
     ],    
     'params' => $params,
 ];

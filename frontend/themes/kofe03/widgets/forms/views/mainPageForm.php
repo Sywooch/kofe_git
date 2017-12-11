@@ -19,6 +19,10 @@ $form = ActiveForm::begin([
     ]);
     ?>    
     <div class="form__box">
+        <?php if (!empty($h1)): ?>
+            <h1 class="poster__title" itemprop="name"><?= $h1; ?></h1>
+            <div class="crear"></div>
+        <?php endif; ?>
         <h3 class="form__title">Оставьте онлайн заявку по Акции! 🎁</h3>
         <div class="form__row">
             <label class="form__element form__element_input">
@@ -49,7 +53,7 @@ $form = ActiveForm::begin([
             <?= Html::submitButton('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
         </div>
         <span id="messenger"></span>
-        
+
         <div class="personalData"><?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?><span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span></div>
     </div>
     <?php ActiveForm::end() ?>
