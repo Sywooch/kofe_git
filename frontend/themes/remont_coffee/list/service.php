@@ -20,7 +20,7 @@ $this->title = $title;
                 <span><?= $pageInfo['title']; ?></span>
             </div>
             <?php if (!empty($pageInfo['description'])): ?>
-                <div class="textss">
+                <div<?= !empty($pageInfo['image']) ? ' class="textss"' : '' ?>>
                     <?= $pageInfo['description']; ?>
                 </div>
             <?php endif; ?>
