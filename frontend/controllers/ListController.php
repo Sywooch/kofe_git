@@ -122,7 +122,16 @@ class ListController extends CController {
                 }
                 $pageInfo['title'] = mb_strtolower($pageInfo['title'], 'utf8');
                 if ($pageInfo['type'] == 2) {
-                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - ' . CController::$category['1_title'] . ' ' . $page['title'];
+                    $seoH1 = [
+                        6 => 'Нет пара в кофемашине ' . $page['title'],
+                        14 => 'Нет пара в кофемашине ' . $page['title'],
+                        17 => 'Кофемашина ' . $page['title'] . ' делает кофе слишком холодный\горячий',
+                        18 => 'Кофемашина ' . $page['title'] . ' делает кофе слабый и невкусный',
+                    ];
+                    if (isset($seoH1[$pageInfo['id']]))
+                        $h1 = $seoH1[$pageInfo['id']];
+                    else
+                        $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'] . ' - ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  ' . CController::$category['1_title'] . ' ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства ' . $page['title'] . '.</p>';
@@ -425,7 +434,7 @@ class ListController extends CController {
             'name' => 'description',
             'content' => $metaDesc
         ]);
-        
+
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         return $this->render('model', [
