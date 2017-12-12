@@ -2234,9 +2234,6 @@ nav .container > ul > li > ul li a span {
 		margin-bottom: 20px;
 	}
 }
-#number-13 .right  .btn {
-	margin-right: -35px;
-}
 @media screen and (max-width: 540px) {
 	#number-13 .right  .btn {
 		margin-right: -20px;
