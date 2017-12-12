@@ -30,11 +30,13 @@ $siteConfig = app\components\CController::getSiteConfig();
                     ?>
                     <li class="menu__item">
                         <a class="menu__link" href="/<?= $brand['url']; ?>">
+						<?php if(!Yii::$app->params['devicedetect']['isMobile']): ?>
                             <div class="img">
                                 <?php if(!empty($brand['image'])): ?>
                                     <img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
                                 <?php endif; ?>
                             </div>
+						<?php endif; ?>	
                             <span><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></span>
                         </a>                        
                     </li>
