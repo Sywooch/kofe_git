@@ -8233,6 +8233,9 @@ img.brands__name {
     width: 75%;
     padding: 15px 0px;
 }
+.only .all-ds .con-infos .left {
+    width: 100%;
+}
 @media (max-width: 600px) {
     .all-ds .con-infos .left {
         width: 100%;
@@ -8250,6 +8253,9 @@ img.brands__name {
     float: right;
     height: 200px;
     text-align: center;
+}
+.only .all-ds .con-infos .right {
+    display: none;
 }
 .all-ds .con-infos .right img {
     max-width: 80%;
