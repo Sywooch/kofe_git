@@ -53,10 +53,10 @@ $this->title = $title;
                         </div>                        
                         <div class="right for_pc">
                             <?php if (!empty($brandImage) && !empty($page['type']) && $page['type'] == 'brand'): ?>
-                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>" />
+                                <img src="<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>" />
                             <?php endif; ?>
                             <?php if (!empty($modelImage) && !empty($page['type']) && $page['type'] == 'model'): ?>
-                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
+                                <img src="<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
                             <?php endif; ?>
                         </div>
                     </div>
