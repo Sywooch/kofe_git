@@ -30,10 +30,11 @@ $this->title = $title;
             <div class="clear"></div>
         </div>
     </aside>
-    <section class="office">
+    <section class="office my-bg-logos">
+        <div class="bg-brend" style="<?php if (!empty($brand['image'])): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brand['image']; ?>); <?php endif; ?>"></div>
         <div class="office__inner">
-            <div class="my-tseni">
-                <div class="office__container">
+            <article class="office__post">
+                <div class="all-ds">
                     <nav class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
@@ -46,11 +47,18 @@ $this->title = $title;
                             <?php endforeach; ?>
                         </ul>
                     </nav>
-                    <article class="office__post">
-                        <?= $seoText; ?>
-                    </article>
+                    <div class="con-infos">
+                        <div class="left">
+                            <?= $seoText; ?>
+                        </div>
+                        <div class="right for_pc">
+                            <?php if (!empty($pageInfo['image'])): ?>
+                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
+                            <?php endif; ?>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
     <?= kofe03\widgets\other\Advantage::widget(); ?>
