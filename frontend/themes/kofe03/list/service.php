@@ -31,7 +31,7 @@ $this->title = $title;
         </div>
     </aside>    
     <section class="office my-bg-logos<?= empty($page) ? ' only' : '' ?>">
-        <div class="bg-brend" style="<?php if (!empty($brandImage) && !empty($page['type']) && $page['type'] == 'brand'): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>); <?php endif; ?>"></div>
+        <div class="bg-brend" style="<?php if (!empty($brandImage) && !empty($page['type']) && ($page['type'] == 'brand' or $page['type'] == 'model')): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>); <?php endif; ?>"></div>
         <div class="office__inner">
             <article class="office__post">
                 <div class="all-ds">
