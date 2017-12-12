@@ -50,10 +50,13 @@ $this->title = $title;
                     <div class="con-infos">
                         <div class="left">
                             <?= $seoText; ?>
-                        </div>
+                        </div>                        
                         <div class="right for_pc">
-                            <?php if (!empty($pageInfo['image'])): ?>
-                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
+                            <?php if (!empty($brandImage) && !empty($page['type']) && $page['type'] == 'brand'): ?>
+                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>" />
+                            <?php endif; ?>
+                            <?php if (!empty($modelImage) && !empty($page['type']) && $page['type'] == 'model'): ?>
+                                <img src="/<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
                             <?php endif; ?>
                         </div>
                     </div>

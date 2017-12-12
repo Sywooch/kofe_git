@@ -122,12 +122,12 @@ class ListController extends CController {
                 }
                 $pageInfo['title'] = mb_strtolower($pageInfo['title'], 'utf8');
                 if ($pageInfo['type'] == 2) {
-                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'];
+                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - ' . CController::$category['1_title'] . ' ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'] . ' - ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  ' . CController::$category['1_title'] . ' ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства ' . $page['title'] . '.</p>';
                 } else {
-                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'];
+                    $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . str_replace('Ремонт ', '', CController::$category['rod_title']) . ' ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
                     $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
                     $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ' ' . $page['title'] . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' - быстро, качественно с гарантией.</p>';
@@ -237,7 +237,7 @@ class ListController extends CController {
         ]);
 
 
-        $breadcrumbs[] = $pageInfo['title'];
+        $breadcrumbs[] = $this->mb_ucfirst($pageInfo['title'], 'UTF-8');
 
         return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2,
                     'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
