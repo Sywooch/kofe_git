@@ -29,9 +29,9 @@ $this->title = $title;
             <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
             <div class="clear"></div>
         </div>
-    </aside>
-    <section class="office my-bg-logos">
-        <div class="bg-brend" style="<?php if (!empty($brand['image'])): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brand['image']; ?>); <?php endif; ?>"></div>
+    </aside>    
+    <section class="office my-bg-logos<?= empty($page) ? ' only' : '' ?>">
+        <div class="bg-brend" style="<?php if (!empty($brandImage) && !empty($page['type']) && ($page['type'] == 'brand' or $page['type'] == 'model')): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>); <?php endif; ?>"></div>
         <div class="office__inner">
             <article class="office__post">
                 <div class="all-ds">
