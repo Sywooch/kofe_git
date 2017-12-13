@@ -7972,6 +7972,7 @@ img.banner{max-width: 100%;height: auto!important;}
 @media (max-width: 600px) {
     .search-brends .menu__link span {
         font-size: 12px;
+        display: inline-table;
     }
 }
 .search-brends > div {
