@@ -210,7 +210,7 @@ class PageController extends CController {
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);
             $url->addChild('lastmod', date("Y-m-d", time()));
-            $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1';
+            $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
             $services = Yii::$app->db->createCommand($sql)->queryAll();
             foreach ($pages as $page) {
                 $url = $xmlIndex->addChild('url');
@@ -246,7 +246,7 @@ class PageController extends CController {
         }
         $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND category_id = ' . $siteConfig['category_id'] . ' AND url != \'/\' ORDER BY id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
-        $sql = 'SELECT url, type, id FROM {{%services}}';
+        $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         $hostname = Yii::$app->request->hostInfo;
         $per = 50000;
