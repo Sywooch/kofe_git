@@ -33,6 +33,7 @@ $form = ActiveForm::begin([
                     'options' => [
                         'placeholder' => '+7 (___) ___-__-__',
                         'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
+                        'autofocus' => 'true',
                         'size' => 40,
                     ],
                 ])->label('')
