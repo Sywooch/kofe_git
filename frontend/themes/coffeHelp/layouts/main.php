@@ -61,25 +61,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <?php
-        if (!Yii::$app->user->isGuest) {
-            echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
-            $domain = $_SERVER['SERVER_NAME'];
-            if (isset($_GET['data']['is_service'])) {
-                if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
-                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
-                } else {
-                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
-                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
-                }
-            } else {
-                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
-                if (!empty($_GET['data']))
-                    echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
-            }
-            echo '</div>';
-        }
-        ?>
+        
         <div class="<?php if ($isHome): ?>bg<?php endif; ?> inner-bg" >
             <div class="sliderbg">
                 <section class="header 1">
@@ -148,6 +130,25 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
+        <?php
+        if (!Yii::$app->user->isGuest) {
+            echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
+            $domain = $_SERVER['SERVER_NAME'];
+            if (isset($_GET['data']['is_service'])) {
+                if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
+                } else {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                }
+            } else {
+                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                if (!empty($_GET['data']))
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+            }
+            echo '</div>';
+        }
+        ?>
         <?= $content; ?>
         <footer class="bs-docs-footer" role="contentinfo">
             <div class="container">
