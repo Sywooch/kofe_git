@@ -42,7 +42,6 @@ class MainUrlRule extends UrlRule {
         if (empty($pathInfo))
             $pathInfo = '/';
 
-
         $serv = $this->checkToService(end($arrayUrl));
 
         if ($serv !== false)
