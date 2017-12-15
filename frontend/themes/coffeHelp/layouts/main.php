@@ -21,7 +21,7 @@ $js = app\components\CController::$js;
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ремонт кофемашин в Москве</title>   
+        <title><?= Html::encode($this->title) ?></title>   
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css">

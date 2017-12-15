@@ -2,7 +2,6 @@
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
-;
 ?>
 <div class="inner-bg">     
     <div class="container theme-showcase" role="main">            
