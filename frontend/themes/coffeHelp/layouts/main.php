@@ -131,7 +131,7 @@ $js = app\components\CController::$js;
                                                 <li><a href="/rozhkovye">Рожковые</a></li>
                                                 <li><a href="/kapelnye">Капельные</a></li>
                                                 <li><a href="/porcionnye">Порционные</a></li>
-                                                <li><a href="/kapelnye">Капельные</a></li>
+                                                <li><a href="/kapsulnye">Капсульные</a></li>
                                                 <li><a href="/chaldovye">Чалдовые</a></li>
                                             </ul>
                                         </li>
