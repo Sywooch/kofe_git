@@ -5,8 +5,12 @@ $this->title = $title;
 ?>
 <div class="inner-bg">  
     <div class="container theme-showcase" role="main">            
-        <section class="promo">
-            <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $modelImage; ?>" />
+        <section class="promo<?= empty($pageInfo['image']) && empty($modelImage) ? ' full-text' : ''; ?>">
+            <?php if (!empty($pageInfo['image'])): ?>
+                <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
+            <?php elseif (!empty($modelImage)): ?>
+                <img id="big-header-image" src="<?= '/' . $assets . '/uploads/images/' . $modelImage; ?>" />
+            <?php endif; ?>
             <div class="row">
                 <div class="col-md-8 col-sm-12">
                     <ol class="breadcrumb">
@@ -38,11 +42,13 @@ $this->title = $title;
         <hr class="big_line">
         <section class="about">
             <div class="row">
-                <?php if (!empty($seoText2)){echo $seoText2;} ?>
+                <?php if (!empty($seoText2)) {
+                    echo $seoText2;
+                } ?>
             </div>
         </section>
         <section class="order">
-            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+<?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
     </div>
 </div>
