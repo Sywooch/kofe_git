@@ -86,7 +86,7 @@ class MainUrlRule extends UrlRule {
             if (!empty($seo)) {
                 $page['meta_key'] = $seo['meta_keywords'] ?: $page['meta_keywords'];
                 $page['meta_desc'] = $seo['meta_description'] ?: $page['meta_description'];
-                $page['meta_title'] = $seo['meta_title'] ?: $page['meta_title'];
+                $page['meta_title'] = !empty($seo['meta_title']) ? $seo['meta_title'] : (!empty($page['meta_title']) ? $page['meta_title'] : '');
                 $page['meta_h1'] = !empty($seo['meta_h1']) ? $seo['meta_h1'] : (!empty($page['meta_h1']) ? $page['meta_h1'] : '');
                 $page['description'] = $seo['meta_text1'] ?: $page['description'];
                 
