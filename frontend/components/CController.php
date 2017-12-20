@@ -27,11 +27,14 @@ class CController extends \yii\web\Controller {
             Yii::setAlias('@' . $siteConfig['theme'], dirname(__DIR__) . '/themes/' . $siteConfig['theme']);
         }
         if (isset($siteConfig['multi_category'])) {
-            self::$menu = $this->getMenu();
+            self::$menu = isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true ? $this->buildMenu() : $this->getMenu();
         }
         if (empty(self::$category) && !isset($siteConfig['multi_category'])) {
             $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
             self::$category = \Yii::$app->db->createCommand($sql)->queryOne();
+        }
+        if (isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true) {
+            self::$monoBrand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
         }
         $userIP = Yii::$app->getRequest()->getUserIP();
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
@@ -74,6 +77,19 @@ class CController extends \yii\web\Controller {
         $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE (type = \'category\' or type = \'model\') and show_in_menu = 1 AND active = 1 ORDER BY sort';
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
         return $this->buildTree($rows);
+    }
+    
+    private function buildMenu() {
+        $siteConfig = self::getSiteConfig();
+        $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'category\' and show_in_menu = 1 AND active = 1 and parent = ' . $siteConfig['brand-id'] . ' ORDER BY sort';
+        $rows = \Yii::$app->db->createCommand($q)->queryAll();
+        $branch = [];
+        foreach ($rows as $row) {
+            $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'model\' and show_in_menu = 1 AND active = 1 and parent = ' . $row['id'] . ' ORDER BY sort LIMIT 6';
+            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();
+            $branch[] = $row;
+        }
+        return $branch;
     }
 
     private function buildTree(array $elements, $parentId = 0) {
