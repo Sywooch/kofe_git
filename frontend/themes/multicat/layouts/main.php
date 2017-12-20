@@ -32,13 +32,14 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/owl.theme.default.min.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/font-awesome.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/horizontal.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/<?= \app\components\CController::$monoBrand['url']; ?>.css" type="text/css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
         </style>
     </head>
-    <body id="index" class="index">
+    <body id="index" class="index <?= \app\components\CController::$monoBrand['url']; ?>">
         <?php $this->beginBody() ?>
         <header id="header">            
             <div class="container">
