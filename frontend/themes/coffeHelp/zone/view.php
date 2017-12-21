@@ -23,10 +23,11 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             </div>
         </section>
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>
-        <?= coffeHelp\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
+        
         <section class="who equipment">
             <div class="row">
                 <div class="col-sm-9 left-col">
+                    <?= coffeHelp\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
                     <div class="row">
                         <div class="col-sm-12 left-col w">                            
                             <?= $model['full_description']; ?>                            
