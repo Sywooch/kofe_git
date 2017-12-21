@@ -240,6 +240,11 @@ class PageController extends CController {
                         $model_title = '';
                     }
                     foreach ($services as $service) {
+                        if ($service['type'] == 1) {
+                            $service['type'] = 'Услуга';
+                        } elseif ($service['type'] == 2) {
+                            $service['type'] = 'Неисправность';
+                        }
                         $urls[] = ['url' => $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
                     }
                 }
@@ -253,6 +258,9 @@ class PageController extends CController {
                 fputcsv($fp, $fields);
             }
             fclose($fp);
+            if (file_exists($path . 'urls.csv')) {
+                Yii::$app->response->xSendFile($path . 'urls.csv');
+            }
             exit;
         }
 
