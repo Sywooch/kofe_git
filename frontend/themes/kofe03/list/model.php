@@ -11,7 +11,17 @@ $this->title = $title;
                 <div class="clear"></div>
                 <div class="image model_img for_mobi">
                     <?php if (!empty($pageInfo['image'])): ?>
-                        <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
+                        <?php
+                        $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
+                        $file = $path . $pageInfo['image'];
+                        $w = 174;
+                        $h = 230;
+                        if (!is_file($path . 'thumbs/' . $w . 'x' . $h . $pageInfo['image'])) {
+                            $image = Yii::$app->image->load($file);
+                            $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . 'x' . $h . $pageInfo['image'], 60);
+                        }
+                        ?>
+                        <img src="<?= $assets . '/'; ?>uploads/images/thumbs/<?= $w . 'x' . $h . $pageInfo['image']; ?>" />
                     <?php endif; ?>
                 </div>
                 <div class="tseni-na-uslugi">
@@ -61,7 +71,7 @@ $this->title = $title;
                         </div>
                         <div class="right for_pc">
                             <?php if (!empty($pageInfo['image'])): ?>
-                                <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
+                                <img src="<?= $assets . '/'; ?>uploads/images/thumbs/<?= $w . 'x' . $h . $pageInfo['image']; ?>" />
                             <?php endif; ?>
                         </div>
                     </div>
