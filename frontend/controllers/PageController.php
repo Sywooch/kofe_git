@@ -245,7 +245,7 @@ class PageController extends CController {
                         } elseif ($service['type'] == 2) {
                             $service['type'] = 'Неисправность';
                         }
-                        $urls[] = ['url' => $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
+                        $urls[] = ['url' => $hostname . '/' . $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
                     }
                 }
             }
