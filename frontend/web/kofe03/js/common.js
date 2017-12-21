@@ -302,6 +302,8 @@ $(window).on('load resize', function () {
 			title = $(this).text();
 		$(popupNow).find("h3").text(title);        
         $(popupNow).addClass('popup_active');
+        if(title == "Статус ремонта")
+            $(popupNow).find("input[type=hidden]").val(title);
     });
     $('.popup__close, .popup__bg').on('click', function () {
         $('body').removeClass('popup-open');
