@@ -63,9 +63,9 @@ $this->title = $title;
                 </div>
             </article>
         </div>
-    </section>
-    <?= kofe03\widgets\other\Advantage::widget(); ?>
+    </section>    
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
+    <?= kofe03\widgets\other\Advantage::widget(); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>
