@@ -41,172 +41,31 @@ $(document).ready(function () {
             }
         }
     });
-
-    var $iphone = $('#iphone');
-    var $iphoneWrap = $iphone.parent();
-    $iphone.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $iphoneWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $iphoneWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $iphoneWrap.find('.prevPage'),
-        nextPage: $iphoneWrap.find('.nextPage')
-    });
-    var $ipad = $('#ipad');
-    var $ipadWrap = $ipad.parent();
-    $ipad.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $ipadWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $ipadWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $ipadWrap.find('.prevPage'),
-        nextPage: $ipadWrap.find('.nextPage')
-    });
-    var $ipod = $('#ipod');
-    var $ipodWrap = $ipod.parent();
-    $ipod.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $ipodWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $ipodWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $ipodWrap.find('.prevPage'),
-        nextPage: $ipodWrap.find('.nextPage')
-    });
-    var $macbook = $('#macbook');
-    var $macbookWrap = $macbook.parent();
-    $macbook.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $macbookWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $macbookWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $macbookWrap.find('.prevPage'),
-        nextPage: $macbookWrap.find('.nextPage')
-    });
-    var $macbook = $('#imac');
-    var $macbookWrap = $macbook.parent();
-    $macbook.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $macbookWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $macbookWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $macbookWrap.find('.prevPage'),
-        nextPage: $macbookWrap.find('.nextPage')
-    });
-    var $macbook = $('#iwatch');
-    var $macbookWrap = $macbook.parent();
-    $macbook.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $macbookWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $macbookWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
-        prevPage: $macbookWrap.find('.prevPage'),
-        nextPage: $macbookWrap.find('.nextPage')
-    });
-    var $macbook = $('#bottons-tablet');
-    var $macbookWrap = $macbook.parent();
-    $macbook.sly({
-        horizontal: 1,
-        itemNav: 'basic',
-        smart: 1,
-        activateOn: 'click',
-        mouseDragging: 1,
-        touchDragging: 1,
-        releaseSwing: 1,
-        startAt: 0,
-        scrollBar: $macbookWrap.find('.scrollbar'),
-        scrollBy: 1,
-        pagesBar: $macbookWrap.find('.pages'),
-        activatePageOn: 'click',
-        speed: 300,
-        elasticBounds: 1,
-        easing: 'easeOutExpo',
-        dragHandle: 1,
-        dynamicHandle: 1,
-        clickBar: 1,
+    $('#number-8 .container .item').each(function () {
+        var $iphone = $(this).find(".frame");
+        var $iphoneWrap = $iphone.parent();
+        $iphone.sly({
+            horizontal: 1,
+            itemNav: 'basic',
+            smart: 1,
+            activateOn: 'click',
+            mouseDragging: 1,
+            touchDragging: 1,
+            releaseSwing: 1,
+            startAt: 0,
+            scrollBar: $iphoneWrap.find('.scrollbar'),
+            scrollBy: 1,
+            pagesBar: $iphoneWrap.find('.pages'),
+            activatePageOn: 'click',
+            speed: 300,
+            elasticBounds: 1,
+            easing: 'easeOutExpo',
+            dragHandle: 1,
+            dynamicHandle: 1,
+            clickBar: 1,
+            prevPage: $iphoneWrap.find('.prevPage'),
+            nextPage: $iphoneWrap.find('.nextPage')
+        });
     });
 
 

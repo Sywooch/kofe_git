@@ -133,7 +133,7 @@ $js = app\components\CController::$js;
                             </ul>
                             <div id="local1" class="footer-map active">
                                 <div class="info">
-                                    <div class="img"><img src="<?= $assets ?>/multicat/images/contact.jpg" alt=""></div>
+                                    <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
                                         <p>Москва, ул. Заречная 1к2. М. Фили, Шелепиха</p>
                                         <a href="tel:+74951520707">+7 (495) 152 07 07</a>
@@ -211,7 +211,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div id="popup2" class="inner">
-                <div class="left" style="background-image: url(<?= $assets ?>/multicat/images/popupbg.jpg);"></div>
+                <div class="left" style="background-image: url(<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg);"></div>
                 <div class="right start">
                     <i class="close"></i>
                     <div class="title">Записаться на ремонт</div>

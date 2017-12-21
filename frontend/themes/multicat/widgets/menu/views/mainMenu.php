@@ -6,7 +6,7 @@ $assets = Yii::getAlias('@web');
         <ul>
             <?php foreach ($rows as $row): ?>
                 <li>
-                    <a href="/<?= $row['url']; ?>" class="<?= $row['icon']; ?>"><?= str_replace('Ремонт ', 'Ремонт<br /> ', $row['full_title']); ?> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <a href="/<?= $row['url']; ?>"><?= $row['icon']; ?><?= str_replace('Ремонт ', 'Ремонт<br /> ', $row['full_title']); ?> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <?php if (isset($row['children']) && !empty($row['children'])): ?>
                         <ul>
                             <div class="container">

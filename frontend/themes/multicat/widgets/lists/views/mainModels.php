@@ -11,7 +11,7 @@ $assets = Yii::getAlias('@web');
                 </div>
                 <?php if (isset($row['children']) && !empty($row['children'])): ?>
                     <div class="right">
-                        <div class="frame" id="<?= $row['icon']; ?>">
+                        <div class="frame">
                             <div class="clearfix">
                                 <?php foreach ($row['children'] as $model): ?>
                                     <a href="/<?= $model['url']; ?>"><img src="<?= $assets ?>/multicat/uploads/images/<?= $model['image']; ?>"><span>Ремонт</span><?= $model['title']; ?></a>
