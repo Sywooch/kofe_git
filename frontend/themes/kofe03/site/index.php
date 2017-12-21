@@ -19,9 +19,10 @@ $this->title = $page['meta_title'];
             <div class="clear"></div>
         </div>
     </aside>
-    <?= kofe03\widgets\lists\TopServices::widget(); ?>    
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
+    <?= kofe03\widgets\lists\TopServices::widget(); ?> 
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
+    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
+    
     <div class="poster__inner">        
         <?= $page['full_description']; ?>
     </div>
