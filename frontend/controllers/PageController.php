@@ -259,7 +259,7 @@ class PageController extends CController {
             }
             fclose($fp);
             if (file_exists($path . 'urls.csv')) {
-                Yii::$app->response->xSendFile($path . 'urls.csv');
+                return Yii::$app->response->xSendFile($path . 'urls.csv');
             }
             exit;
         }
