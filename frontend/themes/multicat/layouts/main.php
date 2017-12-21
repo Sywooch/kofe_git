@@ -32,6 +32,7 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/owl.theme.default.min.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/font-awesome.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/horizontal.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/colors.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/<?= \app\components\CController::$monoBrand['url']; ?>.css" type="text/css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
@@ -90,7 +91,7 @@ $js = app\components\CController::$js;
                     </div>
                     <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
-                <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
+                <a class="btn yellow open-popup colortext" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
                 <div class="clear"></div>
             </div>
         </header>
@@ -122,7 +123,7 @@ $js = app\components\CController::$js;
                     <div class="left">
                         <span>Сэкономьте <br>свое время</span>
                         <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
-                        <a class="btn out-icon green open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
+                        <a class="btn out-icon green open-popup colorbg colorbghover" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
                         <img src="<?= $assets ?>/multicat/images/master.png">
                     </div>
                     <div class="right">
@@ -169,7 +170,7 @@ $js = app\components\CController::$js;
                             <li><a href="/novosti">Новости</a></li>
                             <li><a href="/kontakty">Контакты</a></li>
                         </ul>
-                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
+                        <a href="#" class="btn green open-popup colorbg colorbghover" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
                     </div>
                     <div class="clear"></div>
                 </div>

@@ -30,10 +30,10 @@ $position = \yii\web\View::POS_END;
         'mask' => '+7 (999) 999-99-99',
         'options' => [
             'placeholder' => '+7 (___) ___-__-__',
-            'class' => 'phone', 'type' => 'tel'
+            'class' => 'phone colorborderhover', 'type' => 'tel'
         ],
     ])->label('')
     ?>
 </div>
-<?= Html::submitButton('Заказать', ['class' => 'btn green zakaz', 'type' => 'submit']) ?>
+<?= Html::submitButton('Заказать', ['class' => 'btn green zakaz colorbg colorbghover', 'type' => 'submit']) ?>
 <?php ActiveForm::end() ?>

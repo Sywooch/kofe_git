@@ -304,7 +304,7 @@ $js = app\components\CController::$js;
                                         <div class="menu__categories">
                                             <div class="menu__category">
                                                 <div class="menu__head">
-                                                    <img class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star.svg" alt="">
+                                                    <img style="width: 50px; height: 50px;"> class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star.svg" alt="">
                                                     <?= kofe03\widgets\lists\Services::widget(['type' => 1]); ?>
                                                 </div>
                                             </div>
@@ -349,7 +349,7 @@ $js = app\components\CController::$js;
                                         <div class="menu__categories">
                                             <div class="menu__category">
                                                 <div class="menu__head">
-                                                    <img class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star-red.svg" alt="">
+                                                    <img style="width: 50px; height: 50px;" class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star-red.svg" alt="">
                                                     <?= kofe03\widgets\lists\Services::widget(['type' => 2]); ?>
                                                 </div>
                                             </div>

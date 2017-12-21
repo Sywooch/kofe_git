@@ -27,5 +27,5 @@ $assets = Yii::getAlias('@web');
     </div>
 </section>
 <section id="number-23">
-    <a id="gotop" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a id="gotop" class="colorbg colorbghover" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </section>

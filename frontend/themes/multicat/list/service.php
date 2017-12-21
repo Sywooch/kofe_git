@@ -10,7 +10,7 @@ $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title']; ?></h1>
         <?= $pageInfo['description']; ?>
-        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
+        <a href="#" class="btn green open-popup colorbg colorbghover" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
         <div class="clear"></div>
     </div>
 </section>
@@ -28,9 +28,9 @@ $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
         <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : ''; ?>
     </div>
     <div class="bottom-btn">
-        <span>Развернуть описание</span>
+        <span class="colortext colorborder">Развернуть описание</span>
     </div>
 </section>
 <section id="number-23">
-    <a href="#" id="gotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </section>
