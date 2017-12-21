@@ -340,3 +340,6 @@ function myFunction() {
         }
     }
 }
+$(document).ready(function(){
+    $(window).scrollTop(0);
+});

@@ -450,10 +450,6 @@ if (Yii::$app->session->getFlash('success')) {
 <script>$("form").each(function () {
                                                                 $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
                                                             });</script>
-    <script>
-         $(document).ready(function(){
-            $(window).scrollTop(0);
-        });
-    </script>
+
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
