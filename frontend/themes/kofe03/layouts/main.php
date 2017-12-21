@@ -439,6 +439,11 @@ $js = app\components\CController::$js;
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
+            <script>
+         $(document).ready(function(){
+            $(window).scrollTop(0);
+        });
+    </script>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=1"></script>
