@@ -9,7 +9,12 @@ return [
     'basePath' => dirname(__DIR__),
     //'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'bootstrap' => ['devicedetect'],  'components' => [
+    'bootstrap' => ['devicedetect'],
+    'components' => [
+        'image' => [
+            'class' => 'yii\image\ImageDriver',
+            'driver' => 'GD', //GD or Imagick
+        ],
         'assetManager' => [
             'bundles' => [
                 'yii\bootstrap\BootstrapPluginAsset' => ['js' => []],
@@ -66,8 +71,8 @@ return [
             ],
         ],
         'devicedetect' => [
-		'class' => 'alexandernst\devicedetect\DeviceDetect'
-	],
-    ],    
+            'class' => 'alexandernst\devicedetect\DeviceDetect'
+        ],
+    ],
     'params' => $params,
 ];

@@ -27,16 +27,22 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php
                     if ($siteConfig['mono'])
                         $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
+                    $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
+                    $file = $path . $brand['image'];                    
+                    if (!is_file($path . 'thumbs/' . $brand['image'])) {                        
+                        $image = Yii::$app->image->load($file);
+                        $image->resize(133, 117)->background('#fff', 100)->save($path . 'thumbs/' . $brand['image'], 60);
+                    }
                     ?>
                     <li class="menu__item">
                         <a class="menu__link" href="/<?= $brand['url']; ?>">
-						<?php if(!Yii::$app->params['devicedetect']['isMobile']): ?>
-                            <div class="img">
-                                <?php if(!empty($brand['image'])): ?>
-                                    <img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
-                                <?php endif; ?>
-                            </div>
-						<?php endif; ?>	
+                            <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
+                                <div class="img">
+                                    <?php if (!empty($brand['image'])): ?>
+                                        <img src="/uploads/images/thumbs/<?= $brand['image'] ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
+                                    <?php endif; ?>
+                                </div>
+                            <?php endif; ?>	
                             <span><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></span>
                         </a>                        
                     </li>
