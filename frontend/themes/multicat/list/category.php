@@ -30,9 +30,9 @@ $this->title = $page['meta_title'];
         <?= $page['full_description']; ?>
     </div>
     <div class="bottom-btn">
-        <span>Развернуть описание</span>
+        <span class="colortext colorborder">Развернуть описание</span>
     </div>
 </section>
 <section id="number-23">
-    <a href="#" id="gotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </section>

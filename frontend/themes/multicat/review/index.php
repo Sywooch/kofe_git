@@ -84,12 +84,12 @@ $form = ActiveForm::begin([
             <?= $form->field($model, 'message')->textarea(['maxlength' => true]) ?>
         </div>
         <div class="for-center">
-            <?= Html::submitButton('Отправить отзыв', ['class' => 'btn green zakaz']) ?>
+            <?= Html::submitButton('Отправить отзыв', ['class' => 'btn green zakaz colorbg colorbghover']) ?>
         </div>
         <?php ActiveForm::end() ?>
     </div>
     <div class="clear"></div>
 </section>
 <section id="number-23">
-    <a id="gotop" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <a id="gotop" class="colorbg colorbghover" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </section>
