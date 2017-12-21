@@ -439,11 +439,6 @@ $js = app\components\CController::$js;
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
-            <script>
-         $(document).ready(function(){
-            $(window).scrollTop(0);
-        });
-    </script>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=1"></script>
@@ -455,6 +450,5 @@ if (Yii::$app->session->getFlash('success')) {
 <script>$("form").each(function () {
                                                                 $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
                                                             });</script>
-
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
