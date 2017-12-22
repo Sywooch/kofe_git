@@ -7,7 +7,7 @@ $this->title = $title;
     <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
         <div class="poster__inner">
             <div class="poster__content">
-                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
+                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?=' в ' . Yii::$app->session['region']['titleRod']?></span>
                 <div class="clear"></div>
                 <div class="image model_img for_mobi">
                     <?php if (!empty($pageInfo['image'])): ?>

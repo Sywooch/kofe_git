@@ -134,6 +134,17 @@ class ListController extends CController {
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['1_title'] . ' ' . $page['title'] . ' - ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = 'Если вы столкнулись с проблемой - ' . $pageInfo['title'] . '  ' . CController::$category['1_title'] . ' ' . $page['title'] . ' наш сервисный центр поможет вам в короткие сроки по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
+                    if ($siteConfig['id'] == 50) {
+                        if (isset($seoH1[$pageInfo['id']])) {
+                            $title = $seoH1[$pageInfo['id']] . ' - Кофе03 ремонт в Москве';
+                            $metaDesc = $seoH1[$pageInfo['id']] . ', наши специалисты бесплатно проведут диагностику и сделают ремонт по доступной цене.';
+                        } else {
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашина ' . $page['title'] . ' - Кофе03 ремонт в Москве';
+                            $metaDesc = 'Если ' . $pageInfo['title'] . ' кофемашина ' . $page['title'] . ', наши специалисты бесплатно проведут диагностику и сделают ремонт по доступной цене.';
+                        }
+                        
+                    }
+                    
                     $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства ' . $page['title'] . '.</p>';
                 } else {
                     $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . str_replace('Ремонт ', '', CController::$category['rod_title']) . ' ' . $page['title'];
@@ -295,10 +306,10 @@ class ListController extends CController {
 //        ]);
         $metaDesc = 'Любой ремонт кофемашин ' . $pageInfo['title'] . ' в сервис центре, выезд мастера на дом или офис. Качество, гарантия, низкая цена.';
         $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера на дом или офис';
-        
+
         if ($siteConfig['id'] == 50) {
-            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'];
-            $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  Москве - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
+            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
+            $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
         }
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
@@ -306,7 +317,7 @@ class ListController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc'] ?: $metaDesc
         ]);
-        
+
         //$h1 = '';
         $sql = 'SELECT p.image            
                     FROM
@@ -432,6 +443,10 @@ class ListController extends CController {
         if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
             $title = 'Устранение неисправностей ' . $pageInfo['title'] . ' - Срочный ремонт в Москве!';
             $metaDesc = 'Сервисный центр iFixMe выполняет ремонт ' . $pageInfo['title'] . ' по самым лучшим ценам и с гарантией качества! Проводим весь спектр услуг! Имеется курьерская служба.';
+        }
+        if ($siteConfig['id'] == 50) {
+            $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' недорого, быстро, качественно!';
+            $metaDesc = 'Ремонт кофемашины  ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', служба доставки или выезд мастера, комплектующие ААА класса, гарантия, низкая цена.';
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
