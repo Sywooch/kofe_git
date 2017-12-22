@@ -293,13 +293,20 @@ class ListController extends CController {
 //            'name' => 'keywords',
 //            'content' => $pageInfo['meta_key']
 //        ]);
-        \Yii::$app->view->registerMetaTag([
-            'name' => 'description',
-            'content' => $pageInfo['meta_desc'] ?: 'Любой ремонт кофемашин ' . $pageInfo['title'] . ' в сервис центре, выезд мастера на дом или офис. Качество, гарантия, низкая цена.'
-        ]);
+        $metaDesc = 'Любой ремонт кофемашин ' . $pageInfo['title'] . ' в сервис центре, выезд мастера на дом или офис. Качество, гарантия, низкая цена.';
         $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера на дом или офис';
+        
+        if ($siteConfig['id'] == 50) {
+            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'];
+            $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  Москве - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
+        }
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
+        \Yii::$app->view->registerMetaTag([
+            'name' => 'description',
+            'content' => $pageInfo['meta_desc'] ?: $metaDesc
+        ]);
+        
         //$h1 = '';
         $sql = 'SELECT p.image            
                     FROM
