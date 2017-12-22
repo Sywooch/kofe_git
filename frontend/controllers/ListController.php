@@ -253,7 +253,7 @@ class ListController extends CController {
 //        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => count($url) > 1 ? ($seo['meta_description'] ?: $metaDesc) : (isset($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc)
+            'content' => count($url) > 1 ? (!empty($seo['meta_description']) ? $seo['meta_description'] : $metaDesc) : (isset($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc)
         ]);
 
 
