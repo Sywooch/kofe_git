@@ -8,6 +8,7 @@ $assets = Yii::getAlias('@web');
             <?php foreach ($rows as $row): ?>
                 <a class="colorborder" href="/<?= $row['url']; ?>"><img src="<?= $assets ?>/multicat/uploads/images/<?= $row['image']; ?>"><span>Ремонт</span><?= $row['title']; ?></a>
             <?php endforeach; ?>
+            <div class="clear"></div>
         </div>
     </div>
 </section>

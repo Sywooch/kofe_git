@@ -1,10 +1,11 @@
 .bosch .colorbg,
-footer .body .right .content ul li a:before,
-.popup .inner .close,
-.btn:before {
+.bosch footer .body .right .content ul li a:before,
+.bosch .popup .inner .close,
+.bosch .btn:before,
+.bosch footer .menu-toggle span {
     background-color: #215f8b ! important;
 }
-.green.btn:before {
+.bosch .green.btn:before {
     background-color: #fff ! important;
 }
 .bosch .colorbghover:hover {
@@ -17,391 +18,779 @@ footer .body .right .content ul li a:before,
 .bosch .colortexthover:hover {
     color: #215f8b ! important;
 }
-.bosch .colorsvg {
+.bosch nav .colorsvg,
+.bosch nav .fil0 {
     fill: #fff ! important;
+}
+.bosch nav li ul .colorsvg,
+.bosch nav li ul .fil0 {
+    fill: #215f8b ! important;
 }
 .bosch .colorborder,
 .bosch .colorborderhover:hover,
-.bosch .colorborderhover:focus {
+.bosch .colorborderhover:focus,
+.bosch .topmenu > ul > li > ul li a {
     border-color: #215f8b ! important;
 }
 
 .siemens .colorbg,
-.siemens #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.siemens footer .body .right .content ul li a:before,
+.siemens .popup .inner .close,
+.siemens .btn:before,
+.siemens footer .menu-toggle span {
     background-color: #41aaaa ! important;
 }
+.siemens .green.btn:before {
+    background-color: #fff ! important;
+}
+.siemens .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
 .siemens .colortext,
-.siemens #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.siemens .colortexthover:hover {
     color: #41aaaa ! important;
 }
-.siemens  .colortexthover:hover {
-    color: #41aaaa ! important;
+.siemens nav .colorsvg,
+.siemens nav .fil0 {
+    fill: #fff ! important;
 }
-.siemens .colorborder {
+.siemens nav li ul .colorsvg,
+.siemens nav li ul .fil0 {
+    fill: #41aaaa ! important;
+}
+.siemens .colorborder,
+.siemens .colorborderhover:hover,
+.siemens .colorborderhover:focus,
+.siemens .topmenu > ul > li > ul li a {
     border-color: #41aaaa ! important;
-}
-.siemens #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.siemens #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #41aaaa;
-    color: #41aaaa;
 }
 
 .delonghi .colorbg,
-.delonghi #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.delonghi footer .body .right .content ul li a:before,
+.delonghi .popup .inner .close,
+.delonghi .btn:before,
+.delonghi footer .menu-toggle span {
     background-color: #215f8b ! important;
 }
-.delonghi .colortext,
-.delonghi #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #215f8b ! important;
+.delonghi .green.btn:before {
+    background-color: #fff ! important;
 }
+.delonghi .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.delonghi .colortext,
 .delonghi .colortexthover:hover {
     color: #215f8b ! important;
 }
-.delonghi .colorborder {
-    border-color: #215f8b ! important;
+.delonghi nav .colorsvg,
+.delonghi nav .fil0 {
+    fill: #fff ! important;
 }
-.delonghi #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.delonghi #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #215f8b;
-    color: #215f8b;
+.delonghi nav li ul .colorsvg,
+.delonghi nav li ul .fil0 {
+    fill: #215f8b ! important;
+}
+.delonghi .colorborder,
+.delonghi .colorborderhover:hover,
+.delonghi .colorborderhover:focus,
+.delonghi .topmenu > ul > li > ul li a {
+    border-color: #215f8b ! important;
 }
 
 .saeco .colorbg,
-.saeco #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.saeco footer .body .right .content ul li a:before,
+.saeco .popup .inner .close,
+.saeco .btn:before,
+.saeco footer .menu-toggle span {
     background-color: #d71921 ! important;
 }
-.saeco .colortext,
-.saeco #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #d71921 ! important;
+.saeco .green.btn:before {
+    background-color: #fff ! important;
 }
+.saeco .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.saeco .colortext,
 .saeco .colortexthover:hover {
     color: #d71921 ! important;
 }
-.saeco .colorborder {
-    border-color: #d71921 ! important;
+.saeco nav .colorsvg,
+.saeco nav .fil0 {
+    fill: #fff ! important;
 }
-.saeco #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.saeco #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #d71921;
-    color: #d71921;
+.saeco nav li ul .colorsvg,
+.saeco nav li ul .fil0 {
+    fill: #d71921 ! important;
+}
+.saeco .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .saeco .yeshsho {
+        display: inline-block ! important;
+    }
+}
+.saeco .colorborder,
+.saeco .colorborderhover:hover,
+.saeco .colorborderhover:focus,
+.saeco .topmenu > ul > li > ul li a {
+    border-color: #d71921 ! important;
 }
 
 .philips .colorbg,
-.philips #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.philips footer .body .right .content ul li a:before,
+.philips .popup .inner .close,
+.philips .btn:before,
+.philips footer .menu-toggle span {
     background-color: #3182b1 ! important;
 }
-.philips .colortext,
-.philips #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #3182b1 ! important;
+.philips .green.btn:before {
+    background-color: #fff ! important;
 }
+.philips .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.philips .colortext,
 .philips .colortexthover:hover {
     color: #3182b1 ! important;
 }
-.philips .colorborder {
-    border-color: #3182b1 ! important;
+.philips nav .colorsvg,
+.philips nav .fil0 {
+    fill: #fff ! important;
 }
-.philips #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.philips #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #3182b1;
-    color: #3182b1;
+.philips nav li ul .colorsvg,
+.philips nav li ul .fil0 {
+    fill: #3182b1 ! important;
+}
+.philips .colorborder,
+.philips .colorborderhover:hover,
+.philips .colorborderhover:focus,
+.philips .topmenu > ul > li > ul li a {
+    border-color: #3182b1 ! important;
 }
 
 .jura .colorbg,
-.jura #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.jura footer .body .right .content ul li a:before,
+.jura .popup .inner .close,
+.jura .btn:before,
+.jura footer .menu-toggle span {
     background-color: #e30613 ! important;
 }
-.jura .colortext,
-.jura #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #e30613 ! important;
+.jura .green.btn:before {
+    background-color: #fff ! important;
 }
+.jura .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.jura .colortext,
 .jura .colortexthover:hover {
     color: #e30613 ! important;
 }
-.jura .colorborder {
-    border-color: #e30613 ! important;
+.jura nav .colorsvg,
+.jura nav .fil0 {
+    fill: #fff ! important;
 }
-.jura #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.jura #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #e30613;
-    color: #e30613;
+.jura nav li ul .colorsvg,
+.jura nav li ul .fil0 {
+    fill: #e30613 ! important;
+}
+.jura .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .jura nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.jura .colorborder,
+.jura .colorborderhover:hover,
+.jura .colorborderhover:focus,
+.jura .topmenu > ul > li > ul li a {
+    border-color: #e30613 ! important;
 }
 
 .krups .colorbg,
-.krups #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.krups footer .body .right .content ul li a:before,
+.krups .popup .inner .close,
+.krups .btn:before,
+.krups footer .menu-toggle span {
     background-color: #525352 ! important;
 }
-.krup .colortext,
-.krup #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.krups .green.btn:before {
+    background-color: #fff ! important;
+}
+.krups .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.krups .colortext,
+.krups .colortexthover:hover {
     color: #525352 ! important;
 }
-.krup .colortexthover:hover {
-    color: #525352 ! important;
+.krups nav .colorsvg,
+.krups nav .fil0 {
+    fill: #fff ! important;
 }
-.krups .colorborder {
+.krups nav li ul .colorsvg,
+.krups nav li ul .fil0 {
+    fill: #525352 ! important;
+}
+.krups .colorborder,
+.krups .colorborderhover:hover,
+.krups .colorborderhover:focus,
+.krups .topmenu > ul > li > ul li a {
     border-color: #525352 ! important;
-}
-.krups #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.krups #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #525352;
-    color: #525352;
 }
 
 .melitta .colorbg,
-.melitta #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.melitta footer .body .right .content ul li a:before,
+.melitta .popup .inner .close,
+.melitta .btn:before,
+.melitta footer .menu-toggle span {
     background-color: #d00c0e ! important;
 }
-.melitta .colortext,
-.melitta #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #d00c0e ! important;
+.melitta .green.btn:before {
+    background-color: #fff ! important;
 }
+.melitta .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.melitta .colortext,
 .melitta .colortexthover:hover {
     color: #d00c0e ! important;
 }
-.melitta .colorborder {
-    border-color: #d00c0e ! important;
+.melitta nav .colorsvg,
+.melitta nav .fil0 {
+    fill: #fff ! important;
 }
-.melitta #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.melitta #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #d00c0e;
-    color: #d00c0e;
+.melitta nav li ul .colorsvg,
+.melitta nav li ul .fil0 {
+    fill: #d00c0e ! important;
+}
+.melitta .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 830px) {
+    .melitta .yeshsho {
+        display: inline-block ! important;
+    }
+}
+.melitta .colorborder,
+.melitta .colorborderhover:hover,
+.melitta .colorborderhover:focus,
+.melitta .topmenu > ul > li > ul li a {
+    border-color: #d00c0e ! important;
 }
 
 .nivona .colorbg,
-.nivona #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.nivona footer .body .right .content ul li a:before,
+.nivona .popup .inner .close,
+.nivona .btn:before,
+.nivona footer .menu-toggle span {
     background-color: #af0917 ! important;
 }
-.nivona .colortext,
-.nivona #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #af0917 ! important;
+.nivona .green.btn:before {
+    background-color: #fff ! important;
 }
+.nivona .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.nivona .colortext,
 .nivona .colortexthover:hover {
     color: #af0917 ! important;
 }
-.nivona .colorborder {
-    border-color: #af0917 ! important;
+.nivona nav .colorsvg,
+.nivona nav .fil0 {
+    fill: #fff ! important;
 }
-.nivona #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.nivona #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #af0917;
-    color: #af0917;
+.nivona nav li ul .colorsvg,
+.nivona nav li ul .fil0 {
+    fill: #af0917 ! important;
+}
+.nivona .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .nivona nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.nivona .colorborder,
+.nivona .colorborderhover:hover,
+.nivona .colorborderhover:focus,
+.nivona .topmenu > ul > li > ul li a {
+    border-color: #af0917 ! important;
 }
 
 .gaggia .colorbg,
-.gaggia #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle {
+.gaggia footer .body .right .content ul li a:before,
+.gaggia .popup .inner .close,
+.gaggia .btn:before,
+.gaggia footer .menu-toggle span {
     background-color: #ef4023 ! important;
 }
-.gaggia .colortext,
-.gaggia #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #ef4023 ! important;
+.gaggia .green.btn:before {
+    background-color: #fff ! important;
 }
+.gaggia .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.gaggia .colortext,
 .gaggia .colortexthover:hover {
     color: #ef4023 ! important;
 }
-.gaggia .colorborder {
-    border-color: #ef4023 ! important;
+.gaggia nav .colorsvg,
+.gaggia nav .fil0 {
+    fill: #fff ! important;
 }
-.gaggia #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.gaggia #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #ef4023;
-    color: #ef4023;
+.gaggia nav li ul .colorsvg,
+.gaggia nav li ul .fil0 {
+    fill: #ef4023 ! important;
+}
+.gaggia .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 1030px) {
+    .gaggia .yeshsho {
+        display: inline-block ! important;
+    }
+}
+.gaggia .colorborder,
+.gaggia .colorborderhover:hover,
+.gaggia .colorborderhover:focus,
+.gaggia .topmenu > ul > li > ul li a {
+    border-color: #ef4023 ! important;
 }
 
 .wmf .colorbg,
-.wmf #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.wmf footer .body .right .content ul li a:before,
+.wmf .popup .inner .close,
+.wmf .btn:before,
+.wmf footer .menu-toggle span {
     background-color: #71b430 ! important;
 }
-.wmf .colortext,
-.wmf #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #71b430 ! important;
+.wmf .green.btn:before {
+    background-color: #fff ! important;
 }
+.wmf .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.wmf .colortext,
 .wmf .colortexthover:hover {
     color: #71b430 ! important;
 }
-.wmf .colorborder {
+.wmf nav .colorsvg,
+.wmf nav .fil0 {
+    fill: #fff ! important;
+    stroke-width:1;
+}
+.wmf nav li ul .colorsvg,
+.wmf nav li ul .fil0 {
+    fill: #71b430 ! important;
+}
+.wmf .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 830px) {
+    .wmf .yeshsho {
+        display: inline-block ! important;
+    }
+}
+.wmf .colorborder,
+.wmf .colorborderhover:hover,
+.wmf .colorborderhover:focus,
+.wmf .topmenu > ul > li > ul li a {
     border-color: #71b430 ! important;
 }
-.wmf #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.wmf #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #71b430;
-    color: #71b430;
-}
 
-.cimbali .colorbg,
-.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.la-cimbali .colorbg,
+.la-cimbali footer .body .right .content ul li a:before,
+.la-cimbali .popup .inner .close,
+.la-cimbali .btn:before,
+.la-cimbali footer .menu-toggle span {
     background-color: #e2271c ! important;
 }
-.cimbali .colortext,
-.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.la-cimbali .green.btn:before {
+    background-color: #fff ! important;
+}
+.la-cimbali .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.la-cimbali .colortext,
+.la-cimbali .colortexthover:hover {
     color: #e2271c ! important;
 }
-.cimbali .colortexthover:hover {
-    color: #e2271c ! important;
+.la-cimbali nav .colorsvg,
+.la-cimbali nav .fil0 {
+    fill: #fff ! important;
 }
-.cimbali .colorborder {
+.la-cimbali nav li ul .colorsvg,
+.la-cimbali nav li ul .fil0 {
+    fill: #e2271c ! important;
+}
+.la-cimbali .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .la-cimbali nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.la-cimbali .colorborder,
+.la-cimbali .colorborderhover:hover,
+.la-cimbali .colorborderhover:focus,
+.la-cimbali .topmenu > ul > li > ul li a {
     border-color: #e2271c ! important;
-}
-.cimbali #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.cimbali #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #e2271c;
-    color: #e2271c;
 }
 
 .schaerer .colorbg,
-.schaerer #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.schaerer footer .body .right .content ul li a:before,
+.schaerer .popup .inner .close,
+.schaerer .btn:before,
+.schaerer footer .menu-toggle span {
     background-color: #e2271c ! important;
 }
-.schaerer .colortext,
-.schaerer #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #e2271c ! important;
+.schaerer .green.btn:before {
+    background-color: #fff ! important;
 }
+.schaerer .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.schaerer .colortext,
 .schaerer .colortexthover:hover {
     color: #e2271c ! important;
 }
-.schaerer .colorborder {
-    border-color: #e2271c ! important;
+.schaerer nav .colorsvg,
+.schaerer nav .fil0 {
+    fill: #fff ! important;
 }
-.schaerer #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.schaerer #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #e2271c;
-    color: #e2271c;
+.schaerer nav li ul .colorsvg,
+.schaerer nav li ul .fil0 {
+    fill: #e2271c ! important;
+}
+.schaerer .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .schaerer nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.schaerer .colorborder,
+.schaerer .colorborderhover:hover,
+.schaerer .colorborderhover:focus,
+.schaerer .topmenu > ul > li > ul li a {
+    border-color: #e2271c ! important;
 }
 
 .franke .colorbg,
-.franke #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.franke footer .body .right .content ul li a:before,
+.franke .popup .inner .close,
+.franke .btn:before,
+.franke footer .menu-toggle span {
     background-color: #e2271c ! important;
 }
-.franke .colortext,
-.franke #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #e2271c ! important;
+.franke .green.btn:before {
+    background-color: #fff ! important;
 }
+.franke .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.franke .colortext,
 .franke .colortexthover:hover {
     color: #e2271c ! important;
 }
-.franke .colorborder {
-    border-color: #e2271c ! important;
+.franke nav .colorsvg,
+.franke nav .fil0 {
+    fill: #fff ! important;
 }
-.franke #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.franke #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #e2271c;
-    color: #e2271c;
+.franke nav li ul .colorsvg,
+.franke nav li ul .fil0 {
+    fill: #e2271c ! important;
+}
+.franke .colorborder,
+.franke .colorborderhover:hover,
+.franke .colorborderhover:focus,
+.franke .topmenu > ul > li > ul li a {
+    border-color: #e2271c ! important;
 }
 
 .faema .colorbg,
-.faema #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.faema footer .body .right .content ul li a:before,
+.faema .popup .inner .close,
+.faema .btn:before,
+.faema footer .menu-toggle span {
     background-color: #870c28 ! important;
 }
-.faema .colortext,
-.faema #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #870c28 ! important;
+.faema .green.btn:before {
+    background-color: #fff ! important;
 }
+.faema .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.faema .colortext,
 .faema .colortexthover:hover {
     color: #870c28 ! important;
 }
-.faema .colorborder {
-    border-color: #870c28 ! important;
+.faema nav .colorsvg,
+.faema nav .fil0 {
+    fill: #fff ! important;
 }
-.faema #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.faema #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #870c28;
-    color: #870c28;
+.faema nav li ul .colorsvg,
+.faema nav li ul .fil0 {
+    fill: #870c28 ! important;
+}
+.faema .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .faema nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.faema .colorborder,
+.faema .colorborderhover:hover,
+.faema .colorborderhover:focus,
+.faema .topmenu > ul > li > ul li a {
+    border-color: #870c28 ! important;
 }
 
 .miele .colorbg,
-.miele #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.miele footer .body .right .content ul li a:before,
+.miele .popup .inner .close,
+.miele .btn:before,
+.miele footer .menu-toggle span {
     background-color: #a20001 ! important;
 }
-.miele .colortext,
-.miele #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #a20001 ! important;
+.miele .green.btn:before {
+    background-color: #fff ! important;
 }
+.miele .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.miele .colortext,
 .miele .colortexthover:hover {
     color: #a20001 ! important;
 }
-.miele .colorborder {
-    border-color: #a20001 ! important;
+.miele nav .colorsvg,
+.miele nav .fil0 {
+    fill: #fff ! important;
 }
-.miele #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.miele #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #a20001;
-    color: #a20001;
+.miele nav li ul .colorsvg,
+.miele nav li ul .fil0 {
+    fill: #a20001 ! important;
+}
+.miele .colorborder,
+.miele .colorborderhover:hover,
+.miele .colorborderhover:focus,
+.miele .topmenu > ul > li > ul li a {
+    border-color: #a20001 ! important;
 }
 
 .rancilio .colorbg,
-.rancilio #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.rancilio footer .body .right .content ul li a:before,
+.rancilio .popup .inner .close,
+.rancilio .btn:before,
+.rancilio footer .menu-toggle span {
     background-color: #007845 ! important;
 }
-.rancilio .colortext,
-.rancilio #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #007845 ! important;
+.rancilio .green.btn:before {
+    background-color: #fff ! important;
 }
+.rancilio .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.rancilio .colortext,
 .rancilio .colortexthover:hover {
     color: #007845 ! important;
 }
-.rancilio .colorborder {
+.rancilio nav .colorsvg,
+.rancilio nav .fil0 {
+    fill: #fff ! important;
+}
+.rancilio nav li ul .colorsvg,
+.rancilio nav li ul .fil0 {
+    fill: #007845 ! important;
+}
+.rancilio .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .rancilio nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.rancilio .colorborder,
+.rancilio .colorborderhover:hover,
+.rancilio .colorborderhover:focus,
+.rancilio .topmenu > ul > li > ul li a {
     border-color: #007845 ! important;
 }
-.rancilio #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.rancilio #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #007845;
-    color: #007845;
-}
 
-.simonelli .colorbg,
-.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.nuova-simonelli .colorbg,
+.nuova-simonelli footer .body .right .content ul li a:before,
+.nuova-simonelli .popup .inner .close,
+.nuova-simonelli .btn:before,
+.nuova-simonelli footer .menu-toggle span {
     background-color: #d82f3e ! important;
 }
-.simonelli .colortext,
-.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.nuova-simonelli .green.btn:before {
+    background-color: #fff ! important;
+}
+.nuova-simonelli .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.nuova-simonelli .colortext,
+.nuova-simonelli .colortexthover:hover {
     color: #d82f3e ! important;
 }
-.simonelli .colortexthover:hover {
-    color: #d82f3e ! important;
+.nuova-simonelli nav .colorsvg,
+.nuova-simonelli nav .fil0 {
+    fill: #fff ! important;
 }
-.simonelli .colorborder {
+.nuova-simonelli nav li ul .colorsvg,
+.nuova-simonelli nav li ul .fil0 {
+    fill: #d82f3e ! important;
+}
+.nuova-simonelli .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .nuova-simonelli nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.nuova-simonelli .colorborder,
+.nuova-simonelli .colorborderhover:hover,
+.nuova-simonelli .colorborderhover:focus,
+.nuova-simonelli .topmenu > ul > li > ul li a {
     border-color: #d82f3e ! important;
-}
-.simonelli #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.simonelli #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #d82f3e;
-    color: #d82f3e;
 }
 
 .bork .colorbg,
-.bork #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.bork footer .body .right .content ul li a:before,
+.bork .popup .inner .close,
+.bork .btn:before,
+.bork footer .menu-toggle span {
     background-color: #5c5c5c ! important;
 }
-.bork .colortext,
-.bork #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #5c5c5c ! important;
+.bork .green.btn:before {
+    background-color: #fff ! important;
 }
+.bork .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.bork .colortext,
 .bork .colortexthover:hover {
     color: #5c5c5c ! important;
 }
-.bork .colorborder {
-    border-color: #5c5c5c ! important;
+.bork nav .colorsvg,
+.bork nav .fil0 {
+    fill: #fff ! important;
 }
-.bork #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.bork #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #5c5c5c;
-    color: #5c5c5c;
+.bork nav li ul .colorsvg,
+.bork nav li ul .fil0 {
+    fill: #5c5c5c ! important;
+}
+.bork .colorborder,
+.bork .colorborderhover:hover,
+.bork .colorborderhover:focus,
+.bork .topmenu > ul > li > ul li a {
+    border-color: #5c5c5c ! important;
 }
 
 .promac .colorbg,
-.promac #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.promac footer .body .right .content ul li a:before,
+.promac .popup .inner .close,
+.promac .btn:before,
+.promac footer .menu-toggle span {
     background-color: #a1190d ! important;
 }
-.promac .colortext,
-.promac #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
-    color: #a1190d ! important;
+.promac .green.btn:before {
+    background-color: #fff ! important;
 }
+.promac .colorbghover:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
+}
+.promac .colortext,
 .promac .colortexthover:hover {
     color: #a1190d ! important;
 }
-.promac .colorborder {
-    border-color: #a1190d ! important;
+.promac nav .colorsvg,
+.promac nav .fil0 {
+    fill: #fff ! important;
 }
-.promac #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.promac #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
-    border: 1px solid #a1190d;
-    color: #a1190d;
+.promac nav li ul .colorsvg,
+.promac nav li ul .fil0 {
+    fill: #a1190d ! important;
+}
+.promac .yeshsho {
+    display: none ! important;
+}
+@media screen and (max-width: 680px) {
+    .promac nav .container > ul > li:nth-child(1) {
+        display: inline-block;
+    }
+}
+.promac .colorborder,
+.promac .colorborderhover:hover,
+.promac .colorborderhover:focus,
+.promac .topmenu > ul > li > ul li a {
+    border-color: #a1190d ! important;
 }

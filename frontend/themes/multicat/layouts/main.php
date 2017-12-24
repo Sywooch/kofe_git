@@ -79,12 +79,10 @@ $js = app\components\CController::$js;
                 <div class="topcontactinfo">
                     <div class="boxcontact">
                         <div class="left">
-                            <span class="name">Сервисный центр</span>
                             <a href="/kontakty">Москва, ул. Заречная 1к2.</a>
                             <span class="times">Ежедневно с 08:00 до 22:00</span>
                         </div>
                         <div class="right">
-                            <span class="name">Телефон</span>
                             <a href="tel:+74951520707">+7 (495) 152 07 07</a>
                         </div>
                         <div class="clear"></div>
@@ -149,8 +147,8 @@ $js = app\components\CController::$js;
                 <div class="clear"></div>
                 <div class="bottom-menu">
                     <div class="logo">
-                        <a href="/"><img src="<?= $assets ?>/multicat/images/logo-b.svg"></a>
-                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
+                        <img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>2.svg">
+                        <span>© 2010 - <?= date('Y'); ?> <br><?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
                     <div class="nav">
                         <div class="menu-toggle">
@@ -212,7 +210,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div id="popup2" class="inner">
-                <div class="left" style="background-image: url(<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg);"></div>
+                <div class="left" style="background-image: url(<?= $assets ?>/multicat/images/popupbg.jpg"></div>
                 <div class="right start">
                     <i class="close"></i>
                     <div class="title">Записаться на ремонт</div>

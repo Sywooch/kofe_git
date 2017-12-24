@@ -34,4 +34,8 @@ $this->title = $page['meta_title'];
             <li><a class="colortext colorborder" href="/akcii">Акции</a></li>
         </ul>
     </div>
+    <video poster="" id="bgvid" playsinline autoplay muted loop>
+      <source src="<?= $assets ?>/multicat/video/fix.webm" type="video/webm">
+      <source src="<?= $assets ?>/multicat/video/fix.mp4" type="video/mp4">
+    </video>
 </section>

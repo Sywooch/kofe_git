@@ -404,7 +404,7 @@ header {
 
 /*----------------------------------------------------*/
 .logo {
-	width: 150px;
+	width: 180px;
 	float: left;
 	position: relative;
 	line-height: 75px;
@@ -414,11 +414,18 @@ header {
 	.logo {
 		float: none;
 		margin: 0 auto;
+		text-align: center;
 	}
 }
 .logo img {
 	max-width: 100%;
 	vertical-align: middle;
+	max-height: 60px;
+}
+@media screen and (max-width: 540px) {
+	.logo img {
+		max-width: 80%;
+	}
 }
 /*----------------------------------------------------*/
 .topmenu {
@@ -551,7 +558,7 @@ header {
 	margin-left: 10px;
 	margin-top: 15px;
 	border-radius: 25px;
-	width: 472px;
+	width: 425px;
 	max-height: 52px;
 	background: #000;
 }
@@ -583,9 +590,14 @@ header {
 }
 .topcontactinfo .boxcontact {
 	box-sizing: border-box;
-	padding: 10px 34px 15px 45px;
+	padding: 10px 2px 15px 45px;
 	border-top: 1px solid #0f0f0f;
 	position: relative;
+}
+@media screen and (max-width: 830px) {
+	.topcontactinfo .boxcontact {
+		padding-left: 15px;
+	}
 }
 .topcontactinfo .boxcontact:before {
 	content: '';
@@ -608,9 +620,7 @@ header {
 }
 @media screen and (max-width: 830px) {
 	.topcontactinfo .boxcontact:before {
-		background-image: url(../images/icon/contact/phone.svg);
-		width: 20px;
-		height: 20px;
+		display: none;
 	}
 	.topcontactinfo.active .boxcontact:before {
 		background-image: url(../images/icon/map.svg);
@@ -619,11 +629,11 @@ header {
 	}
 }
 .topcontactinfo .boxcontact:first-child {
-  margin-top: -22px;
+  margin-top: -2px;
   border-top: 0px;
 }
 .topcontactinfo .boxcontact:first-child:before {
-	margin-top: 35px;
+	margin-top: 17px;
 }
 .topcontactinfo .boxcontact:nth-child(2),
 .topcontactinfo .boxcontact:nth-child(3),
@@ -639,7 +649,7 @@ header {
 }
 .topcontactinfo .boxcontact .left {
 	float: left;
-	width: 230px;
+	width: 190px;
 }
 @media screen and (max-width: 830px) {
 	.topcontactinfo .boxcontact .left {
@@ -651,7 +661,7 @@ header {
 }
 .topcontactinfo .boxcontact .right {
 	float: right;
-	width: 154px;
+	width: 180px;
 }
 .topcontactinfo span {
 	font-size: 12px;
@@ -672,11 +682,28 @@ header {
 	font-size: 18px;
 	font-weight: 600;
 	padding-top: 5px;
+	position: relative;
+	padding-left: 25px;
+}
+.topcontactinfo .boxcontact .right a:before {
+	content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #fff;
+  -webkit-mask-image: url(../images/icon/contact/phone.svg);
+  mask-image: url(../images/icon/contact/phone.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  margin-top: 6px;
 }
 @media screen and (max-width: 830px) {
-	.topcontactinfo .boxcontact .right a {
-		padding-top: 10px;
-	}
 }
 .btn-for-contact {
 	position: absolute;
@@ -752,6 +779,11 @@ nav {
 	height: 80px;
 	z-index: 999999;
 }
+@media screen and (max-width: 680px) {
+	nav {
+		height: 50px;
+	}
+}
 nav .container > ul {
 	text-align: justify;
 }
@@ -766,12 +798,8 @@ nav .container > ul {
 	nav .container > ul {
 		display: inline-block;
     vertical-align: middle;
+    width: 100%;
 	}
-}
-nav .container > ul:after {
-	display: inline-block;
-	width: 100%;
-	content: '';
 }
 @media screen and (max-width: 830px) {
 	nav .container > ul:after {
@@ -779,17 +807,47 @@ nav .container > ul:after {
 	}
 }
 nav .container > ul > li {
+	display: none;
+	float: left;
+}
+nav .container > ul > li:nth-child(-n+6) {
+	display: inline-block;
+}
+@media screen and (max-width: 1250px) {
+	nav .container > ul > li:nth-child(6) {
+		display: none;
+	}
+}
+@media screen and (max-width: 1030px) {
+	nav .container > ul > li:nth-child(5),
+	nav .container > ul > li:nth-child(4) {
+		display: none;
+	}
+}
+@media screen and (max-width: 830px) {
+	nav .container > ul > li:nth-child(3) {
+		display: none;
+	}
+}
+@media screen and (max-width: 680px) {
+	nav .container > ul > li:nth-child(1),
+	nav .container > ul > li:nth-child(2) {
+		display: none;
+	}
+}
+nav .container > ul > li:last-child {
 	display: inline-block;
 }
 @media screen and (max-width: 830px) {
 	nav .container > ul > li {
     vertical-align: middle;
-    margin-right: 20px;
+    margin-right: 15px;
 	}
 	nav .container > ul > li:last-child {
 		margin-right: 0px;
 	}
 }
+/*
 nav .container > ul > li:hover a:after {
 	background: url(../images/icon/top-menu-after.svg) no-repeat;
 	content: '';
@@ -800,6 +858,7 @@ nav .container > ul > li:hover a:after {
 	bottom: 0px;
 	left: 50%;
 }
+*/
 nav .container > ul > li > a {
 	line-height: 80px;
 	color: #fff;
@@ -807,23 +866,26 @@ nav .container > ul > li > a {
 	font-weight: 600;
 	font-size: 16px;
 	text-transform: uppercase;
-	padding: 0px 20px 0px 36px;
+	padding: 0px 25px 0px 36px;
 	position: relative;
 	height: 80px;
 	display: block;
+	line-height: 14px;
+	padding-top: 25px;
 }
-@media screen and (max-width: 1250px) {
-	nav .container > ul > li > a {
-		line-height: 14px;
-		padding-top: 25px;
+nav .container > ul > li.yeshsho {
+	float: right;
+}
+@media screen and (max-width: 680px) {
+	nav .container > ul > li.yeshsho {
+		float: left;
 	}
-}
-nav .container > ul > li > a > br {
-	display: none;
-}
-@media screen and (max-width: 1250px) {
-	nav .container > ul > li > a > br {
-		display: block;
+	nav .container > ul > li > a {
+		padding-top: 18px;
+		height: 50px;
+	}
+	nav .container > ul > li.yeshsho > a br {
+		display: none;
 	}
 }
 nav .container > ul > li > a:before {
@@ -871,17 +933,29 @@ nav .container > ul > li > a > i {
 	margin-top: 30px;
 	opacity: 0.5;
 }
+@media screen and (max-width: 680px) {
+	nav .container > ul > li > a svg {
+		margin-top: 10px;
+	}
+	nav .container > ul > li > a > i {
+		margin-top: 17px;
+	}
+}
 nav .container > ul > li > ul {
 	position: absolute;
 	display: none;
 	width: 100%;
 	background: #fff;
 	left: 0px;
-	padding: 60px 0px 0px 0px;
+	padding: 35px 0px 0px 0px;
 	-moz-box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
   -webkit-box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
   box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
   z-index: 99999;
+}
+nav .container > ul > li > ul div.container {
+	display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 830px) {
 	nav .container > ul > li > ul {
@@ -892,12 +966,13 @@ nav .container > ul > li:hover > ul {
 	display: block;
 }
 nav .container > ul > li > ul li {
-	width: 10%;
+	width: 14.28571428571429%;
 	float: left;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	padding: 0px 5px;
 	font-size: 12px;
 	box-sizing: border-box;
+	border-bottom: 1px dashed;
 }
 @media screen and (max-width: 830px) {
 	nav .container > ul > li > ul li {
@@ -918,23 +993,35 @@ nav .container > ul > li > ul li a {
   color: #000;
   text-decoration: none;
   font-weight: 600;
-  border-bottom: 1px solid #d3e599;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 @media screen and (max-width: 540px) {
 	nav .container > ul > li > ul li a {
 		text-align: left;
 		font-size: 16px;
 	}
+	nav .container > ul > li > ul li a br {
+		display: none;
+	}
 }
-nav .container > ul > li > ul li a img {
-	max-width: 85%;
-	max-height: 118px;
-	margin-bottom: 18px;
+nav .container > ul > li > ul li a svg {
+	max-width: 50px;
+	max-height: 50px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	line-height: 50px;
+	height: 50px;
 }
 @media screen and (max-width: 540px) {
-	nav .container > ul > li > ul li a img {
-		display: none;
+	nav .container > ul > li > ul li a svg {
+		float: left;
+		max-width: 20px;
+		max-height: 20px;
+		line-height: 20px;
+		width: 20px;
+		height: 20px;
+		margin-right: 15px;
 	}
 }
 nav .container > ul > li > ul li a span {
@@ -1648,6 +1735,9 @@ nav .container > ul > li > ul li a span {
 }
 #number-9 .content {
 	margin-right: -3.3333%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 #number-9 .container {
 	padding: 50px 0px;
@@ -2497,13 +2587,58 @@ nav .container > ul > li > ul li a span {
 }
 /*----------------------------------------------------*/
 #number-14 {
-	height: 815px;
+	height: 600px;
 	display: block;
 	width: 100%;
-	padding-top: 115px;
-	background: url(../images/footer.jpg) center bottom no-repeat;
+	padding-top: 55px;
 	background-size: 100%;
 	text-align: center;
+	position: relative;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+#number-14 video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+ 		background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	  background-size: cover;
+	  transition: 1s opacity;
+	  z-index: -1;
+}
+#number-14:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.95+38,0+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 38%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.95) 38%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.95) 38%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	z-index: 1;
+}
+#number-14 .container {
+	z-index: 2;
+	position: relative;
+  background: rgba(255, 255, 255, 0.59);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 905px) {
+	#number-14 .container {
+	  width: 800px;
+	  min-width: 800px;
+	}
 }
 @media screen and (max-width: 1030px) {
 	#number-14 {
@@ -2514,7 +2649,7 @@ nav .container > ul > li > ul li a span {
 @media screen and (max-width: 680px) {
 	#number-14 {
 		padding-top: 25px;
-		height: 500px;
+		height: 565px;
 	}
 }
 #number-14 .title {
@@ -2530,7 +2665,7 @@ nav .container > ul > li > ul li a span {
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 24px;
-	color: #585858;
+	color: #1b1b1b;
 	margin-bottom: 40px;
 }
 @media screen and (max-width: 680px) {
@@ -2564,6 +2699,7 @@ nav .container > ul > li > ul li a span {
 #number-15 {
 	padding: 70px 0px;
 	position: relative;
+	z-index: 9;
 }
 @media screen and (max-width: 680px) {
 	#number-15 {
@@ -2663,12 +2799,6 @@ nav .container > ul > li > ul li a span {
 	bottom: 0px;
 	left: 50%;
 	margin-left: -575px;
-
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 @media screen and (max-width: 1030px) {
 	#number-15 .bottom-btn {
@@ -3836,6 +3966,18 @@ nav .container > ul > li > ul li a span {
 	display: block;
 	text-align: center;
 	margin-top: -130px;
+	position: relative;
+}
+#number-23:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 38%, rgba(255, 255, 255, 0) 100%);
 }
 @media screen and (max-width: 1250px) {
 	#number-23 {
@@ -3855,6 +3997,8 @@ nav .container > ul > li > ul li a span {
 	line-height: 66px;
 	margin-top: 140px;
 	margin-bottom: 20px;
+	position: relative;
+	z-index: 9;
 }
 @media screen and (max-width: 1250px) {
 	#number-23 a {
@@ -3890,8 +4034,11 @@ footer .bottom-menu {
 	border-bottom: 1px solid #e9e9ea;
 }
 footer .bottom-menu .logo {
-	line-height: 36px;
+	line-height: 12px;
 	padding-top: 25px;
+}
+footer .bottom-menu .logo img {
+	margin-bottom: 10px;
 }
 @media screen and (max-width: 1030px) {
 	footer .bottom-menu .logo {
@@ -4052,14 +4199,14 @@ footer .body .left .btn {
 }
 footer .body .left img {
 	position: absolute;
-	width: 80%;
+	width: 60%;
 	right: 0px;
 	bottom: 0px;
 	z-index: 0;
 }
 @media screen and (max-width: 1250px) {
 	footer .body .left img {
-		width: 90%;
+		width: 70%;
 		right: -30px;
 	}
 }
@@ -4253,6 +4400,7 @@ footer .body .right .content .footer-map .info {
 		margin: 0px;
 		padding: 10px;
 		width: 100%;
+		margin-top: -5px;
 	}
 }
 footer .body .right .content .footer-map .info .img {
@@ -4263,6 +4411,7 @@ footer .body .right .content .footer-map .info .img {
 	overflow: hidden;
 	float: left;
 	margin-right: 15px;
+	display: none;
 }
 @media screen and (max-width: 540px) {
 	footer .body .right .content .footer-map .info .img {
@@ -4762,7 +4911,7 @@ header .menu-toggle span {
 	.menu-toggle {
 		width: 40px;
 		height: 40px;
-		margin-top: 22px;
+		margin-top: 20px;
 	}
 	.hamburger span {
 	  width:35px;
