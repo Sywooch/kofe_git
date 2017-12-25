@@ -79,8 +79,8 @@ $js = app\components\CController::$js;
                 <div class="topcontactinfo">
                     <div class="boxcontact">
                         <div class="left">
-                            <a href="/kontakty">Москва, ул. Заречная 1к2.</a>
-                            <span class="times">Ежедневно с 08:00 до 22:00</span>
+                            <a href="/kontakty">Москва, ул. Студенческая 35.</a>
+                            <span class="times">Ежедневно с 09:00 до 20:00</span>
                         </div>
                         <div class="right">
                             <a href="tel:+74951520707">+7 (495) 152 07 07</a>
@@ -134,9 +134,9 @@ $js = app\components\CController::$js;
                                 <div class="info">
                                     <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
-                                        <p>Москва, ул. Заречная 1к2. М. Фили, Шелепиха</p>
+                                        <p>Москва, ул. Студенческая 35. М. кутузовская</p>
                                         <a href="tel:+74951520707">+7 (495) 152 07 07</a>
-                                        <span>Ежедневно с 08:00 до 22:00</span>
+                                        <span>Ежедневно с 09:00 до 20:00</span>
                                     </div>
                                 </div>
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
