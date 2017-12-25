@@ -27,6 +27,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                         <?= $model['description']; ?>
                     </div>
                 </article>
+                
             </main>
         </div>
     </div>
