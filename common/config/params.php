@@ -1062,5 +1062,21 @@ return [
             'mono-brand' => true,
             'brand-id' => 20,
         ],
+        'new-sites' => [
+            'phone-1' => '8 (495) 181-00-07',
+            'phone-2' => '8 (812) 701-00-02',
+            'stickyMenu' => false,
+            'change-logo' => true,
+            'mono' => false,
+            'id' => 74,
+            'sitePrefix' => 'multi_cat',
+            '1-line' => false,
+            'category_id' => 0,
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
+            'theme' => 'multicatX',
+            'multi_category' => true,
+            'mono-brand' => true,
+            'brand-id' => 1,
+        ],
     ]
 ];
