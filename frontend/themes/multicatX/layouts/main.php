@@ -20,8 +20,10 @@ $js = app\components\CController::$js;
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <head>
         <meta charset="UTF-8" />
-        <title>Ремонт</title>
-        <base  />
+        <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
+        <?= Html::csrfMetaTags() ?>
+        <title><?= Html::encode($this->title) ?></title>
+        <?php $this->head() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stylesheet.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.carousel.css" media="screen" />
@@ -30,6 +32,7 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/colors.css" />
     </head>
     <body class="bosch">
+        <?php $this->beginBody() ?>
         <div id="header">
             <div class="top-nav colorbg">
                 <div class="inner_container">
@@ -64,7 +67,7 @@ $js = app\components\CController::$js;
             <div class="main_container">
                 <div id="header_second" class="inner_container">
                     <div id="logo">
-                        <a href="#"><img src="<?= $assets . $siteConfig['theme'] . '/image/' . app\components\CController::$monoBrand['url']; ?>2.svg" title="" alt="" /></a>
+                        <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/image/' . app\components\CController::$monoBrand['url']; ?>2.svg" title="" alt="" /></a>
                     </div>
                     <div id="search">
                         <div class="button-search colorbg"></div>
@@ -117,7 +120,7 @@ $js = app\components\CController::$js;
                     <div class="footer_columns">
                         <div class="footer_column_1">
                             <div id="footer_logo">
-                                <img src="http://support-bosch.ru/boschimages/boschlogo.svg" title="" alt="">
+                                <img src="<?= $assets . $siteConfig['theme'] . '/image/' . app\components\CController::$monoBrand['url']; ?>2.svg" title="" alt="">
                             </div>
                             <div class="colortext colorborder mini-form" id="footer_callback">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -243,5 +246,15 @@ $js = app\components\CController::$js;
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/highcharts.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/dondo_position.js"></script>
+        <?php
+        if (Yii::$app->session->getFlash('success')) {
+            echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
+        }
+        ?>
+        <script>$("form").each(function () {
+                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+            });</script>
+        <?php $this->endBody() ?>    
+        <?php $this->endPage() ?>
     </body>
 </html>
