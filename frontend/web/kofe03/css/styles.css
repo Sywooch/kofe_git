@@ -8419,3 +8419,6 @@ header .footer__list {
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
 }
+.content__main .poster__request {
+    display: none;
+}
