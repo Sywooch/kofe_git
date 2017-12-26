@@ -19,6 +19,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $model['url']]); ?>
             <main class="content__main" role="main">
                 <article class="post" style="width: 100%;">
+                    <?= kofe03\widgets\forms\MainPageForm::widget(); ?>
                     <header class="post__header">
                         <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
                     </header>
