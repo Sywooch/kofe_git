@@ -231,10 +231,7 @@ $js = app\components\CController::$js;
             <div class="form">
                 <div class="closes-form"></div>
                 <p class="colortext">заказать звонок</p>
-                <form action="">
-                    <input class="colorborder" type="tel" name="" placeholder="+7 (___) ___-__-__" aria-required="true">
-                    <button class="colorbg">Заказать сейчас</button>
-                </form>
+                <?= multicatX\widgets\forms\Order::widget(); ?>
                 <a href="#">Пользовательское соглашение</a>
             </div>
             <div class="black-close-form"></div>
