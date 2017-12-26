@@ -37,8 +37,8 @@ $(function () {
         }, 500);
         return false;
     });
-    $('.office-content.other-table h2').click(function () {
-        $('.other-table').addclass('active');
+    $(".office-content.other-table h2").click(function() {
+      $('.other-table').toggleClass( "active" );
     });
     $('.menu__tab').on('mouseover', function () {
         $(this).addClass('menu__tab_active').siblings().removeClass('menu__tab_active');
