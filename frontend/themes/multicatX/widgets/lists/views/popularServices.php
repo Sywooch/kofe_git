@@ -20,35 +20,18 @@
                     </div>
                     <div class="rumiservice7_table_content">
                         <?php foreach ($services as $key => $service): ?>
-                            <div class="rumiservice7_table_tr rumiservice7_table_tr_odd">
-                                <div class="rumiservice_column_1"><a class="colortexthover" href="planshetyi/zamena-modulya-displeya.html">Замена модуля дисплея планшетов Xiaomi</a></div>
-                                <div class="rumiservice_column_2">по согласованию</div>
-                                <div class="rumiservice_column_3">от 1,5 час.</div>
-                                <div class="rumiservice_column_4"><span class="has_problem" onclick="addToCart('87');"><span class="colortexthover">Решить проблему</span></span></div>
-                            </div>
+                            <?php if ($key > 4): ?><div class="rumiservice7_table_tr_container"><?php endif; ?>
+                                <div class="rumiservice7_table_tr<?= $key % 2 ? ' rumiservice7_table_tr_odd' : ''; ?>">
+                                    <div class="rumiservice_column_1"><a class="colortexthover" href="/<?= $category['url'] . '-' . $service['url']; ?>"><?= $service['url']; ?></a></div>
+                                    <div class="rumiservice_column_2"><?= $service['price']; ?></div>
+                                    <div class="rumiservice_column_3">от 1,5 час.</div>
+                                    <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Решить проблему</span></span></div>
+                                </div>
+                                <?php if ($key > 4): ?></div><?php endif; ?>
                         <?php endforeach; ?>
-                        
-                        <div class="rumiservice7_table_tr_container">
-                            <div class="rumiservice7_table_tr ">
-                                <div class="rumiservice_column_1"><a class="colortexthover" href="planshetyi/zamena-razyema-naushnikov-dlya-planshetov-xiaomi.html">Замена разъема наушников для планшетов Xiaomi</a></div>
-                                <div class="rumiservice_column_2">по согласованию</div>
-                                <div class="rumiservice_column_3">от 1,5 час.</div>
-                                <div class="rumiservice_column_4"><span class="has_problem" onclick="addToCart('417');"><span class="colortexthover">Решить проблему</span></span></div>
-                            </div>
-                            <div class="rumiservice7_table_tr rumiservice7_table_tr_odd">
-                                <div class="rumiservice_column_1"><a class="colortexthover" href="planshetyi/slojnyiy-programmnyiy-remont-dlya-planshetov-xiaomi.html">Сложный программный ремонт для планшетов Xiaomi</a></div>
-                                <div class="rumiservice_column_2">от 2 000 руб.</div>
-                                <div class="rumiservice_column_3">от 2 час.</div>
-                                <div class="rumiservice_column_4"><span class="has_problem" onclick="addToCart('463');"><span class="colortexthover">Решить проблему</span></span></div>
-                            </div>
-                            <div class="rumiservice7_table_tr ">
-                                <div class="rumiservice_column_1"><a class="colortexthover" href="planshetyi/zamena-razyema-zaryadki-dlya-plansheta-xiaomi.html">Замена разъема зарядки</a></div>
-                                <div class="rumiservice_column_2">по согласованию</div>
-                                <div class="rumiservice_column_3"></div>
-                                <div class="rumiservice_column_4"><span class="has_problem" onclick="addToCart('418');"><span class="colortexthover">Решить проблему</span></span></div>
-                            </div>
-                        </div>
-                        <div class="rumiservice7_show_all colorbg"><span>Показать все</span></div>
+                        <?php if (count($services) > 5): ?>
+                            <div class="rumiservice7_show_all colorbg"><span>Показать все</span></div>
+                        <?php endif; ?>
                     </div>
                 </div>           
             <?php endforeach; ?>

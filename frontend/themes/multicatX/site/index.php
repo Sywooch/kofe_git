@@ -307,5 +307,5 @@ $this->title = $page['meta_title'];
             </div>
         </div>
     </div>
-
+    
 </div>
