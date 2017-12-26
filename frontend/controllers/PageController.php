@@ -17,7 +17,7 @@ class PageController extends CController {
 
     public function actionSend() {
         if (Yii::$app->request->isAjax && isset($_POST['phone']) && isset($_POST['title'])) {
-            self::sendToRoistat($_POST['phone'], $_POST['title']);
+            //self::sendToRoistat($_POST['phone'], $_POST['title']);
             Yii::$app->end();
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
