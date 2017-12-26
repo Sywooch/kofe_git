@@ -110,7 +110,7 @@ class PageController extends CController {
                     foreach ($oBlock->getSelectors() as $oSelector) {
                         if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
                             $s = $oSelector->getSelector();
-                            if (isset($siteConfig['css']['replaceClasses']) && $siteConfig['css']['replaceClasses'] === true)
+                            //if (isset($siteConfig['css']['replaceClasses']) && $siteConfig['css']['replaceClasses'] === true)
                                 $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
                             $oSelector->setSelector($s);
                         }
