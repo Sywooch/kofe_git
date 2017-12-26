@@ -4227,7 +4227,7 @@ footer .connect__call p {
             transition:         transform .5s ease-out, -webkit-transform .5s ease-out;
 }
 @media (min-width: 806px){
-    .page_scrolled .poster__request .form_request
+    .page_scrolled .poster .poster__request .form_request
 {
     -webkit-transition: -webkit-transform .5s ease-in;
             transition: -webkit-transform .5s ease-in;
