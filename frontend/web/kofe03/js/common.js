@@ -37,6 +37,9 @@ $(function () {
         }, 500);
         return false;
     });
+    $('.office-content.other-table h2').click(function () {
+        $('.other-table').toggleclass('active');
+    });
     $('.menu__tab').on('mouseover', function () {
         $(this).addClass('menu__tab_active').siblings().removeClass('menu__tab_active');
         $('.menu__section[data-menu-section=' + $(this).data('menu-tab') + ']').addClass('menu__section_active').siblings().removeClass('menu__section_active');
