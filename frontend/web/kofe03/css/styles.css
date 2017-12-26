@@ -3460,6 +3460,9 @@ footer .connect__call p {
     display: block;
     overflow: hidden;
 }
+.content__main article.post p {
+    text-align: justify;
+}
 .sidebar + .content__main
 {
     margin-left: 20%;
@@ -8418,7 +8421,4 @@ header .footer__list {
     margin: 10px 0px 0px;
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
-}
-.content__main .poster__request {
-    display: none;
 }
