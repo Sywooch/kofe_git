@@ -240,12 +240,16 @@ $js = app\components\CController::$js;
             <div class="black-close-form"></div>
         </div>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.7.1.min.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui-1.8.16.custom.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/angular.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/highcharts.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/dondo_position.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
         <?php
         if (Yii::$app->session->getFlash('success')) {
             echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
