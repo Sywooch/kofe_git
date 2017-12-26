@@ -38,7 +38,7 @@ $(function () {
         return false;
     });
     $('.office-content.other-table h2').click(function () {
-        $('.other-table').toggleclass('active');
+        $('.other-table').addclass('active');
     });
     $('.menu__tab').on('mouseover', function () {
         $(this).addClass('menu__tab_active').siblings().removeClass('menu__tab_active');
