@@ -27,27 +27,41 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                     </div>
                     <div class="brands__carousel garantya-logo">
                         <div class="swiper-container garantya__slider">
-                            <div class="swiper-wrapper brands__list">                    
+                            <div class="swiper-wrapper brands__list">
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/1.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/1.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/1.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/2.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/2.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/2.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/3.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/3.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/3.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/4.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/4.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/4.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/5.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/5.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/5.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/6.png">                          
-                                </div>                    
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/6.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/6.png">
+                                    </a>                       
+                                </div>
                                 <div class="swiper-slide brands__item">
-                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/7.png">                          
+                                    <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/7.png" title="">
+                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/7.png">
+                                    </a>                       
                                 </div>
                             </div>
                         </div>

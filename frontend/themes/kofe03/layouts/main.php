@@ -31,6 +31,7 @@ $js = app\components\CController::$js;
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-touch-fullscreen" content="yes">        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=1" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
@@ -448,6 +449,8 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+<script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
+<script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
 <script>
     $(function () {
         var swiper2 = new Swiper('.garantya__slider', {
@@ -480,6 +483,15 @@ if (Yii::$app->session->getFlash('success')) {
             pagination: '.garantya__pagination',
             nextButton: '.garantya__next',
             prevButton: '.garantya__prev'
+        });
+        $(".fancybox-button").fancybox({
+            prevEffect      : 'none',
+            nextEffect      : 'none',
+            closeBtn        : false,
+            helpers     : {
+                title   : { type : 'inside' },
+                buttons : {}
+            }
         });
     });
 </script>
