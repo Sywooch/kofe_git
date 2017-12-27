@@ -34,6 +34,4 @@
             </div>
         </div>
     </section>
-    <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>
