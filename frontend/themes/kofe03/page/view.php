@@ -29,46 +29,25 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                         <div class="swiper-container garantya__slider">
                             <div class="swiper-wrapper brands__list">                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/auchan.png">                          
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/1.png">                          
                                 </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/bank_moskvi.png">  
-                                </div>
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/2.png">                          
+                                </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/beeline.png">      
-                                </div>
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/3.png">                          
+                                </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/gazprom.png">             
-                                </div>
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/4.png">                          
+                                </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/kfc.png">    
-                                </div>
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/5.png">                          
+                                </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/lukoil.png">  
-                                </div>
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/6.png">                          
+                                </div>                    
                                 <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/macdonalds.png">               
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/mega.png">                
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/megafon.png">              
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/mts.png">  
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/rjd.png">          
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/sberbank.png">        
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/tele2.png">
-                                </div>
-                                <div class="swiper-slide brands__item">
-                                        <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/vtb24.png">      
+                                    <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/sertifikat/7.png">                          
                                 </div>
                             </div>
                         </div>
