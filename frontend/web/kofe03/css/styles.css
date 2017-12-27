@@ -5111,10 +5111,12 @@ footer .connect__call p {
 .articles__next,
 .consultation__next,
 .brands__next,
+.garantya__next,
 .reviews__prev,
 .articles__prev,
 .consultation__prev,
-.brands__prev
+.brands__prev,
+.garantya__prev
 {
     position: absolute;
     z-index: 150;
@@ -5135,10 +5137,12 @@ footer .connect__call p {
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover,
+.garantya__next:hover,
 .reviews__prev:hover,
 .articles__prev:hover,
 .consultation__prev:hover,
-.brands__prev:hover
+.brands__prev:hover,
+.garantya__prev:hover
 {
     background-image: url('../images/arrow_left_active6170.svg?v=1485504369723');
 }
@@ -5146,11 +5150,12 @@ footer .connect__call p {
 .popup__review .articles__next,
 .popup__review .consultation__next,
 .popup__review .brands__next,
-.popup__review
-  .reviews__prev,
+.popup__review .garantya__next,
+.popup__review .reviews__prev,
 .popup__review .articles__prev,
 .popup__review .consultation__prev,
-.popup__review .brands__prev
+.popup__review .brands__prev,
+.popup__review .garantya__prev
 {
     left: -25px;
 }
@@ -5158,7 +5163,8 @@ footer .connect__call p {
 .reviews__next,
 .articles__next,
 .consultation__next,
-.brands__next
+.brands__next,
+.garantya__next
 {
     right: -20px;
     left: auto;
@@ -5168,14 +5174,16 @@ footer .connect__call p {
 .reviews__next:hover,
 .articles__next:hover,
 .consultation__next:hover,
-.brands__next:hover
+.brands__next:hover,
+.garantya__next:hover
 {
     background-image: url('../images/arrow_right_active6170.svg?v=1485504369723');
 }
 .popup__review .reviews__next,
 .popup__review .articles__next,
 .popup__review .consultation__next,
-.popup__review .brands__next
+.popup__review .brands__next,
+.popup__review .garantya__next
 {
     right: -25px; 
     left: auto;
@@ -5734,6 +5742,9 @@ footer .connect__call p {
 
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
+}
+.brands__carousel.partnyori-logo {
+    padding: 10px 5%;
 }
 @media screen and (min-width: 1260px)
 {
@@ -8030,7 +8041,11 @@ img.brands__name {
     max-height: 90px;
 }
 .partnyori-logo img.brands__name {
-    max-height: 70px;
+    max-height: 90px;
+    max-width: 100%;
+}
+.garantya-logo img.brands__name {
+    max-height: 85px;
 }
 .pagination {
     position: relative;

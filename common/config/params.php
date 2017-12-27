@@ -1397,5 +1397,32 @@ return [
             'mono-brand' => true,
             'brand-id' => 20,
         ],
+        'remont-camera' => [
+            'phone-1' => '8 (499) 450-90-08',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 96,
+            'sitePrefix' => 'kofe03',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'kofe03',
+            'order-title' => 'МСК Заречная',
+            'spb' => true,
+            'jsFiles' => [
+                'jquery-1.11.3.min.js',
+                'yii.activeForm.js',
+                'yii.js',
+                'jquery.inputmask.bundle.js',
+                'yii.validation.js',
+                'jquery.cookie.js',
+                'plugins.js',
+                'sly.min.js',
+                'swiper.jquery.min.js',
+                'jquery-ui.js',
+                'common.js'
+            ],
+            'mainJSFileName' => 'scripts',
+        ],
     ]
 ];

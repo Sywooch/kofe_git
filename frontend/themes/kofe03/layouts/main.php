@@ -31,6 +31,7 @@ $js = app\components\CController::$js;
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-touch-fullscreen" content="yes">        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=1" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
@@ -447,8 +448,53 @@ if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
-<script>$("form").each(function () {
-                                                                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-                                                            });</script>
+<script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+<script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
+<script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
+<script>
+    $(function () {
+        var swiper2 = new Swiper('.garantya__slider', {
+            loop: true,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            paginationClickable: true,
+            breakpoints: {
+                1260: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                1000: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                900: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                },
+                800: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                560: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                }
+            },
+            pagination: '.garantya__pagination',
+            nextButton: '.garantya__next',
+            prevButton: '.garantya__prev'
+        });
+        $(".fancybox-button").fancybox({
+            prevEffect      : 'none',
+            nextEffect      : 'none',
+            closeBtn        : false,
+            helpers     : {
+                title   : { type : 'inside' },
+                buttons : {}
+            }
+        });
+    });
+</script>
+
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
