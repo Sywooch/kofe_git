@@ -36,12 +36,12 @@ $js = app\components\CController::$js;
         <div id="header">
             <div class="top-nav colorbg">
                 <div class="inner_container">
-                    <a href="#">КОНТАКТЫ</a>
+                    <a href="/kontakty">КОНТАКТЫ</a>
                     <a href="#">СТАТУС РЕМОНТА</a>
-                    <a href="#">ОТЗЫВЫ</a>
-                    <a href="#">НОВОСТИ</a>
-                    <a href="#">О НАС</a>
-                    <p>Москва и МО</p>
+                    <a href="/otzovy">ОТЗЫВЫ</a>
+                    <a href="/novosti">НОВОСТИ</a>
+                    <a href="/o-nas">О НАС</a>
+                    <p><?= Yii::$app->session['region']['title']; ?></p>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="dondo-custom-position" data-module="1" style='display: none;'></div>
                     <div id="header_phone">
-                        <a href="tel:84953746864"><span class="colortext">8 (495) 374-68-64</span></a>
+                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
                         Москва, ежедневно 10:00-21:00    
                     </div>
                 </div>
@@ -139,11 +139,11 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="footer_column_2">
                             <ul>
-                                <li><a href="index.html">Главная</a></li>
-                                <li><a href="about_us.html">О компании</a></li>
-                                <li><a href="index4cde.html?route=information/information&amp;information_id=13">Партнерам</a></li>
-                                <li><a href="index4cc1.html?route=information/information&amp;information_id=14">Гарантия</a></li>
-                                <li><a href="contact-us/index.html">Контакты</a></li>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/o-kompanii">О компании</a></li>
+                                <li><a href="/partneram">Партнерам</a></li>
+                                <li><a href="/garantiya">Гарантия</a></li>
+                                <li><a href="/kontakty">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="footer_column_3">
@@ -152,13 +152,12 @@ $js = app\components\CController::$js;
                                 <li><a href="index1766.html?route=information/information&amp;information_id=6">Доставка</a></li>
                                 <li><a href="index5938.html?route=information/information&amp;information_id=10">Оплата</a></li>
                                 <li><a href="indexc7d4.html?route=information/information&amp;information_id=11">Вакансии</a></li>
-                                <li><a href="indexb561.html?route=information/information&amp;information_id=19">Персональные данные</a></li>
-                                <li><a href="sitemap/index.html">Карта сайта</a></li>
+                                <li><a href="indexb561.html?route=information/information&amp;information_id=19">Персональные данные</a></li>                                
                             </ul>
                         </div>
                         <div class="footer_column_4">
                             <div id="footer_phone">
-                                <a href="tel:84953746864"><span class="colortext">8 (495) 374-68-64</span></a>
+                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
                                 Предложение не является публичной офертой<br />
                                 <br />112343, Москва, м. Багратионовская<br />
                                 Багратионовский проезд, дом 7             
@@ -220,7 +219,7 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                     <div id="powered">
-                        <div id="powered_left">&#169; <span class="colortext">Сервисный центр Service Xiaomi</span>, 2014–2017</div>
+                        <div id="powered_left">&#169; <span class="colortext">Сервисный центр Service Xiaomi</span>, 2014–<?= date('Y'); ?></div>
                         <div id="powered_right"><a href="#" class="colortext">Пользовательское соглашение</a></div>
                     </div>
                 </div>

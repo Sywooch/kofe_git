@@ -114,7 +114,7 @@ $js = app\components\CController::$js;
                             <div class="header__burger">
                                 <div class="header__burger-ico"></div>
                             </div>
-                            <div class="for_mobi phone_icon"><a href="tel:84951350003"></a></div>
+                            <div class="for_mobi phone_icon"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"></a></div>
                             <div class="menu__addition">
                                 <a class="button button_warning js-popup" data-popup="request" href="#">
                                     <img class="button__ico" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/ico_bellfa5f.svg?v=1485518639601" alt="">

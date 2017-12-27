@@ -159,7 +159,8 @@ class CController extends \yii\web\Controller {
                 'ip' => $userIP,
                 'site' => Yii::$app->request->hostInfo,
             ])->execute();
-            file_get_contents('https://mobi03.ru/kofeOrders?phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", Yii::$app->session['region']['phone'])));
+            $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
+            file_get_contents('https://mobi03.ru/kofeOrders?phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;
