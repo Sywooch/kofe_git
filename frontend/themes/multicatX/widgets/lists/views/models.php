@@ -21,7 +21,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="clear"></div>
         <?php foreach ($rows as $row): ?>
             <a href="/<?= $row['url']; ?>" class="colorborderhover colortexthover">
-                <img src="/upolads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>">
+                <img src="/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>">
                 <span class="colortext"><?= \app\components\CController::$monoBrand['title'] . ' ' . $row['title']; ?></span>
             </a>
         <?php endforeach; ?>
