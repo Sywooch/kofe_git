@@ -293,37 +293,6 @@ $(function () {
         nextButton: '.brands__next',
         prevButton: '.brands__prev'
     });
-    var swiper2 = new Swiper('.brands__slider3', {
-        loop: true,
-        slidesPerView: 7,
-        slidesPerGroup: 7,
-        paginationClickable: true,
-        breakpoints: {
-            1260: {
-                slidesPerView: 6,
-                slidesPerGroup: 6
-            },
-            1000: {
-                slidesPerView: 5,
-                slidesPerGroup: 5
-            },
-            900: {
-                slidesPerView: 4,
-                slidesPerGroup: 4
-            },
-            800: {
-                slidesPerView: 3,
-                slidesPerGroup: 3
-            },
-            560: {
-                slidesPerView: 2,
-                slidesPerGroup: 2
-            }
-        },
-        pagination: '.brands__pagination3',
-        nextButton: '.brands__next',
-        prevButton: '.brands__prev'
-    });
 });
 $(window).on('load resize', function () {
     $('.js-popup').on('click', function (e) {

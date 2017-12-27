@@ -72,8 +72,8 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                                 </div>
                             </div>
                         </div>
-                        <div class="brands__next"></div>
-                        <div class="brands__prev"></div>
+                        <div class="brands__next3"></div>
+                        <div class="brands__prev3"></div>
                     </div>
                 </article>
                 

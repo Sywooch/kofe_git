@@ -447,8 +447,42 @@ if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
-<script>$("form").each(function () {
-                                                                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-                                                            });</script>
+<script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+<script>
+    $(function () {
+        var swiper2 = new Swiper('.brands__slider3', {
+            loop: true,
+            slidesPerView: 7,
+            slidesPerGroup: 7,
+            paginationClickable: true,
+            breakpoints: {
+                1260: {
+                    slidesPerView: 6,
+                    slidesPerGroup: 6
+                },
+                1000: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                900: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                },
+                800: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                560: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                }
+            },
+            pagination: '.brands__pagination3',
+            nextButton: '.brands__next3',
+            prevButton: '.brands__prev3'
+        });
+    });
+</script>
+
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
