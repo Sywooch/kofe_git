@@ -1073,7 +1073,7 @@ return [
             'theme' => 'multicatX',
             'multi_category' => true,
             'mono-brand' => true,
-            'brand-id' => 1,
+            'brand-id' => 2,
             'foreign_category' => true,
             'category_id' => 0,
         ],
