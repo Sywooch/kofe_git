@@ -25,7 +25,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                     <div class="post__content">
                         <?= $model['description']; ?>
                     </div>
-                    <div class="brands__carousel partnyori-logo">
+                    <div class="brands__carousel garantya-logo">
                         <div class="swiper-container garantya__slider">
                             <div class="swiper-wrapper brands__list">                    
                                 <div class="swiper-slide brands__item">

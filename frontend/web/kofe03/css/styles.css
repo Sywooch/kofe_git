@@ -5743,6 +5743,9 @@ footer .connect__call p {
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
 }
+.brands__carousel.partnyori-logo {
+    padding: 10px 5%;
+}
 @media screen and (min-width: 1260px)
 {
     .brands__carousel
@@ -8038,7 +8041,11 @@ img.brands__name {
     max-height: 90px;
 }
 .partnyori-logo img.brands__name {
-    max-height: 70px;
+    max-height: 90px;
+    max-width: 100%;
+}
+.garantya-logo img.brands__name {
+    max-height: 85px;
 }
 .pagination {
     position: relative;
