@@ -14,6 +14,15 @@ class CController extends \yii\web\Controller {
     public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
     }
+    
+    private function getCategory($url) {
+        $url = explode('/', $url);
+        if (isset($url[0])) {
+            $sql = 'SELECT * FROM {{%categories}} WHERE lower(url) =:url limit 1';
+            return \Yii::$app->db->createCommand($sql)->bindValues(['url' => strtolower($url[0])])->queryOne();
+        }
+        return false;
+    }
 
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
@@ -27,6 +36,9 @@ class CController extends \yii\web\Controller {
             Yii::setAlias('@' . $siteConfig['theme'], dirname(__DIR__) . '/themes/' . $siteConfig['theme']);
         }
         if (isset($siteConfig['multi_category'])) {
+            if (isset($siteConfig['foreign_category']) && isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['model', 'category', 'brand'])) {
+                self::$category = $this->getCategory(Yii::$app->request->pathInfo);
+            }
             self::$menu = isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true ? $this->buildMenu() : $this->getMenu();
         }
         if (empty(self::$category) && !isset($siteConfig['multi_category'])) {
@@ -78,7 +90,7 @@ class CController extends \yii\web\Controller {
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
         return $this->buildTree($rows);
     }
-    
+
     private function buildMenu() {
         $siteConfig = self::getSiteConfig();
         $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'category\' and show_in_menu = 1 AND active = 1 and parent = ' . $siteConfig['brand-id'] . ' ORDER BY sort';
@@ -174,7 +186,7 @@ class CController extends \yii\web\Controller {
         } else {
             $groupName = '@site_orders';
         }
-        if($siteConfig['id'] == 48)
+        if ($siteConfig['id'] == 48)
             $groupName = '@ifixme_orders';
         self::sendMessage($msg, $groupName); //        
     }

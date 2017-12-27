@@ -22,7 +22,13 @@
                         <?php foreach ($services as $key => $service): ?>
                             <?php if ($key > 4): ?><div class="rumiservice7_table_tr_container"><?php endif; ?>
                                 <div class="rumiservice7_table_tr<?= $key % 2 ? ' rumiservice7_table_tr_odd' : ''; ?>">
-                                    <div class="rumiservice_column_1"><a class="colortexthover" href="/<?= $category['url'] . '-' . $service['url']; ?>"><?= $service['url']; ?></a></div>
+                                    <div class="rumiservice_column_1">
+                                        <?php if ($service['is_popular'] == 1): ?>
+                                            <a class="colortexthover" href="/<?= $urlPrefix . '/' . $service['url']; ?>"><?= $service['title']; ?></a>
+                                        <?php else: ?>
+                                            <?= $service['title']; ?>
+                                        <?php endif; ?>
+                                    </div>
                                     <div class="rumiservice_column_2"><?= $service['price']; ?></div>
                                     <div class="rumiservice_column_3">от 1,5 час.</div>
                                     <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Решить проблему</span></span></div>
