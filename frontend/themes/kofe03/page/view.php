@@ -26,7 +26,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                         <?= $model['description']; ?>
                     </div>
                     <div class="brands__carousel partnyori-logo">
-                        <div class="swiper-container brands__slider2">
+                        <div class="swiper-container brands__slider3">
                             <div class="swiper-wrapper brands__list">                    
                                 <div class="swiper-slide brands__item">
                                         <img class="brands__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/partners/auchan.png">                          
