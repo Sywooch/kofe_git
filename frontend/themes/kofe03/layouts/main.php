@@ -450,7 +450,7 @@ if (Yii::$app->session->getFlash('success')) {
 <script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
 <script>
     $(function () {
-        var swiper2 = new Swiper('.brands__slider3', {
+        var swiper2 = new Swiper('.garantya__slider', {
             loop: true,
             slidesPerView: 7,
             slidesPerGroup: 7,
@@ -477,9 +477,9 @@ if (Yii::$app->session->getFlash('success')) {
                     slidesPerGroup: 2
                 }
             },
-            pagination: '.brands__pagination3',
-            nextButton: '.brands__next3',
-            prevButton: '.brands__prev3'
+            pagination: '.garantya__pagination',
+            nextButton: '.garantya__next',
+            prevButton: '.garantya__prev'
         });
     });
 </script>
