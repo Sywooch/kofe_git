@@ -48,7 +48,7 @@ class MainUrlRule extends UrlRule {
             return ['list/service', ['data' => array_merge($serv, ['is_service' => 1])]];
 
         $page = $this->getPage($pathInfo);
-
+        
         if (empty($page))
             return ['site/error', []];
         else {
@@ -62,10 +62,18 @@ class MainUrlRule extends UrlRule {
         if (isset($siteConfig['multi_category']) && !empty($url)) {
             $category_url = explode('-', $url);
             if (isset($category_url[1]))
-                $category_url = $category_url[0] . '-' . $category_url[1];
-            else
-                return false;
-            $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
+                $category_url = $category_url[0] . (isset($siteConfig['urlSlash']) ? '/' : '-') . $category_url[1];
+            else {
+                if (!isset($siteConfig['urlSlash']))
+                    return false;
+            }
+            if (isset($siteConfig['urlSlash'])) {
+                $sql = 'SELECT * FROM {{%categories}} WHERE lower(url) =:url limit 1';
+                $category_url = explode('/', Yii::$app->request->pathInfo);
+                $category_url = $category_url[0];
+            } else {
+                $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
+            }
             $category = Yii::$app->db->createCommand($sql)->bindValues(['url' => $category_url])->queryOne();
             if (!empty($category)) {
                 CController::$category = $category;
@@ -113,7 +121,7 @@ class MainUrlRule extends UrlRule {
                 ->limit(1)
                 ->one();
         $exUrl = explode('/', $url);
-        if (isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true && count($exUrl) == 1) {
+        if (isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true && count($exUrl) == 1 && strpos($url, 'remont') !== false) {
             $sql = 'select * from {{%pages}} where lower(url) =:url and parent = ' . (int) $siteConfig['brand-id'] . ' limit 1';
         } else {
             $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';

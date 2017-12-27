@@ -13,70 +13,9 @@
         </div>
     </div>
     <?= multicatX\widgets\lists\Models::widget(['models' => $models]); ?>
-    <div class="main_container kakrabotaem_container colorbg">
-        <div id="rumiservice13" class="inner_container" style="padding: 0px;">
-            <div id="rumiservice13_header">Как мы работаем?</div>
-            <div class="rumiservice13_blocks">
-                <div class="rumiservice13_block rumiservice13_block1">
-                    <div class="rumiservice13_block_circle">
-                        <div class="rumiservice13_block_circle_number">1</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block1.png"></div>
-                    </div>
-                    <div class="rumiservice13_block_text">
-                        Вы оставляете заявку<br>на сайте или по телефону
-                    </div>
-                </div>
-                <div class="rumiservice13_block rumiservice13_block2">
-                    <div class="rumiservice13_block_circle">
-                        <div class="rumiservice13_block_circle_number">2</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block2.png"></div>
-                    </div>
-                    <div class="rumiservice13_block_text">
-                        Проводится бесплатная<br>диагностика после которой<br>станут известны сроки
-                    </div>
-                </div>
-                <div class="rumiservice13_block rumiservice13_block3">
-                    <div class="rumiservice13_block_circle">
-                        <div class="rumiservice13_block_circle_number">3</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block3.png"></div>
-                    </div>
-                    <div class="rumiservice13_block_text">
-                        Мы звоним вам и только<br>после вашего подтверждения<br>начинаем ремонт
-                    </div>
-                </div>
-                <div class="rumiservice13_block rumiservice13_block4">
-                    <div class="rumiservice13_block_circle">
-                        <div class="rumiservice13_block_circle_number">4</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block4.png"></div>
-                    </div>
-                    <div class="rumiservice13_block_text">
-                        Вы забираете готовый<br>аппарат из ремонта 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => true, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
+    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по прочим услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => false]); ?>
+    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по неиправностям:', 'category_id' => \app\components\CController::$category['id'], 'type' => 2, 'is_popular' => true, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
+    <?= multicatX\widgets\other\HowWeWork::widget(); ?>
 </div>
-<div class="main_container">
-    <div id="rumiservice12" class="inner_container">
-        <div id="rumiservice12_left">
-            <div class="rumiservice12_left_header">Заказать услуги в <span class="colortext">Service-Xiaomi.com</span><br>8 (495) 374-68-64</div>
-            <div class="rumiservice12_left_text"></div>
-        </div>   
-        <div id="rumiservice12_right">
-            <div class="rumiservice12_right_right">
-                <div class="rumiservice12_right_zagolovok">Введите ваш номер телефона:</div>
-                <div class="rumiservice12_right_input">
-                    <input type="text" placeholder="Номер телефона *" class="rumiservice12_right_input_2">
-                    <div class="rumiservice12_right_input_2_error">Введите номер телефона!</div>
-                </div>
-                <button class="rumiservice12_right_submit colorbg">
-                    Заказать ремонт
-                </button>
-                <div class="rumiservice12_right_bottomtext">
-                    Возможна отправка и доставка<br>курьером
-                </div>
-            </div>   
-        </div>   
-    </div>
-</div>
+<?= multicatX\widgets\forms\FooterForm::widget(); ?>

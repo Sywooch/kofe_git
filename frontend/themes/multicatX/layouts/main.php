@@ -38,9 +38,9 @@ $js = app\components\CController::$js;
                 <div class="inner_container">
                     <a href="/kontakty">КОНТАКТЫ</a>
                     <a href="#">СТАТУС РЕМОНТА</a>
-                    <a href="/otzovy">ОТЗЫВЫ</a>
+                    <a href="/otzyvy">ОТЗЫВЫ</a>
                     <a href="/novosti">НОВОСТИ</a>
-                    <a href="/o-nas">О НАС</a>
+                    <a href="/o-kompanii">О КОМПАНИИ</a>
                     <p><?= Yii::$app->session['region']['title']; ?></p>
                     <div class="clear"></div>
                 </div>
