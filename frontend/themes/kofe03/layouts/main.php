@@ -452,13 +452,13 @@ if (Yii::$app->session->getFlash('success')) {
     $(function () {
         var swiper2 = new Swiper('.garantya__slider', {
             loop: true,
-            slidesPerView: 7,
-            slidesPerGroup: 7,
+            slidesPerView: 5,
+            slidesPerGroup: 5,
             paginationClickable: true,
             breakpoints: {
                 1260: {
-                    slidesPerView: 6,
-                    slidesPerGroup: 6
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
                 },
                 1000: {
                     slidesPerView: 5,
