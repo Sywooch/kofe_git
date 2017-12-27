@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
 <main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>poster_1.jpg);">
+    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
         <div class="poster__inner">
             <div class="poster__content">
                 <div class="image for_mobi">

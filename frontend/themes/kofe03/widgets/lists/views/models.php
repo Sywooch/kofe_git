@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="search-brends">
-    <div class="left"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>search.svg" alt=""></div>
+    <div class="left"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/search.svg" alt=""></div>
     <div class="right">
         <?=
         yii\jui\AutoComplete::widget([

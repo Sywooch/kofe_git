@@ -36,9 +36,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=1" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 52): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">
-        <?php endif; ?>
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=1" rel="stylesheet">
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
         <?php
@@ -110,7 +108,7 @@ $js = app\components\CController::$js;
                     <div class="header__inner">
                         <div class="header__main">
                             <a class="header__site" href="/">
-                                <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>logo.svg" alt="">
+                                <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg" alt="">
                             </a>
                             <div class="header__burger">
                                 <div class="header__burger-ico"></div>
@@ -305,7 +303,7 @@ $js = app\components\CController::$js;
                                         <div class="menu__categories">
                                             <div class="menu__category">
                                                 <div class="menu__head">
-                                                    <img style="width: 50px; height: 50px; " class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star.svg" alt="">
+                                                    <img style="width: 50px; height: 50px; " class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/star.svg" alt="">
                                                     <?= kofe03\widgets\lists\Services::widget(['type' => 1]); ?>
                                                 </div>
                                             </div>
@@ -350,7 +348,7 @@ $js = app\components\CController::$js;
                                         <div class="menu__categories">
                                             <div class="menu__category">
                                                 <div class="menu__head">
-                                                    <img style="width: 50px; height: 50px;" class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 52): ?>j/<?php endif; ?>star-red.svg" alt="">
+                                                    <img style="width: 50px; height: 50px;" class="menu__view" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/star-red.svg" alt="">
                                                     <?= kofe03\widgets\lists\Services::widget(['type' => 2]); ?>
                                                 </div>
                                             </div>
