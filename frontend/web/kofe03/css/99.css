@@ -268,15 +268,15 @@
 
 .popup__close:hover
 {
-    background-image: url('../images/98/ico_close_color6170.svg?v=1485504369723');
+    background-image: url('../images/99/ico_close_color6170.svg?v=1485504369723');
 }
 .reviews__out
 {
-    background: url('../images/98/arrow_thin_out6170.svg?v=1485504369723') no-repeat 100% 50%;
+    background: url('../images/99/arrow_thin_out6170.svg?v=1485504369723') no-repeat 100% 50%;
 }
 .reviews__out:hover
 {
-    background-image: url('../images/98/arrow_thin_out_hover6170.svg?v=1485504369723');
+    background-image: url('../images/99/arrow_thin_out_hover6170.svg?v=1485504369723');
 }
 .reviews__next:hover,
 .articles__next:hover,
@@ -287,57 +287,57 @@
 .consultation__prev:hover,
 .brands__prev:hover
 {
-    background-image: url('../images/98/arrow_left_active6170.svg?v=1485504369723');
+    background-image: url('../images/99/arrow_left_active6170.svg?v=1485504369723');
 }
 .reviews__next:hover,
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover
 {
-    background-image: url('../images/98/arrow_right_active6170.svg?v=1485504369723');
+    background-image: url('../images/99/arrow_right_active6170.svg?v=1485504369723');
 }
 .blog__details,
 .stock__details
 {
-    background: url('../images/98/arrow_right_bold6170.svg?v=1485504369723') no-repeat 100% 50%;
+    background: url('../images/99/arrow_right_bold6170.svg?v=1485504369723') no-repeat 100% 50%;
 }
 .reviews_context .reviews__out:hover,
 .reviews__single .reviews__out:hover
 {
-    background-image: url('../images/98/arrow_thin_link_hover6170.svg?v=1485504369723');
+    background-image: url('../images/99/arrow_thin_link_hover6170.svg?v=1485504369723');
 }
 .reviews_context .reviews__out,
 .reviews__single .reviews__out
 {
-    background-image: url('../images/98/arrow_thin_link6170.svg?v=1485504369723');
+    background-image: url('../images/99/arrow_thin_link6170.svg?v=1485504369723');
 }
 .connect__email
 {
-    background: url('../images/98/ico_email_open6170.svg?v=1485504369723') no-repeat 0 2px;
+    background: url('../images/99/ico_email_open6170.svg?v=1485504369723') no-repeat 0 2px;
 }
 .complain__action
 {
-    background: url('../images/98/ico_happy6170.svg?v=1485504369723') no-repeat 0 50%;
+    background: url('../images/99/ico_happy6170.svg?v=1485504369723') no-repeat 0 50%;
 }
 .form__element_valid .form__input_email
 {
-    background-image: url('../images/98/ico_mail_small_valid6170.svg?v=1485504369723');
+    background-image: url('../images/99/ico_mail_small_valid6170.svg?v=1485504369723');
 }
 .form__element_valid .form__input_address
 {
-    background-image: url('../images/98/ico_pin_small_valid6170.svg?v=1485504369723');
+    background-image: url('../images/99/ico_pin_small_valid6170.svg?v=1485504369723');
 }
 .complain__action_negative
 {
-    background-image: url('../images/98/ico_sad6170.svg?v=1485504369723');
+    background-image: url('../images/99/ico_sad6170.svg?v=1485504369723');
 }
 .form__element_valid .form__input_name
 {
-    background-image: url('../images/98/ico_user_valid6170.svg?v=1485504369723');
+    background-image: url('../images/99/ico_user_valid6170.svg?v=1485504369723');
 }
 .post__play
 {
-    background: url('../images/98/video_play6170.svg?v=1485504369723') no-repeat 50% 50%;
+    background: url('../images/99/video_play6170.svg?v=1485504369723') no-repeat 50% 50%;
 }
 
 
