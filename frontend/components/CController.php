@@ -167,7 +167,7 @@ class CController extends \yii\web\Controller {
             $clarisOIDS = [
                 'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
                 'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
-                'MSK - Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
+                'МСК Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
                 'MSK - Моно2' => ['name' => 'MONO2_MSK', 'OID' => 2200626170000],
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'SPB - Сенная' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],

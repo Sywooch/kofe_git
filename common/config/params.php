@@ -650,7 +650,7 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'kofe03',
-            'order-title' => 'МСК Заречная',
+            'order-title' => 'МСК Студенческая',
             'jsFiles' => [
                 'jquery-1.11.3.min.js',
                 'yii.activeForm.js',
