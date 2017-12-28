@@ -28,6 +28,8 @@ class Models extends Widget {
             $firstLatter = mb_substr($row['title'], 0, 1, 'utf8');
             $sortedRows[$firstLatter][] = $row;
         }
+        if (is_array($this->brand))
+            $this->brand = $this->brand['title'];
         return $this->render('models', ['sortedBrands' => $sortedRows, 'brand2' => $this->brand, 'searches' => $searches, 'rows' => $rows]);
     }
 
