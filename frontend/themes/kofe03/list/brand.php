@@ -12,7 +12,7 @@ $this->title = $title;
                         <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
                     <?php endif; ?>
                 </div>
-                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?=' в ' . Yii::$app->session['region']['titleRod']?></span>
+                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?=' в ' . Yii::$app->session['region']['titleRod']?></span>
                 <div class="clear"></div>
                 <div class="tseni-na-uslugi">
                     Стоимость услуги: <span>от 595 ₽</span>

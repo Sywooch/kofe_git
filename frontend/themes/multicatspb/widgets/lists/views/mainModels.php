@@ -14,7 +14,7 @@ $assets = Yii::getAlias('@web');
                         <div class="frame">
                             <div class="clearfix">
                                 <?php foreach ($row['children'] as $model): ?>
-                                    <a class="colorborder" href="/<?= $model['url']; ?>"><img src="<?= $assets ?>/multicatspb/uploads/images/<?= $model['image']; ?>"><span>Ремонт</span><?= $model['title']; ?></a>
+                                    <a class="colorborder" href="/<?= $model['url']; ?>"><img src="/uploads/images/<?= $model['image']; ?>"><span>Ремонт</span><?= $model['title']; ?></a>
                                 <?php endforeach; ?>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ class CController extends \yii\web\Controller {
     public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
     }
-    
+
     private function getCategory($url) {
         $url = explode('/', $url);
         if (isset($url[0])) {
@@ -97,10 +97,10 @@ class CController extends \yii\web\Controller {
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
         $branch = [];
         foreach ($rows as $row) {
-            $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'model\' and show_in_menu = 1 AND active = 1 and parent = ' . $row['id'] . ' ORDER BY sort LIMIT 6';
-            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();
+            $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'model\' and active = 1 and parent = ' . $row['id'] . ' ORDER BY sort LIMIT 6';
+            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();            
             $branch[] = $row;
-        }
+        }        
         return $branch;
     }
 
@@ -164,6 +164,14 @@ class CController extends \yii\web\Controller {
             $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
         if ($siteConfig['category_id'] == 7) {
+            $clarisOIDS = [
+                'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
+                'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
+                'MSK - Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
+                'MSK - Моно2' => ['name' => 'MONO2_MSK', 'OID' => 2200626170000],
+                'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
+                'SPB - Сенная' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
+            ];
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,
