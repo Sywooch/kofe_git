@@ -31,7 +31,7 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui-1.8.16.custom.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/colors.css" />
     </head>
-    <body class="bosch">
+    <body class="<?= app\components\CController::$monoBrand['url']; ?>">
         <?php $this->beginBody() ?>
         <div id="header">
             <div class="top-nav colorbg">

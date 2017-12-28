@@ -1913,6 +1913,13 @@ ul.box-filter > li ul {
     padding: 0px 13px;
     display: inline-block;
     margin-top: 13px;
+    display: none;
+}
+#header_third .links a:nth-child(-n+6) {
+    display: inline-block;
+}
+#header_third .links a.yeshsho {
+    display: inline-block;
 }
 #header_third .links a svg {
     max-width: 30px;
@@ -5031,7 +5038,7 @@ g {
 }
 .my-popup .inner a {
     float: left;
-    width: 20%;
+    width: 14.28571428571429%;
     max-height: 180px;
     text-align: center;
     color: #333;
