@@ -172,6 +172,9 @@ class CController extends \yii\web\Controller {
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'SPB - Сенная' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
             ];
+            $OID = 0;
+            if (isset($clarisOIDS[$siteConfig['order-title']]))
+                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,
@@ -180,7 +183,7 @@ class CController extends \yii\web\Controller {
                 'site' => Yii::$app->request->hostInfo,
             ])->execute();
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
-            file_get_contents('https://mobi03.ru/kofeOrders?phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            file_get_contents('https://mobi03.ru/kofeOrders?oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;
