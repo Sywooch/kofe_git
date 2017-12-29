@@ -1,14 +1,14 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $page['meta_title'];
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod'];
 ?>
 <main class="layout__content" role="main">
     <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
         <div class="poster__inner">
             <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
                 <div class="poster__content">
-                    <h1 class="poster__title" itemprop="name"><?= $page['meta_h1']; ?></h1>
+                    <h1 class="poster__title" itemprop="name"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
                     <div class="clear"></div>
                     <div class="poster__text" itemprop="description">
                         <?= $page['description']; ?>
