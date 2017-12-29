@@ -16,10 +16,9 @@ $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
 <!DOCTYPE html>
-<html lang="ru">
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<html lang="ru">    
     <head>
-        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
