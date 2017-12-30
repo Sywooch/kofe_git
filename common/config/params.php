@@ -1844,5 +1844,21 @@ return [
             'foreign_category' => true,
             'category_id' => 0,
         ],
+        'new-sites' => [
+            'phone-1' => '8 (495) 181-00-07',
+            'phone-2' => '8 (812) 701-00-02',            
+            'urlSlash' => true,
+            'mono' => false,
+            'id' => 121,
+            'sitePrefix' => 'multi_cat',
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
+            'theme' => 'multicatXspb',
+            'multi_category' => true,
+            'mono-brand' => true,
+            'brand-id' => 20,
+            'foreign_category' => true,
+            'category_id' => 0,
+            'spb' => true,
+        ],
     ]
 ];
