@@ -1,8 +1,10 @@
 .bosch .colorbg,
 .bosch footer .body .right .content ul li a:before,
 .bosch .popup .inner .close,
-.bosch .btn:before,
-.bosch footer .menu-toggle span {
+.bosch footer .menu-toggle span,
+.bosch .topcontactinfo .boxcontact:before,
+.bosch .topcontactinfo .boxcontact .right a:before,
+.bosch header .menu-toggle span {
     background-color: #215f8b ! important;
 }
 .bosch .green.btn:before {
@@ -15,12 +17,13 @@
     box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
 }
 .bosch .colortext,
-.bosch .colortexthover:hover {
+.bosch .mobi-number,
+.bosch .colortexthover:hover{
     color: #215f8b ! important;
 }
 .bosch nav .colorsvg,
 .bosch nav .fil0 {
-    fill: #fff ! important;
+    fill: #215f8b ! important;
 }
 .bosch nav li ul .colorsvg,
 .bosch nav li ul .fil0 {
@@ -36,8 +39,10 @@
 .siemens .colorbg,
 .siemens footer .body .right .content ul li a:before,
 .siemens .popup .inner .close,
-.siemens .btn:before,
-.siemens footer .menu-toggle span {
+.siemens footer .menu-toggle span,
+.siemens .topcontactinfo .boxcontact:before,
+.siemens .topcontactinfo .boxcontact .right a:before,
+.siemens header .menu-toggle span {
     background-color: #41aaaa ! important;
 }
 .siemens .green.btn:before {
@@ -55,7 +60,7 @@
 }
 .siemens nav .colorsvg,
 .siemens nav .fil0 {
-    fill: #fff ! important;
+    fill: #41aaaa ! important;
 }
 .siemens nav li ul .colorsvg,
 .siemens nav li ul .fil0 {
@@ -71,8 +76,10 @@
 .delonghi .colorbg,
 .delonghi footer .body .right .content ul li a:before,
 .delonghi .popup .inner .close,
-.delonghi .btn:before,
-.delonghi footer .menu-toggle span {
+.delonghi footer .menu-toggle span,
+.delonghi .topcontactinfo .boxcontact:before,
+.delonghi .topcontactinfo .boxcontact .right a:before,
+.delonghi header .menu-toggle span {
     background-color: #215f8b ! important;
 }
 .delonghi .green.btn:before {
@@ -90,7 +97,7 @@
 }
 .delonghi nav .colorsvg,
 .delonghi nav .fil0 {
-    fill: #fff ! important;
+    fill: #215f8b ! important;
 }
 .delonghi nav li ul .colorsvg,
 .delonghi nav li ul .fil0 {
@@ -106,8 +113,10 @@
 .saeco .colorbg,
 .saeco footer .body .right .content ul li a:before,
 .saeco .popup .inner .close,
-.saeco .btn:before,
-.saeco footer .menu-toggle span {
+.saeco footer .menu-toggle span,
+.saeco .topcontactinfo .boxcontact:before,
+.saeco .topcontactinfo .boxcontact .right a:before,
+.saeco header .menu-toggle span {
     background-color: #d71921 ! important;
 }
 .saeco .green.btn:before {
@@ -125,7 +134,7 @@
 }
 .saeco nav .colorsvg,
 .saeco nav .fil0 {
-    fill: #fff ! important;
+    fill: #d71921 ! important;
 }
 .saeco nav li ul .colorsvg,
 .saeco nav li ul .fil0 {
@@ -149,8 +158,10 @@
 .philips .colorbg,
 .philips footer .body .right .content ul li a:before,
 .philips .popup .inner .close,
-.philips .btn:before,
-.philips footer .menu-toggle span {
+.philips footer .menu-toggle span,
+.philips .topcontactinfo .boxcontact:before,
+.philips .topcontactinfo .boxcontact .right a:before,
+.philips header .menu-toggle span {
     background-color: #3182b1 ! important;
 }
 .philips .green.btn:before {
@@ -168,7 +179,7 @@
 }
 .philips nav .colorsvg,
 .philips nav .fil0 {
-    fill: #fff ! important;
+    fill: #3182b1 ! important;
 }
 .philips nav li ul .colorsvg,
 .philips nav li ul .fil0 {
@@ -184,8 +195,10 @@
 .jura .colorbg,
 .jura footer .body .right .content ul li a:before,
 .jura .popup .inner .close,
-.jura .btn:before,
-.jura footer .menu-toggle span {
+.jura footer .menu-toggle span,
+.jura .topcontactinfo .boxcontact:before,
+.jura .topcontactinfo .boxcontact .right a:before,
+.jura header .menu-toggle span {
     background-color: #e30613 ! important;
 }
 .jura .green.btn:before {
@@ -203,7 +216,7 @@
 }
 .jura nav .colorsvg,
 .jura nav .fil0 {
-    fill: #fff ! important;
+    fill: #e30613 ! important;
 }
 .jura nav li ul .colorsvg,
 .jura nav li ul .fil0 {
@@ -227,8 +240,10 @@
 .krups .colorbg,
 .krups footer .body .right .content ul li a:before,
 .krups .popup .inner .close,
-.krups .btn:before,
-.krups footer .menu-toggle span {
+.krups footer .menu-toggle span,
+.krups .topcontactinfo .boxcontact:before,
+.krups .topcontactinfo .boxcontact .right a:before,
+.krups header .menu-toggle span {
     background-color: #525352 ! important;
 }
 .krups .green.btn:before {
@@ -246,7 +261,7 @@
 }
 .krups nav .colorsvg,
 .krups nav .fil0 {
-    fill: #fff ! important;
+    fill: #525352 ! important;
 }
 .krups nav li ul .colorsvg,
 .krups nav li ul .fil0 {
@@ -262,8 +277,10 @@
 .melitta .colorbg,
 .melitta footer .body .right .content ul li a:before,
 .melitta .popup .inner .close,
-.melitta .btn:before,
-.melitta footer .menu-toggle span {
+.melitta footer .menu-toggle span,
+.melitta .topcontactinfo .boxcontact:before,
+.melitta .topcontactinfo .boxcontact .right a:before,
+.melitta header .menu-toggle span {
     background-color: #d00c0e ! important;
 }
 .melitta .green.btn:before {
@@ -281,7 +298,7 @@
 }
 .melitta nav .colorsvg,
 .melitta nav .fil0 {
-    fill: #fff ! important;
+    fill: #d00c0e ! important;
 }
 .melitta nav li ul .colorsvg,
 .melitta nav li ul .fil0 {
@@ -305,8 +322,10 @@
 .nivona .colorbg,
 .nivona footer .body .right .content ul li a:before,
 .nivona .popup .inner .close,
-.nivona .btn:before,
-.nivona footer .menu-toggle span {
+.nivona footer .menu-toggle span,
+.nivona .topcontactinfo .boxcontact:before,
+.nivona .topcontactinfo .boxcontact .right a:before,
+.nivona header .menu-toggle span {
     background-color: #af0917 ! important;
 }
 .nivona .green.btn:before {
@@ -324,7 +343,7 @@
 }
 .nivona nav .colorsvg,
 .nivona nav .fil0 {
-    fill: #fff ! important;
+    fill: #af0917 ! important;
 }
 .nivona nav li ul .colorsvg,
 .nivona nav li ul .fil0 {
@@ -348,8 +367,10 @@
 .gaggia .colorbg,
 .gaggia footer .body .right .content ul li a:before,
 .gaggia .popup .inner .close,
-.gaggia .btn:before,
-.gaggia footer .menu-toggle span {
+.gaggia footer .menu-toggle span,
+.gaggia .topcontactinfo .boxcontact:before,
+.gaggia .topcontactinfo .boxcontact .right a:before,
+.gaggia header .menu-toggle span {
     background-color: #ef4023 ! important;
 }
 .gaggia .green.btn:before {
@@ -367,7 +388,7 @@
 }
 .gaggia nav .colorsvg,
 .gaggia nav .fil0 {
-    fill: #fff ! important;
+    fill: #ef4023 ! important;
 }
 .gaggia nav li ul .colorsvg,
 .gaggia nav li ul .fil0 {
@@ -391,8 +412,10 @@
 .wmf .colorbg,
 .wmf footer .body .right .content ul li a:before,
 .wmf .popup .inner .close,
-.wmf .btn:before,
-.wmf footer .menu-toggle span {
+.wmf footer .menu-toggle span,
+.wmf .topcontactinfo .boxcontact:before,
+.wmf .topcontactinfo .boxcontact .right a:before,
+.wmf header .menu-toggle span {
     background-color: #71b430 ! important;
 }
 .wmf .green.btn:before {
@@ -410,7 +433,7 @@
 }
 .wmf nav .colorsvg,
 .wmf nav .fil0 {
-    fill: #fff ! important;
+    fill: #71b430 ! important;
     stroke-width:1;
 }
 .wmf nav li ul .colorsvg,
@@ -435,8 +458,10 @@
 .la-cimbali .colorbg,
 .la-cimbali footer .body .right .content ul li a:before,
 .la-cimbali .popup .inner .close,
-.la-cimbali .btn:before,
-.la-cimbali footer .menu-toggle span {
+.la-cimbali footer .menu-toggle span,
+.la-cimbali .topcontactinfo .boxcontact:before,
+.la-cimbali .topcontactinfo .boxcontact .right a:before,
+.la-cimbali header .menu-toggle span {
     background-color: #e2271c ! important;
 }
 .la-cimbali .green.btn:before {
@@ -454,7 +479,7 @@
 }
 .la-cimbali nav .colorsvg,
 .la-cimbali nav .fil0 {
-    fill: #fff ! important;
+    fill: #e2271c ! important;
 }
 .la-cimbali nav li ul .colorsvg,
 .la-cimbali nav li ul .fil0 {
@@ -478,8 +503,10 @@
 .schaerer .colorbg,
 .schaerer footer .body .right .content ul li a:before,
 .schaerer .popup .inner .close,
-.schaerer .btn:before,
-.schaerer footer .menu-toggle span {
+.schaerer footer .menu-toggle span,
+.schaerer .topcontactinfo .boxcontact:before,
+.schaerer .topcontactinfo .boxcontact .right a:before,
+.schaerer header .menu-toggle span {
     background-color: #e2271c ! important;
 }
 .schaerer .green.btn:before {
@@ -497,7 +524,7 @@
 }
 .schaerer nav .colorsvg,
 .schaerer nav .fil0 {
-    fill: #fff ! important;
+    fill: #e2271c ! important;
 }
 .schaerer nav li ul .colorsvg,
 .schaerer nav li ul .fil0 {
@@ -521,8 +548,10 @@
 .franke .colorbg,
 .franke footer .body .right .content ul li a:before,
 .franke .popup .inner .close,
-.franke .btn:before,
-.franke footer .menu-toggle span {
+.franke footer .menu-toggle span,
+.franke .topcontactinfo .boxcontact:before,
+.franke .topcontactinfo .boxcontact .right a:before,
+.franke header .menu-toggle span {
     background-color: #e2271c ! important;
 }
 .franke .green.btn:before {
@@ -540,7 +569,7 @@
 }
 .franke nav .colorsvg,
 .franke nav .fil0 {
-    fill: #fff ! important;
+    fill: #e2271c ! important;
 }
 .franke nav li ul .colorsvg,
 .franke nav li ul .fil0 {
@@ -556,8 +585,10 @@
 .faema .colorbg,
 .faema footer .body .right .content ul li a:before,
 .faema .popup .inner .close,
-.faema .btn:before,
-.faema footer .menu-toggle span {
+.faema footer .menu-toggle span,
+.faema .topcontactinfo .boxcontact:before,
+.faema .topcontactinfo .boxcontact .right a:before,
+.faema header .menu-toggle span {
     background-color: #870c28 ! important;
 }
 .faema .green.btn:before {
@@ -575,7 +606,7 @@
 }
 .faema nav .colorsvg,
 .faema nav .fil0 {
-    fill: #fff ! important;
+    fill: #870c28 ! important;
 }
 .faema nav li ul .colorsvg,
 .faema nav li ul .fil0 {
@@ -599,8 +630,10 @@
 .miele .colorbg,
 .miele footer .body .right .content ul li a:before,
 .miele .popup .inner .close,
-.miele .btn:before,
-.miele footer .menu-toggle span {
+.miele footer .menu-toggle span,
+.miele .topcontactinfo .boxcontact:before,
+.miele .topcontactinfo .boxcontact .right a:before,
+.miele header .menu-toggle span {
     background-color: #a20001 ! important;
 }
 .miele .green.btn:before {
@@ -618,7 +651,7 @@
 }
 .miele nav .colorsvg,
 .miele nav .fil0 {
-    fill: #fff ! important;
+    fill: #a20001 ! important;
 }
 .miele nav li ul .colorsvg,
 .miele nav li ul .fil0 {
@@ -634,8 +667,10 @@
 .rancilio .colorbg,
 .rancilio footer .body .right .content ul li a:before,
 .rancilio .popup .inner .close,
-.rancilio .btn:before,
-.rancilio footer .menu-toggle span {
+.rancilio footer .menu-toggle span,
+.rancilio .topcontactinfo .boxcontact:before,
+.rancilio .topcontactinfo .boxcontact .right a:before,
+.rancilio header .menu-toggle span {
     background-color: #007845 ! important;
 }
 .rancilio .green.btn:before {
@@ -653,7 +688,7 @@
 }
 .rancilio nav .colorsvg,
 .rancilio nav .fil0 {
-    fill: #fff ! important;
+    fill: #007845 ! important;
 }
 .rancilio nav li ul .colorsvg,
 .rancilio nav li ul .fil0 {
@@ -677,8 +712,10 @@
 .nuova-simonelli .colorbg,
 .nuova-simonelli footer .body .right .content ul li a:before,
 .nuova-simonelli .popup .inner .close,
-.nuova-simonelli .btn:before,
-.nuova-simonelli footer .menu-toggle span {
+.nuova-simonelli footer .menu-toggle span,
+.nuova-simonelli .topcontactinfo .boxcontact:before,
+.nuova-simonelli .topcontactinfo .boxcontact .right a:before,
+.nuova-simonelli header .menu-toggle span {
     background-color: #d82f3e ! important;
 }
 .nuova-simonelli .green.btn:before {
@@ -696,7 +733,7 @@
 }
 .nuova-simonelli nav .colorsvg,
 .nuova-simonelli nav .fil0 {
-    fill: #fff ! important;
+    fill: #d82f3e ! important;
 }
 .nuova-simonelli nav li ul .colorsvg,
 .nuova-simonelli nav li ul .fil0 {
@@ -720,8 +757,10 @@
 .bork .colorbg,
 .bork footer .body .right .content ul li a:before,
 .bork .popup .inner .close,
-.bork .btn:before,
-.bork footer .menu-toggle span {
+.bork footer .menu-toggle span,
+.bork .topcontactinfo .boxcontact:before,
+.bork .topcontactinfo .boxcontact .right a:before,
+.bork header .menu-toggle span {
     background-color: #5c5c5c ! important;
 }
 .bork .green.btn:before {
@@ -739,7 +778,7 @@
 }
 .bork nav .colorsvg,
 .bork nav .fil0 {
-    fill: #fff ! important;
+    fill: #5c5c5c ! important;
 }
 .bork nav li ul .colorsvg,
 .bork nav li ul .fil0 {
@@ -755,8 +794,10 @@
 .promac .colorbg,
 .promac footer .body .right .content ul li a:before,
 .promac .popup .inner .close,
-.promac .btn:before,
-.promac footer .menu-toggle span {
+.promac footer .menu-toggle span,
+.promac .topcontactinfo .boxcontact:before,
+.promac .topcontactinfo .boxcontact .right a:before,
+.promac header .menu-toggle span {
     background-color: #a1190d ! important;
 }
 .promac .green.btn:before {
@@ -774,7 +815,7 @@
 }
 .promac nav .colorsvg,
 .promac nav .fil0 {
-    fill: #fff ! important;
+    fill: #a1190d ! important;
 }
 .promac nav li ul .colorsvg,
 .promac nav li ul .fil0 {
