@@ -1,0 +1,639 @@
+.bosch .colorbg,
+.bosch #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #215f8b ! important;
+}
+.bosch .colortext,
+.bosch #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #215f8b ! important;
+}
+.bosch .colortexthover:hover {
+    color: #215f8b ! important;
+}
+.bosch .colorsvg {
+    fill: #215f8b ! important;
+}
+.bosch .colorborder,
+.bosch #orderform-phone,
+.bosch .colorborderhover:hover {
+    border-color: #215f8b ! important;
+}
+.bosch #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.bosch #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #215f8b;
+    color: #215f8b;
+}
+.bosch .fil2 {
+    fill:#2C2F33
+}
+.bosch .fil1,
+.bosch .fil0 {
+    fill:#215f8b
+}
+
+.siemens .colorbg,
+.siemens #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #41aaaa ! important;
+}
+.siemens .colortext,
+.siemens #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #41aaaa ! important;
+}
+.siemens .colortexthover:hover {
+    color: #41aaaa ! important;
+}
+.siemens .colorsvg {
+    fill: #41aaaa ! important;
+}
+.siemens .colorborder,
+.siemens #orderform-phone,
+.siemens .colorborderhover:hover {
+    border-color: #41aaaa ! important;
+}
+.siemens #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.siemens #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #41aaaa;
+    color: #41aaaa;
+}
+.siemens .fil2 {
+    fill:#2C2F33
+}
+.siemens .fil1,
+.siemens .fil0 {
+    fill:#41aaaa
+}
+
+.delonghi .colorbg,
+.delonghi #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #215f8b ! important;
+}
+.delonghi .colortext,
+.delonghi #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #215f8b ! important;
+}
+.delonghi .colortexthover:hover {
+    color: #215f8b ! important;
+}
+.delonghi .colorsvg {
+    fill: #215f8b ! important;
+}
+.delonghi .colorborder,
+.delonghi #orderform-phone,
+.delonghi .colorborderhover:hover {
+    border-color: #215f8b ! important;
+}
+.delonghi #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.delonghi #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #215f8b;
+    color: #215f8b;
+}
+.delonghi .fil2 {
+    fill:#2C2F33
+}
+.delonghi .fil1,
+.delonghi .fil0 {
+    fill:#215f8b
+}
+
+.saeco .colorbg,
+.saeco #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #d71921 ! important;
+}
+.saeco .colortext,
+.saeco #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #d71921 ! important;
+}
+.saeco .colortexthover:hover {
+    color: #d71921 ! important;
+}
+.saeco .colorsvg {
+    fill: #d71921 ! important;
+}
+.saeco .colorborder,
+.saeco #orderform-phone,
+.saeco .colorborderhover:hover {
+    border-color: #d71921 ! important;
+}
+.saeco #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.saeco #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #d71921;
+    color: #d71921;
+}
+.saeco .fil2 {
+    fill:#2C2F33
+}
+.saeco .fil1,
+.saeco .fil0 {
+    fill:#d71921
+}
+
+.philips .colorbg,
+.philips #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #3182b1 ! important;
+}
+.philips .colortext,
+.philips #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #3182b1 ! important;
+}
+.philips .colortexthover:hover {
+    color: #3182b1 ! important;
+}
+.philips .colorsvg {
+    fill: #3182b1 ! important;
+}
+.philips .colorborder,
+.philips #orderform-phone,
+.philips .colorborderhover:hover {
+    border-color: #3182b1 ! important;
+}
+.philips #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.philips #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #3182b1;
+    color: #3182b1;
+}
+.philips .fil2 {
+    fill:#2C2F33
+}
+.philips .fil1,
+.philips .fil0 {
+    fill:#3182b1
+}
+
+.jura .colorbg,
+.jura #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #e30613 ! important;
+}
+.jura .colortext,
+.jura #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #e30613 ! important;
+}
+.jura .colortexthover:hover {
+    color: #e30613 ! important;
+}
+.jura .colorsvg {
+    fill: #e30613 ! important;
+}
+.jura .colorborder,
+.jura #orderform-phone,
+.jura .colorborderhover:hover {
+    border-color: #e30613 ! important;
+}
+.jura #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.jura #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #e30613;
+    color: #e30613;
+}
+.jura .fil2 {
+    fill:#2C2F33
+}
+.jura .fil1,
+.jura .fil0 {
+    fill:#e30613
+}
+
+.krups .colorbg,
+.krups #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #525352 ! important;
+}
+.krups .colortext,
+.krups #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #525352 ! important;
+}
+.krups .colortexthover:hover {
+    color: #525352 ! important;
+}
+.krups .colorsvg {
+    fill: #525352 ! important;
+}
+.krups .colorborder,
+.krups #orderform-phone,
+.krups .colorborderhover:hover {
+    border-color: #525352 ! important;
+}
+.krups #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.krups #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #525352;
+    color: #525352;
+}
+.krups .fil2 {
+    fill:#2C2F33
+}
+.krups .fil1,
+.krups .fil0 {
+    fill:#525352
+}
+
+.melitta .colorbg,
+.melitta #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #d00c0e ! important;
+}
+.melitta .colortext,
+.melitta #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #d00c0e ! important;
+}
+.melitta .colortexthover:hover {
+    color: #d00c0e ! important;
+}
+.melitta .colorsvg {
+    fill: #d00c0e ! important;
+}
+.melitta .colorborder,
+.melitta #orderform-phone,
+.melitta .colorborderhover:hover {
+    border-color: #d00c0e ! important;
+}
+.melitta #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.melitta #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #d00c0e;
+    color: #d00c0e;
+}
+.melitta .fil2 {
+    fill:#2C2F33
+}
+.melitta .fil1,
+.melitta .fil0 {
+    fill:#d00c0e
+}
+
+.nivona .colorbg,
+.nivona #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #af0917 ! important;
+}
+.nivona .colortext,
+.nivona #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #af0917 ! important;
+}
+.nivona .colortexthover:hover {
+    color: #af0917 ! important;
+}
+.nivona .colorsvg {
+    fill: #af0917 ! important;
+}
+.nivona .colorborder,
+.nivona #orderform-phone,
+.nivona .colorborderhover:hover {
+    border-color: #af0917 ! important;
+}
+.nivona #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.nivona #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #af0917;
+    color: #af0917;
+}
+.nivona .fil2 {
+    fill:#2C2F33
+}
+.nivona .fil1,
+.nivona .fil0 {
+    fill:#af0917
+}
+
+.gaggia .colorbg,
+.gaggia #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #ef4023 ! important;
+}
+.gaggia .colortext,
+.gaggia #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #ef4023 ! important;
+}
+.gaggia .colortexthover:hover {
+    color: #ef4023 ! important;
+}
+.gaggia .colorsvg {
+    fill: #ef4023 ! important;
+}
+.gaggia .colorborder,
+.gaggia #orderform-phone,
+.gaggia .colorborderhover:hover {
+    border-color: #ef4023 ! important;
+}
+.gaggia #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.gaggia #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #ef4023;
+    color: #ef4023;
+}
+.gaggia .fil2 {
+    fill:#2C2F33
+}
+.gaggia .fil1,
+.gaggia .fil0 {
+    fill:#ef4023
+}
+
+.wmf .colorbg,
+.wmf #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #71b430 ! important;
+}
+.wmf .colortext,
+.wmf #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #71b430 ! important;
+}
+.wmf .colortexthover:hover {
+    color: #71b430 ! important;
+}
+.wmf .colorsvg {
+    fill: #71b430 ! important;
+}
+.wmf .colorborder,
+.wmf #orderform-phone,
+.wmf .colorborderhover:hover {
+    border-color: #71b430 ! important;
+}
+.wmf #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.wmf #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #71b430;
+    color: #71b430;
+}
+.wmf .fil2 {
+    fill:#2C2F33
+}
+.wmf .fil1,
+.wmf .fil0 {
+    fill:#71b430
+}
+
+.cimbali .colorbg,
+.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #e2271c ! important;
+}
+.cimbali .colortext,
+.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #e2271c ! important;
+}
+.cimbali .colortexthover:hover {
+    color: #e2271c ! important;
+}
+.cimbali .colorsvg {
+    fill: #e2271c ! important;
+}
+.cimbali .colorborder,
+.cimbali #orderform-phone,
+.cimbali .colorborderhover:hover {
+    border-color: #e2271c ! important;
+}
+.cimbali #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.cimbali #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #e2271c;
+    color: #e2271c;
+}
+.cimbali .fil2 {
+    fill:#2C2F33
+}
+.cimbali .fil1,
+.cimbali .fil0 {
+    fill:#e2271c
+}
+
+.schaerer .colorbg,
+.schaerer #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #e2271c ! important;
+}
+.schaerer .colortext,
+.schaerer #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #e2271c ! important;
+}
+.schaerer .colortexthover:hover {
+    color: #e2271c ! important;
+}
+.schaerer .colorsvg {
+    fill: #e2271c ! important;
+}
+.schaerer .colorborder,
+.schaerer #orderform-phone,
+.schaerer .colorborderhover:hover {
+    border-color: #e2271c ! important;
+}
+.schaerer #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.schaerer #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #e2271c;
+    color: #e2271c;
+}
+.schaerer .fil2 {
+    fill:#2C2F33
+}
+.schaerer .fil1,
+.schaerer .fil0 {
+    fill:#e2271c
+}
+
+.franke .colorbg,
+.franke #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #e2271c ! important;
+}
+.franke .colortext,
+.franke #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #e2271c ! important;
+}
+.franke .colortexthover:hover {
+    color: #e2271c ! important;
+}
+.franke .colorsvg {
+    fill: #e2271c ! important;
+}
+.franke .colorborder,
+.franke #orderform-phone,
+.franke .colorborderhover:hover {
+    border-color: #e2271c ! important;
+}
+.franke #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.franke #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #e2271c;
+    color: #e2271c;
+}
+.franke .fil2 {
+    fill:#2C2F33
+}
+.franke .fil1,
+.franke .fil0 {
+    fill:#e2271c
+}
+
+.faema .colorbg,
+.faema #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #870c28 ! important;
+}
+.faema .colortext,
+.faema #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #870c28 ! important;
+}
+.faema .colortexthover:hover {
+    color: #870c28 ! important;
+}
+.faema .colorsvg {
+    fill: #870c28 ! important;
+}
+.faema .colorborder,
+.faema #orderform-phone,
+.faema .colorborderhover:hover {
+    border-color: #870c28 ! important;
+}
+.faema #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.faema #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #870c28;
+    color: #870c28;
+}
+.faema .fil2 {
+    fill:#2C2F33
+}
+.faema .fil1,
+.faema .fil0 {
+    fill:#870c28
+}
+
+.miele .colorbg,
+.miele #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #a20001 ! important;
+}
+.miele .colortext,
+.miele #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #a20001 ! important;
+}
+.miele .colortexthover:hover {
+    color: #a20001 ! important;
+}
+.miele .colorsvg {
+    fill: #a20001 ! important;
+}
+.miele .colorborder,
+.miele #orderform-phone,
+.miele .colorborderhover:hover {
+    border-color: #a20001 ! important;
+}
+.miele #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.miele #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #a20001;
+    color: #a20001;
+}
+.miele .fil2 {
+    fill:#2C2F33
+}
+.miele .fil1,
+.miele .fil0 {
+    fill:#a20001
+}
+
+.rancilio .colorbg,
+.rancilio #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #007845 ! important;
+}
+.rancilio .colortext,
+.rancilio #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #007845 ! important;
+}
+.rancilio .colortexthover:hover {
+    color: #007845 ! important;
+}
+.rancilio .colorsvg {
+    fill: #007845 ! important;
+}
+.rancilio .colorborder,
+.rancilio #orderform-phone,
+.rancilio .colorborderhover:hover {
+    border-color: #007845 ! important;
+}
+.rancilio #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.rancilio #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #007845;
+    color: #007845;
+}
+.rancilio .fil2 {
+    fill:#2C2F33
+}
+.rancilio .fil1,
+.rancilio .fil0 {
+    fill:#007845
+}
+
+.simonelli .colorbg,
+.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #d82f3e ! important;
+}
+.simonelli .colortext,
+.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #d82f3e ! important;
+}
+.simonelli .colortexthover:hover {
+    color: #d82f3e ! important;
+}
+.simonelli .colorsvg {
+    fill: #d82f3e ! important;
+}
+.simonelli .colorborder,
+.simonelli #orderform-phone,
+.simonelli .colorborderhover:hover {
+    border-color: #d82f3e ! important;
+}
+.simonelli #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.simonelli #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #d82f3e;
+    color: #d82f3e;
+}
+.simonelli .fil2 {
+    fill:#2C2F33
+}
+.simonelli .fil1,
+.simonelli .fil0 {
+    fill:#d82f3e
+}
+
+.bork .colorbg,
+.bork #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #5c5c5c ! important;
+}
+.bork .colortext,
+.bork #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #5c5c5c ! important;
+}
+.bork .colortexthover:hover {
+    color: #5c5c5c ! important;
+}
+.bork .colorsvg {
+    fill: #5c5c5c ! important;
+}
+.bork .colorborder,
+.bork #orderform-phone,
+.bork .colorborderhover:hover {
+    border-color: #5c5c5c ! important;
+}
+.bork #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.bork #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #5c5c5c;
+    color: #5c5c5c;
+}
+.bork .fil2 {
+    fill:#2C2F33
+}
+.bork .fil1,
+.bork .fil0 {
+    fill:#5c5c5c
+}
+
+.promac .colorbg,
+.promac #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+    background-color: #a1190d ! important;
+}
+.promac .colortext,
+.promac #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+    color: #a1190d ! important;
+}
+.promac .colortexthover:hover {
+    color: #a1190d ! important;
+}
+.promac .colorsvg {
+    fill: #a1190d ! important;
+}
+.promac .colorborder,
+.promac #orderform-phone,
+.promac .colorborderhover:hover {
+    border-color: #a1190d ! important;
+}
+.promac #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.promac #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+    border: 1px solid #a1190d;
+    color: #a1190d;
+}
+.promac .fil2 {
+    fill:#2C2F33
+}
+.promac .fil1,
+.promac .fil0 {
+    fill:#a1190d
+}

@@ -42,11 +42,11 @@ $js = app\components\CController::$js;
     </head>
     <body id="index" class="index <?= \app\components\CController::$monoBrand['url']; ?>">
         <?php $this->beginBody() ?>
-        <header id="header">            
+        <header id="header" class="colorborder">            
             <div class="container">
                 <a class="mobi-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <div class="logo">
-                    <a href="/"><img src="<?= $assets ?>/multicatspb/images/<?= \app\components\CController::$monoBrand['url']; ?>.svg"></a>
+                    <a href="/"><img src="<?= $assets ?>/multicatspb/images/<?= \app\components\CController::$monoBrand['url']; ?>2.svg"></a>
                 </div>
                 <div class="topmenu">
                     <div class="menu-toggle">
@@ -76,7 +76,7 @@ $js = app\components\CController::$js;
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="topcontactinfo">
+                <div class="topcontactinfo colorborder">
                     <div class="boxcontact">
                         <div class="left">
                             <a href="/kontakty">Москва, ул. Студенческая 35.</a>
@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                     </div>
                     <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
-                <a class="btn yellow open-popup colortext" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
+                <a class="btn yellow open-popup colorbg" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
                 <div class="clear"></div>
             </div>
         </header>
@@ -115,11 +115,11 @@ $js = app\components\CController::$js;
         }
         ?>
         <?= $content; ?>
-        <footer>
+        <footer class="colorborder">
             <div class="container">
                 <div class="body">
                     <div class="left">
-                        <span>Сэкономьте <br>свое время</span>
+                        <span>Сэкономьте свое время</span>
                         <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
                         <a class="btn out-icon green open-popup colorbg colorbghover" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
                         <img src="<?= $assets ?>/multicatspb/images/master.png">

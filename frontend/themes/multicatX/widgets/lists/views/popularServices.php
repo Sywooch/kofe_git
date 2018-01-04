@@ -14,7 +14,7 @@
                 <div class="rumiservice7_blocks rumiservice7_block<?= $key; ?>" style="display: <?= $key == 0 ? ' block' : 'none'; ?>;">
                     <div class="rumiservice7_table_header">
                         <div class="rumiservice_column_1">Наименование позиции</div>
-                        <div class="rumiservice_column_2">Стоимость *</div>
+                        <div class="rumiservice_column_2">Стоимость</div>
                         <div class="rumiservice_column_3">Время</div>
                         <div class="rumiservice_column_4"></div>
                     </div>
@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="rumiservice_column_2"><?= $service['price']; ?></div>
                                     <div class="rumiservice_column_3">от 1,5 час.</div>
-                                    <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Решить проблему</span></span></div>
+                                    <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Заказать</span></span></div>
                                 </div>
                                 <?php if ($key > 4): ?></div><?php endif; ?>
                         <?php endforeach; ?>

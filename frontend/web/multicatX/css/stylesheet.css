@@ -7,7 +7,7 @@ html {
 }
 body {
     background-color: #ffffff;
-    color: #000000;
+    color: #3b3b3b;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -21,6 +21,24 @@ body {
     html,
     body {
         min-width: 850px;
+    }
+}
+@media (max-width: 950px) {
+    html,
+    body {
+        min-width: 680px;
+    }
+}
+@media (max-width: 700px) {
+    html,
+    body {
+        min-width: 480px;
+    }
+}
+@media (max-width: 520px) {
+    html,
+    body {
+        min-width: 300px;
     }
 }
 body,
@@ -43,6 +61,16 @@ h1,
     font-weight: normal;
     text-shadow: 0 0 1px rgba(0, 0, 0, .01);
 }
+@media (max-width: 520px) {
+    h1,
+.welcome {
+    font-size: 26px;
+}
+}
+h1 br,
+.welcome br {
+    display: none;
+}
 h1.category_h1 {
     color: #3b3b3b;
     font-family: "Roboto Condensed";
@@ -52,6 +80,11 @@ h1.category_h1 {
     padding-bottom: 4px;
     position: relative;
     text-align: center;
+}
+@media (max-width: 1250px) {
+    h1.category_h1 {
+        font-size: 30px;
+    }
 }
 h1.contacts_h1 {
     color: #3b3b3b;
@@ -158,6 +191,27 @@ label {
         width: 830px;
     }
 }
+@media (max-width: 950px) {
+    .inner_container {
+        width: 680px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 700px) {
+    .inner_container {
+        width: 480px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 520px) {
+    .inner_container {
+        width: 300px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
 .grey_container {
     background: #f7f7f7;
 }
@@ -167,10 +221,6 @@ label {
     height: 154px;
     position: absolute;
     left: 0px;
-}
-.problemi_container {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/problemi_bg.png") center no-repeat;
-    height: 682px;
 }
 .bordertopgrey {
     border-top: 1px solid #dfdfdf;
@@ -814,6 +864,11 @@ ul.box-filter > li ul {
     color: #818181;
     margin-top: 20px;
 }
+@media (max-width: 1250px) {
+    .category-info {
+        margin-top: 10px;
+    }
+}
 .category-info-double {
     overflow: auto;
     font-size: 16px;
@@ -843,6 +898,25 @@ ul.box-filter > li ul {
     border-radius: 10px;
     margin-bottom: 8px;
     vertical-align: top;
+    position: relative;
+}
+@media (max-width: 950px) {
+    .category-list a {
+        width: 18%;
+        height: 185px;
+    }
+}
+@media (max-width: 700px) {
+    .category-list a {
+        width: 23.5%;
+        height: 185px;
+    }
+}
+@media (max-width: 700px) {
+    .category-list a {
+        width: 48%;
+        height: 185px;
+    }
 }
 .category-list a.invisible_category {
     display: none;
@@ -863,7 +937,11 @@ ul.box-filter > li ul {
     display: block;
     color: #3b3b3b;
     font-size: 16px;
-    margin-top: 20px;
+        bottom: 0px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .category-list-show-all {
     width: 100%;
@@ -1807,18 +1885,20 @@ ul.box-filter > li ul {
     left: 48px;
     width: 180px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     line-height: 105px;
+    height: 105px;
 }
 @media (max-width: 1250px) {
     #header_second #logo {
         line-height: 85px;
+        left: 0px;
+        height: 85px;
     }
 }
 #header_second #logo img {
     max-width: 75%;
     max-height: 75%;
-    height: 80%;
     position: relative;
     vertical-align: middle;
 }
@@ -1845,6 +1925,17 @@ ul.box-filter > li ul {
         top: 16px;
     }
 }
+@media (max-width: 950px) {
+    #header_second #header_callback {
+        left: 210px;
+        top: 16px;
+    }
+}
+@media (max-width: 700px) {
+    #header_second #header_callback {
+        display: none;
+    }
+}
 #header_second #header_status {
     position: absolute;
     top: 43px;
@@ -1867,6 +1958,13 @@ ul.box-filter > li ul {
 @media (max-width: 1250px) {
     #header_second #header_phone {
         top: 18px;
+        right: 0px;
+    }
+}
+@media (max-width: 1250px) {
+    #header_second #header_phone {
+        top: 21px;
+        font-size: 11px;
     }
 }
 #footer_callback {
@@ -1890,6 +1988,11 @@ ul.box-filter > li ul {
     color: #ff4900;
     font-family: "Roboto Condensed";
     margin-bottom: 6px;
+}
+@media (max-width: 520px) {
+    #header_second #header_phone span {
+        font-size: 20px;
+    }
 }
 #header_third {
     height: 55px;
@@ -1918,8 +2021,28 @@ ul.box-filter > li ul {
 #header_third .links a:nth-child(-n+6) {
     display: inline-block;
 }
+@media (max-width: 1250px) {
+    #header_third .links a:nth-child(6),
+    #header_third .links a:nth-child(5) {
+        display: none;
+    }
+}
+@media (max-width: 950px) {
+    #header_third .links a:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    #header_third .links a {
+        padding: 0px;
+    }
+    #header_third .links a:nth-child(-n+6) {
+        display: none;
+    }
+}
 #header_third .links a.yeshsho {
     display: inline-block;
+    width: 100px;
 }
 #header_third .links a svg {
     max-width: 30px;
@@ -1928,17 +2051,32 @@ ul.box-filter > li ul {
     margin-right: 10px;
     display: block;
     width: 30px;
+    margin-top: 5px;
 }
 #header_third .links a.yeshsho {
     float: right;
-    text-align: right;
     border: 0px;
-    padding-top: 7px;
 }
 #header_third .links a.yeshsho svg {
     max-width: 20px;
     max-height: 20px;
-    margin-top: -3px;
+    float: left;
+}
+@media (max-width: 700px) {
+    #header_third .links a.yeshsho {
+        float: left;
+        border: 0px;
+        width: auto;
+        padding-top: 7px;
+    }
+    #header_third .links a.yeshsho br {
+        display: none;
+    }
+    #header_third .links a.yeshsho svg {
+        max-height: 30px;
+        max-width: 30px;
+        margin-top: -7px;
+    }
 }
 #header_third div.inner {
     display: none;
@@ -1960,6 +2098,11 @@ ul.box-filter > li ul {
     position: relative;
     z-index: 9;
 }
+@media (max-width: 950px) {
+    #rumiservice1 {
+        padding: 20px 0px;
+    }
+}
 #rumiservice1 h1 {
 	text-transform: uppercase;
 	text-align: center;
@@ -1968,6 +2111,16 @@ ul.box-filter > li ul {
 #rumiservice1 .info {
     float: left;
     width: 50%;
+}
+@media (max-width: 950px) {
+    #rumiservice1 .info {
+        width: 100%;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice1 .info {
+        display: none;
+    }
 }
 #rumiservice1 .info .content:after {
     content: '';
@@ -1988,11 +2141,21 @@ ul.box-filter > li ul {
     font-style: normal;
     color: #fff;
 }
+@media (max-width: 700px) {
+    #rumiservice1 .info .content p.title {
+        font-size: 18px;
+    }
+}
 #rumiservice1 .info .content {
     color: #fff;
     margin-bottom: 20px;
     display: block;
     width: 100%;
+}
+@media (max-width: 950px) {
+    #rumiservice1 .info .content {
+        margin-bottom: 5px;
+    }
 }
 #rumiservice1 .info .content span {
     font-size: 40px;
@@ -2087,6 +2250,11 @@ ul.box-filter > li ul {
 #rumiservice2 {
     height: 143px;
 }
+@media (max-width: 700px) {
+    #rumiservice2 {
+        height: 210px;
+    }
+}
 #rumiservice2 .rumiservice2_time_aver {
     position: absolute;
     left: 50px;
@@ -2102,6 +2270,13 @@ ul.box-filter > li ul {
     line-height: 44px;
     padding-left: 70px;
 }
+@media (max-width: 700px) {
+    #rumiservice2 .rumiservice2_time_aver {
+        top: 15px;
+        left: 0px;
+        font-size: 16px;
+    }
+}
 #rumiservice2 .rumiservice2_delivery {
     position: absolute;
     left: 50px;
@@ -2114,6 +2289,13 @@ ul.box-filter > li ul {
     color: #ffffff;
     padding-left: 70px;
 }
+@media (max-width: 700px) {
+    #rumiservice2 .rumiservice2_delivery {
+        top: 110px;
+        left: 0px;
+        font-size: 16px;
+    }
+}
 #rumiservice2 .rumiservice2_skobka_line {
     width: 1px;
     height: 87px;
@@ -2121,6 +2303,11 @@ ul.box-filter > li ul {
     left: 50%;
     top: 29px;
     background: url("http://service-xiaomi.com/catalog/view/theme/default/image/skobka_line.png") no-repeat;
+}
+@media (max-width: 700px) {
+    #rumiservice2 .rumiservice2_skobka_line {
+        display: none;
+    }
 }
 #rumiservice2 .rumiservice2_guaranty {
     height: 34px;
@@ -2135,6 +2322,13 @@ ul.box-filter > li ul {
     background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice2_guaranty.png") left center no-repeat;
     padding-left: 49px;
 }
+@media (max-width: 700px) {
+    #rumiservice2 .rumiservice2_guaranty {
+        top: 65px;
+        font-size: 16px;
+        width: 190px;
+    }
+}
 #rumiservice2 .rumiservice2_time {
     height: 34px;
     line-height: 34px;
@@ -2148,8 +2342,12 @@ ul.box-filter > li ul {
     background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice2_time.png") 3px center no-repeat;
     padding-left: 52px;
 }
-#rumiservice3 {
-    padding-top: 42px;
+@media (max-width: 700px) {
+    #rumiservice2 .rumiservice2_time {
+        top: 160px;
+        font-size: 16px;
+        width: 190px;
+    }
 }
 #rumiservice3 .rumiservice3_header {
     font-size: 36px;
@@ -2166,6 +2364,14 @@ ul.box-filter > li ul {
 @media (max-width: 1250px) {
     #rumiservice3 .rumiservice3_header {
         width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice3 .rumiservice3_header {
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin: 0px;
+        text-align: left;
     }
 }
 #rumiservice3 .rumiservice3_buttons {
@@ -2206,6 +2412,19 @@ ul.box-filter > li ul {
     cursor: pointer;
     position: relative;
     vertical-align: top;
+}
+@media (max-width: 950px) {
+    #rumiservice3 .rumiservice3_buttons .rumiservice3_button {
+        width: 170px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice3 .rumiservice3_buttons .rumiservice3_button {
+        width: 130px;
+        font-size: 12px;
+        height: 36px;
+        line-height: 36px;
+    }
 }
 #rumiservice3 .rumiservice3_button_container {
     position: relative;
@@ -2254,12 +2473,22 @@ ul.box-filter > li ul {
         width: 100%;
     }
 }
+@media (max-width: 700px) {
+    #rumiservice3 .rumiservice3_blocks .rumiservice3_left_block {
+        display: none;
+    }
+}
 #rumiservice3 .rumiservice3_blocks .rumiservice3_chart {
     margin-left: 50px;
     margin-top: 30px;
     display: inline-block;
     vertical-align: top;
     position: relative;
+}
+@media (max-width: 700px) {
+    #rumiservice3 .rumiservice3_blocks .rumiservice3_chart {
+        margin: 0px;
+    }
 }
 #rumiservice3 .rumiservice3_blocks .rumiservice3_chart .rumiservice3_chart_bg {
     width: 700px;
@@ -2287,6 +2516,11 @@ ul.box-filter > li ul {
     right: 0px;
     top: -40px;
 }
+@media (max-width: 950px) {
+    #rumiservice3 .rumiservice3_blocks .rumiservice3_chart .rumiservice3_chart_tooltip {
+        top: -85px;
+    }
+}
 #rumiservice3 .rumiservice3_blocks .rumiservice3_chart .rumiservice3_chart_tooltip span {
     display: block;
     color: #ffffff;
@@ -2294,6 +2528,10 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     margin-bottom: 7px;
 }
+#rumiservice3 {
+    padding-top: 42px;
+}
+
 .highcharts-series rect {
     opacity: 0.7;
 }
@@ -2308,11 +2546,37 @@ ul.box-filter > li ul {
     height: 64px;
     line-height: 64px;
 }
+@media (max-width: 950px) {
+    #rumiservice4 #rumiservice4_header {
+        font-size: 30px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice4 #rumiservice4_header {
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 #rumiservice4_header {
+        line-height: 40px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 #rumiservice4_header {
+        line-height: 30px;
+    }
+}
 #rumiservice4 #rumiservice4_header span {
     color: #fff;
     display: inline-block;
     width: 200px;
     text-align: center;
+}
+@media (max-width: 950px) {
+    #rumiservice4 #rumiservice4_header span {
+        width: auto;
+        padding: 0px 10px;
+    }
 }
 #rumiservice4 #rumiservice4_text {
     font-size: 16px;
@@ -2321,30 +2585,135 @@ ul.box-filter > li ul {
     width: 800px;
     margin: 20px auto 20px auto;
 }
+@media (max-width: 950px) {
+    #rumiservice4 #rumiservice4_text {
+        width: auto;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 #rumiservice4_text {
+        font-size: 12px;
+        margin: 0px auto;
+    }
+}
 #rumiservice4 .rumiservice4_item {
     width: 100%;
     height: 374px;
+}
+@media (max-width: 950px) {
+    #rumiservice4 .rumiservice4_item {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    #rumiservice4 .rumiservice4_item:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        display: block;
+        clear: both;
+    }
+
+    .main_container .owl-theme .owl-controls {
+        height: auto;
+    }
+    .main_container .owl-theme .owl-controls .owl-pagination {
+        left: 216px;
+        bottom: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .main_container .owl-theme .owl-controls .owl-pagination {
+        left: 95px;
+    }
 }
 #rumiservice4 .rumiservice4_item .rumiservice4_item_image {
     width: 552px;
     position: absolute;
     z-index: -1;
 }
+@media (max-width: 1250px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_image {
+        width: 430px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_image {
+        width: 240px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_image {
+        width: 185px;
+        margin-top: 14px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_image {
+        width: 300px;
+        margin-top: -60px;
+        opacity: 0.3;
+    }
+}
 #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
     float: right;
-    margin-top: 122px;
-    width: 440px;
+    margin-top: 85px;
+    width: 580px;
+}
+@media (max-width: 1250px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
+        width: 450px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
+        width: 310px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
+        width: 300px;
+        float: none;
+        text-align: center;
+    }
 }
 #rumiservice4 .rumiservice4_item .rumiservice4_item_right_header {
-    font-size: 24px;
+    font-size: 42px;
     color: #3b3b3b;
     font-family: "Roboto Condensed";
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+@media (max-width: 1250px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right_header {
+        font-size: 26px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right_header {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 #rumiservice4 .rumiservice4_item .rumiservice4_item_right_text {
-    font-size: 15px;
+    font-size: 18px;
     color: #818181;
-    line-height: 18px;
+    line-height: 22px;
+}
+@media (max-width: 1250px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right_text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice4 .rumiservice4_item .rumiservice4_item_right_text {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 #rumiservice4 .rumiservice4_item .rumiservice4_item_right_text span {
     color: #ff4900;
@@ -2428,6 +2797,14 @@ ul.box-filter > li ul {
     line-height: 64px;
     margin-bottom: 190px;
 }
+@media (max-width: 700px) {
+    #rumiservice6 #rumiservice6_header {
+        margin-bottom: 0px;
+        font-size: 20px;
+        height: 36px;
+        line-height: 36px;
+    }
+}
 #rumiservice6 #rumiservice6_header span {
     color: #fff;
     display: inline-block;
@@ -2447,6 +2824,18 @@ ul.box-filter > li ul {
     #rumiservice6 #rumiservice6_circle {
         width: 850px;
         background: none;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice6 #rumiservice6_circle {
+        width: 600px;
+        background: none;
+        left: 0px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice6 #rumiservice6_circle {
+        display: none;
     }
 }
 #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div {
@@ -2539,6 +2928,19 @@ ul.box-filter > li ul {
     width: 100%;
     height: 310px;
 }
+@media (max-width: 950px) {
+    #rumiservice6 .rumiservice6_item {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #rumiservice6 .rumiservice6_item:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        display: block;
+        clear: both;
+    }
+}
 #rumiservice6 .rumiservice6_item .rumiservice6_item_image {
     width: 507px;
     float: left;
@@ -2548,10 +2950,42 @@ ul.box-filter > li ul {
         width: 375px;
     }
 }
+@media (max-width: 950px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_image {
+        width: 240px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_image {
+        width: 125px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_image {
+        width: 300px;
+    }
+}
 #rumiservice6 .rumiservice6_item .rumiservice6_item_right {
     float: left;
-    margin-top: 84px;
+    margin-top: 50px;
     width: 440px;
+}
+@media (max-width: 950px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right {
+        margin-top: 25px;
+        width: 365px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right {
+        width: 330px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right {
+        width: 300px;
+        text-align: center;
+    }
 }
 #rumiservice6 .rumiservice6_item .rumiservice6_item_right_header {
     font-size: 24px;
@@ -2559,10 +2993,25 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     margin-bottom: 30px;
 }
+@media (max-width: 950px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right_header {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right_header {
+        font-size: 20px;
+    }
+}
 #rumiservice6 .rumiservice6_item .rumiservice6_item_right_text {
     font-size: 15px;
     color: #818181;
     line-height: 18px;
+}
+@media (max-width: 700px) {
+    #rumiservice6 .rumiservice6_item .rumiservice6_item_right_text {
+        font-size: 12px;
+    }
 }
 #rumiservice6 .rumiservice6_item .rumiservice6_item_right_text span {
     color: #ff4900;
@@ -2573,6 +3022,18 @@ ul.box-filter > li ul {
 #rumiservice7 {
     padding-top: 42px;
     padding-bottom: 75px;
+}
+@media (max-width: 1250px) {
+    #rumiservice7 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice7 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 #rumiservice7 .rumiservice7_topper {
     overflow: hidden;
@@ -2587,12 +3048,31 @@ ul.box-filter > li ul {
     margin-bottom: 20px;
     float: left;
 }
+@media (max-width: 1250px) {
+    #rumiservice7 .rumiservice7_header {
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice7 .rumiservice7_header {
+        font-size: 20px;
+        margin-bottom: 0px;
+        height: 36px;
+        line-height: 36px;
+    }
+}
 #rumiservice7 .rumiservice7_buttons {
     text-align: center;
     margin-bottom: 30px;
     float: left;
     margin-left: 60px;
     margin-top: 8px;
+}
+@media (max-width: 950px) {
+    #rumiservice7 .rumiservice7_buttons {
+    margin-left: 0px;
+    }
 }
 #rumiservice7 .rumiservice7_buttons .rumiservice7_button {
     display: inline-block;
@@ -2609,8 +3089,29 @@ ul.box-filter > li ul {
     cursor: pointer;
     position: relative;
 }
+@media (max-width: 950px) {
+    #rumiservice7 .rumiservice7_buttons .rumiservice7_button {
+        width: 160px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice7 .rumiservice7_buttons .rumiservice7_button {
+        font-size: 12px;
+        width: 130px;
+        height: 36px;
+        line-height: 36px;
+    }
+}
+#rumiservice7 .rumiservice7_buttons .rumiservice7_button br {
+    display: none;
+}
 #rumiservice7 .rumiservice7_buttons .rumiservice7_button:last-child {
     margin-right: 0;
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice7_buttons .rumiservice7_button:last-child {
+        display: none;
+    }
 }
 #rumiservice7 .rumiservice7_buttons .rumiservice7_button:hover {
     color: #ff5d09;
@@ -2662,11 +3163,22 @@ ul.box-filter > li ul {
     overflow: hidden;
     margin-bottom: 18px;
 }
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice7_table_header {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}
 #rumiservice7 .rumiservice7_table_header>div {
     float: left;
     font-size: 15px;
     color: #818181;
     opacity: 0.5;
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice7_table_header>div {
+        font-size: 12px;
+    }
 }
 #rumiservice7 .rumiservice_column_1 {
     width: 425px;
@@ -2678,9 +3190,40 @@ ul.box-filter > li ul {
         width: 335px;
     }
 }
+@media (max-width: 950px) {
+    #rumiservice7 .rumiservice_column_1 {
+        width: 300px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice7 .rumiservice_column_1 {
+        width: 220px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice_column_1 {
+        width: 140px;
+    }
+}
 #rumiservice7 .rumiservice_column_2 {
     width: 250px;
     padding-right: 10px;
+}
+@media (max-width: 950px) {
+    #rumiservice7 .rumiservice_column_2 {
+    width: 90px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice7 .rumiservice_column_2 {
+    width: 50px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice_column_2 {
+    width: 45px;
+    margin-right: 0px;
+    }
 }
 #rumiservice7 .rumiservice_column_3 {
     width: 175px;
@@ -2695,10 +3238,25 @@ ul.box-filter > li ul {
     width: 200px;
     text-align: center;
 }
+@media (max-width: 700px) {
+    #rumiservice7 .rumiservice_column_4 {
+        width: 160px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice_column_4 {
+        width: 70px;
+    }
+}
 #rumiservice7 .rumiservice_column_4 .has_problem {
     cursor: pointer;
     padding-left: 23px;
     position: relative;
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice_column_4 .has_problem {
+        padding-left: 5px;
+    }
 }
 #rumiservice7 .rumiservice_column_4 .has_problem svg {
     position: absolute;
@@ -2711,6 +3269,11 @@ ul.box-filter > li ul {
     font-size: 16px;
     color: #373737;
     border-bottom: 1px dotted #373737;
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice_column_4 .has_problem span {
+        font-size: 12px;
+    }
 }
 #rumiservice7 .rumiservice_column_4 .has_problem:hover span {
     border-bottom: none;
@@ -2732,6 +3295,11 @@ ul.box-filter > li ul {
     color: #818181;
     height: 45px;
 }
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice7_table_tr>div {
+        font-size: 12px;
+    }
+}
 #rumiservice7 .rumiservice7_table_tr .rumiservice_column_1 {
     color: #3b3b3b;
 }
@@ -2739,6 +3307,11 @@ ul.box-filter > li ul {
     color: #3b3b3b;
     font-size: 16px;
     border-bottom: 1px dotted #3b3b3b;
+}
+@media (max-width: 520px) {
+    #rumiservice7 .rumiservice7_table_tr .rumiservice_column_1 a {
+        font-size: 12px;
+    }
 }
 #rumiservice7 .rumiservice7_table_tr .rumiservice_column_1 a:hover {
     text-decoration: none;
@@ -3094,7 +3667,6 @@ ul.box-filter > li ul {
 #rumiservice11 .rumiservice11_block {
     width: 1200px;
     height: 243px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice10_bg.png") no-repeat;
     overflow: hidden;
 }
 #rumiservice11 .rumiservice11_subblock {
@@ -3118,12 +3690,21 @@ ul.box-filter > li ul {
 }
 #rumiservice12 {
     overflow: hidden;
-    margin-top: 33px;
+    margin: 20px auto;
 }
 #rumiservice12_left {
     width: 698px;
     float: left;
     position: relative;
+}
+@media (max-width: 700px) {
+    #rumiservice12 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #rumiservice12_left {
+        width: 100%;
+    }
 }
 #rumiservice12_left .rumiservice12_left_header {
     color: #3b3b3b;
@@ -3131,17 +3712,16 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     position: relative;
     z-index: 2;
+    margin-top: 50px;
+}
+@media (max-width: 700px) {
+    #rumiservice12_left .rumiservice12_left_header {
+        font-size: 24px;
+        margin-top: 20px;
+    }
 }
 #rumiservice12_left .rumiservice12_left_header span {
     color: #ff4900;
-}
-#rumiservice12_left .rumiservice12_left_text {
-    width: 732px;
-    height: 328px;
-    margin-top: -44px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice12_bg.jpg") no-repeat;
-    position: relative;
-    z-index: 1;
 }
 #rumiservice12_left .rumiservice12_left_text span {
     color: #ff4900;
@@ -3185,6 +3765,11 @@ ul.box-filter > li ul {
     position: relative;
     z-index: 3;
 }
+@media (max-width: 520px) {
+    #rumiservice12_right {
+        width: 100%;
+    }
+}
 #rumiservice12_right .rumiservice12_right_right {
     width: 100%;
 }
@@ -3207,21 +3792,7 @@ ul.box-filter > li ul {
     font-size: 15px;
     color: #818181;
     margin-bottom: 0;
-}
-#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_1 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_1.png") 17px center no-repeat;
-}
-#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_2 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_2.png") 20px center no-repeat;
-}
-#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_3 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_3.png") 19px center no-repeat;
-}
-#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_4 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_4.png") 18px center no-repeat;
-}
-#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_5 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_5.png") 19px center no-repeat;
+    box-sizing: border-box;
 }
 #rumiservice12_right .rumiservice12_right_left_bottomtext {
     margin-top: 10px;
@@ -3257,17 +3828,44 @@ ul.box-filter > li ul {
     margin-top: 5px;
 }
 #rumiservice12 .rumiservice12_right_bottomtext {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice12_right_bottomtext_bg.png") left center no-repeat;
+    background: url("../image/rumiservice12_right_bottomtext_bg.png") left center no-repeat;
     padding-left: 71px;
     font-size: 19px;
     color: #afafaf;
     font-family: "Roboto Condensed";
     margin-top: 23px;
 }
+@media (max-width: 700px) {
+    #rumiservice12 .rumiservice12_right_bottomtext {
+        font-size: 12px;
+    }
+}
 #rumiservice13 {
     width: 1200px;
     overflow: hidden;
     height: 337px;
+}
+@media (max-width: 1250px) {
+    #rumiservice13 {
+        width: 900px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice13 {
+        width: 680px;
+    }
+}
+@media (max-width: 700px) {
+    #rumiservice13 {
+        width: 480px;
+        height: 525px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice13 {
+        width: 300px;
+        height: 525px;
+    }
 }
 #rumiservice13 #rumiservice13_header {
     text-align: center;
@@ -3275,54 +3873,64 @@ ul.box-filter > li ul {
     color: #ffffff;
     font-family: "Roboto Condensed";
     margin-top: 27px;
+    margin-bottom: 20px;
 }
-#rumiservice13 .rumiservice13_blocks {} #rumiservice13 .rumiservice13_blocks .rumiservice13_block {
-    position: absolute;
-    top: 97px;
+@media (max-width: 700px) {
+    #rumiservice13 #rumiservice13_header {
+        font-size: 24px;
+    }
 }
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block1 {
-    left: 0px;
-    width: 237px;
-}
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block1 .rumiservice13_block_circle_image {
-    padding-top: 35px;
-}
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block2 {
-    left: 286px;
-    width: 287px;
-}
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block2 .rumiservice13_block_circle_image {
-    padding-top: 30px;
-}
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block3 {
-    left: 633px;
-    width: 287px;
-}
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block3 .rumiservice13_block_circle_image {
+#rumiservice13 .rumiservice13_blocks .rumiservice13_block_circle_image {
     padding-top: 37px;
 }
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block4 {
-    left: 973px;
-    width: 237px;
+#rumiservice13 .rumiservice13_blocks > div {
+    width: 25%;
+    float: left;
 }
-#rumiservice13 .rumiservice13_blocks .rumiservice13_block4 .rumiservice13_block_circle_image {
-    padding-top: 37px;
+@media (max-width: 700px) {
+    #rumiservice13 .rumiservice13_blocks > div {
+        width: 50%;
+        margin-bottom: 20px;
+    }
 }
 #rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle {
-    width: 133px;
+    width: 100%;
     height: 132px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_osnova.png") no-repeat;
+    background: url("../image/rumiservice13_osnova.png") no-repeat center;
     margin: 0 auto;
     position: relative;
     text-align: center;
+    float: left;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
 }
 #rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle .rumiservice13_block_circle_number {
     font-size: 15px;
     color: #ffffff;
-    font-family: "HelveticaNeueCyr-Bold";
     position: absolute;
-    left: 14px;
+    left: 32%;
     top: 8px;
+}
+@media (max-width: 1250px) {
+#rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle .rumiservice13_block_circle_number {
+left: 28%;
+}
+}
+@media (max-width: 950px) {
+#rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle .rumiservice13_block_circle_number {
+left: 18%;
+}
+}
+@media (max-width: 700px) {
+#rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle .rumiservice13_block_circle_number {
+left: 28%;
+}
+}
+@media (max-width: 520px) {
+#rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_circle .rumiservice13_block_circle_number {
+left: 16%;
+}
 }
 #rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_text {
     text-align: center;
@@ -3330,6 +3938,11 @@ ul.box-filter > li ul {
     font-size: 15px;
     color: #ffffff;
     font-family: "Roboto Condensed";
+}
+@media (max-width: 950px) {
+    #rumiservice13 .rumiservice13_blocks .rumiservice13_block .rumiservice13_block_text {
+        font-size: 12px;
+    }
 }
 #rumiservice14 {
     width: 1200px;
@@ -3433,12 +4046,6 @@ ul.box-filter > li ul {
     width: 500px;
     line-height: 20px;
 }
-#rumiservice15_right {
-    width: 552px;
-    float: left;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_left.png") no-repeat;
-    position: relative;
-}
 #rumiservice15_right .rumiservice15_left_header {
     color: #3b3b3b;
     font-size: 50px;
@@ -3538,13 +4145,28 @@ ul.box-filter > li ul {
 }
 /* footer */
 
-#footer {} #footer_top {
+#footer_top {
     overflow: hidden;
     height: 94px;
+}
+@media (max-width: 700px) {
+    #footer_top {
+        height: 55px;
+    }
+}
+@media (max-width: 520px) {
+    #footer_top {
+        height: 0px;
+    }
 }
 #footer_bottom {
     overflow: hidden;
     height: 341px;
+}
+@media (max-width: 700px) {
+    #footer_bottom {
+        height: 230px;
+    }
 }
 .footer_columns {
     overflow: hidden;
@@ -3574,6 +4196,35 @@ ul.box-filter > li ul {
     float: left;
     min-height: 1px;
 }
+@media (max-width: 950px) {
+    .footer_column_2 {
+        width: 170px;
+    }
+    .footer_column_3 {
+        width: 170px;
+    }
+    .footer_column_4 {
+        width: 335px;
+    }
+}
+@media (max-width: 700px) {
+    .footer_column_3 {
+        display: none;
+    }
+    .footer_column_4 {
+        width: 305px;
+    }
+}
+@media (max-width: 520px) {
+    .footer_column_2 {
+        display: none;
+    }
+    .footer_column_4 {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
 #footer_top h3 {
     font-size: 20px;
     color: #a1a1a1;
@@ -3581,8 +4232,19 @@ ul.box-filter > li ul {
     font-weight: normal;
     margin-top: 53px;
 }
+@media (max-width: 700px) {
+    #footer_top h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
 #footer_top .footer_columns>div:last-child h3 {
     text-align: right;
+}
+@media (max-width: 520px) {
+    #footer_top .footer_columns>div:last-child h3 {
+        display: none;
+    }
 }
 #footer_bottom ul {
     margin: 0;
@@ -3597,20 +4259,30 @@ ul.box-filter > li ul {
     color: #3b3b3b;
     font-family: "Roboto Condensed";
 }
+@media (max-width: 700px) {
+    #footer_bottom ul li {
+        margin-top: 12px;
+    }
+    #footer_bottom ul li a {
+        font-size: 14px;
+    }
+}
 #footer_bottom ul li a:hover {
     color: #ff4900;
     text-decoration: none;
 }
 #footer_logo {
-    width: 100%;
+    width: 216px;
     line-height: 70px;
     display: block;
+    text-align: center;
+    margin-top: 20px;
+    height: 100px;
 }
 #footer_logo img {
     vertical-align: middle;
-    height: 80%;
     max-width: 70%;
-    max-height: 70%;
+    max-height: 100%;
 }
 #footer_callback {
     margin-top: 28px;
@@ -3637,6 +4309,16 @@ ul.box-filter > li ul {
     margin-top: 22px;
     line-height: 20px;
 }
+@media (max-width: 700px) {
+    #footer_phone {
+        font-size: 12px;
+    }
+}
+@media (max-width: 520px) {
+    #footer_phone {
+        text-align: center;
+    }
+}
 #footer_phone span {
     display: block;
     font-size: 25px;
@@ -3655,6 +4337,12 @@ ul.box-filter > li ul {
     margin-top: 5px;
     position: relative;
 }
+@media (max-width: 520px) {
+    #footer_scheme {
+        float: none;
+        display: inline-block;
+    }
+}
 #footer_scheme svg {
     position: absolute;
     top: 0px;
@@ -3672,7 +4360,11 @@ ul.box-filter > li ul {
     margin-top: 38px;
 }
 /* ADDED: */
-
+@media (max-width: 700px) {
+    #footer_share {
+        display: none;
+    }
+}
 #footer_share ul li {
     display: inline-block;
 }
@@ -3703,12 +4395,30 @@ ul.box-filter > li ul {
     margin-top: 50px;
     overflow: hidden;
 }
+@media (max-width: 700px) {
+    #powered {
+        margin-top: 20px;
+    }
+}
 #powered_left {
     float: right;
     width: 50%;
     font-size: 15px;
     color: #757575;
     text-align: right;
+}
+@media (max-width: 700px) {
+    #powered_left {
+        float: left;
+        font-size: 12px;
+        width: 100%;
+        text-align: left;
+    }
+}
+@media (max-width: 700px) {
+    #powered_left {
+        text-align: center;
+    }
 }
 #powered_left span {
     color: #ff4900;
@@ -3717,9 +4427,20 @@ ul.box-filter > li ul {
     float: left;
     width: 50%;
 }
+@media (max-width: 520px) {
+    #powered_right {
+        width: 100%;
+        text-align: center;
+    }
+}
 #powered_right a {
     color: #ff4900;
     font-size: 15px;
+}
+@media (max-width: 700px) {
+    #powered_right a {
+        font-size: 12px;
+    }
 }
 #powered_right a:hover {
     text-decoration: underline;
@@ -4468,21 +5189,6 @@ sup {
 .contacts_desc_all {
     margin-top: 10px;
 }
-.contacts_desk_punkt1 {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_desk_punkt1.png") 0px 6px no-repeat;
-}
-.contacts_desk_punkt2 {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_desk_punkt2.png") 0px 5px no-repeat;
-}
-.contacts_desk_punkt3 {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_desk_punkt3.png") 0px 22px no-repeat;
-}
-.contacts_desk_punkt4 {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_desk_punkt4.png") 0px 4px no-repeat;
-}
-.contacts_desk_punkt5 {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_desk_punkt5.png") 0px 20px no-repeat;
-}
 .contacts_desk_punkt5>div {
     width: 330px;
     margin-top: 20px;
@@ -4539,19 +5245,6 @@ sup {
 }
 .header_punkt_active:hover {
     opacity: 1!important;
-}
-.punkt_yandex {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_icon1.png") 48px center no-repeat;
-}
-.punkt_yandex.header_punkt_active {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_icon1_active.png") 48px center no-repeat;
-}
-.punkt_scheme {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_icon2.png") 44px center no-repeat;
-}
-.punkt_scheme.header_punkt_active {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/contacts_icon2_active.png") 43px center no-repeat;
-    padding-left: 71px;
 }
 .content_yandex {
     height: 370px;
@@ -4915,11 +5608,48 @@ input[type='text'].contacts_input_email {
     width: 790px;
     margin-right: 20px;
 }
+@media (max-width: 1250px) {
+    .product-category-left-info {
+        width: 70%;
+        box-sizing: border-box;
+        margin-right: 0px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .product-category-left-info {
+        width: 100%;
+        padding-right: 0px;
+        text-align: left;
+    }
+}
 .product-category-right-info {
     width: 286px;
+    height: 286px;
     float: right;
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 286px;
+    text-align: center;
+    background: #fff;
+}
+.product-category-right-info img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 95%;
+}
+@media (max-width: 1250px) {
+    .product-category-right-info {
+        width: 30%;
+        box-sizing: border-box;
+        margin-top: 80px;
+        height: 240px;
+    }
+}
+@media (max-width: 700px) {
+    .product-category-right-info {
+        display: none;
+    }
 }
 body #miwifi-pop-ball {
     display: none!important;
@@ -4942,6 +5672,24 @@ g {
     #chart3 {
         width: 595px;
         height: 380px;
+        margin: 0 auto
+    }
+}
+@media (max-width: 950px) {
+    #chart1,
+    #chart2,
+    #chart3 {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto
+    }
+}
+@media (max-width: 700px) {
+    #chart1,
+    #chart2,
+    #chart3 {
+        width: 480px;
+        height: 300px;
         margin: 0 auto
     }
 }
@@ -5012,6 +5760,50 @@ g {
     box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.62);
     z-index: 9;
 }
+@media (max-width: 1250px) {
+    .my-popup .inner {
+        width: 800px;
+    }
+}
+@media (max-width: 950px) {
+    .my-popup .inner {
+        width: 600px;
+    }
+}
+@media (max-width: 700px) {
+    .my-popup .inner {
+        width: 400px;
+    }
+}
+@media (max-width: 520px) {
+    .my-popup .inner {
+        padding-top: 15px;
+        width: 300px;
+        max-height: 320px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+.my-popup .inner svg {
+    max-width: 70%;
+    max-height: 70px;
+    height: 70px;
+}
+@media (max-width: 1250px) {
+    .my-popup .inner svg {
+        max-height: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 520px) {
+    .my-popup .inner svg {
+        max-height: 30px;
+        height: 30px;
+        width: 30px;
+        margin-right: 15px ! important;
+        float: left;
+    }
+}
 .my-popup-form .form {
     background: #fff;
     padding: 20px;
@@ -5045,12 +5837,39 @@ g {
     font-size: 16px;
     margin-bottom: 20px;
 }
+@media (max-width: 950px) {
+    .my-popup .inner a {
+        width: 16.666666%;
+        font-size: 12px;
+    }
+}
+@media (max-width: 700px) {
+    .my-popup .inner a {
+        width: 20%;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 520px) {
+    .my-popup .inner a {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 3px;
+        text-align: left;
+        padding: 0px 20px;
+    }
+}
 .my-popup .inner a svg {
     max-width: 70%;
     max-height: 70px;
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+    .my-popup .inner a svg {
+        max-height: 35px;
+    }
 }
 .my-popup .inner p {
     width: 100%;
@@ -5060,6 +5879,11 @@ g {
     font-size: 18px;
     border-top-right-radius: 13px;
     border-top-left-radius: 13px;
+}
+@media (max-width: 520px) {
+    .my-popup .inner p {
+        display: none;
+    }
 }
 .closes {
     position: absolute;
@@ -5073,6 +5897,12 @@ g {
     background: url(../image/letter-x.svg);
     background-size: 100%;
     cursor: pointer;
+    z-index: 1px;
+}
+@media (max-width: 520px) {
+    .closes {
+        display: none;
+    }
 }
 .closes-form {
     position: absolute;
@@ -5117,6 +5947,11 @@ video.bg-video {
 	float: right;
     text-align: center;
 }
+@media (max-width: 950px) {
+    .form {
+        width: 100%;
+    }
+}
 .form  p {
     color: #fff;
     font-size: 16px;
@@ -5132,6 +5967,7 @@ video.bg-video {
 	border: 0px;
 	box-sizing: border-box;
 	margin-bottom: 10px;
+    height: 40px;
 }
 .form form button {
 	width: 100%;
@@ -5157,6 +5993,167 @@ video.bg-video {
     font-size: 18px;
     margin-right: 10px;
 }
+@media (max-width: 520px) {
+    .search-model span {
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+}
 .search-model input {
     height: 36px;
+}
+
+
+.rumiservice6_item_image svg {
+    width: 204px;
+    float: right;
+    margin-right: 47px;
+    margin-top: 35px;
+}
+@media (max-width: 950px) {
+    .rumiservice6_item_image svg {
+        width: 128px;
+        float: right;
+        margin-right: 25px;
+        margin-top: 35px;
+    }
+}
+@media (max-width: 950px) {
+    #rumiservice3,
+    #rumiservice6 {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .rumiservice6_item_image svg {
+        width: 80px;
+            margin-right: 10px;
+    margin-top: 35px;
+    }
+}
+@media (max-width: 700px) {
+    .rumiservice6_item_image svg {
+            margin-right: 110px;
+            margin-top: 10px;
+    }
+}
+@media (max-width: 520px) {
+    #rumiservice3 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .top-nav .inner_container {
+        max-height: 500px;
+    }
+    .top-nav {
+        position: absolute;
+        z-index: 99;
+        width: 480px;
+        left: 50%;
+        margin-left: -240px;
+        top: 142px;
+        display: none;
+    }
+    .top-nav.open {
+        display: block;
+    }
+    .top-nav a {
+        float: none;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        margin: 0px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .top-nav p {
+        display: none;
+    }
+}
+@media (max-width: 520px) {
+    .top-nav {
+        width: 300px;
+        margin-left: -150px;
+    }
+}
+
+#nav-icon1 {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  position: relative;
+  float: right;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 700px) {
+    #nav-icon1 {
+        display: block;
+    }
+}
+#nav-icon1.open {
+  margin-top: 8px;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 11px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 22px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }

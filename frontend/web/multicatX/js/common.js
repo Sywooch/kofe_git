@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	$(document).ready(function(){
+		$('#nav-icon1').click(function(){
+			$(this).toggleClass('open');
+			$('.top-nav').slideToggle(300, 'swing');
+		});
+	});
 	/* Search */
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';

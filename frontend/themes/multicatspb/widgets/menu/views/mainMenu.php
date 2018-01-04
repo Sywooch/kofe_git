@@ -1,7 +1,7 @@
 <?php
 $assets = Yii::getAlias('@web');
 ?>
-<nav class="colorbg">
+<nav class="colorborder">
     <div class="container">
         <ul>
             <?php foreach ($rows as $row): ?>

@@ -8,7 +8,7 @@ return [
         1 =>
         ['title' => 'Москва', 'tel' => '8 (495) 646-85-07', 'id' => 1, 'address' => 'ул. Барклая 7, БЦ Рубин, офис 507', 'mode' => 'с 10 до 20 ежедневно'],
         ['title' => 'Санкт-Петербург', 'tel' => '8 (812) 603-41-07', 'id' => 2, 'address' => 'м. Петроградская, ул. Ординарная 21', 'mode' => 'с 10 до 20 ежедневно'],
-    //['title' => 'Екатеринбург', 'tel' => '+7 495 995-25-03', 'id' => 3],
+    //['titttle' => 'Екатеринбург', 'tel' => '+7 495 995-25-03', 'id' => 3],
     ],
     'siteConfigs' => [
         'remontkofe' => [
@@ -1062,21 +1062,21 @@ return [
             'mono-brand' => true,
             'brand-id' => 20,
         ],
-        /*'delonghi-service-center' => [
-            'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
-            'urlSlash' => true,
-            'mono' => false,
-            'id' => 75,
-            'sitePrefix' => 'multi_cat',
-            'order-title' => 'МСК ЗАРЕЧНАЯ',
-            'theme' => 'multicatX',
-            'multi_category' => true,
-            'mono-brand' => true,
-            'brand-id' => 2,
-            'foreign_category' => true,
-            'category_id' => 0,
-        ],*/
+        /* 'delonghi-service-center' => [
+          'phone-1' => '8 (495) 181-00-07',
+          'phone-2' => '8 (812) 701-00-02',
+          'urlSlash' => true,
+          'mono' => false,
+          'id' => 75,
+          'sitePrefix' => 'multi_cat',
+          'order-title' => 'МСК ЗАРЕЧНАЯ',
+          'theme' => 'multicatX',
+          'multi_category' => true,
+          'mono-brand' => true,
+          'brand-id' => 2,
+          'foreign_category' => true,
+          'category_id' => 0,
+          ], */
         'bosch-support' => [
             'phone-1' => '8 (495) 181-00-07',
             'phone-2' => '8 (812) 701-00-02',
@@ -1561,7 +1561,7 @@ return [
         ],
         'bosch-fix' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 102,
@@ -1576,7 +1576,7 @@ return [
         ],
         'delonghi-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 103,
@@ -1591,7 +1591,7 @@ return [
         ],
         'krups-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 104,
@@ -1606,7 +1606,7 @@ return [
         ],
         'philips-fix' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 105,
@@ -1621,7 +1621,7 @@ return [
         ],
         'saeco-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 106,
@@ -1636,7 +1636,7 @@ return [
         ],
         'siemens-repair' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 107,
@@ -1651,7 +1651,7 @@ return [
         ],
         'service-centre-miele' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 108,
@@ -1666,7 +1666,7 @@ return [
         ],
         'jura-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 109,
@@ -1681,7 +1681,7 @@ return [
         ],
         'bork-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 110,
@@ -1696,7 +1696,7 @@ return [
         ],
         'schaerer-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 111,
@@ -1711,7 +1711,7 @@ return [
         ],
         'gaggia-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 112,
@@ -1726,7 +1726,7 @@ return [
         ],
         'franke-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 113,
@@ -1741,7 +1741,7 @@ return [
         ],
         'nuova-simonelli-support' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 114,
@@ -1756,7 +1756,7 @@ return [
         ],
         'melitta-service-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 115,
@@ -1771,7 +1771,7 @@ return [
         ],
         'la-cimbali-support' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 116,
@@ -1786,7 +1786,7 @@ return [
         ],
         'promac-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 117,
@@ -1801,7 +1801,7 @@ return [
         ],
         'faema-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 118,
@@ -1816,7 +1816,7 @@ return [
         ],
         'rancilio-center' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 119,
@@ -1831,7 +1831,7 @@ return [
         ],
         'wmf-remont' => [
             'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',            
+            'phone-2' => '8 (812) 701-00-02',
             'urlSlash' => true,
             'mono' => false,
             'id' => 120,
@@ -1844,7 +1844,7 @@ return [
             'foreign_category' => true,
             'category_id' => 0,
         ],
-         'proektor-service' => [
+        'proektor-service' => [
             'phone-1' => '8 (499) 450-90-08',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
@@ -1870,6 +1870,22 @@ return [
                 'common.js'
             ],
             'mainJSFileName' => 'scripts',
+        ],
+        'new-sites' => [
+            'phone-1' => '8 (495) 181-00-07',
+            'phone-2' => '8 (812) 701-00-02',
+            'urlSlash' => true,
+            'mono' => false,
+            'id' => 121,
+            'sitePrefix' => 'multi_cat',
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
+            'theme' => 'multicatXspb',
+            'multi_category' => true,
+            'mono-brand' => true,
+            'brand-id' => 20,
+            'foreign_category' => true,
+            'category_id' => 0,
+            'spb' => true,
         ],
     ]
 ];
