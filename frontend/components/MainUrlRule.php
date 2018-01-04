@@ -122,9 +122,9 @@ class MainUrlRule extends UrlRule {
                 ->one();
         $exUrl = explode('/', $url);
         if (isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true && count($exUrl) == 1 && strpos($url, 'remont') !== false) {
-            $sql = 'select * from {{%pages}} where lower(url) =:url and parent = ' . (int) $siteConfig['brand-id'] . ' limit 1';
+            $sql = 'select * from {{%pages}} where lower(url) =:url and parent = ' . (int) $siteConfig['brand-id'] . ' and active = 1 limit 1';
         } else {
-            $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
+            $sql = 'select * from {{%pages}} where lower(url) =:url and active = 1 limit 1';
         }
 
         $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
