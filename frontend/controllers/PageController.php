@@ -111,7 +111,7 @@ class PageController extends CController {
                         if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
                             $s = $oSelector->getSelector();
                             //if (isset($siteConfig['css']['replaceClasses']) && $siteConfig['css']['replaceClasses'] === true)
-                                $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                            $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
                             $oSelector->setSelector($s);
                         }
                     }
@@ -194,19 +194,40 @@ class PageController extends CController {
         exit;
     }
 
-    public function actionSitemap2() {
+    private function getAppleUrls() {
+        $sql = 'SELECT m.url, m.type, m.id, m.title, (
+                    CASE 
+                        WHEN b.title = \'Все бренды\' THEN m.title        
+                        ELSE b.title
+                    END) AS brand_title,
+                    (
+                    CASE 
+                        WHEN m.type = \'brand\' THEN \'\'     
+                        ELSE m.title
+                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.url != \'/\' ORDER BY m.id';
+        $pages = Yii::$app->db->createCommand($sql)->queryAll();
+        $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 and type = 2';
+        $services = Yii::$app->db->createCommand($sql)->queryAll();
+        $hostname = Yii::$app->request->hostInfo;
+        $urls = [];
+        foreach ($pages as $key => $page) {
+            $urls[] = $page;
+            if ($page['type'] == 'category') {
+                $brand_title = 'Apple';
+                $model_title = '';
+                foreach ($services as $service) {
+                    if ($service['type'] == 2) {
+                        $service['type'] = 'Неисправность';
+                    }
+                    $urls[] = ['url' => $page['url'] . '-' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
+                }
+            }
+        }
+        return $urls;
+    }
 
-        $siteConfig = self::getSiteConfig();
-        set_time_limit(0);
-        ini_set("memory_limit", '2048M');
-        ini_set("display_errors", false);
-        error_reporting(false);
-
-        if (isset($_GET['table']) && $_GET['table'] == 777) {
-            ini_set("memory_limit", '2048M');
-            ini_set("display_errors", true);
-            error_reporting(E_ALL);
-            $sql = 'SELECT m.url, m.type, m.id, m.title, (
+    private function getUrls($siteConfig) {
+        $sql = 'SELECT m.url, m.type, m.id, m.title, (
                     CASE 
                         WHEN b.title = \'Все бренды\' THEN m.title        
                         ELSE b.title
@@ -216,42 +237,60 @@ class PageController extends CController {
                         WHEN m.type = \'brand\' THEN \'\'     
                         ELSE m.title
                     END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.category_id = ' . $siteConfig['category_id'] . ' AND m.url != \'/\' ORDER BY m.id';
-            $pages = Yii::$app->db->createCommand($sql)->queryAll();
-            $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
-            $services = Yii::$app->db->createCommand($sql)->queryAll();
-            $hostname = Yii::$app->request->hostInfo;
-            $urls = [];
-            foreach ($pages as $key => $page) {
-                $urls[] = $page;
-                if ($page['type'] == 'model' || $page['type'] == 'brand') {
-                    if ($page['type'] == 'brand') {
-                        $brand_title = $page['title'];
-                        $model_title = '';
-                    } elseif ($page['type'] == 'model') {
-                        //echo $sql = 'SELECT title FROM {{%pages}} WHERE id = ' . $page['parent'];exit;
-                        //$brand = Yii::$app->db->createCommand($sql)->queryOne();
-                        $brand_title = $page['brand_title'];
-                        $model_title = $page['model_title'];
+        $pages = Yii::$app->db->createCommand($sql)->queryAll();
+        $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
+        $services = Yii::$app->db->createCommand($sql)->queryAll();
+        $hostname = Yii::$app->request->hostInfo;
+        $urls = [];
+        foreach ($pages as $key => $page) {
+            $urls[] = $page;
+            if ($page['type'] == 'model' || $page['type'] == 'brand') {
+                if ($page['type'] == 'brand') {
+                    $brand_title = $page['title'];
+                    $model_title = '';
+                } elseif ($page['type'] == 'model') {
+                    //echo $sql = 'SELECT title FROM {{%pages}} WHERE id = ' . $page['parent'];exit;
+                    //$brand = Yii::$app->db->createCommand($sql)->queryOne();
+                    $brand_title = $page['brand_title'];
+                    $model_title = $page['model_title'];
+                }
+                if ($brand_title == 'Все бренды') {
+                    $brand_title = $model_title;
+                }
+                if ($brand_title == $model_title) {
+                    $model_title = '';
+                }
+                foreach ($services as $service) {
+                    if ($service['type'] == 1) {
+                        $service['type'] = 'Услуга';
+                    } elseif ($service['type'] == 2) {
+                        $service['type'] = 'Неисправность';
                     }
-                    if ($brand_title == 'Все бренды') {
-                        $brand_title = $model_title;
-                    }
-                    if ($brand_title == $model_title) {
-                        $model_title = '';
-                    }
-                    foreach ($services as $service) {
-                        if ($service['type'] == 1) {
-                            $service['type'] = 'Услуга';
-                        } elseif ($service['type'] == 2) {
-                            $service['type'] = 'Неисправность';
-                        }
-                        $urls[] = ['url' => $hostname . '/' . $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
-                    }
+                    $urls[] = ['url' => $hostname . '/' . $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
                 }
             }
-            foreach ($services as $service) {
-                $urls[] = $service;
+        }
+        foreach ($services as $service) {
+            $urls[] = $service;
+        }
+    }
+
+    public function actionSitemap2() {
+        $siteConfig = self::getSiteConfig();
+        set_time_limit(0);
+        ini_set("memory_limit", '2048M');
+        ini_set("display_errors", false);
+        error_reporting(false);
+        if (isset($_GET['table']) && $_GET['table'] == 777) {
+            ini_set("memory_limit", '2048M');
+            ini_set("display_errors", true);
+            error_reporting(E_ALL);
+            if (isset($siteConfig['multi_category']) && $siteConfig['theme'] == 'ifixme') {
+                $urls = $this->getAppleUrls();
+            } else {
+                $urls = $this->getUrls($siteConfig);
             }
+            //print_r($urls);exit;
             $path = Yii::getAlias('@frontend') . '/web/uploads/';
             $fp = fopen($path . 'urls.csv', 'w');
             foreach ($urls as $fields) {
@@ -278,7 +317,20 @@ class PageController extends CController {
             }
             exit;
         }
-
+        if (isset($siteConfig['multi_category']) && $siteConfig['theme'] == 'ifixme') {
+            $urls = $this->getAppleUrls();
+            $hostname = Yii::$app->request->hostInfo;
+            $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+            foreach ($urls as $page) {
+                $url = $xmlIndex->addChild('url');
+                $page['url'] = $page['url'];
+                $url->addChild('loc', $hostname . '/' . $page['url']);
+                $url->addChild('lastmod', date("Y-m-d", time()));                
+            }            
+            header('content-type:text/xml');
+            echo $xmlIndex->asXML();
+            exit;
+        }
         if ($siteConfig['mono']) {
             $hostname = Yii::$app->request->hostInfo;
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
