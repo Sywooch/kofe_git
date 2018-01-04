@@ -311,6 +311,12 @@ class ListController extends CController {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
             $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
         }
+        
+        if (isset($siteConfig['category_id'])) {
+            $title = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
+            $metaDesc = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в сервисном центре "' . ucfirst($_SERVER['HTTP_HOST']) . '". Работает курьерская служба. Качество, гарантия, низкая цена.';
+        }
+        
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
         \Yii::$app->view->registerMetaTag([
