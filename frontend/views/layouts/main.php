@@ -194,7 +194,7 @@ $js = app\components\CController::$js;
             <?= \app\widgets\forms\Ask::widget(); ?>
             <section id="footer">
                 <div class="container">
-                    <p> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></p>
+                    <p> © <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></p>
                     <?php if (!$siteConfig['mono']): ?><p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p><?php endif; ?>
                     <div class="tel">
                         <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
