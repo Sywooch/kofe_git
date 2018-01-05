@@ -53,7 +53,7 @@ $form = ActiveForm::begin([
             <?= Html::submitButton('Оставить онлайн заявку', ['class' => 'btn', 'type' => 'button']) ?>                
             <?php ActiveForm::end() ?>
             <!--<a class="politica" href="javascript:void(0)">Политика конфиденциальности и обработки персональных данных</a>-->
-            <p class="data"> © 2017 <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></p>
+            <p class="data"> © <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></p>
         </div>
         <div class="left">
             <div class="footer-logo">
