@@ -1115,8 +1115,6 @@ img[align='right']
     width: auto;
     min-height: 5px;
     margin: 0 6px; 
-    height: 40px;
-
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
@@ -8440,4 +8438,10 @@ header .footer__list {
     .content__main .poster__request {
         display: none;
     }
+}
+.clear {
+    clear: both;
+    width: 100%;
+    display: block;
+    height: 1px;
 }
