@@ -8284,6 +8284,7 @@ img.brands__name {
     
 
 }
+/*
 .my-bg-logos .bg-brend {
     position: absolute;
     background-size: 3%;
@@ -8294,6 +8295,10 @@ img.brands__name {
     margin-top: -960px;
     background-position: 0px;
     background-repeat: space;
+}
+*/
+.my-bg-logos .bg-brend {
+    background: #fff ! important;
 }
 .my-bg-logos .bg-brend:before {
     background: #ffffffe8;
