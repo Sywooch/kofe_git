@@ -74,7 +74,6 @@ $form = ActiveForm::begin([
                             ],
                 ]);
                 ?>
-                <input type="hidden" name="nospam:blank" value="">
                 <div class="form__row">
                     <label class="form__element form__element_input">
                         <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
