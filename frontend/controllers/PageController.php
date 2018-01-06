@@ -177,8 +177,9 @@ class PageController extends CController {
 
     public function actionFavicon() {
         $siteConfig = self::getSiteConfig();
-        if (is_file($filename)) {
-            $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['id'] . '.ico';
+        $fileID = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['id'] . '.ico';
+        if (is_file($fileID)) {
+            $file = $fileID;
         } else {
             $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';
         }
