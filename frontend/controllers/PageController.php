@@ -177,7 +177,11 @@ class PageController extends CController {
 
     public function actionFavicon() {
         $siteConfig = self::getSiteConfig();
-        $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';
+        if (is_file($filename)) {
+            $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['id'] . '.ico';
+        } else {
+            $file = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'images/' . $siteConfig['sitePrefix'] . 'favicon.ico';
+        }
         $fp = fopen($file, 'rb');
         header('Content-Type: image/x-icon');
         header('Content-Length: ' . filesize($file));
@@ -325,8 +329,8 @@ class PageController extends CController {
                 $url = $xmlIndex->addChild('url');
                 $page['url'] = $page['url'];
                 $url->addChild('loc', $hostname . '/' . $page['url']);
-                $url->addChild('lastmod', date("Y-m-d", time()));                
-            }            
+                $url->addChild('lastmod', date("Y-m-d", time()));
+            }
             header('content-type:text/xml');
             echo $xmlIndex->asXML();
             exit;
