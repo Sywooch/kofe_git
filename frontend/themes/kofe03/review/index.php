@@ -57,7 +57,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
             <?php endforeach; ?>
             <div class="post__content">
                 <br>
-                <h2>Оставит отзыв</h2>
+                <h2>Оставить отзыв</h2>
                 <?php
 
                 use yii\helpers\Html;
@@ -79,7 +79,7 @@ $form = ActiveForm::begin([
                         <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
                     </label>
                     <label class="form__element form__element_input">
-                        <?= $form->field($model, 'email')->textInput(['placeholder' => 'Ваша почта', 'class' => 'form__input form__input_big']) ?>
+                        <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form__input form__input_big']) ?>
                     </label>
                     <label class="form__element form__element_input form__element_valid">
                         <?=
