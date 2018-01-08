@@ -1113,7 +1113,7 @@ img[align='right']
     display: block;
 
     width: auto;
-    min-height: 5px;
+    min-height: 50px;
     margin: 0 6px; 
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -8449,4 +8449,21 @@ header .footer__list {
     width: 100%;
     display: block;
     height: 1px;
+}
+.rating-sm {
+    font-size: 30px;
+}
+.rating-container .star {
+    font-family: arial;
+    line-height: 50px;
+}
+.rating-container .empty-stars {
+    color: #f42b36;
+    -webkit-text-stroke: none;
+    text-shadow: none;
+}
+.rating-container .filled-stars {
+        color: #13ce66;
+    -webkit-text-stroke: none;
+    text-shadow: none;
 }
