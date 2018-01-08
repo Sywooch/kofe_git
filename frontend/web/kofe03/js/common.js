@@ -309,25 +309,25 @@ $(window).on('load resize', function () {
             $(popupNow).find("input[type=hidden]").val(title);
         switch (title) {
             case 'Перезвоните мне':
-                yaCounter45675441.reachGoal("call_me");
+                yaCounter47134782.reachGoal("call_me");
                 break;
             case 'Вызвать курьера':
-                yaCounter45675441.reachGoal("call_courier");
+                yaCounter47134782.reachGoal("call_courier");
                 break;
             case 'Вызвать мастера':
-                yaCounter45675441.reachGoal("summon_master");
+                yaCounter47134782.reachGoal("summon_master");
                 break;
             case 'Заказать звонок':
-                yaCounter45675441.reachGoal("request_call");
+                yaCounter47134782.reachGoal("request_call");
                 break;
             case 'Статус ремонта':
-                yaCounter45675441.reachGoal("repair_status");
+                yaCounter47134782.reachGoal("repair_status");
                 break;
             case 'Заказать':
-                yaCounter45675441.reachGoal("request");
+                yaCounter47134782.reachGoal("request");
                 break;
             default:
-                yaCounter45675441.reachGoal("call_me");
+                yaCounter47134782.reachGoal("call_me");
         }
     });
     $('.popup__close, .popup__bg').on('click', function () {
