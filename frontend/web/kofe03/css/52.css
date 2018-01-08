@@ -351,3 +351,9 @@
 	color: #fff;
 	border-color: #ebb21c;
 }
+.rating-container .empty-stars {
+    color: #301d0f;
+}
+.rating-container .filled-stars {
+        color: #ebb21c;
+}

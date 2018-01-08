@@ -82,19 +82,19 @@ $form = ActiveForm::begin([
                         <?= $form->field($model, 'email')->textInput(['placeholder' => 'Ваша почта', 'class' => 'form__input form__input_big']) ?>
                     </label>
                     <label class="form__element form__element_input form__element_valid">
-                        Оценка
+                        <?=
+                        $form->field($model, 'rating')->widget(StarRating::classname(), [
+                            'pluginOptions' => [
+                                'size' => 'sm',
+                                'showCaption' => false,
+                                //'theme' => 'krajee-uni',
+                                'filledStar' => '&#x2605;',
+                                'emptyStar' => '&#x2606;'
+                            ]
+                        ]);
+                        ?>
                     </label>
-                    <?=
-                    $form->field($model, 'rating')->widget(StarRating::classname(), [
-                        'pluginOptions' => [
-                            'size' => 'sm',
-                            'showCaption' => false,
-                            //'theme' => 'krajee-uni',
-                            'filledStar' => '&#x2605;',
-                            'emptyStar' => '&#x2606;'
-                        ]
-                    ]);
-                    ?>
+                    
                 </div>
                 <div class="form__row">
                     <label class="form__element form__element_textarea">
