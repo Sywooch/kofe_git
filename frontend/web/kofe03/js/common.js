@@ -37,8 +37,8 @@ $(function () {
         }, 500);
         return false;
     });
-    $(".office-content.other-table h2").click(function() {
-      $('.other-table').toggleClass( "active" );
+    $(".office-content.other-table h2").click(function () {
+        $('.other-table').toggleClass("active");
     });
     $('.menu__tab').on('mouseover', function () {
         $(this).addClass('menu__tab_active').siblings().removeClass('menu__tab_active');
@@ -299,14 +299,36 @@ $(window).on('load resize', function () {
         e.preventDefault();
         $('.popup').removeClass('popup_active');
         $('body').addClass('popup-open');
-		var title = $(this).find(".menu__action-text").text();
-		var popupNow = '.popup_' + $(this).data('popup');
-		if(title == "")
-			title = $(this).text();
-		$(popupNow).find("h3").text(title);        
+        var title = $(this).find(".menu__action-text").text();
+        var popupNow = '.popup_' + $(this).data('popup');
+        if (title == "")
+            title = $(this).text();
+        $(popupNow).find("h3").text(title);
         $(popupNow).addClass('popup_active');
-        if(title == "Статус ремонта")
+        if (title == "Статус ремонта")
             $(popupNow).find("input[type=hidden]").val(title);
+        switch (title) {
+            case 'Перезвоните мне':
+                yaCounter45675441.reachGoal("call_me");
+                break;
+            case 'Вызвать курьера':
+                yaCounter45675441.reachGoal("call_courier");
+                break;
+            case 'Вызвать мастера':
+                yaCounter45675441.reachGoal("summon_master");
+                break;
+            case 'Заказать звонок':
+                yaCounter45675441.reachGoal("request_call");
+                break;
+            case 'Статус ремонта':
+                yaCounter45675441.reachGoal("repair_status");
+                break;
+            case 'Заказать':
+                yaCounter45675441.reachGoal("request");
+                break;
+            default:
+                yaCounter45675441.reachGoal("call_me");
+        }
     });
     $('.popup__close, .popup__bg').on('click', function () {
         $('body').removeClass('popup-open');

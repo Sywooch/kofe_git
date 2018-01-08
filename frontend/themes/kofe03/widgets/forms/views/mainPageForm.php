@@ -16,7 +16,9 @@ $form = ActiveForm::begin([
                 'fieldConfig' => [
                     'template' => '{input}',
                 ],
-    ]);
+    ]);    
+    $validatejs = "$('#main-form').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter45675441.reachGoal(\"app_for_shares\");}});";
+    $this->registerJs($validatejs, \yii\web\View::POS_END);
     ?>    
     <div class="form__box">
         <?php if (!empty($h1)): ?>
