@@ -5108,6 +5108,7 @@ footer .connect__call p {
 .articles__next,
 .consultation__next,
 .brands__next,
+.models__next,
 .garantya__next,
 .reviews__prev,
 .articles__prev,
@@ -5134,6 +5135,7 @@ footer .connect__call p {
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover,
+.models__next:hover,
 .garantya__next:hover,
 .reviews__prev:hover,
 .articles__prev:hover,
@@ -5147,6 +5149,7 @@ footer .connect__call p {
 .popup__review .articles__next,
 .popup__review .consultation__next,
 .popup__review .brands__next,
+.popup__review .models__next,
 .popup__review .garantya__next,
 .popup__review .reviews__prev,
 .popup__review .articles__prev,
@@ -5161,6 +5164,7 @@ footer .connect__call p {
 .articles__next,
 .consultation__next,
 .brands__next,
+.models__next,
 .garantya__next
 {
     right: -20px;
@@ -5172,6 +5176,7 @@ footer .connect__call p {
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover,
+.models__next:hover,
 .garantya__next:hover
 {
     background-image: url('../images/arrow_right_active6170.svg?v=1485504369723');
@@ -5180,6 +5185,7 @@ footer .connect__call p {
 .popup__review .articles__next,
 .popup__review .consultation__next,
 .popup__review .brands__next,
+.popup__review .models__next,
 .popup__review .garantya__next
 {
     right: -25px; 
@@ -5815,6 +5821,7 @@ footer .connect__call p {
     margin-top: 0px;
     line-height: 18px;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .brands__box
