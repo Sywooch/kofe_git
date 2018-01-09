@@ -8,6 +8,7 @@
 nbproject
 /frontend/web/assets
 /frontend/web/uploads
+/backend/web/assets
 # zend studio for eclipse project files
 .buildpath
 .project

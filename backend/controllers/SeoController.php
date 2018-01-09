@@ -8,6 +8,7 @@ use app\models\SeoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use \yii\filters\AccessControl;
 
 /**
  * SeoController implements the CRUD actions for Seo model.
@@ -16,6 +17,16 @@ class SeoController extends Controller {
 
     public function behaviors() {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'create', 'update', 'delete', 'view', 'redirects'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -23,6 +34,26 @@ class SeoController extends Controller {
                 ],
             ],
         ];
+    }
+
+    public static function getSiteConfig($host) {
+        $hostArr = explode('.', $host);
+        $ad = '.' . end($hostArr);
+        $host = str_replace([$ad, 'http://', 'https://'], '', $host);
+        return Yii::$app->params['siteConfigs'][$host];
+    }
+
+    public function actionRedirects() {
+        if (isset($_POST['save'])) {
+            
+        }
+        $sites = [];
+        foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
+            $sites[$config['id']] = $title . '.ru';
+        }
+        return $this->render('redirects', [
+                    'sites' => $sites,
+        ]);
     }
 
     /**
@@ -58,7 +89,7 @@ class SeoController extends Controller {
     public function actionCreate($url) {
         $model = new Seo();
         $model->url = $url;
-        
+
         $m = $this->findModelbyUrl($url, $_GET['site_id']);
 
         if ($m !== null)
@@ -66,7 +97,7 @@ class SeoController extends Controller {
         if ($model->load(Yii::$app->request->post())) {
             $model->site_id = $_GET['site_id'];
             $model->save();
-            
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -81,9 +112,9 @@ class SeoController extends Controller {
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id) {        
+    public function actionUpdate($id) {
         if (isset($_GET['url'])) {
-            $model = $this->findModelbyUrl(urldecode($_GET['url']), $_GET['site_id']);            
+            $model = $this->findModelbyUrl(urldecode($_GET['url']), $_GET['site_id']);
             if ($model === null) {
                 throw new NotFoundHttpException('The requested page does not exist.');
             }
@@ -112,7 +143,7 @@ class SeoController extends Controller {
         return $this->redirect(['index']);
     }
 
-    protected function findModelbyUrl($url, $id) {        
+    protected function findModelbyUrl($url, $id) {
         $model = Seo::findOne(['url' => $url, 'site_id' => $id]);
         return $model;
     }

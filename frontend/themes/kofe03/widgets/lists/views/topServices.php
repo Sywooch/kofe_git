@@ -8,9 +8,16 @@ $siteConfig = app\components\CController::getSiteConfig();
             <h2 class="content__title">Реанимируем, если <?= app\components\CController::$category['2_title']; ?>:</h2>
             <ul class="popular__list">
                 <?php foreach ($services as $service): ?>
+                    <?php
+                    $fileId = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/images/services/' . $siteConfig['id'] . '/' . $service['image'];
+                    if (is_file($fileId)) {
+                        $src = $assets . $siteConfig['theme'] . '/images/services/' . $siteConfig['id'] . '/' . $service['image'];
+                    } else
+                        $src = $assets . $siteConfig['theme'] . '/images/services/' . $service['image'];
+                    ?>
                     <li class="popular__item">
                         <a class="popular__box" href="/<?= $service['url']; ?>">
-                            <div class="popular__cover" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $service['image']; ?>);"></div>
+                            <div class="popular__cover" style="background-image: url(<?= $src; ?>);"></div>
                             <div class="popular__text">
                                 <p class="popular__name"><?= $service['title']; ?></p>
                                 <?= $service['description']; ?>
