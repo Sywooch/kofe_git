@@ -11,7 +11,7 @@ class CController extends \yii\web\Controller {
     public static $js;
     public static $category;
 
-    public static function replaceJS($js) { 
+    public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
     }
 
@@ -27,6 +27,10 @@ class CController extends \yii\web\Controller {
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
         $siteConfig = self::getSiteConfig();
+//        $text = "{Добрый день|Доброе утро}! Какая {на улице|за {окном|бортом}} {прекрасная|очаровательная|великолепная} погода!";
+//        $generator = new TextTemplateGenerator($text);
+//        $result = $generator->generate(1);
+//        print_r($result);exit;
         if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
             Yii::$app->view->theme = new \yii\base\Theme([
                 'pathMap' => [
@@ -98,9 +102,9 @@ class CController extends \yii\web\Controller {
         $branch = [];
         foreach ($rows as $row) {
             $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'model\' and active = 1 and parent = ' . $row['id'] . ' ORDER BY sort LIMIT 6';
-            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();            
+            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();
             $branch[] = $row;
-        }        
+        }
         return $branch;
     }
 

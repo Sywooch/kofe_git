@@ -7,6 +7,7 @@ use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use app\components\CController;
 use SimpleXMLElement;
+use app\components\JSMin;
 
 /**
  * Site controller
@@ -42,18 +43,19 @@ class PageController extends CController {
             $js = str_replace($classes, $repClasses, $js);
         }
         // init the request, set some info, send it and finally close it
-        $ch = curl_init($url);
-        curl_setopt_array($ch, [
-            CURLOPT_URL => $url,
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POST => true,
-            CURLOPT_HTTPHEADER => ["Content-Type: application/x-www-form-urlencoded"],
-            CURLOPT_POSTFIELDS => http_build_query(["input" => $js])
-        ]);
-        $minified = curl_exec($ch);
-        curl_close($ch);
+//        $ch = curl_init($url);
+//        curl_setopt_array($ch, [
+//            CURLOPT_URL => $url,
+//            CURLOPT_RETURNTRANSFER => true,
+//            CURLOPT_POST => true,
+//            CURLOPT_HTTPHEADER => ["Content-Type: application/x-www-form-urlencoded"],
+//            CURLOPT_POSTFIELDS => http_build_query(["input" => $js])
+//        ]);
+//        $minified = curl_exec($ch);
+//        curl_close($ch);
         // output the $minified
-        return $minified . "\r\n";
+        $minified = JSMin::minify($js);
+        return $minified;
     }
 
     private function minifyCss($file) {
@@ -166,7 +168,7 @@ class PageController extends CController {
             $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/js/';
             $jsPath = Yii::getAlias('@frontend') . '/web/' . $siteConfig['theme'] . '/js/';
         }
-        file_put_contents($jsPath . $allJS, '');
+        file_put_contents($jsPath . $allJS, null);
         foreach ($jsFiles as $jsFile) {
             if (in_array($siteConfig['category_id'], [1, 2, 3, 4, 5, 6]) && $jsFile == 'main.js' && !isset($siteConfig['theme'])) {
                 $js = Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'js/';

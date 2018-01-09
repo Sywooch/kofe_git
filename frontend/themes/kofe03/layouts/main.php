@@ -439,7 +439,7 @@ $js = app\components\CController::$js;
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=2"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=4"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
