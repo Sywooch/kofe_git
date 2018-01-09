@@ -5789,6 +5789,27 @@ footer .connect__call p {
     -ms-flex-align: center;
     align-items: center;
 }
+.models__item
+{
+    line-height: 170px; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    box-sizing: border-box;
+    height: 170px;
+    padding: 0 5px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
 .brands__box
 {
@@ -8045,7 +8066,7 @@ img.brands__name {
     max-height: 85px;
 }
 .models-logo img.brands__name {
-    max-height: 170px;
+    max-height: 150px;
 }
 .pagination {
     position: relative;
