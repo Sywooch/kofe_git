@@ -491,6 +491,48 @@ if (Yii::$app->session->getFlash('success')) {
             }
         });
     });
+    $(function () {
+        var swiper2 = new Swiper('.models__slider', {
+            loop: true,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            paginationClickable: true,
+            breakpoints: {
+                1260: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                1000: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                900: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                },
+                800: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                560: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                }
+            },
+            pagination: '.models__pagination',
+            nextButton: '.models__next',
+            prevButton: '.models__prev'
+        });
+        $(".fancybox-button").fancybox({
+            prevEffect      : 'none',
+            nextEffect      : 'none',
+            closeBtn        : false,
+            helpers     : {
+                title   : { type : 'inside' },
+                buttons : {}
+            }
+        });
+    });
 </script>
 
 <?php $this->endBody() ?>    
