@@ -5813,6 +5813,8 @@ footer .connect__call p {
 
 .models__item p {
     margin-top: 0px;
+    line-height: 18px;
+    font-size: 14px;
 }
 
 .brands__box
