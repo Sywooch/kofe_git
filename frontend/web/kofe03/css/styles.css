@@ -8044,6 +8044,9 @@ img.brands__name {
 .garantya-logo img.brands__name {
     max-height: 85px;
 }
+.garantya-logo img.models__name {
+    max-height: 170px;
+}
 .pagination {
     position: relative;
     clear: both;

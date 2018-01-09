@@ -87,52 +87,52 @@ $this->title = $title;
     <aside class="brands">
         <div class="brands__inner">
             <h3 class="content__subtitle">Мы осуществляем ремонт кофемашин <b>следующих брендов</b></h3>
-            <div class="brands__carousel garantya-logo">
+            <div class="brands__carousel models-logo">
                 <div class="swiper-container models__slider">
                     <div class="swiper-wrapper brands__list">
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                         <div class="swiper-slide brands__item">
                             <a href="#" title="">
-                                <img class="brands__name brands__name_bosch" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
+                                <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
                     </div>
