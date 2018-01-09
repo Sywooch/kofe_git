@@ -5791,7 +5791,7 @@ footer .connect__call p {
 }
 .models__item
 {
-    line-height: 170px; 
+    line-height: 1.75; 
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5809,6 +5809,10 @@ footer .connect__call p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.models__item p {
+    margin-top: 0px;
 }
 
 .brands__box
