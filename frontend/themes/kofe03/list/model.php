@@ -95,42 +95,42 @@ $this->title = $title;
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
                         </div>
-                        <div class="swiper-slide brands__item">
+                        <div class="swiper-slide models__item">
                             <a href="#" title="">
                                 <img class="brands__name" src="http://kofe03.ru/uploads/images/thumbs/174x230remont-kofemashin-remont-kofemashin-aeg-cf-300.jpg">
                             </a>                       
