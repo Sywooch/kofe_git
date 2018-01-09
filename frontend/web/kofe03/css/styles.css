@@ -5114,6 +5114,7 @@ footer .connect__call p {
 .articles__prev,
 .consultation__prev,
 .brands__prev,
+.models__prev,
 .garantya__prev
 {
     position: absolute;
@@ -5141,6 +5142,7 @@ footer .connect__call p {
 .articles__prev:hover,
 .consultation__prev:hover,
 .brands__prev:hover,
+.models__prev:hover,
 .garantya__prev:hover
 {
     background-image: url('../images/arrow_left_active6170.svg?v=1485504369723');
@@ -5155,6 +5157,7 @@ footer .connect__call p {
 .popup__review .articles__prev,
 .popup__review .consultation__prev,
 .popup__review .brands__prev,
+.popup__review .models__prev,
 .popup__review .garantya__prev
 {
     left: -25px;
