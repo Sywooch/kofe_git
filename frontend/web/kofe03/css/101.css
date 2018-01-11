@@ -367,3 +367,14 @@ footer .connect__phone a[href^="tel"],
 .complain h3:first-child {
     color: #fff;
 }
+
+.out-imgb .menu__item {
+    font-size: 12px;
+}
+nav .out-imgb .menu__item {
+    display: none;
+    font-size: 12px;
+}
+nav .out-imgb .menu__item:nth-child(-n+119) {
+    display: block;
+}
