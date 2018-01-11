@@ -1,4 +1,4 @@
-    <?php
+<?php
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
@@ -12,7 +12,7 @@ $this->title = $title;
                         <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
                     <?php endif; ?>
                 </div>
-                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?=' в ' . Yii::$app->session['region']['titleRod']?></span>
+                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?= ' в ' . Yii::$app->session['region']['titleRod'] ?></span>
                 <div class="clear"></div>
                 <div class="tseni-na-uslugi">
                     Стоимость услуги: <span>от 595 ₽</span>
@@ -62,8 +62,8 @@ $this->title = $title;
                                     аппарат. Мы держим в запасе детали, закупаемые у надежных 
                                     поставщиков, с которыми работаем с момента основания фирмы. 
                                     В центре действует отдел курьеров, которые занимаются перевозкой
-                                     кофемашины по согласованности с клиентом. Контактные номера 
-                                     размещены на сайте – там же имеется форма для обратного звонка и заявки на курьера.                    
+                                    кофемашины по согласованности с клиентом. Контактные номера 
+                                    размещены на сайте – там же имеется форма для обратного звонка и заявки на курьера.                    
                                 </p>
                             <?php endif; ?>
                         </div>
@@ -78,7 +78,7 @@ $this->title = $title;
         </div>
     </section>
 
-    
+
     <?= kofe03\widgets\other\Advantage::widget(); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 2, 'is_popular' => true, 'title' => 'Цены по неисправностям']); ?>
     <?= kofe03\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Цены по услугам']); ?>
@@ -87,6 +87,12 @@ $this->title = $title;
         <div class="office__inner">
             <h2 style="margin:20px 0 0 0;">Профессиональный ремонт моделей <?= $pageInfo['title']; ?></h2>
             <?= kofe03\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
+        </div>
+    </section>
+    <section class="office-content">
+        <div class="office__inner">
+            <div class="clear"></div>
+            <?= $pageInfo['full_description']; ?>
         </div>
     </section>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
