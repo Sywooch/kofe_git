@@ -5109,12 +5109,14 @@ footer .connect__call p {
 .consultation__next,
 .brands__next,
 .models__next,
+.services-slider_next,
 .garantya__next,
 .reviews__prev,
 .articles__prev,
 .consultation__prev,
 .brands__prev,
 .models__prev,
+.services-slider_prev,
 .garantya__prev
 {
     position: absolute;
@@ -5132,17 +5134,23 @@ footer .connect__call p {
 
     background: url('../images/arrow_left6170.svg?v=1485504369723') no-repeat 50% 50%;
 }
+.services-slider_prev
+{
+    left: 10px;
+}
 .reviews__next:hover,
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover,
 .models__next:hover,
+.services-slider_next:hover,
 .garantya__next:hover,
 .reviews__prev:hover,
 .articles__prev:hover,
 .consultation__prev:hover,
 .brands__prev:hover,
 .models__prev:hover,
+.services-slider_prev:hover,
 .garantya__prev:hover
 {
     background-image: url('../images/arrow_left_active6170.svg?v=1485504369723');
@@ -5152,12 +5160,14 @@ footer .connect__call p {
 .popup__review .consultation__next,
 .popup__review .brands__next,
 .popup__review .models__next,
+.popup__review .services-slider_next,
 .popup__review .garantya__next,
 .popup__review .reviews__prev,
 .popup__review .articles__prev,
 .popup__review .consultation__prev,
 .popup__review .brands__prev,
 .popup__review .models__prev,
+.popup__review .services-slider_prev,
 .popup__review .garantya__prev
 {
     left: -25px;
@@ -5168,9 +5178,17 @@ footer .connect__call p {
 .consultation__next,
 .brands__next,
 .models__next,
+.services-slider_next,
 .garantya__next
 {
     right: -20px;
+    left: auto;
+
+    background-image: url('../images/arrow_right6170.svg?v=1485504369723');
+}
+.services-slider_next
+{
+    right: 10px;
     left: auto;
 
     background-image: url('../images/arrow_right6170.svg?v=1485504369723');
@@ -5180,6 +5198,7 @@ footer .connect__call p {
 .consultation__next:hover,
 .brands__next:hover,
 .models__next:hover,
+.services-slider_next:hover,
 .garantya__next:hover
 {
     background-image: url('../images/arrow_right_active6170.svg?v=1485504369723');
@@ -5189,6 +5208,7 @@ footer .connect__call p {
 .popup__review .consultation__next,
 .popup__review .brands__next,
 .popup__review .models__next,
+.popup__review .services-slider_next,
 .popup__review .garantya__next
 {
     right: -25px; 
@@ -5749,6 +5769,10 @@ footer .connect__call p {
     border-top: 1px solid #e9eaec;
     border-bottom: 1px solid #e9eaec;
 }
+.brands__carousel.services-slider
+{
+    padding: 15px 2%;
+}
 .brands__carousel.partnyori-logo {
     padding: 10px 5%;
 }
@@ -5766,6 +5790,11 @@ footer .connect__call p {
     {
         margin-right: 10%; 
         margin-left: 10%;
+    }
+    .brands__carousel.services-slider
+    {
+        margin-right: 0%; 
+        margin-left: 0%;
     }
 }
 @media screen and (max-width: 600px)
@@ -8506,4 +8535,12 @@ header .footer__list {
         color: #13ce66;
     -webkit-text-stroke: none;
     text-shadow: none;
+}
+.services-slider .services-slider_next,
+.services-slider .services-slider_prev {
+    opacity: 0.6;
+}
+.services-slider:hover .services-slider_next,
+.services-slider:hover .services-slider_prev {
+    opacity: 1;
 }
