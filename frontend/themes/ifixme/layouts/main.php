@@ -83,7 +83,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="right">
                             <span class="name">Телефон</span>
-                            <a href="tel:+74951520707">+7 (495) 152 07 07</a>
+                            <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="clear"></div>
                     </div>
