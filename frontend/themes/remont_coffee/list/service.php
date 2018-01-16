@@ -21,7 +21,7 @@ $this->title = $title;
             </div>
             <?php if (!empty($pageInfo['description'])): ?>
                 <div<?= !empty($pageInfo['image']) ? ' class="textss"' : '' ?>>
-                    <?= $pageInfo['description']; ?>
+                    <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $pageInfo['description']); ?>
                 </div>
             <?php endif; ?>
             <?php if (!empty($pageInfo['image'])): ?>

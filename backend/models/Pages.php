@@ -78,7 +78,7 @@ class Pages extends \yii\db\ActiveRecord {
         return $this->parent->page_title;
     }
 
-    function build_tree($arrs, $parent_id = 0, $level = 0) {
+    public function build_tree($arrs, $parent_id = 0, $level = 0) {
         if ($level == 0)
             $this->arr[0] = 'Нет';
         foreach ($arrs as $arr) {

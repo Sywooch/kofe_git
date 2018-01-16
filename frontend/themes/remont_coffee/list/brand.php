@@ -23,7 +23,7 @@ $this->title = $title;
         <?= remont_coffee\widgets\lists\Neispravnost::widget(); ?>
         <div class="bl-text">
             <?php if (!empty($pageInfo['description'])): ?>
-                <?= $pageInfo['description']; ?>
+                <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
             <?php else: ?>
                 <h2>Ремонт кофемашин <?= $pageInfo['title']; ?> / в <?= Yii::$app->session['region']['titleRod'] ?></h2>
                 <p>  

@@ -19,7 +19,7 @@ $this->title = $title;
         <div class="bl-text">            
             <div class="bl-text">
                 <?php if (!empty($pageInfo['description'])): ?>
-                    <?= $pageInfo['description']; ?>
+                    <?= str_replace('#model_en#', $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
                 <?php else: ?>
                     <h2><?= 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h2>
                     <p>

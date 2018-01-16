@@ -27,10 +27,7 @@ class CController extends \yii\web\Controller {
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
         $siteConfig = self::getSiteConfig();
-//        $text = "{Добрый день|Доброе утро}! Какая {на улице|за {окном|бортом}} {прекрасная|очаровательная|великолепная} погода!";
-//        $generator = new TextTemplateGenerator($text);
-//        $result = $generator->generate(1);
-//        print_r($result);exit;
+
         if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
             Yii::$app->view->theme = new \yii\base\Theme([
                 'pathMap' => [

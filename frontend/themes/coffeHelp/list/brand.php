@@ -26,7 +26,7 @@ $this->title = $title;
                     </h1>
                     <span class="section-promo-desc">
                         <?php if (!empty($pageInfo['description'])): ?>
-                            <?= $pageInfo['description']; ?>
+                            <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
                         <?php else: ?>                
                             <p>  
                                 Инженеры нашего сервис центра выполнят <?= mb_strtolower(app\components\CController::$category['rod_title'], 'utf-8'); ?> <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    

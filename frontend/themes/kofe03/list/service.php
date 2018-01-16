@@ -49,7 +49,7 @@ $this->title = $title;
                     </nav>
                     <div class="con-infos">
                         <div class="left">
-                            <?= $seoText; ?>
+                            <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
                         </div>                        
                         <div class="right for_pc">
                             <?php if (!empty($brandImage) && !empty($page['type']) && $page['type'] == 'brand'): ?>
