@@ -141,7 +141,7 @@ $js = app\components\CController::$js;
                                         '; ?>
                                         </span>
                                     <br> 
-                                    <a href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Наб. канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
+                                    <a href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Набережная канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
                                 </div>
                                 <div class="connect__schedule">Работаем ежедневно <span class="color-green">c 09:00 до 20:00</span><br class="connect_br">без выходных и праздничных дней</div>
                                 <div class="connect__call">
@@ -158,7 +158,7 @@ $js = app\components\CController::$js;
                 <?= $siteConfig['id'] == 52 ? '
                     <div class="top-menu-mobi">
                         <a href="tel:88125012002">8 (812) 501-20-02</a>
-                        <span class="nav__text">Звоните ежедневно с 9:00 до 21:00 м. Сенная,<br> м. Спасская, Наб. канала Грибоедова, д. 59</span>
+                        <span class="nav__text">Звоните ежедневно с 9:00 до 21:00 м. Сенная,<br> м. Спасская, Набережная канала Грибоедова, д. 59</span>
                     </div>
                 ' : '
                     <div class="top-menu-mobi">
