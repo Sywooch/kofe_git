@@ -1,4 +1,11 @@
-<?php $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : ''; ?>
+<?php
+$prefUrl = '';
+$url = Yii::$app->request->pathInfo;
+$url = explode('/', $url);
+array_pop($url);
+if (!empty($url))
+    $prefUrl = implode('/', $url);
+?>
 <aside>
     <div class="brands__carousel services-slider">
         <div class="swiper-container services__slider">
