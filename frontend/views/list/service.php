@@ -40,7 +40,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="clear"></div>
             </section>
             <section id="zakaz">
-                <?php if ($pageInfo['type'] == 2 && !in_array($pageInfo['id'], [17, 18]) && !empty($page)): ?>
+                <?php if ($pageInfo['type'] == 2 && !in_array($pageInfo['id'], [17, 18]) && !empty($page) && !empty($page['title'])): ?>
                 <p class="h3">Если <?= app\components\CController::$category['2_title']; ?> <?= $page['title']; ?> <?= mb_strtolower($pageInfo['title'], 'utf8'); ?> - закажите Бесплатную консультацию специалиста!</p>
                 <?php else: ?>
                     <p class="h3">Закажите Бесплатную консультацию специалиста!</p>
