@@ -157,10 +157,10 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <p>                        
                         Номер телефона: <span class="moskva"><?= Yii::$app->session['region']['phone']; ?></span><br />
                         Работаем без выходных с 08:00 до 22:00<br />
-                        Центральный офис: м. Сенная площадь, м. Спасская, ул Ефимова 2, ТЦ ПИК, этаж 1, павильон 100
+                        Центральный офис: м. Площадь Восстания, г. Санкт-Петербург, ул. Гончарная, д. 2
                     </p>
                     <div class="map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aef863b008884b6b061a3182be8f2ee3235ee72e0176c43a2c9681fa7d00a56c5&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69233940afbce05864f5f88d239950db090b77c847d3a6303e20d2a3d89c35b9&amp;width=940&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             <?php endif; ?>
