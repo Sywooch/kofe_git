@@ -1182,7 +1182,7 @@ return [
         'miele-remont-center' => [
             'phone-1' => '8 (812) 648-38-08',
             'phone-2' => '8 (812) 648-38-08',
-            'spb' => true,,
+            'spb' => true,
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
