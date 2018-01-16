@@ -31,9 +31,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                         <p>Время работы: 09:00 &ndash; 20:00</p>
                         <div class="post__maps">
                             <?php if ($siteConfig['id'] == 52): ?>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69233940afbce05864f5f88d239950db090b77c847d3a6303e20d2a3d89c35b9&amp;width=930&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8bc8dddb5cd960ef78d0265dc216cc11458dce981fd0009d2212ac2608f36d78&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                             <?php else: ?>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1235f9cc948e1bbd3c78fd71cbbded35473c971940ef8fc0f68bf09ac79b4269&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1235f9cc948e1bbd3c78fd71cbbded35473c971940ef8fc0f68bf09ac79b4269&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                             <?php endif; ?>
                         </div>
                         <?= $pageInfo['description']; ?>
