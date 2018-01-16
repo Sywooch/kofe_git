@@ -492,6 +492,53 @@ if (Yii::$app->session->getFlash('success')) {
         });
     });
     $(function () {
+        var swiper2 = new Swiper('.services__slider', {
+            loop: true,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            margin:10,
+            paginationClickable: true,
+            breakpoints: {
+                1600: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5
+                },
+                1400: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                },
+                1100: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3
+                },
+                970: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                800: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                560: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1
+                }
+            },
+            pagination: '.garantya__pagination',
+            nextButton: '.services-slider_next',
+            prevButton: '.services-slider_prev'
+        });
+        $(".fancybox-button").fancybox({
+            prevEffect      : 'none',
+            nextEffect      : 'none',
+            closeBtn        : false,
+            helpers     : {
+                title   : { type : 'inside' },
+                buttons : {}
+            }
+        });
+    });
+    $(function () {
         var swiper2 = new Swiper('.models__slider', {
             loop: true,
             slidesPerView: 6,

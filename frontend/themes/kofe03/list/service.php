@@ -63,8 +63,68 @@ $this->title = $title;
                 </div>
             </article>
         </div>
-    </section>    
+    </section>
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
+    <aside>
+        <div class="brands__carousel services-slider">
+            <div class="swiper-container services__slider">
+                <div class="swiper-wrapper services__list">
+                    <div class="swiper-slide">
+                        <a class="popular__box" href="/ne-delaet-penu">
+                            <div class="popular__cover" style="background-image: url(/kofe03/images/services/timthumb09ae.jpg);"></div>
+                            <div class="popular__text">
+                                <p class="popular__name">Не делает пену</p>
+                                Один из вариантов устранения неисправности: Восстановление цепи питания
+                                <p class="popular__price">от 690 р.</p>
+                            </div>
+                        </a>                   
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popular__box" href="/ne-delaet-penu">
+                            <div class="popular__cover" style="background-image: url(/kofe03/images/services/timthumb09ae.jpg);"></div>
+                            <div class="popular__text">
+                                <p class="popular__name">Не делает пену</p>
+                                Один из вариантов устранения неисправности: Восстановление цепи питания
+                                <p class="popular__price">от 690 р.</p>
+                            </div>
+                        </a>                   
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popular__box" href="/ne-delaet-penu">
+                            <div class="popular__cover" style="background-image: url(/kofe03/images/services/timthumb09ae.jpg);"></div>
+                            <div class="popular__text">
+                                <p class="popular__name">Не делает пену</p>
+                                Один из вариантов устранения неисправности: Восстановление цепи питания
+                                <p class="popular__price">от 690 р.</p>
+                            </div>
+                        </a>                   
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popular__box" href="/ne-delaet-penu">
+                            <div class="popular__cover" style="background-image: url(/kofe03/images/services/timthumb09ae.jpg);"></div>
+                            <div class="popular__text">
+                                <p class="popular__name">Не делает пену</p>
+                                Один из вариантов устранения неисправности: Восстановление цепи питания
+                                <p class="popular__price">от 690 р.</p>
+                            </div>
+                        </a>                   
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="popular__box" href="/ne-delaet-penu">
+                            <div class="popular__cover" style="background-image: url(/kofe03/images/services/timthumb09ae.jpg);"></div>
+                            <div class="popular__text">
+                                <p class="popular__name">Не делает пену</p>
+                                Один из вариантов устранения неисправности: Восстановление цепи питания
+                                <p class="popular__price">от 690 р.</p>
+                            </div>
+                        </a>                   
+                    </div>
+                </div>
+            </div>
+            <div class="services-slider_next"></div>
+            <div class="services-slider_prev"></div>
+        </div>
+    </aside>
     <?= kofe03\widgets\other\Advantage::widget(); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
