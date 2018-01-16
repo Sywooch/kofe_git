@@ -261,7 +261,7 @@ class ListController extends CController {
 
         return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2,
                     'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
-                    'modelImage' => $modelImage, 'page' => (isset($page) ? $page : [])]);
+                    'modelImage' => $modelImage, 'page' => (isset($page) ? $page : ['title' => ''])]);
     }
 
     public function actionBrands() {
