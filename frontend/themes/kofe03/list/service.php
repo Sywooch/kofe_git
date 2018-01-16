@@ -30,7 +30,7 @@ $this->title = $title;
             <div class="clear"></div>
         </div>
     </aside>    
-    <section class="office my-bg-logos<?= empty($page) ? ' only' : '' ?>">
+    <section class="office my-bg-logos<?= empty($page['title']) ? ' only' : '' ?>">
         <div class="bg-brend" style="<?php if (!empty($brandImage) && !empty($page['type']) && ($page['type'] == 'brand' or $page['type'] == 'model')): ?>background-image: url(<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>); <?php endif; ?>"></div>
         <div class="office__inner">
             <article class="office__post">
@@ -50,7 +50,7 @@ $this->title = $title;
                     <div class="con-infos">
                         <div class="left">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
-                        </div>                        
+                        </div>                 
                         <div class="right for_pc">
                             <?php if (!empty($brandImage) && !empty($page['type']) && $page['type'] == 'brand'): ?>
                                 <img src="<?= $assets . '/'; ?>uploads/images/<?= $brandImage; ?>" />
