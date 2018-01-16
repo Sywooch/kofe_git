@@ -11632,7 +11632,9 @@ section.header div.logo,
 section.header div.logo a {
 	display: inline-block
 }
-
+section.header div.logo a {
+	width: 65%;
+}
 section.header #order_phone_form {
 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, .36);
 	padding: 27px 20px 40px 20px
@@ -13605,7 +13607,11 @@ section.brend h3 {
 }
 
 .navbar .navbar-logo {
-	margin-top: 10px
+	margin-top: 5px;
+	height: 45px;
+}
+.navbar .navbar-logo img {
+	height: 90%;
 }
 
 section.header .row .col-xs-6 {

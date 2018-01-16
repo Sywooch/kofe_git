@@ -57,7 +57,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="navbar">
                     <div class="col-xs-2">
-                       <div class="navbar-logo"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/logo-navbar.png"></div>
+                       <div class="navbar-logo"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></div>
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
@@ -96,7 +96,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="container">
                         <div class="row row_header_line">
-                            <div class="logo"> <a href="/"></a></div>
+                            <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></a></div>
                             <div class="top-menu-container">
                                 <div class="clock-work-conteiner">
                                     <div class="clock-work l"> Работаем без перерывов и выходных<br> <span>с 7:00 до 22:00</span></div>

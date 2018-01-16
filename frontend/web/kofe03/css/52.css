@@ -357,3 +357,6 @@
 .rating-container .filled-stars {
         color: #ebb21c;
 }
+.header__site img {
+    margin-top: 0px;
+}
