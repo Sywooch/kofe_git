@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod'];
 ?>
 <main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
+    <aside class="poster" style="background-image: url(<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg?v2);">
         <div class="poster__inner">
             <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
                 <div class="poster__content">
