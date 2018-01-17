@@ -45,6 +45,7 @@ $this->title = $pageInfo['meta_title'];
                                 $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
                                 ?>
                                 <?php foreach ($sortedBrands as $latter => $brands): ?>
+                                <div><?= $latter; ?></div>
                                     <?php foreach ($brands as $brand): ?>
                                         <a href="/<?= $brand['url']; ?>" class="brand-page-link">
                                             <?php if (!is_file($path . $brand['image'])): ?>
