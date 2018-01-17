@@ -699,7 +699,7 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'kofe03',
-            'order-title' => 'МСК Заречная',
+            'order-title' => 'fixkofe',
             'spb' => true,
             'jsFiles' => [
                 'jquery-1.11.3.min.js',

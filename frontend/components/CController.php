@@ -172,6 +172,7 @@ class CController extends \yii\web\Controller {
                 'MSK - Моно2' => ['name' => 'MONO2_MSK', 'OID' => 2200626170000],
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
+                'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
