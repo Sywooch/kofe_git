@@ -42,10 +42,17 @@ $this->title = $pageInfo['meta_title'];
                                     'options' => ['placeholder' => 'Поиск бренда', 'class' => 'my-input'],
                                         ]
                                 );
+                                $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
                                 ?>
                                 <?php foreach ($sortedBrands as $latter => $brands): ?>
                                     <?php foreach ($brands as $brand): ?>
-                                        <a href="/<?= $brand['url']; ?>" class="brand-page-link"><img src="/uploads/images/<?= $brand['image']; ?>"/></a>
+                                        <a href="/<?= $brand['url']; ?>" class="brand-page-link">
+                                            <?php if (!is_file($path . $brand['image'])): ?>
+                                                <?= $brand['title']; ?>
+                                            <?php else: ?>
+                                                <img src="/uploads/images/<?= $brand['image']; ?>"/>
+                                            <?php endif; ?>
+                                        </a>
                                     <?php endforeach; ?>
                                 <?php endforeach; ?>
                                 <p class="moar-brands">и других производителей.</p>
