@@ -7,7 +7,7 @@
 # netbeans project files
 nbproject
 /frontend/web/assets
-/frontend/web/uploads
+/frontend/web/uploads/images/thumbs
 /backend/web/assets
 # zend studio for eclipse project files
 .buildpath
