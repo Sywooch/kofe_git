@@ -16,7 +16,8 @@ $form = ActiveForm::begin([
                         ],
             ]);
             ?>            
-            <span class="tb_sidebar_title">Бесплатная диагностика</span> 
+            <span class="tb_sidebar_title"><?= $title; ?></span>
+            <p><?= $desc; ?></p>
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
                 'name' => 'phone',
@@ -28,7 +29,7 @@ $form = ActiveForm::begin([
             ])->label('')
             ?>
             <?= Html::submitInput('Отправить', ['class' => 'call-master', 'type' => 'submit']) ?>
-            <span class="tb_sidebar_extra_text">Выезд мастера от 30 минут</span>
+            <span class="tb_sidebar_extra_text"><?= $times; ?></span>
             <?php ActiveForm::end() ?>
         </div>
     </section>

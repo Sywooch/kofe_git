@@ -5084,12 +5084,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 @media (min-width:768px) {
-	.navbar {
-		border-radius: 4px
-	}
-}
-
-@media (min-width:768px) {
 	.navbar-header {
 		float: left
 	}
@@ -7727,18 +7721,7 @@ button.close {
 	background-color: #fff
 }
 
-.carousel-caption {
-	position: absolute;
-	left: 15%;
-	right: 15%;
-	bottom: 20px;
-	z-index: 10;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
-}
+
 
 .carousel-caption .btn {
 	text-shadow: none
@@ -7761,11 +7744,6 @@ button.close {
 	.carousel-control .glyphicon-chevron-right,
 	.carousel-control .icon-next {
 		margin-right: -15px
-	}
-	.carousel-caption {
-		left: 20%;
-		right: 20%;
-		padding-bottom: 30px
 	}
 	.carousel-indicators {
 		bottom: 20px
@@ -8809,7 +8787,6 @@ span.order a:hover {
 .navbar-second .order-now {
 	background-color: #52ad25;
 	text-align: center;
-	border-radius: 0 5px 5px 0;
 	margin-right: 0;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
@@ -8936,43 +8913,41 @@ section.slider {
 }
 
 .carousel-caption {
-	text-shadow: none!important;
-	right: 0;
-	padding: 0;
-	text-align: left;
-	margin: 0;
-	bottom: 48px;
-	height: 177px
+	background: #fff;
+	text-align: center;
+	padding: 10px;
+	height: 270px;
+	box-sizing: border-box;
 }
 
 .carousel-caption h1 {
-	color: #fff;
+	color: #4c5052;
 	margin: 0;
 	padding: 0;
 	font-family: "Proxima Nova Bold", "Open Sans";
 	font-weight: 700;
-	margin-bottom: 22px;
-	margin-top: 2px
+	margin-bottom: 8px;
+	margin-top: 2px;
+	font-size: 28px;
 }
 
 .carousel-caption h3 {
-	color: #ffb500;
+	color: #52ad25;
 	margin: 0;
 	padding: 0;
 	font-family: "Proxima Nova Bold", "Open Sans";
 	font-weight: 700;
-	margin-bottom: 22px;
-	margin-top: 2px
+	margin: 10px 0px;
+	font-size: 22px;
 }
 
 .carousel-caption p {
-	font-size: 16px;
-	line-height: 24px;
-	color: #fff;
-	margin-top: 28px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #4c5052;
+	margin: 20px 0px;
 	font-family: HelveticaNeueCyr-Light, "Open Sans";
 	padding: 0;
-	margin: 0
 }
 
 .carousel-caption .slider_a a {
@@ -9379,11 +9354,6 @@ section.top_icons img {
 	margin-right: 15px
 }
 
-section.who_main {
-	background: #fff;
-	margin-bottom: 0;
-	overflow: hidden
-}
 
 section.who {
 	background: #fff;
@@ -12149,11 +12119,12 @@ section.price .section_form_order_bottom {
 	font-size: 14px
 }
 
-body section.slider {
-	height: 520px;
+body section.offer {
+	/*height: 520px;*/
 	margin-top: -38px;
 	position: relative;
-	background: #000;
+	background: url(../images/banner.jpg) center center;
+	padding: 70px 0px 115px;
 }
 
 .second_navigation {
@@ -12161,20 +12132,9 @@ body section.slider {
 	z-index: 1;
 	position: relative
 }
-
 section.who_main {
-	margin-top: -127px;
+	margin-top: -100px;
 	position: relative
-}
-
-.carousel-caption h3 {
-	font-family: 'Proxima Nova Bold';
-	font-size: 35px;
-	color: #fff;
-	max-width: 370px;
-	margin-top: 39px;
-	margin-left: 3px;
-	margin-bottom: 14px
 }
 
 .carousel-caption p {
@@ -12366,14 +12326,19 @@ section.header .logo {
 	margin-top: 10px
 }
 
+.coffeemashina {
+	text-align: center;
+}
+
+.coffeemashina img {
+	max-width: 68%;
+	max-height: 68%;
+}
+
 html {
 	min-width: 1080px
 }
 
-.container {
-	width: 1080px!important;
-	padding: 0
-}
 
 .header-phone-number-part {
 	font-size: 40px
@@ -12479,19 +12444,6 @@ section.who_main .row.shadow {
 	margin-bottom: 30px
 }
 
-.carousel-caption h3 {
-	margin-top: 39px
-}
-
-body section.slider {
-	height: 520px;
-	margin-top: -38px
-}
-
-.carousel-caption {
-	left: 624px;
-	top: 80px
-}
 
 .h1,
 h1 {
@@ -12591,10 +12543,6 @@ section.who_main p {
 	margin-top: 32px
 }
 
-.carousel-caption h3 {
-	font-size: 32px;
-	line-height: 38px
-}
 
 .carousel-indicators {
 	top: 150px;
@@ -12684,11 +12632,6 @@ section.what_to_do .col-xs-12 {
 	height: 372px;
 	padding-top: 43px;
 	padding-right: 84px
-}
-
-section.who_main {
-	margin-top: -127px;
-	padding-top: 3px;
 }
 
 section.who_main h1 {
@@ -13215,6 +13158,12 @@ textarea {
 	color: #818b8d;
 	line-height: 1.25
 }
+.offer .tb_sidebar_extra_text {
+	font-size: 18px;
+}
+.offer .tb_sidebar_extra_text b {
+	color: #52ad25;
+}
 
 .tb_sidebar_form .tb_sidebar_title {
 	margin-top: 10px;
@@ -13271,7 +13220,9 @@ textarea {
 }
 
 .tb_sidebar_cont {
-	background: #fff
+	background: #fff;
+	height: 270px;
+	box-sizing: border-box;
 }
 
 .tb_sidebar_cont .tb_sidebar_title {
@@ -13352,6 +13303,15 @@ section.section_promo_form div.tb_sidebar_cont {
 	padding: 20px;
 	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12)
 }
+.offer section.section_promo_form div.tb_sidebar_cont {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.offer section.section_promo_form div.tb_sidebar_cont p {
+	font-size: 18px;
+	color: #4c5052;
+}
 
 section.section_promo_form div.tb_sidebar_cont input {
 	height: 38px;
@@ -13376,6 +13336,9 @@ section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
 	font-size: 18px;
 	font-family: "PF DinDisplay Pro", Arial, sans-serif;
 	line-height: 1.222
+}
+.offer section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
+	font-size: 24px;
 }
 
 .break_price .col_price {
