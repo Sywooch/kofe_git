@@ -7,5 +7,6 @@ $siteConfig = app\components\CController::getSiteConfig();
     <?php foreach ($rows as $key => $row): ?>
         <a href="/<?= $row['url']; ?>" class="brand-page-link"><img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>"/></a> 
     <?php endforeach; ?>
-    <a href="/brendy" class="all-brands-show">Все бренды <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/expand-arrow.png"/></a>
+    <div class="clear"></div>
+    <a href="/brendy" class="more">Все бренды</a>
 </section>
