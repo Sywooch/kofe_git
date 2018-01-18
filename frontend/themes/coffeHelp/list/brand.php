@@ -20,7 +20,7 @@ $this->title = $title;
                                 <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
                             </h1>
                         </div>
-                        <div class="col-xs-5">
+                        <div class="col-xs-4">
                             <div class="img">
                                 <?php if (!empty($pageInfo['image'])): ?>
                                     <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
@@ -29,7 +29,7 @@ $this->title = $title;
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-xs-7">
+                        <div class="col-xs-8">
                             <span class="section-promo-desc">
                                 <?php if (!empty($pageInfo['description'])): ?>
                                     <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
