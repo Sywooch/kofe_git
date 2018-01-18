@@ -13147,6 +13147,14 @@ textarea {
 	color: #52ad25;
 }
 
+.tb_sidebar_form img {
+	float: left;
+	margin-right: 10px;
+}
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_form .tb_sidebar_title {
+	display: block;
+	width: auto;
+}
 .tb_sidebar_form .tb_sidebar_title {
 	margin-top: 10px;
 	margin-bottom: 10px
