@@ -17,7 +17,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <img class="tb_sidebar_item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/shield.png">
             </div>
             <div class="tb_sidebar_item">
-                <div class="tb_sidebar_item__desc"> <span class="tb_sidebar_item__desc_main">Форрма оплаты</span> <span class="tb_sidebar_extra_text">Принимаем не только наличные, но и безнал и карты.</span></div>
+                <div class="tb_sidebar_item__desc"> <span class="tb_sidebar_item__desc_main">Форма оплаты</span> <span class="tb_sidebar_extra_text">Принимаем не только наличные, но и безнал и карты.</span></div>
                 
 
                 <img class="tb_sidebar_item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/coins.png">
