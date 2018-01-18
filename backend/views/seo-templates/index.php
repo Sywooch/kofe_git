@@ -18,19 +18,31 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Seo Templates', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    <?= GridView::widget([
+    <?=
+    GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'template',
-            'brand.title',
-            'model.title',
+            [
+                'label' => 'Бренд',
+                'format' => 'raw',
+                'value' => function($model) {
+                    return $model->brand_id === 0 ? 'Все бренды' : '';
+                },
+            ],
+            [
+                'label' => 'Модель',
+                'format' => 'raw',
+                'value' => function($model) {
+                    return $model->model_id === 0 ? 'Все модели' : '';
+                },
+            ],
             'service.title',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
-    ]); ?>
+    ]);
+    ?>
 </div>
