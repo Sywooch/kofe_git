@@ -14918,10 +14918,18 @@ section.promo > .row > .col-xs-4 > .images img {
 }
 section.promo .col-xs-5 .img {
 	background: #fff;
+	text-align: center;
+	height: 202px;
+	line-height: 202px;
+	display: inline-block;
+	vertical-align: middle;
+	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
 }
 section.promo .col-xs-5 .img > img {
 	max-width: 75%;
 	max-height: 75%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 summary {
