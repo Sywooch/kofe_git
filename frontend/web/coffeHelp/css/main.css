@@ -12319,10 +12319,6 @@ section.header .logo {
 	display: inline-block
 }
 
-.promo .row h1 {
-	margin-top: 10px
-}
-
 .coffeemashina {
 	text-align: center;
 }
@@ -12720,11 +12716,11 @@ strong>a[x-apple-data-detectors] {
 
 section.promo h1 {
 	color: #2b2f31;
-	font-size: 50px;
-	margin-top: 42px;
+	font-size: 32px;
 	font-family: "Proxima Nova Bold", "Open Sans", Arial, sans-serif;
 	line-height: 1.086;
-	margin-bottom: 20px
+	margin-bottom: 5px;
+	margin-top: 0px;
 }
 
 section.promo .row .col-xs-3 {
@@ -13151,6 +13147,14 @@ textarea {
 	color: #52ad25;
 }
 
+.tb_sidebar_form img {
+	float: left;
+	margin-right: 10px;
+}
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_form .tb_sidebar_title {
+	display: block;
+	width: auto;
+}
 .tb_sidebar_form .tb_sidebar_title {
 	margin-top: 10px;
 	margin-bottom: 10px
@@ -13205,14 +13209,27 @@ textarea {
 	cursor: pointer
 }
 
-.tb_sidebar_cont {
-	background: #fff;
-	height: 270px;
-	box-sizing: border-box;
+.page-list .col-sm-9 .tb_sidebar_cont {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.page-list .col-sm-9 .tb_sidebar_cont .tb_sidebar_item {
+	width: 49%;
+  float: right;
+  margin-right: 1%;
+}
+
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_title {
+	display: none;
+}
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_item {
+	display: none;
 }
 
 .tb_sidebar_cont .tb_sidebar_title {
-	margin-bottom: 15px
+	margin-bottom: 15px;
+	width: 100%;
 }
 
 img.tb_sidebar_item__img {
@@ -13248,6 +13265,9 @@ img.tb_sidebar_item__img {
 	background: #f8f7eb;
 	margin-bottom: 40px
 }
+.page-list .tb_sidebar_cont>div:nth-of-type(4) {
+	margin-bottom: 10px;
+}
 
 .tb_sidebar_cont div:nth-of-type(4) .tb_sidebar_item__desc_main {
 	color: #ffb500
@@ -13270,6 +13290,9 @@ img.tb_sidebar_item__img {
 	flex-direction: column;
 	max-width: 110px
 }
+.page-list .tb_sidebar_item__desc {
+	max-width: 60%;
+}
 
 .tb_sidebar_cont .tb_sidebar_item .tb_sidebar_item__desc_main {
 	font-size: 16px;
@@ -13287,7 +13310,8 @@ section.section_promo_form {
 }
 section.section_promo_form div.tb_sidebar_cont {
 	padding: 20px;
-	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12)
+	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
+	background: #fff;
 }
 .offer section.section_promo_form div.tb_sidebar_cont {
 	text-align: center;
@@ -14895,8 +14919,4 @@ section.promo > .row > .col-xs-4 > .images img {
 section.promo > .row > .col-xs-4 > img {
 	max-width: 75%;
 	max-height: 75%;
-}
-
-section.promo h1 {
-	font-size: 33px
 }
