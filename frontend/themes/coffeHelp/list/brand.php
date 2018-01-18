@@ -4,23 +4,23 @@ $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
 <div class="inner-bg">    
-    <div class="container theme-showcase" role="main">            
+    <div class="container theme-showcase" role="main">                 
         <section class="promo">
-            <?php if (!empty($pageInfo['image'])): ?>
-                <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
-            <?php else: ?>
-                <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
-            <?php endif; ?>
             <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-xs-12">
                     <ol class="breadcrumb">
                         <li><a href="/">Главная</a></li>
                         <li>Ремонт кофемашин <?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-xs-4">
+                    <?php if (!empty($pageInfo['image'])): ?>
+                        <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                    <?php else: ?>
+                        <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                    <?php endif; ?>
+                </div>
+                <div class="col-xs-5">
                     <h1>
                         <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
                     </h1>

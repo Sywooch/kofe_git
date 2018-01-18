@@ -6,22 +6,24 @@ $this->title = $title;
 <div class="inner-bg">     
     <div class="container theme-showcase" role="main">            
         <section class="promo">
-            <?php if (!empty($pageInfo['image'])): ?>
-                <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
-            <?php else: ?>
-                <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
-            <?php endif; ?>
             <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-xs-12">
                     <ol class="breadcrumb">
                         <li><a href="/">Главная</a></li>
                         <li><a href="/<?= $brand['url']; ?>">Ремонт кофемашин <?= $brand['title']; ?></a></li>
                         <li>Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?></li>
                     </ol>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-sm-12">
+                <div class="col-xs-4">
+                    <div class="images">
+                        <?php if (!empty($pageInfo['image'])): ?>
+                        <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                        <?php else: ?>
+                            <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="col-xs-5">
                     <h1>
                         <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
                     </h1>

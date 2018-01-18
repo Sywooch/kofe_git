@@ -33,11 +33,9 @@ section.header ul.top_menu_big li a:hover, section.header ul.top_menu_small li a
 }
 .navbar-second {
 background-color: #d5ad6f;
-	border: 1px solid #d3a864;
 }
 .navbar-second .order-now {
-	background-color: #d9b37587;
-	border-left: 1px solid #deb682;
+	background-color: #031431;
 }
 .navbar-second .order-now:hover {
 	background-color: #bd9046;

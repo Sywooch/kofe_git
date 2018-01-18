@@ -8758,7 +8758,7 @@ span.order a:hover {
 .navbar-second {
 	background-color: #4c5052;
 	border: none;
-	height: 76px;
+	height: 75px;
 	margin-bottom: 0;
 	margin: 0 auto
 }
@@ -8968,9 +8968,6 @@ section.slider {
 	line-height: 18px
 }
 
-section.promo {
-	position: relative
-}
 
 section.promo li {
 	color: #fff
@@ -12363,19 +12360,11 @@ section.header .logo {
 }
 
 section.promo {
-	padding: 0 20px 0 355px;
 	min-height: 350px
 }
 section.promo.widthsto {
 	padding: 0 20px;
 	min-height: 250px
-}
-
-#big-header-image {
-	position: absolute;
-  left: 15px;
-  top: 65px;
-  width: 290px;
 }
 
 section.who {
@@ -12696,9 +12685,6 @@ section.middle_order .input-group-lg:first-child {
 	padding-top: 13px
 }
 
-section.promo h1 {
-	font-size: 35px!important
-}
 
 #form-modal .modal-content {
 	width: 330px!important;
@@ -13339,6 +13325,10 @@ section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
 }
 .offer section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
 	font-size: 24px;
+  background: #52ad25;
+  color: #fff;
+  padding: 20px 10px;
+  margin-top: -32px;
 }
 
 .break_price .col_price {
@@ -13513,7 +13503,6 @@ section.sale {
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
 	margin-bottom: 100px;
-	width: 1079px;
 	height: auto;
 	margin-bottom: 40px
 }
@@ -13689,7 +13678,6 @@ section.who .left-col h3.title-mar {
 
 section.promo div.row .col-md-8.col-sm-12 {
 	max-width: 470px;
-	margin-left: -40px;
 	padding-right: 0
 }
 
@@ -14878,4 +14866,37 @@ a.more:hover {
   font-style: italic;
   font-size: 12px;
   margin: 15px 0px 8px;
+}
+
+section.promo > .row > .col-xs-12 {
+	padding-bottom: 20px;
+}
+section.promo > .row > .col-xs-5 {
+	width: 45%;
+	left: -6%;
+}
+section.promo > .row > .col-xs-4 > .images {
+	width: 270px;
+	height: 270px;
+	display: inline-block;
+	background: #fff;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 290px;
+	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
+}
+section.promo > .row > .col-xs-4 > .images img {
+	max-width: 90%;
+	max-height: 90%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+section.promo > .row > .col-xs-4 > img {
+	max-width: 75%;
+	max-height: 75%;
+}
+
+section.promo h1 {
+	font-size: 33px
 }
