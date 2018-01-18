@@ -38,7 +38,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="text">Неплохой сервис, оперативно приехали, сделали ремонт. Все устроило</div>
                     <div class="name">Александр, 05.05.2017</div>
                 </div>
-                <a href="/otzyvy" class="btn">Еще</a>
+                <a href="/reviews" class="btn">Еще</a>
             </div>
             <form class="tb_sidebar_form"> 
                 <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/icons/sidebar_head.png"> 

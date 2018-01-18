@@ -86,10 +86,10 @@ $js = app\components\CController::$js;
                     <div class="row row_top_menu">
                         <div class="container">
                             <ul class="top_menu_big">
-                                <li><a href="/uslugi-i-ceny">Услуги и цены</a></li>
-                                <li><a href="/o-kompanii">О компании</a></li>
-                                <li><a href="/garantiya">Гарантия</a></li>
-                                <li><a href="/kontakty">Контакты</a></li>
+                                <li><a href="/price">Услуги и цены</a></li>
+                                <li><a href="/about">О компании</a></li>
+                                <li><a href="/warranty">Гарантия</a></li>
+                                <li><a href="/contacts">Контакты</a></li>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
                         </div>
@@ -125,18 +125,18 @@ $js = app\components\CController::$js;
                                         <li>
                                             <a class="coffee-machine" href="#">Типы кофемашин</a>
                                             <ul>
-                                                <li><a href="/ehspresso-kombayny">Эспрессо-комбайны</a></li>
-                                                <li><a href="/avtomaticheskie">Автоматические</a></li>
-                                                <li><a href="/poluavtomaticheskie">Полуавтоматические</a></li>
-                                                <li><a href="/rozhkovye">Рожковые</a></li>
-                                                <li><a href="/kapelnye">Капельные</a></li>
-                                                <li><a href="/porcionnye">Порционные</a></li>
-                                                <li><a href="/kapsulnye">Капсульные</a></li>
-                                                <li><a href="/chaldovye">Чалдовые</a></li>
+                                                <li><a href="/remont-ehspresso-kombaynov">Эспрессо-комбайны</a></li>
+                                                <li><a href="/remont-avtomaticheskih-kofemashin">Автоматические</a></li>
+                                                <li><a href="/remont-poluavtomaticheskih-kofemashin">Полуавтоматические</a></li>
+                                                <li><a href="/remont-rozhkovih-kofemashin">Рожковые</a></li>
+                                                <li><a href="/remont-kapelnih-kofemashin">Капельные</a></li>
+                                                <li><a href="/remont-porcionnih-kofemashin">Порционные</a></li>
+                                                <li><a href="/remont-kapsulnih-kofemashin">Капсульные</a></li>
+                                                <li><a href="/remont-chaldovih-kofemashin">Чалдовые</a></li>
                                             </ul>
                                         </li>
-                                        <li><a class="lists" href="/brendy">Все бренды</a></li>
-                                        <li><a class="tools" href="/uslugi-i-ceny">Услуги и цены</a></li>
+                                        <li><a class="lists" href="/brands">Все бренды</a></li>
+                                        <li><a class="tools" href="/price">Услуги и цены</a></li>
                                     </ul>
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="order-now"> <a href="#call-modal-form">Заказать ремонт</a></li>
@@ -171,17 +171,17 @@ $js = app\components\CController::$js;
                         <div class="row">
                             <div class="col-xs-5">
                                 <ul>
-                                    <li><a href="/voprosy-i-otvety">Вопросы ответы</a></li>
-                                    <li><a href="/diagnostika">Диагностика</a></li>
-                                    <li><a href="/srochnyj-remont">Срочный ремонт</a></li>
-                                    <li><a href="/dostavka">Доставка</a></li>
+                                    <li><a href="/faq">Вопросы ответы</a></li>
+                                    <li><a href="/diagnostics">Диагностика</a></li>
+                                    <li><a href="/fast-repairs">Срочный ремонт</a></li>
+                                    <li><a href="/shipping">Доставка</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-5">
                                 <ul>
-                                    <li><a href="/otzyvy">Отзывы</a></li>
-                                    <li><a href="/oplata">Оплата</a></li>
-                                    <li><a href="/politica">Пользовательское соглашение</a></li>
+                                    <li><a href="/reviews">Отзывы</a></li>
+                                    <li><a href="/payment">Оплата</a></li>
+                                    <li><a href="/politics">Пользовательское соглашение</a></li>
                                 </ul>
                             </div>
                         </div>
