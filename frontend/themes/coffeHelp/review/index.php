@@ -3,7 +3,7 @@
         <div class="layout__inner">
             <nav class="breadcrumbs">
                 <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="/"><span itemprop="title">Главная</span></a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Ремонт кофемашин" href="/"><span itemprop="title">Ремонт кофемашин</span></a></li>
                 </ul>
                 <span class="breadcrumbs__current">Отзывы</span>
             </nav>

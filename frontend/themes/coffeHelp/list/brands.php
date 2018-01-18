@@ -9,7 +9,7 @@ $this->title = $pageInfo['meta_title'];
             <div class="row">
                 <div class="col-md-9 col-sm-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Ремонт кофемашин</a></li>
                         <li>Бренды</li>
                     </ol>
                 </div>

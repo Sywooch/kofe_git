@@ -9,9 +9,9 @@ $this->title = $title;
             <div class="row">
                 <div class="col-xs-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Ремонт кофемашин</a></li>
                         <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                            <li><a href="/<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                        <li><a href="/<?= $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
                         <?php endforeach; ?>                        
                     </ol>
                 </div>

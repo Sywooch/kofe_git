@@ -7,7 +7,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
     <section class="breadcrumbs">
         <div class="row">
             <ol class="breadcrumb">
-                <li><a href="/">Главная</a></li>
+                <li><a href="/">Ремонт кофемашин</a></li>
                 <li>Контактная информация</li>
             </ol>
         </div>

@@ -9,8 +9,8 @@ $this->title = $title;
             <div class="row">
                 <div class="col-xs-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/<?= $brand['url']; ?>">Ремонт кофемашин <?= $brand['title']; ?></a></li>
+                        <li><a href="/">Ремонт кофемашин</a></li>
+                        <li><a href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a></li>
                         <li>Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?></li>
                     </ol>
                 </div>

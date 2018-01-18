@@ -9,7 +9,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
             <div class="row">
                 <div class="col-md-9 col-sm-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Ремонт кофемашин</a></li>
                         <li><?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>

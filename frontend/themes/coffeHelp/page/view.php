@@ -9,7 +9,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             <div class="row">
                 <div class="col-md-9 col-sm-12">
                     <ol class="breadcrumb">
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Ремонт кофемашин</a></li>
                         <li><?= $model['title']; ?></li>
                     </ol>
                 </div>
