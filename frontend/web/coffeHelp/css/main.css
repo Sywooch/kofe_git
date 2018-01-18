@@ -13201,10 +13201,22 @@ textarea {
 	cursor: pointer
 }
 
-.tb_sidebar_cont {
-	background: #fff;
-	height: 270px;
-	box-sizing: border-box;
+.page-list .col-sm-9 .tb_sidebar_cont {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.page-list .col-sm-9 .tb_sidebar_cont .tb_sidebar_item {
+	width: 49%;
+  float: right;
+  margin-left: 1%;
+}
+
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_title {
+	display: none;
+}
+.page-list .col-sm-3 .tb_sidebar_cont .tb_sidebar_item {
+	display: none;
 }
 
 .tb_sidebar_cont .tb_sidebar_title {
@@ -13265,6 +13277,9 @@ img.tb_sidebar_item__img {
 	display: flex;
 	flex-direction: column;
 	max-width: 110px
+}
+.page-list .tb_sidebar_item__desc {
+	max-width: 60%;
 }
 
 .tb_sidebar_cont .tb_sidebar_item .tb_sidebar_item__desc_main {
