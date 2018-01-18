@@ -13256,6 +13256,9 @@ img.tb_sidebar_item__img {
 	background: #f8f7eb;
 	margin-bottom: 40px
 }
+.page-list .tb_sidebar_cont>div:nth-of-type(4) {
+	margin-bottom: 0px;
+}
 
 .tb_sidebar_cont div:nth-of-type(4) .tb_sidebar_item__desc_main {
 	color: #ffb500
