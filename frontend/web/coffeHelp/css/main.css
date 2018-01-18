@@ -14916,7 +14916,7 @@ section.promo > .row > .col-xs-4 > .images img {
 	display: inline-block;
 	vertical-align: middle;
 }
-section.promo > .row > .col-xs-4 > img {
+section.promo .col-xs-5 > img {
 	max-width: 75%;
 	max-height: 75%;
 }

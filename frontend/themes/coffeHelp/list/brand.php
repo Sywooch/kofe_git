@@ -13,7 +13,7 @@ $this->title = $title;
                         <li><?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>
-                <div class="col-xs-9">
+                <div class="col-xs-9 nopadding">
                     <div class="row">
                         <div class="col-xs-12">
                             <h1>
