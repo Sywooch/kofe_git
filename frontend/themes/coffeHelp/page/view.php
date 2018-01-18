@@ -54,29 +54,10 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                                 <div class="tb_sidebar_item__desc"> <span class="tb_sidebar_item__desc_main">Работаем ежедневно</span> <span class="tb_sidebar_extra_text">Работаем и в праздники и в выходные.</span></div>
                                 <img class="tb_sidebar_item__img" src="/coffeHelp/img/%21mini_page/calendar.png">
                             </div>
-                            <div class="reviews_sidebar">
-                                <h4>Отзывы</h4>
-                                <div class="review_block">
-                                    <div class="title">Ремонт стиральной машины</div>
-                                    <div class="text">Огромное спасибо мастеру Евгению за ремонт моей посудомоечной машины</div>
-                                    <div class="name">Светлана, 24.03.2017</div>
-                                </div>
-                                <div class="review_block">
-                                    <div class="title">Ремонт стиральной машины</div>
-                                    <div class="text">Неплохой сервис, оперативно приехали, сделали ремонт. Все устроило</div>
-                                    <div class="name">Александр, 05.05.2017</div>
-                                </div>
-                                <a href="/otzyvy" class="btn">Еще</a>
-                            </div>
-                            <form class="tb_sidebar_form"> 
-                                <img src="/coffeHelp/img/icons/sidebar_head.png"> 
-                                <span class="tb_sidebar_title">Нужна консультация?</span> 
-                                <span class="tb_sidebar_extra_text">Если у Вас возникли вопросы, обратитесь к нашим специалистам.</span> 
-                                <input type="text" name="phone" placeholder="Номер телефона">
-                                <input type="button" class="call-master" value="Отправить">
-                            <input type="hidden" name="h1" value="Эспрессо-комбайны"></form>
+                            <div class="clear"></div>
                         </div>
                     </section>
+                    <div class="clear"></div>
                     <?= coffeHelp\widgets\forms\MainPageForm::widget(); ?>
                 </div>
                 <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage3']); ?>
