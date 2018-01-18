@@ -11,7 +11,7 @@ $this->title = $title;
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <li><a href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a></li>
-                        <li>Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?></li>
+                        <li><?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>
                 <div class="col-xs-4">
