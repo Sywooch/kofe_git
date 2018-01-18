@@ -161,7 +161,7 @@ $js = app\components\CController::$js;
                                     <li><a href="/remont-la-cimbali">Ремонт кофемашин La Cimbal</a></li>
                                     <li><a href="/remont-jura">Ремонт кофемашин Jura</a></li>
                                     <li><a href="/remont-bosch">Ремонт кофемашин Bosch</a></li>
-                                    <li><a href="/remont-saeco">Все ремонтируемые Saeco</a></li>
+                                    <li><a href="/remont-saeco">Ремонт кофемашин Saeco</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-6">
@@ -170,7 +170,7 @@ $js = app\components\CController::$js;
                                     <li><a href="/remont-gaggia">Ремонт кофемашин Gaggia</a></li>
                                     <li><a href="/remont-nivona">Ремонт кофемашин Nivona</a></li>
                                     <li><a href="/remont-schaerer">Ремонт кофемашин Schaerer</a></li>
-                                    <li><a href="/remont-franke">Все ремонтируемые Franke</a></li>
+                                    <li><a href="/remont-franke">Ремонт кофемашин Franke</a></li>
                                 </ul>
                             </div>
                         </div>
