@@ -27,7 +27,7 @@ $this->title = $title;
                         <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
                     </h1>
                     <span class="section-promo-desc">
-                        <?= $seoText; ?>
+                        <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
                     </span>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
