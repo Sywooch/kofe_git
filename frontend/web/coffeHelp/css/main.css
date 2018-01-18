@@ -12800,8 +12800,7 @@ section.promo a {
 .form-order-cont {
 	display: inline-block;
 	box-sizing: border-box;
-	width: 100%;
-	max-width: 660px;
+	width: 99%;
 	margin: 0 auto;
 	padding: 20px 30px;
 	background-color: #5cb426;
@@ -13212,6 +13211,7 @@ textarea {
 .page-list .col-sm-9 .tb_sidebar_cont {
 	display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .page-list .col-sm-9 .tb_sidebar_cont .tb_sidebar_item {
@@ -14919,4 +14919,18 @@ section.promo > .row > .col-xs-4 > .images img {
 section.promo > .row > .col-xs-4 > img {
 	max-width: 75%;
 	max-height: 75%;
+}
+
+summary {
+    border: 1px dashed #5cb426;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #f8ecd5;
+    margin-bottom: 5px;
+    color: #4c5052;
+    font-size: 15px;
+}
+details em {
+	font-weight: bold;
 }
