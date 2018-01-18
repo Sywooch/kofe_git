@@ -307,27 +307,29 @@ $(window).on('load resize', function () {
         $(popupNow).addClass('popup_active');
         if (title == "Статус ремонта")
             $(popupNow).find("input[type=hidden]").val(title);
-        switch (title) {
-            case 'Перезвоните мне':
-                yaCounter47134782.reachGoal("call_me");
-                break;
-            case 'Вызвать курьера':
-                yaCounter47134782.reachGoal("call_courier");
-                break;
-            case 'Вызвать мастера':
-                yaCounter47134782.reachGoal("summon_master");
-                break;
-            case 'Заказать звонок':
-                yaCounter47134782.reachGoal("request_call");
-                break;
-            case 'Статус ремонта':
-                yaCounter47134782.reachGoal("repair_status");
-                break;
-            case 'Заказать':
-                yaCounter47134782.reachGoal("request");
-                break;
-            default:
-                yaCounter47134782.reachGoal("call_me");
+        if (typeof yaCounter47134782 !== 'undefined') {
+            switch (title) {
+                case 'Перезвоните мне':
+                    yaCounter47134782.reachGoal("call_me");
+                    break;
+                case 'Вызвать курьера':
+                    yaCounter47134782.reachGoal("call_courier");
+                    break;
+                case 'Вызвать мастера':
+                    yaCounter47134782.reachGoal("summon_master");
+                    break;
+                case 'Заказать звонок':
+                    yaCounter47134782.reachGoal("request_call");
+                    break;
+                case 'Статус ремонта':
+                    yaCounter47134782.reachGoal("repair_status");
+                    break;
+                case 'Заказать':
+                    yaCounter47134782.reachGoal("request");
+                    break;
+                default:
+                    yaCounter47134782.reachGoal("call_me");
+            }
         }
     });
     $('.popup__close, .popup__bg').on('click', function () {
