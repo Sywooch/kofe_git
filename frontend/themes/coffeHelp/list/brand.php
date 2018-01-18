@@ -21,11 +21,13 @@ $this->title = $title;
                             </h1>
                         </div>
                         <div class="col-xs-5">
-                            <?php if (!empty($pageInfo['image'])): ?>
-                                <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
-                            <?php else: ?>
-                                <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
-                            <?php endif; ?>
+                            <div class="img">
+                                <?php if (!empty($pageInfo['image'])): ?>
+                                    <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                                <?php else: ?>
+                                    <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                                <?php endif; ?>
+                            </div>
                         </div>
                         <div class="col-xs-7">
                             <span class="section-promo-desc">

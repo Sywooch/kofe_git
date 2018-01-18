@@ -14916,7 +14916,10 @@ section.promo > .row > .col-xs-4 > .images img {
 	display: inline-block;
 	vertical-align: middle;
 }
-section.promo .col-xs-5 > img {
+section.promo .col-xs-5 .img {
+	background: #fff;
+}
+section.promo .col-xs-5 .img > img {
 	max-width: 75%;
 	max-height: 75%;
 }
@@ -14933,4 +14936,8 @@ summary {
 }
 details em {
 	font-weight: bold;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
