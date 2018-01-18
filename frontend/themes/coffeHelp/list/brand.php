@@ -50,8 +50,7 @@ $this->title = $title;
                             <h2 style="margin:20px 0 0 0;">Модели <?= $pageInfo['title']; ?></h2>
                             <?= coffeHelp\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
                         </div>
-                    </section>
-                    <?= coffeHelp\widgets\forms\MainPageForm::widget(); ?>                    
+                    </section>                    
                 </div>
                 <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage3']); ?>
             </div>
