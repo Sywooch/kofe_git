@@ -13310,7 +13310,8 @@ section.section_promo_form {
 }
 section.section_promo_form div.tb_sidebar_cont {
 	padding: 20px;
-	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12)
+	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
+	background: #fff;
 }
 .offer section.section_promo_form div.tb_sidebar_cont {
 	text-align: center;
