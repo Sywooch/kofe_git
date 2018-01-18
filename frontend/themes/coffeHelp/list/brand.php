@@ -13,26 +13,34 @@ $this->title = $title;
                         <li><?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>
-                <div class="col-xs-4">
-                    <?php if (!empty($pageInfo['image'])): ?>
-                        <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
-                    <?php else: ?>
-                        <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
-                    <?php endif; ?>
-                </div>
-                <div class="col-xs-5">
-                    <h1>
-                        <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
-                    </h1>
-                    <span class="section-promo-desc">
-                        <?php if (!empty($pageInfo['description'])): ?>
-                            <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
-                        <?php else: ?>                
-                            <p>  
-                                Инженеры нашего сервис центра выполнят <?= mb_strtolower(app\components\CController::$category['rod_title'], 'utf-8'); ?> <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    
-                            </p>
-                        <?php endif; ?>
-                    </span>
+                <div class="col-xs-9 nopadding">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>
+                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                            </h1>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="img">
+                                <?php if (!empty($pageInfo['image'])): ?>
+                                    <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                                <?php else: ?>
+                                    <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <span class="section-promo-desc">
+                                <?php if (!empty($pageInfo['description'])): ?>
+                                    <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
+                                <?php else: ?>                
+                                    <p>  
+                                        Инженеры нашего сервис центра выполнят <?= mb_strtolower(app\components\CController::$category['rod_title'], 'utf-8'); ?> <?= $pageInfo['title']; ?> в короткие сроки, устранят неисправность любой сложности с гарантией. Вам достаточно оставить заявку через сайт.                    
+                                    </p>
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
             </div>
