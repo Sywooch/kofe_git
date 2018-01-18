@@ -152,24 +152,33 @@ $js = app\components\CController::$js;
         <footer class="bs-docs-footer" role="contentinfo">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4">
+                    <div class="col-xs-5">
                         <h5>Ремонт кофемашин</h5>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-6">
                                 <ul>
-                                    <li><a href="#">Ремонт кофемашин Gaggia</a></li>
-                                    <li><a href="#">Ремонт кофемашин Jura</a></li>
-                                    <li><a href="#">Ремонт кофемашин Melitta</a></li>
-                                    <li><a href="#">Ремонт кофемашин Saeco</a></li>
-                                    <li><a href="#">Все ремонтируемые бренды</a></li>
+                                    <li><a href="/remont-delonghi">Ремонт кофемашин Delonghi</a></li>
+                                    <li><a href="/remont-la-cimbali">Ремонт кофемашин La Cimbal</a></li>
+                                    <li><a href="/remont-jura">Ремонт кофемашин Jura</a></li>
+                                    <li><a href="/remont-bosch">Ремонт кофемашин Bosch</a></li>
+                                    <li><a href="/remont-saeco">Все ремонтируемые Saeco</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul>
+                                    <li><a href="/remont-krups">Ремонт кофемашин Krups</a></li>
+                                    <li><a href="/remont-gaggia">Ремонт кофемашин Gaggia</a></li>
+                                    <li><a href="/remont-nivona">Ремонт кофемашин Nivona</a></li>
+                                    <li><a href="/remont-schaerer">Ремонт кофемашин Schaerer</a></li>
+                                    <li><a href="/remont-franke">Все ремонтируемые Franke</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-5">
+                    <div class="col-xs-4">
                         <h5>О компании</h5>
                         <div class="row">
-                            <div class="col-xs-5">
+                            <div class="col-xs-6">
                                 <ul>
                                     <li><a href="/faq">Вопросы ответы</a></li>
                                     <li><a href="/diagnostics">Диагностика</a></li>
@@ -177,7 +186,7 @@ $js = app\components\CController::$js;
                                     <li><a href="/shipping">Доставка</a></li>
                                 </ul>
                             </div>
-                            <div class="col-xs-5">
+                            <div class="col-xs-6">
                                 <ul>
                                     <li><a href="/reviews">Отзывы</a></li>
                                     <li><a href="/payment">Оплата</a></li>
