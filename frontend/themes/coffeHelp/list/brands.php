@@ -45,7 +45,8 @@ $this->title = $pageInfo['meta_title'];
                                 $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
                                 ?>
                                 <?php foreach ($sortedBrands as $latter => $brands): ?>
-                                <div><?= $latter; ?></div>
+                                <div class="clear"></div>    
+                                <div class="letter"><?= $latter; ?></div>
                                     <?php foreach ($brands as $brand): ?>
                                         <a href="/<?= $brand['url']; ?>" class="brand-page-link">
                                             <?php if (!is_file($path . $brand['image'])): ?>
@@ -57,7 +58,6 @@ $this->title = $pageInfo['meta_title'];
                                     <?php endforeach; ?>
                                 <?php endforeach; ?>
                                 <p class="moar-brands">и других производителей.</p>
-                                <button class="all-brands-show">Все бренды <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/expand-arrow.png"/></button>
                             </section>
                             <?= $pageInfo['full_description']; ?>                            
                         </div>
