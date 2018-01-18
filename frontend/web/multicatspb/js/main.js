@@ -170,7 +170,7 @@ $("#more-comments").click(function () {
     var lastId = $(this).data('last');
     console.log(lastId);
     var el = $(this);
-    $.get('/reviews', {lastId: lastId}, function (response) {
+    $.get('/reviews-get', {lastId: lastId}, function (response) {
         var obj = jQuery.parseJSON(response);
         var html = '';
         $.each(obj, function (i, item) {
