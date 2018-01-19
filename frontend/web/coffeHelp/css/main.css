@@ -3162,8 +3162,7 @@ output {
 	color: #555;
 	background-color: #fff;
 	background-image: none;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+	border: 1px solid #52ad25;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
@@ -3687,6 +3686,7 @@ textarea.input-lg {
 	font-size: 14px;
 	line-height: 1.42857143;
 	border-radius: 4px;
+	margin-top: -1px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -4690,7 +4690,6 @@ tbody.collapse.in {
 	padding: 10px 16px;
 	font-size: 18px;
 	line-height: 1.33;
-	border-radius: 6px
 }
 
 select.input-group-lg>.form-control,
@@ -8164,10 +8163,6 @@ h1 {
 	box-shadow: none
 }
 
-.form-control {
-	border: 1px solid #eeeeec;
-	font-family: HelveticaNeueCyr-Roma
-}
 
 .input-group-addon:first-child {
 	font-family: HelveticaNeueCyr-Roma
@@ -8182,8 +8177,8 @@ body {
 
 .btn-default {
 	font-weight: 700;
-	background-color: #f29f0e;
-	border-color: #f29f0e;
+	background-color: #52ad25;
+	border-color: #52ad25;
 	width: 266px;
 	height: 44px;
 	border-radius: 0;
@@ -8195,9 +8190,9 @@ body {
 }
 
 .btn-default:hover {
-	background-color: #f29f0e;
+	background-color: #4c5052;
 	color: #fff;
-	border: #3dc5d5 3px solid
+	border: #52ad25 3px solid
 }
 
 #order_phone_form .btn-default {
@@ -8316,7 +8311,7 @@ body {
 }
 
 #top-bar .navbar-top-form {
-	padding-top: 6px
+	padding-top: 7px
 }
 
 #top-bar .navbar-top-form .col-xs-4,
@@ -8342,7 +8337,7 @@ body {
 }
 
 #top-bar .navbar-top-form .btn-small {
-	background-color: #ffb500;
+	background-color: #52ad25;
 	color: #fff;
 	border-radius: 0;
 	margin-left: 4px
@@ -12950,11 +12945,14 @@ textarea {
 	margin: 16px 0 16px 0;
 	font-size: 14px;
 	font-family: 'Proxima Nova Regular', Arial, sans-serif;
-	color: #666;
+	color: #fff;
 	padding-left: 15px;
-	border: 2px solid #ffbf22;
+	border: 2px solid #52ad25;
 	border-radius: 5px;
 	outline: 0
+}
+#form-modal input#callbackform-phone {
+	color: #4c5052;
 }
 .field-orderform-comment textarea {
 	margin: 0px;
@@ -13170,13 +13168,15 @@ textarea {
 	position: initial;
 	height: 38px;
 	margin: 0 0 10px 0;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: "Proxima Nova Regular", Arial, sans-serif;
-	color: #666;
+	color: #fff;
 	padding-left: 15px;
-	border: 1px solid #ffbf22;
-	border-radius: 5px;
+	border:1px solid #52ad25;
 	outline: 0
+}
+.tb_sidebar_form input#callbackform-phone {
+	color: #4c5052;
 }
 .my-input {
 	max-width: 400px;
@@ -13349,7 +13349,7 @@ section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
 }
 .offer section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
 	font-size: 24px;
-  background: #52ad25;
+  background: #ffbf22;
   color: #fff;
   padding: 20px 10px;
   margin-top: -32px;
@@ -13621,8 +13621,7 @@ img.remodal-close {
 input.call-master,
 input.call-master:focus,
 input.call-master:hover {
-	background: #ffbf22;
-	border-radius: 5px
+	background: #52ad25;
 }
 
 .who-contacts {
@@ -14186,7 +14185,7 @@ a.phone-h {
 
 span.phone_big_top a.phone-c {
 	font-size: 24px;
-	color: #428bca;
+	color: #52ad25;
 	font-family: "Proxima Nova Bold", Arial, sans-serif;
 	font-weight: 700;
 	line-height: 24px
@@ -14844,17 +14843,9 @@ li.menu__item:hover {
 	margin-bottom: 20px;
 }
 
-
-.btn {
-	background-color: #ffb500; color: #fff;
-}
-
-
-
 section.who .break_price div.row:hover .col_price {
 	    background-color: #5cb426!important;
 }
-
 
 .clear {
 	clear: both;
@@ -14866,7 +14857,7 @@ a.more {
 	padding: 10px 15px;
 	font-size: 14px;
 	color: #fff;
-	background: #fab500;
+	background: #52ad25;
 	display: block;
 	width: 120px;
 	margin: 15px auto 30px;
