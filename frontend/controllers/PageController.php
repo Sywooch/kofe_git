@@ -280,7 +280,58 @@ class PageController extends CController {
         foreach ($services as $service) {
             $urls[] = $service;
         }
-    }
+		return $urls;
+    }	
+		
+	private function getMonoUrls($siteConfig) {
+		$sql = 'SELECT m.url, m.type, m.id, m.title, (
+                    CASE 
+                        WHEN b.title = \'Все бренды\' THEN m.title        
+                        ELSE b.title
+                    END) AS brand_title,
+                    (
+                    CASE 
+                        WHEN m.type = \'brand\' THEN \'\'     
+                        ELSE m.title
+                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent  WHERE m.active = 1 AND m.url != \'/\' AND m.category_id = ' . $siteConfig['category_id'] . ' AND (m.parent = ' . self::$monoBrand['id'] . ' OR m.site_id = ' . $siteConfig['id'] . ')';
+        $pages = Yii::$app->db->createCommand($sql)->queryAll();
+		$sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
+		$hostname = Yii::$app->request->hostInfo;
+        $urls = [];
+		$services = Yii::$app->db->createCommand($sql)->queryAll();
+		foreach ($pages as $page) {
+			$urls[] = $page;
+			if ($page['type'] == 'model' || $page['type'] == 'brand') {
+				if ($page['type'] == 'brand') {
+                    $brand_title = $page['title'];
+                    $model_title = '';
+                } elseif ($page['type'] == 'model') {
+                    //echo $sql = 'SELECT title FROM {{%pages}} WHERE id = ' . $page['parent'];exit;
+                    //$brand = Yii::$app->db->createCommand($sql)->queryOne();
+                    $brand_title = $page['brand_title'];
+                    $model_title = $page['model_title'];
+                }
+                if ($brand_title == 'Все бренды') {
+                    $brand_title = $model_title;
+                }
+                if ($brand_title == $model_title) {
+                    $model_title = '';
+                }
+                foreach ($services as $service) {
+                    if ($service['type'] == 1) {
+                        $service['type'] = 'Услуга';
+                    } elseif ($service['type'] == 2) {
+                        $service['type'] = 'Неисправность';
+                    }
+                    $urls[] = ['url' => $hostname . '/' . $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
+                }
+			}
+		}
+		foreach ($services as $service) {
+            $urls[] = $service;
+        }
+		return $urls;
+	}
 
     public function actionSitemap2() {
         $siteConfig = self::getSiteConfig();
@@ -294,7 +345,9 @@ class PageController extends CController {
             error_reporting(E_ALL);
             if (isset($siteConfig['multi_category']) && $siteConfig['theme'] == 'ifixme') {
                 $urls = $this->getAppleUrls();
-            } else {
+            } elseif($siteConfig['mono']) {
+				$urls = $this->getMonoUrls($siteConfig);
+			} else {
                 $urls = $this->getUrls($siteConfig);
             }
             //print_r($urls);exit;
