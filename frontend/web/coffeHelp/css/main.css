@@ -12355,7 +12355,8 @@ section.promo {
 }
 section.promo.widthsto {
 	padding: 0 20px;
-	min-height: 250px
+	min-height: 250px;
+	padding-bottom: 20px;
 }
 
 section.who {
@@ -13305,17 +13306,21 @@ img.tb_sidebar_item__img {
 	float: left;
 	margin-bottom: 10px
 }
-section.section_promo_form {
-	margin-bottom: 20px;
-}
 section.section_promo_form div.tb_sidebar_cont {
 	padding: 20px;
+	background-color: #fff;
+	background-image: url(../images/dance.gif);
+	background-repeat: no-repeat;
+	background-size: 90px;
+	background-position: top right;
+	/*animation: blur 1.75s infinite;*/
 	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
-	background: #fff;
+	border: 1px solid #5cb426;
 }
 .offer section.section_promo_form div.tb_sidebar_cont {
 	text-align: center;
 	padding: 10px 20px;
+	background-image: none;
 }
 
 .offer section.section_promo_form div.tb_sidebar_cont p {
@@ -14940,4 +14945,133 @@ details em {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+@keyframes blur {
+  from {
+    box-shadow:0px 0px 10px #5cb426,
+      0px 0px 10px #5cb426, 
+      0px 0px 25px #5cb426,
+      0px 0px 25px #5cb426,
+      0px 0px 25px #5cb426,
+      0px 0px 25px #5cb426,
+      0px 0px 25px #5cb426,
+      0px 0px 25px #5cb426,
+      0px 0px 50px #5cb426,
+      0px 0px 50px #5cb426,
+      0px 0px 50px #e6e6e6,
+      0px 0px 150px #e6e6e6,
+      0px 10px 100px #e6e6e6,
+      0px 10px 100px #e6e6e6,
+      0px 10px 100px #e6e6e6,
+      0px 10px 100px #e6e6e6,
+      0px -10px 100px #e6e6e6,
+      0px -10px 100px #e6e6e6;
+  }
+}
+
+
+section.section_promo_form div.tb_sidebar_cont:before {
+	animation: my-anime 2.5s infinite;
+	content: '';
+	border-color: #fe2038;
+	position: absolute;
+	z-index: 0;
+}
+@keyframes my-anime {
+	0%, 100% {
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		border-top: 1px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 0px solid #fe2038;
+		height: 0%;
+	}
+	25% {
+		top: 0%;
+		left: 100%;
+		width: 0%;
+		height: 100%;
+		border-top: 0px solid #fe2038;
+		border-right: 1px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 0px solid #fe2038;
+	}
+	50% {
+		top: 100%;
+		left: 0%;
+		width: 100%;
+		height: 0%;
+		border-top: 0px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 1px solid #fe2038;
+		border-left: 0px solid #fe2038;
+	}
+	75% {
+		top: 0%;
+		left: 0%;
+		width: 0%;
+		height: 100%;
+		border-top: 0px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 1px solid #fe2038;
+	}
+}
+
+
+section.section_promo_form div.tb_sidebar_cont:after {
+	animation: my-anime2 2.5s infinite;
+	content: '';
+	border-color: #fe2038;
+	position: absolute;
+	z-index: 0;
+}
+@keyframes my-anime2 {
+	0%, 100% {
+		bottom: 0%;
+		right: 0%;
+		width: 100%;
+		border-top: 0px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 1px solid #fe2038;
+		border-left: 0px solid #fe2038;
+		height: 0%;
+	}
+	25% {
+		bottom: 0%;
+		right: 100%;
+		width: 0%;
+		height: 100%;
+		border-top: 0px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 1px solid #fe2038;
+	}
+	50% {
+		bottom: 100%;
+		right: 0%;
+		width: 100%;
+		height: 0%;
+		border-top: 1px solid #fe2038;
+		border-right: 0px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 0px solid #fe2038;
+	}
+	75% {
+		bottom: 0%;
+		right: 0%;
+		width: 0%;
+		height: 100%;
+		border-top: 0px solid #fe2038;
+		border-right: 1px solid #fe2038;
+		border-bottom: 0px solid #fe2038;
+		border-left: 0px solid #fe2038;
+	}
+}
+.offer section.section_promo_form div.tb_sidebar_cont:after,
+.offer section.section_promo_form div.tb_sidebar_cont:before {
+	display: none;
 }
