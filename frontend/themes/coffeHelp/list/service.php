@@ -24,7 +24,7 @@ $this->title = $title;
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
-                <div class="col-xs-<?= empty($pageInfo['image']) && empty($modelImage) ? '9' : '5'; ?>">
+                <div class="col-xs-<?= empty($pageInfo['image']) ? '9' : '5'; ?>">
                     <h1>
                         <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
                     </h1>
