@@ -15,7 +15,7 @@ $this->title = $title;
                         <?php endforeach; ?>                        
                     </ol>
                 </div>
-                <?php if (!empty($pageInfo['image']) && !empty($modelImage)): ?>
+                <?php if (!empty($pageInfo['image'])): ?>
                     <div class="col-xs-4">
                         <?php if (!empty($pageInfo['image'])): ?>
                             <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
