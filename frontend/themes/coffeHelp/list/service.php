@@ -11,7 +11,7 @@ $this->title = $title;
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                            <li><a href="/<?= $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
+                            <li><a href="<?= $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
                         <?php endforeach; ?>                        
                     </ol>
                 </div>
