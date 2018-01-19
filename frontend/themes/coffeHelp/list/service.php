@@ -11,18 +11,20 @@ $this->title = $title;
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                        <li><a href="/<?= $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
+                            <li><a href="/<?= $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
                         <?php endforeach; ?>                        
                     </ol>
                 </div>
-                <div class="col-xs-4">
-                    <?php if (!empty($pageInfo['image'])): ?>
-                        <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
-                    <?php elseif (!empty($modelImage)): ?>
-                        <img id="big-header-image" src="<?= '/' . $assets . '/uploads/images/' . $modelImage; ?>" />
-                    <?php endif; ?>
-                </div>
-                <div class="col-xs-5">
+                <?php if (!empty($pageInfo['image']) && !empty($modelImage)): ?>
+                    <div class="col-xs-4">
+                        <?php if (!empty($pageInfo['image'])): ?>
+                            <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
+                        <?php elseif (!empty($modelImage)): ?>
+                            <img id="big-header-image" src="<?= '/' . $assets . '/uploads/images/' . $modelImage; ?>" />
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <div class="col-xs-<?= empty($pageInfo['image']) && empty($modelImage) ? '9' : '5'; ?>">
                     <h1>
                         <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
                     </h1>
@@ -42,9 +44,11 @@ $this->title = $title;
         <hr class="big_line">
         <section class="about">
             <div class="row">
-                <?php if (!empty($seoText2)) {
+                <?php
+                if (!empty($seoText2)) {
                     echo $seoText2;
-                } ?>
+                }
+                ?>
             </div>
         </section>
         <section class="order">
