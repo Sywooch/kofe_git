@@ -300,7 +300,7 @@ class PageController extends CController {
         $urls = [];
 		$services = Yii::$app->db->createCommand($sql)->queryAll();
 		foreach ($pages as $page) {
-			$page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url'])
+			$page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
 			$urls[] = $page;
 			if ($page['type'] == 'model' || $page['type'] == 'brand') {
 				if ($page['type'] == 'brand') {
