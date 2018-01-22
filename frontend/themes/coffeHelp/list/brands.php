@@ -45,17 +45,28 @@ $this->title = $pageInfo['meta_title'];
                                 $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
                                 ?>
                                 <?php foreach ($sortedBrands as $latter => $brands): ?>
-                                <div class="clear"></div>    
-                                <div class="letter"><?= $latter; ?></div>
-                                    <?php foreach ($brands as $brand): ?>
-                                        <a href="/<?= $brand['url']; ?>" class="brand-page-link">
-                                            <?php if (!is_file($path . $brand['image'])): ?>
-                                                <?= $brand['title']; ?>
-                                            <?php else: ?>
-                                                <img src="/uploads/images/<?= $brand['image']; ?>"/>
-                                            <?php endif; ?>
-                                        </a>
-                                    <?php endforeach; ?>
+                                    <div class="search-brends">
+                                        <div class="left"><?= $latter; ?></div>
+                                        <div class="right">
+                                            <ul class="menu__list">
+                                                <?php foreach ($brands as $brand): ?>
+                                                    <?php
+                                                    if ($siteConfig['mono'])
+                                                        $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
+                                                    ?>
+                                                    <li class="menu__item">
+                                                        <a class="menu__link" href="/<?= $brand['url']; ?>">
+                                                            <?php if (!is_file($path . $brand['image'])): ?>
+                                                                <?= $brand['title']; ?>
+                                                            <?php else: ?>
+                                                                <img src="/uploads/images/<?= $brand['image']; ?>"/>
+                                                            <?php endif; ?>
+                                                        </a>                        
+                                                    </li>
+                                                <?php endforeach; ?>               
+                                            </ul>
+                                        </div>
+                                    </div>
                                 <?php endforeach; ?>
                                 <p class="moar-brands">и других производителей.</p>
                             </section>
