@@ -15,8 +15,17 @@ $form = ActiveForm::begin([
                             'template' => '{input}',
                         ],
             ]);
-            ?>            
-            <span class="tb_sidebar_title"><?= $title; ?></span>
+            ?>
+            <span class="tb_sidebar_title">
+                <ul class="content__container__list">
+                  <li class="content__container__list__item">Бесплатная диагностика</li>
+                  <li class="content__container__list__item">Опытные мастера</li>
+                  <li class="content__container__list__item">Срочный ремонт</li>
+                  <li class="content__container__list__item">Бесплатная доставка</li>
+                </ul>
+            </span>
+            
+            <span class="tb_sidebar_title gl"><?= $title; ?></span>
             <p><?= $desc; ?></p>
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
