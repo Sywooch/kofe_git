@@ -9,7 +9,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <p> Принимаем заявку, проводим диагностику, предлагаем решения – за 1 час.</p>
     </div>
     <div class="col-sm-4">
-        <h3><i>Работаем с</i> <span>гарантией</span></h3>
+        <h3><i>Предоставляем</i> <span>гарантию</span></h3>
         <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/who/contract_icon.png">
         <p> Если возникает гарантийный случай — все бесплатно исправляем.</p>
     </div>

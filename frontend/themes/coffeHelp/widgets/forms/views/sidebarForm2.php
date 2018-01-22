@@ -22,10 +22,10 @@ $form = ActiveForm::begin([
             <?php if (!$isHome): ?>
                 <span class="tb_sidebar_title">
                     <ul class="content__container__list">
-                        <li class="content__container__list__item">Бесплатная диагностика</li>
-                        <li class="content__container__list__item">Опытные мастера</li>
-                        <li class="content__container__list__item">Срочный ремонт</li>
                         <li class="content__container__list__item">Бесплатная доставка</li>
+                        <li class="content__container__list__item">Оперативный ремонт</li>
+                        <li class="content__container__list__item">Устранение неисправностей</li>
+                        <li class="content__container__list__item">Бесплатная диагностика</li>
                     </ul>
                 </span>
             <?php else: ?>

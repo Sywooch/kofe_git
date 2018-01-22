@@ -9513,11 +9513,7 @@ section.response h3 {
 	margin-left: 10px
 }
 
-section.sale {
-	background: url(../img/sale/sale_bg.jpg) #707678 no-repeat;
-	overflow: hidden;
-	padding-top: 40px
-}
+
 
 section.sale h3 {
 	padding: 0;
@@ -12111,7 +12107,7 @@ section.price .section_form_order_bottom {
 }
 
 body section.offer {
-	/*height: 520px;*/
+	height: 530px;
 	margin-top: -38px;
 	position: relative;
 	background: url(../images/banner.jpg) center center;
@@ -13127,7 +13123,10 @@ textarea {
 	height: 42px;
 	max-height: 42px;
 }
-
+.offer .tb_sidebar_title {
+	height: auto;
+	max-height: 90px;
+}
 .tb_sidebar_extra_text {
 	display: block;
 	font-size: 14px;
@@ -13319,17 +13318,20 @@ section.section_promo_form div.tb_sidebar_cont {
 .offer section.section_promo_form div.tb_sidebar_cont {
 	text-align: center;
 	padding: 10px 20px;
-	background-image: none;
+	background-position: 155px 45px;
 }
 
 .offer section.section_promo_form div.tb_sidebar_cont p {
-	font-size: 18px;
+	font-size: 14px;
 	color: #4c5052;
+	text-align: left;
+	width: 70%;
 }
 
 section.section_promo_form div.tb_sidebar_cont input {
 	height: 38px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	color: #fff;
 }
 
 section.section_promo_form div.tb_sidebar_cont input[type=button]:hover {
@@ -13532,7 +13534,8 @@ section.sale {
 	background-size: cover!important;
 	margin-bottom: 100px;
 	height: auto;
-	margin-bottom: 40px
+	margin-bottom: 20px;
+	padding: 40px;
 }
 
 section.sale h3 {
@@ -14796,27 +14799,31 @@ section.school-map h3 {
 }
 .my-footer-block {
 	background-color: #fff;
+	padding-top: 20px;
 }
 
 .search-brends {
 	display: flex;
-	padding: 10px;
+	padding: 2px;
 	border-radius: 3px;
-}
-.search-brends:nth-child(odd) {
-	background-color: #ffb50017;
 }
 .search-brends  .my-input {
 	margin-top: 10px;
 }
 .search-brends .left {
-	width: 55px;
-	font-size: 64px;
-	color: #5cb42687;
-	line-height: 65px;
+    width: 48px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 46px;
+    background: #52ad25;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-height: 46px;
 }
 .search-brends .right {
-	width: 715px;
+	width: 800px;
+	background: #fff;
 }
 ul.menu__list {
     padding: 0px;
@@ -14827,21 +14834,26 @@ li.menu__item {
 	text-align: center;
     float: left;
     display: inline-block;
-    width: 20%;
-    border: 1px dashed #5cb426;
+    width: 20.1%;
+    border: 1px solid #e2e2e2;
     margin-bottom: -1px;
     margin-right: -1px;
     position: relative;
 }
 li.menu__item a {
-    padding: 5px 5px;
+    padding: 12px 15px;
+    text-align: left;
     display: block;
     color: #333;
     font-size: 14px;
 }
 li.menu__item:hover {
-    border: 1px dashed #ffb500;
+		text-decoration: none;
+    border: 1px solid #52ad25;
     z-index: 9;
+}
+li.menu__item a:hover {
+		text-decoration: none;
 }
 .office__inner {
 	margin-bottom: 20px;
@@ -14983,7 +14995,7 @@ section.section_promo_form div.tb_sidebar_cont:before {
 		top: 0%;
 		left: 0%;
 		width: 100%;
-		border-top: 2px solid #fe2038;
+		border-top: 1px solid #fe2038;
 		border-right: 0px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
 		border-left: 0px solid #fe2038;
@@ -14995,7 +15007,7 @@ section.section_promo_form div.tb_sidebar_cont:before {
 		width: 0%;
 		height: 100%;
 		border-top: 0px solid #fe2038;
-		border-right: 2px solid #fe2038;
+		border-right: 1px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
 		border-left: 0px solid #fe2038;
 	}
@@ -15006,7 +15018,7 @@ section.section_promo_form div.tb_sidebar_cont:before {
 		height: 0%;
 		border-top: 0px solid #fe2038;
 		border-right: 0px solid #fe2038;
-		border-bottom: 2px solid #fe2038;
+		border-bottom: 1px solid #fe2038;
 		border-left: 0px solid #fe2038;
 	}
 	75% {
@@ -15017,7 +15029,7 @@ section.section_promo_form div.tb_sidebar_cont:before {
 		border-top: 0px solid #fe2038;
 		border-right: 0px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
-		border-left: 2px solid #fe2038;
+		border-left: 1px solid #fe2038;
 	}
 }
 
@@ -15037,7 +15049,7 @@ section.section_promo_form div.tb_sidebar_cont:after {
 		width: 100%;
 		border-top: 0px solid #fe2038;
 		border-right: 0px solid #fe2038;
-		border-bottom: 2px solid #fe2038;
+		border-bottom: 1px solid #fe2038;
 		border-left: 0px solid #fe2038;
 		height: 0%;
 	}
@@ -15049,14 +15061,14 @@ section.section_promo_form div.tb_sidebar_cont:after {
 		border-top: 0px solid #fe2038;
 		border-right: 0px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
-		border-left: 2px solid #fe2038;
+		border-left: 1px solid #fe2038;
 	}
 	50% {
 		bottom: 100%;
 		right: 0%;
 		width: 100%;
 		height: 0%;
-		border-top: 2px solid #fe2038;
+		border-top: 1px solid #fe2038;
 		border-right: 0px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
 		border-left: 0px solid #fe2038;
@@ -15067,7 +15079,7 @@ section.section_promo_form div.tb_sidebar_cont:after {
 		width: 0%;
 		height: 100%;
 		border-top: 0px solid #fe2038;
-		border-right: 2px solid #fe2038;
+		border-right: 1px solid #fe2038;
 		border-bottom: 0px solid #fe2038;
 		border-left: 0px solid #fe2038;
 	}
@@ -15186,4 +15198,76 @@ section.section_promo_form div.tb_sidebar_cont:after {
   49.98%,62.64% {transform:translate3d(0,-75%,0);}
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+
+
+
+.my-review {
+	margin-left: -1%;
+	    display: flex;
+    flex-wrap: wrap;
+
+}
+.my-review > div.reviews__box {
+	padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  background: url(../img/icons/review_bg.png) no-repeat right bottom;
+  margin-bottom: 10px;
+  width: 49%;
+  float: left;
+  margin-left: 1%;
+}
+.my-review > div.reviews__box .reviews__name {
+    font-family: 'Proxima Nova Bold';
+    font-size: 13px;
+    color: #3c3f3e;
+}
+.my-review > div.reviews__box .reviews__text {
+    font-family: 'Proxima Nova Regular';
+    font-size: 13px;
+    color: #3c3f3e;
+    margin-bottom: 12px;
+    line-height: 22px;
+}
+.my-review > div.reviews__box p {
+	margin-bottom: 5px;
+}
+.my-review > div.reviews__box p b {
+	margin-right: 5px;
+}
+
+.otzivi h1 {
+	margin-bottom: 25px;
+}
+
+.reviews__rating {
+    width: 75px;
+    height: 12px;
+    margin: 5px 0 5px -2px;
+    background: url(http://kofe03.ru/kofe03/images/stars6170.png?v=1485504369723) repeat-x 0 0;
+}
+.reviews__rating:before {
+    display: block;
+    width: 0;
+    height: inherit;
+    content: '';
+    background: inherit;
+    background-position: 0 100%;
+}
+.reviews__rating_1:before {
+    width: 15px;
+}
+.reviews__rating_2:before {
+    width: 30px;
+}
+.reviews__rating_3:before {
+    width: 45px;
+}
+.reviews__rating_4:before {
+    width: 60px;
+}
+.reviews__rating_5:before {
+    width: 75px;
 }

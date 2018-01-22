@@ -1,37 +1,42 @@
-<main class="layout__content" role="main">
-    <header class="layout__head">
-        <div class="layout__inner">
-            <nav class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Ремонт кофемашин" href="/"><span itemprop="title">Ремонт кофемашин</span></a></li>
-                </ul>
-                <span class="breadcrumbs__current">Отзывы</span>
-            </nav>
-            <h1 class="layout__title">Отзывы</h1>
-        </div>
-    </header>
-    <section class="reviews reviews_context">
-        <div class="reviews__inner">
-            <div class="reviews__list">
-                <?php foreach ($rows as $row): ?>
-                    <article class="reviews__item">
-                        <div class="reviews__box">
-                            <h4 class="reviews__name"><?= $row['username']; ?></h4>
-                            <time class="reviews__time"><?= date('d.m.Y', strtotime($row['date'])); ?><</time>
-                            <div class="reviews__rating reviews__rating_<?= $row['rating']; ?>"></div>
-                            <p class="reviews__text"><?= $row['message']; ?></p>
-                            <div class="reviews__more">
-                                <a class="reviews__full js-popup" data-popup="review_1" href="#">Еще</a>
-                            </div>
-                        </div>
-                    </article>
-                <?php endforeach; ?>
-                <?=
-                \yii\widgets\LinkPager::widget([
-                    'pagination' => $pagination,
-                ]);
-                ?>
+<div class="bg otzivi">
+    <div class="container theme-showcase" role="main">        
+        <div class="row">
+            <div class="col-md-9 col-sm-12">
+                <ol class="breadcrumb">
+                    <li><a href="/">Ремонт кофемашин</a></li>
+                    <li>Отзывы</li>
+                </ol>
             </div>
         </div>
-    </section>
-</main>
+        <div class="row">
+            <h1 class="layout__title">Отзывы</h1>
+            <div class="row my-review">
+                <?php foreach ($rows as $row): ?>
+                    <div class="reviews__box">
+                        <p class="reviews__name"><?= $row['username']; ?> - <?= date('d.m.Y', strtotime($row['date'])); ?></p>
+                        <div class="reviews__rating reviews__rating_<?= $row['rating']; ?>"></div>
+                        <p class="reviews__text"><?= $row['message']; ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            <?=
+            \yii\widgets\LinkPager::widget([
+                'pagination' => $pagination,
+            ]);
+            ?>
+        </div>
+    </div>
+</div>
+<div class="my-footer-block">
+    <div class="container theme-showcase" role="main">
+        <hr class="big_line">
+        <section class="about">
+            <div class="row">
+                <?= $pageInfo['full_description']; ?>
+            </div>
+        </section>
+        <section class="order">
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+        </section>
+    </div>
+</div>

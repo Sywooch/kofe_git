@@ -6,23 +6,8 @@ $this->title = $page['meta_title'];
 <section class="offer">
     <div class="row">
         <div class="container">
-            <div class="col-xs-4 coffeemashina">
-                <!--<?php if ($siteConfig['id'] == 53): ?>
-                    <img style="margin-top: 85px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/j/slider/1.png" alt="Оригинальные запчасти" width="560">
-                <?php else: ?>
-                    <img style="margin-top: 65px;" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/slider/slider1.jpg" alt="Оригинальные запчасти" width="820">
-                <?php endif; ?>-->
-                <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/kofemashina.png">
-            </div>
-            <div class="col-xs-5">
-                <div class="carousel-caption">
-                    <!--<h1><?= $page['meta_h1']; ?></h1>
-                    <?= $page['description']; ?>-->
-                    <h1>Ремонтируем кофемашины со сверхинтенсивностью</h1>
-                    <p>Инновационное оборудование в сервисном центре, позволит найти проблему и устранить её максимально быстро.<br>
-                        Специалисты с сертификатами международного образца, проконсультируют вас по всем вопросам.</p>
-                    <h3>Каждому 1000 клиенту дарим сервисное обслуживание БЕСПЛАТНО!</h3>
-                </div>
+            <div class="col-xs-9 coffeemashina">
+                <h1><?= $page['meta_h1']; ?></h1>
             </div>
             <?= coffeHelp\widgets\forms\SidebarForm2::widget(['title' => 'Только до 17:00', 'desc' => 'При заказе любой услуги дадим скидку на 20%', 'times' => 'Осталось <b>25</b> минут']); ?>
         </div>
