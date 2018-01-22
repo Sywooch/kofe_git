@@ -23,8 +23,19 @@ class MainUrlRule extends UrlRule {
         }
     }
 
+    private function redirect($url) {
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: $url");
+        exit();
+    }
+
     public function parseRequest($manager, $request) {
         $siteConfig = self::getSiteConfig();
+        $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
+        if(!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
+            $this->redirect($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo]);
+        }
+        unset($redirects);
         if (!isset($siteConfig['multi_category'])) {
             $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
             CController::$category = \Yii::$app->db->createCommand($sql)->queryOne();

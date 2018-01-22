@@ -161,7 +161,7 @@ class CController extends \yii\web\Controller {
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
         $siteConfig = self::getSiteConfig();
-        if (isset($_POST['h1']))
+        if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
         if ($siteConfig['category_id'] == 7) {

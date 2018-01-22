@@ -62,7 +62,7 @@ $form = ActiveForm::begin([
         <?php ActiveForm::end() ?>
     </div>
     <div class="col-xs-7 goroda">
-        <h3>Обслуживаемые города МО</h3>
+        <h3>Обслуживаемые города<?= $siteConfig['id'] == 53 ? ' Ленинградской области' : ' МО' ?></h3>
         <div class="row">
             <?php foreach ($rows as $row): ?>
                 <a href="/<?= $row['url']; ?>"><?= str_replace(['Ремонт кофемашин в городе ', '!'], '', $row['title']); ?></a>
