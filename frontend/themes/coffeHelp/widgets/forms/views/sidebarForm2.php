@@ -15,17 +15,22 @@ $form = ActiveForm::begin([
                             'template' => '{input}',
                         ],
             ]);
+            $controller = Yii::$app->controller;
+            $default_controller = Yii::$app->defaultRoute;
+            $isHome = (($controller->id === $default_controller) && ($controller->action->id === $controller->defaultAction)) ? true : false;
             ?>
-            <span class="tb_sidebar_title">
-                <ul class="content__container__list">
-                  <li class="content__container__list__item">Бесплатная диагностика</li>
-                  <li class="content__container__list__item">Опытные мастера</li>
-                  <li class="content__container__list__item">Срочный ремонт</li>
-                  <li class="content__container__list__item">Бесплатная доставка</li>
-                </ul>
-            </span>
-            
-            <span class="tb_sidebar_title gl"><?= $title; ?></span>
+            <?php if (!$isHome): ?>
+                <span class="tb_sidebar_title">
+                    <ul class="content__container__list">
+                        <li class="content__container__list__item">Бесплатная диагностика</li>
+                        <li class="content__container__list__item">Опытные мастера</li>
+                        <li class="content__container__list__item">Срочный ремонт</li>
+                        <li class="content__container__list__item">Бесплатная доставка</li>
+                    </ul>
+                </span>
+            <?php else: ?>
+                <span class="tb_sidebar_title gl"><?= $title; ?></span>
+            <?php endif; ?>
             <p><?= $desc; ?></p>
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
