@@ -44,15 +44,17 @@ class SeoController extends Controller {
     }
 
     public function actionRedirects() {
+        $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
         if (isset($_POST['save'])) {
-            
+            $b = ['http://kofe03.lc/test' => 'http://kofe03.lc/test2'];
+            file_put_contents('filename.txt', var_export($b, true));
         }
         $sites = [];
         foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
             $sites[$config['id']] = $title . '.ru';
         }
         return $this->render('redirects', [
-                    'sites' => $sites,
+                    'sites' => $sites, 'redirects' => $redirects,
         ]);
     }
 

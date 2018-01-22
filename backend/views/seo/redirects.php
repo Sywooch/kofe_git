@@ -1,7 +1,7 @@
 <div class="pages-create">
     <form method="post">
         <?php
-        
+
         use kartik\select2\Select2;
 
 $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
@@ -29,6 +29,20 @@ $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
             <button type="submit" name="save" class="btn btn-success">Добавить</button>    
         </div>
     </form>
-
-    werwer
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Откуда</th>
+                <th>Куда</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($redirects as $from => $to): ?>
+                <tr>
+                    <td><?= $from; ?></td>
+                    <td><?= $to; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>    
 </div>
