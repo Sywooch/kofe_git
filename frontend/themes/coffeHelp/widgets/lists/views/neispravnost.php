@@ -16,7 +16,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>                    
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/right-arrow-table.png"/>
                 </div>
-                <div class="col-xs-3 col_price"> <span><?= number_format($row['price'], 0, ' ', ' '); ?> руб.</span><a href="#call-modal-form">Заказать</a></div>
+                <div class="col-xs-3 col_price"> <span>от <?= number_format($row['price'], 0, ' ', ' '); ?> руб.</span><a href="#call-modal-form">Заказать</a></div>
             </div>
         <?php endforeach; ?>
     </div>

@@ -9233,7 +9233,7 @@ section.docs .smoky-white {
 }
 
 .panel-body .bg_line {
-	background: #fab500;
+	background: #52ad25;
 }
 
 .panel-body:hover .bg_line {
@@ -10195,7 +10195,8 @@ section.why .panel-clean {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	background-color: #feaf37
+	background-color: #feaf37;
+	display: none;
 }
 
 #accordion {
@@ -12406,10 +12407,6 @@ section.who .right-col {
 	margin-left: 22px
 }
 
-section.order {
-	margin-top: 70px
-}
-
 .row.sub-level .col-sm-4 {
 	padding-left: 40px;
 	padding-right: 40px
@@ -12947,7 +12944,6 @@ textarea {
 	color: #fff;
 	padding-left: 15px;
 	border: 2px solid #52ad25;
-	border-radius: 5px;
 	outline: 0
 }
 #form-modal input#callbackform-phone {
@@ -13171,7 +13167,7 @@ textarea {
 	margin: 0 0 10px 0;
 	font-size: 14px;
 	font-family: "Proxima Nova Regular", Arial, sans-serif;
-	color: #fff;
+	color: #4c5052;
 	padding-left: 15px;
 	border:1px solid #52ad25;
 	outline: 0
@@ -13194,10 +13190,8 @@ textarea {
 .tb_sidebar_form input[type=button] {
 	display: inline-block!important;
 	height: 40px!important;
-	width: 140px!important;
 	border: none;
 	outline: 0;
-	border-radius: 5px;
 	font-family: "Proxima Nova Bold", Arial, sans-serif!important;
 	font-weight: 700;
 	margin-right: 5px;
@@ -13205,10 +13199,12 @@ textarea {
 	padding: 0;
 	color: #fff;
 	text-align: center;
-	background: #ffb500;
+	background: #52ad25;
 	cursor: pointer
 }
-
+.tb_sidebar_form input[type=button]:hover {
+	background: #4c5052;
+}
 .page-list .col-sm-9 .tb_sidebar_cont {
 	display: flex;
   flex-wrap: wrap;
@@ -13231,6 +13227,10 @@ textarea {
 .tb_sidebar_cont .tb_sidebar_title {
 	margin-bottom: 15px;
 	width: 100%;
+}
+
+.col-sm-3 .tb_sidebar_cont .tb_sidebar_title {
+	width: auto;
 }
 
 img.tb_sidebar_item__img {
@@ -13315,7 +13315,6 @@ section.section_promo_form div.tb_sidebar_cont {
 	background-position: top right;
 	/*animation: blur 1.75s infinite;*/
 	box-shadow: 0 0 40px 0 rgba(56, 90, 125, .12);
-	border: 1px solid #5cb426;
 }
 .offer section.section_promo_form div.tb_sidebar_cont {
 	text-align: center;

@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                 </td>
                 <td class="name" style="width: 10%"></td>
-                <td class="price" style="width: 20%"><?= number_format($row['price'], 0, ' ', ' '); ?></td>
+                <td class="price" style="width: 20%">от <?= number_format($row['price'], 0, ' ', ' '); ?></td>
             </tr> 
         <?php endforeach; ?>
     </tbody>
