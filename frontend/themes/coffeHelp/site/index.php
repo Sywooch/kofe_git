@@ -24,7 +24,13 @@ $this->title = $page['meta_title'];
                     <h3>Каждому 1000 клиенту дарим сервисное обслуживание БЕСПЛАТНО!</h3>
                 </div>
             </div>
-            <?= coffeHelp\widgets\forms\SidebarForm2::widget(['title' => 'Только до 17:00', 'desc' => 'При заказе любой услуги дадим скидку на 20%', 'times' => 'Осталось <b>25</b> минут']); ?>
+            <?php 
+            $r = (60 - date('i'));
+            if ($r == 0) {
+                $r = 1;
+            }
+            ?>
+            <?= coffeHelp\widgets\forms\SidebarForm2::widget(['title' => 'Только до ' . date('H', strtotime('+1 hour')) . ':00', 'desc' => 'При заказе любой услуги дадим скидку на 20%', 'times' => 'Осталось <b>' . $r . '</b> минут']); ?>
         </div>
     </div>
 </section>
