@@ -58,7 +58,10 @@ $form = ActiveForm::begin([
         </div>
         <span id="messenger"></span>
 
-        <div class="personalData"><?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?><span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span></div>
+        <div class="personalData">
+                <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
+            <span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
+        </div>
     </div>
     <?php ActiveForm::end() ?>
 </div>
