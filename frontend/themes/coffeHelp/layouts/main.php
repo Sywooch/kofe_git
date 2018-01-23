@@ -57,7 +57,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="navbar">
                     <div class="col-xs-2">
-                       <div class="navbar-logo"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></div>
+                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></a></div>
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
