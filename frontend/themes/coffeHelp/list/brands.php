@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $pageInfo['meta_title'];
 ?>
-<div class="bg">
+<div class="bg brendlarim">
     <div class="container theme-showcase" role="main">        
         <section class="promo widthsto">
             <div class="row">

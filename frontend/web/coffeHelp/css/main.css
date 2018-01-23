@@ -8763,7 +8763,7 @@ span.order a:hover {
 }
 
 .navbar-second ul.navbar-nav a {
-	line-height: 46px;
+	line-height: 45px;
 	font-family: "Proxima Nova Bold", "Open Sans";
 	font-weight: 700;
 	font-size: 16px
@@ -14804,7 +14804,7 @@ section.school-map h3 {
 
 .search-brends {
 	display: flex;
-	padding: 2px;
+	padding: 2px 0px;
 	border-radius: 3px;
 }
 .search-brends  .my-input {
@@ -14846,6 +14846,9 @@ li.menu__item a {
     display: block;
     color: #333;
     font-size: 14px;
+}
+li.menu__item a img {
+	width: 100%;
 }
 li.menu__item:hover {
 		text-decoration: none;
@@ -15270,4 +15273,11 @@ section.section_promo_form div.tb_sidebar_cont:after {
 }
 .reviews__rating_5:before {
     width: 75px;
+}
+
+.brendlarim li.menu__item {
+	width: 16.6666%;
+}
+.brendlarim li.menu__item a {
+	padding: 0px 10px;
 }
