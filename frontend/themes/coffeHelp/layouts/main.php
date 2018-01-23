@@ -16,15 +16,15 @@ $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
 <!DOCTYPE html>
-<html>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<html>    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=1">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=1">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=1" async></script>
