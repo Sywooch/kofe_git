@@ -13,7 +13,7 @@
             <div class="row my-review">
                 <?php foreach ($rows as $row): ?>
                     <div class="reviews__box">
-                        <p class="reviews__name"><?= $row['username']; ?> - <?= date('d.m.Y', strtotime($row['date'])); ?></p>
+                        <p class="reviews__name"><?= $row['username']; ?></p>
                         <div class="reviews__rating reviews__rating_<?= $row['rating']; ?>"></div>
                         <p class="reviews__text"><?= $row['message']; ?></p>
                     </div>
@@ -26,6 +26,10 @@
             ?>
         </div>
     </div>
+</div>
+
+<div class="addreview">
+    
 </div>
 <div class="my-footer-block">
     <div class="container theme-showcase" role="main">

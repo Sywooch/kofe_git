@@ -8,5 +8,5 @@ $siteConfig = app\components\CController::getSiteConfig();
         <a href="/<?= $row['url']; ?>" class="brand-page-link"><img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>"/></a> 
     <?php endforeach; ?>
     <div class="clear"></div>
-    <a href="/brendy" class="more">Все бренды</a>
+    <a href="/brands" class="more">Все бренды</a>
 </section>
