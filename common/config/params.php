@@ -1892,5 +1892,20 @@ return [
             'category_id' => 0,
             'spb' => true,
         ],
+        'nivona-service-center' => [
+            'phone-1' => '8 (495) 185-08-00',
+            'phone-2' => '8 (495) 185-08-00',
+            'urlSlash' => true,
+            'mono' => false,
+            'id' => 123,
+            'sitePrefix' => 'multi_cat',
+            'order-title' => 'МСК ЗАРЕЧНАЯ',
+            'theme' => 'multicatX',
+            'multi_category' => true,
+            'mono-brand' => true,
+            'brand-id' => 20,
+            'foreign_category' => true,
+            'category_id' => 0,
+        ],
     ]
 ];
