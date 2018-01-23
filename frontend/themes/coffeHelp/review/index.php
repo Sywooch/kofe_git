@@ -29,7 +29,60 @@
 </div>
 
 <div class="addreview">
-    
+    <div class="post__content">
+        <br>
+        <h2>Оставить отзыв</h2>
+        <?php
+
+        use yii\helpers\Html;
+        use yii\widgets\ActiveForm;
+        use yii\widgets\MaskedInput;
+        use kartik\rating\StarRating;
+
+$form = ActiveForm::begin([
+                    'id' => 'review-form',
+                    'options' => ['class' => 'form form_feedback'],
+                    'enableClientValidation' => true,
+                    'fieldConfig' => [
+                        'template' => '{input}',
+                    ],
+        ]);
+        ?>
+        <div class="form__row">
+            <label class="form__element form__element_input">
+                <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
+            </label>
+            <label class="form__element form__element_input">
+                <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form__input form__input_big']) ?>
+            </label>
+            <label class="form__element form__element_input form__element_valid">
+                <?=
+                $form->field($model, 'rating')->widget(StarRating::classname(), [
+                    'pluginOptions' => [
+                        'size' => 'sm',
+                        'showCaption' => false,
+                        //'theme' => 'krajee-uni',
+                        'filledStar' => '&#x2605;',
+                        'emptyStar' => '&#x2606;'
+                    ]
+                ]);
+                ?>
+            </label>
+
+        </div>
+        <div class="form__row">
+            <label class="form__element form__element_textarea">
+                <?= $form->field($model, 'message')->textarea(['placeholder' => 'Содержание отзыва', 'class' => 'form__textarea form__textarea_big']) ?>
+            </label>
+        </div>
+        <div class="clear"></div>                
+        <label class="form__element form__element_input form__element_valid">
+            <div class="form__row form__row_submit">
+                <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big']) ?>
+            </div>
+        </label>
+        <?php ActiveForm::end() ?>
+    </div>
 </div>
 <div class="my-footer-block">
     <div class="container theme-showcase" role="main">
