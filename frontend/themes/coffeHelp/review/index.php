@@ -28,9 +28,8 @@
     </div>
 </div>
 
-<div class="addreview">
-    <div class="post__content">
-        <br>
+<div class="addreview container">
+    <div class="post__content row">
         <h2>Оставить отзыв</h2>
         <?php
 
@@ -48,14 +47,14 @@ $form = ActiveForm::begin([
                     ],
         ]);
         ?>
-        <div class="form__row">
-            <label class="form__element form__element_input">
-                <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
+        <div class="row">
+            <label class="col-xs-4 form__element form__element_input">
+                <?= $form->field($model, 'username')->textInput(['placeholder' => 'Имя', 'class' => 'form__input form__input_big']) ?>
             </label>
-            <label class="form__element form__element_input">
-                <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form__input form__input_big']) ?>
+            <label class="col-xs-4 form__element form__element_input">
+                <?= $form->field($model, 'email')->textInput(['placeholder' => 'Заказ №', 'class' => 'form__input form__input_big']) ?>
             </label>
-            <label class="form__element form__element_input form__element_valid">
+            <label class="col-xs-4 form__element form__element_input form__element_valid">
                 <?=
                 $form->field($model, 'rating')->widget(StarRating::classname(), [
                     'pluginOptions' => [
@@ -70,17 +69,16 @@ $form = ActiveForm::begin([
             </label>
 
         </div>
-        <div class="form__row">
-            <label class="form__element form__element_textarea">
-                <?= $form->field($model, 'message')->textarea(['placeholder' => 'Содержание отзыва', 'class' => 'form__textarea form__textarea_big']) ?>
+        <div class="row">
+            <label class="col-xs-12 form__element form__element_textarea">
+                <?= $form->field($model, 'message')->textarea(['placeholder' => 'Ваш отзыв', 'class' => 'form__textarea form__textarea_big']) ?>
             </label>
         </div>
-        <div class="clear"></div>                
-        <label class="form__element form__element_input form__element_valid">
-            <div class="form__row form__row_submit">
-                <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big']) ?>
-            </div>
-        </label>
+        <div class="row">
+            <label class="col-xs-4 form__element form__element_input form__element_valid">
+                <?= Html::submitButton('Отправить', ['class' => 'button button_success button_text button_big']) ?>
+            </label>
+        </div>
         <?php ActiveForm::end() ?>
     </div>
 </div>
