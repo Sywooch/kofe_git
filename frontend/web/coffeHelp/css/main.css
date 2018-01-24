@@ -2649,15 +2649,16 @@
      background-image: none;
      border: 1px solid transparent;
      white-space: nowrap;
-     padding: 6px 12px;
+     padding: 7px 12px;
      font-size: 14px;
      line-height: 1.42857143;
-     border-radius: 4px;
-     margin-top: -1px;
      -webkit-user-select: none;
      -moz-user-select: none;
      -ms-user-select: none;
-     user-select: none 
+     user-select: none;
+         color: #fff;
+    background: #52ad25;
+    margin-top: -1px;
 }
  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
      outline: thin dotted;
@@ -2665,8 +2666,9 @@
      outline-offset: -2px 
 }
  .btn.focus, .btn:focus, .btn:hover {
-     color: #333;
-     text-decoration: none 
+     color: #fff;
+     text-decoration: none;
+     background: #4c5052;
 }
  .btn.active, .btn:active {
      outline: 0;
@@ -6841,8 +6843,11 @@
      max-width: 900px;
      display: block;
      margin: 0 auto;
-     margin-bottom: 20px 
+     margin-bottom: 5px;
 }
+ section.who p b {
+ 	margin-right: 5px;
+ }
  section.who_main p {
      text-align: left;
      display: inline-block;
