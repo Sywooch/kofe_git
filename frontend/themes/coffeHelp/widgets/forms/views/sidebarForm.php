@@ -69,7 +69,7 @@ $form = ActiveForm::begin([
             <?php endforeach; ?>
         </div>
         <div class="map">
-            <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZd6mYiq" width="100%" height="282" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Accfaea6e8abb8d22640a81d04511c2c7d240ece5846dc31dfe4a74b902e2a4d8&amp;source=constructor" width="100%" height="282" frameborder="0"></iframe>
         </div>
     </div> 
 </div>

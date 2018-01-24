@@ -14328,7 +14328,7 @@ $(document).ready(function() {
             } catch (t) {
                 console.log(t), i = 0
             }
-            $(".phone-common").text(i), $("span.title_short").text("Технобыт"), $("span.email_addr").text("service@technobit24.ru"), $("span.address-common").text("ул. Народного Ополчения, 34, с.2, офис 105")
+            $(".phone-common").text(i), $("span.title_short").text("Технобыт"), $("span.email_addr").text("service@technobit24.ru"), $("span.address-common").text("г. Москва, Площадь Победы, д. 1Е. (В здании Дома быта).")
         }
     }).init(), $("a.phone-c, a.phone-common").on("click touch tap", function() {
         var t = /[ \(\)-]+/g;

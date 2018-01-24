@@ -30,7 +30,7 @@ $js = app\components\CController::$js;
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=1" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 53): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=2" rel="stylesheet">
+            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css" rel="stylesheet">
         <?php endif; ?>
     </head>
     <body role="document">
@@ -57,7 +57,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="navbar">
                     <div class="col-xs-2">
-                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></a></div>
+                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg"></a></div>
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
@@ -98,10 +98,10 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="container">
                         <div class="row row_header_line">
-                            <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.svg"></a></div>
+                            <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg"></a></div>
                             <div class="top-menu-container">
                                 <div class="clock-work-conteiner">
-                                    <div class="clock-work l"> Работаем без перерывов и выходных<br> <span>с 7:00 до 22:00</span></div>
+                                    <div class="clock-work l"> Работаем без перерывов и <br> выходных <span>с 9:00 до 20:00</span></div>
                                     <div class="clock-work r checkin-visit"> Выезжаем по <?= Yii::$app->session['region']['id'] == 1 ? 'всей Москве <br> и Московской области' : 'всему Санкт-Петербургу <br> и Ленинградской области'; ?></div>
                                 </div>
                             </div>
@@ -199,18 +199,17 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-xs-3">
                         <h5>Контактная информация</h5>
-                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">ул. Народного Ополчения, 34, с.2, офис 105</p>
+                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">г. Москва, Площадь Победы, д. 1Е. (В здании Дома быта).</p>
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
-                                <nobr> <a href="tel:+74951339049" class="phone-c">+7 (495) 133-90-49</a></nobr>
-                                <nobr> <a href="tel:+79299468413" class="phone-c">+7 (929) 946-84-13</a></nobr>
+                                <nobr> <a href="tel:+74951339049" class="phone-c">+7 (495) 152-07-07</a></nobr>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="row service-info">Сервисный центр - <?= ucfirst($_SERVER['HTTP_HOST']) ?> 2017 © - Ремонт и обслуживание всех брендов кофемашин</div>
+                <div class="row service-info">Сервисный центр - <?= ucfirst($_SERVER['HTTP_HOST']) ?> 2018 © - Ремонт и обслуживание всех брендов кофемашин</div>
             </div>
         </div>
         <div id="caller_widget" data-toggle="modal" data-target="#callerModal">
