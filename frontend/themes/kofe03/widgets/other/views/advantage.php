@@ -28,7 +28,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <img class="cost__ico" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/step_4.png" alt="">
                 </div>
                 <h3 class="cost__label">Диагностика</h3>
-                <p class="cost__text">Инженер проводит полную диганостику кофейной машины</p>
+                <p class="cost__text">Инженер проводит полную диагностику кофейной машины</p>
             </li>
             <li class="cost__item">
                 <div class="cost__number">4</div>
