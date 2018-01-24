@@ -1,3 +1,3 @@
 <?php
 
-return ['http://kofe03.lc/test' => 'http://kofe03.lc/test2'];
+return [50 => [['http://kofe03.lc/test2' => 'http://kofe03.lc/test']]];
