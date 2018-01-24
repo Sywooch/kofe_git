@@ -160,7 +160,7 @@ $js = app\components\CController::$js;
                             <div class="col-xs-6">
                                 <ul>
                                     <li><a href="/remont-delonghi">Ремонт кофемашин Delonghi</a></li>
-                                    <li><a href="/remont-la-cimbali">Ремонт кофемашин La Cimbal</a></li>
+                                    <li><a href="/remont-la-cimbali">Ремонт кофемашин La Cimbali</a></li>
                                     <li><a href="/remont-jura">Ремонт кофемашин Jura</a></li>
                                     <li><a href="/remont-bosch">Ремонт кофемашин Bosch</a></li>
                                     <li><a href="/remont-saeco">Ремонт кофемашин Saeco</a></li>
