@@ -34,6 +34,7 @@ $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
             <tr>
                 <th>Откуда</th>
                 <th>Куда</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -41,6 +42,7 @@ $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
                 <tr>
                     <td><?= $from; ?></td>
                     <td><?= $to; ?></td>
+                    <td><a href="/seo/delete-redirect?f=<?= $from; ?>">Уд.</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
