@@ -19,7 +19,7 @@ $form = ActiveForm::begin([
     ?>
     <div class="form__row">
         <label class="form__element form__element_input">
-            <?= $form->field($model, 'order')->textInput(['class' => 'form__input form__input_big', 'placeholder' => 'Номер заказа'])->label(false); ?>
+            <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form__input form__input_big', 'placeholder' => 'Номер заказа'])->label(false); ?>
         </label> 
         <label class="form__element form__element_input form__element_valid"> 
             <?=
