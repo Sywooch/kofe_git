@@ -35,7 +35,7 @@ section.header ul.top_menu_big li a:hover, section.header ul.top_menu_small li a
 background-color: #d5ad6f;
 }
 .navbar-second .order-now {
-	background-color: #031431;
+	background-color: #c3944c;
 }
 .navbar-second .order-now:hover {
 	background-color: #bd9046;
@@ -109,9 +109,9 @@ section.order {
 	background-image: url(../img/j/border.png);
 	height: 3px;
 }
-.remodal-cancel, input.call-master, input.call-master:focus, input.call-master:hover {
-	background-color: #d5ad6f;
-	border-color: #d5ad6f;
+.remodal-cancel, input.call-master, input.call-master:focus {
+	background-color: #c3944c;
+	border-color: #c3944c;
 	color: #fff ! important;
 }
 .my-input, .tb_sidebar_form input, .tb_sidebar_form textarea,
@@ -137,7 +137,7 @@ section.who {
 	color: #7d98cd;
 	border-color: #7d98cd;
 }
-.bs-docs-footer a:hocer {
+.bs-docs-footer a:hover {
 	color: #ead39f;
 	border-color: #ead39f;
 }
@@ -171,7 +171,7 @@ section.who .break_price div.row:hover .col_price, section.who .break_price div.
     color: #fff ! important;
 }
 .panel-body .bg_line {
-	background-color: #d5ad6f
+	background-color: #c3944c;
 }
 .navbar-top-form span {
 	color: #fff ! important
@@ -183,14 +183,14 @@ span.phone_big_top a.phone-c {
 	background-color: #d5ad6f
 }
 .btn-default {
-	    background-color: #d5ad6f;
-    border-color: #d5ad6f;
+	    background-color: #c3944c;
+    border-color: #c3944c;
 }
 .caller #caller_phone {
 	border-color: #d5ad6f;
 }
 .caller #caller_button:hover {
-	    background: #031431;
+	    background: #d5ad6f;
 }
 section.who:before {
 	width: 100%;
@@ -203,7 +203,7 @@ section.who:before {
 	content: '';
 }
 .btn-default:hover {
-    background-color: #031c41;
+    background-color: #d5ad6f;
 }
 .goroda div a:before {
     content: '';
@@ -217,4 +217,24 @@ section.who:before {
     left: 0px;
     top: 0px;
     margin-top: 5px;
+}
+
+input.call-master:focus, input.call-master:hover {
+    background: #d5ad6f;
+}
+a.more {
+	    background: #c3944c;
+}
+a.more:hover {
+	    background: #d5ad6f;
+}
+#caller_widget #caller_widget_fade,
+#caller_widget #caller_widget_button {
+	    background: #c3944c;
+}
+.form-control {
+	border: 1px solid #c3944c;
+}
+.phone .header-phone-code-part {
+	color: #c21415;
 }

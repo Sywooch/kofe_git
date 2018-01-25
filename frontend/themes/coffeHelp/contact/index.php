@@ -21,11 +21,11 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                 <div class="row contacts-container">
                     <div class="col-lg-6 l">
                         <p>Единый справочный телефон</p>
-                        <div class="phone one"> <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></div>                       
+                        <div class="phone one"> <a class="phone-h" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="header-phone-code-part">+8 (495) </span><span class="header-phone-number-part"> 152-07-07</span></a></div>                       
                     </div>
                     <div class="col-lg-6 r"><?= $pageInfo['description']; ?></div>
                 </div>
-                <div class="row alert"> <img src="../ui/img/icons/alert-sign.png" alt=""/> Заявки на ремонт принимаются каждый день, без выходных и праздников</div>
+                <div class="row alert"> <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/img/calendar.svg" alt=""/> Заявки на ремонт принимаются каждый день, без выходных и праздников</div>
                 <?= coffeHelp\widgets\forms\MainPageForm::widget(); ?> 
                 <?= $pageInfo['full_description']; ?>
             </div>

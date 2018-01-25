@@ -10453,7 +10453,8 @@ body section.offer p.text {
      margin-bottom: 40px 
 }
  div.row.alert img {
-     margin-right: 20px 
+     margin-right: 20px;
+     width: 40px;
 }
  h1.title-pad {
      padding-left: 80px 
