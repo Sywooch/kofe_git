@@ -86,7 +86,7 @@ $js = app\components\CController::$js;
                                 <li><a href="/about">О компании</a></li>
                                 <li><a href="/warranty">Гарантия</a></li>
                                 <li><a href="/error-code">Коды ошибок</a></li>
-                                <li><a href="/status-repair">Статус ремонта</a></li>
+                                <li><a href="/repair-status">Статус ремонта</a></li>
                                 <li><a href="/contacts">Контакты</a></li>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>

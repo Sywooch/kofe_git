@@ -27,7 +27,7 @@ $form = ActiveForm::begin([
         ],
     ])->label('')
     ?>
-    <?= Html::submitButton('Вызвать мастера', ['class' => 'btn btn-small call-master', 'type' => 'button']) ?>
+    <?= Html::submitButton('>', ['class' => 'btn btn-small call-master', 'type' => 'button']) ?>
 </div>
 <div class="col-xs-4"> <span style="color: #b4a588; font-size: 13px;">Перезвоним за минуту!</span></div>
 <?php ActiveForm::end() ?>

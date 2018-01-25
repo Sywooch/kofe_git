@@ -5971,6 +5971,11 @@
      border-radius: 0;
      margin-left: 4px 
 }
+ #top-bar .navbar-top-form .form-group {
+	margin-bottom: 0px;
+	width: 219px;
+	float: left;
+ }
  .navbar-form .form-group {
      display: inline-block;
      margin-bottom: 0;
@@ -10324,7 +10329,7 @@ body section.offer p.text {
      margin-bottom: 100px;
      height: auto;
      margin-bottom: 20px;
-     padding: 40px;
+     padding: 40px 0px 0px;
 }
  section.sale h3 {
      text-transform: initial;
@@ -11978,4 +11983,7 @@ body section.offer p.text {
 
 input.call-master {
     color: #fff;
+}
+#serviceform-phone {
+	color: #4c5052 ! important;
 }
