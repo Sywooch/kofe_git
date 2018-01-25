@@ -14,7 +14,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
     <div class="inner_container">
         <div id="content" class="my-text">
             <h1 class="colortext"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
-            <?= $model['description']; ?>
+            <?= str_replace('#domain#', '<a class="politica" href="' . Yii::$app->request->hostInfo . '">' . str_replace(['http://', '/'], '', Yii::$app->request->hostInfo) . '</a>', $model['description']); ?>
         </div>
     </div>
     <?= multicatX\widgets\other\HowWeWork::widget(); ?>
