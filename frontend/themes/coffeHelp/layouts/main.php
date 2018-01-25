@@ -61,11 +61,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
-                            <form>
-                                <div class="col-xs-3"> <span style="color: #4c5052; font-size: 13px;">Обратный звонок</span></div>
-                                <div class="col-xs-5"> <input id="phone_number_top_nav" type="text" class="form-control phone text" placeholder="Номер телефона" aria-describedby="sizing-addon1" name="phone"> <button type="button" class="btn btn-small call-master">></button></div>
-                                <div class="col-xs-4"> <span style="color: #b4a588; font-size: 13px;">Перезвоним за минуту!</span></div>
-                            </form>
+                            <?= coffeHelp\widgets\forms\HeadForm::widget(); ?>
                         </div>
                     </div>
                     <div class="col-xs-3">
