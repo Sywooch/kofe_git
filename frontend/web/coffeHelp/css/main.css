@@ -12024,3 +12024,104 @@ input.call-master {
   font-family: "Proxima Nova Regular", Arial, sans-serif;
   color: #818b8d;
 }
+section.promo .status-header {
+	display: flex;
+}
+section.promo .status-header .img {
+	padding: 0px;
+	box-shadow: none;
+	position: relative;
+	overflow: hidden;
+	width: 175px;
+	min-width: 175px;
+	height: 175px;
+	display: inline-flex;
+	border-radius: 50%;
+}
+section.promo .status-header .img img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+section.promo .status-header .con {
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+section.promo .status-header .con p:before {
+    width: 5%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: url(../images/status.svg) center;
+    height: 100%;
+    display: block;
+    margin-left: -5%;
+    background-repeat: no-repeat;
+}
+section.promo .status-header .con p {
+	background: #5cb426;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.post__content {
+	padding: 20px 0px 0px;
+}
+.post__content input {
+	  display: block;
+    width: 100%!important;
+    position: initial;
+    height: 38px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    color: #4c5052;
+    padding-left: 15px;
+    border: 1px solid #52ad25;
+  font-weight: normal;
+    outline: 0;
+}
+.post__content button {
+	color: #fff;
+	display: block;
+  width: 100%!important;
+  position: initial;
+  height: 38px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  padding-left: 15px;
+  border: 1px solid #52ad25;
+  outline: 0;
+  background: #52ad25;
+  font-weight: normal;
+}
+.post__content button:hover {
+	background: #4c5052;
+  border: 1px solid #4c5052;
+}
+.post__content .checkbox .form-group {
+	width: 18px;
+	padding: 0px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+.post__content .checkbox input {
+	width: 18px;
+	height: 18px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.post__content .checkbox span {
+	float: left;
+}
