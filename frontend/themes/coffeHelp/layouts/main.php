@@ -26,7 +26,7 @@ $js = app\components\CController::$js;
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=1">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=1">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=2">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=1" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 53): ?>
@@ -221,12 +221,7 @@ $js = app\components\CController::$js;
                 <div class="modal-content">
                     <div id="caller_close"></div>
                     <div class="modal-body">
-                        <form>
-                            <h3>Хотите, мы вам перезвоним?</h3>
-                            <p>Для вызова мастера или подробной консультации оставьте ваш номер телефона</p>
-                            <div class="row"> <input name="phone" id="caller_phone" type="text" class="form-control" placeholder="Номер телефона"> <button id="caller_button" type="submit" class="btn btn-default">Перезвоните мне</button></div>
-                            <div class="info-text">Свяжемся за 2 минуты</div>
-                        </form>
+                        <?= coffeHelp\widgets\forms\PopupForm::widget(); ?>
                     </div>
                 </div>
             </div>
