@@ -38,11 +38,11 @@ $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($redirects as $from => $to): ?>
+            <?php foreach ($redirects as $key => $redirect): ?>
                 <tr>
-                    <td><?= $from; ?></td>
-                    <td><?= $to; ?></td>
-                    <td><a href="/seo/delete-redirect?f=<?= $from; ?>">Уд.</a></td>
+                    <td><?= $redirect['from']; ?></td>
+                    <td><?= $redirect['to']; ?></td>
+                    <td><a href="/seo/delete-redirect?f=<?= $key; ?>">Уд.</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
