@@ -11987,3 +11987,40 @@ input.call-master {
 #serviceform-phone {
 	color: #4c5052 ! important;
 }
+
+.error-code {
+	display: flex;
+	background: #ebf5f8;
+	padding: 0px 15px;
+	margin-top: 15px;
+	    border-radius: 5px;
+}
+.error-code:hover {
+	text-decoration: none;
+	box-shadow: 0 0 5px 0 rgba(92, 180, 38, 0.47058823529411764);
+}
+.error-code .img {
+	width: 25%;
+	min-width: 25%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.error-code .img img {
+	width: 100%;
+}
+.error-code .con {
+	width: 75%;
+	padding: 20px 0px;
+	box-sizing: border-box;
+}
+.error-code .con h4 {
+	width: 100%;
+	font-size: 18px;
+  font-family: "PF DinDisplay Pro Black", Arial, sans-serif;
+}
+.error-code .con p {
+	width: 100%;
+	font-size: 14px;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  color: #818b8d;
+}
