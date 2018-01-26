@@ -5840,18 +5840,22 @@
      font-family: "Proxima Nova Regular", 'Open Sans', sans-serif;
      width: 100% 
 }
- .btn-default {
-     font-weight: 700;
-     background-color: #52ad25;
-     border-color: #52ad25;
-     width: 266px;
-     height: 44px;
-     border-radius: 0;
-     color: #fff;
-     text-transform: uppercase;
-     font-size: 14px;
-     border: none;
-     font-family: "Azoft Sans" 
+.btn-default {
+    background-color: #52ad25;
+    border-color: #52ad25;
+    width: 266px;
+    height: 40px;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    font-family: "Azoft Sans";
+}
+
+.modal-body .form-group {
+	margin-bottom: 0px;
 }
  .btn-default:hover {
      background-color: #4c5052;
@@ -11328,6 +11332,15 @@ body section.offer p.text {
 }
  .goroda div.map {
      margin-top: 20px;
+     padding: 1px;
+     border: 1px dashed #52ad25;
+     height: 288px;
+     background: #f8ecd5;
+}
+.rasmga-ramka #big-header-image  {
+     padding: 1px;
+     border: 1px dashed #52ad25;
+     background: #f8ecd5;
 }
  .goroda div a:before {
      content: '';
@@ -12125,3 +12138,7 @@ section.promo .status-header .con p {
 .post__content .checkbox span {
 	float: left;
 }
+.review_block > .text p:nth-child(1),
+.review_block > .text p:nth-child(2) {
+	display: none;
+} 
