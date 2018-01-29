@@ -13,6 +13,7 @@ use app\components\CController;
 class ReviewController extends CController {
 
     public function actionIndex() {
+        $siteConfig = self::getSiteConfig();
         $pageInfo = $_GET['data'];
         $model = new \app\models\Reviews();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -26,7 +27,12 @@ class ReviewController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $query = \app\models\Reviews::find()->where(['active' => 1]);
+        if (isset($siteConfig['foreign_category'])){
+            $c = ['active' => 1, 'site_id' => $siteConfig['id']];
+        } else {
+            $c = ['active' => 1];
+        }
+        $query = \app\models\Reviews::find()->where($c);
         $countQuery = clone $query;
         $pagination = new \yii\data\Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 1000]);
         $reviews = $query->offset($pagination->offset)
