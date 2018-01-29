@@ -27,7 +27,7 @@ $js = app\components\CController::$js;
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=1">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=2">
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=1" async></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=2" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 53): ?>
             <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css" rel="stylesheet">

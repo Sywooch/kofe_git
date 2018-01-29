@@ -187,8 +187,8 @@ class CController extends \yii\web\Controller {
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
             if ($siteConfig['id'] == 50) {
                 $cookies = Yii::$app->request->cookies;
-                if (isset($cookies['visit_id'])) {
-                    $visit_id = $cookies['visit_id']->value;
+                if (isset($cookies['roistat_visit'])) {
+                    $visit_id = $cookies['roistat_visit']->value;
                     $marker = $cookies['roistat_marker_old']->value;
                     file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode($phone) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
                 }                

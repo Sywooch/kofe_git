@@ -8,13 +8,13 @@ use app\components\CController;
 
 class SidebarForm2 extends Widget {
 
-	public $title = 'Бесплатная диагностика';
-	public $desc = '';
-	public $times = 'Выезд мастера от 30 минут';
+    public $title = 'Бесплатная диагностика';
+    public $desc = '';
+    public $times = 'Выезд мастера от 30 минут';
 
     public function run() {
         $model = new \frontend\models\CallBackForm();
-        if ($model->load(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
