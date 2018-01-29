@@ -139,7 +139,7 @@ $js = app\components\CController::$js;
                                         </g>
                                         </svg> метро Кутузовская
                                         '; ?>
-                                        </span>
+                                    </span>
                                     <br> 
                                     <a href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Набережная канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
                                 </div>
@@ -457,13 +457,29 @@ $js = app\components\CController::$js;
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
+<?php if ($siteConfig['id'] == 50): ?>
+    <script>(function (w, d, s, h, id) {
+            w.roistatProjectId = id;
+            w.roistatHost = h;
+            var p = d.location.protocol == "https:" ? "https://" : "http://";
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+            var js = d.createElement(s);
+            js.charset = "UTF-8";
+            js.async = 1;
+            js.src = p + h + u;
+            var js2 = d.getElementsByTagName(s)[0];
+            js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', 'ce549814b815f3fa6db9d839ea4d4f50');</script>
+<?php endif; ?>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=5"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
-<script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+<script>$("form").each(function () {
+        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+    });</script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
 <script>
@@ -500,12 +516,12 @@ if (Yii::$app->session->getFlash('success')) {
             prevButton: '.garantya__prev'
         });
         $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: false,
+            helpers: {
+                title: {type: 'inside'},
+                buttons: {}
             }
         });
     });
@@ -514,7 +530,7 @@ if (Yii::$app->session->getFlash('success')) {
             loop: true,
             slidesPerView: 6,
             slidesPerGroup: 6,
-            margin:10,
+            margin: 10,
             paginationClickable: true,
             breakpoints: {
                 1600: {
@@ -547,12 +563,12 @@ if (Yii::$app->session->getFlash('success')) {
             prevButton: '.services-slider_prev'
         });
         $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: false,
+            helpers: {
+                title: {type: 'inside'},
+                buttons: {}
             }
         });
     });
@@ -589,12 +605,12 @@ if (Yii::$app->session->getFlash('success')) {
             prevButton: '.models__prev'
         });
         $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
+            prevEffect: 'none',
+            nextEffect: 'none',
+            closeBtn: false,
+            helpers: {
+                title: {type: 'inside'},
+                buttons: {}
             }
         });
     });
