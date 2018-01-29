@@ -16,7 +16,15 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
             </div>
             <div class="row">
                 <div class="col-md-9 col-sm-12">
-                    <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>       
+                    <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
+                    <div class="status-header">
+                        <div class="img">
+                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/avatar.jpg" alt="">
+                        </div>
+                        <div class="con">
+                            <p>Для уточнения информации о статусе ремонта вашей кофемашине, заполните поля и отправьте нам данные. Мы свяжемся с вами в ближайшее время</p>
+                        </div>
+                    </div>
                     <?= $pageInfo['description']; ?>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
@@ -44,11 +52,11 @@ $form = ActiveForm::begin([
                                             ],
                                 ]);
                                 ?>
-                                <div class="form__row">
-                                    <label class="form__element form__element_input">
+                                <div class="row">
+                                    <label class="col-sm-6 nopadding">
                                         <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form__input form__input_big', 'placeholder' => 'Номер заказа'])->label(false); ?>
                                     </label> 
-                                    <label class="form__element form__element_input form__element_valid"> 
+                                    <label class="col-sm-6"> 
                                         <?=
                                         $form->field($model, 'phone')->widget(MaskedInput::className(), [
                                             'name' => 'phone',
@@ -62,15 +70,16 @@ $form = ActiveForm::begin([
                                         ?>
                                     </label>
                                 </div>
-                                <div class="personalData">
-                                    <label class="form__element form__element_input form__element_valid">
+                                <div class="row checkbox">
+                                    <label class="col-sm-12">
                                         <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
                                         <span class="f14">Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
                                     </label>
                                 </div>
-                                <div class="form__row form__row_submit">
-                                    <label class="form__element form__element_input form__element_valid">
-                                        <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big', 'type' => 'submit']) ?>
+                                <div class="clear"></div>
+                                <div class="row">
+                                    <label class="col-sm-12">
+                                        <?= Html::submitButton('Отправить', ['class' => 'button button_success button_text button_big', 'type' => 'submit']) ?>
                                     </label>
                                 </div>
                                 <label class="form__element form__element_input form__element_valid"> </label>

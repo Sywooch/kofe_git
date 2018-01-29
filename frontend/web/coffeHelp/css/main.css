@@ -5840,18 +5840,22 @@
      font-family: "Proxima Nova Regular", 'Open Sans', sans-serif;
      width: 100% 
 }
- .btn-default {
-     font-weight: 700;
-     background-color: #52ad25;
-     border-color: #52ad25;
-     width: 266px;
-     height: 44px;
-     border-radius: 0;
-     color: #fff;
-     text-transform: uppercase;
-     font-size: 14px;
-     border: none;
-     font-family: "Azoft Sans" 
+.btn-default {
+    background-color: #52ad25;
+    border-color: #52ad25;
+    width: 266px;
+    height: 40px;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    font-family: "Azoft Sans";
+}
+
+.modal-body .form-group {
+	margin-bottom: 0px;
 }
  .btn-default:hover {
      background-color: #4c5052;
@@ -5971,6 +5975,11 @@
      border-radius: 0;
      margin-left: 4px 
 }
+ #top-bar .navbar-top-form .form-group {
+	margin-bottom: 0px;
+	width: 219px;
+	float: left;
+ }
  .navbar-form .form-group {
      display: inline-block;
      margin-bottom: 0;
@@ -10324,7 +10333,7 @@ body section.offer p.text {
      margin-bottom: 100px;
      height: auto;
      margin-bottom: 20px;
-     padding: 40px;
+     padding: 40px 0px 0px;
 }
  section.sale h3 {
      text-transform: initial;
@@ -11323,6 +11332,15 @@ body section.offer p.text {
 }
  .goroda div.map {
      margin-top: 20px;
+     padding: 1px;
+     border: 1px dashed #52ad25;
+     height: 288px;
+     background: #f8ecd5;
+}
+.rasmga-ramka #big-header-image  {
+     padding: 1px;
+     border: 1px dashed #52ad25;
+     background: #f8ecd5;
 }
  .goroda div a:before {
      content: '';
@@ -11979,3 +11997,148 @@ body section.offer p.text {
 input.call-master {
     color: #fff;
 }
+#serviceform-phone {
+	color: #4c5052 ! important;
+}
+
+.error-code {
+	display: flex;
+	background: #ebf5f8;
+	padding: 0px 15px;
+	margin-top: 15px;
+	    border-radius: 5px;
+}
+.error-code:hover {
+	text-decoration: none;
+	box-shadow: 0 0 5px 0 rgba(92, 180, 38, 0.47058823529411764);
+}
+.error-code .img {
+	width: 25%;
+	min-width: 25%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.error-code .img img {
+	width: 100%;
+}
+.error-code .con {
+	width: 75%;
+	padding: 20px 0px;
+	box-sizing: border-box;
+}
+.error-code .con h4 {
+	width: 100%;
+	font-size: 18px;
+  font-family: "PF DinDisplay Pro Black", Arial, sans-serif;
+}
+.error-code .con p {
+	width: 100%;
+	font-size: 14px;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  color: #818b8d;
+}
+section.promo .status-header {
+	display: flex;
+}
+section.promo .status-header .img {
+	padding: 0px;
+	box-shadow: none;
+	position: relative;
+	overflow: hidden;
+	width: 175px;
+	min-width: 175px;
+	height: 175px;
+	display: inline-flex;
+	border-radius: 50%;
+}
+section.promo .status-header .img img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+section.promo .status-header .con {
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+section.promo .status-header .con p:before {
+    width: 5%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: url(../images/status.svg) center;
+    height: 100%;
+    display: block;
+    margin-left: -5%;
+    background-repeat: no-repeat;
+}
+section.promo .status-header .con p {
+	background: #5cb426;
+	border-radius: 10px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.post__content {
+	padding: 20px 0px 0px;
+}
+.post__content input {
+	  display: block;
+    width: 100%!important;
+    position: initial;
+    height: 38px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-family: "Proxima Nova Regular", Arial, sans-serif;
+    color: #4c5052;
+    padding-left: 15px;
+    border: 1px solid #52ad25;
+  font-weight: normal;
+    outline: 0;
+}
+.post__content button {
+	color: #fff;
+	display: block;
+  width: 100%!important;
+  position: initial;
+  height: 38px;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+  padding-left: 15px;
+  border: 1px solid #52ad25;
+  outline: 0;
+  background: #52ad25;
+  font-weight: normal;
+}
+.post__content button:hover {
+	background: #4c5052;
+  border: 1px solid #4c5052;
+}
+.post__content .checkbox .form-group {
+	width: 18px;
+	padding: 0px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+.post__content .checkbox input {
+	width: 18px;
+	height: 18px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	display: inline-block;
+	position: relative;
+}
+.post__content .checkbox span {
+	float: left;
+}
+.review_block > .text p:nth-child(1),
+.review_block > .text p:nth-child(2) {
+	display: none;
+} 

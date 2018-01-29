@@ -3,7 +3,7 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<div class="inner-bg">  
+<div class="inner-bg rasmga-ramka">  
     <div class="container theme-showcase" role="main">            
         <section class="promo<?= empty($pageInfo['image']) && empty($modelImage) ? ' full-text' : ''; ?>">
             <div class="row">
