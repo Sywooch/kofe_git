@@ -190,7 +190,7 @@ class CController extends \yii\web\Controller {
                 if (isset($cookies['visit_id'])) {
                     $visit_id = $cookies['visit_id']->value;
                     $marker = $cookies['roistat_marker_old']->value;
-                    file_get_contents('https://mobi03.ru/roistat?visit_id=' . $visit_id . '&phone=' . urlencode($phone) . '&marker=' . urlencode($marker));
+                    file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode($phone) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
                 }                
             }
             file_get_contents('https://mobi03.ru/kofeOrders?oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
