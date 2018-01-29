@@ -18,8 +18,8 @@ $form = ActiveForm::begin([
                 ],
     ]);
     if ($siteConfig['id'] == 50) {
-        $validatejs = "$('#main-form').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter47134782.reachGoal(\"app_for_shares\");}});";
-        $this->registerJs($validatejs, \yii\web\View::POS_END);
+        //$validatejs = "$('#main-form').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter47134782.reachGoal(\"app_for_shares\");}});";
+        //$this->registerJs($validatejs, \yii\web\View::POS_END);
     }
     ?>    
     <div class="form__box">
