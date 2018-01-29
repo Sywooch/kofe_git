@@ -176,7 +176,7 @@ class CController extends \yii\web\Controller {
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
-                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];
+                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];            
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,
