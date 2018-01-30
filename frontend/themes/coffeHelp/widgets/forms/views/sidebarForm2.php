@@ -8,7 +8,7 @@
             use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-                        'id' => 'side-form',
+                        'id' => 'main-page-form',
                         'options' => ['class' => 'tb_sidebar_form'],
                         'enableClientValidation' => true,
                         'fieldConfig' => [

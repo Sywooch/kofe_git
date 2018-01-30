@@ -15,8 +15,10 @@ class Services extends Widget {
     public $urlPrefix = '';
 
     public function run() {
+        $siteConfig = CController::getSiteConfig();
         $sql = 'SELECT price, title, url, description, is_popular FROM {{%services}} WHERE type = ' . (int) $this->type . '' . ($this->is_popular ? ' and is_popular = 1' : ($this->type == 1 ? ' and is_popular != 1' : '')) . ' and category_id = ' . $this->category_id;
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
+        CController::seoShuffle($rows, $siteConfig['id']);
         return $this->render('services', ['services' => $rows, 'title' => $this->title, 'urlPrefix' => $this->urlPrefix]);
     }
 

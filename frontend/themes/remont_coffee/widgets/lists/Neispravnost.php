@@ -18,7 +18,8 @@ class Neispravnost extends Widget {
         $sql = 'SELECT price, title, url, description, is_popular FROM {{%services}} WHERE type = ' . (int) $this->type . '' . ($this->is_popular ? ' and is_popular = 1' : ($this->type == 1 ? ' and is_popular = 0' : '')) . ' and category_id = ' . CController::$category['id'];
         $rows = Yii::$app->db->createCommand($sql)->queryAll();
         if (empty($rows))
-            return '';        
+            return '';
+        CController::seoShuffle($rows, $siteConfig['id']);
         return $this->render($this->view, ['rows' => $rows, 'title' => $this->title, 'type' => $this->type, 'is_popular' => $this->is_popular]);
     }
 

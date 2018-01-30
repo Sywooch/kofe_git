@@ -139,7 +139,7 @@ $js = app\components\CController::$js;
                                         </g>
                                         </svg> метро Кутузовская
                                         '; ?>
-                                        </span>
+                                    </span>
                                     <br> 
                                     <a href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Набережная канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
                                 </div>
@@ -454,6 +454,20 @@ $js = app\components\CController::$js;
             </div>
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
+        <?php if ($siteConfig['id'] == 50): ?>
+            <script>(function (w, d, s, h, id) {
+                    w.roistatProjectId = id;
+                    w.roistatHost = h;
+                    var p = d.location.protocol == "https:" ? "https://" : "http://";
+                    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                    var js = d.createElement(s);
+                    js.charset = "UTF-8";
+                    js.async = 1;
+                    js.src = p + h + u;
+                    var js2 = d.getElementsByTagName(s)[0];
+                    js2.parentNode.insertBefore(js, js2);
+                })(window, document, 'script', 'cloud.roistat.com', 'ce549814b815f3fa6db9d839ea4d4f50');</script>
+        <?php endif; ?>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
@@ -463,141 +477,143 @@ if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
-<script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});</script>
+<script>$("form").each(function () {
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });</script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
 <script>
-    $(function () {
-        var swiper2 = new Swiper('.garantya__slider', {
-            loop: true,
-            slidesPerView: 6,
-            slidesPerGroup: 6,
-            paginationClickable: true,
-            breakpoints: {
-                1260: {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5
+        $(function () {
+            var swiper2 = new Swiper('.garantya__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                paginationClickable: true,
+                breakpoints: {
+                    1260: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    }
                 },
-                1000: {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5
-                },
-                900: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4
-                },
-                800: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3
-                },
-                560: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2
+                pagination: '.garantya__pagination',
+                nextButton: '.garantya__next',
+                prevButton: '.garantya__prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
                 }
-            },
-            pagination: '.garantya__pagination',
-            nextButton: '.garantya__next',
-            prevButton: '.garantya__prev'
+            });
         });
-        $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
-            }
-        });
-    });
-    $(function () {
-        var swiper2 = new Swiper('.services__slider', {
-            loop: true,
-            slidesPerView: 6,
-            slidesPerGroup: 6,
-            margin:10,
-            paginationClickable: true,
-            breakpoints: {
-                1600: {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5
+        $(function () {
+            var swiper2 = new Swiper('.services__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                margin: 10,
+                paginationClickable: true,
+                breakpoints: {
+                    1600: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1400: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    970: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    },
+                    800: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    },
+                    560: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1
+                    }
                 },
-                1400: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4
-                },
-                1100: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3
-                },
-                970: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2
-                },
-                800: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2
-                },
-                560: {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1
+                pagination: '.garantya__pagination',
+                nextButton: '.services-slider_next',
+                prevButton: '.services-slider_prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
                 }
-            },
-            pagination: '.garantya__pagination',
-            nextButton: '.services-slider_next',
-            prevButton: '.services-slider_prev'
+            });
         });
-        $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
-            }
-        });
-    });
-    $(function () {
-        var swiper2 = new Swiper('.models__slider', {
-            loop: true,
-            slidesPerView: 6,
-            slidesPerGroup: 6,
-            paginationClickable: true,
-            breakpoints: {
-                1260: {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5
+        $(function () {
+            var swiper2 = new Swiper('.models__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                paginationClickable: true,
+                breakpoints: {
+                    1260: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    }
                 },
-                1000: {
-                    slidesPerView: 5,
-                    slidesPerGroup: 5
-                },
-                900: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4
-                },
-                800: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3
-                },
-                560: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2
+                pagination: '.models__pagination',
+                nextButton: '.models__next',
+                prevButton: '.models__prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
                 }
-            },
-            pagination: '.models__pagination',
-            nextButton: '.models__next',
-            prevButton: '.models__prev'
+            });
         });
-        $(".fancybox-button").fancybox({
-            prevEffect      : 'none',
-            nextEffect      : 'none',
-            closeBtn        : false,
-            helpers     : {
-                title   : { type : 'inside' },
-                buttons : {}
-            }
-        });
-    });
 </script>
 
 <?php $this->endBody() ?>    

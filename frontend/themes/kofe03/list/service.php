@@ -65,7 +65,7 @@ $this->title = $title;
         </div>
     </section>
     <?= kofe03\widgets\lists\PopularServices::widget(); ?>
-    <?= kofe03\widgets\lists\OtherServices::widget(['id' => $pageInfo['id']]); ?>
+    <?= empty($page['title']) ? '' : kofe03\widgets\lists\OtherServices::widget(['id' => $pageInfo['id'], 'title' => $page['title']]); ?>
     <?= kofe03\widgets\other\Advantage::widget(); ?>
     <?= kofe03\widgets\other\Feedback::widget(); ?>
     <?= kofe03\widgets\lists\PopularBrands::widget(); ?>

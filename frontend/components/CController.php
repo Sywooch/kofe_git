@@ -11,7 +11,7 @@ class CController extends \yii\web\Controller {
     public static $js;
     public static $category;
 
-    public static function replaceJS($js) { 
+    public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
     }
 
@@ -99,9 +99,9 @@ class CController extends \yii\web\Controller {
         $branch = [];
         foreach ($rows as $row) {
             $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'model\' and active = 1 and parent = ' . $row['id'] . ' ORDER BY sort LIMIT 6';
-            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();            
+            $row['children'] = \Yii::$app->db->createCommand($q)->queryAll();
             $branch[] = $row;
-        }        
+        }
         return $branch;
     }
 
@@ -185,7 +185,18 @@ class CController extends \yii\web\Controller {
                 'site' => Yii::$app->request->hostInfo,
             ])->execute();
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
-            file_get_contents('https://mobi03.ru/kofeOrders?oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            if ($siteConfig['id'] == 50) {
+                if (isset($_COOKIE['roistat_visit'])) {
+                    $visit_id = $_COOKIE['roistat_visit'];
+                    //$marker = $_COOKIE['roistat_marker_old'];
+                    //file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode(preg_replace("/\D/", "", $phone)) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
+                }
+            }
+            $visit_id = 0;
+            if (isset($_COOKIE['roistat_visit'])) {
+                $visit_id = $_COOKIE['roistat_visit'];
+            }
+            file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;
