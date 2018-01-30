@@ -176,7 +176,7 @@ class CController extends \yii\web\Controller {
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
-                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];            
+                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,
@@ -188,11 +188,15 @@ class CController extends \yii\web\Controller {
             if ($siteConfig['id'] == 50) {
                 if (isset($_COOKIE['roistat_visit'])) {
                     $visit_id = $_COOKIE['roistat_visit'];
-                    $marker = $_COOKIE['roistat_marker_old'];
-                    file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode(preg_replace("/\D/", "", $phone)) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
-                }                
+                    //$marker = $_COOKIE['roistat_marker_old'];
+                    //file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode(preg_replace("/\D/", "", $phone)) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
+                }
             }
-            file_get_contents('https://mobi03.ru/kofeOrders?oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            $visit_id = 0;
+            if (isset($_COOKIE['roistat_visit'])) {
+                $visit_id = $_COOKIE['roistat_visit'];
+            }
+            file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;
