@@ -14516,5 +14516,9 @@ $(document).ready(function() {
         cookie: "dcjq-accordion"
     }), $(".click_block").click(function() {
         hiddenelement = $(this).data("top"), $(".top-body").css("display", "none"), $(hiddenelement).css("display", "block"), $(".click_block").removeClass("active"), $(this).addClass("active")
-    })
+    });
+    $('#nav-icon3').click(function(){
+        $(this).toggleClass('open');
+        $( ".top_menu_big" ).slideToggle( "slow" );
+    });
 });
