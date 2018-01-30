@@ -196,7 +196,7 @@ class CController extends \yii\web\Controller {
             if (isset($_COOKIE['roistat_visit'])) {
                 $visit_id = $_COOKIE['roistat_visit'];
             }
-            file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
         $msg .= "\r\nСтраница: " . $title;

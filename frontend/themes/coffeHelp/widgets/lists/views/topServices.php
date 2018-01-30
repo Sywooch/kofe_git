@@ -10,4 +10,4 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </a>
     <?php endforeach; ?>
-    </div>
+</div>
