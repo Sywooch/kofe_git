@@ -75,7 +75,7 @@ $js = app\components\CController::$js;
                                     <a class="nav__link" href="/uslugi-i-ceny">Услуги и цены</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link js-popup" href="/status">Статус ремонта</a>
+                                    <a class="nav__link" href="/status">Статус ремонта</a>
                                 </li>
                                 <li class="nav__item">
                                     <a class="nav__link" href="/o-kompanii">О компании</a>
