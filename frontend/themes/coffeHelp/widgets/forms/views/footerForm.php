@@ -14,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-                        'id' => 'popup-new-form',
+                        'id' => 'popup-new-form22',
                         //'options' => ['class' => 'form form_request callback'],
                         'enableClientValidation' => true,
                         'fieldConfig' => [

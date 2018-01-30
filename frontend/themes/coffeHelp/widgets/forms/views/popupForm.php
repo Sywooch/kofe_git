@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-            'id' => 'popup-new-form',
+            'id' => 'popup-new-form2',
             //'options' => ['class' => 'form form_request callback'],
             'enableClientValidation' => true,
             'fieldConfig' => [
