@@ -7,7 +7,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
     <div class="container theme-showcase" role="main">        
         <section class="promo widthsto">
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <li><?= $model['title']; ?></li>
@@ -15,7 +15,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>       
                     <?= $model['description']; ?>
                 </div>

@@ -14,30 +14,51 @@ $this->title = $title;
                         <li><?= $pageInfo['title']; ?></li>
                     </ol>
                 </div>
-                <div class="col-xs-4">
-                    <div class="images">
-                        <?php if (!empty($pageInfo['image'])): ?>
-                        <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
-                        <?php else: ?>
-                            <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                <div class="col-xs-9">
+                    <div class="row">
+                        <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
+                            <div class="col-xs-4 nopadding">
+                                <div class="images">
+                                    <?php if (!empty($pageInfo['image'])): ?>
+                                    <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                                    <?php else: ?>
+                                        <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                                    <?php endif; ?>
+                                </div>
+                            </div>
                         <?php endif; ?>
+                        <div class="col-xs-8">
+                            <h1>
+                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                            </h1>
+                            <?php if (Yii::$app->params['devicedetect']['isMobile']): ?>
+                                <div class="col-xs-4 nopadding">
+                                    <div class="images">
+                                        <?php if (!empty($pageInfo['image'])): ?>
+                                        <img id="big-header-image" src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />            
+                                        <?php else: ?>
+                                            <img id="big-header-image" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/%21mini_page/fridge_header.png">
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                    <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+                            <?php endif; ?>
+
+                            <span class="section-promo-desc">
+                                <?php if (!empty($pageInfo['description'])): ?>
+                                    <?= str_replace('#model_en#', $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
+                                <?php else: ?>                
+                                    <p>  
+                                        <?= app\components\CController::$category['rod_title']; ?> <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в короткие сроки. Устраняем неисправности любой сложности с гарантией качества комплектующих и выполненных работ.               
+                                    </p>
+                                <?php endif; ?>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-5">
-                    <h1>
-                        <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
-                    </h1>
-                    <span class="section-promo-desc">
-                        <?php if (!empty($pageInfo['description'])): ?>
-                            <?= str_replace('#model_en#', $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
-                        <?php else: ?>                
-                            <p>  
-                                <?= app\components\CController::$category['rod_title']; ?> <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в короткие сроки. Устраняем неисправности любой сложности с гарантией качества комплектующих и выполненных работ.               
-                            </p>
-                        <?php endif; ?>
-                    </span>
-                </div>
-                <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+                <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
+                    <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+                <?php endif; ?>
             </div>
         </section>
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>

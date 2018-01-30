@@ -10,18 +10,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041a3f', end
 section.header ul.top_menu_big li a,
 .top_menu_right_info {
 	color: #fff;
-	border-bottom: 0px;
-}
-section.header .row {
-	position: relative;
 }
 section.header .row.row_top_menu:after {
-	width: 100%;
-	height: 3px;
 	background-image: url(../img/j/border.png);
-	display: block;
-	position: absolute;
-	bottom: 0px;
 	content: '';
 }
 .top_menu_right_info {
@@ -40,9 +31,6 @@ background-color: #d5ad6f;
 .navbar-second .order-now:hover {
 	background-color: #bd9046;
 }
-.navbar-second ul.navbar-nav a {
-	line-height: 45px;
-}
 body section.slider {
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002660+0,041833+100 */
@@ -53,21 +41,11 @@ background: radial-gradient(ellipse at center, rgba(0,38,96,1) 0%,rgba(4,24,51,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', endColorstr='#041833',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 body section.slider:after {
-	width: 100%;
-	height: 3px;
 	background-image: url(../img/j/border.png);
-	display: block;
-	position: absolute;
-	bottom: 0px;
 	content: '';
 }
 body section.slider:before {
-	width: 100%;
-	height: 3px;
 	background-image: url(../img/j/border.png);
-	display: block;
-	position: absolute;
-	top: 0px;
 	content: '';
 }
 .carousel-caption h1 {
@@ -87,27 +65,13 @@ background: -webkit-radial-gradient(center, ellipse cover, rgba(0,38,96,1) 0%,rg
 background: radial-gradient(ellipse at center, rgba(0,38,96,1) 0%,rgba(4,24,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', endColorstr='#041833',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.my-footer-block {
-	position: relative;
-}
 #top-bar:after ,
 .my-footer-block:after {
-	width: 100%;
-	height: 3px;
 	background-image: url(../img/j/border.png);
-	display: block;
-	position: absolute;
-	bottom: 0px;
 	content: '';
-	z-index: 0;
-}
-section.order {
-	position: relative;
-	z-index: 2;
 }
 .big_line {
 	background-image: url(../img/j/border.png);
-	height: 3px;
 }
 .remodal-cancel, input.call-master, input.call-master:focus {
 	background-color: #c3944c;
@@ -142,17 +106,7 @@ section.who {
 	border-color: #ead39f;
 }
 hr {
-	border: 0px;
-	height: 3px;
-	width: 100%;
-	display: block;
 	background-image: url(../img/j/border.png);
-}
-.bs-docs-footer hr {
- margin: 0px;
-}
-div.row.service-info {
-    padding: 15px 0 15px;
 }
 div.footer-phone a.phone-c {
 	color: #ead39f;
@@ -160,8 +114,6 @@ div.footer-phone a.phone-c {
 .tb_sidebar_form input[type=button] {
 	    background: #d5ad6f;
 	        font-family: "Proxima Nova Regular", Arial, sans-serif ! important;
-	        font-weight: 200;
-	        font-size: 16px;
 }
 .break_price .col_price {
 	    background-color: #d5ad6f!important;
@@ -193,13 +145,7 @@ span.phone_big_top a.phone-c {
 	    background: #d5ad6f;
 }
 section.who:before {
-	width: 100%;
-	height: 3px;
 	background-image: url(../img/j/border.png);
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
 	content: '';
 }
 .btn-default:hover {
@@ -207,16 +153,7 @@ section.who:before {
 }
 .goroda div a:before {
     content: '';
-    width: 16px;
-    height: 16px;
-    display: inline-block;
     background: url(../img/j/mapstar.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    margin-top: 5px;
 }
 
 input.call-master:focus, input.call-master:hover {

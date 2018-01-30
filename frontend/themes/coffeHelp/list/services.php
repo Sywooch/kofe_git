@@ -7,7 +7,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
     <div class="container theme-showcase" role="main">            
         <section class="promo widthsto">            
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <li><?= $pageInfo['title']; ?></li>
@@ -15,7 +15,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <h1>
                         <?= !empty($model['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?>
                     </h1>

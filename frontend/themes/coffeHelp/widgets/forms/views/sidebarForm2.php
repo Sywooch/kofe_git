@@ -1,4 +1,4 @@
-<div class="col-xs-3">
+<div class="col-xs-3 right-gl-form">
     <section class="section_promo_form">
         <div class="tb_sidebar_cont">
             <?php

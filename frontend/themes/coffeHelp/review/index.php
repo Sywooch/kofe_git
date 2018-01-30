@@ -1,7 +1,7 @@
 <div class="bg otzivi">
     <div class="container theme-showcase" role="main">        
         <div class="row">
-            <div class="col-md-9 col-sm-12">
+            <div class="col-md-9">
                 <ol class="breadcrumb">
                     <li><a href="/">Ремонт кофемашин</a></li>
                     <li>Отзывы</li>

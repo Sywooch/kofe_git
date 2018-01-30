@@ -7,7 +7,7 @@ $this->title = $pageInfo['meta_title'];
     <div class="container theme-showcase" role="main">        
         <section class="promo widthsto">
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <ol class="breadcrumb">
                         <li><a href="/">Ремонт кофемашин</a></li>
                         <li>Бренды</li>
@@ -15,7 +15,7 @@ $this->title = $pageInfo['meta_title'];
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9 col-sm-12">
+                <div class="col-md-9">
                     <h1><?= $pageInfo['meta_h1']; ?></h1>
                     <span class="section-promo-desc">
                         <?= $pageInfo['description']; ?>

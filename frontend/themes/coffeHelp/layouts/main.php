@@ -21,6 +21,7 @@ $js = app\components\CController::$js;
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
@@ -96,10 +97,8 @@ $js = app\components\CController::$js;
                         <div class="row row_header_line">
                             <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg"></a></div>
                             <div class="top-menu-container">
-                                <div class="clock-work-conteiner">
-                                    <div class="clock-work l"> Работаем без перерывов и <br> выходных <span>с 9:00 до 20:00</span></div>
-                                    <div class="clock-work r checkin-visit"> Выезжаем по <?= Yii::$app->session['region']['id'] == 1 ? 'всей Москве <br> и Московской области' : 'всему Санкт-Петербургу <br> и Ленинградской области'; ?></div>
-                                </div>
+                                <div class="clock-work l"> Работаем без перерывов и <br> выходных <span>с 9:00 до 20:00</span></div>
+                                <div class="clock-work r checkin-visit"> Выезжаем по <?= Yii::$app->session['region']['id'] == 1 ? 'всей Москве <br> и Московской области' : 'всему Санкт-Петербургу <br> и Ленинградской области'; ?></div>
                             </div>
                             <div class="header-ordering">
                                 <div class="phone_block_two"> 
@@ -117,8 +116,7 @@ $js = app\components\CController::$js;
                 <div class="container theme-showcase" role="main">
                     <section class="second_navigation" style="height: 78px;">
                         <div class="navbar navbar-second">
-                            <div class="container">
-                                <div class="navbar">
+                            <div class="navbar">
                                     <ul class="nav navbar-nav">
                                         <li>
                                             <a class="coffee-machine" href="#">Типы кофемашин</a>
@@ -140,7 +138,6 @@ $js = app\components\CController::$js;
                                         <li class="order-now"> <a href="#call-modal-form">Заказать ремонт</a></li>
                                     </ul>
                                 </div>
-                            </div>
                         </div>
                     </section>              
                 </div>

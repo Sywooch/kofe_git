@@ -548,6 +548,11 @@ html.remodal-is-locked{
     display:none;
     z-index:2
 }
+@media (max-width: 960px) {
+    #caller_widget{
+        display: none ! important;
+    }
+}
 #caller_widget #caller_widget_dribble{
     width:175px;
     height:175px;

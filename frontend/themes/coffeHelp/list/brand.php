@@ -29,6 +29,7 @@ $this->title = $title;
                                 <?php endif; ?>
                             </div>
                         </div>
+                        <?php if (Yii::$app->params['devicedetect']['isMobile']): ?><?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?><?php endif; ?>
                         <div class="col-xs-8">
                             <span class="section-promo-desc">
                                 <?php if (!empty($pageInfo['description'])): ?>
@@ -42,7 +43,7 @@ $this->title = $title;
                         </div>
                     </div>
                 </div>
-                <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+                <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?><?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?><?php endif; ?>
             </div>
         </section>
         <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>
