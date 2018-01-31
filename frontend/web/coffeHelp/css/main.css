@@ -11966,6 +11966,13 @@ body section.offer p.text {
      padding: 1px;
      border: 1px dashed #52ad25;
      background: #f8ecd5;
+     width: 100%;
+}
+@media (max-width: 480px) {
+    .rasmga-ramka #big-header-image  {
+        width: 80%;
+        margin-bottom: 10px;
+    }
 }
  .goroda div a:before {
      content: '';
@@ -12475,6 +12482,12 @@ body section.offer p.text {
      float: left;
      margin-left: 1%;
 }
+@media (max-width: 480px) {
+     .my-review > div.reviews__box {
+        width: 100%;
+        margin-left: -1%;
+     }
+}
  .my-review > div.reviews__box .reviews__name {
      font-family: 'Proxima Nova Bold';
      font-size: 13px;
@@ -12486,6 +12499,12 @@ body section.offer p.text {
      color: #3c3f3e;
      margin-bottom: 12px;
      line-height: 22px;
+}
+@media (max-width: 480px) {
+     .my-review > div.reviews__box .reviews__text {
+        font-size: 12px;
+        line-height: 18px;
+     }
 }
  .my-review > div.reviews__box p {
      margin-bottom: 5px;
@@ -12538,6 +12557,16 @@ body section.offer p.text {
 }
  .addreview {
      padding: 20px 200px;
+}
+@media (max-width: 1250px) {
+     .addreview {
+         padding: 20px 50px;
+    }
+}
+@media (max-width: 960px) {
+     .addreview {
+         padding: 15px 0px;
+    }
 }
  .addreview h2 {
      margin-top: 0px;
@@ -12602,6 +12631,11 @@ body section.offer p.text {
 }
  .addreview button:hover {
      background: #4c5052;
+}
+@media (max-width: 666px) {
+     .addreview .col-xs-4 {
+        width: 100%;
+     }
 }
  .rating-container .star {
      display: inline-block;

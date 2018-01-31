@@ -22,10 +22,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/avatar.jpg" alt="">
                         </div>
                         <div class="con">
-                            <p>Для уточнения информации о статусе ремонта вашей кофемашине, заполните поля и отправьте нам данные. Мы свяжемся с вами в ближайшее время</p>
+                            <?= $pageInfo['description']; ?>
                         </div>
                     </div>
-                    <?= $pageInfo['description']; ?>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
             </div>
