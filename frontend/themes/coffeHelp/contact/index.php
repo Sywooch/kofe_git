@@ -21,7 +21,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                 <div class="row contacts-container">
                     <div class="col-lg-6 l">
                         <p>Единый справочный телефон</p>
-                        <div class="phone one"> <a class="phone-h" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="header-phone-code-part">+8 (495) </span><span class="header-phone-number-part"> 152-07-07</span></a></div>                       
+                        <div class="phone one"> <a class="phone-h" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
+                            <?= Yii::$app->session['region']['phone']; ?>
+                        </a></div>                       
                     </div>
                     <div class="col-lg-6 r"><?= $pageInfo['description']; ?></div>
                 </div>

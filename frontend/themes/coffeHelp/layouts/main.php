@@ -26,12 +26,12 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=1">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=2">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=2">
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=2" async></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=3" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 53): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css" rel="stylesheet">
+            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=2" rel="stylesheet">
         <?php endif; ?>
     </head>
     <body role="document">
@@ -91,6 +91,12 @@ $js = app\components\CController::$js;
                                 <li><a href="/contacts">Контакты</a></li>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
+                            <div id="nav-icon3">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
                         </div>
                     </div>
                     <div class="container">
@@ -186,6 +192,7 @@ $js = app\components\CController::$js;
                                     <li><a href="/reviews">Отзывы</a></li>
                                     <li><a href="/payment">Оплата</a></li>
                                     <li><a href="/politics">Пользовательское соглашение</a></li>
+                                    <li><a href="/contacts">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -196,7 +203,7 @@ $js = app\components\CController::$js;
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
-                                <nobr> <a href="tel:+74951339049" class="phone-c">+7 (495) 152-07-07</a></nobr>
+                                <nobr> <a href="tel:+74951339049" class="phone-c">7 (495) 152-07-07</a></nobr>
                             </div>
                         </div>
                     </div>
