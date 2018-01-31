@@ -1,3 +1,6 @@
+<?php
+$this->title = $pageInfo['meta_title'];
+?>
 <div class="bg otzivi">
     <div class="container theme-showcase" role="main">        
         <div class="row">
