@@ -6229,7 +6229,6 @@
      background-color: #434648 
 }
  .navbar {
-     min-height: 57px;
      width: 100%;
      overflow: hidden 
 }
@@ -9507,7 +9506,7 @@ body section.offer p.text {
      padding: 0;
      border-right: 3px solid #fff;
      border-bottom: 3px solid #fff;
-     background-size: 100%;
+     background-size: 110% 100%;
 }
 @media (max-width: 1250px) {
      .service3 .panel-body {
