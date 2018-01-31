@@ -1,5 +1,5 @@
 <?php
-$this->title = $page['meta_title'];
+$this->title = $pageInfo['meta_title'];
 ?>
 <div class="bg otzivi">
     <div class="container theme-showcase" role="main">        
