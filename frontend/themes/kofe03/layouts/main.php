@@ -146,7 +146,7 @@ $js = app\components\CController::$js;
                                 <div class="connect__schedule">Работаем ежедневно <span class="color-green">c 09:00 до 20:00</span><br class="connect_br">без выходных и праздничных дней</div>
                                 <div class="connect__call">
                                     <span class="connect__phone connect__phone_active" data-phone="moscow">
-                                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                        <a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                     </span>
                                     <p>c 09:00 до 20:00</p>
                                     <a class="connect__recall js-popup" data-popup="request" href="#recall">Перезвоните мне</a>
@@ -430,7 +430,7 @@ $js = app\components\CController::$js;
                     <div class="connect">
                         <div class="connect__call">
                             <span class="connect__phone connect__phone_active" data-phone="moscow">
-                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                <a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
                             <p> <?= Yii::$app->session['region']['title']; ?></p>
                         </div>

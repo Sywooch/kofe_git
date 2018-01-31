@@ -24,7 +24,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     </header>
                     <div class="post__content">
                         <p>Сервисный центр "<?= ucfirst($_SERVER['HTTP_HOST']) ?>"</p>
-                        <p>Телефон:&nbsp;&nbsp;<span class="connect__phone connect__phone_active"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
+                        <p>Телефон:&nbsp;&nbsp;<span class="connect__phone connect__phone_active"><a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
                         <ul>
                             <li><?= $siteConfig['id'] == 52 ? 'г. Санкт-Петербург, ул. Набережная канала Грибоедова, д.59' : 'г. Москва, ул. Студенческая, д. 35'; ?></li>
                         </ul>
