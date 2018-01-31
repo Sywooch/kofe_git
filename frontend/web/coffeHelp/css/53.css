@@ -151,7 +151,7 @@ section.who .break_price div.row:hover .col_price, section.who .break_price div.
 	color: #fff ! important
 }
 span.phone_big_top a.phone-c {
-	color: #d5ad6f
+	color: #fff
 }
 #top-bar .navbar-top-form .btn-small {
 	background-color: #d5ad6f
@@ -169,13 +169,27 @@ span.phone_big_top a.phone-c {
 section.who:before {
 	background-image: url(../img/j/border.png);
 	content: '';
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 .btn-default:hover {
     background-color: #d5ad6f;
 }
 .goroda div a:before {
-    content: '';
+        content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
     background: url(../img/j/mapstar.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 5px;
 }
 
 input.call-master:focus, input.call-master:hover {
@@ -195,5 +209,57 @@ a.more:hover {
 	border: 1px solid #c3944c;
 }
 .phone .header-phone-code-part {
+	color: #c21415;
+}
+#nav-icon3 span {
+	background: #fff;
+}
+
+@media (max-width: 480px) {
+	section.header ul.top_menu_big li a {
+		color: #333;
+	}
+	section.header ul.top_menu_big li a:hover {
+		color: #c21415;
+	}
+}
+
+.navbar .navbar-logo {
+	margin-top: 0px;
+}
+.navbar .navbar-logo a {
+	display: block;
+	height: 47px;
+	line-height: 47px;
+}
+.navbar .navbar-logo img {
+    height: 65%;
+}
+#callbacktopform-phone {
+	border-color: #c3944c;
+}
+.search-brends .left,
+.btn {
+	background: #c3944c;
+}
+.btn-default:hover {
+	border-color: #c3944c;
+}
+section.who .break_price div.row:hover .col_price {
+    background-color: #c3944c!important;
+}
+li.menu__item:hover {
+    text-decoration: none;
+    border: 1px solid #c3944c;
+    z-index: 9;
+}
+.goroda div.map,
+.rasmga-ramka #big-header-image {
+	    border: 1px dashed #041a39;
+}
+.offer section.section_promo_form div.tb_sidebar_cont span.tb_sidebar_title {
+	background: #c21415;
+}
+.offer .tb_sidebar_extra_text b {
 	color: #c21415;
 }

@@ -368,3 +368,12 @@
     content: 'в Санкт-Петербурге';
     margin-left: 10px;
 }
+.poster h1 {
+    color: #301d0f;
+}
+.poster p {
+    color: #333;
+}
+.tseni-na-uslugi {
+    background: #dfa81b;
+}

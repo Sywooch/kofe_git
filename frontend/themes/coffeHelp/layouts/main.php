@@ -26,12 +26,12 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=2">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=2">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=4">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=3" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 53): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=2" rel="stylesheet">
+            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=4" rel="stylesheet">
         <?php endif; ?>
     </head>
     <body role="document">
@@ -58,7 +58,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="navbar">
                     <div class="col-xs-2">
-                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg"></a></div>
+                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo2.svg"></a></div>
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
