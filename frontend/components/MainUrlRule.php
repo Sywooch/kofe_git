@@ -32,6 +32,7 @@ class MainUrlRule extends UrlRule {
     public function parseRequest($manager, $request) {
         $siteConfig = self::getSiteConfig();
         $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
+        $redirects = isset($redirects[$siteConfig['id']]) ? $redirects[$siteConfig['id']] : [];
         if(!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
             $this->redirect($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo]);
         }
