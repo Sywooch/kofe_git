@@ -12,8 +12,13 @@ section.header ul.top_menu_big li a,
 	color: #fff;
 }
 section.header .row.row_top_menu:after {
-	background-image: url(../img/j/border.png);
-	content: '';
+	width: 100%;
+    height: 3px;
+    background-image: url(../img/j/border.png);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: '';
 }
 .top_menu_right_info {
 	background-image: url(../img/j/checkin-header.svg);
@@ -67,8 +72,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', end
 }
 #top-bar:after ,
 .my-footer-block:after {
-	background-image: url(../img/j/border.png);
-	content: '';
+	    width: 100%;
+    height: 3px;
+    background-image: url(../img/j/border.png);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    z-index: 0;
+}
+.my-footer-block {
+    position: relative;
 }
 .big_line {
 	background-image: url(../img/j/border.png);
@@ -88,6 +102,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002660', end
 .form-order-cont form .form-group  input {
 	color: #000;
 }
+section.order {
+    position: relative;
+    z-index: 2;
+}
 section.who {
 	    border-left: 3px solid #031835;
 	        border-right: 3px solid #031835;
@@ -106,6 +124,10 @@ section.who {
 	border-color: #ead39f;
 }
 hr {
+	border: 0px;
+	height: 3px;
+	width: 100%;
+	display: block;
 	background-image: url(../img/j/border.png);
 }
 div.footer-phone a.phone-c {

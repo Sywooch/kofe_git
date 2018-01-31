@@ -1,0 +1,5 @@
+
+.gorad-text:after {
+    content: 'в Москве';
+    margin-left: 10px;
+}

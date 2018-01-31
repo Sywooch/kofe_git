@@ -203,7 +203,7 @@ $js = app\components\CController::$js;
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
-                                <nobr> <a href="tel:+74951339049" class="phone-c">7 (495) 152-07-07</a></nobr>
+                                <nobr> <a class="phone-c" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></nobr>
                             </div>
                         </div>
                     </div>

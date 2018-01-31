@@ -363,3 +363,8 @@
 .connect__adress span .fil0 {
     fill: #196ae0;
 }
+
+.gorad-text:after {
+    content: 'в Санкт-Петербурге';
+    margin-left: 10px;
+}

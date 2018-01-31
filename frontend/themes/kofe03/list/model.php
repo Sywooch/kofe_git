@@ -7,7 +7,7 @@ $this->title = $title;
     <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
         <div class="poster__inner">
             <div class="poster__content">
-                <h1 class="poster__title" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1><span class="dop-span-h1"><?=' в ' . Yii::$app->session['region']['titleRod']?></span>
+                <h1 class="poster__title gorad-text" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1>
                 <div class="clear"></div>
                 <div class="image model_img for_mobi">
                     <?php if (!empty($pageInfo['image'])): ?>
