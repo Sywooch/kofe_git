@@ -15,22 +15,25 @@ $this->title = $title;
                         <?php endforeach; ?>                        
                     </ol>
                 </div>
-                <?php if (!empty($pageInfo['image'])): ?>
-                    <div class="col-xs-4">
-                        <?php if (!empty($pageInfo['image'])): ?>
-                            <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
-                        <?php elseif (!empty($modelImage)): ?>
-                            <img id="big-header-image" src="<?= '/' . $assets . '/uploads/images/' . $modelImage; ?>" />
-                        <?php endif; ?>
+
+                <div class="col-xs-9 nopadding">
+                    <?php if (!empty($pageInfo['image'])): ?>
+                        <div class="col-xs-4 nopadding">
+                            <?php if (!empty($pageInfo['image'])): ?>
+                                <img id="big-header-image" src="<?= '/' . $assets . $siteConfig['theme'] . '/'; ?>images/services/<?= $pageInfo['image']; ?>" />
+                            <?php elseif (!empty($modelImage)): ?>
+                                <img id="big-header-image" src="<?= '/' . $assets . '/uploads/images/' . $modelImage; ?>" />
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
+                    <div class="col-xs-<?= empty($pageInfo['image']) ? '12' : '8'; ?> ">
+                        <h1>
+                            <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
+                        </h1>
+                        <span class="section-promo-desc">
+                            <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
+                        </span>
                     </div>
-                <?php endif; ?>
-                <div class="col-xs-<?= empty($pageInfo['image']) ? '9' : '5'; ?>">
-                    <h1>
-                        <?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?>
-                    </h1>
-                    <span class="section-promo-desc">
-                        <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
-                    </span>
                 </div>
                 <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
             </div>
