@@ -171,8 +171,10 @@ class ListController extends CController {
                     $uniqueText = \Yii::$app->db->createCommand($sql)->queryOne();
                     if (!empty($uniqueText))
                         $seoText = str_replace(['#brand_en#'], [$page['title']], $uniqueText['barnd_text']);
-                    if ($pageInfo['id'] == 26)
+                    if ($pageInfo['id'] == 26 && $siteConfig['id'] == 51)
                         $metaDesc = 'Специалисты нашего сервисного центра проведут бесплатную диагностику кофе машины ' . $page['title'] . ', выявят неисправность и сделают ремонт быстро и с гарантией качества.';
+                    if ($pageInfo['id'] == 26 && $siteConfig['id'] == 52)
+                        $metaDesc = 'Бесплатная диагностика кофемашин ' . $page['title'] . '  в авторизованном сервисном центре FixKofe. Быстро, качественно.';
                 }
 
                 if ($siteConfig['mono']) {

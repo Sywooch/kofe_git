@@ -72,7 +72,7 @@ $form = ActiveForm::begin([
                                 <div class="row checkbox">
                                     <label class="col-sm-12">
                                         <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
-                                        <span class="f14">Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
+                                        <span class="f14">Согласен с условиями <a href="/politics" target="_blank">обработки персональных данных</a></span>
                                     </label>
                                 </div>
                                 <div class="clear"></div>
