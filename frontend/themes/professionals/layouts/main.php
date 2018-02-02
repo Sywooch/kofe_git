@@ -16,23 +16,22 @@ $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/favicon-16x16.png" sizes="16x16" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/normalize.css" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet" />
     </head>
     <body>
         <?= $content; ?>

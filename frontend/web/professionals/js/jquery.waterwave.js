@@ -1,30 +1,12 @@
-var d=new Date,e=new Date;e.setHours(23,59,59);var f=e.getTime()/1e3-d.getTime()/1e3;$("#countdown").FlipClock(f,{clockFace:"DailyCounter",language:"ru",countdown:!0});$("#reviews-slider").slick({infinite: true,slidesToShow: 3,slidesToScroll: 3});
+// Title: Image Gallery Threejs Jquery
+// Description: Usage of Threejs to create jquery animated gallery.
+// Author: Oliver Ong
+// URL: https://github.com/blockhead123/image-gallery-threejs
+// Demo: http://image-gallery-threejs.zholpe.com/
+// forked from djankey's "WebGL Carousel  - Three.js" http://jsdo.it/djankey/carousel_webgl
+// I have reinvented the structure and made it jquery based as well as making it a plugin so that usage and customization is easily done
 
-function initQuoteCarousel() {
-
-    var $quotesWrapper = $(".hero_statement");
-    var $quotes = $quotesWrapper.find("blockquote");
-
-    if (!$quotes.length) {
-        return;
-    }
-
-    var selectNextQuote = function () {
-        // keep move first quote in dom to the end to make continous
-        var $quote = $quotesWrapper.find("blockquote:first").detach().appendTo($quotesWrapper);
-
-        setTimeout(selectNextQuote, $quote.data("timeout"));
-    };
-
-    setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
-
-}
-
-$(function () {
-    initQuoteCarousel();
-});
-
-$(function( $ ) {
+(function( $ ) {
     $.fn.waterwave = function( options ) {
         // DEFAULT OPTIONS
         var settings = $.extend({
@@ -130,10 +112,4 @@ $(function( $ ) {
 
 
     };
-    var box = $(".waterwave-canvas").waterwave({});
-    $('.gifts').click(function(){
-        $('.gifts').removeClass('active');
-        $(this).addClass('active');
-        $( ".top_menu_big" ).slideToggle( "slow" );
-    });
 }( jQuery ));
