@@ -10,12 +10,12 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-10 hidden-sm hidden-xs">
+            <div class="col-lg-9 col-md-10 hidden-sm hidden-xs">
                 <div class="coffeemachine-brand">
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/coffeemachine-2_DKcAIK9.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-12 col-md-14 col-sm-24 clearfix">
+            <div class="col-lg-15 col-md-14 col-sm-24 clearfix">
                 <div class="brand-list">
                     <?php foreach ($rows as $row): ?>
                         <a href="/<?= $row['url']; ?>">
@@ -26,13 +26,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             </div>
                         </a>
                     <?php endforeach; ?>
-                    <a href="/brands">
-                        <div class="brand-list_item">
-                            <div class="border-coner left"></div>
-                            <span>Полный<br>список</span>
-                            <div class="border-coner right"></div>
-                        </div>
-                    </a>
+                    <a href="/brands">Полный<br>список</a>
                 </div>
             </div>
         </div>
