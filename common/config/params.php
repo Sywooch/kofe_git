@@ -695,7 +695,7 @@ return [
             'stickyMenu' => true,
             'mono' => false,
             'id' => 52,
-            'sitePrefix' => 'kofe03',
+            'sitePrefix' => 'fixkofe',
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'kofe03',
