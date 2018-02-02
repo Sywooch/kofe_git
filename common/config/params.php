@@ -1907,7 +1907,7 @@ return [
             'foreign_category' => true,
             'category_id' => 0,
         ],
-        'professionals' => [
+        'kofemashin-remont' => [
             'phone-1' => '8 (495) 323-90-09',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
@@ -1918,6 +1918,19 @@ return [
             'category_id' => 7,
             'theme' => 'professionals',
             'order-title' => 'МСК Заречная',
+        ],
+        'kofemashina-service' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 125,
+            'sitePrefix' => 'professionalsSpb',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'professionals',
+            'order-title' => 'МСК Заречная',
+            'spb' => true,
         ],
     ]
 ];
