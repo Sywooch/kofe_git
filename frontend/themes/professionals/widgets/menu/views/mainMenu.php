@@ -27,11 +27,11 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="row">
                         <div class="col-md-16 col-sm-15">
                             <nav class="cl-effect-14">
-                               <a href="neispravnost.html">Неисправности</a>
-                               <a href="uslugi.html">Услуги</a>
-                               <a href="brend.html">Бренды</a>
-                               <a href="#contacts">Контакты</a>
-                               <a href="about.html">О нас</a>
+                               <a href="/neispravnost">Неисправности</a>
+                               <a href="/uslugi">Услуги</a>
+                               <a href="/brands">Бренды</a>
+                               <a href="/contacts">Контакты</a>
+                               <a href="/about">О нас</a>
                             </nav>
                         </div>
                         <div class="col-lg-8 col-md-9 col-sm-11 hidden-xs">

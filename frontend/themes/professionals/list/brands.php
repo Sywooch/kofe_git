@@ -1,12 +1,13 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $page['meta_title'];
+$this->title = $pageInfo['meta_title'];
 ?>
 <header class="header">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
-    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => $page]); ?>
+    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => $pageInfo]); ?>
 </header>
+<?= professionals\widgets\lists\AllBrands::widget(); ?>
 <?= professionals\widgets\other\Advantage::widget(); ?>
 <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 6, 'title' => 'Частые неисправности', 'is_popular' => true, 'type' => 2]); ?>
 <?= professionals\widgets\lists\PopularBrands::widget(); ?>
