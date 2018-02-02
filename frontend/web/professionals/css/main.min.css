@@ -6477,7 +6477,8 @@ a,a:focus,a:hover,a:visited{
     line-height:3.6rem
 }
 .title.title__1.title__home{
-    font-size:43px
+    font-size:35px;
+    line-height: 40px;
 }
 @media (max-width:414px){
     .title.title__1.title__home{
@@ -8540,6 +8541,19 @@ nav.cl-effect-14 a:focus {
     transition: all .3s ease;
     margin-bottom: 15px;
     overflow: hidden;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 90%;
+}
+.gift div:nth-child(1) {
+    background-image: url(../images/gift1.jpg);
+}
+.gift div:nth-child(2) {
+    background-image: url(../images/gift2.jpg);
+}
+.gift div:nth-child(3) {
+    background-image: url(../images/gift3.jpg);
 }
 .gift div:hover,
 .gift div.active  {

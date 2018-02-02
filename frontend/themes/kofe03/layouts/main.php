@@ -32,10 +32,10 @@ $js = app\components\CController::$js;
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=2" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=3" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=2" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=3" rel="stylesheet">
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
         <?php
