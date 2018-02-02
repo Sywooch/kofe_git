@@ -59,18 +59,48 @@ if (!empty($url))
                     <div class="form-block_title">Оставьте заявку на&nbsp;ремонт</div>
                     <div class="form-block_claim">Каждый случай уникален, и если вы не нашли свою поломку, получите <span style="color:#e66429">бесплатную консультацию</span></div>
                     <div class="form form__request dark">
-                        <form class="request-form" action="/request/request/" method="post">
-                            <ul>
-                                <li><label for="id_name">Ваше имя</label><input type="text" name="name" id="id_name" placeholder="Ваше имя" maxlength="128" /></li>
-                                <li><label for="id_phone">Телефон</label><input type="text" name="phone" id="id_phone" placeholder="Телефон" required maxlength="15" /></li>
-                            </ul>
-                            <input type="submit" value="Перезвоните мне"/>
-                            <p class="response-message"></p>
-                            <p class="form-policy">
-                                Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
-                                персональных данных в соответствии с <a href="#">условиями</a>.
-                            </p>
-                        </form>
+                        <?php
+
+                        use yii\helpers\Html;
+                        use yii\widgets\ActiveForm;
+                        use yii\widgets\MaskedInput;
+
+$form = ActiveForm::begin([
+                                    'id' => 'service-form',
+                                    'options' => ['class' => 'request-form'],
+                                    'enableClientValidation' => true,
+                                    'fieldConfig' => [
+                                        'template' => '{input}',
+                                    ],
+                        ]);
+                        ?>
+                        <ul>
+                            <li>
+                                <label for="id_name">Ваше имя</label>
+                                <?= $form->field($model, 'name')->textInput(['placeholder' => 'Ваше имя']); ?>
+                            </li>
+                            <li>
+                                <label for="id_phone">Телефон</label>
+                                <?=
+                                $form->field($model, 'phone')->widget(MaskedInput::className(), [
+                                    'name' => 'phone',
+                                    'mask' => '+7 (999) 999-99-99',
+                                    'options' => [
+                                        'placeholder' => 'Телефон',
+                                        'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
+                                        'size' => 40,
+                                    ],
+                                ])->label('')
+                                ?>
+                            </li>
+                        </ul>
+                        <?= Html::submitInput('Перезвоните мне', ['type' => 'submit']) ?>
+                        <p class="response-message"></p>
+                        <p class="form-policy">
+                            Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
+                            персональных данных в соответствии с <a href="/policy">условиями</a>.
+                        </p>
+                        <?php ActiveForm::end() ?>
                     </div>
                 </div>
             </div>

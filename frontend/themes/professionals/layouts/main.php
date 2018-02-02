@@ -29,13 +29,10 @@ $js = app\components\CController::$js;
         <link rel="icon" type="image/png" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/favicon-16x16.png" sizes="16x16" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet">
-        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.ajax-order.js"></script>
-        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/request.js"></script>
-        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/configurator.js"></script>
     </head>
     <body>
         <?= $content; ?>
@@ -105,6 +102,24 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js"></script>
     </body>
 </html>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/flipclock.min.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.min.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js"></script>
+<?php
+if (Yii::$app->session->getFlash('success')) {
+    echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
+}
+?>
+<script>$("form").each(function () {
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });</script>
+<?php $this->endBody() ?>    
+<?php $this->endPage() ?>
