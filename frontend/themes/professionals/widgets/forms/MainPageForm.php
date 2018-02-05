@@ -8,6 +8,7 @@ use Yii;
 class MainPageForm extends Widget {
     
     public $pageInfo;
+    public $page = null;
 
     public function run() {
         $model = new \frontend\models\CallBackForm();
@@ -15,7 +16,7 @@ class MainPageForm extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
-        return $this->render('mainPageForm', ['model' => $model, 'pageInfo' => $this->pageInfo]);
+        return $this->render('mainPageForm', ['model' => $model, 'pageInfo' => $this->pageInfo, 'page' => $this->page]);
     }
 
 }

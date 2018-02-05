@@ -26,26 +26,32 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
-                <div class="hero_statement">
-                    <blockquote data-timeout="2800">
-                        <p>Ремонт для нас - как кислород для Вас!</p>
-                        <span class="hero_cite">Мастер Олег</span>
-                    </blockquote>
-                    <blockquote data-timeout="2800">
-                        <p>У вас страсть к кофе, а у нас к ремонту кофемашин!</p>
-                        <span class="hero_cite">Мастер Илья</span>
-                    </blockquote>
-                    <blockquote data-timeout="2800">
-                        <p>Ничто так не бодрит с утра, как ремонт кофемашины!</p>
-                        <span class="hero_cite">Мастер Игорь</span>
-                    </blockquote>
-                    <blockquote data-timeout="2800">
-                        <p>Мы не делаем из мухи слона - мы делаем кофемашины!</p>
-                        <span class="hero_cite">Мастер Андрей</span>
-                    </blockquote>
+            <?php if (!empty($page)): ?>
+                <div class="col-lg-12 col-lg-offset-1 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
+                    <div class="hero_why-we"><?= $page['description']; ?></div>
                 </div>
-            </div>
+            <?php else: ?>
+                <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
+                    <div class="hero_statement">
+                        <blockquote data-timeout="2800">
+                            <p>Ремонт для нас - как кислород для Вас!</p>
+                            <span class="hero_cite">Мастер Олег</span>
+                        </blockquote>
+                        <blockquote data-timeout="2800">
+                            <p>У вас страсть к кофе, а у нас к ремонту кофемашин!</p>
+                            <span class="hero_cite">Мастер Илья</span>
+                        </blockquote>
+                        <blockquote data-timeout="2800">
+                            <p>Ничто так не бодрит с утра, как ремонт кофемашины!</p>
+                            <span class="hero_cite">Мастер Игорь</span>
+                        </blockquote>
+                        <blockquote data-timeout="2800">
+                            <p>Мы не делаем из мухи слона - мы делаем кофемашины!</p>
+                            <span class="hero_cite">Мастер Андрей</span>
+                        </blockquote>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>
