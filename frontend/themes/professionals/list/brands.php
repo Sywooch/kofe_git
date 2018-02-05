@@ -5,7 +5,7 @@ $this->title = $pageInfo['meta_title'];
 ?>
 <header class="header">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
-    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => $pageInfo]); ?>
+    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => $pageInfo['meta_h1']]); ?>
 </header>
 <?= professionals\widgets\lists\AllBrands::widget(); ?>
 <?= professionals\widgets\other\Advantage::widget(); ?>

@@ -45,6 +45,19 @@ class ListController extends CController {
         );
     }
 
+    public function actionFaults() {
+        $pageInfo = $_GET['data'];
+        \Yii::$app->view->registerMetaTag([
+            'name' => 'description',
+            'content' => $pageInfo['meta_desc']
+        ]);
+        return $this->render('faults', [
+                    'pageInfo' => $pageInfo,
+                        //'brandsCount' => $brandsCount['cnt']
+                        ]
+        );
+    }
+
     public function actionAllModels() {
         $siteConfig = self::getSiteConfig();
         $seo = (new \yii\db\Query())
@@ -224,8 +237,8 @@ class ListController extends CController {
                         $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - быстро, качественно с гарантией по самой низкой цене в Москве.';
                     } else {
                         //if (isset(CController::$category['3_title']))
-                        $title = $pageInfo['title'] . ' - в Москве! Качественно, с гарантией до 1 года!';
-                        $metaDesc = $pageInfo['title'] . 'в сервисном центре "' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '". Качественный сервис по лучшим ценам в Москве!"';
+                        $title = $pageInfo['title'] . ' - в ' . Yii::$app->session['region']['titleRod'] . '! Качественно, с гарантией до 1 года!';
+                        $metaDesc = $pageInfo['title'] . 'в сервисном центре "' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '". Качественный сервис по лучшим ценам в ' . Yii::$app->session['region']['titleRod'] . '!"';
                     }
                     if (isset(CController::$category['3_title']))
                         $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' - быстро, качественно с гарантией.</p>';

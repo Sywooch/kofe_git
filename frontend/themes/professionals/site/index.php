@@ -5,7 +5,7 @@ $this->title = $page['meta_title'];
 ?>
 <header class="header">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
-    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => $page]); ?>
+    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod'])]); ?>
 </header>
 <?= professionals\widgets\other\Advantage::widget(); ?>
 <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 6, 'title' => 'Частые неисправности', 'is_popular' => true, 'type' => 2]); ?>

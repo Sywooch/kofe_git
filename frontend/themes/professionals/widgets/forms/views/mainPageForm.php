@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-11 col-md-10 col-sm-11">
                 <div class="hero_order">
-                    <h1 class="title title__1 light title__home"><?= $pageInfo['meta_h1']; ?></h1>
+                    <h1 class="title title__1 light title__home"><?= $pageInfo; ?></h1>
                     <div class="subtitle" style="font-size: 14px;">В сервисном центре</div>
                     <div class="form form__inline form-block__repair form-block__light">
                         <p class="subtitle">Хотите подарок? Введите Ваш номер телефона и получите его!</p>
