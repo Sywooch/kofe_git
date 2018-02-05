@@ -331,6 +331,11 @@ class ListController extends CController {
         $metaDesc = 'Любой ремонт кофемашин ' . $pageInfo['title'] . ' в сервис центре, выезд мастера на дом или офис. Качество, гарантия, низкая цена.';
         $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера на дом или офис';
 
+        if (isset($siteConfig['category_id'])) {
+            $title = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
+            $metaDesc = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в сервисном центре "' . ucfirst($_SERVER['HTTP_HOST']) . '". Работает курьерская служба. Качество, гарантия, низкая цена.';
+        }
+        
         if ($siteConfig['id'] == 50) {
             $rName = '';
             if(isset(Yii::$app->params['brandRussianNames'][$pageInfo['title']]))
@@ -341,12 +346,7 @@ class ListController extends CController {
         } elseif ($siteConfig['id'] == 51) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ' . Yii::$app->session['region']['phone'];
             $metaDesc = 'Качественный ремонт кофемашин ' . $pageInfo['title'] . ' в СЦ Кофе-Хелп. Выезд курьера или мастера. Бесплатная диагностика. Гарантия. Фирменные комплектующие. Работаем ежедневно.';
-        }
-
-        if (isset($siteConfig['category_id'])) {
-            $title = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
-            $metaDesc = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в сервисном центре "' . ucfirst($_SERVER['HTTP_HOST']) . '". Работает курьерская служба. Качество, гарантия, низкая цена.';
-        }
+        }        
 
         if (!empty($pageInfo['meta_title']))
             $title = $pageInfo['meta_title'];
