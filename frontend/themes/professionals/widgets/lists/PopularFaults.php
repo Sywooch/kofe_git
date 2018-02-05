@@ -24,7 +24,7 @@ class PopularFaults extends Widget {
                 Yii::$app->getSession()->setFlash('success', 'seccess');
             }
         }
-        $sql = 'SELECT price, title, url, description, is_popular, image FROM {{%services}} WHERE type = ' . (int) $this->type . '' . ($this->is_popular ? ' and is_popular = 1' : '') . ' and category_id = ' . CController::$category['id'] . ($this->limit > 0 ? ' LIMIT ' . $this->limit : '');
+        $sql = 'SELECT price, title, url, description, is_popular, image FROM {{%services}} WHERE type = ' . (int) $this->type . ' and is_popular = ' . ($this->is_popular ? '1' : '0') . ' and category_id = ' . CController::$category['id'] . ($this->limit > 0 ? ' LIMIT ' . $this->limit : '');
         $rows = Yii::$app->db->createCommand($sql)->queryAll();
         if (empty($rows))
             return '';

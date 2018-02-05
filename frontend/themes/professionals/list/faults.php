@@ -17,8 +17,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
         </div>
         <div class="row">
             <div class="col-xs-24">
+                <?= professionals\widgets\forms\Today::widget(['sectionClass' => '']); ?>
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные неисправности', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
                 <?= professionals\widgets\other\YouGet::widget(); ?>
                 <?= professionals\widgets\forms\Today::widget(); ?>

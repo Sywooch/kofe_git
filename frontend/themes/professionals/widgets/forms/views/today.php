@@ -1,4 +1,4 @@
-<section class="solutions">
+<section class="<?= $sectionClass; ?>">
     <div class="container">
         <div class="row">
             <div class="col-xs-24">

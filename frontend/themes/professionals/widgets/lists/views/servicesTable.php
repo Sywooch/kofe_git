@@ -2,6 +2,11 @@
 $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
+<div class="row">
+    <div class="col-xs-24">
+        <h2 class="title title__2 light"><?= !empty($title) ? $title : 'Цены по услугам' ?></h2>
+    </div>
+</div>
 <table class="table table__solution">
     <tbody>
         <?php foreach ($rows as $key => $row): ?>
