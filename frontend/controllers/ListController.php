@@ -332,7 +332,11 @@ class ListController extends CController {
         $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с выездом мастера на дом или офис';
 
         if ($siteConfig['id'] == 50) {
-            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
+            $rName = '';
+            if(isset(Yii::$app->params['brandRussianNames'][$pageInfo['title']]))
+                $rName = ' (' . Yii::$app->params['brandRussianNames'][$pageInfo['title']] . ')';
+            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . '™' . $rName . '  в ' . Yii::$app->session['region']['titleRod'] . ' 👍 — Цены и адреса';
+            //$title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
             $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
         } elseif ($siteConfig['id'] == 51) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ' . Yii::$app->session['region']['phone'];
