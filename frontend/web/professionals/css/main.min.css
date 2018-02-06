@@ -7696,10 +7696,10 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background: #333;
 }
 .slick-prev {
-    left: 0px;
+    left: -10px;
 }
 .slick-next {
-    right: 0px;
+    right: -10px;
     -moz-transform: rotate(180deg); /* Для Firefox */
     -ms-transform: rotate(180deg); /* Для IE */
     -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
