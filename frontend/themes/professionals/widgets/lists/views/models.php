@@ -21,7 +21,7 @@
                         <a href="/<?= $brand['url']; ?>">
                             <div class="brand-list_item">
                                 <div class="border-coner left"></div>
-                                <span><?= str_replace('/', ' / ', $brand['title']); ?></span>
+                               <span><img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>"/><?= $brand['title']; ?></span>
                                 <div class="border-coner right"></div>
                             </div>
                         </a>                

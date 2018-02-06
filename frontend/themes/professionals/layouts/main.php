@@ -57,42 +57,125 @@ $js = app\components\CController::$js;
         <section class="contacts clearfix" id="contacts">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-24">
-                        <div class="form-block form-block__order">
-                            <div class="address">
-                                <a class="address_phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                                <p class="address_location"></p>
-                                <div class="address_claim">Бесплатный выезд курьеров по всей Москве + 15 км за МКАД</div>
+                    <div class="col-xs-12">
+                        <h2 class="title title__2">Ремонт кофемашин в Москве</h2>
+                        <div class="reviews-list" id="reviews-slider2">
+                            <div class="review">
+                                <a href="/aviamotornaya"> Авиамоторная</a>
+                                <a href="/avtozavodskaya"> Автозаводская</a>
+                                <a href="/akademicheskaya"> Академическая</a>
+                                <a href="/alekseevskaya"> Алексеевская</a>
+                                <a href="/alma-atinskaya"> Алма атинская</a>
+                                <a href="/altufevo"> Алтуфьево</a>
+                                <a href="/annino"> Аннино</a>
+                                <a href="/arbatskaya"> Арбатская</a>
+                                <a href="/aehroport"> Аэропорт</a>
+                                <a href="/babushkinskaya"> Бабушкинская</a>
+                                <a href="/bagrationovskaya"> Багратионовская</a>
+                                <a href="/barrikadnaya"> Баррикадная</a>
+                                <a href="/baumanskaya"> Бауманская</a>
+                                <a href="/begovaya"> Беговая</a>
+                                <a href="/belorusskaya"> Белорусская</a>
+                            </div>    
+                            <div class="review">
+                                <a href="/belyaevo"> Беляево</a>
+                                <a href="/bibirevo"> Бибирево</a>
+                                <a href="/bitcevskij-park"> Битцевский парк</a>
+                                <a href="/borisovo"> Борисово</a>
+                                <a href="/borovickaya"> Боровицкая</a>
+                                <a href="/bratislavskaya"> Братиславская</a>
+                                <a href="/bulvar-ushakova"> Бульвар ушакова</a>
+                                <a href="/buninskaya-alleya"> Бунинская аллея</a>
+                                <a href="/varshavskaya"> Варшавская</a>
+                                <a href="/vdnh"> ВДНХ</a>
+                                <a href="/vladykino"> Владыкино</a>
+                                <a href="/vodnyj-stadion"> Водный стадион</a>
+                                <a href="/vojkovskaya"> Войковская</a>
+                                <a href="/volzhskaya"> Волжская</a>
+                                <a href="/volokolamskaya"> Волоколамская</a>
                             </div>
-                            <div class="form dark">
-                                <form class="request-form" action="/request/request/" method="post">
-                                    <ul>
-                                        <li><label for="id_name">Ваше имя</label><input type="text" name="name" id="id_name" placeholder="Ваше имя" maxlength="128" /></li>
-                                        <li><label for="id_phone">Телефон</label><input type="text" name="phone" id="id_phone" placeholder="Телефон" required maxlength="15" /></li>
-                                    </ul>
-                                    <input type="submit" value="Перезвоните мне"/>
-                                    <p class="response-message"></p>
-                                    <p class="form-policy">
-                                        Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
-                                        персональных данных в соответствии с <a href="#">условиями</a>.
-                                    </p>
-                                </form>
-                            </div>
+                            <div class="review">
+                                <a href="/vorobevy-gory"> Воробьевы горы</a>
+                                <a href="/vystavochnaya"> Выставочная</a>
+                                <a href="/vyhino"> Выхино</a>
+                                <a href="/delovoj-centr"> Деловой центр</a>
+                                <a href="/dinamo"> Динамо</a>
+                                <a href="/dmitrovskaya"> Дмитровская</a>
+                                <a href="/dobryninskaya"> Добрынинская</a>
+                                <a href="/domodedovskaya"> Домодедовская</a>
+                                <a href="/dostoevskaya"> Достоевская</a>
+                                <a href="/dubrovka"> Дубровка</a>
+                                <a href="/zhulebino"> Жулебино</a>
+                                <a href="/zyablikovo"> Зябликово</a>
+                                <a href="/izmajlovskaya"> Измайловская</a>
+                                <a href="/kaluzhskaya"> Калужская</a>
+                                <a href="/kantemirovskaya"> Кантемировская</a>
+                            </div>    
+                            <div class="review">
+                                <a href="/kahovskaya"> Каховская</a>
+                                <a href="/kashirskaya"> Каширская</a>
+                                <a href="/kievskaya"> Киевская</a>
+                                <a href="/kitaj-gorod"> Китай город</a>
+                                <a href="/kozhuhovskaya"> Кожуховская</a>
+                                <a href="/kolomenskaya"> Коломенская</a>
+                                <a href="/komsomolskaya"> Комсомольская</a>
+                                <a href="/konkovo"> Коньково</a>
+                                <a href="/kotelniki"> Котельники</a>
+                                <a href="/krasnoselskaya"> Красносельская</a>
+                                <a href="/krasnye-vorota"> Красные ворота</a>
+                                <a href="/kropotkinskaya"> Кропоткинская</a>
+                                <a href="/krylatskoe"> Крылатское</a>
+                                <a href="/kuzneckij-most"> Кузнецкий мост</a>
+                                <a href="/kuzminki"> Кузьминки</a>
+                            </div>                 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="map" id="map" style="background-position-x: 35%; background-size: cover"></div>
+            <div class="map" id="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Accfaea6e8abb8d22640a81d04511c2c7d240ece5846dc31dfe4a74b902e2a4d8&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
+            </div>
         </section>
         <!-- contacts -->
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-24">
-                        <a href="#" class="footer-logo">
+                    <div class="col-xs-8">
+                        <h4 class="subtitle">О НАС</h4>
+                        <p>Быстро и, главное, качественно устраним все функциональные неполадки электроприбора за доступную цену. Наша команда мастеров работает ежедневно, без выходных. Ремонт кофемашин</p>
+                        <!--<a href="#" class="footer-logo">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/logo.png" alt="">
-                        </a>
-                        <span class="slogan slogan__footer">— Ремонт кофемашин в Москве</span>
+                        </a>-->
+                    </div>
+                    <div class="col-xs-9">
+                        <h4 class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</h4>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                            </div>
+                            <div class="col-xs-12">
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7">
+                        <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+                        <p>г. Москва, Площадь Победы, д. 1Е. (В здании Дома быта).</p>
+                        <a class="footer-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    </div>
+                </div>
+                <hr style="border-color: rgba(165, 165, 165, 0.1)">
+                <div class="row">
+                    <div class="col-xs-24">
+                        <p>Сервисный центр - Coffee-help.lc 2018 © - Ремонт и обслуживание всех брендов кофемашин</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +192,7 @@ $js = app\components\CController::$js;
                                 <li><label for="id_name">Ваше имя</label><input type="text" name="name" id="id_name" placeholder="Ваше имя" maxlength="128" /></li>
                                 <li><label for="id_phone">Телефон</label><input type="text" name="phone" id="id_phone" placeholder="Телефон" required maxlength="15" /></li>
                             </ul>
-                            <input type="submit" value="Перезвоните мне"/>
+                            <button type="submit">Перезвоните мне</button>
                             <p class="response-message"></p>
                             <p class="form-policy">
                                 Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку

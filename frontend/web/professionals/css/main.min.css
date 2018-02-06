@@ -6466,7 +6466,7 @@ a,a:focus,a:hover,a:visited{
     font-family:Robika-Regular
 }
 .title.light{
-    color:#fff
+    color:#fff;
 }
 .title.dark{
     color:#292a2c
@@ -6492,7 +6492,8 @@ a,a:focus,a:hover,a:visited{
     font-size:2.5rem;
     line-height:3.3rem;
     margin-bottom:4rem;
-    margin-top:0
+    margin-top:0;
+    color: #e66429;
 }
 .header:after,.title.title__2:before{
     content:'';
@@ -6576,7 +6577,16 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-size:cover
 }
 .header__brand .hero{
-    margin-top:2rem
+    margin-top: 50px;
+}
+.header__brand .hero .container > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__brand .hero .container > .row .col-lg-12 {
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
 }
 .header__fault{
     min-height:55rem;
@@ -6732,9 +6742,9 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     left:1.3rem;
     transform:rotate(-45deg)
 }
-.hero{
-    margin-top:7rem;
-    margin-bottom: 7rem;
+.hero {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .hero_order{
     position:relative;
@@ -6743,7 +6753,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .hero_order .subtitle{
     font-family:Robika-Regular;
     font-size:20px;
-    color:#e66429
+    color:#fff
 }
 .hero_brand{
     max-width:47rem;
@@ -6875,6 +6885,9 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     font-size:2.8rem;
     color:#fff;
     font-weight:700
+}
+.header__service #collapse-menu .header-phone a {
+    color: #333;
 }
 .our-team{
     min-height:39rem;
@@ -7166,6 +7179,9 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     text-decoration:underline;
     text-transform:uppercase
 }
+.brand-list_item img {
+    max-width: 60%;
+}
 .brand-list_item .border-coner{
     width:2.5rem
 }
@@ -7421,21 +7437,20 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     margin:0 auto
 }
 .review{
-    padding:2.55rem 1.5rem;
+    padding: 0rem 1.5rem ;
     text-align:center
 }
 .review-wrap{
-    max-width:25rem;
     display:inline-block;
-    padding:0 1rem 1rem
+    padding:0 1rem 1rem;
+    border-radius: 10px;
 }
 .review_pic{
-    width:17rem;
-    margin:0 auto 1rem;
-    position:relative
+    width:100%;
+    position:relative;
 }
 .review_pic img{
-    margin:.3rem auto
+    width: 100%;
 }
 .review_pic:before{
     z-index:2;
@@ -7444,12 +7459,14 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     top:0;
     width:100%;
     height:100%;
+    background-size: 100%;
     background-image:url(../images/tmp/avatar-mask.png)
 }
 .review_name{
     font-size:1.6rem;
     font-weight:700;
-    line-height:2.5rem
+    line-height:2.5rem;
+    text-align: left;
 }
 .review_biz{
     color:#e66429;
@@ -7468,7 +7485,8 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .review_claim p{
     position:relative;
     margin:0;
-    padding-bottom:3rem
+    padding: 0px 20px 20px;
+    text-align: justify;
 }
 .review_claim p:after{
     position:absolute;
@@ -7498,6 +7516,15 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-position:50% 50%;
     background-size:cover
 }
+.hero .container > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero .container > .row .col-lg-11 {
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
 .solutions{
     padding:0 0 5rem;
     background-color:#151515;
@@ -7517,14 +7544,14 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-image:url(../images/bg/solutions__faults-bg.jpg)
 }
 .solution{
-    display:block;
-    position:relative;
-    margin:2rem auto 0;
-    max-width:87rem;
-    padding:0 7rem;
-    border-left:1px solid #e66429;
-    border-right:1px solid #e66429;
-    border-bottom:1px solid #e66429
+    display: block;
+    position: relative;
+    margin: 2rem auto 0;
+    max-width: 87rem;
+    padding: 20px 30px 0px;
+    border-left: 1px solid #e66429;
+    border-right: 1px solid #e66429;
+    border-bottom: 1px solid #e66429;
 }
 .solution:after,.solution:before{
     display:block;
@@ -7546,9 +7573,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     color:#fff;
     border-top:1px solid #454545
 }
-.table>tbody>tr td:first-child{
-    width:75%;
-    font-size:2.2rem
+.table>tbody>tr td:first-child {
+    width: 75%;
+    font-size: 18px;
+    line-height: 35px;
+    box-sizing: border-box;
 }
 .table>tbody>tr td:last-child{
     width:25%;
@@ -7557,7 +7586,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     color:#e66429
 }
 .table>tbody>tr td a{
-    color:#fff
+    color:#333
 }
 .table>tbody>tr td a:hover{
     color:#b7b7b7
@@ -7583,7 +7612,10 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     display:inline-block;
     font-size:1.6rem;
     line-height:3rem;
-    color:#b7b7b7
+    color:#fff
+}
+.solutions__service .you-get ul li{
+    color:#333
 }
 .you-get ul li:not(:first-child){
     margin-left:4rem
@@ -7609,16 +7641,23 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     float:right;
     width:50%;
     min-height:51rem;
-    background-repeat:no-repeat;
-    background-position:35% 50%;
-    background-image:url(../images/bg/map.jpg)
 }
-.reviews-list .slick-next:before,.reviews-list .slick-next:hover:before,.reviews-list .slick-prev:before,.reviews-list .slick-prev:hover:before,.slick-next:before,.slick-next:hover:before,.slick-prev:before,.slick-prev:hover:before{
-    display:inline-block;
-    width:40px;
-    height:100px;
-    background-image:url(../images/sprite/sprite.png);
-    background-repeat:no-repeat
+.reviews-list .slick-next:before,
+.reviews-list .slick-next:hover:before,
+.reviews-list .slick-prev:before,
+.reviews-list .slick-prev:hover:before,
+.slick-next:before,
+.slick-next:hover:before,
+.slick-prev:before,
+.slick-prev:hover:before{
+    content: '';
+    background: url(../images/sprite/arrow.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: 50%;
+    background-position: center;
 }
 .address{
     margin-bottom:3rem
@@ -7646,40 +7685,26 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .slick-next,.slick-prev{
     z-index:10;
     width:40px;
-    height:100px;
-    margin-top:-50px
+    height:40px;
+    background: #e66429;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
 }
-.slick-prev:hover:before{
-    background-position:-168px -408px
+.slick-next:hover,
+.slick-prev:hover{
+    background: #333;
 }
-.slick-next:hover:before{
-    background-position:-42px -102px
+.slick-prev {
+    left: -10px;
 }
-.slick-prev{
-    left:-8rem
-}
-.slick-prev:before{
-    content:'';
-    background-position:-210px -510px
-}
-.slick-next{
-    right:-8rem
-}
-.slick-next:before{
-    content:'';
-    background-position:-84px -204px
-}
-.reviews-list .slick-prev:before{
-    background-position:-126px -306px
-}
-.reviews-list .slick-next:before{
-    background-position:0 0
-}
-.reviews-list .slick-prev:hover:before{
-    background-position:-168px -408px
-}
-.reviews-list .slick-next:hover:before{
-    background-position:-42px -102px
+.slick-next {
+    right: -10px;
+    -moz-transform: rotate(180deg); /* Для Firefox */
+    -ms-transform: rotate(180deg); /* Для IE */
+    -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(180deg); /* Для Opera */
+    transform: rotate(180deg);
 }
 .slick-dots{
     bottom:-2.5rem
@@ -7794,9 +7819,6 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .form-block__dark p{
     color:#010101
 }
-.form-block__light p{
-    color:#fff!important
-}
 .form-block_title{
     font-size:2rem;
     color:#292a2c
@@ -7814,6 +7836,18 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     padding:1.3rem 1.5rem;
     border-radius:0;
     border:0
+}
+.form textarea{
+    width:100%;
+    padding:1.3rem 1.5rem;
+    border-radius:0;
+    border:0;
+    margin: 20px 0px;
+    min-height: 190px;
+}
+.service-wrapper .form input {
+    border: 1px solid #e66429;
+    box-sizing: border-box;
 }
 .form button[type=submit]{
     height:5rem;
@@ -7859,12 +7893,20 @@ p.form-policy{
     font-size:1.1rem;
     font-weight:300;
     line-height:1.6rem;
-    color:rgba(0,0,0,.25)
+    color: #fff;
+}
+.faults p.form-policy{
+    color: #959595;
+}
+.service-wrapper p.form-policy,
+.service-wrapper .form-block__repair p {
+    color: #333;
 }
 p.form-policy a,p.form-policy a:hover{
     color:#e66429
 }
-.form.dark input:not([type=submit]){
+.form.dark input:not([type=submit]),
+.form.dark textarea{
     background-color:#f0f0f0
 }
 .form.dark p.form-policy{
@@ -8323,8 +8365,6 @@ footer{
         margin-top:3rem;
         width:100%;
         min-height:30rem;
-        background-position:center;
-        background-size:cover
     }
     .solution{
         padding:0 1.5rem;
@@ -8425,7 +8465,10 @@ nav.cl-effect-14 a {
     text-transform: uppercase;
     letter-spacing: 0.2px;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    margin-left: -3px;
+    margin-left: -4px;
+}
+.header__service nav.cl-effect-14 a {
+    color: #333;
 }
 nav.cl-effect-14 a:hover,
 nav.cl-effect-14 a:focus {
@@ -8449,6 +8492,10 @@ nav.cl-effect-14 a:focus {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     pointer-events: none;
+}
+.header__service .cl-effect-14 a::before,
+.header__service .cl-effect-14 a::after {
+    background: #333;
 }
 .cl-effect-14 a::before {
     top: -2px;
@@ -8557,4 +8604,58 @@ nav.cl-effect-14 a:focus {
 .gift div:hover,
 .gift div.active  {
     border: 3px solid #e66429;
+}
+.seo-text {
+    padding: 30px 0px 50px;
+}
+
+#reviews-slider2 .review a {
+    display: block;
+    text-align: left;
+    text-decoration: underline;
+    color: #333;
+    line-height: 22px;
+    padding: 0px 20px;
+}
+#reviews-slider2 .review a:hover {
+    color: #e66429;
+}
+#reviews-slider2 .slick-prev {
+    left: -10px;
+}
+#reviews-slider2 .slick-next {
+    right: -10px;
+}
+
+footer {
+    color: #fff;
+    line-height: 22px;
+}
+footer a {
+    color: #a5a5a5;
+    display: block;
+    font-size: 14px;
+}
+footer a:hover {
+    color: #e66429
+}
+footer p {
+    color: #a5a5a5;
+}
+footer h4 {
+    font-family: Robika-Regular;
+    color: #e66429
+}
+.footer-tel {
+    font-size: 20px;
+    display: inline-block;
+}
+.review-head {
+    display: flex;
+    flex-wrap: wrap;
+}
+.review-head .col-xs-16 {
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
 }

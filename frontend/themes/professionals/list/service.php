@@ -3,26 +3,36 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<div class="service-wrapper">
-    <header class="header header__service">
+<?php if($pageInfo['type'] ==  1): ?>
+
+<?php else: ?>
+
+<?php endif; ?>    
+<div class="<?php if($pageInfo['type'] ==  1): ?> service-wrapper<?php endif; ?>">
+    <header class="header <?php if($pageInfo['type'] ==  1): ?> header__service<?php else: ?> header__fault<?php endif; ?>">
         <?= professionals\widgets\menu\MainMenu::widget(); ?>
         <div class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 col-md-11 col-sm-14">
+                    <div class="col-lg-11 col-md-11 col-sm-14">
                         <div class="hero_order">
                             <div class="hero_fault-icon">
                                 <img src="/<?= $siteConfig['theme'] . '/'; ?>media/%D0%BF%D0%B5%D0%BD%D0%B0.png" alt="">
                             </div>
-                            <h1 class="title title__1"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
+                            <h1 class="title title__1 <?php if($pageInfo['type'] !=  1): ?>light<?php endif; ?> "><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
                             <div class="hero_info">
+                                <p>Это полезно знать!</p>
                                 <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-11 col-sm-10 col-md-offset-2 text-right hidden-xs">
+                    <div class="col-lg-9 col-md-11 col-md-offset-2 col-sm-10 text-right hidden-xs">
                         <div class="hero_brand">
-                            <img src="/<?= $siteConfig['theme'] . '/'; ?>media/brand-service.png" alt="">
+                            <?php if($pageInfo['type'] ==  1): ?>
+                                <img src="/<?= $siteConfig['theme'] . '/'; ?>media/brand-service.png" alt="">
+                            <?php else: ?>
+                                <img src="/<?= $siteConfig['theme'] . '/'; ?>media/brand-all.png" alt="">
+                            <?php endif; ?>
                             <div class="hero_price">
                                 <p>Средняя цена ремонта:</p>
                                 <span><span class="price-nowrap"><span><?= number_format($pageInfo['price'], 0, ' ', ' '); ?></span>&nbsp;руб.</span></span>
@@ -33,12 +43,12 @@ $this->title = $title;
             </div>
         </div>
     </header>
-    <section class="solutions solutions__service">
+    <section class="solutions <?php if($pageInfo['type'] ==  1): ?> solutions__service<?php endif; ?>">
+        <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
         <div class="container">
             <div class="row">
                 <div class="col-xs-24">                    
                     <?= professionals\widgets\other\YouGet::widget(); ?>
-                    <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
                 </div>
             </div>
         </div>
