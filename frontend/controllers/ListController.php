@@ -344,7 +344,7 @@ class ListController extends CController {
             //$title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
             $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
         } elseif (in_array($siteConfig['id'], [51, 53])) {
-            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ' . Yii::$app->session['region']['phone'];
+            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ' . strip_tags(Yii::$app->session['region']['phone']);
             $metaDesc = 'Качественный ремонт кофемашин ' . $pageInfo['title'] . ' в СЦ ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '. Выезд курьера или мастера. Бесплатная диагностика. Гарантия. Фирменные комплектующие. Работаем ежедневно.';
         }        
 
