@@ -7485,7 +7485,8 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .review_claim p{
     position:relative;
     margin:0;
-    padding-bottom:3rem
+    padding: 0px 20px 20px;
+    text-align: justify;
 }
 .review_claim p:after{
     position:absolute;
@@ -8648,4 +8649,13 @@ footer h4 {
 .footer-tel {
     font-size: 20px;
     display: inline-block;
+}
+.review-head {
+    display: flex;
+    flex-wrap: wrap;
+}
+.review-head .col-xs-16 {
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
 }

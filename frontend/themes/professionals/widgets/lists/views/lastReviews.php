@@ -11,7 +11,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php foreach ($rows as $row): ?>
                         <div class="review">
                             <div class="review-wrap">
-                                <div class="row">
+                                <div class="row review-head">
                                     <div class="col-xs-8">
                                         <div class="review_pic">
                                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>reviews/<?= $row['image']; ?>" alt="<?= $row['username']; ?>">
