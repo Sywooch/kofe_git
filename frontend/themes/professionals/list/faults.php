@@ -3,11 +3,11 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<header class="header header__faults">
+<header class="header header__brand">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
     <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']), 'page' => $pageInfo]); ?>
 </header>
-<section class="solutions solutions__services">
+<section>
     <div class="container">
         <div class="row">
             <div class="col-xs-24">
@@ -15,11 +15,11 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные неисправности', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
                 <?= professionals\widgets\other\YouGet::widget(); ?>
-                <?= professionals\widgets\forms\Today::widget(); ?>
             </div>
         </div>
     </div>
 </section>
+<?= professionals\widgets\forms\Today::widget(); ?>
 <?= professionals\widgets\other\Advantage::widget(); ?>
 <?= professionals\widgets\forms\Countdown::widget(); ?>
 <?= professionals\widgets\lists\PopularBrands::widget(); ?>

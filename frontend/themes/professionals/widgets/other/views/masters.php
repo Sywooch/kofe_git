@@ -17,17 +17,17 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/master-1.jpg" alt="">
                         </div>
                         <div class="master-card_name">
-                            Сергей Игнатьев
+                            Андрей Галямин
                         </div>
                         <ul class="master-card_rate">
                             <li>
                                 <i>
                                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/star-empty.png" alt="">
                                 </i>
-                                4,5
+                                4,6
                             </li>
                             <li>
-                                <span>40</span> оценок
+                                <span>35</span> оценок
                             </li>
                         </ul>
                         <ul class="master-card_achivment">
@@ -42,10 +42,10 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                     <div class="master-card master-card__best">
                         <div class="master-card_avatar">
-                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/master-2.jpg" alt="">
+                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/master-3.jpg" alt="">
                         </div>
                         <div class="master-card_name">
-                            Василий Ноброс
+                            Илья Хрусталёв
                         </div>
                         <ul class="master-card_rate">
                             <li>
@@ -55,35 +55,35 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 5
                             </li>
                             <li>
-                                <span>95</span> оценок
+                                <span>103</span> оценки
                             </li>
                         </ul>
                         <ul class="master-card_achivment">
-                            <li>120 устраненных поломок</li>
+                            <li>148 устраненных поломок</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-8 text-right hidden-xs">
                     <div class="master-card">
                         <div class="master-card_avatar">
-                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/master-3.jpg" alt="">
+                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/master-2.jpg" alt="">
                         </div>
                         <div class="master-card_name">
-                            Анатолий Свянин
+                            Игорь Бадасов
                         </div>
                         <ul class="master-card_rate">
                             <li>
                                 <i>
                                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/star-empty.png" alt="">
                                 </i>
-                                4,5
+                                4,7
                             </li>
                             <li>
-                                <span>175</span> оценок
+                                <span>182</span> оценок
                             </li>
                         </ul>
                         <ul class="master-card_achivment">
-                            <li>206 устраненных поломок</li>
+                            <li>197 устраненных поломок</li>
                         </ul>
                     </div>
                 </div>

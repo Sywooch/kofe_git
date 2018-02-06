@@ -41,7 +41,7 @@ $form = ActiveForm::begin([
                             ?>
                         </li>
                     </ul>
-                    <input type="submit" value="Перезвоните мне"/>
+                    <button type="submit">Перезвоните мне</button>
                     <p class="response-message"></p>
                     <p class="form-policy">
                         Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
