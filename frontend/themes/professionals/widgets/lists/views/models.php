@@ -23,9 +23,9 @@
             </div>
             <div class="model-list model-list-text">
                 <?php $a = 0; foreach ($sortedBrands as $latter => $brands): $a++; ?>
-                    <div class="bukva<?= $a == 1 ? ' hide' : '' ?>"><span><?= $latter; ?></span></div>
+                    <div class="bukva<?= $a != 1 ? ' hide' : '' ?>"><span><?= $latter; ?></span></div>
                     <?php foreach ($brands as $brand): ?>
-                        <a<?= $a == 1 ? ' class="hide"' : '' ?> href="/<?= $brand['url']; ?>">
+                        <a<?= $a != 1 ? ' class="hide"' : '' ?> href="/<?= $brand['url']; ?>">
                             <div class="model-list_item">
                                 <div class="border-coner left"></div>
                                     <div class="img">
