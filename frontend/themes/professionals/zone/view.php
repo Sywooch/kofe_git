@@ -27,25 +27,25 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             <div class="col-xs-24">
                 <?= professionals\widgets\other\YouGet::widget(); ?>
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные неисправности', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Цены по прочим услугам', 'is_popular' => false, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
             </div>
         </div>
     </div>
 </section>
 <?php if (!empty($model['full_description'])): ?>
-<section class="seo-text">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-24">
-                <?= $model['full_description']; ?>
+    <section class="seo-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24">
+                    <?= $model['full_description']; ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <?php endif; ?>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
 <?= professionals\widgets\other\Masters::widget(); ?>
