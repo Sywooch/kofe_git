@@ -6876,11 +6876,6 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     font-size:2.2rem;
     font-weight:400
 }
-.hero_why-we p{
-    color:#a5a5a5;
-    line-height:2.2rem;
-    font-size:1.5rem
-}
 #collapse-menu .header-phone a{
     font-size:2.8rem;
     color:#fff;
@@ -8574,6 +8569,7 @@ nav.cl-effect-14 a:focus {
 }
 .gift {
     margin-left: -3.333%;
+    display: none;
 }
 .gift div {
     width: 30%;
@@ -8658,4 +8654,39 @@ footer h4 {
     -webkit-align-items: center;
     display: flex;
     align-items: center;
+}
+.cup {
+    height: 296px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: -100px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    z-index: 1;
+}
+.cup img {
+    width: 65%;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+}
+.cup img.brend-img {
+    width: 15%;
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin-right: 25%;
+    margin-top: 40px;
+}
+.hero_why-we {
+    background: #0000008c;
+    padding: 20px;
+    border-radius: 6px;
+    z-index: 2;
+}
+.hero_why-we p{
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
 }

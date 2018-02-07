@@ -1,3 +1,7 @@
+<?php 
+$assets = Yii::getAlias('@web'); 
+$siteConfig = app\components\CController::getSiteConfig();
+?>
 <div class="hero">
     <div class="container">
         <div class="row">
@@ -28,12 +32,18 @@
             </div>
             <?php if (!empty($page)): ?>
                 <div class="col-lg-12 col-lg-offset-1 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
-                    <div class="hero_why-we">
-                        <?= $page['description']; ?>                          
+                    <div class="row">
+                        <div class="col-lg-24 hero_why-we">
+                            <?= $page['description']; ?>     
+                        </div>
+                        <div class="cup">
+                            <?php if(!empty($page['image'])): ?>
+                                <img class="brend-img" src="/uploads/images/<?= $page['image']; ?>" alt="<?= $page['title']; ?>"/>
+                            <?php endif; ?>  
+                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/bg/cup.png" alt="">
+                        </div>
                     </div>
-                    <?php if(!empty($page['image'])): ?>
-                        <img src="/uploads/images/<?= $page['image']; ?>" alt="<?= $page['title']; ?>"/>
-                    <?php endif; ?>
+                    
                 </div>
             <?php else: ?>
                 <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
