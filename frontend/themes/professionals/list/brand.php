@@ -24,15 +24,15 @@ $this->title = $title;
         </div>
     </div>
 </section>
-<?= professionals\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
-<section class="our-masters">
-    <div class="container">        
-        <div class="master-list">
-            <div class="row">
-                <?php if (!empty($pageInfo['full_description'])): ?>
-                    <?= $pageInfo['full_description']; ?>                
-                <?php endif; ?>
+<?php if (!empty($pageInfo['full_description'])): ?>
+    <section class="our-masters">
+        <div class="container">        
+            <div class="master-list">
+                <div class="row">
+                    <?= $pageInfo['full_description']; ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
+<?= professionals\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
