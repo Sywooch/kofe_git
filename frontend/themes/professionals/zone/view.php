@@ -26,6 +26,12 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
         <div class="row">
             <div class="col-xs-24">
                 <?= professionals\widgets\other\YouGet::widget(); ?>
+                <div class="solution solution--closed">
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                </div>
+                <div class="solution solution--closed">
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Цены по прочим услугам', 'is_popular' => false, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                </div>
             </div>
         </div>
     </div>
