@@ -30,12 +30,12 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
         </div>
     </div>
 </section>
-<?php if (!empty($model['description'])): ?>
+<?php if (!empty($model['full_description'])): ?>
 <section class="seo-text">
     <div class="container">
         <div class="row">
             <div class="col-xs-24">
-                <?= $model['description']; ?>
+                <?= $model['full_description']; ?>
             </div>
         </div>
     </div>
