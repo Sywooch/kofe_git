@@ -1,27 +1,39 @@
-<section class="brands">
+<section class="brands" style="padding-top: 0px;">
     <div class="container">
         <div clas="col-md-12">
-            <div class="search-brends">
-                <?=
-                yii\jui\AutoComplete::widget([
-                    'name' => 'models',
-                    'clientOptions' => [
-                        'source' => $searches,
-                        'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
-                    ],
-                    'options' => ['placeholder' => 'Название модели', 'class' => 'my-input ui-autocomplete-input',],
-                        ]
-                );
-                ?>
+            <div class="row">
+                <div class="col-lg-16">
+                    <h2 class="title title__2">Профессиональный ремонт моделей <?= $brand['title']; ?></h2>
+                </div>
+                <div class="col-lg-6 col-lg-offset-2">
+                    <div class="form dark">
+                        <?=
+                        yii\jui\AutoComplete::widget([
+                            'name' => 'models',
+                            'clientOptions' => [
+                                'source' => $searches,
+                                'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
+                            ],
+                            'options' => ['placeholder' => 'Название модели', 'class' => 'my-input ui-autocomplete-input',],
+                                ]
+                        );
+                        ?>
+                    </div>
+                </div>
             </div>
-            <div class="brand-list brand-list-text">
+            <div class="model-list model-list-text">
                 <?php foreach ($sortedBrands as $latter => $brands): ?>
-                    <div class="left"><?= $latter; ?></div>
+                    <div class="bukva"><span><?= $latter; ?></span></div>
                     <?php foreach ($brands as $brand): ?>
                         <a href="/<?= $brand['url']; ?>">
-                            <div class="brand-list_item">
+                            <div class="model-list_item">
                                 <div class="border-coner left"></div>
-                               <span><img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>"/><?= $brand['title']; ?></span>
+                                    <div class="img">
+                                        <img src="/uploads/images/<?= $brand['image']; ?>" alt="<?= $brand['title']; ?>"/>
+                                    </div>
+                                    <div class="text">
+                                        <div><?= $brand['title']; ?></div>
+                                    </div>
                                 <div class="border-coner right"></div>
                             </div>
                         </a>                

@@ -7149,7 +7149,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     text-decoration:none;
     background-color:#fff
 }
-.all-services,.brand-list a,.master-card,.services_item,.services_item a{
+.all-services,.brand-list a,.model-list a,.master-card,.services_item,.services_item a{
     display:inline-block
 }
 .brands{
@@ -7161,6 +7161,34 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .brand-list{
     font-size:0;
     text-align:center
+}
+.model-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.model-list div.bukva {
+    width: 100%;
+    display: block;
+    height: 40px;
+    background: #f0f0f0;
+    line-height: 40px;
+    border-radius: 2px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.model-list div.bukva span {
+    text-align: center;
+    width: 35px;
+    height: 44px;
+    background: url(../images/bg/bg-bukva.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    margin-top: -2px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 30px;
 }
 .brand-list_item{
     width:16rem;
@@ -7174,13 +7202,63 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     text-decoration:underline;
     text-transform:uppercase
 }
+.model-list_item {
+    width:146px;
+    height: 100%;
+    position:relative;
+    text-align:center;
+    color:#333;
+    font-size:12px;
+    line-height:18px;
+    text-decoration:underline;
+    text-transform:uppercase;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.model-list_item:hover {
+    color: #e66429;
+}
+.model-list_item div.text {
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.model-list_item div.text div {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-width: 100%;
+}
 .brand-list_item img {
     max-width: 60%;
+}
+.model-list_item .img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    line-height: 100px;
+    vertical-align: middle;
+}
+.model-list_item .img img {
+    max-width: 90%;
+    max-height: 90%;
 }
 .brand-list_item .border-coner{
     width:2.5rem
 }
+.model-list_item .border-coner{
+    width:2.5rem
+}
 .brand-list_item .border-coner.left:before{
+    height:2.5rem;
+    border-left:1px solid #e8e8e8;
+    border-top:1px solid #e8e8e8
+}
+.model-list_item .border-coner.left:before{
     height:2.5rem;
     border-left:1px solid #e8e8e8;
     border-top:1px solid #e8e8e8
@@ -7190,7 +7268,17 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     border-left:1px solid #e8e8e8;
     border-bottom:1px solid #e8e8e8
 }
+.model-list_item .border-coner.left:after{
+    height:2.5rem;
+    border-left:1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8
+}
 .brand-list_item .border-coner.right:before{
+    height:2.5rem;
+    border-right:1px solid #e8e8e8;
+    border-top:1px solid #e8e8e8
+}
+.model-list_item .border-coner.right:before{
     height:2.5rem;
     border-right:1px solid #e8e8e8;
     border-top:1px solid #e8e8e8
@@ -7200,11 +7288,24 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     border-right:1px solid #e8e8e8;
     border-bottom:1px solid #e8e8e8
 }
+.model-list_item .border-coner.right:after{
+    height:2.5rem;
+    border-right:1px solid #e8e8e8;
+    border-bottom:1px solid #e8e8e8
+}
 .brand-list_item:hover .border-coner.left:before{
     border-left:1px solid #e66429;
     border-top:1px solid #e66429
 }
+.model-list_item:hover .border-coner.left:before{
+    border-left:1px solid #e66429;
+    border-top:1px solid #e66429
+}
 .brand-list_item:hover .border-coner.right:after{
+    border-right:1px solid #e66429;
+    border-bottom:1px solid #e66429
+}
+.model-list_item:hover .border-coner.right:after{
     border-right:1px solid #e66429;
     border-bottom:1px solid #e66429
 }

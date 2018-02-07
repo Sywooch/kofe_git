@@ -28,7 +28,7 @@ class Models extends Widget {
             $firstLatter = mb_substr($row['title'], 0, 1, 'utf8');
             $sortedRows[$firstLatter][] = $row;
         }
-        return $this->render('models', ['sortedBrands' => $sortedRows, 'brand2' => $this->brand, 'searches' => $searches, 'rows' => $rows]);
+        return $this->render('models', ['sortedBrands' => $sortedRows, 'brand' => $this->brand, 'searches' => $searches, 'rows' => $rows]);
     }
 
 }
