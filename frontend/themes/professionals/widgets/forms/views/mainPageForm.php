@@ -34,7 +34,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="col-lg-12 col-lg-offset-1 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
                     <div class="row">
                         <div class="col-lg-24 hero_why-we">
-                            <?= $page['description']; ?>     
+                            <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $page['description']); ?>     
                         </div>
                         <div class="cup">
                             <?php if(!empty($page['image'])): ?>
