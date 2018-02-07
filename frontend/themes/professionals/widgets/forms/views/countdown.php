@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-lg-8 col-md-9 col-sm-11">
                 <h2 class="title title__2">Успейте <br>заказать ремонт <br>кофемашины</h2>
-                <p class="promo_gift">и получить термокружку <br>"Alpenkok" в подарок!</p>
             </div>
             <div class="col-lg-9 col-lg-offset-7 col-md-11 col-md-offset-4 col-sm-13">
                 <div class="countdown-title">До конца акции осталось:</div>
@@ -45,7 +44,7 @@ $form = ActiveForm::begin([
                     <p class="response-message"></p>
                     <p class="form-policy">
                         Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
-                        персональных данных в соответствии с <a href="#">условиями</a>.
+                        персональных данных в соответствии с <a href="/conf-inform">условиями</a>.
                     </p>
                     <?php ActiveForm::end() ?>
                 </div>

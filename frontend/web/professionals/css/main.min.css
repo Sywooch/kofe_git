@@ -7900,6 +7900,9 @@ p.form-policy{
 p.form-policy a,p.form-policy a:hover{
     color:#e66429
 }
+.promo p.form-policy a {
+    color: #fff;
+}
 .form.dark input:not([type=submit]),
 .form.dark textarea{
     background-color:#f0f0f0
