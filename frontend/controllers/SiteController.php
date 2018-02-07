@@ -27,6 +27,15 @@ class SiteController extends CController {
         return false;
     }
 
+    public function actionValidate() {
+        $model = new \frontend\models\CallBackForm();
+        $request = \Yii::$app->getRequest();
+        if ($request->isPost && $model->load($request->post())) {
+            \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+            return \yii\widgets\ActiveForm::validate($model);
+        }
+    }
+
     public function actionIndex() {
         $pageInfo = $_GET['data'];
 //        \Yii::$app->view->registerMetaTag([

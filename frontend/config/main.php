@@ -67,6 +67,7 @@ return [
                 'model-delete' => 'model/delete',
                 'order-send' => 'page/send',
                 'reviews-get' => 'review/get',
+                'site/validate' => 'site/validate',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],

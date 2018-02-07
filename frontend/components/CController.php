@@ -159,7 +159,7 @@ class CController extends \yii\web\Controller {
             file_get_contents($url . urlencode($msg));
     }
 
-    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
+    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {exit;
         $siteConfig = self::getSiteConfig();
         if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];

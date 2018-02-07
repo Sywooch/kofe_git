@@ -1,5 +1,5 @@
-<?php 
-$assets = Yii::getAlias('@web'); 
+<?php
+$assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="hero">
@@ -11,13 +11,41 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="subtitle" style="font-size: 14px; color: #e66429">В сервисном центре</div>
                     <div class="form form__inline form-block__repair form-block__light">
                         <p class="subtitle">Хотите подарок? Введите Ваш номер телефона и получите его!</p>
-                        <form class="request-form" action="/request/request/" method="post">
-                            <input type='hidden' name='csrfmiddlewaretoken' value='6BziyPShoarGBPiSBXNW9xU51mC36tZCgWzjhdd3LcbRjOJqihjY7HrohgwUfmBo' />
-                            <ul>
-                                <li><label for="id_phone">Телефон</label><input type="text" name="phone" id="id_phone" placeholder="Телефон" required maxlength="15" /></li>
-                            </ul>
-                            <button type="submit">Выбрать подарок</button>
-                        </form>
+                        <?php
+
+                        use yii\helpers\Html;
+                        use yii\widgets\ActiveForm;
+                        use yii\widgets\MaskedInput;
+
+$form = ActiveForm::begin([
+    'action' => 'site/validate',
+                                    'id' => 'today-form',
+                                    'options' => ['class' => 'request-form'],
+                                    'enableAjaxValidation' => true,
+                                    'fieldConfig' => [
+                                        'template' => '{input}',
+                                    ],
+                        ]);
+                        ?>
+                        <ul>
+                            <li>
+                                <label for="id_phone">Телефон</label>
+                                <?=
+                                $form->field($model, 'phone')->widget(MaskedInput::className(), [
+                                    'name' => 'phone',
+                                    'mask' => '+7 (999) 999-99-99',
+                                    'options' => [
+                                        'placeholder' => 'Телефон',
+                                        //'class' => 'form__input form__input_phone-mask',
+                                        'type' => 'tel',
+                                        'size' => 40,
+                                    ],
+                                ])->label('')
+                                ?>
+                            </li>
+                        </ul>
+                        <button type="submit">Выбрать подарок</button>
+                        <?php ActiveForm::end() ?>
                         <div class="gift">
                             <div class="gifts"><img src="" alt=""></div>
                             <div class="gifts"><img src="" alt=""></div>
@@ -37,13 +65,13 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $page['description']); ?>     
                         </div>
                         <div class="cup">
-                            <?php if(!empty($page['image'])): ?>
+                            <?php if (!empty($page['image'])): ?>
                                 <img class="brend-img" src="/uploads/images/<?= $page['image']; ?>" alt="<?= $page['title']; ?>"/>
                             <?php endif; ?>  
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/bg/cup.png" alt="">
                         </div>
                     </div>
-                    
+
                 </div>
             <?php else: ?>
                 <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
