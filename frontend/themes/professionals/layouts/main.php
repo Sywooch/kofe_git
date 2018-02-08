@@ -5,8 +5,6 @@
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
 
-//use ifixme\Test;
-
 AppAsset::register($this);
 $assets = '/' . Yii::getAlias('@web');
 $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
@@ -142,27 +140,24 @@ $js = app\components\CController::$js;
                 <div class="row">
                     <div class="col-xs-8">
                         <h4 class="subtitle">О НАС</h4>
-                        <p>Быстро и, главное, качественно устраним все функциональные неполадки электроприбора за доступную цену. Наша команда мастеров работает ежедневно, без выходных. Ремонт кофемашин</p>
-                        <!--<a href="#" class="footer-logo">
-                            <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/logo.png" alt="">
-                        </a>-->
+                        <p>Устраним любую проблему и выполним ремонт кофемашины максимально быстро и по низкой цене. Команда специалистов работает каждый день, без выходных и праздников.</p>
                     </div>
                     <div class="col-xs-9">
                         <h4 class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</h4>
                         <div class="row">
                             <div class="col-xs-12">
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/ne-nalivaet-kofe">Не наливает кофе</a>
+                                <a href="/ne-vklyuchaetsya">Не включается</a>
+                                <a href="/ne-greet-vodu">Не греет воду</a>
+                                <a href="/protekaet">Протекает</a>
+                                <a href="/ne-podaet-vodu">Не подает воду</a>
                             </div>
                             <div class="col-xs-12">
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
-                                <a href="/remont/ne-vklyuchaetsya/" rel="nofollow">Кофе слабый и невкусный</a>
+                                <a href="/plokho-techet-kofe">Плохо течет кофе</a>
+                                <a href="/ne-delaet-kofe">Не делает кофе</a>
+                                <a href="/vydaet-oshibku">Выдает ошибку</a>
+                                <a href="/ne-delaet-penu">Не делает пену</a>
+                                <a href="/kofe-slabyi-i-nevkusnyi">Кофе слабый и невкусный</a>
                             </div>
                         </div>
                     </div>
@@ -175,35 +170,19 @@ $js = app\components\CController::$js;
                 <hr style="border-color: rgba(165, 165, 165, 0.1)">
                 <div class="row">
                     <div class="col-xs-24">
-                        <p>Сервисный центр - Coffee-help.lc 2018 © - Ремонт и обслуживание всех брендов кофемашин</p>
+                        <p>Сервисный центр <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= date('Y'); ?> © - Качественный ремонт кофемашин в Москве и Области!</p>
                     </div>
                 </div>
             </div>
         </footer>
         <div id="kmacb">
-          <button class="kmacb-form fancy-btn open">
-            <div class="kmacb-circle"></div>
-            <div class="kmacb-circle-fill"></div>
-            <div class="kmacb-img-circle"></div>
-          </button>
+            <button class="kmacb-form fancy-btn open">
+                <div class="kmacb-circle"></div>
+                <div class="kmacb-circle-fill"></div>
+                <div class="kmacb-img-circle"></div>
+            </button>
         </div>
-        <div class="modal-frame">
-           <div class="modal">
-              <div class="modal-inset">
-                 <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
-                 <div class="modal-body">
-                    <h3>Хотите, мы вам перезвоним?</h3>
-                    <p>Для вызова мастера или подробной консультации оставьте ваш номер телефона</p>
-                    <form action="#" class="form dark">
-                        <input type="tel" id="" name="AskForm2[phone]" placeholder="Телефон" aria-required="true" data-plugin-inputmask="inputmask_8b2a4bfb">
-                        <button type="submit">Перезвоните мне</button>
-                    </form>
-                    <p class="ps">Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных в соответствии с <a href="/conf-inform">условиями</a>.</p>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <div class="modal-overlay"></div>
+        <?= professionals\widgets\forms\PopupForm::widget(); ?>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
@@ -221,7 +200,7 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {
-            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-        });</script>
+        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+    });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>

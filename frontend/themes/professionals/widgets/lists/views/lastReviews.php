@@ -32,22 +32,47 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-xs-8">
                 <h2 class="title title__2">Оставить отзыв</h2>
                 <div class="form dark">
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-xs-16">
-                                <input type="text" id="" class="" name="Reviews[username]" placeholder="Ваше имя" aria-required="true">
-                            </div>
-                            <div class="col-xs-8">
-                                xxxxx
-                            </div>
-                            <div class="col-xs-24">
-                                <textarea id="" class="" name="Reviews[message]" placeholder="Содержание отзыва" aria-required="true"></textarea>
-                            </div>
-                            <div class="col-xs-24">
-                                <button type="submit">Отправить</button>
-                            </div>
+                    <?php
+
+                    use yii\helpers\Html;
+                    use yii\widgets\ActiveForm;
+                    use yii\widgets\MaskedInput;
+                    use kartik\rating\StarRating;
+
+$form = ActiveForm::begin([
+                                'id' => 'review-form',
+                                //'options' => ['class' => 'form form_feedback'],
+                                'enableClientValidation' => true,
+                                'fieldConfig' => [
+                                    'template' => '{input}',
+                                ],
+                    ]);
+                    ?>
+                    <div class="row">
+                        <div class="col-xs-16">
+                            <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя']) ?>
                         </div>
-                    </form>
+                        <div class="col-xs-8">
+                            <?=
+                            $form->field($model, 'rating')->widget(StarRating::classname(), [
+                                'pluginOptions' => [
+                                    'size' => 'sm',
+                                    'showCaption' => false,
+                                    //'theme' => 'krajee-uni',
+                                    'filledStar' => '&#x2605;',
+                                    'emptyStar' => '&#x2606;'
+                                ]
+                            ]);
+                            ?>
+                        </div>
+                        <div class="col-xs-24">
+                            <?= $form->field($model, 'message')->textarea(['placeholder' => 'Содержание отзыва']) ?>
+                        </div>
+                        <div class="col-xs-24">
+                            <?= Html::submitButton('Отправить', ['type' => 'submit']) ?>
+                        </div>
+                    </div>
+                    <?php ActiveForm::end() ?>
                 </div>
             </div>
         </div>
