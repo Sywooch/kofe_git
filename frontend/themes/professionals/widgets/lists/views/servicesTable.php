@@ -19,6 +19,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                 </td>
                 <td><span class="price-nowrap"><span><?= number_format($row['price'], 0, ' ', ' '); ?></span>&nbsp;руб.</span></td>
+                <td><a class="open" href="#">Заказать</a></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

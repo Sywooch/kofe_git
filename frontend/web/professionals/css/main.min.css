@@ -7628,46 +7628,30 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-image:url(../images/bg/solutions__faults-bg.jpg)
 }
 .solution{
-    display: block;
-    position: relative;
-    margin: 2rem auto 0;
-    max-width: 87rem;
-    padding: 20px 30px 0px;
-    border-left: 1px solid #e66429;
-    border-right: 1px solid #e66429;
-    border-bottom: 1px solid #e66429;
-}
-.solution:after,.solution:before{
-    display:block;
-    position:absolute;
-    width:12rem;
-    height:1px;
-    top:0
-}
-.solution:before{
-    left:0
-}
-.solution:after{
-    right:0
 }
 .solution.solution--closed:after,.solution.solution--closed:before{
     width:100%
 }
+.table>tbody>tr:nth-child(odd) {
+    background-color: #f6f7fa;
+}
+.table>tbody>tr {
+    width: 50%;
+    display: block;
+}
 .table>tbody>tr>td,.table>tbody>tr>th{
     color:#fff;
-    border-top:1px solid #454545
 }
 .table>tbody>tr td:first-child {
-    width: 75%;
-    font-size: 18px;
-    line-height: 35px;
-    box-sizing: border-box;
+    width: 50%;
+    color:#333
+}
+.table>tbody>tr td:nth-child(2) {
+    width: 25%;
+    color:#787a8d
 }
 .table>tbody>tr td:last-child{
     width:25%;
-    font-size:2.5rem;
-    text-align:right;
-    color:#e66429
 }
 .table>tbody>tr td a{
     color:#333
