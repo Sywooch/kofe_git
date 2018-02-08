@@ -167,7 +167,7 @@ class ListController extends CController {
                         if ($page['type'] == 'brand') {
                             $metaDesc = 'Качественная ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' в сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия. Работаем ежедневно.';
                         } else {
-                            $metaDesc = $pageInfo['title'] . ' ' . $page['title'] . '. Качественный ремонт кофемашин в  сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия.';
+                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'] . '. Качественный ремонт кофемашин в  сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия.';
                         }
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
