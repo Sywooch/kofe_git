@@ -41,5 +41,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
+        <div class="show-model">Показать остальные модели</div>
     </div>
 </section>

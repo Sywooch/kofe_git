@@ -180,29 +180,30 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </footer>
-        <div id="modalOrder" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalOrder" data-backdrop="static">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button class="modal-close" type="button" data-dismiss="modal">x</button>
-                    <div class="form form__request transparent">
-                        <h3 class="title title__3 light">Заказать ремонт</h3>
-                        <p class="form_claim" style="color:#fff">Оставьте свои данные и наш менеджер свяжется с вами в течение 2 минут</p>
-                        <form class="request-form" action="/request/request/" method="post">
-                            <ul>
-                                <li><label for="id_name">Ваше имя</label><input type="text" name="name" id="id_name" placeholder="Ваше имя" maxlength="128" /></li>
-                                <li><label for="id_phone">Телефон</label><input type="text" name="phone" id="id_phone" placeholder="Телефон" required maxlength="15" /></li>
-                            </ul>
-                            <button type="submit">Перезвоните мне</button>
-                            <p class="response-message"></p>
-                            <p class="form-policy">
-                                Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку
-                                персональных данных в соответствии с <a href="/conf-inform">условиями</a>.
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div id="kmacb">
+          <button class="kmacb-form fancy-btn open">
+            <div class="kmacb-circle"></div>
+            <div class="kmacb-circle-fill"></div>
+            <div class="kmacb-img-circle"></div>
+          </button>
         </div>
+        <div class="modal-frame">
+           <div class="modal">
+              <div class="modal-inset">
+                 <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
+                 <div class="modal-body">
+                    <h3>Хотите, мы вам перезвоним?</h3>
+                    <p>Для вызова мастера или подробной консультации оставьте ваш номер телефона</p>
+                    <form action="#" class="form dark">
+                        <input type="tel" id="" name="AskForm2[phone]" placeholder="Телефон" aria-required="true" data-plugin-inputmask="inputmask_8b2a4bfb">
+                        <button type="submit">Перезвоните мне</button>
+                    </form>
+                    <p class="ps">Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных в соответствии с <a href="/conf-inform">условиями</a>.</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="modal-overlay"></div>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
