@@ -23,7 +23,6 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 <section class="solutions">
     <div class="container">
         <?= professionals\widgets\forms\Today::widget(); ?>
-        <?= professionals\widgets\other\YouGet::widget(); ?>
     </div>
 </section>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
