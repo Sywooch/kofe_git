@@ -77,11 +77,11 @@ $form = ActiveForm::begin([
                 <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
                     <div class="hero_statement">
                         <blockquote data-timeout="2800">
-                            <p>Ремонт для нас - как кислород для Вас!</p>
+                            <p>Ремонт для нас - как <br>кислород для Вас!</p>
                             <span class="hero_cite">Мастер Олег</span>
                         </blockquote>
                         <blockquote data-timeout="2800">
-                            <p>У вас страсть к кофе, а у нас к ремонту кофемашин!</p>
+                            <p>У вас страсть к кофе, а у нас <br>к ремонту кофемашин!</p>
                             <span class="hero_cite">Мастер Илья</span>
                         </blockquote>
                         <blockquote data-timeout="2800">
@@ -89,7 +89,7 @@ $form = ActiveForm::begin([
                             <span class="hero_cite">Мастер Игорь</span>
                         </blockquote>
                         <blockquote data-timeout="2800">
-                            <p>Мы не делаем из мухи слона - мы делаем кофемашины!</p>
+                            <p>Мы не делаем из мухи слона - <br>мы делаем кофемашины!</p>
                             <span class="hero_cite">Мастер Андрей</span>
                         </blockquote>
                     </div>

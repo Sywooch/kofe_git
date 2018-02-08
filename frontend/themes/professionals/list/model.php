@@ -7,7 +7,7 @@ $this->title = $title;
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
     <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']), 'page' => $pageInfo]); ?>
 </header>
-<section class="solutions solutions__services">
+<section>
     <div class="container">        
         <div class="row">
             <div class="col-xs-24">
