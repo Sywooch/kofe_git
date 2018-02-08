@@ -9,8 +9,19 @@ $siteConfig = app\components\CController::getSiteConfig();
 </div>
 <table class="table table__solution">
     <tbody>
+        <?php $n = 0; ?>
         <?php foreach ($rows as $key => $row): ?>
-            <tr>
+            <?php
+            $n++;
+            if ($n == 3 || $n == 4) {
+                if($n == 4)
+                    $n = 0;
+                $c = ' class="ikkitasi"';
+            } else {
+                $c = '';
+            }
+            ?>
+            <tr<?= $c; ?>>
                 <td>
                     <?php if ($row['is_popular'] == 1): ?>
                         <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
