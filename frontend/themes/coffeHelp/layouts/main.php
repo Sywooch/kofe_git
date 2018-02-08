@@ -200,7 +200,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-xs-3">
                         <h5>Контактная информация</h5>
-                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;">г. Москва, Площадь Победы, д. 1Е. (В здании Дома быта).</p>
+                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;"><?php if ($siteConfig['id'] == 53): ?>г. Санкт-Петербург, м. Озерки, Проспект Энгельса 120, ТЦ "Озерки"<?php else: ?>г. Москва, Площадь Победы, д. 1Е. (В здании Дома быта).<?php endif; ?></p>
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
