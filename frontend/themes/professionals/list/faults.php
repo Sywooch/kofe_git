@@ -12,9 +12,8 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
         <div class="row">
             <div class="col-xs-24">
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные неисправности', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Неисправности которые мы устраняем:', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
-                <?= professionals\widgets\other\YouGet::widget(); ?>
             </div>
         </div>
     </div>
@@ -23,7 +22,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 <?= professionals\widgets\other\Advantage::widget(); ?>
 <?= professionals\widgets\forms\Countdown::widget(); ?>
 <?= professionals\widgets\lists\PopularBrands::widget(); ?>
-<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
+<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
 <?= professionals\widgets\other\Masters::widget(); ?>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
 <?= professionals\widgets\lists\LastReviews::widget(); ?>

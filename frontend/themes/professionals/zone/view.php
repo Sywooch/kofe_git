@@ -25,12 +25,11 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
     <div class="container">
         <div class="row">
             <div class="col-xs-24">
-                <?= professionals\widgets\other\YouGet::widget(); ?>
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные неисправности', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Неисправности которые мы устраняем:', 'is_popular' => true, 'type' => 2, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
                 <div class="solution solution--closed">
-                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
+                    <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
                 </div>
             </div>
         </div>
@@ -51,4 +50,4 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
 <?= professionals\widgets\other\Masters::widget(); ?>
 <?= professionals\widgets\forms\Countdown::widget(); ?>
 <?= professionals\widgets\lists\LastReviews::widget(); ?>
-<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
+<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>

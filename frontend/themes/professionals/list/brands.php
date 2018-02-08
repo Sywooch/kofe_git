@@ -12,7 +12,7 @@ $this->title = $pageInfo['meta_title'];
 <?= professionals\widgets\other\Advantage::widget(); ?>
 <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 6, 'title' => 'Частые неисправности', 'is_popular' => true, 'type' => 2]); ?>
 <?= professionals\widgets\lists\PopularBrands::widget(); ?>
-<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Популярные услуги', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
+<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
 <?= professionals\widgets\forms\Countdown::widget(); ?>
 <?= professionals\widgets\other\Masters::widget(); ?>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
