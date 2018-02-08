@@ -9423,3 +9423,17 @@ footer h4 {
     font-size: 24px;
     line-height: 50px;
 }
+
+
+.gl-st .title.title__1.title__home:before {
+    content: "Качественный ";
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+}
+.gl-st .title.title__1.title__home:after {
+    content: " в Москве";
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+}

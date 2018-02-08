@@ -31,7 +31,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/normalize.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css" rel="stylesheet" />
     </head>
-    <body>
+    <body <?= $isHome ? 'class="gl-st"' : ''; ?>>
         <?php
         if (!Yii::$app->user->isGuest) {
             echo '<div style="float: left; z-index: 99999;position: absolute;">';
