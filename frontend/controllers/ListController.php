@@ -379,6 +379,7 @@ class ListController extends CController {
 
     public function actionModel() {
         $pageInfo = $_GET['data'];
+        $pageInfo['title'] = str_replace('@', '-', $pageInfo['title']);
         $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title, image FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
         $regionTitle = Yii::$app->session['region']['titleRod'];
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
