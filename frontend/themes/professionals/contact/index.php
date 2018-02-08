@@ -19,11 +19,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
             </div>
         </div>
     </div>
+    <?= professionals\widgets\forms\Today::widget(); ?>
 </header>
-<section class="solutions">
-    <div class="container">
-        <?= professionals\widgets\forms\Today::widget(); ?>
-    </div>
-</section>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
 <?= professionals\widgets\lists\LastReviews::widget(); ?>
