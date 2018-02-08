@@ -25,7 +25,7 @@ $this->title = $title;
     </div>
 </section>
 <?php if (!empty($pageInfo['full_description'])): ?>
-    <section class="our-masters">
+    <section class="our-masters" style="padding-top: 0px;">
         <div class="container">        
             <div class="master-list">
                 <div class="row">
