@@ -19,9 +19,9 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             </div>
         </div>
     </div>
+    <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
 </header>
 <section class="solutions">
-    <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-24">

@@ -7638,6 +7638,9 @@ body > .solutions {
 .solution.solution--closed:after,.solution.solution--closed:before{
     width:100%
 }
+.table>tbody>tr td {
+    background-color: #fff;
+}
 .table>tbody>tr.ikkitasi td {
     background-color: #f6f7fa;
 }
@@ -8294,7 +8297,7 @@ footer{
         margin-top:3rem
     }
     .header__about .hero{
-        margin-top:4rem
+        margin-top:4rem;
     }
     .header__service .navbar-collapse{
         background-color:#f8f8f8
