@@ -3,10 +3,36 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<header class="header header__brand">
-    <?= professionals\widgets\menu\MainMenu::widget(); ?>
-    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']), 'page' => $pageInfo]); ?>
-</header>
+<div class=" service-wrapper">
+    <header class="header header__service model-new">
+        <?= professionals\widgets\menu\MainMenu::widget(); ?>
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-15 col-md-11 col-sm-14">
+                        <div class="hero_order">
+                            <h1 class="title title__1"><?php echo (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']); ?></h1>
+                            <div class="hero_info">
+                                <p></p>
+                                <?= str_replace(['#brand_en#', '#model_en#'], $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-11 col-md-offset-2 col-sm-10 text-right hidden-xs">
+                        <div class="hero_brand model-img">
+                            <?php if (!empty($pageInfo['image'])): ?>
+                                <img class="brend-img" src="/uploads/images/<?= $pageInfo['image']; ?>" alt="<?= $pageInfo['title']; ?>"/>
+                            <?php endif; ?>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="solutions solutions__service">
+        <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
+    </section>
+</div>
 <section>
     <div class="container">        
         <div class="row">
