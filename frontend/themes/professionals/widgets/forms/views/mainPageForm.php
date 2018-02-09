@@ -5,7 +5,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <div class="hero">
     <div class="container">
         <div class="row">
-            <div class="col-lg-11 col-md-10 col-sm-11">
+            <div class="col-lg-11 col-md-13 col-sm-18">
                 <div class="hero_order">
                     <h1 class="title title__1 light title__home"><?= $pageInfo; ?></h1>
                     <div class="subtitle" style="font-size: 14px; color: #e66429">В сервисном центре</div>
@@ -59,7 +59,7 @@ $form = ActiveForm::begin([
                 </div>
             </div>
             <?php if (!empty($page)): ?>
-                <div class="col-lg-12 col-lg-offset-1 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
+                <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
                     <div class="row">
                         <div class="col-lg-24 hero_why-we">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $page['description']); ?>     
@@ -74,7 +74,7 @@ $form = ActiveForm::begin([
 
                 </div>
             <?php else: ?>
-                <div class="col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
+                <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 hidden-sm" style="position: relative;">
                     <div class="hero_statement">
                         <blockquote data-timeout="2800">
                             <p>Ремонт для нас - как <br>кислород для Вас!</p>

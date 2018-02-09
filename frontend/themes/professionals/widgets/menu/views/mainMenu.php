@@ -5,7 +5,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <nav class="navbar">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-3 col-sm-4">
+            <div class="col-lg-4 col-md-5 col-sm-6">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded>
                         <span class="sr-only">Navigation</span>
@@ -22,10 +22,10 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </a>
                 </div>
             </div>
-            <div class="col-lg-20 col-md-21 col-sm-20">
+            <div class="col-lg-20 col-md-19 col-sm-18">
                 <div class="collapse navbar-collapse" id="collapse-menu">
                     <div class="row">
-                        <div class="col-md-16 col-sm-15">
+                        <div class="col-lg-16 col-md-24 col-sm-24">
                             <nav class="cl-effect-14">
                                <a href="/neispravnosti">Неисправности</a>
                                <a href="/uslugi">Услуги</a>
@@ -34,7 +34,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                <a href="/about">О нас</a>
                             </nav>
                         </div>
-                        <div class="col-lg-8 col-md-9 col-sm-11 hidden-xs">
+                        <div class="col-lg-8 col-md-24 col-sm-24 hidden-xs">
                             <p class="navbar-text navbar-right header-phone">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </p>
