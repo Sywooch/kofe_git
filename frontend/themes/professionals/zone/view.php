@@ -21,7 +21,7 @@ $this->title = 'Ремонт кофемашин рядом с метро ' . $mo
     </div>
     <?= professionals\widgets\forms\Today::widget(['sectionClass' => 'you-get__dark']); ?>
 </header>
-<section class="solutions">
+<section class="solutions zone">
     <div class="container">
         <div class="row">
             <div class="col-xs-24">

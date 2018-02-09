@@ -4830,22 +4830,13 @@ tbody.collapse.in{
 }
 .navbar-text {
     margin-top:25px;
+    text-align: right;
 }
-@media (min-width:768px){
-    .navbar-text{
-        float:left;
-        margin-left:15px;
-        margin-right:15px
-    }
-    .navbar-left{
-        float:left!important
-    }
-    .navbar-right{
+@media (max-width:1199px) {
+    .navbar-text {
         float:right!important;
-        margin-right:-15px
-    }
-    .navbar-right~.navbar-right{
-        margin-right:0
+        margin-top: 10px;
+        margin-right:0px;
     }
 }
 .navbar-default{
@@ -6538,6 +6529,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-position:60% 90%,50% 50%;
     background-size:auto,cover
 }
+@media (max-width: 991px) {
+    .header {
+        background-position:85% 90%,50% 50%;
+    }
+}
 .header:after,.header__brand{
     background-repeat:no-repeat;
     background-position:50% 50%
@@ -6595,6 +6591,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-repeat:no-repeat;
     background-position:top center;
     background-size:auto,cover;
+    background-color: #0d0d0d;
 }
 .header__fault .hero{
     margin-top:4rem
@@ -7632,6 +7629,9 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-position:50% 0;
     background-image:url(../images/bg/seeds.png)
 }
+.solutions.zone {
+    background-color: #0d0d0d;
+}
 body > .solutions {
     padding: 25px 0px;
 }
@@ -8228,6 +8228,9 @@ footer{
     .about,.brands,.faults,.our-masters,.popular-services,.promo,.reviews,.why-we{
         padding:4rem 0
     }
+    .about {
+        padding-top: 0px;
+    }
     .header__brand{
         min-height:50rem
     }
@@ -8608,6 +8611,11 @@ nav.cl-effect-14 a:focus {
     padding: 0 20px;
     height: 45px;
     line-height: 45px;
+}
+@media (max-width: 991px) {
+    .cl-effect-14 a {
+        padding: 0 14px;
+    }
 }
 .cl-effect-14 a::before,
 .cl-effect-14 a::after {
