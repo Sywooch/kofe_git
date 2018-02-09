@@ -167,7 +167,7 @@ class ListController extends CController {
                         if ($page['type'] == 'brand') {
                             $metaDesc = 'Качественная ' . $pageInfo['title'] . ' кофемашин ' . $page['title'] . ' в сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия. Работаем ежедневно.';
                         } else {
-                            $metaDesc = $pageInfo['title'] . ' ' . $page['title'] . '. Качественный ремонт кофемашин в  сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия.';
+                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'] . '. Качественный ремонт кофемашин в  сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия.';
                         }
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
@@ -382,8 +382,7 @@ class ListController extends CController {
     }
 
     public function actionModel() {
-        $pageInfo = $_GET['data'];
-        $pageInfo['title'] = str_replace('@', '-', $pageInfo['title']);
+        $pageInfo = $_GET['data'];        
         $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title, image FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
         $regionTitle = Yii::$app->session['region']['titleRod'];
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
@@ -490,7 +489,7 @@ class ListController extends CController {
             $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' недорого, быстро, качественно!';
             $metaDesc = 'Ремонт кофемашины  ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', служба доставки или выезд мастера, комплектующие ААА класса, гарантия, низкая цена.';
         } elseif (in_array($siteConfig['id'], [51, 53])) {
-            $title = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . '🔧 в ' . Yii::$app->session['region']['titleRod'];
+            $title = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' 🔧 в ' . Yii::$app->session['region']['titleRod'];
             $metaDesc = 'Выполним ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в короткие сроки в ' . Yii::$app->session['region']['titleRod'] . '. Выезд курьера или мастера. Гарантия. Фирменные комплектующие.';
         }
 //        \Yii::$app->view->registerMetaTag([
