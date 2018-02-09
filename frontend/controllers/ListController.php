@@ -253,10 +253,7 @@ class ListController extends CController {
                             $title = $pageInfo['title'] . ' ' . CController::$category['1_title'] . ' в ' . Yii::$app->session['region']['titleRod'];
                         }
                     }
-                     if (in_array($siteConfig['id'], [124, 125])) {
-                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин быстро, недорого, надежно';
-                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . '. Устраняем неисправности различной сложности без задержек, точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
-                     }
+                     
                 } else {
                     if ($siteConfig['mono']) {
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'];
@@ -267,16 +264,24 @@ class ListController extends CController {
                         $title = $pageInfo['title'] . ' - в ' . Yii::$app->session['region']['titleRod'] . '! Качественно, с гарантией до 1 года!';
                         $metaDesc = $pageInfo['title'] . 'в сервисном центре "' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '". Качественный сервис по лучшим ценам в ' . Yii::$app->session['region']['titleRod'] . '!"';
                     }
-                    if (in_array($siteConfig['id'], [124, 125])) {
-                            $title = 'Ремонт кофемашин - ' . $pageInfo['title'];
-                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин  любой сложности поломки в течении короткого времени и по оптимальной стоимости. Все запчасти в наличии. Работаем без выходных.';
-                     }
+                    
                     if (isset(CController::$category['3_title']))
                         $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' - быстро, качественно с гарантией.</p>';
                 }
             } else {
                 $seoText = $seo['meta_text1'];
             }
+            if ($pageInfo['type'] == 2) {
+            if (in_array($siteConfig['id'], [124, 125])) {
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин быстро, недорого, надежно';
+                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . '. Устраняем неисправности различной сложности без задержек, точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
+                     }
+                     } else {
+                         if (in_array($siteConfig['id'], [124, 125])) {
+                            $title = 'Ремонт кофемашин - ' . $pageInfo['title'];
+                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин  любой сложности поломки в течении короткого времени и по оптимальной стоимости. Все запчасти в наличии. Работаем без выходных.';
+                     }
+                     }
             if (!empty($seo['meta_text2'])) {
                 $seoText2 = $seo['meta_text2'];
             }
