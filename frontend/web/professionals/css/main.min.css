@@ -6841,6 +6841,9 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .about,.faults{
     padding:5rem 0
 }
+.about {
+    padding-top: 0px;
+}
 .hero_price p{
     margin:0
 }
