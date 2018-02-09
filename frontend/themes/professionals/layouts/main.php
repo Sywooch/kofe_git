@@ -182,6 +182,7 @@ $js = app\components\CController::$js;
             </button>
         </div>
         <?= professionals\widgets\forms\PopupForm::widget(); ?>
+		<?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
