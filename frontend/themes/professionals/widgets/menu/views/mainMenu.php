@@ -18,7 +18,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/icon-phone-2.png" alt="">
                     </a>
                     <a class="navbar-brand" href="/">
-                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/logo.png" alt="KofeProfi">
+                        <div class="logo"><b>K<span>o</span>femashin<br>Rem<span>o</span>nt</b></div>
                     </a>
                 </div>
             </div>

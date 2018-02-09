@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = 'Ремонт кофемашин рядом с метро ' . $model['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
 ?>
-<header class="header header__about">
+<header class="header header__about zone">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
     <div class="hero">
         <div class="container">

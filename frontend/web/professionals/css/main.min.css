@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 @charset "UTF-8";
 .label,sub,sup{
     vertical-align:baseline
@@ -6588,6 +6590,12 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     background-color:#151515;
     background-image:none
 }
+.header.header__about.zone{
+    background-image:url(../images/bg/header-bg-2.jpg);
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:auto,cover;
+}
 .header__fault .hero{
     margin-top:4rem
 }
@@ -9458,4 +9466,72 @@ footer h4 {
 .header__service.model-new .hero > .container > .row > div {
     display: flex;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.logo {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+      margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.logo b{
+  font-family: "Pacifico";
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff5f1;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #882c02, 0 0 0.5em #882c02, 0 0 0.1em #882c02, 0 10px 3px #000;
+}
+.service-wrapper .logo b {
+    color: #e66429;
+    text-shadow: none;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 }
