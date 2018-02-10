@@ -185,6 +185,7 @@ class CController extends \yii\web\Controller {
                 'date' => date('Y-m-d H:i:s'),
                 'ip' => $userIP,
                 'site' => Yii::$app->request->hostInfo,
+				'page' => '',
             ])->execute();
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
             if ($siteConfig['id'] == 50) {
