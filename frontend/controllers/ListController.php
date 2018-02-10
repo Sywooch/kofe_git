@@ -524,7 +524,7 @@ class ListController extends CController {
             $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' недорого, быстро, качественно!';
             $metaDesc = 'Ремонт кофемашины  ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', служба доставки или выезд мастера, комплектующие ААА класса, гарантия, низкая цена.';
         } elseif (in_array($siteConfig['id'], [51, 53])) {
-            $title = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' 🔧 в ' . Yii::$app->session['region']['titleRod'];
+            $title = 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] . ' 🔧 в ' . Yii::$app->session['region']['titleRod'];
             $metaDesc = 'Выполним ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в короткие сроки в ' . Yii::$app->session['region']['titleRod'] . '. Выезд курьера или мастера. Гарантия. Фирменные комплектующие.';
         } elseif (in_array($siteConfig['id'], [124, 125])) {
             $title = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' с выездом мастера в ' . Yii::$app->session['region']['titleRod'];
