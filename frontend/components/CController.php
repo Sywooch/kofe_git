@@ -210,7 +210,7 @@ class CController extends \yii\web\Controller {
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '@remontkofe_ru_admin';
-            file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
+            //file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
         } elseif (in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '-1001240519113';
         } else {
@@ -218,6 +218,9 @@ class CController extends \yii\web\Controller {
         }
         if ($siteConfig['id'] == 48)
             $groupName = '@ifixme_orders';
+		if (in_array($siteConfig['id'], [124, 125])) {
+			$groupName = '-1001263720765';
+		}
         self::sendMessage($msg, $groupName); //        
     }
 
