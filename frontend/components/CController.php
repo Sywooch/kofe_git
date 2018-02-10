@@ -219,7 +219,7 @@ class CController extends \yii\web\Controller {
         }
         if ($siteConfig['id'] == 48)
             $groupName = '@ifixme_orders';
-		if (in_array($siteConfig['id'], [124, 125])) {
+		if (in_array($siteConfig['id'], [51, 53])) {
 			$groupName = '-1001263720765';
 		}
         self::sendMessage($msg, $groupName); //        
