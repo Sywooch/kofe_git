@@ -7740,6 +7740,11 @@ body > .solutions {
     color:#fff;
     background: #ff9c6f;
 }
+@media (max-width: 500px) {
+    .table>tbody>tr td {
+        display: block;
+    }
+}
 .table>tbody>tr td a{
     color:#333;
     text-decoration: underline;
@@ -8563,10 +8568,13 @@ footer{
         width:3rem
     }
     .table>tbody>tr td:first-child{
-        width:70%;
+        width:50%;
+    }
+    .table>tbody>tr td:nth-child(2) {
+        width: 30%;
     }
     .table>tbody>tr td:last-child{
-        width:30%;
+        width:20%;
     }
     .table__solution caption{
         top:-1rem;
@@ -9665,6 +9673,10 @@ footer h4 {
   display: none;
   float: right;
   z-index: 999999;
+}
+#nav-icon4.open {
+    position: fixed;
+    right: 15px;
 }
 @media (max-width: 767px) {
     #nav-icon4 {
