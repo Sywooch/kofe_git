@@ -7,13 +7,11 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="row">
             <div class="col-lg-4 col-md-5 col-sm-6">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded>
-                        <span class="sr-only">Navigation</span>
-                        <span class="icon-bar move move-down"></span>
-                        <span class="icon-bar rotate"></span>
-                        <span class="icon-bar rotate rotate-reverse"></span>
-                        <span class="icon-bar move move-up"></span>
-                    </button>
+                    <div id="nav-icon4">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
                     <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="navbar-phone visible-xs">
                         <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/icon-phone-2.png" alt="">
                     </a>
@@ -23,7 +21,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
             </div>
             <div class="col-lg-20 col-md-19 col-sm-18">
-                <div class="collapse navbar-collapse" id="collapse-menu">
+                <div class="collapse">
                     <div class="row">
                         <div class="col-lg-16 col-md-24 col-sm-24">
                             <nav class="cl-effect-14">
