@@ -29,7 +29,7 @@ $this->title = $title;
                         <?php endif; ?>
                         <div class="col-xs-8">
                             <h1>
-                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
                             </h1>
                             <?php if (Yii::$app->params['devicedetect']['isMobile']): ?>
                                 <div class="col-xs-4 nopadding">

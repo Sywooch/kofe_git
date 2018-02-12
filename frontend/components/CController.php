@@ -159,7 +159,7 @@ class CController extends \yii\web\Controller {
             file_get_contents($url . urlencode($msg));
     }
 
-    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {exit;
+    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
         $siteConfig = self::getSiteConfig();
         if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];
@@ -173,6 +173,8 @@ class CController extends \yii\web\Controller {
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
                 'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
+				'help' => ['name' => 'SC1_SPB', 'OID' => 2202775576000],
+				'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
@@ -183,6 +185,7 @@ class CController extends \yii\web\Controller {
                 'date' => date('Y-m-d H:i:s'),
                 'ip' => $userIP,
                 'site' => Yii::$app->request->hostInfo,
+				'page' => '',
             ])->execute();
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
             if ($siteConfig['id'] == 50) {
@@ -216,6 +219,9 @@ class CController extends \yii\web\Controller {
         }
         if ($siteConfig['id'] == 48)
             $groupName = '@ifixme_orders';
+		if (in_array($siteConfig['id'], [51, 53])) {
+			$groupName = '-1001263720765';
+		}
         self::sendMessage($msg, $groupName); //        
     }
 

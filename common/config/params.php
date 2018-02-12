@@ -807,7 +807,7 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'coffeHelp',
-            'order-title' => 'МСК Заречная',
+            'order-title' => 'help',
         ],
         'fixkofe' => [
             'phone-1' => '8 (812) 501-20-02',
@@ -846,7 +846,7 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'coffeHelp',
-            'order-title' => 'МСК Заречная',
+            'order-title' => 'support',
             'spb' => true,
         ],
         'spb.remont' => [
