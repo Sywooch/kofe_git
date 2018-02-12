@@ -30,7 +30,7 @@ $form = ActiveForm::begin([
                         'name' => 'phone',
                         'mask' => '+7 (999) 999-99-99',
                         'options' => [
-                            'placeholder' => 'Ваш телефон',
+                            'placeholder' => '+7 (___) ___-__-__',
                             'class' => 'form-control', 'type' => 'tel',
                             'size' => 40,
                         ],
