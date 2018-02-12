@@ -5,7 +5,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <section class="reviews">
     <div class="container">
         <div class="row">
-            <div class="col-xs-16">
+            <div class="col-lg-16 col-md-16 col-sm-12">
                 <h2 class="title title__2">Отзывы клиентов</h2>
                 <div class="reviews-list" id="reviews-slider">
                     <?php foreach ($rows as $row): ?>
@@ -29,7 +29,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endforeach; ?>                    
                 </div>
             </div>
-            <div class="col-xs-8">
+            <div class="col-lg-8 col-md-8 col-sm-12">
                 <h2 class="title title__2">Оставить отзыв</h2>
                 <div class="form dark">
                     <?php
@@ -49,10 +49,10 @@ $form = ActiveForm::begin([
                     ]);
                     ?>
                     <div class="row">
-                        <div class="col-xs-16">
+                        <div class="col-lg-16 col-md-16 col-sm-24">
                             <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя']) ?>
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-lg-8 col-md-8 col-sm-24">
                             <?=
                             $form->field($model, 'rating')->widget(StarRating::classname(), [
                                 'pluginOptions' => [

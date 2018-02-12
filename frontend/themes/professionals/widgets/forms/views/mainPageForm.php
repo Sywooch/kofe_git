@@ -59,7 +59,7 @@ $form = ActiveForm::begin([
                 </div>
             </div>
             <?php if (!empty($page)): ?>
-                <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-4 hidden-xs" style="position: relative;">
+                <div class="col-lg-12 col-md-10 col-md-offset-1 col-sm-24" style="position: relative;">
                     <div class="row">
                         <div class="col-lg-24 hero_why-we">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $page['description']); ?>     
@@ -74,7 +74,7 @@ $form = ActiveForm::begin([
 
                 </div>
             <?php else: ?>
-                <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 hidden-sm" style="position: relative;">
+                <div class="col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 hidden-sm hidden-xs" style="position: relative;">
                     <div class="hero_statement">
                         <blockquote data-timeout="2800">
                             <p>Ремонт для нас - как <br>кислород для Вас!</p>

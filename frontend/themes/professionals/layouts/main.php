@@ -54,7 +54,7 @@ $js = app\components\CController::$js;
         <section class="contacts clearfix" id="contacts">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-24">
                         <h2 class="title title__2">Ремонт кофемашин в Москве</h2>
                         <div class="reviews-list" id="reviews-slider2">
                             <div class="review">
@@ -137,21 +137,21 @@ $js = app\components\CController::$js;
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-8">
+                    <div class="col-lg-8 col-md-8 col-sm-24">
                         <h4 class="subtitle">О НАС</h4>
                         <p>Устраним любую проблему и выполним ремонт кофемашины максимально быстро и по низкой цене. Команда специалистов работает каждый день, без выходных и праздников.</p>
                     </div>
-                    <div class="col-xs-9">
+                    <div class="col-lg-9 col-md-9 col-sm-24">
                         <h4 class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</h4>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-24">
                                 <a href="/ne-nalivaet-kofe">Не наливает кофе</a>
                                 <a href="/ne-vklyuchaetsya">Не включается</a>
                                 <a href="/ne-greet-vodu">Не греет воду</a>
                                 <a href="/protekaet">Протекает</a>
                                 <a href="/ne-podaet-vodu">Не подает воду</a>
                             </div>
-                            <div class="col-xs-12">
+                            <div class="col-lg-12 col-md-12 hidden-sm">
                                 <a href="/plokho-techet-kofe">Плохо течет кофе</a>
                                 <a href="/ne-delaet-kofe">Не делает кофе</a>
                                 <a href="/vydaet-oshibku">Выдает ошибку</a>
@@ -160,7 +160,7 @@ $js = app\components\CController::$js;
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-7">
+                    <div class="col-lg-7 col-md-7 col-sm-24">
                         <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
                         <p>г. Москва, м. Маяковская, Оружейный переулок, 13С2</p>
                         <a class="footer-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -174,8 +174,8 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </footer>
-        <div id="kmacb">
-            <button class="kmacb-form fancy-btn open">
+        <div id="kmacb" class="hidden-sm">
+            <button class="kmacb-form fancy-btn open hidden-sm">
                 <div class="kmacb-circle"></div>
                 <div class="kmacb-circle-fill"></div>
                 <div class="kmacb-img-circle"></div>

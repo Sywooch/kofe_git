@@ -1125,6 +1125,11 @@ hr{
 .h2,h2{
     font-size:30px
 }
+@media (max-width: 700px) {
+    .h2, h2 {
+        font-size: 22px;
+    }
+}
 .h3,h3{
     font-size:24px
 }
@@ -6463,10 +6468,10 @@ a,a:focus,a:hover,a:visited{
     font-size:35px;
     line-height: 40px;
 }
-@media (max-width:414px){
+@media (max-width:600px){
     .title.title__1.title__home{
-        font-size:40px;
-        line-height:50px
+        font-size:24px;
+        line-height:28px
     }
 }
 .title.title__2{
@@ -6752,6 +6757,12 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     font-family:Robika-Regular;
     font-size:20px;
     color:#fff
+}
+@media (max-width: 700px) {
+    .hero_order .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 .hero_brand{
     max-width:47rem;
@@ -7204,7 +7215,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     text-transform:uppercase
 }
 .model-list_item {
-    width:146px;
+    width:145px;
     height: 100%;
     position:relative;
     text-align:center;
@@ -7384,6 +7395,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .promo .form button[type=submit]{
     background:#e66429;
     width: 48% ! important;
+}
+@media (max-width: 767px) {
+    .promo .form button[type=submit]{
+        width: 100% ! important;
+    }
 }
 .promo p.form-policy{
     color:rgba(0,0,0,.7)
@@ -7585,6 +7601,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     padding: 0px 20px 20px;
     text-align: justify;
 }
+@media (max-width: 767px) {
+    .review_claim p {
+        padding: 0px 5px 20px;
+    }
+}
 .review_claim p:after{
     position:absolute;
     bottom:0;
@@ -7678,6 +7699,18 @@ body > .solutions {
     width: 50%;
     display: flex;
 }
+@media (max-width: 991px) {
+    .table>tbody>tr {
+        width: 100%;
+        max-width: 100%;
+    }
+    .table>tbody>tr:nth-child(2n-1) {
+    padding-right: 0px;
+    }
+    .table>tbody>tr:nth-child(2n-2) {
+        padding-left: 0px;
+    }
+}
 .table>tbody>tr>td,.table>tbody>tr>th{
     color:#fff;
 }
@@ -7707,6 +7740,16 @@ body > .solutions {
     color:#333;
     text-decoration: none;
 }
+@media (max-width: 700px) {
+    .table>tbody>tr {
+
+    }
+    .table>tbody>tr td a,
+    .table>tbody>tr td,
+    .table>tbody>tr td:first-child {
+        font-size: 10px;
+    }
+}
 .table>tbody>tr td:last-child a {
     color: #fff;
     text-align: center;
@@ -7717,6 +7760,7 @@ body > .solutions {
 .table>tbody>tr td:last-child a:hover {
     color: #fff;
     text-decoration: underline;
+    box-sizing: b
 }
 .table>tbody>tr.ikkitasi td:last-child {
     background: #fb7c43;
@@ -7743,6 +7787,11 @@ body > .solutions {
     font-size:1.6rem;
     line-height:3rem;
     color:#fff
+}
+@media (max-width: 767px) {
+    .you-get ul li {
+        font-size: 12px;
+    }
 }
 .solutions__service .you-get ul li{
     color:#333
@@ -8023,6 +8072,11 @@ p.form-policy{
     font-weight:300;
     line-height:1.6rem;
     color: #fff;
+}
+@media (max-width: 700px) {
+    p.form-policy {
+        margin-bottom: 15px;
+    }
 }
 .faults p.form-policy{
     color: #959595;
@@ -8358,8 +8412,7 @@ footer{
         background-color:transparent
     }
     .hero_fault-icon{
-        max-width:7rem;
-        margin:0 0 2rem 2rem
+        display: none;
     }
     .fault,.form-block__order{
         max-width:100%
@@ -8498,20 +8551,14 @@ footer{
         width:100%;
         min-height:30rem;
     }
-    .solution{
-        padding:0 1.5rem;
-        margin:0 auto
-    }
     .solution:after,.solution:before{
         width:3rem
     }
     .table>tbody>tr td:first-child{
         width:70%;
-        font-size:1.6rem
     }
     .table>tbody>tr td:last-child{
         width:30%;
-        font-size:1.8rem
     }
     .table__solution caption{
         top:-1rem;
@@ -8832,6 +8879,12 @@ footer h4 {
     line-height:25px;
     font-size:16px;
 }
+@media (max-width: 700px) {
+    .hero_why-we p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
 
 .ui-autocomplete.ui-front {
     padding: 0px;
@@ -8877,6 +8930,11 @@ footer h4 {
     margin: auto;
     transition: visibility 0.5s ease 0s;
     z-index: 200000 !important;
+}
+@media (max-width: 600px) {
+    #kmacb {
+        display: none;
+    }
 }
 #kmacb button {
     text-decoration: none;
@@ -9449,15 +9507,9 @@ footer h4 {
 
 .gl-st .title.title__1.title__home:before {
     content: "Качественный ";
-    font-size: 35px;
-    line-height: 40px;
-    color: #fff;
 }
 .gl-st .title.title__1.title__home:after {
     content: " в Москве";
-    font-size: 35px;
-    line-height: 40px;
-    color: #fff;
 }
 .model-img {
     width: 300px;
@@ -9506,6 +9558,12 @@ footer h4 {
   color: #fff5f1;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #882c02, 0 0 0.5em #882c02, 0 0 0.1em #882c02, 0 10px 3px #000;
 }
+@media (max-width: 700px) {
+    .logo b {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
 .service-wrapper .logo b {
     color: #e66429;
     text-shadow: none;
@@ -9545,4 +9603,17 @@ footer h4 {
     color: inherit;
     text-shadow: inherit;
   }
+}
+@media (max-width: 768px) {
+    #map > iframe,
+    .map {
+        max-height: 200px;
+        min-height: 200px;
+    }
+    .master-list .row {
+        margin: 0px;
+    }
+    .slick-initialized .slick-slide {
+        margin-bottom: 15px;
+    }
 }

@@ -8,7 +8,7 @@ array_pop($url);
 if (!empty($url))
     $prefUrl = implode('/', $url);
 ?>
-<section class="popular-services">
+<section class="popular-services hidden-sm">
     <div class="container">
         <div class="row">
             <div class="col-xs-24">

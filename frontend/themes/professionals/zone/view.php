@@ -8,10 +8,10 @@ $this->title = 'Ремонт кофемашин рядом с метро ' . $mo
     <div class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-md-11 col-sm-14">
+                <div class="col-lg-10 col-md-10 col-sm-24">
                     <h1 class="title title__1 light">Ремонт кофемашин метро <?= $model['title']; ?></h1>
                 </div>
-                <div class="col-lg-12 col-md-11 col-sm-10 col-md-offset-2">
+                <div class="col-lg-12 col-md-12 col-sm-24 col-md-offset-2">
                     <div class="hero_why-we">
                         <?= $model['description']; ?>
                     </div>

@@ -26,7 +26,7 @@ $this->title = $title;
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 col-md-11 col-md-offset-2 col-sm-10 text-right hidden-xs">
+                    <div class="col-lg-9 col-md-11 col-md-offset-2 col-sm-10 text-right">
                         <div class="hero_brand">
                             <?php if($pageInfo['type'] ==  1): ?>
                                 <img src="/<?= $siteConfig['theme'] . '/'; ?>media/brand-service.png" alt="">
