@@ -263,3 +263,7 @@ li.menu__item:hover {
 .offer .tb_sidebar_extra_text b {
 	color: #c21415;
 }
+
+.v-region:after {
+    content: 'в Санкт-Петербурге'
+}

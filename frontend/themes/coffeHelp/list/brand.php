@@ -16,8 +16,8 @@ $this->title = $title;
                 <div class="col-xs-9 nopadding">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h1>
-                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                            <h1 class="v-region">
+                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title']; ?>
                             </h1>
                         </div>
                         <div class="col-xs-4">

@@ -31,9 +31,7 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=3" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 53): ?>
-            <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=4" rel="stylesheet">
-        <?php endif; ?>
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=4" rel="stylesheet">
     </head>
     <body role="document">
         <?php

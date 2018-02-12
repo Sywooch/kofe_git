@@ -28,8 +28,8 @@ $this->title = $title;
                             </div>
                         <?php endif; ?>
                         <div class="col-xs-8">
-                            <h1>
-                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                            <h1 class="v-region">
+                                <?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title']; ?>
                             </h1>
                             <?php if (Yii::$app->params['devicedetect']['isMobile']): ?>
                                 <div class="col-xs-4 nopadding">
