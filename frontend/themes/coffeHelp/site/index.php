@@ -7,7 +7,7 @@ $this->title = $page['meta_title'];
     <div class="row">
         <div class="container">
             <div class="col-xs-9 coffeemashina">
-                <h1><?= $page['meta_h1']; ?></h1>
+                <h1 class="gl-text-after"><?= $page['meta_h1']; ?></h1>
                 <p class="text">
                     Инновационное оборудование в сервисном центре, позволит найти проблему и устранить её максимально быстро.<br>
                     Специалисты с сертификатами международного образца, проконсультируют вас по всем вопросам.

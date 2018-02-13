@@ -265,5 +265,8 @@ li.menu__item:hover {
 }
 
 .v-region:after {
-    content: 'в Санкт-Петербурге'
+    content: ' в Санкт-Петербурге'
+}
+.gl-text-after:after {
+    content: ' в Санкт-Петербурге Быстро! Доступно! Качественно!'
 }

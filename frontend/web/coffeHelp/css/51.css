@@ -1,3 +1,6 @@
 .v-region:after {
-    content: 'в Москве'
+    content: ' в Москве'
+}
+.gl-text-after:after {
+    content: ' в Москве Быстро! Доступно! Качественно!'
 }
