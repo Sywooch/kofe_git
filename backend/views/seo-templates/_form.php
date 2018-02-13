@@ -20,7 +20,7 @@ $brands = ArrayHelper::map(\Yii::$app->db->createCommand('select id, title from 
 $serices = ArrayHelper::map(\Yii::$app->db->createCommand('select id, title from {{%services}} where is_popular = 1')->queryAll(), 'id', 'title');
 $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
 
-$sites = [];
+$sites = ['Все'];
 foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
     $sites[$config['id']] = $title . '.ru';
 }

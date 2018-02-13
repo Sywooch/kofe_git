@@ -33,7 +33,7 @@ class MainUrlRule extends UrlRule {
         $siteConfig = self::getSiteConfig();
         $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
         $redirects = isset($redirects[$siteConfig['id']]) ? $redirects[$siteConfig['id']] : [];
-        if(!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
+        if (!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
             $this->redirect($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo]);
         }
         unset($redirects);
@@ -109,8 +109,27 @@ class MainUrlRule extends UrlRule {
                     elseif ($p['type'] == 'model')
                         $sql = 'select template from {{%text_templates}} where site_id = ' . (int) $siteConfig['id'] . ' and category_id = ' . $page['category_id'] . ' and brand_id is null and model_id = 0 and serice_id = ' . $page['id'] . ' limit 1';
                     $template = Yii::$app->db->createCommand($sql)->queryOne();
-                    if (!empty($template)) {
-                        $barand = (new \yii\db\Query())->select(['title'])->from('{{%pages}}')->where(['id' => $page['parent']])->limit(1)->one();
+                    if (!empty($template)) {                        
+                        $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';
+                        if (empty($seo)) {
+                            Yii::$app->db->createCommand()->insert('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                        } else {
+                            Yii::$app->db->createCommand()->update('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                        }
+                        $seo = (new \yii\db\Query())->select(['*'])->from('{{%seo}}')->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])->one();
+                    }
+                }
+            } elseif ((empty($seo) || empty($seo['meta_text1'])) && isset($siteConfig['brand-id']) && isset($siteConfig['multi_category']) && count($arrayUrl) > 1) {
+                array_pop($arrayUrl);
+                $pageUrl = implode('/', $arrayUrl);
+                $p = (new \yii\db\Query())->select(['url', 'type', 'title'])->from('{{%pages}}')->where(['url' => $pageUrl])->one();               
+                if (!empty($p) && in_array($p['type'], ['category', 'model'])) {
+                    if ($p['type'] == 'category')
+                        $sql = 'select template from {{%text_templates}} where site_id = 0 and category_id = ' . $page['category_id'] . ' and brand_id = 0 and model_id is null and serice_id = ' . $page['id'] . ' limit 1';
+                    elseif ($p['type'] == 'model')
+                        $sql = 'select template from {{%text_templates}} where site_id = 0 and category_id = ' . $page['category_id'] . ' and brand_id is null and model_id = 0 and serice_id = ' . $page['id'] . ' limit 1';
+                    $template = Yii::$app->db->createCommand($sql)->queryOne();
+                    if (!empty($template)) {                        
                         $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';
                         if (empty($seo)) {
                             Yii::$app->db->createCommand()->insert('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
@@ -169,7 +188,6 @@ class MainUrlRule extends UrlRule {
                 $sql = 'select template from {{%text_templates}} where site_id = ' . (int) $siteConfig['id'] . ' and category_id = ' . $page['category_id'] . ' and brand_id is null and model_id = 0 and serice_id is null limit 1';
                 $template = Yii::$app->db->createCommand($sql)->queryOne();
                 if (!empty($template)) {
-                    $barand = (new \yii\db\Query())->select(['title'])->from('{{%pages}}')->where(['id' => $page['parent']])->limit(1)->one();
                     $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';
                     if (empty($seo)) {
                         Yii::$app->db->createCommand()->insert('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
@@ -180,6 +198,34 @@ class MainUrlRule extends UrlRule {
                 }
             } elseif ($page['type'] == 'brand') {
                 $sql = 'select template from {{%text_templates}} where site_id = ' . (int) $siteConfig['id'] . ' and category_id = ' . $page['category_id'] . ' and brand_id = 0 and model_id is null and serice_id is null limit 1';
+                $template = Yii::$app->db->createCommand($sql)->queryOne();
+                if (!empty($template)) {
+                    $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';
+                    if (empty($seo)) {
+                        Yii::$app->db->createCommand()->insert('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                    } else {
+                        Yii::$app->db->createCommand()->update('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                    }
+                    $seo = (new \yii\db\Query())->select(['*'])->from('{{%seo}}')->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])->limit(1)->one();
+                }
+            }
+        } elseif ((empty($seo) || empty($seo['meta_text1'])) && isset($siteConfig['brand-id']) && isset($siteConfig['multi_category'])) {
+            if ($page['type'] == 'category') {
+                $sql = 'select template from {{%text_templates}} where site_id = 0 and category_id = ' . $page['category_id'] . ' and brand_id = 0 and model_id is null and serice_id is null limit 1';
+                $template = Yii::$app->db->createCommand($sql)->queryOne();
+                if (!empty($template)) {
+                    $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';
+                    if (empty($seo)) {
+                        Yii::$app->db->createCommand()->insert('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                    } else {
+                        Yii::$app->db->createCommand()->update('{{%seo}}', ['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id'], 'meta_text1' => $text])->execute();
+                    }
+                    $seo = (new \yii\db\Query())->select(['*'])->from('{{%seo}}')->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])->limit(1)->one();
+                }
+            } elseif ($page['type'] == 'model') {
+                $curl = explode('/', $page['url']);
+                $c = Yii::$app->db->createCommand('SELECT id FROM {{%categories}} WHERE url = \'' . $curl[0] . '\'')->queryOne();
+                $sql = 'select template from {{%text_templates}} where site_id = 0 and category_id = ' . $c['id'] . ' and brand_id is null and model_id = 0 and serice_id is null limit 1';
                 $template = Yii::$app->db->createCommand($sql)->queryOne();
                 if (!empty($template)) {
                     $text = '<p>' . $this->getUniqueText(Yii::$app->request->pathInfo, $siteConfig['id'], $template['template']) . '</p>';

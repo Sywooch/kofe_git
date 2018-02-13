@@ -9,7 +9,7 @@
     <div class="inner_container">
         <div id="content" class="my-text">
             <h1 class="colortext"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : $page['title']; ?></h1>
-            <?= $page['description']; ?>
+            <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['description']); ?>
         </div>
     </div>
     <?= multicatX\widgets\lists\Models::widget(['models' => $models]); ?>
