@@ -251,7 +251,7 @@ $js = app\components\CController::$js;
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <?= kofe03\widgets\lists\AllBrands::widget(); ?>
+                                                    <noindex><?= kofe03\widgets\lists\AllBrands::widget(); ?></noindex>
                                                 </div>
                                             </div>
                                         </div>
