@@ -31,7 +31,7 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=5" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=6" rel="stylesheet">
     </head>
     <body role="document">
         <?php
