@@ -87,6 +87,10 @@ $this->title = $title;
         <div class="office__inner">
             <h2 style="margin:20px 0 0 0;">Профессиональный ремонт моделей <?= $pageInfo['title']; ?></h2>
             <?= kofe03\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
+
+            <div class="popular__actions">
+                <a class="reviews__all show-model" href="#">Показать остальные модели</a>
+            </div>
         </div>
     </section>
     <section class="office-content">
