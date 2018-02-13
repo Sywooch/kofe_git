@@ -27,7 +27,7 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=6">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=7">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />

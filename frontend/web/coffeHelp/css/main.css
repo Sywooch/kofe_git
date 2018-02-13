@@ -13061,7 +13061,7 @@ section.promo .status-header .con p {
   left: 50%;
 }
 
-.about ul
+.about ul,
 .about ol {
     text-align: left;
 }
