@@ -32,10 +32,10 @@ $js = app\components\CController::$js;
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=3" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=4" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=3" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=4" rel="stylesheet">
     </head>
     <body class="page_home" itemscope="" itemtype="http://schema.org/WebPage">
         <?php
@@ -412,6 +412,71 @@ $js = app\components\CController::$js;
                 </div>
             </header>
             <?= $content; ?>
+            <noindex>
+                <aside class="complain">
+                    <div class="complain__inner">
+                        <h3 class="content__subtitle" style="text-align: center;">Выполненный <b>ремонт</b></h3>
+                        <div class="brands__carousel foto-logo">
+                            <div class="swiper-container foto__slider">
+                                <div class="swiper-wrapper brands__list">
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/1.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/1mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/2.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/2mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/3.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/3mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/4.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/4mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/5.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/5mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/6.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/6mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/7.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/7mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/8.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/8mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/9.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/9mini.jpg">
+                                        </a>                       
+                                    </div>
+                                    <div class="swiper-slide foto__item">
+                                        <a class="fancybox-button" rel="fancybox-button" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/10.jpg" title="">
+                                            <img class="foto__name brands__name_bosch" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/foto/10mini.jpg">
+                                        </a>                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="foto__next"></div>
+                            <div class="foto__prev"></div>
+                        </div>
+                    </div>
+                </aside>
+            </noindex>
             <footer class="footer" role="contentinfo">
                 <div class="footer__inner">
                     <div class="footer__navigation">
@@ -553,9 +618,9 @@ if (Yii::$app->session->getFlash('success')) {
                         slidesPerGroup: 2
                     }
                 },
-                pagination: '.garantya__pagination',
-                nextButton: '.garantya__next',
-                prevButton: '.garantya__prev'
+                pagination: '.foto__pagination',
+                nextButton: '.foto__next',
+                prevButton: '.foto__prev'
             });
             $(".fancybox-button").fancybox({
                 prevEffect: 'none',

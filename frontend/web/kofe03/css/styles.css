@@ -5111,6 +5111,7 @@ footer .connect__call p {
 .brands__next,
 .models__next,
 .services-slider_next,
+.foto__next,
 .garantya__next,
 .reviews__prev,
 .articles__prev,
@@ -5118,6 +5119,7 @@ footer .connect__call p {
 .brands__prev,
 .models__prev,
 .services-slider_prev,
+.foto__prev,
 .garantya__prev
 {
     position: absolute;
@@ -5145,6 +5147,7 @@ footer .connect__call p {
 .brands__next:hover,
 .models__next:hover,
 .services-slider_next:hover,
+.foto__next:hover,
 .garantya__next:hover,
 .reviews__prev:hover,
 .articles__prev:hover,
@@ -5152,6 +5155,7 @@ footer .connect__call p {
 .brands__prev:hover,
 .models__prev:hover,
 .services-slider_prev:hover,
+.foto__prev:hover,
 .garantya__prev:hover
 {
     background-image: url('../images/arrow_left_active6170.svg?v=1485504369723');
@@ -5162,6 +5166,7 @@ footer .connect__call p {
 .popup__review .brands__next,
 .popup__review .models__next,
 .popup__review .services-slider_next,
+.popup__review .foto__next,
 .popup__review .garantya__next,
 .popup__review .reviews__prev,
 .popup__review .articles__prev,
@@ -5169,6 +5174,7 @@ footer .connect__call p {
 .popup__review .brands__prev,
 .popup__review .models__prev,
 .popup__review .services-slider_prev,
+.popup__review .foto__prev,
 .popup__review .garantya__prev
 {
     left: -25px;
@@ -5180,6 +5186,7 @@ footer .connect__call p {
 .brands__next,
 .models__next,
 .services-slider_next,
+.foto__next,
 .garantya__next
 {
     right: -20px;
@@ -5200,6 +5207,7 @@ footer .connect__call p {
 .brands__next:hover,
 .models__next:hover,
 .services-slider_next:hover,
+.foto__next:hover,
 .garantya__next:hover
 {
     background-image: url('../images/arrow_right_active6170.svg?v=1485504369723');
@@ -5210,6 +5218,7 @@ footer .connect__call p {
 .popup__review .brands__next,
 .popup__review .models__next,
 .popup__review .services-slider_next,
+.popup__review .foto__next,
 .popup__review .garantya__next
 {
     right: -25px; 
@@ -5817,6 +5826,27 @@ footer .connect__call p {
 
     box-sizing: border-box;
     height: 96px;
+    padding: 0 5px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.foto__item
+{
+    line-height: 125px; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    box-sizing: border-box;
+    height: 125px;
     padding: 0 5px;
 
     -webkit-box-pack: center;
@@ -8104,6 +8134,10 @@ img.brands__name {
     max-width: 90%;
     max-height: 90px;
 }
+img.foto__name {
+    max-width: 90%;
+    max-height: 120px;
+}
 .partnyori-logo img.brands__name {
     max-height: 90px;
     max-width: 100%;
@@ -8113,6 +8147,15 @@ img.brands__name {
 }
 .models-logo img.brands__name {
     max-height: 150px;
+}
+.foto-logo img.foto__name {
+    max-height: 120px;
+    vertical-align: middle;
+}
+.foto-logo a.fancybox-button {
+    height: 125px;
+    line-height: 125px;
+    vertical-align: middle;
 }
 .pagination {
     position: relative;

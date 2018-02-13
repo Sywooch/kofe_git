@@ -380,3 +380,11 @@
 .footer__copyright a {
     color: #dfa81b;
 }
+
+
+.gl-text-gorad:before {
+    content: 'Оперативный ';
+}
+.gl-text-gorad:after {
+    content: ' в специализированном сервисном центре';
+}
