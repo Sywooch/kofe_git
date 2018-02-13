@@ -18,8 +18,8 @@ $siteConfig = app\components\CController::getSiteConfig();
         ?>
     </div>
 </div>
-<?php foreach ($sortedBrands as $latter => $brands): ?>
-    <div class="search-brends">
+<?php $a = 0; foreach ($sortedBrands as $latter => $brands): $a++; ?>
+    <div class="search-brends<?= $a != 1 ? ' hide' : '' ?>">
         <div class="left"><?= $latter; ?></div>
         <div class="right">
             <ul class="menu__list">                
