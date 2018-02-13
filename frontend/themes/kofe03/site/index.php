@@ -8,7 +8,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\componen
         <div class="poster__inner">
             <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
                 <div class="poster__content">
-                    <h1 class="poster__title" itemprop="name"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
+                    <h1 class="poster__title gl-text-gorad" itemprop="name"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
                     <div class="clear"></div>
                     <div class="poster__text" itemprop="description">
                         <?= $page['description']; ?>

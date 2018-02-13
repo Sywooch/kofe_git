@@ -3,3 +3,9 @@
     content: 'в Москве';
     margin-left: 10px;
 }
+.gl-text-gorad:before {
+    content: 'Оперативный ';
+}
+.gl-text-gorad:after {
+    content: ' в специализированном сервисном центре';
+}
