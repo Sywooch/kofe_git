@@ -46,12 +46,13 @@ class SeoController extends Controller {
     public function actionRedirects() {
         $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
         $siteCOnfig = self::getSiteConfig($domain);
-        $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
+        $file = Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php';
+        $redirects = require($file);
         $redirects = $redirects[$siteCOnfig['id']];
-        //print_r($redirects);exit;
         if (isset($_POST['save'])) {
             $from = $_POST['from'];
             $to = $_POST['to'];
+            $site = $_POST['site'];
             $b = ['http://kofe03.lc/test' => 'http://kofe03.lc/test2'];
             file_put_contents('filename.txt', var_export($b, true));
         }

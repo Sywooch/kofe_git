@@ -1,7 +1,6 @@
 <div class="pages-create">
     <form method="post">
         <?php
-
         use kartik\select2\Select2;
 
 $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
@@ -38,11 +37,11 @@ $domain = str_replace('admin.', '', $_SERVER['SERVER_NAME']);
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($redirects as $key => $redirect): ?>
+            <?php foreach ($redirects as $from => $to): ?>
                 <tr>
-                    <td><?= $redirect['from']; ?></td>
-                    <td><?= $redirect['to']; ?></td>
-                    <td><a href="/seo/delete-redirect?f=<?= $key; ?>">Уд.</a></td>
+                    <td><?= $from; ?></td>
+                    <td><?= $to; ?></td>
+                    <td><a href="/seo/delete-redirect?f=<?= $from; ?>&site_id=<?= $siteConfig['id']; ?>">Уд.</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
