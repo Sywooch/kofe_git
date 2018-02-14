@@ -1,3 +1,6 @@
+<?php 
+use \app\components\CController;
+?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="inner_container">
@@ -13,9 +16,9 @@
         </div>
     </div>
     <?= multicatX\widgets\lists\Models::widget(['models' => $models]); ?>
-    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => true, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
-    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по прочим услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => false]); ?>
-    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по неиправностям:', 'category_id' => \app\components\CController::$category['id'], 'type' => 2, 'is_popular' => true, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
+    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по услугам:', 'category_id' => CController::$category['id'], 'type' => 1, 'is_popular' => true, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
+    <?= multicatX\widgets\lists\Services::widget(['title' => (CController::$category['id'] == 7 ? 'Цены по прочим услугам:' : 'Цены по услугам:'), 'category_id' => CController::$category['id'], 'type' => 1, 'is_popular' => false]); ?>
+    <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по неиправностям:', 'category_id' => CController::$category['id'], 'type' => 2, 'is_popular' => CController::$category['id'] == 7 ? true : false, 'urlPrefix' => Yii::$app->request->pathInfo . '/']); ?>
     <?= multicatX\widgets\other\HowWeWork::widget(); ?>
 </div>
 <?= multicatX\widgets\forms\FooterForm::widget(); ?>
