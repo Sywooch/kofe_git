@@ -350,6 +350,11 @@ $(document).ready(function () {
         $(this).parent().children('.spoiler-form-body').slideToggle();
         return false;
     });
+    $('.show-model').click(function () {
+        $('.search-brends').removeClass('hide');
+        $(this).addClass('hide');
+        return false;
+    });
 });
 function myFunction() {
     // Declare variables
@@ -369,3 +374,178 @@ function myFunction() {
         }
     }
 }
+
+
+$(function () {
+            var swiper2 = new Swiper('.garantya__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                paginationClickable: true,
+                breakpoints: {
+                    1260: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    }
+                },
+                pagination: '.garantya__pagination',
+                nextButton: '.garantya__next',
+                prevButton: '.garantya__prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
+                }
+            });
+        });
+        $(function () {
+            var swiper2 = new Swiper('.foto__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                paginationClickable: true,
+                breakpoints: {
+                    1260: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    }
+                },
+                pagination: '.foto__pagination',
+                nextButton: '.foto__next',
+                prevButton: '.foto__prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
+                }
+            });
+        });
+        $(function () {
+            var swiper2 = new Swiper('.services__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                margin: 10,
+                paginationClickable: true,
+                breakpoints: {
+                    1600: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1400: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    970: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    },
+                    800: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    },
+                    560: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1
+                    }
+                },
+                pagination: '.garantya__pagination',
+                nextButton: '.services-slider_next',
+                prevButton: '.services-slider_prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
+                }
+            });
+        });
+        $(function () {
+            var swiper2 = new Swiper('.models__slider', {
+                loop: true,
+                slidesPerView: 6,
+                slidesPerGroup: 6,
+                paginationClickable: true,
+                breakpoints: {
+                    1260: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    1000: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5
+                    },
+                    900: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3
+                    },
+                    560: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2
+                    }
+                },
+                pagination: '.models__pagination',
+                nextButton: '.models__next',
+                prevButton: '.models__prev'
+            });
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: {type: 'inside'},
+                    buttons: {}
+                }
+            });
+        });
