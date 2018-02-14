@@ -270,3 +270,12 @@ li.menu__item:hover {
 .gl-text-after:after {
     content: ' в Санкт-Петербурге Быстро! Доступно! Качественно!'
 }
+
+body section.offer h1 {
+	font-size: 40px;
+}
+@media (max-width: 1250px) {
+	body section.offer h1 {
+		font-size: 30px;
+	}
+}
