@@ -37,9 +37,9 @@ class CController extends \yii\web\Controller {
             Yii::setAlias('@' . $siteConfig['theme'], dirname(__DIR__) . '/themes/' . $siteConfig['theme']);
         }
         if (isset($siteConfig['multi_category'])) {
-            if (isset($siteConfig['foreign_category']) && isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['model', 'category', 'brand'])) {
+            if (isset($siteConfig['brand-id']) && isset($siteConfig['multi_category']) && $siteConfig['category_id'] == 0 && isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['model', 'category', 'brand'])) {
                 self::$category = $this->getCategory(Yii::$app->request->pathInfo);
-            }
+            }            
             self::$menu = isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true ? $this->buildMenu() : $this->getMenu();
         }
         if (empty(self::$category) && !isset($siteConfig['multi_category'])) {
