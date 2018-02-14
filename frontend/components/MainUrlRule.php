@@ -37,7 +37,7 @@ class MainUrlRule extends UrlRule {
             $this->redirect($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo]);
         }
         unset($redirects);
-        if (!isset($siteConfig['multi_category'])) {
+        if (!isset($siteConfig['multi_category']) && $siteConfig['category_id'] > 0) {
             $sql = 'SELECT * FROM {{%categories}} WHERE id = ' . (int) $siteConfig['category_id'] . ' LIMIT 1';
             CController::$category = \Yii::$app->db->createCommand($sql)->queryOne();
         }
@@ -72,30 +72,42 @@ class MainUrlRule extends UrlRule {
         $siteConfig = self::getSiteConfig();
         $category_id = CController::$category['id'];
         if (isset($siteConfig['multi_category']) && !empty($url)) {
-            $category_url = explode('-', $url);
-            if (isset($category_url[1]))
-                $category_url = $category_url[0] . (isset($siteConfig['urlSlash']) ? '/' : '-') . $category_url[1];
-            else {
-                if (!isset($siteConfig['urlSlash']))
-                    return false;
-            }
-            if (isset($siteConfig['urlSlash'])) {
+            
+            if($siteConfig['sitePrefix'] != 'ifixme') {                
+                $category_url = explode('/', $url);              
+                $category_url = str_replace('/' . end($category_url), '', Yii::$app->request->pathInfo);
+                
+            } else {
+                $category_url = explode('-', $url);
+                if (isset($category_url[1]))
+                    $category_url = $category_url[0] . (isset($siteConfig['urlSlash']) ? '/' : '-') . $category_url[1];
+                else {
+                    if (!isset($siteConfig['urlSlash']))
+                        return false;
+                }
+            }            
+            
+            if ($siteConfig['sitePrefix'] != 'ifixme') {
                 $sql = 'SELECT * FROM {{%categories}} WHERE lower(url) =:url limit 1';
                 $category_url = explode('/', Yii::$app->request->pathInfo);
                 $category_url = $category_url[0];
             } else {
                 $sql = 'select * from {{%pages}} where lower(url) =:url limit 1';
-            }
+            }            
+            
             $category = Yii::$app->db->createCommand($sql)->bindValues(['url' => $category_url])->queryOne();
+            
             if (!empty($category)) {
                 CController::$category = $category;
                 $category_id = $category['id'];
                 $url = str_replace($category_url . '-', '', $url);
+            } else {
+                return false;
             }
         }
         $sql = 'select * from {{%services}} where lower(url) =:url and category_id =:category_id limit 1';
         $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url, 'category_id' => $category_id])->queryOne();
-
+        
         if (!empty($page)) {
             $seo = (new \yii\db\Query())->select(['*'])->from('{{%seo}}')->where(['url' => Yii::$app->request->pathInfo, 'site_id' => $siteConfig['id']])->one();
             $arrayUrl = explode('/', Yii::$app->request->pathInfo);
@@ -184,6 +196,9 @@ class MainUrlRule extends UrlRule {
 
         $page = Yii::$app->db->createCommand($sql)->bindValues(['url' => $url])->queryOne();
         if ((empty($seo) || empty($seo['meta_text1'])) && !isset($siteConfig['brand-id']) && in_array($page['type'], ['brand', 'model'])) {
+            if($siteConfig['sitePrefix'] == 'ifixme') {
+                $page['category_id'] = $page['id'];
+            }
             if ($page['type'] == 'model') {
                 $sql = 'select template from {{%text_templates}} where site_id = ' . (int) $siteConfig['id'] . ' and category_id = ' . $page['category_id'] . ' and brand_id is null and model_id = 0 and serice_id is null limit 1';
                 $template = Yii::$app->db->createCommand($sql)->queryOne();
