@@ -27,6 +27,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'template',
             [
+                'attribute' => 'category_id',
+                'value' => 'category.title'
+            ],
+            [
                 'label' => 'Бренд',
                 'format' => 'raw',
                 'value' => function($model) {
