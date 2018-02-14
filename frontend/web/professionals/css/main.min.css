@@ -6610,7 +6610,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     margin-top:4rem
 }
 .header__about .hero,.header__faults .hero{
-    margin-top:7rem
+    margin-top:4rem
 }
 .header__service{
     min-height:50rem;
@@ -6698,6 +6698,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     font-size:2.4rem;
     color:#e66429;
     padding-left:3.5rem;
+    font-weight: bold;
     background-image:url(../images/icons/icon-phone.png);
     background-position:0 50%
 }
@@ -8381,7 +8382,7 @@ footer{
         margin-top:3rem
     }
     .header__about .hero{
-        margin-top:4rem;
+        margin-top:2rem;
     }
     .header__service .navbar-collapse{
         background-color:#f8f8f8
@@ -9751,4 +9752,34 @@ footer h4 {
   transform: rotate(-45deg);
   top: 29px;
   left: 8px;
+}
+
+.dilshod-css {
+    padding: 0px;
+    list-style: none;
+    padding-bottom: 3rem;
+}
+.dilshod-css > li {
+    float: left;
+    color: #fff;
+    font-size: 12px;
+}
+.dilshod-css > li > a {
+    color: #e66429;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.dilshod-css > li+li:before {
+    content: "/\00a0";
+    padding: 0 7px;
+    color: #ccc;
+}
+@media (max-width: 767px) {
+    .dilshod-css > li,
+    .dilshod-css > li > a {
+        font-size: 10px;
+    }
+    .dilshod-css > li+li:before {
+        padding: 0 4px;
+    }
 }

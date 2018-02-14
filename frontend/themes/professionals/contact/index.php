@@ -8,6 +8,14 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
     <div class="hero">
         <div class="container">
             <div class="row">
+                <div class="col-lg-24 col-md-24 col-sm-24">
+                    <ul class="dilshod-css">
+                        <li><a href="#">Ремонт кофемашин</a></li>
+                        <li>Контактная информация</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-24">
                     <h1 class="title title__1 light"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
                 </div>
