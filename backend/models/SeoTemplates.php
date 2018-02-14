@@ -52,7 +52,7 @@ class SeoTemplates extends \yii\db\ActiveRecord
     }
     
     public function getCategory() {
-        return $this->hasOne(Pages::className(), ['id' => 'category_id']);
+        return $this->hasOne(Categories::className(), ['id' => 'category_id']);
     }
     
     public function getBrand() {
