@@ -5,6 +5,23 @@ $siteConfig = app\components\CController::getSiteConfig();
 <?php foreach ($rows as $row): ?>
 <img  style="opacity: 0;position: absolute;z-index: -999999999;height: 100%;width: 100%;top: 0px;left: 0px;" src="/uploads/images/<?= $row['image']; ?>" alt="">
 <?php endforeach; ?>
+
+   
+<noindex>
+    <section class="promo-video">
+        <div class="container">
+            <div class="left">
+                <iframe  src="https://www.youtube.com/embed/M3ebpSpcsro?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <!--<div id="promo-video"></div>-->
+            </div>
+            <div class="right">
+                <div class="title">Здравствуйте</div>
+                <p>Компания RemontKofe специализируется на ремонте кофемашин с 2010 года, за это время мы набрали штат инженеров, с соответствующим образованием и наличием сертификатов. Среднее время ремонта кофемашин в нашем сервисном центре составляет - 24 часа! Мы работаем как с частными, так и с юр. лицами и гос. учреждениями. На весь произведённый ремонт и комплектующие предоставляем гарантию до 1 года. Выбирайте профессионалов, сделаем ремонт качественно и ответим за качество нашей работы!</p>
+            </div>
+        </div>
+    </section>
+<noindex>
+
 <section id="brands">
     <div class="container">
         <p class="title"><span>Поддерживаем  </span> бренды</p>
