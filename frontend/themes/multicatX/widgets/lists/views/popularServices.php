@@ -29,7 +29,7 @@
                                             <?= $service['title']; ?>
                                         <?php endif; ?>
                                     </div>
-                                    <div class="rumiservice_column_2"><?= $service['price']; ?></div>
+                                    <div class="rumiservice_column_2"><?= number_format($service['price'], 0, ' ', ' '); ?></div>
                                     <div class="rumiservice_column_3">от 1,5 час.</div>
                                     <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Заказать</span></span></div>
                                 </div>
