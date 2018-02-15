@@ -10,7 +10,7 @@
         </div>
         <div class="rumiservice7_blocks_container">
             <?php foreach ($categories as $key => $category): ?>
-                <?php $services = \frontend\models\Pages::getCategoryPopularServices($category['id']); ?>
+                <?php $services = \frontend\models\Pages::getCategoryPopularServices($category['category_id'], ($category['category_id'] == 7 ? 1 : 0)); ?>
                 <div class="rumiservice7_blocks rumiservice7_block<?= $key; ?>" style="display: <?= $key == 0 ? ' block' : 'none'; ?>;">
                     <div class="rumiservice7_table_header">
                         <div class="rumiservice_column_1">Наименование позиции</div>
@@ -24,7 +24,7 @@
                                 <div class="rumiservice7_table_tr<?= $key % 2 ? ' rumiservice7_table_tr_odd' : ''; ?>">
                                     <div class="rumiservice_column_1">
                                         <?php if ($service['is_popular'] == 1): ?>
-                                            <a class="colortexthover" href="/<?= $urlPrefix . '/' . $service['url']; ?>"><?= $service['title']; ?></a>
+                                            <a class="colortexthover" href="/<?= $service['url']; ?>"><?= $service['title']; ?></a>
                                         <?php else: ?>
                                             <?= $service['title']; ?>
                                         <?php endif; ?>
