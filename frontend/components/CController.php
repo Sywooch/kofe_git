@@ -203,7 +203,7 @@ class CController extends \yii\web\Controller {
             }
             file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
-        $msg = "Телефон: " . $phone;
+        $msg = "Телефон: " . preg_replace("/\D/", "", $phone);
         if (!empty($name))
             $msg .= "\r\nИмя: " . $name;
         if (!empty($email))
