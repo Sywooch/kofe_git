@@ -6,7 +6,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <img  style="opacity: 0;position: absolute;z-index: -999999999;height: 100%;width: 100%;top: 0px;left: 0px;" src="/uploads/images/<?= $row['image']; ?>" alt="">
 <?php endforeach; ?>
 
-   
+<?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
         <div class="container">
@@ -21,7 +21,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
     </section>
 <noindex>
-
+<?php endif; ?>
 	
 
 <section id="brands">

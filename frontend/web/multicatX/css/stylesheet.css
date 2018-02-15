@@ -2014,12 +2014,13 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     float: left;
     padding: 0px 13px;
-    display: inline-block;
     margin-top: 13px;
     display: none;
+    align-items: center;
+    height: 32px;
 }
 #header_third .links a:nth-child(-n+6) {
-    display: inline-block;
+    display: flex;
 }
 @media (max-width: 1250px) {
     #header_third .links a:nth-child(6),
@@ -2041,7 +2042,7 @@ ul.box-filter > li ul {
     }
 }
 #header_third .links a.yeshsho {
-    display: inline-block;
+    display: flex;
     width: 100px;
 }
 #header_third .links a svg {
@@ -2051,7 +2052,6 @@ ul.box-filter > li ul {
     margin-right: 10px;
     display: block;
     width: 30px;
-    margin-top: 5px;
 }
 #header_third .links a.yeshsho {
     float: right;
