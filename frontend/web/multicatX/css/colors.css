@@ -350,35 +350,35 @@
     fill:#71b430
 }
 
-.cimbali .colorbg,
-.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.la-cimbali .colorbg,
+.la-cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
     background-color: #e2271c ! important;
 }
-.cimbali .colortext,
-.cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.la-cimbali .colortext,
+.la-cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #e2271c ! important;
 }
-.cimbali .colortexthover:hover {
+.la-cimbali .colortexthover:hover {
     color: #e2271c ! important;
 }
-.cimbali .colorsvg {
+.la-cimbali .colorsvg {
     fill: #e2271c ! important;
 }
-.cimbali .colorborder,
-.cimbali #orderform-phone,
-.cimbali .colorborderhover:hover {
+.la-cimbali .colorborder,
+.la-cimbali #orderform-phone,
+.la-cimbali .colorborderhover:hover {
     border-color: #e2271c ! important;
 }
-.cimbali #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.cimbali #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+.la-cimbali #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.la-cimbali #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
     border: 1px solid #e2271c;
     color: #e2271c;
 }
-.cimbali .fil2 {
+.la-cimbali .fil2 {
     fill:#2C2F33
 }
-.cimbali .fil1,
-.cimbali .fil0 {
+.la-cimbali .fil1,
+.la-cimbali .fil0 {
     fill:#e2271c
 }
 
@@ -542,35 +542,35 @@
     fill:#007845
 }
 
-.simonelli .colorbg,
-.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
+.nuova-simonelli .colorbg,
+.nuova-simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_circle{
     background-color: #d82f3e ! important;
 }
-.simonelli .colortext,
-.simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
+.nuova-simonelli .colortext,
+.nuova-simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #d82f3e ! important;
 }
-.simonelli .colortexthover:hover {
+.nuova-simonelli .colortexthover:hover {
     color: #d82f3e ! important;
 }
-.simonelli .colorsvg {
+.nuova-simonelli .colorsvg {
     fill: #d82f3e ! important;
 }
-.simonelli .colorborder,
-.simonelli #orderform-phone,
-.simonelli .colorborderhover:hover {
+.nuova-simonelli .colorborder,
+.nuova-simonelli #orderform-phone,
+.nuova-simonelli .colorborderhover:hover {
     border-color: #d82f3e ! important;
 }
-.simonelli #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
-.simonelli #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
+.nuova-simonelli #rumiservice7 .rumiservice7_buttons .rumiservice7_button_active,
+.nuova-simonelli #rumiservice3 .rumiservice3_buttons .rumiservice3_button_active {
     border: 1px solid #d82f3e;
     color: #d82f3e;
 }
-.simonelli .fil2 {
+.nuova-simonelli .fil2 {
     fill:#2C2F33
 }
-.simonelli .fil1,
-.simonelli .fil0 {
+.nuova-simonelli .fil1,
+.nuova-simonelli .fil0 {
     fill:#d82f3e
 }
 
