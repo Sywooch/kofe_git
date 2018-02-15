@@ -153,11 +153,14 @@ $js = app\components\CController::$js;
                 echo '</div>';
             }
             ?>
+
             <?= $content; ?>
+            
             <?php
             if ($isHome || (isset($_GET['data']) && $_GET['data']['url'] == 'o-kompanii') || (isset($_GET['data']) && $_GET['data']['url'] == 'kontakty'))
                 echo \app\widgets\lists\Reviews::widget();
             ?>
+
             <?php if ($siteConfig['mono']): ?>
                 <section id="ask2">
                     <div class="container colorbg">

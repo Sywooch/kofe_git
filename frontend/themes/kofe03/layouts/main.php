@@ -412,6 +412,7 @@ $js = app\components\CController::$js;
                 </div>
             </header>
             <?= $content; ?>
+        <?php if (in_array($siteConfig['id'], [52, 50])): ?>
             <noindex>
                 <aside class="complain">
                     <div class="complain__inner">
@@ -477,6 +478,7 @@ $js = app\components\CController::$js;
                     </div>
                 </aside>
             </noindex>
+        <?php endif; ?>
             <footer class="footer" role="contentinfo">
                 <div class="footer__inner">
                     <div class="footer__navigation">

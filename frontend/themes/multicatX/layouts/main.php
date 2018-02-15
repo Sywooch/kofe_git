@@ -148,11 +148,11 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="footer_column_3">
                             <ul>
-                                <li><a href="indexb41e.html?route=information/information&amp;information_id=9">Самовывоз</a></li>
-                                <li><a href="index1766.html?route=information/information&amp;information_id=6">Доставка</a></li>
-                                <li><a href="index5938.html?route=information/information&amp;information_id=10">Оплата</a></li>
-                                <li><a href="indexc7d4.html?route=information/information&amp;information_id=11">Вакансии</a></li>
-                                <li><a href="indexb561.html?route=information/information&amp;information_id=19">Персональные данные</a></li>                                
+                                <li><a href="/samovivoz">Самовывоз</a></li>
+                                <li><a href="/dostavka">Доставка</a></li>
+                                <li><a href="/oplata">Оплата</a></li>
+                                <li><a href="/vakansii">Вакансии</a></li>
+                                <li><a href="/personal_info">Персональные данные</a></li>                                
                             </ul>
                         </div>
                         <div class="footer_column_4">
