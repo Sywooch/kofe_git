@@ -1,7 +1,7 @@
 <div class="main_container">
     <div id="rumiservice12" class="inner_container">
         <div id="rumiservice12_left">
-            <div class="rumiservice12_left_header">Заказать услуги в <span class="colortext">Service-Xiaomi.com</span><br>8 (495) 374-68-64</div>
+            <div class="rumiservice12_left_header">Заказать услуги в <span class="colortext"><?= $_SERVER['SERVER_NAME']; ?></span><br><a class="colortext" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
             <div class="rumiservice12_left_text"></div>
         </div>   
         <div id="rumiservice12_right">
