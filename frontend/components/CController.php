@@ -39,7 +39,7 @@ class CController extends \yii\web\Controller {
         if (isset($siteConfig['multi_category'])) {
             if (isset($siteConfig['brand-id']) && isset($siteConfig['multi_category']) && $siteConfig['category_id'] == 0 && isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['model', 'category', 'brand'])) {
                 self::$category = $this->getCategory(Yii::$app->request->pathInfo);
-            }            
+            }
             self::$menu = isset($siteConfig['mono-brand']) && $siteConfig['mono-brand'] === true ? $this->buildMenu() : $this->getMenu();
         }
         if (empty(self::$category) && !isset($siteConfig['multi_category'])) {
@@ -164,6 +164,8 @@ class CController extends \yii\web\Controller {
         if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];
         $userIP = Yii::$app->getRequest()->getUserIP();
+        $adminsChannel = '-1001287383605';
+        $usersChannel = '-1001322968311';
         if ($siteConfig['category_id'] == 7) {
             $clarisOIDS = [
                 'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
@@ -173,8 +175,8 @@ class CController extends \yii\web\Controller {
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
                 'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
-				'help' => ['name' => 'SC1_SPB', 'OID' => 2202775576000],
-				'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
+                'help' => ['name' => 'SC1_SPB', 'OID' => 2202775576000],
+                'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
@@ -185,7 +187,7 @@ class CController extends \yii\web\Controller {
                 'date' => date('Y-m-d H:i:s'),
                 'ip' => $userIP,
                 'site' => Yii::$app->request->hostInfo,
-				'page' => '',
+                'page' => '',
             ])->execute();
             $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
             if ($siteConfig['id'] == 50) {
@@ -202,16 +204,19 @@ class CController extends \yii\web\Controller {
             file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $msg = "Телефон: " . $phone;
-        if (!empty($name)) 
+        if (!empty($name))
             $msg .= "\r\nИмя: " . $name;
-        if (!empty($email)) 
+        if (!empty($email))
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
+        self::sendMessage($msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
+        self::sendMessage($msg, $adminsChannel);
+
         if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '@remontkofe_ru_admin';
-            file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
+            //file_get_contents('http://remontkofe.ru/order-from-site?phone=' . urlencode($phone) . '&userIP=' . urlencode($userIP) . '&site=' . urlencode($siteConfig['order-title']) . '&page=' . urlencode($title));
         } elseif (in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '-1001240519113';
         } else {
@@ -219,10 +224,9 @@ class CController extends \yii\web\Controller {
         }
         if ($siteConfig['id'] == 48)
             $groupName = '@ifixme_orders';
-		if (in_array($siteConfig['id'], [51, 53])) {
-			$groupName = '-1001263720765';
-		}
-        self::sendMessage($msg, $groupName); //        
+        if (in_array($siteConfig['id'], [51, 53])) {
+            $groupName = '-1001263720765';
+        }
     }
 
     public static function getSiteConfig() {
