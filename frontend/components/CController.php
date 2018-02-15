@@ -215,6 +215,9 @@ class CController extends \yii\web\Controller {
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         if ($siteConfig['category_id'] == 7)
             self::sendMessage($msg, $adminsChannel);
+        else {            
+            self::sendMessage($msg, '@site_orders');
+        }
 
         if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '@remontkofe_ru_admin';
