@@ -203,20 +203,24 @@ class CController extends \yii\web\Controller {
             }
             file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
-        $msg = "Телефон: " . preg_replace("/\D/", "", $phone);
+        $phone = preg_replace("/\D/", "", $phone);
+        $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';
+        
+        $msg = '';
         if (!empty($name))
-            $msg .= "\r\nИмя: " . $name;
+            $msg .= "\r\nИмя: " . $name;        
         if (!empty($email))
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
         if ($siteConfig['category_id'] == 7)
-            self::sendMessage($msg, $usersChannel);
+            self::sendMessage("Телефон: " . $usersPhone . $msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
+        
         if ($siteConfig['category_id'] == 7)
-            self::sendMessage($msg, $adminsChannel);
+            self::sendMessage("Телефон: " . $phone . $msg, $adminsChannel);
         else {            
-            self::sendMessage($msg, '@site_orders');
+            self::sendMessage("Телефон: " . $phone . $msg, '@site_orders');
         }
 
         if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50, 52])) {
