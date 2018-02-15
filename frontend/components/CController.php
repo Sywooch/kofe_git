@@ -210,9 +210,11 @@ class CController extends \yii\web\Controller {
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
-        self::sendMessage($msg, $usersChannel);
+        if ($siteConfig['category_id'] == 7)
+            self::sendMessage($msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
-        self::sendMessage($msg, $adminsChannel);
+        if ($siteConfig['category_id'] == 7)
+            self::sendMessage($msg, $adminsChannel);
 
         if ($siteConfig['category_id'] == 7 && !in_array($siteConfig['id'], [49, 50, 52])) {
             $groupName = '@remontkofe_ru_admin';
