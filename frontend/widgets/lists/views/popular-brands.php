@@ -22,6 +22,8 @@ $siteConfig = app\components\CController::getSiteConfig();
     </section>
 <noindex>
 
+	
+
 <section id="brands">
     <div class="container">
         <p class="title"><span>Поддерживаем  </span> бренды</p>
