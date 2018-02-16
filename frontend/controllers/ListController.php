@@ -97,7 +97,7 @@ class ListController extends CController {
         $h1 = '';
         $brandImage = '';
         $modelImage = '';
-
+        $b = null;
 
         if (count($url) > 1) {
             $arrayUrl = $url;
@@ -112,7 +112,7 @@ class ListController extends CController {
                     ->limit(1)
                     ->one();
             if ($page['type'] == 'brand') {
-                $brandImage = $page['image'];
+                $brandImage = $page['image'];                
                 $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by sort limit 1';
                 $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $page['id']])->queryOne();
                 $modelImage = $model['image'];
@@ -126,6 +126,7 @@ class ListController extends CController {
                             ->where(['id' => $page['parent']])
                             ->limit(1)
                             ->one();
+                    $b = $brand;
                     $brandImage = $brand['image'];
                     $modelImage = $page['image'];
                     $breadcrumbs['/' . $brand['url']] = CController::$category['full_title'] . ' ' . $brand['title'];
@@ -158,7 +159,7 @@ class ListController extends CController {
                     } elseif (in_array($siteConfig['id'], [51, 53])) {
                         $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '. Ремонт кофемашин в ' . Yii::$app->session['region']['titleRod'] . '.';
                         $metaDesc = 'Если ' . (isset($seoH1[$pageInfo['id']]) ? mb_strtolower($seoH1[$pageInfo['id']], 'utf-8') : 'кофемашина ' . $page['title'] . ' ' . $pageInfo['title']) . ' наши специалисты бесплатно проведут диагностику, выявят неисправность и в короткие сроки выполнят ремонт с гарантией. ';
-                    } elseif (in_array($siteConfig['id'], [124, 125])) {                        
+                    } elseif (in_array($siteConfig['id'], [124, 125])) {
                         if ($page['type'] == 'brand') {
                             $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'];
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - ремонт кофемашин ' . $page['title'] . ' любой сложности поломки.  Оперативное реагирование и предоставление полного пакета документов. Работаем без выходных.';
@@ -180,7 +181,7 @@ class ListController extends CController {
                         } else {
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'] . '. Качественный ремонт кофемашин в  сервисном центре ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . ' в ' . Yii::$app->session['region']['titleRod'] . '. Фирменные комплектующие. Гарантия.';
                         }
-                    } elseif (in_array($siteConfig['id'], [124, 125])) {                        
+                    } elseif (in_array($siteConfig['id'], [124, 125])) {
                         if ($page['type'] == 'brand') {
                             $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'];
                             $title = 'Кофемашины ' . $page['title'] . ' - ' . $pageInfo['title'];
@@ -193,7 +194,7 @@ class ListController extends CController {
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
                         $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
-                    }                    
+                    }
                 }
                 if ($page['type'] == 'model') {
                     $brandId = $page['parent'];
@@ -253,7 +254,6 @@ class ListController extends CController {
                             $title = $pageInfo['title'] . ' ' . CController::$category['1_title'] . ' в ' . Yii::$app->session['region']['titleRod'];
                         }
                     }
-                     
                 } else {
                     if ($siteConfig['mono']) {
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'];
@@ -264,7 +264,7 @@ class ListController extends CController {
                         $title = $pageInfo['title'] . ' - в ' . Yii::$app->session['region']['titleRod'] . '! Качественно, с гарантией до 1 года!';
                         $metaDesc = $pageInfo['title'] . 'в сервисном центре "' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '". Качественный сервис по лучшим ценам в ' . Yii::$app->session['region']['titleRod'] . '!"';
                     }
-                    
+
                     if (isset(CController::$category['3_title']))
                         $seoText = '<p>Специалисты нашего сервисного центра проведут бесплатную диагностику ' . mb_strtolower(CController::$category['title'], 'utf8') . ', выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' - быстро, качественно с гарантией.</p>';
                 }
@@ -272,16 +272,16 @@ class ListController extends CController {
                 $seoText = $seo['meta_text1'];
             }
             if ($pageInfo['type'] == 2) {
-            if (in_array($siteConfig['id'], [124, 125])) {
-                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин быстро, недорого, надежно';
-                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . '. Устраняем неисправности различной сложности без задержек, точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
-                     }
-                     } else {
-                         if (in_array($siteConfig['id'], [124, 125])) {
-                            $title = 'Ремонт кофемашин - ' . $pageInfo['title'];
-                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин  любой сложности поломки в течении короткого времени и по оптимальной стоимости. Все запчасти в наличии. Работаем без выходных.';
-                     }
-                     }
+                if (in_array($siteConfig['id'], [124, 125])) {
+                    $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин быстро, недорого, надежно';
+                    $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . '. Устраняем неисправности различной сложности без задержек, точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
+                }
+            } else {
+                if (in_array($siteConfig['id'], [124, 125])) {
+                    $title = 'Ремонт кофемашин - ' . $pageInfo['title'];
+                    $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин  любой сложности поломки в течении короткого времени и по оптимальной стоимости. Все запчасти в наличии. Работаем без выходных.';
+                }
+            }
             if (!empty($seo['meta_text2'])) {
                 $seoText2 = $seo['meta_text2'];
             }
@@ -319,7 +319,7 @@ class ListController extends CController {
 
         $breadcrumbs[] = $this->mb_ucfirst($pageInfo['title'], 'UTF-8');
 
-        return $this->render('service', ['pageInfo' => $pageInfo, 'seoText' => $seoText, 'seoText2' => $seoText2,
+        return $this->render('service', ['pageInfo' => $pageInfo,'b' => $b, 'seoText' => $seoText, 'seoText2' => $seoText2,
                     'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
                     'modelImage' => $modelImage, 'page' => (isset($page) ? $page : ['title' => ''])]);
     }
@@ -382,7 +382,7 @@ class ListController extends CController {
         } elseif (in_array($siteConfig['id'], [51, 53])) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ' . strip_tags(Yii::$app->session['region']['phone']);
             $metaDesc = 'Качественный ремонт кофемашин ' . $pageInfo['title'] . ' в СЦ ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '. Выезд курьера или мастера. Бесплатная диагностика. Гарантия. Фирменные комплектующие. Работаем ежедневно.';
-        } elseif(in_array($siteConfig['id'], [124, 125])) {
+        } elseif (in_array($siteConfig['id'], [124, 125])) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' профессионально ' . strip_tags(Yii::$app->session['region']['phone']);
             $metaDesc = 'Ремонтные работы любой сложности с применением фирменных запчастей под кофемашину ' . $pageInfo['title'] . '. Заключаем долгосрочные контракты на профилактическое обслуживание.';
         }
@@ -417,7 +417,7 @@ class ListController extends CController {
     }
 
     public function actionModel() {
-        $pageInfo = $_GET['data'];        
+        $pageInfo = $_GET['data'];
         $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title, image FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
         $regionTitle = Yii::$app->session['region']['titleRod'];
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
