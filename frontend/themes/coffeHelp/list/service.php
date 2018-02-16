@@ -32,6 +32,7 @@ $this->title = $title;
                         </h1>
                         <span class="section-promo-desc">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
+                            <?php if (!empty($pageInfo['full_description']) && $page['type'] == 'brand'): ?><p class="text2"><?= str_replace(['#brand_en#', '#brand_ru#', '#brand_url#'], [$page['title'], (isset(Yii::$app->params['brandRussianNames'][$page['title']]) ? Yii::$app->params['brandRussianNames'][$page['title']] : ''), '/' . $page['url']], $pageInfo['full_description']); ?></p><?php endif; ?>
                         </span>
                     </div>
                 </div>
@@ -55,7 +56,7 @@ $this->title = $title;
             </div>
         </section>
         <section class="order">
-<?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
     </div>
 </div>

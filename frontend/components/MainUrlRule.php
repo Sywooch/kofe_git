@@ -158,6 +158,7 @@ class MainUrlRule extends UrlRule {
                 $page['meta_title'] = !empty($seo['meta_title']) ? $seo['meta_title'] : (!empty($page['meta_title']) ? $page['meta_title'] : '');
                 $page['meta_h1'] = !empty($seo['meta_h1']) ? $seo['meta_h1'] : (!empty($page['meta_h1']) ? $page['meta_h1'] : '');
                 $page['description'] = $seo['meta_text1'] ?: $page['description'];
+                $page['full_description'] = !empty($seo['meta_text2']) ? $seo['meta_text2'] : (!empty($page['full_description']) ? $page['full_description'] : '');
 
                 if (isset($siteConfig['multi_category']))
                     $page['full_description'] = $seo['meta_text2'] ?: (!empty($page['full_description']) ? $page['full_description'] : '');
