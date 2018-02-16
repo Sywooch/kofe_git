@@ -6305,3 +6305,74 @@ video.bg-video {
     background: #fff;
     color: #000;
 }
+
+.reviews {
+    margin: 0px -1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reviews .item {
+    width: 31.333%;
+    float: left;
+    margin: 0px 1%;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+@media (max-width: 950px) {
+    .reviews .item {
+        width: 48%;
+    }
+}
+@media (max-width: 700px) {
+    .reviews .item {
+        width: 98%;
+    }
+}
+.reviews .item p {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+.reviews .item .name {
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.n-rating-stars {
+    display: inline-block;
+    margin: 0 auto;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.n-rating-stars__item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+  border-right: 1px solid transparent;
+  background: url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 1px;
+}
+.n-rating-stars[data-rate='1'] .n-rating-stars__item:nth-child(-n+1),
+.n-rating-stars[data-rate='2'] .n-rating-stars__item:nth-child(-n+2),
+.n-rating-stars[data-rate='3'] .n-rating-stars__item:nth-child(-n+3),
+.n-rating-stars[data-rate='4'] .n-rating-stars__item:nth-child(-n+4),
+.n-rating-stars[data-rate='5'] .n-rating-stars__item,
+.n-rating-stars__item:before {
+  
+  background: url(../images/star-active.svg);
+}

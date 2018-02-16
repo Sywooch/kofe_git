@@ -12,12 +12,13 @@ $this->title = $pageInfo['meta_title'];
     </div>    
     <div class="main_container grey_container">
         <div class="inner_container" style="overflow: hidden;">
-            <div class="product-category-left-info">
-                <h1 class="category_h1" style="text-align: left;">Отзывы</h1>
+            <h1 class="category_h1" style="text-align: left;">Отзывы</h1>
+            <div class="reviews">
                 <?php foreach ($rows as $row): ?>
                     <div class="item">
-                        <div class="stars">
-                            <span><?= $row['rating']; ?></span>
+                        <div class="info">
+                            <div class="name"><?= $row['username']; ?></div>
+                            <div class="clear"></div>
                             <div class="n-rating-stars" data-bem="{}" data-rate="<?= $row['rating']; ?>">
                                 <i class="n-rating-stars__item"></i>
                                 <i class="n-rating-stars__item"></i>
@@ -25,15 +26,11 @@ $this->title = $pageInfo['meta_title'];
                                 <i class="n-rating-stars__item"></i>
                                 <i class="n-rating-stars__item"></i>
                             </div>
-                        </div>
-                        <div class="info">
-                            <div class="name"><?= $row['username']; ?></div>
                             <p><?= $row['message']; ?></p>
                         </div>
-                        <div class="clear"></div>
                     </div>
-                <?php endforeach; ?>       
-            </div>            
+                <?php endforeach; ?>   
+            </div>
         </div>
     </div>
 </div>
