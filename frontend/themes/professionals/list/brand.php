@@ -8,7 +8,15 @@ $this->title = $title;
     <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']), 'page' => $pageInfo]); ?>
 </header>
 <section>
-    <div class="container">        
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-24 col-md-24 col-sm-24">
+                <ul class="dilshod-css">
+                    <li><a href="/">Ремонт кофемашин</a></li>
+                    <li style="color: #333;">Контактная информация</li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-24">
                 <div class="solution solution--closed">

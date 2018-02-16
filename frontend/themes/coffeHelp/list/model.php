@@ -79,16 +79,7 @@ $this->title = $title;
 </div>
 <div class="my-footer-block">
     <div class="container theme-showcase" role="main">
-        <hr class="big_line">
-        <section class="about">
-            <div class="row">
-                <?php if (!empty($pageInfo['full_description'])): ?>
-                    <?= $pageInfo['full_description']; ?>
-                <?php else: ?>                
-                    
-                <?php endif; ?>
-            </div>
-        </section>
+        
         <section class="order">
             <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
