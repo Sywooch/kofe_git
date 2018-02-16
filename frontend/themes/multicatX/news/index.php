@@ -16,7 +16,7 @@ $assets = Yii::getAlias('@web');
             <div class="news-all">
                 <?php foreach ($models as $model): ?>
                     <a href="/<?= $model['url']; ?>">
-                        <div class="img"><!--<img src="<?= $assets ?>/uploads/images/<?= $model['image']; ?>" alt="">--><img src="<?= $assets ?>/multicatX/uploads/images/1.jpg" alt=""></div>
+                        <div class="img"><img src="<?= $assets ?>/uploads/images/<?= $model['image']; ?>" alt=""></div>
                         <p><?= $model['title']; ?></p>
                     </a>
                 <?php endforeach; ?>
