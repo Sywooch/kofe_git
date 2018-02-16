@@ -2,6 +2,8 @@
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
+
+use app\components\CController;
 ?>
 <div class="inner-bg rasmga-ramka">  
     <div class="container theme-showcase" role="main">            
@@ -32,7 +34,12 @@ $this->title = $title;
                         </h1>
                         <span class="section-promo-desc">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
-                            <?php if (!empty($pageInfo['full_description']) && $page['type'] == 'brand'): ?><p class="text2"><?= str_replace(['#brand_en#', '#brand_ru#', '#brand_url#'], [$page['title'], (isset(Yii::$app->params['brandRussianNames'][$page['title']]) ? Yii::$app->params['brandRussianNames'][$page['title']] : ''), '/' . $page['url']], $pageInfo['full_description']); ?></p><?php endif; ?>
+                            <?php if (!empty($pageInfo['full_description']) && in_array($page['type'], ['brand', 'model'])): ?>
+                            <?php if($page['type'] == 'model'){$page = $b;} ?>
+                                <p class="text2">
+                                    <?= str_replace(['#brand_en#', '#brand_ru#', '#brand_url#'], [$page['title'], (isset(Yii::$app->params['brandRussianNames'][$page['title']]) ? Yii::$app->params['brandRussianNames'][$page['title']] : ''), '/' . $page['url']], $pageInfo['full_description']); ?>
+                                </p>
+                            <?php endif; ?>
                         </span>
                     </div>
                 </div>
@@ -46,7 +53,7 @@ $this->title = $title;
 <div class="my-footer-block">
     <div class="container theme-showcase" role="main">
         <hr class="big_line">
-        
+
         <section class="order">
             <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
