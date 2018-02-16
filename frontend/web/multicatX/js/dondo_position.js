@@ -303,12 +303,12 @@ $(document).ready(function () {
 
     $('.rumiservice7_show_all').live('click', function () {
         $(this).parent().find('.rumiservice7_table_tr_container').slideToggle();
-        if ($('.rumiservice7_show_all').hasClass('rumiservice7_show_all_opened')) {
-            $('.rumiservice7_show_all').removeClass('rumiservice7_show_all_opened');
-            $('.rumiservice7_show_all span').html('Показать все');
+        if ($(this).hasClass('rumiservice7_show_all_opened')) {
+            $(this).removeClass('rumiservice7_show_all_opened');
+            $(this).children('span').html('Показать все');
         } else {
-            $('.rumiservice7_show_all').addClass('rumiservice7_show_all_opened');
-            $('.rumiservice7_show_all span').html('Скрыть');
+            $(this).addClass('rumiservice7_show_all_opened');
+            $(this).children('span').html('Скрыть');
         }
     });
     $('.rumiservice14_show_all').live('click', function () {

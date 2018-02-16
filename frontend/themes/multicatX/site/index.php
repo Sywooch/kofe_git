@@ -36,7 +36,11 @@ $this->title = $page['meta_title'];
             </div>
             <div class="form">
                 <h1><?= $page['meta_h1']; ?></h1>
-                <?= $page['description']; ?>
+                <div class="plashka-in">
+                    <h2>Ремонт <?= app\components\CController::$monoBrand['url']; ?>!</h2> 
+                    <span>Только <?= app\components\CController::$monoBrand['url']; ?>!</span>
+                    <?= $page['description']; ?>
+                </div>
                 <?= multicatX\widgets\forms\MainPageForm::widget(); ?>                    
             </div>
             <div class="clear"></div>
@@ -53,7 +57,23 @@ $this->title = $page['meta_title'];
     </div>
     <div class="main_container grey_container">
         <div id="rumiservice4" class="inner_container">
-            <div id="rumiservice4_header">Вам нужен  <span class="colorbg">надёжный</span>  сервисный центр?</div>
+            <div id="home-news">
+                <div class="home_header">
+                  <span>Вам нужен</span>
+                  <strong class="colorbg">надёжный</strong>
+                  <span> сервисный центр?</span>
+                </div>
+                <div class="home_header">
+                  <span>Вам нужен</span>
+                  <strong class="colorbg">качественный</strong>
+                  <span> сервисный центр? </span>
+                </div>
+                <div class="home_header">
+                  <span>Вам нужен</span>
+                  <strong class="colorbg">лучший</strong>
+                  <span> сервисный центр?</span>
+                </div>
+              </div>
             <div id="rumiservice4_text">Наша цель - вернуть к жизни Ваше устройство! Для этого у нас есть профессионалы, современные технологии и сервис, не имеющий равных по своему уровню.</div>
             <div class="owl-carousel">
                 <div class="rumiservice4_item">

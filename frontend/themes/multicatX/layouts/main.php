@@ -219,7 +219,7 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                     <div id="powered">
-                        <div id="powered_left">&#169; <span class="colortext">Сервисный центр Service Xiaomi</span>, 2014–<?= date('Y'); ?></div>
+                        <div id="powered_left">&#169; <span class="colortext">Сервисный центр <?= $_SERVER['SERVER_NAME']; ?></span>, 2014–<?= date('Y'); ?></div>
                         <div id="powered_right"><a href="#" class="colortext">Пользовательское соглашение</a></div>
                     </div>
                 </div>
