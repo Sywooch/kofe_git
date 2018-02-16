@@ -46,15 +46,7 @@ $this->title = $title;
 <div class="my-footer-block">
     <div class="container theme-showcase" role="main">
         <hr class="big_line">
-        <section class="about">
-            <div class="row">
-                <?php
-                if (!empty($seoText2)) {
-                    echo $seoText2;
-                }
-                ?>
-            </div>
-        </section>
+        
         <section class="order">
             <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
