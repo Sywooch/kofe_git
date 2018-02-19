@@ -2067,7 +2067,6 @@ ul.box-filter > li ul {
         float: left;
         border: 0px;
         width: auto;
-        padding-top: 7px;
     }
     #header_third .links a.yeshsho br {
         display: none;
@@ -6232,7 +6231,7 @@ video.bg-video {
     background: rgba(0, 0, 0, 0.7019607843137254);
     text-align: left;
     padding: 5px 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 .plashka-in h2,

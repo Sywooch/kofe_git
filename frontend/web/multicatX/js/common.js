@@ -5,6 +5,24 @@ $(document).ready(function() {
 			$('.top-nav').slideToggle(300, 'swing');
 		});
 	});
+
+	$('.owl-carousel33').owlCarousel({
+	    loop:true,
+	    margin:10,
+	    nav:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:3
+	        },
+	        1000:{
+	    				margin:10,
+	            items:5
+	        }
+	    }
+	});
 	/* Search */
 	$('.button-search').bind('click', function() {
 		url = $('base').attr('href') + 'index.php?route=product/search';
