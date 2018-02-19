@@ -50,12 +50,18 @@ $this->title = $title;
         <div class="office__inner">
             <article class="office__post">
                 <div class="all-ds">
-                    <nav class="breadcrumbs">
+                    <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                         <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="/"><span itemprop="title">Главная</span></a></li>         
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Ремонт кофемашин <?= $brand['title']; ?>" href="/<?= $brand['url']; ?>">Ремонт кофемашин <?= $brand['title']; ?></a></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" itemprop="url" href="/"><span>Ремонт кофемашин</span></a>
+                                <meta itemprop="position" content="0" />
+                            </li>         
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/<?= $brand['url']; ?>">Ремонт кофемашин <?= $brand['title']; ?></a>
+                                <meta itemprop="position" content="1" />
+                            </li>
                         </ul>                        
-                        <span class="breadcrumbs__current">Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?></span>
+                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current">Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?> <meta itemprop="position" content="2" /></span>
                     </nav>
                     <div class="con-infos">
                         <div class="left">

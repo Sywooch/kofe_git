@@ -6,11 +6,16 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
 <main class="layout__content" role="main">
     <header class="layout__head">
         <div class="layout__inner">
-            <nav class="breadcrumbs">
+            <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                 <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="url" rel="Главная" href="/"><span itemprop="title">Главная</span></a></li>
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="/">
+                            <span>Ремонт кофемашин</span>
+                        </a>
+                        <meta itemprop="position" content="0" />
+                    </li>
                 </ul>
-                <span class="breadcrumbs__current"><?= $model['title']; ?></span>
+                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><?= $model['title']; ?> <meta itemprop="position" content="1" /></span>
             </nav>
         </div>
     </header>

@@ -49,7 +49,7 @@ $this->title = $title;
                                 <meta itemprop="position" content="0" />
                             </li>                            
                         </ul>
-                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current">Ремонт кофемашин <?= $pageInfo['title']; ?><meta itemprop="position" content="1" /></span>
+                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current">Ремонт кофемашин <?= $pageInfo['title']; ?> <meta itemprop="position" content="1" /></span>
                     </nav>
                     <div class="con-infos">
                         <div class="left">

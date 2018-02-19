@@ -35,15 +35,20 @@ $this->title = $title;
         <div class="office__inner">
             <article class="office__post">
                 <div class="all-ds">
-                    <nav class="breadcrumbs">
+                    <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                         <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/">Ремонт кофемашин</a>
+                                <meta itemprop="position" content="0" />
+                            </li>
+                            <?php $a = 1; ?>
                             <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
                                 <?php if (end($breadcrumbs) == $breadcrumb): ?>
-                                    <span class="breadcrumbs__current"><?= $breadcrumb; ?></span>
+                                    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><?= $breadcrumb; ?> <meta itemprop="position" content="<?= $a; ?>" /></span>
                                 <?php else: ?>
-                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?= $url; ?>"><?= $breadcrumb; ?></a></li>
+                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?= $url; ?>"><?= $breadcrumb; ?></a> <meta itemprop="position" content="<?= $a; ?>" /></li>
                                 <?php endif; ?>
+                                <?php $a++; ?> 
                             <?php endforeach; ?>
                         </ul>
                     </nav>
