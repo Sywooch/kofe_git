@@ -689,7 +689,7 @@
     position: absolute;
     bottom: 0px;
     height: auto;
-    margin-bottom: -25px;
+    margin-bottom: -35px;
 }
 @media (max-width: 1250px) {
     .h2 {
@@ -700,4 +700,22 @@
     .h2 {
         font-size: 20px;
     }
+}
+.my-botton {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #ff780c;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff ! important;
+    display: block;
+}
+.my-botton:hover {
+    opacity: 0.8;
+    text-decoration: none;
 }
