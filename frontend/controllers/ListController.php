@@ -403,6 +403,7 @@ class ListController extends CController {
                         s.spec_name LIKE \'%Тип%\'
                     AND s.spec_value LIKE \'%эспрессо%\'
                     AND s.spec_value LIKE \'%автоматическое%\'
+                    AND s.spec_value NOT LIKE \'%полуавтоматическое%\'
                     AND p.parent = ' . (int) $pageInfo['id'] . '
                     AND p.active = 1    
                     ORDER BY

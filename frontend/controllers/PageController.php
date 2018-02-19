@@ -439,6 +439,9 @@ class PageController extends CController {
         $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         $hostname = Yii::$app->request->hostInfo;
+		if(in_array($siteConfig['id'], [51, 53])) {
+			$hostname = str_replace('http', 'https', $hostname);
+		}
         $per = 50000;
         $n = 0;
         $numPages = ceil((count($pages) * count($services) + count($services)) / $per);
