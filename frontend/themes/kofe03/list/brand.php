@@ -44,7 +44,7 @@ $this->title = $title;
                         <ul class="breadcrumbs__list">
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
                                 <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">
-                                    <span itemprop="title">Ремонт кофемашин</span>
+                                    <span>Ремонт кофемашин</span>
                                 </a>
                                 <meta itemprop="position" content="0" />
                             </li>                            
