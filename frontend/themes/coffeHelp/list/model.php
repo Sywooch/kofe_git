@@ -8,10 +8,10 @@ $this->title = $title;
         <section class="promo">
             <div class="row">
                 <div class="col-xs-12">
-                    <ol class="breadcrumb">
-                        <li><a href="/">Ремонт кофемашин</a></li>
-                        <li><a href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a></li>
-                        <li><?= $pageInfo['title']; ?></li>
+                    <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a><meta itemprop="position" content="1" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><?= $pageInfo['title']; ?> <meta itemprop="position" content="2" /></li>
                     </ol>
                 </div>
                 <div class="col-xs-9">

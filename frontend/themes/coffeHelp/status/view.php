@@ -8,9 +8,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
         <section class="promo widthsto">
             <div class="row">
                 <div class="col-md-9">
-                    <ol class="breadcrumb">
-                        <li><a href="/">Ремонт кофемашин</a></li>
-                        <li><?= $pageInfo['title']; ?></li>
+                    <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><?= $pageInfo['title']; ?> <meta itemprop="position" content="1" /></li>
                     </ol>
                 </div>
             </div>

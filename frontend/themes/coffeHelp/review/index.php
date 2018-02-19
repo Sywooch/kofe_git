@@ -5,9 +5,9 @@ $this->title = $pageInfo['meta_title'];
     <div class="container theme-showcase" role="main">        
         <div class="row">
             <div class="col-md-9">
-                <ol class="breadcrumb">
-                    <li><a href="/">Ремонт кофемашин</a></li>
-                    <li>Отзывы</li>
+                <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Отзывы <meta itemprop="position" content="1" /></li>
                 </ol>
             </div>
         </div>

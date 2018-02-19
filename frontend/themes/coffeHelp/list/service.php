@@ -10,10 +10,15 @@ use app\components\CController;
         <section class="promo<?= empty($pageInfo['image']) && empty($modelImage) ? ' full-text' : ''; ?>">
             <div class="row">
                 <div class="col-xs-12">
-                    <ol class="breadcrumb">
-                        <li><a href="/">Ремонт кофемашин</a></li>
+                    <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                        <?php $a = 1; ?>
                         <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                            <li><a href="<?= $url === 0 ? '#' : $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="<?= $url === 0 ? '#' : $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
+                                <meta itemprop="position" content="<?= $a; ?>" />
+                            </li>
+                            <?php $a++; ?>
                         <?php endforeach; ?>                        
                     </ol>
                 </div>
