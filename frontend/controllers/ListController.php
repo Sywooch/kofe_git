@@ -225,8 +225,8 @@ class ListController extends CController {
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' - ремонт кофемашин ' . $page['title'] . '  любой сложности поломки в течении короткого времени и по оптимальной стоимости. Все запчасти в наличии. Работаем без выходных.';
                         } else {
                             $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'];
-                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . $page['title'] . ' ремонт недорого';
-                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . $page['title'] . '. Выберите удобное время, и наш курьер подъедет точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'] . ' ремонт недорого';
+                            $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'] . '. Выберите удобное время, и наш курьер подъедет точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
                         }
                     } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
                         if ($page['type'] == 'category') {
