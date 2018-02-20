@@ -168,7 +168,7 @@ class ListController extends CController {
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '. Устраняем неисправности различной сложности без задержек, точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
                         }
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'];
-                    } elseif (isset($config['foreign_category']) && $config['foreign_category']) {
+                    } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
                         if (isset($seoH1[$pageInfo['id']])) {
                             $serviceTitle = $seoH1[$pageInfo['id']];
                         } else {
