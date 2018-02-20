@@ -174,7 +174,7 @@ class ListController extends CController {
                         } else {
                             $serviceTitle = $pageInfo['title'];
                         }
-                        if ($page['type'] == 'brand') {
+                        if ($page['type'] == 'category') {
                             $title = 'Кофемашина ' . $serviceTitle . ' Ремонт 👌 Диагностика ⛺️ Доставка';
                             $metaDesc = 'Кофемашина ' . $serviceTitle . ' - первый признак неисправности, которая быстро устраняется в нашем специализированном сервисном центре по ремонту кофемашин ' . CController::$monoBrand['title'] . '.';
                         } elseif ($page['type'] == 'model') {
