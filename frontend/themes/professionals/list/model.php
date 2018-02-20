@@ -9,6 +9,13 @@ $this->title = $title;
         <div class="hero">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-24 col-md-24 col-sm-24">
+                        <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a><meta itemprop="position" content="1" /></li>
+                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><?= $pageInfo['title']; ?> <meta itemprop="position" content="2" /></li>
+                        </ul>
+                    </div>
                     <div class="col-lg-15 col-md-11 col-sm-14">
                         <div class="hero_order">
                             <h1 class="title title__1"><?php echo (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']); ?></h1>

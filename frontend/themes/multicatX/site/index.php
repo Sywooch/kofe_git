@@ -1,7 +1,7 @@
 <?php
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $page['meta_title'];
+$this->title = $page['meta_title'] ?: 'Сервисный центр по ремонту кофемашин ' . \app\components\CController::$monoBrand['title'] . '  🍵 Гарантия 👍 Доставка 🚗 Качество';
 ?>
 <div id="notification"></div>
 <div class="clear"></div>
