@@ -83,9 +83,7 @@ $this->title = $page['meta_title'];
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Гарантия</div>
                         <div class="rumiservice4_item_right_text">
-                            Отремонтировав свой Xiaomi в нашем сервисном<br />
-                            центре, вы <span class="colortext">получите гарантии на выполненные работы</span><br />
-                            сроком до 2-ух месяцев, а также гарантийный чек.<br />
+                            На весь выполненный ремонт бытовой техники, а так-же на заменённые комплектующие - Вы получаете гарантию сроком <span class="colortext">до 2-х лет!</span>
                         </div>
                     </div>
                 </div>
@@ -96,9 +94,7 @@ $this->title = $page['meta_title'];
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Наличие запчастей</div>
                         <div class="rumiservice4_item_right_text">
-                            Вам больше <span class="colortext">не придётся ждать</span> поступления запчастей<br />
-                            месяцами. У нас самый большой ассортимент запасных<br />
-                            частей в наличии. Даже самый сложный ремонт мы можем произвести в максимально короткие сроки.<br />
+                            Благодаря наличию собственного склада с зап. частями, <span class="colortext">Вам не придётся ждать</span> поставки необходимой запасной части для вашей бытовой техники. Тем самым срок ремонта кардинально сокращается.
                         </div>
                     </div>
                 </div>
@@ -109,10 +105,7 @@ $this->title = $page['meta_title'];
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Честные цены и короткие сроки</div>
                         <div class="rumiservice4_item_right_text">
-                            Мы дорожим своей репутацией и отзывами клиентов.<br />
-                            Срочный ремонт Xiaomi в сервисном центре выполняется<br />
-                            по цене обычного – <span class="colortext">без накруток</span>. А сроки составляют<br />
-                            <span class="colortext">от 15 минут</span>, в зависимости от сложности работ.<br />
+                            Сервисный центр дорожит своей репутацией и выполняет срочный ремонт бытовой техники. А цены на услуги являются самыми <span class="colortext">лучшим в Москве</span>, так как все запасные части заказываются у <span class="colortext">официальных представителей</span> и отпускаются <span class="colortext">без наценок!</span>
                         </div>
                     </div>
                 </div>
@@ -123,10 +116,7 @@ $this->title = $page['meta_title'];
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Курьерская доставка устройства</div>
                         <div class="rumiservice4_item_right_text">
-                            Отремонтировав свой Xiaomi в нашем сервисном<br />
-                            центре, вы <span>получите гарантии на выполненные работы</span><br />
-                            сроком до 1 года, на установленные нами сложные<br />
-                            комплектующие сроком до 3-х лет.
+                            После окончания ремонта наш сервисный центр <span class="colortext">бесплатно доставляет</span> бытовую технику и выдаёт <span class="colortext">обязательную гарантию!</span>
                         </div>
                     </div>
                 </div>
