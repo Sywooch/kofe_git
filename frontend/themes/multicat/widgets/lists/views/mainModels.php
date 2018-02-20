@@ -5,16 +5,19 @@ $assets = Yii::getAlias('@web');
     <div class="container">
         <?php foreach ($rows as $row): ?>
             <div class="item">
-                <div class="left">
+                <!--<div class="left">
                     <div class="colorborder"><?= $row['full_title']; ?></div>
                     <?= $row['description']; ?>
-                </div>
+                </div>-->
                 <?php if (isset($row['children']) && !empty($row['children'])): ?>
                     <div class="right">
                         <div class="frame">
                             <div class="clearfix">
                                 <?php foreach ($row['children'] as $model): ?>
-                                    <a class="colorborder" href="/<?= $model['url']; ?>"><img src="/uploads/images/<?= $model['image']; ?>"><span>Ремонт</span><?= $model['title']; ?></a>
+                                    <a class="colorborder" href="/<?= $model['url']; ?>">
+                                        <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
+                                        <span>Ремонт</span><?= $model['title']; ?>
+                                    </a>
                                 <?php endforeach; ?>
                             </div>
                         </div>
