@@ -118,7 +118,7 @@ class ListController extends CController {
                 $modelImage = $model['image'];
             }
             $breadcrumbs['/' . $page['url']] = CController::$category['full_title'] . ' ' . $page['title'];
-            if ($page['type'] == 'brand' || $page['type'] == 'model') {
+            if ($page['type'] == 'brand' || $page['type'] == 'model' || $page['type'] == 'category') {
                 if ($page['type'] == 'model') {
                     $brand = (new \yii\db\Query())
                             ->select(['title', 'url', 'id', 'type', 'image'])
