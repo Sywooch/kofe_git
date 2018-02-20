@@ -18,13 +18,21 @@ class ListController extends CController {
 //            'name' => 'keywords',
 //            'content' => $pageInfo['meta_key']
 //        ]);
+        $config = CController::getSiteConfig();
+        if (isset($config['foreign_category']) && $config['foreign_category']) {
+            $title =  'Ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ⚒ Качественно ✔️ Гарантия 💎 Лучшие цены!';
+            $metaDesc = 'Сервисный центр выполняет ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! Быстро! Опытные специалисты! Гарантия! Цены на сайте!';
+        } else {
+            $title = '';
+            $metaDesc = '';
+        }
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc']
+            'content' => !empty($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc,
         ]);
         $q = 'SELECT title, url, image, id, icon FROM {{%pages}} WHERE active = 1 AND parent = ' . (int) $pageInfo['id'] . ' ORDER BY sort';
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
-        return $this->render('category', ['page' => $pageInfo, 'models' => $rows]);
+        return $this->render('category', ['page' => $pageInfo, 'models' => $rows, 'title' => $title]);
     }
 
     public function actionServices() {
@@ -119,7 +127,7 @@ class ListController extends CController {
             }
             $breadcrumbs['/' . $page['url']] = CController::$category['full_title'] . ' ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model' || $page['type'] == 'category') {
-                if ($page['type'] == 'model') {
+                if ($page['type'] == 'model' && !isset($siteConfig['foreign_category'])) {
                     $brand = (new \yii\db\Query())
                             ->select(['title', 'url', 'id', 'type', 'image'])
                             ->from('{{%pages}}')
@@ -169,17 +177,33 @@ class ListController extends CController {
                         }
                         $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'];
                     } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
+                        $seoH1 = [
+                            1024 => 'Нет пара в кофемашине ' . (CController::$monoBrand['title'] . ($page['type'] == 'category' ? '' : ' ' . $page['title'])),
+                            1032 => 'Плохо течет кофе в кофемашине ' . (CController::$monoBrand['title'] . ($page['type'] == 'category' ? '' : ' ' . $page['title'])),
+                            1033 => 'Кофемашина ' . (CController::$monoBrand['title'] . ($page['type'] == 'category' ? '' : ' ' . $page['title'])) . ' делает кофе слишком холодный\горячий',
+                            1034 => 'Кофемашина ' . (CController::$monoBrand['title'] . ($page['type'] == 'category' ? '' : ' ' . $page['title'])) . ' делает кофе слабый и невкусный',
+                        ];
                         if (isset($seoH1[$pageInfo['id']])) {
                             $serviceTitle = $seoH1[$pageInfo['id']];
+                            if ($page['type'] == 'category') {
+                                $h1 = $seoH1[$pageInfo['id']];
+                                $title = $serviceTitle . ' Ремонт 👌 Диагностика ⛺️ Доставка';
+                                $metaDesc = $serviceTitle . ' - первый признак неисправности, которая быстро устраняется в нашем специализированном сервисном центре по ремонту кофемашин ' . CController::$monoBrand['title'] . '.';
+                            } elseif ($page['type'] == 'model') {
+                                $h1 = $seoH1[$pageInfo['id']];
+                                $title = $serviceTitle . ' 🛠 Срочный ремонт в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! ';
+                                $metaDesc = $serviceTitle . ' - исправим данную проблему быстро и качественно в нашем специализированном сервисном центре ' . CController::$monoBrand['title'] . '.';
+                            }
                         } else {
-                            $serviceTitle = $pageInfo['title'];
-                        }
-                        if ($page['type'] == 'category') {
-                            $title = 'Кофемашина ' . $serviceTitle . ' Ремонт 👌 Диагностика ⛺️ Доставка';
-                            $metaDesc = 'Кофемашина ' . $serviceTitle . ' - первый признак неисправности, которая быстро устраняется в нашем специализированном сервисном центре по ремонту кофемашин ' . CController::$monoBrand['title'] . '.';
-                        } elseif ($page['type'] == 'model') {
-                            $title = 'Кофемашина ' . $serviceTitle . ' 🛠 Срочный ремонт в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! ';
-                            $metaDesc = 'Кофемашина ' . $serviceTitle . ' - исправим данную проблему быстро и качественно в нашем специализированном сервисном центре ' . CController::$monoBrand['title'] . '.';
+                            if ($page['type'] == 'category') {
+                                $h1 = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'];
+                                $title = 'Кофемашина ' . $pageInfo['title'] . ' Ремонт 👌 Диагностика ⛺️ Доставка';
+                                $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' - первый признак неисправности, которая быстро устраняется в нашем специализированном сервисном центре по ремонту кофемашин ' . CController::$monoBrand['title'] . '.';
+                            } elseif ($page['type'] == 'model') {
+                                $h1 = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'];
+                                $title = 'Кофемашина ' . $pageInfo['title'] . ' 🛠 Срочный ремонт в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! ';
+                                $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' - исправим данную проблему быстро и качественно в нашем специализированном сервисном центре ' . CController::$monoBrand['title'] . '.';
+                            }
                         }
                     }
 
@@ -203,6 +227,14 @@ class ListController extends CController {
                             $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . $page['title'];
                             $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . $page['title'] . ' ремонт недорого';
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . $page['title'] . '. Выберите удобное время, и наш курьер подъедет точно в срок. Низкие цены. Оригинальные комплектующие. Опытные мастера';
+                        }
+                    } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
+                        if ($page['type'] == 'category') {
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ⚒ Гарантия на все работы 🍵 Быстрый ремонт';
+                            $metaDesc = 'Специализированный сервисный центр по ремонту кофемашин ' . CController::$monoBrand['title'] . ' предоставляет услугу - ' . $pageInfo['title'] . '! Качественный сервис. Лучшие цены!';
+                        } elseif ($page['type'] == 'model') {
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . CController::$monoBrand['title'] . $page['title'] . ' ⚒ Срочный ремонт кофемашин ☕️';
+                            $metaDesc = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . $page['title'] . '  - ' . $pageInfo['title'] . '! Быстрый ремонт! Высокое качество! Выезд мастера!';
                         }
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';

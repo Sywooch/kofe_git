@@ -1,5 +1,6 @@
 <?php 
 use \app\components\CController;
+$this->title = $title;
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">

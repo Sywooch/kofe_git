@@ -13,7 +13,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
     <div class="main_container grey_container">
         <div class="inner_container" style="overflow: hidden;">
             <div class="product-category-left-info">
-                <h1 class="category_h1" style="text-align: left;"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title']; ?></h1>
+                <h1 class="category_h1" style="text-align: left;"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $h1; ?></h1>
                 <div class="category-info">
                     <?php if (!empty($pageInfo['description'])): ?>
                         <?= str_replace(['#model_en#', '#brand_en#'], \app\components\CController::$monoBrand['title'], $pageInfo['description']); ?>
