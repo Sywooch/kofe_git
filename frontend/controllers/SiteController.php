@@ -44,7 +44,7 @@ class SiteController extends CController {
 //            'content' => $pageInfo['meta_key']
 //        ]);
         if (isset($config['foreign_category']) && $config['foreign_category']) {
-            $metaDesc = 'Авторизованный сервисный центр Bork в Москве, выполняет комплексный ремонт техники BORK, в наличие все комплектующие для быстрого ремонта!';
+            $metaDesc = 'Авторизованный сервисный центр ' . \app\components\CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', выполняет комплексный ремонт техники ' . \app\components\CController::$monoBrand['title'] . ', в наличие все комплектующие для быстрого ремонта!';
         } else 
             $metaDesc = '';
         
