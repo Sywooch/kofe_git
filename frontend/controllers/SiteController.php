@@ -38,13 +38,19 @@ class SiteController extends CController {
 
     public function actionIndex() {
         $pageInfo = $_GET['data'];
+        $config = CController::getSiteConfig();
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
 //            'content' => $pageInfo['meta_key']
 //        ]);
+        if (isset($config['foreign_category']) && $config['foreign_category']) {
+            $metaDesc = 'Авторизованный сервисный центр Bork в Москве, выполняет комплексный ремонт техники BORK, в наличие все комплектующие для быстрого ремонта!';
+        } else 
+            $metaDesc = '';
+        
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc']
+            'content' => $pageInfo['meta_desc'] ?: $metaDesc,
         ]);
         $remain = $this->getRemainTime();
         return $this->render('index', ['page' => $pageInfo, 'remain' => $remain]);
