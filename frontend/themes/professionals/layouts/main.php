@@ -130,7 +130,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div class="map" id="map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cf0d312bb3f94ae27a4037821031c64d9a2d8150b4e4f80933eba6c9fa89365&amp;source=constructor" width="100%" height="538" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cf0d312bb3f94ae27a4037821031c64d9a2d8150b4e4f80933eba6c9fa89365&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
             </div>
         </section>
         <!-- contacts -->
