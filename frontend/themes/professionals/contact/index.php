@@ -9,9 +9,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
         <div class="container">
             <div class="row">
                 <div class="col-lg-24 col-md-24 col-sm-24">
-                    <ul class="dilshod-css">
-                        <li><a href="/">Ремонт кофемашин</a></li>
-                        <li>Контактная информация</li>
+                    <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Контактная информация <meta itemprop="position" content="1" /></li>
                     </ul>
                 </div>
             </div>
