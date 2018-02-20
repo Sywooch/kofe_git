@@ -130,7 +130,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div class="map" id="map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A496902849869d51c2dc34829147ee2552994e4c0139c9a80e69bbcc29ece9056&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cf0d312bb3f94ae27a4037821031c64d9a2d8150b4e4f80933eba6c9fa89365&amp;source=constructor" width="100%" height="538" frameborder="0"></iframe>
             </div>
         </section>
         <!-- contacts -->
@@ -162,7 +162,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-24">
                         <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-                        <p>г. Москва, м. Маяковская, Оружейный переулок, 13С2</p>
+                        <p>г. Москва, м. Шелепиха, ул. Большая филевская, д.1</p>
                         <a class="footer-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
                 </div>
