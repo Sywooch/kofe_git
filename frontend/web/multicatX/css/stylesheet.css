@@ -314,7 +314,7 @@ label {
 #header .button-search {
     position: absolute;
     right: 0px;
-    background: #ff780c url('http://service-xiaomi.com/catalog/view/theme/default/image/search_lense.png') center center no-repeat;
+    background: #ff780c url('../images/search_lense.png') center center no-repeat;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -406,7 +406,7 @@ label {
     -moz-border-radius: 0px 0px 5px 5px;
     -khtml-border-radius: 0px 0px 5px 5px;
     border-radius: 0px 0px 5px 5px;
-    background: url('http://service-xiaomi.com/catalog/view/theme/default/image/menu.png');
+    background: url('../images/menu.png');
 }
 #menu > ul > li:hover > div {
     display: table;
@@ -455,7 +455,7 @@ label {
     vertical-align: top;
     content: "";
     display: inline-block;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/breadcrumb.png) left center no-repeat;
+    background: url(../images/breadcrumb.png) left center no-repeat;
 }
 .breadcrumb a:last-child:after {
     display: none;
@@ -473,7 +473,7 @@ label {
     border-radius: 5px 5px 5px 5px;
 }
 .success {
-    background: #EAF7D9 url('http://service-xiaomi.com/catalog/view/theme/default/image/success.png') 10px center no-repeat;
+    background: #EAF7D9 url('../images/success.png') 10px center no-repeat;
     border: 1px solid #BBDF8D;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -481,7 +481,7 @@ label {
     border-radius: 5px 5px 5px 5px;
 }
 .warning {
-    background: #FFD1D1 url('http://service-xiaomi.com/catalog/view/theme/default/image/warning.png') 10px center no-repeat;
+    background: #FFD1D1 url('../images/warning.png') 10px center no-repeat;
     border: 1px solid #F8ACAC;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -489,7 +489,7 @@ label {
     border-radius: 5px 5px 5px 5px;
 }
 .attention {
-    background: #FFF5CC url('http://service-xiaomi.com/catalog/view/theme/default/image/attention.png') 10px center no-repeat;
+    background: #FFF5CC url('../images/attention.png') 10px center no-repeat;
     border: 1px solid #F2DD8C;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -680,7 +680,7 @@ input.button:hover {
     border-top: 1px solid #DDDDDD;
     border-left: 1px solid #DDDDDD;
     border-right: 1px solid #DDDDDD;
-    background: #FFFFFF url('http://service-xiaomi.com/catalog/view/theme/default/image/tab.png') repeat-x;
+    background: #FFFFFF url('../images/tab.png') repeat-x;
     padding: 7px 15px 6px 15px;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
@@ -957,14 +957,14 @@ ul.box-filter > li ul {
     border-radius: 3px;
 }
 .category-list-show-all.invisible_category_active span {
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all_opened.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all_opened.png) right center no-repeat;
 }
 .category-list-show-all span {
     color: #ffffff;
     font-size: 16px;
     font-family: "Roboto Condensed";
     padding-right: 31px;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all.png) right center no-repeat;
 }
 /* manufacturer */
 
@@ -1101,7 +1101,7 @@ ul.box-filter > li ul {
 .product-grid .cart .button {
     width: 93px;
     height: 92px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/addtocart.png") top center no-repeat;
+    background: url("../images/addtocart.png") top center no-repeat;
     text-indent: -9999px;
     float: right;
     padding: 0px;
@@ -1110,7 +1110,7 @@ ul.box-filter > li ul {
     border-radius: 0;
 }
 .product-grid .cart .button:hover {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/addtocart.png") bottom center no-repeat;
+    background: url("../images/addtocart.png") bottom center no-repeat;
     opacity: 1;
 }
 .product-grid .cart {} .product-grid .wishlist,
@@ -1122,14 +1122,14 @@ ul.box-filter > li ul {
     text-decoration: none;
     padding-left: 18px;
     display: block;
-    background: url('http://service-xiaomi.com/catalog/view/theme/default/image/add.png') left center no-repeat;
+    background: url('../images/add.png') left center no-repeat;
 }
 .product-grid .compare a {
     color: #333333;
     text-decoration: none;
     padding-left: 18px;
     display: block;
-    background: url('http://service-xiaomi.com/catalog/view/theme/default/image/add.png') left center no-repeat;
+    background: url('../images/add.png') left center no-repeat;
 }
 /* Product */
 
@@ -1726,7 +1726,7 @@ ul.box-filter > li ul {
 #cart .heading {
     float: right;
     height: 20px;
-    background: url('http://service-xiaomi.com/catalog/view/theme/default/image/cart.png') left center no-repeat;
+    background: url('../images/cart.png') left center no-repeat;
     line-height: 20px;
     position: relative;
     z-index: 1;
@@ -1747,7 +1747,7 @@ ul.box-filter > li ul {
 }
 #cart .heading a span#cart-total {
     display: inline-block;
-    background: url('http://service-xiaomi.com/catalog/view/theme/default/image/cart_circle.png') no-repeat;
+    background: url('../images/cart_circle.png') no-repeat;
     width: 16px;
     height: 16px;
     line-height: 16px;
@@ -2230,7 +2230,7 @@ ul.box-filter > li ul {
     font-size: 23px;
     color: #ffffff;
     width: 178px;
-    background: #ff780c url("http://service-xiaomi.com/catalog/view/theme/default/image/main_menu_arrow.png") 34px center no-repeat;
+    background: #ff780c url("../images/main_menu_arrow.png") 34px center no-repeat;
     font-family: "Roboto Condensed";
     border-top: 1px solid #ff6000;
     border-bottom: 1px solid #ffb276;
@@ -2259,7 +2259,7 @@ ul.box-filter > li ul {
     left: 50px;
     top: 24px;
     height: 44px;
-    background-image: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block2.png);
+    background-image: url(../images/rumiservice13_block2.png);
     background-repeat: no-repeat;
     background-size: auto 42px;
     background-position: 21px 0;
@@ -2281,7 +2281,7 @@ ul.box-filter > li ul {
     left: 50px;
     top: 80px;
     height: 40px;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice12_delivery.png) no-repeat;
+    background: url(../images/rumiservice12_delivery.png) no-repeat;
     font-family: "Roboto Condensed";
     font-size: 20px;
     line-height: 34px;
@@ -2301,7 +2301,7 @@ ul.box-filter > li ul {
     position: absolute;
     left: 50%;
     top: 29px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/skobka_line.png") no-repeat;
+    background: url("../images/skobka_line.png") no-repeat;
 }
 @media (max-width: 700px) {
     #rumiservice2 .rumiservice2_skobka_line {
@@ -2318,7 +2318,7 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     font-size: 20px;
     color: #ffffff;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice2_guaranty.png") left center no-repeat;
+    background: url("../images/rumiservice2_guaranty.png") left center no-repeat;
     padding-left: 49px;
 }
 @media (max-width: 700px) {
@@ -2338,7 +2338,7 @@ ul.box-filter > li ul {
     font-family: "Roboto Condensed";
     font-size: 20px;
     color: #ffffff;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice2_time.png") 3px center no-repeat;
+    background: url("../images/rumiservice2_time.png") 3px center no-repeat;
     padding-left: 52px;
 }
 @media (max-width: 700px) {
@@ -2495,7 +2495,7 @@ ul.box-filter > li ul {
     left: 0;
     position: absolute;
     bottom: 0;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/chart_bottom_bg.png") bottom center no-repeat;
+    background: url("../images/chart_bottom_bg.png") bottom center no-repeat;
     z-index: 1;
 }
 @media (max-width: 1250px) {
@@ -2505,7 +2505,7 @@ ul.box-filter > li ul {
     width: 125px;
     height: 100px;
     text-align: center;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/chart_tooltip.png") no-repeat;
+    background: url("../images/chart_tooltip.png") no-repeat;
     color: #ffffff;
     font-size: 13px;
     font-family: "Roboto Condensed";
@@ -2755,10 +2755,10 @@ ul.box-filter > li ul {
     padding: 0 20px 0 55px;
 }
 #rumiservice5 .rumiservice5_input1 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice5_input1.png") 17px center no-repeat;
+    background: #fff url("../images/rumiservice5_input1.png") 17px center no-repeat;
 }
 #rumiservice5 .rumiservice5_input2 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice5_input2.png") 20px center no-repeat;
+    background: #fff url("../images/rumiservice5_input2.png") 20px center no-repeat;
 }
 #rumiservice5 .rumiservice5_input2_error {
     color: #FF0000;
@@ -2809,12 +2809,11 @@ ul.box-filter > li ul {
     display: inline-block;
     width: 200px;
     text-align: center;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice6_header.png") no-repeat;
 }
 #rumiservice6 #rumiservice6_circle {
     width: 1199px;
     height: 179px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice6_circle.png") no-repeat;
+    background: url("../images/rumiservice6_circle.png") no-repeat;
     position: absolute;
     top: 178px;
     left: 0px;
@@ -3122,7 +3121,7 @@ ul.box-filter > li ul {
 #rumiservice7 .rumiservice7_blocks_right_content {
     width: 310px;
     float: right;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_bg.png") center 20px no-repeat;
+    background: url("../images/rumiservice7_bg.png") center 20px no-repeat;
     padding-top: 135px;
     text-align: center;
     font-size: 24px;
@@ -3336,10 +3335,10 @@ ul.box-filter > li ul {
     font-size: 16px;
     font-family: "Roboto Condensed";
     padding-right: 31px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all.png") right center no-repeat;
+    background: url("../images/rumiservice7_show_all.png") right center no-repeat;
 }
 #rumiservice7 .rumiservice7_show_all.rumiservice7_show_all_opened span {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all_opened.png") right center no-repeat;
+    background: url("../images/rumiservice7_show_all_opened.png") right center no-repeat;
 }
 #rumiservice8 {
     overflow: hidden;
@@ -3388,7 +3387,7 @@ ul.box-filter > li ul {
     position: absolute;
     left: 50%;
     margin-left: -8px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice8_button_active.png") no-repeat;
+    background: url("../images/rumiservice8_button_active.png") no-repeat;
     width: 17px;
     height: 7px;
 }
@@ -3398,7 +3397,7 @@ ul.box-filter > li ul {
 #rumiservice9_left {
     width: 552px;
     float: left;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_left.png") no-repeat;
+    background: url("../images/rumiservice9_left.png") no-repeat;
     position: relative;
 }
 #rumiservice9_left .rumiservice9_left_header {
@@ -3507,19 +3506,19 @@ ul.box-filter > li ul {
     resize: none;
 }
 #rumiservice9_right .rumiservice9_right_input .rumiservice9_right_input_1 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_1.png") 17px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_1.png") 17px center no-repeat;
 }
 #rumiservice9_right .rumiservice9_right_input .rumiservice9_right_input_2 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_2.png") 20px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_2.png") 20px center no-repeat;
 }
 #rumiservice9_right .rumiservice9_right_input .rumiservice9_right_input_3 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_3.png") 19px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_3.png") 19px center no-repeat;
 }
 #rumiservice9_right .rumiservice9_right_input .rumiservice9_right_input_4 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_4.png") 18px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_4.png") 18px center no-repeat;
 }
 #rumiservice9_right .rumiservice9_right_input .rumiservice9_right_input_5 {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_5.png") 19px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_5.png") 19px center no-repeat;
 }
 #rumiservice9_right .rumiservice9_right_left_bottomtext {
     margin-top: 10px;
@@ -3767,6 +3766,9 @@ ul.box-filter > li ul {
 }
 #rumiservice12_left .rumiservice12_skidka span {
     font-size: 36px;
+}
+#rumiservice12_right .rumiservice12_right_input .rumiservice12_right_input_2 {
+    background: #fff url(../images/rumiservice9_right_input_2.png) 20px center no-repeat;
 }
 #rumiservice12_right {
     width: 405px;
@@ -4022,10 +4024,10 @@ left: 16%;
     font-size: 15px;
     color: #fff;
     padding-right: 31px;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all.png) right center no-repeat;
 }
 #rumiservice14 .rumiservice14_show_all.rumiservice14_show_all_opened span {
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all_opened.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all_opened.png) right center no-repeat;
 }
 #rumiservice14 .rumiservice14_show_all:hover {
     text-decoration: none;
@@ -4112,7 +4114,7 @@ left: 16%;
     position: absolute;
     left: 50px;
     top: 34px;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice16_icon1.png) no-repeat;
+    background: url(../images/rumiservice16_icon1.png) no-repeat;
     padding-left: 100px;
     padding-top: 21px;
     height: 80px;
@@ -4127,7 +4129,7 @@ left: 16%;
     position: absolute;
     left: 702px;
     top: 29px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/skobka_line.png") no-repeat;
+    background: url("../images/skobka_line.png") no-repeat;
 }
 #rumiservice16 .rumiservice16_guaranty {
     height: 45px;
@@ -4138,7 +4140,7 @@ left: 16%;
     font-family: "Roboto Condensed";
     font-size: 20px;
     color: #ffffff;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice16_icon3.png) left center no-repeat;
+    background: url(../images/rumiservice16_icon3.png) left center no-repeat;
     padding-left: 69px;
 }
 #rumiservice16 .rumiservice16_time {
@@ -4150,7 +4152,7 @@ left: 16%;
     font-family: "Roboto Condensed";
     font-size: 20px;
     color: #ffffff;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice16_icon2.png) 3px center no-repeat;
+    background: url(../images/rumiservice16_icon2.png) 3px center no-repeat;
     padding-left: 67px;
 }
 /* footer */
@@ -4386,21 +4388,6 @@ left: 16%;
     background-size: 100%;
     background-position: 50%;
 }
-#footer_share ul li a.vkontakte {
-    background-image: url('http://service-xiaomi.com/catalog/view/theme/default/image/social/vkontakte.png');
-}
-#footer_share ul li a.google {
-    background-image: url('http://service-xiaomi.com/catalog/view/theme/default/image/social/google_plus.png');
-}
-#footer_share ul li a.instagram {
-    background-image: url('http://service-xiaomi.com/catalog/view/theme/default/image/social/instagram.png');
-}
-#footer_share ul li a.facebook {
-    background-image: url('http://service-xiaomi.com/catalog/view/theme/default/image/social/facebook.png');
-}
-#footer_share ul li a.telegram {
-    background-image: url('http://service-xiaomi.com/catalog/view/theme/default/image/social/telegram.png');
-}
 #powered {
     margin-top: 50px;
     overflow: hidden;
@@ -4458,7 +4445,7 @@ left: 16%;
 input.dondo_input {
     width: 293px;
     height: 53px;
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_2.png") 20px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_2.png") 20px center no-repeat;
     border: 1px solid #dfdfdf;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -4471,7 +4458,7 @@ input.dondo_input {
 input.dondo_status {
     width: 293px;
     height: 53px;
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_4.png") 18px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_4.png") 18px center no-repeat;
     border: 1px solid #dfdfdf;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -4484,7 +4471,7 @@ input.dondo_status {
 input.dondo_name {
     width: 293px;
     height: 53px;
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_1.png") 18px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_1.png") 18px center no-repeat;
     border: 1px solid #dfdfdf;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -4726,7 +4713,7 @@ input.dondo_name {
 }
 .product-list .free .has_problem {
     cursor: pointer;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/has_problem.png) left center no-repeat;
+    background: url(../images/has_problem.png) left center no-repeat;
     padding-left: 23px;
 }
 .product-list .free .has_problem span {
@@ -4911,7 +4898,7 @@ form p:last-child {
     transition: none !important;
 }
 .button_cats {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/category_tooltip.png") no-repeat;
+    background: url("../images/category_tooltip.png") no-repeat;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -4921,7 +4908,7 @@ form p:last-child {
     margin-left: 11px;
 }
 .button_cats:hover {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/category_tooltip_active.png") no-repeat;
+    background: url("../images/category_tooltip_active.png") no-repeat;
 }
 .button_cats .tooltip {
     position: absolute;
@@ -5009,7 +4996,7 @@ form p:last-child {
     width: 125px;
     height: 100px;
     text-align: center;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/chart_tooltip.png") no-repeat;
+    background: url("../images/chart_tooltip.png") no-repeat;
     color: #ffffff;
     font-size: 15px;
     font-family: "Roboto Condensed";
@@ -5034,7 +5021,7 @@ form p:last-child {
 .main_product_time {
     float: left;
     margin-left: 7px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/main_product_time.png") left center no-repeat;
+    background: url("../images/main_product_time.png") left center no-repeat;
     height: 40px;
     padding-left: 55px;
     margin-top: 6px;
@@ -5056,7 +5043,7 @@ form p:last-child {
 .main_product_price {
     float: left;
     margin-left: 53px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/main_product_price.png") left center no-repeat;
+    background: url("../images/main_product_price.png") left center no-repeat;
     height: 41px;
     padding-left: 55px;
     margin-top: 6px;
@@ -5148,7 +5135,7 @@ sup {
     padding: 0;
 }
 #button-cart span {
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/button_cart.png") right center no-repeat;
+    background: url("../images/button_cart.png") right center no-repeat;
     padding-right: 26px;
 }
 .contacts_desk {
@@ -5295,7 +5282,7 @@ sup {
     display: block;
     width: 40px;
     height: 40px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/scheme_full.png") no-repeat;
+    background: url("../images/scheme_full.png") no-repeat;
     position: absolute;
     right: 119px;
     top: 12px;
@@ -5309,7 +5296,7 @@ sup {
 .content_scheme_arrow_left {
     width: 16px;
     height: 35px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/content_scheme_arrow_left.png") no-repeat;
+    background: url("../images/content_scheme_arrow_left.png") no-repeat;
     cursor: pointer;
     position: absolute;
     left: 60px;
@@ -5318,7 +5305,7 @@ sup {
 .content_scheme_arrow_right {
     width: 16px;
     height: 35px;
-    background: url("http://service-xiaomi.com/catalog/view/theme/default/image/content_scheme_arrow_right.png") no-repeat;
+    background: url("../images/content_scheme_arrow_right.png") no-repeat;
     cursor: pointer;
     position: absolute;
     right: 60px;
@@ -5371,21 +5358,21 @@ a.scheme_link:hover {
     margin-bottom: 40px;
 }
 input[type='text'].contacts_input_name {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_1.png") 17px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_1.png") 17px center no-repeat;
     padding: 0 20px 0 55px;
     margin-right: 18px;
     width: 265px;
     margin-bottom: 10px;
 }
 input[type='text'].contacts_input_phone {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_2.png") 20px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_2.png") 20px center no-repeat;
     padding: 0 20px 0 55px;
     margin-right: 18px;
     width: 265px;
     margin-bottom: 10px;
 }
 input[type='text'].contacts_input_email {
-    background: #fff url("http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice9_right_input_10.png") 17px center no-repeat;
+    background: #fff url("../images/rumiservice9_right_input_10.png") 17px center no-repeat;
     padding: 0 20px 0 55px;
     width: 265px;
     margin-bottom: 10px;
@@ -5518,10 +5505,10 @@ input[type='text'].contacts_input_email {
     font-size: 16px;
     font-family: "Roboto Condensed";
     padding-right: 31px;
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all.png) right center no-repeat;
 }
 .show_all_products_button.show_all_products_button_opened span {
-    background: url(http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice7_show_all_opened.png) right center no-repeat;
+    background: url(../images/rumiservice7_show_all_opened.png) right center no-repeat;
 }
 .show_all_products_button:hover {
     opacity: 0.8;

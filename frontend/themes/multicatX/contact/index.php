@@ -26,7 +26,7 @@ $this->title = $pageInfo['meta_title'];
                 <div class="rumiservice13_block rumiservice13_block1">
                     <div class="rumiservice13_block_circle">
                         <div class="rumiservice13_block_circle_number">1</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block1.png"></div>
+                        <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block1.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
                         Вы оставляете заявку<br>на сайте или по телефону
@@ -35,7 +35,7 @@ $this->title = $pageInfo['meta_title'];
                 <div class="rumiservice13_block rumiservice13_block2">
                     <div class="rumiservice13_block_circle">
                         <div class="rumiservice13_block_circle_number">2</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block2.png"></div>
+                        <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block2.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
                         Проводится бесплатная<br>диагностика после которой<br>станут известны сроки
@@ -44,7 +44,7 @@ $this->title = $pageInfo['meta_title'];
                 <div class="rumiservice13_block rumiservice13_block3">
                     <div class="rumiservice13_block_circle">
                         <div class="rumiservice13_block_circle_number">3</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block3.png"></div>
+                        <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block3.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
                         Мы звоним вам и только<br>после вашего подтверждения<br>начинаем ремонт
@@ -53,7 +53,7 @@ $this->title = $pageInfo['meta_title'];
                 <div class="rumiservice13_block rumiservice13_block4">
                     <div class="rumiservice13_block_circle">
                         <div class="rumiservice13_block_circle_number">4</div>
-                        <div class="rumiservice13_block_circle_image"><img src="http://service-xiaomi.com/catalog/view/theme/default/image/rumiservice13_block4.png"></div>
+                        <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block4.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
                         Вы забираете готовый<br>аппарат из ремонта 
