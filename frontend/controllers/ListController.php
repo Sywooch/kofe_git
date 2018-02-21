@@ -126,7 +126,7 @@ class ListController extends CController {
                 $modelImage = $model['image'];
             }
             if(isset($siteConfig['foreign_category'])) {
-                $breadcrumbs['/' . CController::$category['url']] = CController::$category['title'];
+                $breadcrumbs['/' . CController::$category['url']] = 'Ремонт ' . mb_strtolower(CController::$category['rod_title'], 'utf8') . ' ' . CController::$monoBrand['title'];
             }
             $breadcrumbs['/' . $page['url']] = (isset($siteConfig['foreign_category']) ? CController::$monoBrand['title'] : '') . CController::$category['full_title'] . ' ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model' || $page['type'] == 'category') {

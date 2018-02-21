@@ -1,5 +1,5 @@
 <div class="breadcrumb">
-    <a href="/">Главная</a>
+    <a href="/">Сервисный центр <?= \app\components\CController::$monoBrand['title']; ?></a>
     <?php $a = 1; ?>
     <?php foreach ($data as $url => $title): ?>               
         <?php if (end($data) == $title): ?>
