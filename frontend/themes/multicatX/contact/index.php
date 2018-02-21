@@ -3,6 +3,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $this->title = $pageInfo['meta_title'];
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
