@@ -125,7 +125,10 @@ class ListController extends CController {
                 $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $page['id']])->queryOne();
                 $modelImage = $model['image'];
             }
-            $breadcrumbs['/' . $page['url']] = CController::$category['full_title'] . ' ' . $page['title'];
+            if(isset($siteConfig['foreign_category'])) {
+                $breadcrumbs['/' . CController::$category['url']] = 'Ремонт ' . mb_strtolower(CController::$category['rod_title'], 'utf8') . ' ' . CController::$monoBrand['title'];
+            }
+            $breadcrumbs['/' . $page['url']] = (isset($siteConfig['foreign_category']) ? CController::$monoBrand['title'] : '') . CController::$category['full_title'] . ' ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model' || $page['type'] == 'category') {
                 if ($page['type'] == 'model' && !isset($siteConfig['foreign_category'])) {
                     $brand = (new \yii\db\Query())
@@ -201,8 +204,8 @@ class ListController extends CController {
                                 $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' - первый признак неисправности, которая быстро устраняется в нашем специализированном сервисном центре по ремонту кофемашин ' . CController::$monoBrand['title'] . '.';
                             } elseif ($page['type'] == 'model') {
                                 $h1 = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'];
-                                $title = 'Кофемашина ' . $pageInfo['title'] . ' 🛠 Срочный ремонт в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! ';
-                                $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' - исправим данную проблему быстро и качественно в нашем специализированном сервисном центре ' . CController::$monoBrand['title'] . '.';
+                                $title = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ' 🛠 Срочный ремонт в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! ';
+                                $metaDesc = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ' - исправим данную проблему быстро и качественно в нашем специализированном сервисном центре ' . CController::$monoBrand['title'] . '.';
                             }
                         }
                     }

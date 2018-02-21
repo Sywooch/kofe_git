@@ -166,7 +166,7 @@ class CController extends \yii\web\Controller {
         $userIP = Yii::$app->getRequest()->getUserIP();
         $adminsChannel = '-1001287383605';
         $usersChannel = '-1001322968311';
-        if ($siteConfig['category_id'] == 7) {
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk'])) {
             $clarisOIDS = [
                 'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
                 'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
@@ -177,6 +177,7 @@ class CController extends \yii\web\Controller {
                 'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
                 'help' => ['name' => 'SC1_SPB', 'OID' => 2202775576000],
                 'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
+                'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
@@ -213,11 +214,11 @@ class CController extends \yii\web\Controller {
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
-        if ($siteConfig['category_id'] == 7)
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $usersPhone . $msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         
-        if ($siteConfig['category_id'] == 7)
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $phone . $msg, $adminsChannel);
         else {            
             self::sendMessage("Телефон: " . $phone . $msg, '@site_orders');

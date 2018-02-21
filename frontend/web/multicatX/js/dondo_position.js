@@ -11,6 +11,14 @@ $(document).ready(function () {
     });
     var end_loading = 0;
     var chartOptions = [];
+    var data1, data2, data3;
+    if ($('#chart1').length > 0)
+        data1 = $('#chart1').data('chart');
+    if ($('#chart2').length > 0)
+        data2 = $('#chart2').data('chart');
+    if ($('#chart3').length > 0)
+        data3 = $('#chart3').data('chart');
+    
     chartOptions[1] = {
         chart: {
             type: 'column'
@@ -49,7 +57,7 @@ $(document).ready(function () {
                 maxPointWidth: '50',
                 borderRadius: 3,
                 colorByPoint: false,
-                data: [{name: 'Redmi 4X', y: 776}, {name: 'Redmi Note 4/4X', y: 1097}, {name: 'Mi5S', y: 812}, {name: 'Redmi 3/S/Pro', y: 1395}, {name: 'Redmi Note 3/Pro/SE', y: 2178}, {name: 'Mi5', y: 1588}],
+                data: data1,
                 dataLabels: {
                     enabled: true,
                     color: '#818181',
@@ -101,7 +109,7 @@ $(document).ready(function () {
                 maxPointWidth: '50',
                 borderRadius: 3,
                 colorByPoint: false,
-                data: [{name: 'Mi Pad', y: 373}, {name: 'Mi Pad 2', y: 429}, {name: 'Mi Pad 3', y: 245}, {name: 'Mi Notebook', y: 37}],
+                data: data2,
                 dataLabels: {
                     enabled: true,
                     color: '#818181',
@@ -153,7 +161,7 @@ $(document).ready(function () {
                 maxPointWidth: '50',
                 borderRadius: 3,
                 colorByPoint: false,
-                data: [{name: 'Yi Action Camera', y: 120}, {name: 'Xiaomi Ninebot Mini', y: 35}, {name: 'Ip Camera Yi Smart', y: 86}, {name: 'Power Strip', y: 39}],
+                data: data3,
                 dataLabels: {
                     enabled: true,
                     color: '#818181',
@@ -172,9 +180,12 @@ $(document).ready(function () {
             if (end_loading == 0) {
                 end_loading = 1;
                 $(function () {
-                    $('#chart1').highcharts(chartOptions[1]);
-                    $('#chart2').highcharts(chartOptions[2]);
-                    $('#chart3').highcharts(chartOptions[3]);
+                    if ($('#chart1').length > 0)
+                        $('#chart1').highcharts(chartOptions[1]);
+                    if ($('#chart2').length > 0)
+                        $('#chart2').highcharts(chartOptions[2]);
+                    if ($('#chart3').length > 0)
+                        $('#chart3').highcharts(chartOptions[3]);
                 });
             }
         }
