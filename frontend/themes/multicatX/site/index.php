@@ -123,6 +123,13 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
             </div>
         </div>
     </div>
+    <div id="content" style="background-color: #fff;">
+        <div class="inner_container">
+            <div id="content" class="my-text"><br>           
+                <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['full_description']); ?>       
+            </div>
+        </div>
+    </div>
     <?= multicatX\widgets\lists\PopularServices::widget(); ?>
     <div class="main_container grey_container">
         <div id="rumiservice6" class="inner_container">
@@ -230,13 +237,6 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="content" style="background-color: #fff;">
-        <div class="inner_container">
-            <div id="content" class="my-text"><br>           
-                <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['full_description']); ?>       
             </div>
         </div>
     </div>
