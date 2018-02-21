@@ -10,9 +10,7 @@ $(document).ready(function () {
         $(".my-popup-form").slideToggle(300, 'swing');
     });
     var end_loading = 0;
-
     var chartOptions = [];
-
     chartOptions[1] = {
         chart: {
             type: 'column'
@@ -43,12 +41,10 @@ $(document).ready(function () {
         legend: {
             enabled: false
         },
-
         tooltip: {
             headerFormat: '',
             pointFormat: '<b>{point.y:.0f}</b>'
         },
-
         series: [{
                 maxPointWidth: '50',
                 borderRadius: 3,
@@ -97,12 +93,10 @@ $(document).ready(function () {
         legend: {
             enabled: false
         },
-
         tooltip: {
             headerFormat: '',
             pointFormat: '<b>{point.y:.0f}</b>'
         },
-
         series: [{
                 maxPointWidth: '50',
                 borderRadius: 3,
@@ -151,12 +145,10 @@ $(document).ready(function () {
         legend: {
             enabled: false
         },
-
         tooltip: {
             headerFormat: '',
             pointFormat: '<b>{point.y:.0f}</b>'
         },
-
         series: [{
                 maxPointWidth: '50',
                 borderRadius: 3,
@@ -175,11 +167,9 @@ $(document).ready(function () {
                 }
             }]
     };
-
     function scroll_loading() {
         if ($(window).scrollTop() + $(window).height() > $('#rumiservice3').offset().top + 500) {
-            if (end_loading == 0)
-            {
+            if (end_loading == 0) {
                 end_loading = 1;
                 $(function () {
                     $('#chart1').highcharts(chartOptions[1]);
@@ -189,9 +179,7 @@ $(document).ready(function () {
             }
         }
     }
-
     $(document).ready(function () {
-
         $('.rumiservice3_button').live('click', function () {
             if ($(this).hasClass('rumiservice3_button_active'))
                 location = $(this).attr('href');
@@ -202,20 +190,15 @@ $(document).ready(function () {
             var button_id = $(this).attr('button_id');
             $('.rumiservice3_blocks').css('display', 'none');
             $('.rumiservice3_block' + button_id).css('display', 'block');
-
             $('#rumiservice3 .rumiservice3_buttons .rumiservice3_button_container a').css('display', 'none');
             $(this).parent().find('a').css('display', 'block');
-
             var chart = $('#chart' + button_id).highcharts();
             chart.destroy();
             $('#chart' + button_id).highcharts(chartOptions[button_id]);
             return false;
         });
-
         scroll_loading();
-
     });
-
     $(window).scroll(function () {
         scroll_loading();
     });
@@ -238,7 +221,6 @@ $(document).ready(function () {
             }
         }
     });
-
     $('.owl-carousel-3').owlCarousel({
         loop: true,
         navigation: true,
@@ -276,15 +258,12 @@ $(document).ready(function () {
             }
         }
     });
-
     function callback(event) {
         var item = $("#rumiservice6 .owl-pagination .active").index() + 1;
         $('.rumiservice6_circle_div').removeClass('rumiservice6_circle_div_active');
         $('#rumiservice6_circle' + item).addClass('rumiservice6_circle_div_active');
     }
-
     var owl = $(".owl-carousel-2").data('owlCarousel');
-
     $(document).ready(function () {
         $('.rumiservice6_circle_div').live('click', function () {
             var slide_num = $(this).attr('slide_num') - 1;
@@ -300,7 +279,6 @@ $(document).ready(function () {
         $('.rumiservice7_blocks').css('display', 'none');
         $('.rumiservice7_block' + button_id).css('display', 'block');
     });
-
     $('.rumiservice7_show_all').live('click', function () {
         $(this).parent().find('.rumiservice7_table_tr_container').slideToggle();
         if ($(this).hasClass('rumiservice7_show_all_opened')) {
@@ -321,7 +299,6 @@ $(document).ready(function () {
             $('.rumiservice14_block_invisible').css('display', 'inline-block');
             $('.rumiservice14_show_all span').text('Скрыть все преимущества');
             $(this).addClass('rumiservice14_show_all_opened');
-
         }
         return false;
     });
@@ -342,6 +319,4 @@ $(document).ready(function () {
             $('.invisible_product').slideDown();
         }
     });
-
-
 });

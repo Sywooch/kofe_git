@@ -250,27 +250,30 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice3_button colortexthover rumiservice3_button_active" button_id="1" href="smartfonyi/index.html">
                         Ремонт смартфонов       
                     </div>
-                    <a href="smartfonyi/index.html" style="display:block;">
+                    <a href="#" style="display:block;">
                         <span>
-                            Все услуги для смартфонов                                   </span>
+                            Все услуги для смартфонов                                   
+                        </span>
                     </a>
                 </div>
                 <div class="rumiservice3_button_container">
                     <div class="rumiservice3_button colortexthover " button_id="2" href="planshetyi/index.html">
                         Планшеты       
                     </div>
-                    <a href="planshetyi/index.html" style="display:none;width: 278px;left:-30px;">
+                    <a href="#" style="display:none;width: 278px;left:-30px;">
                         <span>
-                            Все услуги для планшетов и ноутбуков                        </span>
+                            Все услуги для планшетов и ноутбуков                        
+                        </span>
                     </a>
                 </div>
                 <div class="rumiservice3_button_container">
                     <div class="rumiservice3_button colortexthover " button_id="3" href="gadjetyi/index.html">
                         Гаджеты        
                     </div>
-                    <a href="gadjetyi/index.html" style="display:none;">
+                    <a href="#" style="display:none;">
                         <span>
-                            Все услуги для гаджетов          </span>
+                            Все услуги для гаджетов          
+                        </span>
                     </a>
                 </div>
             </div>
