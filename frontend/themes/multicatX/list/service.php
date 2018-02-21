@@ -1,9 +1,6 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
-$breadcrumbs = [
-    '/' . \app\components\CController::$category['url'] => \app\components\CController::$category['full_title'],
-    !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title'],
-];
+
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
@@ -30,12 +27,12 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="main_product_buy">
                     <div class="main_product_time">
                         <div class="main_product_time_top">Время ремонта</div>
-                        <div class="main_product_time_bottom">от 1,5 час.</div>
+                        <div class="main_product_time_bottom"><?= $pageInfo['time']; ?></div>
                     </div>
                     <div class="main_product_price">
                         <div class="main_product_price_top">Стоимость ремонта</div>
                         <div class="main_product_price_bottom">
-                            <span class="main_product_price_from">от</span> <span class="main_product_price_price colortext">3 200</span><sup class="main_product_price_roubles colortext"> руб.</sup>
+                            <span class="main_product_price_from">от</span> <span class="main_product_price_price colortext"><?= number_format($pageInfo['price'], 0, ' ', ' '); ?></span><sup class="main_product_price_roubles colortext"> руб.</sup>
                         </div>
                     </div>
                     <div class="main_product_cart">
