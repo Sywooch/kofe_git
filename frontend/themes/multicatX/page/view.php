@@ -1,7 +1,7 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
+$this->title = !empty($model['meta_title']) ? $model['meta_title'] : str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $model['title']);
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">

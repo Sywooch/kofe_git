@@ -30,7 +30,7 @@ $assets = '/' . Yii::getAlias('@web');
                     <div class="rumiservice3_chart_tooltip">
                         <span>7846</span> устройств за 3 года           
                     </div>
-                    <div id="chart<?= $a; ?>"></div>
+                    <div data-chart="<?= json_encode($chart); ?>" id="chart<?= $a; ?>"></div>
                 </div>
             </div>
         <?php endforeach; ?>        

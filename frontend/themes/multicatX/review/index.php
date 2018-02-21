@@ -3,7 +3,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $lastId = 0;
-$this->title = $pageInfo['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">

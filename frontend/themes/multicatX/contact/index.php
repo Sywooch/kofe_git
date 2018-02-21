@@ -2,7 +2,7 @@
 $breadcrumbs = [    
     $pageInfo['title'],
 ];
-$this->title = $pageInfo['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 $siteConfig = app\components\CController::getSiteConfig();
 $assets = '/' . Yii::getAlias('@web');
 ?>
