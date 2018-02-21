@@ -4242,7 +4242,7 @@ left: 16%;
         text-align: center;
     }
 }
-#footer_top h3 {
+#footer_top .h3 {
     font-size: 20px;
     color: #a1a1a1;
     font-family: "Roboto Condensed";
@@ -4250,7 +4250,7 @@ left: 16%;
     margin-top: 53px;
 }
 @media (max-width: 700px) {
-    #footer_top h3 {
+    #footer_top .h3 {
         font-size: 14px;
         margin-top: 20px;
     }

@@ -104,13 +104,13 @@ $js = app\components\CController::$js;
                         <div class="footer_column_1">
                         </div>
                         <div class="footer_column_2">
-                            <h3>Сервисный центр</h3>
+                            <div class="h3">Сервисный центр</div>
                         </div>
                         <div class="footer_column_3">
-                            <h3>Информация</h3>
+                            <div class="h3">Информация</div>
                         </div>
                         <div class="footer_column_4">
-                            <h3 style='margin-left: 93px'>Контакты</h3>
+                            <div class="h3" style='text-align: right;'>Контакты</div>
                         </div>
                     </div>
                 </div>
