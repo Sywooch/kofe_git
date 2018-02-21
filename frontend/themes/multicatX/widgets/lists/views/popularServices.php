@@ -1,66 +1,5 @@
 <div class="main_container">
-    <div class="inner_container" style="padding-top: 20px;">
-        <div class="h2">Кофемашины:</div>
-        <div class="owl-carousel33 owl-theme">
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-            <div class="item">
-                <div>
-                    <div class="img">
-                        <img src="/uploads/images/remont-kholodilnikov-bosch-kgn36vw14.jpg" alt="KGN36VW14">
-                    </div>
-                    <span class="colortext">Bosch KGN36VW14</span>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="my-botton colorbg">Показать все</a>
-    </div>
+    <?= count(\app\components\CController::$menu) <= 1 ? multicatX\widgets\lists\KofeModels::widget() : ''; ?>
     <div id="rumiservice7" class="inner_container">
         <div class="rumiservice7_topper">
             <div class="rumiservice7_header">Популярные услуги:</div>
@@ -92,7 +31,7 @@
                                         <?php endif; ?>
                                     </div>
                                     <div class="rumiservice_column_2"><?= number_format($service['price'], 0, ' ', ' '); ?></div>
-                                    <div class="rumiservice_column_3">от 1,5 час.</div>
+                                    <div class="rumiservice_column_3"><?= $service['time']; ?></div>
                                     <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Заказать</span></span></div>
                                 </div>
                                 <?php if ($key > 4): ?></div><?php endif; ?>

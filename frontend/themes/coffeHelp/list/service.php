@@ -15,7 +15,7 @@ use app\components\CController;
                         <?php $a = 1; ?>
                         <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="<?= $url === 0 ? '#' : $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
+                                <a itemscope itemtype="http://schema.org/Thing" itemprop="item" <?= $url === 0 ? '' : 'href="' . $url . '"'; ?>><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
                                 <meta itemprop="position" content="<?= $a; ?>" />
                             </li>
                             <?php $a++; ?>
@@ -40,19 +40,21 @@ use app\components\CController;
                         <span class="section-promo-desc">
                             <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $seoText); ?>
                             <?php if (!empty($pageInfo['full_description']) && in_array($page['type'], ['brand', 'model'])): ?>
-                            <?php if($page['type'] == 'model'){$page = $b;} ?>
+                                <?php if ($page['type'] == 'model') {
+                                    $page = $b;
+                                } ?>
                                 <p class="text2">
-                                    <?= str_replace(['#brand_en#', '#brand_ru#', '#brand_url#'], [$page['title'], (isset(Yii::$app->params['brandRussianNames'][$page['title']]) ? Yii::$app->params['brandRussianNames'][$page['title']] : ''), '/' . $page['url']], $pageInfo['full_description']); ?>
+                                <?= str_replace(['#brand_en#', '#brand_ru#', '#brand_url#'], [$page['title'], (isset(Yii::$app->params['brandRussianNames'][$page['title']]) ? Yii::$app->params['brandRussianNames'][$page['title']] : ''), '/' . $page['url']], $pageInfo['full_description']); ?>
                                 </p>
-                            <?php endif; ?>
+<?php endif; ?>
                         </span>
                     </div>
                 </div>
-                <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
+        <?= coffeHelp\widgets\forms\SidebarForm2::widget(); ?>
             </div>
         </section>
-        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>                
-        <?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>        
+<?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage2']); ?>                
+<?= coffeHelp\widgets\other\Advantage::widget(['view' => 'advantage4']); ?>        
     </div>
 </div>
 <div class="my-footer-block">
@@ -60,7 +62,7 @@ use app\components\CController;
         <hr class="big_line">
 
         <section class="order">
-            <?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
+<?= coffeHelp\widgets\forms\SidebarForm::widget(); ?>
         </section>
     </div>
 </div>
