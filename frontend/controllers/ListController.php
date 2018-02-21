@@ -20,7 +20,10 @@ class ListController extends CController {
 //        ]);
         $config = CController::getSiteConfig();
         if (isset($config['foreign_category']) && $config['foreign_category']) {
-            $title =  'Ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ⚒ Качественно ✔️ Гарантия 💎 Лучшие цены!';
+            $russianName = '';
+            if(isset(Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']]))
+                $russianName = ' (' . Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']] . ')';
+            $title =  'Ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . CController::$monoBrand['title'] . $russianName . ' ⚒ Качественно ✔️ Гарантия 💎 Лучшие цены!';
             $metaDesc = 'Сервисный центр выполняет ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией! Быстро! Опытные специалисты! Гарантия! Цены на сайте!';
         } else {
             $title = '';
