@@ -3,6 +3,8 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $this->title = $pageInfo['meta_title'];
+$siteConfig = app\components\CController::getSiteConfig();
+$assets = '/' . Yii::getAlias('@web');
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
@@ -14,9 +16,8 @@ $this->title = $pageInfo['meta_title'];
     </div>
     <div class="inner_container">
         <div id="content" class="my-text">
-            <h1 class="colortext">Контакты</h1>
-            <p>Гарантия на ремонт Xiaomi</p>
-            <p>Гарантийный сервисный центр Xiaomi – ваш надежный помощник по оперативному ремонту вышедшей из строя техники. К вашим услугам – быстрое и качественное восстановление всех устройств китайского производителя. </p>
+            <h1 class="colortext"><?= $pageInfo['meta_h1']; ?></h1>
+            <?= $pageInfo['description']; ?>
         </div>
     </div>
     <div class="main_container kakrabotaem_container colorbg">
