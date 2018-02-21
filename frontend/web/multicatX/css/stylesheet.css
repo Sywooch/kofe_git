@@ -75,7 +75,7 @@ h1.category_h1 {
     color: #3b3b3b;
     font-family: "Roboto Condensed";
     margin-bottom: 0px;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 28px;
     padding-bottom: 4px;
     position: relative;
@@ -5016,7 +5016,8 @@ form p:last-child {
 .main_product_buy {
     margin-top: 20px;
     float: left;
-    width: 752px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .main_product_time {
     float: left;
@@ -5602,15 +5603,13 @@ input[type='text'].contacts_input_email {
 }
 .product-category-left-info {
     float: left;
-    width: 790px;
-    margin-right: 20px;
+    width: 700px;
 }
 @media (max-width: 1250px) {
     .product-category-left-info {
-        width: 70%;
+        width: 100%;
         box-sizing: border-box;
         margin-right: 0px;
-        padding-right: 20px;
     }
 }
 @media (max-width: 700px) {
@@ -5618,6 +5617,14 @@ input[type='text'].contacts_input_email {
         width: 100%;
         padding-right: 0px;
         text-align: left;
+    }
+    .main_product_buy {
+        display: none;
+    }
+}
+@media (max-width: 1250px) {
+    .main_product_right {
+        display: none;
     }
 }
 .product-category-right-info {
