@@ -20,9 +20,8 @@ $breadcrumbs = [
     <div class="clear"></div>
     <span class="more"><div>Заказать ремонт</div></span>
 </section>
-<?= \app\widgets\other\Advantage::widget(); ?>
 
-
+<?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
         <div class="container">
@@ -37,6 +36,8 @@ $breadcrumbs = [
         </div>
     </section>
 <noindex>
+<?php endif; ?>
+<?= \app\widgets\other\Advantage::widget(); ?>
 <?php if (!$siteConfig['mono']): ?>
 <section id="ask">
     <div class="container">

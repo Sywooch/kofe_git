@@ -51,19 +51,6 @@ $siteConfig = app\components\CController::getSiteConfig();
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\Neispravnost::widget(); ?>
-<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true, 'prefix' => ' ' . $brand['title'] . ' ' . $pageInfo['title']]); ?>
-<?= $siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
-<?php if (!empty($pageInfo['full_description'])): ?>
-    <section id="text-block">    
-        <div class="container">
-            <?= $pageInfo['full_description']; ?>
-        </div>
-    </section>
-<?php endif; ?>
-<?= \app\widgets\other\Advantage::widget(); ?>
-<?= !$siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
-<?= \app\widgets\lists\OtherModels::widget(['parent' => $pageInfo['parent'], 'modelId' => $pageInfo['id'], 'brand' => $brand]); ?>
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -80,3 +67,16 @@ $siteConfig = app\components\CController::getSiteConfig();
     </section>
 <noindex>
 <?php endif; ?>
+<?= \app\widgets\lists\Neispravnost::widget(); ?>
+<?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true, 'prefix' => ' ' . $brand['title'] . ' ' . $pageInfo['title']]); ?>
+<?= $siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
+<?php if (!empty($pageInfo['full_description'])): ?>
+    <section id="text-block">    
+        <div class="container">
+            <?= $pageInfo['full_description']; ?>
+        </div>
+    </section>
+<?php endif; ?>
+<?= \app\widgets\other\Advantage::widget(); ?>
+<?= !$siteConfig['mono'] ? \app\widgets\lists\ModelSpecs::widget(['modelId' => $pageInfo['id']]) : ''; ?>
+<?= \app\widgets\lists\OtherModels::widget(['parent' => $pageInfo['parent'], 'modelId' => $pageInfo['id'], 'brand' => $brand]); ?>

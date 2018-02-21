@@ -28,7 +28,6 @@ $breadcrumbs = [
     </div>
     <div class="clear"></div>    
 </section>
-<?= \app\widgets\lists\Price::widget(['half' => true]); ?>
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -45,6 +44,7 @@ $breadcrumbs = [
     </section>
 <noindex>
 <?php endif; ?>
+<?= \app\widgets\lists\Price::widget(['half' => true]); ?>
 <?php if (!$siteConfig['mono']): ?>
     <section id="ask">
         <div class="container">
