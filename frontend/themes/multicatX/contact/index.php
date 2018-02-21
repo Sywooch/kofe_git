@@ -4,6 +4,7 @@ $breadcrumbs = [
 ];
 $this->title = $pageInfo['meta_title'];
 $siteConfig = app\components\CController::getSiteConfig();
+$assets = '/' . Yii::getAlias('@web');
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
