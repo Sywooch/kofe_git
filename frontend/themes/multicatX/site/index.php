@@ -236,7 +236,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
     <div id="content" style="background-color: #fff;">
         <div class="inner_container">
             <div id="content" class="my-text"><br>           
-                <?= $page['full_description']; ?>       
+                <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['full_description']); ?>       
             </div>
         </div>
     </div>
