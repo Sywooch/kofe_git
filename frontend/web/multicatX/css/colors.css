@@ -639,7 +639,7 @@
 }
 .h2 {
     font-size: 40px;
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     color: #3b3b3b;
     line-height: 64px;
     margin-bottom: 20px;
