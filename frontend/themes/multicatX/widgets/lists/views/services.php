@@ -22,7 +22,7 @@
                                 <?php endif; ?>
                             </div>
                             <div class="rumiservice_column_2"><?= $service['price']; ?></div>
-                            <div class="rumiservice_column_3">от 1,5 час.</div>
+                            <div class="rumiservice_column_3"><?= $service['time']; ?></div>
                             <div class="rumiservice_column_4"><span class="has_problem mini-form"><span class="colortexthover">Заказать</span></span></div>
                         </div>
                         <?php if ($key > 4): ?></div><?php endif; ?>
