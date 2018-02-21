@@ -14,11 +14,11 @@ $assets = '/' . Yii::getAlias('@web');
             <a href="#">Контакты</a>
         </div>
     </div>
-    <div class="inner_container">
-        <div id="content" class="my-text">
-            <h1 class="colortext"><?= $pageInfo['meta_h1']; ?></h1>
-            <?= $pageInfo['description']; ?>
+    <div class="main_container grey_container">
+        <div class="inner_container">
+          <h1 class="contacts_h1"><?= $pageInfo['meta_h1']; ?></h1>
         </div>
+        <?= $pageInfo['description']; ?>
     </div>
     <div class="main_container kakrabotaem_container colorbg">
         <div id="rumiservice13" class="inner_container" style="padding: 0px;">
