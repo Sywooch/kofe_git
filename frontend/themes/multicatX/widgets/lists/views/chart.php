@@ -9,7 +9,7 @@ $assets = '/' . Yii::getAlias('@web');
         </div>
         <div class="rumiservice3_buttons">
             <div class="rumiservice3_button_container">
-                <div class="rumiservice3_button colortexthover rumiservice3_button_active" button_id="1" href="smartfonyi/index.html">
+                <div class="rumiservice3_button colortexthover rumiservice3_button_active" button_id="1" href="#">
                     Ремонт смартфонов       
                 </div>
                 <a href="#" style="display:block;">
@@ -19,7 +19,7 @@ $assets = '/' . Yii::getAlias('@web');
                 </a>
             </div>
             <div class="rumiservice3_button_container">
-                <div class="rumiservice3_button colortexthover " button_id="2" href="planshetyi/index.html">
+                <div class="rumiservice3_button colortexthover " button_id="2" href="#">
                     Планшеты       
                 </div>
                 <a href="#" style="display:none;width: 278px;left:-30px;">
@@ -29,7 +29,7 @@ $assets = '/' . Yii::getAlias('@web');
                 </a>
             </div>
             <div class="rumiservice3_button_container">
-                <div class="rumiservice3_button colortexthover " button_id="3" href="gadjetyi/index.html">
+                <div class="rumiservice3_button colortexthover " button_id="3" href="#">
                     Гаджеты        
                 </div>
                 <a href="#" style="display:none;">

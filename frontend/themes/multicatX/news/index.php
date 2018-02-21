@@ -2,7 +2,7 @@
 $breadcrumbs = [
     $model['title'],
 ];
-$this->title = $model['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $model['meta_title']);
 $assets = Yii::getAlias('@web');
 ?>
 <div class="clear"></div>

@@ -172,9 +172,12 @@ $(document).ready(function () {
             if (end_loading == 0) {
                 end_loading = 1;
                 $(function () {
-                    $('#chart1').highcharts(chartOptions[1]);
-                    $('#chart2').highcharts(chartOptions[2]);
-                    $('#chart3').highcharts(chartOptions[3]);
+                    if ($('#chart1').length > 0)
+                        $('#chart1').highcharts(chartOptions[1]);
+                    if ($('#chart3').length > 0)
+                        $('#chart2').highcharts(chartOptions[2]);
+                    if ($('#chart3').length > 0)
+                        $('#chart3').highcharts(chartOptions[3]);
                 });
             }
         }
