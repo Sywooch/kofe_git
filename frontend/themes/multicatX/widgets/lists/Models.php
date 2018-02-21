@@ -8,6 +8,8 @@ use app\components\CController;
 class Models extends Widget {
 
     public $models;
+    public $view = 'models';
+    public $h2 = '';
 
     public function run() {
         $searches = [];
@@ -16,7 +18,7 @@ class Models extends Widget {
                 'value' => CController::$monoBrand['title'] . ' ' . $row['title'], 'url' => $row['url']
             );           
         }
-        return $this->render('models', ['rows' => $this->models, 'searches' => $searches]);
+        return $this->render($this->view, ['rows' => $this->models, 'searches' => $searches, 'h2' => $this->h2]);
     }
 
 }
