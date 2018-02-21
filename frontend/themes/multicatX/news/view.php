@@ -2,7 +2,7 @@
 $breadcrumbs = [
     $model['title'],
 ];
-$this->title = $model['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $model['meta_title']);
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
