@@ -28,6 +28,8 @@ else {
     </div>
     <div class="clear"></div>
 </section> 
+</div>
+
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -44,7 +46,6 @@ else {
     </section>
 <noindex>
 <?php endif; ?>
-</div>
 <?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
 <?= \app\widgets\lists\Neispravnost::widget(['metrika' => 'call-me-home']); ?>
 <?= $siteConfig['mono'] ? \app\widgets\lists\Models::widget(['mono' => true, 'parent' => $siteConfig['brand-id']]) : ''; ?>
