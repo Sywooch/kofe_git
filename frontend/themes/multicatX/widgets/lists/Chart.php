@@ -205,6 +205,7 @@ class Chart extends Widget {
     ];
 
     public function run() {
+        return;
         $charts = [];
         if (!isset($this->models[CController::$monoBrand['id']]))
             return;
