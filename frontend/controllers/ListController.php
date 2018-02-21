@@ -125,7 +125,10 @@ class ListController extends CController {
                 $model = \Yii::$app->db->createCommand($sql)->bindValues(['parent' => $page['id']])->queryOne();
                 $modelImage = $model['image'];
             }
-            $breadcrumbs['/' . $page['url']] = CController::$category['full_title'] . ' ' . $page['title'];
+            if(isset($siteConfig['foreign_category'])) {
+                $breadcrumbs['/' . CController::$category['url']] = CController::$category['title'];
+            }
+            $breadcrumbs['/' . $page['url']] = (isset($siteConfig['foreign_category']) ? CController::$monoBrand['title'] : '') . CController::$category['full_title'] . ' ' . $page['title'];
             if ($page['type'] == 'brand' || $page['type'] == 'model' || $page['type'] == 'category') {
                 if ($page['type'] == 'model' && !isset($siteConfig['foreign_category'])) {
                     $brand = (new \yii\db\Query())
