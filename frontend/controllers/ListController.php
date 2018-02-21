@@ -575,6 +575,9 @@ class ListController extends CController {
         } elseif (in_array($siteConfig['id'], [124, 125])) {
             $title = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' с выездом мастера в ' . Yii::$app->session['region']['titleRod'];
             $metaDesc = 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' с возможностью бесплатной экспресс-диагностики и  доставки в мастерскую. Фиксированные низкие цены и только качественные комплектующие.';
+        } elseif(isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
+            $title = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' 🍵 Ремонт и обслуживание кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' 👍';
+            $metaDesc = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' - устраним любую поломку за короткие сроки с гарантией по лучшей цене! Доставка 🚗 Выезд мастера';
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
