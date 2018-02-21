@@ -18,18 +18,6 @@ $this->title = $pageInfo['meta_title'];
     </div>
     <div class="clear"></div>
 </section>
-<?= \app\widgets\lists\Price::widget(); ?>
-<?php if (!$siteConfig['mono']): ?>
-    <section id="ask">
-        <div class="container">
-            <div>
-                <h3>Закажите бесплатную консультацию.</h3>
-                <p>Мы свяжемся с Вами в течение 5 минут.</p>
-                <?= \app\widgets\forms\CallBack::widget(); ?>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -45,4 +33,16 @@ $this->title = $pageInfo['meta_title'];
         </div>
     </section>
 <noindex>
+<?php endif; ?>
+<?= \app\widgets\lists\Price::widget(); ?>
+<?php if (!$siteConfig['mono']): ?>
+    <section id="ask">
+        <div class="container">
+            <div>
+                <h3>Закажите бесплатную консультацию.</h3>
+                <p>Мы свяжемся с Вами в течение 5 минут.</p>
+                <?= \app\widgets\forms\CallBack::widget(); ?>
+            </div>
+        </div>
+    </section>
 <?php endif; ?>

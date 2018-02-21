@@ -25,7 +25,6 @@ $breadcrumbs = [
     <div class="clear"></div>
     <span class="more"><div>Заказать ремонт</div></span>
 </section>
-<?= \app\widgets\lists\Models::widget(['parent' => $siteConfig['brand-id'], 'brand' => \app\components\CController::$monoBrand['title']]); ?>
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -42,3 +41,4 @@ $breadcrumbs = [
     </section>
 <noindex>
 <?php endif; ?>
+<?= \app\widgets\lists\Models::widget(['parent' => $siteConfig['brand-id'], 'brand' => \app\components\CController::$monoBrand['title']]); ?>

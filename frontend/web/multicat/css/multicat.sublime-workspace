@@ -1,0 +1,1111 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"f",
+				"@f+\t@font-face {\n\tfont-family: '${1:FontName}';\n\tsrc: url('${2:FileName}.eot');\n\tsrc: url('${2:FileName}.eot?#iefix') format('embedded-opentype'),\n\t\t url('${2:FileName}.woff') format('woff'),\n\t\t url('${2:FileName}.ttf') format('truetype'),\n\t\t url('${2:FileName}.svg#${1:FontName}') format('svg');\n\tfont-style: ${3:normal};\n\tfont-weight: ${4:normal};\n}"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bac-c",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"text-de",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"s",
+				"sprite/"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"mart",
+				"margin-top"
+			],
+			[
+				"fonts",
+				"font-size"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"texd",
+				"text-decoration"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"bas",
+				"background-size"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"ted",
+				"text-decoration-style"
+			],
+			[
+				"ban",
+				"background-repeat"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backgc",
+				"background-color"
+			],
+			[
+				"fle",
+				"flex"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"l",
+				"list.svg"
+			],
+			[
+				"ico_pin_sm",
+				"ico_pin_small6170.svg"
+			],
+			[
+				"ico_pin_sma",
+				"ico_pin_small_valid6170.svg"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"MARG",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"inn",
+				"inline-block"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"text-d",
+				"text-decoration"
+			],
+			[
+				"mo",
+				"margin-top"
+			],
+			[
+				"anima",
+				"animation-name"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"sit",
+				"siteConfig"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"texta",
+				"text-align"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"animation-d",
+				"animation-direction"
+			],
+			[
+				"animat",
+				"animation-delay"
+			],
+			[
+				"ima",
+				"images"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"mag",
+				"margin-left"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"grid-te",
+				"grid-template-areas"
+			],
+			[
+				"grid",
+				"grid-row"
+			],
+			[
+				"gri",
+				"grid-column"
+			],
+			[
+				"gr",
+				"grid-column"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"bacg",
+				"background-image"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"sv",
+				"svg-color.css"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"border-t",
+				"border-top"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"sa",
+				"bg-sale.jpg\tw:1920 h:667"
+			],
+			[
+				"pr",
+				"promo-bg.jpg\tw:550 h:344"
+			],
+			[
+				"p",
+				"promo-bg.png\tw:323 h:453"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"vide",
+				"video-play.png\tw:131 h:131"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"bo",
+				"boxs.png\tw:445 h:216"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"w",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.css",
+			"settings":
+			{
+				"buffer_size": 97856,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "font-awesome.css",
+			"settings":
+			{
+				"buffer_size": 37414,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 319.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 194.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicat",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicat",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicat/css"
+	],
+	"file_history":
+	[
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicatX/css/colors.css",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/services.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/site/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/contact/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicatX/css/stylesheet.css",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/service.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/list/category.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/widgets/lists/views/popularServices.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/review/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicatX/images/star-active.svg",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/model.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicatX/js/common.js",
+		"/C/OpenServer/domains/kofe_git/frontend/views/news/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/brands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/zone/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/brand.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/list/all-models.php",
+		"/C/OpenServer/domains/kofe_git/frontend/widgets/lists/views/popular-brands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/category/service.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/contact/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/news/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/site/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/page/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/page/sitemap.php",
+		"/C/OpenServer/domains/kofe_git/frontend/widgets/lists/PopularBrands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/list/model.php",
+		"/C/Users/Master/Desktop/table.html",
+		"/C/Users/Master/Desktop/agentlar_atchet_bot.php",
+		"/C/Users/Master/AppData/Local/Temp/scp00004/httpdocs/yaks/frontend/web/agentlar_atchet_bot.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/news/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/news/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/frontend/views/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/multicatX/js/dondo_position.js",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/widgets/forms/views/footerForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/lapropsimages/bgs.svg",
+		"/C/OpenServer/domains/kofe_git/common/config/main-local.php",
+		"/C/OpenServer/domains/kofe_git/common/config/params.php",
+		"/C/OpenServer/domains/kofe_git/frontend/widgets/lists/views/price.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/multicatX/list/service.php",
+		"/C/OpenServer/domains/kofe_git/frontend/assets/AppAsset.php",
+		"/C/OpenServer/domains/kofe_git/frontend/components/TextTemplateGenerator.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/spb-kofecss/main.css",
+		"/C/Users/Master/AppData/Local/Temp/scp21054/kofe_git/frontend/web/css/main.css",
+		"/C/Users/Master/AppData/Local/Temp/scp31990/kofe_git/frontend/views/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/common/config/params-local.php",
+		"/C/OpenServer/domains/kofe_git/frontend/config/params-local.php",
+		"/C/OpenServer/domains/kofe_git/frontend/config/main-local.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/widgets/lists/views/models.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/list/brand.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/kofe03/js/common.js",
+		"/C/OpenServer/domains/kofe_git/frontend/web/kofe03/css/styles.css",
+		"/C/OpenServer/domains/kofe_git/frontend/web/coffeHelp/css/main.css",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/layouts/main.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/widgets/lists/Models.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/sideForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/footerForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/headForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/mainPageForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/sidebarForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/popupForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/widgets/forms/views/sidebarForm2.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/list/brand.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/coffeHelp/css/53.css",
+		"/C/OpenServer/domains/kofe_git/frontend/web/coffeHelp/css/51.css",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/list/model.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/professionals/js/app.min.js",
+		"/C/OpenServer/domains/kofe_git/frontend/web/professionals/css/main.min.css",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/menu/views/mainMenu.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/page/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/service.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/contact/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/zone/view.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/forms/views/mainPageForm.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/lastReviews.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/popular-services.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/other/views/advantage.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/model.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/brand.php",
+		"/C/Users/Master/Desktop/p.html",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/faults.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/models.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/site/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/faults.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/brands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/servicesTable.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/list/services.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/forms/views/today.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/Models.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/forms/views/countdown.php",
+		"/C/Users/Master/AppData/Local/Temp/scp01952/site1/.htaccess",
+		"/C/Users/Master/AppData/Local/Temp/scp59411/site1/wp-admin/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/other/views/masters.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/PopularBrands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/professionals/widgets/lists/views/popular-brands.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/professionals/js/yii.js",
+		"/C/OpenServer/domains/kofe_git/frontend/web/professionals/js/configurator.js",
+		"/C/OpenServer/domains/kofeprofi.lc/js/configurator.js",
+		"/C/Users/Master/Desktop/Water-Waves-In-jQuery-Canvas/js/jquery.waterwave.js",
+		"/C/OpenServer/domains/kofe_git/frontend/web/coffeHelp/js/main.js",
+		"/C/Users/Master/Desktop/Water-Waves-In-jQuery-Canvas/index.html",
+		"/C/OpenServer/domains/kofeprofi.lc/js/app.min.js",
+		"/C/OpenServer/domains/kofe_git/frontend/web/kofe03/css/52.css",
+		"/C/Users/Master/Desktop/CreativeLinkEffects/index.html",
+		"/C/Users/Master/Desktop/CreativeLinkEffects/css/demo.css",
+		"/C/Users/Master/Desktop/CreativeLinkEffects/css/component.css",
+		"/C/OpenServer/domains/kokeprofi.lc/brend.html",
+		"/C/OpenServer/domains/kokeprofi.lc/brend-in.html",
+		"/C/OpenServer/domains/kokeprofi.lc/about.html",
+		"/C/OpenServer/domains/kokeprofi.lc/uslugi.html",
+		"/C/OpenServer/domains/kokeprofi.lc/uslugi-in.html",
+		"/C/OpenServer/domains/kokeprofi.lc/neispravnost.html",
+		"/C/OpenServer/domains/kokeprofi.lc/neispravnost-in.html",
+		"/C/OpenServer/domains/kokeprofi.lc/index.html",
+		"/C/OpenServer/domains/kokeprofi.lc/css/flipclock.min.css",
+		"/C/OpenServer/domains/kokeprofi.lc/css/main.min.css",
+		"/C/OpenServer/domains/kokeprofi.lc/css/slick-slider.min.css",
+		"/C/Users/Master/Desktop/Новая папка/index.html",
+		"/C/OpenServer/domains/kokeprofi.lc/js/app.min.js",
+		"/C/Users/Master/Downloads/kokeprofi.lc/Other/static/project_core/build/css/main.min.css",
+		"/C/OpenServer/domains/kokeprofi/index.html",
+		"/C/Users/Master/Desktop/index.html",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/coffeHelp/list/service.php",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/contact/index.php",
+		"/C/OpenServer/domains/kofe_git/frontend/web/coffeHelp/images/53/logo2.svg",
+		"/C/OpenServer/domains/kofe_git/frontend/themes/kofe03/list/services.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 151.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http",
+			"#rumiservice12_right",
+			".rumiservice12_right_input_2",
+			"http://service-xiaomi.com/catalog/view/theme/default/image/",
+			"http://service-xiaomi.com",
+			"http",
+			"rumiservice4_item_right_header",
+			"Популярные услуги:",
+			"неиправностям",
+			"неи",
+			"#header_third .links a.yeshsho",
+			".product-category-left-info",
+			".form",
+			",ащкь",
+			"class=\"form\"",
+			"class=\"inner_container\"",
+			"rumiservice12_left_header",
+			"show_all",
+			"content__container__list",
+			"id=\"rumiservice4_header\"",
+			"#header_third .links a",
+			"nivona-service-center",
+			"nivona-center",
+			"rancilio-center",
+			"multicatXspb",
+			"nivona",
+			"la-cimbali",
+			"brands",
+			"<section id=\"brands\">",
+			"Поддерживаем  ",
+			"class=\"container\"",
+			"id=\"brands\"",
+			"class=\"spb-kofecontainer\"",
+			"id=\"brands\"",
+			"brend",
+			"http://bosch-support.ru/",
+			".header__about .hero",
+			"class=\"hero\"",
+			".navbar-text a",
+			".about",
+			"class=\"about\"",
+			"hide",
+			"id=\"main-page-form\"",
+			".table>tbody>tr td",
+			".table>tbody>tr",
+			"media/icon-phone-2.png",
+			".collapse",
+			"collapse",
+			"max-width: 700px",
+			"class=\"navbar-toggle collapsed\"",
+			"navbar-toggle",
+			".navbar-toggle",
+			"#collapse-menu",
+			".you-get ul li",
+			".review_claim p",
+			".slick-slide",
+			".slick-initialized .slick-slide",
+			"class=\"reviews\"",
+			".h2",
+			".h2, h2",
+			"col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 hidden-sm",
+			"col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 hidden-md",
+			"display:none!important",
+			"p.form-policy",
+			".title.title__1.title__home",
+			".solution",
+			".table>tbody>tr td a",
+			".title.title__1.title__home",
+			".table>tbody>tr td a",
+			"class=\"contacts clearfix\"",
+			"class=\"reviews\"",
+			"hidden-sm",
+			"col-lg-8 col-lg-offset-5 col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-4 hidden-xs",
+			".table>tbody>tr",
+			"col-lg-10 col-md-11 col-sm-14",
+			"href=\"/ne-nalivaet-kofe\"",
+			"class=\"reviews\"",
+			"class=\"popular-services\"",
+			"class=\"col-sm-12\"",
+			"<iframe",
+			"ifream",
+			"ifeam",
+			"class=\"about\"",
+			".header",
+			".cl-effect-14 a",
+			"col-lg-4 col-md-5 col-sm-4",
+			"col-lg-8 col-lg-offset-5 col-md-7 col-md-offset-7 col-sm-9 col-sm-offset-4 hidden-xs",
+			".navbar-text",
+			".navbar-right",
+			"class=\"navbar-header\"",
+			".solutions",
+			".header",
+			"class=\"navbar-brand\"",
+			".header__service",
+			".header__service .hero_info:before",
+			"model-img",
+			"data-timeout=\"2800\"",
+			"Ремонт для нас - как кислород для Вас!\n\nМастер Олег\nУ вас страсть к кофе, а у нас к ремонт",
+			".table>tbody>tr.ikkitasi td",
+			"/policy",
+			"/neispravnost",
+			"padding:",
+			".you-get__dark ul li",
+			"YouGet::widget()",
+			"<?= professionals\\widgets\\other\\YouGet::widget(); ?>  ",
+			".you-get",
+			".solutions",
+			".title.title__2",
+			".solution",
+			"Популярные услуги",
+			"Популярные неисправности",
+			"Цены по прочим услугам",
+			".table>tbody>tr td",
+			"#ddd",
+			".table>tbody>tr",
+			".table>tbody>tr td:last-child",
+			".solution",
+			"#F2594B",
+			".modal-body h3",
+			"#kmacb .kmacb-circle",
+			"kmacb-form",
+			"kmacb-form ",
+			"close",
+			"fa-close",
+			".ps",
+			".modal-body",
+			".modal-inset",
+			".modal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../images/",
+			"неисправностям",
+			"неис",
+			"multicatX",
+			"max-width: 767px",
+			" ",
+			"Услуги которые мы предоставляем: ",
+			"Неисправности которые мы устраняем:",
+			"Прочие услуги предоставляемые СЦ:",
+			"#e66429",
+			"<a href=\"/conf-inform\">условиями</a>",
+			"../",
+			".form__inline button[type=submit]",
+			".form button[type=submit]",
+			"/js/",
+			"/css/",
+			"/images/",
+			"/js/",
+			"/css/",
+			"/images/",
+			"/js/",
+			"/",
+			"http://kofeprofi.ru/media/",
+			"http://kofeprofi.ru/static/",
+			"(max-width: 666px)",
+			"(max-width: 667px)",
+			"min-width:200px",
+			"5px",
+			"promac",
+			"bork",
+			"nuova-simonelli",
+			"rancilio",
+			"miele",
+			"faema",
+			"franke",
+			"schaerer",
+			"la-cimbali",
+			"wmf",
+			"gaggia",
+			"nivona",
+			"melitta",
+			"krups",
+			"jura",
+			"philips",
+			"saeco",
+			"delonghi",
+			"siemens",
+			"2176a1",
+			"422046",
+			"<?= $siteConfig['id']; ?>/",
+			"nuova-simonelli",
+			"https://www.youtube.com/embed/ee0h9BG-T5g",
+			"id=\"gotop\" class=\"colorbg colorbghover\"",
+			"<div class=\"rumiservice14_block_text_separator colorbg\"></div>",
+			"http://service-xiaomi.com/catalog",
+			" ",
+			"has_problem colortexthover",
+			"background-color",
+			"Roboto Condensed",
+			"http://service-xiaomi.com/catalog/view/theme/default/",
+			"Alegreya Sans",
+			"",
+			"dfa81b",
+			"916307",
+			"dfa81b",
+			"09ca3f",
+			"7b5336",
+			"ebb21c",
+			"3f2817",
+			"301d0f",
+			"000",
+			"img/",
+			"images/",
+			"Бренды",
+			"Услуги",
+			"info@kofe03.ru",
+			"<svg class=\"menu__action-img\" xmlns=\"http://www.w3.org/2000/svg\" width=\"33\" height=\"28\" viewBox=\"0 0 20.41 31.906\">\n\t\t\t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" fill-rule=\"evenodd\" d=\"M22 19c-3,-2 -5,3 -6,2 -3,-2 -7,-4 -8,-8 -1,-1 4,-3 2,-6 -6,-6 -5,-5 -9,-1 -5,4 8,22 19,23 3,0 3,-1 5,-3 3,-2 0,-4 -3,-7zm2 -14c-2,-3 -5,-5 -9,-5l0 2c6,1 11,6 12,12l2 0c-1,-4 -2,-7 -5,-9zm-3 9l2 0c-1,-4 -4,-8 -8,-8l-1 2c4,0 6,3 7,6z\"/>\n \t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-img\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20.41\" height=\"31.906\" viewBox=\"0 0 20.41 31.906\">\n\t\t\t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" fill-rule=\"evenodd\" d=\"M22 19c-3,-2 -5,3 -6,2 -3,-2 -7,-4 -8,-8 -1,-1 4,-3 2,-6 -6,-6 -5,-5 -9,-1 -5,4 8,22 19,23 3,0 3,-1 5,-3 3,-2 0,-4 -3,-7zm2 -14c-2,-3 -5,-5 -9,-5l0 2c6,1 11,6 12,12l2 0c-1,-4 -2,-7 -5,-9zm-3 9l2 0c-1,-4 -4,-8 -8,-8l-1 2c4,0 6,3 7,6z\"/>\n \t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-right\" xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"12\" viewBox=\"0 0 15 12\">\n\t\t\t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" d=\"M1393.6,990.423a1.891,1.891,0,0,1,0-1.153,2.247,2.247,0,0,1,.28-0.461,3.006,3.006,0,0,1,.45-0.438,1.787,1.787,0,0,1,.46-0.277,1.694,1.694,0,0,1,.61-0.093h0.11a1.492,1.492,0,0,1,1.01.508l1.04,0.992q1.545,1.488,3,3L1402,994l-1.44,1.5q-1.455,1.51-3,3l-0.97.935a1.57,1.57,0,0,1-2.1.288,2.949,2.949,0,0,1-.7-0.692,1.63,1.63,0,0,1-.28-0.946,1.731,1.731,0,0,1,.55-1.142l1-1.1h-6.09a1.839,1.839,0,0,1-.9-0.185,2.771,2.771,0,0,1-.51-0.369,2.828,2.828,0,0,1-.37-0.507,1.715,1.715,0,0,1,0-1.569,2.005,2.005,0,0,1,.88-0.877,1.852,1.852,0,0,1,.9-0.184h6.18l-0.61-.588a6.114,6.114,0,0,1-.61-0.635,2.077,2.077,0,0,1-.33-0.508\" transform=\"translate(-1387 -988)\"></path>\n\t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-img\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20.41\" height=\"31.906\" viewBox=\"0 0 20.41 31.906\">\n        \t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" fill-rule=\"evenodd\" d=\"M1295.51,978.1c-5.94,0-10.21,4.361-10.21,10.389,0,3.506,1.59,5.772,2.97,7.739,1.08,1.539,1.99,2.864,1.99,4.448,0,2.09,3.49,2.99,5.25,2.99s5.26-.9,5.26-2.99c0-1.626.95-2.952,1.98-4.448,1.38-1.967,2.98-4.233,2.98-7.739A9.971,9.971,0,0,0,1295.51,978.1Zm6.21,17.4c-1.17,1.625-2.24,3.164-2.24,5.175,0,0.85-2.29,1.71-3.97,1.71s-3.96-.86-3.96-1.71c0-2.011-1.08-3.55-2.24-5.175-1.34-1.924-2.76-3.891-2.76-7.012a8.728,8.728,0,0,1,8.92-9.106,8.876,8.876,0,0,1,6.46,2.608l-0.38,1.881-1.56-.727a0.607,0.607,0,0,0-.6.043,0.655,0.655,0,0,0-.3.513l-0.13,2.694-1.77.128a0.734,0.734,0,0,0-.56.385l-1.63,3.42a0.645,0.645,0,0,0,.3.855,0.7,0.7,0,0,0,.3.043,0.645,0.645,0,0,0,.6-0.385l1.47-3.078,1.94-.128a0.615,0.615,0,0,0,.6-0.6l0.13-2.266,1.42,0.641a0.64,0.64,0,0,0,.56,0,0.717,0.717,0,0,0,.35-0.427l0.34-1.625a9.644,9.644,0,0,1,1.42,5.173C1304.43,991.614,1303.05,993.581,1301.72,995.505Zm-10.86,9.025a8.938,8.938,0,0,0,9.35,0,0.631,0.631,0,0,0,.13-0.9,0.641,0.641,0,0,0-.91-0.13,6.355,6.355,0,0,1-3.87,1.07,6.546,6.546,0,0,1-3.93-1.07,0.668,0.668,0,0,0-.9.13A0.593,0.593,0,0,0,1290.86,1004.53Zm8.57,1.24a6.689,6.689,0,0,1-3.87.94,6.3,6.3,0,0,1-3.93-.99,0.678,0.678,0,0,0-.9.13,0.656,0.656,0,0,0,.13.9,6.176,6.176,0,0,0,2.11.94,2.6,2.6,0,0,0,5.17,0,5.682,5.682,0,0,0,2.07-.94A0.627,0.627,0,1,0,1299.43,1005.77Zm-3.92,2.99a1.3,1.3,0,0,1-1.2-.81c0.38,0.04.82,0.04,1.2,0.04s0.78,0,1.21-.04A1.276,1.276,0,0,1,1295.51,1008.76Zm-0.47-27.663a0.606,0.606,0,0,0-.73-0.513,7.6,7.6,0,0,0-4.92,3.036,0.658,0.658,0,0,0,.09.9,0.7,0.7,0,0,0,.39.129,0.652,0.652,0,0,0,.51-0.257,6.553,6.553,0,0,1,4.14-2.565A0.659,0.659,0,0,0,1295.04,981.1Z\" transform=\"translate(-1285.31 -978.094)\"/>\n        \t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-right\" xmlns=\"http://www.w3.org/2000/svg\" width=\"33\" height=\"28\" viewBox=\"0 0 15 12\">\n\t\t\t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" d=\"M22 19c-3,-2 -5,3 -6,2 -3,-2 -7,-4 -8,-8 -1,-1 4,-3 2,-6 -6,-6 -5,-5 -9,-1 -5,4 8,22 19,23 3,0 3,-1 5,-3 3,-2 0,-4 -3,-7zm2 -14c-2,-3 -5,-5 -9,-5l0 2c6,1 11,6 12,12l2 0c-1,-4 -2,-7 -5,-9zm-3 9l2 0c-1,-4 -4,-8 -8,-8l-1 2c4,0 6,3 7,6z\"/>\n \t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-img\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20.41\" height=\"31.906\" viewBox=\"0 0 20.41 31.906\">\n        \t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" fill-rule=\"evenodd\" d=\"M22 19c-1,-1 -2,-1 -3,0 -1,1 -1,2 -2,2 0,1 -1,1 -1,0 0,0 -1,0 -1,0 -2,-2 -4,-3 -6,-5 0,-1 -1,-2 -1,-3 -1,0 -1,-1 0,-1 0,-1 1,-1 2,-2 1,-1 1,-2 0,-3 -1,-1 -1,-1 -2,-2 0,0 -1,-1 -2,-2 -1,0 -2,0 -3,0 0,1 -1,2 -2,3 -1,0 -1,1 -1,2 0,1 0,3 1,4 1,3 2,6 4,8 3,3 6,6 10,7 2,1 3,2 5,2 2,0 3,0 4,-1 0,-1 1,-2 1,-2 1,-1 1,-2 0,-3 -1,-2 -2,-3 -3,-4zm2 -14c-2,-3 -5,-4 -9,-5l0 2c3,1 6,2 8,4 2,2 3,5 4,8l2 0c-1,-4 -2,-7 -5,-9zm-3 9l2 0c0,-2 -1,-4 -3,-5 -1,-2 -3,-3 -5,-3l-1 2c2,0 4,1 5,2 1,1 2,3 2,4z\"/>\n \t\t\t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-right\" xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"12\" viewBox=\"0 0 15 12\">\n        \t\t\t\t\t\t\t<path class=\"menu__action-ico_path\"\" d=\"M22 19c-1,-1 -2,-1 -3,0 -1,1 -1,2 -2,2 0,1 -1,1 -1,0 0,0 -1,0 -1,0 -2,-2 -4,-3 -6,-5 0,-1 -1,-2 -1,-3 -1,0 -1,-1 0,-1 0,-1 1,-1 2,-2 1,-1 1,-2 0,-3 -1,-1 -1,-1 -2,-2 0,0 -1,-1 -2,-2 -1,0 -2,0 -3,0 0,1 -1,2 -2,3 -1,0 -1,1 -1,2 0,1 0,3 1,4 1,3 2,6 4,8 3,3 6,6 10,7 2,1 3,2 5,2 2,0 3,0 4,-1 0,-1 1,-2 1,-2 1,-1 1,-2 0,-3 -1,-2 -2,-3 -3,-4zm2 -14c-2,-3 -5,-4 -9,-5l0 2c3,1 6,2 8,4 2,2 3,5 4,8l2 0c-1,-4 -2,-7 -5,-9zm-3 9l2 0c0,-2 -1,-4 -3,-5 -1,-2 -3,-3 -5,-3l-1 2c2,0 4,1 5,2 1,1 2,3 2,4z\"/>\n \t\t\t\t\t\t\t\t\t\t</svg>",
+			"<svg class=\"menu__action-img\" xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"35\" viewBox=\"0 0 29 32.56\">\n\t\t\t\t\t\t\t\t\t<path class=\"menu__action-ico_path\" fill-rule=\"evenodd\" d=\"M14 19c3,0 8,-3 8,-9 0,-1 0,-2 0,-3 0,-2 0,-3 -1,-4 -1,-2 -3,-3 -7,-3 -3,0 -5,1 -6,3 -1,1 -1,2 -1,4 0,1 0,2 0,3 0,6 5,9 7,9zm10 14l0 0 -3 0c0,0 0,-1 0,-1 0,-1 0,-2 0,-2l3 0c0,0 0,0 0,0 0,0 0,0 0,0 0,-1 -2,-2 -3,-2 -1,0 -1,1 -2,1 0,1 -1,1 -1,1l-7 0c-1,-1 -2,-2 -3,-2 -1,0 -3,1 -3,2 0,0 0,0 0,0 0,0 0,0 0,0l0 0 3 0c0,0 0,1 0,2 0,0 0,1 0,1l-3 0c0,0 0,0 0,0 0,0 0,0 0,0 0,1 2,2 3,2l0 0c1,0 1,0 2,-1 0,0 1,-1 1,-1l7 0c1,1 2,2 3,2 0,0 0,0 0,0 1,0 3,-1 3,-2 0,0 0,0 0,0 0,0 0,0 0,0zm5 -4c0,-3 -1,-6 -3,-7 -1,-1 -5,-3 -7,-4l0 0c0,0 0,0 0,0 -1,1 -2,1 -3,2 0,0 0,0 0,0l-2 3 -1 -3c0,0 0,0 0,0 -1,-1 -2,-1 -3,-2 0,0 0,0 0,0 -2,1 -6,3 -7,4 -2,1 -3,6 -3,7 0,0 0,0 0,0 0,0 1,2 4,3 0,0 0,0 1,0 -1,0 -1,-1 -1,-1 -1,-1 -1,-1 0,-2 0,-1 2,-2 4,-2 1,0 3,1 4,2l5 0c1,0 1,0 1,-1 1,0 2,-1 3,-1l0 0 0 0c2,0 4,1 4,2 1,1 1,1 0,2 0,0 0,0 -1,1 1,0 1,0 1,0 3,-1 4,-3 4,-3 0,0 0,0 0,0zm-12 -26c0,1 0,1 -1,2 -1,0 -2,0 -3,0 -1,-1 -1,-1 -1,-2 2,0 3,0 5,0zm-9 5c0,0 0,1 1,1 1,0 2,-2 5,-2 4,0 5,2 6,2 1,0 1,-1 1,-1 0,1 0,1 0,2 0,3 -1,5 -2,6 -2,1 -4,2 -5,2 0,0 -2,-1 -4,-2 -1,-1 -2,-3 -2,-6 0,-1 0,-1 0,-2z\"/>\n \t\t\t\t\t\t\t\t</svg>",
+			"Заказать звонок",
+			"Вызвать мастера",
+			"Заботливый сервис",
+			"<li class=\"menu__tab menu__tab_cleaning\" data-menu-tab=\"cleaning\">\n\t\t\t\t<a class=\"menu__type\" href=\"../index.html\">\n\t\t\t\t\t<svg class=\"menu__ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"36.84\" height=\"26.842\" viewBox=\"0 0 36.84 26.842\">\n\t\t\t\t\t\t<path class=\"menu__ico-path\" stroke-width=\"0.22px\" fill-rule=\"evenodd\" d=\"M1690.41,923.233c-3.06.416-3.91,0.125-3.91,0.125a0.4,0.4,0,0,0-.37.042,0.283,0.283,0,0,0-.12.332c0.12,1.039-.2,1.248-0.57,1.456a2.087,2.087,0,0,0-.49.374,1.716,1.716,0,0,0-.77-0.167,3.838,3.838,0,0,0,.53-1.081,0.358,0.358,0,0,0-.25-0.457,0.344,0.344,0,0,0-.44.249c-0.57,1.954-3.18,2.911-4.44,3.368a2.985,2.985,0,0,1-.45.166,10.814,10.814,0,0,0-1.79,1.289c-1.06.832-4.32,3.409-5.05,2.91a0.467,0.467,0,0,1-.2-0.416c-0.04-.623.65-1.621,1.75-2.535a7.438,7.438,0,0,0,2.48-4.2,0.367,0.367,0,1,0-.73-0.083,6.638,6.638,0,0,1-2.24,3.741,7.164,7.164,0,0,0-1.1,1.123h-1.79c-0.16-.5-0.2-0.707-0.25-0.79a19.131,19.131,0,0,1,3.14-4.615c0.45-.374,5.82-3.118,9.12-4.74a0.039,0.039,0,0,0,.04-0.041l4.68-3.409a0.394,0.394,0,0,0,.08-0.54,0.38,0.38,0,0,0-.53-0.084l-4.64,3.409c-0.97.458-8.55,4.2-9.2,4.782a18.356,18.356,0,0,0-3.38,5.03,2.438,2.438,0,0,0,.17.956h-11.77a1.149,1.149,0,0,0-1.14.956,1.225,1.225,0,0,0,.24.915,1.152,1.152,0,0,0,.86.416h0.16l-2.77,6.111a0.417,0.417,0,0,0,.04.374,0.376,0.376,0,0,0,.33.167h15.1a0.364,0.364,0,0,0,.29-0.125,0.264,0.264,0,0,0,.08-0.291l-0.45-5.529c0.86,1.163,2.24,2.743,3.18,2.743a0.58,0.58,0,0,0,.28-0.041c1.27-.541.9-2.287,0.61-3.368a0.783,0.783,0,0,1,.09-0.041,8.783,8.783,0,0,0,2.44.457,4.107,4.107,0,0,0,1.02-.125c1.5-.5,2.85-1.081,3.09-2.162a1.834,1.834,0,0,0,1.47-.208,2.057,2.057,0,0,0,.81-0.956,1.545,1.545,0,0,0,1.14-.208,1.979,1.979,0,0,0,.73-0.831,2.47,2.47,0,0,1,1.88,1,1.763,1.763,0,0,0,1.75,1,1,1,0,0,0,.77-1,2.13,2.13,0,0,0-.9-1.954,4.745,4.745,0,0,0-2.85-1.04,1.737,1.737,0,0,0,.57-1.413,14.744,14.744,0,0,0,3.75-.208,0.41,0.41,0,0,0,.33-0.416A0.419,0.419,0,0,0,1690.41,923.233Zm-32.53,7.692a0.378,0.378,0,0,1-.29-0.125,0.356,0.356,0,0,1,.33-0.582h13.76a3,3,0,0,0-.28.665Zm9.53,6.652h-2.16l0.45-5.988h1.71v5.988Zm-4.69-5.946-1.14,5.946h-2.24l1.75-5.946h1.63Zm0.74,0h1.5l-0.45,5.946h-2.19Zm-4.56.042h1.46l-1.75,5.945h-2.4Zm9.24,5.9v-5.988h1.71l0.49,5.988h-2.2Zm5.7-3.2c-0.37.125-1.87-1.33-2.85-2.786h0.36a1.241,1.241,0,0,0,.49.833,1.138,1.138,0,0,0,.65.207,3.565,3.565,0,0,0,1.59-.54C1674.29,932.962,1674.49,934.084,1673.84,934.375Zm4.23-3.118a4.92,4.92,0,0,1-2.44-.124c0.69-.5,1.42-1.04,2.16-1.622,0.28-.208.49-0.416,0.69-0.54,0.28-.083,1.79-0.458,2.16.332C1680.76,929.8,1680.6,930.426,1678.07,931.257Zm4.4-2.286a1.016,1.016,0,0,1-1.18-.042,1.606,1.606,0,0,0-1.22-.831,15.268,15.268,0,0,0,1.58-.665,1.638,1.638,0,0,1,1.19.249,0.7,0.7,0,0,1,.2.5A1.194,1.194,0,0,1,1682.47,928.971Zm1.99-1.206a1.057,1.057,0,0,1-.69.125,1.353,1.353,0,0,0-.45-0.79,1.418,1.418,0,0,0-.57-0.291,5.866,5.866,0,0,0,.62-0.458,1.845,1.845,0,0,1,1.34-.041,0.838,0.838,0,0,1,.24.832A1.446,1.446,0,0,1,1684.46,927.765Zm4.12-.541a1.512,1.512,0,0,1,.61,1.248c-0.04.291-.17,0.332-0.21,0.332a1,1,0,0,1-.93-0.623,2.945,2.945,0,0,0-2.41-1.372,1.844,1.844,0,0,0-.08-0.458A4.319,4.319,0,0,1,1688.58,927.224Zm-17.39-6.236a2.2,2.2,0,1,0-2.16-2.2A2.146,2.146,0,0,0,1671.19,920.988Zm0-3.7a1.456,1.456,0,1,1-1.42,1.456A1.405,1.405,0,0,1,1671.19,917.288Zm-15.35,15.965a0.361,0.361,0,0,0,.25.125,0.342,0.342,0,0,0,.24-0.125,0.364,0.364,0,0,0,0-.541l-0.04-.083a5.094,5.094,0,0,1,2.69-8.481,4.884,4.884,0,0,1,2.97.416l0.81,0.665a5.347,5.347,0,0,1,.98,1.122l0.04,0.042c0.04,0.084.08,0.125,0.12,0.208a0.561,0.561,0,0,0,.29.166,0.3,0.3,0,0,0,.2-0.083,0.385,0.385,0,0,0,.08-0.54c-0.04-.042-0.08-0.125-0.12-0.167h0a6.363,6.363,0,0,0-1.1-1.288h0l-0.53-.458a5.556,5.556,0,0,1,3.99-1.663,5.741,5.741,0,0,1,4.03,1.705,0.376,0.376,0,0,0,.53,0,0.381,0.381,0,0,0,0-.541,6.335,6.335,0,0,0-4.56-1.912,6.272,6.272,0,0,0-4.6,2,5.308,5.308,0,0,0-3.21-.374,5.823,5.823,0,0,0-4.65,4.947,5.763,5.763,0,0,0,1.51,4.739Zm30.13,3.949-2.77-.748-0.73-2.827a0.374,0.374,0,0,0-.73,0l-0.74,2.827-2.81.748a0.39,0.39,0,0,0,0,.749l2.77,0.748,0.74,2.827a0.387,0.387,0,0,0,.36.291,0.4,0.4,0,0,0,.37-0.291l0.73-2.827,2.77-.748a0.4,0.4,0,0,0,.28-0.374A0.365,0.365,0,0,0,1685.97,937.2Zm-3.18.832a0.3,0.3,0,0,0-.24.249l-0.45,1.705-0.45-1.705a0.3,0.3,0,0,0-.24-0.249l-1.67-.457,1.67-.458a0.3,0.3,0,0,0,.24-0.249l0.45-1.705,0.45,1.705a0.3,0.3,0,0,0,.24.249l1.67,0.458Z\" transform=\"translate(-1654.08 -915.079)\"/>\n\t\t\t\t\t</svg>\n\t\t\t\t\t<span class=\"menu__label\">Популярные услуги</span>\n\t\t\t\t</a>\n\t\t\t</li>\n\t\t\t<li class=\"menu__tab menu__tab_cleaning\" data-menu-tab=\"cleaning\">\n\t\t\t\t<a class=\"menu__type\" href=\"../index.html\">\n\t\t\t\t\t<svg class=\"menu__ico\" xmlns=\"http://www.w3.org/2000/svg\" width=\"36.84\" height=\"26.842\" viewBox=\"0 0 36.84 26.842\">\n\t\t\t\t\t\t<path class=\"menu__ico-path\" stroke-width=\"0.22px\" fill-rule=\"evenodd\" d=\"M1690.41,923.233c-3.06.416-3.91,0.125-3.91,0.125a0.4,0.4,0,0,0-.37.042,0.283,0.283,0,0,0-.12.332c0.12,1.039-.2,1.248-0.57,1.456a2.087,2.087,0,0,0-.49.374,1.716,1.716,0,0,0-.77-0.167,3.838,3.838,0,0,0,.53-1.081,0.358,0.358,0,0,0-.25-0.457,0.344,0.344,0,0,0-.44.249c-0.57,1.954-3.18,2.911-4.44,3.368a2.985,2.985,0,0,1-.45.166,10.814,10.814,0,0,0-1.79,1.289c-1.06.832-4.32,3.409-5.05,2.91a0.467,0.467,0,0,1-.2-0.416c-0.04-.623.65-1.621,1.75-2.535a7.438,7.438,0,0,0,2.48-4.2,0.367,0.367,0,1,0-.73-0.083,6.638,6.638,0,0,1-2.24,3.741,7.164,7.164,0,0,0-1.1,1.123h-1.79c-0.16-.5-0.2-0.707-0.25-0.79a19.131,19.131,0,0,1,3.14-4.615c0.45-.374,5.82-3.118,9.12-4.74a0.039,0.039,0,0,0,.04-0.041l4.68-3.409a0.394,0.394,0,0,0,.08-0.54,0.38,0.38,0,0,0-.53-0.084l-4.64,3.409c-0.97.458-8.55,4.2-9.2,4.782a18.356,18.356,0,0,0-3.38,5.03,2.438,2.438,0,0,0,.17.956h-11.77a1.149,1.149,0,0,0-1.14.956,1.225,1.225,0,0,0,.24.915,1.152,1.152,0,0,0,.86.416h0.16l-2.77,6.111a0.417,0.417,0,0,0,.04.374,0.376,0.376,0,0,0,.33.167h15.1a0.364,0.364,0,0,0,.29-0.125,0.264,0.264,0,0,0,.08-0.291l-0.45-5.529c0.86,1.163,2.24,2.743,3.18,2.743a0.58,0.58,0,0,0,.28-0.041c1.27-.541.9-2.287,0.61-3.368a0.783,0.783,0,0,1,.09-0.041,8.783,8.783,0,0,0,2.44.457,4.107,4.107,0,0,0,1.02-.125c1.5-.5,2.85-1.081,3.09-2.162a1.834,1.834,0,0,0,1.47-.208,2.057,2.057,0,0,0,.81-0.956,1.545,1.545,0,0,0,1.14-.208,1.979,1.979,0,0,0,.73-0.831,2.47,2.47,0,0,1,1.88,1,1.763,1.763,0,0,0,1.75,1,1,1,0,0,0,.77-1,2.13,2.13,0,0,0-.9-1.954,4.745,4.745,0,0,0-2.85-1.04,1.737,1.737,0,0,0,.57-1.413,14.744,14.744,0,0,0,3.75-.208,0.41,0.41,0,0,0,.33-0.416A0.419,0.419,0,0,0,1690.41,923.233Zm-32.53,7.692a0.378,0.378,0,0,1-.29-0.125,0.356,0.356,0,0,1,.33-0.582h13.76a3,3,0,0,0-.28.665Zm9.53,6.652h-2.16l0.45-5.988h1.71v5.988Zm-4.69-5.946-1.14,5.946h-2.24l1.75-5.946h1.63Zm0.74,0h1.5l-0.45,5.946h-2.19Zm-4.56.042h1.46l-1.75,5.945h-2.4Zm9.24,5.9v-5.988h1.71l0.49,5.988h-2.2Zm5.7-3.2c-0.37.125-1.87-1.33-2.85-2.786h0.36a1.241,1.241,0,0,0,.49.833,1.138,1.138,0,0,0,.65.207,3.565,3.565,0,0,0,1.59-.54C1674.29,932.962,1674.49,934.084,1673.84,934.375Zm4.23-3.118a4.92,4.92,0,0,1-2.44-.124c0.69-.5,1.42-1.04,2.16-1.622,0.28-.208.49-0.416,0.69-0.54,0.28-.083,1.79-0.458,2.16.332C1680.76,929.8,1680.6,930.426,1678.07,931.257Zm4.4-2.286a1.016,1.016,0,0,1-1.18-.042,1.606,1.606,0,0,0-1.22-.831,15.268,15.268,0,0,0,1.58-.665,1.638,1.638,0,0,1,1.19.249,0.7,0.7,0,0,1,.2.5A1.194,1.194,0,0,1,1682.47,928.971Zm1.99-1.206a1.057,1.057,0,0,1-.69.125,1.353,1.353,0,0,0-.45-0.79,1.418,1.418,0,0,0-.57-0.291,5.866,5.866,0,0,0,.62-0.458,1.845,1.845,0,0,1,1.34-.041,0.838,0.838,0,0,1,.24.832A1.446,1.446,0,0,1,1684.46,927.765Zm4.12-.541a1.512,1.512,0,0,1,.61,1.248c-0.04.291-.17,0.332-0.21,0.332a1,1,0,0,1-.93-0.623,2.945,2.945,0,0,0-2.41-1.372,1.844,1.844,0,0,0-.08-0.458A4.319,4.319,0,0,1,1688.58,927.224Zm-17.39-6.236a2.2,2.2,0,1,0-2.16-2.2A2.146,2.146,0,0,0,1671.19,920.988Zm0-3.7a1.456,1.456,0,1,1-1.42,1.456A1.405,1.405,0,0,1,1671.19,917.288Zm-15.35,15.965a0.361,0.361,0,0,0,.25.125,0.342,0.342,0,0,0,.24-0.125,0.364,0.364,0,0,0,0-.541l-0.04-.083a5.094,5.094,0,0,1,2.69-8.481,4.884,4.884,0,0,1,2.97.416l0.81,0.665a5.347,5.347,0,0,1,.98,1.122l0.04,0.042c0.04,0.084.08,0.125,0.12,0.208a0.561,0.561,0,0,0,.29.166,0.3,0.3,0,0,0,.2-0.083,0.385,0.385,0,0,0,.08-0.54c-0.04-.042-0.08-0.125-0.12-0.167h0a6.363,6.363,0,0,0-1.1-1.288h0l-0.53-.458a5.556,5.556,0,0,1,3.99-1.663,5.741,5.741,0,0,1,4.03,1.705,0.376,0.376,0,0,0,.53,0,0.381,0.381,0,0,0,0-.541,6.335,6.335,0,0,0-4.56-1.912,6.272,6.272,0,0,0-4.6,2,5.308,5.308,0,0,0-3.21-.374,5.823,5.823,0,0,0-4.65,4.947,5.763,5.763,0,0,0,1.51,4.739Zm30.13,3.949-2.77-.748-0.73-2.827a0.374,0.374,0,0,0-.73,0l-0.74,2.827-2.81.748a0.39,0.39,0,0,0,0,.749l2.77,0.748,0.74,2.827a0.387,0.387,0,0,0,.36.291,0.4,0.4,0,0,0,.37-0.291l0.73-2.827,2.77-.748a0.4,0.4,0,0,0,.28-0.374A0.365,0.365,0,0,0,1685.97,937.2Zm-3.18.832a0.3,0.3,0,0,0-.24.249l-0.45,1.705-0.45-1.705a0.3,0.3,0,0,0-.24-0.249l-1.67-.457,1.67-.458a0.3,0.3,0,0,0,.24-0.249l0.45-1.705,0.45,1.705a0.3,0.3,0,0,0,.24.249l1.67,0.458Z\" transform=\"translate(-1654.08 -915.079)\"/>\n\t\t\t\t\t</svg>\n\t\t\t\t\t<span class=\"menu__label\">Неисправности</span>\n\t\t\t\t</a>\n\t\t\t</li>",
+			"<span class=\"menu__label\">Типы кофемашин</span>",
+			"<span class=\"menu__label\">Ремонтируем бренды</span>",
+			"«Заботливый сервис 5+»",
+			"<!--<li class=\"nav__item nav__item_location\">\n\t\t\t\t\t<a class=\"nav__link\" href=\"#\"><span class=\"nav__label\">Москва и Подмосковье</span></a>\n\t\t\t\t\t<div class=\"nav__subnav\">\n\t\t\t\t\t\t<ul class=\"nav__sublist\">\n\t\t\t\t\t\t\t<li class=\"nav__subitem nav__subitem_active\" data-city=\"moscow\">\n\t\t\t\t\t\t\t\t<a id=\"city-moscow\" class=\"nav__sublink\" href=\"#moscow\">Москва и Подмосковье</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li class=\"nav__subitem\" data-city=\"piter\">\n\t\t\t\t\t\t\t\t<a id=\"city-spb\" class=\"nav__sublink\" href=\"#piter\">Санкт-Петербург</a>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\t\t\t\t</li>-->",
+			"<span class=\"nav__text\"><i class=\"nav__ico nav__ico_pin\"></i> Ваш регион: Москва и Подмосковье</span>",
+			"Вызвать курьера",
+			"",
+			".cross",
+			".hamburger",
+			".menu-toggle",
+			"'Open Sans', sans-serif;",
+			"9da2b6",
+			"#9da2b6",
+			"202132",
+			"'Prata', serif;",
+			"413d4b",
+			"watch",
+			"fea700",
+			"444",
+			"fea700",
+			"ff98b5",
+			"de7890",
+			"#422046",
+			"cameras",
+			"#444",
+			"f45840",
+			"f88225",
+			"bbc200",
+			"f45840",
+			"afb42b",
+			"/",
+			"bbc200",
+			"afb42b",
+			"2176a1",
+			"tablets",
+			"99893",
+			"<script>",
+			"      <script>\n        !function(f,b,e,v,n,t,s)\n        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n        n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n        n.queue=[];t=b.createElement(e);t.async=!0;\n        t.src=v;s=b.getElementsByTagName(e)[0];\n        s.parentNode.insertBefore(t,s)}(window, document,'script',\n        'https://connect.facebook.net/en_US/fbevents.js');\n        fbq('init', '142923783121174');\n        fbq('track', 'PageView');\n      </script>\n      <noscript><img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.facebook.com/tr?id=142923783121174&ev=PageView&noscript=1\" /></noscript>\n   </body>\n</html>",
+			"/",
+			"korichneviy"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 97856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97831,
+								97831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 121367.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "font-awesome.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 37414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1725,
+								1725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1728.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "multicat.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

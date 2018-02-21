@@ -5,8 +5,6 @@
         <?= $model['full_description']; ?>
     </div>    
 </section>
-
-<?= \app\widgets\other\Advantage::widget(); ?>
 <?php if($siteConfig['id'] == 2): ?>
 <noindex>
     <section class="promo-video">
@@ -23,3 +21,5 @@
     </section>
 <noindex>
 <?php endif; ?>
+
+<?= \app\widgets\other\Advantage::widget(); ?>
