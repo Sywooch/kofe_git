@@ -123,15 +123,23 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
             </div>
         </div>
     </div>
-    <div id="content" style="background-color: #fff;">
+    <div id="content" class="seo-text-block">
         <div class="inner_container">
-            <div id="content" class="my-text"><br>           
+            <div id="content" class="my-text gls">          
                 <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['full_description']); ?>       
             </div>
         </div>
+        <div class="for-parallax">
+            <div id="parallax">
+              <div class="layer" data-depth="0.4">
+                <div id="particles-js"></div>
+              </div>
+            </div>
+        </div>
     </div>
+
     <?= multicatX\widgets\lists\PopularServices::widget(); ?>
-    <div class="main_container grey_container">
+    <div class="main_container">
         <div id="rumiservice6" class="inner_container">
             <div id="rumiservice6_header">Этапы ремонта</div>
             <div id="rumiservice6_circle">
@@ -167,11 +175,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Звонок или заявка с сайта</div>
                         <div class="rumiservice6_item_right_text">
-                            Мы можем <span class="colortext">решить Вашу проблему удалённо.</span><br />
-                            В случае возникновения программных сбоев в работе<br />
-                            смартфона, планшета или другого устройста Xiaomi<br />
-                            больше нет необходимости тратить долгое время на<br />
-                            дорогу, просто позвоните к нам в сервисный центр.
+                            Мы можем помочь Вам удалённо, просто позвоните нам и наши специалисты с должным вниманием проконсультируют Вас по всем вопросам! 
                         </div>
                     </div>
                 </div>
@@ -185,10 +189,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Диагностика проблемы</div>
                         <div class="rumiservice6_item_right_text">
-                            Мы с лёгкостью сможем <span class="colortext">продиагностировать</span><br />
-                            <span class="colortext"> ваши устройства.</span> И сделаем для<br />
-                            Вас это бесплатно! Мы знаем все возможные проблемы, поскольку специализируемся исключительно на бренде
-                            Xiaomi и решаем самые сложные задачи каждый день.
+                            Наши инженеры с лёгкостью выполнят диагностику кофемашины и найдут неисправность буквально за несколько минут. Ремонт кофемашин, кстати, выполняется столь-же быстро!
                         </div>
                     </div>
                 </div>
@@ -202,8 +203,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Согласование времени и стоимости</div>
                         <div class="rumiservice6_item_right_text">
-                            После диагностики устройства, мастер сможет сразу Вам сказать стоимость работы. После провдения оплаты Вы сможете согласовать <span class="colortext">удобное для Вас время</span> проведения<br />
-                            ремонтных работ. Мастер согласует с Вами <span class="colortext">удобное время</span> и Вам останется только ждать окончания <span class="colortext">ремонта</span>.
+                            После проведения диагностики, мастер озвучит Вам стоимость и сроки проведения работ. Если Вас всё устроит - ремонт начнётся незамедлительно!
                         </div>
                     </div>
                 </div>
@@ -217,9 +217,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Ремонт неисправного устройства</div>
                         <div class="rumiservice6_item_right_text">
-                            Ремонт каждого устройства производится в соответствии <br />
-                            с регламентом изделия. Технология ремонта <span class="colortext">неоднократно проверена</span>
-                            и каждый мастер имеет <span class="colortext">необходимую квалификацию</span> для выполнения ремонтной работы.
+                            Ремонт каждой кофемашины проводится с соблюдением всех норм и регламентов. При ремонте используются оригинальные и качественные комплектующие, которые заказываются напрямую у фирм-производителей.
                         </div>
                     </div>
                 </div>
@@ -233,7 +231,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр по рем
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Контроль результата работы</div>
                         <div class="rumiservice6_item_right_text">
-                            Мы максимально заботимся о качестве проделанной нами работы. После осуществления ремонта Вам позвонит оператор и проверит Вашу удовлетворённость результатом. <span class="colortext">Мы предоставляем гарантию</span> на проделанные нами работы. В течении гарантийного периода Вы сможете повторно обратиться за помощью с возникающими у Вас вопросами.
+                            Мы с должной ответственностью относимся к каждому клиенту. После проведения ремонта и последующей доставки кофемашины, наш менеджер обязательно свяжется с вами, для того, чтобы узнать удовлетворённость заказом. А так-же, каждому клиенту мы предоставляем гарантию, срок которой зависит от тяжести ремонта.
                         </div>
                     </div>
                 </div>

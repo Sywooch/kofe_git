@@ -37,7 +37,7 @@ $js = app\components\CController::$js;
             <div class="top-nav colorbg">
                 <div class="inner_container">
                     <a href="/kontakty">КОНТАКТЫ</a>
-                    <a href="#">СТАТУС РЕМОНТА</a>
+                    <a class="mini-form" href="#">СТАТУС РЕМОНТА</a>
                     <a href="/otzyvy">ОТЗЫВЫ</a>
                     <a href="/novosti">НОВОСТИ</a>
                     <a href="/o-kompanii">О КОМПАНИИ</a>
@@ -162,7 +162,7 @@ $js = app\components\CController::$js;
                                 <br />112343, Москва, м. Багратионовская<br />
                                 Багратионовский проезд, дом 7             
                             </div>
-                            <div id="footer_scheme">
+                            <!--<div id="footer_scheme">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      viewBox="0 0 55.017 55.017" style="enable-background:new 0 0 55.017 55.017;" xml:space="preserve">
                                 <g>
@@ -210,7 +210,7 @@ $js = app\components\CController::$js;
                                 </g>
                                 </svg>
                                 <a href="#">Схема проезда</a>
-                            </div>
+                            </div>-->
                             <div id="footer_share">
                                 <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
                                 <script src="//yastatic.net/share2/share.js"></script>
@@ -220,7 +220,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div id="powered">
                         <div id="powered_left">&#169; <span class="colortext">Сервисный центр <?= $_SERVER['SERVER_NAME']; ?></span>, 2014–<?= date('Y'); ?></div>
-                        <div id="powered_right"><a href="#" class="colortext">Пользовательское соглашение</a></div>
+                        <div id="powered_right"><p class="colortext">Ремонт кофемашин качественно и с гарантией!</p></div>
                     </div>
                 </div>
             </div>
@@ -238,6 +238,8 @@ $js = app\components\CController::$js;
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.7.1.min.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/particles.min.js"></script>
+        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.parallax.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/common.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/angular.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/owl.carousel.min.js"></script>

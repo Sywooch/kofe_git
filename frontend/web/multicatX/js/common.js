@@ -172,3 +172,186 @@ function addToCompare(product_id) {
         }
     });
 }
+
+ $('#parallax').parallax({
+    invertX: true,
+    invertY: true,
+    scalarX: 10,
+     frictionY: .1
+});
+
+var c = $("body").attr("class");
+var color;
+switch (c) {
+  case 'bork':
+    color = '#265';
+    break;
+  case 'bosch':
+    color = '#215f8b';
+    break;
+  case 'delonghi':
+    color = '#215f8b';
+    break;
+  case 'faema':
+    color = '#870c28';
+    break;
+  case 'franke':
+    color = '#e2271c';
+    break;
+  case 'gaggia':
+    color = '#ef4023';
+    break;
+  case 'jura':
+    color = '#e30613';
+    break;
+  case 'krups':
+    color = '#525352';
+    break;
+  case 'la-cimbali':
+    color = '#e2271c';
+    break;
+  case 'melitta':
+    color = '#d00c0e';
+    break;
+  case 'nuova-simonelli':
+    color = '#d82f3e';
+    break;
+  case 'philips':
+    color = '#3182b1';
+    break;
+  case 'promac':
+    color = '#a1190d';
+    break;
+  case 'rancilio':
+    color = '#007845';
+    break;
+  case 'saeco':
+    color = '#d71921';
+    break;
+  case 'schaerer':
+    color = '#e2271c';
+    break;
+  case 'miele':
+    color = '#a20001';
+    break;
+  case 'siemens':
+    color = '#41aaaa';
+    break;
+  case 'wmf':
+    color = '#71b430';
+    break;
+  case 'nivona':
+    color = '#af0917';
+    break;
+  default:
+    color = '';
+}
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 120,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": color
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": color,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});

@@ -245,7 +245,7 @@ label {
 }
 .my-text h2 {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 30px;
 }
 #column-left + #column-right + #content,
 #column-left + #content {
@@ -861,8 +861,11 @@ ul.box-filter > li ul {
 .category-info {
     overflow: auto;
     font-size: 16px;
-    color: #818181;
     margin-top: 20px;
+    color: #3b3b3b;
+    padding-left: 14px;
+    line-height: 22px;
+    font-family: verdana,geneva,sans-serif;
 }
 @media (max-width: 1250px) {
     .category-info {
@@ -2657,6 +2660,8 @@ ul.box-filter > li ul {
     float: right;
     margin-top: 85px;
     width: 580px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 @media (max-width: 1250px) {
     #rumiservice4 .rumiservice4_item .rumiservice4_item_right {
@@ -5636,11 +5641,14 @@ input[type='text'].contacts_input_email {
     line-height: 286px;
     text-align: center;
     background: #fff;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 .product-category-right-info img {
     max-width: 100%;
     max-height: 100%;
-    height: 95%;
+    height: 80%;
+    vertical-align: middle;
 }
 @media (max-width: 1250px) {
     .product-category-right-info {
@@ -6368,4 +6376,77 @@ video.bg-video {
 .n-rating-stars__item:before {
   
   background: url(../images/star-active.svg);
+}
+
+.my-text.gls {
+    background: #fff;
+    position: relative;
+    max-width: 1000px;
+    padding: 30px 40px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+
+
+
+
+.seo-text-block {
+    position: relative;
+}
+div.for-parallax {
+  overflow: hidden;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#particles-js, #parallax, .layer, .some-space, .some-more-space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+#particles-js {
+  opacity: 0.6;
+}
+
+.some-space {
+  animation: rotate 18s 0.5s infinite linear reverse;
+}
+
+.some-more-space {
+  -webkit-animation: rotate 15s 0.1s infinite linear;
+          animation: rotate 15s 0.1s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+            transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+            transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+  }
 }

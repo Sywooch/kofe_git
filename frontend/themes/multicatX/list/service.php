@@ -45,7 +45,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
             <div class="main_product_right">
                 <div class="image">
-                    <img src="http://service-xiaomi.com/image/cache/data/categories/Uslugi/Osnovnie/Smartfony/centr-zamena-displeya-a-328x300.jpg" title="" alt="" id="image">
+                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/centr-zamena-displeya-a-328x300.jpg" title="" alt="" id="image">
                 </div>
             </div>
         </div>

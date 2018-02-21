@@ -1,4 +1,4 @@
-<div class="main_container">
+<div class="main_container grey_container">
     <?= count(\app\components\CController::$menu) <= 1 ? multicatX\widgets\lists\KofeModels::widget() : ''; ?>
     <div id="rumiservice7" class="inner_container">
         <div class="rumiservice7_topper">
