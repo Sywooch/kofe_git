@@ -159,7 +159,7 @@ $js = app\components\CController::$js;
                             <div id="footer_phone">
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
                                 Предложение не является публичной офертой<br />
-                                <br />112343, Москва, м. Багратионовская<br />
+                                <br />г. Москва, Рябиновая ул., 43, корп. 2<br />
                                 Багратионовский проезд, дом 7             
                             </div>
                             <!--<div id="footer_scheme">
