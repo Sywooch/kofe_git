@@ -114,7 +114,7 @@ class ListController extends CController {
                 $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
             }
             $page = (new \yii\db\Query())
-                    ->select(['title', 'url', 'id', 'type', 'parent', 'image'])
+                    ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
                     ->from('{{%pages}}')
                     ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
@@ -230,10 +230,12 @@ class ListController extends CController {
                         }
                     } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
                         if ($page['type'] == 'category') {
+                            $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . mb_strtolower($page['full_title'], 'utf8') . ' ' . CController::$monoBrand['title'];
                             $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ⚒ Гарантия на все работы 🍵 Быстрый ремонт';
                             $metaDesc = 'Специализированный сервисный центр по ремонту кофемашин ' . CController::$monoBrand['title'] . ' предоставляет услугу - ' . $pageInfo['title'] . '! Качественный сервис. Лучшие цены!';
                         } elseif ($page['type'] == 'model') {
-                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . CController::$monoBrand['title'] . $page['title'] . ' ⚒ Срочный ремонт кофемашин ☕️';
+                            $h1 = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' .  mb_strtolower(CController::$category['title'], 'utf8') . ' ' . CController::$monoBrand['title'] . ' ' . $page['title'];
+                            $title = $this->mb_ucfirst($pageInfo['title'], 'utf-8') . ' ' . CController::$monoBrand['title'] . ' ' . $page['title'] . ' ⚒ Срочный ремонт кофемашин ☕️';
                             $metaDesc = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . $page['title'] . '  - ' . $pageInfo['title'] . '! Быстрый ремонт! Высокое качество! Выезд мастера!';
                         }
                     } else {
