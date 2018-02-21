@@ -214,11 +214,11 @@ class CController extends \yii\web\Controller {
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
-        if ($siteConfig['category_id'] == 7)
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $usersPhone . $msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
         
-        if ($siteConfig['category_id'] == 7)
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $phone . $msg, $adminsChannel);
         else {            
             self::sendMessage("Телефон: " . $phone . $msg, '@site_orders');
