@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
     var end_loading = 0;
     var chartOptions = [];
-    var data1, data2, data3;
+    var data1, data2, data3 = [];
     if ($('#chart1').length > 0)
         data1 = $('#chart1').data('chart');
     if ($('#chart2').length > 0)
