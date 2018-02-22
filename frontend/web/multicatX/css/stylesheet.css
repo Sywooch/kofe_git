@@ -2086,9 +2086,10 @@ ul.box-filter > li ul {
 }
 @media (max-width: 700px) {
     #header_third .links a.yeshsho {
-        float: left;
+        position: absolute;
         border: 0px;
-        width: auto;
+        left: 0px;
+        top: 0px;
     }
     #header_third .links a.yeshsho br {
         display: none;
