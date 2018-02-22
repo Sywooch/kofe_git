@@ -51,6 +51,10 @@ a {
     font-size: 12px;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
+p {
+    font-size: 14px;
+    line-height: 18px;
+}
 h1,
 .welcome {
     color: #636E75;
