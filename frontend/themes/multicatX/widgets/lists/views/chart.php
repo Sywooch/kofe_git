@@ -19,18 +19,26 @@ $assets = '/' . Yii::getAlias('@web');
             <?php endforeach; ?>            
         </div>
         <?php $a = 0; ?>
-        <?php foreach ($charts as $chart): ?>
-            <?php $a++; ?>
+        <?php foreach ($charts as $category => $chart): ?>
+            <?php
+            $a++;
+            $image = '';
+            if (isset($categories[$category][\app\components\CController::$monoBrand['id']]))
+                $image = $assets . $siteConfig['theme'] . '/uploads/images/chart_models/' . $categories[$category][\app\components\CController::$monoBrand['id']];
+            ?>
             <div class="rumiservice3_blocks rumiservice3_block<?= $a; ?>"<?= $a != 1 ? ' style="display:none;"' : ''; ?>>
-                <div class="rumiservice3_left_block">
-                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>image/cache/data/rumiservice3-259x440.jpg" />
+                <?php if (!empty($image)): ?>
+                <div style="width: 280px;" class="rumiservice3_left_block">
+                    <img style="width: 100%;" src="<?= $image; ?>" />
                 </div>
+                <?php endif; ?>
                 <div class="rumiservice3_chart">
                     <div class="rumiservice3_chart_bg"></div>
                     <div class="rumiservice3_chart_tooltip">
-                        <span>7846</span> устройств за 3 года           
+                        <?php $c = 0; foreach ($chart as $ch) {$c += $ch['y'];} ?>
+                        <span><?= $c; ?></span> устройств за 3 года           
                     </div>
-                    <div data-chart="<?= json_encode($chart); ?>" id="chart<?= $a; ?>"></div>
+                    <div data-chart='<?= json_encode($chart); ?>' id="chart<?= $a; ?>"></div>
                 </div>
             </div>
         <?php endforeach; ?>        

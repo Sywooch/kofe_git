@@ -280,11 +280,11 @@ class PageController extends CController {
         foreach ($services as $service) {
             $urls[] = $service;
         }
-		return $urls;
-    }	
-		
-	private function getMonoUrls($siteConfig) {
-		$sql = 'SELECT m.url, m.type, m.id, m.title, (
+        return $urls;
+    }
+
+    private function getMonoUrls($siteConfig) {
+        $sql = 'SELECT m.url, m.type, m.id, m.title, (
                     CASE 
                         WHEN b.title = \'Все бренды\' THEN m.title        
                         ELSE b.title
@@ -295,15 +295,15 @@ class PageController extends CController {
                         ELSE m.title
                     END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent  WHERE m.active = 1 AND m.url != \'/\' AND m.category_id = ' . $siteConfig['category_id'] . ' AND (m.parent = ' . self::$monoBrand['id'] . ' OR m.site_id = ' . $siteConfig['id'] . ')';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
-		$sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
-		$hostname = Yii::$app->request->hostInfo;
+        $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
+        $hostname = Yii::$app->request->hostInfo;
         $urls = [];
-		$services = Yii::$app->db->createCommand($sql)->queryAll();
-		foreach ($pages as $page) {
-			$page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
-			$urls[] = $page;
-			if ($page['type'] == 'model' || $page['type'] == 'brand') {
-				if ($page['type'] == 'brand') {
+        $services = Yii::$app->db->createCommand($sql)->queryAll();
+        foreach ($pages as $page) {
+            $page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
+            $urls[] = $page;
+            if ($page['type'] == 'model' || $page['type'] == 'brand') {
+                if ($page['type'] == 'brand') {
                     $brand_title = $page['title'];
                     $model_title = '';
                 } elseif ($page['type'] == 'model') {
@@ -326,13 +326,54 @@ class PageController extends CController {
                     }
                     $urls[] = ['url' => $hostname . '/' . $page['url'] . '/' . $service['url'], 'type' => $service['type'], 'id' => $service['id'], 'title' => $service['title'], 'brand_title' => $brand_title, 'model_title' => $model_title, 'parent' => 0];
                 }
-			}
-		}
-		foreach ($services as $service) {
+            }
+        }
+        foreach ($services as $service) {
             $urls[] = $service;
         }
-		return $urls;
-	}
+        return $urls;
+    }
+
+    public function getMultiCategoryUrls($siteConfig) {
+        $sql = 'SELECT
+                    m.url,
+                    m.type,
+                    m.parent,
+                    m.id,
+                    m.category_id
+                FROM
+                    yu_pages m
+                LEFT JOIN yu_pages c ON c.id = m.parent
+                WHERE
+                    m.active = 1 AND c.active = 1 AND m.type != \'brand\' AND c.parent = ' . (int) $siteConfig['brand-id'] . ' AND c.id = m.parent AND c.category_id = 7
+                AND m.url != \'/\'
+                UNION
+                SELECT
+                    url,
+                    type,
+                    parent,
+                    id,
+                    category_id
+                FROM
+                    yu_pages WHERE (active = 1 AND parent = ' . (int) $siteConfig['brand-id'] . ') OR type IN (\'info\', \'news\') AND url != \'/\'';
+        $pages = Yii::$app->db->createCommand($sql)->queryAll();
+        $hostname = Yii::$app->request->hostInfo;
+        $urls = [];
+        foreach ($pages as $key => $page) {
+            $urls[] = $page;
+            if ($page['type'] == 'category' || $page['type'] == 'model') {
+                $parent = [];
+                if($page['type'] == 'model')
+                    $parent = Yii::$app->db->createCommand('SELECT category_id FROM {{%pages}} WHERE id = ' . $page['parent'])->queryOne();
+                $sql = 'SELECT url FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . ($page['type'] == 'model' ? $parent['category_id'] : $page['category_id']);
+                $services = Yii::$app->db->createCommand($sql)->queryAll();                
+                foreach ($services as $service) {
+                    $urls[] = ['url' => $page['url'] . '/' . $service['url']];
+                }
+            }
+        }
+        return $urls;
+    }
 
     public function actionSitemap2() {
         $siteConfig = self::getSiteConfig();
@@ -346,9 +387,9 @@ class PageController extends CController {
             error_reporting(E_ALL);
             if (isset($siteConfig['multi_category']) && $siteConfig['theme'] == 'ifixme') {
                 $urls = $this->getAppleUrls();
-            } elseif($siteConfig['mono']) {
-				$urls = $this->getMonoUrls($siteConfig);
-			} else {
+            } elseif ($siteConfig['mono']) {
+                $urls = $this->getMonoUrls($siteConfig);
+            } else {
                 $urls = $this->getUrls($siteConfig);
             }
             //print_r($urls);exit;
@@ -378,6 +419,21 @@ class PageController extends CController {
             }
             exit;
         }
+        if (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
+            $urls = $this->getMultiCategoryUrls($siteConfig);
+            $hostname = Yii::$app->request->hostInfo;
+            $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+            foreach ($urls as $page) {
+                $url = $xmlIndex->addChild('url');
+                $page['url'] = $page['url'];
+                $url->addChild('loc', $hostname . '/' . $page['url']);
+                $url->addChild('lastmod', date("Y-m-d", time()));
+            }
+            header('content-type:text/xml');
+            echo $xmlIndex->asXML();
+            exit;
+        }
+
         if (isset($siteConfig['multi_category']) && $siteConfig['theme'] == 'ifixme') {
             $urls = $this->getAppleUrls();
             $hostname = Yii::$app->request->hostInfo;
@@ -439,9 +495,9 @@ class PageController extends CController {
         $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         $hostname = Yii::$app->request->hostInfo;
-		if(in_array($siteConfig['id'], [51, 53])) {
-			$hostname = str_replace('http', 'https', $hostname);
-		}
+        if (in_array($siteConfig['id'], [51, 53])) {
+            $hostname = str_replace('http', 'https', $hostname);
+        }
         $per = 50000;
         $n = 0;
         $numPages = ceil((count($pages) * count($services) + count($services)) / $per);
