@@ -31,9 +31,9 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui-1.8.16.custom.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/colors.css" />
     </head>
-    <body class="<?= app\components\CController::$monoBrand['url']; ?>">
+    <body class="<?= app\components\CController::$monoBrand['url']; ?> no-transition">
         <?php $this->beginBody() ?>
-        <div id="header">
+        <div id="header" class="no-transition">
             <div class="top-nav colorbg">
                 <div class="inner_container">
                     <a href="/kontakty">КОНТАКТЫ</a>
