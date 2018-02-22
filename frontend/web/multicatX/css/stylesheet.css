@@ -2489,6 +2489,7 @@ ul.box-filter > li ul {
     margin-left: 20px;
     display: inline-block;
     vertical-align: top;
+    width: 280px;
 }
 @media (max-width: 1250px) {
     #rumiservice3 .rumiservice3_blocks .rumiservice3_left_block {
@@ -5701,7 +5702,7 @@ g {
 #chart2,
 #chart3 {
     width: 700px;
-    height: 450px;
+    height: 600px;
     margin: 0 auto
 }
 @media (max-width: 1250px) {
@@ -5709,7 +5710,7 @@ g {
     #chart2,
     #chart3 {
         width: 595px;
-        height: 380px;
+        height: 600px;
         margin: 0 auto
     }
 }

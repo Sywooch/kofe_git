@@ -66,7 +66,8 @@ $(document).ready(function () {
                     format: '{point.name}',
                     style: {
                         textShadow: 'none',
-                        fontSize: '16px'
+                        fontSize: '14px',
+                        textAlign: 'center'
                     }
                 }
             }]
@@ -118,7 +119,8 @@ $(document).ready(function () {
                     format: '{point.name}',
                     style: {
                         textShadow: 'none',
-                        fontSize: '16px'
+                        fontSize: '14px',
+                        textAlign: 'center'
                     }
                 }
             }]
@@ -170,7 +172,8 @@ $(document).ready(function () {
                     format: '{point.name}',
                     style: {
                         textShadow: 'none',
-                        fontSize: '16px'
+                        fontSize: '14px',
+                        textAlign: 'center'
                     }
                 }
             }]

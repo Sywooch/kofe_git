@@ -28,7 +28,7 @@ $assets = '/' . Yii::getAlias('@web');
             ?>
             <div class="rumiservice3_blocks rumiservice3_block<?= $a; ?>"<?= $a != 1 ? ' style="display:none;"' : ''; ?>>
                 <?php if (!empty($image)): ?>
-                <div style="width: 280px;" class="rumiservice3_left_block">
+                <div class="rumiservice3_left_block">
                     <img style="width: 100%;" src="<?= $image; ?>" />
                 </div>
                 <?php endif; ?>
