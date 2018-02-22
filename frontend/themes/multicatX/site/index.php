@@ -7,10 +7,12 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="main_container my-banner">
-        <video class="bg-video" id="bgvid" playsinline autoplay muted loop>
-            <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/fix.webm" type="video/webm">
-            <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/fix.mp4" type="video/mp4">
-        </video>
+        <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
+            <video class="bg-video" id="bgvid" playsinline autoplay muted loop>
+                <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/fix.webm" type="video/webm">
+                <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/fix.mp4" type="video/mp4">
+            </video>
+        <?php endif; ?>
         <div id="rumiservice1" class="inner_container">
             <div class="info">
                 <div class="content">
@@ -131,9 +133,9 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
         </div>
         <div class="for-parallax">
             <div id="parallax">
-              <div class="layer" data-depth="0.4">
-                <div id="particles-js"></div>
-              </div>
+                <div class="layer" data-depth="0.4">
+                    <div id="particles-js"></div>
+                </div>
             </div>
         </div>
     </div>
