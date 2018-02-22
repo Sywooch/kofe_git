@@ -345,7 +345,7 @@ class PageController extends CController {
                     yu_pages m
                 LEFT JOIN yu_pages c ON c.id = m.parent
                 WHERE
-                    m.active = 1 AND m.type != \'brand\' AND c.parent = ' . (int) $siteConfig['brand-id'] . ' AND c.id = m.parent
+                    m.active = 1 AND c.active = 1 AND m.type != \'brand\' AND c.parent = ' . (int) $siteConfig['brand-id'] . ' AND c.id = m.parent AND c.category_id = 7
                 AND m.url != \'/\'
                 UNION
                 SELECT
@@ -362,10 +362,11 @@ class PageController extends CController {
         foreach ($pages as $key => $page) {
             $urls[] = $page;
             if ($page['type'] == 'category' || $page['type'] == 'model') {
+                $parent = [];
                 if($page['type'] == 'model')
                     $parent = Yii::$app->db->createCommand('SELECT category_id FROM {{%pages}} WHERE id = ' . $page['parent'])->queryOne();
                 $sql = 'SELECT url FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . ($page['type'] == 'model' ? $parent['category_id'] : $page['category_id']);
-                $services = Yii::$app->db->createCommand($sql)->queryAll();
+                $services = Yii::$app->db->createCommand($sql)->queryAll();                
                 foreach ($services as $service) {
                     $urls[] = ['url' => $page['url'] . '/' . $service['url']];
                 }
