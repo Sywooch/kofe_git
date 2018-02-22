@@ -30,7 +30,7 @@ $assets = '/' . Yii::getAlias('@web');
                         <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block1.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
-                        Вы оставляете заявку<br>на сайте или по телефону
+                        Вы оставляете заявку на ремонт через сайт или позвонив в сервисный центр.
                     </div>
                 </div>
                 <div class="rumiservice13_block rumiservice13_block2">
@@ -39,7 +39,7 @@ $assets = '/' . Yii::getAlias('@web');
                         <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block2.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
-                        Проводится бесплатная<br>диагностика после которой<br>станут известны сроки
+                        Мы проводим бесплатную диагностику и выявляем возникшие проблемы.
                     </div>
                 </div>
                 <div class="rumiservice13_block rumiservice13_block3">
@@ -48,7 +48,7 @@ $assets = '/' . Yii::getAlias('@web');
                         <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block3.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
-                        Мы звоним вам и только<br>после вашего подтверждения<br>начинаем ремонт
+                        Наш менеджер перезванивает Вам, согласовывает сроки и стоимость ремонта.
                     </div>
                 </div>
                 <div class="rumiservice13_block rumiservice13_block4">
@@ -57,7 +57,7 @@ $assets = '/' . Yii::getAlias('@web');
                         <div class="rumiservice13_block_circle_image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/rumiservice13_block4.png"></div>
                     </div>
                     <div class="rumiservice13_block_text">
-                        Вы забираете готовый<br>аппарат из ремонта 
+                        По окончанию ремонта, Вы забираете полностью исправную технику или мы БЕСПЛАТНО доставляем её Вам!
                     </div>
                 </div>
             </div>
