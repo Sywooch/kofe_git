@@ -2027,6 +2027,11 @@ ul.box-filter > li ul {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+@media (max-width: 700px) {
+    #header_third .links {
+        display: block;
+    }
+}
 #header_third .links a {
     line-height: 15px;
     font-size: 15px;
@@ -2086,10 +2091,9 @@ ul.box-filter > li ul {
 }
 @media (max-width: 700px) {
     #header_third .links a.yeshsho {
-        position: absolute;
+        float: left;
         border: 0px;
-        left: 0px;
-        top: 0px;
+        width: auto;
     }
     #header_third .links a.yeshsho br {
         display: none;
