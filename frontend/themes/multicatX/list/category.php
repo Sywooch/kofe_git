@@ -12,7 +12,7 @@ $breadcrumbs = [
     </div>
     <div class="inner_container">
         <div id="content" class="my-text">
-            <h1 class="colortext"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : 'Ремонт ' . mb_strtolower($page['full_title'], 'utf8'); ?></h1>
+            <h1 class="colortext"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : 'Ремонт ' . mb_strtolower($page['full_title'], 'utf8') . ' ' . CController::$monoBrand['title']; ?></h1>
             <?= str_replace('#brand_en#', CController::$monoBrand['title'], $page['description']); ?>
         </div>
     </div>
