@@ -15,6 +15,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html>    
     <head>
@@ -27,12 +28,13 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=8">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
+        <link rel="stylesheet" href="/cssAction?file=<?= $assets . $siteConfig['theme'] . '/css/main.css'; ?>&cache=0">
+        <link rel="stylesheet" href="/cssAction?file=<?= $assets . $siteConfig['theme'] . '/css/main2.css'; ?>&cache=0">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=7" rel="stylesheet">
+        <link href="/cssAction?file=<?= $assets . $siteConfig['theme'] . '/css/' . $siteConfig['id'] . '.css'; ?>&cache=0" rel="stylesheet">
     </head>
+    
     <body role="document">
         <?php
         if (!Yii::$app->user->isGuest) {
@@ -245,6 +247,7 @@ $js = app\components\CController::$js;
             </div>
         </div>
     </footer>
+        
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
 </body>
 </html>
@@ -264,3 +267,4 @@ if (Yii::$app->session->getFlash('success')) {
     });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>

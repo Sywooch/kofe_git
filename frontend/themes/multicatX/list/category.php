@@ -1,14 +1,14 @@
 <?php 
 use \app\components\CController;
 $this->title = $title;
+$breadcrumbs = [    
+    'Ремонт ' . mb_strtolower($page['full_title'], 'utf8'),
+];
 ?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="inner_container">
-        <div class="breadcrumb">
-            <a href="/">Главная</a>
-            <a href="#">Ремонт <?= mb_strtolower($page['full_title'], 'utf8'); ?></a>
-        </div>
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     </div>
     <div class="inner_container">
         <div id="content" class="my-text">

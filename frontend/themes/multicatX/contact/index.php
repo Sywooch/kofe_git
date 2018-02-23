@@ -1,6 +1,6 @@
 <?php 
 $breadcrumbs = [    
-    $pageInfo['title'],
+    'Контакты',
 ];
 $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 $siteConfig = app\components\CController::getSiteConfig();
@@ -9,10 +9,7 @@ $assets = '/' . Yii::getAlias('@web');
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="inner_container">
-        <div class="breadcrumb">
-            <a href="/">Главная</a>
-            <a href="#">Контакты</a>
-        </div>
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     </div>
     <div class="main_container grey_container">
         <div class="inner_container">

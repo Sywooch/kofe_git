@@ -1,4 +1,7 @@
 <?php
+$breadcrumbs = [    
+    $model['title'],
+];
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $model['meta_title']) : str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $model['title']);
@@ -6,10 +9,7 @@ $this->title = !empty($model['meta_title']) ? str_replace('#brand_en#', \app\com
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="inner_container">
-        <div class="breadcrumb">
-            <a href="/">Главная</a>
-            <a href="#"><?= $model['title']; ?></a>
-        </div>
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     </div>
     <div class="inner_container">
         <div id="content" class="my-text">

@@ -25,6 +25,29 @@ class PageController extends CController {
         }
     }
 
+    public function actionGetCss($file, $cache = 0) {
+        $siteConfig = self::getSiteConfig();
+        $cssPath = Yii::getAlias('@frontend') . '/web' . $file;
+        $css = file_get_contents($cssPath);
+        if($cache == 1) {
+            echo $css;
+            Yii::$app->end();
+        }
+        $oParser = new \Sabberworm\CSS\Parser($css);
+        $oCss = $oParser->parse();
+        foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
+            foreach ($oBlock->getSelectors() as $oSelector) {
+                if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
+                    $s = $oSelector->getSelector();
+                    $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                    $oSelector->setSelector($s);
+                }
+            }
+        }
+        echo $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+        Yii::$app->end();
+    }
+
     private function minifyJs($file) {
         // setup the URL, the JavaScript and the form data
         $url = 'https://javascript-minifier.com/raw';
@@ -363,10 +386,10 @@ class PageController extends CController {
             $urls[] = $page;
             if ($page['type'] == 'category' || $page['type'] == 'model') {
                 $parent = [];
-                if($page['type'] == 'model')
+                if ($page['type'] == 'model')
                     $parent = Yii::$app->db->createCommand('SELECT category_id FROM {{%pages}} WHERE id = ' . $page['parent'])->queryOne();
                 $sql = 'SELECT url FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . ($page['type'] == 'model' ? $parent['category_id'] : $page['category_id']);
-                $services = Yii::$app->db->createCommand($sql)->queryAll();                
+                $services = Yii::$app->db->createCommand($sql)->queryAll();
                 foreach ($services as $service) {
                     $urls[] = ['url' => $page['url'] . '/' . $service['url']];
                 }
