@@ -9,8 +9,16 @@ $this->title = $title;
             <div class="row">
                 <div class="col-xs-12">
                     <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><?= $pageInfo['title']; ?></span> <meta itemprop="position" content="1" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">
+                                <span itemprop="name">Ремонт кофемашин</span>
+                            </a>
+                            <meta itemprop="position" content="0" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <span itemscope="" itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name"><?= $pageInfo['title']; ?></span></span> 
+                            <meta itemprop="position" content="1" />
+                        </li>
                     </ol>
                 </div>
                 <div class="col-xs-9 nopadding">
