@@ -7,12 +7,12 @@ $brand = app\components\CController::$monoBrand;
         <ul itemscope itemtype="http://schema.org/BreadcrumbList">
             <?php if ($siteConfig['mono']): ?>
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><?= app\components\CController::$category['full_title']; ?> <?= $brand['title']; ?></a>
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><span itemprop="name"><?= app\components\CController::$category['full_title']; ?> <?= $brand['title']; ?></span></a>
                     <meta itemprop="position" content="0" />
                 </li>
             <?php else: ?>
                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><?= app\components\CController::$category['full_title']; ?></a>
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="/"><span itemprop="name"><?= app\components\CController::$category['full_title']; ?></span></a>
                     <meta itemprop="position" content="0" />
                 </li>
             <?php endif; ?>
@@ -24,13 +24,13 @@ $brand = app\components\CController::$monoBrand;
                 ?>
                 <?php if (end($data) == $title): ?>                
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <?= $title; ?>
+                        <span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name"><?= $title; ?></span></span>
                         <meta itemprop="position" content="<?= $a; ?>" />
                     </li>
                 <?php else: ?>
                     <?php if ('/' . $brand['url'] != $url): ?>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="<?= $url; ?>"><?= $title; ?></a>
+                            <a itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="<?= $url; ?>"><span itemprop="name"><?= $title; ?></span></a>
                             <meta itemprop="position" content="<?= $a; ?>" />
                         </li>
                         <?php $a++; ?>
