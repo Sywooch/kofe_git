@@ -18,7 +18,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
                 <div class="content">
                     <span>01.</span>
                     <p class="title">Ремонт в тот-же день</p>
-                    <p>При заказе услуги, мы выполним ремонт в тот-же день, а также бесплатно продиагностируем и доставим кофемашину!</p>
+                    <p>При заказе услуги, мы выполним ремонт в тот-же день, а также бесплатно продиагностируем и доставим бытовую технику!</p>
                 </div>
                 <div class="content">
                     <span>02.</span>
@@ -54,7 +54,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
             <div class="rumiservice2_delivery">Доставка курьером</div>
             <div class="rumiservice2_skobka_line"></div>
             <div class="rumiservice2_time">Ремонт при владельце</div>
-            <div class="rumiservice2_guaranty"><span>Гарантия до 3-ех месяцев</span></div>
+            <div class="rumiservice2_guaranty"><span>Гарантия до 1 года</span></div>
         </div>
     </div>
     <div class="main_container grey_container">
@@ -85,7 +85,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Гарантия</div>
                         <div class="rumiservice4_item_right_text">
-                            На весь выполненный ремонт бытовой техники, а так-же на заменённые комплектующие - Вы получаете гарантию сроком <span class="colortext">до 2-х лет!</span>
+                            На весь выполненный ремонт бытовой техники, а так-же на заменённые комплектующие - Вы получаете гарантию сроком <span class="colortext">до 1 года!</span>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 <div class="inner_container" style="padding-top: 20px;">
-    <div class="h2">Кофемашины:</div>
+    <a href="/remont-kofemashin" class="for-h2"><div class="h2">Ремонт кофемашин  <?= \app\components\CController::$monoBrand['title']?>:</div></a>
     <div class="owl-carousel33 owl-theme">
         <?php foreach ($rows as $row): ?>
             <div class="item">
