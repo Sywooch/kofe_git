@@ -54,7 +54,10 @@ class CController extends \yii\web\Controller {
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
-            $this->setRegion(2);
+            if ($siteConfig['id'] == 53) {
+                $this->setRegion(2, 'СПБ');
+            } else
+                $this->setRegion(2);
         } elseif (!isset($siteConfig['spb']) && $siteConfig['mono']) {
             $this->setRegion(1);
         }
@@ -77,6 +80,7 @@ class CController extends \yii\web\Controller {
 //        }
         if (empty(Yii::$app->session['region']))
             $this->setRegion(1);
+
         if (isset($_GET['region'])) {
             $this->setRegion((int) $_GET['region']);
             header('Location: /' . Yii::$app->request->pathInfo);
@@ -131,10 +135,13 @@ class CController extends \yii\web\Controller {
         return !empty(Yii::$app->session['region']) ? Yii::$app->session['region'] : $regions[1];
     }
 
-    public function setRegion($regionID) {
+    public function setRegion($regionID, $rodTitle = '') {
         $siteConfig = self::getSiteConfig();
         $regions = Yii::$app->params['regions'];
         $regions[$regionID]['phone'] = $siteConfig['phone-' . $regionID];
+        if (!empty($rodTitle)) {
+            $regions[$regionID]['titleRod'] = $rodTitle;            
+        }
         Yii::$app->session['region'] = $regions[$regionID];
         if (Yii::$app->session['region'] === $regions[$regionID])
             return true;
@@ -206,10 +213,10 @@ class CController extends \yii\web\Controller {
         }
         $phone = preg_replace("/\D/", "", $phone);
         $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';
-        
+
         $msg = '';
         if (!empty($name))
-            $msg .= "\r\nИмя: " . $name;        
+            $msg .= "\r\nИмя: " . $name;
         if (!empty($email))
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
@@ -217,10 +224,10 @@ class CController extends \yii\web\Controller {
         if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $usersPhone . $msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
-        
+
         if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
             self::sendMessage("Телефон: " . $phone . $msg, $adminsChannel);
-        else {            
+        else {
             self::sendMessage("Телефон: " . $phone . $msg, '@site_orders');
         }
 
