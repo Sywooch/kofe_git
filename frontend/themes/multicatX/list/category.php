@@ -2,7 +2,7 @@
 use \app\components\CController;
 $this->title = $title;
 $breadcrumbs = [    
-    'Ремонт ' . mb_strtolower($page['full_title'], 'utf8'),
+    'Ремонт ' . mb_strtolower($page['full_title'], 'utf8') . ' ' . CController::$monoBrand['title'],
 ];
 ?>
 <div class="clear"></div>
