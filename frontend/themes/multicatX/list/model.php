@@ -1,12 +1,14 @@
-<?php $this->title = $title; ?>
+<?php
+$this->title = $title;
+$breadcrumbs = [
+    '/' . $brand['url'] => 'Ремонт ' . mb_strtolower($brand['full_title'], 'utf8'),
+    'Ремонт ' . \app\components\CController::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8')
+];
+?>
 <div class="clear"></div>
 <div id="content" class="colorborder">
     <div class="inner_container">
-        <div class="breadcrumb">
-            <a href="/">Главная</a>
-            <a href="/">Ремонт <?= mb_strtolower($brand['full_title'], 'utf8'); ?></a>
-            <a href="#">Ремонт <?= \app\components\CController::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8'); ?></a>
-        </div>
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     </div>
     <div class="main_container grey_container">
         <div class="inner_container" style="overflow: hidden;">
