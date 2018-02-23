@@ -1,7 +1,7 @@
 <?php
 $this->title = $title;
 $breadcrumbs = [
-    '/' . $brand['url'] => 'Ремонт ' . mb_strtolower($brand['full_title'], 'utf8'),
+    '/' . $brand['url'] => 'Ремонт ' . mb_strtolower($brand['full_title'], 'utf8') . ' ' . \app\components\CController::$monoBrand['title'],
     'Ремонт ' . \app\components\CController::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8')
 ];
 ?>

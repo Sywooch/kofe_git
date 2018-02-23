@@ -3,7 +3,7 @@
     <?php $a = 1; ?>
     <?php foreach ($data as $url => $title): ?>               
         <?php if (end($data) == $title): ?>
-            <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" href="#"><?= $title; ?><meta itemprop="position" content="<?= $a; ?>" /></a>
+            <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><?= $title; ?><meta itemprop="position" content="<?= $a; ?>" /></a>
         <?php else: ?>
             <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" href="<?= $url; ?>"><?= $title; ?><meta itemprop="position" content="<?= $a; ?>" /></a>      
             <?php $a++; ?>                    

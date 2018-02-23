@@ -28,11 +28,13 @@ class PageController extends CController {
     public function actionGetCss($file, $cache = 0) {
         $siteConfig = self::getSiteConfig();
         $cssPath = Yii::getAlias('@frontend') . '/web' . $file;
-        $css = file_get_contents($cssPath);
-        if($cache == 1) {
-            echo $css;
+        $cachedFile = $cssPath . '-cache.css';
+        if ($cache == 1 && is_file($cachedFile)) {
+            header("Content-Type: text/css");
+            echo str_replace('../', $siteConfig['sitePrefix'] . '/', file_get_contents($cachedFile));
             Yii::$app->end();
         }
+        $css = file_get_contents($cssPath);
         $oParser = new \Sabberworm\CSS\Parser($css);
         $oCss = $oParser->parse();
         foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
@@ -44,7 +46,9 @@ class PageController extends CController {
                 }
             }
         }
-        echo $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+        file_put_contents($cachedFile, $css);
+        echo str_replace('../', $siteConfig['sitePrefix'] . '/', $css);
         Yii::$app->end();
     }
 
