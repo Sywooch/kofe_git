@@ -38,15 +38,15 @@ $this->title = $title;
                     <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" href="/">Ремонт кофемашин</a>
+                                <a class="breadcrumbs__link" href="/"><span itemprop="name">Ремонт кофемашин</span></a>
                                 <meta itemprop="position" content="0" />
                             </li>
                             <?php $a = 1; ?>
                             <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
                                 <?php if (end($breadcrumbs) == $breadcrumb): ?>
-                                    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><?= $breadcrumb; ?> <meta itemprop="position" content="<?= $a; ?>" /></span>
+                                    <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name"><?= $breadcrumb; ?></span></span> <meta itemprop="position" content="<?= $a; ?>" /></span>
                                 <?php else: ?>
-                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" href="<?= $url; ?>"><?= $breadcrumb; ?></a> <meta itemprop="position" content="<?= $a; ?>" /></li>
+                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" class="breadcrumbs__link" href="<?= $url; ?>"><span itemprop="name"><?= $breadcrumb; ?></span></a> <meta itemprop="position" content="<?= $a; ?>" /></li>
                                 <?php endif; ?>
                                 <?php $a++; ?> 
                             <?php endforeach; ?>

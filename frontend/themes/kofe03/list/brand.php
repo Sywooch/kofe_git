@@ -44,12 +44,12 @@ $this->title = $title;
                         <ul class="breadcrumbs__list">
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
                                 <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">
-                                    <span>Ремонт кофемашин</span>
+                                    <span itemprop="name">Ремонт кофемашин</span>
                                 </a>
                                 <meta itemprop="position" content="0" />
                             </li>                            
                         </ul>
-                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current">Ремонт кофемашин <?= $pageInfo['title']; ?> <meta itemprop="position" content="1" /></span>
+                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Ремонт кофемашин <?= $pageInfo['title']; ?></span></span> <meta itemprop="position" content="1" /></span>
                     </nav>
                     <div class="con-infos">
                         <div class="left">

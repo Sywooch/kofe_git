@@ -10,12 +10,12 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
                 <ul class="breadcrumbs__list">
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
                         <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="/">
-                            <span>Ремонт кофемашин</span>
+                            <span itemprop="name">Ремонт кофемашин</span>
                         </a>
                         <meta itemprop="position" content="0" />
                     </li>
                 </ul>
-                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><?= $model['title']; ?> <meta itemprop="position" content="1" /></span>
+                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name"><?= $model['title']; ?></span></span> <meta itemprop="position" content="1" /></span>
             </nav>
         </div>
     </header>

@@ -53,15 +53,15 @@ $this->title = $title;
                     <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" itemprop="url" href="/"><span>Ремонт кофемашин</span></a>
+                                <a class="breadcrumbs__link" itemprop="url" href="/"><span itemprop="name">Ремонт кофемашин</span></a>
                                 <meta itemprop="position" content="0" />
                             </li>         
                             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" href="/<?= $brand['url']; ?>">Ремонт кофемашин <?= $brand['title']; ?></a>
+                                <a class="breadcrumbs__link" href="/<?= $brand['url']; ?>"><span itemprop="name">Ремонт кофемашин <?= $brand['title']; ?></span></a>
                                 <meta itemprop="position" content="1" />
                             </li>
                         </ul>                        
-                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current">Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?> <meta itemprop="position" content="2" /></span>
+                        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Ремонт кофемашин <?= $brand['title'] . ' ' . $pageInfo['title']; ?></span></span> <meta itemprop="position" content="2" /></span>
                     </nav>
                     <div class="con-infos">
                         <div class="left">
