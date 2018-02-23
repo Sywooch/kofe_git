@@ -257,5 +257,6 @@ $js = app\components\CController::$js;
             });</script>
         <?php $this->endBody() ?>    
         <?php $this->endPage() ?>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
