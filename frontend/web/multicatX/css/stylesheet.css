@@ -6499,3 +6499,6 @@ div.for-parallax {
             transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
   }
 }
+.for-h2:hover {
+    text-decoration: none;
+}
