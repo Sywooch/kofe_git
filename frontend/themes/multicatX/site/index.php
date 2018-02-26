@@ -37,7 +37,7 @@ $this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\co
                 </div>
             </div>
             <div class="form">
-                <h1><?= $page['meta_h1']; ?></h1>
+                <h1><?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['meta_h1']); ?></h1>
                 <div class="plashka-in">
                     <h2>Ремонт <?= app\components\CController::$monoBrand['url']; ?>!</h2> 
                     <span>Только <?= app\components\CController::$monoBrand['url']; ?>!</span>
