@@ -1,7 +1,10 @@
 <?php
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $page['meta_title'] ?: 'Сервисный центр ' . \app\components\CController::$monoBrand['title'] . '  🍵 Гарантия 👍 Доставка 🚗 Качество';
+$title = 'Сервисный центр ' . \app\components\CController::$monoBrand['title'] . ' ⚒ Гарантия 👍 Доставка 🚗 Качество';
+if(isset($siteConfig['spb']) && $siteConfig['spb'])
+                                    $title = str_replace (['⚒', '👍', '🚗'], ['🛠', '🚕', '⏰'], $title);
+$this->title = $page['meta_title'] ?: $title;
 ?>
 <div id="notification"></div>
 <div class="clear"></div>
