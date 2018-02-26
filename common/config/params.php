@@ -1183,7 +1183,7 @@ return [
             'brand-id' => 20,
         ],
         
-        'bosch.service-center.pro' => [
+        'bosch.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1199,7 +1199,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 1,
         ],
-        'delonghi.service-center.pro' => [
+        'delonghi.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1215,7 +1215,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 2,
         ],
-        'krups.service-center.pro' => [
+        'krups.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1231,7 +1231,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 3,
         ],
-        'philips.service-center.pro' => [
+        'philips.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1247,7 +1247,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 4,
         ],
-        'saeco.service-center.pro' => [
+        'saeco.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1263,7 +1263,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 5,
         ],
-        'siemens.service-center.pro' => [
+        'siemens.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1279,7 +1279,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 6,
         ],
-        'miele.service-center.pro' => [
+        'miele.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1295,7 +1295,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 7,
         ],
-        'jura.service-center.pro' => [
+        'jura.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1311,7 +1311,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 8,
         ],
-        'bork.service-center.pro' => [
+        'bork.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1327,7 +1327,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 9,
         ],
-        'schaerer.service-center.pro' => [
+        'schaerer.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1343,7 +1343,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 10,
         ],
-        'gaggia.service-center.pro' => [
+        'gaggia.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1359,7 +1359,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 11,
         ],
-        'franke.service-center.pro' => [
+        'franke.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1375,7 +1375,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 12,
         ],
-        'nuova-simonelli.service-center.pro' => [
+        'nuova-simonelli.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1391,7 +1391,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 13,
         ],
-        'melitta.service-center.pro' => [
+        'melitta.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1407,7 +1407,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 14,
         ],
-        'la-cimbali.service-center.pro' => [
+        'la-cimbali.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1423,7 +1423,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 15,
         ],
-        'promac.service-center.pro' => [
+        'promac.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1439,7 +1439,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 16,
         ],
-        'faema.service-center.pro' => [
+        'faema.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1455,7 +1455,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 17,
         ],
-        'rancilio.service-center.pro' => [
+        'rancilio.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1471,7 +1471,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 18,
         ],
-        'nivona.service-center.pro' => [
+        'nivona.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,
@@ -1487,7 +1487,7 @@ return [
             'mono-brand' => true,
             'brand-id' => 19,
         ],
-        'wmf.service-center.pro' => [
+        'wmf.service-center.repair' => [
             'phone-1' => '8 (495) 320-80-08',
             'phone-2' => '8 (495) 320-80-08',
             'stickyMenu' => false,

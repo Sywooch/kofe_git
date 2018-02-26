@@ -30,7 +30,7 @@ class MainUrlRule extends UrlRule {
     }
 
     public function parseRequest($manager, $request) {
-        if (strpos($_SERVER['SERVER_NAME'], '.pro'))
+        if (strpos($_SERVER['SERVER_NAME'], '.repair'))
             Yii::$app->request->setHostInfo($_SERVER['SERVER_NAME'] . '.ru');
         $siteConfig = self::getSiteConfig();
         $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
