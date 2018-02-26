@@ -182,7 +182,7 @@ class CController extends \yii\web\Controller {
                 'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
                 'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
                 'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
-                'help' => ['name' => 'SC1_SPB', 'OID' => 2202775576000],
+                'help' => ['name' => 'MSKM3', 'OID' => 2202775576000],
                 'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
                 'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
             ];
@@ -197,7 +197,8 @@ class CController extends \yii\web\Controller {
                 'site' => Yii::$app->request->hostInfo,
                 'page' => '',
             ])->execute();
-            $p = '7' . substr(Yii::$app->session['region']['phone'], 1, strlen($phone));
+            $p = strip_tags(Yii::$app->session['region']['phone']);
+            $p = '7' . substr($p, 1, strlen($p));
             if ($siteConfig['id'] == 50) {
                 if (isset($_COOKIE['roistat_visit'])) {
                     $visit_id = $_COOKIE['roistat_visit'];
