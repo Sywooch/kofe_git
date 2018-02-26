@@ -1535,6 +1535,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 1,
+            'foreign_category' => true,
         ],
         'delonghi-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1552,6 +1553,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 2,
+            'foreign_category' => true,
         ],
         'krups-remont' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1569,6 +1571,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 3,
+            'foreign_category' => true,
         ],
         'philips-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1586,6 +1589,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 4,
+            'foreign_category' => true,
         ],
         'saeco-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1603,6 +1607,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 5,
+            'foreign_category' => true,
         ],
         'support-siemens' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1620,6 +1625,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 6,
+            'foreign_category' => true,
         ],
         'miele-remont-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1637,6 +1643,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 7,
+            'foreign_category' => true,
         ],
         'support-jura' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1654,6 +1661,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 8,
+            'foreign_category' => true,
         ],
         'bork-services' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1671,6 +1679,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 9,
+            'foreign_category' => true,
         ],
         'service-center-schaerer' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1688,6 +1697,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 10,
+            'foreign_category' => true,
         ],
         'gaggia-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1705,6 +1715,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 11,
+            'foreign_category' => true,
         ],
         'service-center-franke' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1722,6 +1733,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 12,
+            'foreign_category' => true,
         ],
         'nuova-simonelli-remont' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1739,6 +1751,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 13,
+            'foreign_category' => true,
         ],
         'melitta-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1756,6 +1769,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 14,
+            'foreign_category' => true,
         ],
         'service-center-la-cimbali' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1773,6 +1787,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 15,
+            'foreign_category' => true,
         ],
         'service-center-promac' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1790,6 +1805,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 16,
+            'foreign_category' => true,
         ],
         'service-center-faema' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1807,6 +1823,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 17,
+            'foreign_category' => true,
         ],
         'service-center-rancilio' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1824,6 +1841,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 18,
+            'foreign_category' => true,
         ],
         'nivona-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1841,6 +1859,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 19,
+            'foreign_category' => true,
         ],
         'wmf-center' => [
             'phone-1' => '8 (812) 648-38-08',
@@ -1858,6 +1877,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 20,
+            'foreign_category' => true,
         ],
         'remont-camera' => [
             'phone-1' => '8 (499) 450-90-08',
