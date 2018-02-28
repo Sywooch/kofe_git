@@ -223,19 +223,21 @@ class CController extends \yii\web\Controller {
                     $rekomendation = $_GET['data']['title'];
                     $url = Yii::$app->request->pathInfo;
                     $url = explode('/', $url);
-                    array_pop($url);
-                    $page = (new \yii\db\Query())
-                            ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
-                            ->from('{{%pages}}')
-                            ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
-                            ->limit(1)
-                            ->one();
-                    if ($page['type'] == 'model') {
-                        $model = $page['title'];
-                        $sql = 'select title from {{%pages}} where id =:id and active = 1 order by sort limit 1';
-                        $brand = \Yii::$app->db->createCommand($sql)->bindValues(['id' => $page['parent']])->queryOne()['title'];
-                    } elseif ($page['type'] == 'brand') {
-                        $brand = $page['title'];
+                    if (count($url) > 1) {
+                        array_pop($url);
+                        $page = (new \yii\db\Query())
+                                ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
+                                ->from('{{%pages}}')
+                                ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
+                                ->limit(1)
+                                ->one();
+                        if ($page['type'] == 'model') {
+                            $model = $page['title'];
+                            $sql = 'select title from {{%pages}} where id =:id and active = 1 order by sort limit 1';
+                            $brand = \Yii::$app->db->createCommand($sql)->bindValues(['id' => $page['parent']])->queryOne()['title'];
+                        } elseif ($page['type'] == 'brand') {
+                            $brand = $page['title'];
+                        }
                     }
                 }
             }
