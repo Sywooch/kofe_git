@@ -212,15 +212,34 @@ class CController extends \yii\web\Controller {
             }
             $brand = '';
             $model = '';
+            $rekomendation = '';
             if (isset($_GET['data'])) {
                 if ($_GET['data']['type'] == 'brand') {
                     $brand = $_GET['data']['title'];
                 } elseif ($_GET['data']['type'] == 'model') {
                     $brand = Yii::$app->db->createCommand('SELECT title FROM {{%pages}} WHERE id = ' . (int) $_GET['data']['parent'])->queryOne()['title'];
                     $model = $_GET['data']['title'];
+                } elseif (in_array($_GET['data']['type'], [1, 2])) {
+                    $rekomendation = $_GET['data']['title'];
+                    $url = Yii::$app->request->pathInfo;
+                    $url = explode('/', $url);
+                    array_pop($url);
+                    $page = (new \yii\db\Query())
+                            ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
+                            ->from('{{%pages}}')
+                            ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
+                            ->limit(1)
+                            ->one();
+                    if ($page['type'] == 'model') {
+                        $model = $page['title'];
+                        $sql = 'select title from {{%pages}} where id =:id and active = 1 order by sort limit 1';
+                        $brand = \Yii::$app->db->createCommand($sql)->bindValues(['id' => $page['parent']])->queryOne()['title'];                        
+                    } elseif($page['type'] == 'brand') {
+                        $brand = $page['title'];
+                    }
                 }
             }
-            file_get_contents('https://mobi03.ru/kofeOrders?brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            file_get_contents('https://mobi03.ru/kofeOrders?rekomendation=' . urlencode($rekomendation) . '&brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $phone = preg_replace("/\D/", "", $phone);
         $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';
