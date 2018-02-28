@@ -9761,8 +9761,11 @@ footer h4 {
 }
 .dilshod-css > li {
     float: left;
-    color: #fff;
+    color: #333;
     font-size: 12px;
+}
+.header__about .dilshod-css > li {
+    color: #fff;
 }
 .dilshod-css > li > a {
     color: #e66429;
