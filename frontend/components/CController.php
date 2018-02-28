@@ -233,13 +233,17 @@ class CController extends \yii\web\Controller {
                     if ($page['type'] == 'model') {
                         $model = $page['title'];
                         $sql = 'select title from {{%pages}} where id =:id and active = 1 order by sort limit 1';
-                        $brand = \Yii::$app->db->createCommand($sql)->bindValues(['id' => $page['parent']])->queryOne()['title'];                        
-                    } elseif($page['type'] == 'brand') {
+                        $brand = \Yii::$app->db->createCommand($sql)->bindValues(['id' => $page['parent']])->queryOne()['title'];
+                    } elseif ($page['type'] == 'brand') {
                         $brand = $page['title'];
                     }
                 }
             }
-            file_get_contents('https://mobi03.ru/kofeOrders?rekomendation=' . urlencode($rekomendation) . '&brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            try {
+                file_get_contents('https://mobi03.ru/kofeOrders?rekomendation=' . urlencode($rekomendation) . '&brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            } catch (Exception $ex) {
+                
+            }
         }
         $phone = preg_replace("/\D/", "", $phone);
         $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';
