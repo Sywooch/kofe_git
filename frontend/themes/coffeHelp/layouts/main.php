@@ -15,7 +15,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
-<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
+<?php \app\widgets\other\Replace::begin(); ?>
 <!DOCTYPE html>
 <html>   
     <head>
