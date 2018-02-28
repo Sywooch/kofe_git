@@ -79,7 +79,7 @@ h1.category_h1 {
     color: #3b3b3b;
     font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 34px;
     padding-top: 28px;
     padding-bottom: 4px;
     position: relative;
@@ -127,6 +127,10 @@ h2 {
 p {
     margin-top: 0px;
     margin-bottom: 20px;
+    text-align: justify;
+    font-family:verdana,geneva,sans-serif;
+    font-size:14px;
+    color:#808080;
 }
 a,
 a:visited,
@@ -5022,6 +5026,7 @@ form p:last-child {
     border-radius: 10px;
     position: relative;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .main_product_right .image .image_tooltip {
     width: 125px;
@@ -6501,4 +6506,18 @@ div.for-parallax {
 }
 .for-h2:hover {
     text-decoration: none;
+}
+.h2.link {
+    border-bottom: 3px dotted;
+    display: inline-block;
+    height: 52px;
+}
+@media (max-width: 700px) {
+    .h2.link {
+        border-bottom: 1px dotted;
+        height: 42px;
+    }
+    .owl-controls {
+        display: none ! important;
+    }
 }

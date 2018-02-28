@@ -24,7 +24,7 @@ $form = ActiveForm::begin([
     ?>    
     <div class="form__box">
         <?php if (!empty($h1)): ?>
-            <h1 class="poster__title" itemprop="name"><?= $h1; ?></h1>
+            <h1 class="poster__title gl-text-gorad" itemprop="name"><?= $h1; ?></h1>
             <div class="crear"></div>
         <?php endif; ?>
         <h3 class="form__title">Оставьте онлайн заявку по Акции! 🎁</h3>
