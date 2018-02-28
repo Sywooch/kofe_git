@@ -15,6 +15,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html>   
     <head>
@@ -264,3 +265,4 @@ if (Yii::$app->session->getFlash('success')) {
     });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>
