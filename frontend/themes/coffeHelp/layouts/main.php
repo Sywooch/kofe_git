@@ -28,8 +28,7 @@ $js = app\components\CController::$js;
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=8">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">        
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=7" rel="stylesheet">
     </head>
@@ -254,6 +253,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
