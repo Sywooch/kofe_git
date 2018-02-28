@@ -140,7 +140,7 @@ class CController extends \yii\web\Controller {
         $regions = Yii::$app->params['regions'];
         $regions[$regionID]['phone'] = $siteConfig['phone-' . $regionID];
         if (!empty($rodTitle)) {
-            $regions[$regionID]['titleRod'] = $rodTitle;            
+            $regions[$regionID]['titleRod'] = $rodTitle;
         }
         Yii::$app->session['region'] = $regions[$regionID];
         if (Yii::$app->session['region'] === $regions[$regionID])
@@ -210,7 +210,17 @@ class CController extends \yii\web\Controller {
             if (isset($_COOKIE['roistat_visit'])) {
                 $visit_id = $_COOKIE['roistat_visit'];
             }
-            file_get_contents('https://mobi03.ru/kofeOrders?roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            $brand = '';
+            $model = '';
+            if (isset($_GET['data'])) {
+                if ($_GET['data']['type'] == 'brand') {
+                    $brand = $_GET['data']['title'];
+                } elseif ($_GET['data']['type'] == 'model') {
+                    $brand = Yii::$app->db->createCommand('SELECT title FROM {{%pages}} WHERE id = ' . (int) $_GET['data']['parent'])->queryOne()['title'];
+                    $model = $_GET['data']['title'];
+                }
+            }
+            file_get_contents('https://mobi03.ru/kofeOrders?brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . (int) $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $phone = preg_replace("/\D/", "", $phone);
         $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';
