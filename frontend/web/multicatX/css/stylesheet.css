@@ -2183,8 +2183,11 @@ ul.box-filter > li ul {
 #rumiservice1 .info .content {
     color: #fff;
     margin-bottom: 20px;
-    display: block;
+    display: flex;
     width: 100%;
+}
+#rumiservice1 .info .content > div {
+    min-width: 80%;
 }
 @media (max-width: 950px) {
     #rumiservice1 .info .content {
