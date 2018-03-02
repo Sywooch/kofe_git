@@ -35,7 +35,7 @@ $breadcrumbs = [
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\other\Advantage::widget(); ?>
 <?php if (!$siteConfig['mono']): ?>

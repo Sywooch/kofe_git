@@ -42,7 +42,7 @@ $breadcrumbs = [
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\lists\Price::widget(['half' => true]); ?>
 <?php if (!$siteConfig['mono']): ?>

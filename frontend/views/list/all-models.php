@@ -39,6 +39,6 @@ $breadcrumbs = [
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\lists\Models::widget(['parent' => $siteConfig['brand-id'], 'brand' => \app\components\CController::$monoBrand['title']]); ?>
