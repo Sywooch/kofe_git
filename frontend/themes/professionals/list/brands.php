@@ -10,7 +10,7 @@ $this->title = $pageInfo['meta_title'];
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-lg-24 col-md-24 col-sm-24">
+            <div class="col-lg-16 col-md-12 col-sm-24">
                 <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                         <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a>
@@ -18,6 +18,15 @@ $this->title = $pageInfo['meta_title'];
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Бренды <meta itemprop="position" content="1" /></li>
                 </ul>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-24 form dark poisk-brend">
+                <form id="review-form" action="/contacts" method="post"> 
+                    <div class="row">
+                        <div class="form-group field-reviews-username required has-error">
+                            <input type="text" id="reviews-username" class="form-control" name="Reviews[username]" placeholder="Поиск брендов.." aria-required="true">
+                        </div> 
+                    </div> 
+                </form> 
             </div>
         </div>
 </section>

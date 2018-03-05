@@ -9792,3 +9792,19 @@ a.mybtn {
     padding: 0px 24px;
     margin-top: 10px;
 }
+a.mybtn:hover {
+    background-color: #333;
+}
+
+.poisk-brend:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 0px;
+    background: url(../images/loupe.svg);
+    background-size: 100%;
+    display: block;
+    margin-top: 14px;
+    margin-right: 13px;
+}
