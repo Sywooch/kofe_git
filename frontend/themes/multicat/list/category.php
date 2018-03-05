@@ -16,8 +16,8 @@ $this->title = $page['meta_title'];
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
 <?= multicat\widgets\lists\Models::widget(['models' => $models]); ?>
-<?= multicat\widgets\lists\AllPrices::widget(['models' => $models, 'parent' => $page]); ?>
-<?= multicat\widgets\lists\Neispravnost::widget(['category' => $page]); ?>
+<?= multicat\widgets\lists\AllPrices::widget(['models' => $models, 'parent' => app\components\CController::$category]); ?>
+<?= multicat\widgets\lists\Neispravnost::widget(['category' => app\components\CController::$category]); ?>
 <section id="number-13">
     <div class="container">
         <?= multicat\widgets\lists\LastReviews::widget(); ?>

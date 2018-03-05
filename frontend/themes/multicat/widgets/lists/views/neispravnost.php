@@ -5,7 +5,7 @@
             <div class="item">
                 <span><?= $group; ?></span>
                 <?php foreach ($neisps as $neisp): ?>
-                    <a href="/<?= $category['url'] . '-' . $neisp['url']; ?>"><?= $neisp['title']; ?></a>
+                    <a href="/<?= $category['url'] . '/' . $neisp['url']; ?>"><?= $neisp['title']; ?></a>
                 <?php endforeach; ?>
             </div>
         <?php endforeach; ?>

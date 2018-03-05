@@ -67,7 +67,30 @@ $(document).ready(function () {
             nextPage: $iphoneWrap.find('.nextPage')
         });
     });
-
+    var $iphone = $('#bottons-tablet');
+    var $iphoneWrap = $iphone.parent();
+    $iphone.sly({
+        horizontal: 1,
+        itemNav: 'basic',
+        smart: 1,
+        activateOn: 'click',
+        mouseDragging: 1,
+        touchDragging: 1,
+        releaseSwing: 1,
+        startAt: 0,
+        scrollBar: $iphoneWrap.find('.scrollbar'),
+        scrollBy: 1,
+        pagesBar: $iphoneWrap.find('.pages'),
+        activatePageOn: 'click',
+        speed: 300,
+        elasticBounds: 1,
+        easing: 'easeOutExpo',
+        dragHandle: 1,
+        dynamicHandle: 1,
+        clickBar: 1,
+        prevPage: $iphoneWrap.find('.prevPage'),
+        nextPage: $iphoneWrap.find('.nextPage')
+    });
 
     $('.bottons a').click(function () {
         var tab_id = $(this).attr('data-tab');
@@ -212,11 +235,3 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
 function vidFade() {
   vid.classList.add("stopfade");
 }
-
-vid.addEventListener('ended', function()
-{
-// only functional if "loop" is removed 
-vid.pause();
-// to capture IE10
-vidFade();
-}); 
