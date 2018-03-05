@@ -18,7 +18,10 @@ $siteConfig = app\components\CController::getSiteConfig();
         ?>
     </div>
 </div>
-<?php $a = 0; foreach ($sortedBrands as $latter => $brands): $a++; ?>
+<?php
+$a = 0;
+foreach ($sortedBrands as $latter => $brands): $a++;
+    ?>
     <div class="search-brends<?= $a != 1 ? ' hide' : '' ?>">
         <div class="left"><?= $latter; ?></div>
         <div class="right">
@@ -28,8 +31,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                     if ($siteConfig['mono'])
                         $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
                     $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
-                    $file = $path . $brand['image'];                    
-                    if (!is_file($path . 'thumbs/' . $brand['image'])) {                        
+                    $file = $path . $brand['image'];
+                    if (!is_file($path . 'thumbs/' . $brand['image']) && is_file($file)) {
                         $image = Yii::$app->image->load($file);
                         $image->resize(133, 117)->background('#fff', 100)->save($path . 'thumbs/' . $brand['image'], 60);
                     }
