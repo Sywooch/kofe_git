@@ -28,6 +28,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endforeach; ?>
                     <a href="/brands">Полный<br>список</a>
                 </div>
+                <a class="mybtn" href="/brands">Все бренды</a>
             </div>
         </div>
     </div>
