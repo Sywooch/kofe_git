@@ -52,7 +52,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?php if (app\components\CController::$category['id'] != 3 && app\components\CController::$category['id'] != 4) {

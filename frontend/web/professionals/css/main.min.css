@@ -8305,13 +8305,7 @@ footer{
     .form-block__order{
         max-width:32rem
     }
-    .brands{
-        background-repeat:no-repeat;
-        background-position:-30rem 50%;
-        background-image:url(../images/tmp/coffeemachine-2.png)
-    }
     .brand-list{
-        width:70%;
         float:right
     }
     .promo{
@@ -9761,8 +9755,11 @@ footer h4 {
 }
 .dilshod-css > li {
     float: left;
-    color: #fff;
+    color: #333;
     font-size: 12px;
+}
+.header__about .dilshod-css > li {
+    color: #fff;
 }
 .dilshod-css > li > a {
     color: #e66429;

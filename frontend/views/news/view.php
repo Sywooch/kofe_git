@@ -19,7 +19,7 @@
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 
 <?= \app\widgets\other\Advantage::widget(); ?>

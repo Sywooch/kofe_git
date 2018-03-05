@@ -65,7 +65,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\lists\Neispravnost::widget(); ?>
 <?= \app\widgets\lists\Price::widget(['urlPrefix' => $pageInfo['url'], 'brandPage' => true, 'prefix' => ' ' . $brand['title'] . ' ' . $pageInfo['title']]); ?>

@@ -32,7 +32,7 @@ $this->title = $pageInfo['meta_title'];
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= \app\widgets\lists\Price::widget(); ?>
 <?php if (!$siteConfig['mono']): ?>

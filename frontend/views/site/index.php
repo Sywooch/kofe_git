@@ -44,7 +44,7 @@ else {
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
 <?= !$siteConfig['mono'] ? \app\widgets\lists\PopularBrands::widget() : ''; ?>
 <?= \app\widgets\lists\Neispravnost::widget(['metrika' => 'call-me-home']); ?>

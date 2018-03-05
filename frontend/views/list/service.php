@@ -88,5 +88,5 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
     </section>
-<noindex>
+</noindex>
 <?php endif; ?>
