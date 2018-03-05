@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/coffeemachine-2_DKcAIK9.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-15 col-md-14 col-sm-24 clearfix">
+            <div class="col-lg-15 col-md-14 col-sm-24 clearfix" style="text-align: center;">
                 <div class="brand-list">
                     <?php foreach ($rows as $row): ?>
                         <a href="/<?= $row['url']; ?>">
