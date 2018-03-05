@@ -16,7 +16,7 @@ $this->title = $title;
                         $file = $path . $pageInfo['image'];
                         $w = 174;
                         $h = 230;
-                        if (!is_file($path . 'thumbs/' . $w . 'x' . $h . $pageInfo['image'])) {
+                        if (!is_file($path . 'thumbs/' . $w . 'x' . $h . $pageInfo['image']) && is_file($file)) {
                             $image = Yii::$app->image->load($file);
                             $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . 'x' . $h . $pageInfo['image'], 60);
                         }
