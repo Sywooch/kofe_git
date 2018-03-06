@@ -9,7 +9,7 @@ $this->title = $page['meta_title'];
 <section id="number-5" style="background-image: url(<?= $assets ?>/multicat/images/upload/banner.png)">
     <div class="container">        
         <h1><?= !empty($page['meta_h1']) ? $page['meta_h1'] : $page['title']; ?></h1>
-        <?= $page['description']; ?>
+        <?= str_replace('#brand_en#', CController::$monoBrand['title'], $page['description']); ?>
         <div class="clear"></div>
     </div>
 </section>
