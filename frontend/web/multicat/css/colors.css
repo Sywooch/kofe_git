@@ -23,7 +23,7 @@
     fill: #fff ! important;
 }
 .bosch nav li ul .colorsvg,
-.bosch nav li ul .fil0 {
+.bosch nav li ul .fil0, .bosch .svgcolor{
     fill: #215f8b ! important;
 }
 .bosch .colorborder,
@@ -58,7 +58,7 @@
     fill: #fff ! important;
 }
 .siemens nav li ul .colorsvg,
-.siemens nav li ul .fil0 {
+.siemens nav li ul .fil0, .siemens .svgcolor{
     fill: #41aaaa ! important;
 }
 .siemens .colorborder,
@@ -93,7 +93,7 @@
     fill: #fff ! important;
 }
 .delonghi nav li ul .colorsvg,
-.delonghi nav li ul .fil0 {
+.delonghi nav li ul .fil0, .delonghi .svgcolor{
     fill: #215f8b ! important;
 }
 .delonghi .colorborder,
@@ -128,7 +128,7 @@
     fill: #fff ! important;
 }
 .saeco nav li ul .colorsvg,
-.saeco nav li ul .fil0 {
+.saeco nav li ul .fil0, .saeco .svgcolor{
     fill: #d71921 ! important;
 }
 .saeco .yeshsho {
@@ -171,7 +171,7 @@
     fill: #fff ! important;
 }
 .philips nav li ul .colorsvg,
-.philips nav li ul .fil0 {
+.philips nav li ul .fil0, .philips .svgcolor{
     fill: #3182b1 ! important;
 }
 .philips .colorborder,
@@ -206,7 +206,7 @@
     fill: #fff ! important;
 }
 .jura nav li ul .colorsvg,
-.jura nav li ul .fil0 {
+.jura nav li ul .fil0, .jura .svgcolor{
     fill: #e30613 ! important;
 }
 .jura .yeshsho {
@@ -249,7 +249,7 @@
     fill: #fff ! important;
 }
 .krups nav li ul .colorsvg,
-.krups nav li ul .fil0 {
+.krups nav li ul .fil0, .krups .svgcolor{
     fill: #525352 ! important;
 }
 .krups .colorborder,
@@ -284,7 +284,7 @@
     fill: #fff ! important;
 }
 .melitta nav li ul .colorsvg,
-.melitta nav li ul .fil0 {
+.melitta nav li ul .fil0, .melitta .svgcolor{
     fill: #d00c0e ! important;
 }
 .melitta .yeshsho {
@@ -327,7 +327,7 @@
     fill: #fff ! important;
 }
 .nivona nav li ul .colorsvg,
-.nivona nav li ul .fil0 {
+.nivona nav li ul .fil0, .nivona .svgcolor{
     fill: #af0917 ! important;
 }
 .nivona .yeshsho {
@@ -370,7 +370,7 @@
     fill: #fff ! important;
 }
 .gaggia nav li ul .colorsvg,
-.gaggia nav li ul .fil0 {
+.gaggia nav li ul .fil0, .gaggia .svgcolor{
     fill: #ef4023 ! important;
 }
 .gaggia .yeshsho {
@@ -414,7 +414,7 @@
     stroke-width:1;
 }
 .wmf nav li ul .colorsvg,
-.wmf nav li ul .fil0 {
+.wmf nav li ul .fil0, .wmf .svgcolor{
     fill: #71b430 ! important;
 }
 .wmf .yeshsho {
@@ -457,7 +457,7 @@
     fill: #fff ! important;
 }
 .la-cimbali nav li ul .colorsvg,
-.la-cimbali nav li ul .fil0 {
+.la-cimbali nav li ul .fil0, .la-cimbali .svgcolor{
     fill: #e2271c ! important;
 }
 .la-cimbali .yeshsho {
@@ -500,7 +500,7 @@
     fill: #fff ! important;
 }
 .schaerer nav li ul .colorsvg,
-.schaerer nav li ul .fil0 {
+.schaerer nav li ul .fil0, .schaerer .svgcolor{
     fill: #e2271c ! important;
 }
 .schaerer .yeshsho {
@@ -543,7 +543,7 @@
     fill: #fff ! important;
 }
 .franke nav li ul .colorsvg,
-.franke nav li ul .fil0 {
+.franke nav li ul .fil0, .franke .svgcolor{
     fill: #e2271c ! important;
 }
 .franke .colorborder,
@@ -578,7 +578,7 @@
     fill: #fff ! important;
 }
 .faema nav li ul .colorsvg,
-.faema nav li ul .fil0 {
+.faema nav li ul .fil0, .faema .svgcolor{
     fill: #870c28 ! important;
 }
 .faema .yeshsho {
@@ -621,7 +621,7 @@
     fill: #fff ! important;
 }
 .miele nav li ul .colorsvg,
-.miele nav li ul .fil0 {
+.miele nav li ul .fil0, .miele .svgcolor{
     fill: #a20001 ! important;
 }
 .miele .colorborder,
@@ -656,7 +656,7 @@
     fill: #fff ! important;
 }
 .rancilio nav li ul .colorsvg,
-.rancilio nav li ul .fil0 {
+.rancilio nav li ul .fil0, .rancilio .svgcolor{
     fill: #007845 ! important;
 }
 .rancilio .yeshsho {
@@ -699,7 +699,7 @@
     fill: #fff ! important;
 }
 .nuova-simonelli nav li ul .colorsvg,
-.nuova-simonelli nav li ul .fil0 {
+.nuova-simonelli nav li ul .fil0, .nuova-simonelli .svgcolor{
     fill: #d82f3e ! important;
 }
 .nuova-simonelli .yeshsho {
@@ -742,7 +742,7 @@
     fill: #fff ! important;
 }
 .bork nav li ul .colorsvg,
-.bork nav li ul .fil0 {
+.bork nav li ul .fil0, .bork .svgcolor{
     fill: #5c5c5c ! important;
 }
 .bork .colorborder,
@@ -777,7 +777,7 @@
     fill: #fff ! important;
 }
 .promac nav li ul .colorsvg,
-.promac nav li ul .fil0 {
+.promac nav li ul .fil0, .promac .svgcolor{
     fill: #a1190d ! important;
 }
 .promac .yeshsho {

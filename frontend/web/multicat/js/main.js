@@ -169,6 +169,15 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
         $("#" + tab_id).addClass('active');
     });
+    $('.left.tab-gl .colorborder').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('.contact-menu li').removeClass('active');
+        $('#number-8 .item').removeClass('active');
+
+        $(this).parent().addClass('active');
+        $("#" + tab_id).addClass('active');
+    });
 });
 
 $(".fancybox").fancybox();

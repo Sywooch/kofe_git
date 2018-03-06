@@ -1,39 +1,44 @@
 <?php
-$assets = Yii::getAlias('@web');
-?>
+   $assets = Yii::getAlias('@web');
+   ?>
 <section id="number-8">
-    <div class="container">
-        <?php foreach ($rows as $row): ?>
-            <div class="item">
-                <!--<div class="left">
-                    <div class="colorborder"><?= $row['full_title']; ?></div>
-                    <?= $row['description']; ?>
-                </div>-->
-                <?php if (isset($row['children']) && !empty($row['children'])): ?>
-                    <div class="right">
-                        <div class="frame">
-                            <div class="clearfix">
-                                <?php foreach ($row['children'] as $model): ?>
-                                    <a class="colorborder" href="/<?= $model['url']; ?>">
-                                        <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
-                                        <span>Ремонт</span><?= $model['title']; ?>
-                                    </a>
-                                <?php endforeach; ?>
-                            </div>
-                        </div>
-                        <div class="scrollbar">
-                            <div class="handle colorbg colorbghover">
-                                <div class="mousearea"></div>
-                            </div>
-                        </div>
-                        <div class="controls center">
-                            <button class="prevPage"><i class="fa fa-angle-left colorbg colorbghover" aria-hidden="true"></i></button>
-                            <button class="nextPage"><i class="fa fa-angle-right colorbg colorbghover" aria-hidden="true"></i></button>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                <?php endif; ?>
+   <div class="container">
+      <?php 
+         $bitta = false;
+         if(count($rows) == 1)
+             $bitta = true;
+         ?>
+      <?php if($bitta): ?>
+      <div class="left">
+         <?php foreach ($rows as $row): ?>
+         <div data-tab="tabs-<?= $row['id']; ?>" class="colorborder"><a href="<?= $row['url']; ?>"><?= $row['full_title']; ?></a></div>
+         <?php endforeach; ?>
+      </div>
+      <?php else: ?>
+      <div class="left tab-gl">
+         <?php foreach ($rows as $row): ?>
+         <div data-tab="tabs-<?= $row['id']; ?>" class="colorborder colortexthover"><?= $row['full_title']; ?></div>
+         <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
+      <?php foreach ($rows as $key => $row): ?>
+      <div id="tabs-<?= $row['id']; ?>" class="item<?= $key == 0 ? ' active' : ''; ?>">
+         <?php if (isset($row['children']) && !empty($row['children'])): ?>
+         <div class="right">
+            <div class="frames">
+               <div>
+                  <?php foreach ($row['children'] as $model): ?>
+                  <a class="colorborder" href="/<?= $model['url']; ?>">
+                     <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
+                     <span>Ремонт</span><?= $model['title']; ?>
+                  </a>
+                  <?php endforeach; ?>
+               </div>
             </div>
-        <?php endforeach; ?>
-    </div>
+         </div>
+         <div class="clear"></div>
+         <?php endif; ?>
+      </div>
+      <?php endforeach; ?>
+   </div>
 </section>

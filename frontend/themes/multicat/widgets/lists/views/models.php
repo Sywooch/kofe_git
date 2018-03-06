@@ -6,7 +6,7 @@ $assets = Yii::getAlias('@web');
         <div class="title">Выберите модель iPhone</div>
         <div class="content">
             <?php foreach ($rows as $row): ?>
-                <a class="colorborder" href="/<?= $row['url']; ?>"><img src="/uploads/images/<?= $row['image']; ?>"><span>Ремонт</span><?= $row['title']; ?></a>
+                <a class="colorborder" href="/<?= $row['url']; ?>"><div class="img"><img src="/uploads/images/<?= $row['image']; ?>"></div><div class="span">Ремонт <?= $row['title']; ?></div></a>
             <?php endforeach; ?>
             <div class="clear"></div>
         </div>

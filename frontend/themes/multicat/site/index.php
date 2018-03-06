@@ -25,9 +25,8 @@ $this->title = $page['meta_title'];
         <span class="clear"></span>
     </div>
 </section>
-<section id="number-14">
-    <div class="container">
-        <?= $page['full_description']; ?>        
+<!--<section id="number-14">
+    <div class="container">     
         <ul>
             <li><a class="colortext colorborder" href="/o-nas">О нас</a></li>
             <li><a class="colortext colorborder" href="/vakansii">Вакансии</a></li>
@@ -38,4 +37,15 @@ $this->title = $page['meta_title'];
       <source src="<?= $assets ?>/multicat/video/fix.webm" type="video/webm">
       <source src="<?= $assets ?>/multicat/video/fix.mp4" type="video/mp4">
     </video>
+</section>-->
+<section id="number-15" class="active">
+    <div class="container">
+        <?= $page['full_description']; ?>   
+    </div>
+    <div class="bottom-btn">
+        <span class="colortext colorborder">Развернуть описание</span>
+    </div>
+</section>
+<section id="number-23">
+    <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 </section>
