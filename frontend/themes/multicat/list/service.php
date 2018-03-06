@@ -1,15 +1,12 @@
-<?php 
-$breadcrumbs = [
-    '/' . \app\components\CController::$category['url'] => \app\components\CController::$category['full_title'],
-    !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title'],
-];
+<?php
+
 $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(/multicat/images/upload/banner2.png);">
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title']; ?></h1>
-        <?= str_replace(['#model_en#', '#brand_en#'], \app\components\CController::$monoBrand['title'], $pageInfo['description']); ?>
+        <?= str_replace(['#model_en#', '#brand_en#'], \app\components\CController::$monoBrand['title'] . ($page['type'] == 'model' ? ' ' . $page['title'] : ''), $pageInfo['description']); ?>
         <a href="#" class="btn green open-popup colorbg colorbghover" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
         <div class="clear"></div>
     </div>
