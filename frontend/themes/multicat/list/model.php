@@ -4,6 +4,8 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
+$p = app\components\CController::$category;
+$p['url'] = $pageInfo['url'];
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(/multicat/images/upload/banner.png);">
@@ -16,7 +18,8 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
 </section>
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
-<?= multicat\widgets\lists\Price::widget(['model' => $pageInfo]); ?>
+<?= multicat\widgets\lists\AllPrices::widget(['parent' => $p]); ?>
+<?= multicat\widgets\lists\Neispravnost::widget(['category' => $p]); ?>
 <section id="number-13">
     <div class="container">
         <?= multicat\widgets\lists\LastReviews::widget(); ?>

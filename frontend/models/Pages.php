@@ -81,14 +81,8 @@ class Pages extends \yii\db\ActiveRecord {
         return \Yii::$app->db->createCommand($sql)->queryAll();
     }
 
-    public static function getModelServices($model_id, $category_id) {
-        $sql = 'SELECT
-                    s.description, s.id, s.title, s.url, s.time, s.`group`, s.price, p.price as model_price
-                FROM
-                    {{%services}} s
-                LEFT JOIN {{%prices}} p ON p.page_id = ' . (int) $model_id . ' AND p.service_id = s.id
-                WHERE
-                    s.category_id = ' . (int) $category_id . ' AND s.type = 1;';
+    public static function getModelServices($category_id) {
+        $sql = 'SELECT url, is_popular, title, price, time FROM {{%services}} WHERE category_id = ' . (int) $category_id . ' AND type = 1';
         return \Yii::$app->db->createCommand($sql)->queryAll();
     }
 
