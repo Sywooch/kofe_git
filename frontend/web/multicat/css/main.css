@@ -2811,7 +2811,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', e
 }
 #number-15 .bottom-btn {
 	display: none;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	cursor: pointer;
 	text-align: center;
 	width: 1150px;
@@ -2832,13 +2832,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', e
 	#number-15 .bottom-btn {
 		width: 650px;
 		margin-left: -325px;
+		margin-bottom: 12px;
 	}
 }
 @media screen and (max-width: 680px) {
 	#number-15 .bottom-btn {
 		width: 500px;
 		margin-left: -250px;
-		margin-bottom: 25px;
+		margin-bottom: 12px;
 	}
 }
 @media screen and (max-width: 540px) {
