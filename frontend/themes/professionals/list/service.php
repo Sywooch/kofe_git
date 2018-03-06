@@ -20,7 +20,7 @@ $this->title = $title;
                             <?php $a = 1; ?>
                             <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
                                 <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="<?= $url === 0 ? '#' : $url; ?>"><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
+                                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"<?= $url === 0 ? '' : ' href="' . $url . '"'; ?>><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
                                     <meta itemprop="position" content="<?= $a; ?>" />
                                 </li>
                                 <?php $a++; ?>
