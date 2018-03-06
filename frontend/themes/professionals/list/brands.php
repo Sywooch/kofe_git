@@ -17,10 +17,21 @@ $breadcrumbs = [
                 <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                
             </div>
             <div class="col-lg-8 col-md-12 col-sm-24 form dark poisk-brend">
+
                 <form id="review-form" action="/contacts" method="post"> 
                     <div class="row">
                         <div class="form-group field-reviews-username required has-error">
-                            <input type="text" id="reviews-username" class="form-control" name="Reviews[username]" placeholder="Поиск брендов.." aria-required="true">
+                            <?=
+                            yii\jui\AutoComplete::widget([
+                                'name' => 'models',
+                                'clientOptions' => [
+                                    'source' => $searches,
+                                    'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
+                                ],
+                                'options' => ['placeholder' => 'Поиск брендов..', 'class' => 'form-control'],
+                                    ]
+                            );
+                            ?>
                         </div> 
                     </div> 
                 </form> 
