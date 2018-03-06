@@ -15,17 +15,7 @@ $this->title = $title;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-24 col-md-24 col-sm-24">
-                        <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
-                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
-                            <?php $a = 1; ?>
-                            <?php foreach ($breadcrumbs as $url => $breadcrumb): ?>
-                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item"<?= $url === 0 ? '' : ' href="' . $url . '"'; ?>><?= str_replace('Ремонт кофемашин', '', $breadcrumb); ?></a>
-                                    <meta itemprop="position" content="<?= $a; ?>" />
-                                </li>
-                                <?php $a++; ?>
-                            <?php endforeach; ?>
-                        </ul>
+                        <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                        
                     </div>
                     <div class="col-lg-11 col-md-11 col-sm-14">
                         <div class="hero_order">

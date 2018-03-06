@@ -2,6 +2,9 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $pageInfo['meta_title'];
+$breadcrumbs = [
+    'Бренды',
+];
 ?>
 <header class="header header__brand">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
@@ -11,13 +14,7 @@ $this->title = $pageInfo['meta_title'];
     <div class="container">
         <div class="row">
             <div class="col-lg-16 col-md-12 col-sm-24">
-                <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                        <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a>
-                        <meta itemprop="position" content="0" />
-                    </li>
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Бренды <meta itemprop="position" content="1" /></li>
-                </ul>
+                <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                
             </div>
             <div class="col-lg-8 col-md-12 col-sm-24 form dark poisk-brend">
                 <form id="review-form" action="/contacts" method="post"> 

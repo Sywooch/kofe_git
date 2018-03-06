@@ -2,18 +2,18 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
+$breadcrumbs = [
+    $pageInfo['title'],
+];
 ?>
 <header class="header header__about">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
     <div class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-24 col-md-24 col-sm-24">
-                    <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Контактная информация <meta itemprop="position" content="1" /></li>
-                    </ul>
-                </div>
+                <div class="col-lg-16 col-md-12 col-sm-24">
+                    <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                
+                </div>                
             </div>
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-24">

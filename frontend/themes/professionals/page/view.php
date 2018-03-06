@@ -2,12 +2,18 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
+$breadcrumbs = [
+    $model['title'],
+];
 ?>
 <header class="header header__about">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
     <div class="hero">
         <div class="container">
             <div class="row">
+                <div class="col-lg-16 col-md-12 col-sm-24">
+                    <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                
+                </div>
                 <div class="col-lg-10 col-md-10 col-sm-24">
                     <h1 class="title title__1 light"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
                 </div>
@@ -22,15 +28,15 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
     <?= professionals\widgets\forms\Today::widget(); ?>
 </header>
 <?php if (!empty($model['full_description'])): ?>
-<section class="seo-text">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-24">
-                <?= $model['full_description']; ?>
+    <section class="seo-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-24">
+                    <?= $model['full_description']; ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <?php endif; ?>
 <?= professionals\widgets\other\Advantage::widget(['view' => 'advantage1']); ?>
 <?= professionals\widgets\other\Masters::widget(); ?>

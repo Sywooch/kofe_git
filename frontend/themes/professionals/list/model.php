@@ -2,6 +2,10 @@
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
+$breadcrumbs = [
+    '/' . $brand['url'] => 'Ремонт кофемашин ' . $brand['title'],
+    'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'],
+];
 ?>
 <div class=" service-wrapper">
     <header class="header header__service model-new">
@@ -10,11 +14,7 @@ $this->title = $title;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-24 col-md-24 col-sm-24">
-                        <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="dilshod-css">
-                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/">Ремонт кофемашин</a><meta itemprop="position" content="0" /></li>
-                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/<?= $brand['url']; ?>"><?= $brand['title']; ?></a><meta itemprop="position" content="1" /></li>
-                            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><?= $pageInfo['title']; ?> <meta itemprop="position" content="2" /></li>
-                        </ul>
+                        <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
                     </div>
                     <div class="col-lg-15 col-md-11 col-sm-14">
                         <div class="hero_order">

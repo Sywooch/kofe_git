@@ -2,6 +2,9 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
+$breadcrumbs = [
+    $pageInfo['title'],
+];
 ?>
 <header class="header header__brand">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
@@ -10,6 +13,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 <section>
     <div class="container">
         <div class="row">
+            <div class="col-lg-16 col-md-12 col-sm-24">
+                <?= professionals\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>                
+            </div>
             <div class="col-xs-24">
                 <div class="solution solution--closed">
                     <?= professionals\widgets\lists\PopularFaults::widget(['limit' => 100, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'servicesTable', 'form' => false]); ?>                    
