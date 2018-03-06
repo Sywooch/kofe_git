@@ -15,7 +15,7 @@ class AllPrices extends Widget {
     public function run() {
         $services = \frontend\models\Pages::getCategoryPopularServices($this->parent['id'], 1);
         $otherServices = \frontend\models\Pages::getCategoryPopularServices($this->parent['id'], 0);
-        return $this->render('allPrices', ['services' => $services, 'otherServices' => $otherServices]);
+        return $this->render('allPrices', ['services' => $services, 'otherServices' => $otherServices, 'parent' => $this->parent]);
     }
 
 }
