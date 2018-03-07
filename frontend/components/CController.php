@@ -167,11 +167,12 @@ class CController extends \yii\web\Controller {
     }
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
-        if(empty($phone))
-            return;
+        
         $siteConfig = self::getSiteConfig();
         if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];
+        if(empty($phone) || empty($title))
+            return;
         $userIP = Yii::$app->getRequest()->getUserIP();
         $adminsChannel = '-1001287383605';
         $usersChannel = '-1001322968311';
