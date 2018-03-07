@@ -81,11 +81,11 @@ $js = app\components\CController::$js;
             <section id="header" class="wow bounceInUp ">
                 <div class="container">
                     <div class="logo">
-                        <?php if (isset($siteConfig['change-logo'])): ?>
+                        <?php if (isset($siteConfig['change-logo'])): ?> 
                             <?php if ($isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg" alt="<?= app\components\CController::$category['full_title']; ?>"></a><?php endif; ?>
                             <?php if (!$isHome): ?><a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg" alt="<?= app\components\CController::$category['full_title']; ?>"></a><?php endif; ?>
                         <?php else: ?>
-                            <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg?v=2" alt="<?= app\components\CController::$category['full_title']; ?>"></a>
+                            <a href="/"><img src="<?= $assets ?>/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo.svg" alt="<?= app\components\CController::$category['full_title']; ?>"></a>
                         <?php endif; ?>
                     </div>
                     <?php if ($isModelPage || $isBrandPage): ?>
