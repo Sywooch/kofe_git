@@ -14430,23 +14430,7 @@ $(document).ready(function() {
             e.find(i.phone.selector).removeClass("form-error-border"), e.find("#phone_number_top_nav").removeClass("form-error-background")
         }, 5e3), !1;
         $("[data-remodal-id=call-modal-form]").remodal().close();
-        var s = ["name=", i.name.value, "&phone=", i.phone.value, "&text= ", i.message.value, "/Заказ звонка с сайта ", window.location.hostname].join("");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "/order_ajax",
-            data: s,
-            success: function(t) {
-                if (e.trigger("reset"), !0 === t.status) {
-                    $("[data-remodal-id=call-modal-success]").remodal().open();
-                    try {
-                        yaCounter31960396.reachGoal("OrderDone"), ga("send", "event", "OrderDone", "Send")
-                    } catch (t) {
-                        console.log(t.message)
-                    }
-                } else $("[data-remodal-id=call-modal-error]").remodal().open()
-            }
-        })
+        var s = ["name=", i.name.value, "&phone=", i.phone.value, "&text= ", i.message.value, "/Заказ звонка с сайта ", window.location.hostname].join("");        
     }), $(document).on("click touch tap", "#caller_button", function(t) {
         t.preventDefault();
         var e = $(this).closest("form"),
@@ -14468,20 +14452,7 @@ $(document).ready(function() {
         if (!checkPhoneByMask.mask(i.phone.selector).isValid(i.phone.value)) return e.find(i.phone.selector).addClass("form-error-border form-error-background"), setTimeout(function() {
             e.find(i.phone.selector).removeClass("form-error-border form-error-background")
         }, 5e3), !1;
-        var s = ["name=", i.name.value, "&phone=", i.phone.value, "&text= ", i.message.value, "/Заказ звонка с сайта ", window.location.hostname].join("");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "/order_ajax",
-            data: s,
-            success: function(t) {
-                if (e.trigger("reset"), $("#callerModal p").html(t.order_info), $("#caller_widget").remove(), $.cookie("send", "1"), !0 === t.status) try {
-                    yaCounter31960396.reachGoal("OrderDone"), ga("send", "event", "OrderDone", "Send")
-                } catch (t) {
-                    console.log(t.message)
-                }
-            }
-        })
+        var s = ["name=", i.name.value, "&phone=", i.phone.value, "&text= ", i.message.value, "/Заказ звонка с сайта ", window.location.hostname].join("");        
     }), window.REMODAL_GLOBALS = {
         NAMESPACE: "modal",
         DEFAULTS: {

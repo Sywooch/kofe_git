@@ -254,7 +254,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=4" async></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=5" async></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
