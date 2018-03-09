@@ -19,6 +19,42 @@ $p['url'] = $pageInfo['url'];
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
 <?= multicat\widgets\lists\AllPrices::widget(['parent' => $p]); ?>
+<section id="number-8">
+   <div class="container">
+        <div class="title" style="float: none;">Ремонтируем следуюшие модели:</div>
+
+        <div class="owl-carousel owl-theme">
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+           <a class="item colorborder" href="#">
+              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
+              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
+           </a>
+        </div>
+   </div>
+</section>
 <?= multicat\widgets\lists\Neispravnost::widget(['category' => $p]); ?>
 <section id="number-13">
     <div class="container">

@@ -19,7 +19,6 @@
     height: 45px;
     text-align: center;
     line-height: 45px;
-    background: #90bf00;
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
@@ -59,9 +58,9 @@
 }
 .owl-theme .owl-nav .owl-next {
 	right: 0px;
-	margin-right: 35px;
+	/*margin-right: 35px;*/
 }
 .owl-theme .owl-nav .owl-prev {
 	left: 0px;
-	margin-left: 35px;
+	/*margin-left: 35px;*/
 }

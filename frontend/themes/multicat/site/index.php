@@ -4,7 +4,6 @@ $this->title = $page['meta_title'];
 ?>
 <section id="number-4">
     <div class="container">
-        <span class="colortext">Сервисный  центр Apple Repair:</span>
         <h1><?= $page['meta_h1']; ?></h1>
         <?= $page['description']; ?>
         <img src="<?= $assets ?>/multicat/images/gl-master.png" alt="">
@@ -25,19 +24,6 @@ $this->title = $page['meta_title'];
         <span class="clear"></span>
     </div>
 </section>
-<!--<section id="number-14">
-    <div class="container">     
-        <ul>
-            <li><a class="colortext colorborder" href="/o-nas">О нас</a></li>
-            <li><a class="colortext colorborder" href="/vakansii">Вакансии</a></li>
-            <li><a class="colortext colorborder" href="/akcii">Акции</a></li>
-        </ul>
-    </div>
-    <video poster="" id="bgvid" playsinline autoplay muted loop>
-      <source src="<?= $assets ?>/multicat/video/fix.webm" type="video/webm">
-      <source src="<?= $assets ?>/multicat/video/fix.mp4" type="video/mp4">
-    </video>
-</section>-->
 <section id="number-15" class="active">
     <div class="container">
         <?= $page['full_description']; ?>   

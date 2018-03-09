@@ -2,7 +2,12 @@
 .bosch footer .body .right .content ul li a:before,
 .bosch .popup .inner .close,
 .bosch .btn:before,
-.bosch footer .menu-toggle span {
+.bosch footer .menu-toggle span,
+.bosch .tabs-style-linemove nav li:last-child::before,
+.bosch .owl-theme .owl-nav [class*=owl-],
+.bosch .green,
+.bosch #number-10 .container .bottons a.active,
+#number-10 .container .bottons a:hover {
     background-color: #215f8b ! important;
 }
 .bosch .green.btn:before {
@@ -15,13 +20,16 @@
     box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
 }
 .bosch .colortext,
-.bosch .colortexthover:hover {
+.bosch .colortexthover:hover,
+.bosch .tabs-style-linemove nav li.tab-current a {
     color: #215f8b ! important;
 }
 .bosch nav .colorsvg,
 .bosch nav .fil0 {
     fill: #fff ! important;
 }
+.bosch .tabs-style-linemove .fil0,
+.bosch .tabs-style-linemove .colorsvg,
 .bosch nav li ul .colorsvg,
 .bosch nav li ul .fil0, .bosch .svgcolor{
     fill: #215f8b ! important;
@@ -29,7 +37,8 @@
 .bosch .colorborder,
 .bosch .colorborderhover:hover,
 .bosch .colorborderhover:focus,
-.bosch .topmenu > ul > li > ul li a {
+.bosch .topmenu > ul > li > ul li a,
+.bosch .title {
     border-color: #215f8b ! important;
 }
 
@@ -57,6 +66,8 @@
 .siemens nav .fil0 {
     fill: #fff ! important;
 }
+.siemens .tabs-style-linemove .fil0,
+.siemens .tabs-style-linemove .colorsvg,
 .siemens nav li ul .colorsvg,
 .siemens nav li ul .fil0, .siemens .svgcolor{
     fill: #41aaaa ! important;
@@ -92,6 +103,8 @@
 .delonghi nav .fil0 {
     fill: #fff ! important;
 }
+.delonghi .tabs-style-linemove .fil0,
+.delonghi .tabs-style-linemove .colorsvg,
 .delonghi nav li ul .colorsvg,
 .delonghi nav li ul .fil0, .delonghi .svgcolor{
     fill: #215f8b ! important;

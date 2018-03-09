@@ -3,42 +3,36 @@
    ?>
 <section id="number-8">
    <div class="container">
-      <?php 
-         $bitta = false;
-         if(count($rows) == 1)
-             $bitta = true;
-         ?>
-      <?php if($bitta): ?>
-      <div class="left">
-         <?php foreach ($rows as $row): ?>
-         <div data-tab="tabs-<?= $row['id']; ?>" class="colorborder"><a href="<?= $row['url']; ?>"><?= $row['full_title']; ?></a></div>
-         <?php endforeach; ?>
-      </div>
-      <?php else: ?>
-      <div class="left tab-gl">
-         <?php foreach ($rows as $row): ?>
-         <div data-tab="tabs-<?= $row['id']; ?>" class="colorborder colortexthover"><?= $row['full_title']; ?></div>
-         <?php endforeach; ?>
-      </div>
-      <?php endif; ?>
-      <?php foreach ($rows as $key => $row): ?>
-      <div id="tabs-<?= $row['id']; ?>" class="item<?= $key == 0 ? ' active' : ''; ?>">
-         <?php if (isset($row['children']) && !empty($row['children'])): ?>
-         <div class="right">
-            <div class="frames">
-               <div>
-                  <?php foreach ($row['children'] as $model): ?>
-                  <a class="colorborder" href="/<?= $model['url']; ?>">
-                     <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
-                     <span>Ремонт</span><?= $model['title']; ?>
-                  </a>
-                  <?php endforeach; ?>
-               </div>
-            </div>
+      <div class="tabs tabs-style-linemove">
+         <?php 
+            $bitta = false;
+            if(count($rows) == 1)
+                $bitta = true;
+            ?>
+         
+         <nav class="<?php if($bitta): ?> bittekan <?php endif; ?>">
+            <ul>
+               <?php foreach ($rows as $row): ?>
+                  <li><a href="tabs-<?= $row['id']; ?>" class="icon icon-home"><?= $row['icon']; ?><span><?= $row['full_title']; ?></span></a></li>
+               <?php endforeach; ?>
+            </ul>
+         </nav>
+         <?php foreach ($rows as $key => $row): ?>
+         <div class="content-wrap">
+            <section id="tabs-<?= $row['id']; ?>">
+               <?php if (isset($row['children']) && !empty($row['children'])): ?>
+                  <div class="owl-carousel owl-theme">
+                     <?php foreach ($row['children'] as $model): ?>
+                     <a class="item colorborder" href="/<?= $model['url']; ?>">
+                        <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
+                        <div class="text"><span>Ремонт</span><?= $model['title']; ?></div>
+                     </a>
+                     <?php endforeach; ?>
+                  </div>
+               <?php endif; ?>
+            </section>
          </div>
-         <div class="clear"></div>
-         <?php endif; ?>
+         <?php endforeach; ?>
       </div>
-      <?php endforeach; ?>
    </div>
 </section>
