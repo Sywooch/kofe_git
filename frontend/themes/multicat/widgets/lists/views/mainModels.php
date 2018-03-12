@@ -14,7 +14,10 @@
             <ul>
                <?php foreach ($rows as $key => $row): ?>
                    <?php if($key > 4) break; ?>
-                  <li><a href="tabs-<?= $row['id']; ?>" class="icon icon-home"><?= $row['icon']; ?><span><?= $row['full_title']; ?></span></a></li>
+
+                   <?php if($bitta): ?>
+                  <?php endif; ?>
+                  <li><a href="/<?= $row['url']; ?>" class="icon icon-home"><?= $row['icon']; ?><span><?= $row['full_title']; ?></span></a></li>
                <?php endforeach; ?>
             </ul>
          </nav>
@@ -26,13 +29,17 @@
                   <div class="owl-carousel owl-theme">
                      <?php foreach ($row['children'] as $key => $model): ?>
                         <?php if($key > 9) break; ?>
-                     <a class="item colorborder" href="/<?= $model['url']; ?>">
+                     <a class="item colorborder"<?= strpos($model['url'], 'kofemashin') !== false ? ' href="/' . $model['url'] . '"' : ''; ?>>
                         <div class="img"><img src="/uploads/images/<?= $model['image']; ?>"></div>
-                        <div class="text"><span>Ремонт</span><?= $model['title']; ?></div>
+                        <div class="text"><span>Ремонт</span><?= \app\components\CController::$monoBrand['title'] . ' ' . $model['title']; ?></div>
                      </a>
                      <?php endforeach; ?>
                   </div>
                <?php endif; ?>
+               <br>
+               <div class="big-btn">
+                  <a href="/<?= $row['url']; ?>"><span class="colorbg">Показать все</span></a>
+               </div>
             </section>
          </div>
          <?php endforeach; ?>

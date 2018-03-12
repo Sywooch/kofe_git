@@ -6,9 +6,15 @@ $breadcrumbs = [
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
 $p = app\components\CController::$category;
 $p['url'] = $pageInfo['url'];
+
+if(in_array(\app\components\CController::$category['id'], [7, 8])) {
+    $bImage = \app\components\CController::$monoBrand['url'] . '_' . \app\components\CController::$category['url'] . '.jpg';
+} else {
+    $bImage = \app\components\CController::$category['url'] . '.jpg';
+}
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
-<section id="number-5" style="background-image: url(/multicat/images/upload/banner.png);">
+<section id="number-5" style="background-image: url(/multicat/images/upload/<?= $bImage; ?>);">
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . ' ' . $pageInfo['title']; ?></h1>
         <?= str_replace('#model_en#', \app\components\CController::$monoBrand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
@@ -28,14 +34,17 @@ $p['url'] = $pageInfo['url'];
         <span class="clear"></span>
     </div>
 </section>
-<section id="number-15" class="active">
-    <div class="container">
-        <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : (!empty($seoText['text2']) ? $seoText['text2'] : '') ; ?>
-    </div>
-    <div class="bottom-btn">
-        <span class="colortext colorborder">Развернуть описание</span>
-    </div>
-</section>
-<section id="number-23">
-    <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-</section>
+
+<?php if(!empty($page['full_description'])): ?>
+    <section id="number-15" class="active">
+        <div class="container">
+            <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : (!empty($seoText['text2']) ? $seoText['text2'] : '') ; ?>
+        </div>
+        <div class="bottom-btn">
+            <span class="colortext colorborder">Развернуть описание</span>
+        </div>
+    </section>
+    <section id="number-23">
+        <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </section>
+<?php endif; ?>

@@ -30,14 +30,18 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
         <span class="clear"></span>
     </div>
 </section>
-<section id="number-15" class="active">
-    <div class="container">
-        <?= $page['full_description']; ?>   
-    </div>
-    <div class="bottom-btn">
-        <span class="colortext colorborder">Развернуть описание</span>
-    </div>
-</section>
-<section id="number-23">
-    <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-</section>
+
+
+<?php if(!empty($page['full_description'])): ?>
+    <section id="number-15" class="active">
+        <div class="container">
+            <?= $page['full_description']; ?>   
+        </div>
+        <div class="bottom-btn">
+            <span class="colortext colorborder">Развернуть описание</span>
+        </div>
+    </section>
+    <section id="number-23">
+        <a href="#" id="gotop" class="colorbg colorbghover"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </section>
+<?php endif; ?>
