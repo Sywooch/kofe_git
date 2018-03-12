@@ -2,7 +2,7 @@
 $breadcrumbs = [    
     $pageInfo['title'],
 ];
-$this->title = $pageInfo['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-18">
