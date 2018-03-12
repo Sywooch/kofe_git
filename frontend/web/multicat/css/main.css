@@ -2933,8 +2933,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', e
   font-size: 18px;
   line-height: 24px;
   color: #585858;
-  display: list-item;
   width: auto;
+  display: inline-block;
 }
 @media screen and (max-width: 680px) {
 	#number-16 .container p {
@@ -2947,7 +2947,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', e
 	margin: 30px 0px;
 }
 #number-16 .container h2 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	width: 100%;
