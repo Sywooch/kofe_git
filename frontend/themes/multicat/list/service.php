@@ -13,6 +13,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
 </section>
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
+<?= isset($page['type']) && $page['type'] == 'category' ? multicat\widgets\lists\OtherModels::widget(['parent' => $page['id'], 'urlPrefix' => $pageInfo['url']]) : '' ?>
 <section id="number-13">
     <div class="container">
         <?= multicat\widgets\lists\LastReviews::widget(); ?>

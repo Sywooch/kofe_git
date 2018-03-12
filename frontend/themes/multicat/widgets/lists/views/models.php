@@ -6,12 +6,12 @@ $assets = Yii::getAlias('@web');
         <div class="title">Выберите модель:</div>
         <div class="content">
             <?php foreach ($rows as $row): ?>
-                <a class="colorborder" href="/<?= $row['url']; ?>"><div class="img"><img src="/uploads/images/<?= $row['image']; ?>"></div><div class="span">Ремонт <?= $row['title']; ?></div></a>
+            <a class="colorborder" href="/<?= $row['url'] . (!empty($urlPrefix) ? '/' . $urlPrefix : ''); ?>"><div class="img"><img src="/uploads/images/<?= $row['image']; ?>"></div><div class="span">Ремонт <?= \app\components\CController::$monoBrand['title'] . ' ' . $row['title']; ?></div></a>
             <?php endforeach; ?>
             <div class="clear"></div>
         </div>
         <div class="big-btn">
-        	<span class="colorbg">Показать все</span>
+            <span class="colorbg">Показать все</span>
         </div>
     </div>
 </section>

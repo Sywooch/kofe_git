@@ -10,7 +10,7 @@ $p['url'] = $pageInfo['url'];
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(/multicat/images/upload/banner.png);">
     <div class="container">
-        <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
+        <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . ' ' . $pageInfo['title']; ?></h1>
         <?= str_replace('#model_en#', \app\components\CController::$monoBrand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
         <a href="#" class="btn green open-popup colorbg colorbghover" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
         <div class="clear"></div>
@@ -19,42 +19,7 @@ $p['url'] = $pageInfo['url'];
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
 <?= multicat\widgets\lists\AllPrices::widget(['parent' => $p]); ?>
-<section id="number-8">
-   <div class="container">
-        <div class="title" style="float: none;">Ремонтируем следуюшие модели:</div>
-
-        <div class="owl-carousel owl-theme">
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-           <a class="item colorborder" href="#">
-              <div class="img"><img src="/uploads/images/remont-kofemashin-melitta-single-5-therm-mug.jpg"></div>
-              <div class="text"><span>Ремонт</span>Single 5 Therm Mug</div>
-           </a>
-        </div>
-   </div>
-</section>
+<?= multicat\widgets\lists\OtherModels::widget(['parent' => $pageInfo['parent'], 'modelID' => $pageInfo['id']]); ?>
 <?= multicat\widgets\lists\Neispravnost::widget(['category' => $p]); ?>
 <section id="number-13">
     <div class="container">

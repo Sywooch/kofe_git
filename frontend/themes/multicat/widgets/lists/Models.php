@@ -8,10 +8,11 @@ use app\components\CController;
 class Models extends Widget {
     
     public $models;
+    public $view = 'models';
 
     public function run() {
         
-        return $this->render('models', ['rows' => $this->models]);
+        return $this->render($this->view, ['rows' => $this->models]);
     }
 
 }
