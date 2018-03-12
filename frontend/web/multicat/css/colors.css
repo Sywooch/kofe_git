@@ -7,7 +7,7 @@
 .bosch .owl-theme .owl-nav [class*=owl-],
 .bosch .green,
 .bosch #number-10 .container .bottons a.active,
-#number-10 .container .bottons a:hover {
+.bosch #number-10 .container .bottons a:hover {
     background-color: #215f8b ! important;
 }
 .bosch .green.btn:before {
@@ -46,7 +46,12 @@
 .siemens footer .body .right .content ul li a:before,
 .siemens .popup .inner .close,
 .siemens .btn:before,
-.siemens footer .menu-toggle span {
+.siemens footer .menu-toggle span,
+.siemens .tabs-style-linemove nav li:last-child::before,
+.siemens .owl-theme .owl-nav [class*=owl-],
+.siemens .green,
+.siemens #number-10 .container .bottons a.active,
+.siemens #number-10 .container .bottons a:hover {
     background-color: #41aaaa ! important;
 }
 .siemens .green.btn:before {
@@ -59,7 +64,8 @@
     box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
 }
 .siemens .colortext,
-.siemens .colortexthover:hover {
+.siemens .colortexthover:hover,
+.siemens .tabs-style-linemove nav li.tab-current a {
     color: #41aaaa ! important;
 }
 .siemens nav .colorsvg,
@@ -69,13 +75,15 @@
 .siemens .tabs-style-linemove .fil0,
 .siemens .tabs-style-linemove .colorsvg,
 .siemens nav li ul .colorsvg,
-.siemens nav li ul .fil0, .siemens .svgcolor{
+.siemens nav li ul .fil0, 
+.siemens .svgcolor {
     fill: #41aaaa ! important;
 }
 .siemens .colorborder,
 .siemens .colorborderhover:hover,
 .siemens .colorborderhover:focus,
-.siemens .topmenu > ul > li > ul li a {
+.siemens .topmenu > ul > li > ul li a,
+.siemens .title {
     border-color: #41aaaa ! important;
 }
 
@@ -83,81 +91,62 @@
 .delonghi footer .body .right .content ul li a:before,
 .delonghi .popup .inner .close,
 .delonghi .btn:before,
-.delonghi footer .menu-toggle span {
-    background-color: #215f8b ! important;
-}
-.delonghi .green.btn:before {
-    background-color: #fff ! important;
-}
-.delonghi .colorbghover:hover {
-    opacity: 0.9;
-    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-}
+.delonghi footer .menu-toggle span,
+.delonghi .tabs-style-linemove nav li:last-child::before,
+.delonghi .owl-theme .owl-nav [class*=owl-],
+.delonghi .green,
+.delonghi #number-10 .container .bottons a.active,
+.delonghi #number-10 .container .bottons a:hover {background-color: #215f8b ! important;}
+.delonghi .green.btn:before {background-color: #fff ! important;}
+.delonghi .colorbghover:hover {opacity: 0.9;-webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);-moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);}
 .delonghi .colortext,
-.delonghi .colortexthover:hover {
-    color: #215f8b ! important;
-}
+.delonghi .colortexthover:hover,
+.delonghi .tabs-style-linemove nav li.tab-current a {color: #215f8b ! important;}
 .delonghi nav .colorsvg,
-.delonghi nav .fil0 {
-    fill: #fff ! important;
-}
+.delonghi nav .fil0 {fill: #fff ! important;}
 .delonghi .tabs-style-linemove .fil0,
 .delonghi .tabs-style-linemove .colorsvg,
 .delonghi nav li ul .colorsvg,
-.delonghi nav li ul .fil0, .delonghi .svgcolor{
-    fill: #215f8b ! important;
-}
+.delonghi nav li ul .fil0, 
+.delonghi .svgcolor{fill: #215f8b ! important;}
 .delonghi .colorborder,
 .delonghi .colorborderhover:hover,
 .delonghi .colorborderhover:focus,
-.delonghi .topmenu > ul > li > ul li a {
-    border-color: #215f8b ! important;
-}
+.delonghi .topmenu > ul > li > ul li a,
+.delonghi .title {border-color: #215f8b ! important;}
 
 .saeco .colorbg,
 .saeco footer .body .right .content ul li a:before,
 .saeco .popup .inner .close,
 .saeco .btn:before,
-.saeco footer .menu-toggle span {
-    background-color: #d71921 ! important;
-}
-.saeco .green.btn:before {
-    background-color: #fff ! important;
-}
-.saeco .colorbghover:hover {
-    opacity: 0.9;
-    -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);
-}
+.saeco footer .menu-toggle span {background-color: #d71921 ! important;}
+.saeco .colorbg,
+.saeco footer .body .right .content ul li a:before,
+.saeco .popup .inner .close,
+.saeco .btn:before,
+.saeco footer .menu-toggle span,
+.saeco .tabs-style-linemove nav li:last-child::before,
+.saeco .owl-theme .owl-nav [class*=owl-],
+.saeco .green,
+.saeco #number-10 .container .bottons a.active,
+.saeco #number-10 .container .bottons a:hover {background-color: #d71921 ! important;}
+.saeco .green.btn:before {background-color: #fff ! important;}
+.saeco .colorbghover:hover {opacity: 0.9;-webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);-moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);}
 .saeco .colortext,
-.saeco .colortexthover:hover {
-    color: #d71921 ! important;
-}
+.saeco .colortexthover:hover,
+.saeco .tabs-style-linemove nav li.tab-current a {color: #d71921 ! important;}
 .saeco nav .colorsvg,
-.saeco nav .fil0 {
-    fill: #fff ! important;
-}
+.saeco nav .fil0 {fill: #fff ! important;}
+.saeco .tabs-style-linemove .fil0,
+.saeco .tabs-style-linemove .colorsvg,
 .saeco nav li ul .colorsvg,
-.saeco nav li ul .fil0, .saeco .svgcolor{
-    fill: #d71921 ! important;
-}
-.saeco .yeshsho {
-    display: none ! important;
-}
-@media screen and (max-width: 680px) {
-    .saeco .yeshsho {
-        display: inline-block ! important;
-    }
-}
+.saeco nav li ul .fil0, 
+.saeco .svgcolor{fill: #d71921 ! important;}
 .saeco .colorborder,
 .saeco .colorborderhover:hover,
 .saeco .colorborderhover:focus,
-.saeco .topmenu > ul > li > ul li a {
-    border-color: #d71921 ! important;
-}
+.saeco .topmenu > ul > li > ul li a,
+.saeco .title {border-color: #d71921 ! important;}
 
 .philips .colorbg,
 .philips footer .body .right .content ul li a:before,

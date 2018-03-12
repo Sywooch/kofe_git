@@ -193,6 +193,9 @@ $(".open-foto").click(function () {
         $('.open-foto, .content-foto').addClass("active");
     }
 });
+$(".big-btn span").click(function () {
+    $('#number-9').addClass("active");
+});
 $("#more-comments").click(function () {
     var lastId = $(this).data('last');
     console.log(lastId);

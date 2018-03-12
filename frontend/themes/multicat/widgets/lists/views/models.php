@@ -10,5 +10,8 @@ $assets = Yii::getAlias('@web');
             <?php endforeach; ?>
             <div class="clear"></div>
         </div>
+        <div class="big-btn">
+        	<span class="colorbg">Показать все</span>
+        </div>
     </div>
 </section>

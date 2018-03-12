@@ -343,7 +343,6 @@ ul {
 	min-width: 1170px;
 	width: 1170px;
 	margin: 0 auto;
-	padding: 0px 15px;
 }
 @media screen and (max-width: 1250px) {
 	.container {
@@ -1689,6 +1688,11 @@ nav .container > ul > li > ul li a span {
   border-bottom: 1px solid #d3e599;
   padding-bottom: 5px;
   margin-bottom: 50px;
+  display: none;
+}
+#number-9.active a,
+#number-9 a:nth-child(-n+12) {
+	display: inline-block;
 }
 @media screen and (max-width: 830px) {
 	#number-9 a {
@@ -1740,7 +1744,6 @@ nav .container > ul > li > ul li a span {
 	line-height: 60px;
 	border-radius: 30px;
 	margin-top: -95px;
-	min-width: 270px;
 }
 #number-10 .container .bottons > div {
 	min-width: 131px;
@@ -1768,7 +1771,7 @@ nav .container > ul > li > ul li a span {
 	transition: all 0.3s;
 }
 #number-10 .container .bottons a:hover {
-	opacity: 0.5;
+	opacity: 0.8;
 	color: #fff;
 }
 #number-10 .container .bottons a.active {
@@ -5238,4 +5241,25 @@ header .menu-toggle span {
 	.tabs nav a svg {
 		margin-right: 0;
 	}
+}
+
+.big-btn {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.big-btn span {
+	height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  border-radius: 26px;
+  padding: 0px 28px;
+  color: #fff;
+  cursor: pointer;
+}
+.big-btn span:hover {
+	opacity: 0.8;
+}
+#number-9.active .big-btn {
+	display: none;
 }
