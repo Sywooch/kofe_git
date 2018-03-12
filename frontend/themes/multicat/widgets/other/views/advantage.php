@@ -195,7 +195,7 @@ $assets = Yii::getAlias('@web');
 
             <div class="info">
                 <div>Гарантия</div>
-                <p class="colortext">Проверка устройства и выдача гарантии сроком до 3х лет</p>
+                <p class="colortext">Проверка устройства и выдача гарантии сроком до 1 года</p>
             </div>
         </div>
         <div class="clear"></div>

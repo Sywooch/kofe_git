@@ -14,9 +14,9 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
         <?= $page['description']; ?>
         <img src="<?= $assets ?>/multicat/images/gl-master.png" alt="">
         <div class="comment-gl">
-            <p>Обращайтесь в наш Сервисный Центр – мы оперативно, качественно и недорого восстановим любое устройство Apple, и выдадим Вам гарантию на все произведённые услуги до 3х лет.</p>
-            <span class="name colortext">Павел Арсенов</span>
-            <span class="nick">Менеджер по продажам</span>                       
+            <p>У вас сломалась бытовая техника? Обращайтесь к нам! Мы выполним ремонт <?= \app\components\CController::$monoBrand['title']; ?> максимально быстро, качественно и недорого, а также дадим гарантию  на комплектующие и нашу работу сроком до 1 года! </p>
+            <span class="name colortext">АНДРЕЙ БЕЛОВ</span>
+            <span class="nick">ИНЖЕНЕР ПО РЕМОНТУ БЫТОВОЙ ТЕХНИКИ</span>                       
         </div>
     </div>
 </section>
