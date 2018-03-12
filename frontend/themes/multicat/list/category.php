@@ -15,7 +15,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : $title;
 </section>
 <?= multicat\widgets\sliders\Slider::widget(); ?>
 <?= multicat\widgets\other\Advantage::widget(); ?>
-<?= multicat\widgets\lists\Models::widget(['models' => $models]); ?>
+<?= \app\components\CController::$category['id'] ==  7 ? multicat\widgets\lists\Models::widget(['models' => $models]) : ''; ?>
 <?= multicat\widgets\lists\AllPrices::widget(['models' => $models, 'parent' => app\components\CController::$category]); ?>
 <?= multicat\widgets\lists\Neispravnost::widget(['category' => app\components\CController::$category]); ?>
 <section id="number-13">
