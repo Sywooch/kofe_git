@@ -7,7 +7,7 @@ use app\components\CController;
 
 class LastReviews extends Widget {
 
-    public $limit = 3;
+    public $limit = 2;
 
     public function run() {
         $q = 'SELECT username, date, rating, message FROM {{%reviews}} WHERE active = 1 ORDER BY date desc LIMIT ' . (int) $this->limit;
