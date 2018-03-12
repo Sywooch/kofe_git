@@ -3,12 +3,12 @@ $assets = Yii::getAlias('@web');
 $breadcrumbs = [
     $page['full_title'],
 ];
-$this->title = $page['meta_title'];
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : $title;
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(<?= $assets ?>/multicat/images/upload/banner.png)">
     <div class="container">        
-        <h1><?= !empty($page['meta_h1']) ? $page['meta_h1'] : $page['title']; ?></h1>
+        <h1><?= !empty($page['meta_h1']) ? $page['meta_h1'] : 'Ремонт ' . mb_strtolower($page['full_title'], 'UTF-8') . ' ' . app\components\CController::$monoBrand['title']; ?></h1>
         <?= str_replace('#brand_en#', app\components\CController::$monoBrand['title'], $page['description']); ?>
         <div class="clear"></div>
     </div>

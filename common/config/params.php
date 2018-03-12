@@ -2434,5 +2434,16 @@ return [
             'brand-id' => 20,
             'foreign_category' => true,
         ],
+        'ntv' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'mono' => false,
+            'id' => 124,
+            'sitePrefix' => 'tnv',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'tnv',
+            'order-title' => 'tnv',
+        ],
     ]
 ];

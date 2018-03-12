@@ -44,10 +44,13 @@ class SiteController extends CController {
 //            'content' => $pageInfo['meta_key']
 //        ]);
         if (isset($config['foreign_category']) && $config['foreign_category']) {
-            $metaDesc = 'Авторизованный сервисный центр ' . \app\components\CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', выполняет комплексный ремонт техники ' . \app\components\CController::$monoBrand['title'] . ', в наличие все комплектующие для быстрого ремонта!';
-        } else 
+            if ($config['theme'] == 'multicat') {
+                $metaDesc = 'Сервисный центр по ремонту бытовой техники ' . \app\components\CController::$monoBrand['title'] . ' выполняет восстановление любых устройств быстро и качественно. Гарантия. Цены ниже рыночных!';
+            } else
+                $metaDesc = 'Авторизованный сервисный центр ' . \app\components\CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', выполняет комплексный ремонт техники ' . \app\components\CController::$monoBrand['title'] . ', в наличие все комплектующие для быстрого ремонта!';
+        } else
             $metaDesc = '';
-        
+
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
             'content' => $pageInfo['meta_desc'] ?: $metaDesc,

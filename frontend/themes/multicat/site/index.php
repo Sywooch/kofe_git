@@ -1,6 +1,12 @@
-<?php 
+<?php
+
+use app\components\CController;
+
 $assets = Yii::getAlias('@web');
-$this->title = $page['meta_title'];
+$russianName = '';
+if (isset(Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']]))
+    $russianName = ' (' . Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']] . ')';
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . $russianName . ' ⚒ в ' . Yii::$app->session['region']['titleRod'];
 ?>
 <section id="number-4">
     <div class="container">
