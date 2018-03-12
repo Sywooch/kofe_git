@@ -4,7 +4,7 @@
 
         <div class="owl-carousel owl-theme">
             <?php foreach ($rows as $row): ?>
-                <a class="item colorborder" href="/<?= $row['url']; ?>">
+                <a class="item colorborder" href="/<?= $row['url'] . (!empty($urlPrefix) ? '/' . $urlPrefix : ''); ?>">
                     <div class="img"><img src="/uploads/images/<?= $row['image']; ?>"></div>
                     <div class="text"><span>Ремонт</span><?= $row['title']; ?></div>
                 </a>
