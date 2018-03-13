@@ -4,16 +4,16 @@
         <?php foreach (app\components\CController::$menu as $key => $category): ?>
             <div class="content-services<?= $key == 0 ? ' active' : '' ?>">
                 <div class="open-botton">
-                    <p>Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></p>
+                    <p><?= str_replace('Ремонт ', '', $category['title']); ?></p>
                 </div>
-                <?php $services = frontend\models\Pages::getCategoryServices($category['id']); ?>
+                <?php $services = frontend\models\Pages::getCategoryPopularServices($category['category_id'], ($category['category_id'] == 7 ? 1 : 0)); ?>
                 <table class="my-table">
                     <tbody>
                         <?php foreach ($services as $service): ?>
                             <tr>
                                 <td>
                                     <?php if ($service['is_popular'] == 1): ?>
-                                        <a href="/<?= $category['url'] . '-' . $service['url']; ?>"><?= $service['title']; ?></a>
+                                        <a href="/<?= $category['url'] . '/' . $service['url']; ?>"><?= $service['title']; ?></a>
                                     <?php else: ?>
                                         <?= $service['title']; ?>
                                     <?php endif; ?>

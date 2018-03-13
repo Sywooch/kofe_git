@@ -98,7 +98,7 @@ class CController extends \yii\web\Controller {
 
     private function buildMenu() {
         $siteConfig = self::getSiteConfig();
-        $q = 'SELECT parent, url, icon, id, full_title, image, title, description FROM {{%pages}} WHERE type = \'category\' and show_in_menu = 1 AND active = 1 and parent = ' . $siteConfig['brand-id'] . ' ORDER BY sort';
+        $q = 'SELECT parent, url, icon, id, full_title, image, title, description, category_id FROM {{%pages}} WHERE type = \'category\' and show_in_menu = 1 AND active = 1 and parent = ' . $siteConfig['brand-id'] . ' ORDER BY sort';
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
         $branch = [];
         foreach ($rows as $row) {
