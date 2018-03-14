@@ -1,7 +1,8 @@
 <?php
 $assets = Yii::getAlias('@web');
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
-<nav class="colorbg">
+<nav class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : 'colorbg ' ?>">
     <div class="container">
         <ul>
             <?php foreach ($rows as $row): ?>

@@ -875,7 +875,7 @@ return [
             '1-line' => false,
             'category_id' => 0,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
-            'theme' => 'multicatspb',
+            'theme' => 'multicat',
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 1,

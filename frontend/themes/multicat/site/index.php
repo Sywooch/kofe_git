@@ -7,12 +7,13 @@ $russianName = '';
 if (isset(Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']]))
     $russianName = ' (' . Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']] . ')';
 $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . $russianName . ' ⚒ в ' . Yii::$app->session['region']['titleRod'];
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section id="number-4">
     <div class="container">
         <h1><?= $page['meta_h1']; ?></h1>
         <?= $page['description']; ?>
-        <img src="<?= $assets ?>/multicat/images/gl-master.png" alt="">
+        <img src="<?= $assets ?>/multicat/images/<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb/' : '' ?>gl-master.png" alt="">
         <div class="comment-gl">
             <p>У вас сломалась бытовая техника? Обращайтесь к нам! Мы выполним ремонт <?= \app\components\CController::$monoBrand['title']; ?> максимально быстро, качественно и недорого, а также дадим гарантию  на комплектующие и нашу работу сроком до 1 года! </p>
             <span class="name colortext">АНДРЕЙ БЕЛОВ</span>

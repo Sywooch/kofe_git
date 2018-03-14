@@ -31,22 +31,22 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/owl.theme.default.min.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/font-awesome.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/horizontal.css" type="text/css" />
-        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/colors.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb/' : '' ?>colors.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets ?>/multicat/css/<?= \app\components\CController::$monoBrand['url']; ?>.css" type="text/css" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
-        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/main.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets ?>/multicat/css/<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb/' : '' ?>main.css" type="text/css" />
         <style>
         </style>
     </head>
     <body id="index" class="index <?= \app\components\CController::$monoBrand['url']; ?>">
         <?php $this->beginBody() ?>
-        <header id="header">            
+        <header id="header" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">            
             <div class="container">
                 <a class="mobi-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <div class="logo">
-                    <a href="/"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.svg"></a>
+                    <a href="/"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '2' : '' ?>.svg"></a>
                 </div>
                 <div class="topmenu">
                     <div class="menu-toggle">
@@ -76,7 +76,7 @@ $js = app\components\CController::$js;
                         <li><a href="/kontakty">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="topcontactinfo">
+                <div class="topcontactinfo <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">
                     <div class="boxcontact">
                         <div class="left">
                             <a href="/kontakty">Москва, ул. Студенческая 35.</a>
@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                     </div>
                     <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
-                <a class="btn yellow open-popup colortext" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
+                <a class="btn yellow open-popup <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorbg' : 'colortext' ?>" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
                 <div class="clear"></div>
             </div>
         </header>
@@ -122,7 +122,7 @@ $js = app\components\CController::$js;
                         <span>Сэкономьте <br>свое время</span>
                         <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
                         <a class="btn out-icon green open-popup colorbg colorbghover" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
-                        <img src="<?= $assets ?>/multicat/images/master.png">
+                        <img src="<?= $assets ?>/multicat/images/<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb/' : '' ?>/master.png">
                     </div>
                     <div class="right">
                         <div class="title">Наш сервисный центр</div>
