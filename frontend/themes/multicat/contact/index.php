@@ -16,7 +16,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
-                    <a href="#">+7 (495) 152 07 07</a>
+                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="email">
                     <span>Почта</span>
@@ -44,34 +44,6 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                     </div>
                 </div>
             </div>
-<!--            <div class="right content-foto">
-                <div class="adress">
-                    <div class="titles">
-                        Фото офиса
-                    </div>
-                    <div class="galaleriya">
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg" class="img fancybox">
-                            <img src="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png" class="img fancybox">
-                            <img src="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg" class="img fancybox">
-                            <img src="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg" class="img fancybox">
-                            <img src="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png" class="img fancybox">
-                            <img src="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg" class="img fancybox">
-                            <img src="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>-->
         </div>
         <div class="bigmap">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>

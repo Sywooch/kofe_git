@@ -83,7 +83,7 @@ $js = app\components\CController::$js;
                             <span class="times">Ежедневно с 09:00 до 20:00</span>
                         </div>
                         <div class="right">
-                            <a href="tel:+74951520707">+7 (495) 152 07 07</a>
+                            <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -135,7 +135,7 @@ $js = app\components\CController::$js;
                                     <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
                                         <p>Москва, ул. Студенческая 35. М. кутузовская</p>
-                                        <a href="tel:+74951520707">+7 (495) 152 07 07</a>
+                                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         <span>Ежедневно с 09:00 до 20:00</span>
                                     </div>
                                 </div>
