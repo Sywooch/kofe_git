@@ -115,7 +115,7 @@ $js = app\components\CController::$js;
         }
         ?>
         <?= $content; ?>
-        <footer>
+        <footer class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">
             <div class="container">
                 <div class="body">
                     <div class="left">
