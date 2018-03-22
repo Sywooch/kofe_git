@@ -342,8 +342,8 @@ $js = app\components\CController::$js;
             <?php endif; ?>
             <?php
             $roistatid = '73f4732fa0bd932f55b5701b2a4be7ac';
-            if (isset($siteConfig['spb']))
-                $roistatid = '73f4732fa0bd932f55b5701b2a4be7ac';
+            if ($siteConfig['mono'] && isset($siteConfig['spb']))
+                $roistatid = '4f0a40481efd4baef2c06182c012dee6';
             elseif ($siteConfig['mono'] && !isset($siteConfig['spb'])) {
                 $roistatid = '59aa76d4f6e16b05176872ca59a9dad0';
             }
