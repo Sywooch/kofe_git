@@ -109,7 +109,7 @@ $js = app\components\CController::$js;
                                 <div class="phone_block_two"> 
                                     <span class="text">Бесплатный выезд мастера</span> 
                                     <span class="phone">
-                                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
+                                        <a class="phone-h" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
                                             <?= Yii::$app->session['region']['phone']; ?>
                                         </a>                                            
                                     </span>                                    
