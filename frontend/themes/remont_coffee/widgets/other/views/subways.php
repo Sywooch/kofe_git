@@ -13,7 +13,7 @@
    <div class="metro">
       <h2 class="gl-text">Ремонт кофемашин в <br>Москве, <span>рядом с метро</span></h2>
       <!--<?php foreach ($pages as $key => $page): ?>
-         <?php endforeach; ?>-->
+         <?php endforeach; $page = ['url' => '', 'title' => '']; ?>-->
       <div class="owl-carousel metro-c owl-theme">
          <div class="item">
             <a href="/<?= $page['url']; ?>">
