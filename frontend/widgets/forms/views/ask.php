@@ -57,7 +57,7 @@ $form = ActiveForm::begin([
         </div>
         <div class="left">
             <div class="footer-logo">
-                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg?v=3" alt="">
+                <img src="/<?= $siteConfig['sitePrefix']; ?>images/<?= $siteConfig['sitePrefix']; ?>logo-footer.svg" alt="">
             </div>
             <?php if (!$siteConfig['mono'] && !empty($brands)): ?>
                 <p><a href="/"><?= app\components\CController::$category['full_title']; ?></a></p>
