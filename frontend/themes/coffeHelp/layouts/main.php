@@ -57,7 +57,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="navbar">
                     <div class="col-xs-2">
-                       <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo2.svg"></a></div>
+                        <div class="navbar-logo"><a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo2.svg"></a></div>
                     </div>
                     <div class="col-xs-7">
                         <div class="navbar-top-form">
@@ -91,10 +91,10 @@ $js = app\components\CController::$js;
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
                             <div id="nav-icon3">
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
                         </div>
                     </div>
@@ -122,27 +122,27 @@ $js = app\components\CController::$js;
                     <section class="second_navigation" style="height: 78px;">
                         <div class="navbar navbar-second">
                             <div class="navbar">
-                                    <ul class="nav navbar-nav">
-                                        <li>
-                                            <a class="coffee-machine" href="#">Типы кофемашин</a>
-                                            <ul>
-                                                <li><a href="/remont-ehspresso-kombaynov">Эспрессо-комбайны</a></li>
-                                                <li><a href="/remont-avtomaticheskih-kofemashin">Автоматические</a></li>
-                                                <li><a href="/remont-poluavtomaticheskih-kofemashin">Полуавтоматические</a></li>
-                                                <li><a href="/remont-rozhkovih-kofemashin">Рожковые</a></li>
-                                                <li><a href="/remont-kapelnih-kofemashin">Капельные</a></li>
-                                                <li><a href="/remont-porcionnih-kofemashin">Порционные</a></li>
-                                                <li><a href="/remont-kapsulnih-kofemashin">Капсульные</a></li>
-                                                <li><a href="/remont-chaldovih-kofemashin">Чалдовые</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="lists" href="/brands">Все бренды</a></li>
-                                        <li><a class="tools" href="/price">Услуги и цены</a></li>
-                                    </ul>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class="order-now"> <a href="#call-modal-form">Заказать ремонт</a></li>
-                                    </ul>
-                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a class="coffee-machine" href="#">Типы кофемашин</a>
+                                        <ul>
+                                            <li><a href="/remont-ehspresso-kombaynov">Эспрессо-комбайны</a></li>
+                                            <li><a href="/remont-avtomaticheskih-kofemashin">Автоматические</a></li>
+                                            <li><a href="/remont-poluavtomaticheskih-kofemashin">Полуавтоматические</a></li>
+                                            <li><a href="/remont-rozhkovih-kofemashin">Рожковые</a></li>
+                                            <li><a href="/remont-kapelnih-kofemashin">Капельные</a></li>
+                                            <li><a href="/remont-porcionnih-kofemashin">Порционные</a></li>
+                                            <li><a href="/remont-kapsulnih-kofemashin">Капсульные</a></li>
+                                            <li><a href="/remont-chaldovih-kofemashin">Чалдовые</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="lists" href="/brands">Все бренды</a></li>
+                                    <li><a class="tools" href="/price">Услуги и цены</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="order-now"> <a href="#call-modal-form">Заказать ремонт</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </section>              
                 </div>
@@ -245,7 +245,24 @@ $js = app\components\CController::$js;
             </div>
         </div>
     </footer>
-        <?= !empty($js['content']) ? $js['content'] : ''; ?>
+    <?= !empty($js['content']) ? $js['content'] : ''; ?>
+    <?php
+    $roistatid = '0b46e09f230f4526b38858e48d27e631';
+    if (isset($siteConfig['spb']))
+        $roistatid = '3fe43ebb635b2cc4c8a26b776759d3af';
+    ?>
+    <script>(function (w, d, s, h, id) {
+            w.roistatProjectId = id;
+            w.roistatHost = h;
+            var p = d.location.protocol == "https:" ? "https://" : "http://";
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+            var js = d.createElement(s);
+            js.charset = "UTF-8";
+            js.async = 1;
+            js.src = p + h + u;
+            var js2 = d.getElementsByTagName(s)[0];
+            js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
 </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
@@ -261,8 +278,8 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {
-        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-    });</script>
+                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+            });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
 <?php \app\widgets\other\Replace::end(); ?>
