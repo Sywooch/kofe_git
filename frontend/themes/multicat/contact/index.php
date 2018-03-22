@@ -16,7 +16,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
-                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="email">
                     <span>Почта</span>
