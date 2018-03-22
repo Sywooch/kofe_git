@@ -30,7 +30,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     <div class="post__content">
                         <div class="post__content">
                             <ul>
-                                <li>Для получения оперативной информации о статусе ремонта вашей кофемашины, позвоните на номер <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a> или заполните нижеследующую форму:</li>
+                                <li>Для получения оперативной информации о статусе ремонта вашей кофемашины, позвоните на номер <a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a> или заполните нижеследующую форму:</li>
                             </ul>
                             <?php
 

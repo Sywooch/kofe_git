@@ -1,4 +1,4 @@
-<div class="bl-content">
+<!--<div class="bl-content">
     <div class="list">
         <ul>
             <li>
@@ -22,4 +22,4 @@
             </li>
         </ul>
     </div>
-</div>
+</div>-->

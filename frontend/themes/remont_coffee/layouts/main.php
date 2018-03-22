@@ -27,6 +27,8 @@ $js = app\components\CController::$js;
         <link rel="icon" type="image/x-icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
+        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.carousel.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.theme.default.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font-awesome.css" rel="stylesheet" media="all" />
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.min.css" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/reset.css" rel="stylesheet" media="all" />
@@ -68,33 +70,40 @@ $js = app\components\CController::$js;
                     <span>Ежедневно с 9:00 до 21:00</span>
                 </div>
             </div>
-            <div class=" menu-line">
-                <nav class="navbar navbar-default navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand hidden-md hidden-lg hidden-sm" href="tel:+74950551569">8 (495) 055-15-69</a></a>
-                    </div>
-                    <div class="collapse navbar-collapse navigation" id="main-menu">
-                        <ul id="menu-home" class="nav navbar-nav">
-                            <li id="menu-item-1504" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1504"><a href="/"> Главная</a></li>
-                            <li id="menu-item-1479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1479"><a href="/stoimost-remonta">Стоимость ремонта</a></li>
-                            <li id="menu-item-5948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5948"><a href="/vse-obsluzhivaemye-brendy">Все обслуживаемые бренды</a></li>
-                            <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/kurerskaya-sluzhba">Курьерская служба</a></li>
-                            <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/garantiya">Гарантия</a></li>
-                            <li id="menu-item-1478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1478"><a href="/kontakty">Контакты</a></li>
-                        </ul>
-                    </div>
-                </nav>
+        </div>
+
+        <div class="menushka">
+            <div class="container header">
+                <div class=" menu-line">
+                    <nav class="navbar navbar-default navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand hidden-md hidden-lg hidden-sm" href="tel:+74950551569">8 (495) 055-15-69</a></a>
+                        </div>
+                        <div class="collapse navbar-collapse navigation" id="main-menu">
+                            <ul id="menu-home" class="nav navbar-nav">
+                                <li id="menu-item-1504" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1504"><a href="/"> Главная</a></li>
+                                <li id="menu-item-1479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1479"><a href="/stoimost-remonta">Стоимость ремонта</a></li>
+                                <li id="menu-item-5948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5948"><a href="/vse-obsluzhivaemye-brendy">Все обслуживаемые бренды</a></li>
+                                <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/kurerskaya-sluzhba">Курьерская служба</a></li>
+                                <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/garantiya">Гарантия</a></li>
+                                <li id="menu-item-1478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1478"><a href="/kontakty">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/path-bg.jpg') top repeat-x; height: 6px; "></div>
-        </div>
+        <?php if (!$isHome): ?>
+            <div class="container-fluid">
+                <div class="row" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/path-bg.jpg') top repeat-x; height: 6px; "></div>
+            </div>
+        <?php endif; ?>
         <?php
             if (!Yii::$app->user->isGuest) {
                 echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
@@ -117,20 +126,45 @@ $js = app\components\CController::$js;
         <?= $content; ?>        
         <div class="gl-footer">
             <div class="container">
-                <div class="top">
-                    <div class="navigation">
-                        <ul id="menu-footer">
-                            <li id="menu-item-28128" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-28128"><a href="/"> Главная</a></li>
-                            <li id="menu-item-28133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28133"><a href="/voprosy-otvety">Вопросы ответы</a></li>
-                            <li id="menu-item-28131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28131"><a href="/diagnostika">Диагностика</a></li>
-                            <li id="menu-item-28129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28129"><a href="/srochnyj-remont">Срочный ремонт</a></li>
-                            <li id="menu-item-28130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28130"><a href="/dostavka">Доставка</a></li>
-                            <li id="menu-item-30342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30342"><a href="/oplata">Оплата</a></li>
-                            <li id="menu-item-30342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30342"><a href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
-                        </ul>
-                        <br>
-                        <p>remont.coffee © <?= date('Y'); ?></p>
+                <div class="navigation info">
+                    <div class="img-logo">
+                        <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo2.svg" /></a>
                     </div>
+                    <p>г. Москва, м. Китай-город, Охотный ряд, ул. Ильинка 4.</p>
+                    <p><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
+                    <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
+                    <p>remont.coffee © <?= date('Y'); ?></p>
+                </div>
+                <div class="navigation">
+                    <ul class="menu-footer">
+                        <li><p>Меню</p></li>
+                        <li><a href="/voprosy-otvety">Вопросы ответы</a></li>
+                        <li><a href="/diagnostika">Диагностика</a></li>
+                        <li><a href="/srochnyj-remont">Срочный ремонт</a></li>
+                        <li><a href="/dostavka">Доставка</a></li>
+                        <li><a href="/oplata">Оплата</a></li>
+                        <li><a href="/polzovatelskoe-soglashenie">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+                <div class="navigation">
+                    <ul class="menu-footer">
+                        <li><p>Статьи и советы</p></li>
+                        <li><a href="/voprosy-otvety">Как выбрать кофе для кофемашин</a></li>
+                        <li><a href="/diagnostika">Советы по обслуживанию кофемашин</a></li>
+                        <li><a href="/dostavka">Фильтр для кофемашины. Для чего он нужен?</a></li>
+                        <li><a href="/oplata">Как приготовить капучино в кофемашине</a></li>
+                    </ul>
+                </div>
+                <div class="navigation">
+                    <ul class="menu-footer">
+                        <li><p>Популярные неисправности</p></li>
+                        <li><a href="/ne-vklyuchaetsya">Не включается</a></li>
+                        <li><a href="/protekaet">Протекает</a></li>
+                        <li><a href="/ne-nalivaet-kofe">Не наливает кофе</a></li>
+                        <li><a href="/net-para">Нет пара</a></li>
+                        <li><a href="/ne-greet-vodu">Не греет воду</a></li>
+                        <li><a href="/vydaet-oshibku">Выдает ошибку</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -147,6 +181,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/sly.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/plugins.js"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/owl.carousel.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.sticky.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/global.js"></script>
