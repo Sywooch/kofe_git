@@ -28,7 +28,7 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=8">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=9">
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=4">        
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=7" rel="stylesheet">
@@ -88,7 +88,7 @@ $js = app\components\CController::$js;
                                 <li><a href="/error-code">Коды ошибок</a></li>
                                 <li><a href="/repair-status">Статус ремонта</a></li>
                                 <li><a href="/contacts">Контакты</a></li>
-                                <li class="vk"><a href="https://vk.com/coffeehelpru">Мы в: <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/vk.svg" alt=""></a></li>
+                                <?php if ($siteConfig['id'] == 51) : ?><li class="vk"><a href="https://vk.com/coffeehelpru">Мы в: <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/vk.svg" alt=""></a></li><?php endif; ?>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
                             <div id="nav-icon3">
