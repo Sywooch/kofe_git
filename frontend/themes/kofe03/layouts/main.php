@@ -521,21 +521,25 @@ $js = app\components\CController::$js;
             </div>
             <?= kofe03\widgets\forms\SidebarForm::widget(); ?>
         </div>
-        <?php if ($siteConfig['id'] == 50): ?>
-            <script>(function (w, d, s, h, id) {
-                    w.roistatProjectId = id;
-                    w.roistatHost = h;
-                    var p = d.location.protocol == "https:" ? "https://" : "http://";
-                    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
-                    var js = d.createElement(s);
-                    js.charset = "UTF-8";
-                    js.async = 1;
-                    js.src = p + h + u;
-                    var js2 = d.getElementsByTagName(s)[0];
-                    js2.parentNode.insertBefore(js, js2);
-                })(window, document, 'script', 'cloud.roistat.com', 'ce549814b815f3fa6db9d839ea4d4f50');</script>
-        <?php endif; ?>
+        
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
+            <?php
+        $roistatid = 'ce549814b815f3fa6db9d839ea4d4f50';
+        if (isset($siteConfig['spb']))
+            $roistatid = '145f7e4eaf44d2aae77d58a6e5e7b254';
+        ?>
+        <script>(function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=6"></script>
