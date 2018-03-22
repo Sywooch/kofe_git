@@ -36,16 +36,16 @@ return [
         'http://kofemashin-remont.ru/repair-animo/excelso-t/dostavka-kofemashiny' => 'http://kofemashin-remont.ru/repair-gino'
     ],
     51 => [
-        'https://coffee-help.ru/remont-delonghi/nespresso-umilk/dekofenatsiya' => 'https://coffee-help.ru/remont-delonghi',
-        'https://coffee-help.ru/remont-bosch/tes-70621-rw/ne-vklyuchaetsya' => 'https://coffee-help.ru/remont-bosch',
-        'https://coffee-help.ru/remont-gaggia/babila/net-para' => 'https://coffee-help.ru',
-        'https://coffee-help.ru/remont-gaggia/paros/diagnostics' => 'https://coffee-help.ru',
-        'https://coffee-help.ru/remont-delonghi/nespresso-umilk/dekofenatsiya' => 'https://coffee-help.ru/remont-delonghi/nespresso-umilk',
-        'https://coffee-help.ru/remont-gaggia/babila/net-para' => 'https://coffee-help.ru/remont-krups',
-        'https://coffee-help.ru/remont-sanremo/opera-3-gr/ne-nalivaet-kofe' => 'https://coffee-help.ru',
-        'https://coffee-help.ru/remont-gaggia/babila/net-para' => 'https://coffee-help.ru/remont-gaggia',
-        'https://coffee-help.ru/remont-bauknecht/kmt-9145-ixl/shipping' => 'https://coffee-help.ru',
-        'https://coffee-help.ru/remont-delonghi/icm-65-t/ne-greet-vodu' => 'https://coffee-help.ru/remont-delonghi',
-        'https://coffee-help.ru/remont-severin/ka-4770/zamena-zhernovov' => 'https://coffee-help.ru'
+        'http://coffee-help.ru/remont-delonghi/nespresso-umilk/dekofenatsiya' => 'http://coffee-help.ru/remont-delonghi',
+        'http://coffee-help.ru/remont-bosch/tes-70621-rw/ne-vklyuchaetsya' => 'http://coffee-help.ru/remont-bosch',
+        'http://coffee-help.ru/remont-gaggia/babila/net-para' => 'http://coffee-help.ru',
+        'http://coffee-help.ru/remont-gaggia/paros/diagnostics' => 'http://coffee-help.ru',
+        'http://coffee-help.ru/remont-delonghi/nespresso-umilk/dekofenatsiya' => 'http://coffee-help.ru/remont-delonghi/nespresso-umilk',
+        'http://coffee-help.ru/remont-gaggia/babila/net-para' => 'http://coffee-help.ru/remont-krups',
+        'http://coffee-help.ru/remont-sanremo/opera-3-gr/ne-nalivaet-kofe' => 'http://coffee-help.ru',
+        'http://coffee-help.ru/remont-gaggia/babila/net-para' => 'http://coffee-help.ru/remont-gaggia',
+        'http://coffee-help.ru/remont-bauknecht/kmt-9145-ixl/shipping' => 'http://coffee-help.ru',
+        'http://coffee-help.ru/remont-delonghi/icm-65-t/ne-greet-vodu' => 'http://coffee-help.ru/remont-delonghi',
+        'http://coffee-help.ru/remont-severin/ka-4770/zamena-zhernovov' => 'http://coffee-help.ru'
     ]
 ];
