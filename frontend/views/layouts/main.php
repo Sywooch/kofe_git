@@ -340,7 +340,26 @@ $js = app\components\CController::$js;
                 <script src="/js/particles.js"></script>
                 <script src="/js/app2.js"></script>
             <?php endif; ?>
-            <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?><script>(function(w, d, s, h, id) { w.roistatProjectId = id; w.roistatHost = h; var p = d.location.protocol == "https:" ? "https://" : "http://"; var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init"; var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);})(window, document, 'script', 'cloud.roistat.com', '59aa76d4f6e16b05176872ca59a9dad0');</script><?php endif; ?>
+            <?php
+            $roistatid = '73f4732fa0bd932f55b5701b2a4be7ac';
+            if ($siteConfig['mono'] && isset($siteConfig['spb']))
+                $roistatid = '4f0a40481efd4baef2c06182c012dee6';
+            elseif ($siteConfig['mono'] && !isset($siteConfig['spb'])) {
+                $roistatid = '59aa76d4f6e16b05176872ca59a9dad0';
+            }
+            ?>
+            <script>(function (w, d, s, h, id) {
+                        w.roistatProjectId = id;
+                        w.roistatHost = h;
+                        var p = d.location.protocol == "https:" ? "https://" : "http://";
+                        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                        var js = d.createElement(s);
+                        js.charset = "UTF-8";
+                        js.async = 1;
+                        js.src = p + h + u;
+                        var js2 = d.getElementsByTagName(s)[0];
+                        js2.parentNode.insertBefore(js, js2);
+                    })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>            
     </body>
     <?php
     if (Yii::$app->session->getFlash('success')) {
