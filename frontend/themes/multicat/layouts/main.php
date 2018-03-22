@@ -228,7 +228,24 @@ $js = app\components\CController::$js;
             </div>
             <div class="close"></div>
         </div>
-<?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistatid = '314cc36ae97e480950a604b5c5a729f7';
+        if (isset($siteConfig['spb']))
+            $roistatid = 'e9bb7c25ae12c1eea627cb04cdb83f4b';
+        ?>
+        <script>(function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 <script src="<?= $assets ?>/multicat/js/jquery-1.11.3.min.js"></script>
@@ -244,7 +261,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets ?>/multicat/js/yii.js"></script>
 <script src="<?= $assets ?>/multicat/js/yii.validation.js"></script>
 <script>
-                                    new WOW().init();
+            new WOW().init();
 </script>
 <script>$("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")

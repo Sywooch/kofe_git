@@ -14,14 +14,6 @@ $breadcrumbs = [
                 <div class="mb">
                     <?= tnv\widgets\other\LeftMenu::widget(); ?>
                 </div>
-                <div class="aside--banner mt visible-lg">
-                    <!--  AdRiver code START. Type:AjaxJS Site: ntvplus BN:1 -->
-                    <div id="adriver_banner_1865176885"></div>
-                    <script type="text/javascript">
-                        new adriver("adriver_banner_1865176885", {sid: 85358, bt: 52, bn: 1});
-                    </script>
-                    <!--  AdRiver code END  -->
-                </div>
             </div>
         </aside>
         <div class="page float--right col-xs-12 col-md-8">
