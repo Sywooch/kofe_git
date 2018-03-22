@@ -2,31 +2,26 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="bl-services">
-    <div class="bl-text">
-        <div class="heading">
-            <h2>Типовые неисправности </h2>
-        </div>
-    </div>
-    <div class="list">
-        <ul class="link-list">
+<div class="top-servicess">
+    <div class="container">
+        <p class="gl-text">Типовые  <span>неисправности</span></p>
+        <div class="list">
             <?php foreach ($services as $service): ?>
-                <li class="link-list__item">
-                    <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
+                <a class="item" href="/<?= $service['url']; ?>">
+                    <div class="image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/images/protekaet.jpg" alt=""></div>
                     <div class="text">
-                        <div class="name"><a href="/<?= $service['url']; ?>"><b><?= $service['title']; ?></b></a></div>
+                        <div class="name"><?= $service['title']; ?></div>
                         <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>
                     </div>
                     <div class="price">
-                        <div class="value"><span class="nowrap"><?= number_format($service['price'], 0, ' ', ' '); ?></span></div>
-                        <div class="notice"></div>
-                        <div class="button">
-                            <a href="/<?= $service['url']; ?>">Заказать</a>
-                        </div>
+                        <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
+                        <div class="button">Заказать</div>
                     </div>
-                </li>
+                </a>
             <?php endforeach; ?>
-        </ul>
+            <div class="clear"></div>
+        </div>
+        <a class="button" href="/stoimost-remonta">Все услуги и цены</a>
     </div>
 </div>
-<div class="button"><a href="/stoimost-remonta">Все услуги и цены</a></div>
+<hr>

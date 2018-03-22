@@ -22,20 +22,21 @@ $this->title = $page['meta_title'];
     </div>
 </div>
 
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>        
-        <?= remont_coffee\widgets\lists\AllBrands::widget(); ?>
-        <div class="bl-text">
-            <?= $page['full_description']; ?>
-            <?= remont_coffee\widgets\lists\Services::widget(); ?>
-        </div>
-        <?= remont_coffee\widgets\other\Contacts::widget(); ?>
-        <?= remont_coffee\widgets\other\Subways::widget(); ?>
-        <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
-        <?= remont_coffee\widgets\lists\LastReviews::widget(); ?>
+<!--<?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>-->
+
+<?= remont_coffee\widgets\lists\TopServices::widget(); ?>     
+
+<div class="full-text">
+    <div class="container">
+        <?= $page['full_description']; ?>
+        <hr>
     </div>
 </div>
+
+<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
+
+<?= remont_coffee\widgets\lists\LastReviews::widget(); ?>
+
+<?= remont_coffee\widgets\other\Subways::widget(); ?>
+   
+<?= remont_coffee\widgets\lists\AllBrands::widget(); ?>

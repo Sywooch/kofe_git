@@ -141,6 +141,77 @@ $(document).ready(function () {
         $(this).parent(".button").hide();
         return false;
     });
+    $('.owl-carousel.brend-c').owlCarousel({
+        loop:true,
+        margin:25,
+        nav:false,
+        autoplay:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:10
+            }
+        }
+    });
+
+    $('.owl-carousel.model-c').owlCarousel({
+        loop:true,
+        margin:25,
+        nav:false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:6
+            }
+        }
+    });
+
+    $('.owl-carousel.metro-c').owlCarousel({
+        loop:true,
+        margin:25,
+        nav:false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    $('.owl-carousel.coment-c').owlCarousel({
+        loop:true,
+        nav:false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
 
 
 //Сокрытие seo ссылок
