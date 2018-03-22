@@ -182,7 +182,24 @@ $js = app\components\CController::$js;
             </button>
         </div>
         <?= professionals\widgets\forms\PopupForm::widget(); ?>
-		<?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistatid = 'b934b194d4b25d3758bc6bbd6e1b6a78';
+        if (isset($siteConfig['spb']))
+            $roistatid = 'cd7a848e3102ce162b85777a1425a55a';
+        ?>
+        <script>(function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
@@ -200,7 +217,7 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {
-        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-    });</script>
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
