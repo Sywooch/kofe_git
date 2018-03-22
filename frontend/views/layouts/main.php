@@ -169,7 +169,7 @@ $js = app\components\CController::$js;
                             <div class="h2">
                                 Не нашли свою поломку?
                             </div>
-                            <p id="ask-text">Свяжитесь с нами по телефону <b><a class="svyaz" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></b> <br>или закажите бесплатную консультацию.</p>
+                            <p id="ask-text">Свяжитесь с нами по телефону <b><a class="svyaz" style="color: #fff;" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></b> <br>или закажите бесплатную консультацию.</p>
                             <div class="clear"></div>
                             <?= \app\widgets\forms\CallBack::widget(['metrika' => 'home_order_button', 'id' => 'ne-nashli']); ?>
                         </div>
