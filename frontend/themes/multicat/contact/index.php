@@ -27,7 +27,6 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                     <p>Ежедневно с 08:00 до 22:00</p>
                 </div>
                 <span class="open-adress" data-tab="info-adress">Как проехать? <i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                <!--<span class="open-foto" data-tab="galaleriya">Фотографии офиса <i class="fa fa-angle-right" aria-hidden="true"></i></span>-->
             </div>
             <div class="right content-adress">
                 <div class="adress">
