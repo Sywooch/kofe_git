@@ -88,6 +88,7 @@ $js = app\components\CController::$js;
                                 <li><a href="/error-code">Коды ошибок</a></li>
                                 <li><a href="/repair-status">Статус ремонта</a></li>
                                 <li><a href="/contacts">Контакты</a></li>
+                                <li class="vk"><a href="https://vk.com/coffeehelpru">Мы в: <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/vk.svg" alt=""></a></li>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
                             <div id="nav-icon3">
