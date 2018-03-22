@@ -258,5 +258,22 @@ $js = app\components\CController::$js;
         <?php $this->endBody() ?>    
         <?php $this->endPage() ?>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistatid = '7bd32523aaf002c75bde39b1293de8f0';
+        if (isset($siteConfig['spb']))
+            $roistatid = 'c82dc6b696b11707a3a7914541b01b98';
+        ?>
+        <script>(function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
