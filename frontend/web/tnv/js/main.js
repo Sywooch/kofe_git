@@ -6882,12 +6882,7 @@ $.onDomUpdate = function (controller) {
         }
     }
 
-    left.onmousedown = () => {
-        leftSlide();
-    }
-    right.onmousedown = () => {
-        rightSlide();
-    }
+    
     document.onkeydown = e => {
         if (e.keyCode == 37) {
             leftSlide();

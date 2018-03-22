@@ -202,13 +202,7 @@ class CController extends \yii\web\Controller {
             ])->execute();
             $p = strip_tags(Yii::$app->session['region']['phone']);
             $p = '7' . substr($p, 1, strlen($p));
-            if ($siteConfig['id'] == 50) {
-                if (isset($_COOKIE['roistat_visit'])) {
-                    $visit_id = $_COOKIE['roistat_visit'];
-                    //$marker = $_COOKIE['roistat_marker_old'];
-                    //file_get_contents('https://mobi03.ru/roistat?x8org=' . $OID . '&visit_id=' . $visit_id . '&phone=' . urlencode(preg_replace("/\D/", "", $phone)) . '&marker=' . urlencode($marker) . '&page=' . Yii::$app->request->hostInfo . Yii::$app->request->pathInfo);
-                }
-            }
+            
             $visit_id = 0;
             if (isset($_COOKIE['roistat_visit'])) {
                 $visit_id = $_COOKIE['roistat_visit'];

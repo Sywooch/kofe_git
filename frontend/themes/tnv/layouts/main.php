@@ -18,7 +18,6 @@ $js = app\components\CController::$js;
     <head>
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="alternate" type="application/rss+xml" title="Новости компании" href="rss/company" />
         <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
@@ -26,9 +25,27 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font.css" />
-
     </head>
     <body>
+        <?php
+        if (!Yii::$app->user->isGuest) {
+            echo '<div style="float: left; z-index: 99999;position: absolute;">';
+            $domain = $_SERVER['SERVER_NAME'];
+            if (isset($_GET['data']['is_service'])) {
+                if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
+                } else {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                }
+            } else {
+                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                if (!empty($_GET['data']))
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+            }
+            echo '</div>';
+        }
+        ?>
         <header class="header">
             <div class="header--top-line">
                 <div class="container clearfix">
@@ -37,7 +54,7 @@ $js = app\components\CController::$js;
                             <li class="service-nav--item"><a href="#" class="service-nav--item-link">Частным лицам</a></li>
                             <li class="service-nav--item"><a href="#" class="service-nav--item-link">Корпоративным клиентам</a></li>
                             <li class="service-nav--item"><a href="#" class="service-nav--item-link">Партнерам</a></li>
-                            <li class="service-nav--item"><a href="#" class="service-nav--item-link">О компании</a></li>
+                            <li class="service-nav--item"><a href="/about" class="service-nav--item-link">О компании</a></li>
                         </ul>
                     </nav>
                     <div class="header--socials float--left visible-lg">
@@ -62,7 +79,7 @@ $js = app\components\CController::$js;
                                 <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Частным лицам</a></li>
                                 <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Корпоративным клиентам</a></li>
                                 <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Партнерам</a></li>
-                                <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">О компании</a></li>
+                                <li class="service-nav--sm-item"><a href="/about" class="service-nav--sm-item-l">О компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -72,8 +89,8 @@ $js = app\components\CController::$js;
                         <i class="service-nav--toggle-icon down icon-down"></i>
                     </a>
                     <a href="#" class="header--region float--right">
-                        <span class="header--region-label">Ваш регион:</span>
-                        <span class="header--region-label blue">Москва</span>
+                        <span class="header--region-label">Ваш регион: </span>
+                        <span class="header--region-label blue"> <?= Yii::$app->session['region']['title']; ?></span>
                     </a>
                 </div>
             </div>
@@ -83,17 +100,17 @@ $js = app\components\CController::$js;
                         <li class="service-nav--xs-item "><a href="#" class="service-nav--xs-item-l">Частным лицам</a></li>
                         <li class="service-nav--xs-item "><a href="#" class="service-nav--xs-item-l">Корпоративным клиентам</a></li>
                         <li class="service-nav--xs-item "><a href="#" class="service-nav--xs-item-l">Партнерам</a></li>
-                        <li class="service-nav--xs-item "><a href="#" class="service-nav--xs-item-l">О компании</a></li>
+                        <li class="service-nav--xs-item "><a href="/about" class="service-nav--xs-item-l">О компании</a></li>
                     </ul>
                 </div>
             </div>
             <div class="header--info-line hidden-xs">
                 <div class="container clearfix">
-                    <a href="index.html" class="header--logo float--left"></a>
+                    <a href="/" class="header--logo float--left"></a>
                     <div class="header--calls visible-lg">
                         <div class="header--call">
                             <div class="header--call-t">Москва</div>
-                            <span class="call_phone_1"><a class="header--call-p" href="#">8 495 755 67 89</a></span>
+                            <span class="call_phone_1"><a class="header--call-p" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></span>
                         </div>
                         <div class="header--call">
                             <div class="header--call-t">Россия</div>
@@ -103,7 +120,7 @@ $js = app\components\CController::$js;
                     <div class="header--calls visible-sm visible-md">
                         <div class="header--call">
                             <div class="header--call-t">Москва</div>
-                            <span class="call_phone_1"><a class="header--call-p" href="#">8 495 755 67 89</a></span>
+                            <span class="call_phone_1"><a class="header--call-p" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></span>
                         </div>
                         <div class="header--calls-d">
                             <div class="header--call">
@@ -168,7 +185,7 @@ $js = app\components\CController::$js;
             </div>
             <div class="header--info-line visible-xs">
                 <div class="clearfix">
-                    <a href="index.html" class="header--logo float--left"></a>
+                    <a href="/" class="header--logo float--left"></a>
                     <a href="#" class="m-menu--mobile float--right">
                         <i class="m-menu--mobile-icon"></i>
                     </a>
@@ -182,17 +199,45 @@ $js = app\components\CController::$js;
                 <div class="container clearfix static">
                     <nav class="m-menu float--left">
                         <ul class="m-menu--list clearfix static">
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Цены</a></li>
+                            <li class="m-menu--item"><a href="/prices" class="m-menu--item-link">Цены</a></li>
                             <li class="m-menu--item"><a href="#" class="m-menu--item-link">Диагностика</a></li>
                             <li class="m-menu--item"><a href="#" class="m-menu--item-link">Гарантия</a></li>
                             <li class="m-menu--item"><a href="#" class="m-menu--item-link">Контроль качества</a></li>
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Контакты</a></li>
+                            <li class="m-menu--item"><a href="/contacts" class="m-menu--item-link">Контакты</a></li>
                             <li class="m-menu--item"><a href="#" class="m-menu--item-link">Статус Заказа!</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
+        <div class="popover-box is-chat" id="WhatsappTooltip">
+            <a href="#" class="popover-box--chat-l">
+                <span class="popover-box--chat-t">Whatsapp</span>
+                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
+                <span class="popover-box--chat-d">Только в режиме чата</span>
+            </a>
+        </div>
+        <div class="popover-box is-chat" id="SkypeTooltip">
+            <a href="#" class="popover-box--chat-l">
+                <span class="popover-box--chat-t">Skype</span>
+                <span class="popover-box--chat-p">ntv-plus.com</span>
+                <span class="popover-box--chat-d">Чат и звонки</span>
+            </a>
+        </div>
+        <div class="popover-box is-chat" id="ViberTooltip">
+            <a href="#" class="popover-box--chat-l">
+                <span class="popover-box--chat-t">Viber</span>
+                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
+                <span class="popover-box--chat-d">Только в режиме чата</span>
+            </a>
+        </div>
+        <div class="popover-box is-chat" id="TelegramTooltip">
+            <a href="#" class="popover-box--chat-l">
+                <span class="popover-box--chat-t">Telegram</span>
+                <span class="popover-box--chat-p">ntvplus_bot</span>
+                <span class="popover-box--chat-d">Только в режиме чата</span>
+            </a>
+        </div>
         <?= $content; ?>
         <footer class="footer">
             <div class="footer--nav-line">
@@ -201,7 +246,7 @@ $js = app\components\CController::$js;
                         <div class="col-sm-4 col-md-3">
                             <a href="#" class="footer--logo mb066"></a>
                             <div class="footer--copy">
-                                <div class="footer--copy-big">rekofe.ru © 2018</div>
+                                <div class="footer--copy-big">rekofe.ru © <?= date('Y'); ?></div>
                                 <div class="footer--copy-small">Все права сохранены.<br />Использование материалов сайта без согласования запрещено.<br /></div>
                             </div>
                         </div>
@@ -232,16 +277,7 @@ $js = app\components\CController::$js;
                                     <a href="#" class="footer--list-link">Проконсультируем вас</a>
                                 </li>
                                 <li class="footer--list-item">
-                                    <form action="">
-                                        <label style="width: 100%">
-                                            <div class="form-group field-orderform2-phone required">
-                                                <input class="form-control form-control" type="tel" name="OrderForm2[phone]" placeholder="Ваш телефон"  />
-                                            </div>
-                                        </label>
-                                        <div class="form__row form__row_submit">
-                                            <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить</button>
-                                        </div>
-                                    </form>
+                                    <?= tnv\widgets\forms\FooterForm::widget(); ?>
                                 </li>
                             </ul>
                         </div>
@@ -257,7 +293,9 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3">
                             <div class="footer--call-title">Москва</div>
-                            <span class="call_phone_2"><a class="footer--call-phone" href="tel:+74957556789">8 495 755 67 89</a></span>
+                            <span class="call_phone_2">
+                                <a class="footer--call-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
+                            </span>
                             <div class="footer--call-title hidden-xs hidden-md hidden-lg">Россия</div>
                             <a class="footer--call-phone hidden-xs hidden-md hidden-lg" href="tel:88005556789">8 800 555 67 89</a>
                         </div>
@@ -273,32 +311,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </footer>
-        <div id="online-zayavkamy" tabindex="-1" role="dialog" class="modal iframe fade">
-            <div role="document" class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <a href="#" data-dismiss="modal" aria-label="Close" class="modal--close"><span class="modal--close-label visible-xs">Закрыть</span><i class="modal--close-icon"></i></a>
-                        <div class="modal--title"> Онлайн заявка </div>
-                    </div>
-                    <div class="modal-body modal-form">
-                        <form action="">
-                            <input class="form-control " type="hidden" name="product" value="" />
-                            <div class="form-group row mb " id="">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <label class="form--label "> Ваше телефон </label>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <input class="form-control " type="text" name="name" value="" data-fv-notempty="true" data-fv-blank="true" data-fv-notempty-message="Введите имя" />
-                                </div>
-                            </div>
-                            <div class="mainform-b mb">
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?= tnv\widgets\forms\PopupForm::widget(); ?>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
@@ -309,5 +322,16 @@ $js = app\components\CController::$js;
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/pr.js"></script>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
+<?php
+if (Yii::$app->session->getFlash('success')) {
+    echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
+}
+?>
+<script>$("form").each(function () {
+        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+    });</script>
+<?php $this->endBody() ?>    
+<?php $this->endPage() ?>
