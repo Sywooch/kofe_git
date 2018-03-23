@@ -9,16 +9,14 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <div class="breaking__picture">
                     <img class="breaking__photo" src="/<?= $assets . $siteConfig['theme'] . '/'; ?>images/Repair-kofemash_450x0_d47.png" alt="Кофемашин">
                     <div class="breaking__points">
-                        <div class="breaking__point" data-breaking-point="01" style="top: 10%; left: 45%;"></div>
-                        <div class="breaking__point" data-breaking-point="02" style="top: 28%; left: 10%;"></div>
-                        <div class="breaking__point" data-breaking-point="03" style="top: 39%; left: 35%;"></div>
-                        <div class="breaking__point" data-breaking-point="04" style="top: 27%; left: 53%;"></div>
-                        <div class="breaking__point" data-breaking-point="05" style="top: 54%; left: 24%;"></div>
-                        <div class="breaking__point" data-breaking-point="06" style="top: 46%; left: 55%;"></div>
-                        <div class="breaking__point" data-breaking-point="07" style="top: 63%; left: 97%;"></div>
-                        <div class="breaking__point" data-breaking-point="08" style="top: 91%; left: 66%;"></div>
-                        <div class="breaking__point" data-breaking-point="09" style="top: 19%; left: 64%;"></div>
-                        <div class="breaking__point" data-breaking-point="10" style="top: 15%; left: 87%;"></div>
+                        <div class="breaking__point" data-breaking-point="01" style="top: 24.3%; left: 27.7%;"></div>
+                        <div class="breaking__point" data-breaking-point="02" style="top: 46.5%; left: 11.5%;"></div>
+                        <div class="breaking__point" data-breaking-point="03" style="top: 70.2%; left: 11.5%;"></div>
+                        <div class="breaking__point" data-breaking-point="04" style="top: 24.5%; left: 81.8%;"></div>
+                        <div class="breaking__point" data-breaking-point="05" style="top: 53%; left: 85.8%;"></div>
+                        <div class="breaking__point" data-breaking-point="06" style="top: 76.8%; left: 55.3%;"></div>
+                        <div class="breaking__point" data-breaking-point="07" style="top: 55%; left: 66.8%;"></div>
+                        <div class="breaking__point" data-breaking-point="08" style="top: 86.2%; left: 26.4%;"></div>
                     </div>
                 </div>
             </div>
@@ -27,56 +25,60 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="breaking__column">
                         <h3 class="breaking__label">Частые неисправности</h3>
                         <ul class="breaking__list breaking__list_accordion">
-                            <li class="breaking__item" data-breaking="01">
+                            <li class="breaking__item" data-breaking="05">
                                 <a class="breaking__name" href="#">Не работает</a>
                                 <div class="breaking__text">Проблема может быть в:</br>
-                                    — пустом резервуаре для воды;</br>
-                                    — отсутствии кофе.
+                                    — Пустом резервуаре для воды;</br>
+                                    — Отсутствии кофе.
                                 </div>
                             </li>
-                            <li class="breaking__item" data-breaking="02">
+                            <li class="breaking__item" data-breaking="07">
                                 <a class="breaking__name" href="#">Шумит при работе</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — отсутствии воды;</br>
-                                    — пережатой трубки подачи воды.
+                                <div class="breaking__text">Причиной проблемы ,может быть:</br>
+                                    — Засорение кофемашины;</br>
+                                    — Проблемы с насосом.
                                 </div>
                             </li>
-                            <li class="breaking__item" data-breaking="03">
-                                <a class="breaking__name" href="#">Не качает воду</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — протечке;</br>
-                                    — датчике уровня воды;</br>
-                                    — панели управления.
+                            <li class="breaking__item" data-breaking="06">
+                                <a class="breaking__name" href="#">Нет пара</a>
+                                <div class="breaking__text">Проблема может быть связанна с:</br>
+                                    — Неисправностью бойлера;</br>
+                                    — Неисправностью пароблока;</br>
+                                    — Засорение кальцием.
                                 </div>
                             </li>
                             <li class="breaking__item" data-breaking="04">
                                 <a class="breaking__name" href="#">Не мелет кофе</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — блоке управления;</br>
-                                    — работе двигателя;</br>
-                                    — кофеводе.
+                                <div class="breaking__text">Неисправность связанна с:</br>
+                                    — Затупленностью жерновов;</br>
+                                    — Неисправностью кофемолки;</br>
+                                    — Неисправностью электродвижка кофемолки.
                                 </div>
                             </li>
-                            <li class="breaking__item" data-breaking="05">
-                                <a class="breaking__name" href="#">Не видит воду</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — датчике уровня воды;</br>
-                                    — влаги внутри корпуса.
+                            <li class="breaking__item" data-breaking="01">
+                                <a class="breaking__name" href="#">Не наливает воду</a>
+                                <div class="breaking__text">Данная проблема, может быть вызвана:</br>
+                                    — Требуется чистка вашей кофемашины;</br>
+                                    — Проблемы с насосом;</br>
+                                    — Замена уплотнительных колец;</br>
+                                    — Замена датчиков.
                                 </div>
                             </li>
-                            <li class="breaking__item" data-breaking="06">
+                            <li class="breaking__item" data-breaking="02">
                                 <a class="breaking__name" href="#">Не наливает кофе</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — засорах;</br>
-                                    — помпе;</br>
-                                    — бройлере.
+                                <div class="breaking__text">Неисправность могла быть вызвана данными неполадками:</br>
+                                    — Засорение кофемашины кофейными маслами (декофинация);</br>
+                                    — Обслуживание гидросистемы;</br>
+                                    — Чистка диспенсеров.
                                 </div>
                             </li>
-                            <li class="breaking__item" data-breaking="07">
+                            <li class="breaking__item" data-breaking="03">
                                 <a class="breaking__name" href="#">Не подает пену</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — плохом молоке;</br>
-                                    — засоренном воздушном канале.
+                                <div class="breaking__text">Для решения данной проблемы нужно будет:</br>
+                                    — Произвести замену капучинатора;</br>
+                                    — Провести чистку вашей кофемашины;</br>
+                                    — Заменить фильтры;</br>
+                                    — Произвести замену жерновов.
                                 </div>
                             </li>
                             <li class="breaking__item" data-breaking="08">
@@ -86,22 +88,6 @@ $siteConfig = app\components\CController::getSiteConfig();
                                     — уплотнительных прокладках;</br>
                                     — уплотнении дозатора;</br>
                                     — неплотной посадки соединительных трубок.</br>
-                                </div>
-                            </li>
-                            <li class="breaking__item" data-breaking="09">
-                                <a class="breaking__name" href="#">Не нагревает воду</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — нагревательном элементе;</br>
-                                    — контроллере;</br>
-                                    — некачественной воде.
-                                </div>
-                            </li>
-                            <li class="breaking__item" data-breaking="10">
-                                <a class="breaking__name" href="#">Не реагирует на кнопки</a>
-                                <div class="breaking__text">Проблема может быть в:</br>
-                                    — блоке управления;</br>
-                                    — забитых, грязных кнопках;</br>
-                                    — сгоревшем предохранителе.
                                 </div>
                             </li>
                         </ul>

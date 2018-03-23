@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17"><defs><style>.cls-1{fill:#acb5c3;fill-rule:evenodd}</style></defs><path id="pin_header.svg" class="cls-1" d="M1293.95 925.055a7 7 0 0 0-9.91 0 7.1 7.1 0 0 0 0 9.96l4.95 4.981 4.96-4.981a7.1 7.1 0 0 0 0-9.96zm-2.73 7.219l-2.23 2.239-2.22-2.239a3.178 3.178 0 0 1 0-4.478 3.134 3.134 0 0 1 4.45 0 3.178 3.178 0 0 1 0 4.478z" transform="translate(-1282 -923)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13px" height="17px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 13 17"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#8F9BAE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M7 0c-4,0 -7,3 -7,7 0,3 6,10 6,10 0,0 1,0 1,0 0,0 0,0 0,0 0,0 6,-7 6,-10 0,-4 -3,-7 -6,-7zm0 3c-2,0 -4,2 -4,4 0,2 2,3 4,3 2,0 3,-1 3,-3 0,-2 -1,-4 -3,-4zm0 7c-2,0 -3,-2 -3,-3 0,-2 1,-3 3,-3 1,0 2,1 2,3 0,1 -1,3 -2,3zm0 6c-2,-1 -6,-7 -6,-9 0,-4 2,-6 6,-6 3,0 5,2 5,6 0,2 -4,8 -5,9z"/>
+ </g>
+</svg>
