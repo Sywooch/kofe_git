@@ -16,7 +16,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 <?= $row['title']; ?>
                             <?php endif; ?>
                         </td>
-                        <td><span><?= number_format($row['price'], 0, ' ', ' '); ?> р</span> <a class="button button_warning js-popup" href="#" data-popup="request">Заказать</a></td>
+                        <td><span>от <?= number_format($row['price'], 0, ' ', ' '); ?> р</span> <a class="button button_warning js-popup" href="#" data-popup="request">Заказать</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
