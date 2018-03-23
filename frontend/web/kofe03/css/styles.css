@@ -1724,8 +1724,13 @@ label.error
 
     -webkit-transition: height .25s ease-out;
             transition: height .25s ease-out;
+}
+@media screen and (min-width: 601px) {
+    .header__panel {
             position: absolute;
             width: 100%;
+        
+    }
 }
 .page_scrolled .header__panel
 {
