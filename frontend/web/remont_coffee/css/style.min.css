@@ -2,7 +2,7 @@ html {
     overflow-x: hidden
 }
 a {
-    color: #00519b;
+    color: #2e375f;
     font-family: 'Exo 2'
 }
 a:hover {
@@ -600,7 +600,7 @@ cboxContent,
     padding: 5px!important;
     margin-top: 8px!important;
     margin-left: 5px;
-    background-image: linear-gradient(to bottom, #48bdf3, #00519b)!important
+    background-image: linear-gradient(to bottom, #48bdf3, #2e375f)!important
 }
 .screen-reader-text {
     display: none
@@ -1244,7 +1244,7 @@ button {
 .top-advantages .item:before {
     content: '\f046';
     padding-right: 5px;
-    color: #00519b;
+    color: #2e375f;
     font-family: FontAwesome;
     opacity: 0.9;
 }
@@ -1268,7 +1268,7 @@ button {
 }
 
 .faults .list {list-style: none !important; list-style-type: none !important; margin: 20px 0 0 0; padding: 0;}
-.faults .list ul li:before {content: '\f046'; padding-right: 5px; color: #00519b; font-family:FontAwesome; opacity: 0.9;}
+.faults .list ul li:before {content: '\f046'; padding-right: 5px; color: #2e375f; font-family:FontAwesome; opacity: 0.9;}
 .faults .list ul li {padding: 0 0 5px 0; font-size: 15px; list-style: none;}
 .bl-contact .list ul{zoom:1; width:103%; margin:30px -1.5% 0;}
 .bl-contact .list ul:before,.bl-contact .list ul:after{content:''; display:table;}

@@ -79,8 +79,8 @@ $js = app\components\CController::$js;
                 <div class="topcontactinfo <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">
                     <div class="boxcontact">
                         <div class="left">
-                            <a href="/kontakty">Москва, ул. Студенческая 35.</a>
-                            <span class="times">Ежедневно с 09:00 до 20:00</span>
+                            <a href="/kontakty">г. Москва, ул. Барклая, 8.</a>
+                            <span class="times">ТЦ "Горбушка", этаж 2, павильон 217.</span>
                         </div>
                         <div class="right">
                             <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -134,12 +134,12 @@ $js = app\components\CController::$js;
                                 <div class="info">
                                     <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
-                                        <p>Москва, ул. Студенческая 35. М. кутузовская</p>
+                                        <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
                                         <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         <span>Ежедневно с 09:00 до 20:00</span>
                                     </div>
                                 </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A03f102fa2cd31744e0f04472e92d78d74b67f3fe56752d25ee4a17e8616a4368&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script></script>
                             </div>
                         </div>
                     </div>

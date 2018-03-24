@@ -12,7 +12,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>Москва, ул. Заречная 1, корпус 2. М. Фили, Шелепиха</p>
+                    <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217. м. Багратионовская, Парк Победы, Фили.</p>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
@@ -45,7 +45,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
             </div>
         </div>
         <div class="bigmap">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2edf6943824b06741f664c9b7e6d0e8c2b2bfb596dd1eadab5b85b8cbafc188&amp;width=100%25&amp;height=525&amp;lang=ru_RU&amp;scroll=true"></script></script>
         </div>
     </div>
 </section>

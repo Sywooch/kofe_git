@@ -9,7 +9,7 @@ textarea {
 }
 a {
     text-decoration: none;
-    color: #00519b;
+    color: #2e375f;
 }
 a:hover {
     color: #222;
@@ -330,7 +330,7 @@ a:hover {
     }
 }
 .bl-faults .list ul li .name {
-    color: #00519b;
+    color: #2e375f;
     font-size: 14px;
     text-align: center;
 }
@@ -411,7 +411,7 @@ a:hover {
 }
 .bl-services .list ul li .text .name {
     font-size: 16px;
-    color: #00519b;
+    color: #2e375f;
 }
 .bl-services .list ul li .text .description {
     font-size: 14px;
@@ -631,7 +631,7 @@ a:hover {
 }
 .bl-text .pricelist .name {} .bl-text .pricelist .price {
     white-space: nowrap;
-    color: #00519b;
+    color: #2e375f;
     text-align: right;
 }
 .bl-text .pricelist .price:after {
@@ -818,7 +818,7 @@ a:hover {
 }
 .bl-contact .points li.secondary:before {
     content: 'в– ';
-    color: #00519b;
+    color: #2e375f;
     position: relative;
     top: -2px;
     margin-right: 6px;
@@ -849,7 +849,7 @@ a:hover {
     display: block;
     font-size: 16px;
     margin-top: 25px;
-    color: #00519b;
+    color: #2e375f;
 }
 .bl-form .input {
     width: 100%;
@@ -968,7 +968,7 @@ a:hover {
     color: #000;
 }
 .gl-header .bottom .navigation ul a:hover {
-    color: #00519b;
+    color: #2e375f;
 }
 .gl-header .bottom .navigation ul li.current-menu-item a {
     background: #efefef;
@@ -1253,7 +1253,7 @@ a:hover {
     display: block;
     font-size: 16px;
     margin-top: 20px;
-    color: #00519b;
+    color: #2e375f;
 }
 .up-call .form .input {
     width: 100%;
@@ -1621,7 +1621,7 @@ a:hover {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     line-height: 35px;
 }
@@ -1814,8 +1814,22 @@ a:hover {
 .full-text {
     padding: 50px 0px 40px;
 }
-.full-text .brand-images {
-    
+.width-img {
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.width-img .img {
+    max-width: 260px;
+    width: 260px;
+    min-width: 260px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    height: 180px;
+}
+.width-img .img img {
+    width: 100%;
+    margin-top: -13px;
 }
 .full-text p {
     line-height: 1.7;
