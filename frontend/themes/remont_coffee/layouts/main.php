@@ -99,11 +99,6 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <?php if (!$isHome): ?>
-            <div class="container-fluid">
-                <div class="row" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/path-bg.jpg') top repeat-x; height: 6px; "></div>
-            </div>
-        <?php endif; ?>
         <?php
             if (!Yii::$app->user->isGuest) {
                 echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';

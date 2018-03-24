@@ -1811,12 +1811,34 @@ a:hover {
     padding: 50px 0px 40px;
     text-align: center;
 }
+.full-text {
+    padding: 50px 0px 40px;
+}
+.full-text .brand-images {
+    
+}
 .full-text p {
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
+}
+.full-text ul li {
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.full-text ul li:before {
+    content: '\f0a3';
+    padding-right: 8px;
+    color: #2E375F;
+    font-family: FontAwesome;
+    opacity: 0.9;
 }
 .full-text h2 {
     font-size: 28px;
@@ -1849,6 +1871,7 @@ a:hover {
 }
 .top-servicess a.item .image {
     width: 220px;
+    min-width: 220px;
 }
 .top-servicess a.item .image img {
     width: 100%;

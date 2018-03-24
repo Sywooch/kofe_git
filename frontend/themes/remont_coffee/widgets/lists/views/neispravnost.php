@@ -1,18 +1,28 @@
 <?php
-$prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
+$assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
+$prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 ?>
-<div class="bl-faults" style="float: left; margin-top: 0;">
-    <div class="list">
-        <ul style="border-top: none;">
-            <?php foreach ($rows as $key => $row): ?>
-                <li>    
-                    <div class="name">
-                        <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
+<div class="top-servicess">
+    <div class="container">
+        <p class="gl-text"><?= $title; ?></p>
+        <div class="list">
+            <?php foreach ($rows as $service): ?>
+                <a class="item" href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $service['url']; ?>">
+                    <div class="image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/images/protekaet.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="name"><?= $service['title']; ?></div>
+                        <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>
                     </div>
-                    <div class="description hidden-sm hidden-xs"><?= $row['description']; ?></div>
-                </li>
+                    <div class="price">
+                        <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
+                        <div class="button">Заказать</div>
+                    </div>
+                </a>
             <?php endforeach; ?>
-        </ul>
+            <div class="clear"></div>
+        </div>
+        <a class="button" href="/stoimost-remonta">Все услуги и цены</a>
     </div>
 </div>
+<hr>
