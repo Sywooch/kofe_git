@@ -12,15 +12,11 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217. м. Багратионовская, Парк Победы, Фили.</p>
+                    <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
                     <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                </div>
-                <div class="email">
-                    <span>Почта</span>
-                    <a href="#">info@ifixme.ru</a>
                 </div>
                 <div class="adress">
                     <span>Режим работы</span>
@@ -33,13 +29,9 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                     <div class="titles">
                         Как проехать?
                     </div>
-                    <div class="mashina info">
-                        <span>На  машине</span>
-                        <p>При движении в область по Шмитовскому проезду, проезжаете Шелепихинский мост и сворачиваете на ул. Заречная. Через 200 метров, поворачиваете направо и прямо перед вам будет СЦ "iFixMe".</p>
-                    </div>
                     <div class="peshkom info">
-                        <span>Пешком</span>
-                        <p>Первый вагон из центра, выходим на улицу и двигаемся по ул. Новозаводская до ул. Большая Филёвская (500 м.). Переходим через дорогу, по правую сторону будет ул. Заречная. Проходим по ней 200 метров, с правой стороны будет здание 1к2 и СЦ "iFixMe".</p>
+                        <span>Пешком\На Автомобиле:</span>
+                        <p>Выходите со станции Багратионовская и направляетесь по улице Барклая в сторону Горбушки. Пройдя бизнец центр "Рубин", по левую сторону будет вход в ТЦ Горбушка. Поднимаетесь на 2 этаж. Наш сервисный центр расположен в 217 павилионе.</p>
                     </div>
                 </div>
             </div>

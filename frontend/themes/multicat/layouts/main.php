@@ -80,7 +80,7 @@ $js = app\components\CController::$js;
                     <div class="boxcontact">
                         <div class="left">
                             <a href="/kontakty">г. Москва, ул. Барклая, 8.</a>
-                            <span class="times">ТЦ "Горбушка", этаж 2, павильон 217.</span>
+                            <span class="times">ТЦ "Горбушка", павильон 217.</span>
                         </div>
                         <div class="right">
                             <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -128,7 +128,7 @@ $js = app\components\CController::$js;
                         <div class="title">Наш сервисный центр</div>
                         <div class="content">
                             <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">На Заречной </a></li>
+                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Багратионовская</a></li>
                             </ul>
                             <div id="local1" class="footer-map active">
                                 <div class="info">
