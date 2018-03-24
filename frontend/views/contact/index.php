@@ -29,7 +29,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                     <div class="map">
                         <?php if ($siteConfig['id'] == 3): ?>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adcf6fdd6f2d88ead38193227d5308583ed71b1841471d0168eccfb7e607f031d&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af0c829372a2efb4db3706756d8270019c96c0a38898fa971d65c56aa77d14340&amp;width=1060&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                         <?php else: ?>
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5f5860252f4cb5593d5da22cd0aa71e65ebf9ee9a6f2d34ebffc20ca3d411c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                         <?php endif; ?>
