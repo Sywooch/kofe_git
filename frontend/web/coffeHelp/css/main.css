@@ -9832,6 +9832,11 @@ body section.offer p.text {
      float: left;
      padding-right: 15px;
 }
+@media (max-width: 960px) {
+     ul.top_menu_big li {
+        padding-right: 12px;
+     }
+}
 @media (max-width: 480px) {
      ul.top_menu_big li {
         float: none;
@@ -13067,4 +13072,25 @@ section.promo .status-header .con p {
 }
 .text2 a {
     color: #438c1f !important;
+}
+.vk {
+    padding-left: 110px;
+}
+.vk img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.vk a {
+    font-weight: bold;
+}
+@media (max-width: 1250px) {
+    .vk {
+        padding-left: 30px;
+    }
+}
+@media (max-width: 960px) {
+    .vk {
+        padding-left: 0px;
+    }
 }

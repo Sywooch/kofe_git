@@ -10,30 +10,42 @@ $this->title = $title;
     </div>
 </div>
 <?= remont_coffee\widgets\other\Advantage::widget(); ?>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <span>Типовые неисправности <?= $pageInfo['title']; ?></span>
+
+<div class="full-text first-text">
+    <div class="container width-img">
+        <?php if (!empty($pageInfo['image'])): ?>
+            <div class="img">
+                <img class="brand-images" src="/uploads/images/<?= $pageInfo['image']; ?>" />
             </div>
-        </div>
-        <?= remont_coffee\widgets\lists\Neispravnost::widget(); ?>
-        <div class="bl-text">
-            <?php if (!empty($pageInfo['description'])): ?>
+        <?php endif; ?>
+
+        <!--
+        <?php if (!empty($pageInfo['description'])): ?>
+            <div class="text">
                 <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
-            <?php else: ?>
-                <h2>Ремонт кофемашин <?= $pageInfo['title']; ?> / в <?= Yii::$app->session['region']['titleRod'] ?></h2>
-                <p>  
-                    Сервисная компания по ремонту кофемашин <?= $pageInfo['title']; ?> предлагает Вам услуги дипломированного инженера с большим практическим опытом. Предприятие осуществляет комплексное обслуживание кофейных аппаратов по минимальной цене и кратчайшим срокам. Мастерские фирмы оборудованы современной техникой, которая позволяет провести диагностическое обследование максимально эффективно. Все запчасти заранее закупаются у надежных поставщиков, на них дается хороший гарантийный срок до одного года. Вы можете оформить заявку на курьера через специальную онлайн-форму, которая расположена на сайте.
-                    
-                </p>
-            <?php endif; ?>
-            <?= remont_coffee\widgets\lists\Services::widget(['prefix' => $pageInfo['title']]); ?>           
-            <?= remont_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
+            </div>
+        <?php endif; ?>
+    -->
+        <div class="text">
+            <p>Сервисная организация по ремонту кофеоборудования BORK предлагает Вам первоклассные услуги по ремонту кофейного оборудования всех марок. Предприятие реализует полное обслуживание кофейной техники по низкой цене и кратчайшим срокам. Мастерские фирмы оборудованы новейшей техникой, которая позволяет проводить диагностическое обследование максимально продуктивно. Все запасные части заранее закупаются у авторизованных фирм-производителей, и на них предоставляется гарантия, длительностью до 12 месяцев года. В целях экономии времени, Вы можете оформить услугу курьерской доставки через специальную форму, на сайте или просто позвонив по телефонам, опубликованным на сайте.</p>
         </div>
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
-    </div>   
+    </div>
+</div>
+
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['title' => 'Типовые  <span>неисправности</span> ' . $pageInfo['title']]); ?>
+
+<div class="full-text">
+    <div class="container">
+        <?php if (!empty($pageInfo['full_description'])): ?>
+            <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['full_description']); ?>
+        <?php endif; ?>
+    </div>
+</div>
+
+<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
+
+<div class="models">
+    <div class="container">
+        <?= remont_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
+    </div> 
 </div>

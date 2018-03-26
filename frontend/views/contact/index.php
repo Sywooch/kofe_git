@@ -19,7 +19,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="clear">&nbsp;</div>
             <?php if ($siteConfig['mono'] && !isset($siteConfig['spb'])): ?>
                 <div class="msk-contact all-contact active">
-                    <h2>Наши адреса в Москве</h2>
+                    <h2>Наши адреса в Москве</h2><br>
                     <?php if ($siteConfig['id'] != 3 && 3 == 1): ?>
                         <p>                        
                             Номер телефона: <span class="moskva"><?= Yii::$app->session['region']['phone']; ?></span><br />
@@ -29,7 +29,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php endif; ?>
                     <div class="map">
                         <?php if ($siteConfig['id'] == 3): ?>
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adcf6fdd6f2d88ead38193227d5308583ed71b1841471d0168eccfb7e607f031d&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af0c829372a2efb4db3706756d8270019c96c0a38898fa971d65c56aa77d14340&amp;width=1060&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                         <?php else: ?>
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5f5860252f4cb5593d5da22cd0aa71e65ebf9ee9a6f2d34ebffc20ca3d411c&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                         <?php endif; ?>
@@ -50,22 +50,6 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Алтуфьево
                             </b>
                             <p>ТЦ "Наш", 2 этаж, пав. 14.</p>
-                            <span>Время работы: 10:00 - 21:00</span>
-                        </div>
-                        <div class="svetliy-siniy">
-                            <h2>г. Москва, ул. Барклая 8.</h2>
-                            <b>
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                                     viewBox="0 0 153 153"
-                                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <g id="Слой_x0020_1">
-                                        <metadata id="CorelCorpID_0Corel-Layer"/>
-                                        <path class="fil0" d="M76 0c42,0 77,34 77,76 0,42 -35,77 -77,77 -42,0 -76,-35 -76,-77 0,-42 34,-76 76,-76zm8 68c-4,10 -8,18 -8,18 0,0 -3,-8 -7,-18 -4,-10 -7,-18 -7,-18 0,0 -5,12 -10,26l-10 27 4 0c2,0 4,0 4,0 0,0 3,-8 6,-17 4,-10 7,-17 7,-17 0,0 2,7 6,15 7,21 7,19 7,19 1,0 0,2 8,-19 3,-8 6,-15 6,-15 0,0 3,7 6,17 4,9 7,17 7,17 0,0 1,0 4,0l4 0 -10 -26c-5,-15 -10,-27 -10,-27 0,0 -3,8 -7,18zm-14 -60c-13,2 -25,6 -36,14 -3,2 -10,9 -12,12 -4,6 -8,14 -10,20 -2,3 -3,9 -3,13 -1,4 -1,14 0,19 1,12 6,23 14,33 2,2 8,9 11,11 9,7 21,12 33,14 4,1 14,1 19,0 12,-2 22,-6 32,-14 3,-2 10,-9 12,-12 5,-6 9,-13 11,-19 1,-4 2,-9 3,-13 1,-5 1,-15 0,-19 -2,-12 -7,-24 -14,-33 -2,-3 -9,-9 -11,-11 -10,-8 -21,-13 -33,-14 -4,-1 -13,-1 -16,-1zm13 10c23,3 42,18 49,39 10,29 -3,60 -30,73 -32,15 -70,-1 -82,-34 -9,-28 4,-60 30,-72 11,-5 22,-7 33,-6z"/>
-                                    </g>
-                                </svg>
-                                Багратионовская, Парк Победы, Фили
-                            </b>
-                            <p>ТЦ "Горбушка", этаж 2, павильон 217.</p>
                             <span>Время работы: 10:00 - 21:00</span>
                         </div>
                         <div class="tyomna-zeleniy">
