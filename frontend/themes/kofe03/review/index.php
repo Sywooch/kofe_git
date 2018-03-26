@@ -1,7 +1,7 @@
 <?php
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<main class="layout__content" role="main">
+<main class="Lay-cont" role="main">
     <header class="layout__head">
         <div class="layout__inner">
             <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
@@ -28,7 +28,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                             <div class="reviews__rating reviews__rating_<?= $row['rating']; ?>"></div>
                             <?= $row['message']; ?>
                             <div class="reviews__more">
-                                <a class="reviews__full js-popup" data-popup="review_<?= $row['id']; ?>" href="#">Еще</a>
+                                <a class="reviews__full popup_js" data-popup="review_<?= $row['id']; ?>" href="#">Еще</a>
                             </div>
                         </div>
                     </article>
@@ -79,14 +79,14 @@ $form = ActiveForm::begin([
                             ],
                 ]);
                 ?>
-                <div class="form__row">
-                    <label class="form__element form__element_input">
+                <div class="form_r">
+                    <label class="form_yelem form_yelem-inp">
                         <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
                     </label>
-                    <label class="form__element form__element_input">
+                    <label class="form_yelem form_yelem-inp">
                         <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form__input form__input_big']) ?>
                     </label>
-                    <label class="form__element form__element_input form__element_valid">
+                    <label class="form_yelem form_yelem-inp form__element_valid">
                         <?=
                         $form->field($model, 'rating')->widget(StarRating::classname(), [
                             'pluginOptions' => [
@@ -101,14 +101,14 @@ $form = ActiveForm::begin([
                     </label>
                     
                 </div>
-                <div class="form__row">
-                    <label class="form__element form__element_textarea">
+                <div class="form_r">
+                    <label class="form_yelem form__element_textarea">
                         <?= $form->field($model, 'message')->textarea(['placeholder' => 'Содержание отзыва', 'class' => 'form__textarea form__textarea_big']) ?>
                     </label>
                 </div>
                 <div class="clear"></div>                
-                <label class="form__element form__element_input form__element_valid">
-                    <div class="form__row form__row_submit">
+                <label class="form_yelem form_yelem-inp form__element_valid">
+                    <div class="form_r Form-row-sub">
                         <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big']) ?>
                     </div>
                 </label>

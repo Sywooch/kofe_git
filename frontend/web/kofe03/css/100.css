@@ -3,11 +3,11 @@
  h1,
 .title_h1,
 .form__text,
-.form__input,
+.form_input,
 .form__select,
 .form__textarea,
 .form__symbol,
-.nav__sublink,
+.navigation_sub_link,
 .sidebar__item.active .sidebar__link,
 .sidebar__link:hover,
 .reviews__name,
@@ -24,44 +24,44 @@
  .color-red,
  .pagination li a:hover,
  .pagination li.active a,
- .menu__tab_active .menu__type,
- .connect__phone a[href^="tel"],
- .footer a.connect__email,
-  .footer a:hover,
-  .complain h3:first-child,
-  .connect__phone a[href^="tel"] {
+ .menu__tab_active .menyu-tip,
+ .cnct_ph a[href^="tel"],
+ .padval a.connect__email,
+  .padval a:hover,
+  .comp h3:first-child,
+  .cnct_ph a[href^="tel"] {
      color: #9da2b6;
  }
- .button_warning,
+ .btn_war,
  .poster_button,
- .menu__tab_neispravnosti:before,
- .menu__tab_neispravnosti:after,
+ .Menyu-tb-neispravnosti:before,
+ .Menyu-tb-neispravnosti:after,
  .stock__status,
- .breaking__point:before,
+ .Brkg-point:before,
  .breaking__pagination .swiper-pagination-bullet:after,
  .office-content ol > li::before,
-.menu__tab_cleaning:before,
-.menu__tab_cleaning:after,
- .menu__tab:after,
- .menu__tab:before {
+.menyu_t_cl:before,
+.menyu_t_cl:after,
+ .menyu-tab:after,
+ .menyu-tab:before {
      background-color: #83848a;
  }
- .form__input.error,
+ .form_input.error,
  .form__select.error,
  .form__textarea.error {
      border-color: #202132;
  }
- .menu__tab_cleaning.menu__tab_active .menu__ico-path,
- .menu__tab_neispravnosti.menu__tab_active .menu__ico-path,
- .menu__tab_repare.menu__tab_active .menu__ico-path,
- .menu__tab_electronic.menu__tab_active .menu__ico-path {
+ .menyu_t_cl.menu__tab_active .menyu-icon-put,
+ .Menyu-tb-neispravnosti.menu__tab_active .menyu-icon-put,
+ .menyu-tab-r.menu__tab_active .menyu-icon-put,
+ .menyu_t_nic.menu__tab_active .menyu-icon-put {
      fill: #9da2b6;
      stroke: #9da2b6;
  }
- .breaking__point {
+ .Brkg-point {
      box-shadow: 0 0 0 6px #202132;
  }
- .breaking__point:hover {
+ .Brkg-point:hover {
      box-shadow: 0 0 0 16px #202132;
  }
  .breaking__point_active {
@@ -69,7 +69,7 @@
  }
  /*----------------------------------------------------------------------------------------------*/
  
- .button_warning:hover,
+ .btn_war:hover,
  .poster_button:hover {
      background: #9da2b6;
  }
@@ -86,10 +86,10 @@
  .callbackForm,
  .cost,
  .office-content table tr:hover,
- .menu,
- .menu__type,
- .footer,
- .complain__box,
+ .menyu,
+ .menyu-tip,
+ .padval,
+ .Comp-box,
  .pagination li.active a{
      background-color: #3d3950;
  }
@@ -100,7 +100,7 @@
  .title_h3 b,
  a,
  .header__slogan,
- .nav__item_location .nav__link,
+ .nav__item_location .navigation_link,
  .post__phone,
  .post__email,
  .reviews_context .reviews__out,
@@ -117,7 +117,7 @@
  .content__title,
  h3:first-child, 
  .title_h3:first-child,
- .poster h1, .poster p {
+ .poseter h1, .poseter p {
      color: #3d3950;
  }
  .form__symbol,
@@ -125,27 +125,27 @@
  .reviews_context .articles__box:before,
  .reviews_context .consultation__box:before,
  .reviews__container:before,
- .menu__tab_active .menu__type,
+ .menu__tab_active .menyu-tip,
  .button_lined, .reviews__all, .consultation__all, .articles__all, .masters__button {
      border-color: #3d3950;
  }
- .nav__item_location .nav__link:after {
+ .nav__item_location .navigation_link:after {
      border-top-color: #3d3950;
  }
- .menu__action-ico_path {
+ .Menyu-harakat-pap {
      fill: #3d3950;
  }
  /*----------------------------------------------------------------------------------------------*/
  
  a:hover,
- .nav__link:hover,
- .nav__sublink:hover,
+ .navigation_link:hover,
+ .navigation_sub_link:hover,
  .menu__go:hover,
  .reviews_context .reviews__out:hover,
  .reviews__single .reviews__out:hover {
      color: #9da2b6;
  }
- .button:hover,
+ .m_btn:hover,
  .poster_button:hover,
  .reviews__all:hover,
  .consultation__all:hover,
@@ -154,13 +154,13 @@
  .button_normal:hover {
      color: #fff;
  }
- .form__input:focus,
+ .form_input:focus,
  .form__select:focus,
  .form__textarea:focus {
      border-color: #9da2b6;
  }
- .nav__item_location .nav__link:hover:after,
- .nav__item_more .nav__link:hover:after {
+ .nav__item_location .navigation_link:hover:after,
+ .navigation_i_m .navigation_link:hover:after {
      border-top-color: #9da2b6;
  }
  /*-------------yashil----------------------------------------------*/
@@ -172,9 +172,9 @@
     color: #9da2b6;
 }
 .button_success,
-.page_open .header__burger-ico:before,
-.page_open .header__burger-ico:after,
-.menu__action:hover,
+.page_open .head_br_icon:before,
+.page_open .head_br_icon:after,
+.menyu_harakat:hover,
 .sidebar__item.active .sidebar__link,
 .sidebar__link:hover,
 .stock__status_finished,
@@ -200,7 +200,7 @@
     fill: #9da2b6;
     stroke: #9da2b6;
 }
-.menu__action:hover,
+.menyu_harakat:hover,
 .faq__item_active,
 .button_lined:hover,
 .reviews__all:hover,
@@ -213,41 +213,41 @@
 
 
 
-.menu__panel .menu__inner {
+.Menyu-pan .menyu_in {
 	background: none;
 }
 
-.menu:before,
-.footer__navigation,
-.footer:before {
+.menyu:before,
+.Padval-nav,
+.padval:before {
 	border-color: #605c73;
 }
-.menu {
+.menyu {
     border: 0px ! important;
 }
-.menu__ico-path {
+.menyu-icon-put {
     fill: #fff;
     stroke: #fff;
 }
-.connect_header {
+.cnct_h {
 	top: 5px;
 }
-.header__site {
+.head_s {
 	top: 8px;
 }
-.menu_active .menu__panel {
+.menu_active .Menyu-pan {
 	background: #fff;
 }
-.menu__type,
-.footer,
-.footer .connect__schedule,
-.complain__text {
+.menyu-tip,
+.padval,
+.padval .cnct_sche,
+.Comp-txt {
 	color: #fff;
 }
-.footer {
+.padval {
 	margin-top: 20px;
 }
-.footer:before
+.padval:before
 {
     background: url('../images/footer_decor.png') repeat-x 50% 100%;
 }
@@ -343,8 +343,8 @@
 
 
 @media screen and (max-width: 1000px) {
-    .poster h1,
-    .poster p 
+    .poseter h1,
+    .poseter p 
     {
     	color: #333;
     }
@@ -359,15 +359,15 @@ footer a {
     color: #fff;
 }
 @media screen and (max-width: 600px) {
-    .header__site img {
+    .head_s img {
         margin-top: -3px;
     }
 }
-footer .connect__phone a[href^="tel"],
-.complain h3:first-child {
+footer .cnct_ph a[href^="tel"],
+.comp h3:first-child {
     color: #fff;
 }
-.connect__phone a[href^="tel"] {
+.cnct_ph a[href^="tel"] {
     color: #202132;
 }
 .reviews__box p, .reviews__carousel .reviews__box p,
@@ -375,13 +375,13 @@ footer .connect__phone a[href^="tel"],
     color: #333;
 }
 
-.out-imgb .menu__item {
+.Out-imgb .Menyu-itm {
     font-size: 12px;
 }
-nav .out-imgb .menu__item {
+nav .Out-imgb .Menyu-itm {
     display: none;
     font-size: 12px;
 }
-nav .out-imgb .menu__item:nth-child(-n+119) {
+nav .Out-imgb .Menyu-itm:nth-child(-n+119) {
     display: block;
 }

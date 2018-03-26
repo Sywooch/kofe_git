@@ -11,7 +11,7 @@
                                 <div class="reviews__rating reviews__rating_5"></div>
                                 <?= $row['message']; ?>
                                 <div class="reviews__more">
-                                   <a class="reviews__full js-popup" data-popup="review_<?= $row['id']; ?>" href="#">Развернуть</a>
+                                   <a class="reviews__full popup_js" data-popup="review_<?= $row['id']; ?>" href="#">Развернуть</a>
                                 </div>
                             </div>
                         </article>

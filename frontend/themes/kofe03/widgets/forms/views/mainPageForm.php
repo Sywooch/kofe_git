@@ -2,7 +2,7 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="poster__request">
+<div class="Poseter-req">
     <?php
 
     use yii\helpers\Html;
@@ -22,14 +22,14 @@ $form = ActiveForm::begin([
         //$this->registerJs($validatejs, \yii\web\View::POS_END);
     }
     ?>    
-    <div class="form__box">
+    <div class="form_b">
         <?php if (!empty($h1)): ?>
-            <h1 class="poster__title gl-text-gorad" itemprop="name"><?= $h1; ?></h1>
+            <h1 class="Poseter-ilova gl-text-gorad" itemprop="name"><?= $h1; ?></h1>
             <div class="crear"></div>
         <?php endif; ?>
-        <h3 class="form__title">Оставьте онлайн заявку по Акции! 🎁</h3>
-        <div class="form__row">
-            <label class="form__element form__element_input">
+        <h3 class="form_t">Оставьте онлайн заявку по Акции! 🎁</h3>
+        <div class="form_r">
+            <label class="form_yelem form_yelem-inp">
                 <?=
                 $form->field($model, 'phone')->widget(MaskedInput::className(), [
                     'name' => 'phone',
@@ -43,7 +43,7 @@ $form = ActiveForm::begin([
                 ?>
             </label>
         </div>
-        <div class="poster__text for_mobi" itemprop="description">
+        <div class="Poseter-texete f_mob" itemprop="description">
             <ul>
                 <li>Диагностика - <span class="minus">1500р</span> 0р</li>
                 <li>Выезд и доставка - <span class="minus">1000р</span> 0р</li>
@@ -53,7 +53,7 @@ $form = ActiveForm::begin([
                 <li>Бесплатная парковка рядом с нами!</li>
             </ul>
         </div>
-        <div class="form__row form__row_submit">
+        <div class="form_r Form-row-sub">
             <?= Html::submitButton('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
         </div>
         <span id="messenger"></span>

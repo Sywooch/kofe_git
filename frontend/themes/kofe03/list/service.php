@@ -3,16 +3,16 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
-        <div class="poster__inner">
-            <div class="poster__content">
-                <h1 class="poster__title" itemprop="name"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
+<main class="Lay-cont" role="main">
+    <aside class="poseter" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
+        <div class="Poseter-in">
+            <div class="Poseter-cont">
+                <h1 class="Poseter-ilova" itemprop="name"><?= (!empty($h1) ? ' ' . $h1 . ' ' : $pageInfo['title']); ?></h1>
                 <div class="clear"></div>
                 <div class="tseni-na-uslugi">
                     Стоимость услуги: <span><?= $pageInfo['price'] > 0 ? ' от ' : ''; ?><?= number_format($pageInfo['price'], 0, ' ', ' '); ?> ₽</span>
                 </div>
-                <div class="poster__text for_pc" itemprop="description">
+                <div class="Poseter-texete for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>
 
                     <ul>

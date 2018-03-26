@@ -20,10 +20,10 @@ $form = ActiveForm::begin([
                     ],
         ]);
         ?>    
-        <div class="form__box">
-            <h3 class="form__title">Заявка на ремонт</h3>
-            <div class="form__row">
-                <label class="form__element form__element_input">
+        <div class="form_b">
+            <h3 class="form_t">Заявка на ремонт</h3>
+            <div class="form_r">
+                <label class="form_yelem form_yelem-inp">
                     <?=
                     $form->field($model, 'phone')->widget(MaskedInput::className(), [
                         'name' => 'phone',
@@ -37,7 +37,7 @@ $form = ActiveForm::begin([
                     ?>
                 </label>
             </div>
-            <div class="form__row form__row_submit">
+            <div class="form_r Form-row-sub">
                 <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
             </div>
             <span id="messenger"></span>

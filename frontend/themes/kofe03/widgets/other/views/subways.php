@@ -2,7 +2,7 @@
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <aside class="city">
-    <div class="city__inner">
+    <div class="City-in">
         <h3 class="content__subtitle">Обслуживаем <b><?= $siteConfig['id'] == 52 ? 'Санкт-Петербург и Ленинградскую' : 'Москву и Московcкую' ?> область</b></h3>
         <div class="citys">
             <ul>

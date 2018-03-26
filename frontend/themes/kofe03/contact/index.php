@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<main class="layout__content" role="main">
+<main class="Lay-cont" role="main">
     <header class="layout__head">
         <div class="layout__inner">
             <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
@@ -29,7 +29,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     </header>
                     <div class="post__content">
                         <p>Сервисный центр "<?= ucfirst($_SERVER['HTTP_HOST']) ?>"</p>
-                        <p>Телефон:&nbsp;&nbsp;<span class="connect__phone connect__phone_active"><a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
+                        <p>Телефон:&nbsp;&nbsp;<span class="cnct_ph cnct_ph-a"><a class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
                         <ul>
                             <li><?= $siteConfig['id'] == 52 ? 'г. Санкт-Петербург, ул. Набережная канала Грибоедова, д.59' : 'г. Москва, ул. Студенческая, д. 35'; ?></li>
                         </ul>

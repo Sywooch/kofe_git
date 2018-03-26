@@ -3,13 +3,13 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<main class="layout__content" role="main">
-    <aside class="poster" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
-        <div class="poster__inner">
-            <div class="poster__content">
-                <h1 class="poster__title gorad-text" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1>
+<main class="Lay-cont" role="main">
+    <aside class="poseter" style="background-image: url(/<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/poster_1.jpg);">
+        <div class="Poseter-in">
+            <div class="Poseter-cont">
+                <h1 class="Poseter-ilova gorad-text" itemprop="name"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1>
                 <div class="clear"></div>
-                <div class="image model_img for_mobi">
+                <div class="image model_img f_mob">
                     <?php if (!empty($pageInfo['image'])): ?>
                         <?php
                         $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
@@ -27,7 +27,7 @@ $this->title = $title;
                 <div class="tseni-na-uslugi">
                     Стоимость услуги: <span>от 578 ₽</span>
                 </div>
-                <div class="poster__text for_pc" itemprop="description">
+                <div class="Poseter-texete for_pc" itemprop="description">
                     <p>Почему выбирают нас?</p>
 
                     <ul>

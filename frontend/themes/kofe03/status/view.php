@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<main class="layout__content" role="main">
+<main class="Lay-cont" role="main">
     <header class="layout__head">
         <div class="layout__inner">
             <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
@@ -30,7 +30,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     <div class="post__content">
                         <div class="post__content">
                             <ul>
-                                <li>Для получения оперативной информации о статусе ремонта вашей кофемашины, позвоните на номер <a class="nomer-telefona" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a> или заполните нижеследующую форму:</li>
+                                <li>Для получения оперативной информации о статусе ремонта вашей кофемашины, позвоните на номер <a class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a> или заполните нижеследующую форму:</li>
                             </ul>
                             <?php
 
@@ -47,11 +47,11 @@ $form = ActiveForm::begin([
                                         ],
                             ]);
                             ?>
-                            <div class="form__row">
-                                <label class="form__element form__element_input">
+                            <div class="form_r">
+                                <label class="form_yelem form_yelem-inp">
                                     <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form__input form__input_big', 'placeholder' => 'Номер заказа']); ?>
                                 </label> 
-                                <label class="form__element form__element_input form__element_valid"> 
+                                <label class="form_yelem form_yelem-inp form__element_valid"> 
                                     <?=
                                     $form->field($model, 'phone')->widget(MaskedInput::className(), [
                                         'name' => 'phone',
@@ -66,17 +66,17 @@ $form = ActiveForm::begin([
                                 </label>
                             </div>
                             <div class="personalData">
-                                <label class="form__element form__element_input form__element_valid">
+                                <label class="form_yelem form_yelem-inp form__element_valid">
                                     <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
                                     <span class="f14">Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
                                 </label>
                             </div>
-                            <div class="form__row form__row_submit">
-                                <label class="form__element form__element_input form__element_valid">
+                            <div class="form_r Form-row-sub">
+                                <label class="form_yelem form_yelem-inp form__element_valid">
                                     <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big', 'type' => 'submit']) ?>
                                 </label>
                             </div>
-                            <label class="form__element form__element_input form__element_valid"> </label>
+                            <label class="form_yelem form_yelem-inp form__element_valid"> </label>
                             <?php ActiveForm::end() ?>
                         </div>
                     </div>

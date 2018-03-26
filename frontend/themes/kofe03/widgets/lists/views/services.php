@@ -1,5 +1,5 @@
-<ul class="menu__list">
+<ul class="Menyu-lst">
     <?php foreach ($services as $child): ?>
-        <li class="menu__item"><a class="menu__link" href="/<?= $child['url']; ?>"><?= $child['title']; ?></a></li>
+        <li class="Menyu-itm"><a class="Menyu-sslk" href="/<?= $child['url']; ?>"><?= $child['title']; ?></a></li>
     <?php endforeach; ?>
 </ul>

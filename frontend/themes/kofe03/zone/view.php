@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
 ?>
-<main class="layout__content" role="main">
+<main class="Lay-cont" role="main">
     <header class="layout__head">
         <div class="layout__inner">
             <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">

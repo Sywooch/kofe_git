@@ -25,7 +25,7 @@ foreach ($sortedBrands as $latter => $brands): $a++;
     <div class="search-brends<?= $a != 1 ? ' hide' : '' ?>">
         <div class="left"><?= $latter; ?></div>
         <div class="right">
-            <ul class="menu__list">                
+            <ul class="Menyu-lst">                
                 <?php foreach ($brands as $brand): ?>
                     <?php
                     if ($siteConfig['mono'])
@@ -37,8 +37,8 @@ foreach ($sortedBrands as $latter => $brands): $a++;
                         $image->resize(133, 117)->background('#fff', 100)->save($path . 'thumbs/' . $brand['image'], 60);
                     }
                     ?>
-                    <li class="menu__item">
-                        <a class="menu__link" href="/<?= $brand['url']; ?>">
+                    <li class="Menyu-itm">
+                        <a class="Menyu-sslk" href="/<?= $brand['url']; ?>">
                             <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
                                 <div class="img">
                                     <?php if (!empty($brand['image'])): ?>
