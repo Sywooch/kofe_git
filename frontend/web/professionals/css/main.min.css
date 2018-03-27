@@ -6535,11 +6535,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 }
 .header{
     position:relative;
-    min-height:60rem;
+    min-height:54rem;
     padding-bottom:3.5rem;
     background-image:url(../images/bg/header-bg-2.png),url(../images/bg/header-bg-1.jpg);
     background-repeat:no-repeat,no-repeat;
-    background-position:60% 90%,50% 50%;
+    background-position:60% 110%,50% 50%;
     background-size:auto,cover
 }
 @media (max-width: 991px) {
@@ -8000,7 +8000,7 @@ body > .solutions {
     margin:20px auto 0
 }
 .form-block__repair {
-    margin-top: 0px;
+    margin-top: 20px;
 }
 .form-block__repair p{
     color:#fff;
@@ -8643,7 +8643,6 @@ footer{
 nav.cl-effect-14 {
     margin-top: 2.3rem;
     width: 100%;
-    text-align: right;
 }
 .collapse.active nav.cl-effect-14 {
     position: fixed;
@@ -8668,6 +8667,7 @@ nav.cl-effect-14 a {
     letter-spacing: 0.2px;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     margin-left: -4px;
+    text-decoration: underline;
 }
 .collapse.active nav.cl-effect-14 a {
     width: 100%;
@@ -8693,6 +8693,7 @@ nav.cl-effect-14 a:focus {
         padding: 0 14px;
     }
 }
+/*
 .cl-effect-14 a::before,
 .cl-effect-14 a::after {
     position: absolute;
@@ -8750,7 +8751,7 @@ nav.cl-effect-14 a:focus {
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%);
-}
+}*/
 
 
 
