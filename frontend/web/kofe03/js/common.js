@@ -126,7 +126,8 @@ $(function () {
     $('.Brkg-lst-acc .Brkg-name').on('click', function (e) {
         e.preventDefault();
         var currentBreaking = $(this).parent();
-        var currentBreakingData = currentBreaking.data('brkg');
+        var currentBreakingData = currentBreaking.data('breaking');
+        //console.log(currentBreakingData);
         if (currentBreaking.hasClass('breaking__item_active')) {
             currentBreaking.removeClass('breaking__item_active');
             $('.Brkg-point[data-breaking-point="' + currentBreakingData + '"]').removeClass('breaking__point_active');
