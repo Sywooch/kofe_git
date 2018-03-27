@@ -1,6 +1,6 @@
 <section class="reviews">
     <div class="reviews__inner">
-        <h2 class="content__title">Отзывы</h2>
+        <h2 class="ommabob__oshadee">Отзывы</h2>
         <div class="reviews__carousel">
             <div class="swiper-container reviews__slider">
                 <div class="swiper-wrapper reviews__list">

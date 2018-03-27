@@ -30,6 +30,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                     <div class="post__content">
                         <p>Сервисный центр "<?= ucfirst($_SERVER['HTTP_HOST']) ?>"</p>
                         <p>Телефон:&nbsp;&nbsp;<span class="cnct_ph cnct_ph-a"><a class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
+                        <p>Email: <a href="mailto:<?= $siteConfig['id'] == 52 ? 'info@fixkofe.ru' : 'info@kofe03.ru'; ?>"><?= $siteConfig['id'] == 52 ? ' info@fixkofe.ru' : 'info@kofe03.ru'; ?></a></p>
                         <ul>
                             <li><?= $siteConfig['id'] == 52 ? 'г. Санкт-Петербург, ул. Набережная канала Грибоедова, д.59' : 'г. Москва, ул. Студенческая, д. 35'; ?></li>
                         </ul>

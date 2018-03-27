@@ -509,7 +509,7 @@ img[align='right']
 .content__inner,
 .Padval-in,
 .Poseter-in,
-.popular__inner,
+.ommabob__ichki,
 .features__inner,
 .reviews__inner,
 .articles__inner,
@@ -541,7 +541,7 @@ img[align='right']
     .content__inner,
     .Padval-in,
     .Poseter-in,
-    .popular__inner,
+    .ommabob__ichki,
     .features__inner,
     .reviews__inner,
     .articles__inner,
@@ -4361,7 +4361,7 @@ footer .cnct_cll p {
     text-align: center;
 }
 
-.popular__list
+.ommabob__royhat
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4376,7 +4376,7 @@ footer .cnct_cll p {
         flex-wrap: wrap;
 }
 
-.popular__item
+.ommabob__jisim
 {
     display: inline-block;
 
@@ -4386,28 +4386,28 @@ footer .cnct_cll p {
 
     text-align: left;
 }
-.popular__item:nth-child(7),
-.popular__item:nth-child(8)
+.ommabob__jisim:nth-child(7),
+.ommabob__jisim:nth-child(8)
 {
     width: 50%;
 }
 @media screen and (min-width: 1400px)
 {
-    .popular__item
+    .ommabob__jisim
     {
         width: 25% !important;
     }
 }
 @media screen and (max-width: 762px)
 {
-    .popular__item
+    .ommabob__jisim
     {
         width: 50% !important;
     }
 }
 
 
-.popular__cover
+.ommabob__himoyalash
 {
     position: absolute;
     top: 0;
@@ -4420,7 +4420,7 @@ footer .cnct_cll p {
     background-size: cover;
 }
 
-.popular__box
+.ommabob__tortburchagi
 {
     position: relative;
 
@@ -4433,13 +4433,13 @@ footer .cnct_cll p {
     border: 1px solid #e9eaec;
     border-radius: 5px;
 }
-.popular__box:hover, .popular__box,
-.popular__item_active .popular__box
+.ommabob__tortburchagi:hover, .ommabob__tortburchagi,
+.ommabob__jisim_active .ommabob__tortburchagi
 {
     color: #fff;
 }
 
-.popular__text
+.ommabob__matinlari
 {
     position: relative;
 
@@ -4465,19 +4465,19 @@ footer .cnct_cll p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
 }
-.popular__box .popular__text,
-.popular__item_active .popular__text
+.ommabob__tortburchagi .ommabob__matinlari,
+.ommabob__jisim_active .ommabob__matinlari
 {
     background: #26354a;
     background: rgba(38, 53, 74, .7);
 	transition: all 1s ease;
 }
-.popular__box:hover .popular__text
+.ommabob__tortburchagi:hover .ommabob__matinlari
 {
     background: rgba(38, 53, 74, .9);
 }
 
-.popular__name
+.ommabob__nomlari
 {
     font-family: 'Proxima Nova Extrabold', Arial, sans-serif; 
     font-size: 20px;
@@ -4485,7 +4485,7 @@ footer .cnct_cll p {
     margin: 0 0 10px;
 }
 
-.popular__price
+.ommabob__narxlari
 {
     margin: 0; 
 
@@ -4567,7 +4567,7 @@ footer .cnct_cll p {
     height: 16px;
 }
 
-.popular__actions
+.ommabob__harakati
 {
     margin: 30px 0 0;
     text-align: center;
@@ -4602,15 +4602,15 @@ footer .cnct_cll p {
 }
 @media screen and (max-width: 600px)
 {
-    .popular__item
+    .ommabob__jisim
     {
         width: 100% !important;
     }
-    .popular__text {
+    .ommabob__matinlari {
         padding: 10px;
         height: auto;
     }
-    .popular__text p {
+    .ommabob__matinlari p {
         margin: 0px;
     }
 }
@@ -5270,7 +5270,7 @@ footer .cnct_cll p {
 
     text-align: center;
 }
-.articles .content__title
+.articles .ommabob__oshadee
 {
     margin-top: 0;
 }
@@ -6021,7 +6021,7 @@ footer .cnct_cll p {
         display: none;
     }
 }
-.steps_feedback .content__title
+.steps_feedback .ommabob__oshadee
 {
     text-align: left;
 }
@@ -8596,11 +8596,11 @@ header .foot-l {
 .services-slider:hover .services-slider_prev {
     opacity: 1;
 }
-a.popular__name {
+a.ommabob__nomlari {
     color: #fff;
     text-decoration: none;
 }
-a.popular__name:hover {
+a.ommabob__nomlari:hover {
     text-decoration: underline;
 }
 

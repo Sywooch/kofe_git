@@ -93,7 +93,7 @@ $this->title = $title;
             <h2 style="margin:20px 0 0 0;">Профессиональный ремонт моделей <?= $pageInfo['title']; ?></h2>
             <?= kofe03\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
 
-            <div class="popular__actions">
+            <div class="ommabob__harakati">
                 <a class="reviews__all show-model" href="#">Показать остальные модели</a>
             </div>
         </div>

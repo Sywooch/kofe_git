@@ -22,7 +22,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="brands__prev"></div>
         </div>
         <div class="brands__pagination"></div>
-        <div class="popular__actions">
+        <div class="ommabob__harakati">
                 <a class="reviews__all" href="/brendy">Все бренды</a>
             </div>
     </div>

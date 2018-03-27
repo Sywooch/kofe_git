@@ -114,7 +114,7 @@
  .reviews__name,
  .reviews__box, .articles__box, .consultation__box,
  .button_lined, .reviews__all, .consultation__all, .articles__all, .masters__button,
- .content__title,
+ .ommabob__oshadee,
  h3:first-child, 
  .title_h3:first-child,
  .poseter h1, .poseter p {
@@ -251,11 +251,11 @@
 {
     background: url('../images/footer_decor.png') repeat-x 50% 100%;
 }
-.popular__box .popular__text, .popular__item_active .popular__text {
+.ommabob__tortburchagi .ommabob__matinlari, .ommabob__jisim_active .ommabob__matinlari {
         background: #607d8b;
         background: rgba(48, 29, 15, 0.48);
 }
-.popular__box:hover .popular__text {
+.ommabob__tortburchagi:hover .ommabob__matinlari {
     background: rgba(48, 29, 15, 0.81);
 }
 
