@@ -30,7 +30,7 @@ $form = ActiveForm::begin([
                         'mask' => '+7 (999) 999-99-99',
                         'options' => [
                             'placeholder' => 'Ваш телефон',
-                            'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
+                            'class' => 'form_input Form-inp-ph-m', 'type' => 'tel',
                             'size' => 40,
                         ],
                     ])->label('')
@@ -38,11 +38,11 @@ $form = ActiveForm::begin([
                 </label>
             </div>
             <div class="form_r Form-row-sub">
-                <?= Html::submitInput('Заказать', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+                <?= Html::submitInput('Заказать', ['class' => 'm_btn btn_war Btn-w Btn-big Btn-txt', 'type' => 'submit']) ?>
             </div>
             <span id="messenger"></span>
             <div class="personalData">
-               <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?><span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
+               <div style="display: inline-block;"><?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?></div><span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
             </div>
         </div>
         <?php ActiveForm::end() ?>

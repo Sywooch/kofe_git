@@ -9,15 +9,14 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
         <h1 class="heading-description"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
     </div>
 </div>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <?= $model['description']; ?>
-            </div>
-        </div>
+
+
+
+<div class="full-text">
+    <div class="container">
+        <?= $model['description']; ?>
     </div>
 </div>
+<br>
+<br>
+<?= remont_coffee\widgets\lists\AllBrands::widget(); ?>

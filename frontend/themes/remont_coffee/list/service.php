@@ -10,30 +10,32 @@ $this->title = $title;
     </div>
 </div>
 <?= remont_coffee\widgets\other\Advantage::widget(); ?>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text seoshnikka">
-            <div class="heading">
-                <span><?= $pageInfo['title']; ?></span>
-            </div>
+
+
+<div class="service-new">
+    <div class="container">
+        <p class="gl-text">
+            <?= $pageInfo['title']; ?>
+        </p>
+        <div class="ser-disc">
             <?php if (!empty($pageInfo['description'])): ?>
-                <div<?= !empty($pageInfo['image']) ? ' class="textss"' : '' ?>>
+                <div<?= !empty($pageInfo['image']) ? ' class="text"' : '' ?>>
                     <?= str_replace(['#brand_en#', '#model_en#'], $page['title'], $pageInfo['description']); ?>
                 </div>
             <?php endif; ?>
             <?php if (!empty($pageInfo['image'])): ?>
-                <div class="hero">
+                <div class="img">
                     <img src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">
                 </div>
             <?php endif; ?>
-            <div class="clear"></div>
-            <?= remont_coffee\widgets\lists\ServiceChildren::widget(['parent' => $pageInfo['id']]); ?>
-            <div class="clear"></div>
-            <?= remont_coffee\widgets\lists\RandomServices::widget(); ?>
         </div>
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
-    </div>   
+    </div>
 </div>
+
+
+
+<?= remont_coffee\widgets\lists\ServiceChildren::widget(['parent' => $pageInfo['id']]); ?>
+
+<?= remont_coffee\widgets\lists\RandomServices::widget(); ?>
+
+<?= remont_coffee\widgets\lists\TopServices::widget(); ?>

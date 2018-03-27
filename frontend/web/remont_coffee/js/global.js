@@ -141,6 +141,11 @@ $(document).ready(function () {
         $(this).parent(".button").hide();
         return false;
     });
+    $(".opan-all-models").click(function () {
+        $(".model-brand").addClass("active");
+        $(".button-section").hide();
+        return false;
+    });
     $('.owl-carousel.brend-c').owlCarousel({
         loop:true,
         margin:25,

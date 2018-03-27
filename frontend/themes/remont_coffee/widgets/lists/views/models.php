@@ -2,9 +2,10 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<section id="bran">
+<section class="model-brand">
     <div class="container">
-        <p class="title">
+        <p class="gl-text">Профессиональный ремонт  <span>моделей</span> SAECO</p>
+        <div class="search-bm">
             <span>Поиск модели </span>
             <?=
             yii\jui\AutoComplete::widget([
@@ -17,23 +18,26 @@ $siteConfig = app\components\CController::getSiteConfig();
                     ]
             );
             ?>
-        </p>
-        <div class="brands in">
+        </div>
+        <div class="content-bm">
             <?php foreach ($sortedBrands as $latter => $brands): ?>
-
-                <div class="row">
-                    <div class="symbol"><?= $latter; ?></div>
-                    <ul>
-                        <?php foreach ($brands as $brand): ?>
-                            <?php
-                            if ($siteConfig['mono'])
-                                $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
-                            ?>
-                            <li<?= !Yii::$app->user->isGuest ? ' style="border: 1px solid #01375a;"' : '' ?> class="bold">
-                                <a href="/<?= $brand['url']; ?>"><?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?><?= str_replace('/', ' / ', $brand['title']); ?></a>                                
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
+                <div class="symbol"><?= $latter; ?></div>
+                <div class="all-bm">
+                    <?php foreach ($brands as $brand): ?>
+                        <?php
+                        if ($siteConfig['mono'])
+                            $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
+                        ?>
+                        <a class="item" href="/<?= $brand['url']; ?>">
+                            <?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?>
+                            <div class="img">
+                                <?php if (!empty($brand['image'])): ?>
+                                    <img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
+                                <?php endif; ?>
+                            </div>
+                            <div class="name"><?= str_replace('/', ' / ', $brand['title']); ?></div>                
+                        </a>
+                    <?php endforeach; ?>
                 </div>
             <?php endforeach; ?>
         </div>

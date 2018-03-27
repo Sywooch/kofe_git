@@ -10,18 +10,10 @@ $this->title = $pageInfo['meta_title'];
     </div>
 </div>
 <?= remont_coffee\widgets\other\Advantage::widget(); ?>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <span><?= $pageInfo['title']; ?></span>
-            </div>
-            <?= remont_coffee\widgets\lists\AllBrands::widget(['h' => false]); ?>
-        </div>
-        <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
-        <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
-    </div>   
-</div>
+
+
+<?= remont_coffee\widgets\lists\TopServices::widget(); ?>
+
+<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
+
+<?= remont_coffee\widgets\lists\AllBrands::widget(['h' => false]); ?>

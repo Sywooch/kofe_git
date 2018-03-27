@@ -43,9 +43,11 @@ $this->title = $title;
 </div>
 
 <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
-
-<div class="models">
+<div class="button-section">
     <div class="container">
-        <?= remont_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
-    </div> 
+        <a class="button opan-all-models" href="#">Все модели MELITTA</a>
+    </div>
 </div>
+
+
+<?= remont_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>

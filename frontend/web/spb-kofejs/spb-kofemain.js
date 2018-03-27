@@ -11,6 +11,13 @@ $(document).ready(function () {
             $('#scroller').fadeOut();
         }
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 700) {
+            $('#aksiya-popup').fadeIn();
+        } else {
+            $('#aksiya-popup').fadeOut();
+        }
+    });
     $('#scroller').click(function () {
         $('body,html').animate({
             scrollTop: 0

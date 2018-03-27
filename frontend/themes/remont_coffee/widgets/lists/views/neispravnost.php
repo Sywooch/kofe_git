@@ -15,7 +15,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
                         <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>
                     </div>
                     <div class="price">
-                        <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
+                        <div class="value">от <?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
                         <div class="button">Заказать</div>
                     </div>
                 </a>

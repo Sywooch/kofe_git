@@ -1677,6 +1677,46 @@ a:hover {
     -webkit-box-orient: vertical;
     margin-bottom: 10px;
 }
+.all-bm {
+    display: flex;
+    flex-wrap: wrap;
+}
+.all-bm .item {
+    border-bottom: 2px solid #F22613;
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+    width: 16%;
+    margin-right: 0.6%;
+}
+.all-bm .item .img {
+    height: 150px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.all-bm .item .img img {
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+.all-bm .item .name {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    min-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
 
 
 .metro {
@@ -1811,8 +1851,12 @@ a:hover {
     padding: 50px 0px 40px;
     text-align: center;
 }
+.top-servicess .list {
+    display: flex;
+    flex-wrap: wrap;
+}
 .full-text {
-    padding: 50px 0px 40px;
+    padding: 50px 0px 0px;
 }
 .width-img {
     display: flex;
@@ -1826,10 +1870,12 @@ a:hover {
     padding-right: 20px;
     box-sizing: border-box;
     height: 180px;
+    text-align: center;
 }
 .width-img .img img {
-    width: 100%;
+    max-width: 100%;
     margin-top: -13px;
+    max-height: 260px;
 }
 .full-text p {
     line-height: 1.7;
@@ -1947,4 +1993,157 @@ a.button {
 a.button:hover {
     background: #121525;
     color: #fff;
+}
+.search-bm span {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-right: 10px;
+}
+input {
+    display: inline-block;
+    width: 200px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.symbol {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e375f+0,7db9e8+100&1+0,0+100 */
+    background: -moz-linear-gradient(left, rgba(46,55,95,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(46,55,95,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(46,55,95,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e375f', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 15px 0px;
+        font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.model-brand {
+    padding: 40px 0px;
+    display: none;
+}
+.model-brand.active {
+    display: block;
+}
+.model-brand .gl-text {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.button-section {
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+
+.prices {
+    text-align: center;
+    padding: 40px 0px;
+}
+.prices table {
+    width: 100%;
+}
+.prices table tbody {
+    display: flex;
+    flex-wrap: wrap;
+}
+.prices table tbody tr {
+    min-width: 48%;
+    max-width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 0px;
+    line-height: 1.7;
+    color: #808080;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+        align-items: center;
+    -webkit-align-items: center;
+}
+.prices table tbody tr.bg {
+    background: #eee;
+}
+.prices table tbody tr:nth-child(2n-1) {
+    margin-right: 1%;
+}
+.prices table tbody tr:nth-child(2n) {
+    margin-left: 1%;
+}
+.prices table tbody tr td:nth-child(2) {
+    text-align: center;
+}
+.prices table tbody tr td:nth-child(1) {
+    color: #2e375f;
+    font-weight: 600;
+}
+.prices table tbody tr td:nth-child(1) a {
+    border-bottom: 1px dashed #2e375f;
+}
+.prices table .button {
+    font-size: 12px;
+    padding: 5px 17px;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: 3px;
+    background: #2E375F;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.prices table .button:hover {
+    background: #121525;
+}
+.ontact-top-text {
+    padding: 50px 0px 0px;
+    text-align: center;
+}
+.bl-contact .list ul li {
+    text-align: left;
+}
+summary {
+    padding: 8px 0px;
+    margin-top: 8px;
+    color: #2E375F;
+    cursor: pointer;
+}
+.service-new {
+    padding: 40px 0px;
+    text-align: center;
+}
+.ser-disc {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+.ser-disc .text {
+    width: 100%;
+    line-height: 1.7;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+.ser-disc .img {
+    width: 250px;
+    margin-left: 20px;
+    max-width: 250px;
+    min-width: 250px;
 }

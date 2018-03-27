@@ -11,16 +11,9 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 </div>
 <?= remont_coffee\widgets\other\Advantage::widget(); ?>
 
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'is_popular' => false]); ?>
-            <?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Услуги', 'is_popular' => true]); ?>
-			<?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Прочие услуги', 'is_popular' => false]); ?>
-        </div>
-        <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
-    </div>   
-</div>
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'is_popular' => false]); ?>
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Услуги', 'is_popular' => true]); ?>
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Прочие услуги', 'is_popular' => false]); ?>
+
+
+<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>

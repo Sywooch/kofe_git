@@ -36,7 +36,7 @@ $form = ActiveForm::begin([
                     'mask' => '+7 (999) 999-99-99',
                     'options' => [
                         'placeholder' => '+7 (___) ___-__-__',
-                        'class' => 'form__input form__input_phone-mask', 'type' => 'tel',
+                        'class' => 'form_input Form-inp-ph-m', 'type' => 'tel',
                         'size' => 40,
                     ],
                 ])->label('')
@@ -54,7 +54,7 @@ $form = ActiveForm::begin([
             </ul>
         </div>
         <div class="form_r Form-row-sub">
-            <?= Html::submitButton('Заказать сейчас', ['class' => 'button button_warning button_wide button_big button_text', 'type' => 'submit']) ?>
+            <?= Html::submitButton('Заказать сейчас', ['class' => 'm_btn btn_war Btn-w Btn-big Btn-txt', 'type' => 'submit']) ?>
         </div>
         <span id="messenger"></span>
 
