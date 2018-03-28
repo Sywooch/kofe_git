@@ -25,6 +25,8 @@ class ListController extends CController {
                 $russianName = ' (' . Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']] . ')';
             if ($config['theme'] == 'multicat') {
                 $title = 'Ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . ' в сервисном центре ' . CController::$monoBrand['title'] . ' 🔧 в ' . Yii::$app->session['region']['titleRod'];
+                if (isset($config['spb']) && $config['spb'])
+                    $title = str_replace('🔧', '⚒', $title);
                 $metaDesc = 'Проводим ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . CController::$monoBrand['title'] . ' в авторизованном сервисном центре. Новое оборудование, оптимальные цены, отменное качество, топовые мастера!';
             } else {
                 $title = 'Ремонт ' . mb_strtolower($pageInfo['full_title'], 'UTF-8') . ' ' . CController::$monoBrand['title'] . $russianName . ' ⚒ Качественно ✔️ Гарантия 💎 Лучшие цены!';
@@ -651,6 +653,8 @@ class ListController extends CController {
         } elseif (isset($siteConfig['foreign_category']) && $siteConfig['foreign_category']) {
             if ($siteConfig['theme'] == 'multicat') {
                 $title = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' 🍮 Бесплатная диагностика! Гарантия!';
+                if (isset($siteConfig['spb']) && $siteConfig['spb'])
+                    $title = str_replace('🍮', '☕', $title);
                 $metaDesc = 'Выполняем ремонт кофемашин ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '. Качественный сервис за короткие сроки и с гарантией! Бесплатная  доставка!';
             } else {
                 $title = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' 🍵 Обслуживание кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' 👍';

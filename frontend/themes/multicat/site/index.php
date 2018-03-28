@@ -6,8 +6,12 @@ $assets = Yii::getAlias('@web');
 $russianName = '';
 if (isset(Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']]))
     $russianName = ' (' . Yii::$app->params['brandRussianNames'][CController::$monoBrand['title']] . ')';
-$this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . $russianName . ' ⚒ в ' . Yii::$app->session['region']['titleRod'];
 $siteConfig = app\components\CController::getSiteConfig();
+$title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт ' . \app\components\CController::$monoBrand['title'] . $russianName . ' ⚒ в ' . Yii::$app->session['region']['titleRod'];
+if (isset($siteConfig['spb']) && $siteConfig['spb'])
+    $title = str_replace('⚒', '🔧', $title);
+$this->title = $title;
+
 ?>
 <section id="number-4">
     <div class="container">
@@ -33,7 +37,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 </section>
 
 
-<?php if(!empty($page['full_description'])): ?>
+<?php if (!empty($page['full_description'])): ?>
     <section id="number-15" class="active">
         <div class="container">
             <?= $page['full_description']; ?>   

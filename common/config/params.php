@@ -879,6 +879,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 1,
+            'foreign_category' => true,
         ],
         'delonghi.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -896,6 +897,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 2,
+            'foreign_category' => true,
         ],
         'krups.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -913,6 +915,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 3,
+            'foreign_category' => true,
         ],
         'philips.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -930,6 +933,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 4,
+            'foreign_category' => true,
         ],
         'saeco.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -947,6 +951,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 5,
+            'foreign_category' => true,
         ],
         'siemens.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -964,6 +969,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 6,
+            'foreign_category' => true,
         ],
         'miele.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -981,6 +987,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 7,
+            'foreign_category' => true,
         ],
         'jura.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -998,6 +1005,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 8,
+            'foreign_category' => true,
         ],
         'bork.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1015,6 +1023,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 9,
+            'foreign_category' => true,
         ],
         'schaerer.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1032,6 +1041,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 10,
+            'foreign_category' => true,
         ],
         'gaggia.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1049,6 +1059,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 11,
+            'foreign_category' => true,
         ],
         'franke.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1066,6 +1077,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 12,
+            'foreign_category' => true,
         ],
         'nuova-simonelli.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1083,6 +1095,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 13,
+            'foreign_category' => true,
         ],
         'melitta.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1100,6 +1113,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 14,
+            'foreign_category' => true,
         ],
         'la-cimbali.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1117,6 +1131,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 15,
+            'foreign_category' => true,
         ],
         'promac.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1134,6 +1149,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 16,
+            'foreign_category' => true,
         ],
         'faema.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1151,6 +1167,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 17,
+            'foreign_category' => true,
         ],
         'rancilio.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1168,6 +1185,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 18,
+            'foreign_category' => true,
         ],
         'nivona.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1185,6 +1203,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 19,
+            'foreign_category' => true,
         ],
         'wmf.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
@@ -1202,6 +1221,7 @@ return [
             'multi_category' => true,
             'mono-brand' => true,
             'brand-id' => 20,
+            'foreign_category' => true,
         ],
         
         /* 'delonghi-service-center' => [
