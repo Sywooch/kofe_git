@@ -8,7 +8,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="list">
             <?php foreach ($services as $service): ?>
                 <a class="item" href="/<?= $service['url']; ?>">
-                    <div class="image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/images/protekaet.jpg" alt=""></div>
+                    <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     <div class="text">
                         <div class="name"><?= $service['title']; ?></div>
                         <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>

@@ -15,7 +15,7 @@
 
         <div class="owl-carousel metro-c owl-theme">
             <?php foreach ($pages as $key => $page): ?>
-                <?php if ($key == 0 || ($key % 5) == 0): ?><div class="item"><?php endif; ?>                    
+                <?php if ($key == 0 || ($key % 5) === 0): ?><div class="item"><?php endif; ?>                    
                     <a href="/<?= $page['url']; ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 153 153" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -25,7 +25,7 @@
                         </svg>
                         <?= $page['title']; ?>
                     </a>                    
-                <?php if (($key % 5) == 1): ?></div><?php endif; ?>
+                <?php if (($key % 5) === 4): ?></div><?php endif; ?>
             <?php endforeach; ?>
         </div>
     </div>

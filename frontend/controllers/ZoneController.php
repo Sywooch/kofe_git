@@ -25,7 +25,9 @@ class ZoneController extends CController {
 //        ]);
         if ($siteConfig['id'] == 124 || $siteConfig['id'] == 125)
             $metaDesc = 'Сломалась кофемашина? Срочный ремонт за доступные деньги в сервисном центре по ремонту кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' метро ' . $pageInfo['title'] . '!';
-        else
+        elseif ($siteConfig['id'] == 49) {
+            $metaDesc = 'Опытные инженеры продиагностируют устройство и выполнят ремонт кофемашины в кратчайшие сроки!';
+        } else
             $metaDesc = 'Необходим ремонт кофемашины рядом с метро ' . $pageInfo['title'] . '? Выезд мастера или курьера в день обращения! Срочный ремонт! Бесплатная диагностика!';
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',

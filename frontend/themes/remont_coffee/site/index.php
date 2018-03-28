@@ -1,7 +1,7 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $page['meta_title'];
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт кофемашин в Москве и области ✔️';
 ?>
 <div class="container-fluid hidden-xs hidden-sm">
     <div class="row hero" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
