@@ -40,7 +40,7 @@ $this->title = $title;
 <?php if (!empty($page['full_description'])): ?>
     <section id="number-15" class="active">
         <div class="container">
-            <?= $page['full_description']; ?>   
+            <?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['full_description']); ?>   
         </div>
         <div class="bottom-btn">
             <span class="colortext colorborder">Развернуть описание</span>
