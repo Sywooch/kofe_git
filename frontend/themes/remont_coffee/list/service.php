@@ -25,7 +25,7 @@ $this->title = $title;
             <?php endif; ?>
             <?php if (!empty($pageInfo['image'])): ?>
                 <div class="img">
-                    <img src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">
+                    <img style="width: 100%;" src="/uploads/images/services/<?= $pageInfo['image']; ?>" alt="" title="">
                 </div>
             <?php endif; ?>
         </div>
