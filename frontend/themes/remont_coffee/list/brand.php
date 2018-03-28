@@ -41,7 +41,7 @@ $this->title = $title;
         <?php endif; ?>
     </div>
 </div>
-
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable']); ?>
 <?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
 <div class="button-section">
     <div class="container">

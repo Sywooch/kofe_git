@@ -34,7 +34,7 @@ $this->title = $title;
 
 
 
-<?= remont_coffee\widgets\lists\ServiceChildren::widget(['parent' => $pageInfo['id']]); ?>
+<?php //remont_coffee\widgets\lists\ServiceChildren::widget(['parent' => $pageInfo['id']]); ?>
 
 <?= remont_coffee\widgets\lists\RandomServices::widget(); ?>
 

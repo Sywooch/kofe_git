@@ -9,7 +9,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
         <div class="list">
             <?php foreach ($rows as $service): ?>
                 <a class="item" href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $service['url']; ?>">
-                    <div class="image"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/images/protekaet.jpg" alt=""></div>
+                    <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     <div class="text">
                         <div class="name"><?= $service['title']; ?></div>
                         <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>

@@ -12,17 +12,12 @@ $breadcrumbs = [
         <h1 class="heading-description"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : 'Ремонт кофемашин рядом с метро ' . $model['title']; ?></h1>
     </div>
 </div>
-<div class="main container">
-    <div class="right">
-        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
-    </div>
-    <div class="left">
-        <div class="bl-text">
-            <div class="heading">
-                <?= $model['description']; ?>
-            </div>
-            <?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Услуги', 'is_popular' => true]); ?>
-        </div>
-        
+
+
+<div class="full-text">
+    <div class="container">
+        <?= $model['description']; ?>
     </div>
 </div>
+
+<?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Услуги', 'is_popular' => true]); ?>
