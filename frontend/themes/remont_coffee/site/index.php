@@ -16,7 +16,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
             </div>
             <div class="ofer-right">
                 <p class="first-text"><span>Дадим скидку</span> <br>в размере <span>30%</span> Первым <span>30</span> клиентам в день</p>
-                <p class="second-text">Осталось <br><span>0</span> <span>7</span> <br>заказов со <br>скидкой!</p>
+                <p class="second-text">Осталось <br><span id="services-count">0</span> <br>заказов со <br>скидкой!</p>
             </div>
         </div>
         <?php if ($siteConfig['id'] == 53): ?>

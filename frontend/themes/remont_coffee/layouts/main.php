@@ -44,8 +44,8 @@ $js = app\components\CController::$js;
         <?php endif; ?>
     </head>
     <body>
-        <div class="aksiya-popupic">
-            Посетитель Такой-то<br> заказал услугу Такую-то
+        <div style="display: none;" class="aksiya-popupic">
+            <span id="visitor-name"></span><span id="service-name"></span>
         </div>
         <?= remont_coffee\widgets\forms\sidebarForm::widget(); ?>
         <?php $this->beginBody() ?>

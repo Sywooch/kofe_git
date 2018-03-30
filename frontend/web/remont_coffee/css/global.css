@@ -2309,8 +2309,8 @@ summary {
     border: 1px solid #42508c;
     z-index: 99999;
     box-sizing: border-box;
-    max-width: 240px;
-    width: 240px;
+    max-width: 300px;
+    width: 300px;
 }
 .right-form {
     max-width: 240px;

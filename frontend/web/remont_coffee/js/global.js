@@ -1,6 +1,101 @@
 $(document).ready(function () {
-    var $iphone  = $('#my-modelas');        
-    var $iphoneWrap   = $iphone.parent();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+            $('.right-form').fadeIn();
+        } else {
+            $('.right-form').fadeOut();
+        }
+    });
+    $(".aksiya-popupic").on("click", function() {
+        $(this).hide();
+    });
+    var popups = [
+        {visitorName: 'Ефремова Эллада', serviceName: 'Чистка от кофейных масел'},
+        {visitorName: 'Матвеев Владимир', serviceName: 'Ремонт кофемолки'},
+        {visitorName: 'Ефимов Георгий', serviceName: 'Декофенация'},
+        {visitorName: 'Никонова Лида', serviceName: 'Замена уплотнительного кольца группы'},
+        {visitorName: 'Виноградова Анна', serviceName: 'Ремонт насоса'},
+        {visitorName: 'Агафонова Нигина', serviceName: 'Комплексная профилактика'},
+        {visitorName: 'Жукова Катерина', serviceName: 'Декофенация'},
+        {visitorName: 'Миронова Ольга', serviceName: 'Ремонт насоса'},
+        {visitorName: 'Суханов Вениамин', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Цветкова Настя', serviceName: 'Ремонт капучинатора'},
+        {visitorName: 'Гаврилов Альберт', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Кириллова Людмила', serviceName: 'Декофенация'},
+        {visitorName: 'Зуев Георгий', serviceName: 'Забор кофемашины в сервис'},
+        {visitorName: 'Сафонов Денис', serviceName: 'Чистка от кофейных масел'},
+        {visitorName: 'Колобов Николая', serviceName: 'Чистка от кофейных масел'},
+        {visitorName: 'Мясникова Элла', serviceName: 'Доставка кофемашины'},
+        {visitorName: 'Лукина Василиса', serviceName: 'Забор кофемашины в сервис'},
+        {visitorName: 'Мартынова Анжела', serviceName: 'Декальцинация'},
+        {visitorName: 'Комиссарова Алеся', serviceName: 'Комплексная профилактика'},
+        {visitorName: 'Корнилов Артур', serviceName: 'Диагностика'},
+        {visitorName: 'Цветков Аркадий', serviceName: 'Замена микровыключателей'},
+        {visitorName: 'Горбунов Константи', serviceName: 'Ремонт кофемолки'},
+        {visitorName: 'Рожков Владимир', serviceName: 'Комплексная профилактика'},
+        {visitorName: 'Мухин Толя', serviceName: 'Ремонт капучинатора'},
+        {visitorName: 'Романов Андрей', serviceName: 'Забор кофемашины в сервис'},
+        {visitorName: 'Игнатьев Мартын', serviceName: 'Замена тена'},
+        {visitorName: 'Громов Тимур', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Носова Аня', serviceName: 'Ремонт насоса'},
+        {visitorName: 'Титов Олег', serviceName: 'Замена жерновов'},
+        {visitorName: 'Терентьева Ольга', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Гущина Динара', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Лукьянов Давид', serviceName: 'Доставка кофемашины'},
+        {visitorName: 'Князева Света', serviceName: 'Замена тена'},
+        {visitorName: 'Гордеева Станислава', serviceName: 'Ремонт кофемолки'},
+        {visitorName: 'Афанасьева Кристина', serviceName: 'Замена жерновов'},
+        {visitorName: 'Абрамова Ирина', serviceName: 'Замена микровыключателей'},
+        {visitorName: 'Доронин Василий', serviceName: 'Ремонт гидросистемы'},
+        {visitorName: 'Фролов Генадий', serviceName: 'Ремонт насоса'},
+        {visitorName: 'Павлов Якуб', serviceName: 'Замена тена'},
+        {visitorName: 'Тимофеева Влада', serviceName: 'Ремонт капучинатора'},
+        {visitorName: 'Кононов Радик', serviceName: 'Замена жерновов'},
+        {visitorName: 'Баранова Алия', serviceName: 'Замена уплотнительного кольца группы'},
+        {visitorName: 'Коновалов Андрей', serviceName: 'Декальцинация'},
+        {visitorName: 'Исаков Генадий', serviceName: 'Замена тена'},
+        {visitorName: 'Федосеев Евгений', serviceName: 'Замена микровыключателей'},
+        {visitorName: 'Фролов Константи', serviceName: 'Замена модуля управления'},
+        {visitorName: 'Белоусов Женя', serviceName: 'Ремонт кофемолки'},
+        {visitorName: 'Дьячков Владимир', serviceName: 'Комплексная профилактика'},
+        {visitorName: 'Носков Радион', serviceName: 'Доставка кофемашины'},
+        {visitorName: 'Кулаков Михаил', serviceName: 'Ремонт насоса'}
+    ];
+    var userRandServicesCount = localStorage.getItem("userRandServicesCount");
+    var d = new Date();
+    var hour = d.getHours();
+    if (!userRandServicesCount || userRandServicesCount === null || hour == 24) {
+        localStorage.setItem("userRandServicesCount", randomIntFromInterval(12, 18));
+        userRandServicesCount = localStorage.getItem("userRandServicesCount");
+    }    
+    var minimum = 3;
+    var timeOut = 10 * 1000;
+    var fadeInTimeOut = 15 * 1000;
+    var count = popups.length - 1;
+    $("#services-count").text((parseInt(userRandServicesCount) < minimum ? minimum : userRandServicesCount));
+    setTimeout(function onTimeout() {
+        userRandServicesCount = localStorage.getItem("userRandServicesCount");
+        if (parseInt(userRandServicesCount) >= minimum) {
+            localStorage.setItem("userRandServicesCount", parseInt(userRandServicesCount) - 1);
+            var it = localStorage.getItem("userRandServicesCount");
+            if (parseInt(it) >= minimum) {
+                $("#visitor-name").text(popups[count].visitorName + " оставил(а) заявку на услугу ");
+                $("#service-name").text("'" + popups[count].serviceName + "'");
+                $("#services-count").text(it);
+                $('.aksiya-popupic').fadeIn('slow').delay(fadeInTimeOut).fadeOut('slow', function () {
+                    if (count > 0) {
+                        count--;
+                        setTimeout(onTimeout, timeOut);
+                    }
+                });
+            }
+        }
+    }, timeOut);
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    var $iphone = $('#my-modelas');
+    var $iphoneWrap = $iphone.parent();
     $iphone.sly({
         horizontal: 1,
         itemNav: 'basic',
@@ -19,13 +114,13 @@ $(document).ready(function () {
         easing: 'easeOutExpo',
         dragHandle: 1,
         dynamicHandle: 1,
-        clickBar: 1,          
+        clickBar: 1,
         prevPage: $iphoneWrap.find('.prevPage'),
         nextPage: $iphoneWrap.find('.nextPage')
-    }); 
+    });
 
-    var $iphone  = $('#my-nav');        
-    var $iphoneWrap   = $iphone.parent();
+    var $iphone = $('#my-nav');
+    var $iphoneWrap = $iphone.parent();
     $iphone.sly({
         horizontal: 1,
         itemNav: 'basic',
@@ -42,12 +137,12 @@ $(document).ready(function () {
         easing: 'easeOutExpo',
         dragHandle: 1,
         dynamicHandle: 1,
-        clickBar: 1,          
-    }); 
+        clickBar: 1,
+    });
 
 
 
-    $('.main > .right').sticky({topSpacing:20, bottomSpacing: 500});
+    $('.main > .right').sticky({topSpacing: 20, bottomSpacing: 500});
 
     if ($('.gl-contact123').length == 1) {
         gl_contact = $('.gl-contact');
@@ -147,74 +242,74 @@ $(document).ready(function () {
         return false;
     });
     $('.owl-carousel.brend-c').owlCarousel({
-        loop:true,
-        margin:25,
-        nav:false,
-        autoplay:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:2
+        loop: true,
+        margin: 25,
+        nav: false,
+        autoplay: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
             },
-            600:{
-                items:4
+            600: {
+                items: 4
             },
-            1000:{
-                items:10
+            1000: {
+                items: 10
             }
         }
     });
 
     $('.owl-carousel.model-c').owlCarousel({
-        loop:true,
-        margin:25,
-        nav:false,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:2
+        loop: true,
+        margin: 25,
+        nav: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 2
             },
-            600:{
-                items:4
+            600: {
+                items: 4
             },
-            1000:{
-                items:6
+            1000: {
+                items: 6
             }
         }
     });
 
     $('.owl-carousel.metro-c').owlCarousel({
-        loop:true,
-        margin:25,
-        nav:false,
-        autoplay:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:2
+        loop: true,
+        margin: 25,
+        nav: false,
+        autoplay: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     });
 
     $('.owl-carousel.coment-c').owlCarousel({
-        loop:true,
-        nav:false,
-        autoplay:true,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        nav: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:1
+            600: {
+                items: 1
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
     });
@@ -232,7 +327,7 @@ $(document).ready(function () {
                 block.removeClass('opened');
             } else {
                 block.addClass('opened');
-                $('.seo-link__btn').css('display','block');
+                $('.seo-link__btn').css('display', 'block');
             }
         });
     }

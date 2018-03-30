@@ -1,6 +1,6 @@
 <?php
 
-namespace app\widgets\forms;
+namespace kofe03\widgets\forms;
 
 use Yii;
 use yii\base\Widget;
