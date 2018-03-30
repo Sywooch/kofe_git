@@ -463,9 +463,9 @@ if (Yii::$app->session->getFlash('success')) {
                     i = i + 1;
                     if (i > 12) i = 1;
                     $('.yved:nth-child(' + i + ')').fadeIn(1000).delay(4000).fadeOut(300);
-                }, 9000);
+                }, 18000);
             yved();
-        }, 5000);
+        }, 10000);
     });
 </script>
 <?php $this->endBody() ?>    
