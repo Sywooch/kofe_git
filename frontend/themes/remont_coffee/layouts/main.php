@@ -47,7 +47,7 @@ $js = app\components\CController::$js;
         <div style="display: none;" class="aksiya-popupic">
             <span id="visitor-name"></span><span id="service-name"></span>
         </div>
-        <?= remont_coffee\widgets\forms\sidebarForm::widget(); ?>
+        <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
         <?php $this->beginBody() ?>
         <div class="container header">
             <div class="row logo-line">
