@@ -279,8 +279,195 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {
-                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-            });</script>
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });</script>
+<style>
+    .msg {
+        background: #fff;
+        font-family: "Arial", Arial, Helvetica;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        width: 300px;
+        box-shadow: 0px 0px 0px 0px grey;
+        border-radius: 10px;
+        border: 1px solid #A9A9A9;
+        padding: 5px;
+        color: #666666;
+        z-index: 9999;
+    }
+    .comment {
+        border-radius: 10px;
+        border: 1px solid #A9A9A9;
+        width: 288px;
+        height: 195px;
+        overflow-y: scroll;
+        box-shadow: 0 0 0px grey inset;
+        margin: 5px 0 5px 0;
+        padding: 5px;
+        background: #fff;
+    }
+    .send {
+        background: #EFEFEF;
+        font-family: "Arial", Arial, Helvetica;
+        width: 250px;
+        border-radius: 10px;
+        border: 1px solid grey;
+        box-shadow: 0px 0px 0px 0px grey;
+        padding: 5px;
+        color: #666666;
+        margin: 5px;
+    }
+    #newmsg {
+        width: 98%;
+        resize: none;
+        margin: 5px 0 5px 0;
+        font-family: "Arial", Arial, Helvetica;
+        background: #F8F7F2;
+    }
+    #name {
+        width: 98%;
+        resize: none;
+        margin: 5px 0 5px 0;
+        font-family: "Arial", Arial, Helvetica;
+        background: #F8F7F2;
+        border: 1px solid #A9A9A9;
+    }
+    .yvedw {} .yved {
+        position: fixed;
+        left: 20px;
+        top: 70px;
+        width: 300px;
+        vertical-align: middle;
+        height: 120px;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+        line-height: 90px;
+        border-radius: 10px;
+        display: none;
+        z-index: 9999;
+    }
+    .yvedi {
+        float: left;
+        width: 50px!important;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .yvedt {
+        width: 208px;
+        line-height: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .yvedf1 {
+        background-color: #363636;
+    }
+    .yvedf2 {
+        background-color: #CD5555;
+    }
+    .yvedvt {
+        float: left;
+        height: 90px;
+        line-height: 90px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+<div class="yvedw">
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Александр, оставил заявку на обратный звонок</div>
+        </div>
+    </div>
+    <div class="yved yvedf2" style="display: none;">
+        <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Карина, оставила заявку на замену жерновов в кофемашине Delonghi</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Дмитрий, заказал услугу комплексной профилактики</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Андрей, сэкономил 2 850 руб по акции
+	</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Олег, получил премиумную цену на ремонт кофемолки</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Марат Беляков, оформил заказ на ремонт кофемашины Franke</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Лариса, заказала доставку кофемашины до сервисного центра</div>
+        </div>
+    </div>
+    <div class="yved yvedf2" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Дмитрий, оформил заказ на устранение неисправности</div>
+        </div>
+    </div>
+    <div class="yved yvedf1" style="display: none;">
+        <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Алексей, получил скидку в размере 35%</div>
+        </div>
+    </div>
+    <div class="yved yvedf1">
+        <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Виктор, оставил заявку на консультацию</div>
+        </div>
+    </div>
+    <div class="yved yvedf1">
+        <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Артур, получил скидку на ремонт кофемашины Faema</div>
+        </div>
+    </div>
+    <div class="yved yvedf1">
+        <img src="http://steelrage.woow24.ru/steelrage/yved/yico.png" alt="" class="yvedi">
+        <div class="yvedvt">
+            <div class="yvedt">Снежана, оставила заявку на обратный звонок</div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        var i = 0;
+
+        function yved() {
+            i = 1;
+            $('.yved:nth-child(' + i + ')').fadeIn(500).delay(4000).fadeOut(500);
+        }
+        setTimeout(function() {
+            setInterval(
+                function() {
+                    i = i + 1;
+                    if (i > 12) i = 1;
+                    $('.yved:nth-child(' + i + ')').fadeIn(1000).delay(4000).fadeOut(300);
+                }, 9000);
+            yved();
+        }, 5000);
+    });
+</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
 <?php \app\widgets\other\Replace::end(); ?>
