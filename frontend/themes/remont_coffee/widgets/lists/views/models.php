@@ -22,22 +22,19 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="content-bm">
             <?php foreach ($sortedBrands as $latter => $brands): ?>
                 <div class="symbol"><?= $latter; ?></div>
-                <div class="all-bm">
-                    <?php foreach ($brands as $brand): ?>
-                        <?php
-                        if ($siteConfig['mono'])
-                            $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']);
-                        ?>
-                        <a class="item" href="/<?= $brand['url']; ?>">
-                            <?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?>
-                            <div class="img">
-                                <?php if (!empty($brand['image'])): ?>
-                                    <img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
-                                <?php endif; ?>
-                            </div>
-                            <div class="name"><?= str_replace('/', ' / ', $brand['title']); ?></div>                
-                        </a>
-                    <?php endforeach; ?>
+                    <div class="all-bm">
+                        <?php foreach ($brands as $brand): ?>
+                            <?php if ($siteConfig['mono']) $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']); ?>
+                            <a class="item" href="#">
+                                <?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?>
+                                <div class="img">
+                                    <?php if (!empty($brand['image'])): ?>
+                                        <img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
+                                    <?php endif; ?>
+                                </div>
+                                <div class="name"><?= str_replace('/', ' / ', $brand['title']); ?></div>                
+                            </a>
+                        <?php endforeach; ?>
                 </div>
             <?php endforeach; ?>
         </div>

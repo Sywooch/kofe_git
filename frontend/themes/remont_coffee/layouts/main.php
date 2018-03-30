@@ -44,6 +44,10 @@ $js = app\components\CController::$js;
         <?php endif; ?>
     </head>
     <body>
+        <div class="aksiya-popupic">
+            Посетитель Такой-то<br> заказал услугу Такую-то
+        </div>
+        <?= remont_coffee\widgets\forms\sidebarForm::widget(); ?>
         <?php $this->beginBody() ?>
         <div class="container header">
             <div class="row logo-line">

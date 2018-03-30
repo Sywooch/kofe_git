@@ -3,22 +3,25 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт кофемашин в Москве и области ✔️';
 ?>
-<div class="container-fluid hidden-xs hidden-sm">
-    <div class="row hero" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
-        <div class="container banner">
-            <div class="hero-text">
-                <div class="heading">Авторизованный сервисный центр</div>
-                <div class="heading">
-                    <h1><?= $page['meta_h1']; ?></h1>
+<div class="offer" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="for-lr">
+            <div class="ofer-left">
+                <h1>Качественный ремонт кофемашин в Москве и Московской области</h1>
+                <br>
+                <div class="ofer-button">
+                    <p class="first-text">Закажите ремонт СЕЙЧАС и получите <br>в подарок пачку зернового кофе!</p>
+                    <?= remont_coffee\widgets\forms\MainPageForm::widget(); ?>
                 </div>
-                <div class="description"><?= $page['description']; ?></div>
-                <?= remont_coffee\widgets\forms\MainPageForm::widget(); ?>
             </div>
-            <?php if ($siteConfig['id'] == 53): ?>
-                <img class="banner-images" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/j/kofe.png">
-            <?php endif; ?>
+            <div class="ofer-right">
+                <p class="first-text"><span>Дадим скидку</span> <br>в размере <span>30%</span> Первым <span>30</span> клиентам в день</p>
+                <p class="second-text">Осталось <br><span>0</span> <span>7</span> <br>заказов со <br>скидкой!</p>
+            </div>
         </div>
-        <?= remont_coffee\widgets\other\Advantage::widget(); ?>
+        <?php if ($siteConfig['id'] == 53): ?>
+            <img class="banner-images" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/j/kofe.png">
+        <?php endif; ?>
     </div>
 </div>
 

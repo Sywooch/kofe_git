@@ -188,6 +188,7 @@ $(document).ready(function () {
         margin:25,
         nav:false,
         autoplay:true,
+        dots:false,
         responsive:{
             0:{
                 items:2

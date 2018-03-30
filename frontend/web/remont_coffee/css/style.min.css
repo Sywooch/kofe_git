@@ -138,7 +138,6 @@ a:hover {
 }
 #main-menu ul {
     width: 100%;
-    padding: 5px 0px;
     box-sizing: border-box;
 }
 #main-menu ul li:first-child a:before {
@@ -197,8 +196,12 @@ a:hover {
 }
 #main-menu ul li a:hover,
 #main-menu ul .current-menu-item a {
-    color: #000;
-    background: #eee;
+    color: #fff;
+        background: rgb(230,87,55);
+    background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
     border-radius: 20px;
 }
 #main-menu ul .current-menu-item:last-child a {
@@ -930,12 +933,6 @@ button,
     padding: 6px 2px;
     text-align: center
 }
-.input {
-    padding: 6px 8px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-    font-family: Arial, sans-serif
-}
 input,
 select,
 textarea,
@@ -1369,29 +1366,6 @@ button {
     background-image: url(http://remontkofe.ru/images/star2.svg);
 }
 
-.hero-form h3 {
-    margin-top: 0px;
-}
-.hero-form input {
-    border-radius: 2px;
-    margin-bottom: 2px;
-    font-size: 14px;
-    padding: 4px;
-    outline: none;
-    color: #333;
-}
-.hero-form button{
-    font-size: 14px;
-    color: #fff;
-    background-color: #1b72ac;
-    background-image: linear-gradient(to bottom, #48bdf3, #1b72ac);
-    padding: 5px;
-    width: 100px;
-    border: 0;
-    border-radius: 2px;
-    cursor: pointer;
-    outline: none;
-}
 .main > .left {
     width: 70%;
     float: left;

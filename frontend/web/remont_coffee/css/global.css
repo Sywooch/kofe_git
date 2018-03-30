@@ -118,6 +118,7 @@ a:hover {
 .bl-heading .heading {
     font-size: 36px;
     line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 680px) {
     .bl-heading .heading {
@@ -1341,6 +1342,7 @@ a:hover {
 }
 .heading-description {
     margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .brends center {
@@ -1504,16 +1506,6 @@ a:hover {
 }
 
 
-.form-group {
-    float: left;
-    margin-bottom: 0px ! important;
-    max-width: 200px;
-    margin-right: 20px;
-}
-.form-group input {
-    width: 100%;
-    padding: 4px 10px ! important;
-}
 #main-form {
     width: 100%;
     clear: both;
@@ -2146,4 +2138,239 @@ summary {
     margin-left: 20px;
     max-width: 250px;
     min-width: 250px;
+}
+
+
+.offer {
+    padding: 50px 0px;
+}
+.for-lr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ofer-left {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    padding-right: 20%;
+}
+.ofer-left h1 {
+    font-size: 34px;
+    font-family: Arial,sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background: #2E375F;
+    display: inline;
+    padding: 0px 0px;
+    line-height: 44px;
+}
+.ofer-left h1 br {
+    display: none;
+}
+.ofer-right {
+    display: inline-block;
+    width: 20%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e65737+0,cb343d+100 */
+    background: rgb(230,87,55); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+.ofer-right p.first-text {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding: 0px 0px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
+}
+.ofer-right p.first-text span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+}
+.ofer-right p.second-text {
+    font-size: 24px;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 26px;
+    text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
+}
+.ofer-right p.second-text span {
+    background: #333;
+    padding: 0px 5px;
+    font-size: 40px;
+    line-height: 65px;
+    border-radius: 2px;
+    color: #ccc;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #000;
+    font-family: Arial,sans-serif;
+    position: relative;
+}
+.ofer-right p.second-text span:before {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    content: '';
+    background: #252525;
+    left: 0px;
+}
+.ofer-button {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+    padding: 15px 20px;
+    padding-right: 210px;
+    background: url(../images/gift.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #24295a;
+    background-size: auto 100%;
+}
+.ofer-button .first-text {
+    text-transform: uppercase;
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.ofer-button .hero-form > p {
+    font-size: 12px;
+    display: block;
+    margin: 0px;
+}
+.hero-form form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-form form .form-group {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.hero-form form .form-group input {
+    width: 100%;
+    border-radius: 3px;
+    border: 0px;margin-top: -3px;
+}
+
+.hero-form form button {
+    width: 47%;
+    display: inline-block;
+    margin-left: 2%;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    border: 0px;
+    height: 34px;
+    border-radius: 3px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e65737+0,cb343d+100 */
+    background: rgb(230,87,55); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.aksiya-popupic {
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    text-align: left;
+    padding: 16px 24px;
+    font-family: 'Open Sans', sans-serif;
+    background: #2E375F;
+    border: 1px solid #42508c;
+    z-index: 99999;
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 240px;
+}
+.right-form {
+    max-width: 240px;
+    width: 240px;
+    z-index: 99999;
+    position: fixed;
+    box-sizing: border-box;
+    right: 0px;
+    top: 0px;
+    margin-right: 20px;
+    margin-top: 10%;
+    border-radius: 5px;
+    background: #24295a url(../images/gift.gif);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 16px 24px;
+    border: 1px solid #42508c;
+    -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.37);
+    padding-bottom: 170px;
+}
+.right-form p {
+    font-size: 10px;
+    color: #fff;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.right-form p.first-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.right-form p.first-text span {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 33px;
+}
+.right-form p.first-text b {
+    font-size: 18px;
+}
+.right-form input {
+    border: 0px;
+    outline: none;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.right-form button {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 10px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border-radius: 3px;
+    background: rgb(230,87,55);
+    background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
 }
