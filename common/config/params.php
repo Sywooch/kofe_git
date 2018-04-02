@@ -749,7 +749,7 @@ return [
             'multi_category' => true
         ],
         'remont' => [
-            'phone-1' => '8 (495) 323-90-09',
+            'phone-1' => '8 (495) 182-00-08',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => true,
             'mono' => false,
@@ -850,8 +850,8 @@ return [
             'spb' => true,
         ],
         'spb.remont' => [
-            'phone-1' => '8 (812) 612-01-07',
-            'phone-2' => '8 (812) 612-01-07',
+            'phone-1' => '8 (812) 501-17-00',
+            'phone-2' => '8 (812) 501-17-00',
             'stickyMenu' => true,
             'mono' => false,
             'id' => 54,
