@@ -36,7 +36,6 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
     </div>
 </div>
 
-<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
 
 <?= remont_coffee\widgets\lists\LastReviews::widget(); ?>
 

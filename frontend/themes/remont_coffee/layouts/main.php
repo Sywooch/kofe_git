@@ -148,10 +148,10 @@ $js = app\components\CController::$js;
                 <div class="navigation">
                     <ul class="menu-footer">
                         <li><p>Статьи и советы</p></li>
-                        <li><a href="/voprosy-otvety">Как выбрать кофе для кофемашин</a></li>
-                        <li><a href="/diagnostika">Советы по обслуживанию кофемашин</a></li>
-                        <li><a href="/dostavka">Фильтр для кофемашины. Для чего он нужен?</a></li>
-                        <li><a href="/oplata">Как приготовить капучино в кофемашине</a></li>
+                        <li><a href="/vibor-kofe-dlya-sebya">Как выбрать кофе для кофемашин</a></li>
+                        <li><a href="/soveti-dlya-vashey-kofemaschini">Советы по обслуживанию кофемашин</a></li>
+                        <li><a href="/dlya-chego-nudjen-filtr-kofemachine">Для чего кофемашине нужен фильтр?</a></li>
+                        <li><a href="/chto-takoye-kapuchino">Что такое капучино?</a></li>
                     </ul>
                 </div>
                 <div class="navigation">
