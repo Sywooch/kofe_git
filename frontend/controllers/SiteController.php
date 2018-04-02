@@ -31,6 +31,7 @@ class SiteController extends CController {
         $model = new \frontend\models\CallBackForm();
         $request = \Yii::$app->getRequest();
         if ($request->isPost && $model->load($request->post())) {
+            \app\components\CController::sendToRoistat($model->phone);
             \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
             return \yii\widgets\ActiveForm::validate($model);
         }

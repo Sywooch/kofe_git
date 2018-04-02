@@ -11,7 +11,7 @@
                     use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-                                'id' => 'today-form',
+                                'id' => 'today2-form',
                                 'options' => ['class' => 'request-form'],
                                 'enableClientValidation' => true,
                                 'fieldConfig' => [
