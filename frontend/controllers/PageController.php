@@ -531,8 +531,10 @@ class PageController extends CController {
         $a = 1;
         $urls = [];
         foreach ($pages as $key => $page) {
-            $urls[] = $page['url'];
             if ($page['type'] == 'model' || $page['type'] == 'brand') {
+                if (isset($siteConfig['sitemap']['modelsPage']) && !$siteConfig['sitemap']['modelsPage'] && $page['type'] == 'model')
+                    continue;
+                $urls[] = $page['url'];
                 foreach ($services as $service) {
                     $urls[] = $page['url'] . '/' . $service['url'];
                 }

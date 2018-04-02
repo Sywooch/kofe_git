@@ -759,6 +759,9 @@ return [
             'category_id' => 7,
             'theme' => 'remont_coffee',
             'order-title' => 'МСК Заречная',
+            'sitemap' => [
+                'modelsPage' => false,
+            ]
         ],
         'kofe03' => [
             'phone-1' => '8 (495) 135-00-03',
