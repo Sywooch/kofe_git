@@ -1391,7 +1391,14 @@ button {
 
 
 .works {width: 30%; display: inline-block; margin: 0 2% 10px 0 !important; vertical-align: top; font-size: 14px !important;}
-.works img {width: 100%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE 6-9 */}
+.works .img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 241px;
+    display: block;
+}
+.works img {width: auto; height: 100%; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE 6-9 */}
 .works:last-child {margin-right: 0;}
 @media (max-width: 680px) {
     .works {
