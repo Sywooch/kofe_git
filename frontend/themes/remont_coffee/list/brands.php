@@ -75,6 +75,5 @@ $this->title = $pageInfo['meta_title'];
 
 <?= remont_coffee\widgets\lists\TopServices::widget(); ?>
 
-<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>
 
 <?= remont_coffee\widgets\lists\AllBrands::widget(['h' => false]); ?>
