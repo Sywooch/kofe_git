@@ -31,4 +31,3 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 <?= remont_coffee\widgets\lists\Neispravnost::widget(['view' => 'neispravnostTable', 'type' => 1, 'title' => 'Прочие услуги', 'is_popular' => false]); ?>
 
 
-<?= remont_coffee\widgets\lists\PopularModels::widget(); ?>

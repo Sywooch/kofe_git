@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section class="model-brand">
     <div class="container">
-        <p class="gl-text">Профессиональный ремонт  <span>моделей</span> SAECO</p>
+        <p class="gl-text">Профессиональный ремонт  <span>моделей</span> <?= $brand2; ?></p>
         <div class="search-bm">
             <span>Поиск модели </span>
             <?=
@@ -25,15 +25,15 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="all-bm">
                         <?php foreach ($brands as $brand): ?>
                             <?php if ($siteConfig['mono']) $brand['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $brand['url']); ?>
-                            <a class="item" href="#">
+                            <div class="item">
                                 <?= app\components\CController::$category['id'] != 7 ? $brand2 . ' ' : ''; ?>
                                 <div class="img">
                                     <?php if (!empty($brand['image'])): ?>
                                         <img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand['title']; ?>" title="<?= $brand['title']; ?>" />
                                     <?php endif; ?>
                                 </div>
-                                <div class="name"><?= str_replace('/', ' / ', $brand['title']); ?></div>                
-                            </a>
+                                <div class="name"><?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?></div>                
+                            </div>
                         <?php endforeach; ?>
                 </div>
             <?php endforeach; ?>

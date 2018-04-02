@@ -8,8 +8,22 @@ use app\components\CController;
 
 class PopularModels extends Widget {
 
+		public $parent = 0;
+
     public function run() {
-        $sql = 'select m.title, m.url, m.image, b.title as brand_title from {{%pages}} m left join {{%pages}} b on m.parent = b.id where m.type = \'model\' and m.active = 1 and m.category_id = ' . CController::$category['id'] . ' and m.sort < 20 order by m.sort limit 10';
+        $sql = 'SELECT p.image, p.url, b.title as brand_title, p.title        
+                    FROM
+                        `yu_specs` s
+                    LEFT JOIN yu_pages p ON p.id = s.model_id
+                    LEFT JOIN yu_pages b ON b.id = p.parent
+                    WHERE
+                        s.spec_name LIKE \'%Тип%\'
+                    AND s.spec_value LIKE \'%эспрессо%\'
+                    AND s.spec_value LIKE \'%автоматическое%\'
+                    AND s.spec_value NOT LIKE \'%полуавтоматическое%\'                    
+                    AND p.active = 1 ' . ($this->parent > 0 ? ' AND p.parent = ' . (int) $this->parent : '') . '   
+                    ORDER BY
+                            p.sort LIMIT 10';
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
         return $this->render('popularModels', ['rows' => $rows]);
     }
