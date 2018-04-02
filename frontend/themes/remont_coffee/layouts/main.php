@@ -129,7 +129,7 @@ $js = app\components\CController::$js;
                     <div class="img-logo">
                         <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo2.svg" /></a>
                     </div>
-                    <p>г. Москва, м. Китай-город, Охотный ряд, ул. Ильинка 4.</p>
+                    <p>г. Москва, 2-я Филёвская улица, 8к1.</p>
                     <p><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                     <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
                     <p>remont.coffee © <?= date('Y'); ?></p>

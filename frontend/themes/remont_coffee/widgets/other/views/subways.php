@@ -4,11 +4,11 @@
             <div class="name">
                 <a href="/kontakty">Наш адрес в <span>Москве</span></a>
             </div>
-            <p>г. Москва, м. Китай-город, Охотный ряд, ул. Ильинка 4.</p>
-            <p><a href="tel:84953239009">8 (495) 323-90-09</a></p>
+            <p>г. Москва, 2-я Филёвская улица, 8к1.</p>
+            <p><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
             <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ff8bd3ce233081eb21bc5385e1162d99deb9e5cf7531729f8b38d4a44e5b1f0&amp;source=constructor" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e52df75fd24316ff3eae8a7942cc993c726bf7583543218f30e8be82149d3d3&amp;source=constructor" frameborder="0"></iframe>
     </div>
     <div class="metro">
         <h2 class="gl-text">Ремонт кофемашин в <br>Москве, <span>рядом с метро</span></h2>

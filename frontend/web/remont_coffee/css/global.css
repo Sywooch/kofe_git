@@ -758,8 +758,6 @@ a:hover {
 .bl-contact .list ul li {} .bl-contact .list ul li .name {
     font-size: 18px;
     position: relative;
-    padding-left: 50px;
-    margin-top: 5px;
 }
 .bl-contact .list ul li .description {
     position: relative;
