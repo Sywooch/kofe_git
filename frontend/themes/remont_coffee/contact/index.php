@@ -27,7 +27,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                         <div class="name">г. Москва, 2-я Филёвская улица, 8к1.</div>
                     </li>
                     <li class="schedule">
-                        <div class="name">Круглосуточно</div>
+                        <div class="name">Ежедневно с 9:00 до 21:00</div>
                     </li>
                 </ul>
             </div>

@@ -1,8 +1,12 @@
-<div class="brendi">
+<div class="<?= $all ? 'all-brands' : 'brendi'; ?>">
     <div class="container">
-        <ul class="owl-carousel brend-c owl-theme">
+        <ul class="<?= $all ? 'all-brands' : 'owl-carousel brend-c owl-theme'; ?>">
             <?php foreach ($brands as $k => $brand): ?>
-                <li class="item"><a href="/<?= $brand['url']; ?>"><img src="/uploads/images/<?= str_replace('.png', '.svg', $brand['image']); ?>" alt=""></a></li>
+                <li class="item">
+                	<a href="/<?= $brand['url']; ?>">
+                		<img src="/uploads/images/<?= $all ?  $brand['image'] : str_replace('.png', '.svg', $brand['image']); ?>">
+                	</a>
+                </li>
             <?php endforeach; ?>
         </ul>
     </div>

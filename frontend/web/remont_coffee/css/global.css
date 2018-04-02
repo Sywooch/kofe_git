@@ -2372,3 +2372,17 @@ summary {
     background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
 }
+
+.search-brends .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-brends .right a {
+    width: 12%;
+    margin-left: 0.5%;    
+    border-bottom: 2px solid #F22613;
+    margin-bottom: 15px;
+}
+.search-brends .right a img {
+    width: 100%;
+}
