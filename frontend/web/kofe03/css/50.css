@@ -364,10 +364,6 @@
     fill: #196ae0;
 }
 
-.gorad-text:after {
-    content: 'в Санкт-Петербурге';
-    margin-left: 10px;
-}
 .poseter h1 {
     color: #301d0f;
 }
@@ -381,10 +377,3 @@
     color: #dfa81b;
 }
 
-
-.gl-text-gorad:before {
-    content: 'Оперативный ';
-}
-.gl-text-gorad:after {
-    content: ' в специализированном сервисном центре';
-}
