@@ -655,7 +655,11 @@ class PageController extends CController {
             'name' => 'description',
             'content' => $pageInfo['meta_desc']
         ]);
-        $menus = Yii::$app->db->createCommand('SELECT url, title FROM {{%pages}} WHERE type = \'types\' ORDER BY sort')->queryAll();
+        $ms = Yii::$app->db->createCommand('SELECT url, title FROM {{%pages}} WHERE type = \'types\' ORDER BY sort')->queryAll();
+        $menus = [];
+        foreach ($ms as $m) {
+            $menus[$m['url']] = $m['url'];
+        }
         return $this->render('types', ['model' => $pageInfo, 'menus' => $menus]);
     }
 
