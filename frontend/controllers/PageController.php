@@ -646,6 +646,23 @@ class PageController extends CController {
         return $this->render('sitemap', ['tree' => $this->recurse($pages, 0)]);
     }
 
+    public function actionTypes() {
+        $pageInfo = $_GET['data'];
+        $siteConfig = self::getSiteConfig();
+        if ($pageInfo['site_id'] > 0 && $pageInfo['site_id'] != $siteConfig['id'])
+            throw new NotFoundHttpException('The requested page does not exist.');
+        \Yii::$app->view->registerMetaTag([
+            'name' => 'description',
+            'content' => $pageInfo['meta_desc']
+        ]);
+        $ms = Yii::$app->db->createCommand('SELECT url, title FROM {{%pages}} WHERE type = \'types\' ORDER BY sort')->queryAll();
+        $menus = [];
+        foreach ($ms as $m) {
+            $menus[$m['url']] = $m['title'];
+        }
+        return $this->render('types', ['model' => $pageInfo, 'menus' => $menus]);
+    }
+
     public function actionView() {
         //throw new NotFoundHttpException('The requested page does not exist.');
         $pageInfo = $_GET['data'];

@@ -16,6 +16,7 @@ $elements = \Yii::$app->db->createCommand('select id,parent, title from {{%pages
 $tree = $model->build_tree($elements);
 unset($elements);
 $data = [
+    'types' => 'Типы',
     'actions' => 'Акция',
     'news' => 'Новость',
     'articles' => 'Статья',
