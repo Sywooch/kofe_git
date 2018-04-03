@@ -30,12 +30,12 @@ $js = app\components\CController::$js;
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="apple-touch-fullscreen" content="yes">        
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css?v=11" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css?v=11" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=11" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css?v=11" />  
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css?v=12" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css?v=12" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=12" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css?v=12" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=11" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=12" rel="stylesheet">
     </head>
     <body class="main_class" itemscope="" itemtype="http://schema.org/WebPage">
         <?php

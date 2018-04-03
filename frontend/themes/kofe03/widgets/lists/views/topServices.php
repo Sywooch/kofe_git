@@ -24,6 +24,9 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 <p class="ommabob__narxlari">от <?= number_format($service['price'], 0, ' ', ' '); ?> р.</p>
                             </div>
                         </a>
+                        <div class=" popup_js" data-popup="request">
+                            <span class="m_btn btn_war btn_lbl">Заказать</span>
+                        </div>
                     </li>
                 <?php endforeach; ?>
             </ul>

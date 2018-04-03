@@ -4379,12 +4379,40 @@ footer .cnct_cll p {
 .ommabob__jisim
 {
     display: inline-block;
-
+    position: relative;
+    overflow: hidden;
     box-sizing: border-box;
     width: 33.33%;
     padding: 8px;
 
     text-align: left;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+.ommabob__jisim  .popup_js {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    margin-bottom: -35px;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 610px) {
+    .ommabob__jisim  .popup_js {
+        display: none;
+    }
+}
+.ommabob__jisim:hover  .popup_js {
+    margin-bottom: 15px;
+
+}
+.ommabob__jisim  .popup_js span {
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
 }
 .ommabob__jisim:nth-child(7),
 .ommabob__jisim:nth-child(8)
