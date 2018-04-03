@@ -32,7 +32,7 @@ $js = app\components\CController::$js;
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.css?v=8" rel="stylesheet">
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/swiper.min.css?v=8" rel="stylesheet">
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=8" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/styles.css?v=9" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="all" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/sity.css?v=8" />  
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=8" rel="stylesheet">
