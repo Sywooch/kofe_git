@@ -25,7 +25,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             </div>
                         </a>
                         <div class=" popup_js" data-popup="request">
-                            <span class="m_btn btn_war btn_lbl">Заказать</span>
+                            <span class="m_btn btn_war btn_lbl">Заказать ремонт</span>
                         </div>
                     </li>
                 <?php endforeach; ?>
