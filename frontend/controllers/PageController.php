@@ -658,7 +658,7 @@ class PageController extends CController {
         $ms = Yii::$app->db->createCommand('SELECT url, title FROM {{%pages}} WHERE type = \'types\' ORDER BY sort')->queryAll();
         $menus = [];
         foreach ($ms as $m) {
-            $menus[$m['url']] = $m['url'];
+            $menus[$m['url']] = $m['title'];
         }
         return $this->render('types', ['model' => $pageInfo, 'menus' => $menus]);
     }
