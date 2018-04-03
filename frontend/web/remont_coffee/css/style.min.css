@@ -204,10 +204,6 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
     border-radius: 20px;
 }
-#main-menu ul .current-menu-item:last-child a {
-    color: #000;
-    padding: 5px 10px 5px 10px
-}
 .row.hero {
     height: 390px
 }

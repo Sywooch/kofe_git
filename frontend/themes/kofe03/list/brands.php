@@ -38,7 +38,7 @@ $this->title = $pageInfo['meta_title'];
                                         'source' => $searches,
                                         'select' => new yii\web\JsExpression('function(event, ui){window.location.href = "/" + ui.item.url;return false;}'),
                                     ],
-                                    'options' => ['placeholder' => 'Поиск брендов..', 'class' => 'form__input'],
+                                    'options' => ['placeholder' => 'Поиск брендов..', 'class' => 'form_input' , 'style' => 'max-width:250px;'],
                                         ]
                                 );
                                 ?>

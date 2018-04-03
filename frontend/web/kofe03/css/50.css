@@ -1,11 +1,390 @@
-/*
+ /*------------------------saru----------------------------------------------------------------------*/
+ body,
+ h1,
+.title_h1,
+.form__text,
+.form_input,
+.form__select,
+.form__textarea,
+.form__symbol,
+.navigation_sub_link,
+.sidebar__item.active .sidebar__link,
+.sidebar__link:hover,
+.reviews__name,
+.steps__name,
+.steps_context .steps__text,
+.faq__item:hover .faq__head,
+.stock__label {
+ 	color: #333;
+ }
+ .text-warning,
+ .form__textarea.error ~ .form__label,
+ label.error,
+ .header__name,
+ .color-red,
+ .pagination li a:hover,
+ .pagination li.active a,
+ .menu__tab_active .menyu-tip,
+ .cnct_ph a[href^="tel"],
+ .padval a.connect__email,
+  .padval a:hover,
+  .comp h3:first-child {
+     color: #dfa81b;
+ }
+ .btn_war,
+ .poster_button,
+ .Menyu-tb-neispravnosti:before,
+ .Menyu-tb-neispravnosti:after,
+ .stock__status,
+ .Brkg-point:before,
+ .breaking__pagination .swiper-pagination-bullet:after,
+ .office-content ol > li::before,
+ .menyu-tab:after,
+ .menyu-tab:before {
+     background-color: #dfa81b;
+ }
+ .form_input.error,
+ .form__select.error,
+ .form__textarea.error {
+     border-color: #dfa81b;
+ }
+ .Menyu-tb-neispravnosti.menu__tab_active .menyu-icon-put,
+ .menyu-tab-r.menu__tab_active .menyu-icon-put,
+ .menyu_t_nic.menu__tab_active .menyu-icon-put {
+     fill: #dfa81b;
+     stroke: #dfa81b;
+ }
+ .Brkg-point {
+     box-shadow: 0 0 0 6px #dfa81b;
+ }
+ .Brkg-point:hover {
+     box-shadow: 0 0 0 16px #dfa81b;
+ }
+ .breaking__point_active {
+     box-shadow: 0 0 0 16px #dfa81b, 0 0 0 32px rgba(244, 43, 54, .5) !important;
+ }
+ /*----------------------------------------------------------------------------------------------*/
+ 
+ .btn_war:hover,
+ .poster_button:hover {
+     background: #916307;
+ }
+ #messenger {
+     color: #916307;
+ }
+ .errorCheck {
+     border: 1px solid #916307;
+     padding: 5px 0;
+ }
+ /*-------------jigarren----------------------------------------------*/
+ 
+ .swiper-pagination-bullet-active,
+ .callbackForm,
+ .cost,
+ .office-content table tr:hover,
+ .menyu,
+ .menyu-tip,
+ .padval,
+ .Comp-box,
+ .pagination li.active a{
+     background-color: #301d0f;
+ }
+ h2 b,
+ .title_h2 b,
+ .popup__title b,
+ h3 b,
+ .title_h3 b,
+ a,
+ .header__slogan,
+ .nav__item_location .navigation_link,
+ .post__phone,
+ .post__email,
+ .reviews_context .reviews__out,
+ .reviews__single .reviews__out,
+ .blog__details,
+ .faq__head,
+ .stock__details,
+ .office-content a[href^="tel"],
+ .office__brands > span,
+ .reviews__text_popup p,
+ .reviews__name,
+ .reviews__box, .articles__box, .consultation__box,
+ .button_lined, .reviews__all, .consultation__all, .articles__all, .masters__button,
+ .ommabob__oshadee,
+ h3:first-child, 
+ .title_h3:first-child {
+     color: #301d0f;
+ }
+ .form__symbol,
+ .reviews_context .reviews__box:before,
+ .reviews_context .articles__box:before,
+ .reviews_context .consultation__box:before,
+ .reviews__container:before,
+ .menu__tab_active .menyu-tip,
+ .button_lined, .reviews__all, .consultation__all, .articles__all, .masters__button {
+     border-color: #301d0f;
+ }
+ .nav__item_location .navigation_link:after {
+     border-top-color: #301d0f;
+ }
+ .Menyu-harakat-pap {
+     fill: #301d0f;
+ }
+ /*----------------------------------------------------------------------------------------------*/
+ 
+ a:hover,
+ .navigation_link:hover,
+ .navigation_sub_link:hover,
+ .menu__go:hover,
+ .reviews_context .reviews__out:hover,
+ .reviews__single .reviews__out:hover {
+     color: #7b5336;
+ }
+ .m_btn:hover,
+ .poster_button:hover,
+ .reviews__all:hover,
+ .consultation__all:hover,
+ .articles__all:hover,
+ .masters__button:hover,
+ .button_normal:hover {
+     color: #fff;
+ }
+ .form_input:focus,
+ .form__select:focus,
+ .form__textarea:focus {
+     border-color: #7b5336;
+ }
+ .nav__item_location .navigation_link:hover:after,
+ .navigation_i_m .navigation_link:hover:after {
+     border-top-color: #7b5336;
+ }
+ /*-------------yashil----------------------------------------------*/
+ .text-success,
+ .connect__email:hover,
+ .post__content li:before,
+ .reviews__out:hover
+{
+    color: #ebb21c;
+}
+.button_success,
+.page_open .head_br_icon:before,
+.page_open .head_br_icon:after,
+.menyu_t_cl:before,
+.menyu_t_cl:after,
+.menyu_harakat:hover,
+.sidebar__item.active .sidebar__link,
+.sidebar__link:hover,
+.stock__status_finished,
+.button_success:hover,
+.button_lined:hover,
+.reviews__all:hover,
+.consultation__all:hover,
+.articles__all:hover,
+.masters__button:hover
+{
+    background-color: #ebb21c;
+}
+.form__help:hover .form__help-path,
+.search__input:focus ~ .search__ico .search__ico-path,
+.search__ico:hover .search__ico-path
+{
+    fill: #ebb21c;
+}
+.menyu_t_cl.menu__tab_active .menyu-icon-put,
+.footer__tab_cleaning .footer__type:hover .footer__ico-path
+{
+    fill: #ebb21c;
+    stroke: #ebb21c;
+}
+.menyu_harakat:hover,
+.faq__item_active,
+.button_lined:hover,
+.reviews__all:hover,
+.consultation__all:hover,
+.articles__all:hover,
+.masters__button:hover
+{
+    border-color: #ebb21c !important;
+}
+
+
+
+.Menyu-pan .menyu_in {
+	background: none;
+}
+
+.menyu:before,
+.Padval-nav,
+.padval:before {
+	border-color: #402715;
+}
+.menyu {
+    border: 0px ! important;
+}
+.menyu-icon-put {
+    fill: #fff;
+    stroke: #fff;
+}
+.cnct_h {
+	top: 5px;
+}
+.head_s {
+	top: 8px;
+}
+.menu_active .Menyu-pan {
+	background: #fff;
+}
+.menyu-tip,
+.padval,
+.padval .cnct_sche,
+.Comp-txt {
+	color: #d4d4d4;
+}
+.padval {
+	margin-top: 20px;
+}
+.padval:before
+{
+    background: url('../images/footer_decor.png') repeat-x 50% 100%;
+}
+.ommabob__tortburchagi .ommabob__matinlari, .ommabob__jisim_active .ommabob__matinlari {
+	    background: #301d0f;
+	    background: rgba(48, 29, 15, 0.48);
+}
+.ommabob__tortburchagi:hover .ommabob__matinlari {
+	background: rgba(48, 29, 15, 0.81);
+}
+
+
+
+
+
+
+
+
+.popup__close:hover
+{
+    background-image: url('../images/j/ico_close_color6170.svg?v=1485504369723');
+}
+.reviews__out
+{
+    background: url('../images/j/arrow_thin_out6170.svg?v=1485504369723') no-repeat 100% 50%;
+}
+.reviews__out:hover
+{
+    background-image: url('../images/j/arrow_thin_out_hover6170.svg?v=1485504369723');
+}
+.reviews__next:hover,
+.articles__next:hover,
+.consultation__next:hover,
+.brands__next:hover,
+.reviews__prev:hover,
+.articles__prev:hover,
+.consultation__prev:hover,
+.brands__prev:hover
+{
+    background-image: url('../images/j/arrow_left_active6170.svg?v=1485504369723');
+}
+.reviews__next:hover,
+.articles__next:hover,
+.consultation__next:hover,
+.brands__next:hover
+{
+    background-image: url('../images/j/arrow_right_active6170.svg?v=1485504369723');
+}
+.blog__details,
+.stock__details
+{
+    background: url('../images/j/arrow_right_bold6170.svg?v=1485504369723') no-repeat 100% 50%;
+}
+.reviews_context .reviews__out:hover,
+.reviews__single .reviews__out:hover
+{
+    background-image: url('../images/j/arrow_thin_link_hover6170.svg?v=1485504369723');
+}
+.reviews_context .reviews__out,
+.reviews__single .reviews__out
+{
+    background-image: url('../images/j/arrow_thin_link6170.svg?v=1485504369723');
+}
+.connect__email
+{
+    background: url('../images/j/ico_email_open6170.svg?v=1485504369723') no-repeat 0 2px;
+}
+.complain__action
+{
+    background: url('../images/j/ico_happy6170.svg?v=1485504369723') no-repeat 0 50%;
+}
+.form__element_valid .form__input_email
+{
+    background-image: url('../images/j/ico_mail_small_valid6170.svg?v=1485504369723');
+}
+.form__element_valid .form__input_address
+{
+    background-image: url('../images/j/ico_pin_small_valid6170.svg?v=1485504369723');
+}
+.complain__action_negative
+{
+    background-image: url('../images/j/ico_sad6170.svg?v=1485504369723');
+}
+.form__element_valid .form__input_name
+{
+    background-image: url('../images/j/ico_user_valid6170.svg?v=1485504369723');
+}
+.post__play
+{
+    background: url('../images/j/video_play6170.svg?v=1485504369723') no-repeat 50% 50%;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .poseter h1,
+    .poseter p 
+    {
+    	color: #333;
+    }
+}
+
+.sidebar__item.active .sidebar__link, .sidebar__link:hover {
+	background-color: #301d0f;
+	color: #fff;
+	border-color: #ebb21c;
+}
+.rating-container .empty-stars {
+    color: #301d0f;
+}
+.rating-container .filled-stars {
+        color: #ebb21c;
+}
+.head_s img {
+    margin-top: 0px;
+}
+.cnct_a span .fil0 {
+    fill: #196ae0;
+}
+
 .gorad-text:after {
-    content: 'в Москве';
+    content: 'в Санкт-Петербурге';
     margin-left: 10px;
 }
+.poseter h1 {
+    color: #301d0f;
+}
+.poseter p {
+    color: #333;
+}
+.tseni-na-uslugi {
+    background: #dfa81b;
+}
+.Padval-corp a {
+    color: #dfa81b;
+}
+
+
 .gl-text-gorad:before {
     content: 'Оперативный ';
 }
 .gl-text-gorad:after {
     content: ' в специализированном сервисном центре';
-}*/
+}

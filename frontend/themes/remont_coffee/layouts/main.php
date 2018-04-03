@@ -91,12 +91,12 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="collapse navbar-collapse navigation" id="main-menu">
                             <ul id="menu-home" class="nav navbar-nav">
-                                <li id="menu-item-1504" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1504"><a href="/"> Главная</a></li>
-                                <li id="menu-item-1479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1479"><a href="/stoimost-remonta">Стоимость ремонта</a></li>
-                                <li id="menu-item-5948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5948"><a href="/vse-obsluzhivaemye-brendy">Все обслуживаемые бренды</a></li>
-                                <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/kurerskaya-sluzhba">Курьерская служба</a></li>
-                                <li id="menu-item-1477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1477"><a href="/garantiya">Гарантия</a></li>
-                                <li id="menu-item-1478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1478"><a href="/kontakty">Контакты</a></li>
+                                <li id="menu-item-1504" class="<?= Yii::$app->request->pathInfo == '' ? ' current-menu-item' : '' ?> "><a href="/"> Главная</a></li>
+                                <li id="menu-item-1479" class="<?= Yii::$app->request->pathInfo == 'stoimost-remonta' ? ' current-menu-item' : '' ?>"><a href="/stoimost-remonta">Стоимость ремонта</a></li>
+                                <li id="menu-item-5948" class="<?= Yii::$app->request->pathInfo == 'vse-obsluzhivaemye-brendy' ? ' current-menu-item' : '' ?>"><a href="/vse-obsluzhivaemye-brendy">Все обслуживаемые бренды</a></li>
+                                <li id="menu-item-1477" class="<?= Yii::$app->request->pathInfo == 'kurerskaya-sluzhba' ? ' current-menu-item' : '' ?>"><a href="/kurerskaya-sluzhba">Курьерская служба</a></li>
+                                <li id="menu-item-1477" class="<?= Yii::$app->request->pathInfo == 'garantiya' ? ' current-menu-item' : '' ?>"><a href="/garantiya">Гарантия</a></li>
+                                <li id="menu-item-1478" class="<?= Yii::$app->request->pathInfo == 'kontakty' ? ' current-menu-item' : '' ?>"><a href="/kontakty">Контакты</a></li>
                             </ul>
                         </div>
                     </nav>
