@@ -2712,16 +2712,16 @@ nav .container > ul > li > ul li a span {
 }
 #number-15 .bottom-btn {
 	display: none;
-	margin-bottom: 60px;
-	cursor: pointer;
-	text-align: center;
-	width: 1150px;
-	height: 180px;
-	position: absolute;
-	padding-top: 145px;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -575px;
+    margin-bottom: 38px;
+    cursor: pointer;
+    text-align: center;
+    width: 1150px;
+    height: 0px;
+    position: absolute;
+    padding-top: 0px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -575px;
 }
 @media screen and (max-width: 1030px) {
 	#number-15 .bottom-btn {
