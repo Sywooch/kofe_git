@@ -345,9 +345,20 @@ if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
-<script>$("form").each(function () {
+    <script>
+        $("form").each(function () {
             $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-        });</script>
+        });
+        $('.head_b').on('click', function () {
+            $('body').toggleClass('page_open');
+            if ($('body').hasClass('page_open')) {
+                $('.head-p').height(69);
+            } else {
+                $('.head-p').height(0);
+                closeMenu();
+            }
+        });
+    </script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
 <?php $this->endBody() ?>    

@@ -4,7 +4,7 @@ $(window).on('load', function () {
 });
 
 $(function () {
-    $('.header__burger').on('click', function () {
+    $('.head_b').on('click', function () {
         $('body').toggleClass('page_open');
         if ($('body').hasClass('page_open')) {
             $('.head-p').height(69);
