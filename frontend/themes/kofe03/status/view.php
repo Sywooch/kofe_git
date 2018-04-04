@@ -49,7 +49,7 @@ $form = ActiveForm::begin([
                             ?>
                             <div class="form_r">
                                 <label class="form_yelem form_yelem-inp">
-                                    <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form__input form__input_big', 'placeholder' => 'Номер заказа']); ?>
+                                    <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form_input  form__input_big', 'placeholder' => 'Номер заказа']); ?>
                                 </label> 
                                 <label class="form_yelem form_yelem-inp form__element_valid"> 
                                     <?=
@@ -58,7 +58,7 @@ $form = ActiveForm::begin([
                                         'mask' => '+7 (999) 999-99-99',
                                         'options' => [
                                             'placeholder' => '+7 (___) ___-__-__',
-                                            'class' => 'form__input form__input_big form__input_phone-mask', 'type' => 'tel',
+                                            'class' => 'form_input form__input_big Form-inp-ph-m', 'type' => 'tel',
                                             'size' => 40,
                                         ],
                                     ])->label('')
@@ -73,7 +73,7 @@ $form = ActiveForm::begin([
                             </div>
                             <div class="form_r Form-row-sub">
                                 <label class="form_yelem form_yelem-inp form__element_valid">
-                                    <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big', 'type' => 'submit']) ?>
+                                    <?= Html::submitButton('Отправить', ['class' => 'm_btn btn_war Btn-w Btn-big Btn-txt', 'type' => 'submit']) ?>
                                 </label>
                             </div>
                             <label class="form_yelem form_yelem-inp form__element_valid"> </label>
