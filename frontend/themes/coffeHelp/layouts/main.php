@@ -333,7 +333,8 @@ if (Yii::$app->session->getFlash('success')) {
         background: #F8F7F2;
         border: 1px solid #A9A9A9;
     }
-    .yvedw {} .yved {
+    .yvedw {} 
+    .yved {
         position: fixed;
         left: 20px;
         top: 70px;
@@ -347,6 +348,9 @@ if (Yii::$app->session->getFlash('success')) {
         border-radius: 10px;
         display: none;
         z-index: 9999;
+    }
+    .yved:hover {
+        color: #fff;
     }
     .yvedi {
         float: left;
@@ -373,81 +377,95 @@ if (Yii::$app->session->getFlash('success')) {
         display: inline-block;
         vertical-align: middle;
     }
+    @media (max-width: 600px) {
+        .yved {
+            padding: 10px;
+            font-size: 12px;
+            line-height: 50px;
+            height: 75px;
+        }
+        .yvedi {
+            margin-top: 0px;
+        }
+        .yvedvt {
+            height: 50px;
+            line-height: 50px;
+        }
+    }
 </style>
 <div class="yvedw">
-    <div class="yved yvedf1" style="display: none;">
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Александр, оставил заявку на обратный звонок</div>
         </div>
-    </div>
-    <div class="yved yvedf2" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf2" style="display: none;">
         <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Карина, оставила заявку на замену жерновов в кофемашине Delonghi</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Дмитрий, заказал услугу комплексной профилактики</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
         <div class="yvedvt">
-            <div class="yvedt">Андрей, сэкономил 2 850 руб по акции
-	</div>
+            <div class="yvedt">Андрей, сэкономил 2 850 руб по акции</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/bayme.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Олег, получил премиумную цену на ремонт кофемолки</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Марат Беляков, оформил заказ на ремонт кофемашины Franke</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Лариса, заказала доставку кофемашины до сервисного центра</div>
         </div>
-    </div>
-    <div class="yved yvedf2" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf2" style="display: none;">
         <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Дмитрий, оформил заказ на устранение неисправности</div>
         </div>
-    </div>
-    <div class="yved yvedf1" style="display: none;">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1" style="display: none;">
         <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Алексей, получил скидку в размере 35%</div>
         </div>
-    </div>
-    <div class="yved yvedf1">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1">
         <img src="http://prr5.ru/img/skript/call2.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Виктор, оставил заявку на консультацию</div>
         </div>
-    </div>
-    <div class="yved yvedf1">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1">
         <img src="http://prr5.ru/img/skript/call.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Артур, получил скидку на ремонт кофемашины Faema</div>
         </div>
-    </div>
-    <div class="yved yvedf1">
+    </a>
+    <a href="#call-modal-form" class="yved yvedf1">
         <img src="http://steelrage.woow24.ru/steelrage/yved/yico.png" alt="" class="yvedi">
         <div class="yvedvt">
             <div class="yvedt">Снежана, оставила заявку на обратный звонок</div>
         </div>
-    </div>
+    </a>
 </div>
 <script>
     $(document).ready(function() {
