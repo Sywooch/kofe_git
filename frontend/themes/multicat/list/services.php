@@ -18,7 +18,7 @@
                                         <?= $service['title']; ?>
                                     <?php endif; ?>
                                 </td>
-                                <td><span><?= number_format((!empty($service['model_price']) ? $service['model_price'] : $service['price']), 0, ' ', ' '); ?> р</span><a class="btn out-icon open-popup" data-tab="popup2" onclick="return false;" href="#">Заказать</a></td>
+                                <td><span><?= number_format((!empty($service['model_price']) ? $service['model_price'] : $service['price']), 0, ' ', ' '); ?> р</span><a class="btn colorbg out-icon open-popup" data-tab="popup2" onclick="return false;" href="#">Заказать</a></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
