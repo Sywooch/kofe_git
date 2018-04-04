@@ -2209,7 +2209,6 @@ nav .container > ul > li > ul li a span {
 	}
 }
 #number-13 .container {
-	border-bottom: 1px solid #e9e9ea;
 	padding-bottom: 70px;
 }
 @media screen and (max-width: 830px) {
@@ -3951,8 +3950,10 @@ nav .container > ul > li > ul li a span {
 footer {
 	background: #fff;
 	border-bottom: 5px solid;
+	margin-top: 85px;
 }
 footer .container {
+	    border-bottom: 1px solid #e9e9ea;
 	position: relative;
 }
 footer .bottom-menu {
