@@ -24,7 +24,6 @@
  .color-red,
  .pagination li a:hover,
  .pagination li.active a,
- .menu__tab_active .menyu-tip,
  .cnct_ph a[href^="tel"],
  .padval a.connect__email,
   .padval a:hover,
@@ -50,9 +49,10 @@
  }
  .Menyu-tb-neispravnosti.menu__tab_active .menyu-icon-put,
  .menyu-tab-r.menu__tab_active .menyu-icon-put,
- .menyu_t_nic.menu__tab_active .menyu-icon-put {
-     fill: #dfa81b;
-     stroke: #dfa81b;
+  .menyu_t_nic.menu__tab_active .menyu-icon-put,
+.menyu_t_cl.menu__tab_active .menyu-icon-put {
+     fill: #301d0f;
+     stroke: #301d0f;
  }
  .Brkg-point {
      box-shadow: 0 0 0 6px #dfa81b;
@@ -190,7 +190,6 @@
 {
     fill: #ebb21c;
 }
-.menyu_t_cl.menu__tab_active .menyu-icon-put,
 .footer__tab_cleaning .footer__type:hover .footer__ico-path
 {
     fill: #ebb21c;

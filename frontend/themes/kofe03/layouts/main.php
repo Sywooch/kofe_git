@@ -349,15 +349,7 @@ if (Yii::$app->session->getFlash('success')) {
         $("form").each(function () {
             $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
         });
-        $('.head_b').on('click', function () {
-            $('body').toggleClass('page_open');
-            if ($('body').hasClass('page_open')) {
-                $('.head-p').height(69);
-            } else {
-                $('.head-p').height(0);
-                closeMenu();
-            }
-        });
+        
     </script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.mousewheel.pack.js"></script>
 <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.pack.js"></script>
