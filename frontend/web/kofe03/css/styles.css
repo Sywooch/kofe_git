@@ -8635,3 +8635,49 @@ a.ommabob__nomlari:hover {
 .hide {
     display: none;
 }
+
+.form_tdsa {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form_tdsa li {
+    width: 33.333%;
+    text-align: center;
+    position: relative;
+}
+.form_tdsa li span {
+    background-color: #dfa81b;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    z-index: 9;
+    position: relative;
+}
+.form_tdsa li:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background:  #dfa81b;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin-top: 12px;
+}
+.form_tdsa li:nth-child(1):before {
+    width: 50%;
+    left: auto;
+}
+.form_tdsa li:nth-child(3):before {
+    width: 50%;
+    right: auto;
+}

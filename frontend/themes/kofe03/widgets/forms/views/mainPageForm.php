@@ -28,6 +28,11 @@ $form = ActiveForm::begin([
             <div class="crear"></div>
         <?php endif; ?>
         <h3 class="form_t">Оставьте онлайн заявку по Акции! 🎁</h3>
+        <ul class="form_tdsa">
+            <li><span>1</span>Заявка</li>
+            <li><span>2</span>Согласование</li>
+            <li><span>3</span>Ремонт</li>
+        </ul>
         <div class="form_r">
             <label class="form_yelem form_yelem-inp">
                 <?=
@@ -60,7 +65,7 @@ $form = ActiveForm::begin([
 
         <div class="personalData">
                 <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
-            <span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
+            <span>Я прочитал условия  <a href="/policy" target="_blank">обработки персональных данных</a> и полностью согласен с ними.</span>
         </div>
     </div>
     <?php ActiveForm::end() ?>
