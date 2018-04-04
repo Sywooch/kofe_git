@@ -548,24 +548,24 @@
 .bork #number-10 .container .bottons a.active,
 .bork #number-10 .container .bottons a:hover,
 .bork .topcontactinfo .boxcontact:before,
-.bork .topcontactinfo .boxcontact .right a:before {background-color: #d82f3e ! important;}
+.bork .topcontactinfo .boxcontact .right a:before {background-color: #5c5c5c  ! important;}
 .bork .green.btn:before {background-color: #fff ! important;}
 .bork .colorbghover:hover {opacity: 0.9;-webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);-moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.55);}
 .bork .colortext,
 .bork .colortexthover:hover,
-.bork .tabs-style-linemove nav li.tab-current a {color: #d82f3e ! important;}
+.bork .tabs-style-linemove nav li.tab-current a {color: #5c5c5c  ! important;}
 .bork .colorsvgf {fill: #fff ! important;}
 .bork .colorsvg,
 .bork nav .fil0,
 .bork .tabs-style-linemove .fil0,
 .bork .tabs-style-linemove .colorsvg,
 .bork nav li ul .colorsvg,
-.bork nav li ul .fil0, .bosch .svgcolor{fill: #d82f3e ! important;}
+.bork nav li ul .fil0, .bosch .svgcolor{fill: #5c5c5c  ! important;}
 .bork .colorborder,
 .bork .colorborderhover:hover,
 .bork .colorborderhover:focus,
 .bork .topmenu > ul > li > ul li a,
-.bork .title {border-color: #d82f3e ! important;}
+.bork .title {border-color: #5c5c5c  ! important;}
 .bork .tabs-style-linemove nav li.tab-current a { transform:translate3d(0,4px,0);  -webkit-transform:translate3d(0,4px,0);}
 
 .promac .colorbg,
