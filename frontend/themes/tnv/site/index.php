@@ -62,13 +62,24 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\componen
             <h2>Мы ремонтируем их, чтобы они радовали Вас!</h2>
             <p>Собственные методики и индивидуальный подход к каждому клиенту - позволяют максимально снизить ожидание завершения ремонта. Данные методики были разработаны нашими инженерами и успешно применяются на практике в течении уже более 10 лет.</p>
         </div>
-        
+
     </div>
 </div>
 <?= tnv\widgets\forms\MainPageForm::widget(); ?>
 <?= tnv\widgets\lists\TopServices::widget(); ?>
 <?= tnv\widgets\other\Advantage::widget(); ?>
 <?= tnv\widgets\lists\PopularServices::widget(); ?>
+<div class="aside-layout container mb166">
+    <div class="row sticky-parent">        
+        <div class="page col-xs-12 col-md-12">
+            <div data-flatr="webpage 46">                
+                <div class="richtext ">
+                    <?= $page['full_description']; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <?= tnv\widgets\lists\PopularBrands::widget(); ?>
 <?= tnv\widgets\other\Masters::widget(); ?>
 <?= tnv\widgets\lists\PopularModels::widget(); ?>
