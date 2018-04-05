@@ -200,11 +200,11 @@ $js = app\components\CController::$js;
                     <nav class="m-menu float--left">
                         <ul class="m-menu--list clearfix static">
                             <li class="m-menu--item"><a href="/prices" class="m-menu--item-link">Цены</a></li>
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Диагностика</a></li>
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Гарантия</a></li>
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Контроль качества</a></li>
+                            <li class="m-menu--item"><a href="/diagnostika" class="m-menu--item-link">Диагностика</a></li>
+                            <li class="m-menu--item"><a href="/garantiya" class="m-menu--item-link">Гарантия</a></li>
+                            <li class="m-menu--item"><a href="/kontrol-kachestva" class="m-menu--item-link">Контроль качества</a></li>
                             <li class="m-menu--item"><a href="/contacts" class="m-menu--item-link">Контакты</a></li>
-                            <li class="m-menu--item"><a href="#" class="m-menu--item-link">Статус Заказа!</a></li>
+                            <li class="m-menu--item"><a href="/status-zakaza" class="m-menu--item-link">Статус Заказа!</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -305,7 +305,11 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3">
                             <div class="footer--call-title">Поделиться</div>
-                            <div class="footer--call-chats"></div>
+                            <div class="footer--call-chats">
+                                <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

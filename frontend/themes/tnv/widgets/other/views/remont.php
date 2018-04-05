@@ -22,28 +22,34 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="wide-slider--container">
             <div class="wide-slider--scroller">
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9823.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/1.jpg" alt="" class="card--image-img" /></div>
                 </div>
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9844.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/2.jpg" alt="" class="card--image-img" /></div>
                 </div>
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9846.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/3.jpg" alt="" class="card--image-img" /></div>
                 </div>
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9823.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/4.jpg" alt="" class="card--image-img" /></div>
                 </div>
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9844.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/5.jpg" alt="" class="card--image-img" /></div>
                 </div>
                 <div class="card inline alt-margins" data-flatr="news 1790">
-                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/IMG_9846.jpg" alt="" class="card--image-img" /></div>
-                    <div class="tag green">BORK C500</div>
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/6.jpg" alt="" class="card--image-img" /></div>
+                </div>
+                <div class="card inline alt-margins" data-flatr="news 1790">
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/7.jpg" alt="" class="card--image-img" /></div>
+                </div>
+                <div class="card inline alt-margins" data-flatr="news 1790">
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/8.jpg" alt="" class="card--image-img" /></div>
+                </div>
+                <div class="card inline alt-margins" data-flatr="news 1790">
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/9.jpg" alt="" class="card--image-img" /></div>
+                </div>
+                <div class="card inline alt-margins" data-flatr="news 1790">
+                    <div class="img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/raboti/10.jpg" alt="" class="card--image-img" /></div>
                 </div>
             </div>
         </div>

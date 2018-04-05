@@ -46,7 +46,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\componen
             <circle id='circle17' class='circle17 steap' cx="20%" cy="49%" r="580"  />
             <circle id='circle18' class='circle18 steap' cx="20%" cy="49%" r="660"  />
         </svg>
-        <div id="slide1" class="slide1 up1">
+        <div id="slide1" class="slide1">
             <h1><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
             <?= $page['description']; ?>
         </div>

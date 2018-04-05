@@ -2,11 +2,11 @@
 <div class="aside-layout container mb166">
     <div class="row sticky-parent">
         <aside class="aside float--left col-xs-12 col-md-4" data-stick="true">
-            <div class="aside--inner sm-reverse lg-pr">
-                <div class="mb">
-                    <?= tnv\widgets\other\LeftMenu::widget(); ?>
-                </div>
-            </div>
+            <div class="col-xs-12 col-sm-6 col-md-12" data-stick="true">
+                        <h4 class="wide-slider--title"><span class="">Заказать звонок</span></h4>
+                        <div class="main-calc--text"><span class="">Если Вам необходим ремонт кофемашины, заполните поле ниже и мы Вам перезвоним в течении 5 минут для согласования всех предоставляемых услуг.</span></div>
+                        <?= tnv\widgets\forms\InnerForm::widget(); ?>
+                    </div>
         </aside>
         <div class="page float--right col-xs-12 col-md-8">
             <div data-flatr="webpage 46">
@@ -27,8 +27,7 @@
                         </div>
                      </div>
                      <div class="col-xs-7 col-sm-5 col-md-4 col-lg-5">
-                        <div class="con-equipment--installment hidden-md">или в рассрочку<br> на год за 300 р/мес<i data-toggle="tooltip" data-placement="top" title="" class="helper icon-help" data-original-title="Приобретайте оборудование в рассрочку. Первый платеж составляет 0 руб. Ежемесячный платеж со второго месяца составит всего 300 руб/мес. Срок предоставления рассрочки 20 месяцев."></i></div>
-                        <div class="con-equipment--installment visible-md">Рассрочка<i data-toggle="tooltip" data-placement="top" title="" class="helper icon-help" data-original-title="Подсказка"></i></div>
+                        
                      </div>
                      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
                         <div class="con-equipment--btn"><a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Заказать</a></div>

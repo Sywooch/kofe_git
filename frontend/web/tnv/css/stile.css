@@ -3005,6 +3005,7 @@ button {
   top: auto;
   right: auto;
   bottom: auto;
+  line-height: 61px;
   left: auto;
 }
 .header--user-toggle-arrow {
@@ -3122,6 +3123,7 @@ button {
 }
 .header--region-label.blue {
   color: #38398d;
+  margin-left: 4px;
 }
 @media (min-width: 1176px) {
   .header--region-label.blue {
@@ -3183,7 +3185,6 @@ button {
 @media (max-width: 767px) {
   .header--region {
     overflow: hidden;
-    max-width: 48%;
     max-height: initial;
   }
 }
@@ -3855,6 +3856,7 @@ button {
 .service-nav--toggle-icon.down {
   display: inline-block;
   vertical-align: top;
+  line-height: 43px;
 }
 .service-nav--toggle.active .service-nav--toggle-icon.up {
   display: inline-block;
@@ -4510,6 +4512,11 @@ button {
   font-weight: 700;
   max-width: calc(100% - 60px);
   max-height: initial;
+}
+@media (max-width: 540px) {
+  .wide-slider--stitle {
+    font-size: 15px;
+  }
 }
 .wide-slider--container {
   overflow-x: hidden;
@@ -5204,7 +5211,7 @@ button {
 }
 .page--title {
   margin: 0 0 25px;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 40px;
   font-weight: 400;
 }
@@ -5239,11 +5246,11 @@ button {
   line-height: 28px;
 }
 .aside-layout {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 @media (min-width: 1176px) {
   .aside-layout {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 }
 .aside--inner {
