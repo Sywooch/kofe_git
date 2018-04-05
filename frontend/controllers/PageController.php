@@ -224,7 +224,7 @@ class PageController extends CController {
         if (!empty(CController::$js['robots']))
             $robots = CController::$js['robots'];
         header("Content-Type: text/plain");
-        echo str_replace(["User-agent: Googlebot", 'User-agent: Yandex', 'User-agent: *'], ["User-agent: Googlebot\r\nDisallow: *?\r\n", "User-agent: Yandex\r\nDisallow: *?\r\n", "User-agent: *\r\nDisallow: *?\r\n"], $robots);
+        echo str_replace(["User-agent: Googlebot", 'User-agent: Yandex', 'User-agent: *'], ["User-agent: Googlebot\r\nDisallow: *?", "User-agent: Yandex\r\nDisallow: *?", "User-agent: *\r\nDisallow: *?"], $robots);
         exit;
     }
 
