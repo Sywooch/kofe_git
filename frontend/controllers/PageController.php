@@ -224,7 +224,7 @@ class PageController extends CController {
         if (!empty(CController::$js['robots']))
             $robots = CController::$js['robots'];
         header("Content-Type: text/plain");
-        echo $robots;
+        echo $robots . "\r\nDisallow: *?";
         exit;
     }
 
