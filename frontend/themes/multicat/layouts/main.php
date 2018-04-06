@@ -142,7 +142,7 @@ $domain = str_replace('admin.', '', $domain);
                                     <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
                                         <?php if (strpos($domain, '.repair') !== false): ?>
-                                            <p>г. Санкт-Петербурге, ул. Ефимова, ТЦ "Пик"</p>
+                                            <p>г. Санкт-Петербург, ул. Ефимова, ТЦ "Пик"</p>
                                         <?php else: ?>
                                             <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
                                         <?php endif; ?>
