@@ -21,7 +21,7 @@ $domain = str_replace('admin.', '', $domain);
         <img src="<?= $assets ?>/multicat/images/<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb/' : '' ?>gl-master.png" alt="">
         <div class="comment-gl">
             <?php if (strpos($domain, '.repair') !== false): ?>
-                <p>Сервисный центр BORK починил мою технику и выдал мне гарантию на целый год! А также дали множество советов, которые продлят работу техники на долгие годы. Если и есть хорошие сервисный центр - то это они!</p>
+                <p>Сервисный центр <?= \app\components\CController::$monoBrand['title']; ?> починил мою технику и выдал мне гарантию на целый год! А также дали множество советов, которые продлят работу техники на долгие годы. Если и есть хороший сервисный центр - то это они!</p>
                 <span class="name colortext">Екатерина Белова</span>
                 <span class="nick">Клиент сервисного центра</span>
             <?php else: ?>
