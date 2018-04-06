@@ -14,6 +14,8 @@ $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
+$domain = $_SERVER['SERVER_NAME'];
+$domain = str_replace('admin.', '', $domain);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -79,8 +81,13 @@ $js = app\components\CController::$js;
                 <div class="topcontactinfo <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">
                     <div class="boxcontact">
                         <div class="left">
-                            <a href="/kontakty">г. Санкт-Петербург, ул. Ефимова</a>
-                            <span class="times">ТЦ "Пик"</span>
+                            <?php if (strpos($domain, '.repair') !== false): ?>
+                                <a href="/kontakty">г. Санкт-Петербург, ул. Ефимова</a>
+                                <span class="times">ТЦ "Пик"</span>
+                            <?php else: ?>
+                                <a href="/kontakty">г. Москва, ул. Барклая, 8.</a>
+                                <span class="times">ТЦ "Горбушка", павильон 217.</span>
+                            <?php endif; ?>
                         </div>
                         <div class="right">
                             <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
@@ -128,18 +135,27 @@ $js = app\components\CController::$js;
                         <div class="title">Наш сервисный центр</div>
                         <div class="content">
                             <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Спасская</a></li>
+                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Багратионовская</a></li>
                             </ul>
                             <div id="local1" class="footer-map active">
                                 <div class="info">
                                     <div class="img"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?>.jpg" alt=""></div>
                                     <div class="text">
-                                        <p>г. Санкт-Петербург, ул. Ефимова, ТЦ "Пик"</p>
+                                        <?php if (strpos($domain, '.repair') !== false): ?>
+                                            <p>г. Санкт-Петербурге, ул. Ефимова, ТЦ "Пик"</p>
+                                        <?php else: ?>
+                                            <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
+                                        <?php endif; ?>
+
                                         <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         <span>Ежедневно с 09:00 до 20:00</span>
                                     </div>
                                 </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac87b88869fa43f105708b90817caf31e7368b8b3777d377866f0e45ed6b86d84&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <?php if (strpos($domain, '.repair') !== false): ?>
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac87b88869fa43f105708b90817caf31e7368b8b3777d377866f0e45ed6b86d84&amp;width=780&amp;height=253&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <?php else: ?>
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A03f102fa2cd31744e0f04472e92d78d74b67f3fe56752d25ee4a17e8616a4368&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script></script>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
