@@ -12,7 +12,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
                     <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     <div class="text">
                         <div class="name"><?= $service['title']; ?></div>
-                        <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>
+                        <div class="description"><?= $service['description']; ?></div>
                     </div>
                     <div class="price">
                         <div class="value">от <?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>

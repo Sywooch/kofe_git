@@ -163,15 +163,20 @@ a:hover {
     float: right;
     padding-right: 0
 }
+@media (max-width: 767px) {
+    #main-menu ul li:last-child {
+        float: none;
+    }
+}
 #main-menu ul li {
     padding: 5px 2% 5px 0px;
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1150px) {
     #main-menu ul li {
-        padding: 5px 1% 5px 0px;
+        padding: 5px 0px 5px 0px;
     }
 }
-@media (min-width: 767px) and (max-width: 1120px) {
+@media (min-width: 767px) and (max-width: 1150px) {
     #main-menu {
         white-space: nowrap;
         overflow-x: auto ! important;
@@ -1465,3 +1470,11 @@ button {
     margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+    .navbar-toggle {
+        border: 1px solid #fff;
+    }
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+}

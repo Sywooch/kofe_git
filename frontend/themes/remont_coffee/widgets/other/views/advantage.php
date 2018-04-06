@@ -1,7 +1,7 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-?><div class="container hidden-sm hidden-xs">
+?><div class="container glavniy-osobinnisti">
     <div class="futures">
         <div class="col-xs-4 mobile"><a href="#">Оперативный ремонт<br /> кофемашин</a></div>
         <div class="col-xs-4 delivery"><a href="#">Бесплатная доставка в сервис и обратно</a></div>

@@ -11,7 +11,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     <div class="text">
                         <div class="name"><?= $service['title']; ?></div>
-                        <div class="description hidden-sm hidden-xs"><?= $service['description']; ?></div>
+                        <div class="description"><?= $service['description']; ?></div>
                     </div>
                     <div class="price">
                         <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
