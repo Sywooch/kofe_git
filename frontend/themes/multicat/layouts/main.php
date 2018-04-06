@@ -135,7 +135,7 @@ $domain = str_replace('admin.', '', $domain);
                         <div class="title">Наш сервисный центр</div>
                         <div class="content">
                             <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Багратионовская</a></li>
+                                <li class="active"><a onclick="return false;" href="#" data-tab="local1"><?php if (strpos($domain, '.repair') !== false): ?>Спасская<?php else: ?>Багратионовская<?php endif; ?></a></li>
                             </ul>
                             <div id="local1" class="footer-map active">
                                 <div class="info">

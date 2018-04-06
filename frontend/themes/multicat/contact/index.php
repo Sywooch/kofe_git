@@ -14,7 +14,11 @@ $domain = str_replace('admin.', '', $domain);
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
+                    <?php if (strpos($domain, '.repair') !== false): ?>
+                        <p>г. Санкт-Петербург, ул. Ефимова, ТЦ "Пик"</p>
+                    <?php else: ?>
+                        <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
+                    <?php endif; ?>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
