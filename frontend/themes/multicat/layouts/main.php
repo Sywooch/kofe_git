@@ -128,7 +128,7 @@ $js = app\components\CController::$js;
                         <div class="title">Наш сервисный центр</div>
                         <div class="content">
                             <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Багратионовская</a></li>
+                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">Спасская</a></li>
                             </ul>
                             <div id="local1" class="footer-map active">
                                 <div class="info">
