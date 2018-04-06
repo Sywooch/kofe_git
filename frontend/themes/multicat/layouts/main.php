@@ -86,7 +86,7 @@ $domain = str_replace('admin.', '', $domain);
                                 <span class="times">ТЦ "Пик"</span>
                             <?php else: ?>
                                 <a href="/kontakty">г. Москва, ул. Барклая, 8.</a>
-                                <span class="times">ТЦ "Горбушка", павильон 217.</span>
+                                <span class="times">ТЦ "Горбушка", этаж 2.</span>
                             <?php endif; ?>
                         </div>
                         <div class="right">
@@ -144,7 +144,7 @@ $domain = str_replace('admin.', '', $domain);
                                         <?php if (strpos($domain, '.repair') !== false): ?>
                                             <p>г. Санкт-Петербург, ул. Ефимова, ТЦ "Пик"</p>
                                         <?php else: ?>
-                                            <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
+                                            <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
                                         <?php endif; ?>
 
                                         <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>

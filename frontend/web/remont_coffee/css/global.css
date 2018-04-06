@@ -1882,6 +1882,11 @@ a:hover {
     align-items: center;
     -webkit-align-items: center;
 }
+@media (max-width: 660px) {
+    .width-img {
+        flex-wrap: wrap;
+    }
+}
 .width-img .img {
     max-width: 260px;
     width: 260px;
@@ -1891,10 +1896,23 @@ a:hover {
     height: 180px;
     text-align: center;
 }
+@media (max-width: 660px) {
+    .width-img .img {
+        text-align: center;
+        width: 100%;
+        display: block;
+        min-width: 100%;
+    }
+}
 .width-img .img img {
     max-width: 100%;
     margin-top: -13px;
     max-height: 260px;
+}
+@media (max-width: 660px) {
+    .width-img .img img {
+        max-width: 80%;
+    }
 }
 .full-text p {
     line-height: 1.7;
@@ -2296,11 +2314,6 @@ summary {
 }
 @media (max-width: 767px) {
     .ofer-right {
-        width: 40%;
-    }
-}
-@media (max-width: 660px) {
-    .ofer-right {
         width: 100%;
     }
 }
@@ -2379,7 +2392,7 @@ summary {
     background-size: auto 65%;
 }
 }
-@media (max-width: 660px) {
+@media (max-width: 767px) {
     .ofer-button {
         width: 100%;
         margin-top: 10px;
@@ -2567,12 +2580,16 @@ summary {
     font-size: 24px;
     line-height: 50px;
 }
+.tel-nav:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 @media (max-width: 540px) {
     .tel-nav {
     display: block;
 }
 }
-@media (max-width: 660px) {
+@media (max-width: 1000px) {
 .glavniy-osobinnisti {
     display: none;
 }
