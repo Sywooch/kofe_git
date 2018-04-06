@@ -12,7 +12,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2, павильон 217.</p>
+                    <p>г. Санкт-Петербург, ул. Ефимова, ТЦ "Пик"</p>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
@@ -31,13 +31,13 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                     </div>
                     <div class="peshkom info">
                         <span>Пешком\На Автомобиле:</span>
-                        <p>Выходите со станции Багратионовская и направляетесь по улице Барклая в сторону Горбушки. Пройдя бизнец центр "Рубин", по левую сторону будет вход в ТЦ Горбушка. Поднимаетесь на 2 этаж. Наш сервисный центр расположен в 217 павилионе.</p>
+                        <p>При движении по Садовой улице в сторону Невского проспекта, доезжаете до станции Садовая, справа от Вас находится Торговый Развлекательный Центр ПИК.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="bigmap">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2edf6943824b06741f664c9b7e6d0e8c2b2bfb596dd1eadab5b85b8cbafc188&amp;width=100%25&amp;height=525&amp;lang=ru_RU&amp;scroll=true"></script></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac87b88869fa43f105708b90817caf31e7368b8b3777d377866f0e45ed6b86d84&amp;width=100%&amp;height=525&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </div>
 </section>
