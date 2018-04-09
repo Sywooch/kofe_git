@@ -18,7 +18,7 @@ class ZoneController extends CController {
         $pageInfo = $_GET['data'];
         $siteConfig = self::getSiteConfig();
         if ($pageInfo['site_id'] > 0 && $pageInfo['site_id'] != $siteConfig['id'])
-            throw new NotFoundHttpException('The requested page does not exist.');
+            throw new \yii\web\NotFoundHttpException('The requested page does not exist.');
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
 //            'content' => $pageInfo['meta_key']
