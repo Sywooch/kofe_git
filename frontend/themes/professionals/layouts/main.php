@@ -57,74 +57,7 @@ $js = app\components\CController::$js;
                     <div class="col-lg-12 col-md-12 col-sm-12 col-sx-24">
                         <h2 class="title title__2">Ремонт кофемашин в Москве</h2>
                         <div class="reviews-list" id="reviews-slider2">
-                            <div class="review">
-                                <a href="/aviamotornaya"> Авиамоторная</a>
-                                <a href="/avtozavodskaya"> Автозаводская</a>
-                                <a href="/akademicheskaya"> Академическая</a>
-                                <a href="/alekseevskaya"> Алексеевская</a>
-                                <a href="/alma-atinskaya"> Алма атинская</a>
-                                <a href="/altufevo"> Алтуфьево</a>
-                                <a href="/annino"> Аннино</a>
-                                <a href="/arbatskaya"> Арбатская</a>
-                                <a href="/aehroport"> Аэропорт</a>
-                                <a href="/babushkinskaya"> Бабушкинская</a>
-                                <a href="/bagrationovskaya"> Багратионовская</a>
-                                <a href="/barrikadnaya"> Баррикадная</a>
-                                <a href="/baumanskaya"> Бауманская</a>
-                                <a href="/begovaya"> Беговая</a>
-                                <a href="/belorusskaya"> Белорусская</a>
-                            </div>    
-                            <div class="review">
-                                <a href="/belyaevo"> Беляево</a>
-                                <a href="/bibirevo"> Бибирево</a>
-                                <a href="/bitcevskij-park"> Битцевский парк</a>
-                                <a href="/borisovo"> Борисово</a>
-                                <a href="/borovickaya"> Боровицкая</a>
-                                <a href="/bratislavskaya"> Братиславская</a>
-                                <a href="/bulvar-ushakova"> Бульвар ушакова</a>
-                                <a href="/buninskaya-alleya"> Бунинская аллея</a>
-                                <a href="/varshavskaya"> Варшавская</a>
-                                <a href="/vdnh"> ВДНХ</a>
-                                <a href="/vladykino"> Владыкино</a>
-                                <a href="/vodnyj-stadion"> Водный стадион</a>
-                                <a href="/vojkovskaya"> Войковская</a>
-                                <a href="/volzhskaya"> Волжская</a>
-                                <a href="/volokolamskaya"> Волоколамская</a>
-                            </div>
-                            <div class="review">
-                                <a href="/vorobevy-gory"> Воробьевы горы</a>
-                                <a href="/vystavochnaya"> Выставочная</a>
-                                <a href="/vyhino"> Выхино</a>
-                                <a href="/delovoj-centr"> Деловой центр</a>
-                                <a href="/dinamo"> Динамо</a>
-                                <a href="/dmitrovskaya"> Дмитровская</a>
-                                <a href="/dobryninskaya"> Добрынинская</a>
-                                <a href="/domodedovskaya"> Домодедовская</a>
-                                <a href="/dostoevskaya"> Достоевская</a>
-                                <a href="/dubrovka"> Дубровка</a>
-                                <a href="/zhulebino"> Жулебино</a>
-                                <a href="/zyablikovo"> Зябликово</a>
-                                <a href="/izmajlovskaya"> Измайловская</a>
-                                <a href="/kaluzhskaya"> Калужская</a>
-                                <a href="/kantemirovskaya"> Кантемировская</a>
-                            </div>    
-                            <div class="review">
-                                <a href="/kahovskaya"> Каховская</a>
-                                <a href="/kashirskaya"> Каширская</a>
-                                <a href="/kievskaya"> Киевская</a>
-                                <a href="/kitaj-gorod"> Китай город</a>
-                                <a href="/kozhuhovskaya"> Кожуховская</a>
-                                <a href="/kolomenskaya"> Коломенская</a>
-                                <a href="/komsomolskaya"> Комсомольская</a>
-                                <a href="/konkovo"> Коньково</a>
-                                <a href="/kotelniki"> Котельники</a>
-                                <a href="/krasnoselskaya"> Красносельская</a>
-                                <a href="/krasnye-vorota"> Красные ворота</a>
-                                <a href="/kropotkinskaya"> Кропоткинская</a>
-                                <a href="/krylatskoe"> Крылатское</a>
-                                <a href="/kuzneckij-most"> Кузнецкий мост</a>
-                                <a href="/kuzminki"> Кузьминки</a>
-                            </div>                 
+                            <?= professionals\widgets\other\Subways::widget(); ?>               
                         </div>
                     </div>
                 </div>
