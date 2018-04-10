@@ -24,7 +24,7 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="icon" type="image/x-icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico">
+        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.carousel.css" rel="stylesheet" media="all" />
