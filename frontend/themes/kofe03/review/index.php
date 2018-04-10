@@ -109,7 +109,7 @@ $form = ActiveForm::begin([
                 <div class="clear"></div>                
                 <label class="form_yelem form_yelem-inp form__element_valid">
                     <div class="form_r Form-row-sub">
-                        <?= Html::submitInput('Отправить', ['class' => 'button button_success button_text button_big']) ?>
+                        <?= Html::submitButton('Отправить', ['class' => 'm_btn btn_war Btn-w Btn-big Btn-txt']) ?>
                     </div>
                 </label>
                 <?php ActiveForm::end() ?>
