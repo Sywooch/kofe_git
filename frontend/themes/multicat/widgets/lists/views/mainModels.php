@@ -17,7 +17,7 @@
 
                    <?php if($bitta): ?>
                   <?php endif; ?>
-                  <li><a href="/<?= $row['url']; ?>" class="icon icon-home"><?= $row['icon']; ?><span>Ремонт <?= mb_strtolower($page['full_title'], 'utf8') ?></span></a></li>
+                  <li><a href="/<?= $row['url']; ?>" class="icon icon-home"><?= $row['icon']; ?><span>Ремонт <?= mb_strtolower($row['full_title'], 'utf8'); ?></span></a></li>
                <?php endforeach; ?>
             </ul>
          </nav>
