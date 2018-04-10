@@ -1,7 +1,7 @@
 <?php 
 $breadcrumbs = [
-    '/' . $brand['url'] => $brand['full_title'],
-    $pageInfo['title'],
+    '/' . $brand['url'] => 'Ремонт ' . mb_strtolower($brand['full_title'], 'utf8'),
+    'Ремонт ' . \app\components\CController::$monoBrand['title'] . ' ' . mb_strtolower($pageInfo['title'], 'utf8')
 ];
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
 $p = app\components\CController::$category;
