@@ -18,7 +18,7 @@ class ReviewController extends CController {
         $model = new \app\models\Reviews();
         $model->date = date('Y-m-d H:i:s');
         $model->active = 0;
-        $model->site_id = $siteConfig['id'];
+        //$model->site_id = $siteConfig['id'];
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $model->save(false);
             Yii::$app->getSession()->setFlash('review', 'seccess');
