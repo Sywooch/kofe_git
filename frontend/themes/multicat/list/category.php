@@ -1,7 +1,7 @@
 <?php 
 $assets = Yii::getAlias('@web');
-$breadcrumbs = [
-    $page['full_title'],
+$breadcrumbs = [    
+    'Ремонт ' . mb_strtolower($page['full_title'], 'utf8'),
 ];
 $this->title = !empty($page['meta_title']) ? $page['meta_title'] : $title;
 
