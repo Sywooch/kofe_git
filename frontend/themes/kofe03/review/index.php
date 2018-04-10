@@ -81,10 +81,10 @@ $form = ActiveForm::begin([
                 ?>
                 <div class="form_r">
                     <label class="form_yelem form_yelem-inp">
-                        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form__input form__input_big']) ?>
+                        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Ваше имя', 'class' => 'form_input form__input_big']) ?>
                     </label>
                     <label class="form_yelem form_yelem-inp">
-                        <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form__input form__input_big']) ?>
+                        <?= $form->field($model, 'email')->textInput(['placeholder' => 'Номер заказа', 'class' => 'form_input form__input_big']) ?>
                     </label>
                     <label class="form_yelem form_yelem-inp form__element_valid">
                         <?=
