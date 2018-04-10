@@ -188,6 +188,12 @@ class CController extends \yii\web\Controller {
                 'help' => ['name' => 'MSKM3', 'OID' => 2202775576000],
                 'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
                 'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
+                
+                'multicat_xiaomi_spb' => ['name' => 'SPBS2', 'OID' => 2202776480000],
+                'multicat_ifixme_msk' => ['name' => 'MSKS3', 'OID' => 2202775572000],
+                'multicat_ifixme_spb' => ['name' => 'SPBS3', 'OID' => 2202776490000],
+                'remont_coffee' => ['name' => 'MSKM5', 'OID' => 2207167003000],
+                'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
