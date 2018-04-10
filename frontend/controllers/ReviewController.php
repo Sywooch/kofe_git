@@ -16,8 +16,12 @@ class ReviewController extends CController {
         $siteConfig = self::getSiteConfig();
         $pageInfo = $_GET['data'];
         $model = new \app\models\Reviews();
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            Yii::$app->getSession()->setFlash('success', 'seccess');
+        $model->date = date('Y-m-d H:i:s');
+        $model->active = 0;
+        $model->site_id = $siteConfig['id'];
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->save(false);
+            Yii::$app->getSession()->setFlash('review', 'seccess');
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',

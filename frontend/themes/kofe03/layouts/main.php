@@ -308,10 +308,10 @@ $js = app\components\CController::$js;
             <div class="popup popup_request_full">
                 <div class="popup__bg"></div>
                 <div class="popup__main">
-                    <h3 class="form_t">Заявка отправлена</h3>
+                    <h3 class="form_t"><?= Yii::$app->session->getFlash('review') ? 'Отзыв отправлен' : 'Заявка отправлена' ?></h3>
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/tick.svg" />
                     <p class="form__text">
-                        Спасибо за заявку, наш оператор свяжется с вами в течение 30 минут.
+                        <?= Yii::$app->session->getFlash('review') ? 'Спасибо за отзыв. Он будет проверен и опубликован в ближайшее время.' : 'Спасибо за заявку, наш оператор свяжется с вами в течение 30 минут.' ?>
                     </p>
                     <div class="popup__close"></div>
                 </div>
@@ -341,7 +341,7 @@ $js = app\components\CController::$js;
 </html>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/<?= $siteConfig['mainJSFileName']; ?>.js?v=7"></script>
 <?php
-if (Yii::$app->session->getFlash('success')) {
+if (Yii::$app->session->getFlash('success') || Yii::$app->session->getFlash('review')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
 }
 ?>
