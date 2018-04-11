@@ -389,6 +389,9 @@ class PageController extends CController {
         foreach ($pages as $key => $page) {
             $urls[] = $page;
             if ($page['type'] == 'category' || $page['type'] == 'model') {
+                if ($siteConfig['id'] == 113 && $page['type'] == 'model') {
+                    continue;
+                }
                 $parent = [];
                 if ($page['type'] == 'model')
                     $parent = Yii::$app->db->createCommand('SELECT category_id FROM {{%pages}} WHERE id = ' . $page['parent'])->queryOne();
