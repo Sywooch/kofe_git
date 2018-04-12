@@ -120,6 +120,11 @@ class ListController extends CController {
         $b = null;
 
         if (count($url) > 1) {
+            if ($siteConfig['id'] == 113) {
+                $url = Yii::$app->request->pathInfo;
+                $url = explode('/', $url);
+                return $this->redirect('/' . $url[0], 301);
+            }
             $arrayUrl = $url;
             array_pop($url);
             if ($siteConfig['mono']) {
@@ -556,12 +561,18 @@ class ListController extends CController {
     }
 
     public function actionModel() {
+        $siteConfig = self::getSiteConfig();
+        if ($siteConfig['id'] == 113) {
+            $url = Yii::$app->request->pathInfo;
+            $url = explode('/', $url);
+            return $this->redirect('/' . $url[0], 301);
+        }
         $pageInfo = $_GET['data'];
         $brand = Yii::$app->db->createCommand('SELECT id, url, title, full_title, image FROM {{%pages}} WHERE id = ' . (int) $pageInfo['parent'] . ' LIMIT 1')->queryOne();
         $regionTitle = Yii::$app->session['region']['titleRod'];
         if (Yii::$app->session['region']['titleRod'] == 'Москве')
             $regionTitle = 'Москве и МО';
-        $siteConfig = self::getSiteConfig();
+
         if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
             $categorySEO = [
                 1 => [
