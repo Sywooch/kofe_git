@@ -3305,7 +3305,7 @@ label.counter {
   margin: 0 5px -100% 0;
 }
 .counter.mini .counter--digits {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 19px;
   font-weight: 400;
 }
@@ -5565,7 +5565,8 @@ a.tags--item:hover {
 .richtext iframe {
   max-width: 100%;
 }
-.richtext p {
+.richtext p,
+.richtext li {
   color: rgba(54, 54, 54, 0.8);
   margin: 0 0 28px;
   clear: both;
@@ -11355,28 +11356,28 @@ a.tv-schedule--item-title:focus {
 .main-links--item-icon {
   background-size: auto 100%;
   margin: 0 auto 24px;
-  background-image: url('../images/main-links--icon.svg');
+  background-image: url('../images/icons.png');
   display: block;
   width: 48px;
   height: 47px;
 }
 .main-links--item-icon.i1 {
-  background-position: 0 0;
+  background-position: -188px 0;
 }
 .main-links--item-icon.i2 {
-  background-position: -48px 0;
+  background-position: -141px 0;
 }
 .main-links--item-icon.i3 {
-  background-position: -96px 0;
+  background-position: -236px 0;
 }
 .main-links--item-icon.i4 {
-  background-position: -144px 0;
+  background-position: -46px 0;
 }
 .main-links--item-icon.i5 {
-  background-position: -192px 0;
+  background-position: 0 0;
 }
 .main-links--item-icon.i6 {
-  background-position: -240px 0;
+  background-position: -94px 0;
 }
 .main-links--item-label {
   transform: translate(0, -50%);
@@ -11680,7 +11681,8 @@ a.tv-schedule--item-title:focus {
   text-align: center;
 }
 .film-box--img-cont img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
 }
 .film-box--img {
   vertical-align: bottom;

@@ -49,3 +49,18 @@ $form = ActiveForm::begin([
         </div>
     </div>
 </div>
+
+<div id="vibrat-region" tabindex="-1" role="dialog" class="modal iframe fade">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" data-dismiss="modal" aria-label="Close" class="modal--close"><span class="modal--close-label visible-xs">Закрыть</span><i class="modal--close-icon"></i></a>
+                <div class="modal--title"> Выберите регион  </div>
+            </div>
+            <div class="modal-body modal-form mb">
+               <a class="sec-nav--item-l active" href="#">МОСКВА И ОБЛАСТЬ</a>
+               <a class="sec-nav--item-l" style="border-bottom:1px solid #d8dcde;" href="#">САНКТ-ПЕТЕРБУРГ</a>
+            </div>
+        </div>
+    </div>
+</div>

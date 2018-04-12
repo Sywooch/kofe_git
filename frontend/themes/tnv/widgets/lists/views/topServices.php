@@ -12,11 +12,11 @@
             </div>
             <div class="col-xs-12 col-md-8">
                 <div class="main-links--grid row nogutter">
-                    <?php foreach ($services as $service): ?>
+                    <?php foreach ($services as $key => $service): ?>
                         <div class="col-xs-6 col-sm-4">
                             <a href="/<?= $service['url']; ?>" class="main-links--item" data-ga-type="<?= $service['title']; ?>" data-ga-event="<?= $service['title']; ?>">
                                 <span class="main-links--item-label">
-                                    <i class="main-links--item-icon i1"></i>
+                                    <i class="main-links--item-icon i<?= ++$key; ?>"></i>
                                     <?= $service['title']; ?>
                                     <span>от <?= number_format($service['price'], 0, ' ', ' '); ?>₽</span>
                                 </span>
