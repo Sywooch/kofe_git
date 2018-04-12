@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 $breadcrumbs = [
-    $model['title'],
+    $pageInfo['title'],
 ];
 ?>
 <?= tnv\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
@@ -18,9 +18,9 @@ $breadcrumbs = [
         </aside>
         <div class="page float--right col-xs-12 col-md-8">
             <div data-flatr="webpage 46">
-                <h1 class="page--title"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
+                <h1 class="page--title"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
                 <div class="richtext">
-                    <div class="text"><?= $model['description']; ?></div>
+                    <div class="text"><?= $pageInfo['description']; ?></div>
                     <div class="row">
                         <?php
 
