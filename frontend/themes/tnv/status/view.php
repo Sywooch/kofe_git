@@ -30,7 +30,7 @@ $breadcrumbs = [
 
 $form = ActiveForm::begin([
                                     'id' => 'status-form',
-                                    'options' => ['class' => 'form form_feedback ajax_form'],
+                                    //'options' => ['class' => 'form form_feedback ajax_form'],
                                     'enableClientValidation' => true,
                                     'fieldConfig' => [
                                         'template' => '{input}',
@@ -38,7 +38,7 @@ $form = ActiveForm::begin([
                         ]);
                         ?>
                         <label class="col-xs-12 col-md-6">
-                            <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form_input  form__input_big', 'placeholder' => 'Номер заказа']); ?>
+                            <?= $form->field($model, 'orderNumber')->textInput(['class' => 'form-control', 'placeholder' => 'Номер заказа']); ?>
                         </label>
                         <label class="col-xs-12 col-md-6">
                             <?=
@@ -47,7 +47,7 @@ $form = ActiveForm::begin([
                                 'mask' => '+7 (999) 999-99-99',
                                 'options' => [
                                     'placeholder' => '+7 (___) ___-__-__',
-                                    'class' => 'form_input form__input_big Form-inp-ph-m', 'type' => 'tel',
+                                    'class' => 'form-control', 'type' => 'tel',
                                     'size' => 40,
                                 ],
                             ])->label('')
