@@ -12,7 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <div class="main-waist--text">
                             <p>Инженеры сервисного центра, которые за 2017 год провели наибольший ремонт кофемашин. Каждый инженер имеет сертификат международного образца, который позволяет ремонтировать кофемашины всех брендов!</p>
                         </div>
-                        <div class="main-waist--btns"><a href="#" class="btn btn-primary btn-lg">Онлайн заявка</a></div>
+                        <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a>
                     </div>
                 </div>
             </div>
@@ -24,19 +24,19 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="wide-slider--scroller">
                         <div class="film-box">
                             <div class="film-box--img-cont"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/master/1.jpg" class="film-box--img" /></div>
-                            <div class="film-box--desc">C500</div>
+                            <div class="film-box--desc">Зацепин Егор</div>
                         </div>
                         <div class="film-box">
                             <div class="film-box--img-cont"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/master/2.jpg" class="film-box--img" /></div>
-                            <div class="film-box--desc">C500</div>
+                            <div class="film-box--desc">Черепанцев Владимир</div>
                         </div>
                         <div class="film-box">
                             <div class="film-box--img-cont"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/master/3.jpg" class="film-box--img" /></div>
-                            <div class="film-box--desc">C500</div>
+                            <div class="film-box--desc">Якушин Марат</div>
                         </div>
                         <div class="film-box">
                             <div class="film-box--img-cont"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/master/4.jpg" class="film-box--img" /></div>
-                            <div class="film-box--desc">C500</div>
+                            <div class="film-box--desc">Андреев Евгений</div>
                         </div>
                     </div>
                 </div>

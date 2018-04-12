@@ -26,7 +26,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
                                 <span>от <?= number_format($row['price'], 0, ' ', ' '); ?></span>
                                 <div class="counter--label">руб</div>
                             </div>
-                            <div class="btnmy">Заказать</div>
+                            <div class="btnmy" data-toggle="modal" data-target="#online-zayavkamy">Заказать</div>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
                 <h2 class="wide-slider--title"><span class="">Популярные модели</span></h2>
                 <div class="richtext wide-slider--text">
                     <p>Самые популярные модели, которые ремонтируются в нашем сервисном центре. Кстати, если в данном списке есть Ваша кофемашины - то Вы получаете <span style="color:red; font-size: 20px;">скидку в размере 30%</span> на ремонт! Мы Вас ждём!</p>
-                    <p><a href="#" class="btn btn-primary btn-lg btn-outline">Онлайн заявка</a></p>
+                    <p><a href="#" class="btn btn-primary btn-lg btn-outline" data-toggle="modal" data-target="#online-zayavkamy">Заказать звонок</a></p>
                 </div>
             </div>
         </div>

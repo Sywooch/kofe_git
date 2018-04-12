@@ -51,24 +51,15 @@ $js = app\components\CController::$js;
                 <div class="container clearfix">
                     <nav class="service-nav float--left hidden-xs hidden-sm">
                         <ul class="service-nav--list">
-                            <li class="service-nav--item"><a href="#" class="service-nav--item-link">Частным лицам</a></li>
-                            <li class="service-nav--item"><a href="#" class="service-nav--item-link">Корпоративным клиентам</a></li>
-                            <li class="service-nav--item"><a href="#" class="service-nav--item-link">Партнерам</a></li>
+                            <li class="service-nav--item"><a href="/chastnim-licam" class="service-nav--item-link">Частным лицам</a></li>
+                            <li class="service-nav--item"><a href="/korporativnim-klientam" class="service-nav--item-link">Корпоративным клиентам</a></li>
+                            <li class="service-nav--item"><a href="/partneram" class="service-nav--item-link">Партнерам</a></li>
                             <li class="service-nav--item"><a href="/about" class="service-nav--item-link">О компании</a></li>
                         </ul>
                     </nav>
                     <div class="header--socials float--left visible-lg">
-                        <a href="#" target="_blank" class="header--socials-item vk">
+                        <a href="https://vk.com/rekofe" target="_blank" class="header--socials-item vk">
                             <i class="icon-vk"></i>
-                        </a>
-                        <a href="#" target="_blank" class="header--socials-item fb">
-                            <i class="icon-fb"></i>
-                        </a>
-                        <a href="#" target="_blank" class="header--socials-item tw">
-                            <i class="icon-tw"></i>
-                        </a>
-                        <a href="#" target="_blank" class="header--socials-item ok">
-                            <i class="icon-ok"></i>
                         </a>
                     </div>
                     <div class="service-nav--drop float--left visible-sm">
@@ -76,9 +67,9 @@ $js = app\components\CController::$js;
                         <div class="service-nav--drop-menu">
                             <div class="service-nav--drop-head"><span class="service-nav--drop-label">Меню</span><i class="service-nav--drop-icon up icon-up"></i></div>
                             <ul class="service-nav--sm-list">
-                                <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Частным лицам</a></li>
-                                <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Корпоративным клиентам</a></li>
-                                <li class="service-nav--sm-item"><a href="#" class="service-nav--sm-item-l">Партнерам</a></li>
+                                <li class="service-nav--sm-item"><a href="/chastnim-licam" class="service-nav--sm-item-l">Частным лицам</a></li>
+                                <li class="service-nav--sm-item"><a href="/korporativnim-klientam" class="service-nav--sm-item-l">Корпоративным клиентам</a></li>
+                                <li class="service-nav--sm-item"><a href="/partneram" class="service-nav--sm-item-l">Партнерам</a></li>
                                 <li class="service-nav--sm-item"><a href="/about" class="service-nav--sm-item-l">О компании</a></li>
                             </ul>
                         </div>
@@ -129,56 +120,9 @@ $js = app\components\CController::$js;
                             </div>
                         </div>
                     </div>
-                    <div class="header--chats hidden-sm">
-                        <div class="header--chats-t">Онлайн</div>
-                        <div class="header--chats-b">
-                            <a class="header--chat" tabindex="0" role="button" data-hover="popover" data-popover-id="WhatsappTooltip" data-placement="bottom">
-                                <i class="icon-whatsapp-o"></i>
-                            </a>
-                            <a class="header--chat" tabindex="0" role="button" data-hover="popover" data-popover-id="SkypeTooltip" data-placement="bottom">
-                                <i class="icon-skype-o"></i>
-                            </a>
-                            <a class="header--chat" tabindex="0" role="button" data-hover="popover" data-popover-id="ViberTooltip" data-placement="bottom">
-                                <i class="icon-viber-o"></i>
-                            </a>
-                            <a class="header--chat" tabindex="0" role="button" data-hover="popover" data-popover-id="TelegramTooltip" data-placement="bottom">
-                                <i class="icon-telegram-o"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="header--chats visible-sm">
-                        <div class="header--chats-t">Онлайн</div>
-                        <div class="header--chats-b"><a class="header--chat" href="#"><i class="icon-whatsapp-o"></i></a></div>
-                        <div class="header--chats-d">
-                            <a class="header--chats-r" href="#">
-                                <i class="icon-whatsapp-o"></i>
-                                <span class="popover-box--chat-t">Whatsapp</span>
-                                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
-                                <span class="popover-box--chat-d">Только в режиме чата</span>
-                            </a>
-                            <a class="header--chats-r" href="#">
-                                <i class="icon-skype-o"></i>
-                                <span class="popover-box--chat-t">Skype</span>
-                                <span class="popover-box--chat-p">ntv-plus.com</span>
-                                <span class="popover-box--chat-d">Чат и звонки</span>
-                            </a>
-                            <a class="header--chats-r" href="#">
-                                <i class="icon-viber-o"></i>
-                                <span class="popover-box--chat-t">Viber</span>
-                                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
-                                <span class="popover-box--chat-d">Только в режиме чата</span>
-                            </a>
-                            <a class="header--chats-r" href="#">
-                                <i class="icon-telegram-o"></i>
-                                <span class="popover-box--chat-t">Telegram</span>
-                                <span class="popover-box--chat-p">ntvplus_bot</span>
-                                <span class="popover-box--chat-d">Только в режиме чата</span>
-                            </a>
-                        </div>
-                    </div>
                     <div class="header--faq">
                         <div class="header--faq-t">Есть вопрос?</div>
-                        <a class="header--faq-l" href="#">Найти ответ</a>
+                        <a class="header--faq-l" href="/vio">Найти ответ</a>
                     </div>
                     <div class="header--user no-auth float--right"><a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a></div>
                 </div>
@@ -200,7 +144,7 @@ $js = app\components\CController::$js;
                     <nav class="m-menu float--left">
                         <ul class="m-menu--list clearfix static">
                             <li class="m-menu--item"><a href="/prices" class="m-menu--item-link">Цены</a></li>
-                            <li class="m-menu--item"><a href="/diagnostika" class="m-menu--item-link">Диагностика</a></li>
+                            <li class="m-menu--item"><a href="/diagnostics" class="m-menu--item-link">Диагностика</a></li>
                             <li class="m-menu--item"><a href="/garantiya" class="m-menu--item-link">Гарантия</a></li>
                             <li class="m-menu--item"><a href="/kontrol-kachestva" class="m-menu--item-link">Контроль качества</a></li>
                             <li class="m-menu--item"><a href="/contacts" class="m-menu--item-link">Контакты</a></li>
@@ -252,23 +196,23 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="col-sm-4 hidden-xs col-md-3">
                             <ul class="footer--list">
-                                <li class="footer--list-head"><a href="buy/index.html" class="footer--list-link">Популярные <br />неисправности</a></li>
-                                <li class="footer--list-item"><a href="buy/gde-kupit.html" class="footer--list-link">Не включается</a></li>
-                                <li class="footer--list-item"><a href="buy/coverage.html" class="footer--list-link">Не мелет кофе</a></li>
-                                <li class="footer--list-item"><a href="buy/actions.html" class="footer--list-link">Протекает</a></li>
-                                <li class="footer--list-item"><a href="buy/coverage.html" class="footer--list-link">Не мелет кофе</a></li>
-                                <li class="footer--list-item"><a href="buy/actions.html" class="footer--list-link">Протекает</a></li>
+                                <li class="footer--list-head"><a href="/prices" class="footer--list-link">Популярные <br />неисправности</a></li>
+                                <li class="footer--list-item"><a href="/ne-vklyuchaetsya" class="footer--list-link">Не включается</a></li>
+                                <li class="footer--list-item"><a href="/ne-podaet-vodu" class="footer--list-link">Не подаёт воду</a></li>
+                                <li class="footer--list-item"><a href="/ne-mеlet-kofe" class="footer--list-link">Не мелет кофе</a></li>
+                                <li class="footer--list-item"><a href="/plokho-techet-kofe" class="footer--list-link">Плохо течет кофе</a></li>
+                                <li class="footer--list-item"><a href="/ne-greet-vodu" class="footer--list-link">Не греет воду</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4 hidden-xs col-md-3">
                             <ul class="footer--list">
-                                <li class="footer--list-head"><a href="channels/index.html" class="footer--list-link">Топовые бренды</a></li>
-                                <li class="footer--list-item"><a href="channels/index.html" class="footer--list-link">Delonghi</a></li>
-                                <li class="footer--list-item"><a href="https://ntvplus.tv/" class="footer--list-link">Jura</a></li>
-                                <li class="footer--list-item"><a href="channels/archive.html" class="footer--list-link">Faema</a></li>
-                                <li class="footer--list-item"><a href="channels/archive.html" class="footer--list-link">Gaggia</a></li>
-                                <li class="footer--list-item"><a href="channels/archive.html" class="footer--list-link">Bork</a></li>
-                                <li class="footer--list-item"><a href="channels/satellite-internet.html" class="footer--list-link">Franke</a></li>
+                                <li class="footer--list-head"><a href="/brands" class="footer--list-link">Топовые бренды</a></li>
+                                <li class="footer--list-item"><a href="/remont-delonghi" class="footer--list-link">Delonghi</a></li>
+                                <li class="footer--list-item"><a href="/remont-franke" class="footer--list-link">Franke</a></li>
+                                <li class="footer--list-item"><a href="/remont-jura" class="footer--list-link">Jura</a></li>
+                                <li class="footer--list-item"><a href="/remont-bosch" class="footer--list-link">Bosch</a></li>
+                                <li class="footer--list-item"><a href="/remont-bork" class="footer--list-link">Bork</a></li>
+                                <li class="footer--list-item"><a href="/remont-saeco" class="footer--list-link">Saeco</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 visible-md visible-lg">
