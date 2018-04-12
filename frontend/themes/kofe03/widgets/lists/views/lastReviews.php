@@ -1,17 +1,18 @@
-<section class="reviews">
+<noindex>
+  <section class="reviews">
     <div class="reviews__inner">
-        <h2 class="ommabob__oshadee">Отзывы</h2>
+        <p class="title_h2 ommabob__oshadee">Отзывы</p>
         <div class="reviews__carousel">
             <div class="swiper-container reviews__slider">
                 <div class="swiper-wrapper reviews__list">
                     <?php foreach ($rows as $row): ?>
                         <article class="swiper-slide reviews__item">
                             <div class="reviews__box">
-                                <h4 class="reviews__name"><?= $row['username']; ?></h4>
+                                <span class="reviews__name title_h4"><?= $row['username']; ?></span>
                                 <div class="reviews__rating reviews__rating_5"></div>
                                 <?= $row['message']; ?>
                                 <div class="reviews__more">
-                                   <a class="reviews__full popup_js" data-popup="review_<?= $row['id']; ?>" href="#">Развернуть</a>
+                                   <a rel="nofollow" class="reviews__full popup_js" data-popup="review_<?= $row['id']; ?>" href="#">Развернуть</a>
                                 </div>
                             </div>
                         </article>
@@ -23,7 +24,7 @@
         </div>
     </div>
     <p class="reviews__actions">
-        <a class="reviews__all" href="/otzyvy">Все отзывы</a>
+        <a rel="nofollow" class="reviews__all" href="/otzyvy">Все отзывы</a>
     </p>
     <?php foreach ($rows as $row): ?>
     <div class="popup popup_reviews popup_review_<?= $row['id']; ?>">
@@ -33,7 +34,7 @@
              <div class="reviews">
                 <div class="reviews__single reviews__single_zoon">
                    <div class="reviews__container">
-                      <h4 class="reviews__name"><?= $row['username']; ?></h4>
+                      <span class="reviews__name title_h4"><?= $row['username']; ?></span>
                       <div class="reviews__rating reviews__rating_5"></div>
                       <div class="reviews__text_popup">
                          <?= $row['message']; ?>
@@ -47,3 +48,4 @@
     </div>
     <?php endforeach; ?>
 </section>
+</noindex>

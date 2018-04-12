@@ -69,38 +69,40 @@ $js = app\components\CController::$js;
                                 </li>
                             </ul>
                         </div>
-                        <div class="navigation_menu navigation_m_p">
-                            <ul class="navigation_l">
-                                <li class="navigation_i">
-                                    <a class="navigation_link" href="/uslugi-i-ceny">Услуги и цены</a>
-                                </li>
-                                <li class="navigation_i">
-                                    <a class="navigation_link" href="/status">Статус ремонта</a>
-                                </li>
-                                <li class="navigation_i">
-                                    <a class="navigation_link" href="/o-kompanii">О компании</a>
-                                </li>
-                                <li class="navigation_i navigation_i_desk">
-                                    <a class="navigation_link" href="/garantiya">Гарантия</a>
-                                </li>
-                                <li class="navigation_i navigation_i_desk">
-                                    <a class="navigation_link" href="/kontakty">Контакты</a>
-                                </li>
-                                <li class="navigation_i navigation_i_m">
-                                    <a class="navigation_link" href="#"><span class="navigation_label">Ещё</span></a>
-                                    <div class="navigation_sub">
-                                        <ul class="navigation_sub_list">
-                                            <li class="navigation_sub_item navigation_sub_act">
-                                                <a class="navigation_sub_link" href="/garantiya">Гарантия</a>
-                                            </li>
-                                            <li class="navigation_sub_item">
-                                                <a class="navigation_sub_link" href="/kontakty">Контакты</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <noindex>
+                            <div class="navigation_menu navigation_m_p">
+                                <ul class="navigation_l">
+                                    <li class="navigation_i">
+                                        <a rel="nofollow" class="navigation_link" href="/uslugi-i-ceny">Услуги и цены</a>
+                                    </li>
+                                    <li class="navigation_i">
+                                        <a rel="nofollow" class="navigation_link" href="/status">Статус ремонта</a>
+                                    </li>
+                                    <li class="navigation_i">
+                                        <a rel="nofollow" class="navigation_link" href="/o-kompanii">О компании</a>
+                                    </li>
+                                    <li class="navigation_i navigation_i_desk">
+                                        <a rel="nofollow" class="navigation_link" href="/garantiya">Гарантия</a>
+                                    </li>
+                                    <li class="navigation_i navigation_i_desk">
+                                        <a rel="nofollow" class="navigation_link" href="/kontakty">Контакты</a>
+                                    </li>
+                                    <li class="navigation_i navigation_i_m">
+                                        <a rel="nofollow" class="navigation_link" href="#"><span class="navigation_label">Ещё</span></a>
+                                        <div class="navigation_sub">
+                                            <ul class="navigation_sub_list">
+                                                <li class="navigation_sub_item navigation_sub_act">
+                                                    <a rel="nofollow" class="navigation_sub_link" href="/garantiya">Гарантия</a>
+                                                </li>
+                                                <li class="navigation_sub_item">
+                                                    <a rel="nofollow" class="navigation_sub_link" href="/kontakty">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </noindex>
                     </div>
                 </nav>
                 <div class="head_f">
@@ -120,33 +122,37 @@ $js = app\components\CController::$js;
                                 </a>
                             </div>
                             <div class="cnct cnct_h">
-                                <div class="cnct_a">
-                                    <span>
-                                        <?= $siteConfig['id'] == 52 ? '
-                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                                        viewBox="0 0 7578 7578"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                                         <g id="Слой_x0020_1">
-                                          <metadata id="CorelCorpID_0Corel-Layer"/>
-                                          <path class="fil0" d="M3789 0c2092,0 3789,1696 3789,3789 0,2092 -1697,3789 -3789,3789 -2093,0 -3789,-1697 -3789,-3789 0,-2093 1696,-3789 3789,-3789zm-2376 3703c0,392 68,670 201,968 79,176 197,383 307,534 21,27 103,147 125,156l1079 -1c-144,-91 -199,-120 -345,-228 -69,-52 -147,-117 -212,-175 -237,-211 -451,-474 -570,-779 -84,-217 -121,-467 -121,-725 0,-427 182,-856 439,-1147 71,-81 187,-218 313,-218 52,0 80,3 127,38 73,54 105,186 131,279 19,71 44,139 65,209l128 415c39,128 88,297 129,419 40,120 89,290 128,415 22,71 44,138 65,210 40,140 89,276 129,418 20,71 45,139 64,209 20,70 45,138 65,209l113 364c6,17 9,38 17,52l193 -625c21,-68 41,-140 64,-209 46,-138 82,-277 128,-415 46,-141 84,-279 129,-419 23,-70 44,-136 64,-206 59,-204 133,-422 194,-627 30,-98 165,-552 201,-621 30,-59 92,-115 158,-115 92,0 145,25 214,83 113,96 273,311 344,446 63,118 116,233 155,373 112,398 84,791 -49,1177 -115,332 -411,661 -674,876 -87,70 -134,102 -220,166 -35,26 -77,54 -115,77l-119 74 1074 1c11,0 27,-24 34,-33l89 -118c112,-151 225,-349 303,-522 115,-253 208,-549 208,-895 0,-301 -33,-620 -140,-901 -46,-122 -82,-216 -147,-330 -239,-419 -544,-707 -961,-948 -52,-30 -103,-53 -158,-80 -66,-32 -131,-49 -170,-67 -66,211 -136,464 -198,677 -67,227 -134,450 -199,677l-149 508c-17,57 -32,113 -50,170 -49,150 -103,348 -149,507 -9,30 -17,57 -25,85l-18 64c-5,15 -3,14 -14,17 -11,-6 -7,-1 -17,-37l-238 -803c-154,-505 -299,-1020 -452,-1527 -17,-58 -33,-111 -50,-169 -7,-26 -44,-158 -53,-169 -145,57 -173,61 -325,147 -199,111 -386,248 -544,406 -217,217 -361,413 -491,698 -76,165 -134,367 -165,547 -23,133 -39,289 -39,438zm2376 -3070c1743,0 3156,1413 3156,3156 0,1743 -1413,3156 -3156,3156 -1743,0 -3156,-1413 -3156,-3156 0,-1743 1413,-3156 3156,-3156zm0 -263c1888,0 3419,1531 3419,3419 0,1888 -1531,3419 -3419,3419 -1888,0 -3419,-1531 -3419,-3419 0,-1888 1531,-3419 3419,-3419z"/>
-                                         </g>
-                                        </svg> м.Сенная, м.Спасская
-                                        ' : '
-                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 153 153" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g id="Слой_x0020_1">
-                                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                                        <path class="fil0" d="M76 0c42,0 77,34 77,76 0,42 -35,77 -77,77 -42,0 -76,-35 -76,-77 0,-42 34,-76 76,-76zm8 68c-4,10 -8,18 -8,18 0,0 -3,-8 -7,-18 -4,-10 -7,-18 -7,-18 0,0 -5,12 -10,26l-10 27 4 0c2,0 4,0 4,0 0,0 3,-8 6,-17 4,-10 7,-17 7,-17 0,0 2,7 6,15 7,21 7,19 7,19 1,0 0,2 8,-19 3,-8 6,-15 6,-15 0,0 3,7 6,17 4,9 7,17 7,17 0,0 1,0 4,0l4 0 -10 -26c-5,-15 -10,-27 -10,-27 0,0 -3,8 -7,18zm-14 -60c-13,2 -25,6 -36,14 -3,2 -10,9 -12,12 -4,6 -8,14 -10,20 -2,3 -3,9 -3,13 -1,4 -1,14 0,19 1,12 6,23 14,33 2,2 8,9 11,11 9,7 21,12 33,14 4,1 14,1 19,0 12,-2 22,-6 32,-14 3,-2 10,-9 12,-12 5,-6 9,-13 11,-19 1,-4 2,-9 3,-13 1,-5 1,-15 0,-19 -2,-12 -7,-24 -14,-33 -2,-3 -9,-9 -11,-11 -10,-8 -21,-13 -33,-14 -4,-1 -13,-1 -16,-1zm13 10c23,3 42,18 49,39 10,29 -3,60 -30,73 -32,15 -70,-1 -82,-34 -9,-28 4,-60 30,-72 11,-5 22,-7 33,-6z"></path>
-                                        </g>
-                                        </svg> метро Кутузовская
-                                        '; ?>
-                                    </span>
-                                    <br> 
-                                    <a href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Набережная канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
-                                </div>
+                                <noindex>
+                                    <div class="cnct_a">
+                                        <span>
+                                            <?= $siteConfig['id'] == 52 ? '
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                            viewBox="0 0 7578 7578"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                                             <g id="Слой_x0020_1">
+                                              <metadata id="CorelCorpID_0Corel-Layer"/>
+                                              <path class="fil0" d="M3789 0c2092,0 3789,1696 3789,3789 0,2092 -1697,3789 -3789,3789 -2093,0 -3789,-1697 -3789,-3789 0,-2093 1696,-3789 3789,-3789zm-2376 3703c0,392 68,670 201,968 79,176 197,383 307,534 21,27 103,147 125,156l1079 -1c-144,-91 -199,-120 -345,-228 -69,-52 -147,-117 -212,-175 -237,-211 -451,-474 -570,-779 -84,-217 -121,-467 -121,-725 0,-427 182,-856 439,-1147 71,-81 187,-218 313,-218 52,0 80,3 127,38 73,54 105,186 131,279 19,71 44,139 65,209l128 415c39,128 88,297 129,419 40,120 89,290 128,415 22,71 44,138 65,210 40,140 89,276 129,418 20,71 45,139 64,209 20,70 45,138 65,209l113 364c6,17 9,38 17,52l193 -625c21,-68 41,-140 64,-209 46,-138 82,-277 128,-415 46,-141 84,-279 129,-419 23,-70 44,-136 64,-206 59,-204 133,-422 194,-627 30,-98 165,-552 201,-621 30,-59 92,-115 158,-115 92,0 145,25 214,83 113,96 273,311 344,446 63,118 116,233 155,373 112,398 84,791 -49,1177 -115,332 -411,661 -674,876 -87,70 -134,102 -220,166 -35,26 -77,54 -115,77l-119 74 1074 1c11,0 27,-24 34,-33l89 -118c112,-151 225,-349 303,-522 115,-253 208,-549 208,-895 0,-301 -33,-620 -140,-901 -46,-122 -82,-216 -147,-330 -239,-419 -544,-707 -961,-948 -52,-30 -103,-53 -158,-80 -66,-32 -131,-49 -170,-67 -66,211 -136,464 -198,677 -67,227 -134,450 -199,677l-149 508c-17,57 -32,113 -50,170 -49,150 -103,348 -149,507 -9,30 -17,57 -25,85l-18 64c-5,15 -3,14 -14,17 -11,-6 -7,-1 -17,-37l-238 -803c-154,-505 -299,-1020 -452,-1527 -17,-58 -33,-111 -50,-169 -7,-26 -44,-158 -53,-169 -145,57 -173,61 -325,147 -199,111 -386,248 -544,406 -217,217 -361,413 -491,698 -76,165 -134,367 -165,547 -23,133 -39,289 -39,438zm2376 -3070c1743,0 3156,1413 3156,3156 0,1743 -1413,3156 -3156,3156 -1743,0 -3156,-1413 -3156,-3156 0,-1743 1413,-3156 3156,-3156zm0 -263c1888,0 3419,1531 3419,3419 0,1888 -1531,3419 -3419,3419 -1888,0 -3419,-1531 -3419,-3419 0,-1888 1531,-3419 3419,-3419z"/>
+                                             </g>
+                                            </svg> м.Сенная, м.Спасская
+                                            ' : '
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 153 153" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g id="Слой_x0020_1">
+                                            <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                            <path class="fil0" d="M76 0c42,0 77,34 77,76 0,42 -35,77 -77,77 -42,0 -76,-35 -76,-77 0,-42 34,-76 76,-76zm8 68c-4,10 -8,18 -8,18 0,0 -3,-8 -7,-18 -4,-10 -7,-18 -7,-18 0,0 -5,12 -10,26l-10 27 4 0c2,0 4,0 4,0 0,0 3,-8 6,-17 4,-10 7,-17 7,-17 0,0 2,7 6,15 7,21 7,19 7,19 1,0 0,2 8,-19 3,-8 6,-15 6,-15 0,0 3,7 6,17 4,9 7,17 7,17 0,0 1,0 4,0l4 0 -10 -26c-5,-15 -10,-27 -10,-27 0,0 -3,8 -7,18zm-14 -60c-13,2 -25,6 -36,14 -3,2 -10,9 -12,12 -4,6 -8,14 -10,20 -2,3 -3,9 -3,13 -1,4 -1,14 0,19 1,12 6,23 14,33 2,2 8,9 11,11 9,7 21,12 33,14 4,1 14,1 19,0 12,-2 22,-6 32,-14 3,-2 10,-9 12,-12 5,-6 9,-13 11,-19 1,-4 2,-9 3,-13 1,-5 1,-15 0,-19 -2,-12 -7,-24 -14,-33 -2,-3 -9,-9 -11,-11 -10,-8 -21,-13 -33,-14 -4,-1 -13,-1 -16,-1zm13 10c23,3 42,18 49,39 10,29 -3,60 -30,73 -32,15 -70,-1 -82,-34 -9,-28 4,-60 30,-72 11,-5 22,-7 33,-6z"></path>
+                                            </g>
+                                            </svg> метро Кутузовская
+                                            '; ?>
+                                        </span>
+                                        <br> 
+                                        <a rel="nofollow" href="/kontakty"><?= $siteConfig['id'] == 52 ? 'Набережная канала Грибоедова, д. 59' : 'ул. Студенческая, д. 35'; ?></a>
+                                    </div>
+                                </noindex>
                                 <div class="cnct_sche">Работаем ежедневно <span class="clr_gr">c 09:00 до 20:00</span><br class="cnct_br1">без выходных и праздничных дней</div>
                                 <div class="cnct_cll">
                                     <span class="cnct_ph cnct_ph-a" data-phone="moscow">
-                                        <a class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                        <noindex>
+                                            <a rel="nofollow" class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                        </noindex>
                                     </span>
                                     <p>c 09:00 до 20:00</p>
                                     <a class="cnct-perezvon popup_js" data-popup="request" href="#recall">Перезвоните мне</a>
@@ -279,28 +285,32 @@ $js = app\components\CController::$js;
             <footer class="padval" role="contentinfo">
                 <div class="Padval-in">
                     <div class="Padval-nav">
-                        <nav class="Padval-n">
-                            <ul class="foot-l">
-                                <li class="footr-i"><a class="footr-p" href="/voprosy-otvety">Вопросы ответы</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/diagnostika">Диагностика</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/srochnyj-remont">Срочный ремонт</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/dostavka">Доставка</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/otzyvy">Отзывы</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/oplata">Оплата</a></li>
-                                <li class="footr-i"><a class="footr-p" href="/kontakty">Контакты</a></li>
-                            </ul>
-                        </nav>
+                        <noindex>
+                            <nav class="Padval-n">
+                                <ul class="foot-l">
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/voprosy-otvety">Вопросы ответы</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/diagnostika">Диагностика</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/srochnyj-remont">Срочный ремонт</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/dostavka">Доставка</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/otzyvy">Отзывы</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/oplata">Оплата</a></li>
+                                    <li class="footr-i"><a rel="nofollow" class="footr-p" href="/kontakty">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </noindex>
                     </div>
                     <div class="cnct">
                         <div class="cnct_cll">
                             <span class="cnct_ph cnct_ph-a" data-phone="moscow">
-                                <a class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                <a rel="nofollow" class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
                             <p> <?= Yii::$app->session['region']['title']; ?></p>
                         </div>
                     </div>
                     <div class="Padval-corp">2000 - <?= date('Y'); ?> © <?php if ($siteConfig['id'] == 52): ?>fixkofe.ru<?php else: ?>kofe03.ru<?php endif; ?> <br>
-                        <a href="/policy">Пользовательское соглашение</a>
+                        <noindex>
+                            <a rel="nofollow" href="/policy">Пользовательское соглашение</a>
+                        </noindex>
                     </div>
                 </div>
             </footer>

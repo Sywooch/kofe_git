@@ -9,7 +9,7 @@ $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['tit
             <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
                 <ul class="breadcrumbs__list">
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="/">
+                        <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="//kofe03.ru">
                             <span itemprop="name">Ремонт кофемашин</span>
                         </a>
                         <meta itemprop="position" content="0" />

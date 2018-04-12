@@ -1,6 +1,6 @@
 <aside class="brands">
     <div class="brands__inner">
-        <h3 class="content__subtitle">Мы осуществляем ремонт кофемашин <b>следующих моделей</b></h3>
+        <p class="content__subtitle title_h3">Мы осуществляем ремонт кофемашин <b>следующих моделей</b></p>
         <div class="brands__carousel models-logo">
             <div class="swiper-container models__slider">
                 <div class="swiper-wrapper brands__list">

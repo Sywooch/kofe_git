@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <aside class="brands">
     <div class="brands__inner">
-        <h3 class="content__subtitle">Мы осуществляем ремонт кофемашин <b>следующих брендов</b></h3>
+        <p class="content__subtitle title_h3">Мы осуществляем ремонт кофемашин <b>следующих брендов</b></p>
         <div class="brands__carousel">
             <div class="swiper-container brands__slider">
                 <div class="swiper-wrapper brands__list">

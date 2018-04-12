@@ -23,7 +23,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="Brkg-content">
                 <div class="Brkg-main">
                     <div class="Brkg-col">
-                        <h3 class="Brkg-lab">Частые неисправности</h3>
+                        <p class="Brkg-lab title_h3">Частые неисправности</p>
                         <ul class="Brkg-lst Brkg-lst-acc">
                             <li class="Brkg-it" data-breaking="05">
                                 <a class="Brkg-name" href="#">Не работает</a>
@@ -93,7 +93,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </ul>
                     </div>
                     <div class="Brkg-col">
-                        <h3 class="Brkg-lab">Чаще необходимо</h3>
+                        <p class="Brkg-lab title_h3">Чаще необходимо</p>
                         <ul class="Brkg-lst">
                             <ul class="Brkg-lst">
                                 <li class="Brkg-it">Диагностика - 0 ₽</li>
