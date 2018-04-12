@@ -2,7 +2,8 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="Poseter-req">
+<noindex>
+    <div class="Poseter-req">
     <?php
 
     use yii\helpers\Html;
@@ -70,3 +71,4 @@ $form = ActiveForm::begin([
     </div>
     <?php ActiveForm::end() ?>
 </div>
+</noindex>
