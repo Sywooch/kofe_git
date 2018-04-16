@@ -5,7 +5,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
 ?>
 <div class="ontact-top-text">
     <div class="container">
-        <p class="gl-text">Авторизованный сервисный центр в  <span>Москве</span></p>
+        <p class="gl-text">Авторизованный сервисный центр в  <span><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?></span></p>
     </div>
 </div>
 <?= remont_coffee\widgets\other\Subways::widget(); ?>

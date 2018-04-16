@@ -132,7 +132,7 @@ $js = app\components\CController::$js;
                     <p>г. Москва, 2-я Филёвская улица, 8к1.</p>
                     <p><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                     <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
-                    <p>remont.coffee © <?= date('Y'); ?></p>
+                    <p><?= $_SERVER['HTTP_HOST']; ?> © <?= date('Y'); ?></p>
                 </div>
                 <div class="navigation">
                     <ul class="menu-footer">

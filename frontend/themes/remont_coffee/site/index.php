@@ -7,7 +7,9 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
     <div class="container">
         <div class="for-lr">
             <div class="ofer-left">
-                <h1>Качественный ремонт кофемашин в Москве и Московской области</h1>
+                <h1>
+                    <?= !empty($page['meta_h1']) ? $page['meta_h1'] : 'Качественный ремонт кофемашин в ' . Yii::$app->session['region']['titleRod']; ?>
+                </h1>
                 <br>
                 <div class="ofer-button">
                     <p class="first-text">Закажите ремонт СЕЙЧАС и получите <br>в подарок пачку зернового кофе!</p>
