@@ -14,7 +14,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
                     <div class="package-item--head clearfix">
                         <div class="package-item--info float--left">
                             <div class="package-item--title">
-                                <?php if ($row['is_popular'] == 1): ?>
+                                <?php if ($row['is_popular'] == 1 && $url): ?>
                                     <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
                                 <?php else: ?>
                                     <?= $row['title']; ?>
