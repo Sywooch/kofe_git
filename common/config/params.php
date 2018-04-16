@@ -864,8 +864,7 @@ return [
             'theme' => 'remont_coffee',
             'order-title' => 'remont_coffee_spb',
             'spb' => true,
-        ],       
-        
+        ],
         'bosch.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
             'phone-2' => '8 (812) 603-57-77',
@@ -1226,7 +1225,6 @@ return [
             'brand-id' => 20,
             'foreign_category' => true,
         ],
-        
         /* 'delonghi-service-center' => [
           'phone-1' => '8 (495) 181-00-07',
           'phone-2' => '8 (812) 701-00-02',
@@ -2467,6 +2465,7 @@ return [
             'category_id' => 7,
             'theme' => 'tnv',
             'order-title' => 'tnv',
+            'sitemap' => ['disableServicePage' => true]
         ],
     ]
 ];

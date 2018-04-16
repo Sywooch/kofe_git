@@ -261,6 +261,7 @@ class PageController extends CController {
     }
 
     private function getUrls($siteConfig) {
+        exit;
         $sql = 'SELECT m.url, m.type, m.id, m.title, (
                     CASE 
                         WHEN b.title = \'Все бренды\' THEN m.title        
@@ -539,14 +540,35 @@ class PageController extends CController {
                 if (isset($siteConfig['sitemap']['modelsPage']) && !$siteConfig['sitemap']['modelsPage'] && $page['type'] == 'model')
                     continue;
                 $urls[] = $page['url'];
-                foreach ($services as $service) {
-                    $urls[] = $page['url'] . '/' . $service['url'];
+                if ($page['type'] == 'model') {
+                    if (isset($siteConfig['sitemap']['disableServicePage'])) {
+                        continue;
+                    }
+                } else {
+                    foreach ($services as $service) {
+                        $urls[] = $page['url'] . '/' . $service['url'];
+                    }
                 }
             }
         }
         unset($pages);
         foreach ($services as $service) {
             $urls[] = $service['url'];
+        }
+        if (count($urls) <= $per) {
+            $hostname = Yii::$app->request->hostInfo;
+            $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
+            $url = $xmlIndex->addChild('url');
+            $url->addChild('loc', $hostname);
+            $url->addChild('lastmod', date("Y-m-d", time()));
+            foreach ($urls as $page) {
+                $url = $xmlIndex->addChild('url');
+                $url->addChild('loc', $hostname . '/' . $page);
+                $url->addChild('lastmod', date("Y-m-d", time()));
+            }
+            header('content-type:text/xml');
+            echo $xmlIndex->asXML();
+            exit;
         }
         unset($services);
         $xmlIndex = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
