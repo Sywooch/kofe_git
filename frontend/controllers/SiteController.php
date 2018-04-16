@@ -51,7 +51,7 @@ class SiteController extends CController {
                 $metaDesc = 'Авторизованный сервисный центр ' . \app\components\CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ', выполняет комплексный ремонт техники ' . \app\components\CController::$monoBrand['title'] . ', в наличие все комплектующие для быстрого ремонта!';
         }elseif ($config['id'] == 49) {
             $metaDesc = 'Выполним ремонт кофемашин в Москве и области, низкие цены, гарантия, удобное расположение сервисного центра. Мы востановим работу вашей кофемашины!';
-        } elseif ($config['íd'] == 146) {
+        } elseif ($config['id'] == 146) {
             $metaDesc = 'Предоставляем услуги по ремонту кофемашин всех брендов в ' . Yii::$app->session['region']['titleRod'] . '. Лояльная стоимость услуг и официальная гарантия - залог безупречного ремонта!';
         } else
             $metaDesc = '';
