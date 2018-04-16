@@ -1,3 +1,6 @@
+<?php 
+$this->title = $title;
+?>
 <?= tnv\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <div class="aside-layout container mb166">
     <div class="row sticky-parent">
