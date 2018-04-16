@@ -1,7 +1,7 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod'];
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\components\CController::$category['full_title'] . 'Ремонт кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' ☕️ Низкие цены ✔️ Официальная гарантия 📃';
 ?>
 <div class='parent'>
     <div class='slider'>
