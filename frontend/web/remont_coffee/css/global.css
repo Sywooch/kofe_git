@@ -2433,6 +2433,11 @@ summary {
         margin-top: 10px;
     }
 }
+@media (max-width: 460px) {
+    .ofer-button {
+        background-position: center right -38px;
+    }
+}
 .ofer-button .first-text {
     text-transform: uppercase;
     font-family: Arial,sans-serif;
