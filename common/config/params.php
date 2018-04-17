@@ -2056,7 +2056,7 @@ return [
             'id' => 121,
             'sitePrefix' => 'proektor',
             '1-line' => false,
-            'category_id' => 3,
+            'category_id' => 8,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'new-sites' => [
