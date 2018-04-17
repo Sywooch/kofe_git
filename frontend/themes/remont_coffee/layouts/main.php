@@ -87,7 +87,7 @@ $js = app\components\CController::$js;
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="tel-nav" href="tel:+74950551569">8 (495) 055-15-69</a>
+                            <a class="tel-nav" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="collapse navbar-collapse navigation" id="main-menu">
                             <ul id="menu-home" class="nav navbar-nav">
