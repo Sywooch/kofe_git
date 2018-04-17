@@ -71,7 +71,7 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="logo-phone">
                     <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                    <span>Ежедневно с 9:00 до 21:00</span>
+                    <span>г. Москва, 2-я <br>Филёвская улица, 8к1.</span>
                 </div>
             </div>
         </div>

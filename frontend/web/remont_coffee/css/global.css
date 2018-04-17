@@ -2318,6 +2318,11 @@ summary {
         width: 100%;
     }
 }
+@media (max-width: 540px) {
+    .ofer-right {
+        padding-bottom: 0px;
+    }
+}
 .ofer-right p.first-text {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -2346,6 +2351,21 @@ summary {
     line-height: 26px;
     text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
 }
+@media screen and (max-width: 540px) {
+    .ofer-right p.second-text {
+        font-size: 14px;
+        font-family: Arial,sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+        line-height: 34px;
+        text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
+    }
+    .ofer-right p.second-text br {
+        display: none;
+    }
+}
 .ofer-right p.second-text span {
     background: #333;
     padding: 0px 5px;
@@ -2357,6 +2377,20 @@ summary {
     text-shadow: 0 1px 2px #000;
     font-family: Arial,sans-serif;
     position: relative;
+}
+@media screen and (max-width: 540px) {
+    .ofer-right p.second-text span {
+        background: #333;
+        padding: 0px 5px;
+        font-size: 30px;
+        line-height: 44px;
+        border-radius: 2px;
+        color: #ccc;
+        font-weight: bold;
+        text-shadow: 0 1px 2px #000;
+        font-family: Arial,sans-serif;
+        position: relative;
+    }
 }
 .ofer-right p.second-text span:before {
     width: 100%;

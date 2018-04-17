@@ -73,10 +73,9 @@ a:hover {
         position: relative;
     }
     .logo-line div.logo-image {
-        float: none;
-        margin: 0 auto;
         width: 150px;
         height: auto;
+        margin-left: -15px;
     }
     .logo-line div.logo-image a {
         padding-top: 13px;
@@ -110,7 +109,7 @@ a:hover {
     float: right;
     position: relative;
     color: #2E375F;
-    margin-top: 30px;
+    margin-top: 18px;
 }
 .logo-phone span {
     font-size: 14px;
