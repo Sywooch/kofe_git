@@ -50,8 +50,10 @@ $this->title = $page['meta_title'] ?: $title;
             <div class="form">
                 <h1><?= str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $page['meta_h1']); ?></h1>
                 <div class="plashka-in">
-                    <h2>Ремонт <?= app\components\CController::$monoBrand['url']; ?>!</h2> 
-                    <span>Только <?= app\components\CController::$monoBrand['url']; ?>!</span>
+                    <noindex>
+                        <h2>Ремонт <?= app\components\CController::$monoBrand['url']; ?>!</h2> 
+                        <span>Только <?= app\components\CController::$monoBrand['url']; ?>!</span>
+                    </noindex>
                     <?= $page['description']; ?>
                 </div>
                 <?= multicatX\widgets\forms\MainPageForm::widget(); ?>                    
