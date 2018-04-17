@@ -2618,6 +2618,7 @@ summary {
     margin-top: -120px;
     right: 50%;
     margin-right: -125px;
+    display: block ! important;
 }
 .close-form {
     display: none;
