@@ -256,10 +256,16 @@ $(document).ready(function () {
         dots: false,
         responsive: {
             0: {
-                items: 2
+                items: 2,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             600: {
-                items: 4
+                items: 4,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             1000: {
                 items: 10
@@ -274,10 +280,16 @@ $(document).ready(function () {
         autoplay: true,
         responsive: {
             0: {
-                items: 2
+                items: 2,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             600: {
-                items: 4
+                items: 4,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             1000: {
                 items: 6
@@ -293,10 +305,16 @@ $(document).ready(function () {
         dots: false,
         responsive: {
             0: {
-                items: 2
+                items: 2,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             600: {
-                items: 2
+                items: 2,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             1000: {
                 items: 3
@@ -310,10 +328,16 @@ $(document).ready(function () {
         autoplay: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             600: {
-                items: 1
+                items: 1,
+                autoHeight: true,
+                mouseDrag: false,
+                touchDrag: true
             },
             1000: {
                 items: 1
