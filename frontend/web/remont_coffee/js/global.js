@@ -1,12 +1,12 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($("body").hasClass("popup-form-active")) {
-            $('.right-form').fadeIn();
+            $('.right-form').addClass('scrol-popup');
         } else {
             if ($(this).scrollTop() > 400) {
-                $('.right-form').fadeIn();
+                $('.right-form').addClass('scrol-popup');
             } else {
-                $('.right-form').fadeOut();
+                $('.right-form').removeClass('scrol-popup');
             }
         }
     });

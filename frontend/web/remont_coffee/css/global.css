@@ -2516,9 +2516,13 @@ summary {
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
 }
+.right-form.scrol-popup {
+    display: block;
+}
 @media (max-width: 660px) {
-    .right-form {
-        display: none ! important;
+    .right-form,
+    .right-form.scrol-popup {
+        display: none;
     }
 }
 .right-form p {
