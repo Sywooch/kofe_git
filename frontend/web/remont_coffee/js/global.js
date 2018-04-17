@@ -1,65 +1,72 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 400) {
+        if ($("body").hasClass("popup-form-active")) {
             $('.right-form').fadeIn();
         } else {
-            $('.right-form').fadeOut();
+            if ($(this).scrollTop() > 400) {
+                $('.right-form').fadeIn();
+            } else {
+                $('.right-form').fadeOut();
+            }
         }
     });
-    $(".aksiya-popupic").on("click", function() {
-        $(this).hide();
+    $('.price .button, .pricelist .button').click( function(){
+        $('body').addClass('popup-form-active');    
+    });
+    $('.close-form').click( function(){
+        $('body').removeClass('popup-form-active');    
     });
     var popups = [
-        {visitorName: 'Ефремова Эллада', serviceName: 'Чистка от кофейных масел'},
-        {visitorName: 'Матвеев Владимир', serviceName: 'Ремонт кофемолки'},
-        {visitorName: 'Ефимов Георгий', serviceName: 'Декофенация'},
-        {visitorName: 'Никонова Лида', serviceName: 'Замена уплотнительного кольца группы'},
-        {visitorName: 'Виноградова Анна', serviceName: 'Ремонт насоса'},
-        {visitorName: 'Агафонова Нигина', serviceName: 'Комплексная профилактика'},
-        {visitorName: 'Жукова Катерина', serviceName: 'Декофенация'},
-        {visitorName: 'Миронова Ольга', serviceName: 'Ремонт насоса'},
-        {visitorName: 'Суханов Вениамин', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Цветкова Настя', serviceName: 'Ремонт капучинатора'},
-        {visitorName: 'Гаврилов Альберт', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Кириллова Людмила', serviceName: 'Декофенация'},
-        {visitorName: 'Зуев Георгий', serviceName: 'Забор кофемашины в сервис'},
-        {visitorName: 'Сафонов Денис', serviceName: 'Чистка от кофейных масел'},
-        {visitorName: 'Колобов Николая', serviceName: 'Чистка от кофейных масел'},
-        {visitorName: 'Мясникова Элла', serviceName: 'Доставка кофемашины'},
-        {visitorName: 'Лукина Василиса', serviceName: 'Забор кофемашины в сервис'},
-        {visitorName: 'Мартынова Анжела', serviceName: 'Декальцинация'},
-        {visitorName: 'Комиссарова Алеся', serviceName: 'Комплексная профилактика'},
-        {visitorName: 'Корнилов Артур', serviceName: 'Диагностика'},
-        {visitorName: 'Цветков Аркадий', serviceName: 'Замена микровыключателей'},
-        {visitorName: 'Горбунов Константи', serviceName: 'Ремонт кофемолки'},
-        {visitorName: 'Рожков Владимир', serviceName: 'Комплексная профилактика'},
-        {visitorName: 'Мухин Толя', serviceName: 'Ремонт капучинатора'},
-        {visitorName: 'Романов Андрей', serviceName: 'Забор кофемашины в сервис'},
-        {visitorName: 'Игнатьев Мартын', serviceName: 'Замена тена'},
-        {visitorName: 'Громов Тимур', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Носова Аня', serviceName: 'Ремонт насоса'},
-        {visitorName: 'Титов Олег', serviceName: 'Замена жерновов'},
-        {visitorName: 'Терентьева Ольга', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Гущина Динара', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Лукьянов Давид', serviceName: 'Доставка кофемашины'},
-        {visitorName: 'Князева Света', serviceName: 'Замена тена'},
-        {visitorName: 'Гордеева Станислава', serviceName: 'Ремонт кофемолки'},
-        {visitorName: 'Афанасьева Кристина', serviceName: 'Замена жерновов'},
-        {visitorName: 'Абрамова Ирина', serviceName: 'Замена микровыключателей'},
-        {visitorName: 'Доронин Василий', serviceName: 'Ремонт гидросистемы'},
-        {visitorName: 'Фролов Генадий', serviceName: 'Ремонт насоса'},
-        {visitorName: 'Павлов Якуб', serviceName: 'Замена тена'},
-        {visitorName: 'Тимофеева Влада', serviceName: 'Ремонт капучинатора'},
-        {visitorName: 'Кононов Радик', serviceName: 'Замена жерновов'},
-        {visitorName: 'Баранова Алия', serviceName: 'Замена уплотнительного кольца группы'},
-        {visitorName: 'Коновалов Андрей', serviceName: 'Декальцинация'},
-        {visitorName: 'Исаков Генадий', serviceName: 'Замена тена'},
-        {visitorName: 'Федосеев Евгений', serviceName: 'Замена микровыключателей'},
-        {visitorName: 'Фролов Константи', serviceName: 'Замена модуля управления'},
-        {visitorName: 'Белоусов Женя', serviceName: 'Ремонт кофемолки'},
-        {visitorName: 'Дьячков Владимир', serviceName: 'Комплексная профилактика'},
-        {visitorName: 'Носков Радион', serviceName: 'Доставка кофемашины'},
-        {visitorName: 'Кулаков Михаил', serviceName: 'Ремонт насоса'}
+    {visitorName: 'Ефремова Эллада', serviceName: 'Чистка от кофейных масел'},
+    {visitorName: 'Матвеев Владимир', serviceName: 'Ремонт кофемолки'},
+    {visitorName: 'Ефимов Георгий', serviceName: 'Декофенация'},
+    {visitorName: 'Никонова Лида', serviceName: 'Замена уплотнительного кольца группы'},
+    {visitorName: 'Виноградова Анна', serviceName: 'Ремонт насоса'},
+    {visitorName: 'Агафонова Нигина', serviceName: 'Комплексная профилактика'},
+    {visitorName: 'Жукова Катерина', serviceName: 'Декофенация'},
+    {visitorName: 'Миронова Ольга', serviceName: 'Ремонт насоса'},
+    {visitorName: 'Суханов Вениамин', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Цветкова Настя', serviceName: 'Ремонт капучинатора'},
+    {visitorName: 'Гаврилов Альберт', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Кириллова Людмила', serviceName: 'Декофенация'},
+    {visitorName: 'Зуев Георгий', serviceName: 'Забор кофемашины в сервис'},
+    {visitorName: 'Сафонов Денис', serviceName: 'Чистка от кофейных масел'},
+    {visitorName: 'Колобов Николая', serviceName: 'Чистка от кофейных масел'},
+    {visitorName: 'Мясникова Элла', serviceName: 'Доставка кофемашины'},
+    {visitorName: 'Лукина Василиса', serviceName: 'Забор кофемашины в сервис'},
+    {visitorName: 'Мартынова Анжела', serviceName: 'Декальцинация'},
+    {visitorName: 'Комиссарова Алеся', serviceName: 'Комплексная профилактика'},
+    {visitorName: 'Корнилов Артур', serviceName: 'Диагностика'},
+    {visitorName: 'Цветков Аркадий', serviceName: 'Замена микровыключателей'},
+    {visitorName: 'Горбунов Константи', serviceName: 'Ремонт кофемолки'},
+    {visitorName: 'Рожков Владимир', serviceName: 'Комплексная профилактика'},
+    {visitorName: 'Мухин Толя', serviceName: 'Ремонт капучинатора'},
+    {visitorName: 'Романов Андрей', serviceName: 'Забор кофемашины в сервис'},
+    {visitorName: 'Игнатьев Мартын', serviceName: 'Замена тена'},
+    {visitorName: 'Громов Тимур', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Носова Аня', serviceName: 'Ремонт насоса'},
+    {visitorName: 'Титов Олег', serviceName: 'Замена жерновов'},
+    {visitorName: 'Терентьева Ольга', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Гущина Динара', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Лукьянов Давид', serviceName: 'Доставка кофемашины'},
+    {visitorName: 'Князева Света', serviceName: 'Замена тена'},
+    {visitorName: 'Гордеева Станислава', serviceName: 'Ремонт кофемолки'},
+    {visitorName: 'Афанасьева Кристина', serviceName: 'Замена жерновов'},
+    {visitorName: 'Абрамова Ирина', serviceName: 'Замена микровыключателей'},
+    {visitorName: 'Доронин Василий', serviceName: 'Ремонт гидросистемы'},
+    {visitorName: 'Фролов Генадий', serviceName: 'Ремонт насоса'},
+    {visitorName: 'Павлов Якуб', serviceName: 'Замена тена'},
+    {visitorName: 'Тимофеева Влада', serviceName: 'Ремонт капучинатора'},
+    {visitorName: 'Кононов Радик', serviceName: 'Замена жерновов'},
+    {visitorName: 'Баранова Алия', serviceName: 'Замена уплотнительного кольца группы'},
+    {visitorName: 'Коновалов Андрей', serviceName: 'Декальцинация'},
+    {visitorName: 'Исаков Генадий', serviceName: 'Замена тена'},
+    {visitorName: 'Федосеев Евгений', serviceName: 'Замена микровыключателей'},
+    {visitorName: 'Фролов Константи', serviceName: 'Замена модуля управления'},
+    {visitorName: 'Белоусов Женя', serviceName: 'Ремонт кофемолки'},
+    {visitorName: 'Дьячков Владимир', serviceName: 'Комплексная профилактика'},
+    {visitorName: 'Носков Радион', serviceName: 'Доставка кофемашины'},
+    {visitorName: 'Кулаков Михаил', serviceName: 'Ремонт насоса'}
     ];
     var userRandServicesCount = localStorage.getItem("userRandServicesCount");
     var d = new Date();
@@ -319,18 +326,18 @@ $(document).ready(function () {
 
 
 
-    if ($('.seo-link.link-toggle').length) {
-        $('.seo-link.link-toggle').find('.seo-link__title').click(function () {
-            var block = $(this).closest('.seo-link');
+if ($('.seo-link.link-toggle').length) {
+    $('.seo-link.link-toggle').find('.seo-link__title').click(function () {
+        var block = $(this).closest('.seo-link');
 
-            if (block.hasClass('opened')) {
-                block.removeClass('opened');
-            } else {
-                block.addClass('opened');
-                $('.seo-link__btn').css('display', 'block');
-            }
-        });
-    }
+        if (block.hasClass('opened')) {
+            block.removeClass('opened');
+        } else {
+            block.addClass('opened');
+            $('.seo-link__btn').css('display', 'block');
+        }
+    });
+}
 
     // РЎРѕРєСЂС‹С‚РёРµ seo СЃСЃС‹Р»РѕРє
 

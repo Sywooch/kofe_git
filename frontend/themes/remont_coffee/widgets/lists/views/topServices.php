@@ -7,17 +7,21 @@ $siteConfig = app\components\CController::getSiteConfig();
         <p class="gl-text">Типовые  <span>неисправности</span></p>
         <div class="list">
             <?php foreach ($services as $service): ?>
-                <a class="item" href="/<?= $service['url']; ?>">
-                    <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
-                    <div class="text">
-                        <div class="name"><?= $service['title']; ?></div>
-                        <div class="description"><?= $service['description']; ?></div>
-                    </div>
+                <div class="item">
+                    <a href="/<?= $service['url']; ?>">
+                        <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
+                    </a>
+                    <a href="/<?= $service['url']; ?>">
+                        <div class="text">
+                            <div class="name"><?= $service['title']; ?></div>
+                            <div class="description"><?= $service['description']; ?></div>
+                        </div>
+                    </a>
                     <div class="price">
                         <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
                         <div class="button">Заказать</div>
                     </div>
-                </a>
+                </div>
             <?php endforeach; ?>
             <div class="clear"></div>
         </div>

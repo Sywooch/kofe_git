@@ -2,7 +2,8 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div style="display: none;" class="right-form">
+<div class="right-form">
+    <div class="close-form"><i class="fa fa-close"></i></div>
     <p class="first-text"><b>ЗАКАЖИТЕ РЕМОНТ</b> СЕЙЧАС И ПОЛУЧИТЕ <span>ПОДАРОК!</span></p>
     <?php
 
