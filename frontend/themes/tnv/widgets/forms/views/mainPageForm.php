@@ -34,7 +34,7 @@ $form = ActiveForm::begin([
         <span>
             <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null])->label(false); ?>
         </span>            
-        <span>Согласен с условиями <a href="/policy" target="_blank">обработки персональных данных</a></span>
+        <span>Согласен с условиями <a href="/konfidencial-info" target="_blank">обработки персональных данных</a></span>
     </div>
     <?php ActiveForm::end() ?>
     <p></p>
