@@ -23,7 +23,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             ?>
             <tr<?= $c; ?>>
                 <td>
-                    <?php if ($row['is_popular'] == 1): ?>
+                    <?php if ($row['is_popular'] == 1 && $url): ?>
                         <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
                     <?php else: ?>
                         <?= $row['title']; ?>
