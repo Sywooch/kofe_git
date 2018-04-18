@@ -120,11 +120,7 @@ class ListController extends CController {
         $b = null;
 
         if (count($url) > 1) {
-            if ($siteConfig['id'] == 113) {
-                $url = Yii::$app->request->pathInfo;
-                $url = explode('/', $url);
-                return $this->redirect('/' . $url[0], 301);
-            }
+            
             $arrayUrl = $url;
             array_pop($url);
             if ($siteConfig['mono']) {
@@ -136,6 +132,16 @@ class ListController extends CController {
                     ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
                     ->one();
+            
+            if ($siteConfig['id'] == 113) {
+                $url = Yii::$app->request->pathInfo;
+                $url = explode('/', $url);
+                return $this->redirect('/' . $url[0], 301);
+            } elseif ($siteConfig['id'] == 124) {
+                if ($page['type'] == 'model')
+                    return $this->redirect('/' . $page['url'], 301);
+            }
+            
             if ($page['type'] == 'brand') {
                 $brandImage = $page['image'];
                 $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by sort limit 1';
