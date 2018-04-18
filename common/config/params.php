@@ -2101,6 +2101,7 @@ return [
             'category_id' => 7,
             'theme' => 'professionals',
             'order-title' => 'МСК Заречная',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'kofemashina-service' => [
             'phone-1' => '8 (495) 323-90-09',
