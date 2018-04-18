@@ -198,11 +198,11 @@ $js = app\components\CController::$js;
                         <div class="col-sm-4 hidden-xs col-md-3">
                             <ul class="footer--list">
                                 <li class="footer--list-head"><a href="/prices" class="footer--list-link">Популярные <br />неисправности</a></li>
-                                <li class="footer--list-item"><a href="/ne-vklyuchaetsya" class="footer--list-link">Не включается</a></li>
-                                <li class="footer--list-item"><a href="/ne-podaet-vodu" class="footer--list-link">Не подаёт воду</a></li>
-                                <li class="footer--list-item"><a href="/ne-mеlet-kofe" class="footer--list-link">Не мелет кофе</a></li>
-                                <li class="footer--list-item"><a href="/plokho-techet-kofe" class="footer--list-link">Плохо течет кофе</a></li>
-                                <li class="footer--list-item"><a href="/ne-greet-vodu" class="footer--list-link">Не греет воду</a></li>
+                                <li class="footer--list-item"><a href="/ne-zapuskaetsya" class="footer--list-link">Не запускается</a></li>
+                                <li class="footer--list-item"><a href="/net-podachi-vody" class="footer--list-link">Нет подачи воды</a></li>
+                                <li class="footer--list-item"><a href="/ne-izmelchaet-kofe" class="footer--list-link">Не измельчает кофе</a></li>
+                                <li class="footer--list-item"><a href="/plokxaya-podacha-kofe" class="footer--list-link">Плохая подача кофе</a></li>
+                                <li class="footer--list-item"><a href="/ne-nagrevaet-vody" class="footer--list-link">Не нагревает воду</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4 hidden-xs col-md-3">
