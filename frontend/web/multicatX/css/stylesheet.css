@@ -2012,7 +2012,7 @@ ul.box-filter > li ul {
 #header_second #header_phone a:hover {
     text-decoration: none;
 }
-#header_second #header_phone span {
+#header_second #header_phone a {
     display: block;
     font-size: 25px;
     color: #ff4900;
@@ -2020,7 +2020,7 @@ ul.box-filter > li ul {
     margin-bottom: 6px;
 }
 @media (max-width: 520px) {
-    #header_second #header_phone span {
+    #header_second #header_phone a {
         font-size: 20px;
     }
 }
@@ -4369,7 +4369,7 @@ left: 16%;
         text-align: center;
     }
 }
-#footer_phone span {
+#footer_phone a {
     display: block;
     font-size: 25px;
     color: #ff4900;

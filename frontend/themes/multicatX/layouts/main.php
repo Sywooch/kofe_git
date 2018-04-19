@@ -25,11 +25,11 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stylesheet.css?=v2" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.carousel.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.theme.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui-1.8.16.custom.css" />
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/colors.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/colors.css?=v2" />
     </head>
     <body class="<?= app\components\CController::$monoBrand['url']; ?> no-transition">
         <?php $this->beginBody() ?>
@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="dondo-custom-position" data-module="1" style='display: none;'></div>
                     <div id="header_phone">
-                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
+                        <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'tel_spb' : 'tel_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         <?= str_replace([' и область'], '', Yii::$app->session['region']['title']); ?>, ежедневно 10:00-21:00    
                     </div>
                 </div>
@@ -157,7 +157,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="footer_column_4">
                             <div id="footer_phone">
-                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
+                                <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'tel_spb' : 'tel_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                 Предложение не является публичной офертой<br />
                                 <br />      <?= Yii::$app->session['region']['id'] == 1 ? 'г. Москва, Рябиновая ул., 43, корп. 2  ' : 'г. Санкт-Петербург, улица Ярослава Гашека, 6'; ?>
                             </div>
