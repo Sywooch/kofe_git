@@ -1359,11 +1359,11 @@ button {
     width: 13px;
     height: 13px;
     border-right: 1px solid transparent;
-    background: url(http://remontkofe.ru/images/star1.svg) no-repeat;
+    background: url(/images/star1.svg) no-repeat;
     background-size: cover;
 }
 .n-rating-stars[data-rate='1'] .n-rating-stars__item:nth-child(-n+1), .n-rating-stars[data-rate='2'] .n-rating-stars__item:nth-child(-n+2), .n-rating-stars[data-rate='3'] .n-rating-stars__item:nth-child(-n+3), .n-rating-stars[data-rate='4'] .n-rating-stars__item:nth-child(-n+4), .n-rating-stars[data-rate='5'] .n-rating-stars__item, .n-rating-stars__item:before {
-    background-image: url(http://remontkofe.ru/images/star2.svg);
+    background-image: url(/images/star2.svg);
 }
 
 .main > .left {

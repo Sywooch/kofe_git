@@ -35,7 +35,7 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/global.css" rel="stylesheet" media="all" />
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/bootstrap-theme.min.css" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/style.min.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/style.min.css?v=1" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/home.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
