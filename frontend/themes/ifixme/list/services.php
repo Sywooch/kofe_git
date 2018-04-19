@@ -12,7 +12,7 @@
                         <?php foreach ($services as $service): ?>
                             <tr>
                                 <td>
-                                    <?php if ($service['is_popular'] == 1): ?>
+                                    <?php if ($service['is_popular'] == 1 && 2 == 1): ?>
                                         <a href="/<?= $category['url'] . '-' . $service['url']; ?>"><?= $service['title']; ?></a>
                                     <?php else: ?>
                                         <?= $service['title']; ?>
