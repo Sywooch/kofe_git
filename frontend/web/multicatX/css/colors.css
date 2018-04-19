@@ -3,6 +3,8 @@
     background-color: #215f8b ! important;
 }
 .bosch .colortext,
+.bosch .tel_spb,
+.bosch .tel_msk,
 .bosch #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #215f8b ! important;
 }
@@ -35,6 +37,8 @@
     background-color: #41aaaa ! important;
 }
 .siemens .colortext,
+.siemens .tel_spb,
+.siemens .tel_msk,
 .siemens #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #41aaaa ! important;
 }
@@ -67,6 +71,8 @@
     background-color: #215f8b ! important;
 }
 .delonghi .colortext,
+.delonghi .tel_spb,
+.delonghi .tel_msk,
 .delonghi #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #215f8b ! important;
 }
@@ -99,6 +105,8 @@
     background-color: #d71921 ! important;
 }
 .saeco .colortext,
+.saeco .tel_spb,
+.saeco .tel_msk,
 .saeco #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #d71921 ! important;
 }
@@ -131,6 +139,8 @@
     background-color: #3182b1 ! important;
 }
 .philips .colortext,
+.philips .tel_spb,
+.philips .tel_msk,
 .philips #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #3182b1 ! important;
 }
@@ -163,6 +173,8 @@
     background-color: #e30613 ! important;
 }
 .jura .colortext,
+.jura .tel_spb,
+.jura .tel_msk,
 .jura #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #e30613 ! important;
 }
@@ -195,6 +207,8 @@
     background-color: #525352 ! important;
 }
 .krups .colortext,
+.krups .tel_spb,
+.krups .tel_msk,
 .krups #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #525352 ! important;
 }
@@ -227,6 +241,8 @@
     background-color: #d00c0e ! important;
 }
 .melitta .colortext,
+.melitta .tel_spb,
+.melitta .tel_msk,
 .melitta #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #d00c0e ! important;
 }
@@ -259,6 +275,8 @@
     background-color: #af0917 ! important;
 }
 .nivona .colortext,
+.nivona .tel_spb,
+.nivona .tel_msk,
 .nivona #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #af0917 ! important;
 }
@@ -291,6 +309,8 @@
     background-color: #ef4023 ! important;
 }
 .gaggia .colortext,
+.gaggia .tel_spb,
+.gaggia .tel_msk,
 .gaggia #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #ef4023 ! important;
 }
@@ -323,6 +343,8 @@
     background-color: #71b430 ! important;
 }
 .wmf .colortext,
+.wmf .tel_spb,
+.wmf .tel_msk,
 .wmf #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #71b430 ! important;
 }
@@ -355,6 +377,8 @@
     background-color: #e2271c ! important;
 }
 .la-cimbali .colortext,
+.la-cimbali .tel_spb,
+.la-cimbali .tel_msk,
 .la-cimbali #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #e2271c ! important;
 }
@@ -387,6 +411,8 @@
     background-color: #e2271c ! important;
 }
 .schaerer .colortext,
+.schaerer .tel_spb,
+.schaerer .tel_msk,
 .schaerer #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #e2271c ! important;
 }
@@ -419,6 +445,8 @@
     background-color: #e2271c ! important;
 }
 .franke .colortext,
+.franke .tel_spb,
+.franke .tel_msk,
 .franke #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #e2271c ! important;
 }
@@ -451,6 +479,8 @@
     background-color: #870c28 ! important;
 }
 .faema .colortext,
+.faema .tel_spb,
+.faema .tel_msk,
 .faema #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #870c28 ! important;
 }
@@ -483,6 +513,8 @@
     background-color: #a20001 ! important;
 }
 .miele .colortext,
+.miele .tel_spb,
+.miele .tel_msk,
 .miele #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #a20001 ! important;
 }
@@ -515,6 +547,8 @@
     background-color: #007845 ! important;
 }
 .rancilio .colortext,
+.rancilio .tel_spb,
+.rancilio .tel_msk,
 .rancilio #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #007845 ! important;
 }
@@ -547,6 +581,8 @@
     background-color: #d82f3e ! important;
 }
 .nuova-simonelli .colortext,
+.nuova-simonelli .tel_spb,
+.nuova-simonelli .tel_msk,
 .nuova-simonelli #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #d82f3e ! important;
 }
@@ -579,6 +615,8 @@
     background-color: #5c5c5c ! important;
 }
 .bork .colortext,
+.bork .tel_spb,
+.bork .tel_msk,
 .bork #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #5c5c5c ! important;
 }
@@ -611,6 +649,8 @@
     background-color: #a1190d ! important;
 }
 .promac .colortext,
+.promac .tel_spb,
+.promac .tel_msk,
 .promac #rumiservice6 #rumiservice6_circle .rumiservice6_circle_div_active .rumiservice6_circle_div_text{
     color: #a1190d ! important;
 }
