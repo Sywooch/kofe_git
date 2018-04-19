@@ -33,6 +33,7 @@ class MainUrlRule extends UrlRule {
         if (strpos($_SERVER['SERVER_NAME'], '.repair'))
             Yii::$app->request->setHostInfo($_SERVER['SERVER_NAME'] . '.ru');
         $siteConfig = self::getSiteConfig();
+        
         $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
         $redirects = isset($redirects[$siteConfig['id']]) ? $redirects[$siteConfig['id']] : [];
         if (!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
@@ -45,6 +46,11 @@ class MainUrlRule extends UrlRule {
         }
         $pathInfo = strtolower($request->getPathInfo());
         $arrayUrl = explode('/', $pathInfo);
+        if($siteConfig['id'] == 50 && count($arrayUrl) >= 1) {
+            if (strpos($pathInfo, 'remont-kofemashin-saeco') !== false) {
+                $this->redirect('/' . str_replace('remont-kofemashin-saeco', 'remont-saeco', $pathInfo));
+            }
+        }
         if ($siteConfig['mono']) {
             if (strpos($pathInfo, 'remont-kofemashin-') !== false)
                 return ['site/error', []];
