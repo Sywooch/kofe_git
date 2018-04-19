@@ -555,8 +555,7 @@ class PageController extends CController {
         foreach ($services as $service) {
             $urls[] = $service['url'];
         }
-        if (count($urls) <= $per) {
-            $hostname = Yii::$app->request->hostInfo;
+        if (count($urls) <= $per) {            
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);
