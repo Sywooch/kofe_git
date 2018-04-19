@@ -16,7 +16,7 @@ $this->title = $pageInfo['meta_title'];
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
-                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="email">
                     <span>Почта</span>

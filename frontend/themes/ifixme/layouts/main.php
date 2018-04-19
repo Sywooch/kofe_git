@@ -83,7 +83,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="right">
                             <span class="name">Телефон</span>
-                            <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                            <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -135,7 +135,7 @@ $js = app\components\CController::$js;
                                     <div class="img"><img src="<?= $assets ?>/ifixme/images/contact.jpg" alt=""></div>
                                     <div class="text">
                                         <p>Москва, ул. Заречная 1к2. М. Фили, Шелепиха</p>
-                                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                        <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         <span>Ежедневно с 08:00 до 22:00</span>
                                     </div>
                                 </div>
