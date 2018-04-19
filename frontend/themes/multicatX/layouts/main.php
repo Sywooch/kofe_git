@@ -89,7 +89,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="dondo-custom-position" data-module="1" style='display: none;'></div>
                     <div id="header_phone">
-                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
+                        <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'tel_spb' : 'tel_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         <?= str_replace([' и область'], '', Yii::$app->session['region']['title']); ?>, ежедневно 10:00-21:00    
                     </div>
                 </div>
