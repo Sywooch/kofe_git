@@ -1,6 +1,6 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
-$this->title = !empty($model['meta_title']) ? $model['meta_title'] : 'Ремонт кофемашин - ' . $model['title'] . ' (эмодзи) Авторизованный сервисный центр, низкие цены!';
+$this->title = !empty($model['meta_title']) ? $model['meta_title'] : 'Ремонт кофемашин - ' . $model['title'] . ' ⚒ Авторизованный сервисный центр, низкие цены!';
 $siteConfig = app\components\CController::getSiteConfig();
 $breadcrumbs = [
     $model['title'],
