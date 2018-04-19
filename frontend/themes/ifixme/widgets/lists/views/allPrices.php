@@ -15,7 +15,7 @@
         <?php $k = 0; ?>
         <?php foreach ($models as $key => $model): ?>
             <?php if ($model['icon'] == 1): ?>
-                <?php $services = frontend\models\Pages::getModelServices($model['id'], $parent['id']); ?>
+                <?php $services = frontend\models\Pages::getModelServices($parent['id']); ?>
                 <div id="tabs-<?= $model['id']; ?>" class="tab-content<?= $k == 0 ? ' active' : '' ?>">
                     <table>
                         <tr class="head">
