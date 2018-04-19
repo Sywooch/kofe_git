@@ -157,7 +157,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="footer_column_4">
                             <div id="footer_phone">
-                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span class="colortext"><?= Yii::$app->session['region']['phone']; ?></span></a>
+                                <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'tel_spb' : 'tel_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                 Предложение не является публичной офертой<br />
                                 <br />      <?= Yii::$app->session['region']['id'] == 1 ? 'г. Москва, Рябиновая ул., 43, корп. 2  ' : 'г. Санкт-Петербург, улица Ярослава Гашека, 6'; ?>
                             </div>
