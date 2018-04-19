@@ -527,7 +527,7 @@ class PageController extends CController {
         $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         $hostname = Yii::$app->request->hostInfo;
-        if (in_array($siteConfig['id'], [51, 53])) {
+        if (in_array($siteConfig['id'], [51, 53, 49]) && strpos($hostname, 'https://') === false) {
             $hostname = str_replace('http', 'https', $hostname);
         }
         $per = 50000;
@@ -555,8 +555,7 @@ class PageController extends CController {
         foreach ($services as $service) {
             $urls[] = $service['url'];
         }
-        if (count($urls) <= $per) {
-            $hostname = Yii::$app->request->hostInfo;
+        if (count($urls) <= $per) {            
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);
