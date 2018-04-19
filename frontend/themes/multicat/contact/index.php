@@ -5,6 +5,7 @@ $breadcrumbs = [
 $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 $domain = $_SERVER['SERVER_NAME'];
 $domain = str_replace('admin.', '', $domain);
+$siteConfig = app\components\CController::getSiteConfig();
 ?>
 <?= multicat\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-18">
@@ -22,7 +23,7 @@ $domain = str_replace('admin.', '', $domain);
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
-                    <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                    <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone_spb' : 'phone_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <div class="adress">
                     <span>Режим работы</span>

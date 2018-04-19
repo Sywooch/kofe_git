@@ -163,12 +163,12 @@ $js = app\components\CController::$js;
                 </div>
                 <?= $siteConfig['id'] == 52 ? '
                     <div class="top_m_mobile">
-                        <a href="tel:88125012002">8 (812) 501-20-02</a>
+                        <a class="number-phone" href="tel:88125012002">8 (812) 501-20-02</a>
                         <span class="navigation_t">Звоните ежедневно с 9:00 до 21:00 м. Сенная,<br> м. Спасская, Набережная канала Грибоедова, д. 59</span>
                     </div>
                 ' : '
                     <div class="top_m_mobile">
-                        <a href="tel:84951350003">8 (495) 135-00-03</a>
+                        <a class="number-phone" href="tel:84951350003">8 (495) 135-00-03</a>
                         <span class="navigation_t">Звоните ежедневно с 9:00 до 21:00<br>м. Кутузовская. ул. Студенческая, д. 35</span>
                     </div>
                 '; ?>

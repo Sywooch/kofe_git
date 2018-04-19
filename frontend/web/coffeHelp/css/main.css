@@ -11437,7 +11437,13 @@ a.phone-c {
 }
  a.phone-h {
      cursor: pointer;
-     font-size: 35px 
+     font-size: 24px;
+     color: #4c5052;
+}
+@media (max-width: ) {
+     a.phone-h {
+        font-size: 18;
+     }
 }
  span.phone_big_top a.phone-c {
      font-size: 24px;

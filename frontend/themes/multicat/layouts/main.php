@@ -90,7 +90,7 @@ $domain = str_replace('admin.', '', $domain);
                             <?php endif; ?>
                         </div>
                         <div class="right">
-                            <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                            <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone_spb' : 'phone_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -147,7 +147,7 @@ $domain = str_replace('admin.', '', $domain);
                                             <p>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
                                         <?php endif; ?>
 
-                                        <a class="<?= \app\components\CController::$monoBrand['url']; ?>phone_s" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                        <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone_spb' : 'phone_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         <span>Ежедневно с 09:00 до 20:00</span>
                                     </div>
                                 </div>
