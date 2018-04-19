@@ -4369,7 +4369,7 @@ left: 16%;
         text-align: center;
     }
 }
-#footer_phone span {
+#footer_phone a {
     display: block;
     font-size: 25px;
     color: #ff4900;
