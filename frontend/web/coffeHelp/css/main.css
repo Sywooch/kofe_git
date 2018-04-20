@@ -3776,13 +3776,13 @@
     }
 }
  .navbar-nav>li>a.coffee-machine:before {
-     background-image: url(../img/coffee-machine.svg);
+     background-image: url(../img/coffee-machine.svg?=v2);
 }
  .navbar-nav>li>a.lists:before {
-     background-image: url(../img/list.svg);
+     background-image: url(../img/list.svg?=v2);
 }
  .navbar-nav>li>a.tools:before {
-     background-image: url(../img/tools.svg);
+     background-image: url(../img/tools.svg?=v2);
 }
  .navbar-nav.navbar-right>li>a:before {
      display: none;

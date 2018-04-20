@@ -101,7 +101,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="container">
                         <div class="row row_header_line">
-                            <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg"></a></div>
+                            <div class="logo"> <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?= $siteConfig['id']; ?>/logo.svg?=v2"></a></div>
                             <div class="top-menu-container">
                                 <div class="clock-work l"> Работаем без перерывов и <br> выходных <span>с 9:00 до 20:00</span></div>
                                 <div class="clock-work r checkin-visit"> Выезжаем по <?= Yii::$app->session['region']['id'] == 1 ? 'всей Москве <br> и Московской области' : 'всему Санкт-Петербургу <br> и Ленинградской области'; ?></div>
