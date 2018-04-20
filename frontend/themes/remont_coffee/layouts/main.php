@@ -80,14 +80,14 @@ $js = app\components\CController::$js;
             <div class="container header">
                 <div class=" menu-line">
                     <nav class="navbar navbar-default navigation">
-                        <div class="navbar-header">
+                        <div class="navbar-header for-nav-tel">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="tel-nav" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                            <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>
                         <div class="collapse navbar-collapse navigation" id="main-menu">
                             <ul id="menu-home" class="nav navbar-nav">
