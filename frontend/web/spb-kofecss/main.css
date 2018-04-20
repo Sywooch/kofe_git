@@ -378,22 +378,22 @@ section {
     float: right;
     margin-top: 0px;
 }
-.tel .phone {
+.tel a {
     font-size: 20px;
     color: #372727;
     line-height: 26px;
     font-weight: 700;
 }
-.video .tel .phone {
+.video .tel a {
     color: #fff;
 }
-.video .tel .phone:hover {
+.video .tel a:hover {
     color: #fff;
 }
-.tel .phone:hover {
+.tel a:hover {
     color: #673b14;
 }
-.tel .phone:before {
+.tel a:before {
     content:"\f095";
     width: 26px;
     height: 26px;
@@ -1011,16 +1011,16 @@ input#phone2::-webkit-input-placeholder {
     line-height: 35px;
     font-family: 'NeuronExtraBold', cursive;
 }
-#footer .tel .phone {
+#footer .tel a {
     font-size: 18px;
     color: #fff;
     line-height: 35px;
     font-weight: 200;
 }
-#ask-form .tel .phone {
+#ask-form .tel a {
     font-weight: 200;
 }
-#footer .tel .phone:before {
+#footer .tel a:before {
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -1178,7 +1178,7 @@ input#phone2::-webkit-input-placeholder {
     margin-top: 2px;
     display: block;
 }
-.is-sticky #header .tel .phone {
+.is-sticky #header .tel a {
     color: #fff;
     font-weight: 200;
 }
@@ -2028,7 +2028,7 @@ video {
     left: 0px;
     margin-bottom: 15px;
 }
-#ask-form .container .left .tel .phone {
+#ask-form .container .left .tel a {
     font-size: 14px;
     color: #fff;
 }
@@ -2133,7 +2133,7 @@ video {
     .header-bg {
         height: 535px;
     }
-    .tel .phone {
+    .tel a {
         font-size: 14px;
     }
     #ask-form .container .right {
@@ -2210,7 +2210,7 @@ video {
         padding-top: 0px;
         position: relative;
     }
-    .tel .phone {
+    .tel a {
         font-size: 14px;
     }
     #neispravnost .punkt:nth-child(4) {
@@ -2360,10 +2360,10 @@ video {
         width: 31%;
         margin-left: 0%;
     }
-    .tel .phone {
+    .tel a {
         font-size: 0px;
     }
-    .tel .phone:before {
+    .tel a:before {
         width: 30px;
         height: 30px;
         padding-top: 7px;
@@ -3255,7 +3255,7 @@ body.models .logo-breand {
     #header .tel {
         margin-top: 21px;
     }
-    .tel .phone:before {
+    .tel a:before {
         content:"\f095";
         width: 26px;
         height: 26px;
@@ -3278,7 +3278,7 @@ body.models .logo-breand {
     section#hlebniye-kroshki {
         margin-top: 0px;
     }
-    .video .tel .phone:before {
+    .video .tel a:before {
         background: #ffffff;
         color: #000;
     }
