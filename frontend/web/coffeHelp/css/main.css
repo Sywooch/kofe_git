@@ -8815,11 +8815,14 @@
      font-size: 14px 
 }
 }
+.phone-h-msk, .phone-h-spb,
  .phone_block_two .phone.phone .header-phone-number-part, .phone_block_two .phone.phone2 .header-phone-number-part {
      font-size: 24px;
-     font-family: "PF DinDisplay Pro Bold", Arial 
+     font-family: "PF DinDisplay Pro Bold", Arial;
+     color: #3c3f3e;
 }
 @media (max-width: 480px) {
+    .phone-h-msk, .phone-h-spb,
      .phone_block_two .phone.phone .header-phone-number-part {
         font-size: 18px;
      }
