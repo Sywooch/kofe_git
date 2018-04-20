@@ -119,7 +119,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div>
                         <div class="tel">
-                            <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                            <a class="<?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                         </div>                        
                         <div class="clear"></div>
                         <span class="time-work"><span>Ежедневно</span> с 08:00 до 22:00</span>
@@ -200,7 +200,7 @@ $js = app\components\CController::$js;
                     <p> © <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></p>
                     <?php if (!$siteConfig['mono']): ?><p>Ваш город: <span class="select-region"><?= Yii::$app->session['region']['title']; ?></span></p><?php endif; ?>
                     <div class="tel">
-                        <a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                        <a class="<?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
                 </div>
             </section>

@@ -69,7 +69,7 @@ $form = ActiveForm::begin([
                 </ul>            
                 <a href="/kontakty">Наши Контакты</a>
             <?php endif; ?>
-            <div class="tel"><a class="phone <?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
+            <div class="tel"><a class="<?= Yii::$app->session['region']['class']; ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
         </div>
         <div class="clear"></div>
     </div>
