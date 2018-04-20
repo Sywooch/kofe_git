@@ -1,3 +1,4 @@
+<?php $siteConfig = app\components\CController::getSiteConfig(); ?>
 <div class="contact-infos">
     <div class="map-gl">
         <div class="text">
@@ -5,7 +6,7 @@
                 <a href="/kontakty">Наш адрес в <span><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?></span></a>
             </div>
             <p>г. Москва, 2-я Филёвская улица, 8к1.</p>
-            <p><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
+            <p><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
             <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
         </div>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e52df75fd24316ff3eae8a7942cc993c726bf7583543218f30e8be82149d3d3&amp;source=constructor" frameborder="0"></iframe>
