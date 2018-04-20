@@ -118,10 +118,13 @@ $js = app\components\CController::$js;
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         $roistatid = 'b934b194d4b25d3758bc6bbd6e1b6a78';
-        if (isset($siteConfig['spb']))
+        $roistat_n = '21,22';
+        if (isset($siteConfig['spb'])) {
+            $roistat_n = '27,28';
             $roistatid = 'cd7a848e3102ce162b85777a1425a55a';
+        }
         ?>
-        <script>(function (w, d, s, h, id) {
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                 w.roistatProjectId = id;
                 w.roistatHost = h;
                 var p = d.location.protocol == "https:" ? "https://" : "http://";

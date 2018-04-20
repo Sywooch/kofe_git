@@ -259,11 +259,14 @@ $js = app\components\CController::$js;
         <?php $this->endPage() ?>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
+        $roistat_n = '14,13';
         $roistatid = '7bd32523aaf002c75bde39b1293de8f0';
-        if (isset($siteConfig['spb']))
+        if (isset($siteConfig['spb'])) {
+            $roistat_n = '16,15';
             $roistatid = 'c82dc6b696b11707a3a7914541b01b98';
+        }
         ?>
-        <script>(function (w, d, s, h, id) {
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                 w.roistatProjectId = id;
                 w.roistatHost = h;
                 var p = d.location.protocol == "https:" ? "https://" : "http://";

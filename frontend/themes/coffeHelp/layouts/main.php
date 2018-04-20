@@ -249,10 +249,13 @@ $js = app\components\CController::$js;
     <?= !empty($js['content']) ? $js['content'] : ''; ?>
     <?php
     $roistatid = '0b46e09f230f4526b38858e48d27e631';
-    if (isset($siteConfig['spb']))
+    $roistat_n = '19,20';
+    if (isset($siteConfig['spb'])) {
         $roistatid = '3fe43ebb635b2cc4c8a26b776759d3af';
+        $roistat_n = '25,26';
+    }
     ?>
-    <script>(function (w, d, s, h, id) {
+    <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
             w.roistatProjectId = id;
             w.roistatHost = h;
             var p = d.location.protocol == "https:" ? "https://" : "http://";

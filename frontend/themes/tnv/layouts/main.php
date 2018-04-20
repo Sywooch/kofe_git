@@ -272,6 +272,27 @@ $js = app\components\CController::$js;
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/pr.js"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistat_n = 1;
+        $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
+        if (isset($siteConfig['spb'])) {
+            $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
+            $roistat_n = 1;
+        }
+        ?>
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
+            (function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 <?php

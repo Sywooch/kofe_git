@@ -246,11 +246,14 @@ $domain = str_replace('admin.', '', $domain);
         </div>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
+        $roistat_n = '17,18';
         $roistatid = '314cc36ae97e480950a604b5c5a729f7';
-        if (isset($siteConfig['spb']))
+        if (isset($siteConfig['spb'])) {
             $roistatid = 'e9bb7c25ae12c1eea627cb04cdb83f4b';
+            $roistat_n = '31,32';
+        }
         ?>
-        <script>(function (w, d, s, h, id) {
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                 w.roistatProjectId = id;
                 w.roistatHost = h;
                 var p = d.location.protocol == "https:" ? "https://" : "http://";

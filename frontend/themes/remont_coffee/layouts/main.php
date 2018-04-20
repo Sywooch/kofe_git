@@ -40,7 +40,7 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
         <?php if ($siteConfig['id'] == 54): ?>
-            <!--<link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">-->
+                <!--<link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">-->
         <?php endif; ?>
     </head>
     <body>
@@ -104,24 +104,24 @@ $js = app\components\CController::$js;
             </div>
         </div>
         <?php
-            if (!Yii::$app->user->isGuest) {
-                echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
-                $domain = $_SERVER['SERVER_NAME'];
-                if (isset($_GET['data']['is_service'])) {
-                    if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
-                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
-                    } else {
-                        echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
-                        echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
-                    }
+        if (!Yii::$app->user->isGuest) {
+            echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
+            $domain = $_SERVER['SERVER_NAME'];
+            if (isset($_GET['data']['is_service'])) {
+                if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
                 } else {
                     echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
-                    if (!empty($_GET['data']))
-                        echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
                 }
-                echo '</div>';
+            } else {
+                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                if (!empty($_GET['data']))
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
             }
-            ?>
+            echo '</div>';
+        }
+        ?>
         <?= $content; ?>        
         <div class="gl-footer">
             <div class="container">
@@ -168,6 +168,27 @@ $js = app\components\CController::$js;
             </div>
         </div>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistat_n = '23,24';
+        $roistatid = 'f13bbfe1cb8b20ef560688ad98cabdf5';
+        if (isset($siteConfig['spb'])) {
+            $roistatid = '2f469666c78f7e3bd3c60cbad9831ee1';
+            $roistat_n = '30,29';
+        }
+        ?>
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
+            (function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 
@@ -190,7 +211,7 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>$("form").each(function () {
-                    $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-                });</script>
+                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+            });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
