@@ -21,7 +21,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
             <div class="list">                
                 <ul>
                     <li class="phone">
-                        <div class="name"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
+                        <div class="name"><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'm-telefon-spb' : 'm-telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
                     </li>
                     <li class="address">
                         <div class="name">г. Москва, 2-я Филёвская улица, 8к1.</div>
