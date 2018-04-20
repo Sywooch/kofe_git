@@ -163,7 +163,7 @@ class CController extends \yii\web\Controller {
     public static function sendMessage($msg, $chat_id) {
         $url = 'https://api.telegram.org/bot361996498:AAElIAPqMYKtwZWyHs1qTPgNxOFAscy25x4/sendMessage?chat_id=' . $chat_id . '&text=';
         if ($msg)
-            file_get_contents($url . urlencode($msg));
+            @file_get_contents($url . urlencode($msg));
     }
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
