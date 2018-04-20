@@ -87,14 +87,16 @@ a:hover {
         float: left;
     }
 }
-.phone-mobile {
+.m-telefon-spb,
+.m-telefon-msk {
     display: none;
 }
 @media screen and (max-width: 540px) {
     .logo-phone {
         display: none;
     }
-    .phone-mobile {
+    .m-telefon-spb,
+.m-telefon-msk {
         display: block;
         position: absolute;
         right: 0px;

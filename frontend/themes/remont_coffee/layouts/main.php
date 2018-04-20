@@ -54,7 +54,7 @@ $js = app\components\CController::$js;
                 <div class="logo-image">
                     <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo.svg" /></a>
                 </div>
-                <a href="/" class="phone-mobile"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+                <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'm-telefon-spb' : 'm-telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="phone-mobile"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
                 <div class="top-advantages">
                     <span class="item">
                         Произведем супер ремонт за 1 день!
