@@ -880,7 +880,6 @@ nav .container > ul > li.yeshsho {
 		float: left;
 	}
 	nav .container > ul > li > a {
-		padding-top: 18px;
 		height: 50px;
 	}
 	nav .container > ul > li.yeshsho > a br {
@@ -929,9 +928,6 @@ nav .container > ul > li > a > i {
 	opacity: 0.5;
 }
 @media screen and (max-width: 680px) {
-	nav .container > ul > li > a svg {
-		margin-top: 10px;
-	}
 	nav .container > ul > li > a > i {
 		margin-top: 17px;
 	}

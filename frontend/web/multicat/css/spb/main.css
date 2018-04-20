@@ -880,7 +880,6 @@ nav .container > ul > li.yeshsho {
 		float: left;
 	}
 	nav .container > ul > li > a {
-		padding-top: 18px;
 		height: 50px;
 	}
 	nav .container > ul > li.yeshsho > a br {
@@ -930,9 +929,6 @@ nav .container > ul > li > a > i {
 	opacity: 0.5;
 }
 @media screen and (max-width: 680px) {
-	nav .container > ul > li > a svg {
-		margin-top: 10px;
-	}
 	nav .container > ul > li > a > i {
 		margin-top: 17px;
 	}
@@ -4741,7 +4737,7 @@ footer .footer .right span {
   border-radius:2px;
 }
 header .menu-toggle span {
-	background: #fff;
+	background: #000;
 }
 .menu-toggle {
   width:50px;
@@ -4862,18 +4858,18 @@ header .menu-toggle span {
 	  transition-delay:.25s;
 	}
 }
-.mobi-number {
+.spb-mobi-number {
 	position: absolute;
 	right: 0px;
 	top: 0px;
-	color: #fff;
+	color: #000;
 	font-size: 30px;
 	margin-top: 22px;
 	margin-right: 10px;
 	display: none;
 }
 @media screen and (max-width: 540px) {
-	.mobi-number {
+	.spb-mobi-number {
 		display: block;
 	}
 }

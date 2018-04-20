@@ -46,7 +46,7 @@ $domain = str_replace('admin.', '', $domain);
         <?php $this->beginBody() ?>
         <header id="header" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'colorborder' : '' ?>">            
             <div class="container">
-                <a class="mobi-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb-mobi-number' : 'mobi-number' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <div class="logo">
                     <a href="/"><img src="<?= $assets ?>/multicat/images/<?= \app\components\CController::$monoBrand['url']; ?><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '2' : '' ?>.svg"></a>
                 </div>
