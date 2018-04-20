@@ -331,11 +331,14 @@ $js = app\components\CController::$js;
         
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
             <?php
+            $roistat_n = '5,6';
         $roistatid = 'ce549814b815f3fa6db9d839ea4d4f50';
-        if (isset($siteConfig['spb']))
+        if (isset($siteConfig['spb'])) {
             $roistatid = '145f7e4eaf44d2aae77d58a6e5e7b254';
+            $roistat_n = '12,11';
+        }
         ?>
-        <script>(function (w, d, s, h, id) {
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                 w.roistatProjectId = id;
                 w.roistatHost = h;
                 var p = d.location.protocol == "https:" ? "https://" : "http://";

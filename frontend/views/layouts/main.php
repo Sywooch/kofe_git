@@ -341,14 +341,18 @@ $js = app\components\CController::$js;
                 <script src="/js/app2.js"></script>
             <?php endif; ?>
             <?php
+            $roistat_n = '8,7';
             $roistatid = '73f4732fa0bd932f55b5701b2a4be7ac';
-            if ($siteConfig['mono'] && isset($siteConfig['spb']))
+            if ($siteConfig['mono'] && isset($siteConfig['spb'])) {
+                $roistat_n = '9,10';
                 $roistatid = '4f0a40481efd4baef2c06182c012dee6';
+            }
             elseif ($siteConfig['mono'] && !isset($siteConfig['spb'])) {
+                $roistat_n = '1,3';
                 $roistatid = '59aa76d4f6e16b05176872ca59a9dad0';
             }
             ?>
-            <script>(function (w, d, s, h, id) {
+            <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                         w.roistatProjectId = id;
                         w.roistatHost = h;
                         var p = d.location.protocol == "https:" ? "https://" : "http://";
