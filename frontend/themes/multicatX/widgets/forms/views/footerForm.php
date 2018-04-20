@@ -1,7 +1,9 @@
+
+<?php $siteConfig = app\components\CController::getSiteConfig(); ?>
 <div class="main_container">
     <div id="rumiservice12" class="inner_container">
         <div id="rumiservice12_left">
-            <div class="rumiservice12_left_header">Заказать услуги в <br><span class="colortext"><?= $_SERVER['SERVER_NAME']; ?></span><br><a class="colortext" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
+            <div class="rumiservice12_left_header">Заказать услуги в <br><span class="colortext"><?= $_SERVER['SERVER_NAME']; ?></span><br><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'tel_spb' : 'tel_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
             <div class="rumiservice12_left_text"></div>
         </div>   
         <div id="rumiservice12_right">
