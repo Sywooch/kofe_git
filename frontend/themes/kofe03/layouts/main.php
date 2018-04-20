@@ -151,7 +151,7 @@ $js = app\components\CController::$js;
                                 <div class="cnct_cll">
                                     <span class="cnct_ph cnct_ph-a" data-phone="moscow">
                                         <noindex>
-                                            <a rel="nofollow" class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                            <a rel="nofollow" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telfix' : 'tel03' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                         </noindex>
                                     </span>
                                     <p>c 09:00 до 20:00</p>
@@ -163,12 +163,12 @@ $js = app\components\CController::$js;
                 </div>
                 <?= $siteConfig['id'] == 52 ? '
                     <div class="top_m_mobile">
-                        <a class="number-phone" href="tel:88125012002">8 (812) 501-20-02</a>
+                        <a class="<?= isset($siteConfig["spb"]) && $siteConfig["spb"] ? "telfix" : "tel03" ?>" href="tel:88125012002">8 (812) 501-20-02</a>
                         <span class="navigation_t">Звоните ежедневно с 9:00 до 21:00 м. Сенная,<br> м. Спасская, Набережная канала Грибоедова, д. 59</span>
                     </div>
                 ' : '
                     <div class="top_m_mobile">
-                        <a class="number-phone" href="tel:84951350003">8 (495) 135-00-03</a>
+                        <a class="<?= isset($siteConfig["spb"]) && $siteConfig["spb"] ? "telfix" : "tel03" ?>" href="tel:84951350003">8 (495) 135-00-03</a>
                         <span class="navigation_t">Звоните ежедневно с 9:00 до 21:00<br>м. Кутузовская. ул. Студенческая, д. 35</span>
                     </div>
                 '; ?>
@@ -302,7 +302,7 @@ $js = app\components\CController::$js;
                     <div class="cnct">
                         <div class="cnct_cll">
                             <span class="cnct_ph cnct_ph-a" data-phone="moscow">
-                                <a rel="nofollow" class="number-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                <a rel="nofollow" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telfix' : 'tel03' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </span>                            
                             <p> <?= Yii::$app->session['region']['title']; ?></p>
                         </div>
