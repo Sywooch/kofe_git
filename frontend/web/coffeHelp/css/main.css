@@ -11422,7 +11422,9 @@ body section.offer p.text {
      margin-bottom: 5px;
      display: inline-block 
 }
- a.phone-c, a.phone-common, section.promo a.phone-c {
+ a.phone-c, 
+ a.phone-common, 
+ section.promo a.phone-c {
      font-size: 15px;
      font-family: 'Proxima Nova Bold', Arial, sans-serif;
      color: #4c5052;
@@ -11430,10 +11432,32 @@ body section.offer p.text {
      text-decoration: none;
      cursor: pointer 
 }
-a.phone-c {
+ a.phone-c-spb, 
+ section.promo a.phone-c-spb{
+     font-size: 15px;
+     font-family: 'Proxima Nova Bold', Arial, sans-serif;
+     color: #4c5052;
+     line-height: 1.467;
+     text-decoration: none;
+     cursor: pointer 
+}
+ a.phone-c-msk, 
+ section.promo a.phone-c-msk{
+     font-size: 15px;
+     font-family: 'Proxima Nova Bold', Arial, sans-serif;
+     color: #4c5052;
+     line-height: 1.467;
+     text-decoration: none;
+     cursor: pointer 
+}
+a.phone-c,
+a.phone-c-msk,
+a.phone-c-spb {
     color: #fff;
 }
- div.footer-phone a.phone-c {
+ div.footer-phone a.phone-c,
+ div.footer-phone a.phone-c-spb,
+ div.footer-phone a.phone-c-msk {
      color: #fff;
      text-decoration: none;
      border: none 
@@ -11448,7 +11472,9 @@ a.phone-c {
         font-size: 18;
      }
 }
- span.phone_big_top a.phone-c {
+ span.phone_big_top a.phone-c,
+ span.phone_big_top a.phone-c-spb,
+ span.phone_big_top a.phone-c-msk {
      font-size: 24px;
      color: #52ad25;
      font-family: "Proxima Nova Bold", Arial, sans-serif;
@@ -11456,7 +11482,9 @@ a.phone-c {
      line-height: 24px 
 }
 @media (max-width: 667px) {
-     span.phone_big_top a.phone-c {
+     span.phone_big_top a.phone-c,
+ span.phone_big_top a.phone-c-spb,
+ span.phone_big_top a.phone-c-msk  {
         font-size: 20px;
      }
 }

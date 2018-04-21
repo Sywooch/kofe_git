@@ -68,7 +68,7 @@ $js = app\components\CController::$js;
                         <div class="navbar-phone">
                             <span class="phone_big_top">
                                 <nobr>
-                                    <a class="phone-c" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
+                                    <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone-c-spb' : 'phone-c-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
                                 </nobr>
                             </span>
                         </div>
@@ -203,7 +203,7 @@ $js = app\components\CController::$js;
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
-                                <nobr> <a class="phone-c" href="#"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></nobr>
+                                <nobr> <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone-c-spb' : 'phone-c-msk' ?>" href="#"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></nobr>
                             </div>
                         </div>
                     </div>

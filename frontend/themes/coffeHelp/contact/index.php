@@ -24,7 +24,7 @@ $breadcrumbs = [
                 <div class="row contacts-container">
                     <div class="col-lg-6 l">
                         <p>Единый справочный телефон</p>
-                        <div class="phone one"> <a class="phone-h" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
+                        <div class="phone one"> <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone-h-spb' : 'phone-h-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
                             <?= Yii::$app->session['region']['phone']; ?>
                         </a></div>                       
                     </div>
