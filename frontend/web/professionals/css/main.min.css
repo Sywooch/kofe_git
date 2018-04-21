@@ -6921,13 +6921,15 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .about-info .title{
     margin-bottom:2rem
 }
-.about-info_phone{
+.about .telefonga_spb,
+.about .telefonga_msk {
     font-size:4rem;
     font-weight:400;
     line-height:5.6rem;
     color:#636363
 }
-.about-info_phone:hover{
+.about .telefonga_spb:hover,
+.about .telefonga_msk:hover{
     color:#e66429;
     text-decoration:underline
 }
@@ -8439,7 +8441,8 @@ footer{
     .about{
         padding:0 0 3rem
     }
-    .about-info_phone{
+    .about .telefonga_spb,
+    .about .telefonga_msk {
         font-size:3rem
     }
     .faults{
@@ -8861,7 +8864,8 @@ footer h4 {
     font-family: Robika-Regular;
     color: #e66429
 }
-.footer-tel {
+footer .telefonga_spb,
+footer .telefonga_msk {
     font-size: 20px;
     display: inline-block;
 }

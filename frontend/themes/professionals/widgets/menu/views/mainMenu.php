@@ -34,7 +34,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </div>
                         <div class="col-lg-8 col-md-24 col-sm-24 hidden-xs">
                             <p class="navbar-text navbar-right header-phone">
-                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                             </p>
                         </div>
                     </div>

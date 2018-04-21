@@ -96,7 +96,7 @@ $js = app\components\CController::$js;
                     <div class="col-lg-7 col-md-7 col-sm-24">
                         <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
                         <p>г. Москва, м. Шелепиха, ул. Большая филевская, д.1</p>
-                        <a class="footer-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                        <a class="footer-tel <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
                 </div>
                 <hr style="border-color: rgba(165, 165, 165, 0.1)">
