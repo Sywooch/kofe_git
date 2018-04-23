@@ -173,7 +173,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="clear"></div>
                 </div>
-                <!--<div class="footer">
+                <div class="footer">
                     <div class="left">
                         <span>Мы в социальных сетях</span>
                         <ul>
@@ -188,7 +188,7 @@ $js = app\components\CController::$js;
                     <div class="right">
                         <span>© <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
-                </div>-->
+                </div>
             </div>
         </footer>
 
