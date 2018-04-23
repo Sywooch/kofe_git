@@ -1689,7 +1689,6 @@ nav .container > ul > li > ul li a span {
 	line-height: 60px;
 	border-radius: 30px;
 	margin-top: -95px;
-	min-width: 270px;
 }
 #number-10 .container .bottons > div {
 	min-width: 131px;
@@ -1712,12 +1711,13 @@ nav .container > ul > li > ul li a span {
 	padding: 0px 28px;
 	float: left;
 	text-decoration: none;
-	margin: 0px 1px;    
+	margin: 0px 1px;
 	font-family: "Arial",sans-serif;
-  transition: all 0.3s;
+	transition: all 0.3s;
 }
 #number-10 .container .bottons a:hover {
-	background: #d3e599;
+	opacity: 0.8;
+	color: #fff;
 }
 #number-10 .container .bottons a.active {
 	background: #90bf00;
@@ -1728,6 +1728,7 @@ nav .container > ul > li > ul li a span {
 	font-size: 14px;
 	border-spacing: 0;
 	min-width: 450px;
+	width: 100%;
 }
 #number-10 table tr td {
 	padding: 15px 0px;
@@ -1796,7 +1797,7 @@ nav .container > ul > li > ul li a span {
 	}
 }
 #number-10 table .head th {
-	background: #f1eedf;
+	background: #f7f7f7;
 	padding-left: 25px;
 	padding-right: 25px;
 }
