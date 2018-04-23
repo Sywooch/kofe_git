@@ -1454,6 +1454,10 @@ nav .container > ul > li > ul li a span {
 		margin-bottom: 10px;
 	}
 }
+#number-8 > .container > .item .left div a {
+	color: #000;
+	text-decoration: none;
+}
 #number-8 > .container > .item .left p {
 	font-size: 18px;
 	line-height: 24px;
