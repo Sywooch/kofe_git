@@ -12,9 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                       <span></span>
                       <span></span>
                     </div>
-                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="navbar-phone visible-xs">
-                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/icon-phone-2.png?v=1" alt="">
-                    </a>
+                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'navbar-phone-spb' : 'navbar-phone-msk' ?>"></a>
                     <a class="navbar-brand" href="/">
                         <div class="logo"><b>K<span>o</span>femashin<br>Rem<span>o</span>nt</b></div>
                     </a>

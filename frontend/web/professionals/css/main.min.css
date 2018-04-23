@@ -6670,14 +6670,33 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 .navbar-brand>img{
     width:100%
 }
-.navbar-phone{
+.navbar-phone-msk{
     display:inline-block;
     width: 35px;
     margin: 17px 15px;
-    float:right
+    float:right;
+    height: 35px;
+    background: url(../media/icon-phone-2.png);
+    background-size: 100%;
 }
-.navbar-phone img{
-    width:100%
+@media (max-width: 767px) {
+    .navbar-phone-msk {
+            display: block!important;
+    }
+}
+.navbar-phone-spb{
+    display:inline-block;
+    width: 35px;
+    margin: 17px 15px;
+    float:right;
+    height: 35px;
+    background: url(../media/icon-phone-2.png);
+    background-size: 100%;
+}
+@media (max-width: 767px) {
+    .navbar-phone-spb {
+            display: block!important;
+    }
 }
 .navbar-nav{
     margin-top:1rem
