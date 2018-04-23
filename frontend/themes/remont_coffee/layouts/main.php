@@ -71,7 +71,7 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="logo-phone">
                     <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                    <span>г. Москва, 2-я <br>Филёвская улица, 8к1.</span>
+                    <span>г. Москва, Кастанаевская <br>улица, 17</span>
                 </div>
             </div>
         </div>
@@ -129,7 +129,7 @@ $js = app\components\CController::$js;
                     <div class="img-logo">
                         <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo2.svg" /></a>
                     </div>
-                    <p>г. Москва, 2-я Филёвская улица, 8к1.</p>
+                    <p>г. Москва, Кастанаевская улица, 17</p>
                     <p><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                     <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
                     <p><?= $_SERVER['HTTP_HOST']; ?> © <?= date('Y'); ?></p>

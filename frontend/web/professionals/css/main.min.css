@@ -6671,17 +6671,18 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     width:100%
 }
 .navbar-phone-msk{
-    display:inline-block;
+    display: none;
     width: 35px;
     margin: 17px 15px;
     float:right;
     height: 35px;
-    background: url(../media/icon-phone-2.png);
+    background: url(../media/icon-phone-2.png); 
     background-size: 100%;
+    font-size: 0px;
 }
 @media (max-width: 767px) {
     .navbar-phone-msk {
-            display: block!important;
+            display: inline-block !important;
     }
 }
 .navbar-phone-spb{

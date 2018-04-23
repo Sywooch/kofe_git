@@ -1718,6 +1718,7 @@ nav .container > ul > li > ul li a span {
 #number-10 .container .bottons a:hover {
 	opacity: 0.8;
 	color: #fff;
+	background: #90bf00;
 }
 #number-10 .container .bottons a.active {
 	background: #90bf00;
@@ -2022,6 +2023,12 @@ nav .container > ul > li > ul li a span {
 @media screen and (max-width: 1030px) {
 	#number-12 .head p {
 		padding: 0px 15px;
+	}
+}
+@media screen and (max-width: 540px) {
+	#number-12 .head p {
+		line-height: 15px;
+		padding-top: 10px;
 	}
 }
 #number-12 .head p i {
