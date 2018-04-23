@@ -553,7 +553,6 @@ header {
 	border-radius: 25px;
 	width: 472px;
 	max-height: 52px;
-	background: #000;
 }
 @media screen and (max-width: 1250px) {
 	.topcontactinfo {

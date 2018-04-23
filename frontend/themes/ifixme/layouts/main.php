@@ -90,7 +90,7 @@ $js = app\components\CController::$js;
                     </div>
                     <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
-                <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
+                <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Отправить заявку</a>
                 <div class="clear"></div>
             </div>
         </header>
@@ -140,7 +140,7 @@ $js = app\components\CController::$js;
                             <li><a href="/novosti">Новости</a></li>
                             <li><a href="/kontakty">Контакты</a></li>
                         </ul>
-                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
+                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Отправить заявку</a>
                     </div>
                     <div class="clear"></div>
                 </div>
