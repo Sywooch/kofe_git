@@ -2028,7 +2028,7 @@ nav .container > ul > li > ul li a span {
 @media screen and (max-width: 540px) {
 	#number-12 .head p {
 		line-height: 15px;
-		padding-top: 00px;
+		padding-top: 10px;
 	}
 }
 #number-12 .head p i {
