@@ -26,7 +26,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?php if ($row['is_popular'] == 1 && $url): ?>
                         <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
                     <?php else: ?>
-                        <?= $row['title']; ?>
+                        <?= $row['title'] . ' ' . $b; ?>
                     <?php endif; ?>
                 </td>
                 <td><span class="price-nowrap"><span><?= number_format($row['price'], 0, ' ', ' '); ?></span>&nbsp;руб.</span></td>
