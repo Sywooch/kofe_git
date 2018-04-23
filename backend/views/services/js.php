@@ -3,7 +3,7 @@
 
     use kartik\select2\Select2;
 
-    echo Select2::widget([
+echo Select2::widget([
         'id' => 'select-site',
         'name' => 'site',
         'value' => '',
@@ -24,6 +24,13 @@
     <div class="form-group field-pages-meta_desc">
         <label class="control-label" for="pages-meta_desc">yandex-verification content</label>
         <input type="text" id="yandex-verification" class="form-control" name="yandex-verification" maxlength="2000" aria-required="true" aria-invalid="true">
+        <div class="help-block"></div>
+    </div>
+    <div class="form-group field-pages-active has-success">        
+        <label>
+            <input type="checkbox" id="set-password" name="set-password" value="1" aria-invalid="false">
+            Set password
+        </label>
         <div class="help-block"></div>
     </div>
     <div class="form-group">

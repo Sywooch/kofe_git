@@ -109,7 +109,8 @@ Breadcrumbs::widget([
         var site = $("#select-site").val();
         var robots = $("#site-robots").val();
         var yandex = $("#yandex-verification").val();
-        $.post("/services/js", {js: js, site: site, robots: robots, yandex: yandex}, function (resp) {
+        var pwd = $("#set-password");
+        $.post("/services/js", {js: js, site: site, robots: robots, yandex: yandex, pwd: (pwd.is(':checked') ? 1 : 0)}, function (resp) {
             var j = JSON.parse(resp);
             $("#site-js").val(j.content);
             $("#site-robots").val(j.robots);

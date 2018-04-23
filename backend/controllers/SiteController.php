@@ -22,12 +22,12 @@ class SiteController extends Controller {
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                    [
+                        [
                         'actions' => ['login', 'error'],
                         'allow' => true,
                     ],
-                    [
-                        'actions' => ['logout', 'index', 'url'],
+                        [
+                        'actions' => ['logout', 'index', 'url', 'update-password'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -52,7 +52,7 @@ class SiteController extends Controller {
             ],
         ];
     }
-    
+
     public static function getSiteConfig() {
         $host = Yii::$app->request->hostInfo;
         $hostArr = explode('.', $host);
@@ -88,7 +88,19 @@ class SiteController extends Controller {
         echo "<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction($funcNum, '$url', '$message');</script>";
     }
 
+    public function actionUpdatePassword() {
+        $model = \common\models\User::findByUsername('admin');
+        $model->scenario = \common\models\User::SCENARIO_UPDATE_PASSWORD;
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->password_hash = Yii::$app->security->generatePasswordHash($model->new_password);
+            $model->update();
+            Yii::$app->getSession()->setFlash('success', 'Your password has been reset successfully!');
+        }
+        return $this->render('update-password', ['model' => $model]);
+    }
+
     public function actionIndex() {
+
         return $this->render('index');
     }
 

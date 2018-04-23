@@ -25,6 +25,9 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
+    const SCENARIO_UPDATE_PASSWORD = 'update-password';
+    public $new_password;
+    public $password_repeat;
 
     /**
      * @inheritdoc
@@ -50,8 +53,11 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
+            [['new_password', 'password_repeat'], 'required', 'on' => self::SCENARIO_UPDATE_PASSWORD],
+            [['new_password', 'password_repeat'], 'string', 'min' => 6, 'on' => self::SCENARIO_UPDATE_PASSWORD],
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['password_repeat', 'compare', 'compareAttribute'=>'new_password', 'message'=>"Passwords don't match"],
         ];
     }
 
