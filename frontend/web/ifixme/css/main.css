@@ -1714,6 +1714,7 @@ nav .container > ul > li > ul li a span {
 	text-decoration: none;
 	margin: 0px 1px;
 	font-size: 14px;
+	font-family: arial;
 }
 #number-10 .container .bottons a:hover {
 	background: #d3e599;
