@@ -58,7 +58,7 @@ class SiteController extends CController {
 
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc'] ?: $metaDesc,
+            'content' => $pageInfo['meta_desc'] ? str_replace('#number#', Yii::$app->session['region']['phone'], $pageInfo['meta_desc']) : $metaDesc,
         ]);
         $remain = $this->getRemainTime();
         return $this->render('index', ['page' => $pageInfo, 'remain' => $remain]);

@@ -21,7 +21,7 @@ class ContactController extends CController {
 //        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => $pageInfo['meta_desc']
+            'content' => str_replace('#number#', Yii::$app->session['region']['phone'], $pageInfo['meta_desc'])
         ]);
         $children = \Yii::$app->db->createCommand('select id, title, url, icon from {{%pages}} where parent = ' . (int) $pageInfo['id'])->queryAll();
         return $this->render('index', ['pageInfo' => $pageInfo, 'children' => $children]);

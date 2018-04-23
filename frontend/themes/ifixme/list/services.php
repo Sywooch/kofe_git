@@ -1,6 +1,13 @@
-<?php $this->title = $pageInfo['meta_title']; ?>
+<?php 
+$this->title = $pageInfo['meta_title'];
+$breadcrumbs = [
+    $pageInfo['title'],
+];
+?>
+<?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-26">
     <div class="container">
+        <h1><?= $pageInfo['meta_h1']; ?></h1>
         <?php foreach (app\components\CController::$menu as $key => $category): ?>
             <div class="content-services<?= $key == 0 ? ' active' : '' ?>">
                 <div class="open-botton">
