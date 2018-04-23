@@ -148,7 +148,7 @@ $js = app\components\CController::$js;
                     <div class="left">
                         <span>Сэкономьте <br>свое время</span>
                         <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
-                        <a class="btn out-icon green open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
+                        <a class="btn out-icon open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
                         <img src="<?= $assets ?>/ifixme/images/master.png">
                     </div>
                     <div class="right">
