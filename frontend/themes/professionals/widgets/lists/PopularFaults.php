@@ -15,6 +15,7 @@ class PopularFaults extends Widget {
     public $limit = 0;
     public $form = true;
     public $url = true;
+    public $b = '';
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
@@ -36,7 +37,8 @@ class PopularFaults extends Widget {
                     'type' => $this->type,
                     'is_popular' => $this->is_popular,
                     'model' => $this->form ? $model : null,
-                    'url' => $this->url
+                    'url' => $this->url,
+                    'b' => $this->b,
         ]);
     }
 

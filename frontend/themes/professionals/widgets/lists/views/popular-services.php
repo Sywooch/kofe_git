@@ -32,7 +32,7 @@ if (!empty($url))
                                     <img src="<?= $src; ?>" alt="<?= $row['title']; ?>">
                                 </div>
                                 <p class="services_title">
-                                    <?= $row['title']; ?>
+                                    <?= $row['title'] . ' ' . $b; ?>
                                 </p>
                                 <div class="services_price"><span class="price-nowrap"><span><?= number_format($row['price'], 0, ' ', ' '); ?></span>&nbsp;руб.</span></div>
                             </a>
