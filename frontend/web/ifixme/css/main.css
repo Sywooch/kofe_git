@@ -1712,9 +1712,9 @@ nav .container > ul > li > ul li a span {
 	padding: 0px 28px;
 	float: left;
 	text-decoration: none;
-	margin: 0px 1px;
-	font-size: 12px;
-	font-family: arial;
+	margin: 0px 1px;    
+	font-family: "Arial",sans-serif;
+  transition: all 0.3s;
 }
 #number-10 .container .bottons a:hover {
 	background: #d3e599;
