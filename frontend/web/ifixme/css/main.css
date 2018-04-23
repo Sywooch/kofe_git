@@ -4956,12 +4956,14 @@ header .menu-toggle span {
 	float: right;
 	padding: 20px 30px;
 	border-radius: 10px;
+	text-align: center;
 }
 .item-vakansi .right > div.summa {
   margin: 0px -30px;
 	padding: 0px 30px 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid #cecece;
+	text-align: left;
 } 
 #number-16 .container .item-vakansi .right > div.summa p {
 	color: #000;
