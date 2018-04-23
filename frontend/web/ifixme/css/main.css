@@ -417,7 +417,7 @@ header {
 	}
 }
 .logo img {
-	max-width: 100%;
+	max-width: 80%;
 	vertical-align: middle;
 }
 /*----------------------------------------------------*/
@@ -553,7 +553,6 @@ header {
 	border-radius: 25px;
 	width: 472px;
 	max-height: 52px;
-	background: #000;
 }
 @media screen and (max-width: 1250px) {
 	.topcontactinfo {
@@ -1453,6 +1452,10 @@ nav .container > ul > li > ul li a span {
 		font-size: 26px;
 		margin-bottom: 10px;
 	}
+}
+#number-8 > .container > .item .left div a {
+	color: #000;
+	text-decoration: none;
 }
 #number-8 > .container > .item .left p {
 	font-size: 18px;
@@ -3872,13 +3875,26 @@ footer .bottom-menu {
 	border-bottom: 1px solid #e9e9ea;
 }
 footer .bottom-menu .logo {
-	line-height: 36px;
-	padding-top: 25px;
+	display: flex;
+	align-items: center;
+	line-height: 120px;
 }
 @media screen and (max-width: 1030px) {
 	footer .bottom-menu .logo {
-		text-align: center;
+		line-height: 80px;
 	}
+}
+@media screen and (max-width: 540px) {
+	footer .bottom-menu .logo {
+		line-height: 60px;
+	}
+}
+footer .bottom-menu .logo a {
+	display: block;
+	width: 100%;
+}
+footer .bottom-menu .logo a img {
+	width: 80%;
 }
 footer .bottom-menu .nav {
 	width: 780px;

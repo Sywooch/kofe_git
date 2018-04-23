@@ -44,7 +44,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <a class="mobi-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <div class="logo">
-                    <a href="/"><img src="<?= $assets ?>/ifixme/images/logo-w.svg"></a>
+                    <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-w.svg"></a>
                 </div>
                 <div class="topmenu">
                     <div class="menu-toggle">
@@ -90,7 +90,7 @@ $js = app\components\CController::$js;
                     </div>
                     <!--<div class="btn-for-contact"><i class="fa fa-angle-down" aria-hidden="true"></i></div>-->
                 </div>
-                <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Записаться на ремонт</a>
+                <a class="btn yellow open-popup" data-tab="popup2" onclick="return false;" href="#">Отправить заявку</a>
                 <div class="clear"></div>
             </div>
         </header>
@@ -118,11 +118,37 @@ $js = app\components\CController::$js;
         <?= $content; ?>
         <footer>
             <div class="container">
+                <div class="bottom-menu">
+                    <div class="logo">
+                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
+                    </div>
+                    <div class="nav">
+                        <div class="menu-toggle">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="/o-nas">О нас</a></li>
+                            <li><a href="/uslugi">Услуги</a></li>
+                            <li><a href="/novosti">Новости</a></li>
+                            <li><a href="/kontakty">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Отправить заявку</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
                 <div class="body">
                     <div class="left">
                         <span>Сэкономьте <br>свое время</span>
                         <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
-                        <a class="btn out-icon green open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
+                        <a class="btn out-icon open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
                         <img src="<?= $assets ?>/ifixme/images/master.png">
                     </div>
                     <div class="right">
@@ -146,49 +172,22 @@ $js = app\components\CController::$js;
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="bottom-menu">
-                    <div class="logo">
-                        <a href="/"><img src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
-                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
-                    </div>
-                    <div class="nav">
-                        <div class="menu-toggle">
-                            <div class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="cross">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <ul>
-                            <li><a href="/o-nas">О нас</a></li>
-                            <li><a href="/uslugi">Услуги</a></li>
-                            <li><a href="/novosti">Новости</a></li>
-                            <li><a href="/kontakty">Контакты</a></li>
-                        </ul>
-                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <!--<div class="footer">
+                <div class="footer">
                     <div class="left">
                         <span>Мы в социальных сетях</span>
                         <ul>
-                            <li><a class="draw meet" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                            <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <!--<li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>-->
+                            <li><a href="#" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <div class="right">
                         <span>© <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
-                </div>-->
+                </div>
             </div>
         </footer>
 
