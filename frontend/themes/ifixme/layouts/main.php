@@ -65,6 +65,7 @@ $js = app\components\CController::$js;
                                     <li><a href="/o-nas">О нас</a></li>
                                     <li><a href="/uslugi">Услуги</a></li>
                                     <li><a href="/novosti">Новости</a></li>
+                                    <li><a href="/akcii">Акции</a></li>
                                     <li><a href="/vakansii">Вакансии</a></li>
                                     <li><a href="/otzyvy">Отзывы</a></li>
                                     <li><a href="/kontakty">Контакты</a></li>

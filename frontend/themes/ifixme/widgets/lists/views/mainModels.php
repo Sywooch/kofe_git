@@ -6,7 +6,7 @@ $assets = Yii::getAlias('@web');
         <?php foreach ($rows as $row): ?>
             <div class="item">
                 <div class="left">
-                    <div><?= $row['full_title']; ?></div>
+                    <div><a href="/<?= $row['url']; ?>"><?= $row['full_title']; ?></a></div>
                     <?= $row['description']; ?>
                 </div>
                 <?php if (isset($row['children']) && !empty($row['children'])): ?>

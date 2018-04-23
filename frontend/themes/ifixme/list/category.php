@@ -6,7 +6,7 @@ $breadcrumbs = [
 $this->title = $page['meta_title'];
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
-<section id="number-5" style="background-image: url(<?= $assets ?>/ifixme/images/upload/banner.png)">
+<section id="number-5" style="background-image: url(<?= $assets ?>/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', $page['title'])); ?>.png)">
     <div class="container">        
         <h1><?= !empty($page['meta_h1']) ? $page['meta_h1'] : $page['title']; ?></h1>
         <?= $page['description']; ?>
@@ -15,7 +15,7 @@ $this->title = $page['meta_title'];
 </section>
 <?= ifixme\widgets\sliders\Slider::widget(); ?>
 <?= ifixme\widgets\other\Advantage::widget(); ?>
-<?= ifixme\widgets\lists\Models::widget(['models' => $models]); ?>
+<?= ifixme\widgets\lists\Models::widget(['models' => $models, 'parent' => $page]); ?>
 <?= ifixme\widgets\lists\AllPrices::widget(['models' => $models, 'parent' => $page]); ?>
 <?= ifixme\widgets\lists\Neispravnost::widget(['category' => $page]); ?>
 <section id="number-13">
