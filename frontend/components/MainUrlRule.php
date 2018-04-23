@@ -53,7 +53,7 @@ class MainUrlRule extends UrlRule {
         }
         $hostname = Yii::$app->request->hostInfo;
         if (in_array($siteConfig['id'], [49]) && strpos($hostname, 'https://') === false) {
-            $this->redirect(str_replace('http', 'https', $hostname));
+            $this->redirect(str_replace('http', 'https', $hostname . (!empty($pathInfo) ? '/' . $pathInfo : '')));
         }
         if ($siteConfig['mono']) {
             if (strpos($pathInfo, 'remont-kofemashin-') !== false)
