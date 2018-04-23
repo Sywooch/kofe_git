@@ -121,7 +121,6 @@ $js = app\components\CController::$js;
                 <div class="bottom-menu">
                     <div class="logo">
                         <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
-                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
                     <div class="nav">
                         <div class="menu-toggle">
