@@ -40,7 +40,7 @@ class ListController extends CController {
         }
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
-            'content' => !empty($pageInfo['meta_desc']) ? $pageInfo['meta_desc'] : $metaDesc,
+            'content' => !empty($pageInfo['meta_desc']) ? str_replace('#number#', Yii::$app->session['region']['phone'], $pageInfo['meta_desc']) : $metaDesc,
         ]);
         $q = 'SELECT title, url, image, id, icon FROM {{%pages}} WHERE active = 1 AND parent = ' . (int) $pageInfo['id'] . ' ORDER BY sort';
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
@@ -120,7 +120,7 @@ class ListController extends CController {
         $b = null;
 
         if (count($url) > 1) {
-            
+
             $arrayUrl = $url;
             array_pop($url);
             if ($siteConfig['mono']) {
@@ -132,7 +132,7 @@ class ListController extends CController {
                     ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
                     ->one();
-            
+
             if ($siteConfig['id'] == 113) {
                 $url = Yii::$app->request->pathInfo;
                 $url = explode('/', $url);
@@ -141,7 +141,7 @@ class ListController extends CController {
                 if ($page['type'] == 'model')
                     return $this->redirect('/' . $page['url'], 301);
             }
-            
+
             if ($page['type'] == 'brand') {
                 $brandImage = $page['image'];
                 $sql = 'select image from {{%pages}} where parent =:parent and active = 1 order by sort limit 1';
@@ -289,7 +289,7 @@ class ListController extends CController {
                             17 => 'Кофемашина делает напиток слишком холодным\горячим',
                         ];
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
-                        
+
                         $metaDesc = 'Авторизованный сервисный центр выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'];
                     }
 
@@ -419,6 +419,15 @@ class ListController extends CController {
                     }
                     $title = $p . '? Устраняем проблемы быстро и качественно по всей ' . Yii::$app->session['region']['titleRod'] . '.';
                     $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику!';
+                } elseif ($siteConfig['id'] == 48) {
+                    $neisp = mb_strtolower($pageInfo['title'], 'utf-8');
+                    \Yii::$app->view->registerMetaTag([
+                        'name' => 'keywords',
+                        'content' => 'apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp
+                    ]);
+                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '? Что делать (инструкция) — iFixMe';
+                    $metaDesc = 'Подробно рассказываем и показываем, что делать если Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '.';
+                    $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
                 } else {
                     if (isset(CController::$category['1_title'])) {
                         $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства.</p>';
@@ -708,8 +717,12 @@ class ListController extends CController {
             $title = $categorySEO[self::$category['id']]['title'];
         }
         if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
-            $title = 'Ремонт ' . $pageInfo['title'] . ' от 400 руб в Москве 🍏';
-            $metaDesc = 'Ремонт ' . $pageInfo['title'] . ' по самым лучшим ценам и с гарантией качества! Проводим весь спектр услуг! Имеется курьерская служба. Професиональный ремонт в iFixMe.';
+            \Yii::$app->view->registerMetaTag([
+                'name' => 'keywords',
+                'content' => 'ремонт ' . $pageInfo['title']
+            ]);
+            $title = 'Ремонт ' . $pageInfo['title'] . ' в Москве с гарантией 1 год — iFixMe ';
+            $metaDesc = 'Безупречный ремонт ' . $pageInfo['title'] . ' в Москве. Специализируемся только на ремонте Apple. Выдаём гарантию на 12 месяцев. Отзывы клиентов. Звоните ☎ ' . Yii::$app->session['region']['phone'] . '.';
         }
         if ($siteConfig['id'] == 50) {
             $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' недорого, быстро, качественно!';
