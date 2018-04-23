@@ -4973,6 +4973,8 @@ header .menu-toggle span {
 #number-16 .container .item-vakansi .right a {
 	text-align: center;
 	color: #fff;
+	float: none;
+	width: 100%;
 }
 .container .item-vakansi div.title {
 	font-size: 26px;
