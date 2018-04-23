@@ -24,7 +24,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
         <span class="clear"></span>
     </div>
 </section>
-<section id="number-15" class="active">
+<section id="number-15">
     <div class="container">
         <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : (!empty($seoText['text2']) ? $seoText['text2'] : '') ; ?>
     </div>
