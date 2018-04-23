@@ -118,6 +118,33 @@ $js = app\components\CController::$js;
         <?= $content; ?>
         <footer>
             <div class="container">
+                <div class="bottom-menu">
+                    <div class="logo">
+                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
+                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
+                    </div>
+                    <div class="nav">
+                        <div class="menu-toggle">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="/o-nas">О нас</a></li>
+                            <li><a href="/uslugi">Услуги</a></li>
+                            <li><a href="/novosti">Новости</a></li>
+                            <li><a href="/kontakty">Контакты</a></li>
+                        </ul>
+                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
                 <div class="body">
                     <div class="left">
                         <span>Сэкономьте <br>свое время</span>
@@ -146,43 +173,16 @@ $js = app\components\CController::$js;
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="bottom-menu">
-                    <div class="logo">
-                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
-                        <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
-                    </div>
-                    <div class="nav">
-                        <div class="menu-toggle">
-                            <div class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="cross">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <ul>
-                            <li><a href="/o-nas">О нас</a></li>
-                            <li><a href="/uslugi">Услуги</a></li>
-                            <li><a href="/novosti">Новости</a></li>
-                            <li><a href="/kontakty">Контакты</a></li>
-                        </ul>
-                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Записаться на ремонт</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
                 <div class="footer">
                     <div class="left">
                         <span>Мы в социальных сетях</span>
                         <ul>
-                            <li><a class="draw meet" href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                            <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <!--<li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>-->
+                            <li><a href="#" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <div class="right">
