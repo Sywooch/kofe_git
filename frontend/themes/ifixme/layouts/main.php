@@ -44,7 +44,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <a class="mobi-number" href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
                 <div class="logo">
-                    <a href="/"><img src="<?= $assets ?>/ifixme/images/logo-w.svg"></a>
+                    <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-w.svg"></a>
                 </div>
                 <div class="topmenu">
                     <div class="menu-toggle">
@@ -148,7 +148,7 @@ $js = app\components\CController::$js;
                 <div class="clear"></div>
                 <div class="bottom-menu">
                     <div class="logo">
-                        <a href="/"><img src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
+                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
                         <span>© 2010 - <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
                     </div>
                     <div class="nav">
