@@ -25,7 +25,7 @@ $this->title = $page['meta_title'];
         <span class="clear"></span>
     </div>
 </section>
-<section id="number-15" class="active">
+<section id="number-15">
     <div class="container">
         <?= $page['full_description']; ?>
     </div>

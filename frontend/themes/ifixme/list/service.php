@@ -16,7 +16,7 @@ $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
 </section>
 <?= ifixme\widgets\sliders\Slider::widget(); ?>
 <?= ifixme\widgets\other\Advantage::widget(); ?>
-<section id="number-15" class="active">
+<section id="number-15">
     <div class="container">
         <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : ''; ?>
     </div>
