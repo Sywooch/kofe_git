@@ -6,7 +6,7 @@ $breadcrumbs = [
 $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
-<section id="number-5" style="background-image: url(/ifixme/images/upload/banner2.png);">
+<section id="number-5" style="background-image: url(/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', $page['title'])); ?>.png);">
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title']; ?></h1>
         <?= $pageInfo['description']; ?>
@@ -16,13 +16,6 @@ $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
 </section>
 <?= ifixme\widgets\sliders\Slider::widget(); ?>
 <?= ifixme\widgets\other\Advantage::widget(); ?>
-<section id="number-13">
-    <div class="container">
-        <?= ifixme\widgets\lists\LastReviews::widget(); ?>
-        <?= ifixme\widgets\lists\LastNews::widget(); ?>
-        <span class="clear"></span>
-    </div>
-</section>
 <section id="number-15" class="active">
     <div class="container">
         <?= !empty($pageInfo['full_description']) ? $pageInfo['full_description'] : ''; ?>
@@ -32,5 +25,5 @@ $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : '';
     </div>
 </section>
 <section id="number-23">
-    <a href="#" id="gotop"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    
 </section>

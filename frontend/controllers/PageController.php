@@ -240,8 +240,7 @@ class PageController extends CController {
                         ELSE m.title
                     END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.url != \'/\' ORDER BY m.id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
-        $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 and type = 2';
-        $services = Yii::$app->db->createCommand($sql)->queryAll();
+        
         $hostname = Yii::$app->request->hostInfo;
         $urls = [];
         foreach ($pages as $key => $page) {
@@ -249,6 +248,8 @@ class PageController extends CController {
             if ($page['type'] == 'category') {
                 $brand_title = 'Apple';
                 $model_title = '';
+                $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 and type = 2 and category_id = ' . $page['id'];
+                $services = Yii::$app->db->createCommand($sql)->queryAll();
                 foreach ($services as $service) {
                     if ($service['type'] == 2) {
                         $service['type'] = 'Неисправность';

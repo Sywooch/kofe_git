@@ -5,7 +5,7 @@
             <div class="clearfix">
                 <?php $k = 0; ?>
                 <?php foreach ($models as $key => $model): ?>
-                    <?php if ($model['icon'] == 1): ?>            
+                    <?php if ($model['icon'] == 1 || 1 == 1): ?>            
                         <a onclick="return false;" href="#" data-tab="tabs-<?= $model['id']; ?>"<?= $k == 0 ? ' class="active"' : '' ?>><?= str_replace($parent['title'] . ' ', '', $model['title']); ?></a>
                         <?php $k++; ?>
                     <?php endif; ?>
@@ -14,7 +14,7 @@
         </div>
         <?php $k = 0; ?>
         <?php foreach ($models as $key => $model): ?>
-            <?php if ($model['icon'] == 1): ?>
+            <?php if ($model['icon'] == 1 || 1 == 1): ?>
                 <?php $services = frontend\models\Pages::getModelServices($parent['id']); ?>
                 <div id="tabs-<?= $model['id']; ?>" class="tab-content<?= $k == 0 ? ' active' : '' ?>">
                     <table>
