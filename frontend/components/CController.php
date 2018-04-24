@@ -67,7 +67,7 @@ class CController extends \yii\web\Controller {
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
         if(strpos(self::$js['robots'], 'sitemap') === false) {
-            $this->block();
+            //$this->block();
         }
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
             if ($siteConfig['id'] == 53) {
