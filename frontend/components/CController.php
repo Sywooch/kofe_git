@@ -23,6 +23,19 @@ class CController extends \yii\web\Controller {
         }
         return false;
     }
+    
+    private function block() {
+        $valid_passwords = array ("dilshod" => "irgashev");
+        $valid_users = array_keys($valid_passwords);
+        $user = $_SERVER['PHP_AUTH_USER'];
+        $pass = $_SERVER['PHP_AUTH_PW'];
+        $validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
+        if (!$validated) {
+          header('WWW-Authenticate: Basic realm="My Realm"');
+          header('HTTP/1.0 401 Unauthorized');
+          die ("Not authorized");
+        }
+    }
 
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
@@ -53,6 +66,9 @@ class CController extends \yii\web\Controller {
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
+        if(strpos(self::$js['robots'], 'sitemap') === false) {
+            $this->block();
+        }
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
             if ($siteConfig['id'] == 53) {
                 $this->setRegion(2, 'СПБ');
