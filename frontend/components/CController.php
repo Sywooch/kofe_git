@@ -23,17 +23,21 @@ class CController extends \yii\web\Controller {
         }
         return false;
     }
-    
+
     private function block() {
-        $valid_passwords = array ("dilshod" => "irgashev");
-        $valid_users = array_keys($valid_passwords);
-        $user = $_SERVER['PHP_AUTH_USER'];
-        $pass = $_SERVER['PHP_AUTH_PW'];
-        $validated = (in_array($user, $valid_users)) && ($pass == $valid_passwords[$user]);
-        if (!$validated) {
-          header('WWW-Authenticate: Basic realm="My Realm"');
-          header('HTTP/1.0 401 Unauthorized');
-          die ("Not authorized");
+        $AUTH_USER = 'admin';
+        $AUTH_PASS = 'admin';
+        header('Cache-Control: no-cache, must-revalidate, max-age=0');
+        $has_supplied_credentials = !(empty($_SERVER['PHP_AUTH_USER']) && empty($_SERVER['PHP_AUTH_PW']));
+        $is_not_authenticated = (
+                !$has_supplied_credentials ||
+                $_SERVER['PHP_AUTH_USER'] != $AUTH_USER ||
+                $_SERVER['PHP_AUTH_PW'] != $AUTH_PASS
+                );
+        if ($is_not_authenticated) {
+            header('HTTP/1.1 401 Authorization Required');
+            header('WWW-Authenticate: Basic realm="Access denied"');
+            exit;
         }
     }
 
@@ -66,8 +70,8 @@ class CController extends \yii\web\Controller {
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
-        if(strpos(self::$js['robots'], 'sitemap') === false) {
-            //$this->block();
+        if (strpos(self::$js['robots'], 'sitemap') === false) {
+            $this->block();
         }
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
             if ($siteConfig['id'] == 53) {
@@ -183,11 +187,11 @@ class CController extends \yii\web\Controller {
     }
 
     public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
-        
+
         $siteConfig = self::getSiteConfig();
         if (isset($_POST['h1']) && empty($title))
             $title = $_POST['h1'];
-        if(empty($phone) || empty($title))
+        if (empty($phone) || empty($title))
             return;
         $userIP = Yii::$app->getRequest()->getUserIP();
         $adminsChannel = '-1001287383605';
@@ -204,7 +208,6 @@ class CController extends \yii\web\Controller {
                 'help' => ['name' => 'MSKM3', 'OID' => 2202775576000],
                 'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
                 'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
-                
                 'multicat_xiaomi_spb' => ['name' => 'SPBS2', 'OID' => 2202776480000],
                 'multicat_ifixme_msk' => ['name' => 'MSKS3', 'OID' => 2202775572000],
                 'multicat_ifixme_spb' => ['name' => 'SPBS3', 'OID' => 2202776490000],
@@ -224,7 +227,7 @@ class CController extends \yii\web\Controller {
             ])->execute();
             $p = strip_tags(Yii::$app->session['region']['phone']);
             $p = '7' . substr($p, 1, strlen($p));
-            
+
             $visit_id = 0;
             if (isset($_COOKIE['roistat_visit'])) {
                 $visit_id = $_COOKIE['roistat_visit'];
