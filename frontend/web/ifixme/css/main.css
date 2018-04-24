@@ -854,23 +854,33 @@ nav .container > ul > li > a > i {
 }
 nav .container > ul > li > ul {
 	position: absolute;
-	display: none;
+	overflow: hidden;
 	width: 100%;
+	max-height: 0px;
 	background: #fff;
 	left: 0px;
+  z-index: 99999;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+nav .container > ul > li:hover > ul {
+	max-height: 8000px;
+  z-index: 999999;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	-o-animation-delay: 0.3s;
+	animation-delay: 0.3s;
 	padding: 60px 0px 0px 0px;
 	-moz-box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
   -webkit-box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
   box-shadow: 0 30px 65px rgba(0, 0, 0, 0.28);
-  z-index: 99999;
 }
 @media screen and (max-width: 830px) {
-	nav .container > ul > li > ul {
+	nav .container > ul > li:hover > ul {
 		padding: 20px 0px 0px 0px;
 	}
-}
-nav .container > ul > li:hover > ul {
-	display: block;
 }
 nav .container > ul > li > ul li {
 	width: 10%;
