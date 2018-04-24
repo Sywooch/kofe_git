@@ -14,7 +14,7 @@ $assets = Yii::getAlias('@web');
                         <div class="frame" id="<?= $row['icon']; ?>">
                             <div class="clearfix">
                                 <?php foreach ($row['children'] as $model): ?>
-                                    <a href="/<?= $model['url']; ?>"><img src="<?= $assets ?>/ifixme/uploads/images/<?= $model['image']; ?>"><span>Ремонт</span><?= $model['title']; ?></a>
+                                    <a href="/<?= $model['url']; ?>"><img src="<?= $assets ?>/ifixme/uploads/images/<?= $model['image']; ?>"><?= $model['title']; ?></a>
                                 <?php endforeach; ?>
                             </div>
                         </div>

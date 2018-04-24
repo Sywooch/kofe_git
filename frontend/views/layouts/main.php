@@ -324,6 +324,10 @@ $js = app\components\CController::$js;
                         background: rgba(0, 0, 0, 0.33);
                         display: none;
                     }
+                    .video .moskva,
+                    .video .spb {
+                        color:#fff;
+                    }
                     #loadings img {
                     }
                 </style>
