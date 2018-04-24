@@ -2468,5 +2468,17 @@ return [
             'order-title' => 'tnv',
             'sitemap' => ['disableServicePage' => true]
         ],
+        'spb.rekofe' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'mono' => false,
+            'id' => 147,
+            'sitePrefix' => 'tnv',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'tnv',
+            'order-title' => 'tnv',
+            'sitemap' => ['disableServicePage' => true]
+        ],
     ]
 ];
