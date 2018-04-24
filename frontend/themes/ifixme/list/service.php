@@ -3,7 +3,7 @@ $breadcrumbs = [
     '/' . \app\components\CController::$category['url'] => \app\components\CController::$category['full_title'],
     !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] . ' ' . \app\components\CController::$category['title'],
 ];
-$this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
+$this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', \app\components\CController::$category['title'])); ?>.png);">
