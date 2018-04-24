@@ -505,7 +505,7 @@ class ListController extends CController {
 
 
         $breadcrumbs[] = $this->mb_ucfirst($pageInfo['title'], 'UTF-8');
-
+        
         return $this->render('service', ['pageInfo' => $pageInfo, 'b' => $b, 'seoText' => $seoText, 'seoText2' => $seoText2,
                     'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
                     'modelImage' => $modelImage, 'page' => (isset($page) ? $page : ['title' => ''])]);

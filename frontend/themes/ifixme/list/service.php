@@ -6,7 +6,7 @@ $breadcrumbs = [
 $this->title = isset($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $title;
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
-<section id="number-5" style="background-image: url(/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', $page['title'])); ?>.png);">
+<section id="number-5" style="background-image: url(/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', \app\components\CController::$category['title'])); ?>.png);">
     <div class="container">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $h1; ?></h1>
         <?= $pageInfo['description']; ?>
