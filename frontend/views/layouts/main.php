@@ -324,9 +324,9 @@ $js = app\components\CController::$js;
                         background: rgba(0, 0, 0, 0.33);
                         display: none;
                     }
-                    .video .moskva,
-                    .video .spb {
-                        color:#fff;
+                    .<?= $siteConfig['sitePrefix']; ?>video .<?= $siteConfig['sitePrefix']; ?>moskva,
+                     .<?= $siteConfig['sitePrefix']; ?>spb {
+                        color:#fff ! important;
                     }
                     #loadings img {
                     }
