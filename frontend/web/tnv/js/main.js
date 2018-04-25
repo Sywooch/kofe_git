@@ -6281,8 +6281,6 @@ $.onDomUpdate = function (controller) {
             e.preventDefault(), $(this).closest(".header").find(".header--calls-d").fadeToggle(200), $(this).closest(".header").find(".header--chats-d").fadeOut(200)
         }), $(".header--chats.visible-sm").on("click", function (e) {
             e.preventDefault(), $(this).closest(".header").find(".header--chats-d").fadeToggle(200), $(this).closest(".header").find(".header--calls-d").fadeOut(200)
-        }), $(".header--user-toggle").on("click", function (e) {
-            e.preventDefault(), $(this).hasClass("active") ? hideProfileXS($(this).closest(".header")) : (hideMenuXS($(this).closest(".header")), showProfileXS($(this).closest(".header")))
         }), $(".m-menu--mobile").on("click", function (e) {
             e.preventDefault(), $(this).hasClass("active") ? hideMenuXS($(this).closest(".header")) : (hideProfileXS($(this).closest(".header")), showMenuXS($(this).closest(".header")))
         }), $(".header--region").on("click", function (e) {
