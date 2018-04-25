@@ -2994,7 +2994,7 @@ button {
 .header--user-warning:focus {
   color: #38398d;
 }
-.header--user-toggle {
+.header--user-toggle2 {
   text-align: center;
   color: #9fa3b0;
   border-left: 1px solid #d8dcde;
@@ -3005,7 +3005,7 @@ button {
   top: auto;
   right: auto;
   bottom: auto;
-  line-height: 71px;
+  line-height: 76px;
   left: auto;
 }
 .header--user-toggle-arrow {
@@ -3037,9 +3037,9 @@ button {
   width: 30px;
   height: 30px;
 }
-.header--user-toggle:hover,
-.header--user-toggle:focus,
-.header--user-toggle:active {
+.header--user-toggle2:hover,
+.header--user-toggle2:focus,
+.header--user-toggle2:active {
   color: #363636;
 }
 .header--user-toggle.active {
