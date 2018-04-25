@@ -1985,6 +1985,9 @@ a:hover {
 .top-servicess .item .image {
     width: 220px;
     min-width: 220px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
 }
 @media (max-width: 1150px) {
     .top-servicess .item .image {
@@ -1998,7 +2001,7 @@ a:hover {
     }
 }
 .top-servicess .item .image img {
-    width: 100%;
+    width: 125%;
 }
 .top-servicess .item .text {
     text-align: left;

@@ -3,6 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' ✔️';
 ?>
+
 <div class="offer" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
     <div class="container">
         <div class="for-lr">
@@ -26,6 +27,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
         <?php endif; ?>
     </div>
 </div>
+<?= remont_coffee\widgets\lists\AllBrands::widget(); ?>
 
 <!--<?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>-->
 
@@ -43,4 +45,3 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : 'Ремонт
 
 <?= remont_coffee\widgets\other\Subways::widget(); ?>
    
-<?= remont_coffee\widgets\lists\AllBrands::widget(); ?>
