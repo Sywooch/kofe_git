@@ -6212,13 +6212,6 @@ $.onDomUpdate = function (controller) {
         }
     });
     $(document).ready(function () {
-        function showProfileXS(header) {
-            header.find(".header--user-toggle").addClass("active"), header.find(".header--user-line .m-menu--list").slideDown(300)
-        }
-
-        function hideProfileXS(header) {
-            header.find(".header--user-toggle").removeClass("active"), header.find(".header--user-line .m-menu--list").slideUp(300)
-        }
 
         function showMenuXS(header) {
             header.find(".m-menu--mobile").addClass("active"), header.find(".header--nav-line .m-menu--list").slideDown(300)
