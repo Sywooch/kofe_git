@@ -134,8 +134,8 @@ $js = app\components\CController::$js;
                     <a href="#" class="m-menu--mobile float--right">
                         <i class="m-menu--mobile-icon"></i>
                     </a>
-                    <a href="#" class="header--user-toggle float--right">
-                        <i class="header--user-toggle-icon icon-profile"></i>
+                    <a href="tel:84953239009" class="header--user-toggle float--right">
+                        <i class="header--user-toggle-icon icon-phone"></i>
                     </a>
                 </div>
             </div>

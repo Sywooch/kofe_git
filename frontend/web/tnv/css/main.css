@@ -3185,6 +3185,7 @@ label.counter {
     font-size: 30px;
     line-height: 25px;
     font-weight: 400;
+    margin-right: 12px;
   }
 }
 .counter--label {
