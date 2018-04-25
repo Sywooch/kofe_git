@@ -2457,8 +2457,8 @@ return [
             'foreign_category' => true,
         ],
         'rekofe' => [
-            'phone-1' => '8 (495) 323-90-09',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
             'mono' => false,
             'id' => 146,
             'sitePrefix' => 'tnv',

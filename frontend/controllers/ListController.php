@@ -345,7 +345,7 @@ class ListController extends CController {
                         $metaDesc = 'Услуга ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины ' . $page['title'] . '! Качественный сервис за низкие цены. Самые качественные комплектующие и квалифицированные специалисты!';
                     } elseif ($siteConfig['id'] == 146) {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . $page['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Гарантия! Качество!';
-                        $metaDesc = 'Наш сервисный центр ' . $page['title'] . ' выполнит услугу - ' . $pageInfo['title'] . ' - быстро и качественно! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'] . '.';
+                        $metaDesc = 'Наш сервисный центр по ремонту кофемашин ' . $page['title'] . ' выполнит услугу - ' . $pageInfo['title'] . ' - быстро и качественно! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'] . '.';
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
                         $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';

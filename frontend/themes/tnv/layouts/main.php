@@ -106,7 +106,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="header--call">
                             <div class="header--call-t">Россия</div>
-                            <span class=""><a class="header--call-p" href="#">8 800 555 67 89</a></span>
+                            <span class=""><a class="header--call-p" href="#">8 800 775-77-30</a></span>
                         </div>
                     </div>
                     <div class="header--calls visible-sm visible-md">
@@ -117,7 +117,7 @@ $js = app\components\CController::$js;
                         <div class="header--calls-d">
                             <div class="header--call">
                                 <div class="header--call-t">Россия</div>
-                                <a class="header--call-p" href="#">8 800 555 67 89</a>
+                                <a class="header--call-p" href="#">8 800 775-77-30</a>
                             </div>
                         </div>
                     </div>
