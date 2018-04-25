@@ -67,6 +67,8 @@ $js = app\components\CController::$js;
             </div>
         </section>
         <!-- contacts -->
+
+        
         <footer>
             <div class="container">
                 <div class="row">
