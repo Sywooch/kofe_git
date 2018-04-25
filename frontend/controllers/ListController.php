@@ -290,7 +290,7 @@ class ListController extends CController {
                         ];
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
 
-                        $metaDesc = 'Авторизованный сервисный центр выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'];
+                        $metaDesc = 'Авторизованный сервисный центр ' . $page['title'] . ' выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'];
                     }
 
                     $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства ' . $page['title'] . '.</p>';

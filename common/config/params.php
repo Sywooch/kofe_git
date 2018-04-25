@@ -2104,8 +2104,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'kofemashina-service' => [
-            'phone-1' => '8 (495) 323-90-09',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 605-91-91',
+            'phone-2' => '8 (812) 605-91-91',
             'stickyMenu' => true,
             'mono' => false,
             'id' => 125,
