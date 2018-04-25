@@ -5,7 +5,7 @@
             <div class="name">
                 <a href="/kontakty">Наш адрес в <span><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?></span></a>
             </div>
-            <p>г. Москва, Кастанаевская улица, 17</p>
+            <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, Гжатская улица, 21к2' : 'г. Москва, Кастанаевская улица, 17' ?></div></p>
             <p><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
             <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
         </div>

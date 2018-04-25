@@ -24,7 +24,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                         <div class="name"><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></div>
                     </li>
                     <li class="address">
-                        <div class="name">г. Москва, Кастанаевская улица, 17</div>
+                        <div class="name"><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, Гжатская улица, 21к2' : 'г. Москва, Кастанаевская улица, 17' ?></div>
                     </li>
                     <li class="schedule">
                         <div class="name">Ежедневно с 9:00 до 21:00</div>
