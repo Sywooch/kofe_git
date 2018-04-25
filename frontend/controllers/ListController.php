@@ -288,8 +288,8 @@ class ListController extends CController {
                             13 => 'В кофемашине появляется ошибка',
                             17 => 'Кофемашина делает напиток слишком холодным\горячим',
                         ];
-                        $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
-
+                        //$title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
+                        $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '? Быстрое устранение неисправностей';
                         $metaDesc = 'Авторизованный сервисный центр ' . $page['title'] . ' выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'];
                     }
 
@@ -345,7 +345,7 @@ class ListController extends CController {
                         $metaDesc = 'Услуга ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины ' . $page['title'] . '! Качественный сервис за низкие цены. Самые качественные комплектующие и квалифицированные специалисты!';
                     } elseif ($siteConfig['id'] == 146) {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . $page['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Гарантия! Качество!';
-                        $metaDesc = 'Наш сервисный центр выполнит услугу - ' . $pageInfo['title'] . ' - быстро и качественно! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'] . '.';
+                        $metaDesc = 'Наш сервисный центр ' . $page['title'] . ' выполнит услугу - ' . $pageInfo['title'] . ' - быстро и качественно! Выезд курьера по всей ' . Yii::$app->session['region']['titleRod'] . '.';
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
                         $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
