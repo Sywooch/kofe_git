@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 ?>
-<div class="top-servicess">
+<div id="tab-neispravnost" class="top-servicess tab_content">
     <div class="container">
         <p class="gl-text"><?= $title; ?></p>
         <div class="list">

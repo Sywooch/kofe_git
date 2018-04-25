@@ -1,4 +1,4 @@
-<div class="prices">
+<div id="tab-tseni" class="prices tab_content">
     <div class="container">
         <?php
         $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
