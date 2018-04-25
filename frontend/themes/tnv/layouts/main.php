@@ -106,7 +106,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="header--call">
                             <div class="header--call-t">Россия</div>
-                            <span class=""><a class="header--call-p" href="#">8 800 775-77-30</a></span>
+                            <span class=""><a class="header--call-p" href="tel:88007757730">8 800 775-77-30</a></span>
                         </div>
                     </div>
                     <div class="header--calls visible-sm visible-md">
@@ -117,7 +117,7 @@ $js = app\components\CController::$js;
                         <div class="header--calls-d">
                             <div class="header--call">
                                 <div class="header--call-t">Россия</div>
-                                <a class="header--call-p" href="#">8 800 775-77-30</a>
+                                <a class="header--call-p" href="tel:88007757730">8 800 775-77-30</a>
                             </div>
                         </div>
                     </div>
@@ -242,11 +242,11 @@ $js = app\components\CController::$js;
                                 <a class="footer--call-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
                             </span>
                             <div class="footer--call-title hidden-xs hidden-md hidden-lg">Россия</div>
-                            <a class="footer--call-phone hidden-xs hidden-md hidden-lg" href="tel:88005556789">8 800 555 67 89</a>
+                            <a class="footer--call-phone hidden-xs hidden-md hidden-lg" href="tel:88007757730">8 800 775-77-30</a>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 hidden-sm">
                             <div class="footer--call-title">Россия</div>
-                            <a class="footer--call-phone" href="tel:88005556789">8 800 555 67 89</a>
+                            <a class="footer--call-phone" href="tel:88007757730">8 800 775-77-30</a>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3">
                             <div class="footer--call-title">Поделиться</div>
