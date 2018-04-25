@@ -14,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                     <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'navbar-phone-spb' : 'navbar-phone-msk' ?>"></a>
                     <a class="navbar-brand" href="/">
-                        <div class="logo"><b>K<span>o</span>femashina<br>Ser<span>v</span>ice</b></div>
+                      <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '<div class="logo"><b>K<span>o</span>femashina<br>Ser<span>v</span>ice</b></div>' : '<div class="logo"><b>K<span>o</span>femashin<br>Rem<span>o</span>nt</b></div>' ?>
                     </a>
                 </div>
             </div>
