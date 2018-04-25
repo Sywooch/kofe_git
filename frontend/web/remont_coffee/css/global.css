@@ -2019,8 +2019,11 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
 }
+.brend-tabs .top-servicess .item .text .description p {
+    background: #eff0ff;
+}
 .top-servicess .item .price .value {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #666666;
     font-family: 'Open Sans', sans-serif;
@@ -2690,4 +2693,56 @@ summary {
     line-height: 38px;
     color: #fff;
     font-size: 22px;
+}
+
+.brend-tabs #tab-neispravnost,
+.brend-tabs #tab-text-1,
+.brend-tabs #tab-tseni,
+.brend-tabs #tab-text-2 {
+    display: none;
+}
+.brend-tabs #tab-neispravnost.active,
+.brend-tabs #tab-text-1.active,
+.brend-tabs #tab-tseni.active,
+.brend-tabs #tab-text-2.active {
+    display: block;
+}
+
+.brend-tabs {
+    background-color: #eff0ff;;
+}
+.tabmenu {
+    text-align: center;
+    padding-top: 40px;
+}
+.tabmenu .tab-b {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.tabmenu .tab-b:hover,
+.tabmenu .tab-b.active {
+    color: #fff;
+    padding: 11px 16px;
+    border: 0px;
+        background: rgb(230,87,55);
+    background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    background: linear-gradient(135deg, rgba(230,87,55,1) 0%,rgba(203,52,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
+}
+.brend-tabs > hr {
+    display: none;
+}
+
+.brend-tabs .full-text h2:first-child {
+    margin-top: 0px;
 }

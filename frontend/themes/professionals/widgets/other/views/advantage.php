@@ -22,7 +22,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                     <div class="col-lg-24 col-md-24 col-sm-12">
                         <h2 class="title title__2 dark">Ремонт в короткие сроки</h2>
-                        <p class="about-info_txt">Уже через 1-2 дня курьерская служба выполнит обратную доставку, и Вы снова будете наслаждаться приятным вкусом кофе из новой термокружки, которую получите в подарок.</p>
+                        <p class="about-info_txt">Уже через 1-2 дня курьерская служба выполнит обратную доставку, и Вы снова будете наслаждаться приятным вкусом кофе.</p>
                     </div>
                     <div class="col-lg-24 col-md-24 col-sm-12">
                         <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>

@@ -148,10 +148,13 @@ $js = app\components\CController::$js;
                 <div class="navigation">
                     <ul class="menu-footer">
                         <li><p>Статьи и советы</p></li>
-                        <li><a href="/vibor-kofe-dlya-sebya">Как выбрать кофе для кофемашин</a></li>
+                        <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '<li><a href="/fakti-o-kofe">Факты о кофе</a></li>
+                        <li><a href="/zolotoy-kofe">"Золотой" кофе</a></li>
+                        <li><a href="/kofe-pyatna">Советы по удалению кофейных пятен</a></li>
+                        <li><a href="/istoriya-kofe">История кофе</a></li>' : '<li><a href="/vibor-kofe-dlya-sebya">Как выбрать кофе для кофемашин</a></li>
                         <li><a href="/soveti-dlya-vashey-kofemaschini">Советы по обслуживанию кофемашин</a></li>
                         <li><a href="/dlya-chego-nudjen-filtr-kofemachine">Для чего кофемашине нужен фильтр?</a></li>
-                        <li><a href="/chto-takoye-kapuchino">Что такое капучино?</a></li>
+                        <li><a href="/chto-takoye-kapuchino">Что такое капучино?</a></li>' ?>
                     </ul>
                 </div>
                 <div class="navigation">

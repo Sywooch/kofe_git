@@ -9562,8 +9562,11 @@ footer .telefonga_msk {
 .gl-st .title.title__1.title__home:before {
     content: "Качественный ";
 }
-.gl-st .title.title__1.title__home:after {
+.gl-st .title.title__1.title__home.msk_h:after {
     content: " в Москве";
+}
+.gl-st .title.title__1.title__home.spb_h:after {
+    content: " в Санкт-Петербурге";
 }
 .model-img {
     width: 300px;

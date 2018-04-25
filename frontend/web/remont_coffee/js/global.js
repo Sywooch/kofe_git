@@ -345,6 +345,20 @@ $(document).ready(function () {
         }
     });
 
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $("div.tab-b").click(function() {
+        
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();        
+        
+      $("div.tab-b").removeClass("active");
+      $(this).addClass("active");
+      
+    });
+
 
 //Сокрытие seo ссылок
 

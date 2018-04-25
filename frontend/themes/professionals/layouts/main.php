@@ -55,7 +55,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-sx-24">
-                        <h2 class="title title__2">Ремонт кофемашин в Москве</h2>
+                        <h2 class="title title__2">Ремонт кофемашин в <br><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?></h2>
                         <div class="reviews-list" id="reviews-slider2">
                             <?= professionals\widgets\other\Subways::widget(); ?>               
                         </div>
@@ -63,16 +63,18 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div class="map" id="map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6cf0d312bb3f94ae27a4037821031c64d9a2d8150b4e4f80933eba6c9fa89365&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
+                <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adbc03b42c2b623f99e148f57bc7706992e3b1fc77441b400e54fb9bb8df2c604&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>' : '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c4f35407459a4a486a8f5cd8e39ad6b0c0906d86ce14f45320af81ddcbc5aa4&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>' ?>
             </div>
         </section>
         <!-- contacts -->
+
+        
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-24">
                         <h4 class="subtitle">О НАС</h4>
-                        <p>Устраним любую проблему и выполним ремонт кофемашины максимально быстро и по низкой цене. Команда специалистов работает каждый день, без выходных и праздников.</p>
+                        <p>Выполним ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?> максимально быстро и по низкой стоимости. Наш сервисный центр работает каждый день, без выходных и праздников</p>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-24">
                         <h4 class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</h4>
@@ -95,14 +97,14 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-24">
                         <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-                        <p>г. Москва, м. Шелепиха, ул. Большая филевская, д.1</p>
+                        <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, проспект Обуховской Обороны, 70к2' : 'г. Москва, м. Шелепиха, ул. Большая филевская, д.1' ?></p>
                         <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
                 </div>
                 <hr style="border-color: rgba(165, 165, 165, 0.1)">
                 <div class="row">
                     <div class="col-xs-24">
-                        <p>Сервисный центр <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= date('Y'); ?> © - Качественный ремонт кофемашин в Москве и Области!</p>
+                        <p>Сервисный центр <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= date('Y'); ?> © - Качественный ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге и Ленинградской области' : 'Москве и области' ?>!</p>
                     </div>
                 </div>
             </div>
