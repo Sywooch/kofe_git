@@ -63,7 +63,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
             <div class="map" id="map">
-                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adbc03b42c2b623f99e148f57bc7706992e3b1fc77441b400e54fb9bb8df2c604&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>
+                <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adbc03b42c2b623f99e148f57bc7706992e3b1fc77441b400e54fb9bb8df2c604&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>' : '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c4f35407459a4a486a8f5cd8e39ad6b0c0906d86ce14f45320af81ddcbc5aa4&amp;source=constructor" width="100%" height="510" frameborder="0"></iframe>' ?>
             </div>
         </section>
         <!-- contacts -->
