@@ -70,7 +70,7 @@ $form = ActiveForm::begin([
         </div>
         <div class="map">
             <?php if ($siteConfig['id'] == 53): ?>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a937db60ea90bbd164aa5b7548d5131c0e35adb6913dc4eb438723fc70898df&amp;source=constructor" width="100%" height="282" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3036990399fde055fb3fb8590cecf709bae0012d783ffe65458f83a239e55778&amp;source=constructor" width="100%" height="282" frameborder="0"></iframe>
             <?php else: ?>
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7487ba55aeb0ec544a18006f50272d8bd52a9e87eee9770807b9845e65ac5b73&amp;source=constructor" width="100%" height="282" frameborder="0"></iframe>
             <?php endif; ?>
