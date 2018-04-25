@@ -70,7 +70,7 @@ class CController extends \yii\web\Controller {
         //$userRegionInfo = []; // Yii::$app->ipgeobase->getLocation($userIP, true);
         $sql = 'SELECT * FROM {{%js}} WHERE site_id = ' . (int) $siteConfig['id'] . ' LIMIT 1';
         self::$js = \Yii::$app->db->createCommand($sql)->queryOne();
-        if (strpos(self::$js['robots'], 'sitemap') === false) {
+        if (stripos(self::$js['robots'], 'sitemap') === false) {
             $this->block();
         }
         if (isset($siteConfig['spb-multi']) || isset($siteConfig['spb'])) {
