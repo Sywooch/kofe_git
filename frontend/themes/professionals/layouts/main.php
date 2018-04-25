@@ -55,7 +55,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-sx-24">
-                        <h2 class="title title__2">Ремонт кофемашин в Москве</h2>
+                        <h2 class="title title__2">Ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?></h2>
                         <div class="reviews-list" id="reviews-slider2">
                             <?= professionals\widgets\other\Subways::widget(); ?>               
                         </div>
