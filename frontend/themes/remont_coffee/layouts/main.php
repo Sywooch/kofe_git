@@ -129,7 +129,7 @@ $js = app\components\CController::$js;
                     <div class="img-logo">
                         <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>logo2.svg" /></a>
                     </div>
-                    <p>г. Москва, Кастанаевская улица, 17</p>
+                    <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, Гжатская улица, 21к2' : 'г. Москва, Кастанаевская улица, 17' ?></p>
                     <p><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                     <p>Работаем ежедневно c 09:00 до 20:00 без выходных и праздничных дней</p>
                     <p><?= $_SERVER['HTTP_HOST']; ?> © <?= date('Y'); ?></p>
