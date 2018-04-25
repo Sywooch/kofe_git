@@ -95,14 +95,14 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-24">
                         <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-                        <p>г. Москва, м. Шелепиха, ул. Большая филевская, д.1</p>
+                        <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, проспект Обуховской Обороны, 70к2' : 'г. Москва, м. Шелепиха, ул. Большая филевская, д.1' ?></p>
                         <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>
                 </div>
                 <hr style="border-color: rgba(165, 165, 165, 0.1)">
                 <div class="row">
                     <div class="col-xs-24">
-                        <p>Сервисный центр <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= date('Y'); ?> © - Качественный ремонт кофемашин в Москве и Области!</p>
+                        <p>Сервисный центр <?= ucfirst($_SERVER['HTTP_HOST']); ?> <?= date('Y'); ?> © - Качественный ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге и Ленинградской области' : 'Москве и области' ?>!</p>
                     </div>
                 </div>
             </div>
