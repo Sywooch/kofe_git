@@ -71,7 +71,9 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="logo-phone">
                     <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefon-spb' : 'telefon-msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                    <span>г. Москва, Кастанаевская <br>улица, 17</span>
+                    <span>
+                    <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, Гжатская улица, 21к2' : 'г. Москва, Кастанаевская <br>улица, 17' ?>
+                </span>
                 </div>
             </div>
         </div>
