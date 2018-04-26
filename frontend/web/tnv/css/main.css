@@ -5115,7 +5115,7 @@ a.tags--item:hover {
 }
 .caption.vk:after {
   content: "\e912";
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
 }
 .caption.email:before {
