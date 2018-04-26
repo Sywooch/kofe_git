@@ -5107,6 +5107,17 @@ a.tags--item:hover {
     display: block;
   }
 }
+.caption.vk:before {
+  content: "Вконтакте";
+}
+.caption.adress:before {
+  content: "Адрес";
+}
+.caption.vk:after {
+  content: "\e912";
+  font-size: 18px;
+  line-height: 24px;
+}
 .caption.email:before {
   content: "Почта";
 }
