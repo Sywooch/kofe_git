@@ -735,8 +735,8 @@ return [
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
         'ifixme' => [
-            'phone-1' => '8 (495) 181-00-07',
-            'phone-2' => '8 (812) 701-00-02',
+            'phone-1' => '8 (495) 132-12-22',
+            'phone-2' => '8 (495) 132-12-22',
             'stickyMenu' => false,
             'change-logo' => true,
             'mono' => false,
