@@ -2758,12 +2758,13 @@ summary {
         left: 0px;
         width: auto;
     }
-    .prices table tbody tr td:nth-child(1) {
-        width: 65% ! important;
+    .prices table tbody tr td:nth-child(2) {
+        width: 30% ! important;
     }
-    .prices table tbody tr td:nth-child(2),
     .prices table tbody tr td:nth-child(3) {
-        width: 35% ! important;
-        float: right;
+        display: none;
+    }
+    .prices table tbody tr td:nth-child(2) .button {
+        display: block ! important;
     }
 }

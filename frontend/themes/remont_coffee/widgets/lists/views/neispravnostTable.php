@@ -27,7 +27,7 @@
                                 <?= $row['title']; ?>
                             <?php endif; ?>
                         </td>
-                        <td class="price" style="width: 15%">от <?= number_format($row['price'], 0, ' ', ' '); ?> ₽</td>
+                        <td class="price" style="width: 15%">от <?= number_format($row['price'], 0, ' ', ' '); ?> ₽<br><div class="button" style="display: none;">Заказать</div></td>
                         <td style="width: 15%"><div class="button">Заказать</div></td>
                     </tr> 
                 <?php endforeach; ?>
