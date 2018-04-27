@@ -1903,6 +1903,7 @@ a:hover {
         width: 100%;
         display: block;
         min-width: 100%;
+        padding-right: 0px;
     }
 }
 .width-img .img img {
@@ -2120,6 +2121,7 @@ input {
     text-align: center;
     margin-top: -40px;
     padding-bottom: 40px;
+    background-color: #fff;
 }
 
 
@@ -2759,7 +2761,7 @@ summary {
         width: auto;
     }
     .prices table tbody tr td:nth-child(1) {
-        padding-left: 15px;
+        padding-left: 5px;
         box-sizing: border-box;
     }
     .prices table tbody tr td:nth-child(2) {
