@@ -345,12 +345,12 @@ $(document).ready(function () {
         }
     });
 
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
+    $(".brend-tabs .tab_content").hide();
+    $(".brend-tabs .tab_content:first").show();
 
     $("div.tab-b").click(function() {
         
-      $(".tab_content").hide();
+      $(".brend-tabs .tab_content").hide();
       var activeTab = $(this).attr("rel"); 
       $("#"+activeTab).fadeIn();        
         
