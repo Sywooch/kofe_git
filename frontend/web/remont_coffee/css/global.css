@@ -2749,3 +2749,12 @@ summary {
 .brend-tabs .full-text h2:first-child {
     margin-top: 0px;
 }
+
+@media (max-width: 560px) {
+    #tab-tseni > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

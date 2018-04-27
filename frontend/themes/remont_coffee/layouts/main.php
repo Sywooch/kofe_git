@@ -66,7 +66,7 @@ $js = app\components\CController::$js;
                         Ремонтируем в сервисе и на выезде!
                     </span>
                     <span class="item">
-                        Даем реальную гарантию до 3х лет!
+                        Даем реальную гарантию до 1 года!
                     </span>
                 </div>
                 <div class="logo-phone">
