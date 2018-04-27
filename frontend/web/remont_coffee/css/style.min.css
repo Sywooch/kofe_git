@@ -101,7 +101,6 @@ a:hover {
         position: absolute;
         right: 0px;
         top: 0px;
-        font-size: 49px;
         padding-top: 11px;
         margin-right: 2px;
         color: #2E375F;
@@ -110,9 +109,11 @@ a:hover {
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        font-size: 0px;
     }
     .m-telefon-msk:before {
         content: "\f098";
+        font-size: 49px;
     }
 }
 .logo-phone a {
