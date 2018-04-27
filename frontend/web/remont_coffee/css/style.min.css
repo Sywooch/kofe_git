@@ -111,7 +111,8 @@ a:hover {
             -moz-osx-font-smoothing: grayscale;
         font-size: 0px;
     }
-    .m-telefon-msk:before {
+    .m-telefon-msk:before,
+    .m-telefon-spb:before {
         content: "\f098";
         font-size: 49px;
     }
