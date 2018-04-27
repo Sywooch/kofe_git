@@ -2754,7 +2754,16 @@ summary {
     #tab-tseni > .container {
         padding-right: 15px;
         padding-left: 15px;
-        margin-right: 0px;
-        margin-left: 0px;
+        right: 0px;
+        left: 0px;
+        width: auto;
+    }
+    .prices table tbody tr td:nth-child(1) {
+        width: 65% ! important;
+    }
+    .prices table tbody tr td:nth-child(2),
+    .prices table tbody tr td:nth-child(3) {
+        width: 35% ! important;
+        float: right;
     }
 }
