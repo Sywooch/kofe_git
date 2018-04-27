@@ -2177,7 +2177,7 @@ input {
         max-width: 100%;
     }
     .prices table tbody tr.bg {
-        background: none;
+        background: #fff;
     }
     .prices table tbody tr:nth-child(2n-1) {
         background: #eee;
@@ -2757,6 +2757,10 @@ summary {
         right: 0px;
         left: 0px;
         width: auto;
+    }
+    .prices table tbody tr td:nth-child(1) {
+        padding-left: 15px;
+        box-sizing: border-box;
     }
     .prices table tbody tr td:nth-child(2) {
         width: 30% ! important;
