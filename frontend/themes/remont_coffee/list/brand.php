@@ -44,7 +44,9 @@ $this->title = $title;
 <div class="brend-tabs">
     <div class="tabmenu">
         <div class="container">
+            <?php if (!empty($pageInfo['full_description'])): ?>
             <div class="tab-b" rel="tab-text-1">Описание</div>
+            <?php endif; ?>
             <div class="tab-b active" rel="tab-neispravnost">Неисправности бренда</div>
             <div class="tab-b" rel="tab-tseni">Цены на услуги</div>
             <div class="tab-b" rel="tab-text-2" style="display: none;">Коды ошибок</div>
