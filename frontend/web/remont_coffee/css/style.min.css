@@ -96,7 +96,7 @@ a:hover {
         display: none;
     }
     .m-telefon-spb,
-.m-telefon-msk {
+    .m-telefon-msk {
         display: block;
         position: absolute;
         right: 0px;
@@ -105,6 +105,14 @@ a:hover {
         padding-top: 11px;
         margin-right: 2px;
         color: #2E375F;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+    }
+    .m-telefon-msk:before {
+        content: "\f098";
     }
 }
 .logo-phone a {
