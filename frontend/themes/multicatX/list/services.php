@@ -4,6 +4,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 ?>
+
 <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-26">
     <div class="container">
