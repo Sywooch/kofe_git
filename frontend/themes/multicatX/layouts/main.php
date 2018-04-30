@@ -40,6 +40,8 @@ $js = app\components\CController::$js;
                     <a class="mini-form" href="#">СТАТУС РЕМОНТА</a>
                     <a href="/otzyvy">ОТЗЫВЫ</a>
                     <a href="/novosti">НОВОСТИ</a>
+                    <a href="/partneram">ПАРТНЕРАМ</a>
+                    <a href="/garantiya">ГАРАНТИЯ</a>
                     <a href="/o-kompanii">О КОМПАНИИ</a>
                     <p><?= Yii::$app->session['region']['title']; ?></p>
                     <div class="clear"></div>
@@ -139,11 +141,11 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="footer_column_2">
                             <ul>
-                                <li><a href="/">Главная</a></li>
-                                <li><a href="/o-kompanii">О компании</a></li>
-                                <li><a href="/partneram">Партнерам</a></li>
-                                <li><a href="/garantiya">Гарантия</a></li>
-                                <li><a href="/kontakty">Контакты</a></li>
+                                <li><a href="/remont-kofemashin/ne-delaet-kofe">Не делает кофе </a></li>
+                                <li><a href="/remont-kofemashin/ne-vklyuchaetsya">Не включается</a></li>
+                                <li><a href="/remont-kofemashin/protekaet">Протекает</a></li>
+                                <li><a href="/remont-kofemashin/plokho-techet-kofe">Плохо течет кофе</a></li>
+                                <li><a href="/ne-podaet-vodu">Не подаёт воду</a></li>
                             </ul>
                         </div>
                         <div class="footer_column_3">

@@ -4,7 +4,7 @@ $breadcrumbs = [
     $pageInfo['title'],
 ];
 ?>
-<?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+<?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-26">
     <div class="container">
         <h1><?= $pageInfo['meta_h1']; ?></h1>
@@ -13,7 +13,7 @@ $breadcrumbs = [
                 <div class="open-botton">
                     <p>Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></p>
                 </div>
-                <?php $services = frontend\models\Pages::getCategoryServices($category['category_id']); ?>
+                <?php $services = frontend\models\Pages::getCategoryServices($category['id']); ?>
                 <table class="my-table">
                     <tbody>
                         <?php foreach ($services as $service): ?>
