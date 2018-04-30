@@ -2027,6 +2027,11 @@ ul.box-filter > li ul {
 #header_third {
     height: 55px;
 }
+@media (min-width: 701px) {
+    #header_third.bitta {
+        display: none;
+    }
+}
 #header_third .links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2076,7 +2081,8 @@ ul.box-filter > li ul {
         display: none;
     }
     #header_third.bitta .links a:nth-child(-n+6) {
-        display: inline-block;
+        display: flex;
+        border-right: 0px;
     }
 }
 #header_third .links a.yeshsho {
