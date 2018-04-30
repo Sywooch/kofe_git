@@ -30,6 +30,7 @@ $data = [
     'model' => 'Модель',
     'zone' => 'Зона обслуживания главная',
     'zone2' => 'Зона обслуживания вн.',
+    'not_sitemap' => 'не в сайтмапе'
 ];
 $sites = [0 => 'Нет'];
 foreach (Yii::$app->params['siteConfigs'] as $title => $config) {

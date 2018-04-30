@@ -272,7 +272,7 @@ class PageController extends CController {
                     CASE 
                         WHEN m.type = \'brand\' THEN \'\'     
                         ELSE m.title
-                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.category_id = ' . $siteConfig['category_id'] . ' AND m.url != \'/\' ORDER BY m.id';
+                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.category_id = ' . $siteConfig['category_id'] . ' AND m.url != \'/\' AND m.url != \'not_sitemap\' ORDER BY m.id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
         $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
