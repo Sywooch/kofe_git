@@ -2027,6 +2027,11 @@ ul.box-filter > li ul {
 #header_third {
     height: 55px;
 }
+@media (min-width: 701px) {
+    #header_third.bitta {
+        display: none;
+    }
+}
 #header_third .links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2075,10 +2080,17 @@ ul.box-filter > li ul {
     #header_third .links a:nth-child(-n+6) {
         display: none;
     }
+    #header_third.bitta .links a:nth-child(-n+6) {
+        display: flex;
+        border-right: 0px;
+    }
 }
 #header_third .links a.yeshsho {
     display: flex;
     width: 100px;
+}
+#header_third.bitta .links a.yeshsho {
+    display: none ! important;
 }
 #header_third .links a svg {
     max-width: 30px;
