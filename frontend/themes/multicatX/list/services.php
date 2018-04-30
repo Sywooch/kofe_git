@@ -8,12 +8,13 @@ $breadcrumbs = [
 
 
 <div class="main_container grey_container">
-
+    <div class="inner_container">
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+    </div>
     <?php foreach (app\components\CController::$menu as $key => $category): ?>
 
 
     <div id="rumiservice7" class="inner_container">
-        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
        <div class="rumiservice7_topper">
           <h1 class="rumiservice7_header"><?= $pageInfo['meta_h1']; ?></h1>
           <div class="rumiservice7_buttons">
