@@ -40,14 +40,15 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                 </div>
             </div>
-            <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => true, 'urlPrefix' => \app\components\CController::$category['url'] . '/']); ?>
-            <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по неисправностям:', 'category_id' => \app\components\CController::$category['id'], 'type' => 2, 'is_popular' => true, 'urlPrefix' => \app\components\CController::$category['url'] . '/']); ?>
             <div class="main_product_right">
                 <div class="image">
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/centr-zamena-displeya-a-328x300.jpg" title="" alt="" id="image">
                 </div>
             </div>
         </div>
+        <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по услугам:', 'category_id' => \app\components\CController::$category['id'], 'type' => 1, 'is_popular' => true, 'urlPrefix' => \app\components\CController::$category['url'] . '/']); ?>
+        <?= multicatX\widgets\lists\Services::widget(['title' => 'Цены по неисправностям:', 'category_id' => \app\components\CController::$category['id'], 'type' => 2, 'is_popular' => true, 'urlPrefix' => \app\components\CController::$category['url'] . '/']); ?>
+
     </div>
 </div>
 <?= multicatX\widgets\forms\FooterForm::widget(); ?>
