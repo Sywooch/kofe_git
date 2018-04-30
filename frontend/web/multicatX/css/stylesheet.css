@@ -2075,10 +2075,16 @@ ul.box-filter > li ul {
     #header_third .links a:nth-child(-n+6) {
         display: none;
     }
+    #header_third.bitta .links a:nth-child(-n+6) {
+        display: inline-block;
+    }
 }
 #header_third .links a.yeshsho {
     display: flex;
     width: 100px;
+}
+#header_third.bitta .links a.yeshsho {
+    display: none ! important;
 }
 #header_third .links a svg {
     max-width: 30px;
