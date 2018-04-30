@@ -6,7 +6,7 @@
             <?php endif; ?>
             <div class="tab-b active" rel="tab-neispravnost">Неисправности бренда</div>
             <div class="tab-b" rel="tab-tseni">Цены на услуги</div>
-            <div class="tab-b" rel="tab-text-2"<?= !empty($error['description']) ? ' style="display: none;"' : ''; ?>>Коды ошибок</div>
+            <div class="tab-b" rel="tab-text-2"<?= empty($error['description']) ? ' style="display: none;"' : ''; ?>>Коды ошибок</div>
         </div>
     </div>
     <?= remont_coffee\widgets\lists\Neispravnost::widget(['title' => 'Типовые  <span>неисправности</span> ' . $pageInfo['title']]); ?>
