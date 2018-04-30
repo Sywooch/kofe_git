@@ -2,7 +2,7 @@
 $assets = Yii::getAlias('@web');
 ?>
 <div class="main_container bordertopgrey">
-    <div id="header_third" class="inner_container <?= count(CController::$menu) <= 1 ? 'bitta' : 'kop' ?>">
+    <div id="header_third" class="inner_container <?= count($rows) <= 1 ? 'bitta' : 'kop' ?>">
         <div class="links">
             <?php foreach ($rows as $row): ?>
                 <a class="colortexthover <?= str_replace('remont-', '', $row['url']); ?>" href="/<?= $row['url']; ?>">
