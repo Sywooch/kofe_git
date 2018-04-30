@@ -12,7 +12,7 @@ class Price extends Widget {
     public $model;
 
     public function run() {
-        $rows = \frontend\models\Pages::getCategoryServices($this->model['parent']);
+        $rows = \frontend\models\Pages::getModelServices($this->model['parent']);
         return $this->render('price', ['services' => $rows, 'model' => $this->model]);
     }
 
