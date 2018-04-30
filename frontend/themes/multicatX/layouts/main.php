@@ -40,8 +40,8 @@ $js = app\components\CController::$js;
                     <a class="mini-form" href="#">СТАТУС РЕМОНТА</a>
                     <a href="/otzyvy">ОТЗЫВЫ</a>
                     <a href="/novosti">НОВОСТИ</a>
-                    <a href="/partneram">Партнерам</a>
-                    <a href="/garantiya">Гарантия</a>
+                    <a href="/partneram">ПАРТНЕРАМ</a>
+                    <a href="/garantiya">ГАРАНТИЯ</a>
                     <a href="/o-kompanii">О КОМПАНИИ</a>
                     <p><?= Yii::$app->session['region']['title']; ?></p>
                     <div class="clear"></div>
