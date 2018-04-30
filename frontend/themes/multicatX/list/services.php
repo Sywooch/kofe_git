@@ -5,7 +5,7 @@ $breadcrumbs = [
 ];
 ?>
 
-<?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+
 
 <div class="main_container grey_container">
 
@@ -13,6 +13,7 @@ $breadcrumbs = [
 
 
     <div id="rumiservice7" class="inner_container">
+        <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
        <div class="rumiservice7_topper">
           <h1 class="rumiservice7_header"><?= $pageInfo['meta_h1']; ?></h1>
           <div class="rumiservice7_buttons">

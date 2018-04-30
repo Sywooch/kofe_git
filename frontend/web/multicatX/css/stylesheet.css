@@ -3334,7 +3334,7 @@ ul.box-filter > li ul {
 #rumiservice7 .rumiservice7_table_tr_container {
     display: none;
 }
-#rumiservice7 .rumiservice7_table_tr_odd {
+#rumiservice7 .rumiservice7_table_tr:nth-child(2n) {
     background: #f2f2f2;
 }
 #rumiservice7 .rumiservice7_table_tr>div {
