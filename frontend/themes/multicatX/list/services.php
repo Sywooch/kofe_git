@@ -10,16 +10,16 @@ $breadcrumbs = [
 <div class="main_container grey_container">
     <div class="inner_container">
         <?= multicatX\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+        <h1><?= $pageInfo['meta_h1']; ?></h1>
     </div>
+
+
     <?php foreach (app\components\CController::$menu as $key => $category): ?>
 
-
+    
     <div id="rumiservice7" class="inner_container">
        <div class="rumiservice7_topper">
-          <h1 class="rumiservice7_header"><?= $pageInfo['meta_h1']; ?></h1>
-          <div class="rumiservice7_buttons">
-             <div class="rumiservice7_button colortexthover rumiservice7_button_active" button_id="0">Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></div>
-          </div>
+          <div class="rumiservice7_header">Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></div>
        </div>
 
         <?php $services = frontend\models\Pages::getCategoryServices($category['category_id']); ?>
