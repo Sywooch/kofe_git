@@ -202,7 +202,7 @@ class ListController extends CController {
                         $metaDesc = 'Если ' . (isset($seoH1[$pageInfo['id']]) ? mb_strtolower($seoH1[$pageInfo['id']], 'utf-8') : 'кофемашина ' . $page['title'] . ' ' . $pageInfo['title']) . ' наши специалисты бесплатно проведут диагностику, выявят неисправность и в короткие сроки выполнят ремонт с гарантией. ';
                     } elseif (in_array($siteConfig['id'], [124, 125])) {
                         if ($page['type'] == 'brand') {
-                            $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'];
+                            $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '?';
                             $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - ремонт кофемашин ' . $page['title'] . ' любой сложности поломки.  Оперативное реагирование и предоставление полного пакета документов. Работаем без выходных.';
                         } else {
                             $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . ' - ремонт быстро, недорого, надежно';
