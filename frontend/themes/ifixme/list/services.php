@@ -13,7 +13,7 @@ $breadcrumbs = [
                 <div class="open-botton">
                     <p>Услуги <?= str_replace('Ремонт ', '', $category['title']); ?></p>
                 </div>
-                <?php $services = frontend\models\Pages::getCategoryServices($category['id']); ?>
+                <?php $services = frontend\models\Pages::getCategoryServices($category['category_id']); ?>
                 <table class="my-table">
                     <tbody>
                         <?php foreach ($services as $service): ?>
