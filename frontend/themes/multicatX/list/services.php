@@ -1,5 +1,5 @@
 <?php
-$this->title = $pageInfo['meta_title'];
+$this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand['title'], $pageInfo['meta_title']);
 $breadcrumbs = [
     $pageInfo['title'],
 ];
