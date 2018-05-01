@@ -15,7 +15,7 @@ $breadcrumbs = [
                 <div class="rumiservice7_header">Услуги <?= mb_strtolower(str_replace('Ремонт ', '', $category['full_title']), 'utf8'); ?></div>
             </div>
 
-            <?php $services = frontend\models\Pages::getCategoryServices($category['category_id'], ' ORDER BY is_popular'); ?>
+            <?php $services = frontend\models\Pages::getCategoryServices($category['category_id'], ' ORDER BY is_popular DESC'); ?>
             <div class="rumiservice7_blocks_container">
                 <div class="rumiservice7_blocks rumiservice7_block0" style="display:  block;">
                     <div class="rumiservice7_table_header">
