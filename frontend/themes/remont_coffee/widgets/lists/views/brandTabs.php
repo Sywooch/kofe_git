@@ -15,6 +15,7 @@
             <?php if (!empty($pageInfo['full_description'])): ?>
                 <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['full_description']); ?>
             <?php endif; ?>
+            <br>
         </div>
     </div>
     <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable']); ?>
