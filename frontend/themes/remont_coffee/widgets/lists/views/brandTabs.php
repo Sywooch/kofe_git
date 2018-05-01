@@ -18,7 +18,6 @@
         </div>
     </div>
     <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable']); ?>
-    <?= remont_coffee\widgets\lists\PopularModels::widget(['parent' => $pageInfo['id']]); ?>
     <?php if (!empty($error['description'])): ?>
         <div id="tab-text-2" class="full-text tab_content">
             <div class="container">
@@ -26,6 +25,7 @@
             </div>
         </div>
     <?php endif; ?>
+    <?= remont_coffee\widgets\lists\PopularModels::widget(['parent' => $pageInfo['id']]); ?>
     <div class="button-section">
         <div class="container">
             <a class="button opan-all-models" href="#">Все модели <?= $pageInfo['title']; ?></a>
