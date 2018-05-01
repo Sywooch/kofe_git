@@ -57,7 +57,7 @@ if (!empty($url))
             <div class="col-md-7 col-sm-24">
                 <div class="form-block form-block__request clearfix">
                     <div class="form-block_title">Оставьте заявку на&nbsp;ремонт</div>
-                    <div class="form-block_claim">Каждый случай уникален, и если вы не нашли свою поломку, получите <span style="color:#e66429">бесплатную консультацию</span></div>
+                    <div class="form-block_claim">Каждый случай уникален, и если вы не нашли свою поломку, получите <span style="color:#bfa16a">бесплатную консультацию</span></div>
                     <div class="form form__request dark">
                         <?php
 
@@ -94,7 +94,7 @@ $form = ActiveForm::begin([
                                 ?>
                             </li>
                         </ul>
-                        <?= Html::submitInput('Перезвоните мне', ['type' => 'submit']) ?>
+                        <?= Html::submitButton('Перезвоните мне', ['type' => 'submit']) ?>
                         <p class="response-message"></p>
                         <p class="form-policy">
                             Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку

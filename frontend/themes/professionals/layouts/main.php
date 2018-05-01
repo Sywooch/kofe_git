@@ -28,7 +28,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/normalize.css" rel="stylesheet" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.min.css?v=9" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?php if ($siteConfig['id'] == 53): ?>spb/<?php endif; ?>main.min.css?v=10" rel="stylesheet" />
     </head>
     <body <?= $isHome ? 'class="gl-st"' : ''; ?>>
         <?php
