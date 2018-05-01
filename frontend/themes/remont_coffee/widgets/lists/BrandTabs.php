@@ -12,7 +12,7 @@ class BrandTabs extends Widget {
 
     public function run() {
         $siteConfig = CController::getSiteConfig();
-        $sql = 'SELECT title, description FROM {{%pages}} WHERE parent = ' . (int) $this->pageInfo['id'];
+        $sql = 'SELECT title, description FROM {{%pages}} WHERE type = \'not_sitemap\' AND parent = ' . (int) $this->pageInfo['id'];
         $error = Yii::$app->db->createCommand($sql)->queryOne();
        
         return $this->render('brandTabs', ['error' => $error, 'pageInfo' => $this->pageInfo]);
