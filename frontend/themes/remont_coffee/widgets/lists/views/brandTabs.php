@@ -22,6 +22,7 @@
         <div id="tab-text-2" class="full-text tab_content">
             <div class="container">
                 <?= $error['description']; ?>
+                <br>
             </div>
         </div>
     <?php endif; ?>
