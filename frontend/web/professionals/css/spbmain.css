@@ -6487,7 +6487,7 @@ a,a:focus,a:hover,a:visited{
     position:relative;
     font-size:2.5rem;
     line-height:3.3rem;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
     margin-top:0;
     color: #bfa16a;
 }
@@ -6544,7 +6544,7 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     position:relative;
     min-height:54rem;
     padding-bottom:3.5rem;
-    background-image:url(../images/bg/header-bg-2.png),url(../images/bg/header-bg-1.jpg);
+    background-image:url(../images/bg/header-bgspb.png),url(../images/bg/header-bg-1.jpg);
     background-repeat:no-repeat,no-repeat;
     background-position:60% 110%,50% 50%;
     background-size:auto,cover
@@ -6946,10 +6946,10 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
 }
 .about-info_txt{
     line-height:2.2rem;
-    margin-bottom:4rem
+    margin-bottom:3rem
 }
 .about-info .title{
-    margin-bottom:2rem
+    margin-bottom:1rem
 }
 .about .telefonga_spb,
 .about .telefonga_msk {
@@ -8374,7 +8374,7 @@ footer{
     .title.title__2{
         font-size:2rem;
         line-height:2.8rem;
-        margin-bottom:3rem
+        margin-bottom:1rem
     }
     .header{
         min-height:47rem;
