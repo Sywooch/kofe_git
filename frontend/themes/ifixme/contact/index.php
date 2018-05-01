@@ -12,7 +12,7 @@ $this->title = $pageInfo['meta_title'];
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>Москва, ул. Заречная 1, корпус 2. М. Фили, Шелепиха</p>
+                    <p>г. Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</p>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
