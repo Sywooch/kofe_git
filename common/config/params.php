@@ -2480,5 +2480,16 @@ return [
             'order-title' => 'tnv',
             'sitemap' => ['disableServicePage' => true]
         ],
+        'love-kofe' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'mono' => false,
+            'id' => 148,
+            'sitePrefix' => 'landing',            
+            'category_id' => 7,
+            'theme' => 'landing',
+            'order-title' => 'landing',
+            'sitemap' => ['disableServicePage' => true]
+        ],
     ]
 ];
