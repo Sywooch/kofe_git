@@ -55,7 +55,7 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-sx-24">
-                        <h2 class="title title__2">Ремонт кофемашин в <br><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?></h2>
+                        <div class="title title__2">Ремонт кофемашин в <br><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?></div>
                         <div class="reviews-list" id="reviews-slider2">
                             <?= professionals\widgets\other\Subways::widget(); ?>               
                         </div>
@@ -73,11 +73,11 @@ $js = app\components\CController::$js;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-24">
-                        <h4 class="subtitle">О НАС</h4>
+                        <div class="subtitle">О НАС</div>
                         <p>Выполним ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?> максимально быстро и по низкой стоимости. Наш сервисный центр работает каждый день, без выходных и праздников</p>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-24">
-                        <h4 class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</h4>
+                        <div class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</div>
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-24">
                                 <a href="/ne-nalivaet-kofe">Не наливает кофе</a>
@@ -96,7 +96,7 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-24">
-                        <h4 class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+                        <div class="subtitle">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
                         <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, проспект Обуховской Обороны, 70к2' : 'г. Москва, м. Шелепиха, ул. Большая филевская, д.1' ?></p>
                         <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telefonga_spb' : 'telefonga_msk' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                     </div>

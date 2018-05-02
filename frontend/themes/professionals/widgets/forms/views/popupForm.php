@@ -3,7 +3,7 @@
         <div class="modal-inset">
             <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
             <div class="modal-body">
-                <h3>Хотите, мы вам перезвоним?</h3>
+                <div class="title title__2">Хотите, мы вам перезвоним?</div>
                 <p>Для вызова мастера или подробной консультации оставьте ваш номер телефона</p>
                 <?php
 

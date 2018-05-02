@@ -13,15 +13,15 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-lg-12 col-md-12 col-sm-24 ">
                 <div class="about-info">
                     <div class="col-lg-24 col-md-24 col-sm-12">
-                        <h2 class="title title__2 dark">Срочная доставка в сервис</h2>
+                        <div class="title title__2 dark">Срочная доставка в сервис</div>
                         <p class="about-info_txt">Курьер прибудет через 30 минут. Для безопасной транспортировки, перевозка техники осуществляется в специально оборудованном транспорте.</p>
                     </div>
                     <div class="col-lg-24 col-md-24 col-sm-12">
-                        <h2 class="title title__2 dark">Надежный ремонт в сервисе</h2>
+                        <div class="title title__2 dark">Надежный ремонт в сервисе</div>
                         <p class="about-info_txt">Наш сервис оснащен специальным оборудованием для выполнения качественного и быстрого ремонта.</p>
                     </div>
                     <div class="col-lg-24 col-md-24 col-sm-12">
-                        <h2 class="title title__2 dark">Ремонт в короткие сроки</h2>
+                        <div class="title title__2 dark">Ремонт в короткие сроки</div>
                         <p class="about-info_txt">Уже через 1-2 дня курьерская служба выполнит обратную доставку, и Вы снова будете наслаждаться приятным вкусом кофе.</p>
                     </div>
                     <div class="col-lg-24 col-md-24 col-sm-12">

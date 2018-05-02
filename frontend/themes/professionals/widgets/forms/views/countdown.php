@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-9 col-sm-11">
-                <h2 class="title title__2">Успейте <br>заказать ремонт <br>кофемашины</h2>
+                <div class="title title__2">Успейте <br>заказать ремонт <br>кофемашины</div>
             </div>
             <div class="col-lg-9 col-lg-offset-7 col-md-11 col-md-offset-4 col-sm-13">
                 <div class="countdown-title">До конца акции осталось:</div>

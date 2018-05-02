@@ -6,7 +6,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="container">
         <div class="row">
             <div class="col-xs-24">
-                <h2 class="title title__2">Бренды которые мы чиним</h2>
+                <div class="title title__2">Бренды которые мы чиним</div>
             </div>
         </div>
         <div class="row">

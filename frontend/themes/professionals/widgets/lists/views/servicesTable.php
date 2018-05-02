@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="row">
     <div class="col-xs-24">
-        <h2 class="title title__2 light"><?= !empty($title) ? $title : 'Цены по услугам' ?></h2>
+        <div class="title title__2 light"><?= !empty($title) ? $title : 'Цены по услугам' ?></div>
     </div>
 </div>
 <table class="table table__solution">

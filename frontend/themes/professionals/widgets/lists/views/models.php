@@ -3,7 +3,7 @@
         <div clas="col-md-12">
             <div class="row">
                 <div class="col-lg-16">
-                    <h2 class="title title__2">Профессиональный ремонт моделей <?= $brand['title']; ?></h2>
+                    <div class="title title__2">Профессиональный ремонт моделей <?= $brand['title']; ?></div>
                 </div>
                 <div class="col-lg-6 col-lg-offset-2">
                     <div class="form dark">

@@ -6,7 +6,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="container">
         <div class="row">
             <div class="col-lg-16 col-md-16 col-sm-12">
-                <h2 class="title title__2">Отзывы клиентов</h2>
+                <div class="title title__2">Отзывы клиентов</div>
                 <div class="reviews-list" id="reviews-slider">
                     <?php foreach ($rows as $row): ?>
                         <div class="review">
@@ -30,7 +30,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
-                <h2 class="title title__2">Оставить отзыв</h2>
+                <div class="title title__2">Оставить отзыв</div>
                 <div class="form dark">
                     <?php
 

@@ -12,7 +12,7 @@ if (!empty($url))
     <div class="container">
         <div class="row">
             <div class="col-xs-24">
-                <h2 class="title title__2 light"><?= $title; ?></h2>
+                <div class="title title__2 light"><?= $title; ?></div>
             </div>
         </div>
         <div class="row">

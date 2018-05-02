@@ -8876,9 +8876,10 @@ footer a:hover {
 footer p {
     color: #a5a5a5;
 }
-footer h4 {
+.subtitle {
     font-family: Robika-Regular;
-    color: #bfa16a
+    color: #bfa16a;
+    font-size: 18px;
 }
 footer .telefonga_spb,
 footer .telefonga_msk {
