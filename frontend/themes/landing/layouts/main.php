@@ -886,8 +886,8 @@ $domain = str_replace('admin.', '', $domain);
             </div>
             <div class="hot" id="hot">
                 <div class="container">
-                    <h2 class="hot__title">Мы так-же устраиваем и акции!<br>
-                        <span>например, сегодня действуют следующие акции:</span>
+                    <h2 class="hot__title">Специальное предложение до <сегодняшняя дата><br>
+                        <span>Оставьте заявку прямо сейчас</span>
                     </h2>
                     <div class="hot__block">
                         <div class="item">
