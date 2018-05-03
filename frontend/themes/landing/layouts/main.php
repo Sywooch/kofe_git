@@ -85,7 +85,7 @@ $domain = str_replace('admin.', '', $domain);
                 </div>
                 <div class="container">
                     <div class="header__block">
-                        <h1 class="header__title">Ремонт кофемашин в Москве
+                        <h1 class="header__title">Ремонт кофемашин<?= isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?> в Москве
                         </h1>
                         <div class="print"> <span class="text"></span>
                         </div>
@@ -129,456 +129,11 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="free__form">
-                        <form class="form default" id="freeForm" data-ga="FormMaterFree" data-yam="free_master">
-                            <div class="form__title">Вызовите нашего инженера для бесплатной диагностики кофемашины.
-                            </div>
-                            <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                            </div>
-                            <input class="source" type="hidden" name="source" value=""/>
-                            <input class="term" type="hidden" name="term" value=""/>
-                            <input class="campaign" type="hidden" name="campaign" value=""/>
-                            <input class="content" type="hidden" name="content" value=""/>
-                            <input class="medium" type="hidden" name="medium" value=""/>
-                            <input name="formname" type="hidden" value="Вызвать мастера(2-й экран)"/>
-                            <div class="form__field form__field--btn">
-                                <button class="btn btn--fw">Вызвать мастера
-                                </button>
-                            </div>
-                            <div class="form__desc">Ремонт выполняется специализицироваными инженерами и с использованием оригинальных комплектующих!
-                            </div>
-                            <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-free" checked="checked"/>
-                                <label class="policy__label" for="policy-free">
-                                    <span class="box"></span>
-                                    <span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности </a></span>
-                                </label>
-                            </div>
-                        </form>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
                     </div>
                 </div>
             </div>
-            <div class="choose" id="choose">
-                <div class="container">
-                    <h2 class="choose__title">Что с Вашей кофемашиной?
-                    </h2>
-                    <div class="choose__nav">
-                        <div class="tabs">
-                            <div class="tabs__item active" data-val="iphone">Выберите неисправность или услугу
-                            </div>
-                        </div>
-                        <div class="lists">
-                            <ul class="list" id="iphone">
-                                <li class="list__item active" data-val="iPhone X" data-attr="X">Неисправности</li>
-                                <li class="list__item" data-val="iPhone 8 Plus" data-attr="8+">Услуги</li>
-                                <li class="list__item" data-val="iPhone 8" data-attr="8">Остальные услуги</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="choose__body">
-                        <div class="choose__grids">
-                            <div class="choose__grid" id="iphone1">
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена дисплея" data-time="20 минут">
-                                        <div class="item__title">Замена дисплея
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">24990 руб.
-                                            </div>
-                                            <div class="time">20 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена стекла" data-time="60 минут">
-                                        <div class="item__title">Замена стекла
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">24990 руб.
-                                            </div>
-                                            <div class="time">20 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена аккумулятора" data-time="10 минут">
-                                        <div class="item__title">Замена аккумулятора
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">10 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена корпуса (любой цвет)" data-time="60 минут">
-                                        <div class="item__title">Замена корпуса (любой цвет)
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">24990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена основной камеры" data-time="10 минут">
-                                        <div class="item__title">Замена основной камеры
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">6990 руб.
-                                            </div>
-                                            <div class="time">10 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена фронтальной камеры" data-time="15 минут">
-                                        <div class="item__title">Замена фронтальной камеры
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">15 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена кнопки включения" data-time="30 минут">
-                                        <div class="item__title">Замена кнопки включения
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">30 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена кнопки вибро" data-time="30 минут">
-                                        <div class="item__title">Замена кнопки вибро
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">30 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена нижнего динамика" data-time="15 минут">
-                                        <div class="item__title">Замена нижнего динамика
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">15 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена разъема наушников" data-time="15 минут">
-                                        <div class="item__title">Замена разъема наушников
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">15 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена слухового динамика" data-time="15 минут">
-                                        <div class="item__title">Замена слухового динамика
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">15 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена кнопки Home" data-time="10 минут">
-                                        <div class="item__title">Замена кнопки Home
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 1490 руб.
-                                            </div>
-                                            <div class="time">10 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена кнопок громкости" data-time="30 минут">
-                                        <div class="item__title">Замена кнопок громкости
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">30 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена разъема зарядки" data-time="20 минут">
-                                        <div class="item__title">Замена разъема зарядки
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4990 руб.
-                                            </div>
-                                            <div class="time">20 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Наклеить защитное стекло" data-time="5 минут">
-                                        <div class="item__title">Наклеить защитное стекло
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 1490 руб.
-                                            </div>
-                                            <div class="time">5 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Перепрошивка" data-time="60 минут">
-                                        <div class="item__title">Перепрошивка
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Залит водой" data-time="60 минут">
-                                        <div class="item__title">Залит водой
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 1490 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Не включается" data-time="60 минут">
-                                        <div class="item__title">Не включается
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 1490 руб.
-                                            </div>
-                                            <div class="time">60 минут<span>от</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="choose__grid" id="ipad1" style="display: none;">
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена дисплея" data-time="60 минут">
-                                        <div class="item__title">Замена дисплея
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">13990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена стекла" data-time="60 минут">
-                                        <div class="item__title">Замена стекла
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">13990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена аккумулятора" data-time="60 минут">
-                                        <div class="item__title">Замена аккумулятора
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">4390 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена корпуса" data-time="30 минут">
-                                        <div class="item__title">Замена корпуса
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">7990 руб.
-                                            </div>
-                                            <div class="time">30 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена основной камеры" data-time="20 минут">
-                                        <div class="item__title">Замена основной камеры 
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">3490 руб.
-                                            </div>
-                                            <div class="time">20 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Замена фронтальной камеры" data-time="20 минут">
-                                        <div class="item__title">Замена фронтальной камеры 
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">3490 руб.
-                                            </div>
-                                            <div class="time">20 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Попала влага" data-time="60 минут">
-                                        <div class="item__title">Попала влага
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 990 руб.
-                                            </div>
-                                            <div class="time">60 минут<span>от</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Не включается" data-time="60 минут">
-                                        <div class="item__title">Не включается
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Перепрошивка" data-time="60 минут">
-                                        <div class="item__title">Перепрошивка
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__wrap" data-title="Проблема c Wi-Fi" data-time="60 минут">
-                                        <div class="item__title">Проблема c Wi-Fi
-                                        </div>
-                                        <div class="bottom">
-                                            <div class="price">от 990 руб.
-                                            </div>
-                                            <div class="time">60 минут
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="choose__forms">
-                            <form class="form" id="iphone2">
-                                <div class="form__title">Заказать ремонт кофемашины по акции
-                                </div>
-                                <div class="form__subtitle">Закажите ремонт сейчас и получите скидку  30% 
-                                </div>
-                                <div class="form__selects">
-
-                                    <div class="form__field">
-                                        <select class="form__select" id="phone-repair" name="repair" data-placeholder="Выберите неисправность">
-                                            <option value="">Выберите неисправность</option>
-                                            <option value="Замена стекла">Замена стекла</option>
-                                            <option value="Замена корпуса (любой цвет)">Замена корпуса (любой цвет)</option>
-                                            <option value="Замена кнопки включения">Замена кнопки включения</option>
-                                            <option value="Замена фронтальной камеры">Замена фронтальной камеры</option>
-                                            <option value="Замена кнопки вибро">Замена кнопки вибро</option>
-                                            <option value="Замена нижнего динамика">Замена нижнего динамика</option>
-                                            <option value="Замена разъема наушников">Замена разъема наушников</option>
-                                            <option value="Замена слухового динамика">Замена слухового динамика</option>
-                                            <option value="Залит водой">Залит водой</option>
-                                            <option value="Замена дисплея">Замена дисплея</option>
-                                            <option value="Замена аккумулятора">Замена аккумулятора</option>
-                                            <option value="Замена кнопки Home">Замена кнопки Home</option>
-                                            <option value="Замена основной камеры">Замена основной камеры</option>
-                                            <option value="Замена кнопок громкости">Замена кнопок громкости</option>
-                                            <option value="Замена разъема зарядки">Замена разъема зарядки</option>
-                                            <option value="Наклеить защитное стекло">Наклеить защитное стекло</option>
-                                            <option value="Перепрошивка">Перепрошивка</option>
-                                            <option value="Не включается">Не включается</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form__field">
-                                    <input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                                </div>
-                                <input class="source" type="hidden" name="source" value=""/>
-                                <input class="term" type="hidden" name="term" value=""/>
-                                <input class="campaign" type="hidden" name="campaign" value=""/>
-                                <input class="content" type="hidden" name="content" value=""/>
-                                <input class="medium" type="hidden" name="medium" value=""/>
-                                <input class="input-price" type="hidden" name="price" value="0"/>
-                                <input name="formname" type="hidden" value="Вызвать мастера (3-й экран)"/>
-                                <div class="form__field form__field--btn">
-                                    <button class="btn btn--fw">Получить скидку 30%</button>
-                                </div>
-                                <div class="policy">
-                                    <input class="policy__input" type="checkbox" name="policy" id="policy-form1" checked="checked"/>
-                                    <label class="policy__label" for="policy-form1">
-                                        <span class="box"></span>
-                                        <span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="desc">
-                        <div class="desc__text">С вашей кофемашиной что-то другое?
-                        </div>
-                        <div class="desc__contact">Позвоните, мы обязательно Вам поможем!<span class="call_phone_2"><a class="roistat">8 (499) 350-59-60</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?= landing\widgets\lists\Services::widget(); ?>
             <div class="advantage" id="advantage">
                 <div class="container">
                     <div class="advantage__grid">
@@ -812,28 +367,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="top__form">
-                        <form class="form default" id="topForm">
-                            <div class="form__title">Вызовите мастера для проведения бесплатной диагностики.
-                            </div>
-                            <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                            </div>
-                            <input class="source" type="hidden" name="source" value=""/>
-                            <input class="term" type="hidden" name="term" value=""/>
-                            <input class="campaign" type="hidden" name="campaign" value=""/>
-                            <input class="content" type="hidden" name="content" value=""/>
-                            <input class="medium" type="hidden" name="medium" value=""/>
-                            <input name="formname" type="hidden" value="Вызвать мастера (7-й экран)"/>
-                            <div class="form__field form__field--btn">
-                                <button class="btn btn--fw">Вызвать мастера
-                                </button>
-                            </div>
-                            <div class="form__desc">Ремонт выполняется специализицироваными инженерами и с использованием оригинальных комплектующих!
-                            </div>
-                            <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy3" checked="checked"/>
-                                <label class="policy__label" for="policy3"><span class="box"></span><span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности</a></span>
-                                </label>
-                            </div>
-                        </form>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form2', 'model' => 'AskForm2', 'button' => 'Вызвать мастера']); ?>
                     </div>
                 </div>
                 <div class="parBox" id="parBox">
@@ -886,7 +420,7 @@ $domain = str_replace('admin.', '', $domain);
             </div>
             <div class="hot" id="hot">
                 <div class="container">
-                    <h2 class="hot__title">Специальное предложение до <сегодняшняя дата><br>
+                    <h2 class="hot__title">Специальное предложение до <?= date('d.m.Y'); ?><br>
                         <span>Оставьте заявку прямо сейчас</span>
                     </h2>
                     <div class="hot__block">
@@ -1010,12 +544,7 @@ $domain = str_replace('admin.', '', $domain);
                 <div class="container">
                     <h2 class="clients__title">Наши клиенты
                     </h2>
-                    <div class="clients__subtitle">За время работы сервиса мы ремонтировали кофемашины<br/> крупных компаний.
-                    </div>
-                    <!--<div class="tabs">
-                       <div class="tabs__item active" data-tab="company">Компании
-                       </div>
-                    </div>-->
+                    <div class="clients__subtitle">За время работы сервиса мы ремонтировали кофемашины<br/> крупных компаний.</div>
                     <div class="blocks">
                         <div class="block" id="company">
                             <div class="block__list">
@@ -1054,55 +583,7 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </div>
-            <div class="photo" id="photo">
-                <div class="container">
-                    <div class="photo__title-wrap">
-                        <h2 class="photo__title">Бренды, которые мы обслуживаем
-                        </h2>
-                    </div>
-                    <div class="brend">
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-
-                        <div class="item">
-                            <img src="http://remontkofe.ru/uploads/images/melitta.png" alt="" role="presentation"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?= landing\widgets\lists\PopularBrands::widget(); ?>
             <div class="team" id="team">
                 <div class="container">
                     <div class="team__block">
@@ -1119,8 +600,7 @@ $domain = str_replace('admin.', '', $domain);
             </div>
             <div class="faq" id="faq">
                 <div class="container">
-                    <h2 class="faq__title">Часто задаваемые вопросы
-                    </h2>
+                    <h2 class="faq__title">Часто задаваемые вопросы</h2>
                     <div class="faq__grid">
                         <div class="block">
                             <div class="item">
@@ -1197,8 +677,7 @@ $domain = str_replace('admin.', '', $domain);
             </div>
             <div class="news" id="news">
                 <div class="container">
-                    <h2 class="news__title">Советы от наших экспертов
-                    </h2>
+                    <h2 class="news__title">Советы от наших экспертов</h2>
                     <div class="news__subtitle">Как продлить срок службы кофемашин
                     </div>
                     <div class="news__grid">
@@ -1216,10 +695,8 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                         <div class="item">
                             <div class="item__wrap">
-                                <div class="item__img">
-                                </div>
-                                <div class="item__title">Правильный уход за кофемашиной
-                                </div>
+                                <div class="item__img"></div>
+                                <div class="item__title">Правильный уход за кофемашиной</div>
                                 <div class="item__desc">
                                     <p>Специалисты нашей компании поделились некоторыми наблюдениями...</p>
                                 </div>
@@ -1327,34 +804,11 @@ $domain = str_replace('admin.', '', $domain);
             <div class="end" id="end">
                 <div class="container">
                     <div class="end__body">
-                        <h2 class="end__title">Мы работаем в выходные и праздники!<br/>Позвоните нам и курьер выедет в течение 30 минут!
-                        </h2>
-                        <div class="end__subtitle">Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики. 
-                        </div>
+                        <h2 class="end__title">Мы работаем в выходные и праздники!<br/>Позвоните нам и курьер выедет в течение 30 минут!</h2>
+                        <div class="end__subtitle">Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.</div>
                     </div>
                     <div class="end__form">
-                        <form class="form default" id="endForm">
-                            <div class="form__title">Хотите мы починим кофемашину не более чем за 24 часа?
-                            </div>
-                            <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                            </div>
-                            <input class="source" type="hidden" name="source" value=""/>
-                            <input class="term" type="hidden" name="term" value=""/>
-                            <input class="campaign" type="hidden" name="campaign" value=""/>
-                            <input class="content" type="hidden" name="content" value=""/>
-                            <input class="medium" type="hidden" name="medium" value=""/>
-                            <input name="formname" type="hidden" value="Вызвать мастера (21-й экран)"/>
-                            <div class="form__field form__field--btn">
-                                <button class="btn btn--fw">Да, хочу!
-                                </button>
-                            </div>
-                            <div class="form__desc">Ремонт выполняется специализироваными инженерами и с использованием оригинальных комплектующих!
-                            </div>
-                            <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy" checked="checked"/>
-                                <label class="policy__label" for="policy"><span class="box"></span><span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности</a></span>
-                                </label>
-                            </div>
-                        </form>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Мы работаем и в выходные,<br/>позвоните нам и курьер сразу-же приедет!', 'sub_title' => 'Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.', 'id' => 'form3', 'model' => 'CallBackForm', 'button' => 'Да, хочу!']); ?>
                     </div>
                 </div>
             </div>
@@ -1394,152 +848,41 @@ $domain = str_replace('admin.', '', $domain);
             <div class="up-wrap"><a class="up" href="#header"></a>
             </div>
             <div class="modal" id="mainModal" style="display: none;" >
-                <form class="form default" id="mainForm">
-                    <div class="form__title">Оставьте заявку и мы Вам
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 27 секунд
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Получить консультацию (1-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Жду звонка
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal1" checked="checked"/>
-                        <label class="policy__label" for="policy-modal1"><span class="box"></span><span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности </a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и мы Вам', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form4', 'model' => 'CallBackTopForm', 'button' => 'Жду звонка']); ?>                
             </div>
             <div class="modal" id="masterModal" style="display: none;" >
-                <form class="form default" id="masterForm">
-                    <div class="form__title">Оставьте заявку на <br/>вызов мастера
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 7 секунд
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Вызвать мастера (5-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Вызвать мастера
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal2" checked="checked"/>
-                        <label class="policy__label" for="policy-modal2"><span class="box"></span><span class="text">Нажимая на кнопку “Вызвать мастера”, я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="doc/politics.docx">договора-оферты </a>и <a href="doc/politics.docx">политикой конфиденциальности</a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку на <br/>вызов мастера', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form5', 'model' => 'OrderForm', 'button' => 'Вызвать мастера']); ?>
             </div>
             <div class="modal" id="cashbackModal" style="display: none;" >
-                <form class="form default" id="cashbackForm">
-                    <div class="form__title">Оставьте заявку и получи<br/>5% кэшбэк на первый ремонт
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 7 секунд
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Получить 5% кэшбэк (8-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Получить 5% кэшбэк
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal3" checked="checked"/>
-                        <label class="policy__label" for="policy-modal3"><span class="box"></span><span class="text">Нажимая на кнопку “Вызвать мастера”, я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="doc/politics.docx">договора-оферты </a>и <a href="doc/politics.docx">политикой конфиденциальности</a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>5% кэшбэк на первый ремонт', 'sub_title' => 'Перезвоним за 27 секунд', 'button' => 'Получить 5% кэшбэк', 'id' => 'form6', 'model' => 'OrderForm2']); ?>
             </div>
             <div class="modal" id="glassModal" style="display: none;">
-                <form class="form default" id="glassModal1">
-                    <div class="form__title">Оставьте заявку и получи<br/>защитное стекло в подарок
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 7 секунд
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Получить стекло в подарок (9-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Получить стекло в подарок
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal4" checked="checked"/>
-                        <label class="policy__label" for="policy-modal4"><span class="box"></span><span class="text">Нажимая на кнопку “Вызвать мастера”, я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="doc/politics.docx">договора-оферты </a>и <a href="doc/politics.docx">политикой конфиденциальности</a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>защитное стекло в подарок', 'sub_title' => 'Перезвоним за 7 секунд', 'button' => 'Получить стекло в подарок', 'id' => 'form7', 'model' => 'ServiceForm']); ?>
             </div>
             <div class="modal" id="studentModal" style="display: none;" >
-                <form class="form default" id="studentModal1">
-                    <div class="form__title">Ты студент?<br/>Оставь заявку и получи <br/>5% скидку на ремонт
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 7 секунд<br/>(Необходим студенческий билет)
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Получить скидку 5% (9-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Получить скидку 5%
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal5" checked="checked"/>
-                        <label class="policy__label" for="policy-modal5"><span class="box"></span><span class="text">Нажимая на кнопку “Вызвать мастера”, я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="doc/politics.docx">договора-оферты </a>и <a href="doc/politics.docx">политикой конфиденциальности</a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Ты студент?<br/>Оставь заявку и получи <br/>5% скидку на ремонт', 'sub_title' => 'Перезвоним за 7 секунд<br/>(Необходим студенческий билет)', 'id' => 'form8', 'model' => 'AskForm3', 'button' => 'Получить скидку 5%']); ?>                
             </div>
             <div class="modal" id="repairModal" style="display: none;">
-                <form class="form default" id="repairModal1">
-                    <div class="form__title">Оставьте заявку и запишитесь <br/>на ремонт
-                    </div>
-                    <div class="form__subtitle">Перезвоним за 7 секунд
-                    </div>
-                    <div class="form__field"><input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input name="formname" type="hidden" value="Записаться на ремонт (5-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Записаться на ремонт
-                        </button>
-                    </div>
-                    <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-modal6" checked="checked"/>
-                        <label class="policy__label" for="policy-modal6"><span class="box"></span><span class="text">Нажимая на кнопку “Вызвать мастера”, я даю согласие на обработку персональных данных и соглашаюсь с условиями <a href="doc/politics.docx">договора-оферты </a>и <a href="doc/politics.docx">политикой конфиденциальности</a></span>
-                        </label>
-                    </div>
-                </form>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm4', 'button' => 'Записаться на ремонт']); ?>
             </div>
         </div>
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/vendor.css">
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/vendor.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>        
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
     </body>
 </html>
+<?php
+if (Yii::$app->session->getFlash('success')) {
+    echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
+}
+?>
+<script>$("form").each(function () {
+        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+    });</script>
+<?php $this->endBody() ?>    
+<?php $this->endPage() ?>

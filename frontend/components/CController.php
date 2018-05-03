@@ -43,8 +43,7 @@ class CController extends \yii\web\Controller {
 
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
-        $siteConfig = self::getSiteConfig();
-
+        $siteConfig = self::getSiteConfig();        
         if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
             Yii::$app->view->theme = new \yii\base\Theme([
                 'pathMap' => [
