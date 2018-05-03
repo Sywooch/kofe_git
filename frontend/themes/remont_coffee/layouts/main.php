@@ -44,9 +44,9 @@ $js = app\components\CController::$js;
         <?php endif; ?>
     </head>
     <body>
-        <div style="display: none;" class="aksiya-popupic">
+       <!-- <div style="display: none;" class="aksiya-popupic">
             <span id="visitor-name"></span><span id="service-name"></span>
-        </div>
+        </div> -->
         <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
         <?php $this->beginBody() ?>
         <div class="container header">
