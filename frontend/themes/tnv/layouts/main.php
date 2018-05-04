@@ -111,7 +111,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="header--calls visible-sm visible-md">
                         <div class="header--call">
-                            <div class="header--call-t">Москва</div>
+                            <div class="header--call-t"><?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></div>
                             <span class="call_phone_1"><a class="header--call-p" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></span>
                         </div>
                         <div class="header--calls-d">
@@ -237,7 +237,7 @@ $js = app\components\CController::$js;
                             <div class="footer--call-text">Время работы службы поддержки с 8:00 до 21:00 ежедневно</div>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3">
-                            <div class="footer--call-title">Москва</div>
+                            <div class="footer--call-title"><?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></div>
                             <span class="call_phone_2">
                                 <a class="footer--call-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
                             </span>
