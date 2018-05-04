@@ -101,7 +101,7 @@ $js = app\components\CController::$js;
                     <a href="/" class="header--logo float--left"></a>
                     <div class="header--calls visible-lg">
                         <div class="header--call">
-                            <div class="header--call-t">Москва</div>
+                            <div class="header--call-t"><?= str_replace(' и область', '', Yii::$app->session['region']['title']); ?></div>
                             <span class="call_phone_1"><a class="header--call-p" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></span>
                         </div>
                         <div class="header--call">
