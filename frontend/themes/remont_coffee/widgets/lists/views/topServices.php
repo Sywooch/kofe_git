@@ -3,29 +3,29 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class="top-servicess">
-    <div class="container">
-        <p class="gl-text">Типовые  <span>неисправности</span></p>
-        <div class="list">
+    <div class="kantener">
+        <p class="G-tekst">Типовые  <span>неисправности</span></p>
+        <div class="spisok">
             <?php foreach ($services as $service): ?>
-                <div class="item">
+                <div class="jisim">
                     <a href="/<?= $service['url']; ?>">
-                        <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
+                        <div class="rasim"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     </a>
                     <a href="/<?= $service['url']; ?>">
-                        <div class="text">
-                            <div class="name"><?= $service['title']; ?></div>
-                            <div class="description"><?= $service['description']; ?></div>
+                        <div class="tekst">
+                            <div class="imya"><?= $service['title']; ?></div>
+                            <div class="desc"><?= $service['description']; ?></div>
                         </div>
                     </a>
-                    <div class="price">
-                        <div class="value"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
-                        <div class="button">Заказать</div>
+                    <div class="narx">
+                        <div class="Val-m"><?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
+                        <div class="knopkacha">Заказать</div>
                     </div>
                 </div>
             <?php endforeach; ?>
-            <div class="clear"></div>
+            <div class="ochir"></div>
         </div>
-        <a class="button" href="/stoimost-remonta">Все услуги и цены</a>
+        <a class="knopkacha" href="/stoimost-remonta">Все услуги и цены</a>
     </div>
 </div>
 <hr>

@@ -1,8 +1,8 @@
 <?php $siteConfig = app\components\CController::getSiteConfig(); ?>
-<div class="contact-infos">
+<div class="Kantakt-mal">
     <div class="map-gl">
-        <div class="text">
-            <div class="name">
+        <div class="tekst">
+            <div class="imya">
                 <a href="/kontakty">Наш адрес в <span><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?></span></a>
             </div>
             <p><?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'г. Санкт-Петербург, Гжатская улица, 21к2' : 'г. Москва, Кастанаевская улица, 17' ?></p>
@@ -14,11 +14,11 @@
 
     </div>
     <div class="metro">
-        <h2 class="gl-text">Ремонт кофемашин в <br><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?>, <span>рядом с метро</span></h2>
+        <h2 class="G-tekst">Ремонт кофемашин в <br><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?>, <span>рядом с метро</span></h2>
 
-        <div class="owl-carousel metro-c owl-theme">
+        <div class="Owl-carousel metro-c owl-theme">
             <?php foreach ($pages as $key => $page): ?>
-                <?php if (($key % 5) === 0): ?><div class="item"><?php endif; ?>                    
+                <?php if (($key % 5) === 0): ?><div class="jisim"><?php endif; ?>                    
                     <a href="/<?= $page['url']; ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 153 153" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Слой_x0020_1">
@@ -32,5 +32,5 @@
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="clear"></div>
+    <div class="ochir"></div>
 </div>

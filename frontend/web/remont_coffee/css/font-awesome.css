@@ -220,7 +220,7 @@
   content: "\f00c";
 }
 .fa-remove:before,
-.fa-close:before,
+.Fa-close:before,
 .fa-times:before {
   content: "\f00d";
 }
@@ -2316,7 +2316,7 @@
 .fa-meetup:before {
   content: "\f2e0";
 }
-.sr-only {
+.Sw-faqat {
   position: absolute;
   width: 1px;
   height: 1px;

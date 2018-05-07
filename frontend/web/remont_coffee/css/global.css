@@ -41,21 +41,21 @@ a:hover {
     border-radius: 4px;
     margin-right: 12px;
 }
-.button {
+.knopkacha {
     zoom: 1;
     margin-top: 20px;
     cursor: pointer;
 }
-.button:before,
-.button:after {
+.knopkacha:before,
+.knopkacha:after {
     content: '';
     display: table;
 }
-.button:after {
+.knopkacha:after {
     clear: both;
 }
-.button a,
-.button input {
+.knopkacha a,
+.knopkacha input {
     display: block;
     float: left;
     font-size: 14px;
@@ -66,15 +66,15 @@ a:hover {
     border: none;
     padding: 12px 24px 15px 24px;
 }
-.button a:before,
-.button input:before {
+.knopkacha a:before,
+.knopkacha input:before {
     font-family: FontAwesome;
     content: '\f061';
     margin-right: 8px;
     position: relative;
 }
-.button a:hover:before,
-.button input:hover:before {
+.knopkacha a:hover:before,
+.knopkacha input:hover:before {
     left: -3px;
 }
 .bl-hero {
@@ -86,24 +86,24 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bl-hero .text {
+.bl-hero .tekst {
     zoom: 1;
     position: relative;
     width: 320px;
 }
-.bl-hero .text:before,
-.bl-hero .text:after {
+.bl-hero .tekst:before,
+.bl-hero .tekst:after {
     content: '';
     display: table;
 }
-.bl-hero .text:after {
+.bl-hero .tekst:after {
     clear: both;
 }
-.bl-hero .text .heading {
+.bl-hero .tekst .heading {
     font-size: 36px;
     line-height: 40px;
 }
-.bl-hero .text .description {
+.bl-hero .tekst .desc {
     margin-top: 30px;
     font-size: 20px;
     line-height: 28px;
@@ -157,10 +157,10 @@ a:hover {
 .bl-brands ul li .logotype img {
     width: 100%;
 }
-.bl-brands ul li .name {
+.bl-brands ul li .imya {
     font-size: 18px;
 }
-.bl-brands ul li .description {
+.bl-brands ul li .desc {
     margin-top: 6px;
     line-height: 22px;
     height: 70px;
@@ -216,7 +216,7 @@ a:hover {
 .bl-features ul li a:after {
     clear: both;
 }
-.bl-features ul li a .name {
+.bl-features ul li a .imya {
     display: table-cell;
     font-size: 18px;
     line-height: 24px;
@@ -239,7 +239,7 @@ a:hover {
     .bl-features ul li a {
         background-position: -9999px 50% !important;
     }
-    .bl-features ul li a .name {
+    .bl-features ul li a .imya {
         font-size: 16px;
         line-height: 22px;
         padding-left: 15px;
@@ -249,7 +249,7 @@ a:hover {
     .bl-features ul li a {
         background-position: -9999px 50% !important;
     }
-    .bl-features ul li a .name {
+    .bl-features ul li a .imya {
         font-size: 16px;
         line-height: 22px;
         padding-left: 15px;
@@ -284,7 +284,7 @@ a:hover {
 .bl-faults .tabs ul li {
     float: left;
 }
-.bl-faults .tabs ul li .name a {
+.bl-faults .tabs ul li .imya a {
     border: 1px solid #d2d2d2;
     border-top: 4px solid #8e8a8a;
     border-left: none;
@@ -292,28 +292,28 @@ a:hover {
     padding: 12px 15px 15px 15px;
     color: #27282b;
 }
-.bl-faults .tabs ul li .name a:hover {
+.bl-faults .tabs ul li .imya a:hover {
     color: #222;
 }
-.bl-faults .tabs ul li .name a.active,
-.bl-faults .tabs ul li .name a:hover {
+.bl-faults .tabs ul li .imya a.active,
+.bl-faults .tabs ul li .imya a:hover {
     border-bottom: 1px solid #fff;
     border-top-color: #222;
     color: #222;
 }
-.bl-faults .list ul {
+.bl-faults .spisok ul {
     zoom: 1;
     border-top: 1px solid #d2d2d2;
 }
-.bl-faults .list ul:before,
-.bl-faults .list ul:after {
+.bl-faults .spisok ul:before,
+.bl-faults .spisok ul:after {
     content: '';
     display: table;
 }
-.bl-faults .list ul:after {
+.bl-faults .spisok ul:after {
     clear: both;
 }
-.bl-faults .list ul li {
+.bl-faults .spisok ul li {
     float: left;
     width: 33.3%;
     border-bottom: dotted 1px #ccc; 
@@ -331,17 +331,17 @@ a:hover {
         width: 165px;
     }
 }
-.bl-faults .list ul li .name {
+.bl-faults .spisok ul li .imya {
     color: #2e375f;
     font-size: 14px;
     text-align: center;
 }
-.bl-faults .list ul li .description {
+.bl-faults .spisok ul li .desc {
     font-size: 12px;
     color: #8e8a8a;
     margin-top: 5px;
 }
-.bl-faults .list ul li .img {
+.bl-faults .spisok ul li .img {
     width: 100%;
     text-align: center;
     height: 180px;
@@ -349,7 +349,7 @@ a:hover {
     vertical-align: middle;
     line-height: 180px;
 }
-.bl-faults .list ul li .img img {
+.bl-faults .spisok ul li .img img {
     max-width: 90%;
     max-height: 90%;
     vertical-align: middle;
@@ -360,7 +360,7 @@ a:hover {
     }
 }
 @media screen and (max-width: 650px) {
-    .bl-faults .list ul li {
+    .bl-faults .spisok ul li {
         width: 100%;
         height: auto;
         padding-bottom: 20px;
@@ -374,19 +374,19 @@ a:hover {
     font-size: 22px;
     margin-top: 30px;
 }
-.bl-services .list {
+.bl-services .spisok {
     margin-top: 15px;
 }
-.bl-services .list ul {
+.bl-services .spisok ul {
     margin-top: 20px;
 }
-.bl-services .list ul li {
+.bl-services .spisok ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 15px 15px 15px 0px;
     display: table;
     width: 100%;
 }
-.bl-services .list ul li .image {
+.bl-services .spisok ul li .rasim {
     display: table-cell;
     width: 30%;
     max-width: 245px;
@@ -398,87 +398,87 @@ a:hover {
     border-radius: 2px;
 }
 
-.bl-services .list ul li .image img {
+.bl-services .spisok ul li .rasim img {
     position: absolute;
     top: 0;
     left: 0;
     vertical-align: bottom;
     width: 100%;
 }
-.bl-services .list ul li .text {
+.bl-services .spisok ul li .tekst {
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 20px;
 }
-.bl-services .list ul li .text .name {
+.bl-services .spisok ul li .tekst .imya {
     font-size: 16px;
     color: #2e375f;
 }
-.bl-services .list ul li .text .description {
+.bl-services .spisok ul li .tekst .desc {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
 }
-.bl-services .list ul li .price {
+.bl-services .spisok ul li .narx {
     width: 100px;
     display: table-cell;
     vertical-align: middle;
     text-align: right;
 }
-.bl-services .list ul li .price .value {
+.bl-services .spisok ul li .narx .Val-m {
     color: #222;
     font-size: 24px;
 }
-.bl-services .list ul li .price .value:after {
+.bl-services .spisok ul li .narx .Val-m:after {
     content: '\f158';
     font-family: FontAwesome;
     font-size: 16px;
     margin-left: 5px;
 }
-.bl-services .list ul li .price .notice {
+.bl-services .spisok ul li .narx .notice {
     font-size: 12px;
     line-height: 15px;
     color: #8e8a8a;
     margin-top: 5px;
 }
-.bl-services .list ul li .price .button {
+.bl-services .spisok ul li .narx .knopkacha {
     margin-top: 12px;
 }
-.bl-services .list ul li .price .button a {
+.bl-services .spisok ul li .narx .knopkacha a {
     padding: 5px 14px 6px 14px;
     background-color: transparent;
 }
-.bl-services .list ul li .price .button a:hover {
+.bl-services .spisok ul li .narx .knopkacha a:hover {
     color: #fff;
 }
 @media screen and (max-width: 700px) {
-    .bl-services .list ul li {
+    .bl-services .spisok ul li {
         display: block;
     }
-    .bl-services .list ul li .image {
+    .bl-services .spisok ul li .rasim {
         display: none ! important;
     }
-    .bl-services .list ul li .text {
+    .bl-services .spisok ul li .tekst {
         width: 100%;
         padding: 0px;
         display: inline-block;
         margin-bottom: 15px;
     }
-    .bl-services .list ul li .price {
+    .bl-services .spisok ul li .narx {
         display: table;
         width: 100%;
     }
-    .bl-services .list ul li .price .notice {
+    .bl-services .spisok ul li .narx .notice {
         display: none;
     }
-    .bl-services .list ul li .price .value {
+    .bl-services .spisok ul li .narx .Val-m {
         float: right;
     }
-    .bl-services .list ul li .price .button {
+    .bl-services .spisok ul li .narx .knopkacha {
         margin-top: 0px;
     }
-    .button {
+    .knopkacha {
         margin: 0 auto;
     }
 }
@@ -498,19 +498,19 @@ a:hover {
     font-size: 20px;
     margin-top: 20px;
 }
-.bl-promo .list {
+.bl-promo .spisok {
     margin-top: 15px;
 }
-.bl-promo .list ul {
+.bl-promo .spisok ul {
     border-top: 1px solid #d2d2d2;
 }
-.bl-promo .list ul li {
+.bl-promo .spisok ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 30px 0;
     display: table;
     width: 100%;
 }
-.bl-promo .list ul li .image {
+.bl-promo .spisok ul li .rasim {
     display: table-cell;
     width: 30%;
     max-width: 245px;
@@ -521,23 +521,23 @@ a:hover {
     position: relative;
     border-radius: 2px;
 }
-.bl-promo .list ul li .image img {
+.bl-promo .spisok ul li .rasim img {
     position: absolute;
     top: 0;
     left: 0;
     vertical-align: bottom;
     max-width: 100%;
 }
-.bl-promo .list ul li .text {
+.bl-promo .spisok ul li .tekst {
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 20px;
 }
-.bl-promo .list ul li .text .name {
+.bl-promo .spisok ul li .tekst .imya {
     font-size: 18px;
 }
-.bl-promo .list ul li .text .description {
+.bl-promo .spisok ul li .tekst .desc {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
@@ -559,7 +559,7 @@ a:hover {
 .bl-promo img[align=right] {
     margin: 30px 0 40px 45px;
 }
-.bl-promo .text {
+.bl-promo .tekst {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
@@ -592,13 +592,13 @@ a:hover {
 .bl-text .hero img {
     width: 100%;
 }
-.bl-text .text,
+.bl-text .tekst,
 .bl-text p {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
 }
-.bl-text .text,
+.bl-text .tekst,
 .bl-text p,
 .bl-text li {
     margin-top: 15px;
@@ -631,12 +631,12 @@ a:hover {
     padding: 10px 0 12px 0;
     vertical-align: middle;
 }
-.bl-text .pricelist .name {} .bl-text .pricelist .price {
+.bl-text .pricelist .imya {} .bl-text .pricelist .narx {
     white-space: nowrap;
     color: #2e375f;
     text-align: right;
 }
-.bl-text .pricelist .price:after {
+.bl-text .pricelist .narx:after {
     content: ' Р ';
 }
 @media screen and (max-width: 1000px) {
@@ -677,27 +677,27 @@ a:hover {
     margin-top: 30px;
     margin-bottom: -35px;
 }
-.bl-rules .list {
+.bl-rules .spisok {
     margin-top: 60px;
 }
-.bl-rules .list ul {
+.bl-rules .spisok ul {
     counter-reset: item-counter;
     border-top: 1px solid #d2d2d2;
 }
-.bl-rules .list ul li {
+.bl-rules .spisok ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 30px 0 30px 140px;
     position: relative;
 }
-.bl-rules .list ul li .name {
+.bl-rules .spisok ul li .imya {
     font-size: 16px;
 }
-.bl-rules .list ul li .description {
+.bl-rules .spisok ul li .desc {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
 }
-.bl-rules .list ul li:before {
+.bl-rules .spisok ul li:before {
     content: counter(item-counter, decimal-leading-zero);
     counter-increment: item-counter;
     position: absolute;
@@ -728,43 +728,43 @@ a:hover {
     font-size: 28px;
     margin-top: 25px;
 }
-.bl-contact .text {
+.bl-contact .tekst {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
 }
-.bl-contact .list {
+.bl-contact .spisok {
     margin-top: 15px;
     border-top: 1px solid #d2d2d2;
 }
-.bl-contact .list ul {
+.bl-contact .spisok ul {
     zoom: 1;
 }
-.bl-contact .list ul:before,
-.bl-contact .list ul:after {
+.bl-contact .spisok ul:before,
+.bl-contact .spisok ul:after {
     content: '';
     display: table;
 }
 .places li {padding-bottom:30px;} 
-.places .name {padding-left:0 !important; margin-left:0}
+.places .imya {padding-left:0 !important; margin-left:0}
 @media screen and (max-width: 540px) {
     .bl-text .heading,
     .bl-text h2 {
         font-size: 22px;
     }
 }
-.bl-contact .list ul:after {
+.bl-contact .spisok ul:after {
     clear: both;
 }
-.bl-contact .list ul li {} .bl-contact .list ul li .name {
+.bl-contact .spisok ul li {} .bl-contact .spisok ul li .imya {
     font-size: 18px;
     position: relative;
 }
-.bl-contact .list ul li .description {
+.bl-contact .spisok ul li .desc {
     position: relative;
     padding-left: 50px;
 }
-.bl-contact .list ul li.phone:before {
+.bl-contact .spisok ul li.telefon:before {
     content: '';
     background-image: url(../images/chat.svg);
     background-size: 100%;
@@ -774,7 +774,7 @@ a:hover {
     float: left;
     margin-right: 20px;
 }
-.bl-contact .list ul li.address:before {
+.bl-contact .spisok ul li.address:before {
     content: '';
     background-image: url(../images/bank.svg);
     background-size: 100%;
@@ -784,7 +784,7 @@ a:hover {
     float: left;
     margin-right: 20px;
 }
-.bl-contact .list ul li.schedule:before {
+.bl-contact .spisok ul li.schedule:before {
     content: '';
     background-image: url(../images/clock.svg);
     background-size: 100%;
@@ -823,20 +823,20 @@ a:hover {
     top: -2px;
     margin-right: 6px;
 }
-.bl-contact .button {
+.bl-contact .knopkacha {
     float: left;
 }
 @media screen and (max-width: 800px) {
-    .bl-contact .list ul {
+    .bl-contact .spisok ul {
         margin-top: 0;
     }
-    .bl-contact .list ul li {
+    .bl-contact .spisok ul li {
         float: none;
         width: auto;
         margin-top: 30px;
     }
 }
-.bl-form {} .bl-form .text {
+.bl-form {} .bl-form .tekst {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
@@ -851,7 +851,7 @@ a:hover {
     margin-top: 25px;
     color: #2e375f;
 }
-.bl-form .input {
+.bl-form .inp {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
@@ -863,7 +863,7 @@ a:hover {
     height: 160px;
     resize: vertical;
 }
-.bl-form .submit {
+.bl-form .jonat {
     display: block;
     box-sizing: border-box;
     font-size: 14px;
@@ -927,50 +927,50 @@ a:hover {
     font-size: 14px;
     white-space: nowrap;
 }
-.gl-header .bottom .navigation ul {
+.gl-header .bottom .navbahor1 ul {
     zoom: 1;
 }
-.gl-header .bottom .navigation ul:before,
-.gl-header .bottom .navigation ul:after {
+.gl-header .bottom .navbahor1 ul:before,
+.gl-header .bottom .navbahor1 ul:after {
     content: '';
     display: table;
 }
-.gl-header .bottom .navigation ul:after {
+.gl-header .bottom .navbahor1 ul:after {
     clear: both;
 }
-.gl-header .bottom .navigation ul li {
+.gl-header .bottom .navbahor1 ul li {
     float: left;
     margin-left: 2.4%;
 }
-.gl-header .bottom .navigation ul li:first-child {
+.gl-header .bottom .navbahor1 ul li:first-child {
     margin-left: 0;
 }
-.gl-header .bottom .navigation ul li:first-child a:before {
+.gl-header .bottom .navbahor1 ul li:first-child a:before {
     content: '\00a0\f108';
     font-family: FontAwesome;
     font-weight: normal;
 }
-.gl-header .bottom .navigation ul li:last-child {
+.gl-header .bottom .navbahor1 ul li:last-child {
     /*float:right;*/
 }
-.gl-header .bottom .navigation ul li:last-child a:before {
+.gl-header .bottom .navbahor1 ul li:last-child a:before {
     content: '\f278';
     font-family: FontAwesome;
     margin-right: 5px;
     font-weight: normal;
     font-size: 14px;
 }
-.gl-header .bottom .navigation ul a {
+.gl-header .bottom .navbahor1 ul a {
     display: block;
     padding: 4px 7px 5px 7px;
     text-transform: uppercase;
     font-weight: bold;
     color: #000;
 }
-.gl-header .bottom .navigation ul a:hover {
+.gl-header .bottom .navbahor1 ul a:hover {
     color: #2e375f;
 }
-.gl-header .bottom .navigation ul li.current-menu-item a {
+.gl-header .bottom .navbahor1 ul li.H-menyu-it a {
     background: #efefef;
     color: #000;
     border-radius: 2px;
@@ -982,20 +982,20 @@ a:hover {
     .gl-header .bottom {
         text-align: center;
     }
-    .gl-header .bottom .navigation ul li {
+    .gl-header .bottom .navbahor1 ul li {
         display: inline-block;
         float: none;
         margin-right: 2%;
     }
-    .gl-header .bottom .navigation ul li:first-child {
+    .gl-header .bottom .navbahor1 ul li:first-child {
         display: none;
     }
-    .gl-header .bottom .navigation ul li:last-child {
+    .gl-header .bottom .navbahor1 ul li:last-child {
         float: none;
         margin-right: 0;
     }
 }
-.gl-footer {
+.Gc-pad {
     zoom: 1;
     padding: 40px 0 30px 0;
     background-image: url(../images/bgfooter.jpg);
@@ -1011,7 +1011,7 @@ a:hover {
     position: relative;
     overflow: hidden;
 }
-.gl-footer::before {
+.Gc-pad::before {
     background: rgba(17, 17, 17, 0.5) none repeat scroll 0 0;
     content: " ";
     height: 100%;
@@ -1022,59 +1022,59 @@ a:hover {
     z-index: 0;
     background-color: rgba(17, 17, 17, 0.9);
 }
-.gl-footer:before,
-.gl-footer:after {
+.Gc-pad:before,
+.Gc-pad:after {
     content: '';
     display: table;
 }
-.gl-footer:after {
+.Gc-pad:after {
     clear: both;
 }
-.gl-footer {
+.Gc-pad {
     font-size: 14px;
 }
-.gl-footer .navigation {
+.Gc-pad .navbahor1 {
     width: 25%;
     float: left;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 @media (max-width: 1150px) {
-    .gl-footer .navigation {
+    .Gc-pad .navbahor1 {
         width: 33.333%;
     }
-    .gl-footer .navigation:nth-child(3) {
+    .Gc-pad .navbahor1:nth-child(3) {
         display: none;
     }
 }
 @media (max-width: 660px) {
-    .gl-footer .navigation {
+    .Gc-pad .navbahor1 {
         width: 100%;
     }
-    .gl-footer .navigation:nth-child(4) {
+    .Gc-pad .navbahor1:nth-child(4) {
         display: none;
     }
 }
-.gl-footer .navigation ul.menu-footer p {
+.Gc-pad .navbahor1 ul.Menyu-pad p {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
 }
-.gl-footer .navigation ul {
+.Gc-pad .navbahor1 ul {
     zoom: 1;
 }
-.gl-footer .navigation ul:before,
-.gl-footer .navigation ul:after {
+.Gc-pad .navbahor1 ul:before,
+.Gc-pad .navbahor1 ul:after {
     content: '';
     display: table;
 }
-.gl-footer .navigation ul:after {
+.Gc-pad .navbahor1 ul:after {
     clear: both;
 }
-.gl-footer .navigation ul li {
+.Gc-pad .navbahor1 ul li {
 
 }
-.gl-footer .navigation ul a {
+.Gc-pad .navbahor1 ul a {
     display: block;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -1085,10 +1085,10 @@ a:hover {
     margin-bottom: 8px;
     transition: all 300ms ease-in;
 }
-.gl-footer .navigation ul a:hover {
+.Gc-pad .navbahor1 ul a:hover {
     color: #404040;
 }
-.gl-footer .bottom {
+.Gc-pad .bottom {
     font-size: 12px;
     margin-top: 25px;
     color: #666;
@@ -1139,20 +1139,20 @@ a:hover {
 .gl-contact .links li {
     padding: 10px 0;
 }
-.gl-contact .links li .name {
+.gl-contact .links li .imya {
     font-size: 14px;
 }
-.gl-contact .links li .name a:before {
+.gl-contact .links li .imya a:before {
     font-family: FontAwesome;
     content: '\f061';
     color: #8e8a8a;
     margin-right: 8px;
     position: relative;
 }
-.gl-contact .links li .name a:hover:before {
+.gl-contact .links li .imya a:hover:before {
     left: -3px;
 }
-.gl-contact .links li .description {
+.gl-contact .links li .desc {
     margin-top: 5px;
     padding-left: 20px;
     font-size: 12px;
@@ -1203,7 +1203,7 @@ a:hover {
     .gl-contact .links li {
         padding: 0 0 10px 0;
     }
-    .gl-contact .links li .description {
+    .gl-contact .links li .desc {
         display: none;
     }
     .gl-contact .links li .icon {
@@ -1230,7 +1230,7 @@ a:hover {
     line-height: 25px;
     min-width: 200px;
 }
-.up-regions .list {
+.up-regions .spisok {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
@@ -1253,7 +1253,7 @@ a:hover {
     margin-top: 20px;
     color: #2e375f;
 }
-.up-call .form .input {
+.up-call .form .inp {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
@@ -1261,7 +1261,7 @@ a:hover {
     padding: 5px;
     margin-top: 8px;
 }
-.up-call .form .submit {
+.up-call .form .jonat {
     width: 100%;
     display: block;
     box-sizing: border-box;
@@ -1549,14 +1549,14 @@ a:hover {
 .brendi ul {
     margin-bottom: 0px;
 }
-.brendi .item a {
+.brendi .jisim a {
     height: 70px;
     width: 100%;
     -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
-.brendi .item img {
+.brendi .jisim img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -1591,28 +1591,28 @@ a:hover {
     z-index: 0;
     background-color: rgba(17, 17, 17, 0.9);
 }
-.reviews-new .container {
+.reviews-new .kantener {
     padding: 0px 15%;
 }
 @media (max-width: 660px) {
-    .reviews-new .container {
+    .reviews-new .kantener {
     padding: 0px 5%;
 }
 
 }
-.reviews-new .text {
+.reviews-new .tekst {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-style: italic;
     line-height: 22px;
 }
-.reviews-new .name {
+.reviews-new .imya {
     color: #F22613;
     font-weight: bold;
     font-size: 18px;
 }
-.gl-text {
+.G-tekst {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1621,7 +1621,7 @@ a:hover {
     line-height: 35px;
 }
 @media (max-width: 660px) {
-    .gl-text {
+    .G-tekst {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1630,10 +1630,10 @@ a:hover {
     line-height: 25px;
 }
 }
-.gl-text span {
+.G-tekst span {
     color: #F22613;
 }
-.black-bg .gl-text {
+.Qora-bg .G-tekst {
     color: #fff;
 }
 .top-models {
@@ -1643,15 +1643,15 @@ a:hover {
     overflow: hidden;
     text-align: center;
 }
-.top-models .gl-text {
+.top-models .G-tekst {
     margin-bottom: 35px;
 }
-.top-models .item {
+.top-models .jisim {
     border-bottom: 2px solid #F22613;
     margin-bottom: 25px;
     width: 100%;
 }
-.top-models .item .img {
+.top-models .jisim .img {
     height: 150px;
     position: relative;
     width: 100%;
@@ -1659,14 +1659,14 @@ a:hover {
     line-height: 150px;
     margin-bottom: 25px;
 }
-.top-models .item .img img {
+.top-models .jisim .img img {
     width: auto;
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
     vertical-align: middle;
 }
-.top-models .item .name {
+.top-models .jisim .imya {
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
@@ -1686,7 +1686,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-.all-bm .item {
+.all-bm .jisim {
     border-bottom: 2px solid #F22613;
     margin-bottom: 15px;
     width: 100%;
@@ -1694,19 +1694,19 @@ a:hover {
     width: 16%;
     margin-right: 0.6%;
 }
-.all-bm .item .img {
+.all-bm .jisim .img {
     height: 150px;
     position: relative;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
-.all-bm .item .img img {
+.all-bm .jisim .img img {
     width: auto;
     max-width: 80%;
     max-height: 80%;
 }
-.all-bm .item .name {
+.all-bm .jisim .imya {
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
@@ -1740,7 +1740,7 @@ a:hover {
         width: 100%;
     }
 }
-.metro .gl-text {
+.metro .G-tekst {
     text-shadow: -1px -1px 0px rgb(255, 255, 255);
 }
 
@@ -1764,7 +1764,7 @@ a:hover {
     height: 100%;
     z-index: -1;
 }
-.map-gl .text {
+.map-gl .tekst {
     background: rgba(17, 17, 17, 0.5) none repeat scroll 0 0;
     background-color: rgba(17, 17, 17, 0.9);
     display: inline-block;
@@ -1776,19 +1776,19 @@ a:hover {
     padding: 20px 30px;
         color: #808080;
 }
-    .map-gl .text .name {
+    .map-gl .tekst .imya {
         margin-bottom: 20px;
     }
-        .map-gl .text .name a {
+        .map-gl .tekst .imya a {
             color: #fff;
             font-size: 18px;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
         }
-        .map-gl .text .name a span {
+        .map-gl .tekst .imya a span {
             color: #F22613;
         }
-.map-gl .text a {
+.map-gl .tekst a {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -1866,15 +1866,15 @@ a:hover {
     padding: 50px 0px 40px;
     text-align: center;
 }
-.top-servicess .list {
+.top-servicess .spisok {
     display: flex;
     flex-wrap: wrap;
 }
-.full-text {
+.Toliq-tekst {
     padding: 50px 0px 0px;
 }
 @media (max-width: 960px) {
-   .full-text {
+   .Toliq-tekst {
         padding: 30px 0px 0px;
     } 
 }
@@ -1916,14 +1916,14 @@ a:hover {
         max-width: 80%;
     }
 }
-.full-text p {
+.Toliq-tekst p {
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
-.full-text ul li {
+.Toliq-tekst ul li {
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
@@ -1932,14 +1932,14 @@ a:hover {
     padding-left: 10px;
     margin-bottom: 10px;
 }
-.full-text ul li:before {
+.Toliq-tekst ul li:before {
     content: '\f0a3';
     padding-right: 8px;
     color: #2E375F;
     font-family: FontAwesome;
     opacity: 0.9;
 }
-.full-text h2 {
+.Toliq-tekst h2 {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1950,14 +1950,14 @@ a:hover {
     text-align: center;
 }
 @media (max-width: 960px) {
-    .full-text h2 {
+    .Toliq-tekst h2 {
         font-size: 22px;
     }
 }
-.full-text h2 span {
+.Toliq-tekst h2 span {
     color: #F22613;
 }
-.top-servicess .item {
+.top-servicess .jisim {
     display: flex;
     width: 50%;
     float: left;
@@ -1965,25 +1965,25 @@ a:hover {
     padding-right: 15px;
     box-sizing: border-box;
 }
-.top-servicess .item:hover,
-.top-servicess .item:focus {
+.top-servicess .jisim:hover,
+.top-servicess .jisim:focus {
     text-decoration: none;
 }
-.top-servicess .item:nth-child(2n) {
+.top-servicess .jisim:nth-child(2n) {
     padding-right: 0px;
     padding-left: 15px;
 }
 @media (max-width: 767px) {
-    .top-servicess .item {
+    .top-servicess .jisim {
         width: 100%;
         padding-right: 0px;
     }
-    .top-servicess .item:nth-child(2n) {
+    .top-servicess .jisim:nth-child(2n) {
         padding-right: 0px;
         padding-left: 0px;
     }
 }
-.top-servicess .item .image {
+.top-servicess .jisim .rasim {
     width: 220px;
     min-width: 220px;
     height: 110px;
@@ -1991,48 +1991,48 @@ a:hover {
     overflow: hidden;
 }
 @media (max-width: 1150px) {
-    .top-servicess .item .image {
+    .top-servicess .jisim .rasim {
         width: 180px;
         min-width: 180px;
     }
 }
 @media (max-width: 960px) {
-    .top-servicess .item .image {
+    .top-servicess .jisim .rasim {
         display: none;
     }
 }
-.top-servicess .item .image img {
+.top-servicess .jisim .rasim img {
     width: 125%;
 }
-.top-servicess .item .text {
+.top-servicess .jisim .tekst {
     text-align: left;
     box-sizing: border-box;
     padding: 0px 15px;
 }
-.top-servicess .item .text .name {
+.top-servicess .jisim .tekst .imya {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 1.42857143;
     color: #2e375f;
 }
-.top-servicess .item .text .description {
+.top-servicess .jisim .tekst .desc {
     line-height: 1.7;
     color: #808080;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
 }
-.brend-tabs .top-servicess .item .text .description p {
+.brend-tabs .top-servicess .jisim .tekst .desc p {
     background: #eff0ff;
 }
-.top-servicess .item .price .value {
+.top-servicess .jisim .narx .Val-m {
     font-size: 14px;
     font-weight: 600;
     color: #666666;
     font-family: 'Open Sans', sans-serif;
 }
-.top-servicess .item .price .button {
+.top-servicess .jisim .narx .knopkacha {
     font-size: 12px;
     padding: 5px 17px;
     color: #fff;
@@ -2042,11 +2042,11 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     margin-top: 6px;
 }
-.top-servicess .item .price .button:hover {
+.top-servicess .jisim .narx .knopkacha:hover {
     background: #121525;
 }
 
-a.button {
+a.knopkacha {
     font-size: 13px;
         padding: 10px 26px;
             background-color: #2E375F;
@@ -2061,7 +2061,7 @@ a.button {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-a.button:hover {
+a.knopkacha:hover {
     background: #121525;
     color: #fff;
 }
@@ -2113,7 +2113,7 @@ input {
 .model-brand.active {
     display: block;
 }
-.model-brand .gl-text {
+.model-brand .G-tekst {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -2185,7 +2185,7 @@ input {
         background: #eee;
     }
 }
-.prices table .button {
+.prices table .knopkacha {
     font-size: 12px;
     padding: 5px 17px;
     color: #fff;
@@ -2196,14 +2196,14 @@ input {
     margin-top: 0px;
     cursor: pointer;
 }
-.prices table .button:hover {
+.prices table .knopkacha:hover {
     background: #121525;
 }
 .ontact-top-text {
     padding: 50px 0px 0px;
     text-align: center;
 }
-.bl-contact .list ul li {
+.bl-contact .spisok ul li {
     text-align: left;
 }
 summary {
@@ -2221,7 +2221,7 @@ summary {
     text-align: justify;
     align-items: center;
 }
-.ser-disc .text {
+.ser-disc .tekst {
     width: 100%;
     line-height: 1.7;
     color: #666666;
@@ -2237,50 +2237,50 @@ summary {
 }
 
 
-.offer {
+.oldq {
     padding: 50px 0px;
 }
 @media (max-width: 660px) {
-    .offer {
+    .oldq {
         padding: 15px 0px;
     }
 }
-.for-lr {
+.fori {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.ofer-left {
+.Old-ch {
     display: inline-block;
     width: 80%;
     position: relative;
     padding-right: 20%;
 }
 @media (max-width: 1150px) {
-    .ofer-left {
+    .Old-ch {
         width: 70%;
         padding-bottom: 175px;
     }
 }
 @media (max-width: 960px) {
-    .ofer-left {
+    .Old-ch {
         width: 70%;
         padding-bottom: 0px;
     }
     
 }
 @media (max-width: 767px) {
-    .ofer-left {
+    .Old-ch {
         padding-right: 0%;
         width: 60%;
     }
 }
 @media (max-width: 767px) {
-    .ofer-left {
+    .Old-ch {
         width: 100%;
     }
 }
-.ofer-left h1 {
+.Old-ch h1 {
     font-size: 34px;
     font-family: Arial,sans-serif;
     font-weight: 600;
@@ -2294,15 +2294,15 @@ summary {
     line-height: 44px;
 }
 @media (max-width: 960px) {
-    .ofer-left h1 {
+    .Old-ch h1 {
         font-size: 24px;
         line-height: 30px;
     }
 }
-.ofer-left h1 br {
+.Old-ch h1 br {
     display: none;
 }
-.ofer-right {
+.Oldi-ong {
     display: inline-block;
     width: 20%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e65737+0,cb343d+100 */
@@ -2317,21 +2317,21 @@ summary {
     padding: 15px 20px;
 }
 @media (max-width: 1150px) {
-    .ofer-right {
+    .Oldi-ong {
         width: 30%;
     }
 }
 @media (max-width: 767px) {
-    .ofer-right {
+    .Oldi-ong {
         width: 100%;
     }
 }
 @media (max-width: 540px) {
-    .ofer-right {
+    .Oldi-ong {
         padding-bottom: 0px;
     }
 }
-.ofer-right p.first-text {
+.Oldi-ong p.Umumiy-forma {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -2344,12 +2344,12 @@ summary {
     text-align: center;
     text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
 }
-.ofer-right p.first-text span {
+.Oldi-ong p.Umumiy-forma span {
     font-size: 20px;
     font-weight: bold;
     font-family: Arial,sans-serif;
 }
-.ofer-right p.second-text {
+.Oldi-ong p.Ikkinchi-tekst {
     font-size: 24px;
     font-family: Arial,sans-serif;
     text-align: center;
@@ -2360,7 +2360,7 @@ summary {
     text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
 }
 @media screen and (max-width: 540px) {
-    .ofer-right p.second-text {
+    .Oldi-ong p.Ikkinchi-tekst {
         font-size: 14px;
         font-family: Arial,sans-serif;
         text-align: center;
@@ -2370,11 +2370,11 @@ summary {
         line-height: 34px;
         text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
     }
-    .ofer-right p.second-text br {
+    .Oldi-ong p.Ikkinchi-tekst br {
         display: none;
     }
 }
-.ofer-right p.second-text span {
+.Oldi-ong p.Ikkinchi-tekst span {
     background: #333;
     padding: 0px 5px;
     font-size: 40px;
@@ -2387,7 +2387,7 @@ summary {
     position: relative;
 }
 @media screen and (max-width: 540px) {
-    .ofer-right p.second-text span {
+    .Oldi-ong p.Ikkinchi-tekst span {
         background: #333;
         padding: 0px 5px;
         font-size: 30px;
@@ -2400,7 +2400,7 @@ summary {
         position: relative;
     }
 }
-.ofer-right p.second-text span:before {
+.Oldi-ong p.Ikkinchi-tekst span:before {
     width: 100%;
     height: 1px;
     position: absolute;
@@ -2409,7 +2409,7 @@ summary {
     background: #252525;
     left: 0px;
 }
-.ofer-button {
+.Old-kn {
     color: #fff;
     position: absolute;
     bottom: 0px;
@@ -2423,7 +2423,7 @@ summary {
     background-size: auto 100%;
 }
 @media (max-width: 960px) {
-    .ofer-button {
+    .Old-kn {
     color: #fff;
     position: relative;
     display: inline-block;
@@ -2436,49 +2436,49 @@ summary {
 }
 }
 @media (max-width: 767px) {
-    .ofer-button {
+    .Old-kn {
         width: 100%;
         margin-top: 10px;
     }
 }
 @media (max-width: 460px) {
-    .ofer-button {
+    .Old-kn {
         background-position: center right -38px;
     }
 }
-.ofer-button .first-text {
+.Old-kn .Umumiy-forma {
     text-transform: uppercase;
     font-family: Arial,sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 @media (max-width: 960px) {
-    .ofer-button .first-text {
+    .Old-kn .Umumiy-forma {
         font-size: 14px;
     }
 }
-.ofer-button .hero-form > p {
+.Old-kn .Geroy-forma > p {
     font-size: 12px;
     display: block;
     margin: 0px;
 }
-.hero-form form {
+.Geroy-forma form {
     display: flex;
     flex-wrap: wrap;
 }
-.hero-form form .form-group {
+.Geroy-forma form .Zakaz-telefon {
     width: 50%;
     display: inline-block;
     box-sizing: border-box;
     padding: 0px;
 }
 @media (max-width: 960px) {
-    .hero-form form .form-group {
+    .Geroy-forma form .Zakaz-telefon {
         display: block;
         width: 180px;
     }
 }
-.hero-form form .form-group input {
+.Geroy-forma form .Zakaz-telefon input {
     width: 100%;
     border-radius: 3px;
     color: #24295a;
@@ -2486,12 +2486,12 @@ summary {
     margin-top: -3px;
 }
 @media (max-width: 960px) {
-    .hero-form form .form-group input {
+    .Geroy-forma form .Zakaz-telefon input {
         margin-top: 0px;
     }
 }
 
-.hero-form form button {
+.Geroy-forma form button {
     width: 47%;
     display: inline-block;
     margin-left: 2%;
@@ -2508,7 +2508,7 @@ summary {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 @media (max-width: 960px) {
-    .hero-form form button {
+    .Geroy-forma form button {
         width: 180px;
         margin-left: 0px;
         margin-bottom: 10px;
@@ -2536,7 +2536,7 @@ summary {
     max-width: 300px;
     width: 300px;
 }
-.right-form {
+.Forma-ong {
     max-width: 240px;
     width: 240px;
     z-index: 99999;
@@ -2563,42 +2563,42 @@ summary {
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
 }
-.right-form.scrol-popup {
+.Forma-ong.scrol-popup {
     display: block;
 }
 @media (max-width: 660px) {
-    .right-form,
-    .right-form.scrol-popup {
+    .Forma-ong,
+    .Forma-ong.scrol-popup {
         display: none;
     }
 }
-.right-form p {
+.Forma-ong p {
     font-size: 10px;
     color: #fff;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-.right-form p.first-text {
+.Forma-ong p.Umumiy-forma {
     font-size: 16px;
     margin-bottom: 15px;
 }
-.right-form p.first-text span {
+.Forma-ong p.Umumiy-forma span {
     font-size: 34px;
     font-weight: bold;
     line-height: 33px;
 }
-.right-form p.first-text b {
+.Forma-ong p.Umumiy-forma b {
     font-size: 18px;
 }
-.right-form input {
+.Forma-ong input {
     border: 0px;
     outline: none;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
-.right-form button {
+.Forma-ong button {
     width: 100%;
     height: 34px;
     margin-bottom: 10px;
@@ -2631,18 +2631,18 @@ summary {
 .search-brends .right a img {
     width: 100%;
 }
-.for-nav-tel > a {
+.Nav-tele-uch > a {
     display: none;
     color: #fff;
     font-size: 24px;
     line-height: 50px;
 }
-.for-nav-tel > a:hover {
+.Nav-tele-uch > a:hover {
     color: #fff;
     text-decoration: underline;
 }
 @media (max-width: 540px) {
-    .for-nav-tel > a {
+    .Nav-tele-uch > a {
     display: block;
 }
 }
@@ -2662,7 +2662,7 @@ summary {
     left: 0px;
     content: '';
 }
-.popup-form-active .right-form {
+.popup-form-active .Forma-ong {
     background: #24295a;
     padding-bottom: 16px;
     top: 50%;
@@ -2671,10 +2671,10 @@ summary {
     margin-right: -125px;
     display: block ! important;
 }
-.close-form {
+.Forma-yop {
     display: none;
 }
-.popup-form-active .close-form {
+.popup-form-active .Forma-yop {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -2694,7 +2694,7 @@ summary {
     line-height: 40px;
     text-align: center;
 }
-.close-form i {
+.Forma-yop i {
     line-height: 38px;
     color: #fff;
     font-size: 22px;
@@ -2748,12 +2748,12 @@ summary {
     display: none;
 }
 
-.brend-tabs .full-text h2:first-child {
+.brend-tabs .Toliq-tekst h2:first-child {
     margin-top: 0px;
 }
 
 @media (max-width: 540px) {
-    #tab-tseni > .container {
+    #tab-tseni > .kantener {
         padding-right: 15px;
         padding-left: 15px;
         right: 0px;
@@ -2770,7 +2770,7 @@ summary {
     .prices table tbody tr td:nth-child(3) {
         display: none;
     }
-    .prices table tbody tr td:nth-child(2) .button {
+    .prices table tbody tr td:nth-child(2) .knopkacha {
         display: block ! important;
     }
     .aksiya-popupic {

@@ -1,10 +1,10 @@
 <div id="tab-tseni" class="prices tab_content">
-    <div class="container">
+    <div class="kantener">
         <?php
         $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
         $siteConfig = app\components\CController::getSiteConfig();
         ?>
-        <p class="gl-text"><?= !empty($title) ? $title : 'Варианты устранения неисправности, стоимость работ' ?></p>
+        <p class="G-tekst"><?= !empty($title) ? $title : 'Варианты устранения неисправности, стоимость работ' ?></p>
 
         <table class="pricelist<?= !$is_popular && $type == 1 ? ' hide-rows' : ''; ?>">  
             <tbody>
@@ -20,22 +20,22 @@
                     }
                     ?>
                     <tr<?= $c; ?>>
-                        <td class="name" style="width: 70%">
+                        <td class="imya" style="width: 70%">
                             <?php if ($row['is_popular'] == 1): ?>
                                 <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
                             <?php else: ?>
                                 <?= $row['title']; ?>
                             <?php endif; ?>
                         </td>
-                        <td class="price" style="width: 15%">от <?= number_format($row['price'], 0, ' ', ' '); ?> ₽<br><div class="button" style="display: none;">Заказать</div></td>
-                        <td style="width: 15%"><div class="button">Заказать</div></td>
+                        <td class="narx" style="width: 15%">от <?= number_format($row['price'], 0, ' ', ' '); ?> ₽<br><div class="knopkacha" style="display: none;">Заказать</div></td>
+                        <td style="width: 15%"><div class="knopkacha">Заказать</div></td>
                     </tr> 
                 <?php endforeach; ?>
             </tbody>
         </table>
 
         <?php if(!$is_popular && $type == 1): ?>
-            <a class="button" href="/stoimost-remonta">Показать остальные услуги</a>
+            <a class="knopkacha" href="/stoimost-remonta">Показать остальные услуги</a>
         <?php endif; ?>
     </div>
 </div>

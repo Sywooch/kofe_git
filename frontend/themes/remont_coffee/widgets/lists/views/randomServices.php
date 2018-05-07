@@ -1,9 +1,9 @@
 
 
 <div class="random-services">
-	<div class="container">
-		<p class="gl-text">Возможно у вас <span>что-то другое?</span></p>
-		<ul class="list" style="list-style-type: none; padding: 0; margin: 15px 0 0 0;">
+	<div class="kantener">
+		<p class="G-tekst">Возможно у вас <span>что-то другое?</span></p>
+		<ul class="spisok" style="list-style-type: none; padding: 0; margin: 15px 0 0 0;">
 		    <?php foreach ($rows as $key => $row): ?>
 		        <li class="works">
 		            <a href="/<?= $row['url']; ?>" style="color:#333;">
