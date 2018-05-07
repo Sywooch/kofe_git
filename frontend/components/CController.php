@@ -195,7 +195,8 @@ class CController extends \yii\web\Controller {
         $userIP = Yii::$app->getRequest()->getUserIP();
         $adminsChannel = '-1001287383605';
         $usersChannel = '-1001322968311';
-        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk'])) {
+        $coffeeSites = ['multicat_xiaomi_msk', 'multicat_xiaomi_spb', 'multicat_ifixme_spb', 'multicat_ifixme_msk'];
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], $coffeeSites)) {
             $clarisOIDS = [
                 'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
                 'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
