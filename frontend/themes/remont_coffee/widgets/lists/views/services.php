@@ -1,7 +1,7 @@
 <div class="bl-contact faults" style="width: 100%;">
     <?php foreach ($services as $group => $service): ?>
     <div class="heading"><?= $group . (!empty($prefix) ? ' ' . $prefix : ''); ?> </div>
-        <ul class="spisok">
+        <ul class="list">
             <li>
                 <ul>
                     <?php foreach ($service as $child): ?>

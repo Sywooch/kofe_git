@@ -4,29 +4,29 @@ $siteConfig = app\components\CController::getSiteConfig();
 $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 ?>
 <div id="tab-neispravnost" class="top-servicess tab_content">
-    <div class="kantener">
-        <p class="G-tekst"><?= $title; ?></p>
-        <div class="spisok">
+    <div class="container">
+        <p class="gl-text"><?= $title; ?></p>
+        <div class="list">
             <?php foreach ($rows as $service): ?>
-                <div class="jisim" >
+                <div class="item" >
                     <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $service['url']; ?>">
-                        <div class="rasim"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
+                        <div class="image"><img src="/uploads/images/services/<?= $service['image']; ?>" alt=""></div>
                     </a>
                     <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $service['url']; ?>">
-                        <div class="tekst">
-                            <div class="imya"><?= $service['title']; ?></div>
-                            <div class="desc"><?= $service['description']; ?></div>
+                        <div class="text">
+                            <div class="name"><?= $service['title']; ?></div>
+                            <div class="description"><?= $service['description']; ?></div>
                         </div>
                     </a>
-                    <div class="narx">
-                        <div class="Val-m">от <?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
-                        <div class="knopkacha">Заказать</div>
+                    <div class="price">
+                        <div class="value">от <?= number_format($service['price'], 0, ' ', ' '); ?>  ₽</div>
+                        <div class="button">Заказать</div>
                     </div>
                 </div>
             <?php endforeach; ?>
-            <div class="ochir"></div>
+            <div class="clear"></div>
         </div>
-        <a class="knopkacha" href="/stoimost-remonta">Все услуги и цены</a>
+        <a class="button" href="/stoimost-remonta">Все услуги и цены</a>
     </div>
 </div>
 <hr>
