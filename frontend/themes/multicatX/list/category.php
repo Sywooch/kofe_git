@@ -1,6 +1,6 @@
 <?php 
 use \app\components\CController;
-$this->title = $title;
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : $title;
 $breadcrumbs = [    
     'Ремонт ' . mb_strtolower($page['full_title'], 'utf8') . ' ' . CController::$monoBrand['title'],
 ];
