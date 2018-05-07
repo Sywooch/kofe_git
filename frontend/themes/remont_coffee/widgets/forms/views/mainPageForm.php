@@ -2,7 +2,7 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="Geroy-forma">
+<div class="hero-form">
     <?php
 
     use yii\helpers\Html;
