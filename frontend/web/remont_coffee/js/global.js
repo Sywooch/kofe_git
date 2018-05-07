@@ -1,19 +1,19 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($("body").hasClass("popup-form-active")) {
-            $('.right-form').addClass('scrol-popup');
+            $('.Forma-ong').addClass('scrol-popup');
         } else {
             if ($(this).scrollTop() > 400) {
-                $('.right-form').addClass('scrol-popup');
+                $('.Forma-ong').addClass('scrol-popup');
             } else {
-                $('.right-form').removeClass('scrol-popup');
+                $('.Forma-ong').removeClass('scrol-popup');
             }
         }
     });
-    $('.price .button, .pricelist .button').click( function(){
+    $('.price .knopkacha, .pricelist .knopkacha').click( function(){
         $('body').addClass('popup-form-active');    
     });
-    $('.close-form').click( function(){
+    $('.Forma-yop').click( function(){
         $('body').removeClass('popup-form-active');    
     });
     var popups = [
@@ -238,9 +238,9 @@ $(document).ready(function () {
     $(".navigation_open").click(function () {
         $(".gl-header .navigation").slideToggle("fast");
     });
-    $(".prices .button a").click(function () {
+    $(".prices .knopkacha a").click(function () {
         $(".pricelist").addClass("active");
-        $(this).parent(".button").hide();
+        $(this).parent(".knopkacha").hide();
         return false;
     });
     $(".opan-all-models").click(function () {
@@ -248,7 +248,7 @@ $(document).ready(function () {
         $(".button-section").hide();
         return false;
     });
-    $('.owl-carousel.brend-c').owlCarousel({
+    $('.Owl-carousel.Brend-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -273,7 +273,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.owl-carousel.model-c').owlCarousel({
+    $('.Owl-carousel.model-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -297,7 +297,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.owl-carousel.metro-c').owlCarousel({
+    $('.Owl-carousel.metro-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -322,7 +322,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.owl-carousel.coment-c').owlCarousel({
+    $('.Owl-carousel.coment-c').owlCarousel({
         loop: true,
         nav: false,
         autoplay: true,

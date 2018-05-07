@@ -11,7 +11,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 
 $form = ActiveForm::begin([
                 'id' => 'main-form',
-                'options' => ['class' => 'global-form'],
+                'options' => ['class' => 'Forma-gruppa'],
                 'enableClientValidation' => true,
                 'fieldConfig' => [
                     'template' => '{input}',
@@ -24,7 +24,7 @@ $form = ActiveForm::begin([
         'mask' => '+7 (999) 999-99-99',
         'options' => [
             'placeholder' => 'Ваш телефон',
-            'class' => 'wpcf7-form-control wpcf7-text wpcf7-validates-as-required input phone', 'type' => 'tel',
+            'class' => 'Ww-tekst Ww-shart Ww-shart2 inp telefon', 'type' => 'tel',
             'size' => 40,
         ],
     ])->label('')
