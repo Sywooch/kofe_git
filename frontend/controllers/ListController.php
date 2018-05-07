@@ -740,7 +740,7 @@ class ListController extends CController {
                     $title = str_replace('🍮', '☕', $title);
                 $metaDesc = 'Выполняем ремонт кофемашин ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '. Качественный сервис за короткие сроки и с гарантией! Бесплатная  доставка!';
             } else {
-                $title = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' 🍵 Обслуживание кофемашин в ' . Yii::$app->session['region']['titleRod'] . ' 👍';
+                $title = 'Ремонт кофемашины ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' со скидкой!';
                 $metaDesc = 'Кофемашина ' . CController::$monoBrand['title'] . ' ' . $pageInfo['title'] . ' - устраним любую поломку за короткие сроки с гарантией по лучшей цене! Доставка 🚗 Выезд мастера';
             }
         } elseif (in_array($siteConfig['id'], [146, 147])) {
