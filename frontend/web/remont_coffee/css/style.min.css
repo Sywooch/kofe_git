@@ -21,7 +21,7 @@ a:hover {
 .nowrap {
     white-space: nowrap!important
 }
-.container {
+.kantener {
     width: 95%;
     max-width: 1240px;
     position: relative;
@@ -32,26 +32,26 @@ a:hover {
     background-image: linear-gradient(to bottom, #48bdf3, #1b72ac);
     border: 0
 }
-.logo-line {
+.Lagatip-lin {
     height: 110px;
     margin: 0px 15px;
 }
-.logo-line div {
+.Lagatip-lin div {
     height: 100%;
 }
-.logo-line div.logo-image {
+.Lagatip-lin div.Lagatip-rasim {
     width: 175px;
     float: left;
     height: 110px;
 }
 
-.logo-line div.logo-image a {
+.Lagatip-lin div.Lagatip-rasim a {
     height: 110px;
     vertical-align: middle;
     display: block;
     padding-top: 30px;
 }
-.logo-line div img {
+.Lagatip-lin div img {
     max-width: 100%;
     max-height: 100%;
     vertical-align: middle;
@@ -62,41 +62,41 @@ a:hover {
     position: relative;
     top: 8px
 }
-.logo-phone {
+.Lagatip-tele {
     font-size: 22px;
     font-weight: bold;
     float: right;
 }
 @media screen and (max-width: 540px) {
-    .logo-line {
+    .Lagatip-lin {
         height: 70px;
         position: relative;
     }
-    .logo-line div.logo-image {
+    .Lagatip-lin div.Lagatip-rasim {
         width: 150px;
         height: auto;
         margin-left: -15px;
     }
-    .logo-line div.logo-image a {
+    .Lagatip-lin div.Lagatip-rasim a {
         padding-top: 13px;
         height: auto;
     }
 }
 @media screen and (max-width: 390px) {
-    .logo-line div.logo-image {
+    .Lagatip-lin div.Lagatip-rasim {
         float: left;
     }
 }
 .m-telefon-spb,
-.m-telefon-msk {
+.Mob-raqam-maskop {
     display: none;
 }
 @media screen and (max-width: 540px) {
-    .logo-phone {
+    .Lagatip-tele {
         display: none;
     }
     .m-telefon-spb,
-    .m-telefon-msk {
+    .Mob-raqam-maskop {
         display: block;
         position: absolute;
         right: 0px;
@@ -111,32 +111,32 @@ a:hover {
             -moz-osx-font-smoothing: grayscale;
         font-size: 0px;
     }
-    .m-telefon-msk:before,
+    .Mob-raqam-maskop:before,
     .m-telefon-spb:before {
         content: "\f098";
         font-size: 49px;
     }
 }
-.logo-phone a {
+.Lagatip-tele a {
     float: right;
     position: relative;
     color: #2E375F;
     margin-top: 18px;
 }
-.logo-phone span {
+.Lagatip-tele span {
     font-size: 14px;
     width: 100%;
     display: block;
     clear: both;
     text-align: right;
 }
-.logo-phone a:before {
+.Lagatip-tele a:before {
     content: '\f2a0';
     font-family: FontAwesome;
     margin-right: 5px;
     font-weight: normal
 }
-.menu-line .navigation {
+.Menushka-linya .navbahor1 {
     background-image: none;
     border: 0;
     box-shadow: none;
@@ -211,7 +211,7 @@ a:hover {
     padding: 10px 15px;
 }
 #main-menu ul li a:hover,
-#main-menu ul .current-menu-item a {
+#main-menu ul .H-menyu-it a {
     color: #fff;
         background: rgb(230,87,55);
     background: -moz-linear-gradient(-45deg, rgba(230,87,55,1) 0%, rgba(203,52,61,1) 100%);
@@ -220,10 +220,10 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 );
     border-radius: 20px;
 }
-.row.hero {
+.Ww-row.hero {
     height: 390px
 }
-.row.hero .container.banner {
+.Ww-row.hero .kantener.banner {
     min-height: 390px;
     padding-top: 35px;
     box-sizing: border-box;
@@ -242,7 +242,7 @@ a:hover {
 .hero-text .heading h1 {
     font-size: 36px
 }
-.hero-text .description {
+.hero-text .desc {
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -392,7 +392,7 @@ cboxContent,
     background-size: 65px;
     background-position-x: 0
 }
-.bl-features ul li a .name {
+.bl-features ul li a .imya {
     padding-left: 23%
 }
 .bl-features ul li a {
@@ -705,17 +705,17 @@ cboxContent,
 .items {
     margin-bottom: 2em
 }
-.item {
+.jisim {
     display: inline-block;
     vertical-align: top;
     margin: 0
 }
-.items_images .item {
+.items_images .jisim {
     height: 350px;
     width: 20%;
     min-width: 228px
 }
-.item:hover {
+.jisim:hover {
     position: relative;
     z-index: 10
 }
@@ -752,20 +752,20 @@ cboxContent,
     margin: 10px -20px;
     border-bottom: 1px solid #e5e5e5
 }
-.items_images .item:hover .item__prices {
+.items_images .jisim:hover .item__prices {
     font-size: 1.4em
 }
-.items_images .item .item__decorations {
+.items_images .jisim .item__decorations {
     box-shadow: none;
     -o-transition: box-shadow .5s;
     -moz-transition: box-shadow .5s;
     -webkit-transition: box-shadow .5s;
     transition: box-shadow .5s
 }
-.items_images .item:hover .item__compare {
+.items_images .jisim:hover .item__compare {
     display: block
 }
-.items_images .item:hover .item__decorations {
+.items_images .jisim:hover .item__decorations {
     position: absolute;
     top: -25px;
     bottom: -10px;
@@ -788,8 +788,8 @@ cboxContent,
     position: relative;
     top: -15px
 }
-.items_images .item:hover .item__controls,
-.items_images .item:hover .item__topcontrols {
+.items_images .jisim:hover .item__controls,
+.items_images .jisim:hover .item__topcontrols {
     visibility: visible
 }
 .item_promo_sign {
@@ -819,7 +819,7 @@ cboxContent,
 .item__controls .input_qty {
     width: 18%
 }
-.clear,
+.ochir,
 .woocommerce .woocommerce-breadcrumb::after {
     clear: both
 }
@@ -1130,7 +1130,7 @@ button {
 #city_selected .link {
     font-weight: bold
 }
-.pr_av_popup .price,
+.pr_av_popup .narx,
 .kit_warning {
     font-weight: bold;
     color: #d72128
@@ -1215,42 +1215,42 @@ button {
 
 
 
-.logo-line div.top-advantages {
+.Lagatip-lin div.Tepa-boshqa {
     margin-top: 28px;
     height: auto;
     width: 60%;
     float: left;
 }
 
-.top-advantages .item {
+.Tepa-boshqa .jisim {
     width: 40%;
     float: left;
     line-height: 30px;
     margin-left: 10%;
 }
 @media screen and (max-width: 1300px) {
-    .top-advantages .item {
+    .Tepa-boshqa .jisim {
         width: 45%;
         margin-left: 5%;
     }
 }
 @media screen and (max-width: 1140px) {
-    .logo-line div.top-advantages {
+    .Lagatip-lin div.Tepa-boshqa {
         margin-top: 20px;
         width: 55%;
     }
-    .top-advantages .item {
+    .Tepa-boshqa .jisim {
         line-height: 17px;
         width: 40%;
         margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 991px) {
-    .logo-line div.top-advantages {
+    .Lagatip-lin div.Tepa-boshqa {
         display: none;
     }
 }
-.top-advantages .item:before {
+.Tepa-boshqa .jisim:before {
     content: '\f046';
     padding-right: 5px;
     color: #2e375f;
@@ -1260,35 +1260,35 @@ button {
 
 
 
-.bl-content .list ul li {
+.bl-content .spisok ul li {
     padding: 0px;
     width: 100%;
     border-bottom: 0px;
 }
-.bl-content .list ul li .text, .bl-content .list ul li .map {
+.bl-content .spisok ul li .tekst, .bl-content .spisok ul li .map {
     float: none;
     width: 100%;
     padding: 0px;
     margin: 0px;
     margin-bottom: 10px;
 }
-.bl-content .list ul li .map img {
+.bl-content .spisok ul li .map img {
     width: 100%;
 }
 
-.faults .list {list-style: none !important; list-style-type: none !important; margin: 20px 0 0 0; padding: 0;}
-.faults .list ul li:before {content: '\f046'; padding-right: 5px; color: #2e375f; font-family:FontAwesome; opacity: 0.9;}
-.faults .list ul li {padding: 0 0 5px 0; font-size: 15px; list-style: none;}
-.bl-contact .list ul{zoom:1; width:103%; margin:30px -1.5% 0;}
-.bl-contact .list ul:before,.bl-contact .list ul:after{content:''; display:table;}
-.bl-contact .list ul:after{clear:both;}
-.bl-contact .list ul li{float:left; width:30.33%; margin:0 1.5%; display: flex; align-items: center;}
+.faults .spisok {list-style: none !important; list-style-type: none !important; margin: 20px 0 0 0; padding: 0;}
+.faults .spisok ul li:before {content: '\f046'; padding-right: 5px; color: #2e375f; font-family:FontAwesome; opacity: 0.9;}
+.faults .spisok ul li {padding: 0 0 5px 0; font-size: 15px; list-style: none;}
+.bl-contact .spisok ul{zoom:1; width:103%; margin:30px -1.5% 0;}
+.bl-contact .spisok ul:before,.bl-contact .spisok ul:after{content:''; display:table;}
+.bl-contact .spisok ul:after{clear:both;}
+.bl-contact .spisok ul li{float:left; width:30.33%; margin:0 1.5%; display: flex; align-items: center;}
 @media screen and (max-width: 680px) {
-    .bl-contact .list ul {
+    .bl-contact .spisok ul {
         margin: 0px;
         box-sizing: border-box;
     }
-    .bl-contact .list ul li{
+    .bl-contact .spisok ul li{
         font-size: 12px;
         width: 100%;
         box-sizing: border-box;
@@ -1296,7 +1296,7 @@ button {
         padding: 0px;
     }
 }
-.navbar-nav {
+.Nvb-navv {
     margin: 0px;
 }
 .bl-content {
@@ -1331,30 +1331,30 @@ button {
     }
 }
 
-.gl-footer .navigation {
+.Gc-pad .navbahor1 {
 }
-.gl-footer .navigation.info p,
-.gl-footer .navigation.info p a {
+.Gc-pad .navbahor1.information p,
+.Gc-pad .navbahor1.information p a {
     color: #666666;
 }
 #my-reviews {
     width: 100%;
     position: relative;
 }
-#my-reviews .item {
+#my-reviews .jisim {
     box-sizing: border-box;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
     width: 100%;
 }
-#my-reviews .item p {
+#my-reviews .jisim p {
     margin: 0px;
     color: #000;
     margin-bottom: 0px;
     font-size: 14px;
 }
-#my-reviews .item p.h3 {
+#my-reviews .jisim p.h3 {
     font-size: 18px;
     color: #2E375F;
 }
@@ -1474,7 +1474,7 @@ button {
     text-align: center;
 }
 
-.img-logo {
+.Rasim-logo {
     padding: 0px 30% 0px 0px;
     width: 100%;
     box-sizing: border-box;
@@ -1482,10 +1482,10 @@ button {
 }
 
 @media (max-width: 767px) {
-    .navbar-toggle {
+    .Navbahor-togg {
         border: 1px solid #fff;
     }
-    .navbar-toggle .icon-bar {
+    .Navbahor-togg .Ikonka-bar {
         background: #fff;
     }
 }

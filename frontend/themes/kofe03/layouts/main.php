@@ -5,8 +5,6 @@
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
 
-//use ifixme\Test;
-
 AppAsset::register($this);
 $assets = '/' . Yii::getAlias('@web');
 $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
