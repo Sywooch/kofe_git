@@ -11,14 +11,14 @@ and open the template in the editor.
 .container-fluid {
 	background-color: #5bc2e7;
 }
-.row.hero {
+.Ww-row.hero {
 	background: none ! important;
 }
 .bl-heading {
 	background: #5bc2e7 ! important;
 }
-.row.hero .row,
-body > .row {
+.Ww-row.hero .Ww-row,
+body > .Ww-row {
 	height: 100px ! important;
 	margin-top: -100px ! important;
   position: relative;
@@ -26,7 +26,7 @@ body > .row {
   background-color: rgba(75,177,214,.65) ! important;
   box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.45);
 }
-.container {
+.kantener {
 	z-index: 9;
 }
 .futures a {
@@ -36,8 +36,8 @@ body > .row {
 .hero-text {
 	    background-color: #5bc2e7;
 }
-.hero-form button,
-.button a, .button input,
+.Geroy-forma button,
+.knopkacha a, .knopkacha input,
 .gl-contact input[type=submit] {
 	font-size: 16px;
 	padding: 10px 20px;
@@ -51,8 +51,8 @@ body > .row {
     background-image: linear-gradient(to bottom, #ffc21f, #eea70e);
         color: #000!important;
 }
-.hero-form button:hover,
-.button a:hover, .button input:hover,
+.Geroy-forma button:hover,
+.knopkacha a:hover, .knopkacha input:hover,
 .gl-contact input:hover[type=submit],
 .controls.center button i:hover {
 	background: -webkit-linear-gradient(top,#ffce2a,#ffce2a);
@@ -63,7 +63,7 @@ body > .row {
     background: -ms-linear-gradient(top,#ffce2a 0,#ffce2a 100%);
     background: linear-gradient(180deg,#ffce2a 0,#ffce2a);
 }
-.form-group input {
+.Zakaz-telefon input {
 	padding: 10px 10px ! important;
 }
 #main-form {
@@ -83,35 +83,35 @@ body > .row {
 	    border-left: solid 1px #9fd7eb;
 }
 a,
-.logo-phone a,
+.Lagatip-tele a,
 #main-menu ul li a {
     color: #301d0f;
     font-family: 'Exo 2';
 }
-.logo-phone a:hover {
+.Lagatip-tele a:hover {
 	text-decoration: underline;
 }
 .bl-text .heading:after {
 	background-color: #f8b818;
 }
-.faults .list ul li:before,
-.top-advantages .item:before {
+.faults .spisok ul li:before,
+.Tepa-boshqa .jisim:before {
 	    color: #f8b818;
 }
-.gl-footer {
+.Gc-pad {
 	    background: #50b6db;
 }
-.gl-footer .navigation p {
+.Gc-pad .navbahor1 p {
 	color: #fff;
 }
 .scrollbar .handle {
 	    background: #50b6db;
 }
-.menu-line {
+.Menushka-linya {
 	border: 0px;
 	margin-bottom: -26px;
 }
-.menu-line .navigation {
+.Menushka-linya .navbahor1 {
 	font-size: 16px;
 	padding: 0px 20px;
 	background-color: #eea70e;
@@ -119,20 +119,20 @@ a,
   color: #000!important;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ! important;
 }
-#main-menu ul .current-menu-item a,
-.gl-footer .top .navigation ul li.current-menu-item a {
+#main-menu ul .H-menyu-it a,
+.Gc-pad .top .navbahor1 ul li.H-menyu-it a {
 	background: #eeeeee69;
 }
 #main-menu ul li a:hover {
 	color: #000;
 	text-decoration: underline;
 }
-#my-reviews .item {
+#my-reviews .jisim {
 	border: 0px;
 	margin: 0px;
 	padding: 20px;
 }
-#my-reviews .item:nth-child(odd) {
+#my-reviews .jisim:nth-child(odd) {
 	background-color: #50b6db1f;
 }
 .futures .mobile {
@@ -147,19 +147,19 @@ a,
 .gl-contact .wrapper {
 	text-align: center;
 }
-.navbar-default .navbar-brand {
+.Navbahor-oddiy .navbar-brand {
 	color: #301d0f;
 }
-.navbar-default .navbar-toggle {
+.Navbahor-oddiy .Navbahor-togg {
 	border-color: #301d0f;
 }
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.Navbahor-oddiy .Navbahor-togg:focus, .Navbahor-oddiy .Navbahor-togg:hover {
     background-color: #301d0f;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.Navbahor-oddiy .Navbahor-togg .Ikonka-bar {
 	background-color: #301d0f;
 }
-.navbar-default .navbar-toggle:hover .icon-bar {
+.Navbahor-oddiy .Navbahor-togg:hover .Ikonka-bar {
 	background-color: #fff;
 }
 @media screen and (max-width: 540px) {
