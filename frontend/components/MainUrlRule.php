@@ -46,9 +46,11 @@ class MainUrlRule extends UrlRule {
         }
         $pathInfo = strtolower($request->getPathInfo());
         $arrayUrl = explode('/', $pathInfo);
-        if($siteConfig['id'] == 50 && count($arrayUrl) >= 1) {
-            if (strpos($pathInfo, 'remont-kofemashin-saeco') !== false) {
+        if(in_array($siteConfig['id'], [50, 51]) && count($arrayUrl) >= 1) {
+            if (strpos($pathInfo, 'remont-kofemashin-saeco') !== false && $siteConfig['id'] == 50) {
                 $this->redirect('/' . str_replace('remont-kofemashin-saeco', 'remont-saeco', $pathInfo));
+            } elseif (strpos($pathInfo, 'remont-jura') !== false && $siteConfig['id'] == 51) {
+                $this->redirect('/' . str_replace('remont-jura', 'remont-kofemashin-jura', $pathInfo));
             }
         }
         $hostname = Yii::$app->request->hostInfo;
