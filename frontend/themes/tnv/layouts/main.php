@@ -105,7 +105,7 @@ $js = app\components\CController::$js;
                             <span class="call_phone_1"><a class="header--call-p" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></span>
                         </div>
                         <div class="header--call">
-                            <div class="header--call-t">Россия</div>
+                            <div class="header--call-t">VIP-Линия связи</div>
                             <span class=""><a class="header--call-p" href="tel:88007757730">8 800 775-77-30</a></span>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="header--calls-d">
                             <div class="header--call">
-                                <div class="header--call-t">Россия</div>
+                                <div class="header--call-t">VIP-Линия связи</div>
                                 <a class="header--call-p" href="tel:88007757730">8 800 775-77-30</a>
                             </div>
                         </div>
