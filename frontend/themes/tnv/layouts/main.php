@@ -241,11 +241,11 @@ $js = app\components\CController::$js;
                             <span class="call_phone_2">
                                 <a class="footer--call-phone" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a>
                             </span>
-                            <div class="footer--call-title hidden-xs hidden-md hidden-lg">Россия</div>
+                            <div class="footer--call-title hidden-xs hidden-md hidden-lg">VIP-Линия связи</div>
                             <a class="footer--call-phone hidden-xs hidden-md hidden-lg" href="tel:88007757730">8 800 775-77-30</a>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3 hidden-sm">
-                            <div class="footer--call-title">Россия</div>
+                            <div class="footer--call-title">VIP-Линия связи</div>
                             <a class="footer--call-phone" href="tel:88007757730">8 800 775-77-30</a>
                         </div>
                         <div class="col-xs-12 col-sm-4 col-md-3">
