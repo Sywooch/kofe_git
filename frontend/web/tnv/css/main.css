@@ -5177,7 +5177,7 @@ a.tags--item:hover {
   content: "\e920";
 }
 .caption.russia:before {
-  content: "Россия";
+  content: "VIP-Линия связи";
 }
 .caption.russia:after {
   content: "\e920";
@@ -5186,6 +5186,12 @@ a.tags--item:hover {
   content: "Москва";
 }
 .caption.moscow:after {
+  content: "\e920";
+}
+.caption.sankt-peterburg:before {
+  content: "Санкт-Петербург";
+}
+.caption.sankt-peterburg:after {
   content: "\e920";
 }
 .message {
