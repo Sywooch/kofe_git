@@ -272,7 +272,7 @@ class PageController extends CController {
                     CASE 
                         WHEN m.type = \'brand\' THEN \'\'     
                         ELSE m.title
-                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.category_id = ' . $siteConfig['category_id'] . ' AND m.url != \'/\' AND m.url != \'not_sitemap\' ORDER BY m.id';
+                    END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.category_id = ' . $siteConfig['category_id'] . ' AND m.url != \'/\' AND m.type != \'not_sitemap\' ORDER BY m.id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
         $sql = 'SELECT url, type, id, title FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
@@ -523,7 +523,7 @@ class PageController extends CController {
             echo file_get_contents($path . '/' . $siteConfig['sitePrefix'] . '/sitemap.xml');
             exit;
         }
-        $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND category_id = ' . $siteConfig['category_id'] . ' AND url != \'/\' ORDER BY id';
+        $sql = 'SELECT url, type, id FROM {{%pages}} WHERE active = 1 AND category_id = ' . $siteConfig['category_id'] . ' AND url != \'/\' AND type  != \'not_sitemap\' ORDER BY id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
         $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
@@ -550,6 +550,8 @@ class PageController extends CController {
                         $urls[] = $page['url'] . '/' . $service['url'];
                     }
                 }
+            } else {
+                $urls[] = $page['url'];
             }
         }
         unset($pages);
