@@ -18,7 +18,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </div>
                         <div class="advantage_txt">
                             Всего 1 день и кофемашина снова в рабочем состоянии!
-<br/><span class="frontlight-brown">С предоставление гарантии на 2 года.</span>
+<br/><span class="frontlight-brown">С предоставлением гарантии на 2 года.</span>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/item-3.png" alt="">
                         </div>
                         <div class="advantage_txt">
-                            Работает на 5!<br/><span class="frontlight-brown">Для нас главное - качество.</span>
+                            Работаем на 5!<br/><span class="frontlight-brown">Для нас главное - качество.</span>
                         </div>
                     </div>
                 </div>
