@@ -261,8 +261,7 @@ class PageController extends CController {
         return $urls;
     }
 
-    private function getUrls($siteConfig) {
-        exit;
+    private function getUrls($siteConfig) {        
         $sql = 'SELECT m.url, m.type, m.id, m.title, (
                     CASE 
                         WHEN b.title = \'Все бренды\' THEN m.title        
