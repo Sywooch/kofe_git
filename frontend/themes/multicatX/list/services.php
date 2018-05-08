@@ -29,7 +29,7 @@ $breadcrumbs = [
                             <div class="rumiservice7_table_tr">
                                 <div class="rumiservice_column_1">
                                     <?php if ($service['is_popular'] == 1): ?>
-                                        <a class="colortexthover" href="/<?= $category['url'] . '-' . $service['url']; ?>"><?= $service['title']; ?></a>
+                                        <a class="colortexthover" href="/<?= $category['url'] . '/' . $service['url']; ?>"><?= $service['title']; ?></a>
                                     <?php else: ?>
                                         <?= $service['title']; ?>
                                     <?php endif; ?>
