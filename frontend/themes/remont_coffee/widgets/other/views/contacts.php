@@ -1,18 +1,18 @@
 <!--<div class="bl-content">
-    <div class="spisok">
+    <div class="list">
         <ul>
             <li>
-                <div class="tekst">
-                    <div class="imya">
+                <div class="text">
+                    <div class="name">
                         <h2>
                             <a href="/kontakty">Наш адрес в Москве</a>
                         </h2>
                     </div>
-                    <div class="desc">
+                    <div class="description">
                         Николоямская 62
                     </div>
                     <div class="phone1">(495) 055-15-69</div>
-                    <div class="desc hours">
+                    <div class="description hours">
                         Работаем с 10:00 до 20:00, без выходных
                     </div>
                 </div>

@@ -2,9 +2,9 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<div class="Forma-ong">
-    <div class="Forma-yop"><i class="fa Fa-close"></i></div>
-    <p class="Umumiy-forma"><b>ЗАКАЖИТЕ РЕМОНТ</b> СЕЙЧАС И ПОЛУЧИТЕ <span>ПОДАРОК!</span></p>
+<div class="right-form">
+    <div class="close-form"><i class="fa fa-close"></i></div>
+    <p class="first-text"><b>ЗАКАЖИТЕ РЕМОНТ</b> СЕЙЧАС И ПОЛУЧИТЕ <span>ПОДАРОК!</span></p>
     <?php
 
     use yii\helpers\Html;

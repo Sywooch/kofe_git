@@ -41,21 +41,21 @@ a:hover {
     border-radius: 4px;
     margin-right: 12px;
 }
-.knopkacha {
+.button {
     zoom: 1;
     margin-top: 20px;
     cursor: pointer;
 }
-.knopkacha:before,
-.knopkacha:after {
+.button:before,
+.button:after {
     content: '';
     display: table;
 }
-.knopkacha:after {
+.button:after {
     clear: both;
 }
-.knopkacha a,
-.knopkacha input {
+.button a,
+.button input {
     display: block;
     float: left;
     font-size: 14px;
@@ -66,15 +66,15 @@ a:hover {
     border: none;
     padding: 12px 24px 15px 24px;
 }
-.knopkacha a:before,
-.knopkacha input:before {
+.button a:before,
+.button input:before {
     font-family: FontAwesome;
     content: '\f061';
     margin-right: 8px;
     position: relative;
 }
-.knopkacha a:hover:before,
-.knopkacha input:hover:before {
+.button a:hover:before,
+.button input:hover:before {
     left: -3px;
 }
 .bl-hero {
@@ -86,24 +86,24 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bl-hero .tekst {
+.bl-hero .text {
     zoom: 1;
     position: relative;
     width: 320px;
 }
-.bl-hero .tekst:before,
-.bl-hero .tekst:after {
+.bl-hero .text:before,
+.bl-hero .text:after {
     content: '';
     display: table;
 }
-.bl-hero .tekst:after {
+.bl-hero .text:after {
     clear: both;
 }
-.bl-hero .tekst .heading {
+.bl-hero .text .heading {
     font-size: 36px;
     line-height: 40px;
 }
-.bl-hero .tekst .desc {
+.bl-hero .text .description {
     margin-top: 30px;
     font-size: 20px;
     line-height: 28px;
@@ -157,10 +157,10 @@ a:hover {
 .bl-brands ul li .logotype img {
     width: 100%;
 }
-.bl-brands ul li .imya {
+.bl-brands ul li .name {
     font-size: 18px;
 }
-.bl-brands ul li .desc {
+.bl-brands ul li .description {
     margin-top: 6px;
     line-height: 22px;
     height: 70px;
@@ -216,7 +216,7 @@ a:hover {
 .bl-features ul li a:after {
     clear: both;
 }
-.bl-features ul li a .imya {
+.bl-features ul li a .name {
     display: table-cell;
     font-size: 18px;
     line-height: 24px;
@@ -239,7 +239,7 @@ a:hover {
     .bl-features ul li a {
         background-position: -9999px 50% !important;
     }
-    .bl-features ul li a .imya {
+    .bl-features ul li a .name {
         font-size: 16px;
         line-height: 22px;
         padding-left: 15px;
@@ -249,7 +249,7 @@ a:hover {
     .bl-features ul li a {
         background-position: -9999px 50% !important;
     }
-    .bl-features ul li a .imya {
+    .bl-features ul li a .name {
         font-size: 16px;
         line-height: 22px;
         padding-left: 15px;
@@ -284,7 +284,7 @@ a:hover {
 .bl-faults .tabs ul li {
     float: left;
 }
-.bl-faults .tabs ul li .imya a {
+.bl-faults .tabs ul li .name a {
     border: 1px solid #d2d2d2;
     border-top: 4px solid #8e8a8a;
     border-left: none;
@@ -292,28 +292,28 @@ a:hover {
     padding: 12px 15px 15px 15px;
     color: #27282b;
 }
-.bl-faults .tabs ul li .imya a:hover {
+.bl-faults .tabs ul li .name a:hover {
     color: #222;
 }
-.bl-faults .tabs ul li .imya a.active,
-.bl-faults .tabs ul li .imya a:hover {
+.bl-faults .tabs ul li .name a.active,
+.bl-faults .tabs ul li .name a:hover {
     border-bottom: 1px solid #fff;
     border-top-color: #222;
     color: #222;
 }
-.bl-faults .spisok ul {
+.bl-faults .list ul {
     zoom: 1;
     border-top: 1px solid #d2d2d2;
 }
-.bl-faults .spisok ul:before,
-.bl-faults .spisok ul:after {
+.bl-faults .list ul:before,
+.bl-faults .list ul:after {
     content: '';
     display: table;
 }
-.bl-faults .spisok ul:after {
+.bl-faults .list ul:after {
     clear: both;
 }
-.bl-faults .spisok ul li {
+.bl-faults .list ul li {
     float: left;
     width: 33.3%;
     border-bottom: dotted 1px #ccc; 
@@ -331,17 +331,17 @@ a:hover {
         width: 165px;
     }
 }
-.bl-faults .spisok ul li .imya {
+.bl-faults .list ul li .name {
     color: #2e375f;
     font-size: 14px;
     text-align: center;
 }
-.bl-faults .spisok ul li .desc {
+.bl-faults .list ul li .description {
     font-size: 12px;
     color: #8e8a8a;
     margin-top: 5px;
 }
-.bl-faults .spisok ul li .img {
+.bl-faults .list ul li .img {
     width: 100%;
     text-align: center;
     height: 180px;
@@ -349,7 +349,7 @@ a:hover {
     vertical-align: middle;
     line-height: 180px;
 }
-.bl-faults .spisok ul li .img img {
+.bl-faults .list ul li .img img {
     max-width: 90%;
     max-height: 90%;
     vertical-align: middle;
@@ -360,7 +360,7 @@ a:hover {
     }
 }
 @media screen and (max-width: 650px) {
-    .bl-faults .spisok ul li {
+    .bl-faults .list ul li {
         width: 100%;
         height: auto;
         padding-bottom: 20px;
@@ -374,19 +374,19 @@ a:hover {
     font-size: 22px;
     margin-top: 30px;
 }
-.bl-services .spisok {
+.bl-services .list {
     margin-top: 15px;
 }
-.bl-services .spisok ul {
+.bl-services .list ul {
     margin-top: 20px;
 }
-.bl-services .spisok ul li {
+.bl-services .list ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 15px 15px 15px 0px;
     display: table;
     width: 100%;
 }
-.bl-services .spisok ul li .rasim {
+.bl-services .list ul li .image {
     display: table-cell;
     width: 30%;
     max-width: 245px;
@@ -398,87 +398,87 @@ a:hover {
     border-radius: 2px;
 }
 
-.bl-services .spisok ul li .rasim img {
+.bl-services .list ul li .image img {
     position: absolute;
     top: 0;
     left: 0;
     vertical-align: bottom;
     width: 100%;
 }
-.bl-services .spisok ul li .tekst {
+.bl-services .list ul li .text {
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 20px;
 }
-.bl-services .spisok ul li .tekst .imya {
+.bl-services .list ul li .text .name {
     font-size: 16px;
     color: #2e375f;
 }
-.bl-services .spisok ul li .tekst .desc {
+.bl-services .list ul li .text .description {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
 }
-.bl-services .spisok ul li .narx {
+.bl-services .list ul li .price {
     width: 100px;
     display: table-cell;
     vertical-align: middle;
     text-align: right;
 }
-.bl-services .spisok ul li .narx .Val-m {
+.bl-services .list ul li .price .value {
     color: #222;
     font-size: 24px;
 }
-.bl-services .spisok ul li .narx .Val-m:after {
+.bl-services .list ul li .price .value:after {
     content: '\f158';
     font-family: FontAwesome;
     font-size: 16px;
     margin-left: 5px;
 }
-.bl-services .spisok ul li .narx .notice {
+.bl-services .list ul li .price .notice {
     font-size: 12px;
     line-height: 15px;
     color: #8e8a8a;
     margin-top: 5px;
 }
-.bl-services .spisok ul li .narx .knopkacha {
+.bl-services .list ul li .price .button {
     margin-top: 12px;
 }
-.bl-services .spisok ul li .narx .knopkacha a {
+.bl-services .list ul li .price .button a {
     padding: 5px 14px 6px 14px;
     background-color: transparent;
 }
-.bl-services .spisok ul li .narx .knopkacha a:hover {
+.bl-services .list ul li .price .button a:hover {
     color: #fff;
 }
 @media screen and (max-width: 700px) {
-    .bl-services .spisok ul li {
+    .bl-services .list ul li {
         display: block;
     }
-    .bl-services .spisok ul li .rasim {
+    .bl-services .list ul li .image {
         display: none ! important;
     }
-    .bl-services .spisok ul li .tekst {
+    .bl-services .list ul li .text {
         width: 100%;
         padding: 0px;
         display: inline-block;
         margin-bottom: 15px;
     }
-    .bl-services .spisok ul li .narx {
+    .bl-services .list ul li .price {
         display: table;
         width: 100%;
     }
-    .bl-services .spisok ul li .narx .notice {
+    .bl-services .list ul li .price .notice {
         display: none;
     }
-    .bl-services .spisok ul li .narx .Val-m {
+    .bl-services .list ul li .price .value {
         float: right;
     }
-    .bl-services .spisok ul li .narx .knopkacha {
+    .bl-services .list ul li .price .button {
         margin-top: 0px;
     }
-    .knopkacha {
+    .button {
         margin: 0 auto;
     }
 }
@@ -498,19 +498,19 @@ a:hover {
     font-size: 20px;
     margin-top: 20px;
 }
-.bl-promo .spisok {
+.bl-promo .list {
     margin-top: 15px;
 }
-.bl-promo .spisok ul {
+.bl-promo .list ul {
     border-top: 1px solid #d2d2d2;
 }
-.bl-promo .spisok ul li {
+.bl-promo .list ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 30px 0;
     display: table;
     width: 100%;
 }
-.bl-promo .spisok ul li .rasim {
+.bl-promo .list ul li .image {
     display: table-cell;
     width: 30%;
     max-width: 245px;
@@ -521,23 +521,23 @@ a:hover {
     position: relative;
     border-radius: 2px;
 }
-.bl-promo .spisok ul li .rasim img {
+.bl-promo .list ul li .image img {
     position: absolute;
     top: 0;
     left: 0;
     vertical-align: bottom;
     max-width: 100%;
 }
-.bl-promo .spisok ul li .tekst {
+.bl-promo .list ul li .text {
     display: table-cell;
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 20px;
 }
-.bl-promo .spisok ul li .tekst .imya {
+.bl-promo .list ul li .text .name {
     font-size: 18px;
 }
-.bl-promo .spisok ul li .tekst .desc {
+.bl-promo .list ul li .text .description {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
@@ -559,7 +559,7 @@ a:hover {
 .bl-promo img[align=right] {
     margin: 30px 0 40px 45px;
 }
-.bl-promo .tekst {
+.bl-promo .text {
     margin-top: 15px;
     font-size: 14px;
     line-height: 20px;
@@ -592,13 +592,13 @@ a:hover {
 .bl-text .hero img {
     width: 100%;
 }
-.bl-text .tekst,
+.bl-text .text,
 .bl-text p {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
 }
-.bl-text .tekst,
+.bl-text .text,
 .bl-text p,
 .bl-text li {
     margin-top: 15px;
@@ -631,12 +631,12 @@ a:hover {
     padding: 10px 0 12px 0;
     vertical-align: middle;
 }
-.bl-text .pricelist .imya {} .bl-text .pricelist .narx {
+.bl-text .pricelist .name {} .bl-text .pricelist .price {
     white-space: nowrap;
     color: #2e375f;
     text-align: right;
 }
-.bl-text .pricelist .narx:after {
+.bl-text .pricelist .price:after {
     content: ' Р ';
 }
 @media screen and (max-width: 1000px) {
@@ -677,27 +677,27 @@ a:hover {
     margin-top: 30px;
     margin-bottom: -35px;
 }
-.bl-rules .spisok {
+.bl-rules .list {
     margin-top: 60px;
 }
-.bl-rules .spisok ul {
+.bl-rules .list ul {
     counter-reset: item-counter;
     border-top: 1px solid #d2d2d2;
 }
-.bl-rules .spisok ul li {
+.bl-rules .list ul li {
     border-bottom: 1px solid #d2d2d2;
     padding: 30px 0 30px 140px;
     position: relative;
 }
-.bl-rules .spisok ul li .imya {
+.bl-rules .list ul li .name {
     font-size: 16px;
 }
-.bl-rules .spisok ul li .desc {
+.bl-rules .list ul li .description {
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
 }
-.bl-rules .spisok ul li:before {
+.bl-rules .list ul li:before {
     content: counter(item-counter, decimal-leading-zero);
     counter-increment: item-counter;
     position: absolute;
@@ -728,43 +728,43 @@ a:hover {
     font-size: 28px;
     margin-top: 25px;
 }
-.bl-contact .tekst {
+.bl-contact .text {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
 }
-.bl-contact .spisok {
+.bl-contact .list {
     margin-top: 15px;
     border-top: 1px solid #d2d2d2;
 }
-.bl-contact .spisok ul {
+.bl-contact .list ul {
     zoom: 1;
 }
-.bl-contact .spisok ul:before,
-.bl-contact .spisok ul:after {
+.bl-contact .list ul:before,
+.bl-contact .list ul:after {
     content: '';
     display: table;
 }
 .places li {padding-bottom:30px;} 
-.places .imya {padding-left:0 !important; margin-left:0}
+.places .name {padding-left:0 !important; margin-left:0}
 @media screen and (max-width: 540px) {
     .bl-text .heading,
     .bl-text h2 {
         font-size: 22px;
     }
 }
-.bl-contact .spisok ul:after {
+.bl-contact .list ul:after {
     clear: both;
 }
-.bl-contact .spisok ul li {} .bl-contact .spisok ul li .imya {
+.bl-contact .list ul li {} .bl-contact .list ul li .name {
     font-size: 18px;
     position: relative;
 }
-.bl-contact .spisok ul li .desc {
+.bl-contact .list ul li .description {
     position: relative;
     padding-left: 50px;
 }
-.bl-contact .spisok ul li.telefon:before {
+.bl-contact .list ul li.phone:before {
     content: '';
     background-image: url(../images/chat.svg);
     background-size: 100%;
@@ -774,7 +774,7 @@ a:hover {
     float: left;
     margin-right: 20px;
 }
-.bl-contact .spisok ul li.address:before {
+.bl-contact .list ul li.address:before {
     content: '';
     background-image: url(../images/bank.svg);
     background-size: 100%;
@@ -784,7 +784,7 @@ a:hover {
     float: left;
     margin-right: 20px;
 }
-.bl-contact .spisok ul li.schedule:before {
+.bl-contact .list ul li.schedule:before {
     content: '';
     background-image: url(../images/clock.svg);
     background-size: 100%;
@@ -823,20 +823,20 @@ a:hover {
     top: -2px;
     margin-right: 6px;
 }
-.bl-contact .knopkacha {
+.bl-contact .button {
     float: left;
 }
 @media screen and (max-width: 800px) {
-    .bl-contact .spisok ul {
+    .bl-contact .list ul {
         margin-top: 0;
     }
-    .bl-contact .spisok ul li {
+    .bl-contact .list ul li {
         float: none;
         width: auto;
         margin-top: 30px;
     }
 }
-.bl-form {} .bl-form .tekst {
+.bl-form {} .bl-form .text {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
@@ -851,7 +851,7 @@ a:hover {
     margin-top: 25px;
     color: #2e375f;
 }
-.bl-form .inp {
+.bl-form .input {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
@@ -863,7 +863,7 @@ a:hover {
     height: 160px;
     resize: vertical;
 }
-.bl-form .jonat {
+.bl-form .submit {
     display: block;
     box-sizing: border-box;
     font-size: 14px;
@@ -927,50 +927,50 @@ a:hover {
     font-size: 14px;
     white-space: nowrap;
 }
-.gl-header .bottom .navbahor1 ul {
+.gl-header .bottom .navigation ul {
     zoom: 1;
 }
-.gl-header .bottom .navbahor1 ul:before,
-.gl-header .bottom .navbahor1 ul:after {
+.gl-header .bottom .navigation ul:before,
+.gl-header .bottom .navigation ul:after {
     content: '';
     display: table;
 }
-.gl-header .bottom .navbahor1 ul:after {
+.gl-header .bottom .navigation ul:after {
     clear: both;
 }
-.gl-header .bottom .navbahor1 ul li {
+.gl-header .bottom .navigation ul li {
     float: left;
     margin-left: 2.4%;
 }
-.gl-header .bottom .navbahor1 ul li:first-child {
+.gl-header .bottom .navigation ul li:first-child {
     margin-left: 0;
 }
-.gl-header .bottom .navbahor1 ul li:first-child a:before {
+.gl-header .bottom .navigation ul li:first-child a:before {
     content: '\00a0\f108';
     font-family: FontAwesome;
     font-weight: normal;
 }
-.gl-header .bottom .navbahor1 ul li:last-child {
+.gl-header .bottom .navigation ul li:last-child {
     /*float:right;*/
 }
-.gl-header .bottom .navbahor1 ul li:last-child a:before {
+.gl-header .bottom .navigation ul li:last-child a:before {
     content: '\f278';
     font-family: FontAwesome;
     margin-right: 5px;
     font-weight: normal;
     font-size: 14px;
 }
-.gl-header .bottom .navbahor1 ul a {
+.gl-header .bottom .navigation ul a {
     display: block;
     padding: 4px 7px 5px 7px;
     text-transform: uppercase;
     font-weight: bold;
     color: #000;
 }
-.gl-header .bottom .navbahor1 ul a:hover {
+.gl-header .bottom .navigation ul a:hover {
     color: #2e375f;
 }
-.gl-header .bottom .navbahor1 ul li.H-menyu-it a {
+.gl-header .bottom .navigation ul li.current-menu-item a {
     background: #efefef;
     color: #000;
     border-radius: 2px;
@@ -982,20 +982,20 @@ a:hover {
     .gl-header .bottom {
         text-align: center;
     }
-    .gl-header .bottom .navbahor1 ul li {
+    .gl-header .bottom .navigation ul li {
         display: inline-block;
         float: none;
         margin-right: 2%;
     }
-    .gl-header .bottom .navbahor1 ul li:first-child {
+    .gl-header .bottom .navigation ul li:first-child {
         display: none;
     }
-    .gl-header .bottom .navbahor1 ul li:last-child {
+    .gl-header .bottom .navigation ul li:last-child {
         float: none;
         margin-right: 0;
     }
 }
-.Gc-pad {
+.gl-footer {
     zoom: 1;
     padding: 40px 0 30px 0;
     background-image: url(../images/bgfooter.jpg);
@@ -1011,7 +1011,7 @@ a:hover {
     position: relative;
     overflow: hidden;
 }
-.Gc-pad::before {
+.gl-footer::before {
     background: rgba(17, 17, 17, 0.5) none repeat scroll 0 0;
     content: " ";
     height: 100%;
@@ -1022,59 +1022,59 @@ a:hover {
     z-index: 0;
     background-color: rgba(17, 17, 17, 0.9);
 }
-.Gc-pad:before,
-.Gc-pad:after {
+.gl-footer:before,
+.gl-footer:after {
     content: '';
     display: table;
 }
-.Gc-pad:after {
+.gl-footer:after {
     clear: both;
 }
-.Gc-pad {
+.gl-footer {
     font-size: 14px;
 }
-.Gc-pad .navbahor1 {
+.gl-footer .navigation {
     width: 25%;
     float: left;
     padding: 0px 20px;
     box-sizing: border-box;
 }
 @media (max-width: 1150px) {
-    .Gc-pad .navbahor1 {
+    .gl-footer .navigation {
         width: 33.333%;
     }
-    .Gc-pad .navbahor1:nth-child(3) {
+    .gl-footer .navigation:nth-child(3) {
         display: none;
     }
 }
 @media (max-width: 660px) {
-    .Gc-pad .navbahor1 {
+    .gl-footer .navigation {
         width: 100%;
     }
-    .Gc-pad .navbahor1:nth-child(4) {
+    .gl-footer .navigation:nth-child(4) {
         display: none;
     }
 }
-.Gc-pad .navbahor1 ul.Menyu-pad p {
+.gl-footer .navigation ul.menu-footer p {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
 }
-.Gc-pad .navbahor1 ul {
+.gl-footer .navigation ul {
     zoom: 1;
 }
-.Gc-pad .navbahor1 ul:before,
-.Gc-pad .navbahor1 ul:after {
+.gl-footer .navigation ul:before,
+.gl-footer .navigation ul:after {
     content: '';
     display: table;
 }
-.Gc-pad .navbahor1 ul:after {
+.gl-footer .navigation ul:after {
     clear: both;
 }
-.Gc-pad .navbahor1 ul li {
+.gl-footer .navigation ul li {
 
 }
-.Gc-pad .navbahor1 ul a {
+.gl-footer .navigation ul a {
     display: block;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -1085,10 +1085,10 @@ a:hover {
     margin-bottom: 8px;
     transition: all 300ms ease-in;
 }
-.Gc-pad .navbahor1 ul a:hover {
+.gl-footer .navigation ul a:hover {
     color: #404040;
 }
-.Gc-pad .bottom {
+.gl-footer .bottom {
     font-size: 12px;
     margin-top: 25px;
     color: #666;
@@ -1139,20 +1139,20 @@ a:hover {
 .gl-contact .links li {
     padding: 10px 0;
 }
-.gl-contact .links li .imya {
+.gl-contact .links li .name {
     font-size: 14px;
 }
-.gl-contact .links li .imya a:before {
+.gl-contact .links li .name a:before {
     font-family: FontAwesome;
     content: '\f061';
     color: #8e8a8a;
     margin-right: 8px;
     position: relative;
 }
-.gl-contact .links li .imya a:hover:before {
+.gl-contact .links li .name a:hover:before {
     left: -3px;
 }
-.gl-contact .links li .desc {
+.gl-contact .links li .description {
     margin-top: 5px;
     padding-left: 20px;
     font-size: 12px;
@@ -1203,7 +1203,7 @@ a:hover {
     .gl-contact .links li {
         padding: 0 0 10px 0;
     }
-    .gl-contact .links li .desc {
+    .gl-contact .links li .description {
         display: none;
     }
     .gl-contact .links li .icon {
@@ -1230,7 +1230,7 @@ a:hover {
     line-height: 25px;
     min-width: 200px;
 }
-.up-regions .spisok {
+.up-regions .list {
     margin-top: 25px;
     font-size: 16px;
     line-height: 24px;
@@ -1253,7 +1253,7 @@ a:hover {
     margin-top: 20px;
     color: #2e375f;
 }
-.up-call .form .inp {
+.up-call .form .input {
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
@@ -1261,7 +1261,7 @@ a:hover {
     padding: 5px;
     margin-top: 8px;
 }
-.up-call .form .jonat {
+.up-call .form .submit {
     width: 100%;
     display: block;
     box-sizing: border-box;
@@ -1549,14 +1549,14 @@ a:hover {
 .brendi ul {
     margin-bottom: 0px;
 }
-.brendi .jisim a {
+.brendi .item a {
     height: 70px;
     width: 100%;
     -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
-.brendi .jisim img {
+.brendi .item img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -1591,28 +1591,28 @@ a:hover {
     z-index: 0;
     background-color: rgba(17, 17, 17, 0.9);
 }
-.reviews-new .kantener {
+.reviews-new .container {
     padding: 0px 15%;
 }
 @media (max-width: 660px) {
-    .reviews-new .kantener {
+    .reviews-new .container {
     padding: 0px 5%;
 }
 
 }
-.reviews-new .tekst {
+.reviews-new .text {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-style: italic;
     line-height: 22px;
 }
-.reviews-new .imya {
+.reviews-new .name {
     color: #F22613;
     font-weight: bold;
     font-size: 18px;
 }
-.G-tekst {
+.gl-text {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1621,7 +1621,7 @@ a:hover {
     line-height: 35px;
 }
 @media (max-width: 660px) {
-    .G-tekst {
+    .gl-text {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1630,10 +1630,10 @@ a:hover {
     line-height: 25px;
 }
 }
-.G-tekst span {
+.gl-text span {
     color: #F22613;
 }
-.Qora-bg .G-tekst {
+.black-bg .gl-text {
     color: #fff;
 }
 .top-models {
@@ -1643,15 +1643,15 @@ a:hover {
     overflow: hidden;
     text-align: center;
 }
-.top-models .G-tekst {
+.top-models .gl-text {
     margin-bottom: 35px;
 }
-.top-models .jisim {
+.top-models .item {
     border-bottom: 2px solid #F22613;
     margin-bottom: 25px;
     width: 100%;
 }
-.top-models .jisim .img {
+.top-models .item .img {
     height: 150px;
     position: relative;
     width: 100%;
@@ -1659,14 +1659,14 @@ a:hover {
     line-height: 150px;
     margin-bottom: 25px;
 }
-.top-models .jisim .img img {
+.top-models .item .img img {
     width: auto;
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
     vertical-align: middle;
 }
-.top-models .jisim .imya {
+.top-models .item .name {
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
@@ -1686,7 +1686,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-.all-bm .jisim {
+.all-bm .item {
     border-bottom: 2px solid #F22613;
     margin-bottom: 15px;
     width: 100%;
@@ -1694,19 +1694,19 @@ a:hover {
     width: 16%;
     margin-right: 0.6%;
 }
-.all-bm .jisim .img {
+.all-bm .item .img {
     height: 150px;
     position: relative;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
-.all-bm .jisim .img img {
+.all-bm .item .img img {
     width: auto;
     max-width: 80%;
     max-height: 80%;
 }
-.all-bm .jisim .imya {
+.all-bm .item .name {
     font-size: 14px;
     text-transform: uppercase;
     width: 100%;
@@ -1740,7 +1740,7 @@ a:hover {
         width: 100%;
     }
 }
-.metro .G-tekst {
+.metro .gl-text {
     text-shadow: -1px -1px 0px rgb(255, 255, 255);
 }
 
@@ -1764,7 +1764,7 @@ a:hover {
     height: 100%;
     z-index: -1;
 }
-.map-gl .tekst {
+.map-gl .text {
     background: rgba(17, 17, 17, 0.5) none repeat scroll 0 0;
     background-color: rgba(17, 17, 17, 0.9);
     display: inline-block;
@@ -1776,19 +1776,19 @@ a:hover {
     padding: 20px 30px;
         color: #808080;
 }
-    .map-gl .tekst .imya {
+    .map-gl .text .name {
         margin-bottom: 20px;
     }
-        .map-gl .tekst .imya a {
+        .map-gl .text .name a {
             color: #fff;
             font-size: 18px;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
         }
-        .map-gl .tekst .imya a span {
+        .map-gl .text .name a span {
             color: #F22613;
         }
-.map-gl .tekst a {
+.map-gl .text a {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -1866,15 +1866,15 @@ a:hover {
     padding: 50px 0px 40px;
     text-align: center;
 }
-.top-servicess .spisok {
+.top-servicess .list {
     display: flex;
     flex-wrap: wrap;
 }
-.Toliq-tekst {
+.full-text {
     padding: 50px 0px 0px;
 }
 @media (max-width: 960px) {
-   .Toliq-tekst {
+   .full-text {
         padding: 30px 0px 0px;
     } 
 }
@@ -1916,14 +1916,14 @@ a:hover {
         max-width: 80%;
     }
 }
-.Toliq-tekst p {
+.full-text p {
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
-.Toliq-tekst ul li {
+.full-text ul li {
     line-height: 1.7;
     color: #666666;
     font-size: 14px;
@@ -1932,14 +1932,14 @@ a:hover {
     padding-left: 10px;
     margin-bottom: 10px;
 }
-.Toliq-tekst ul li:before {
+.full-text ul li:before {
     content: '\f0a3';
     padding-right: 8px;
     color: #2E375F;
     font-family: FontAwesome;
     opacity: 0.9;
 }
-.Toliq-tekst h2 {
+.full-text h2 {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -1950,14 +1950,14 @@ a:hover {
     text-align: center;
 }
 @media (max-width: 960px) {
-    .Toliq-tekst h2 {
+    .full-text h2 {
         font-size: 22px;
     }
 }
-.Toliq-tekst h2 span {
+.full-text h2 span {
     color: #F22613;
 }
-.top-servicess .jisim {
+.top-servicess .item {
     display: flex;
     width: 50%;
     float: left;
@@ -1965,25 +1965,25 @@ a:hover {
     padding-right: 15px;
     box-sizing: border-box;
 }
-.top-servicess .jisim:hover,
-.top-servicess .jisim:focus {
+.top-servicess .item:hover,
+.top-servicess .item:focus {
     text-decoration: none;
 }
-.top-servicess .jisim:nth-child(2n) {
+.top-servicess .item:nth-child(2n) {
     padding-right: 0px;
     padding-left: 15px;
 }
 @media (max-width: 767px) {
-    .top-servicess .jisim {
+    .top-servicess .item {
         width: 100%;
         padding-right: 0px;
     }
-    .top-servicess .jisim:nth-child(2n) {
+    .top-servicess .item:nth-child(2n) {
         padding-right: 0px;
         padding-left: 0px;
     }
 }
-.top-servicess .jisim .rasim {
+.top-servicess .item .image {
     width: 220px;
     min-width: 220px;
     height: 110px;
@@ -1991,48 +1991,48 @@ a:hover {
     overflow: hidden;
 }
 @media (max-width: 1150px) {
-    .top-servicess .jisim .rasim {
+    .top-servicess .item .image {
         width: 180px;
         min-width: 180px;
     }
 }
 @media (max-width: 960px) {
-    .top-servicess .jisim .rasim {
+    .top-servicess .item .image {
         display: none;
     }
 }
-.top-servicess .jisim .rasim img {
+.top-servicess .item .image img {
     width: 125%;
 }
-.top-servicess .jisim .tekst {
+.top-servicess .item .text {
     text-align: left;
     box-sizing: border-box;
     padding: 0px 15px;
 }
-.top-servicess .jisim .tekst .imya {
+.top-servicess .item .text .name {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 1.42857143;
     color: #2e375f;
 }
-.top-servicess .jisim .tekst .desc {
+.top-servicess .item .text .description {
     line-height: 1.7;
     color: #808080;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
 }
-.brend-tabs .top-servicess .jisim .tekst .desc p {
+.brend-tabs .top-servicess .item .text .description p {
     background: #eff0ff;
 }
-.top-servicess .jisim .narx .Val-m {
+.top-servicess .item .price .value {
     font-size: 14px;
     font-weight: 600;
     color: #666666;
     font-family: 'Open Sans', sans-serif;
 }
-.top-servicess .jisim .narx .knopkacha {
+.top-servicess .item .price .button {
     font-size: 12px;
     padding: 5px 17px;
     color: #fff;
@@ -2042,11 +2042,11 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     margin-top: 6px;
 }
-.top-servicess .jisim .narx .knopkacha:hover {
+.top-servicess .item .price .button:hover {
     background: #121525;
 }
 
-a.knopkacha {
+a.button {
     font-size: 13px;
         padding: 10px 26px;
             background-color: #2E375F;
@@ -2061,7 +2061,7 @@ a.knopkacha {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-a.knopkacha:hover {
+a.button:hover {
     background: #121525;
     color: #fff;
 }
@@ -2113,7 +2113,7 @@ input {
 .model-brand.active {
     display: block;
 }
-.model-brand .G-tekst {
+.model-brand .gl-text {
     margin-bottom: 20px;
     text-align: center;
 }
@@ -2185,7 +2185,7 @@ input {
         background: #eee;
     }
 }
-.prices table .knopkacha {
+.prices table .button {
     font-size: 12px;
     padding: 5px 17px;
     color: #fff;
@@ -2196,14 +2196,14 @@ input {
     margin-top: 0px;
     cursor: pointer;
 }
-.prices table .knopkacha:hover {
+.prices table .button:hover {
     background: #121525;
 }
 .ontact-top-text {
     padding: 50px 0px 0px;
     text-align: center;
 }
-.bl-contact .spisok ul li {
+.bl-contact .list ul li {
     text-align: left;
 }
 summary {
@@ -2221,7 +2221,7 @@ summary {
     text-align: justify;
     align-items: center;
 }
-.ser-disc .tekst {
+.ser-disc .text {
     width: 100%;
     line-height: 1.7;
     color: #666666;
@@ -2237,50 +2237,50 @@ summary {
 }
 
 
-.oldq {
+.offer {
     padding: 50px 0px;
 }
 @media (max-width: 660px) {
-    .oldq {
+    .offer {
         padding: 15px 0px;
     }
 }
-.fori {
+.for-lr {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.Old-ch {
+.ofer-left {
     display: inline-block;
     width: 80%;
     position: relative;
     padding-right: 20%;
 }
 @media (max-width: 1150px) {
-    .Old-ch {
+    .ofer-left {
         width: 70%;
         padding-bottom: 175px;
     }
 }
 @media (max-width: 960px) {
-    .Old-ch {
+    .ofer-left {
         width: 70%;
         padding-bottom: 0px;
     }
     
 }
 @media (max-width: 767px) {
-    .Old-ch {
+    .ofer-left {
         padding-right: 0%;
         width: 60%;
     }
 }
 @media (max-width: 767px) {
-    .Old-ch {
+    .ofer-left {
         width: 100%;
     }
 }
-.Old-ch h1 {
+.ofer-left h1 {
     font-size: 34px;
     font-family: Arial,sans-serif;
     font-weight: 600;
@@ -2294,15 +2294,15 @@ summary {
     line-height: 44px;
 }
 @media (max-width: 960px) {
-    .Old-ch h1 {
+    .ofer-left h1 {
         font-size: 24px;
         line-height: 30px;
     }
 }
-.Old-ch h1 br {
+.ofer-left h1 br {
     display: none;
 }
-.Oldi-ong {
+.ofer-right {
     display: inline-block;
     width: 20%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e65737+0,cb343d+100 */
@@ -2317,21 +2317,21 @@ summary {
     padding: 15px 20px;
 }
 @media (max-width: 1150px) {
-    .Oldi-ong {
+    .ofer-right {
         width: 30%;
     }
 }
 @media (max-width: 767px) {
-    .Oldi-ong {
+    .ofer-right {
         width: 100%;
     }
 }
 @media (max-width: 540px) {
-    .Oldi-ong {
+    .ofer-right {
         padding-bottom: 0px;
     }
 }
-.Oldi-ong p.Umumiy-forma {
+.ofer-right p.first-text {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -2344,12 +2344,12 @@ summary {
     text-align: center;
     text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
 }
-.Oldi-ong p.Umumiy-forma span {
+.ofer-right p.first-text span {
     font-size: 20px;
     font-weight: bold;
     font-family: Arial,sans-serif;
 }
-.Oldi-ong p.Ikkinchi-tekst {
+.ofer-right p.second-text {
     font-size: 24px;
     font-family: Arial,sans-serif;
     text-align: center;
@@ -2360,7 +2360,7 @@ summary {
     text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
 }
 @media screen and (max-width: 540px) {
-    .Oldi-ong p.Ikkinchi-tekst {
+    .ofer-right p.second-text {
         font-size: 14px;
         font-family: Arial,sans-serif;
         text-align: center;
@@ -2370,11 +2370,11 @@ summary {
         line-height: 34px;
         text-shadow: 0px 0px 5px rgba(204, 55, 63, 1);
     }
-    .Oldi-ong p.Ikkinchi-tekst br {
+    .ofer-right p.second-text br {
         display: none;
     }
 }
-.Oldi-ong p.Ikkinchi-tekst span {
+.ofer-right p.second-text span {
     background: #333;
     padding: 0px 5px;
     font-size: 40px;
@@ -2387,7 +2387,7 @@ summary {
     position: relative;
 }
 @media screen and (max-width: 540px) {
-    .Oldi-ong p.Ikkinchi-tekst span {
+    .ofer-right p.second-text span {
         background: #333;
         padding: 0px 5px;
         font-size: 30px;
@@ -2400,7 +2400,7 @@ summary {
         position: relative;
     }
 }
-.Oldi-ong p.Ikkinchi-tekst span:before {
+.ofer-right p.second-text span:before {
     width: 100%;
     height: 1px;
     position: absolute;
@@ -2409,7 +2409,7 @@ summary {
     background: #252525;
     left: 0px;
 }
-.Old-kn {
+.ofer-button {
     color: #fff;
     position: absolute;
     bottom: 0px;
@@ -2423,7 +2423,7 @@ summary {
     background-size: auto 100%;
 }
 @media (max-width: 960px) {
-    .Old-kn {
+    .ofer-button {
     color: #fff;
     position: relative;
     display: inline-block;
@@ -2436,49 +2436,49 @@ summary {
 }
 }
 @media (max-width: 767px) {
-    .Old-kn {
+    .ofer-button {
         width: 100%;
         margin-top: 10px;
     }
 }
 @media (max-width: 460px) {
-    .Old-kn {
+    .ofer-button {
         background-position: center right -38px;
     }
 }
-.Old-kn .Umumiy-forma {
+.ofer-button .first-text {
     text-transform: uppercase;
     font-family: Arial,sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 @media (max-width: 960px) {
-    .Old-kn .Umumiy-forma {
+    .ofer-button .first-text {
         font-size: 14px;
     }
 }
-.Old-kn .Geroy-forma > p {
+.ofer-button .hero-form > p {
     font-size: 12px;
     display: block;
     margin: 0px;
 }
-.Geroy-forma form {
+.hero-form form {
     display: flex;
     flex-wrap: wrap;
 }
-.Geroy-forma form .Zakaz-telefon {
+.hero-form form .form-group {
     width: 50%;
     display: inline-block;
     box-sizing: border-box;
     padding: 0px;
 }
 @media (max-width: 960px) {
-    .Geroy-forma form .Zakaz-telefon {
+    .hero-form form .form-group {
         display: block;
         width: 180px;
     }
 }
-.Geroy-forma form .Zakaz-telefon input {
+.hero-form form .form-group input {
     width: 100%;
     border-radius: 3px;
     color: #24295a;
@@ -2486,12 +2486,12 @@ summary {
     margin-top: -3px;
 }
 @media (max-width: 960px) {
-    .Geroy-forma form .Zakaz-telefon input {
+    .hero-form form .form-group input {
         margin-top: 0px;
     }
 }
 
-.Geroy-forma form button {
+.hero-form form button {
     width: 47%;
     display: inline-block;
     margin-left: 2%;
@@ -2508,7 +2508,7 @@ summary {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e65737', endColorstr='#cb343d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 @media (max-width: 960px) {
-    .Geroy-forma form button {
+    .hero-form form button {
         width: 180px;
         margin-left: 0px;
         margin-bottom: 10px;
@@ -2536,7 +2536,7 @@ summary {
     max-width: 300px;
     width: 300px;
 }
-.Forma-ong {
+.right-form {
     max-width: 240px;
     width: 240px;
     z-index: 99999;
@@ -2563,42 +2563,42 @@ summary {
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
 }
-.Forma-ong.scrol-popup {
+.right-form.scrol-popup {
     display: block;
 }
 @media (max-width: 660px) {
-    .Forma-ong,
-    .Forma-ong.scrol-popup {
+    .right-form,
+    .right-form.scrol-popup {
         display: none;
     }
 }
-.Forma-ong p {
+.right-form p {
     font-size: 10px;
     color: #fff;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-.Forma-ong p.Umumiy-forma {
+.right-form p.first-text {
     font-size: 16px;
     margin-bottom: 15px;
 }
-.Forma-ong p.Umumiy-forma span {
+.right-form p.first-text span {
     font-size: 34px;
     font-weight: bold;
     line-height: 33px;
 }
-.Forma-ong p.Umumiy-forma b {
+.right-form p.first-text b {
     font-size: 18px;
 }
-.Forma-ong input {
+.right-form input {
     border: 0px;
     outline: none;
     border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
-.Forma-ong button {
+.right-form button {
     width: 100%;
     height: 34px;
     margin-bottom: 10px;
@@ -2631,18 +2631,18 @@ summary {
 .search-brends .right a img {
     width: 100%;
 }
-.Nav-tele-uch > a {
+.for-nav-tel > a {
     display: none;
     color: #fff;
     font-size: 24px;
     line-height: 50px;
 }
-.Nav-tele-uch > a:hover {
+.for-nav-tel > a:hover {
     color: #fff;
     text-decoration: underline;
 }
 @media (max-width: 540px) {
-    .Nav-tele-uch > a {
+    .for-nav-tel > a {
     display: block;
 }
 }
@@ -2662,7 +2662,7 @@ summary {
     left: 0px;
     content: '';
 }
-.popup-form-active .Forma-ong {
+.popup-form-active .right-form {
     background: #24295a;
     padding-bottom: 16px;
     top: 50%;
@@ -2671,10 +2671,10 @@ summary {
     margin-right: -125px;
     display: block ! important;
 }
-.Forma-yop {
+.close-form {
     display: none;
 }
-.popup-form-active .Forma-yop {
+.popup-form-active .close-form {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -2694,7 +2694,7 @@ summary {
     line-height: 40px;
     text-align: center;
 }
-.Forma-yop i {
+.close-form i {
     line-height: 38px;
     color: #fff;
     font-size: 22px;
@@ -2748,12 +2748,12 @@ summary {
     display: none;
 }
 
-.brend-tabs .Toliq-tekst h2:first-child {
+.brend-tabs .full-text h2:first-child {
     margin-top: 0px;
 }
 
 @media (max-width: 540px) {
-    #tab-tseni > .kantener {
+    #tab-tseni > .container {
         padding-right: 15px;
         padding-left: 15px;
         right: 0px;
@@ -2770,7 +2770,7 @@ summary {
     .prices table tbody tr td:nth-child(3) {
         display: none;
     }
-    .prices table tbody tr td:nth-child(2) .knopkacha {
+    .prices table tbody tr td:nth-child(2) .button {
         display: block ! important;
     }
     .aksiya-popupic {
