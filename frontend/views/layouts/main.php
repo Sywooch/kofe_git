@@ -396,12 +396,6 @@ $js = app\components\CController::$js;
                 $roistatid = '59aa76d4f6e16b05176872ca59a9dad0';
             }
             ?>
-            <style>
-                .<?= $siteConfig['sitePrefix']; ?>video .<?= $siteConfig['sitePrefix']; ?>moskva,
-                .<?= $siteConfig['sitePrefix']; ?>spb {
-                    color:#fff ! important;
-                }
-            </style>
             <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                         w.roistatProjectId = id;
                         w.roistatHost = h;
