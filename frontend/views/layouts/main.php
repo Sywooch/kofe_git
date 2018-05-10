@@ -65,6 +65,21 @@ $js = app\components\CController::$js;
                 line-height: 26px;
                 font-weight: 700;
             }
+            @media (max-width: 1030px) {
+                .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?> {
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 830px) {
+                .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?> {
+                    font-size: 0px;
+                }
+                .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?>::before {
+                    width: 30px;
+                    height: 30px;
+                    padding-top: 7px;
+                }
+            }
         </style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
