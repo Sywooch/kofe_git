@@ -60,6 +60,11 @@ $js = app\components\CController::$js;
                 -webkit-font-smoothing:antialiased;
                 -moz-osx-font-smoothing:grayscale;
             }
+            .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?> {
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 700;
+            }
         </style>
     </head>    
     <body id="index" class="home <?= $siteConfig['sitePrefix']; ?><?= $isHome ? ' video' : ''; ?><?= $isModelPage || $isBrandPage ? ' banners' : ''; ?><?= $isModelPage ? ' model-page' : ''; ?>">
