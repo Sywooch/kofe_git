@@ -41,20 +41,24 @@ $js = app\components\CController::$js;
                 max-width: 135px ! important;
             }
             .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?>::before {
-                content: "";
+                content:"\f095";
                 width: 26px;
                 height: 26px;
-                color: rgb(255, 255, 255);
+                border-radius: 50%;
+                background: #673b14;
+                color: #fff;
                 text-align: center;
                 padding-top: 5px;
                 box-sizing: border-box;
+                font-size: 16px ! important;
                 float: left;
                 margin-right: 10px;
-                display: inline-block;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                border-radius: 50%;
-                font: normal normal normal normal normal normal normal 1 FontAwesome;
+                display:inline-block;
+                font:normal normal normal 14px/1 FontAwesome;
+                font-size:inherit;
+                text-rendering:auto;
+                -webkit-font-smoothing:antialiased;
+                -moz-osx-font-smoothing:grayscale;
             }
         </style>
     </head>    
