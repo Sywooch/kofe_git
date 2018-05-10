@@ -8489,7 +8489,6 @@ img.foto__name {
 }
 .ph_ico {
     position: absolute;
-    top: 17px;
     right: 60px;
 }
 .ph_ico a {
@@ -8499,6 +8498,7 @@ img.foto__name {
     display: inline-block;
     background: url(../images/phone.svg);
     background-size: 100%;
+    font-size: 0px;
 }
 
 
