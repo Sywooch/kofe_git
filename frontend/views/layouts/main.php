@@ -46,7 +46,7 @@ $js = app\components\CController::$js;
                 height: 26px;
                 border-radius: 50%;
                 background: #fff;
-                color: #fff;
+                color: #72d582;
                 text-align: center;
                 padding-top: 5px;
                 box-sizing: border-box;
