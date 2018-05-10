@@ -50,6 +50,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Алтуфьево
                             </b>
                             <p>ТЦ "Наш", 2 этаж, пав. 14.</p>
+                            <p><?= Yii::$app->session['region']['phone']; ?></p>
                             <span>Время работы: 10:00 - 21:00</span>
                         </div>
                         <div class="tyomna-zeleniy">
@@ -66,6 +67,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Войковская
                             </b>
                             <p>Сервис находится в 14-ти этажке</p>
+                            <p><?= Yii::$app->session['region']['phone']; ?></p>
                             <span>Время работы: 10:00 - 21:00</span>
                         </div>
                         <div class="tyomna-zeleniy">
@@ -82,6 +84,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Домодедовская
                             </b>
                             <p>ТЦ "Галерея Водолей"</p>
+                            <p><?= Yii::$app->session['region']['phone']; ?></p>
                             <span>Время работы: 10:00 - 22:00</span>
                         </div>
                         <div class="krasniy">
@@ -98,6 +101,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Проспект Вернадского, Юго-Западная
                             </b>
                             <p>ТЦ "Премьер".</p>
+                            <p><?= Yii::$app->session['region']['phone']; ?></p>
                             <span>Время работы: 10:00 - 21:00</span>
                         </div>
                         <div class="oranjiviy">
@@ -114,6 +118,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 Новые Черёмушки
                             </b>
                             <p>ТЦ "Черёмушки", павильон А1-24</p>
+                            <p><?= Yii::$app->session['region']['phone']; ?></p>
                             <span>Время работы: 10:00 - 21:00</span>
                         </div>
                     </div>
