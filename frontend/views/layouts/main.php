@@ -60,7 +60,6 @@ $js = app\components\CController::$js;
                 -webkit-font-smoothing:antialiased;
                 -moz-osx-font-smoothing:grayscale;
             }
-            .<?= $siteConfig['sitePrefix']; ?>video .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?>::before
             .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?> {
                 font-size: 20px;
                 line-height: 26px;
