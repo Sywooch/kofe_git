@@ -32,13 +32,29 @@ $js = app\components\CController::$js;
 <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
-<?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
+            <?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
             #banner ul {list-style-type: disc;
                         padding-left: 20px;
                         margin-bottom: 10px;
             }#ask2 .container p {font-size: 24px;} #banner h2, #banner h3 {font-family: "NeuronExtraBold",cursive;clear: both;padding-top: 15px;margin: 0px;}#banner p {font-size: 15px;float: none;clear: both;margin-bottom: 15px;}
             #brands .owl-stage .owl-item {
                 max-width: 135px ! important;
+            }
+            .<?= $siteConfig['sitePrefix']; ?>tel .<?= $siteConfig['sitePrefix']; ?><?= Yii::$app->session['region']['class']; ?>::before {
+                content: "";
+                width: 26px;
+                height: 26px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding-top: 5px;
+                box-sizing: border-box;
+                float: left;
+                margin-right: 10px;
+                display: inline-block;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                border-radius: 50%;
+                font: normal normal normal normal normal normal normal 1 FontAwesome;
             }
         </style>
     </head>    
@@ -355,9 +371,9 @@ $js = app\components\CController::$js;
             ?>
             <style>
                 .<?= $siteConfig['sitePrefix']; ?>video .<?= $siteConfig['sitePrefix']; ?>moskva,
-                     .<?= $siteConfig['sitePrefix']; ?>spb {
-                        color:#fff ! important;
-                    }
+                .<?= $siteConfig['sitePrefix']; ?>spb {
+                    color:#fff ! important;
+                }
             </style>
             <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
                         w.roistatProjectId = id;
