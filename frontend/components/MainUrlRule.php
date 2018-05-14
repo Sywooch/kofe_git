@@ -57,6 +57,9 @@ class MainUrlRule extends UrlRule {
         if (in_array($siteConfig['id'], [49]) && strpos($hostname, 'https://') === false) {
             $this->redirect(str_replace('http', 'https', $hostname . (!empty($pathInfo) ? '/' . $pathInfo : '')));
         }
+        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'multicatX' && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {			
+            $this->redirect('/');
+        }
         if ($siteConfig['mono']) {
             if (strpos($pathInfo, 'remont-kofemashin-') !== false)
                 return ['site/error', []];
