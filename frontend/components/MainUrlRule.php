@@ -33,7 +33,7 @@ class MainUrlRule extends UrlRule {
         if (strpos($_SERVER['SERVER_NAME'], '.repair'))
             Yii::$app->request->setHostInfo($_SERVER['SERVER_NAME'] . '.ru');
         $siteConfig = self::getSiteConfig();
-        
+
         $redirects = require(Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php');
         $redirects = isset($redirects[$siteConfig['id']]) ? $redirects[$siteConfig['id']] : [];
         if (!empty($redirects) && isset($redirects[Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo])) {
@@ -46,7 +46,7 @@ class MainUrlRule extends UrlRule {
         }
         $pathInfo = strtolower($request->getPathInfo());
         $arrayUrl = explode('/', $pathInfo);
-        if(in_array($siteConfig['id'], [50, 51]) && count($arrayUrl) >= 1) {
+        if (in_array($siteConfig['id'], [50, 51]) && count($arrayUrl) >= 1) {
             if (strpos($pathInfo, 'remont-kofemashin-saeco') !== false && $siteConfig['id'] == 50) {
                 $this->redirect('/' . str_replace('remont-kofemashin-saeco', 'remont-saeco', $pathInfo));
             } elseif (strpos($pathInfo, 'remont-jura') !== false && $siteConfig['id'] == 51) {
@@ -57,7 +57,7 @@ class MainUrlRule extends UrlRule {
         if (in_array($siteConfig['id'], [49]) && strpos($hostname, 'https://') === false) {
             $this->redirect(str_replace('http', 'https', $hostname . (!empty($pathInfo) ? '/' . $pathInfo : '')));
         }
-        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'multicatX' && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {			
+        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'multicatX' && strpos($pathInfo, 'remont-') !== false && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {
             $this->redirect('/');
         }
         if ($siteConfig['mono']) {
@@ -276,7 +276,7 @@ class MainUrlRule extends UrlRule {
             $page['meta_title'] = $seo['meta_title'] ?: (!empty($page['meta_title']) ? $page['meta_title'] : '');
             $page['meta_h1'] = $seo['meta_h1'] ?: (!empty($page['meta_h1']) ? $page['meta_h1'] : '');
             $page['description'] = $seo['meta_text1'] ?: (!empty($page['description']) ? $page['description'] : '');
-            $page['full_description'] = $seo['meta_text2'] ?: (!empty($page['full_description']) ? $page['full_description'] : '');            
+            $page['full_description'] = $seo['meta_text2'] ?: (!empty($page['full_description']) ? $page['full_description'] : '');
         }
         return $page;
     }
