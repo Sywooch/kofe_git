@@ -222,7 +222,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div id="powered">
                         <div id="powered_left">&#169; <span class="colortext">Сервисный центр <?= $_SERVER['SERVER_NAME']; ?></span>, 2014–<?= date('Y'); ?></div>
-                        <div id="powered_right"><p class="colortext">Ремонт бытовой техники качественно и с гарантией!</p></div>
+                        <div id="powered_right"><p class="colortext">Ремонт кофемашин качественно и с гарантией!</p></div>
                     </div>
                 </div>
             </div>
@@ -233,7 +233,7 @@ $js = app\components\CController::$js;
                 <div class="closes-form"></div>
                 <p class="colortext">заказать звонок</p>
                 <?= multicatX\widgets\forms\Order::widget(); ?>
-                <a href="#">Пользовательское соглашение</a>
+                <a href="/personal_info">Пользовательское соглашение</a>
             </div>
             <div class="black-close-form"></div>
         </div>
