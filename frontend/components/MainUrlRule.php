@@ -276,7 +276,7 @@ class MainUrlRule extends UrlRule {
             $page['meta_title'] = $seo['meta_title'] ?: (!empty($page['meta_title']) ? $page['meta_title'] : '');
             $page['meta_h1'] = $seo['meta_h1'] ?: (!empty($page['meta_h1']) ? $page['meta_h1'] : '');
             $page['description'] = $seo['meta_text1'] ?: (!empty($page['description']) ? $page['description'] : '');
-            $page['full_description'] = $seo['meta_text2'] ?: (!empty($page['full_description']) ? $page['full_description'] : '');
+            $page['full_description'] = $seo['meta_text2'] ?: (!empty($page['full_description']) ? $page['full_description'] : '');            
         }
         return $page;
     }

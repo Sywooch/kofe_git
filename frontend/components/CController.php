@@ -97,6 +97,10 @@ class CController extends \yii\web\Controller {
 //                $this->setRegion(1);
 //            }
 //        }
+        
+        if(!empty(self::$monoBrand['title']) && isset(Yii::$app->params['brandRussianNames'][self::$monoBrand['title']]))
+            $_GET['data']['meta_title'] = str_replace('#brand_ru#', Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], $_GET['data']['meta_title']);
+        
         if (empty(Yii::$app->session['region']))
             $this->setRegion(1);
 
