@@ -10,6 +10,7 @@ $assets = '/' . Yii::getAlias('@web');
 $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
+$isServicePage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'service' ? true : false;
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
@@ -26,7 +27,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/delonghi/favicon-16.png" rel=icon sizes=16x16 type=image/png>
         <link href="<?= $assets . $siteConfig['theme']; ?>/css/delonghi.main.css" rel=stylesheet>        
     </head>
-    <body class="brand-delonghi template-home">
+    <body class="brand-delonghi template-<?= $isServicePage ? 'fault' : 'home'; ?>">
         <?php $this->beginBody() ?>
         <header class=header>
             <div class="d-lg-none d-md-block d-none header__nav-tablet">

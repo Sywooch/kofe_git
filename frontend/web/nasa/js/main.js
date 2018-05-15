@@ -1,4 +1,4 @@
-$(document).ready(function () {    
+$(document).ready(function () {
     if ($(".promo").length) {
         var c, d, f = $(".e-c-progress"),
                 h = $("#e-pointer"),
@@ -15,4 +15,7 @@ $(document).ready(function () {
             e = d, t = Math.floor(e / 3600), n = Math.floor(e % 3600 / 60), r = (t < 10 ? "0" : "") + t + ":" + (n < 10 ? "0" : "") + n + ":" + ((i = e % 60) < 10 ? "0" : "") + i, v.html(r), a = p - p * (o = e) / (s = m), f.css("stroke-dashoffset", -a), h.css("transform", "rotate(" + (360 - 360 * o / s) + "deg)")
         }, 1e3)
     }
+    $(".sidebar-toggle").length && $(".sidebar-toggle .sidebar-toggle__option").on("click", function (e) {
+        $(this).hasClass("active") || ($(".sidebar-toggle .sidebar-toggle__option.active").removeClass("active"), $(this).addClass("active"), $($(this).data("target")).collapse("toggle"), $(".sidebar-collapse.show").collapse("toggle"))
+    });
 });
