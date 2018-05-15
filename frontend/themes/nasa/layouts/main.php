@@ -55,6 +55,7 @@ $js = app\components\CController::$js;
                         <nav class=header__nav>
                             <li>
                                 <a href=http://delonghi.kofemashini.com/pricelist/>Прайс-лист</a>
+                                </li>
                             <li>
                                 <a href=http://delonghi.kofemashini.com/models/>Модели <?= app\components\CController::$monoBrand['title']; ?></a>
                             <li>
@@ -159,8 +160,7 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA99Rdi3aKXepbK_XJe_xt6qz5oBriMpKs&amp;sensor=false"></script>        
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>   
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>

@@ -43,7 +43,7 @@ class CController extends \yii\web\Controller {
 
     public function beforeAction($event) {
         //Yii::$app->ipgeobase->updateDB();
-        $siteConfig = self::getSiteConfig();        
+        $siteConfig = self::getSiteConfig();
         if (isset($siteConfig['theme']) && !empty($siteConfig['theme'])) {
             Yii::$app->view->theme = new \yii\base\Theme([
                 'pathMap' => [
@@ -97,12 +97,14 @@ class CController extends \yii\web\Controller {
 //                $this->setRegion(1);
 //            }
 //        }
-        
-        if(!empty(self::$monoBrand['title']) && isset(Yii::$app->params['brandRussianNames'][self::$monoBrand['title']])) {
-            $_GET['data']['meta_title'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_title']);
-            $_GET['data']['meta_desc'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_desc']);
+
+        if (!empty(self::$monoBrand['title']) && isset(Yii::$app->params['brandRussianNames'][self::$monoBrand['title']])) {
+            if (isset($_GET['data']['meta_title']) && !empty($_GET['data']['meta_title']))
+                $_GET['data']['meta_title'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_title']);
+            if (isset($_GET['data']['meta_desc']) && !empty($_GET['data']['meta_desc']))
+                $_GET['data']['meta_desc'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_desc']);
         }
-        
+
         if (empty(Yii::$app->session['region']))
             $this->setRegion(1);
 
