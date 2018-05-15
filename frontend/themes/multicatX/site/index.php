@@ -98,7 +98,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Гарантия</div>
                         <div class="rumiservice4_item_right_text">
-                            На весь выполненный ремонт бытовой техники, а так-же на заменённые комплектующие - Вы получаете гарантию сроком <span class="colortext">до 1 года!</span>
+                            На весь выполненный ремонт кофемашин, а так-же на заменённые комплектующие - Вы получаете гарантию сроком <span class="colortext">до 1 года!</span>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Наличие запчастей</div>
                         <div class="rumiservice4_item_right_text">
-                            Благодаря наличию собственного склада с зап. частями, <span class="colortext">Вам не придётся ждать</span> поставки необходимой запасной части для вашей бытовой техники. Тем самым срок ремонта кардинально сокращается.
+                            Благодаря наличию собственного склада с зап. частями, <span class="colortext">Вам не придётся ждать</span> поставки необходимой запасной части для вашей кофемашины. Тем самым срок ремонта кардинально сокращается.
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Честные цены и короткие сроки</div>
                         <div class="rumiservice4_item_right_text">
-                            Сервисный центр дорожит своей репутацией и выполняет срочный ремонт бытовой техники. А цены на услуги являются самыми <span class="colortext">лучшим в Москве</span>, так как все запасные части заказываются у <span class="colortext">официальных представителей</span> и отпускаются <span class="colortext">без наценок!</span>
+                            Сервисный центр дорожит своей репутацией и выполняет срочный ремонт кофемашин. А цены на услуги являются самыми <span class="colortext">лучшими в <?= Yii::$app->session['region']['id'] == 1 ? 'Москве ' : 'Санкт-Петербурге'; ?></span>, так как все запасные части заказываются у <span class="colortext">официальных представителей</span> и отпускаются <span class="colortext">без наценок!</span>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice4_item_right">
                         <div class="rumiservice4_item_right_header">Курьерская доставка устройства</div>
                         <div class="rumiservice4_item_right_text">
-                            После окончания ремонта наш сервисный центр <span class="colortext">бесплатно доставляет</span> бытовую технику и выдаёт <span class="colortext">обязательную гарантию!</span>
+                            После окончания ремонта наш сервисный центр <span class="colortext">бесплатно доставляет</span> кофемашину и выдаёт <span class="colortext">обязательную гарантию!</span>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Диагностика проблемы</div>
                         <div class="rumiservice6_item_right_text">
-                            Наши инженеры с лёгкостью выполнят диагностику бытовой техники и найдут неисправность буквально за несколько минут. Ремонт бытовой техники, кстати, выполняется столь-же быстро!
+                            Наши инженеры с лёгкостью выполнят диагностику кофемашины и найдут неисправность буквально за несколько минут. Ремонт кофемашин, кстати, выполняется столь-же быстро!
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@ $this->title = $page['meta_title'] ?: $title;
                     <div class="rumiservice6_item_right">
                         <div class="rumiservice6_item_right_header">Ремонт неисправного устройства</div>
                         <div class="rumiservice6_item_right_text">
-                            Ремонт каждого бытового аппарата проводится с соблюдением всех норм и регламентов. При ремонте используются оригинальные и качественные комплектующие, которые заказываются напрямую у фирм-производителей.
+                            Ремонт каждой кофемашины проводится с соблюдением всех норм и регламентов. При ремонте используются оригинальные и качественные комплектующие, которые заказываются напрямую у фирм-производителей.
                         </div>
                     </div>
                 </div>
