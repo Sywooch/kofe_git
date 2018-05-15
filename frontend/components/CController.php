@@ -100,7 +100,7 @@ class CController extends \yii\web\Controller {
         
         if(!empty(self::$monoBrand['title']) && isset(Yii::$app->params['brandRussianNames'][self::$monoBrand['title']])) {
             $_GET['data']['meta_title'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_title']);
-            $_GET['data']['description'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['description']);
+            $_GET['data']['meta_desc'] = str_replace(['#brand_ru#', '#brand_en#'], [Yii::$app->params['brandRussianNames'][self::$monoBrand['title']], self::$monoBrand['title']], $_GET['data']['meta_desc']);
         }
         
         if (empty(Yii::$app->session['region']))
