@@ -20,10 +20,10 @@ $domain = str_replace('admin.', '', $domain);
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
-        <?= Html::csrfMetaTags() ?>
-        <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+        <title>Ремонт кофемашин в Москве и Московской области 🛠 Гаратируем качество 👍</title>
+        <meta name="description" content="Выезжаем в любую точку Москвы. Быстрый ремонт от 15 минут. Только качественные комплектующие! Гарания до 1 года!  Опытные мастера.  Скидки и акции!">
+        <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>        
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon"/>
