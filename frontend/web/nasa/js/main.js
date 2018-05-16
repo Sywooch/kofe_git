@@ -16,6 +16,6 @@ $(document).ready(function () {
         }, 1e3)
     }
     $(".sidebar-toggle").length && $(".sidebar-toggle .sidebar-toggle__option").on("click", function (e) {
-        $(this).hasClass("active") || ($(".sidebar-toggle .sidebar-toggle__option.active").removeClass("active"), $(this).addClass("active"), $($(this).data("target")).collapse("toggle"), $(".sidebar-collapse.show").collapse("toggle"))
+        $(this).hasClass("active") || ($(".sidebar-toggle .sidebar-toggle__option.active").removeClass("active"), $(this).addClass("active"), $(".collapse").hide(),$($(this).data("target")).show("toggle"))
     });
 });

@@ -39,8 +39,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <div class="content__consult pl-md-4">
                             <div class="content__consult-heading h4"> Закажите бесплатную<br>консультацию специалиста! </div> 
                             <div class="content__consult-form text-center">
-                                <?= nasa\widgets\forms\Main::widget(); ?>
-                                
+                                <?= nasa\widgets\forms\Main::widget(); ?>                                
                             </div>
                             <div class="content__consult-text"> Наш специалист перезвонит вам в течение 2 минут. </div>
                         </div> 
