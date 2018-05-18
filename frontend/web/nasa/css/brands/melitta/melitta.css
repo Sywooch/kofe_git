@@ -1,0 +1,203 @@
+a{
+     color:#d00c0e;
+}
+ a:hover{
+     color:#a2090a;
+}
+ .intro{
+     background-color: #d00c0e;
+}
+ .faults__item-prices .price {
+     background-color:#d00c0e;
+}
+ .btn-outline-primary {
+     color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .btn-outline-primary:hover{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .warranty__image:before{
+     background-color:#d00c0e;
+}
+ .btn-primary{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .btn-primary:hover{
+     background-color:#d62b2e;
+     border-color:#a2090a 
+}
+ .btn-primary:focus,.btn-primary.focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.5) 
+}
+ .btn-primary.disabled,.btn-primary:disabled{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{
+     background-color:#a2090a;
+     border-color:#a2090a 
+}
+ .btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.5) 
+}
+ .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#d00c0e 
+}
+ .custom-control-input:focus ~ .custom-control-label::before{
+     box-shadow:0 0 0 1px #fff,0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#d00c0e 
+}
+ .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before{
+     background-color:#d00c0e 
+}
+ .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(154,8,9,0.5) 
+}
+ .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+     background-color:rgba(154,8,9,0.5) 
+}
+ .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#d00c0e 
+}
+ .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(154,8,9,0.5) 
+}
+ .custom-file-input:focus ~ .custom-file-control{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+     background-color:#d00c0e 
+}
+ .page-link{
+     color:#d00c0e;
+}
+ .page-link:hover{
+     color:#a2090a;
+}
+ .page-link:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+.form-control:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .page-item.active .page-link{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .badge-primary{
+     background-color:#d00c0e 
+}
+ .badge-primary[href]:hover,.badge-primary[href]:focus{
+     background-color:#a2090a 
+}
+ .alert-primary{
+     color:#8c0a0c;
+}
+ .alert-primary .alert-link{
+     color:#8c0a0c 
+}
+ .list-group-item.active{
+     background-color:#d00c0e;
+     border-color:#d00c0e 
+}
+ .list-group-item-primary{
+     color:#8c0a0c;
+}
+ .list-group-item-primary.list-group-item-action:hover,.list-group-item-primary.list-group-item-action:focus{
+     color:#8c0a0c;
+}
+ .list-group-item-primary.list-group-item-action.active{
+     background-color:#8c0a0c;
+     border-color:#8c0a0c 
+}
+ .bg-primary{
+     background-color:#d00c0e !important 
+}
+ a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus{
+     background-color:#a2090a !important 
+}
+ .border-primary{
+     border-color:#d00c0e !important 
+}
+ .text-primary{
+     color:#d00c0e !important 
+}
+ a.text-primary:hover,a.text-primary:focus{
+     color:#a2090a !important 
+}
+ .template-page header,.template-fault header,.template-service header{
+     background-color:#d00c0e;
+}
+ .sidebar-toggle__option.active:before{
+     background:#d00c0e 
+}
+ .sidebar-toggle__option:hover:before{
+     background:#d00c0e 
+}
+ .sidebar-collapse{
+     background:#a2090a;
+}
+ .sidebar-collapse a:hover:before{
+     background:#d00c0e 
+}
+ .sidebar-collapse a.active{
+     background:#d00c0e;
+}
+ .content__fault-icon{
+     background:#d00c0e;
+}
+ .content__service-icon{
+     background:#d00c0e;
+}
+ .content__pricebox{
+     background:#d00c0e;
+}
+ .models-list__letter{
+     background:#d00c0e;
+}
+ .callback{
+     background-color:#d00c0e;
+}
+ .promo__countdown-circle .e-c-progress{
+     stroke:#d00c0e;
+}
+ .promo__countdown-circle .e-c-pointer{
+     fill:#d00c0e 
+}
+ .promo__countdown-time{
+     color:#d00c0e 
+}
+ .footer__phone a:hover{
+     background:#d00c0e 
+}
+ .footer__divider{
+     background:#d00c0e 
+}
+.callback{
+    background-image: url("../../../img/brands/melitta/callback-bg.png"), url("../../../img/about-bg.png");
+}
+.content__fault-image,
+.content__service-image{
+    background-image :url("../../../img/brands/melitta/fault__image.png");
+}
+.faults__item.item-first{
+    background-image:url("../../../img/brands/melitta/faults__item-first.jpg");
+}
+.intro__preview{
+    background-image:url("../../../img/brands/melitta/intro__model.png");
+}
+.promo{
+    background-image:url("../../../img/brands/melitta/promo-bg.jpg");
+}
+.warranty__image:after{
+    background-image:url("../../../img/brands/melitta/warranty-bg.png");
+}

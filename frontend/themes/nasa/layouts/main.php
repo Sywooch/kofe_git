@@ -32,11 +32,11 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/delonghi/favicon-32.png" rel=icon sizes=32x32 type=image/png>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/delonghi/favicon-16.png" rel=icon sizes=16x16 type=image/png>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/delonghi.main.css" rel=stylesheet>        
+        <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>
+        <link href="<?= $assets . $siteConfig['theme']; ?>/css/main.css" rel=stylesheet>
+        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brands/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>.css" rel=stylesheet>
     </head>
-    <body class="brand-delonghi template-<?= $bodyClass; ?>">
+    <body class="brand-<?= $siteConfig['sitePrefix']; ?> template-<?= $bodyClass; ?>">
         <?php $this->beginBody() ?>
         <header class="header">
             <div class="d-lg-none d-md-block d-none header__nav-tablet">
@@ -63,7 +63,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
                             <img alt="Навигация" src="<?= $assets . $siteConfig['theme']; ?>/img/icons/nav-mobile.png"> 
                         </a>
                         <a class="header__logo" href="/">
-                            <img alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" src="<?= $assets . $siteConfig['theme']; ?>/img/brands/delonghi/logo.png"> 
+                            <img alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" src="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/logo.svg"> 
                         </a>
                         <nav class="header__nav">
                             <li>
@@ -120,7 +120,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
                 <div class="align-items-center row">
                     <div class="col-lg-3 col-md-4 d-md-block d-none text-left">
                         <a class="footer__logo" href="/">
-                            <img alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" src="<?= $assets . $siteConfig['theme']; ?>/img/brands/delonghi/logo.png"> 
+                            <img alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" src="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/logo.svg"> 
                         </a> 
                     </div>
                     <div class="col-lg-6 col-md-4"></div>

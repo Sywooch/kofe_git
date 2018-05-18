@@ -1,0 +1,203 @@
+a{
+     color:#148c81;
+}
+ a:hover{
+     color:#0d5f57;
+}
+ .intro{
+     background-color: #148c81;
+}
+ .faults__item-prices .price {
+     background-color:#148c81;
+}
+ .btn-outline-primary {
+     color:#148c81;
+     border-color:#148c81 
+}
+ .btn-outline-primary:hover{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .warranty__image:before{
+     background-color:#148c81;
+}
+ .btn-primary{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .btn-primary:hover{
+     background-color:#148c81;
+     border-color:#0d5f57 
+}
+ .btn-primary:focus,.btn-primary.focus{
+     box-shadow:0 0 0 .2rem rgba(13, 95, 87, 0.82)
+}
+ .btn-primary.disabled,.btn-primary:disabled{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{
+     background-color:#0d5f57;
+     border-color:#0d5f57 
+}
+ .btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{
+     box-shadow:0 0 0 .2rem rgba(13, 95, 87, 0.82)
+}
+ .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#148c81 
+}
+ .custom-control-input:focus ~ .custom-control-label::before{
+     box-shadow:0 0 0 1px #fff,0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#148c81 
+}
+ .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before{
+     background-color:#148c81 
+}
+ .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(13, 95, 87, 0.82)
+}
+ .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+     background-color:rgba(13, 95, 87, 0.82)
+}
+ .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#148c81 
+}
+ .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(13, 95, 87, 0.82)
+}
+ .custom-file-input:focus ~ .custom-file-control{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+     background-color:#148c81 
+}
+ .page-link{
+     color:#148c81;
+}
+ .page-link:hover{
+     color:#0d5f57;
+}
+ .page-link:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+.form-control:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .page-item.active .page-link{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .badge-primary{
+     background-color:#148c81 
+}
+ .badge-primary[href]:hover,.badge-primary[href]:focus{
+     background-color:#0d5f57 
+}
+ .alert-primary{
+     color:#148c81;
+}
+ .alert-primary .alert-link{
+     color:#148c81 
+}
+ .list-group-item.active{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .list-group-item-primary{
+     color:#148c81;
+}
+ .list-group-item-primary.list-group-item-action:hover,.list-group-item-primary.list-group-item-action:focus{
+     color:#148c81;
+}
+ .list-group-item-primary.list-group-item-action.active{
+     background-color:#148c81;
+     border-color:#148c81 
+}
+ .bg-primary{
+     background-color:#148c81 !important 
+}
+ a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus{
+     background-color:#0d5f57 !important 
+}
+ .border-primary{
+     border-color:#148c81 !important 
+}
+ .text-primary{
+     color:#148c81 !important 
+}
+ a.text-primary:hover,a.text-primary:focus{
+     color:#0d5f57 !important 
+}
+ .template-page header,.template-fault header,.template-service header{
+     background-color:#148c81;
+}
+ .sidebar-toggle__option.active:before{
+     background:#148c81 
+}
+ .sidebar-toggle__option:hover:before{
+     background:#148c81 
+}
+ .sidebar-collapse{
+     background:#0d5f57;
+}
+ .sidebar-collapse a:hover:before{
+     background:#148c81 
+}
+ .sidebar-collapse a.active{
+     background:#148c81;
+}
+ .content__fault-icon{
+     background:#148c81;
+}
+ .content__service-icon{
+     background:#148c81;
+}
+ .content__pricebox{
+     background:#148c81;
+}
+ .models-list__letter{
+     background:#148c81;
+}
+ .callback{
+     background-color:#148c81;
+}
+ .promo__countdown-circle .e-c-progress{
+     stroke:#148c81;
+}
+ .promo__countdown-circle .e-c-pointer{
+     fill:#148c81 
+}
+ .promo__countdown-time{
+     color:#148c81 
+}
+ .footer__phone a:hover{
+     background:#148c81 
+}
+ .footer__divider{
+     background:#148c81 
+}
+.callback{
+    background-image: url("../../../img/brands/cimbali/callback-bg.png"), url("../../../img/about-bg.png");
+}
+.content__fault-image,
+.content__service-image{
+    background-image :url("../../../img/brands/cimbali/fault__image.png");
+}
+.faults__item.item-first{
+    background-image:url("../../../img/brands/cimbali/faults__item-first.jpg");
+}
+.intro__preview{
+    background-image:url("../../../img/brands/cimbali/intro__model.png");
+}
+.promo{
+    background-image:url("../../../img/brands/cimbali/promo-bg.jpg");
+}
+.warranty__image:after{
+    background-image:url("../../../img/brands/cimbali/warranty-bg.png");
+}

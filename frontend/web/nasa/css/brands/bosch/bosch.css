@@ -1,0 +1,202 @@
+a{
+     color:#005691;
+}
+ a:hover{
+     color:#24488f;
+}
+ .intro{
+    background: url("../../../img/brands/bosch/bg.svg");
+    background-size:100%;
+    background-position: top;
+}
+ .faults__item-prices .price {
+     background-color:#005691;
+}
+ .btn-outline-primary {
+     color:#005691;
+     border-color:#005691 
+}
+ .btn-outline-primary:hover{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .warranty__image:before{
+     background-color:#005691;
+}
+ .btn-primary{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .btn-primary:hover{
+     background-color:#144b71;
+     border-color:#2952a4 
+}
+ .btn-primary:focus,.btn-primary.focus{
+     box-shadow:0 0 0 .2rem rgba(52,103,204,0.5) 
+}
+ .btn-primary.disabled,.btn-primary:disabled{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{
+     background-color:#2952a4;
+     border-color:#274d9a 
+}
+ .btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{
+     box-shadow:0 0 0 .2rem rgba(52,103,204,0.5) 
+}
+ .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#005691 
+}
+ .custom-control-input:focus ~ .custom-control-label::before{
+     box-shadow:0 0 0 1px #fff,0 0 0 .2rem rgba(52,103,204,0.25) 
+}
+ .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#005691 
+}
+ .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before{
+     background-color:#005691 
+}
+ .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(52,103,204,0.5) 
+}
+ .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+     background-color:rgba(52,103,204,0.5) 
+}
+ .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#005691 
+}
+ .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(52,103,204,0.5) 
+}
+ .custom-file-input:focus ~ .custom-file-control{
+     box-shadow:0 0 0 .2rem rgba(52,103,204,0.25) 
+}
+ .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+     background-color:#005691 
+}
+ .page-link{
+     color:#005691;
+}
+ .page-link:hover{
+     color:#24488f;
+}
+ .page-link:focus{
+     box-shadow:0 0 0 .2rem rgba(52,103,204,0.25) 
+}
+ .page-item.active .page-link{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .badge-primary{
+     background-color:#005691 
+}
+ .badge-primary[href]:hover,.badge-primary[href]:focus{
+     background-color:#2952a4 
+}
+ .alert-primary{
+     color:#1b366a;
+}
+ .alert-primary .alert-link{
+     color:#112141 
+}
+ .list-group-item.active{
+     background-color:#005691;
+     border-color:#005691 
+}
+ .list-group-item-primary{
+     color:#1b366a;
+}
+ .list-group-item-primary.list-group-item-action:hover,.list-group-item-primary.list-group-item-action:focus{
+     color:#1b366a;
+}
+ .list-group-item-primary.list-group-item-action.active{
+     background-color:#1b366a;
+     border-color:#1b366a 
+}
+ .bg-primary{
+     background-color:#005691 !important 
+}
+ a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus{
+     background-color:#2952a4 !important 
+}
+ .border-primary{
+     border-color:#005691 !important 
+}
+ .text-primary{
+     color:#005691 !important 
+}
+ a.text-primary:hover,a.text-primary:focus{
+     color:#2952a4 !important 
+}
+ .template-page header,.template-fault header,.template-service header{
+    background-color: #116ca5;
+}
+ .sidebar-toggle__option.active:before{
+     background:#005691 
+}
+ .sidebar-toggle__option:hover:before{
+     background:#005691 
+}
+ .sidebar-collapse{
+     background:#2e5db8;
+}
+ .sidebar-collapse a:hover:before{
+     background:#005691 
+}
+ .sidebar-collapse a.active{
+     background:#005691;
+}
+ .content__fault-icon{
+     background:#005691;
+}
+ .content__service-icon{
+     background:#005691;
+}
+ .content__pricebox{
+     background:#005691;
+}
+ .models-list__letter{
+     background:#005691;
+}
+ .callback{
+     background-color:#10669d;
+}
+ .promo__countdown-circle .e-c-progress{
+     stroke:#005691;
+}
+ .promo__countdown-circle .e-c-pointer{
+     fill:#005691 
+}
+ .promo__countdown-time{
+     color:#005691 
+}
+ .footer__phone a:hover{
+     background:#005691 
+}
+ .footer__divider{
+     background:#005691 
+}
+.callback{
+    background-image: url("../../../img/brands/bosch/callback-bg.png"), url("../../../img/about-bg.png");
+}
+.content__fault-image,
+.content__service-image{
+    background-image :url("../../../img/brands/bosch/fault__image.png");
+}
+.faults__item.item-first{
+    background-image:url("../../../img/brands/bosch/faults__item-first.jpg");
+}
+.intro__preview{
+    background-image:url("../../../img/brands/bosch/intro__model.png");
+}
+.promo{
+    background-image:url("../../../img/brands/bosch/promo-bg.jpg");
+}
+.warranty__image:after{
+    background-image:url("../../../img/brands/bosch/warranty-bg.png");
+}

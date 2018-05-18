@@ -1,0 +1,203 @@
+a{
+     color:#9e2e54;
+}
+ a:hover{
+     color:#71213c;
+}
+ .intro{
+     background-color: #9e2e54;
+}
+ .faults__item-prices .price {
+     background-color:#9e2e54;
+}
+ .btn-outline-primary {
+     color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .btn-outline-primary:hover{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .warranty__image:before{
+     background-color:#9e2e54;
+}
+ .btn-primary{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .btn-primary:hover{
+     background-color:#9e2e54;
+     border-color:#71213c 
+}
+ .btn-primary:focus,.btn-primary.focus{
+     box-shadow:0 0 0 .2rem rgba(113, 33, 60, 0.68)
+}
+ .btn-primary.disabled,.btn-primary:disabled{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{
+     background-color:#71213c;
+     border-color:#71213c 
+}
+ .btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-primary.dropdown-toggle:focus{
+     box-shadow:0 0 0 .2rem rgba(113, 33, 60, 0.68)
+}
+ .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#9e2e54 
+}
+ .custom-control-input:focus ~ .custom-control-label::before{
+     box-shadow:0 0 0 1px #fff,0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#9e2e54 
+}
+ .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before{
+     background-color:#9e2e54 
+}
+ .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(113, 33, 60, 0.68)
+}
+ .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before{
+     background-color:rgba(113, 33, 60, 0.68)
+}
+ .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+     background-color:#9e2e54 
+}
+ .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before{
+     background-color:rgba(113, 33, 60, 0.68)
+}
+ .custom-file-input:focus ~ .custom-file-control{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .nav-pills .nav-link.active,.nav-pills .show>.nav-link{
+     background-color:#9e2e54 
+}
+ .page-link{
+     color:#9e2e54;
+}
+ .page-link:hover{
+     color:#71213c;
+}
+ .page-link:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+.form-control:focus{
+     box-shadow:0 0 0 .2rem rgba(154,8,9,0.25) 
+}
+ .page-item.active .page-link{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .badge-primary{
+     background-color:#9e2e54 
+}
+ .badge-primary[href]:hover,.badge-primary[href]:focus{
+     background-color:#71213c 
+}
+ .alert-primary{
+     color:#9e2e54;
+}
+ .alert-primary .alert-link{
+     color:#9e2e54 
+}
+ .list-group-item.active{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .list-group-item-primary{
+     color:#9e2e54;
+}
+ .list-group-item-primary.list-group-item-action:hover,.list-group-item-primary.list-group-item-action:focus{
+     color:#9e2e54;
+}
+ .list-group-item-primary.list-group-item-action.active{
+     background-color:#9e2e54;
+     border-color:#9e2e54 
+}
+ .bg-primary{
+     background-color:#9e2e54 !important 
+}
+ a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus{
+     background-color:#71213c !important 
+}
+ .border-primary{
+     border-color:#9e2e54 !important 
+}
+ .text-primary{
+     color:#9e2e54 !important 
+}
+ a.text-primary:hover,a.text-primary:focus{
+     color:#71213c !important 
+}
+ .template-page header,.template-fault header,.template-service header{
+     background-color:#9e2e54;
+}
+ .sidebar-toggle__option.active:before{
+     background:#9e2e54 
+}
+ .sidebar-toggle__option:hover:before{
+     background:#9e2e54 
+}
+ .sidebar-collapse{
+     background:#71213c;
+}
+ .sidebar-collapse a:hover:before{
+     background:#9e2e54 
+}
+ .sidebar-collapse a.active{
+     background:#9e2e54;
+}
+ .content__fault-icon{
+     background:#9e2e54;
+}
+ .content__service-icon{
+     background:#9e2e54;
+}
+ .content__pricebox{
+     background:#9e2e54;
+}
+ .models-list__letter{
+     background:#9e2e54;
+}
+ .callback{
+     background-color:#9e2e54;
+}
+ .promo__countdown-circle .e-c-progress{
+     stroke:#9e2e54;
+}
+ .promo__countdown-circle .e-c-pointer{
+     fill:#9e2e54 
+}
+ .promo__countdown-time{
+     color:#9e2e54 
+}
+ .footer__phone a:hover{
+     background:#9e2e54 
+}
+ .footer__divider{
+     background:#9e2e54 
+}
+.callback{
+    background-image: url("../../../img/brands/miele/callback-bg.png"), url("../../../img/about-bg.png");
+}
+.content__fault-image,
+.content__service-image{
+    background-image :url("../../../img/brands/miele/fault__image.png");
+}
+.faults__item.item-first{
+    background-image:url("../../../img/brands/miele/faults__item-first.jpg");
+}
+.intro__preview{
+    background-image:url("../../../img/brands/miele/intro__model.png");
+}
+.promo{
+    background-image:url("../../../img/brands/miele/promo-bg.jpg");
+}
+.warranty__image:after{
+    background-image:url("../../../img/brands/miele/warranty-bg.png");
+}

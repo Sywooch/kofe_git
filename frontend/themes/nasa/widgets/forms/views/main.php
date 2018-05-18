@@ -14,7 +14,7 @@ $form = ActiveForm::begin([
         ]);
 ?>
 <div class=row>
-    <div class="col-lg-6 col-md-9 col-xl-5">
+    <div class="col-lg-6 col-md-9 col-xl-6">
         <div class=form-group>
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
@@ -28,7 +28,7 @@ $form = ActiveForm::begin([
             ?>
         </div>
     </div>
-    <div class="col-lg-6 col-md-9 col-xl-5">
+    <div class="col-lg-6 col-md-9 col-xl-6">
         <?= Html::submitButton('Заказать со скидкой', ['class' => 'btn btn-block btn-dark', 'type' => 'submit']) ?>
     </div>
 </div>
