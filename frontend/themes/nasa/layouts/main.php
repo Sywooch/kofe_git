@@ -34,8 +34,8 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/main.css" rel=stylesheet>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brands/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>.css" rel=stylesheet>   
+        <link href="/cssAction?file=<?= $assets . $siteConfig['theme']; ?>/css/main.css&cache=0" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brands/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>.css&cache=0" rel=stylesheet>   
     </head>
     <body class="brand-<?= $siteConfig['sitePrefix']; ?> template-<?= $bodyClass; ?>">
         <?php $this->beginBody() ?>
