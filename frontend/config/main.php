@@ -68,6 +68,7 @@ return [
                 'models' => 'list/all-models',
                 'model-delete' => 'model/delete',
                 'order-send' => 'page/send',
+                'order-send-cron' => 'page/send-to-claris',
                 'reviews-get' => 'review/get',
                 'site/validate' => 'site/validate',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],

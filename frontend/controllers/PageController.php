@@ -18,16 +18,41 @@ class PageController extends CController {
 
     public function actionSend() {
         if (Yii::$app->request->isAjax && isset($_POST['phone']) && isset($_POST['title'])) {
-            //self::sendToRoistat($_POST['phone'], $_POST['title']);
+            $userIP = Yii::$app->getRequest()->getUserIP();
+            $connection = Yii::$app->db;
+            $connection->createCommand()->insert('yu_orders', [
+                'phone' => $_POST['phone'],
+                'date' => date('Y-m-d H:i:s'),
+                'ip' => $userIP,
+                'site' => Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo,
+                'page' => 'bk',
+            ])->execute();
             Yii::$app->end();
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
 
+    public function actionSendToClaris() {        echo 'asd';exit;
+        $sql = 'SELECT * FROM yu_orders WHERE date < DATE_SUB(NOW(), INTERVAL 3 MINUTE) AND page = \'bk\'';
+        $connection = Yii::$app->db;
+        $rows = $connection->createCommand($sql)->queryAll();
+        if (!empty($rows)) {
+            foreach ($rows as $row) {
+                $phone = $row['phone'];
+                $sql = 'SELECT id FROM yu_orders WHERE page != \'bk\' AND phone = \'' . $phone . '\' AND date >= NOW() - INTERVAL 1 DAY';
+                $order = $connection->createCommand($sql)->queryOne();
+                if (!$order) {
+                    CController::sendToRoistat($phone, 'Брошенная корзина');
+                }
+                $connection->createCommand('DELETE FROM yu_orders WHERE id = ' . $row['id'])->execute();
+            }
+        }
+    }
+
     protected function parseJs($jsPath, $siteConfig, $replace = false) {
-        if(!$replace) {
-            return JSMin::minify(file_get_contents($jsPath));;
+        if (!$replace) {
+            return JSMin::minify(file_get_contents($jsPath));            
         }
         $fileContent = '';
         $fp = fopen($jsPath, "r") or die("не удалось прочесть");
@@ -64,7 +89,7 @@ class PageController extends CController {
             $replaceFiles = explode(',', $replaceFiles);
             foreach ($files as $key => $file) {
                 $jsPath = Yii::getAlias('@frontend') . '/web/' . $path . '/' . $file;
-                $replace = in_array($key, $replaceFiles) ? true : false;                
+                $replace = in_array($key, $replaceFiles) ? true : false;
                 $fileContent .= $this->parseJs($jsPath, $siteConfig, $replace);
             }
         } else {

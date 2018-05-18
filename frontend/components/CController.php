@@ -10,6 +10,24 @@ class CController extends \yii\web\Controller {
     public static $monoBrand = null;
     public static $js;
     public static $category;
+    public $clarisOIDS = [
+        'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
+        'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
+        'МСК Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
+        'MSK - Моно2' => ['name' => 'MONO2_MSK', 'OID' => 2200626170000],
+        'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
+        'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
+        'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
+        'help' => ['name' => 'MSKM3', 'OID' => 2202775576000],
+        'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
+        'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
+        'multicat_xiaomi_spb' => ['name' => 'SPBS2', 'OID' => 2202776480000],
+        'multicat_ifixme_msk' => ['name' => 'MSKS3', 'OID' => 2202775572000],
+        'multicat_ifixme_spb' => ['name' => 'SPBS3', 'OID' => 2202776490000],
+        'remont_coffee' => ['name' => 'MSKM5', 'OID' => 2207167003000],
+        'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
+        'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
+    ];
 
     public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
@@ -205,27 +223,10 @@ class CController extends \yii\web\Controller {
         $usersChannel = '-1001322968311';
         $coffeeSites = ['multicat_xiaomi_msk', 'multicat_xiaomi_spb', 'multicat_ifixme_spb', 'multicat_ifixme_msk'];
         if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], $coffeeSites)) {
-            $clarisOIDS = [
-                'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
-                'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
-                'МСК Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
-                'MSK - Моно2' => ['name' => 'MONO2_MSK', 'OID' => 2200626170000],
-                'СПБ Садовая' => ['name' => 'SC1_SPB', 'OID' => 2200626187000],
-                'СПБ ТЦ ПИК' => ['name' => 'MONO1_SPB', 'OID' => 2200626193000],
-                'fixkofe' => ['name' => 'SC1_SPB', 'OID' => 2202778296000],
-                'help' => ['name' => 'MSKM3', 'OID' => 2202775576000],
-                'support' => ['name' => 'SC1_SPB', 'OID' => 2202778302000],
-                'multicat_xiaomi_msk' => ['name' => 'MSKS1', 'OID' => 2200626170000],
-                'multicat_xiaomi_spb' => ['name' => 'SPBS2', 'OID' => 2202776480000],
-                'multicat_ifixme_msk' => ['name' => 'MSKS3', 'OID' => 2202775572000],
-                'multicat_ifixme_spb' => ['name' => 'SPBS3', 'OID' => 2202776490000],
-                'remont_coffee' => ['name' => 'MSKM5', 'OID' => 2207167003000],
-                'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
-                'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
-            ];
+
             $OID = 0;
-            if (isset($clarisOIDS[$siteConfig['order-title']]))
-                $OID = $clarisOIDS[$siteConfig['order-title']]['OID'];
+            if (isset($this->clarisOIDS[$siteConfig['order-title']]))
+                $OID = $this->clarisOIDS[$siteConfig['order-title']]['OID'];
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,

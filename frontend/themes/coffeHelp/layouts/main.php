@@ -255,7 +255,8 @@ $js = app\components\CController::$js;
         $roistat_n = '25,26';
     }
     ?>
-    <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];(function (w, d, s, h, id) {
+    <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
+        (function (w, d, s, h, id) {
             w.roistatProjectId = id;
             w.roistatHost = h;
             var p = d.location.protocol == "https:" ? "https://" : "http://";
@@ -471,20 +472,29 @@ if (Yii::$app->session->getFlash('success')) {
     </a>
 </div>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
+
+        $('body').on("keyup", "input[type=tel]", function () {
+            var v = $(this).val().substring(4, 6);
+            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+            }
+        });
+
         var i = 0;
 
         function yved() {
             i = 1;
             $('.yved:nth-child(' + i + ')').fadeIn(500).delay(4000).fadeOut(500);
         }
-        setTimeout(function() {
+        setTimeout(function () {
             setInterval(
-                function() {
-                    i = i + 1;
-                    if (i > 12) i = 1;
-                    $('.yved:nth-child(' + i + ')').fadeIn(1000).delay(4000).fadeOut(300);
-                }, 18000);
+                    function () {
+                        i = i + 1;
+                        if (i > 12)
+                            i = 1;
+                        $('.yved:nth-child(' + i + ')').fadeIn(1000).delay(4000).fadeOut(300);
+                    }, 18000);
             yved();
         }, 10000);
     });
