@@ -23,6 +23,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
     $bodyClass = 'page';
 
 ?>
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,7 +35,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
         <?php $this->head() ?>
         <link href="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>
         <link href="<?= $assets . $siteConfig['theme']; ?>/css/main.css" rel=stylesheet>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brands/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>.css" rel=stylesheet>
+        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brands/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>.css" rel=stylesheet>   
     </head>
     <body class="brand-<?= $siteConfig['sitePrefix']; ?> template-<?= $bodyClass; ?>">
         <?php $this->beginBody() ?>
@@ -180,7 +181,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
-        <script defer src="<?= $assets . $siteConfig['theme']; ?>/js/main.js"></script>
+        <script defer src="/jsAction?files=main.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=1&cache=0"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
@@ -191,3 +192,4 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
     </body>
 </html>
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>
