@@ -221,6 +221,7 @@ class CController extends \yii\web\Controller {
                 'multicat_ifixme_spb' => ['name' => 'SPBS3', 'OID' => 2202776490000],
                 'remont_coffee' => ['name' => 'MSKM5', 'OID' => 2207167003000],
                 'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
+                'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
             ];
             $OID = 0;
             if (isset($clarisOIDS[$siteConfig['order-title']]))
@@ -283,11 +284,11 @@ class CController extends \yii\web\Controller {
             $msg .= "\r\nE-mail: " . $email;
         $msg .= "\r\nСтраница: " . $title;
         $msg .= "\r\nАйпи: " . $userIP;
-        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], $coffeeSites))
             self::sendMessage("Телефон: " . $usersPhone . $msg, $usersChannel);
         $msg .= "\r\nСайт: " . Yii::$app->request->hostInfo;
 
-        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], ['multicat_xiaomi_msk']))
+        if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], $coffeeSites))
             self::sendMessage("Телефон: " . $phone . $msg, $adminsChannel);
         else {
             self::sendMessage("Телефон: " . $phone . $msg, '@site_orders');

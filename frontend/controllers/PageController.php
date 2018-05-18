@@ -25,6 +25,58 @@ class PageController extends CController {
         }
     }
 
+    protected function parseJs($jsPath, $siteConfig, $replace = false) {
+        if(!$replace) {
+            return JSMin::minify(file_get_contents($jsPath));;
+        }
+        $fileContent = '';
+        $fp = fopen($jsPath, "r") or die("не удалось прочесть");
+        while (!feof($fp)) {
+            $line = fgets($fp);
+            $line = preg_replace_callback(
+                    '/\$\(\"([^\"]+)\"/', function ($matches) use($siteConfig) {
+                $l = [];
+                if (isset($matches[1])) {
+                    $ms = explode(' ', $matches[1]);
+                    if (!empty($ms)) {
+                        foreach ($ms as $m) {
+                            $l[] = str_replace('.', '.' . $siteConfig['sitePrefix'], $m);
+                        }
+                    }
+                }
+                return '$("' . implode(' ', $l) . '"';
+            }, $line
+            );
+            $pr = $siteConfig['sitePrefix'];
+            $fileContent .= str_replace(['removeClass("', 'addClass("', 'hasClass("'], ['removeClass("' . $pr, 'addClass("' . $pr, 'hasClass("' . $pr], $line);
+        }
+        fclose($fp);
+        return JSMin::minify($fileContent);
+    }
+
+    public function actionGetJs($files, $path, $replaceFiles, $cache = 0) {
+        if (empty($files) || empty($path) || empty($replaceFiles))
+            return false;
+        $siteConfig = self::getSiteConfig();
+        $fileContent = '';
+        if (strpos($files, ',') !== false) {
+            $files = explode(',', $files);
+            $replaceFiles = explode(',', $replaceFiles);
+            foreach ($files as $key => $file) {
+                $jsPath = Yii::getAlias('@frontend') . '/web/' . $path . '/' . $file;
+                $replace = in_array($key, $replaceFiles) ? true : false;                
+                $fileContent .= $this->parseJs($jsPath, $siteConfig, $replace);
+            }
+        } else {
+            $jsPath = Yii::getAlias('@frontend') . '/web/' . $path . '/' . $files;
+            $fileContent .= $this->parseJs($jsPath, $siteConfig, ($replaceFiles == -1 ? false : true));
+        }
+
+        header("Content-Type: application/javascript");
+        echo $fileContent;
+        exit;
+    }
+
     public function actionGetCss($file, $cache = 0) {
         $siteConfig = self::getSiteConfig();
         $cssPath = Yii::getAlias('@frontend') . '/web' . $file;
@@ -48,7 +100,8 @@ class PageController extends CController {
         }
         $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
         file_put_contents($cachedFile, $css);
-        echo str_replace('../', $siteConfig['sitePrefix'] . '/', $css);
+        header("Content-Type: text/css");
+        echo str_replace('../', (isset($siteConfig['theme']) ? $siteConfig['theme'] : $siteConfig['sitePrefix']) . '/', $css);
         Yii::$app->end();
     }
 
@@ -240,7 +293,7 @@ class PageController extends CController {
                         ELSE m.title
                     END) as model_title, m.parent FROM {{%pages}} m left join {{%pages}} b on b.id = m.parent WHERE m.active = 1 AND m.url != \'/\' ORDER BY m.id';
         $pages = Yii::$app->db->createCommand($sql)->queryAll();
-        
+
         $hostname = Yii::$app->request->hostInfo;
         $urls = [];
         foreach ($pages as $key => $page) {
@@ -261,7 +314,7 @@ class PageController extends CController {
         return $urls;
     }
 
-    private function getUrls($siteConfig) {        
+    private function getUrls($siteConfig) {
         $sql = 'SELECT m.url, m.type, m.id, m.title, (
                     CASE 
                         WHEN b.title = \'Все бренды\' THEN m.title        
@@ -557,7 +610,7 @@ class PageController extends CController {
         foreach ($services as $service) {
             $urls[] = $service['url'];
         }
-        if (count($urls) <= $per) {            
+        if (count($urls) <= $per) {
             $xmlIndex = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
             $url = $xmlIndex->addChild('url');
             $url->addChild('loc', $hostname);

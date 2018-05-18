@@ -2478,7 +2478,7 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'tnv',
-            'order-title' => 'tnv',
+            'order-title' => 'tnv_spb',
             'sitemap' => ['disableServicePage' => true]
         ],
         'love-kofe' => [
@@ -2647,6 +2647,17 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'nasa',
+        ],
+        'new-site' => [
+            'phone-1' => '8 (495) 152-00-02',
+            'phone-2' => '8 (812) 643-21-07',            
+            'mono' => true,
+            'brand-id' => 13368,
+            'id' => 161,
+            'sitePrefix' => 'bork',            
+            'category_id' => 7,
+            'order-title' => 'МСК Войковская',
+            'theme' => 'satelit',
         ],
     ]
 ];
