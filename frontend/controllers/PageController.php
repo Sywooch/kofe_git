@@ -33,7 +33,7 @@ class PageController extends CController {
         }
     }
 
-    public function actionSendToClaris() {        echo 'asd';exit;
+    public function actionSendToClaris() {
         $sql = 'SELECT * FROM yu_orders WHERE date < DATE_SUB(NOW(), INTERVAL 3 MINUTE) AND page = \'bk\'';
         $connection = Yii::$app->db;
         $rows = $connection->createCommand($sql)->queryAll();
