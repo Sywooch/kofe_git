@@ -10,7 +10,7 @@ class CController extends \yii\web\Controller {
     public static $monoBrand = null;
     public static $js;
     public static $category;
-    public $clarisOIDS = [
+    public static $clarisOIDS = [
         'МСК Заречная' => ['name' => 'SC1_MSK', 'OID' => 2200626151000],
         'МСК Войковская' => ['name' => 'MONO1_MSK', 'OID' => 2200626167000],
         'МСК Студенческая' => ['name' => 'SC2_MSK', 'OID' => 2200626169000],
@@ -225,8 +225,8 @@ class CController extends \yii\web\Controller {
         if ($siteConfig['category_id'] == 7 || in_array($siteConfig['order-title'], $coffeeSites)) {
 
             $OID = 0;
-            if (isset($this->clarisOIDS[$siteConfig['order-title']]))
-                $OID = $this->clarisOIDS[$siteConfig['order-title']]['OID'];
+            if (isset(self::$clarisOIDS[$siteConfig['order-title']]))
+                $OID = self::$clarisOIDS[$siteConfig['order-title']]['OID'];
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $phone,
