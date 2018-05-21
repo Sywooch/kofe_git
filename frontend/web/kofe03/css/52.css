@@ -15,7 +15,7 @@
 .steps_context .steps__text,
 .faq__item:hover .faq__head,
 .stock__label {
- 	color: #333;
+    color: #333;
  }
  .text-warning,
  .form__textarea.error ~ .form__label,
@@ -24,7 +24,6 @@
  .color-red,
  .pagination li a:hover,
  .pagination li.active a,
- .menu__tab_active .menyu-tip,
  .cnct_ph a[href^="tel"],
  .padval a.connect__email,
   .padval a:hover,
@@ -50,9 +49,10 @@
  }
  .Menyu-tb-neispravnosti.menu__tab_active .menyu-icon-put,
  .menyu-tab-r.menu__tab_active .menyu-icon-put,
- .menyu_t_nic.menu__tab_active .menyu-icon-put {
-     fill: #dfa81b;
-     stroke: #dfa81b;
+  .menyu_t_nic.menu__tab_active .menyu-icon-put,
+.menyu_t_cl.menu__tab_active .menyu-icon-put {
+     fill: #301d0f;
+     stroke: #301d0f;
  }
  .Brkg-point {
      box-shadow: 0 0 0 6px #dfa81b;
@@ -190,7 +190,6 @@
 {
     fill: #ebb21c;
 }
-.menyu_t_cl.menu__tab_active .menyu-icon-put,
 .footer__tab_cleaning .footer__type:hover .footer__ico-path
 {
     fill: #ebb21c;
@@ -210,13 +209,13 @@
 
 
 .Menyu-pan .menyu_in {
-	background: none;
+    background: none;
 }
 
 .menyu:before,
 .Padval-nav,
 .padval:before {
-	border-color: #402715;
+    border-color: #402715;
 }
 .menyu {
     border: 0px ! important;
@@ -226,33 +225,33 @@
     stroke: #fff;
 }
 .cnct_h {
-	top: 5px;
+    top: 5px;
 }
 .head_s {
-	top: 8px;
+    top: 8px;
 }
 .menu_active .Menyu-pan {
-	background: #fff;
+    background: #fff;
 }
 .menyu-tip,
 .padval,
 .padval .cnct_sche,
 .Comp-txt {
-	color: #d4d4d4;
+    color: #d4d4d4;
 }
 .padval {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 .padval:before
 {
     background: url('../images/footer_decor.png') repeat-x 50% 100%;
 }
 .ommabob__tortburchagi .ommabob__matinlari, .ommabob__jisim_active .ommabob__matinlari {
-	    background: #301d0f;
-	    background: rgba(48, 29, 15, 0.48);
+        background: #301d0f;
+        background: rgba(48, 29, 15, 0.48);
 }
 .ommabob__tortburchagi:hover .ommabob__matinlari {
-	background: rgba(48, 29, 15, 0.81);
+    background: rgba(48, 29, 15, 0.81);
 }
 
 
@@ -283,14 +282,14 @@
 .consultation__prev:hover,
 .brands__prev:hover
 {
-    background-image: url('../images/j/arrow_left_active6170.svg?v=1485504369723');
+    background-image: url('../images/arrow_left_active6170.svg');
 }
 .reviews__next:hover,
 .articles__next:hover,
 .consultation__next:hover,
 .brands__next:hover
 {
-    background-image: url('../images/j/arrow_right_active6170.svg?v=1485504369723');
+    background-image: url('../images/arrow_right_active6170.svg?v=1485504369723');
 }
 .blog__details,
 .stock__details
@@ -342,14 +341,14 @@
     .poseter h1,
     .poseter p 
     {
-    	color: #333;
+        color: #333;
     }
 }
 
 .sidebar__item.active .sidebar__link, .sidebar__link:hover {
-	background-color: #301d0f;
-	color: #fff;
-	border-color: #ebb21c;
+    background-color: #301d0f;
+    color: #fff;
+    border-color: #ebb21c;
 }
 .rating-container .empty-stars {
     color: #301d0f;
@@ -364,10 +363,6 @@
     fill: #196ae0;
 }
 
-.gorad-text:after {
-    content: 'в Санкт-Петербурге';
-    margin-left: 10px;
-}
 .poseter h1 {
     color: #301d0f;
 }
@@ -380,6 +375,8 @@
 .Padval-corp a {
     color: #dfa81b;
 }
+
+
 
 
 .gl-text-gorad:before {
