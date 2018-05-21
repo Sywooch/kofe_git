@@ -607,7 +607,7 @@ html.remodal-is-locked{
 .caller .modal-body{
     padding:0
 }
-.caller h3{
+.caller .h3{
     color:#3c3f3e;
     font-family:'Proxima Nova Bold',Arial;
     font-size:21px;

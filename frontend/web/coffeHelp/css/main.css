@@ -6896,7 +6896,7 @@
      border: 3px solid #fff;
      border-top: none 
 }
- .row.sub-level h3 {
+ .row.sub-level .h3 {
      margin-left: 0;
      margin-bottom: 30px;
      padding-bottom: 0;
@@ -6910,7 +6910,7 @@
      display: inline-block;
      float: left 
 }
- .row.sub-level h3 span {
+ .row.sub-level .h3 span {
      font-weight: 700 
 }
  .row.sub-level img {
@@ -9128,7 +9128,7 @@
  .docs section.order {
      margin-top: 40px 
 }
- .docs section.order .order_form h3 {
+ .docs section.order  .order_form .h3 {
      color: #4c5052;
      font-family: 'Proxima Nova Light', Arial;
      font-size: 28px;
@@ -9146,7 +9146,7 @@
         width: 100%;
      }
 }
- .order_form h3 {
+ .order_form .h3 {
      margin-top: 0;
      font-weight: lighter;
      line-height: 32px;
@@ -9155,20 +9155,20 @@
      font-family: 'Proxima Nova Regular' , sans-serif;
 }
 @media (max-width: 1250px) {
-     .order_form h3 {
+      .order_form .h3 {
         margin-bottom: 25px;
         line-height: 22px;
      }
 }
 @media (max-width: 960px) {
-     .order_form h3 {
+      .order_form .h3 {
         text-align: center;
         margin: 15px 10px;
         display: inline-block;
      }
 }
 @media (max-width: 480px) {
-     .order_form h3 {
+      .order_form .h3 {
         font-size: 18px;
      }
 }
@@ -9570,7 +9570,7 @@ body section.offer p.text {
  .panel-body .bg_line, section.who_main .row.service3>div, section.who_main .row.service3>div .panel-body {
      transition: .2s ease 
 }
- .row.sub-level h3 {
+ .row.sub-level .h3 {
      float: right;
      padding-top: 0;
      margin-top: 40px;
@@ -9582,18 +9582,18 @@ body section.offer p.text {
      padding: 0;
      margin-left: 22px 
 }
- .row.sub-level h3 span {
+ .row.sub-level .h3 span {
      display: block;
      margin-top: -5px;
      font-size: 24px;
      font-family: 'Proxima Nova Bold' 
 }
 @media (max-width: 960px) {
-     .row.sub-level h3 span {
+     .row.sub-level .h3 span {
         font-size: 18px;
      }
 }
- .row.sub-level h3 i {
+ .row.sub-level .h3 i {
      font-style: normal;
      font-size: 24px;
      display: block;
@@ -9720,7 +9720,7 @@ body section.offer p.text {
  .seo-text-main h3 {
      margin-top: 60px 
 }
- .row.sub-level h3 {
+ .row.sub-level .h3 {
      margin-top: 40px;
      margin-bottom: 16px 
 }
@@ -9752,7 +9752,7 @@ body section.offer p.text {
     }
 }
 @media (max-width: 960px) {
-    .row.sub-level h3 i {
+    .row.sub-level .h3 i {
         font-size: 14px;
     }
 .row.sub-level .col-sm-4 p {
@@ -9864,22 +9864,22 @@ body section.offer p.text {
      top: 150px;
      left: 30px 
 }
- .row.sub-level h3 {
+ .row.sub-level .h3 {
      width: 200px 
 }
 @media (max-width: 960px) {
-     .row.sub-level h3 {
+     .row.sub-level .h3 {
         width: 150px;
         margin-top: 18px;
      }
 }
 @media (max-width: 666px) {
-    .row.sub-level h3 {
+    .row.sub-level .h3 {
         width: 90%;
     }
 }
 @media (max-width: 480px) {
-    .row.sub-level h3 {
+    .row.sub-level .h3 {
         width: 85%;
     }
 }

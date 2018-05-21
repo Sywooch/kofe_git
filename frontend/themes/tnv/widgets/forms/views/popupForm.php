@@ -50,7 +50,7 @@ $form = ActiveForm::begin([
     </div>
 </div>
 
-<div id="vibrat-" tabindex="-1" role="dialog" class="modal iframe fade">
+<div id="vibrat-region" tabindex="-1" role="dialog" class="modal iframe fade">
     <div role="document" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -65,7 +65,7 @@ $form = ActiveForm::begin([
     </div>
 </div>
 
-<div id="vibrat-region" tabindex="-1" role="dialog" class="modal iframe fade">
+<div id="spasibo" tabindex="-1" role="dialog" class="modal iframe fade">
     <div role="document" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

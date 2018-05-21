@@ -64,7 +64,7 @@ $this->title = $title;
                     <br>
                     <section class="office-content">
                         <div class="office__inner">
-                            <h2 style="margin:20px 0 0 0;">Модели <?= $pageInfo['title']; ?></h2>
+                            <div class="h2" style="margin:20px 0 0 0;">Модели <?= $pageInfo['title']; ?></div>
                             <?= coffeHelp\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo]); ?>
                         </div>
                     </section>                    

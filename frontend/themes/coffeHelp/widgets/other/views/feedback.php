@@ -5,7 +5,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <aside class="complain">
     <div class="complain__inner">
         <div class="complain__box">
-            <h3 class="complain__title">Обратная<span class="br"></span> связь</h3>
+            <div class="h3 complain__title">Обратная<span class="br"></span> связь</div>
             <p class="complain__text">Если поломка произошла внезапно и вносит проблемы в Ваш быт, мы можем устранить её в кратчайшие сроки. Наш курьер заберёт неисправную кофемашину с любого района Москвы и максимально быстро доставит её в СЦ для ремонта.</p>
             <div class="complain__actions">
                 <a class="button button_warning js-popup" data-popup="request" href="#">

@@ -25,7 +25,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="breaking__content">
                 <div class="breaking__main">
                     <div class="breaking__column">
-                        <h3 class="breaking__label">Обычно ломается</h3>
+                        <div class="h3 breaking__label">Обычно ломается</div>
                         <ul class="breaking__list breaking__list_accordion">
                             <li class="breaking__item" data-breaking="01">
                                 <a class="breaking__name" href="#">Не работает</a>
@@ -107,7 +107,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </ul>
                     </div>
                     <div class="breaking__column">
-                        <h3 class="breaking__label">Чаще необходимо</h3>
+                        <div class="h3 breaking__label">Чаще необходимо</div>
                         <ul class="breaking__list">
                             <?php foreach ($rows as $row): ?>
                                 <li class="breaking__item"><?= $row['title']; ?> — <?= number_format($row['price'], 0, ' ', ' '); ?>&#160;₽</li>

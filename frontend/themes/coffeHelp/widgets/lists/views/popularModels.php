@@ -1,7 +1,7 @@
 <div class="bl-faults">
     <div class="bl-text">
         <div class="heading">
-            <h2>Популярные модели </h2>
+            <div class="h2">Популярные модели </div>
         </div>
     </div>
     <div class="list frame" id="my-modelas">

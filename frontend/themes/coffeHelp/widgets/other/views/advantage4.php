@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <section class="sale" data-speed="3">
-    <h3>Мы ценим наших клиентов, поэтому<br>предоставляем скидку 15%</h3>
+    <div class="h3">Мы ценим наших клиентов, поэтому<br>предоставляем скидку 15%</div>
     <div class="row">
         <div class="col-xs-4">
             <p>При повторном обращении<br>в нашу компанию</p>

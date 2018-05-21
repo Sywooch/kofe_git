@@ -33,7 +33,7 @@ $this->title = $pageInfo['meta_title'];
 
 <div class="addreview container">
     <div class="post__content row">
-        <h2>Оставить отзыв</h2>
+        <div class="h2">Оставить отзыв</div>
         <?php
 
         use yii\helpers\Html;

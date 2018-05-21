@@ -20,7 +20,7 @@ $form = ActiveForm::begin([
         ]);
         ?>
         <div id="form_order" class="order_form">
-            <h3>Онлайн-заказ</h3>
+            <div class="h3">Онлайн-заказ</div>
             <div class="row">
                 <div class="col-xs-12" style="padding-right: 14px;">
                     <div class="input-group-lg"> <input id="order_name" type="text" class="form-control" placeholder="Как вас зовут?" name="name"></div>
@@ -62,7 +62,7 @@ $form = ActiveForm::begin([
         <?php ActiveForm::end() ?>
     </div>
     <div class="col-xs-7 goroda">
-        <h3>Обслуживаемые города<?= $siteConfig['id'] == 53 ? ' Ленинградской области' : ' МО' ?></h3>
+        <div class="h3">Обслуживаемые города<?= $siteConfig['id'] == 53 ? ' Ленинградской области' : ' МО' ?></div>
         <div class="row">
             <?php foreach ($rows as $row): ?>
                 <a href="/<?= $row['url']; ?>"><?= str_replace(['Ремонт кофемашин в городе ', '!'], '', $row['title']); ?></a>

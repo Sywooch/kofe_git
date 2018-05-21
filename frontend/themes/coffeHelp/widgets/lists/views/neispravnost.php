@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model']) ? $_GET['data']['url'] : '';
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
-<h3><?= !empty($title) ? $title : 'Цены по услугам' ?></h3>
+<div class="h3"><?= !empty($title) ? $title : 'Цены по услугам' ?></div>
 <section class="price_table">
     <div class="break_price">
         <?php foreach ($rows as $key => $row): ?>
