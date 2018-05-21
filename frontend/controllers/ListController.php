@@ -505,7 +505,7 @@ class ListController extends CController {
 
 
         $breadcrumbs[] = $this->mb_ucfirst($pageInfo['title'], 'UTF-8');
-        
+
         return $this->render('service', ['pageInfo' => $pageInfo, 'b' => $b, 'seoText' => $seoText, 'seoText2' => $seoText2,
                     'h1' => $h1, 'breadcrumbs' => $breadcrumbs, 'title' => $title, 'brandImage' => $brandImage,
                     'modelImage' => $modelImage, 'page' => (isset($page) ? $page : ['title' => ''])]);
@@ -570,8 +570,13 @@ class ListController extends CController {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' ☎️ ' . strip_tags(Yii::$app->session['region']['phone']);
             $metaDesc = 'Качественный ремонт кофемашин ' . $pageInfo['title'] . ' в СЦ ' . ucfirst(str_replace('.ru', '', $_SERVER['HTTP_HOST'])) . '. Выезд курьера или мастера. Бесплатная диагностика. Гарантия. Фирменные комплектующие. Работаем ежедневно.';
         } elseif (in_array($siteConfig['id'], [124, 125])) {
-            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' профессионально ' . strip_tags(Yii::$app->session['region']['phone']);
-            $metaDesc = 'Ремонтные работы любой сложности с применением фирменных запчастей под кофемашину ' . $pageInfo['title'] . '. Заключаем долгосрочные контракты на профилактическое обслуживание.';
+            if ($siteConfig['id'] == 124) {
+                $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в Москве на дому и сервисном центре ' . strip_tags(Yii::$app->session['region']['phone']);
+                $metaDesc = 'Срочный ремонт любых кофемашин ' . $pageInfo['title'] . ' на выезде и в СЦ без посредников. Оставьте заявку на сайте. · Диагностика 0 руб. · Гарантия 1 год · Работаем 24/7 · Обслуживаем Москву и область.';
+            } elseif ($siteConfig['id'] == 125) {
+                $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в Санкт-Петербурге на дому и сервисном центре ' . strip_tags(Yii::$app->session['region']['phone']);
+                $metaDesc = 'Срочный и честный ремонт кофемашин ' . $pageInfo['title'] . ' без посредников в сервисном центре и с выездом на дом или офис. Диагностика 0 руб. ·Оставьте заявку на сайте. ·  Гарантия 1 год · Работаем 24/7 без выходных · Работаем в СПБ и Лен. области.';
+            }
         } elseif ($siteConfig['id'] == 49) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в Москве ✔️';
             $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' не включается или не делает кофе? Устраним и наладим! Отремантируем и дадим гарантию! Низкие цены, комфортное расположение СЦ!';
