@@ -52,7 +52,7 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $page
                             <?php if ($siteConfig['id'] == 52): ?>
                                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8bc8dddb5cd960ef78d0265dc216cc11458dce981fd0009d2212ac2608f36d78&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                             <?php else: ?>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1235f9cc948e1bbd3c78fd71cbbded35473c971940ef8fc0f68bf09ac79b4269&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74a289016bc936231c10ba32999ea08b8a00f71559d332652008120540ce8abd&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
                             <?php endif; ?>
                         </div>
                         <?= $pageInfo['description']; ?>
