@@ -297,11 +297,18 @@ $js = app\components\CController::$js;
 </html>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();$("body").addClass("modal-open");</script>';
+    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();</script>';
 }
 ?>
-<script>$("form").each(function () {
+
+<script>
+    $("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-    });</script>
+    });
+    $("#spasibo .modal--close").click(function(){
+        $("#spasibo").removeClass("in");
+        $("#spasibo").hide();
+    });
+</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>

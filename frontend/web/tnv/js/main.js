@@ -6890,4 +6890,5 @@ $.onDomUpdate = function (controller) {
             rightSlide();
         }
     }
+    
 });
