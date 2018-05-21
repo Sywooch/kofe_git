@@ -188,6 +188,12 @@ elseif($isServicesPage || $isModelsPage || $isContactPage)
             echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
         }
         ?>
+        <script>$('body').on("keyup", "input[type=tel]", function () {
+            var v = $(this).val().substring(4, 6);
+            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+            }
+        });</script>
         <?php $this->endBody() ?>
     </body>
 </html>

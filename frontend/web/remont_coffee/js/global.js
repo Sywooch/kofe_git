@@ -377,8 +377,6 @@ if ($('.seo-link.link-toggle').length) {
     });
 }
 
-    // РЎРѕРєСЂС‹С‚РёРµ seo СЃСЃС‹Р»РѕРє
-
     if ($('.seo-link__lists').length) {
         var $_items = 44;
 
