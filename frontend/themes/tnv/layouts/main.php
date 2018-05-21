@@ -134,7 +134,7 @@ $js = app\components\CController::$js;
                     <a href="#" class="m-menu--mobile float--right">
                         <i class="m-menu--mobile-icon"></i>
                     </a>
-                    <a href="tel:84953239009" class="header--user-toggle2 float--right">
+                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="header--user-toggle2 float--right">
                         <i class="header--user-toggle-icon icon-phone"></i>
                     </a>
                 </div>
