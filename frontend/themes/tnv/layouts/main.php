@@ -297,7 +297,7 @@ $js = app\components\CController::$js;
 </html>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();</script>';
+    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();$("body").addClass("modal-open");</script>';
 }
 ?>
 <script>$("form").each(function () {
