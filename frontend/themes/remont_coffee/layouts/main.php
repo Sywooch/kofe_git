@@ -15,6 +15,8 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
 <html>    
     <head>
         <meta charset="utf-8" />
@@ -39,14 +41,8 @@ $js = app\components\CController::$js;
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/home.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <?php if ($siteConfig['id'] == 54): ?>
-                <!--<link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/spb.css?v=1" rel="stylesheet">-->
-        <?php endif; ?>
     </head>
     <body>
-       <!-- <div style="display: none;" class="aksiya-popupic">
-            <span id="visitor-name"></span><span id="service-name"></span>
-        </div> -->
         <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
         <?php $this->beginBody() ?>
         <div class="container header">
@@ -181,19 +177,7 @@ $js = app\components\CController::$js;
             $roistat_n = '30,29';
         }
         ?>
-        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
-            (function (w, d, s, h, id) {
-                w.roistatProjectId = id;
-                w.roistatHost = h;
-                var p = d.location.protocol == "https:" ? "https://" : "http://";
-                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
-                var js = d.createElement(s);
-                js.charset = "UTF-8";
-                js.async = 1;
-                js.src = p + h + u;
-                var js2 = d.getElementsByTagName(s)[0];
-                js2.parentNode.insertBefore(js, js2);
-            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
+        
     </body>
 </html>
 
@@ -217,13 +201,6 @@ if (Yii::$app->session->getFlash('success')) {
 ?>
 <script>$("form").each(function () {
                 $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-            });
-            $('body').on("keyup", "input[type=tel]", function () {
-            var v = $(this).val().substring(4, 6);
-            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
-                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
-            }
-        });
-            </script>
+            });</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
