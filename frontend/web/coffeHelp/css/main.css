@@ -13131,3 +13131,18 @@ section.promo .status-header .con p {
         padding-left: 0px;
     }
 }
+
+.vedio-youtub {
+    padding: 40px 10px 0px;
+    text-align: center;
+}
+.vedio-youtub iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 395px;
+}
+@media (max-width: 720px) {
+    .vedio-youtub iframe {
+        height: 260px;
+    }
+}

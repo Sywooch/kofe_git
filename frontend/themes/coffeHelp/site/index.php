@@ -36,6 +36,9 @@ $this->title = $page['meta_title'];
     <?= coffeHelp\widgets\other\Advantage::widget(); ?>
     <?= coffeHelp\widgets\lists\TopServices::widget(); ?>    
 </section>
+<div class="vedio-youtub">
+    <iframe src="https://www.youtube.com/embed/ZTYtazIyRJ8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 <?= coffeHelp\widgets\lists\PopularBrands::widget(); ?>
 
 <div class="my-footer-block">
