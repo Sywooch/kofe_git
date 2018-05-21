@@ -305,10 +305,18 @@ if (Yii::$app->session->getFlash('success')) {
     $("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
     });
+
     $("#spasibo .modal--close").click(function(){
         $("#spasibo").removeClass("in");
         $("#spasibo").hide();
     });
-</script>
+
+    $('body').on("keyup", "input[type=tel]", function () {
+            var v = $(this).val().substring(4, 6);
+            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+            }
+        });
+    </script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
