@@ -201,13 +201,26 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-xs-3">
                         <h5>Контактная информация</h5>
-                        <p><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;"><?php if ($siteConfig['id'] == 53): ?>г. Санкт-Петербург, м. Озерки, проспект Энгельса, д. 115<?php else: ?>г. Москва, м. Китай-город, Охотный ряд, ул. Ильинка 4.<?php endif; ?></p>
+                        <p class="footer-adress-b"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/mark.png" style="margin-right: 15px; margin-bottom: 15px; float: left;"><?php if ($siteConfig['id'] == 53): ?>г. Санкт-Петербург, м. Озерки, проспект Энгельса, д. 115<?php else: ?>г. Москва, м. Китай-город, Охотный ряд, ул. Ильинка 4.<?php endif; ?></p>
+                        <div class="footer-adress" style="display:none;">
+                            <p>1. г.Москва, Профсоюзная улица, 3</p>
+                            <p>2. г.Москва, улица Ленинская Слобода, 19с7</p>
+                            <p>3. г.Москва, Новоостаповская улица, 5с14</p>
+                            <p>4. г.Москва, 8-я улица Соколиной горы, 26</p>
+                            <p>5. г.Москва, улица Касаткина, 11</p>
+                            <p>6. г.Москва, 4-й Лихачевский переулок, 2</p>
+                            <p>7. г.Москва, улица Свободы, 31</p>
+                            <p>8. г.Москва, Гродненская улица, 5А</p>
+                            <p>9. г.Москва, Смоленская Сенная площадь, 27</p>
+                            <p>10. г.Москва, Валовая улица, 21</p>
+                        </div>
                         <div class="footer-phone-cont">
                             <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/<?php if ($siteConfig['id'] == 53): ?>j/<?php endif; ?>icons/phone_footer.png" style="margin-right: 15px;"/>
                             <div class="footer-phone">
                                 <nobr> <a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'phone-c-spb' : 'phone-c-msk' ?>" href="#"><?= strip_tags(Yii::$app->session['region']['phone']); ?></a></nobr>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <hr>

@@ -14492,4 +14492,7 @@ $(document).ready(function() {
         $(this).toggleClass('open');
         $( ".top_menu_big" ).slideToggle( "slow" );
     });
+    $('.footer-adress-b').click(function(){
+        $( ".footer-adress" ).slideToggle( "slow" );
+    });
 });
