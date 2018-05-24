@@ -123,16 +123,16 @@ class ListController extends CController {
 
             $arrayUrl = $url;
             array_pop($url);
-            if ($siteConfig['mono']) {
+            if ($siteConfig['mono'] && $siteConfig['theme'] != 'satelit') {
                 $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
-            }
+            }            
             $page = (new \yii\db\Query())
                     ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
                     ->from('{{%pages}}')
                     ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
                     ->one();
-
+            
             if ($siteConfig['id'] == 113) {
                 $url = Yii::$app->request->pathInfo;
                 $url = explode('/', $url);

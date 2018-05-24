@@ -80,11 +80,11 @@ $js = app\components\CController::$js;
             <nav class="menu">
                 <div class="container">
                     <ul class="menu-level1">
-                        <li class="menu-item"><a href="#">Цены и услуги</a></li>
-                        <li class="menu-item"><a href="#">Все модели</a></li>
-                        <li class="menu-item"><a href="#">О компании</a></li>
-                        <li class="menu-item"><a href="#">Отзывы</a></li>
-                        <li class="menu-item"><a href="#">Контакты</a></li>
+                        <li class="menu-item"><a href="/prices">Цены и услуги</a></li>
+                        <li class="menu-item"><a href="/models">Все модели</a></li>
+                        <li class="menu-item"><a href="/about">О компании</a></li>
+                        <li class="menu-item"><a href="/reviews">Отзывы</a></li>
+                        <li class="menu-item"><a href="/contacts">Контакты</a></li>
                     </ul>
                 </div>
             </nav>
@@ -110,12 +110,11 @@ $js = app\components\CController::$js;
                             <p class="mobile-nav-phone--title"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                             <p class="mobile-nav-phone--description">г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
                         </li>
-                        <li class="mobile-nav-item"><a href="#">Цены и услуги</a></li>
-                        <li class="mobile-nav-item"><a href="#">Все модели</a></li>
-                        <li class="mobile-nav-item"><a href="#">О компании</a></li>
-                        <li class="mobile-nav-item"><a href="#">Отзывы</a></li>
-                        <li class="mobile-nav-item"><a href="#">Контакты</a></li>
-
+                        <li class="mobile-nav-item"><a href="/prices">Цены и услуги</a></li>
+                        <li class="mobile-nav-item"><a href="/models">Все модели</a></li>
+                        <li class="mobile-nav-item"><a href="/about">О компании</a></li>
+                        <li class="mobile-nav-item"><a href="/reviews">Отзывы</a></li>
+                        <li class="mobile-nav-item"><a href="/contacts">Контакты</a></li>
                         <li class="mobile-nav-contacts">
                             <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
                         </li>
@@ -163,16 +162,15 @@ $js = app\components\CController::$js;
                                     <div class="footer-menu">
                                         <p class="footer-menu--title">Компания</p>
                                         <ul>
-                                            <li><a href="page/pochemu-my.html">О компании</a></li>
-                                            <li><a href="page/kontakty.html">Контакты</a></li>
-                                            <li><a href="blogs/reviews.html">Отзывы</a></li>
-                                            <li><a href="collection/aktsii.html">Неисправности</a></li>
-                                            <li><a href="blogs/articles.html">Все модели</a></li>
+                                            <li><a href="/about">О компании</a></li>                                            
+                                            <li><a href="/reviews">Отзывы</a></li>
+                                            <li><a href="/prices">Неисправности</a></li>
+                                            <li><a href="/models">Все модели</a></li>
                                         </ul>
                                         <p class="footer-menu--title">Помощь</p>
                                         <ul>
-                                            <li><a href="page/feedback.html">Контакты</a></li>
-                                            <li><a href="page/oferta.html">Политика конфиденциальности</a></li>
+                                            <li><a href="/contacts">Контакты</a></li>
+                                            <li><a href="/policy">Политика конфиденциальности</a></li>
                                         </ul>
                                     </div>
                                 </div>
