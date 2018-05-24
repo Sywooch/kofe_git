@@ -2659,7 +2659,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-saeco-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2672,7 +2672,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-philips-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2685,7 +2685,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-jura-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2698,7 +2698,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-bosch-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2711,7 +2711,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-melitta-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2724,7 +2724,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-nivona-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2737,7 +2737,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-siemens-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2750,7 +2750,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-la-cimbali-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2763,7 +2763,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'service-miele-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2776,7 +2776,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-nuova-simonelli-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2789,7 +2789,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'remont-bork-msk' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2802,7 +2802,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'nasa',
+            'theme' => 'satelit',
         ],
         'new-site' => [
             'phone-1' => '8 (495) 152-00-02',
@@ -2810,7 +2810,7 @@ return [
             'mono' => true,
             'brand-id' => 13368,
             'id' => 173,
-            'sitePrefix' => 'ofitsial',
+            'sitePrefix' => 'satelit',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'ofitsial',
