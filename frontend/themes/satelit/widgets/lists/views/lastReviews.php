@@ -13,8 +13,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                 <div class="reviews-item--shade">
                                     <div class="reviews-item--title">
                                         <img src="/<?= $siteConfig['theme']; ?>/images/icons/user-empty.png" alt="Валентин" class="reviews-item--image" width="55" height="55">
-                                        <span class="reviews-item--author"><?= $row['username']; ?></span>
-                                        <span class="reviews-item--date"><?= date('d.m.Y', strtotime($row['date'])); ?></span>
+                                        <span class="reviews-item--author"><?= $row['username']; ?></span>                                        
                                     </div>
                                     <div class="reviews-item--content">
                                         <p><span><?= $row['message']; ?></span></p>
