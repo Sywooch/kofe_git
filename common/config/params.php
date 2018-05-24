@@ -2810,10 +2810,10 @@ return [
             'mono' => true,
             'brand-id' => 13368,
             'id' => 173,
-            'sitePrefix' => 'bork',
+            'sitePrefix' => 'ofitsial',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'ofitsial',
         ],
     ]
 ];
