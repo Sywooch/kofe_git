@@ -8,7 +8,7 @@
         </div>
         <?php foreach ($rows as $row): ?>
             <?php
-            $url = '#';
+            $url = '';
             if ($_GET['data']['type'] != 'model')
                 $url = '/' . (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
             ?>
