@@ -148,14 +148,14 @@ $js = app\components\CController::$js;
                                     <div class="footer-menu">
                                         <p class="footer-menu--title">Услуги</p>
                                         <ul>
-                                            <li><a href="collection/telefon.html">Нет питания</a></li>
-                                            <li><a href="collection/planshet.html">Нет питания</a></li>
-                                            <li><a href="collection/kompyuter.html">Нет питания</a></li>
-                                            <li><a href="collection/noutbuk.html">Нет питания</a></li>
-                                            <li><a href="page/prays-list-po-pk.html">Нет питания</a></li>
-                                            <li><a href="page/prays-list-po-pk.html">Нет питания</a></li>
-                                            <li><a href="collection/obschie-uslugi-iphone.html">Нет питания</a></li>
-                                            <li><a href="collection/obschie-uslugi-ipad.html">Нет питания</a></li>
+                                            <li><a href="/chistka-gidrosistemy">Чистка гидросистемы </a></li>
+                                            <li><a href="/dekaltsinatsiya">Декальцинация </a></li>
+                                            <li><a href="/diagnostika">Диагностика </a></li>
+                                            <li><a href="/remont-nasosa">Ремонт насоса</a></li>
+                                            <li><a href="/chistka-ot-kofeinykh-masel">Чистка от кофейных масел</a></li>
+                                            <li><a href="/zamena-zhernovov">Замена жерновов</a></li>
+                                            <li><a href="/nastroika-kofemolki">Настройка кофемолки</a></li>
+                                            <li><a href="/zamena-uplotnitelei">Замена уплотнителей</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -179,8 +179,8 @@ $js = app\components\CController::$js;
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="footer-menu">
                                         <p class="footer-menu--title">Мы на карте</p>
-                                        <div class="footer-map">							
-                                            <iframe width="100%" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZ4WqZtk1tUYRfWa3gApRZBc&amp;key=AIzaSyCDBnmPNiqBDBkAPfcJt1BWoJbprq2DPMI" allowfullscreen=""></iframe>
+                                        <div class="footer-map">		
+                                            <iframe width="100%" height="200" frameborder="0" style="border:0"  src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb2ded5f272819fb79a4659404800c497bb1cfa37f63795fc64d301c80c28cf&amp;source=constructor" allowfullscreen=""></iframe>					
                                         </div>
                                     </div>
                                 </div>
