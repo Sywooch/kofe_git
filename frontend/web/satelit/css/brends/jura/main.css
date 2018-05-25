@@ -2366,7 +2366,9 @@ section {
     .models-item--title {
       flex: 1 0 auto;
       margin: 0px 0px 0px 10px;
-      font-weight: 700; }
+      font-weight: 700;
+     max-width: 195px;
+    overflow: hidden; }
 
 /*---*/
 /*repair statistics*/
