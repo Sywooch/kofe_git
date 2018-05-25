@@ -31,7 +31,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <?php if (!empty($pageInfo['meta_h1'])): ?>
                                 <?= $pageInfo['meta_h1']; ?>
                             <?php else: ?>
-                                <?= app\components\CController::$category['rod_title']; ?>  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?>
+                                <?= app\components\CController::$category['rod_title']; ?>  <?= $brand['title'] . ' ' . $pageInfo['title']; ?>
                             <?php endif; ?>
                         </h1>
                         <div class="promo-subtitle">
