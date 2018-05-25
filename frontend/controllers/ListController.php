@@ -446,6 +446,9 @@ class ListController extends CController {
                 } elseif (in_array($siteConfig['id'], [146, 147])) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' в ' . Yii::$app->session['region']['titleRod'] . '! Качество, гарантия, низкие цены!';
                     $metaDesc = 'Наш сервисный центр проведёт обслуживание и восстановительные работы! Услуга: ' . $pageInfo['title'] . ' - позволит кофемашине работать как и прежде!';
+                } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'satelit') {
+                    $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины - починим в сервисном центре ' . $pageInfo['title'];
+                    $metaDesc = 'Кофемашина перестала работать? Закажите услугу - ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' и мы выполним её!';
                 } else {
                     //if (isset(CController::$category['3_title']))
                     $title = $pageInfo['title'] . ' - в ' . Yii::$app->session['region']['titleRod'] . '! Качественно, с гарантией до 1 года!';
@@ -718,7 +721,7 @@ class ListController extends CController {
         $metaDesc = '';
         $title = '';
         $brandRu = '';
-        if(isset(Yii::$app->params['brandRussianNames'][$brand['title']]))
+        if (isset(Yii::$app->params['brandRussianNames'][$brand['title']]))
             $brandRu = Yii::$app->params['brandRussianNames'][$brand['title']];
         if (isset($categorySEO[self::$category['id']])) {
             $metaDesc = $categorySEO[self::$category['id']]['meta_description'];
