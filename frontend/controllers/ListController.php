@@ -79,6 +79,7 @@ class ListController extends CController {
     }
 
     public function actionAllModels() {
+        $pageInfo = $_GET['data'];
         $siteConfig = self::getSiteConfig();
         $seo = (new \yii\db\Query())
                 ->select(['*'])
@@ -92,6 +93,7 @@ class ListController extends CController {
 //        ]);
         \Yii::$app->view->registerMetaTag([
             'name' => 'description',
+            'pageInfo' => $pageInfo,
             'content' => $seo['meta_description'] ?: ''
         ]);
 
