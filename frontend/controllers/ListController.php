@@ -440,15 +440,16 @@ class ListController extends CController {
                     $h1 = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'];
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - срочный ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - быстро, качественно с гарантией по самой низкой цене в Москве.';
+                    if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'satelit') {
+                        $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины - починим в сервисном центре ' . $pageInfo['title'];
+                        $metaDesc = 'Кофемашина перестала работать? Закажите услугу - ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' и мы выполним её!';
+                    }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - СЦ в Москве';
                     $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' в сервисном центре. Гарантия, качество и надёжность - синонимы нашего сервисного центра по ремонту кофемашин в Москве и области.';
                 } elseif (in_array($siteConfig['id'], [146, 147])) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' в ' . Yii::$app->session['region']['titleRod'] . '! Качество, гарантия, низкие цены!';
                     $metaDesc = 'Наш сервисный центр проведёт обслуживание и восстановительные работы! Услуга: ' . $pageInfo['title'] . ' - позволит кофемашине работать как и прежде!';
-                } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'satelit') {
-                    $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины - починим в сервисном центре ' . $pageInfo['title'];
-                    $metaDesc = 'Кофемашина перестала работать? Закажите услугу - ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' и мы выполним её!';
                 } else {
                     //if (isset(CController::$category['3_title']))
                     $title = $pageInfo['title'] . ' - в ' . Yii::$app->session['region']['titleRod'] . '! Качественно, с гарантией до 1 года!';
