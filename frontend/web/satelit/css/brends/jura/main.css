@@ -1079,6 +1079,15 @@ section {
     /* line 902, main.scss */
     .slider-actions .slider-item {
       padding: 15px; }
+      .slider .slider-item {
+        text-align: right;
+        display: flex;
+        align-items: center;
+      }
+      .slider .slider-item img {
+        display: inline-block;
+        max-width: 45%;
+      }
       /* line 904, main.scss */
       .slider-actions .slider-item img {
         border-radius: 7px;

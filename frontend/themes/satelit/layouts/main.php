@@ -95,7 +95,7 @@ $js = app\components\CController::$js;
                 <button class="mobile-menu--toggle js-mobile-menu--toggle"><i></i><span></span></button>
                 <div class="mobile-menu-logo">
                     <a href="/" class="mobile-menu-logo--url">
-                        <img src="<?= $assets . $siteConfig['theme']; ?>/images/logo.svg" class="mobile-menu-logo--image" alt="Ремонт кофемашин в Москве.">
+                        <img src="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>logo.svg" class="mobile-menu-logo--image" alt="Ремонт кофемашин в Москве.">
                     </a>
                     <p class="header-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                 </div>
