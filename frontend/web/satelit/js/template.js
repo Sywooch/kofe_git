@@ -5069,13 +5069,13 @@ $(function(){
 		dots:false,
 		responsive:{
 			0:{
-				items:2
-			},
-			768:{
 				items:3
 			},
-			992:{
+			768:{
 				items:5
+			},
+			992:{
+				items:7
 			}
 		}
 	});

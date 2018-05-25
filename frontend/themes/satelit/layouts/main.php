@@ -71,10 +71,12 @@ $js = app\components\CController::$js;
                         </div>
                     </div>
                     <div class="header-contacts">
-                        <p class="header-contacts--email"><i class="fas fa-check"></i>Поделитесь в соц. сети и получите скидку</p>
-                        <div class="header-contacts--social">
-                            <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
-                        </div>
+                        <noindex>
+                            <p class="header-contacts--email"><i class="fas fa-check"></i>Поделитесь в соц. сети и получите скидку</p>
+                            <div class="header-contacts--social">
+                                <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
+                            </div>
+                        </noindex>
                     </div>
                 </header>
             </div>
@@ -138,7 +140,7 @@ $js = app\components\CController::$js;
                                 <p class="footer-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-mobile" aria-hidden="true"></i><?= Yii::$app->session['region']['phone']; ?></a></p>
                                 <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
                                 <p class="footer-contacts--social">
-                                <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
+                                    <noindex><div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div></noindex>
                                 </p>
                             </div>
                         </div>
@@ -160,20 +162,18 @@ $js = app\components\CController::$js;
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-6 col-xs-6">
-                                    <div class="footer-menu">
-                                        <p class="footer-menu--title">Компания</p>
-                                        <ul>
-                                            <li><a href="/about">О компании</a></li>                                            
-                                            <li><a href="/reviews">Отзывы</a></li>
-                                            <li><a href="/prices">Неисправности</a></li>
-                                            <li><a href="/models">Все модели</a></li>
-                                        </ul>
-                                        <p class="footer-menu--title">Помощь</p>
-                                        <ul>
-                                            <li><a href="/contacts">Контакты</a></li>
-                                            <li><a href="/politika">Политика конфиденциальности</a></li>
-                                        </ul>
-                                    </div>
+                                    <noindex>
+                                        <div class="footer-menu">
+                                            <p class="footer-menu--title">Компания</p>
+                                            <ul>
+                                                <li><a href="/about">О компании</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="/contacts">Контакты</a></li>
+                                                <li><a href="/politika">Политика конфиденциальности</a></li>
+                                            </ul>
+                                        </div>
+                                    </noindex>
                                 </div>
                                 <div class="clearfix visible-sm visible-xs"></div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">

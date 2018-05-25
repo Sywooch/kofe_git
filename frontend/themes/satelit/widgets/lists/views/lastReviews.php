@@ -22,7 +22,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <p class="reviews-item--all"><a href="#">Все отзывы</a></p>
+                    <p class="reviews-item--all"><a href="/reviews">Все отзывы</a></p>
                 </section>
             </div>
             <div class="col-md-5 col-sm-6 col-xs-12">

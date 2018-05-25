@@ -1084,9 +1084,68 @@ section {
         display: flex;
         align-items: center;
       }
+      .slider .slider-item h1 {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 50px;
+        text-align: left;
+        font-family: 'Proxima Nova', sans-serif;
+      }
+      .slider .slider-item h1 span {
+        color: #ffda2e;
+      }
+      .slider .slider-item p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: left;
+        margin-top: 15px;
+      }
+      @media (max-width: 1239px) {
+        .slider .slider-item h1 {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        .slider .slider-item p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      @media (max-width: 645px) {
+        .slider .slider-item {
+          min-height: 220px;
+        }
+        .slider .slider-item h1 {
+          font-size: 24px;
+          line-height: 26px;
+        }
+        .slider .slider-item p {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
       .slider .slider-item img {
         display: inline-block;
         max-width: 45%;
+      }
+
+      @media (max-width: 645px) {
+        .slider .slider-item {
+          min-height: 180px;
+        }
+        .slider .slider-item h1 {
+          font-size: 20px;
+          line-height: 22px;
+        }
+        .slider .slider-item p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .slider .slider-item img {
+          display: inline-block;
+          max-width: 35%;
+        }
       }
       /* line 904, main.scss */
       .slider-actions .slider-item img {
@@ -2460,6 +2519,11 @@ section {
 /*---*/
 /*partners*/
 /* line 2331, main.scss */
+.partners-slider {
+  padding-bottom: 20px;
+     border-bottom: 3px solid #d7212e;
+  margin-bottom: 20px;
+}
 .partners-slider .owl-stage {
   display: flex;
   align-items: center; }
@@ -3238,7 +3302,7 @@ section {
   overflow: hidden; }
   /* line 3135, main.scss */
   .footer .background--grey {
-    padding: 45px 0px 30px; }
+    padding: 20px 0px 30px; }
   /* line 3138, main.scss */
   .footer .background-center {
     top: auto;

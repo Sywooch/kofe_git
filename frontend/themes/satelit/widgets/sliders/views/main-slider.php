@@ -8,7 +8,8 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="slider-item">
                     <div class="text">
-                        sad
+                        <h1>Ремонт кофемашин <span>#brand_en# в Москве</span> и Подмосковье</h1>
+                        <p>а также, низкие цены, официальная гарантия и опытные инженеры!</p>
                     </div>
                     <img src="<?= $assets . $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/kofemashina.png" alt="Ремонт кофемашин <?= $siteConfig['sitePrefix']; ?>">
                 </div>
@@ -17,8 +18,5 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <?= satelit\widgets\forms\Main::widget(); ?>
             </div>
         </div>
-        <div class="owl-dots slider-dots"></div>
     </div>
-    <i class="slider-background slider-background--left js-background-pattern"></i>
-    <i class="slider-background slider-background--right js-background-pattern"></i>
 </section>

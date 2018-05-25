@@ -10,7 +10,7 @@ $this->title = $pageInfo['meta_title'];
 </div>
 <div class="background--grey margin--bottom60">
     <div class="container">
-        <h1 class="title-services-table"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] ?></h1>
+        <h1 class="section-title"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] ?></h1>
         <?= $pageInfo['description'] ?>
         <div class="row">
             <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все']); ?>
