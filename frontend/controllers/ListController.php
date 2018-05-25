@@ -434,7 +434,7 @@ class ListController extends CController {
                             115 => 'если нет питания у кофемашины',
                         ];
                         $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' - починим в сервисном центре ' . self::$monoBrand['title'];
-                        $metaDesc = 'Устраняем неисправности, ' . (isset($seoH12[$pageInfo['id']]) ? $seoH12[$pageInfo['id']] : 'если кофемашина - ' . $pageInfo['title']) . '. Ремонт кофемашин в Москве и области.';
+                        $metaDesc = 'Устраняем неисправности, ' . (isset($seoH12[$pageInfo['id']]) ? $seoH12[$pageInfo['id']] : 'если кофемашина - ' . $pageInfo['title']) . '. Ремонт кофемашин ' . self::$monoBrand['title'] . ' в Москве и области.';
                     }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - Ремонт в Москве';
