@@ -70,27 +70,9 @@
 @media (max-width: 1239px) {
   /*header*/
   /* line 78, responsive.scss */
-  .header {
-    padding: 40px 0px 25px; }
-    /* line 80, responsive.scss */
-    .header-phone {
-      position: absolute;
-      top: -30px;
-      left: 15px;
-      margin: 0px;
-      padding: 0px; }
-      /* line 86, responsive.scss */
-      .header-phone .header-block--thumb {
-        display: none; }
-      /* line 89, responsive.scss */
-      .header-phone .header-block--title, .header-phone .header-block--description {
-        font-size: 14px;
-        line-height: 20px;
-        display: inline-block; }
-      /* line 94, responsive.scss */
-      .header-phone .header-block--title {
-        font-weight: 600;
-        margin-right: 15px; }
+  .pull-right {
+    max-width: 285px;
+  }
 
   /*---*/
   /*actions*/
@@ -139,7 +121,7 @@
 
   /* line 159, responsive.scss */
   .about-menu-item .m-active {
-    color: #d7212e !important;
+    color: #005691 !important;
     border-bottom-style: solid;
     border-bottom-color: currentColor !important; }
 

@@ -11,9 +11,9 @@
 .owl-nav .owl-prev {margin-right: 15px; text-indent: -1px;}
 .owl-nav .owl-next {text-indent: 1px;}
 .owl-nav.disabled {display: none;}
-.owl-nav i {font-size: 22px; line-height: 30px; font-weight: bold; color: #da2431;}
+.owl-nav i {font-size: 22px; line-height: 30px; font-weight: bold; color: #005691;}
 
 .owl-dots {position: relative; text-align: center; height: 7px;}
 .owl-dots .owl-dot {display: inline-block; width: 7px; height: 7px; vertical-align: top; margin: 0px 3px; background: #e0e0e0; border-radius: 50%; cursor: pointer;}
-.owl-dots .owl-dot.active {background: #d7212e;}
+.owl-dots .owl-dot.active {background: #005691;}
 .owl-dots.disabled {display: none;}
