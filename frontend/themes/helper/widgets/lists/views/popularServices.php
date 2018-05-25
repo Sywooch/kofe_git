@@ -16,7 +16,7 @@ $prefUrl = isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['bra
                     <a href="<?= $url; ?>" class="services-item--thumb" style="background-image: url(/<?= $siteConfig['theme']; ?>/images/services/<?= $row['image']; ?>.png);"></a>
                     <p class="services-item--title"><a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a></p>
                     <p class="services-item--price">от <span><?= round($row['price']); ?>&nbsp;руб</span></p>
-                    <a href="#" class="button button--yellow">Вызвать мастера</a>
+                    <span class="button button--yellow popup">Вызвать мастера</span>
                 </div>
             </div>
         <?php endforeach; ?>

@@ -53,7 +53,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <p>&nbsp;</p>
                             <p class="banner_annotation">* указано среднее время</p>
                         </div>
-                        <button class="promo-button button button--red button--large js-popup-repair">Заказать ремонт</button>
+                        <button class="promo-button button button--red button--large popup">Заказать ремонт</button>
                     </div>
                 </div>
             </div>
