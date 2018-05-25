@@ -18,7 +18,7 @@
                         <br>
                         <span>Время выполнения: <?= $row['time']; ?></span> 
                     </p>
-                    <p class="services-item--price col-md-3 col-xs-3"><span><?= round($row['price']); ?>&nbsp;руб</span></p>
+                    <p class="services-item--price col-md-3 col-xs-3"><span>от <?= round($row['price']); ?>&nbsp;руб</span></p>
                 </<?= empty($url) ? 'span' : 'a'; ?>>
             </div>  
         <?php endforeach; ?>
