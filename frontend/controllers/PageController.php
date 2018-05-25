@@ -583,6 +583,9 @@ class PageController extends CController {
                 $url->addChild('lastmod', date("Y-m-d", time()));
                 if ($page['type'] == 'model' || $page['type'] == 'brand') {
                     foreach ($services as $service) {
+                        if (isset($siteConfig['sitemap']['disableServicePage'])) {
+                            continue;
+                        }
                         $urlService = $xmlIndex->addChild('url');
                         $urlService->addChild('loc', $hostname . '/' . $page['url'] . '/' . $service['url']);
                         $urlService->addChild('lastmod', date("Y-m-d", time()));
@@ -590,9 +593,6 @@ class PageController extends CController {
                 }
             }
             foreach ($services as $service) {
-                if (isset($siteConfig['sitemap']['disableServicePage'])) {
-                    continue;
-                }
                 $url = $xmlIndex->addChild('url');
                 $url->addChild('loc', $hostname . '/' . $service['url']);
                 $url->addChild('lastmod', date("Y-m-d", time()));
