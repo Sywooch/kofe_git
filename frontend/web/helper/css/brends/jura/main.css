@@ -3412,8 +3412,7 @@ section {
     display: inline-block; }
   /* line 3253, main.scss */
   .breadcrumbs-item + .breadcrumbs-item:before {
-    content: '\f101';
-    font-family: 'FontAwesome';
+    content: '/';
     margin: 0px 10px;
     vertical-align: top;
     width: 10px;
