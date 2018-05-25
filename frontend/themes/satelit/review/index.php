@@ -16,7 +16,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="review-item" data-review>
                         <div class="review-item--title">
-                            <img src="<?= $assets . $siteConfig['theme']; ?>/images/user-empty.png" alt="Валентин" class="review-item--image review-item--image-empty" width="60" height="60">
+                            <img src="/<?= $siteConfig['theme']; ?>/images/user-empty.png" alt="Валентин" class="review-item--image review-item--image-empty" width="60" height="60">
                             <span class="review-item--author"><?= $row['username']; ?></span>                            
                         </div>
                         <div class="review-item--overflow">
