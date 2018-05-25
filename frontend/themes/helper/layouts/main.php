@@ -197,6 +197,26 @@ $js = app\components\CController::$js;
                 <i class="background-pattern background-pattern--right background-center background-center--right js-background-pattern"></i>
             </div>
         </footer>
+        <div class="fancybox-container fancybox-is-open" style="display: none;" id="popup" >
+           <div class="fancybox-bg"></div>
+           <div class="fancybox-inner">
+              <div class="fancybox-stage">
+                 <div class="fancybox-slide fancybox-slide--html fancybox-slide--current fancybox-slide--complete" style="">
+                    <div class="alert alert-form">
+                       <div class="alert-item">
+                          <p class="alert-item--title">Заявка на ремонт</p>
+                          <form action="#" class="alert-item--form js-feedback-form">
+                             <input type="tel" placeholder="Ваш телефон" class="input--block" name="feedback[phone]" autocomplete="off">
+                             <button type="submit" class="button button--yellow js-privacy-button">Оставить заявку</button>
+                             <noindex><label for="privacy_checkbox">Я согласен с <a href="/politika" rel="nofollow" target="_blank">правилами обработки персональных данных</a></label></noindex>
+                          </form>
+                       </div>
+                       <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
         <script src="<?= $assets . $siteConfig['theme']; ?>/js/template.js?=v2"></script>
         <script src="<?= $assets . $siteConfig['theme']; ?>/js/19e1de0fb0.js"></script>
         <script src="<?= $assets . $siteConfig['theme']; ?>/js/jquery.modal.js"></script>

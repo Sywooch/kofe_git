@@ -47,7 +47,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <?= date('d.m.Y', strtotime('+1 day')); ?>
                     Вы получите скидку 15%</li>
                 </ul>
-                <span class="button button--red button--large">
+                <span class="button button--red button--large popup">
                     Получить скидку на ремонт
                 </span>
             </div>
