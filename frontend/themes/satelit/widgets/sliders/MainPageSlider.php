@@ -8,9 +8,11 @@ class MainPageSlider extends Widget {
     
     public $view = 'main-slider';
 
+    public $pageInfo;
+
     public function run() {
         
-        return $this->render($this->view);
+        return $this->render($this->view, ['page' => $this->pageInfo]);
     }
 
 }
