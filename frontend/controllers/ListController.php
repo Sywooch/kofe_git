@@ -125,14 +125,14 @@ class ListController extends CController {
             array_pop($url);
             if ($siteConfig['mono'] && $siteConfig['theme'] != 'satelit') {
                 $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
-            }            
+            }
             $page = (new \yii\db\Query())
                     ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
                     ->from('{{%pages}}')
                     ->where(['url' => $siteConfig['mono'] ? $url : implode('/', $url)])
                     ->limit(1)
                     ->one();
-            
+
             if ($siteConfig['id'] == 113) {
                 $url = Yii::$app->request->pathInfo;
                 $url = explode('/', $url);
@@ -751,6 +751,9 @@ class ListController extends CController {
         } elseif (in_array($siteConfig['id'], [146, 147])) {
             $title = 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Качество! Гарантия! Скорость! ';
             $metaDesc = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Сервисный центр сотрудничает с производителями кофемашин, и устанавливает только качественные и сертифицированные запасные части. Гарантия до 1 года!';
+        } elseif ($siteConfig['theme'] == 'satelit') {
+            $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в Москве. Цены без накруток от 990р - Сервис центр #Brandru#';
+            $metaDesc = '';
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
