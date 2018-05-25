@@ -441,7 +441,7 @@ class ListController extends CController {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - срочный ремонт в ' . Yii::$app->session['region']['titleRod'];
                     $metaDesc = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . self::$monoBrand['title'] . ' - быстро, качественно с гарантией по самой низкой цене в Москве.';
                     if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'satelit') {
-                        $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины - починим в сервисном центре ' . $pageInfo['title'];
+                        $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины - починим в сервисном центре ' . self::$monoBrand['title'];
                         $metaDesc = 'Кофемашина перестала работать? Закажите услугу - ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' и мы выполним её!';
                     }
                 } elseif ($siteConfig['id'] == 49) {
