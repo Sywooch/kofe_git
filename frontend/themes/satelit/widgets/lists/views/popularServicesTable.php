@@ -7,8 +7,13 @@
             <div class="services-table-price col-md-3 col-xs-3">Стоимость</div>
         </div>
         <?php foreach ($rows as $row): ?>
+            <?php
+            $url = '#';
+            if ($_GET['data']['type'] != 'model')
+                $url = (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
+            ?>
             <div class='col-xs-11 services-table-line  '>
-                <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>" style="width:100%;">
+                <a href="/<?= $url; ?>" style="width:100%;">
                     <p class="services-item--title col-md-9 col-xs-9"><?= $row['title']; ?>
                         <br>
                         <span>Время выполнения: <?= $row['time']; ?></span> 

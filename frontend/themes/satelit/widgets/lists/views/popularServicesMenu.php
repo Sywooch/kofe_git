@@ -5,8 +5,13 @@
             <a href="#" class="active"><?= $t1; ?></a>
             <ul class="collection-menu-subcollection">
                 <?php foreach ($rows as $row): ?>
+                    <?php
+                    $url = '#';
+                    if ($_GET['data']['type'] != 'model')
+                        $url = (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
+                    ?>
                     <li class="collection-menu-subcollection-item">
-                        <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a>
+                        <a href="/<?= $url; ?>"><?= $row['title']; ?></a>
                     </li>
                 <?php endforeach; ?>                
             </ul>

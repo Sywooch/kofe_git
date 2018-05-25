@@ -2493,7 +2493,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'delonghi-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2506,7 +2506,7 @@ return [
             'theme' => 'nasa',
         ],
         'saeco-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2519,7 +2519,7 @@ return [
             'theme' => 'nasa',
         ],
         'philips-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2532,7 +2532,7 @@ return [
             'theme' => 'nasa',
         ],
         'jura-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2545,7 +2545,7 @@ return [
             'theme' => 'nasa',
         ],
         'bosch-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2558,7 +2558,7 @@ return [
             'theme' => 'nasa',
         ],
         'melitta-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2571,7 +2571,7 @@ return [
             'theme' => 'nasa',
         ],
         'nivona-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2584,7 +2584,7 @@ return [
             'theme' => 'nasa',
         ],
         'siemens-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2597,7 +2597,7 @@ return [
             'theme' => 'nasa',
         ],
         'support-la-cimbali' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2610,7 +2610,7 @@ return [
             'theme' => 'nasa',
         ],
         'miele-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2623,7 +2623,7 @@ return [
             'theme' => 'nasa',
         ],
         'service-nuova-simonelli' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2636,7 +2636,7 @@ return [
             'theme' => 'nasa',
         ],
         'bork-remont-kofe' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2649,7 +2649,7 @@ return [
             'theme' => 'nasa',
         ],
         'remont-delonghi-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2660,9 +2660,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-saeco-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2673,9 +2674,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-philips-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2686,9 +2688,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-jura-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2699,9 +2702,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bosch-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2712,9 +2716,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-melitta-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2725,9 +2730,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nivona-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2738,9 +2744,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-siemens-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2751,9 +2758,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-la-cimbali-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2764,9 +2772,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'service-miele-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2777,9 +2786,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nuova-simonelli-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2790,9 +2800,10 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bork-msk' => [
-            'phone-1' => '8 (495) 152-00-02',
+            'phone-1' => '8 (499) 372-29-92',
             'phone-2' => '8 (812) 643-21-07',
             'stickyMenu' => false,
             'mono' => true,
@@ -2803,6 +2814,7 @@ return [
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'satelit',
+            'sitemap' => ['disableServicePage' => true]
         ],
         'new-site' => [
             'phone-1' => '8 (495) 152-00-02',
