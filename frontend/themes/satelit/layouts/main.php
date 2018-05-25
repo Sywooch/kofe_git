@@ -198,7 +198,7 @@ $js = app\components\CController::$js;
                 <i class="background-pattern background-pattern--right background-center background-center--right js-background-pattern"></i>
             </div>
         </footer>
-        <script src="<?= $assets . $siteConfig['theme']; ?>/js/template.js"></script>
+        <script src="<?= $assets . $siteConfig['theme']; ?>/js/template.js?=v2"></script>
         <script src="<?= $assets . $siteConfig['theme']; ?>/js/19e1de0fb0.js"></script>
         <script src="<?= $assets . $siteConfig['theme']; ?>/js/jquery.modal.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>

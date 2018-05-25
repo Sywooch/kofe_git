@@ -62,8 +62,8 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </section>
         <div class="row">
-            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть цены на все услуги']); ?>
-            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 2, 't1' => 'Неисправности', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть цены на все услуги']); ?>
+            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все']); ?>
+            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 2, 't1' => 'Неисправности', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все']); ?>
         </div>
     </div>
     <i class="background-pattern background-pattern--left js-background-pattern"></i>

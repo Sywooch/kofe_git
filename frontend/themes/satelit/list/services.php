@@ -13,8 +13,8 @@ $this->title = $pageInfo['meta_title'];
         <h1 class="title-services-table"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title'] ?></h1>
         <?= $pageInfo['description'] ?>
         <div class="row">
-            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть цены на все услуги']); ?>
-            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 2, 't1' => 'Неисправности', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть цены на все услуги']); ?>
+            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все']); ?>
+            <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 2, 't1' => 'Неисправности', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все']); ?>
         </div>
     </div>
     <i class="background-pattern background-pattern--left js-background-pattern"></i>

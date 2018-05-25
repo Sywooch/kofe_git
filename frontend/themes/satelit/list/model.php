@@ -71,7 +71,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
             <div class='col-md-1 hidden-sm hidden-xs'></div>
             <div class="col-md-8 col-sm-12 col-xs-12">                
-                <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть цены на все услуги', 'col' => false]); ?>
+                <?= satelit\widgets\lists\PopularServices::widget(['view' => 'popularServicesTable', 'type' => 1, 't1' => 'Стоимость услуг', 't2' => 'Посмотреть все|Скрыть', 't3' => 'Посмотреть все', 'col' => false]); ?>
                 <?php if (!empty($pageInfo['full_description'])): ?>
                     <section class="default margin--bottom60">
                         <div class="content">
