@@ -8,7 +8,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="slider-item">
                     <div class="text">
-                        <h1><?= $page['meta_h1']; ?></h1>
+                        <h1><?= str_replace('#brand_en#', app\components\CController::$monoBrand['title'], $page['meta_h1']); ?></h1>
                         <p><?= $page['description']; ?></p>
                     </div>
                     <img src="<?= $assets . $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/kofemashina.png" alt="Ремонт кофемашин <?= $siteConfig['sitePrefix']; ?>">
