@@ -139,9 +139,8 @@ $js = app\components\CController::$js;
                             <div class="footer-contacts">
                                 <p class="footer-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-mobile" aria-hidden="true"></i><?= Yii::$app->session['region']['phone']; ?></a></p>
                                 <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
-                                <p class="footer-contacts--social">
-                                    <noindex><div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div></noindex>
-                                </p>
+                                <noindex><div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div></noindex>
+
                             </div>
                         </div>
                         <div class="col-md-9 col-sm-12 col-xs-12">

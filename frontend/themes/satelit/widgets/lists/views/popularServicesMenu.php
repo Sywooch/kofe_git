@@ -2,7 +2,7 @@
 <section class="collection-menu">
     <ul class="collection-menu-items">
         <li class="collection-menu-item collection-menu-item--active">
-            <a href="#" class="active"><?= $t1; ?></a>
+            <a href="/prices" class="active"><?= $t1; ?></a>
             <ul class="collection-menu-subcollection">
                 <?php foreach ($rows as $row): ?>
                     <?php

@@ -42,11 +42,11 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                 </div>
                 <p class="product-price">Стоимость: <span class="product-price--sale js-product-price--sale">от <?= round($pageInfo['price']); ?>&nbsp;руб</span></p>
-                <p>
-                    При заказе данной услуги до 
+                <ul class="product-properties" style="margin: 15px 0px 0px;">
+                    <li style="margin: 0px;">При заказе данной услуги до 
                     <?= date('d.m.Y', strtotime('+1 day')); ?>
-                    Вы получите скидку 15%
-                </p>
+                    Вы получите скидку 15%</li>
+                </ul>
                 <span class="button button--red button--large">
                     Получить скидку на ремонт
                 </span>

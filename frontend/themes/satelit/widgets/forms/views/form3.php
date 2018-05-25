@@ -34,6 +34,6 @@ $form = ActiveForm::begin([
 <?= Html::submitButton('Заказать сейчас', ['class' => 'button button--yellow js-privacy-button', 'type' => 'submit']) ?>
 <p>
     <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null, 'class' => 'js-privacy-toggle'])->label(false); ?>
-    <label for="privacy_checkbox">Я согласен с <a href="/politika" target="_blank">правилами обработки персональных данных</a></label>
+    <noindex><label for="privacy_checkbox">Я согласен с <a href="/politika" rel="nofollow" target="_blank">правилами обработки персональных данных</a></label></noindex>
 </p>
 <?php ActiveForm::end() ?>
