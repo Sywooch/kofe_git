@@ -6,12 +6,12 @@
             <ul class="collection-menu-subcollection">
                 <?php foreach ($rows as $row): ?>
                     <?php
-                    $url = '#';
+                    $url = '';
                     if ($_GET['data']['type'] != 'model')
                         $url = '/' . (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
                     ?>
                     <li class="collection-menu-subcollection-item">
-                        <a href="<?= $url; ?>"><?= $row['title']; ?></a>
+                        <<?= empty($url) ? 'span' : 'a href="' . $url . '"'; ?>><?= $row['title']; ?></<?= empty($url) ? 'span' : 'a'; ?>>
                     </li>
                 <?php endforeach; ?>                
             </ul>

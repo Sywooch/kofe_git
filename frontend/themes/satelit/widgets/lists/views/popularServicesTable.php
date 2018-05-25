@@ -13,13 +13,13 @@
                 $url = '/' . (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
             ?>
             <div class='col-xs-11 services-table-line  '>
-                <a href="<?= $url; ?>" style="width:100%;">
+                <<?= empty($url) ? 'span' : 'a href="' . $url . '"'; ?> style="width:100%;">
                     <p class="services-item--title col-md-9 col-xs-9"><?= $row['title']; ?>
                         <br>
                         <span>Время выполнения: <?= $row['time']; ?></span> 
                     </p>
                     <p class="services-item--price col-md-3 col-xs-3"><span><?= round($row['price']); ?>&nbsp;руб</span></p>
-                </a>
+                </<?= empty($url) ? 'span' : 'a'; ?>>
             </div>  
         <?php endforeach; ?>
     </div>
