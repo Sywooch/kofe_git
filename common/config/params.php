@@ -2659,7 +2659,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-saeco-msk' => [
@@ -2673,7 +2673,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-philips-msk' => [
@@ -2687,7 +2687,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-jura-msk' => [
@@ -2701,7 +2701,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bosch-msk' => [
@@ -2715,7 +2715,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-melitta-msk' => [
@@ -2729,7 +2729,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nivona-msk' => [
@@ -2743,7 +2743,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-siemens-msk' => [
@@ -2757,7 +2757,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-la-cimbali-msk' => [
@@ -2771,7 +2771,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'service-miele-msk' => [
@@ -2785,7 +2785,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nuova-simonelli-msk' => [
@@ -2799,7 +2799,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bork-msk' => [
@@ -2813,7 +2813,7 @@ return [
             'change-logo' => true,
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
         'new-site' => [
@@ -2825,7 +2825,7 @@ return [
             'sitePrefix' => 'saeco',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'satelit',
+            'theme' => 'helper',
         ],
     ]
 ];
