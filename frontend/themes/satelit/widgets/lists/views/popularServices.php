@@ -8,7 +8,7 @@
         if($_GET['data']['type'] != 'model')
             $url = '/' . (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
         ?>
-            <div class="col-md-2 col-sm-3 col-xs-4">
+            <div class="col-md-3-20 col-sm-3-20 col-xs-6">
                 <div class="services-item">
                     <a href="<?= $url; ?>" class="services-item--thumb" style="background-image: url(/uploads/images/services/<?= $row['image']; ?>);"></a>
                     <p class="services-item--title"><a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>"><?= $row['title']; ?></a></p>
