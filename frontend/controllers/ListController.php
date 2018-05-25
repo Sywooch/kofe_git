@@ -717,6 +717,9 @@ class ListController extends CController {
         }
         $metaDesc = '';
         $title = '';
+        $brandRu = '';
+        if(isset(Yii::$app->params['brandRussianNames'][$brand['title']]))
+            $brandRu = Yii::$app->params['brandRussianNames'][$brand['title']];
         if (isset($categorySEO[self::$category['id']])) {
             $metaDesc = $categorySEO[self::$category['id']]['meta_description'];
             $title = $categorySEO[self::$category['id']]['title'];
@@ -752,8 +755,8 @@ class ListController extends CController {
             $title = 'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Качество! Гарантия! Скорость! ';
             $metaDesc = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Сервисный центр сотрудничает с производителями кофемашин, и устанавливает только качественные и сертифицированные запасные части. Гарантия до 1 года!';
         } elseif ($siteConfig['theme'] == 'satelit') {
-            $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в Москве. Цены без накруток от 990р - Сервис центр #Brandru#';
-            $metaDesc = '';
+            $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в Москве. Цены без накруток от 990р - Сервис центр ' . $brandRu;
+            $metaDesc = 'У вас кофемашина ' . $brand['title'] . ' ' . $pageInfo['title'] . ' и она сломалась? Звоните 📞 ' . Yii::$app->session['region']['phone'] . ' - Выполним ремонт за 24 часа и дадим гарантию до 3х лет';
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
