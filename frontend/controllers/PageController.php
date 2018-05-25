@@ -52,7 +52,7 @@ class PageController extends CController {
 
     protected function parseJs($jsPath, $siteConfig, $replace = false) {
         if (!$replace) {
-            return JSMin::minify(file_get_contents($jsPath));            
+            return JSMin::minify(file_get_contents($jsPath));
         }
         $fileContent = '';
         $fp = fopen($jsPath, "r") or die("не удалось прочесть");
@@ -406,7 +406,11 @@ class PageController extends CController {
         $urls = [];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         foreach ($pages as $page) {
-            $page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
+            if (isset($siteConfig['theme']) && in_array($siteConfig['theme'], ['satelit', 'nasa'])) {
+                
+            } else {
+                $page['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $page['url']);
+            }
             $urls[] = $page;
             if ($page['type'] == 'model' || $page['type'] == 'brand') {
                 if ($page['type'] == 'brand') {
