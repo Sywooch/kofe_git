@@ -20,7 +20,8 @@ $js = app\components\CController::$js;
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/template.css" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>
+        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/template.css" rel="stylesheet">
         <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
@@ -56,7 +57,7 @@ $js = app\components\CController::$js;
                         <div class="col-xs-12">
                             <div class="header-logo pull-left">
                                 <a href="/" class="header-logo--url">
-                                    <img src="<?= $assets . $siteConfig['theme']; ?>/images/logo.svg" class="header-logo--image img-responsive" alt="Ремонт кофемашин в Москве.">
+                                    <img src="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>logo.svg" class="header-logo--image img-responsive" alt="Ремонт кофемашин в Москве.">
                                 </a>
                                 <span class="header-logo--slogan">Ремонт кофемашин в Москве. <br> Качество, гарантия, надёжность!</span>
                             </div>
@@ -64,7 +65,7 @@ $js = app\components\CController::$js;
                                 <div class="header-block header-phone">
                                     <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="header-block--thumb"></a>
                                     <p class="header-block--title"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
-                                    <p class="header-block--description">г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
+                                    <p class="header-block--description">г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +109,7 @@ $js = app\components\CController::$js;
                         <li class="mobile-nav-phone">
                             <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="mobile-nav-phone--thumb"></a>
                             <p class="mobile-nav-phone--title"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
-                            <p class="mobile-nav-phone--description">г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
+                            <p class="mobile-nav-phone--description">г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
                         </li>
                         <li class="mobile-nav-item"><a href="/prices">Цены и услуги</a></li>
                         <li class="mobile-nav-item"><a href="/models">Все модели</a></li>
@@ -130,12 +131,12 @@ $js = app\components\CController::$js;
                     <div class="row">
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="footer-logo">
-                                <a href="/" class="footer-logo--url"><img src="<?= $assets . $siteConfig['theme']; ?>/images/logo.svg" class="footer-logo--image img-responsive" alt="СправникЪ. Выездной ремонт iPhone, iPad, ПК и ноутбуков"></a>
+                                <a href="/" class="footer-logo--url"><img src="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>logo.svg" class="header-logo--image img-responsive" alt="Ремонт кофемашин в Москве."></a>
                                 <span class="footer-logo--slogan">Ремонт кофемашин в Москве. Качество, гарантия, надёжность!</span>
                             </div>
                             <div class="footer-contacts">
                                 <p class="footer-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-mobile" aria-hidden="true"></i><?= Yii::$app->session['region']['phone']; ?></a></p>
-                                <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Москва, ул. Барклая, 8. ТЦ "Горбушка", этаж 2.</p>
+                                <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
                                 <p class="footer-contacts--social">
                                 <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div>
                                 </p>
@@ -170,7 +171,7 @@ $js = app\components\CController::$js;
                                         <p class="footer-menu--title">Помощь</p>
                                         <ul>
                                             <li><a href="/contacts">Контакты</a></li>
-                                            <li><a href="/policy">Политика конфиденциальности</a></li>
+                                            <li><a href="/politika">Политика конфиденциальности</a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -125,7 +125,9 @@ button, .button, input[type="button"], input[type="submit"] {
 .button--block {
   display: block !important;
   width: 100%; }
-
+.product .button--large {
+  margin-top: 20px;
+}
 /* line 62, main.scss */
 .input, input[type="text"], input[type="tel"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
   display: inline-block;
@@ -1178,8 +1180,8 @@ section {
       display: none; }
   /* line 1009, main.scss */
   .promo--collection {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     color: #0d0d0d;
     background: #fff; }
   /* line 1015, main.scss */
@@ -1187,7 +1189,7 @@ section {
     margin: 30px 0px; }
   /* line 1018, main.scss */
   .promo-title {
-    font-size: 40px;
+    font-size: 34px;
     line-height: 44px;
     font-weight: 700; }
   /* line 1023, main.scss */
@@ -1215,7 +1217,8 @@ section {
     margin: 0px auto;
     display: block;
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    max-height: 300px; }
   /* line 1051, main.scss */
   .promo-button {
     margin: 30px 0px 0px; }
@@ -1855,7 +1858,9 @@ section {
     right: -50px;
     width: 286px;
     height: 497px;
-    background: url(kofemashina.png) 0px 0px no-repeat; }
+    background: url(kofemashina.png) 0px 0px no-repeat;
+     background-size: contain;
+    background-position: bottom; }
 
 /*---*/
 /*collection menu*/
@@ -2007,7 +2012,6 @@ section {
       margin: 10px 0px 0px; }
 /* line 1876, main.scss */
 .product-price {
-  margin: 30px 0px 15px;
   font-size: 30px;
   line-height: 34px;
   font-weight: 700;
@@ -2429,7 +2433,19 @@ section {
 .form-callback {
   margin: 0px 0px 30px;
   text-align: center; }
-
+.form-callback form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form-callback form .row--small {
+  margin: 10px 0px;
+}
+.form-callback form .row--small input {
+  margin: 10px 0px;
+}
+.form-callback form button {
+  margin-bottom: 10px;
+}
 /*---*/
 /*partners*/
 /* line 2331, main.scss */
