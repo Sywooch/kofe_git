@@ -433,7 +433,7 @@ class ListController extends CController {
                             99 => 'если кофемашина не показывает наличие воды',
                             115 => 'если нет питания у кофемашины',
                         ];
-                        $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' кофемашины - починим в сервисном центре ' . $pageInfo['title'];
+                        $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' - починим в сервисном центре ' . $pageInfo['title'];
                         $metaDesc = 'Устраняем неисправности, ' . (isset($seoH12[$pageInfo['id']]) ? $seoH12[$pageInfo['id']] : 'если кофемашина - ' . $pageInfo['title']) . '. Ремонт кофемашин в Москве и области.';
                     }
                 } elseif ($siteConfig['id'] == 49) {
