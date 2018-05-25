@@ -5,7 +5,7 @@ $brand = app\components\CController::$monoBrand;
 <div class="breadcrumbs">
     <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs-list">
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs-item">
-            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" class="breadcrumbs-link" href="/"><span itemprop="name">Главная</span></a>
+            <a itemscope itemtype="http://schema.org/Thing" itemprop="item" class="breadcrumbs-link" href="/"><span itemprop="name">Ремонт <?= app\components\CController::$monoBrand['title']; ?></span></a>
             <meta itemprop="position" content="0" />
         </li>
         <?php $a = 1; ?>
