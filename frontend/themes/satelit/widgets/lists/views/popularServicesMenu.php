@@ -8,10 +8,10 @@
                     <?php
                     $url = '#';
                     if ($_GET['data']['type'] != 'model')
-                        $url = (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
+                        $url = '/' . (!empty($prefUrl) ? $prefUrl . '/' : '') . $row['url'];
                     ?>
                     <li class="collection-menu-subcollection-item">
-                        <a href="/<?= $url; ?>"><?= $row['title']; ?></a>
+                        <a href="<?= $url; ?>"><?= $row['title']; ?></a>
                     </li>
                 <?php endforeach; ?>                
             </ul>
