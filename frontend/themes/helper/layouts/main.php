@@ -208,7 +208,7 @@ $js = app\components\CController::$js;
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
-            echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
+            echo '<script>$("#popup-send").toggle();</script>';
         }
         ?>
         <?php $this->endBody() ?>

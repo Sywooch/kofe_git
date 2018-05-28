@@ -38,7 +38,7 @@ $form = ActiveForm::begin([
                         <label for="privacy_checkbox"><?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null, 'class' => 'js-privacy-toggle', 'checked' => 'checked'])->label(false); ?> Я согласен с </label> <noindex><a href="/politika" rel="nofollow" target="_blank">правилами обработки персональных данных</a></noindex>
                         <?php ActiveForm::end() ?>
                     </div>
-                    <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+                    <button data-fancybox-close="" class="fancybox-close-small close1" title="Close"></button>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@ $form = ActiveForm::begin([
                         <p class="alert-item--title">Заявка отправлена</p>
                         <p style="text-align: left; margin-top: 15px; display: flex;"><img style="width: 40px; height: 40px; margin: 0px 10px 0px 0px;" src="<?= $siteConfig['theme']; ?>/images/checked.svg" alt=""><span>Спасибо за заявку, наш оператор свяжется с вами в течение 30 минут.</span></p>
                     </div>
-                    <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+                    <button data-fancybox-close="" class="fancybox-close-small close2" title="Close"></button>
                 </div>
             </div>
         </div>
