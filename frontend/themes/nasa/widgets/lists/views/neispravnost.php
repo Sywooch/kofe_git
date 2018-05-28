@@ -11,6 +11,7 @@ $c = count($rows);
                 <div class="col-lg-3 col-md-6">
                     <a class="faults__item" href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
                         <div class="faults__item-name"><?= $row['title']; ?></div>
+                        <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png">
                         <div class="faults__item-desc">
                             <?= $row['description']; ?>
                         </div>
