@@ -10,7 +10,7 @@ class AskForm2 extends Model {
     public $phone;
     public $message;
     public $name;
-    public $agree;
+    public $agree = 1;
 
     /**
      * @inheritdoc

@@ -10,7 +10,7 @@ class OrderForm3 extends Model {
     public $phone;
     public $name;
     public $comment;
-    public $agree;
+    public $agree = 1;
 
     /**
      * @inheritdoc
