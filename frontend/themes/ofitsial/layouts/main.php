@@ -86,12 +86,12 @@ $js = app\components\CController::$js;
                                 <i class="burgerrow burgerrow3"></i>
                             </div>
                             <div class="topmenu_container">
-                                <ul class="">
-                                    <li  class="first activetopmenu_item"><a href="/">Главная</a></li>
-                                    <li ><a href="o-kompanii.html">О нас</a></li>
-                                    <li ><a href="o-kompanii.html">Прайс</a></li>
-                                    <li ><a href="o-kompanii.html">Модели</a></li>
-                                    <li  class="last"><a href="kontakty.html">Контакты</a></li>
+                                <ul>
+                                    <li class="first activetopmenu_item"><a href="/">Главная</a></li>
+                                    <li><a href="o-kompanii.html">О нас</a></li>
+                                    <li><a href="o-kompanii.html">Прайс</a></li>
+                                    <li><a href="o-kompanii.html">Модели</a></li>
+                                    <li class="last"><a href="kontakty.html">Контакты</a></li>
                                 </ul>
                             </div>
                             <div class="topsearch_container">

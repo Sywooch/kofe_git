@@ -21,7 +21,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="col-md-5">
                         <div class="content__fault">
                             <div class="bg-danger content__fault-icon">
-                                <img alt="" src="/img/icons/fault-not-do-coffee.png"> 
+                                <img alt="" src="/<?= $siteConfig['theme']; ?>/images/services/<?= $pageInfo['image']; ?>.png"> 
                             </div> 
                             <div class="content__fault-image"></div>                                
                         </div> 
