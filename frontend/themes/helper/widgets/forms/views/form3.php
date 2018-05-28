@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-            'id' => 'main-form',
+            'id' => 'form3',
             'options' => ['class' => 'js-feedback-form'],
             'enableClientValidation' => true,
             'fieldConfig' => [
