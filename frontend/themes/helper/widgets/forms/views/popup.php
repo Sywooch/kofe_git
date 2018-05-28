@@ -32,10 +32,7 @@ $form = ActiveForm::begin([
                         ])->label('')
                         ?>
                         <?= Html::submitButton('Оставить заявку', ['class' => 'button button--yellow js-privacy-button', 'type' => 'submit']) ?>
-                        <noindex>
-                            <?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null, 'class' => 'js-privacy-toggle'])->label(false); ?>
-                            <label for="privacy_checkbox">Я согласен с <a href="/politika" rel="nofollow" target="_blank">правилами обработки персональных данных</a></label>
-                        </noindex>
+                        <label for="privacy_checkbox"><?= $form->field($model, 'agree')->checkbox(['checked' => true, 'label' => null, 'class' => 'js-privacy-toggle', 'checked' => 'checked'])->label(false); ?> Я согласен с </label> <noindex><a href="/politika" rel="nofollow" target="_blank">правилами обработки персональных данных</a></noindex>
                         <?php ActiveForm::end() ?>
                     </div>
                     <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
