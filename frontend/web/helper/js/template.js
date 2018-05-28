@@ -5399,63 +5399,7 @@ $(function(){
 		setPhoneMask();
 	});
 	
-	$('body').on('submit', '.js-feedback-form', function(e){
-		e.preventDefault();
-		var $form = $(this);
-		var $type = $(this).data('type');
-		var $button = $('button[type="submit"]', $form);
-		var $error = false;
-		if($type == 'review'){
-			$('.required', $form).each(function(index){
-				if($(this).val() == ''){
-					$(this).addClass('input--error');
-					$error = true;
-				}else{
-					$(this).removeClass('input--error');
-				}
-			});
-		}else{
-			if($('input[name="feedback[phone]"]', $form).val() == ''){
-				$('input[name="feedback[phone]"]', $form).addClass('input--error');
-				$error = true;
-			}else{
-				$('input[name="feedback[phone]"]', $form).removeClass('input--error');
-			}
-		}
-		if(!$error){
-			$button.prop('disabled', true).addClass('button--load');
-			$.post('/client_account/feedback.json', {
-				feedback: {
-					from: ($('[name="feedback[from]"]', $form).val() != '')?$('[name="feedback[from]"]', $form).val():'noreply@spravnik.ru',
-					name: $('input[name="feedback[name]"]', $form).val(),
-					phone: $('input[name="feedback[phone]"]', $form).val(),
-					subject: $('input[name="feedback[subject]"]', $form).val(),
-					content: (($('[name="feedback[content]"]', $form).val() != '')?$('[name="feedback[content]"]', $form).val()+'<br><br>':'')+'Отправлено со старницы: '+window.location.origin+window.location.pathname+(($('[name="feedback[extended]"]', $form).val())?'<br><br>Номер заказа: '+$('[name="feedback[extended]"]', $form).val():'')
-				}
-			}).done(function(response){
-				$button.prop('disabled', false).removeClass('button--load');
-				if($type == 'review'){
-					$message = '<p>Отзыв успешно отправлен!</p><p>Мы обязательно разместим его после проверки.</p>';
-				}else{
-
-                  
-					$message = '<p>Заявка успешно отправлена!</p><p>В самое ближайшее время мы свяжемся с вами.</p>';
-                  evn(2);
-                  
-				}
-				$.fancybox.close(true);
-				$.fancybox.open(Template.render({
-					type: 'success',
-					title: 'Готово!',
-					content: $message
-				}, 'alert'));
-              
-              
-			});
-		}
-	});
-	/*---*/
-	
+		
 	/*window resize events*/
 	$(window).on('resize load', function(){
 		//background pattern
