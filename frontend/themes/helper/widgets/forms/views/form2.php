@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-            'id' => 'main-form',
+            'id' => 'form2',
             'options' => ['class' => 'slider-form js-feedback-form b-v'],
             'enableClientValidation' => true,
             'fieldConfig' => [

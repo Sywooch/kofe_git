@@ -16,7 +16,7 @@
                         use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-                                    'id' => 'main-form',
+                                    'id' => 'popup-form',
                                     'options' => ['class' => 'alert-item--form js-feedback-form'],
                                     'enableClientValidation' => true,
                                     'fieldConfig' => [
