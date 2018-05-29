@@ -394,11 +394,10 @@ if ($('.seo-link.link-toggle').length) {
 
     }
 
-});
-$(window).on("scroll", function () {
-   if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 300) {
       $('.right-form').addClass('scrol-popup');
    } else {
       $('.right-form').removeClass('scrol-popup');
    }
+
 });
