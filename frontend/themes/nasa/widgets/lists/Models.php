@@ -21,8 +21,6 @@ class Models extends Widget {
         $sortedRows = [];
         $searches = [];
         foreach ($rows as $row) {
-            if ($siteConfig['mono'])
-                $row['url'] = str_replace(\app\components\CController::$monoBrand['url'] . '/', Yii::$app->params['replace-url'], $row['url']);
             $searches[] = array(
                 'value' => $row['title'], 'url' => $row['url']
             );

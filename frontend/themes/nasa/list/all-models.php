@@ -17,7 +17,7 @@ $breadcrumbs = [
             <div class="align-items-center row">
                 <div class="col-lg-6 col-md-8 col-xl-5 offset-lg-5 offset-md-3 offset-xl-6">
                     <div class="callback__heading h3"> Не нашли свою модель? </div>
-                    <div class="callback__text"> Свяжитесь с нами по телефону <a class="text-nowrap" href="tel:+74955404164">+7 (495) 540-41-64</a> или закажите бесплатную консультацию. </div>
+                    <div class="callback__text"> Свяжитесь с нами по телефону <a class="text-nowrap" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a> или закажите бесплатную консультацию. </div>
                     <div class="callback__form text-center">
                         <?= nasa\widgets\forms\Main::widget(); ?>
                     </div>
