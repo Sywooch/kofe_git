@@ -452,7 +452,7 @@ class ListController extends CController {
                             125 => 'кофемашина не наливает кофе',
                         ];
                         $title = 'Устраняем неисправность - ' . $pageInfo['title'] . ' - в Москве и области. Работаем ежедневно. Низкие цены';
-                        $metaDesc = 'Ремонт кофемашин в нашем сервисном центре выполяют инженеры с огромным опытом работ. Найдём причину по которой кофемашина ' . (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' и устраним её';
+                        $metaDesc = 'Ремонт кофемашин в нашем сервисном центре выполяют инженеры с огромным опытом работ. Найдём причину по которой ' . (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' и устраним её';
                     }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - Ремонт в Москве';
