@@ -1,9 +1,9 @@
 <?php
-$breadcrumbs = [
-    $pageInfo['title'],
-];
-$this->title = $pageInfo['meta_title'];
+$this->title = $model['meta_title'];
 $siteConfig = app\components\CController::getSiteConfig();
+$breadcrumbs = [
+    $model['title'],
+];
 ?>
 <div class="content">
     <div class="container">
