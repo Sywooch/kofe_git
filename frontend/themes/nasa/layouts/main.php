@@ -14,12 +14,13 @@ $isServicePage = Yii::$app->controller->id == 'list' && Yii::$app->controller->a
 $isServicesPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'services' ? true : false;
 $isModelsPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'all-models' ? true : false;
 $isContactPage = Yii::$app->controller->id == 'contact' && Yii::$app->controller->action->id == 'index' ? true : false;
+$isPage = Yii::$app->controller->id == 'page' && Yii::$app->controller->action->id == 'view' ? true : false;
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 $bodyClass = 'home';
 if($isServicePage) 
     $bodyClass = 'fault';
-elseif($isServicesPage || $isModelsPage || $isContactPage)
+elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
     $bodyClass = 'page';
 
 ?>

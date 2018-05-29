@@ -63,8 +63,8 @@ $js = app\components\CController::$js;
                         <div class="col-md-4 col-lg-3 text-right col-sm-7 p-left-reset preheaderphone_block">
                             <span class="headerphone_container">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
-                                <a href="tel:84953239009">
-                                    8 (495) 323-90-09
+                                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
+                                    <?= Yii::$app->session['region']['phone']; ?>
                                 </a>
                             </span>
                         </div>
@@ -113,7 +113,7 @@ $js = app\components\CController::$js;
                         </p>
                         <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Сервисный центр работает без выходных и праздников</p>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Москва ул. Октябрьская, д. 80, офис 303</p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> Тел.: <a href="tel:998903475090">+998903475090</a></p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> Тел.: <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                         <p><i class="fa fa-clock-o" aria-hidden="true"></i> с 09:00 до 21:00</p>
                     </div>
                     <div class="col-md-3 col-sm-3">
