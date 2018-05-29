@@ -491,7 +491,7 @@ class ListController extends CController {
                         $metaDesc = 'Кофемашина перестала работать? Закажите услугу - ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' и мы выполним её!';
                     } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины ' . self::$monoBrand['title'] . ' в Москве - Цены и адреса СЦ на сайте';
-                        $metaDesc = 'Устраняем неисправности с кофемашинами ' . self::$monoBrand['title'] . ' и оказываем услугу ' . $pageInfo['title'] . ' в самые короткие сроки.';
+                        $metaDesc = 'Устраняем неисправности с кофемашинами ' . self::$monoBrand['title'] . ' и оказываем услугу ' . mb_strtolower($pageInfo['title'], 'utf-8') . ' в самые короткие сроки.';
                     }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - СЦ в Москве';
