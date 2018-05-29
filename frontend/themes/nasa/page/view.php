@@ -7,7 +7,7 @@ $breadcrumbs = [
 ?>
 <div class="container">
     <div class="container">
-        <?= helper\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+        <?= nasa\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     </div>
     <section class="page page-contacts">
         <h1 class="section-title"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title'] ?></h1>
