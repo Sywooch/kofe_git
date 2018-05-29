@@ -238,9 +238,9 @@ $(document).ready(function () {
     $(".navigation_open").click(function () {
         $(".gl-header .navigation").slideToggle("fast");
     });
-    $(".prices .knopkacha a").click(function () {
+    $(".prices .button a").click(function () {
         $(".pricelist").addClass("active");
-        $(this).parent(".knopkacha").hide();
+        $(this).parent(".button").hide();
         return false;
     });
     $(".opan-all-models").click(function () {
@@ -248,7 +248,7 @@ $(document).ready(function () {
         $(".button-section").hide();
         return false;
     });
-    $('.Owl-carousel.Brend-c').owlCarousel({
+    $('.owl-carousel.brend-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -273,7 +273,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.Owl-carousel.model-c').owlCarousel({
+    $('.owl-carousel.model-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -297,7 +297,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.Owl-carousel.metro-c').owlCarousel({
+    $('.owl-carousel.metro-c').owlCarousel({
         loop: true,
         margin: 25,
         nav: false,
@@ -322,7 +322,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.Owl-carousel.coment-c').owlCarousel({
+    $('.owl-carousel.coment-c').owlCarousel({
         loop: true,
         nav: false,
         autoplay: true,
