@@ -23,15 +23,15 @@
     <table class="content__pricelist table table-hover">
         <tbody>
             <?php foreach ($neispravnosti as $neispravnost): ?>
-                <tr>
-                    <td class="content__pricelist-name">
-                        <?php if ($neispravnost['is_popular'] == 1): ?>
-                            <a class="text-dark" href="/<?= $neispravnost['url']; ?>"><?= $neispravnost['title']; ?></a>                        
-                        <?php endif; ?>
-                    </td>
-                    <td class="content__pricelist-value text-nowrap"><?= round($neispravnost['price']); ?> р.</td>
-                    <td><a class="btn btn-sm btn-success" data-target="#modalOrder" data-toggle="modal" href="#">Заказать</a> </td>
-                </tr>
+                <?php if ($neispravnost['is_popular'] == 1): ?>
+                    <tr>
+                        <td class="content__pricelist-name">
+                            <a class="text-dark" href="/<?= $neispravnost['url']; ?>"><?= $neispravnost['title']; ?></a>
+                        </td>
+                        <td class="content__pricelist-value text-nowrap"><?= round($neispravnost['price']); ?> р.</td>
+                        <td><a class="btn btn-sm btn-success" data-target="#modalOrder" data-toggle="modal" href="#">Заказать</a> </td>
+                    </tr>
+                <?php endif; ?>
             <?php endforeach; ?>
         </tbody>
     </table>
