@@ -1,19 +1,19 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($("body").hasClass("popup-form-active")) {
-            $('.Forma-ong').addClass('scrol-popup');
+            $('.right-form').addClass('scrol-popup');
         } else {
             if ($(this).scrollTop() > 400) {
-                $('.Forma-ong').addClass('scrol-popup');
+                $('.right-form').addClass('scrol-popup');
             } else {
-                $('.Forma-ong').removeClass('scrol-popup');
+                $('.right-form').removeClass('scrol-popup');
             }
         }
     });
-    $('.price .knopkacha, .pricelist .knopkacha').click( function(){
+    $('.price .button, .pricelist .button').click( function(){
         $('body').addClass('popup-form-active');    
     });
-    $('.Forma-yop').click( function(){
+    $('.close-form').click( function(){
         $('body').removeClass('popup-form-active');    
     });
     var popups = [
@@ -394,11 +394,4 @@ if ($('.seo-link.link-toggle').length) {
 
     }
 
-});
-$(window).on("scroll", function () {
-   if ($(this).scrollTop() > 300) {
-      $('.right-form').addClass('scrol-popup');
-   } else {
-      $('.right-form').removeClass('scrol-popup');
-   }
 });
