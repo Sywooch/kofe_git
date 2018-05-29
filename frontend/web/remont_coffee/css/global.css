@@ -1013,6 +1013,7 @@ a:hover {
 }
 .gl-footer::before {
     background: rgba(17, 17, 17, 0.5) none repeat scroll 0 0;
+    display: block;
     content: " ";
     height: 100%;
     left: 0;
@@ -1021,11 +1022,6 @@ a:hover {
     width: 100%;
     z-index: 0;
     background-color: rgba(17, 17, 17, 0.9);
-}
-.gl-footer:before,
-.gl-footer:after {
-    content: '';
-    display: table;
 }
 .gl-footer:after {
     clear: both;
