@@ -394,10 +394,11 @@ if ($('.seo-link.link-toggle').length) {
 
     }
 
-    if ($(this).scrollTop() > 300) {
+});
+$(window).on("scroll", function () {
+   if ($(this).scrollTop() > 300) {
       $('.right-form').addClass('scrol-popup');
    } else {
       $('.right-form').removeClass('scrol-popup');
    }
-
 });

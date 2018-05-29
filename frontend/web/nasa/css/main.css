@@ -7528,3 +7528,15 @@ a.text-dark:hover,a.text-dark:focus{
     max-width: 20%;
     }
 }
+.faults .icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: #c50000;
+    display: inline-block;
+    text-align: center;
+}
+.faults .icon img {
+    max-width: 40%;
+}

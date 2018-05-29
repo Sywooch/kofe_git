@@ -8,10 +8,12 @@ $c = count($rows);
         <h3>Выберите неисправность</h3>
         <div class="faults__wrapper no-gutters row">
             <?php foreach ($rows as $key => $row): ?>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <a class="faults__item" href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
+                        <div class="icon">
+                            <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png">
+                        </div>
                         <div class="faults__item-name"><?= $row['title']; ?></div>
-                        <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png">
                         <div class="faults__item-desc">
                             <?= $row['description']; ?>
                         </div>
