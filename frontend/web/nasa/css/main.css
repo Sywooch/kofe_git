@@ -7561,3 +7561,20 @@ a.text-dark:hover,a.text-dark:focus{
     display: flex;
     align-items: center;
 }
+.model-neispravnost tbody {
+    display: flex;
+    flex-wrap: wrap;
+}
+.model-neispravnost tbody tr {
+    display: table;
+    width: 50%;
+}
+.model-neispravnost tbody tr td.content__pricelist-name {
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .model-neispravnost tbody tr {
+        display: table;
+        width: 100%;
+    }
+}

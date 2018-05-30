@@ -34,7 +34,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <?= app\components\CController::$category['rod_title']; ?>  <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в <?= Yii::$app->session['region']['titleRod']; ?>
                     <?php endif; ?>
                 </h1>
-                <div class="d-lg-block d-none intro__description">                    
+                <div class="d-lg-block intro__description">                    
                     <?php if (!empty($pageInfo['description'])): ?>
                         <?= $pageInfo['description']; ?>
                     <?php else: ?>
@@ -51,5 +51,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
     </div>
 </div>
-<?= nasa\widgets\lists\Neispravnost::widget(['view' => 'neispTable']); ?>
+<div class="model-neispravnost">
+    <?= nasa\widgets\lists\Neispravnost::widget(['view' => 'neispTable']); ?>
+</div>
 <?= nasa\widgets\other\Advantage::widget(['view' => 'timer']); ?>

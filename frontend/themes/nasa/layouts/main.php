@@ -164,7 +164,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
-            echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
+            echo '<script>$(".' . $siteConfig['sitePrefix'] . 'modal-backdrop").addClass("' . $siteConfig['sitePrefix'] . 'show"); $("#modalGood").addClass("' . $siteConfig['sitePrefix'] . 'show");</script>';
         }
         ?>
         <script>$('body').on("keyup", "input[type=tel]", function () {
