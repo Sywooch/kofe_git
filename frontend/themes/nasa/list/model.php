@@ -52,6 +52,4 @@ $siteConfig = app\components\CController::getSiteConfig();
     </div>
 </div>
 <?= nasa\widgets\lists\Neispravnost::widget(); ?>
-<?= nasa\widgets\other\Advantage::widget(); ?>
-<?= nasa\widgets\other\Advantage::widget(['view' => 'warranty']); ?>
 <?= nasa\widgets\other\Advantage::widget(['view' => 'timer']); ?>
