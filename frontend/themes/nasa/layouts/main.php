@@ -177,7 +177,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                 </div>
             </div>
         </div>
-        <div class="fade modal show" id="modalGood">
+        <div class="fade modal" id="modalGood">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body"><button aria-label="Close" class="close" data-dismiss="modal" type=button><span aria-hidden="true">&times;</span> </button>
@@ -189,7 +189,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                 </div>
             </div>
         </div>
-        <div class="modal-backdrop fade show"></div>
+        <div class="modal-backdrop fade"></div>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>   
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
