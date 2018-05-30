@@ -3858,7 +3858,8 @@ button.close{
 .modal-open{
     overflow:hidden
 }
-.modal{
+.modal {
+    display: none;
     position:fixed;
     top:0;
     right:0;
@@ -3868,9 +3869,8 @@ button.close{
     overflow:hidden;
     outline:0
 }
-.modal-open .modal{
-    overflow-x:hidden;
-    overflow-y:auto
+.modal.show{
+    display: block;
 }
 .modal-dialog{
     position:relative;
@@ -3903,7 +3903,7 @@ button.close{
     outline:0
 }
 .modal-backdrop{
-    display: block;
+    display: none;
     position:fixed;
     top:0;
     right:0;
@@ -3916,6 +3916,7 @@ button.close{
     opacity:0
 }
 .modal-backdrop.show{
+    display: block;
     opacity:.5
 }
 .modal-header{

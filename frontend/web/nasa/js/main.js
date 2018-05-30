@@ -18,5 +18,13 @@ $(document).ready(function () {
     $(".sidebar-toggle").length && $(".sidebar-toggle .sidebar-toggle__option").on("click", function (e) {
         $(this).hasClass("active") || ($(".sidebar-toggle .sidebar-toggle__option.active").removeClass("active"), $(this).addClass("active"), $(".collapse").hide(),$($(this).data("target")).show("toggle"))
     });
-    
+    $(".btn-success").on("click", function (e) {
+        $("#modalPromo").addClass("show");
+        $(".modal-backdrop").addClass("show");
+    });
+    $(".close span").on("click", function (e) {
+        $("#modalPromo").removeClass("show");
+        $(".modal-backdrop").removeClass("show");
+        $("#modalGood").removeClass("show")
+    });
 });

@@ -159,19 +159,31 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                 </div>
             </div>
         </div>
-        <div aria-hidden="true" aria-labelledby="modalPromo" class="fade modal show" id="modalPromo" role="dialog" tabindex="-1">
+        <div class="fade modal" id="modalPromo">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body"><button aria-label="Close" class="close" data-dismiss="modal" type=button><span aria-hidden="true">&times;</span> </button>
                         <div class="px-5 py-5">
                             <h3>Дарим 25% скидку на ремонт кофемашины</h3>
-                            <p>Просто введите Ваш номер телефона и мы свяжемся с Вами в течение 2 минут.
+                            <p>Просто введите Ваш номер телефона и мы свяжемся с Вами в течение 2 минут.</p>
                             <form class="form-order">
                                 <div class="form-group mb-md-4">
                                     <input class="form-control" name=phone placeholder="Номер телефона *" required type=tel> 
                                 </div> 
                                 <button class="btn btn-block btn-primary" type=submit>Заказать ремонт</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fade modal show" id="modalGood">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body"><button aria-label="Close" class="close" data-dismiss="modal" type=button><span aria-hidden="true">&times;</span> </button>
+                        <div class="px-5 py-5">
+                            <h3>Спасибо за заявку. </h3>
+                            <p>Мы Вам перезвоним в самое ближайшее время!</p>
                         </div>
                     </div>
                 </div>
