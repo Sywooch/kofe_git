@@ -17,7 +17,7 @@ $c = count($rows);
                             <div class="faults__item-name"><?= $row['title']; ?></div>
                         </div>
                         <div class="faults__item-desc">
-                            <ul><li>Ремонт блока управления</li><li>Замена сетевого шнура</li><li>Чистка от кофейных масел</li><li>Чистка диспенсеров</li><li>Ремонт гидросистемы</li></ul>
+                            <?= $row['description']; ?>
                         </div>
                         <div class="faults__item-prices">
                             <div class="price">от <?= number_format($row['price'], 0, ' ', ' '); ?> р.</div>
