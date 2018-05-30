@@ -80,7 +80,7 @@ class SiteController extends CController {
     public function actionError() {
         //$this->redirect(Yii::app()->homeUrl);
         $exception = Yii::$app->errorHandler->exception;
-        print_r($exception);
+        //print_r($exception);
         //header("HTTP/1.1 301 Moved Permanently");
         //header("Location: " . Yii::$app->request->hostInfo);
         //exit();
