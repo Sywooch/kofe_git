@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="product-images">
                     <div class="product-images--large">
-                        <img src="<?= $siteConfig['theme']; ?>/images/services/<?= $pageInfo['image']; ?>.png" alt="<?= $pageInfo['title']; ?>" class="img-responsive js-product-image">
+                        <img src="<?= $siteConfig['theme']; ?>/images/services/<?= empty($pageInfo['image']) ? '95' : $pageInfo['image']; ?>.png" alt="<?= $pageInfo['title']; ?>" class="img-responsive js-product-image">
                     </div>
                 </div>
             </div>

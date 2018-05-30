@@ -7048,9 +7048,9 @@ a.text-dark:hover,a.text-dark:focus{
 .faults{
     padding:50px 0
 }
-.faults__wrapper{
+/*.faults__wrapper{
     box-shadow:inset 1px 1px 0 0 rgba(48,48,48,0.15),0 4px 30px 0 rgba(48,48,48,0.25)
-}
+}*/
 .faults__item{
     position:relative;
     display:block;
@@ -7058,8 +7058,12 @@ a.text-dark:hover,a.text-dark:focus{
     height:100%;
     padding:30px 20px 80px 30px;
     color:#18232d;
-    box-shadow:inset -1px -1px 0 0 rgba(48,48,48,0.15);
-    transition:background 0.2s
+    /*box-shadow:inset -1px -1px 0 0 rgba(48,48,48,0.15);
+    transition:background 0.2s*/
+}
+.faults__item:hover{
+    text-decoration:none;
+    background:rgba(0,0,0,0.05)
 }
 .faults__item-name{
     position:relative;
@@ -7067,7 +7071,6 @@ a.text-dark:hover,a.text-dark:focus{
     font-size:18px;
     font-weight:bold;
     line-height:1.2;
-    margin-bottom:1rem;
     transition:color 0.2s;
     z-index:2
 }
@@ -7075,7 +7078,11 @@ a.text-dark:hover,a.text-dark:focus{
     position:relative;
     font-size:14px;
     color:#18232d;
-    z-index:2
+    z-index:2;
+    margin: 20px 0px;
+}
+.faults__item-desc ul {
+    margin-bottom: 0px;
 }
 .faults__item-desc .list-item{
     display:list-item;
@@ -7104,10 +7111,6 @@ a.text-dark:hover,a.text-dark:focus{
     display:inline-block;
     vertical-align:middle;
     text-decoration:line-through
-}
-.faults__item:hover{
-    text-decoration:none;
-    background:rgba(0,0,0,0.05)
 }
 .faults__item.item-first{
     padding:30px 35px 80px 35px;
@@ -7529,14 +7532,21 @@ a.text-dark:hover,a.text-dark:focus{
     }
 }
 .faults .icon {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    max-height: 60px;
+    line-height: 60px;
     border-radius: 50%;
     background: #c50000;
     display: inline-block;
     text-align: center;
+    margin-right: 15px;
 }
 .faults .icon img {
     max-width: 40%;
+}
+.faults .top-info {
+    display: flex;
+    align-items: center;
 }

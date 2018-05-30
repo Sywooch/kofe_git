@@ -10,12 +10,14 @@ $c = count($rows);
             <?php foreach ($rows as $key => $row): ?>
                 <div class="col-lg-4 col-md-6">
                     <a class="faults__item" href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
-                        <div class="icon">
-                            <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png">
+                        <div class="top-info">
+                            <div class="icon">
+                                <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png">
+                            </div>
+                            <div class="faults__item-name"><?= $row['title']; ?></div>
                         </div>
-                        <div class="faults__item-name"><?= $row['title']; ?></div>
                         <div class="faults__item-desc">
-                            <?= $row['description']; ?>
+                            <ul><li>Ремонт блока управления</li><li>Замена сетевого шнура</li><li>Чистка от кофейных масел</li><li>Чистка диспенсеров</li><li>Ремонт гидросистемы</li></ul>
                         </div>
                         <div class="faults__item-prices">
                             <div class="price">от <?= number_format($row['price'], 0, ' ', ' '); ?> р.</div>
