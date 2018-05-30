@@ -58,8 +58,8 @@ $form = ActiveForm::begin([
                 <div class="modal--title"> Выберите регион  </div>
             </div>
             <div class="modal-body modal-form mb">
-               <a class="sec-nav--item-l active" href="#">МОСКВА И ОБЛАСТЬ</a>
-               <a class="sec-nav--item-l" style="border-bottom:1px solid #d8dcde;" href="#">САНКТ-ПЕТЕРБУРГ</a>
+               <a class="sec-nav--item-l active" href="http://rekofe.ru/">МОСКВА И ОБЛАСТЬ</a>
+               <a class="sec-nav--item-l" style="border-bottom:1px solid #d8dcde;" href="http://spb.rekofe.ru/">САНКТ-ПЕТЕРБУРГ</a>
             </div>
         </div>
     </div>
