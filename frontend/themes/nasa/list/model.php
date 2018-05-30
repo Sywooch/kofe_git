@@ -51,5 +51,5 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
     </div>
 </div>
-<?= nasa\widgets\lists\Neispravnost::widget(); ?>
+<?= nasa\widgets\lists\Neispravnost::widget(['view' => 'neispTable']); ?>
 <?= nasa\widgets\other\Advantage::widget(['view' => 'timer']); ?>
