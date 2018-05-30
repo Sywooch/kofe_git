@@ -3865,7 +3865,6 @@ button.close{
     bottom:0;
     left:0;
     z-index:1050;
-    display:none;
     overflow:hidden;
     outline:0
 }
@@ -3904,6 +3903,7 @@ button.close{
     outline:0
 }
 .modal-backdrop{
+    display: block;
     position:fixed;
     top:0;
     right:0;
@@ -3966,7 +3966,8 @@ button.close{
         margin:1.75rem auto
     }
     .modal-dialog-centered{
-        min-height:calc(100% - (1.75rem * 2))
+        min-height: 100%;
+        margin-top: 0px;
     }
     .modal-sm{
         max-width:300px
@@ -3977,6 +3978,11 @@ button.close{
         max-width:800px
     }
 }
+
+    .modal-dialog-centered{
+        min-height: 100%;
+        margin-top: 0px;
+    }
 .tooltip{
     position:absolute;
     z-index:1070;

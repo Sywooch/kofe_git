@@ -18,4 +18,5 @@ $(document).ready(function () {
     $(".sidebar-toggle").length && $(".sidebar-toggle .sidebar-toggle__option").on("click", function (e) {
         $(this).hasClass("active") || ($(".sidebar-toggle .sidebar-toggle__option.active").removeClass("active"), $(this).addClass("active"), $(".collapse").hide(),$($(this).data("target")).show("toggle"))
     });
+    
 });

@@ -155,34 +155,6 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </header>
-        <div class="popover-box is-chat" id="WhatsappTooltip">
-            <a href="#" class="popover-box--chat-l">
-                <span class="popover-box--chat-t">Whatsapp</span>
-                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
-                <span class="popover-box--chat-d">Только в режиме чата</span>
-            </a>
-        </div>
-        <div class="popover-box is-chat" id="SkypeTooltip">
-            <a href="#" class="popover-box--chat-l">
-                <span class="popover-box--chat-t">Skype</span>
-                <span class="popover-box--chat-p">ntv-plus.com</span>
-                <span class="popover-box--chat-d">Чат и звонки</span>
-            </a>
-        </div>
-        <div class="popover-box is-chat" id="ViberTooltip">
-            <a href="#" class="popover-box--chat-l">
-                <span class="popover-box--chat-t">Viber</span>
-                <span class="popover-box--chat-p">+7 (916) 380-21-81</span>
-                <span class="popover-box--chat-d">Только в режиме чата</span>
-            </a>
-        </div>
-        <div class="popover-box is-chat" id="TelegramTooltip">
-            <a href="#" class="popover-box--chat-l">
-                <span class="popover-box--chat-t">Telegram</span>
-                <span class="popover-box--chat-p">ntvplus_bot</span>
-                <span class="popover-box--chat-d">Только в режиме чата</span>
-            </a>
-        </div>
         <?= $content; ?>
         <footer class="footer">
             <div class="footer--nav-line">
