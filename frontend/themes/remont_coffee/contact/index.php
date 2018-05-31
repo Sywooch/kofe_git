@@ -2,7 +2,11 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
+$breadcrumbs = [
+    $pageInfo['title'],
+];
 ?>
+<?= remont_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <div class="ontact-top-text">
     <div class="container">
         <h1 class="gl-text">Авторизованный сервисный центр в  <span><?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?></span></h1>

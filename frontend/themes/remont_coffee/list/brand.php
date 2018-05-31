@@ -2,7 +2,11 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
+$breadcrumbs = [
+    'Ремонт кофемашин ' . $pageInfo['title'],
+];
 ?>
+<?= remont_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     <div class="offer" style="background: url('<?= $assets . $siteConfig['theme'] . '/'; ?>images/home-hero.jpg') 100% 100% no-repeat; background-size: cover;">
         <div class="container">
             <div class="for-lr">
