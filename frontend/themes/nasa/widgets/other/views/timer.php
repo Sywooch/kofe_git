@@ -3,7 +3,7 @@
         <div class="align-items-center promo__wrapper row">
             <div class="col-md-5 text-center text-md-right">
                 <div class="h3 promo__heading">Сегодня скидка!</div>
-                <div class=promo__description> Сегодня весь день мы дарим 25% скидку на<br class="d-lg-inline d-none"> все услуги по ремонту кофемашин <?= app\components\CController::$monoBrand['title']; ?> </div><a class="btn btn-primary" data-target=#modalPromo data-toggle=modal href=#>Получить 25% скидку</a></div>
+                <div class=promo__description> Сегодня весь день мы дарим 25% скидку на<br class="d-lg-inline d-none"> все услуги по ремонту кофемашин <?= app\components\CController::$monoBrand['title']; ?> </div><a class="btn btn-primary btn-success"  data-target=#modalPromo data-toggle=modal href=#>Получить 25% скидку</a></div>
             <div class="col-md-4 text-center">
                 <div class=promo__countdown>
                     <div class=promo__countdown-circle>

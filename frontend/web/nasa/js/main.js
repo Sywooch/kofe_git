@@ -21,10 +21,12 @@ $(document).ready(function () {
     $(".btn-success").on("click", function (e) {
         $("#modalPromo").addClass("show");
         $(".modal-backdrop").addClass("show");
+        return false;
     });
     $(".close span").on("click", function (e) {
         $("#modalPromo").removeClass("show");
         $(".modal-backdrop").removeClass("show");
-        $("#modalGood").removeClass("show")
+        $("#modalGood").removeClass("show");
+        return false;
     });
 });

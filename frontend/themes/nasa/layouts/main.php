@@ -139,7 +139,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                             <li><a href="/price-list">Прайс-лист</a></li>
                             <li><a href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li>
                             <li><a href="/contacts">Контакты</a></li>
-                            <li><a href="/policy">Конфиденциальности </a></li>
+                            <li><a href="/politic">Конфиденциальности </a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-4 text-center">
@@ -156,7 +156,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                         <div class="footer__copyright mb-2"><a href="/"><?= ucfirst($_SERVER['HTTP_HOST']); ?></a> &copy; <?= date('Y'); ?></div>
                     </div>
                     <div class="col-lg-9 col-md-8 text-center text-md-right">
-                        <div class="footer__policy">* <a href="/policy" target=_blank>Политика конфиденциальности и обработки персональных данных</a></div>
+                        <div class="footer__policy">* <a href="/politic" target=_blank>Политика конфиденциальности и обработки персональных данных</a></div>
                     </div>
                 </div>
             </div>
