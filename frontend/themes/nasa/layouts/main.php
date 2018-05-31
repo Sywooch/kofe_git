@@ -120,14 +120,34 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
         <footer class="footer">
             <div class="container">
                 <div class="align-items-center row">
-                    <div class="col-lg-3 col-md-4 d-md-block d-none text-left">
+                    <div class="col-lg-3 col-md-4 text-left">
                         <a class="footer__logo" href="/">
                             <img alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" src="<?= $assets . $siteConfig['theme']; ?>/img/brands/<?= $siteConfig['sitePrefix']; ?>/logo.svg"> 
                         </a> 
                     </div>
-                    <div class="col-lg-6 col-md-4"></div>
+                    <div class="col-lg-3 col-md-4">
+                        <ul>
+                            <li><a href="/protekaet-voda">Протекает вода</a></li>
+                            <li><a href="/ploho-techet-kofe">Плохо течет кофе</a></li>
+                            <li><a href="/ne-nagrevaet-vodu">Не нагревает воду</a></li>
+                            <li><a href="/ne-rabotaet">Не включается</a></li>
+                            <li><a href="/net-para">Нет пара</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 d-lg-block d-none">
+                        <ul>
+                            <li><a href="/price-list">Прайс-лист</a></li>
+                            <li><a href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li>
+                            <li><a href="/contacts">Контакты</a></li>
+                            <li><a href="/policy">Конфиденциальности </a></li>
+                        </ul>
+                    </div>
                     <div class="col-lg-3 col-md-4 text-center">
                         <div class="footer__phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span><?= Yii::$app->session['region']['phone']; ?></span></a> </div>
+                        <ul>
+                            <li>г. Москва, м. Окружная, Гостиничная ул., 9</li>
+                            <li>Ежедневно с 07:00 до 24:00</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer__divider"></div>
