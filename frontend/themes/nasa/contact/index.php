@@ -25,7 +25,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
             <div class="col-lg-6 col-md-12 col-xl-5 offset-xl-1"><img alt="" class="d-lg-block d-none img-fluid rounded" src="/<?=$siteConfig['theme']; ?>/img/contacts__image.jpg"> </div>
         </div><br>
-        <h3>Наши мастера работают по всему городу</h3>
+        <div class="h3">Наши мастера работают по всему городу</div>
         <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0e0243c875a25bd7b744995853bc4d0a730b4c8a717f73b2bfa08c858cdb637&amp;source=constructor" frameborder="0"></iframe>
         <div class="callback">
             <div class="align-items-center row">

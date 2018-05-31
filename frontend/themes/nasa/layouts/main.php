@@ -167,7 +167,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                 <div class="modal-content">
                     <div class="modal-body"><button aria-label="Close" class="close" data-dismiss="modal" type=button><span aria-hidden="true">&times;</span> </button>
                         <div class="px-5 py-5">
-                            <h3>Спасибо за заявку. </h3>
+                            <div class="h3">Спасибо за заявку. </div>
                             <p>Мы Вам перезвоним в самое ближайшее время!</p>
                         </div>
                     </div>

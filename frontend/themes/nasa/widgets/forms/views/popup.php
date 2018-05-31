@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-body"><button aria-label="Close" class="close" data-dismiss="modal" type=button><span aria-hidden="true">&times;</span> </button>
                 <div class="px-5 py-5">
-                    <h3>Дарим 25% скидку на ремонт кофемашины</h3>
+                    <div class="h3">Дарим 25% скидку на ремонт кофемашины</div>
                     <p>Просто введите Ваш номер телефона и мы свяжемся с Вами в течение 2 минут.</p>
                     <?php
 

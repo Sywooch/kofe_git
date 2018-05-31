@@ -5,7 +5,7 @@ $c = count($rows);
 ?>
 <div class="faults">
     <div class="container">
-        <h3>Выберите неисправность</h3>
+        <div class="h3">Выберите неисправность</div>
         <table class="content__pricelist table table-hover">
             <tbody>
                 <?php foreach ($rows as $key => $row): ?>

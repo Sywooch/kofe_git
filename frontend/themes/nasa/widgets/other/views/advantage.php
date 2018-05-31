@@ -4,7 +4,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div class=advantages>
     <div class=container>
-        <h3>Наши преимущества</h3> <br>
+        <div class="h3">Наши преимущества</div> <br>
         <div class="advantages__wrapper row">
             <div class="col-lg-4 col-md-6">
                 <div class=advantages__item>

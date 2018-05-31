@@ -5,7 +5,7 @@ $c = count($rows);
 ?>
 <div class="faults">
     <div class="container">
-        <h3>Выберите неисправность</h3>
+        <div class="h3">Выберите неисправность</div>
         <div class="faults__wrapper no-gutters row">
             <?php foreach ($rows as $key => $row): ?>
                 <div class="col-lg-4 col-md-6">

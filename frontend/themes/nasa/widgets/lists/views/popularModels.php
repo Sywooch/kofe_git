@@ -1,6 +1,6 @@
 <div class="models">
     <div class="container">
-        <h3>Ремонтируем модели <?= app\components\CController::$monoBrand['title']; ?>:</h3>
+        <div class="h3">Ремонтируем модели <?= app\components\CController::$monoBrand['title']; ?>:</div>
         <div class="models__wrapper no-gutters row">
             <?php foreach ($rows as $row): ?>
                 <div class="col-lg-five col-md-3">
