@@ -135,15 +135,19 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                         </ul>
                     </div>
                     <div class="col-lg-3 d-lg-block d-none">
-                        <ul>
-                            <li><a href="/price-list">Прайс-лист</a></li>
-                            <li><a href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li>
-                            <li><a href="/contacts">Контакты</a></li>
-                            <li><a href="/politic">Конфиденциальности </a></li>
-                        </ul>
+                        <noindex>
+                            <ul>
+                                <li><a rel="nofollow" href="/price-list">Прайс-лист</a></li>
+                                <li><a rel="nofollow" href="/models">Модели <?= app\components\CController::$monoBrand['title']; ?></a></li>
+                                <li><a rel="nofollow" href="/contacts">Контакты</a></li>
+                                <li><a rel="nofollow" href="/politic">Конфиденциальности </a></li>
+                            </ul>
+                        </noindex>
                     </div>
                     <div class="col-lg-3 col-md-4 text-center">
-                        <div class="footer__phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span><?= Yii::$app->session['region']['phone']; ?></span></a> </div>
+                        <noindex>
+                            <div class="footer__phone"><a rel="nofollow" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span><?= Yii::$app->session['region']['phone']; ?></span></a> </div>
+                        </noindex>
                         <ul>
                             <li>г. Москва, м. Окружная, Гостиничная ул., 9</li>
                             <li>Ежедневно с 07:00 до 24:00</li>
@@ -153,10 +157,10 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                 <div class="footer__divider"></div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 text-center text-md-left">
-                        <div class="footer__copyright mb-2"><a href="/"><?= ucfirst($_SERVER['HTTP_HOST']); ?></a> &copy; <?= date('Y'); ?></div>
+                        <div class="footer__copyright mb-2"><a href="/">Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?></a> &copy; <?= date('Y'); ?></div>
                     </div>
                     <div class="col-lg-9 col-md-8 text-center text-md-right">
-                        <div class="footer__policy">* <a href="/politic" target=_blank>Политика конфиденциальности и обработки персональных данных</a></div>
+                        <noindex><div class="footer__policy">* <a href="/politic" rel="nofollow" target=_blank>Политика конфиденциальности и обработки персональных данных</a></div></noindex>
                     </div>
                 </div>
             </div>
