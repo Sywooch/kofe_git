@@ -2161,6 +2161,7 @@ input {
 .prices table tbody tr td:nth-child(1) {
     color: #2e375f;
     font-weight: 600;
+    text-align: left;
 }
 .prices table tbody tr td:nth-child(1) a {
     border-bottom: 1px dashed #2e375f;
@@ -2790,5 +2791,49 @@ summary {
         box-sizing: border-box;
         max-width: 300px;
         width: 175px;
+    }
+}
+
+.breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+.breadcrumbs ul a,
+.breadcrumbs ul li {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.breadcrumbs ul a {
+    color: #cf393c;
+    margin-right: 15px;
+}
+.breadcrumbs ul a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs ul li:not(:last-child):after {
+    content: '/';
+    margin-right: 15px;
+}
+@media (max-width: 700px) {
+    .breadcrumbs ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px 0px;
+    }
+    .breadcrumbs ul a,
+    .breadcrumbs ul li {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .breadcrumbs ul a {
+        color: #cf393c;
+        margin-right: 8px;
+    }
+    .breadcrumbs ul li:not(:last-child):after {
+        content: '/';
+        margin-right: 8px;
     }
 }
