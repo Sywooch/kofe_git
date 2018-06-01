@@ -27,6 +27,7 @@ class CController extends \yii\web\Controller {
         'remont_coffee' => ['name' => 'MSKM5', 'OID' => 2207167003000],
         'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
         'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
+        'helper' => ['name' => 'MSKS4', 'OID' => 2207167051000],
     ];
 
     public static function replaceJS($js) {

@@ -2658,7 +2658,7 @@ return [
             'sitePrefix' => 'delonghi',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2672,7 +2672,7 @@ return [
             'sitePrefix' => 'saeco',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2686,7 +2686,7 @@ return [
             'sitePrefix' => 'philips',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2700,7 +2700,7 @@ return [
             'sitePrefix' => 'jura',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2714,7 +2714,7 @@ return [
             'sitePrefix' => 'bosch',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2728,7 +2728,7 @@ return [
             'sitePrefix' => 'melitta',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2742,7 +2742,7 @@ return [
             'sitePrefix' => 'nivona',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2756,7 +2756,7 @@ return [
             'sitePrefix' => 'siemens',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2770,7 +2770,7 @@ return [
             'sitePrefix' => 'cimbali',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2784,7 +2784,7 @@ return [
             'sitePrefix' => 'miele',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2798,7 +2798,7 @@ return [
             'sitePrefix' => 'simonelli',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2812,7 +2812,7 @@ return [
             'sitePrefix' => 'bork',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2825,7 +2825,7 @@ return [
             'sitePrefix' => 'saeco',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'ofitsial',
+            'theme' => 'helper',
         ],
     ]
 ];
