@@ -191,7 +191,10 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
             echo '<script>$(".' . $siteConfig['sitePrefix'] . 'modal-backdrop").addClass("' . $siteConfig['sitePrefix'] . 'show"); $("#modalGood").addClass("' . $siteConfig['sitePrefix'] . 'show");</script>';
         }
         ?>
-        <script>$('body').on("keyup", "input[type=tel]", function () {
+        <script>
+            $("form").each(function () {
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });$('body').on("keyup", "input[type=tel]", function () {
             var v = $(this).val().substring(4, 6);
             if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
                 $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
