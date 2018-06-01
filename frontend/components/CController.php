@@ -29,6 +29,7 @@ class CController extends \yii\web\Controller {
         'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
         'helper' => ['name' => 'MSKS4', 'OID' => 2207167051000],
         'tnv_spb' => ['name' => 'SPB2', 'OID' => 2207167076000],
+        'tnv_spb' => ['name' => 'MSKS5', 'OID' => 2207167052000],
     ];
 
     public static function replaceJS($js) {

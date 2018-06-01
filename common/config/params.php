@@ -2502,7 +2502,7 @@ return [
             'sitePrefix' => 'delonghi',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'saeco-remont-kofe' => [
@@ -2515,7 +2515,7 @@ return [
             'sitePrefix' => 'saeco',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'philips-remont-kofe' => [
@@ -2528,7 +2528,7 @@ return [
             'sitePrefix' => 'philips',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'jura-remont-kofe' => [
@@ -2541,7 +2541,7 @@ return [
             'sitePrefix' => 'jura',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'bosch-remont-kofe' => [
@@ -2554,7 +2554,7 @@ return [
             'sitePrefix' => 'bosch',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'melitta-remont-kofe' => [
@@ -2567,7 +2567,7 @@ return [
             'sitePrefix' => 'melitta',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'nivona-remont-kofe' => [
@@ -2580,7 +2580,7 @@ return [
             'sitePrefix' => 'nivona',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'siemens-remont-kofe' => [
@@ -2593,7 +2593,7 @@ return [
             'sitePrefix' => 'siemens',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'support-la-cimbali' => [
@@ -2606,7 +2606,7 @@ return [
             'sitePrefix' => 'cimbali',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'miele-remont-kofe' => [
@@ -2619,7 +2619,7 @@ return [
             'sitePrefix' => 'miele',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'service-nuova-simonelli' => [
@@ -2632,7 +2632,7 @@ return [
             'sitePrefix' => 'simonelli',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'bork-remont-kofe' => [
@@ -2645,7 +2645,7 @@ return [
             'sitePrefix' => 'bork',
             'change-logo' => true,
             'category_id' => 7,
-            'order-title' => 'МСК Войковская',
+            'order-title' => 'nasa',
             'theme' => 'nasa',
         ],
         'remont-delonghi-msk' => [
