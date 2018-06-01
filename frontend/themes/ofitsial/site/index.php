@@ -15,16 +15,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : app\component
                 <div class="ah_triggers">
                     <p>Наш сервисный центр занимается ремонтом кофемашин #brand_en# на протяжении 10 лет. На основе рекомендаций производителей кофемашин, мы разработали собственные инструкции которые помогают обеспечить качественный и быстрый ремонт кофемашин #brand_en#!</p>
                 </div>
-                <form>
-                    <div class="row">
-                        <div class="col-lg-5 col-lg-offset-3">
-                            <input type="tel" name="phone" placeholder="Телефон" required/>
-                        </div>
-                        <div class="col-lg-4">
-                            <button type="submit" class="hero-form__btn">Заказать</button>
-                        </div>
-                    </div>
-                </form>
+                <?= ofitsial\widgets\forms\Main::widget(); ?>
                 <div class="mini-text">
                     <p>Перезвоним Вам за 2 минуты!</p>
                 </div>

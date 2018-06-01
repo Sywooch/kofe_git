@@ -14,14 +14,22 @@ $isServicePage = Yii::$app->controller->id == 'list' && Yii::$app->controller->a
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html>
 <html lang="ru">    
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>
-        <link href="<?= $assets . $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/template.css" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>        
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/adaptive.css&cache=0" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/owl.carousel.css&cache=0" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/fancybox.min.css&cache=0" rel=stylesheet>
+        <link href="/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/fonts.css" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/main.css&cache=0" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/jquery.modal.css&cache=0" rel=stylesheet>
+        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/responsive.css&cache=0" rel=stylesheet>
+        <link href="/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/fontawesome.css" rel=stylesheet>        
         <?= !empty($js['yandex']) ? $js['yandex'] : ''; ?>
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
@@ -198,20 +206,31 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= helper\widgets\forms\Popup::widget(); ?>
-        <script src="<?= $assets . $siteConfig['theme']; ?>/js/template.js?=v2"></script>
-        <script src="<?= $assets . $siteConfig['theme']; ?>/js/19e1de0fb0.js"></script>
-        <script src="<?= $assets . $siteConfig['theme']; ?>/js/jquery.modal.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+        <script src="/jsAction?files=template.js,19e1de0fb0.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=1,2&cache=0"></script>
+        <script defer src="<?= $assets . $siteConfig['theme']; ?>/js/jquery.modal.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
             echo '<script>$("#popup-send").toggle();</script>';
         }
         ?>
+        <script>
+        $("form").each(function () {
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });
+        $('body').on("keyup", "input[type=tel]", function () {
+            var v = $(this).val().substring(4, 6);
+            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+            }
+        });
+    </script>
         <?php $this->endBody() ?>
     </body>
 </html>
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>

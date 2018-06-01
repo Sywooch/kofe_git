@@ -454,7 +454,7 @@ h1.mainpage-h1 {
         color: #d7212e; }
     /* line 270, main.scss */
     .header-phone .header-block--thumb {
-      background-image: url(icons-phone.png); }
+      background-image: url(../css/brends/saeco/icons-phone.png); }
   /* line 274, main.scss */
   .header-cart {
     width: 280px; }

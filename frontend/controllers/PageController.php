@@ -123,7 +123,8 @@ class PageController extends CController {
                 }
             }
         }
-        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());        
+        
         file_put_contents($cachedFile, $css);
         header("Content-Type: text/css");
         echo str_replace('../', '/' . (isset($siteConfig['theme']) ? $siteConfig['theme'] : $siteConfig['sitePrefix']) . '/', str_replace('../../../', '../', $css));
