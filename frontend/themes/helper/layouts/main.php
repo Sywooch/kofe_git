@@ -23,7 +23,7 @@ $js = app\components\CController::$js;
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/favicon-16.png" rel=icon sizes=16x16 type=image/png>        
         <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/adaptive.css&cache=0" rel=stylesheet>
-        <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/owl.carousel.css&cache=0" rel=stylesheet>
+        <link href="/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/owl.carousel.css" rel=stylesheet>
         <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/fancybox.min.css&cache=0" rel=stylesheet>
         <link href="/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/fonts.css" rel=stylesheet>
         <link href="/cssAction?file=/<?= $siteConfig['theme']; ?>/css/brends/<?= $siteConfig['sitePrefix']; ?>/main.css&cache=0" rel=stylesheet>
