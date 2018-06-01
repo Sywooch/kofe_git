@@ -454,7 +454,7 @@ h1.mainpage-h1 {
         color: #005691; }
     /* line 270, main.scss */
     .header-phone .header-block--thumb {
-      background-image: url(../icons-phone.png); }
+      background-image: url(../images/icons-phone.png); }
   /* line 274, main.scss */
   .header-cart {
     width: 280px; }
@@ -827,7 +827,7 @@ h1.mainpage-h1 {
       left: 10px;
       width: 44px;
       height: 44px;
-      background: url(icons-phone.png) center center no-repeat;
+      background: url(../images/icons-phone.png) center center no-repeat;
       background-size: 150%;
       text-decoration: none; }
     /* line 658, main.scss */
@@ -929,7 +929,7 @@ section {
   top: 50%;
   height: 285px;
   margin-top: -142px;
-  background: url(background-grey-center.png) right top no-repeat; }
+  background: url(../images/background-grey-center.png) right top no-repeat; }
   /* line 761, main.scss */
   .background-center--right {
     background-position: left top; }
@@ -1008,7 +1008,7 @@ section {
     width: 200px;
     height: 100%;
     max-width: 200px;
-    background: url(background-red-pattern.png) right 0px no-repeat;
+    background: url(../images/background-red-pattern.png) right 0px no-repeat;
     display: none; }
     /* line 832, main.scss */
     .slider-background--left {
@@ -1580,7 +1580,7 @@ section {
       bottom: 12px;
       width: 81px;
       height: 60px;
-      background: url(reviews-corner.png) 0px 0px no-repeat; }
+      background: url(../images/reviews-corner.png) 0px 0px no-repeat; }
     /* line 1359, main.scss */
     .reviews-item--title {
       position: relative;
@@ -1926,7 +1926,7 @@ section {
     right: -50px;
     width: 286px;
     height: 497px;
-    background: url(kofemashina.png) 0px 0px no-repeat;
+    background: url(../images/brends/bosch/kofemashina.png) 0px 0px no-repeat;
      background-size: contain;
     background-position: bottom; }
 

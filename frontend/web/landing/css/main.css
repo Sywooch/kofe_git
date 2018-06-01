@@ -793,12 +793,17 @@ body .select2-dropdown .select2-results__option[aria-selected=true] {
 
 .free {
     background: url(../img/why-we-bg-1.jpg) center;
+    background-size: 130%;
     background-repeat: no-repeat;
-    background-size: auto 100%;
     color: #fff;
     padding: 45px 15px 55px;
     position: relative;
     z-index: 9;
+}
+@media (max-width: 1200px) {
+	.free {
+    background-size: auto 100%;
+	}
 }
 
 .free .container {
@@ -2450,13 +2455,14 @@ body .select2-dropdown .select2-results__option[aria-selected=true] {
 }
 
 .photo {
-	padding: 120px 0 85px
+	padding: 85px 0 85px;
+	background: #ba936a;
 }
 
 .photo__title {
 	font-family: P22UndergroundCYPro-Heavy,sans-serif;
 	font-size: 38px;
-	color: #e4b95b;
+	color: #fff;
 	line-height: 1.4;
 	text-align: center;
 	width: 50%
@@ -5077,9 +5083,26 @@ html body .post__modal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 	flex-wrap: wrap;
 }
 .brend .item {
-	width: 200px;
-	margin: 15px;
-	margin-top: 0px;
+	width: 14.222%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.brend .item:nth-last-child(-n+6) {
+	width: 16.59%;
+}
+.brend .item > div {
+	padding: 10px;
+	background: #fff;
+	transition: transform .15s ease-in-out;
+}
+.brend .item > div:hover {
+	-webkit-transform: scale(1.06923077);
+  -ms-transform: scale(1.06923077);
+  transform: scale(1.06923077);
+  box-shadow: inset 1px 1px 0 0 rgba(48,48,48,.15), 0 4px 30px 0 rgba(48,48,48,.25);
+}
+.brend .item > div img {
+	width: 80%;
 }
 @media (max-width: 767px) {
 	.brend .item {
