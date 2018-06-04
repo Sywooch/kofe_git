@@ -598,6 +598,30 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </div>
+            <div class="new-widget">
+                <div class="container">
+                    <h2 class="top__title">Другие сервисные центры зарабатывают 100-120% от перепродажи наших услуг и комплектующих.</h2>
+                    <div class="clients__subtitle">Получите <span>эксклюзивную цену</span> на ремонт кофемашины<br>Закажите бесплатную диагностику кофемашины</div>
+                    <form id="form2" class="form default" action="/" method="post">
+                       <div class="form__field">
+                          <div class="form-group field-askform2-phone required has-error">
+                             <input type="tel" id="askform2-phone" class="form__input form__input--fw" name="AskForm2[phone]" size="40" placeholder="Телефон" aria-required="true" data-plugin-inputmask="inputmask_8b2a4bfb">
+                          </div>
+                       </div>
+                       <div class="form__field form__field--btn">
+                          <button type="submit" class="btn btn--fw">Получить эксклюзивную цену</button>
+                       </div>
+                       <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-free" checked="checked">
+                          <label class="policy__label" for="policy-free">
+                          <span class="box"></span>
+                          <span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности </a></span>
+                          </label>
+                       </div>
+                       <input type="hidden" name="h1" value="Ремонт кофемашин в Москве">
+                    </form>
+                    <div style="margin-top: 15px; margin-bottom: 0px;" class="clients__subtitle">За сегодня экслюзивной ценой воспользовались - <span>14</span> человек</div>
+                </div>
+            </div>
             <div class="faq" id="faq">
                 <div class="container">
                     <h2 class="faq__title">Часто задаваемые вопросы</h2>
@@ -673,6 +697,23 @@ $domain = str_replace('admin.', '', $domain);
                             </div>
                         </div>
                     </div>
+                    <form id="form2" class="form default" action="/" method="post">
+                       <div class="form__field">
+                          <div class="form-group field-askform2-phone required has-error">
+                             <input type="tel" id="askform2-phone" class="form__input form__input--fw" name="AskForm2[phone]" size="40" placeholder="Телефон" aria-required="true" data-plugin-inputmask="inputmask_8b2a4bfb">
+                          </div>
+                       </div>
+                       <div class="form__field form__field--btn">
+                          <button type="submit" class="btn btn--fw">Получить эксклюзивную цену</button>
+                       </div>
+                       <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-free" checked="checked">
+                          <label class="policy__label" for="policy-free">
+                          <span class="box"></span>
+                          <span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности </a></span>
+                          </label>
+                       </div>
+                       <input type="hidden" name="h1" value="Ремонт кофемашин в Москве">
+                    </form>
                 </div>
             </div>
             <div class="news" id="news">
