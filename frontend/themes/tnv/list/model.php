@@ -45,6 +45,9 @@ $breadcrumbs = [
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 2, 'url' => false, 'title' => 'Цены по неисправностям', 'is_popular' => true]); ?>
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 1, 'url' => false, 'title' => 'Цены по услугам', 'is_popular' => true]); ?>
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 1, 'title' => 'Цены по прочим услугам', 'is_popular' => false]); ?>
+
+            
         </div>
     </div>
 </div>
+<?= tnv\widgets\lists\PopularModels::widget(); ?>
