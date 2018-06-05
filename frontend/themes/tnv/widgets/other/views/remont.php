@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     </div>
     <div class="wide-slider--content">
         <div class="wide-slider--control clearfix">
-            <h3 class="wide-slider--stitle float--left">Последние новости</h3>
+            <h3 class="wide-slider--stitle float--left">Фотографии кофемашин</h3>
             <div class="wide-slider--buttons float--right"><a href="#" data-toggle="left" class="wide-slider--button prev"><i class="icon-left"></i></a><a href="#" data-toggle="right" class="wide-slider--button next"><i class="icon-right"></i></a></div>
         </div>
         <div class="wide-slider--container">
