@@ -145,6 +145,7 @@ $js = app\components\CController::$js;
                     <nav class="m-menu float--left">
                         <ul class="m-menu--list clearfix static">
                             <li class="m-menu--item"><a href="/prices" class="m-menu--item-link">Цены</a></li>
+                            <li class="m-menu--item"><a href="/brands" class="m-menu--item-link">Обслуживаем бренды</a></li>
                             <li class="m-menu--item"><a href="/diagnostics" class="m-menu--item-link">Диагностика</a></li>
                             <li class="m-menu--item"><a href="/garantiya" class="m-menu--item-link">Гарантия</a></li>
                             <li class="m-menu--item"><a href="/kontrol-kachestva" class="m-menu--item-link">Контроль качества</a></li>
