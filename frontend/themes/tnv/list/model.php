@@ -3,8 +3,8 @@ $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 $breadcrumbs = [
-    '/' . $brand['url'] => 'Ремонт кофемашин ' . $brand['title'],
-    'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'],
+    '/' . $brand['url'] => ' ' . $brand['title'],
+    ' ' . $brand['title'] . ' ' . $pageInfo['title'],
 ];
 ?>
 <?= tnv\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
@@ -36,7 +36,7 @@ $breadcrumbs = [
         <div class="page float--right col-xs-12 col-md-8">
             <?php if (!Yii::$app->params['devicedetect']['isMobile']): ?>
                 <div class="hidden-xs hidden-sm mb">
-                    <h1 class="program--title"><?php echo (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']); ?></h1>
+                    <h1 class="program--title"><?php echo (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title']); ?></h1>
                 </div>
             <?php endif; ?>
             <?php if (!empty($pageInfo['description'])): ?>
