@@ -50,4 +50,3 @@ $breadcrumbs = [
         </div>
     </div>
 </div>
-<?= tnv\widgets\lists\PopularModels::widget(); ?>
