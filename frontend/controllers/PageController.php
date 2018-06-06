@@ -617,7 +617,7 @@ class PageController extends CController {
         $sql = 'SELECT url, type, id FROM {{%services}} WHERE is_popular = 1 AND category_id = ' . $siteConfig['category_id'];
         $services = Yii::$app->db->createCommand($sql)->queryAll();
         $hostname = Yii::$app->request->hostInfo;
-        if (in_array($siteConfig['id'], [51, 53, 49]) && strpos($hostname, 'https://') === false) {
+        if (in_array($siteConfig['id'], [51, 53, 49, 146]) && strpos($hostname, 'https://') === false) {
             $hostname = str_replace('http', 'https', $hostname);
         }
         $per = 50000;
