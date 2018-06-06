@@ -6,7 +6,7 @@ $siteConfig = app\components\CController::getSiteConfig();
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm">
-                <div class="coffeemachine-pic">
+                <div class="coffeemachine-pic" style="margin-top: 50px;">
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/coffeemachine_DL97icb.png" alt="Кофемашина">
                 </div>
             </div>
