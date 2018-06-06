@@ -9371,6 +9371,13 @@ footer .telefonga_msk {
 .modal-inset .close:hover {
   opacity: 1;
 }
+.modal-inset .close i {
+    display: none;
+}
+.button.close:before {
+    content: 'x';
+    font-size: 22px;
+}
 
 .modal-body {
   margin: auto;
