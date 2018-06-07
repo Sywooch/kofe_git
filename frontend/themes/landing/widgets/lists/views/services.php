@@ -56,30 +56,49 @@
                 </div>
             </div>
             <div class="choose__forms">
-                <form class="form" id="iphone2">
-                    <div class="form__title">Заказать ремонт кофемашины по акции</div>
-                    <div class="form__subtitle">Закажите ремонт сейчас и получите скидку  30%</div>
-                    <div class="form__field">
-                        <input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
-                    </div>
-                    <input class="source" type="hidden" name="source" value=""/>
-                    <input class="term" type="hidden" name="term" value=""/>
-                    <input class="campaign" type="hidden" name="campaign" value=""/>
-                    <input class="content" type="hidden" name="content" value=""/>
-                    <input class="medium" type="hidden" name="medium" value=""/>
-                    <input class="input-price" type="hidden" name="price" value="0"/>
-                    <input name="formname" type="hidden" value="Вызвать мастера (3-й экран)"/>
-                    <div class="form__field form__field--btn">
-                        <button class="btn btn--fw">Получить скидку 30%</button>
-                    </div>
-                    <div class="policy">
-                        <input class="policy__input" type="checkbox" name="policy" id="policy-form1" checked="checked"/>
-                        <label class="policy__label" for="policy-form1">
-                            <span class="box"></span>
-                            <span class="text">Я согласен с условиями  <a href="doc/politics.docx">политики конфиденциальности</span>
-                        </label>
-                    </div>
-                </form>
+                <?php
+
+                use yii\helpers\Html;
+                use yii\widgets\ActiveForm;
+                use yii\widgets\MaskedInput;
+
+$form = ActiveForm::begin([
+                            'id' => 'landing-form1',
+                            'options' => ['class' => 'form'],
+                            'enableClientValidation' => true,
+                            'fieldConfig' => [
+                                'template' => '{input}',
+                            ],
+                ]);
+                ?>
+
+                <div class="form__title">Заказать ремонт кофемашины по акции</div>
+                <div class="form__subtitle">Закажите ремонт сейчас и получите скидку  30%</div>
+                <div class="form__field">
+                    <?=
+                    $form->field($model, 'phone')->widget(MaskedInput::className(), [
+                        'name' => 'phone',
+                        'mask' => '+7 (999) 999-99-99',
+                        'options' => [
+                            'placeholder' => 'Телефон',
+                            'type' => 'tel',
+                            'size' => 40,
+                            'class' => 'form__input form__input--fw'
+                        ],
+                    ])->label('')
+                    ?>                        
+                </div>                
+                <div class="form__field form__field--btn">
+                    <?= Html::submitButton('Получить скидку 30%', ['class' => 'btn btn--fw', 'type' => 'submit']) ?>
+                </div>
+                <div class="policy">
+                    <input class="policy__input" type="checkbox" name="policy" id="policy-form1" checked="checked"/>
+                    <label class="policy__label" for="policy-form1">
+                        <span class="box"></span>
+                        <span class="text">Я согласен с условиями  <a href="/">политики конфиденциальности</a></span>
+                    </label>
+                </div>
+                <?php ActiveForm::end() ?>
             </div>
         </div>
         <div class="desc">
