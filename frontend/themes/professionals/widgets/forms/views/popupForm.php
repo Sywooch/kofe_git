@@ -1,4 +1,4 @@
-<div class="modal-frame">
+<div class="modal-frame open-formss">
     <div class="modal">
         <div class="modal-inset">
             <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
@@ -34,6 +34,18 @@ $form = ActiveForm::begin([
                 <button type="submit">Перезвоните мне</button>
                 <?php ActiveForm::end() ?>
                 <p class="ps">Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных в соответствии с <a href="/conf-inform">условиями</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-frame thenks">
+    <div class="modal">
+        <div class="modal-inset">
+            <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
+            <div class="modal-body">
+                <div class="title title__2">Уважаемый клиент, благодарим за обращение.</div>
+                <p>Ваша заявка отправлена, наш менеджер свяжется с вами в течении 5 минут</p>
             </div>
         </div>
     </div>

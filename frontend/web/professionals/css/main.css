@@ -8058,7 +8058,8 @@ body > .solutions {
     width:100%;
     padding:1.3rem 1.5rem;
     border-radius:0;
-    border:0
+    border:0;
+    color: #333;
 }
 .form textarea{
     width:100%;
