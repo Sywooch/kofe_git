@@ -214,7 +214,7 @@ class CController extends \yii\web\Controller {
             @file_get_contents($url . urlencode($msg));
     }
 
-    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '') {
+    public static function sendToRoistat($phone, $title = '', $comment = '', $name = '', $email = '', $visit_id = 0) {
 
         $siteConfig = self::getSiteConfig();
         if (isset($_POST['h1']) && empty($title))
@@ -240,9 +240,8 @@ class CController extends \yii\web\Controller {
             ])->execute();
             $p = strip_tags(Yii::$app->session['region']['phone']);
             $p = '7' . substr($p, 1, strlen($p));
-
-            $visit_id = 0;
-            if (isset($_COOKIE['roistat_visit'])) {
+            
+            if (isset($_COOKIE['roistat_visit']) && $visit_id == 0) {
                 $visit_id = $_COOKIE['roistat_visit'];
             }
             $brand = '';

@@ -19,11 +19,15 @@ class PageController extends CController {
     public function actionSend() {
         if (Yii::$app->request->isAjax && isset($_POST['phone']) && isset($_POST['title'])) {
             $userIP = Yii::$app->getRequest()->getUserIP();
+            $visit_id = 0;
+            if (isset($_COOKIE['roistat_visit'])) {
+                $visit_id = $_COOKIE['roistat_visit'];
+            }
             $connection = Yii::$app->db;
             $connection->createCommand()->insert('yu_orders', [
                 'phone' => $_POST['phone'],
                 'date' => date('Y-m-d H:i:s'),
-                'ip' => $userIP,
+                'ip' => $visit_id,
                 'site' => Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo,
                 'page' => 'bk',
             ])->execute();
@@ -40,10 +44,10 @@ class PageController extends CController {
         if (!empty($rows)) {
             foreach ($rows as $row) {
                 $phone = $row['phone'];
-                $sql = 'SELECT id FROM yu_orders WHERE page != \'bk\' AND phone = \'' . $phone . '\' AND date >= NOW() - INTERVAL 1 DAY';
+                $sql = 'SELECT id, ip FROM yu_orders WHERE page != \'bk\' AND phone = \'' . $phone . '\' AND date >= NOW() - INTERVAL 1 DAY';
                 $order = $connection->createCommand($sql)->queryOne();
                 if (!$order) {
-                    CController::sendToRoistat($phone, 'Брошенная корзина');
+                    CController::sendToRoistat($phone, 'Брошенная корзина', '', '', '', $row['ip']);
                 }
                 $connection->createCommand('DELETE FROM yu_orders WHERE id = ' . $row['id'])->execute();
             }
