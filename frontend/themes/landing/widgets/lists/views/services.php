@@ -1,21 +1,18 @@
 <div class="choose" id="choose">
     <div class="container">
-        <h2 class="choose__title">Что с Вашей кофемашиной?</h2>
+        <h2 class="choose__title">Выберите неисправность или услугу</h2>
         <div class="choose__nav">
-            <div class="tabs">
-                <div class="tabs__item active" data-val="">Выберите неисправность или услугу</div>
-            </div>
             <div class="lists">
-                <ul class="list" id="iphone">
-                    <li class="list__item active" data-val="" data-attr="">Неисправности</li>
-                    <li class="list__item" data-val="" data-attr="">Услуги</li>
-                    <li class="list__item" data-val="" data-attr="">Остальные услуги</li>
+                <ul class="list" id="kofe">
+                    <li class="list__item active" rel="neispravnost" >Неисправности</li>
+                    <li class="list__item" rel="uslugi" >Услуги</li>
+                    <li class="list__item" rel="ostalniyeuslugi" >Остальные услуги</li>
                 </ul>
             </div>
         </div>
         <div class="choose__body">
-            <div class="choose__grids">
-                <div class="choose__grid" id="iphone1">
+            <div class="choose__grids" id="content-grid">
+                <div class="choose__grid" id="neispravnost">
                     <?php foreach ($services['faults'] as $faultsService): ?>
                         <div class="item">
                             <div class="item__wrap" data-title="<?= $faultsService['title']; ?>" data-time="<?= $faultsService['time']; ?>">
@@ -29,7 +26,7 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <div class="choose__grid" id="ipad1" style="display: none;">
+                <div class="choose__grid" id="uslugi">
                     <?php foreach ($services['popularServices'] as $popularService): ?>
                         <div class="item">
                             <div class="item__wrap" data-title="<?= $popularService['title']; ?>" data-time="<?= $popularService['time']; ?>">
@@ -43,7 +40,7 @@
                         </div>
                     <?php endforeach; ?>
                 </div>                
-                <div class="choose__grid" id="ipad2" style="display: none;">
+                <div class="choose__grid" id="ostalniyeuslugi">
                     <?php foreach ($services['services'] as $service): ?>
                         <div class="item">
                             <div class="item__wrap" data-title="<?= $service['title']; ?>" data-time="<?= $service['time']; ?>">
@@ -62,11 +59,6 @@
                 <form class="form" id="iphone2">
                     <div class="form__title">Заказать ремонт кофемашины по акции</div>
                     <div class="form__subtitle">Закажите ремонт сейчас и получите скидку  30%</div>
-                    <div class="form__selects">
-                        <div class="form__field">
-                            <select class="form__select" id="phone-repair" name="repair" data-placeholder="Выберите неисправность"></select>
-                        </div>
-                    </div>
                     <div class="form__field">
                         <input class="form__input form__input--fw" type="tel" name="phone" placeholder="+7 (___) ___-____"/>
                     </div>
@@ -92,7 +84,7 @@
         </div>
         <div class="desc">
             <div class="desc__text">С вашей кофемашиной что-то другое?</div>
-            <div class="desc__contact">Позвоните, мы обязательно Вам поможем!<span class="call_phone_2"><a class="roistat">8 (499) 350-59-60</a></span></div>
+            <div class="desc__contact">Позвоните, мы обязательно Вам поможем!<span class="call_phone_2"><a class="roistat" href="tel:74951323202">+7 495 132-32-02</a></span></div>
         </div>
     </div>
 </div>

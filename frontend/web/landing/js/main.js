@@ -13,6 +13,8 @@ $(document).ready(function () {
 
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+    
 });
 $(document).scroll(function () {
     var headerHeight = $('.header').height();
@@ -38,160 +40,7 @@ $('.owl-carousel').owlCarousel({
     $('.illustrate .light').toggle();
     setTimeout(light, 7000);
 }());
-$('.choose .tabs__item').on('click', function () {
-    $('.choose .tabs__item').removeClass('active');
-    $(this).addClass('active');
-    var val = $(this).attr('data-val');
-    $('.choose .lists .list').hide();
-    $('.choose .choose__grids .choose__grid').hide();
-    $('.choose .choose__forms .form').hide();
-    $('.choose .lists .list#' + val).fadeIn(600);
-    $('.choose .choose__grids .choose__grid#' + val + '1').fadeIn(600);
-    $('.choose .choose__forms .form#' + val + '2').fadeIn(600);
-});
-$('.choose .lists .list#iphone .list__item').on('click', function () {
-    $('.choose .choose__grid#iphone1 .item').removeClass('active');
-    $(".choose__forms .form#iphone2 .price__total").html('0 руб.');
-    $(".choose__forms .form#iphone2 .form__subtitle span").html('0 минут ');
-    $("select#phone-repair").val('').trigger("change");
-    $('.choose .choose__grid#iphone1 .item').removeClass('active');
-    $('.choose .lists .list#iphone .list__item').removeClass('active');
-    $(this).addClass('active');
-    var attr = $(this).data('attr');
-    var value = $(this).attr('data-val');
-    $("select#phone-model").val(value).trigger("change");
-    for (key in gadgets) {
-        for (key1 in gadgets[key]) {
-            if (key1 == attr) {
-                for (key2 in gadgets[key][key1]) {
-                    $('.choose__grid#iphone1 .item:eq(' + key2 + ') .item__wrap .price').html(gadgets[key][key1][key2]);
-                }
-            }
-        }
-    }
-});
-$('.choose .lists .list#ipad .list__item').on('click', function () {
-    $('.choose .lists .list#ipad .list__item').removeClass('active');
-    $(this).addClass('active');
-    var attr = $(this).data('attr');
-    var value = $(this).attr('data-val');
-    $("select#ipad-model").val(value).trigger("change");
-    for (key in gadgets) {
-        for (key1 in gadgets[key]) {
-            if (key1 == attr) {
-                for (key2 in gadgets[key][key1]) {
-                    $('.choose__grid#ipad1 .item:eq(' + key2 + ') .item__wrap .price').html(gadgets[key][key1][key2]);
-                }
-            }
-        }
-    }
-});
-$('.choose .lists .list#ipad .list__item').on('click', function () {
-    $('.choose .lists .list#ipad .list__item').removeClass('active');
-    $(this).addClass('active');
-    var value = $(this).attr('data-val');
-    $("select#ipad-model").val(value).trigger("change");
-    $('.choose .choose__grid#ipad1 .item').removeClass('active');
-    $(".choose__forms .form#ipad2 .price__total").html('0 руб.');
-    $(".choose__forms .form#ipad2 .form__subtitle span").html('0 минут ');
-    $("select#ipad-repair").val('').trigger("change");
-    $('.choose .choose__grid#ipad1 .item').removeClass('active');
-});
-$('.choose .choose__grid#iphone1 .item__wrap').on('click', function () {
-    $('.choose .choose__grid#iphone1 .item').removeClass('active');
-    $(this).parent().addClass('active');
-    var title = $(this).attr('data-title');
-    var time = $(this).attr('data-time');
-    var price = $(this).find('.price').html();
-    $("select#phone-repair").val(title).trigger("change");
-    $(".choose__forms .form#iphone2 .price__total").html(price);
-    $(".choose__forms .form#iphone2 .input-price").val(price);
-    $(".choose__forms .form#iphone2 .form__subtitle span").html(time + ' ');
-});
-$('.choose .choose__grid#ipad1 .item__wrap').on('click', function () {
-    $('.choose .choose__grid#ipad1 .item').removeClass('active');
-    $(this).parent().addClass('active');
-    var title = $(this).attr('data-title');
-    var time = $(this).attr('data-time');
-    var price = $(this).find('.price').html();
-    $("select#ipad-repair").val(title).trigger("change");
-    $(".choose__forms .form#ipad2 .price__total").html(price);
-    $(".choose__forms .form#ipad2 .input-price").val(price);
-    $(".choose__forms .form#ipad2 .form__subtitle span").html(time + ' ');
-});
-$('select').select2({
-    placeholder: function () {
-        $(this).data('placeholder');
-    },
-    minimumResultsForSearch: -1,
-    width: '100%',
-});
-$(window).ready(function () {
-    $("select#phone-model").val('iPhone X').trigger("change");
-    $("select#ipad-model").val('iPad Pro 12.9').trigger("change");
-});
-$("select#phone-model").on("select2:select", function (e) {
-    $('.choose .choose__grid#iphone1 .item').removeClass('active');
-    $(".choose__forms .form#iphone2 .price__total").html('0 руб.');
-    $(".choose__forms .form#iphone2 .form__subtitle span").html('0 минут ');
-    $("select#phone-repair").val('').trigger("change");
-    $('.choose .choose__grid#iphone1 .item').removeClass('active');
-    $('.choose .lists .list#iphone .list__item').removeClass('active');
-    var val = $(e.currentTarget).find("option:selected").val();
-    $('.choose .lists .list#iphone .list__item[data-val="' + val + '"]').addClass('active');
-    for (key in gadgets) {
-        for (key1 in gadgets[key]) {
-            var text = phoneNr(val);
-            console.log(text);
-            if (key1 == text) {
-                for (key2 in gadgets[key][key1]) {
-                    $('.choose__grid#iphone1 .item:eq(' + key2 + ') .item__wrap .price').html(gadgets[key][key1][key2]);
-                }
-            }
-        }
-    }
-});
-$("select#ipad-model").on("select2:select", function (e) {
-    $('.choose .choose__grid#ipad1 .item').removeClass('active');
-    $(".choose__forms .form#ipad2 .price__total").html('0 руб.');
-    $(".choose__forms .form#ipad2 .form__subtitle span").html('0 минут ');
-    $("select#phone-repair").val('').trigger("change");
-    $('.choose .choose__grid#ipad1 .item').removeClass('active');
-    $('.choose .lists .list#ipad .list__item').removeClass('active');
-    var val = $(e.currentTarget).find("option:selected").val();
-    $('.choose .lists .list#ipad .list__item[data-val="' + val + '"]').addClass('active');
-    for (key in gadgets) {
-        for (key1 in gadgets[key]) {
-            var text = ipadNr(val);
-            console.log(text);
-            if (key1 == text) {
-                for (key2 in gadgets[key][key1]) {
-                    $('.choose__grid#ipad1 .item:eq(' + key2 + ') .item__wrap .price').html(gadgets[key][key1][key2]);
-                }
-            }
-        }
-    }
-});
-$("select#phone-repair").on("select2:select", function (e) {
-    var val = $(e.currentTarget).find("option:selected").val();
-    var price = $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"] .price').html();
-    var time = $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"]').data('time');
-    $('.choose__grid#iphone1 .item').removeClass('active');
-    $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"]').parent().addClass('active');
-    $(".choose__forms .form#iphone2 .price__total").html(price);
-    $(".choose__forms .form#iphone2 .input-price").val(price);
-    $(".choose__forms .form#iphone2 .form__subtitle span").html(time + ' ');
-});
-$("select#ipad-repair").on("select2:select", function (e) {
-    var val = $(e.currentTarget).find("option:selected").val();
-    var price = $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"] .price').html();
-    var time = $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"]').data('time');
-    $('.choose__grid#iphone1 .item').removeClass('active');
-    $('.choose__grid#iphone1 .item__wrap[data-title="' + val + '"]').parent().addClass('active');
-    $(".choose__forms .form#iphone2 .price__total").html(price);
-    $(".choose__forms .form#ipad2 .input-price").val(price);
-    $(".choose__forms .form#iphone2 .form__subtitle span").html(time + ' ');
-});
+
 $(document).ready(function () {
     $(".select2-results__options, .post .body").mCustomScrollbar();
 });
@@ -316,4 +165,19 @@ $('.choose__grid .item__wrap').on('click', function () {
     if (windowWidth < 992) {
         $('body,html').animate({scrollTop: destination}, 1100);
     }
+});
+
+
+$("#content-grid .choose__grid").hide();
+$("#content-grid .choose__grid:first").show();
+
+$("#kofe .list__item").click(function() {
+    
+  $("#content-grid .choose__grid").hide();
+  var activeTab = $(this).attr("rel"); 
+  $("#"+activeTab).fadeIn();        
+    
+  $("#kofe .list__item").removeClass("active");
+  $(this).addClass("active");
+  
 });

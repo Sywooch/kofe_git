@@ -12,7 +12,7 @@ class PopularBrands extends Widget {
     public $sort;
 
     public function run() {
-        $sql = 'select image from {{%pages}} where type = \'brand\' order by sort';
+        $sql = 'select image from {{%pages}} where type = \'brand\' order by sort ';
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
         return $this->render($this->view, ['rows' => $rows]);
     }
