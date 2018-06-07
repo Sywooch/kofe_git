@@ -2959,7 +2959,7 @@ return [
             'sitePrefix' => 'saeco',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'helper',
+            'theme' => 'ofitsial',
         ],
     ]
 ];

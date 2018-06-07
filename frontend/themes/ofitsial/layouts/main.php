@@ -88,10 +88,10 @@ $js = app\components\CController::$js;
                             <div class="topmenu_container">
                                 <ul>
                                     <li class="first activetopmenu_item"><a href="/">Главная</a></li>
-                                    <li><a href="o-kompanii.html">О нас</a></li>
-                                    <li><a href="o-kompanii.html">Прайс</a></li>
-                                    <li><a href="o-kompanii.html">Модели</a></li>
-                                    <li class="last"><a href="kontakty.html">Контакты</a></li>
+                                    <li><a href="/about">О нас</a></li>
+                                    <li><a href="/prices">Прайс</a></li>
+                                    <li><a href="/models">Модели</a></li>
+                                    <li class="last"><a href="/contacts">Контакты</a></li>
                                 </ul>
                             </div>
                             <div class="topsearch_container">
@@ -109,7 +109,7 @@ $js = app\components\CController::$js;
                 <div class="row">
                     <div class="col-md-3 col-sm-5">
                         <p class="footerlogo_descr">
-                            Ремонт кофемашин #brand_en# в Москве
+                            Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?> в Москве
                         </p>
                         <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Сервисный центр работает без выходных и праздников</p>
                         <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Москва ул. Октябрьская, д. 80, офис 303</p>
@@ -119,9 +119,10 @@ $js = app\components\CController::$js;
                     <div class="col-md-3 col-sm-3">
                         <ul class="footer-menu">
                             <li class="active"><a href="/">Главная</a></li>
-                            <li><a href="o-kompanii.html">О компании</a></li>
-                            <li><a href="dostavka.html">Доставка</a></li>
-                            <li><a href="kontakty.html">Контакты</a></li>
+                            <li><a href="/about">О нас</a></li>
+                            <li><a href="/prices">Прайс</a></li>
+                            <li><a href="/models">Модели</a></li>
+                            <li class="last"><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-3">
@@ -155,17 +156,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-md-3">
                         <p class="getarticles_heading">Заказать звонок от мастера по кофемашинам</p>
-
-                        <form action="">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input type="tel" name="phone" placeholder="Телефон" required/>
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="submit" class="hero-form__btn">Заказать</button>
-                                </div>
-                            </div>
-                        </form>
+                        <?= ofitsial\widgets\forms\Footer::widget(); ?>
                     </div>
                 </div>
             </div>
@@ -173,7 +164,7 @@ $js = app\components\CController::$js;
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <span>©  2008-2017 Ремонт кофемашин #brand_en#. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="politika-konfidentsialnosti.html"> Политика конфиденциальности.</a></span>
+                            <span>©  2008-<?= date('Y'); ?> Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?>. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="politika-konfidentsialnosti.html"> Политика конфиденциальности.</a></span>
                         </div>
                     </div>
                 </div>
@@ -183,6 +174,10 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.css">
         <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.0/sweetalert2.min.js"></script> 
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme']; ?>/js/main.js"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
