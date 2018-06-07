@@ -6,7 +6,7 @@
         <div class="brend">
             <?php foreach ($rows as $row): ?>
                 <div class="item">
-                    <div><img src="/uploads/images/<?= $row['image']; ?>" alt="" role="presentation"/></div>
+                    <div><img src="/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>" role="presentation"/></div>
                 </div>
             <?php endforeach; ?>
         </div>
