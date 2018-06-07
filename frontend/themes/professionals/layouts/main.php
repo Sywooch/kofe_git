@@ -26,7 +26,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/normalize.css" rel="stylesheet" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?php if ($siteConfig['id'] == 125): ?>spb<?php endif; ?>main.css?=v4" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?php if ($siteConfig['id'] == 125): ?>spb<?php endif; ?>main.css?=v5" rel="stylesheet" />
     </head>
     <body <?= $isHome ? 'class="gl-st"' : ''; ?>>
         <?php
@@ -146,7 +146,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/flipclock.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js?v=2"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js?v=3"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
