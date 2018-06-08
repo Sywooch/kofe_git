@@ -28,10 +28,10 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=14">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=14">        
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=15">
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main2.css?v=15">        
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=14" rel="stylesheet">
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?= $siteConfig['id']; ?>.css?v=15" rel="stylesheet">
     </head>
     <body role="document">
         <?php
@@ -245,6 +245,17 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </div>
+        <div class="modal fade in" id="thenks-w" role="dialog" style="padding-right: 17px;">
+            <div class="modal-dialog caller">
+                <div class="modal-content">
+                    <div id="caller_closes" class="caller_closes"></div>
+                    <div class="modal-body">
+                        <div class="h3">Спасибо за отправленную заявку!</div>
+                        <p>Наш оператор перезвонит Вам за <span id="minut"></span> минуты, <span id="sikund"></span> секунд!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <?= coffeHelp\widgets\forms\FooterForm::widget(); ?>
         <div class="remodal" data-remodal-id="call-modal-success">
             <div class="modal-content">
@@ -291,7 +302,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=5" async></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=8" async></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
@@ -514,6 +525,11 @@ if (Yii::$app->session->getFlash('success')) {
         }, 10000);
     });
 </script>
+<?php
+if (Yii::$app->session->getFlash('success') || Yii::$app->session->getFlash('review')) {
+    echo '<script>$("#thenks-w").show();</script>';
+}
+?>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
 <?php \app\widgets\other\Replace::end(); ?>

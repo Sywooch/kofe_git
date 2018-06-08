@@ -14495,4 +14495,12 @@ $(document).ready(function() {
     $('.footer-adress-b').click(function(){
         $( ".footer-adress" ).slideToggle( "slow" );
     });
+
+    $('div#caller_closes').click(function() {
+        $('#thenks-w').hide();
+    });
+
+    document.getElementById("minut").innerHTML = Math.floor(Math.random() * 4)  + 2;
+
+    document.getElementById("sikund").innerHTML = Math.floor(Math.random() * 59);
 });
