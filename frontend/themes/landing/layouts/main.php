@@ -113,7 +113,7 @@ $domain = str_replace('admin.', '', $domain);
             <div class="free" id="free">
                 <div class="container">
                     <div class="free__body">
-                        <h2 class="free__title">Предоставляем РЕАЛЬНО бесплатную диагностику!
+                        <h2 class="free__title">Предоставляем РЕАЛЬНО бесплатную диагностику<?= isset($_GET['param2']) ? ' кофемашин ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?>!
                         </h2>
                         <div class="free__subtitle">Наш сервисный центр, единственный в Москве, который предоставляет РЕАЛЬНО бесплатную диагностику.<br/>Если Вы отказываетесь от ремонта, Вы ничего не платите!
                         </div>
@@ -129,7 +129,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="free__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины' . (isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : '') . '.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
                     </div>
                 </div>
             </div>
@@ -327,8 +327,7 @@ $domain = str_replace('admin.', '', $domain);
             </div>
             <div class="top" id="top">
                 <div class="container">
-                    <h2 class="top__title">Самые популярные неисправности
-                    </h2>
+                    <h2 class="top__title">Самые популярные неисправности<?= isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?></h2>
                     <div class="top__subtitle">которые встречаются у наших клиентов
                     </div>
                     <div class="top__slider">
@@ -422,7 +421,7 @@ $domain = str_replace('admin.', '', $domain);
                                 <div class="item__img-wrap"><img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/sale.svg" srcset="img/hot1_2.png 2x" alt="" role="presentation"/>
                                 </div>
                                 <div class="item__body">
-                                    <div class="item__title">Скидка на комплексную чистку кофемашины -
+                                    <div class="item__title">Скидка на комплексную чистку кофемашины<?= isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?> -
                                     </div>
                                     <div class="item__large">50%
                                     </div>
@@ -436,7 +435,7 @@ $domain = str_replace('admin.', '', $domain);
                                 <div class="item__img-wrap"><img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/sale.svg" srcset="img/hot2_2.png 2x" alt="" role="presentation"/>
                                 </div>
                                 <div class="item__body">
-                                    <div class="item__title">Скидка на годовую комплексную профилактику -
+                                    <div class="item__title">Скидка на годовую комплексную профилактику<?= isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?> -
                                     </div>
                                     <div class="item__large">30%
                                     </div>
@@ -581,7 +580,7 @@ $domain = str_replace('admin.', '', $domain);
                 <div class="container">
                     <div class="team__block">
                         <div class="body">
-                            <div class="body__title">Специалисты нашего сервисного центра<br/>ежегодно проходят курсы повышения квалификации
+                            <div class="body__title">Специалисты нашего сервисного центра<br/>ежегодно проходят курсы повышения квалификации<?= isset($_GET['param2']) ? ' по кофемашинам ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?>
                             </div>
                             <div class="body__subtitle">До того как ижненер будет допущен к ремонту кофемашин наших клиентов - мы проводим специальное дополнительное обучение и тестирование
                             </div>
@@ -778,7 +777,7 @@ $domain = str_replace('admin.', '', $domain);
                             </div>
                             <div class="phone phone--fr">
                                 <div class="phone__wrap">
-                                    <div class="phone__text"><a class="phone__nr" href="tel:+79999890110">+7 (999) 989-01-10</a>
+                                    <div class="phone__text"><a class="phone__nr" href="tel:+74951323202">+7 (495) 132-32-02</a>
                                     </div>
                                 </div>
                             </div>
