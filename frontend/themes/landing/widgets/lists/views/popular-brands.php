@@ -5,9 +5,9 @@
         </div>
         <div class="brend">
             <?php foreach ($rows as $row): ?>
-                <div class="item">
+                <a href="javascript:;" data-id="<?= $row['id']; ?>" data-fancybox="modal6" data-src="#newModal" class="item">
                     <div><img src="/uploads/images/<?= $row['image']; ?>" alt="<?= $row['title']; ?>" role="presentation"/></div>
-                </div>
+                </a>
             <?php endforeach; ?>
         </div>
     </div>

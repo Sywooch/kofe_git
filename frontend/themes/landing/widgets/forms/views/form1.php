@@ -21,7 +21,7 @@ $form = ActiveForm::begin([
         'name' => 'phone',
         'mask' => '+7 (999) 999-99-99',
         'options' => [
-            'placeholder' => 'Телефон',
+            'placeholder' => 'Введите телефон:',
             'type' => 'tel',
             'size' => 40,
             'class' => 'form__input form__input--fw'
@@ -37,8 +37,6 @@ $form = ActiveForm::begin([
 <input name="formname" type="hidden" value=""/>
 <div class="form__field form__field--btn">
     <?= Html::submitButton($button, ['class' => 'btn btn--fw', 'type' => 'submit']) ?>
-</div>
-<div class="form__desc">Ремонт выполняется специализицироваными инженерами и с использованием оригинальных комплектующих!
 </div>
 <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-free" checked="checked"/>
     <label class="policy__label" for="policy-free">

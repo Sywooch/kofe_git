@@ -24,7 +24,7 @@ $form = ActiveForm::begin([
                     'name' => 'phone',
                     'mask' => '+7 (999) 999-99-99',
                     'options' => [
-                        'placeholder' => 'Номер телефона *',
+                        'placeholder' => 'Введите телефон:',
                         'class' => 'form__input form__input--fw', 'type' => 'tel'
                     ],
                 ])->label('')

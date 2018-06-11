@@ -14,16 +14,16 @@
             <div class="choose__grids" id="content-grid">
                 <div class="choose__grid" id="neispravnost">
                     <?php foreach ($services['faults'] as $faultsService): ?>
-                        <div class="item">
+                        <a href="javascript:;" data-id="<?= $faultsService['id']; ?>" data-fancybox="modal6" data-src="#newModal" class="item">
                             <div class="item__wrap" data-title="<?= $faultsService['title']; ?>" data-time="<?= $faultsService['time']; ?>">
-                                <div class="item__title"><?= $faultsService['title']; ?></div>
+                                <div class="item__title titlecopy"><?= $faultsService['title']; ?></div>
                                 <div class="bottom">
                                     <div class="price"><?= number_format($faultsService['price'], 0, ' ', ' '); ?> руб.
                                     </div>
                                     <div class="time"><?= $faultsService['time']; ?></div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     <?php endforeach; ?>
                 </div>
                 <div class="choose__grid" id="uslugi">
@@ -80,7 +80,7 @@ $form = ActiveForm::begin([
                         'name' => 'phone',
                         'mask' => '+7 (999) 999-99-99',
                         'options' => [
-                            'placeholder' => 'Телефон',
+                            'placeholder' => 'Введите телефон:',
                             'type' => 'tel',
                             'size' => 40,
                             'class' => 'form__input form__input--fw'

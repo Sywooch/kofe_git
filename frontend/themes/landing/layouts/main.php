@@ -110,30 +110,6 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </header>
-            <div class="free" id="free">
-                <div class="container">
-                    <div class="free__body">
-                        <h2 class="free__title">Предоставляем РЕАЛЬНО бесплатную диагностику<?= isset($_GET['param2']) ? ' кофемашин ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?>!
-                        </h2>
-                        <div class="free__subtitle">Наш сервисный центр, единственный в Москве, который предоставляет РЕАЛЬНО бесплатную диагностику.<br/>Если Вы отказываетесь от ремонта, Вы ничего не платите!
-                        </div>
-                        <div class="block">
-                            <div class="block__img"><img class="img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/customer-service.svg" alt="" role="presentation"/>
-                            </div>
-                            <div class="block__text">
-                                <div class="block__title">Обязательно проинформируем
-                                </div>
-                                <div class="block__par">Вам будет предоставлен ИНДИВИДУАЛЬНЫЙ менеджер, который будет сообщать Вам о стадиях ремонта кофемашины. Кстати, доставка отремонтированной кофемашины у нас бесплатна!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="free__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины' . (isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : '') . '.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
-                    </div>
-                </div>
-            </div>
-            <?= landing\widgets\lists\Services::widget(); ?>
             <div class="advantage" id="advantage">
                 <div class="container">
                     <div class="advantage__grid">
@@ -190,6 +166,58 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </div>
+            <div class="safe" id="safe">
+                <div class="container">
+                    <h2 class="safe__title">Почему мы, а не вон тот сервисный центр за углом?
+                    </h2>
+                    <div class="safe__subtitle">Почему у нас безопасно и удобно?
+                    </div>
+                    <div class="safe__block">
+                        <div class="item">
+                            <div class="item__problem">Вас могут обмануть и <br/>установить <br/>не оригинальные комплектующие<br/>
+                            </div>
+                            <div class="item__text">Наш сервисный центр выдаёт специальный бланк СКК<br/>где описываются все заменённые комплектующие и <br/>их серийные номера<br/><span>(при возможности)</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__problem">Кофемашину могут произвести <br/>ненужные замены и<br/>по этой причине появятся<br/>скрытые платежи
+                            </div>
+                            <div class="item__text">Мы приобретаем комплектующие напрямую у производителей кофейного оборудования. Собственный склад позволяет хранить приоритетные запасные части для каждой кофемашины, а перед установкой - проводится вскрытие пломбы.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__problem">Срок ремонта может очень сильно затянуться.
+                            </div>
+                            <div class="item__text">Мы отвечаем своей репутацией перед клиентами и выполняем все ремонтные работы точно в срок. Даже если случится форс-мажор, Вы будете немедленно уведомлены об этом.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__problem">Вас могут оставить<br/>без кофемашины<br/>на долгий срок<br/>
+                            </div>
+                            <div class="item__text">В среднем ремонт кофемашины занимает не более 24 часов, но даже на этом время мы можем предложить Вам подменную кофемашину!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cashback" id="cashback">
+                <div class="container">
+                    <div class="cashback__content">
+                        <div class="cashback__body">
+                            <h2 class="cashback__title">Скидка 15% при заказе услуг с сайта!
+                            </h2>
+                            <div class="cashback__subtitle">Мы любим Вас радовать и поэтому дадим скидку 15% прямо сейчас! 
+                            </div>
+                            <div class="btn-wrap"><a class="btn btn--white" href="javascript:;" data-fancybox="modal3" data-src="#cashbackModal">Скидка? Да, хочу!</a>
+                            </div>
+                        </div>
+                        <div class="cashback__img-wrap"><img class="cashback__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/sale.svg" alt="" role="presentation"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?= landing\widgets\lists\Services::widget(); ?>
+            <?= landing\widgets\forms\Other::widget(); ?>
             <div class="how" id="how">
                 <div class="container">
                     <div class="how__tabs">
@@ -254,9 +282,7 @@ $domain = str_replace('admin.', '', $domain);
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-wrap">
-                                <a class="btn btn--violete" href="javascript:;" data-fancybox="modal2" data-src="#masterModal">Вызвать мастера</a>
-                            </div>
+                            <?= landing\widgets\forms\Other3::widget(); ?>
                         </div>
                         <div class="block" id="office" style="display: none;">
                             <div class="block__list">
@@ -286,40 +312,6 @@ $domain = str_replace('admin.', '', $domain);
                                 </div>
                             </div>
                             <div class="btn-wrap"><a class="btn" href="javascript:;" data-fancybox="modal6" data-src="#repairModal">Да, я хочу починить свою кофемашину</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="safe" id="safe">
-                <div class="container">
-                    <h2 class="safe__title">Почему мы, а не вон тот сервисный центр за углом?
-                    </h2>
-                    <div class="safe__subtitle">Почему у нас безопасно и удобно?
-                    </div>
-                    <div class="safe__block">
-                        <div class="item">
-                            <div class="item__problem">Вас могут обмануть и <br/>установить <br/>не оригинальные комплектующие<br/>
-                            </div>
-                            <div class="item__text">Наш сервисный центр выдаёт специальный бланк СКК<br/>где описываются все заменённые комплектующие и <br/>их серийные номера<br/><span>(при возможности)</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__problem">Кофемашину могут произвести <br/>ненужные замены и<br/>по этой причине появятся<br/>скрытые платежи
-                            </div>
-                            <div class="item__text">Мы приобретаем комплектующие напрямую у производителей кофейного оборудования. Собственный склад позволяет хранить приоритетные запасные части для каждой кофемашины, а перед установкой - проводится вскрытие пломбы.
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__problem">Срок ремонта может очень сильно затянуться.
-                            </div>
-                            <div class="item__text">Мы отвечаем своей репутацией перед клиентами и выполняем все ремонтные работы точно в срок. Даже если случится форс-мажор, Вы будете немедленно уведомлены об этом.
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__problem">Вас могут оставить<br/>без кофемашины<br/>на долгий срок<br/>
-                            </div>
-                            <div class="item__text">В среднем ремонт кофемашины занимает не более 24 часов, но даже на этом время мы можем предложить Вам подменную кофемашину!
                             </div>
                         </div>
                     </div>
@@ -359,7 +351,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="top__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form2', 'model' => 'AskForm2', 'button' => 'Вызвать мастера']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form2', 'model' => 'AskForm2', 'button' => 'Заказать бесплатную диагностику']); ?>
                     </div>
                 </div>
                 <div class="parBox" id="parBox">
@@ -391,22 +383,6 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                     <div class="parBox__item">
                         <div class="text">Не<br/>включается</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cashback" id="cashback">
-                <div class="container">
-                    <div class="cashback__content">
-                        <div class="cashback__body">
-                            <h2 class="cashback__title">Скидка 15% при заказе услуг с сайта!
-                            </h2>
-                            <div class="cashback__subtitle">Мы любим Вас радовать и поэтому дадим скидку 15% прямо сейчас! 
-                            </div>
-                            <div class="btn-wrap"><a class="btn btn--white" href="javascript:;" data-fancybox="modal3" data-src="#cashbackModal">Скидка? Да, хочу!</a>
-                            </div>
-                        </div>
-                        <div class="cashback__img-wrap"><img class="cashback__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/sale.svg" alt="" role="presentation"/>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -447,135 +423,29 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </div>
-            <div class="percent" id="percent">
+            <div class="free" id="free">
                 <div class="container">
-                    <div class="percent__block">
-                        <div class="item">
-                            <div class="item__nr">5<span class="per">%</span>
-                            </div>
-                            <div class="item__text">При заказе сегодня
-                            </div>
-                            <a class="item__link" href="javascript:;" data-fancybox="modal5per" data-src="#cashbackModal">Оставить заявку</a>
+                    <div class="free__body">
+                        <h2 class="free__title">Предоставляем РЕАЛЬНО бесплатную диагностику<?= isset($_GET['param2']) ? ' кофемашин ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : ''; ?>!
+                        </h2>
+                        <div class="free__subtitle">Наш сервисный центр, единственный в Москве, который предоставляет РЕАЛЬНО бесплатную диагностику.<br/>Если Вы отказываетесь от ремонта, Вы ничего не платите!
                         </div>
-                        <div class="item">
-                            <div class="item__nr">10<span class="per">%</span>
+                        <div class="block">
+                            <div class="block__img"><img class="img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/customer-service.svg" alt="" role="presentation"/>
                             </div>
-                            <div class="item__text">За подписку на нас <br/>в социальных сетях
-                            </div>
-                            <a class="item__link" href="https://vk.com/lovekoferu" target="_blank">Вступить в группу</a>
-                        </div>
-                        <div class="item">
-                            <div class="item__nr">15<span class="per">%</span>
-                            </div>
-                            <div class="item__text">Клиентам, <br/>которые порекомендуют нас <br/> своим друзьям, коллегам! <br/>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item__nr"> <span class="to">до</span>30<span class="per">%</span>
-                            </div>
-                            <div class="item__text">При ремонте 2х или <br/>более кофемашин сразу
-                            </div>
-                            <a class="item__link" href="javascript:;" data-fancybox="modalmaster" data-src="#masterModal">Оставить заявку</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="review" id="review">
-                <div class="container">
-                    <div class="block">
-                        <div class="block__head">
-                            <div class="block__title">Более 500 положительных отзывов
-                            </div>
-                            <div class="block__subtitle">Прочитайте что люди говорят о нас
-                            </div>
-                        </div>
-                        <div class="block__body">
-                            <div class="slider owl-carousel">
-                                <div class="item">
-                                    <div class="item__text">
-                                        <p>Оставляю отзыв, чтобы выразить благодарность специалисту вашей мастерской. Мастера мы вызывали на дом, так как кофемашина Bosch гудела, но не перемалывала зерна. Несмотря на высокую стоимость нашей кофемашины, у нее довольно быстро затупились жернова. Проблему мастер нашел очень быстро, выполнил замену и выписал гарантию. Отдельно стоит отметить, что у мастера при себе уже были запчасти, так что нам не пришлось терять время на их поиск. Спасибо, что цените своих клиентов!</p>
-                                    </div>
-                                    <div class="author">
-                                        <div class="author__name">Илья Павердин
-                                        </div>
-                                    </div>
+                            <div class="block__text">
+                                <div class="block__title">Обязательно проинформируем
                                 </div>
-                                <div class="item">
-                                    <div class="item__text item__text--small">
-                                        <p>Выражаю вам благодарность за качественную работу, которую вы заслужили своим профессионализмом. Я рад, что довелось повстречать действительно хороших специалистов, которые выполнили ремонт моей кофемашины Saeco за такое короткое время. Отвозил кофемашину на профилактику в сервисный центр, там сделали чистку от накипи и кофейных масел, бесплатно настроили и сразу отзвонились. Обошлась мне услуга совсем недорого, в будущем буду обращаться только к вам.</p>
-                                    </div>
-                                    <div class="author">
-                                        <div class="author__name">Андрей Фисташков
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__text">
-                                        <p>Моя кофемашина Delonghi сломалась очень внезапно, пришлось срочно заняться поиском хорошего и недорогого мастера по ремонту. Позвонила и вызвала курьера, он приехал в назначенное мной время и забрал кофемашину. Уже к обеду сообщили о выполненном ремонте. Очень удобно, что у них есть несколько способов оплаты, в прежнем сц такого преимущества не было. </p>
-                                    </div>
-                                    <div class="author">
-                                        <div class="author__name">Александра Горина
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="item__text">
-                                        <p>Пару недель назад обращался в Love-Kofe, чтобы показать офисную кофемашину Jura, которая перестала включаться после сильного перепада напряжения. Мастер провел диагностику и сразу же озвучил стоимость и время работы. Меня все устроило. Уже на следующий день отзвонился менеджер и сообщил, что все готово. Обслуживанием я остался очень доволен, сервисный центр к обращению рекомендую.</p>
-                                    </div>
-                                    <div class="author">
-                                        <div class="author__name">Илья Рапунцев
-                                        </div>
-                                    </div>
+                                <div class="block__par">Вам будет предоставлен ИНДИВИДУАЛЬНЫЙ менеджер, который будет сообщать Вам о стадиях ремонта кофемашины. Кстати, доставка отремонтированной кофемашины у нас бесплатна!
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="clients" id="clients">
-                <div class="container">
-                    <h2 class="clients__title">Наши клиенты
-                    </h2>
-                    <div class="clients__subtitle">За время работы сервиса мы ремонтировали кофемашины<br/> крупных компаний.</div>
-                    <div class="blocks">
-                        <div class="block" id="company">
-                            <div class="block__list">
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company1-review1.jpg" data-fancybox="group2-1">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company1.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company2-review1.jpg" data-fancybox="group2-2">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company2.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company3-review1.jpg" data-fancybox="group2-3">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company3.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company4-review1.jpg" data-fancybox="group2-4">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company4.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company5-review1.jpg" data-fancybox="group2-5">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company5.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company6-review1.jpg" data-fancybox="group2-6">
-                                    <span class="item__img-wrap">
-                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company6.png" alt="" role="presentation"/>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="free__form">
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины' . (isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : '') . '.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
                     </div>
                 </div>
             </div>
-            <?= landing\widgets\lists\PopularBrands::widget(); ?>
             <div class="team" id="team">
                 <div class="container">
                     <div class="team__block">
@@ -590,7 +460,39 @@ $domain = str_replace('admin.', '', $domain);
                     </div>
                 </div>
             </div>
-            <?= landing\widgets\forms\Other::widget(); ?>
+            <div class="percent" id="percent">
+                <div class="container">
+                    <div class="percent__block">
+                        <div class="item">
+                            <div class="item__nr">5<span class="per">%</span>
+                            </div>
+                            <div class="item__text">При заказе ремонта<br> кофемашины сегодня<br> до 14:00 
+                            </div>
+                            <a class="item__link" href="javascript:;" data-fancybox="modal5per" data-src="#cashbackModal">Оставить заявку</a>
+                        </div>
+                        <div class="item">
+                            <div class="item__nr">10<span class="per">%</span>
+                            </div>
+                            <div class="item__text">За подписку<br/> на нас в социальной<br/> сети Вконтакте
+                            </div>
+                            <a class="item__link" href="https://vk.com/lovekoferu" target="_blank">Вступить в группу</a>
+                        </div>
+                        <div class="item">
+                            <div class="item__nr">15<span class="per">%</span>
+                            </div>
+                            <div class="item__text">Клиентам, <br/>которые порекомендуют нас <br/> своим друзьям, коллегам! <br/>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__nr"> <span class="to">до</span>30<span class="per">%</span>
+                            </div>
+                            <div class="item__text">При ремонте 2х<br/> или более кофемашин<br/> в один день
+                            </div>
+                            <a class="item__link" href="javascript:;" data-fancybox="modalmaster" data-src="#masterModal">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="faq" id="faq">
                 <div class="container">
                     <h2 class="faq__title">Часто задаваемые вопросы</h2>
@@ -666,10 +568,15 @@ $domain = str_replace('admin.', '', $domain);
                             </div>
                         </div>
                     </div>
+                    <br>
+                    <br>
+                    <div class="clients__title">Остались вопросы?</div>
                     <?= landing\widgets\forms\Other2::widget(); ?>
                     
                 </div>
             </div>
+
+            <?= landing\widgets\lists\PopularBrands::widget(); ?>
             <div class="news" id="news">
                 <div class="container">
                     <h2 class="news__title">Советы от наших экспертов</h2>
@@ -707,6 +614,101 @@ $domain = str_replace('admin.', '', $domain);
                                     <p>Автоматическая кофемашина укомплектована нагревательным компонентом и гидравлической системой...</p>
                                 </div>
                                 <a class="btn btn--fw" href="javascript:;" data-fancybox="post3" data-src="#post3">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients" id="clients">
+                <div class="container">
+                    <h2 class="clients__title">Наши клиенты
+                    </h2>
+                    <div class="clients__subtitle">За время работы сервиса мы ремонтировали кофемашины<br/> крупных компаний.</div>
+                    <div class="blocks">
+                        <div class="block" id="company">
+                            <div class="block__list">
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company1-review1.jpg" data-fancybox="group2-1">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company1.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company2-review1.jpg" data-fancybox="group2-2">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company2.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company3-review1.jpg" data-fancybox="group2-3">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company3.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company4-review1.jpg" data-fancybox="group2-4">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company4.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company5-review1.jpg" data-fancybox="group2-5">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company5.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                                <a class="item" href="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company6-review1.jpg" data-fancybox="group2-6">
+                                    <span class="item__img-wrap">
+                                        <img class="item__img" src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/clients/company6.png" alt="" role="presentation"/>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review" id="review">
+                <div class="container">
+                    <div class="block">
+                        <div class="block__head">
+                            <div class="block__title">Более 500 положительных отзывов
+                            </div>
+                            <div class="block__subtitle">Прочитайте что люди говорят о нас
+                            </div>
+                        </div>
+                        <div class="block__body">
+                            <div class="slider owl-carousel">
+                                <div class="item">
+                                    <div class="item__text">
+                                        <p>Оставляю отзыв, чтобы выразить благодарность специалисту вашей мастерской. Мастера мы вызывали на дом, так как кофемашина Bosch гудела, но не перемалывала зерна. Несмотря на высокую стоимость нашей кофемашины, у нее довольно быстро затупились жернова. Проблему мастер нашел очень быстро, выполнил замену и выписал гарантию. Отдельно стоит отметить, что у мастера при себе уже были запчасти, так что нам не пришлось терять время на их поиск. Спасибо, что цените своих клиентов!</p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="author__name">Илья Павердин
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__text item__text--small">
+                                        <p>Выражаю вам благодарность за качественную работу, которую вы заслужили своим профессионализмом. Я рад, что довелось повстречать действительно хороших специалистов, которые выполнили ремонт моей кофемашины Saeco за такое короткое время. Отвозил кофемашину на профилактику в сервисный центр, там сделали чистку от накипи и кофейных масел, бесплатно настроили и сразу отзвонились. Обошлась мне услуга совсем недорого, в будущем буду обращаться только к вам.</p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="author__name">Андрей Фисташков
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__text">
+                                        <p>Моя кофемашина Delonghi сломалась очень внезапно, пришлось срочно заняться поиском хорошего и недорогого мастера по ремонту. Позвонила и вызвала курьера, он приехал в назначенное мной время и забрал кофемашину. Уже к обеду сообщили о выполненном ремонте. Очень удобно, что у них есть несколько способов оплаты, в прежнем сц такого преимущества не было. </p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="author__name">Александра Горина
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item__text">
+                                        <p>Пару недель назад обращался в Love-Kofe, чтобы показать офисную кофемашину Jura, которая перестала включаться после сильного перепада напряжения. Мастер провел диагностику и сразу же озвучил стоимость и время работы. Меня все устроило. Уже на следующий день отзвонился менеджер и сообщил, что все готово. Обслуживанием я остался очень доволен, сервисный центр к обращению рекомендую.</p>
+                                    </div>
+                                    <div class="author">
+                                        <div class="author__name">Илья Рапунцев
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -795,7 +797,7 @@ $domain = str_replace('admin.', '', $domain);
                         <div class="end__subtitle">Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.</div>
                     </div>
                     <div class="end__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Мы работаем и в выходные,<br/>позвоните нам и курьер сразу-же приедет!', 'sub_title' => 'Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.', 'id' => 'form3', 'model' => 'CallBackForm', 'button' => 'Да, хочу!']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Мы работаем и в выходные,<br/>позвоните нам и курьер сразу-же приедет!', 'sub_title' => 'Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.', 'id' => 'form3', 'model' => 'CallBackForm', 'button' => 'Вызвать курьера']); ?>
                     </div>
                 </div>
             </div>
@@ -841,16 +843,19 @@ $domain = str_replace('admin.', '', $domain);
                 <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку на <br/>вызов мастера', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form5', 'model' => 'OrderForm', 'button' => 'Вызвать мастера']); ?>
             </div>
             <div class="modal" id="cashbackModal" style="display: none;" >
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>5% кэшбэк на первый ремонт', 'sub_title' => 'Перезвоним за 27 секунд', 'button' => 'Получить 5% кэшбэк', 'id' => 'form6', 'model' => 'OrderForm2']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>15% кэшбэк на первый ремонт', 'sub_title' => 'Перезвоним за 27 секунд', 'button' => 'Получить 15% кэшбэк', 'id' => 'form6', 'model' => 'OrderForm2']); ?>
             </div>
             <div class="modal" id="glassModal" style="display: none;">
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>защитное стекло в подарок', 'sub_title' => 'Перезвоним за 7 секунд', 'button' => 'Получить стекло в подарок', 'id' => 'form7', 'model' => 'ServiceForm']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку сейчас и получите скидку 50% на комплексную чистку кофемашину', 'sub_title' => 'Перезвоним за 7 секунд', 'button' => 'Получить 50% скидку', 'id' => 'form7', 'model' => 'ServiceForm']); ?>
             </div>
             <div class="modal" id="studentModal" style="display: none;" >
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Ты студент?<br/>Оставь заявку и получи <br/>5% скидку на ремонт', 'sub_title' => 'Перезвоним за 7 секунд<br/>(Необходим студенческий билет)', 'id' => 'form8', 'model' => 'AskForm3', 'button' => 'Получить скидку 5%']); ?>                
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставь заявку и получи <br/>30% скидку на комплексную профилактику', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form8', 'model' => 'AskForm3', 'button' => 'Получить скидку 30%']); ?>                
             </div>
             <div class="modal" id="repairModal" style="display: none;">
                 <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm4', 'button' => 'Записаться на ремонт']); ?>
+            </div>
+            <div class="modal" id="newModal" style="display: none;">
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm5', 'button' => 'ЗАКАЗАТЬ ДИАГНОСТИКУ']); ?>
             </div>
         </div>
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/vendor.css">

@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
 
 $form = ActiveForm::begin([
-            'id' => 'other3-form',
+            'id' => 'other4-form',
             'options' => ['class' => 'form default'],
             'enableClientValidation' => true,
             'fieldConfig' => [
@@ -28,7 +28,7 @@ $form = ActiveForm::begin([
     </div>
 </div>
 <div class="form__field form__field--btn">
-    <?= Html::submitButton('Посоветоваться с мастером', ['class' => 'btn btn--fw', 'type' => 'submit']) ?>
+    <?= Html::submitButton('Вызвать мастера', ['class' => 'btn btn--fw', 'type' => 'submit']) ?>
 </div>
 <div class="policy"><input class="policy__input" type="checkbox" name="policy" id="policy-free" checked="checked">
     <label class="policy__label" for="policy-free">
