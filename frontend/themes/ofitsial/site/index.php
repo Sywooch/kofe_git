@@ -26,14 +26,12 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : app\component
 <?= ofitsial\widgets\other\Ht::widget(); ?>
 <?= ofitsial\widgets\lists\Neispravnost::widget(); ?>
 <?php if (!empty($page['full_description'])): ?>
-    <div class="afterheader">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 rightside_container">                
-                    <div class="commercpage_text">
-                        <?= $page['full_description']; ?>
-                    </div>                
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 rightside_container">                
+                <div class="commercpage_text">
+                    <?= $page['full_description']; ?>
+                </div>                
             </div>
         </div>
     </div>
