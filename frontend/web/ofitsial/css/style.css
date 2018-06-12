@@ -4442,9 +4442,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .zte .burger{
         top:17px;
     }
-    .burger,.meizu .burger{
-        top:21px;
-    }
     .xiaomi .burger{
         top:2px;
     }
@@ -7472,7 +7469,6 @@ body {
 }
 .preheader {
     background: #d71921;
-    height: 30px;
 }
 .changecity_container>span {
     display: inline-block;
@@ -7589,6 +7585,15 @@ body {
     margin-left: 25px;
     padding-left: 25px;
     border-left: 1px solid #e6e6e6;
+}
+@media (max-width: 1000px) {
+    .topmenu_container {
+        margin-left: 0px;
+    }
+    .topmenu_container ul li:not(:first-of-type) a {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
 }
 .topsearch_container {
     display: inline-block;
@@ -9260,9 +9265,6 @@ figure.image {
     .headerphone_container a {
         font-size: 16px
     }
-    .topmenu_container ul li:not(:first-of-type) {
-        margin-left: 25px
-    }
     .topsearch_container {
         display: none
     }
@@ -9388,9 +9390,6 @@ figure.image {
     .preheaderphone_block {
         text-align: center
     }
-    .preheader {
-        padding: 10px
-    }
     .headerphone_container a {
         font-size: 18px
     }
@@ -9423,34 +9422,33 @@ figure.image {
     }
     .topmenu_container ul li {
         display: block;
-        padding: 9px 30px;
-        font-size: 18px;
+        padding: 2px;
+        font-size: 14px;
         position: relative;
-        text-align: left
+        text-align: left;
+        line-height: 30px;
+    }
+    .topmenu_container ul li a {
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #e6e6e6;
     }
     .burger {
-        width: 70px;
-        height: 40px;
+        width: 50px;
+        height: 30px;
         display: inline-block;
         position: absolute;
         cursor: pointer;
         right: 15px;
-        top: 7px;
-        transition: .2s
+        transition: .2s;
+        margin-top: 24px;
     }
     .topsearch_container {
         display: none
     }
     .activetopmenu_item:before {
         content: "";
-        position: absolute;
-        bottom: 6px;
-        left: 10%;
-        width: 31%;
-        height: 4px
-    }
-    .header {
-        padding: 13px 0
+        display: none;
     }
     .burgerrow {
         width: 100%;
@@ -9460,7 +9458,7 @@ figure.image {
         left: 0;
         transition: .3s;
         margin: auto;
-        background: #020e1c;
+        background: #d71921;
         transform: rotate(0)
     }
     .activeburger .burgerrow1 {
@@ -9489,10 +9487,6 @@ figure.image {
     .activeburger .burgerrow3 {
         transform: rotate(-45deg);
         top: 0
-    }
-    .afterheader {
-        background-image: url("../images/img/toppeople.png");
-        background-position: 121px top
     }
     .ahowl-carousel {
         text-align: center
@@ -9762,9 +9756,6 @@ figure.image {
     .hiddensale {
         display: none !important
     }
-    .topmenu_container ul li:not(:first-of-type) {
-        margin-left: 20px
-    }
     footer input[type=email] {
         width: auto
     }
@@ -9955,11 +9946,6 @@ figure.image {
     background-size: contain;
     background-position: right bottom;
 }
-@media (max-width: 590px){
-     .afterheader{
-        background:url("../images/img/bg1.png")no-repeat;
-    }
-}
 .proector{
     background-image: url(../images/img/proector.png);
     background-size: 83px;
@@ -10129,4 +10115,12 @@ figure.image {
     border-radius: 10px 0px 10px 0px;
     text-align: left;
     font-size: 12px;
+}
+
+
+
+@media (max-width: 560px) {
+    .preheader .col-xs-6 {
+        width: 100%;
+    }
 }

@@ -52,15 +52,15 @@ $js = app\components\CController::$js;
             <div class="preheader">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-lg-4 col-sm-5">
+                        <div class="col-xl-3 col-lg-2 col-md-2 col-xs-6">
                             <div class="changecity_container">
                                 <span>Ваш город <span class="curcity gl-current-select">Москва</span></span>
                             </div>
                         </div>
-                        <div class="col-md-5 col-sm-7">
+                        <div class="col-xl-5 col-lg-7 col-md-7 hidden-sm">
                             <span class="headeradress">Адрес: г. Москва, м. Шелепиха, ул. Большая филевская, д.1</span>
                         </div>
-                        <div class="col-md-4 col-lg-3 text-right col-sm-7 p-left-reset preheaderphone_block">
+                        <div class="col-xl-4 col-lg-3 col-md-3 col-xs-6 text-right  p-left-reset preheaderphone_block">
                             <span class="headerphone_container">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>">
@@ -74,13 +74,13 @@ $js = app\components\CController::$js;
             <div class="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-8">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
                             <div class="headerlogo_container">
                                 <a class="new-year" href="/"><img src="<?= $assets . $siteConfig['theme']; ?>/images/saeco2.svg" alt="Сервисный центр apple" title="Сервисный центр apple" class="img-responsive"></a>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-8 col-md-offset-2 col-xs-4 top-menu-row">
-                            <div class="visible-xs burger">
+                        <div class="col-xl-4 col-xl-offset-2 col-lg-9 col-md-9 col-sm-9">
+                            <div class="burger">
                                 <i class="burgerrow burgerrow1"></i>
                                 <i class="burgerrow burgerrow2"></i>
                                 <i class="burgerrow burgerrow3"></i>
