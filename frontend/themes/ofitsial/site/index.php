@@ -1,7 +1,8 @@
 <?php
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = !empty($page['meta_title']) ? $page['meta_title'] : app\components\CController::$category['full_title'] . ' ' . \app\components\CController::$monoBrand['title'] . ' в Москве срочно и по лучшим ценам!';
+use \app\components\CController;
+$this->title = !empty($page['meta_title']) ? $page['meta_title'] : CController::$category['full_title'] . ' ' . CController::$monoBrand['title'] . ' в Москве срочно и по лучшим ценам!';
 ?>
 <a href="#"></a>
 <!-- header -->
@@ -10,7 +11,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : app\component
         <div class="row">
             <div class="col-lg-6 col-lg-offset-6 col-md-9 col-ms-offset-3 col-sm-12">
                 <h1 class="ah_text">
-                    <?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                    <?= !empty($page['meta_h1']) ? str_replace('#brand_en#', CController::$monoBrand['title'], $page['meta_h1'])  : CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
                 </h1>
                 <div class="ah_triggers">
                     <?= $page['description']; ?>
