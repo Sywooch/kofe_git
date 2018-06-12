@@ -11,14 +11,44 @@ $breadcrumbs = [
     'Модели ' . app\components\CController::$monoBrand['title'],
 ];
 ?>
-<div class="container">
-    <?= helper\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+<?= ofitsial\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+<div class="content-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 leftside_container">
+                <p class="gl">Заказать звонок</p>
+                <?= ofitsial\widgets\forms\Left::widget(); ?>
+                <?= ofitsial\widgets\other\Ht::widget(['view' => 'left-adv']); ?>                
+            </div>
+            <div class="col-md-9 rightside_container">
+                <div class="contenttext">
+                    <h1 class="inner_h1"><?= $h1; ?></h1>
+                    <div class="inner_tabs">
+                        <div class="tabs-wrapper">
+                            <div class="tabs t-33">
+                                <a href="remont-noutbukov-apple.html#tab1" data-target="tab1" class="tab-heading active">Все модели</a>
+                                <a href="remont-noutbukov-apple.html#tab3" data-target="tab3" class="tab-heading ">Описание</a>
+                            </div>
+                            <div class="row">
+                                <div class="tab active col-md-12" id="tab1">
+                                    <div class="rows">
+                                        <?= ofitsial\widgets\lists\Models::widget(['parent' => $siteConfig['brand-id'], 'brand' => \app\components\CController::$monoBrand['title']]); ?>
+                                    </div>
+                                </div>
+                                <div class="tab  col-md-12" id="tab3" style="display:none;">
+                                    <div class="tabcontent">
+                                        <?= $text; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container">  
-    <h1 class="section-title"><?= $h1; ?></h1>
-    <?= $text; ?>
-    <?= helper\widgets\lists\Models::widget(['limit' => 0]); ?>
-</div>
-<div class="container">
-    <?= helper\widgets\other\Ht::widget(); ?>
-</div>
+<?= ofitsial\widgets\other\Ht::widget(['view' => 'form-adv']); ?>
+<?= ofitsial\widgets\other\Ht::widget(['view' => 'map']); ?>
+<?= ofitsial\widgets\lists\LastReviews::widget(); ?>
+<i class="ancorn fa fa-angle-double-up"></i>
