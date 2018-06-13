@@ -9,16 +9,18 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : CController::
 <div class="afterheader">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-lg-offset-6 col-md-9 col-ms-offset-3 col-sm-12">
-                <h1 class="ah_text">
-                    <?= !empty($page['meta_h1']) ? str_replace('#brand_en#', CController::$monoBrand['title'], $page['meta_h1'])  : CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
-                </h1>
-                <div class="ah_triggers">
-                    <?= $page['description']; ?>
-                </div>
-                <?= ofitsial\widgets\forms\Main::widget(); ?>
-                <div class="mini-text">
-                    <p>Перезвоним Вам за 2 минуты!</p>
+            <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-4 col-sm-12">
+                <div class="my-slider">
+                    <h1 class="ah_text">
+                        <?= !empty($page['meta_h1']) ? str_replace('#brand_en#', CController::$monoBrand['title'], $page['meta_h1'])  : CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?>
+                    </h1>
+                    <div class="ah_triggers">
+                        <?= $page['description']; ?>
+                    </div>
+                    <?= ofitsial\widgets\forms\Main::widget(); ?>
+                    <div class="mini-text">
+                        <p>Перезвоним Вам за 2 минуты!</p>
+                    </div>
                 </div>
             </div>
         </div>

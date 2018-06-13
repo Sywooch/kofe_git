@@ -1,5 +1,5 @@
-<p class="gl">ПРЕИМУЩЕСТВА </p>
-<div class="row">
+<p class="gl hidden-sm hidden-xs">ПРЕИМУЩЕСТВА </p>
+<div class="row hidden-sm hidden-xs">
     <div class="col-md-12">
         <div class="amtrigger_title">
             <div><img src="<?= $assets . $siteConfig['theme']; ?>/images/icon/1.svg" alt=""></div>

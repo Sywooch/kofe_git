@@ -15,7 +15,7 @@ $breadcrumbs = [
 <div class="content-product">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 leftside_container">
+            <div class="col-md-3 col-xs-12 leftside_container">
                 <p class="gl">Заказать звонок</p>
                 <?= ofitsial\widgets\forms\Left::widget(); ?>
                 <?= ofitsial\widgets\other\Ht::widget(['view' => 'left-adv']); ?>                
@@ -31,7 +31,7 @@ $breadcrumbs = [
                             </div>
                             <div class="row">
                                 <div class="tab active col-md-12" id="tab1">
-                                    <div class="rows">
+                                    <div class="tabcontent flex-wrap">
                                         <?= ofitsial\widgets\lists\Models::widget(['parent' => $siteConfig['brand-id'], 'brand' => \app\components\CController::$monoBrand['title']]); ?>
                                     </div>
                                 </div>

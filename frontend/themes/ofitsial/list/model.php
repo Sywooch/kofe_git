@@ -20,7 +20,7 @@ $siteConfig = app\components\CController::getSiteConfig();
 <div class="content-product">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 leftside_container">
+            <div class="col-md-3 col-xs-12 leftside_container">
                 <div class="img-big">                    
                     <img alt="Ремонт <?= $brand['title'] . ' ' . $pageInfo['title']; ?>" src="<?= $assets ?>/uploads/images/<?= $img; ?>"> 
                 </div>

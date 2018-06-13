@@ -9,7 +9,7 @@ $this->title = $pageInfo['meta_title'];
 <div class="content-product">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 leftside_container">
+            <div class="col-md-3 col-xs-12 leftside_container">
                 <p class="gl">Заказать звонок</p>
                 <?= ofitsial\widgets\forms\Left::widget(); ?>
                 <?= ofitsial\widgets\other\Ht::widget(['view' => 'left-adv']); ?>
