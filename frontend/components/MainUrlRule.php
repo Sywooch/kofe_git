@@ -65,7 +65,11 @@ class MainUrlRule extends UrlRule {
                 return ['site/error', []];
             $replaceUrl = Yii::$app->params['replace-url'];
             $brand = Yii::$app->db->createCommand('SELECT id, title, url, image FROM {{%pages}} WHERE id = ' . $siteConfig['brand-id'])->queryOne();
-            $pathInfo = str_replace($replaceUrl, $brand['url'] . '/', $pathInfo);
+            if ((isset($siteConfig['theme']) && $siteConfig['theme'] == 'ofitsial')) {
+                
+            } else {
+                $pathInfo = str_replace($replaceUrl, $brand['url'] . '/', $pathInfo);
+            }
         }
 
         if (empty($pathInfo))

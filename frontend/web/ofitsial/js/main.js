@@ -3843,30 +3843,7 @@ $(document).ready(function() {
     });
     $('.submit_call').click(function() {
         $('#mango-widget-btn').trigger('click');
-    });
-    $(document).on('submit', 'form', function() {
-        $(this).find('[type=submit]').attr('disabled', true);
-        $.ajax({
-            url: $(this).attr('action'),
-            type: "POST",
-            dataType: "html",
-            data: $(this).serialize(),
-            success: function(response) {
-                swal({
-                    title: "Ваша заявка принята",
-                    text: "В ближайшее время с Вами свяжется специалист",
-                    type: "success",
-                    customClass: "swal-small"
-                });
-                $('tr').removeClass('activeorder_price');
-                $('.ordeeprice').hide();
-            },
-            error: function(response) {
-                swal('Что-то пошло не так', 'Попробуйте еще раз', 'error')
-            }
-        });
-        return false;
-    });
+    });    
     var curcityinput = $('.curcity.gl-current-select').text();
     var $currentCity = $.trim(curcityinput);    
     $(".ahowl-carousel").owlCarousel({
@@ -4015,35 +3992,27 @@ $(document).ready(function() {
             aboutcontainer.find('.aboutright .col-md-6').removeClass('p-left-reset').addClass('col-md-12').removeClass('col-md-6');
         }
     });
+    var form = $("#price-form");
     $('.orderprice').click(function() {
         if ($('tr').hasClass('activeorder_price')) {
             $('tr').removeClass('activeorder_price');
-            $('.ordeeprice').hide();
+            form.appendTo($("#form-here"));
+            $('tr.ordeeprice').remove();
         }
         var row = $(this).closest('tr').toggleClass('activeorder_price');
         if (!row.data('child')) {            
             var orderrow = $('<tr/>').insertAfter(row).append('<td colspan="' + $('td', row).length + '" />').addClass('ordeeprice');
-            orderrow.find('td').html($(".price-table-form").html());
-            row.data('child', orderrow);
-            $('input[type=tel]').inputmask("+7 (999) 999 99 99");
-            row.data('child', orderrow);
-            $('input[type=tel]').inputmask("+7 (999) 999 99 99");
-        }
-        $(document).on('click', '.ordeeprice input[type=submit]', function() {
-            if ($('.ordeeprice input[type=tel]').val().length > 16) {
-                $(this).closest('.ordeeprice').addClass('colorbox-gif');
-            }
-        });
+            var to = orderrow.find('td');
+            form.appendTo(to);
+            row.data('child', orderrow);            
+        }        
         if (row.hasClass('activeorder_price')) {
             row.data('child').slideDown();
         } else {
             row.data('child').slideUp();
         }
     });
-    $('.orderprice').click(function() {
-        var ordername = $(this).closest('tr').find('td:first-of-type').text();
-        $(this).closest('tr').next('.ordeeprice').find('input[name=message]').val(ordername + " " + "(" + curcityinput + ")");
-    });
+    
     $('.ctawithmodels .itemmodelform').change(function() {
         var modelname = $(this).val();
         var modeltype = $(this).closest('form').find('.itemtypeform').val();

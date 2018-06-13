@@ -29,7 +29,11 @@ $c = count($rows);
             <?php foreach ($rows as $key => $row): ?>
                 <tr class="t-row">
                     <td>
-                        <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>" class="t-cell col01" title="<?= $row['title']; ?>"><?= $row['title']; ?></a>
+                        <?php if (isset($_GET['data']['type']) && in_array($_GET['data']['type'], ['brand', 'model'])): ?>
+                            <span class="t-cell col01"><?= $row['title']; ?></span>
+                        <?php else: ?>
+                            <a href="/<?= $row['url']; ?>" class="t-cell col01" title="<?= $row['title']; ?>"><?= $row['title']; ?></a>
+                        <?php endif; ?>
                     </td>
                     <td><?= round($row['price']); ?></td>
                     <td> <?= $row['time']; ?></td>
@@ -38,4 +42,7 @@ $c = count($rows);
             <?php endforeach; ?>
         </tbody>
     </table>
+</div>
+<div style="display: none;" id="form-here">
+    <?= ofitsial\widgets\forms\Price::widget(); ?>
 </div>
