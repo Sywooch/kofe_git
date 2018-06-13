@@ -74,9 +74,9 @@ $js = app\components\CController::$js;
             <div class="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-8">
                             <div class="headerlogo_container">
-                                <a class="new-year" href="/"><img src="<?= $assets . $siteConfig['theme']; ?>/images/saeco2.svg" alt="Сервисный центр apple" title="Сервисный центр apple" class="img-responsive"></a>
+                                <a class="new-year" href="/"><img src="<?= $assets . $siteConfig['theme']; ?>/images/saeco2.svg" alt="" title="" class="img-responsive"></a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-xl-offset-2 col-lg-9 col-md-9 col-sm-9">
@@ -107,7 +107,7 @@ $js = app\components\CController::$js;
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-5">
+                    <div class="col-md-3 col-sm-5 mobi-padding">
                         <p class="footerlogo_descr">
                             Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?> в Москве
                         </p>
@@ -125,36 +125,16 @@ $js = app\components\CController::$js;
                             <li class="last"><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 hidden-xs">
                         <ul class="footer-menu footermenu_seccol">
-                            <li>
-                                <a href="remont-noutbukov-apple.html">
-                                    Неисправности
-                                </a>
-                            </li>
-                            <li>
-                                <a href="remont-monoblokov-apple-imac.html">
-                                    Не варит кофе
-                                </a>
-                            </li>
-                            <li>
-                                <a href="remont-iphone.html">
-                                    Не видит кофе
-                                </a>
-                            </li>
-                            <li>
-                                <a href="remont-ipad.html">
-                                    Поломка манометра
-                                </a>
-                            </li>
-                            <li>
-                                <a href="remont-ipad.html">
-                                    Нет питания
-                                </a>
-                            </li>
+                            <li><a href="remont-noutbukov-apple.html"> Неисправности</a></li>
+                            <li><a href="remont-monoblokov-apple-imac.html">Не варит кофе</a></li>
+                            <li><a href="remont-iphone.html"> Не видит кофе</a></li>
+                            <li><a href="remont-ipad.html">Поломка манометра</a></li>
+                            <li><a href="remont-ipad.html">Нет питания</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 hidden-sm hidden-xs">
                         <p class="getarticles_heading">Заказать звонок от мастера по кофемашинам</p>
                         <?= ofitsial\widgets\forms\Footer::widget(); ?>
                     </div>

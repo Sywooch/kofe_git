@@ -15,7 +15,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <?php foreach ($rows as $row): ?>
                             <div class="revcar_block">
                                 <div class="col-md-3 p-left-reset text-center">
-                                    <div class="rm_image" style="background-image: url(<?= $assets . $siteConfig['theme']; ?>/images/user.svg);"></div>
+                                    <div class="rm_image" style="background-image: url(/<?= $siteConfig['theme']; ?>/images/user.svg);"></div>
                                 </div>
                                 <div class="col-md-9 p-left-reset">
                                     <div class="revcartext_container">

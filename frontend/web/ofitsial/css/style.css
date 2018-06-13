@@ -7842,6 +7842,7 @@ form button:hover {
     padding-bottom: 9px;
     margin-bottom: 40px;
 }
+
 .pmowl-carousel .owl-item {
     text-align: center
 }
@@ -7924,6 +7925,7 @@ form button:hover {
 .pmowl-carousel .owl-next {
 }
 .ctaprefooter {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -7975,6 +7977,23 @@ form button:hover {
 .ctapf_salehm {
     font-size: 60px;
     line-height: 1.05em
+}
+@media (max-width: 800px) {
+    .ctapfsale_block {
+        color: #fff;
+        letter-spacing: .07em;
+        line-height: 1.4em;
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .ctapf_salesale {
+        font-size: 34px;
+        text-transform: uppercase
+    }
+    .ctapf_salehm {
+        font-size: 39px;
+        line-height: 1.05em
+    }
 }
 .ctapfaction_text {
     font-weight: 100;
@@ -8181,6 +8200,13 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+@media (max-width: 960px) {
+    footer {
+        background: url(../images/footer-bg.jpg);
+        background-size: auto 100%;
+        background-position: center;
+    }
 }
 footer .container,
 footer .container a {
@@ -9278,12 +9304,6 @@ figure.image {
         text-align: center;
         margin-top: 30px
     }
-    .footer-menu {
-        display: none
-    }
-    footer {
-        padding: 30px 0 15px
-    }
     footer form {
         width: 300px
     }
@@ -9319,9 +9339,6 @@ figure.image {
     .pmowl-carousel .owl-next,
     .ahowl-carousel .owl-next {
         right: 0
-    }
-    .ctapf_left {
-        display: none
     }
     .ctapf_right {
         height: auto
@@ -9516,12 +9533,6 @@ figure.image {
         margin: 93px 0 0;
         width: 100%
     }
-    .footer-menu {
-        display: none
-    }
-    footer {
-        padding: 15px 0
-    }
     footer form {
         width: 200px
     }
@@ -9564,9 +9575,6 @@ figure.image {
         right: 0;
         left: 0;
         margin: auto
-    }
-    .ctapf_left {
-        display: none
     }
     .mmcity_container ul li a {
         font-size: 17px
@@ -9745,9 +9753,6 @@ figure.image {
     }
 }
 @media(min-width:769px) and (max-width:991px) {
-    .ctapf_left {
-        display: none
-    }
     .aboutright {
         display: none
     }
@@ -10123,4 +10128,37 @@ figure.image {
     .preheader .col-xs-6 {
         width: 100%;
     }
+}
+@media (max-width: 767px) {
+    .mobi-padding {
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 800px) {
+    .pm_heding,
+    .apm_heading {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.commercpage_text p,
+.commercpage_text li,
+.commercpage_text a {
+    font-size: 0.875em;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #333;
+    font-family: Roboto;
+    text-align: justify;
+}
+.commercpage_text h2 {
+    font-size: 26px;
+    color: #333;
+}
+.commercpage_text {
+    max-width: 800px;
+    margin: 0 auto;
 }
