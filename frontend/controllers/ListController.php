@@ -453,6 +453,21 @@ class ListController extends CController {
                         ];
                         $title = 'Устраняем неисправность - ' . $pageInfo['title'] . ' - в Москве и области. Работаем ежедневно. Низкие цены';
                         $metaDesc = 'Ремонт кофемашин в нашем сервисном центре выполяют инженеры с огромным опытом работ. Найдём причину по которой ' . (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' и устраним её';
+                    } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ofitsial') {
+                        $seoH1 = [
+                            4 => 'У кофемашины нет питания',
+                            5 => 'Кофемашина не подаёт воду',
+                            12 => 'Кофемашина не варит кофе',
+                            8 => 'В кофемашине протекает вода',
+                            95 => 'Кофемашина не видит кофе',
+                            94 => 'У кофемашины не работают кнопки',
+                            9 => 'Кофемашина не нагреват воду',
+                            13 => 'Ошибка на дисплее кофемашины',
+                            92 => 'Поломка манометра у кофемашины',
+                            91 => 'Кофемашина не показывает наличие воды',
+                        ];
+                        $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' - Узнать стоимость ремонта ' . CController::$monoBrand['title'] . ' в Москве';
+                        $metaDesc = 'Выполним ремонт кофемашины ' . CController::$monoBrand['title'] . ' и найдём причины по которым ' . (isset($seoH1[$pageInfo['id']]) ? mb_strtolower($seoH1[$pageInfo['id']], 'utf8') : mb_strtolower($pageInfo['title'], 'UTF-8')) . ' - Гарантия до 1 года.';
                     }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - Ремонт в Москве';
@@ -492,6 +507,9 @@ class ListController extends CController {
                     } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины ' . self::$monoBrand['title'] . ' в Москве - Цены и адреса СЦ на сайте';
                         $metaDesc = 'Устраняем неисправности с кофемашинами ' . self::$monoBrand['title'] . ' и оказываем услугу ' . mb_strtolower($pageInfo['title'], 'utf-8') . ' в самые короткие сроки.';
+                    } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
+                        $title = 'Выполняем услугу - ' . $pageInfo['title'] . ' - Лучшие цены, Специализированный СЦ ' . self::$monoBrand['title'];
+                        $metaDesc = 'Сервисный центр ' . self::$monoBrand['title'] . ' оказывает спектр услуг, начиная от диагностики и заканчивая - ' . mb_strtolower($pageInfo['title'], 'utf-8') . ' - Сервис, которого достойна ваша кофемашина';
                     }
                 } elseif ($siteConfig['id'] == 49) {
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' - СЦ в Москве';
@@ -813,6 +831,9 @@ class ListController extends CController {
         } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
             $title = 'Сломалась кофемашина ' . $brand['title'] . ' ' . $pageInfo['title'] . '? Восстановим за 24 часа! Дадим подарок';
             $metaDesc = 'Бесплатное устранение поломки в течении года с момента основного ремонта. Мы ручаемся за произведённый ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'];
+        } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ofitsial') {
+            $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . '. Работаем по всей Москве - Без выходных';
+            $metaDesc = 'Ремонтируем кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в специализированном СЦ. Работают инженеры с 10 летним опытом работы. Ремонт любой сложности.';
         }
 //        \Yii::$app->view->registerMetaTag([
 //            'name' => 'keywords',
