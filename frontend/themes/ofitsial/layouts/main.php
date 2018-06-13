@@ -144,7 +144,7 @@ $js = app\components\CController::$js;
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <span>©  2008-<?= date('Y'); ?> Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?>. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="politika-konfidentsialnosti.html"> Политика конфиденциальности.</a></span>
+                            <span>©  2008-<?= date('Y'); ?> Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?>. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="#"> Политика конфиденциальности.</a></span>
                         </div>
                     </div>
                 </div>
