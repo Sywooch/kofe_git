@@ -44,3 +44,6 @@ $c = count($rows);
         </tbody>
     </table>
 </div>
+<div style="display: none;" id="form-here">
+    <?= ofitsial\widgets\forms\Price::widget(); ?>
+</div>
