@@ -127,11 +127,11 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-md-3 col-sm-3 hidden-xs">
                         <ul class="footer-menu footermenu_seccol">
-                            <li><a href="remont-noutbukov-apple.html"> Неисправности</a></li>
-                            <li><a href="remont-monoblokov-apple-imac.html">Не варит кофе</a></li>
-                            <li><a href="remont-iphone.html"> Не видит кофе</a></li>
-                            <li><a href="remont-ipad.html">Поломка манометра</a></li>
-                            <li><a href="remont-ipad.html">Нет питания</a></li>
+                            <li><a href="/ne-varit-kofe">Не варит кофе</a></li>
+                            <li><a href="/ne-vidit-kofe"> Не видит кофе</a></li>
+                            <li><a href="/polomka-manometra">Поломка манометра</a></li>
+                            <li><a href="/net-pitaniya">Нет питания</a></li>
+                            <li><a href="/protekaet-voda">Протекает вода</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 hidden-sm hidden-xs">

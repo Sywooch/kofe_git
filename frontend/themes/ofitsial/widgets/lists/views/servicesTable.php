@@ -20,10 +20,6 @@ $c = count($rows);
                     <p>Сроки</p>
                 </td>
                 <td>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <p>Гарантия</p>
-                </td>
-                <td>
                     <i class="fa fa-check-square-o" aria-hidden="true"></i>
                     <p>Оформить заявку</p>
                 </td>
@@ -37,7 +33,6 @@ $c = count($rows);
                     </td>
                     <td><?= round($row['price']); ?></td>
                     <td> <?= $row['time']; ?></td>
-                    <td>1 года</td>
                     <td><span class="orderprice">Заказать</span></td>
                 </tr>
             <?php endforeach; ?>
