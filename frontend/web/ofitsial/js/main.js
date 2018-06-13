@@ -3997,7 +3997,7 @@ $(document).ready(function() {
         if ($('tr').hasClass('activeorder_price')) {
             $('tr').removeClass('activeorder_price');
             form.appendTo($("#form-here"));
-            $('.ordeeprice').remove();
+            $('tr.ordeeprice').remove();
         }
         var row = $(this).closest('tr').toggleClass('activeorder_price');
         if (!row.data('child')) {            
