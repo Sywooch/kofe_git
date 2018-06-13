@@ -507,7 +507,7 @@ class ListController extends CController {
                     } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашины ' . self::$monoBrand['title'] . ' в Москве - Цены и адреса СЦ на сайте';
                         $metaDesc = 'Устраняем неисправности с кофемашинами ' . self::$monoBrand['title'] . ' и оказываем услугу ' . mb_strtolower($pageInfo['title'], 'utf-8') . ' в самые короткие сроки.';
-                    } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'nasa') {
+                    } elseif (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ofitsial') {
                         $title = 'Выполняем услугу - ' . $pageInfo['title'] . ' - Лучшие цены, Специализированный СЦ ' . self::$monoBrand['title'];
                         $metaDesc = 'Сервисный центр ' . self::$monoBrand['title'] . ' оказывает спектр услуг, начиная от диагностики и заканчивая - ' . mb_strtolower($pageInfo['title'], 'utf-8') . ' - Сервис, которого достойна ваша кофемашина';
                     }
