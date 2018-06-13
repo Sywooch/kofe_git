@@ -7645,11 +7645,6 @@ body {
     color: #fff;
     text-shadow: 4px 4px rgba(0,0,0,.1);
 }
-@media (max-width: 560px) {
-    .ah_text {
-        font-size: 20px;
-    }
-}
 .ah_triggers,
 .mini-text p {
     text-align: right;
@@ -7658,6 +7653,16 @@ body {
     font-weight: 300;
     line-height: 24px;
     text-shadow: 4px 4px rgba(0,0,0,.1);
+}
+@media (max-width: 560px) {
+    .ah_text {
+        font-size: 20px;
+    }
+    .ah_triggers,
+    .mini-text p {
+        text-align: justify;
+        font-size: 13px;
+    }
 }
 .my-slider {
     background: rgba(0, 0, 0, 0.30980392156862746);
