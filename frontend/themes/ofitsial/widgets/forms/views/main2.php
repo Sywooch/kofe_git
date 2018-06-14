@@ -20,10 +20,10 @@ $form->field($model, 'phone')->widget(MaskedInput::className(), [
     'name' => 'phone',
     'mask' => '+7 (999) 999-99-99',
     'options' => [
-        'placeholder' => 'Телефон',
+        'placeholder' => 'Укажите ваш номер телефона',
     //'class' => 'input--block', 'type' => 'tel'
     ],
 ])->label('')
 ?>
-<?= Html::submitButton('Заказать', ['class' => 'hero-form__btn', 'type' => 'submit']) ?>
+<?= Html::submitButton('Получит скидку', ['class' => 'hero-form__btn', 'type' => 'submit']) ?>
 <?php ActiveForm::end() ?> 

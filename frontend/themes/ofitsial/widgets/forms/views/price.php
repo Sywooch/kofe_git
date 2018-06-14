@@ -23,7 +23,7 @@ $form = ActiveForm::begin([
                 'name' => 'phone',
                 'mask' => '+7 (999) 999-99-99',
                 'options' => [
-                    'placeholder' => 'Телефон',
+                    'placeholder' => 'Укажите ваш номер телефона',
                 //'class' => 'input--block', 'type' => 'tel'
                 ],
             ])->label('')
