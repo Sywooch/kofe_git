@@ -25,5 +25,5 @@ $form->field($model, 'phone')->widget(MaskedInput::className(), [
     ],
 ])->label('')
 ?>
-<?= Html::submitButton('Получит скидку', ['class' => 'hero-form__btn', 'type' => 'submit']) ?>
+<?= Html::submitButton('Получить скидку', ['class' => 'hero-form__btn', 'type' => 'submit']) ?>
 <?php ActiveForm::end() ?> 
