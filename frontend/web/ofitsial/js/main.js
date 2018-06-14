@@ -3994,23 +3994,20 @@ $(document).ready(function() {
     });
     var form = $("#price-form");
     $('.orderprice').click(function() {
-        if ($('tr').hasClass('activeorder_price')) {
-            $('tr').removeClass('activeorder_price');
+        if ($(this).parents('tr').hasClass('activeorder_price')) {
+            $(this).parents('tr').removeClass('activeorder_price');
             form.appendTo($("#form-here"));
             $('tr.ordeeprice').remove();
-        }
-        var row = $(this).closest('tr').toggleClass('activeorder_price');
-        if (!row.data('child')) {            
+        } else {
+            form.appendTo($("#form-here"));
+            $('tr').removeClass('activeorder_price');
+            $('tr.ordeeprice').remove();
+            var row = $(this).closest('tr').toggleClass('activeorder_price');            
             var orderrow = $('<tr/>').insertAfter(row).append('<td colspan="' + $('td', row).length + '" />').addClass('ordeeprice');
             var to = orderrow.find('td');
             form.appendTo(to);
-            row.data('child', orderrow);            
+            row.data('child', orderrow);
         }        
-        if (row.hasClass('activeorder_price')) {
-            row.data('child').slideDown();
-        } else {
-            row.data('child').slideUp();
-        }
     });
     
     $('.ctawithmodels .itemmodelform').change(function() {
