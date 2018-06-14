@@ -1085,7 +1085,7 @@ a {
 }
 a:focus,
 a:hover {
-    color: #d71921;
+    color: #005691;
     text-decoration: underline;
 }
 a:focus {
@@ -7390,7 +7390,7 @@ button.close {
 .activeorder_price .orderprice,
 .ordeeprice form input[type=submit],
 .priceblock {
-    background-color: #d71921;
+    background-color: #005691;
 }
 .preheader .curcity {
     color: white
@@ -7452,7 +7452,7 @@ body {
     line-height: 30px
 }
 .preheader {
-    background: #d71921;
+    background: #005691;
 }
 .changecity_container>span {
     display: inline-block;
@@ -7706,7 +7706,7 @@ form button {
     display: block
 }
 form button {
-    background-color: #d71921;
+    background-color: #005691;
     color: #fff;
 }
 form button:hover {
@@ -7781,7 +7781,7 @@ form button:hover {
     height: 64px;
     background-size: contain;
     background-position: center center;
-    background-color: #d71921;
+    background-color: #005691;
     border-radius: 3px;
     content: '';
     text-align: center;
@@ -7927,7 +7927,7 @@ form button:hover {
     width: 45px;
     height: 45px;
     background-size: cover;
-    background-color: #d71921;
+    background-color: #005691;
     -webkit-mask-image: url(../images/arrow.svg);
     mask-image: url(../images/arrow.svg);
 }
@@ -8100,7 +8100,7 @@ form button:hover {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #d71921;
+    color: #005691;
 }
 .revtext {
     margin-top: 10px;
@@ -8171,7 +8171,7 @@ form button:hover {
     width: 39px;
     background-size: cover;
     margin: 0 30px;
-    background-color: #d71921;
+    background-color: #005691;
     -webkit-mask-image: url(../images/arrow.svg);
     mask-image: url(../images/arrow.svg);
 }
@@ -8208,7 +8208,7 @@ form button:hover {
     width: 7px
 }
 .owl-carousel.rev-carousel .owl-dots div.active {
-    background: #d71921
+    background: #005691
 }
 footer {
     padding: 50px 0 0;
@@ -8664,7 +8664,7 @@ footer .copyrightfooter a {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #d71921;
+    background: #005691;
     display: block;
     position: absolute;
     top: 0px;
@@ -8772,7 +8772,7 @@ footer .copyrightfooter a {
     padding: 2px 15px;
 }
 .orderprice {
-    background: #d71921;
+    background: #005691;
     padding: 8px 30px;
     border-radius: 5px;
     cursor: pointer;
@@ -9494,7 +9494,7 @@ figure.image {
         left: 0;
         transition: .3s;
         margin: auto;
-        background: #d71921;
+        background: #005691;
         transform: rotate(0)
     }
     .activeburger .burgerrow1 {
@@ -10172,7 +10172,7 @@ figure.image {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #d71921;
+    background: #005691;
     display: block;
     position: absolute;
     top: 0px;

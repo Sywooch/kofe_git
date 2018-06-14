@@ -25,6 +25,7 @@ $js = app\components\CController::$js;
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="" type="image/x-icon" >
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme']; ?>/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme']; ?>/css/<?= $siteConfig['sitePrefix']; ?>.css" type="text/css" />
     </head>
     <body>
         <?php $this->beginBody() ?>
@@ -76,7 +77,7 @@ $js = app\components\CController::$js;
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-8">
                             <div class="headerlogo_container">
-                                <a class="new-year" href="/"><img src="<?= $assets . $siteConfig['theme']; ?>/images/saeco2.svg" alt="" title="" class="img-responsive"></a>
+                                <a class="new-year" href="/"><img src="<?= $assets . $siteConfig['theme']; ?>/images/<?= $siteConfig['sitePrefix']; ?>2.svg" alt="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" title="Ремонт <?= app\components\CController::$monoBrand['title']; ?>" class="img-responsive"></a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-xl-offset-2 col-lg-9 col-md-9 col-sm-9">
@@ -118,10 +119,10 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <ul class="footer-menu">
-                            <li class="active"><a href="/">Главная</a></li>
                             <li><a href="/about">О нас</a></li>
                             <li><a href="/prices">Прайс</a></li>
                             <li><a href="/models">Модели</a></li>
+                            <li class="active"><a href="/guarantee">Гарантия</a><li>
                             <li class="last"><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div>
@@ -144,7 +145,7 @@ $js = app\components\CController::$js;
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <span>©  2008-<?= date('Y'); ?> Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?>. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="#"> Политика конфиденциальности.</a></span>
+                            <span>©  2008-<?= date('Y'); ?> Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?>. Все права защищены. <br>Информация на сайте не является публичной офертой. <a href="/privacy-policy"> Политика конфиденциальности.</a></span>
                         </div>
                     </div>
                 </div>

@@ -9478,9 +9478,6 @@ figure.image {
     .topmenu_container ul li:not(:first-of-type) {
         margin-left: 0
     }
-    .topmenu_container.activemenu {
-        left: 0
-    }
     .topmenu_container ul li {
         display: block;
         padding: 9px 30px;
