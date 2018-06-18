@@ -631,10 +631,10 @@ class ListController extends CController {
         }
         $rName = '';
         if (isset(Yii::$app->params['brandRussianNames'][$pageInfo['title']]))
-            $rName = ' (' . Yii::$app->params['brandRussianNames'][$pageInfo['title']] . ')';
+            $rName = Yii::$app->params['brandRussianNames'][$pageInfo['title']];
         if ($siteConfig['id'] == 50) {
 
-            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . '™' . $rName . '  в ' . Yii::$app->session['region']['titleRod'] . ' 👍 — Цены и адреса';
+            $title = 'Ремонт кофемашин ' . $pageInfo['title'] . '™ (' . $rName . ')  в ' . Yii::$app->session['region']['titleRod'] . ' 👍 — Цены и адреса';
             //$title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
             $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
         } elseif (in_array($siteConfig['id'], [51, 53])) {
