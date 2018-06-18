@@ -2949,8 +2949,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'kofemashinadelonghi' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (495) 125-44-43',
+            'phone-2' => '8 (495) 125-44-43',
             'mono' => true,
             'brand-id' => 13292,
             'id' => 185,
@@ -2961,8 +2961,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'saecofe' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (495) 125-44-43',
+            'phone-2' => '8 (495) 125-44-43',
             'mono' => true,
             'brand-id' => 13332,
             'id' => 186,
@@ -2973,8 +2973,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'philipsmaster' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (495) 125-44-43',
+            'phone-2' => '8 (495) 125-44-43',
             'mono' => true,
             'brand-id' => 13238,
             'id' => 187,
@@ -2985,8 +2985,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'jura-moscow' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (495) 125-44-43',
+            'phone-2' => '8 (495) 125-44-43',
             'mono' => true,
             'brand-id' => 13202,
             'id' => 188,
@@ -2997,7 +2997,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'coffeebosch' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13182,
@@ -3009,7 +3009,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'coffee-melitta' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13231,
@@ -3021,7 +3021,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'nivona-service-remont' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13682,
@@ -3033,7 +3033,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'center-siemens' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13777,
@@ -3045,7 +3045,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'master-la-cimbali' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13607,
@@ -3057,7 +3057,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'mieleservis' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13650,
@@ -3069,7 +3069,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'master-nuova-simonelli' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13670,
@@ -3081,7 +3081,7 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'bork-service-remont' => [
-            'phone-1' => '8 (499) 372-29-92',
+            'phone-1' => '8 (495) 125-44-43',
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13368,
