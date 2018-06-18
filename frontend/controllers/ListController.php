@@ -629,11 +629,11 @@ class ListController extends CController {
             $title = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
             $metaDesc = CController::$category['full_title'] . ' ' . $pageInfo['title'] . ' в сервисном центре "' . ucfirst($_SERVER['HTTP_HOST']) . '". Работает курьерская служба. Качество, гарантия, низкая цена.';
         }
-
+        $rName = '';
+        if (isset(Yii::$app->params['brandRussianNames'][$pageInfo['title']]))
+            $rName = ' (' . Yii::$app->params['brandRussianNames'][$pageInfo['title']] . ')';
         if ($siteConfig['id'] == 50) {
-            $rName = '';
-            if (isset(Yii::$app->params['brandRussianNames'][$pageInfo['title']]))
-                $rName = ' (' . Yii::$app->params['brandRussianNames'][$pageInfo['title']] . ')';
+
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . '™' . $rName . '  в ' . Yii::$app->session['region']['titleRod'] . ' 👍 — Цены и адреса';
             //$title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' с выездом мастера  в ' . Yii::$app->session['region']['titleRod'] . ' и Области';
             $metaDesc = 'Качество, гарантия, низкая цена. Ремонт кофемашин ' . $pageInfo['title'] . ' в  ' . Yii::$app->session['region']['titleRod'] . ' - сервис центр Кофе03, служба доставки или выезд мастера на дом или офис.';
@@ -649,7 +649,7 @@ class ListController extends CController {
                 $metaDesc = 'Срочный и честный ремонт кофемашин ' . $pageInfo['title'] . ' без посредников в сервисном центре и с выездом на дом или офис. Диагностика 0 руб. ·Оставьте заявку на сайте. ·  Гарантия 1 год · Работаем 24/7 без выходных · Работаем в СПБ и Лен. области.';
             }
         } elseif ($siteConfig['id'] == 49) {
-            $title = 'Ищете ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '? ✔️ Официальный сервис Мелитта';
+            $title = 'Ищете ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '? ✔️ Официальный сервис' . ' ' . $rName;
             $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' не включается или не делает кофе? Устраним и наладим! Отремантируем и дадим гарантию! Низкие цены, комфортное расположение СЦ!';
         } elseif (in_array($siteConfig['id'], [146, 147])) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Лучшие мастера!';
