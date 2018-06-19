@@ -9835,3 +9835,7 @@ a.mybtn:hover {
     margin-top: 14px;
     margin-right: 13px;
 }
+
+.roistat-lh-copyright {
+    display: none ! important;
+}
