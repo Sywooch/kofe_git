@@ -108,7 +108,7 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <div id="kmacb" class="hidden-sm">
-            <button class="kmacb-form fancy-btn open hidden-sm">
+            <button onclick="window.roistatLeadHunterShow();" class="kmacb-form fancy-btn hidden-sm">
                 <div class="kmacb-circle"></div>
                 <div class="kmacb-circle-fill"></div>
                 <div class="kmacb-img-circle"></div>
@@ -146,7 +146,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/flipclock.min.js"></script>
 <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js?v=4"></script>
+<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/app.min.js?v=5"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup.popup_request_full").addClass("popup_active");</script>';
