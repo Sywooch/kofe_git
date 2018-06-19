@@ -6541,7 +6541,7 @@ input[type=submit]{
     border:2px solid #bfa16a ! important;
     font-size:1.5rem ! important;
     color:#fff ! important;
-    background-color:#bfa16a ! important;
+    background:#bfa16a ! important;
     transition:all .3s ease ! important;
 }
 button.btn.focus,button.btn:focus,button.btn:hover,input[type=submit].focus,input[type=submit]:focus,input[type=submit]:hover{
@@ -8121,7 +8121,7 @@ body > .solutions {
     transition:all .3s ease ! important
 
 }
-.roistat-lh-form .roistat-lh-submit:hover, .roistat-lh-form .roistat-lh-submit:focus, .form button[type=submit].focus,.form button[type=submit]:focus,.form button[type=submit]:hover{
+.form button[type=submit].focus,.form button[type=submit]:focus,.form button[type=submit]:hover{
     color:#fff;
     background-color:#333;
     border:2px solid #333;
