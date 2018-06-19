@@ -26,10 +26,8 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-        <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
-        <link type="text/css" href="/all-css?files=owl.carousel.css,owl.theme.default.css,font-awesome.css,jquery.fancybox.min.css,reset.css,global.css,bootstrap.min.css,bootstrap-theme.min.css,style.min.css,home.css,horizontal.css,jquery-ui.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=-1&cache=1" rel="stylesheet" media="all" />
+        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico" type="image/x-icon">        
+        <link type="text/css" href="/all-css?files=fonts.css,owl.carousel.css,owl.theme.default.css,font-awesome.css,jquery.fancybox.min.css,reset.css,global.css,bootstrap.min.css,bootstrap-theme.min.css,style.min.css,home.css,horizontal.css,jquery-ui.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=-1&cache=1" rel="stylesheet" media="all" />
     </head>
     <body>
         <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
