@@ -6483,7 +6483,8 @@ a,a:focus,a:hover,a:visited{
     }
 }
 .title.title__2,
-.roistat-lh-text{
+.roistat-lh-title{
+    font-family: Robika-Regular ! important;
     display:inline-block;
     position:relative;
     font-size:2.5rem;
@@ -6521,7 +6522,7 @@ a,a:focus,a:hover,a:visited{
 .frontlight-brown{
     color:#bfa16a
 }
-button.btn,input[type=submit]{
+button.btn {
     height:5rem;
     width:100%;
     margin-bottom:1.5rem;
@@ -6531,6 +6532,17 @@ button.btn,input[type=submit]{
     color:#fff;
     background-color:#bfa16a;
     transition:all .3s ease
+}
+input[type=submit]{
+    height:5rem ! important;
+    width:100% ! important;
+    margin-bottom:1.5rem ! important;
+    border-radius:0 ! important;
+    border:2px solid #bfa16a ! important;
+    font-size:1.5rem ! important;
+    color:#fff ! important;
+    background-color:#bfa16a ! important;
+    transition:all .3s ease ! important;
 }
 button.btn.focus,button.btn:focus,button.btn:hover,input[type=submit].focus,input[type=submit]:focus,input[type=submit]:hover{
     color:#292a2c;
