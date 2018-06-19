@@ -6482,7 +6482,8 @@ a,a:focus,a:hover,a:visited{
         line-height:28px
     }
 }
-.title.title__2{
+.title.title__2,
+.roistat-lh-text{
     display:inline-block;
     position:relative;
     font-size:2.5rem;
@@ -6490,6 +6491,12 @@ a,a:focus,a:hover,a:visited{
     margin-bottom:1rem;
     margin-top:0;
     color: #bfa16a;
+}
+.roistat-lh-text {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
 }
 .header:after,.title.title__2:before{
     content:'';
@@ -8060,6 +8067,14 @@ body > .solutions {
     border-radius:0;
     border:0
 }
+.roistat-lh-form input[type=text] {
+    height:5rem ! important;
+    width:100% ! important;
+    padding:1.3rem 1.5rem ! important;
+    border-radius:0 ! important;
+    border:0 ! important;
+    background-color: #f0f0f0 ! important;
+}
 .form textarea{
     width:100%;
     padding:1.3rem 1.5rem;
@@ -8082,7 +8097,19 @@ body > .solutions {
     background-color:#bfa16a;
     transition:all .3s ease
 }
-.form button[type=submit].focus,.form button[type=submit]:focus,.form button[type=submit]:hover{
+.roistat-lh-form .roistat-lh-submit {
+    height:5rem ! important;
+    width:100% ! important;
+    margin-bottom:1.5rem ! important;
+    border-radius:0 ! important;
+    border:2px solid #bfa16a ! important;
+    font-size:1.5rem ! important;
+    color:#fff ! important;
+    background-color:#bfa16a ! important;
+    transition:all .3s ease ! important
+
+}
+.roistat-lh-form .roistat-lh-submit:hover, .roistat-lh-form .roistat-lh-submit:focus, .form button[type=submit].focus,.form button[type=submit]:focus,.form button[type=submit]:hover{
     color:#fff;
     background-color:#333;
     border:2px solid #333;
