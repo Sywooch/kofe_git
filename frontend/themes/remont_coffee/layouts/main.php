@@ -169,20 +169,7 @@ $js = app\components\CController::$js;
         
     </body>
 </html>
-
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/bootstrap.min.js"></script>     
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.fancybox.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/sly.min.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/plugins.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/owl.carousel.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.sticky.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
-<script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/global.js"></script>
+<script src="/jsAction?files=jquery-1.11.3.min.js,yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js,bootstrap.min.js,jquery.fancybox.min.js,sly.min.js,plugins.js,owl.carousel.js,jquery.sticky.js,jquery-ui.js,global.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
 <?php
 if (Yii::$app->session->getFlash('success')) {
     echo '<script>$(".popup .finish, .popup").addClass("active");</script>';
