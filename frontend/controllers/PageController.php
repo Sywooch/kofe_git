@@ -103,7 +103,55 @@ class PageController extends CController {
 
         header("Content-Type: application/javascript");
         echo $fileContent;
-        exit;
+        Yii::$app->end();
+    }
+
+    public function actionGetAllCss($files, $path, $replaceFiles, $cache = 0) {
+        if (empty($files) || empty($path) || empty($replaceFiles))
+            return false;
+        $siteConfig = self::getSiteConfig();        
+        $cachedFile = Yii::getAlias('@frontend') . '/web/' . $path . '/all-cache.css';
+        if ($cache == 1 && is_file($cachedFile)) {
+            header("Content-Type: text/css");
+            echo file_get_contents($cachedFile);
+            Yii::$app->end();
+        }
+        $fileContent = '';
+        if (strpos($files, ',') !== false) {
+            $files = explode(',', $files);
+            $replaceFiles = explode(',', $replaceFiles);
+            foreach ($files as $key => $file) {
+                $cssPath = Yii::getAlias('@frontend') . '/web/' . $path . '/' . $file;                
+                $replace = in_array($key, $replaceFiles) ? true : false;
+                $fileContent .= $this->parseCss($cssPath, $siteConfig, $replace);
+            }
+        } else {
+            $cssPath = Yii::getAlias('@frontend') . '/web/' . $path . '/' . $files;
+            $fileContent .= $this->parseCss($cssPath, $siteConfig, ($replaceFiles == -1 ? false : true));
+        }        
+        file_put_contents($cachedFile, $fileContent);
+        header("Content-Type: text/css");
+        echo $fileContent;
+        Yii::$app->end();
+    }
+
+    private function parseCss($cssPath, $siteConfig, $replace = false) {        
+        $css = file_get_contents($cssPath);
+        $oParser = new \Sabberworm\CSS\Parser($css);
+        $oCss = $oParser->parse();
+        if ($replace)
+            foreach ($oCss->getAllDeclarationBlocks() as $oBlock) {
+                foreach ($oBlock->getSelectors() as $oSelector) {
+                    if (strpos($oSelector->getSelector(), '.') !== false && (strpos($oSelector->getSelector(), 'ui-') === false)) {
+                        $s = $oSelector->getSelector();
+                        $s = str_replace('.', '.' . $siteConfig['sitePrefix'], $s);
+                        $oSelector->setSelector($s);
+                    }
+                }
+            }
+        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+        header("Content-Type: text/css");
+        return str_replace('../', '/' . (isset($siteConfig['theme']) ? $siteConfig['theme'] : $siteConfig['sitePrefix']) . '/', str_replace('../../../', '../', $css));
     }
 
     public function actionGetCss($file, $cache = 0) {
@@ -127,8 +175,8 @@ class PageController extends CController {
                 }
             }
         }
-        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());        
-        
+        $css = $oCss->render(\Sabberworm\CSS\OutputFormat::createCompact());
+
         file_put_contents($cachedFile, $css);
         header("Content-Type: text/css");
         echo str_replace('../', '/' . (isset($siteConfig['theme']) ? $siteConfig['theme'] : $siteConfig['sitePrefix']) . '/', str_replace('../../../', '../', $css));

@@ -71,6 +71,7 @@ return [
                 'order-send-cron' => 'page/send-to-claris',
                 'reviews-get' => 'review/get',
                 'site/validate' => 'site/validate',
+                'all-css' => 'page/get-all-css',
                 ['class' => 'app\components\MainUrlRule', 'connectionID' => 'db'],
             ],
         ],

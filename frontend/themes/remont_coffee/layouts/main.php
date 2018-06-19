@@ -29,18 +29,7 @@ $js = app\components\CController::$js;
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>images/home.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.carousel.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/owl.theme.default.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font-awesome.css" rel="stylesheet" media="all" />
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery.fancybox.min.css" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/reset.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/global.css" rel="stylesheet" media="all" />
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/bootstrap.min.css" />
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/bootstrap-theme.min.css" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/style.min.css?v=1" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/home.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/horizontal.css" rel="stylesheet" media="all" />
-        <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/jquery-ui.css" rel="stylesheet" media="all" />
+        <link type="text/css" href="/all-css?files=owl.carousel.css,owl.theme.default.css,font-awesome.css,jquery.fancybox.min.css,reset.css,global.css,bootstrap.min.css,bootstrap-theme.min.css,style.min.css,home.css,horizontal.css,jquery-ui.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=-1&cache=1" rel="stylesheet" media="all" />
     </head>
     <body>
         <?= remont_coffee\widgets\forms\SidebarForm::widget(); ?>
