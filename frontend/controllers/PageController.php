@@ -77,7 +77,7 @@ class PageController extends CController {
             }, $line
             );
             $pr = $siteConfig['sitePrefix'];
-            $fileContent .= str_replace(['removeClass("', 'addClass("', 'hasClass("'], ['removeClass("' . $pr, 'addClass("' . $pr, 'hasClass("' . $pr], $line);
+            $fileContent .= str_replace(['removeClass("', 'addClass("', 'hasClass("', 'toggleClass("'], ['removeClass("' . $pr, 'addClass("' . $pr, 'hasClass("' . $pr, 'toggleClass("' . $pr], $line);
         }
         fclose($fp);
         return JSMin::minify($fileContent);
