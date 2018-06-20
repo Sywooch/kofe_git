@@ -5410,7 +5410,7 @@ $(function(){
 	/*--*/
 	
 	/*toggle hidden content*/
-	$('.js-content-toggle').on('click',function(e){
+	$(".js-content-toggle").on('click',function(e){
 		e.preventDefault();
 		$(this).parent().toggleClass('content-show');
 		if($(this).parent().hasClass('content-show')){
