@@ -206,7 +206,7 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= helper\widgets\forms\Popup::widget(); ?>
-        <script src="/jsAction?files=template.js,19e1de0fb0.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=1,2&cache=0"></script>
+        <script src="/jsAction?files=template.js,19e1de0fb0.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=0,1,2&cache=0"></script>
         <script defer src="<?= $assets . $siteConfig['theme']; ?>/js/jquery.modal.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
