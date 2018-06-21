@@ -28,6 +28,12 @@ class MainUrlRule extends UrlRule {
         header("Location: $url");
         exit();
     }
+    
+    private function redirectMatch(array $siteConfig) {
+        if(in_array($siteConfig['id'], [49])) {
+            
+        }
+    }
 
     public function parseRequest($manager, $request) {
         if (strpos($_SERVER['SERVER_NAME'], '.repair'))

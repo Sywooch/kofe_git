@@ -276,7 +276,7 @@ class CController extends \yii\web\Controller {
                     }
                 }
             }
-            @file_get_contents('https://mobi03.ru/kofeOrders?rekomendation=' . urlencode($rekomendation) . '&brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
+            @file_get_contents('https://mobi03.ru/kofeOrders?email=' . urlencode($email) . '&rekomendation=' . urlencode($rekomendation) . '&brand=' . urlencode($brand) . '&model=' . urlencode($model) . '&roistat_visit_id=' . $visit_id . '&oid=' . $OID . '&phone=' . urlencode($phone) . '&title=' . urlencode($title) . '&url=' . Yii::$app->request->hostInfo . '/' . Yii::$app->request->pathInfo . '&site_phone=' . urldecode(preg_replace("/\D/", "", $p)));
         }
         $phone = preg_replace("/\D/", "", $phone);
         $usersPhone = substr($phone, 0, strlen($phone) - 2) . 'xx';

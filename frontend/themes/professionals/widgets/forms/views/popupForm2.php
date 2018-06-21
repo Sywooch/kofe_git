@@ -20,6 +20,7 @@ $form = ActiveForm::begin([
                             ],
                 ]);
                 ?>
+                <?= $form->field($model, 'email')->textInput(['placeholder' => 'E-mail']) ?>
                 <?=
                 $form->field($model, 'phone')->widget(MaskedInput::className(), [
                     'name' => 'phone',

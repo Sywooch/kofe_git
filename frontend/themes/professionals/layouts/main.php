@@ -116,6 +116,7 @@ $js = app\components\CController::$js;
             </button>
         </div>
         <?= professionals\widgets\forms\PopupForm::widget(); ?>
+        <?= professionals\widgets\forms\PopupForm2::widget(); ?>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         $roistatid = 'b934b194d4b25d3758bc6bbd6e1b6a78';
