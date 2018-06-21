@@ -1,9 +1,16 @@
 <section class="<?= $sectionClass; ?>">
     <div class="container">
+        <div class="you-get">
+        <ul>
+            <li><span>Бесплатный выезд курьера в течение 60 минут</span></li>
+            <li><span>Фирменные запчасти</span></li>
+            <li><span>Гарантия 2 года</span></li>
+        </ul>
+    </div>
         <div class="row">
             <div class="col-xs-24">
                 <div class="form form__inline form-block__repair form-block__light">
-                    <p>Давайте отремонтируем вашу кофемашину уже сегодня</p>
+                    <p>Закажите ремонт кофемашины прямо сейчас</p>
                     <?php
 
                     use yii\helpers\Html;
@@ -47,11 +54,5 @@ $form = ActiveForm::begin([
             </div>
         </div>
     </div>
-    <div class="you-get">
-        <ul>
-            <li><span>Бесплатный выезд курьера в течение 60 минут</span></li>
-            <li><span>Фирменные запчасти</span></li>
-            <li><span>Гарантия 2 года</span></li>
-        </ul>
-    </div>
+    
 </section>

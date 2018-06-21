@@ -52,6 +52,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         </div>
                     </div>
                 </div>
+                <?= professionals\widgets\forms\AdvForm::widget(); ?>
             </div>
         </div>
     </div>

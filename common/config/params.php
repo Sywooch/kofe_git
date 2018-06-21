@@ -3412,11 +3412,24 @@ return [
             'phone-2' => '8 (812) 643-21-07',
             'mono' => true,
             'brand-id' => 13332,
-            'id' => 209,
+            'id' => 221,
             'sitePrefix' => 'saeco',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
             'theme' => 'ofitsial',
+        ],
+        'profi' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'stickyMenu' => true,
+            'mono' => false,
+            'id' => 222,
+            'sitePrefix' => 'professionals',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'professionals',
+            'order-title' => 'МСК Заречная',
+            'sitemap' => ['disableServicePage' => true]
         ],
     ]
 ];

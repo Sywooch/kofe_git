@@ -26,7 +26,7 @@ $js = app\components\CController::$js;
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slick-slider.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/flipclock.min.css" rel="stylesheet" />
         <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/normalize.css" rel="stylesheet" />
-        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?php if ($siteConfig['id'] == 125): ?>spb<?php endif; ?>main.css?=v15" rel="stylesheet" />
+        <link href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/<?php if ($siteConfig['id'] == 125): ?>spb<?php endif; ?>main.css?=v16" rel="stylesheet" />
     </head>
     <body <?= $isHome ? 'class="gl-st"' : ''; ?>>
         <?php
@@ -73,6 +73,7 @@ $js = app\components\CController::$js;
                     <div class="col-lg-8 col-md-8 col-sm-24">
                         <div class="subtitle">О НАС</div>
                         <p>Выполним ремонт кофемашин в <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'Санкт-Петербурге' : 'Москве' ?> максимально быстро и по низкой стоимости. Наш сервисный центр работает каждый день, без выходных и праздников</p>
+                        <?= professionals\widgets\forms\FooterForm::widget(); ?>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-24">
                         <div class="subtitle">ТИПИЧНЫЕ НЕИСПРАВНОСТИ</div>

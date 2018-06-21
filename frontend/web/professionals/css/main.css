@@ -7437,7 +7437,11 @@ button.btn__invert.focus,button.btn__invert:focus,button.btn__invert:hover{
     line-height:2.1rem
 }
 .promo .title{
-    color:#FFF
+    color:#FFF;    
+}
+.title.title__2.vd-title {
+    font-size: 35px;
+    line-height: 4.3rem;
 }
 .promo .form button[type=submit]{
     background:#bfa16a;
@@ -9589,13 +9593,13 @@ footer .telefonga_msk {
 
 
 .gl-st .title.title__1.title__home:before {
-    content: "Качественный ";
+    /*content: "Качественный ";*/
 }
 .gl-st .title.title__1.title__home.msk_h:after {
-    content: " в Москве";
+    /*content: " в Москве";*/
 }
 .gl-st .title.title__1.title__home.spb_h:after {
-    content: " в Санкт-Петербурге";
+    /*content: " в Санкт-Петербурге";*/
 }
 .model-img {
     width: 300px;

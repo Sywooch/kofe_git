@@ -10,7 +10,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <h1 class="title title__1 light title__home <?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'spb_h' : 'msk_h' ?>"><?= $pageInfo; ?></h1>
                     <div class="subtitle" style="margin-top: 20px; font-size: 14px; color: #bfa16a">В сервисном центре</div>
                     <div class="form form__inline form-block__repair form-block__light">
-                        <p class="subtitle">Хотите подарок? Введите Ваш номер телефона и получите его!</p>
+                        <p class="subtitle"> и получите один из подарков!</p>
                         <?php
 
                         use yii\helpers\Html;
