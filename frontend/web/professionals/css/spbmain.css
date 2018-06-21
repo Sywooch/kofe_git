@@ -9401,8 +9401,8 @@ footer .telefonga_msk {
   display: block;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   padding: 10px;
   opacity: .4;
 }

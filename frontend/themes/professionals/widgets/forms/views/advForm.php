@@ -10,7 +10,7 @@
                     use yii\widgets\ActiveForm;
                     use yii\widgets\MaskedInput;
 
-$form = ActiveForm::begin([
+                    $form = ActiveForm::begin([
                                 'id' => 'adv-form',
                                 'options' => ['class' => 'request-form'],
                                 'enableClientValidation' => true,

@@ -1,9 +1,9 @@
-<div class="modal-frame open-formss">
+<div class="modal-frame open-email-form">
     <div class="modal">
         <div class="modal-inset">
             <div class="button close"><i class="glyphicon glyphicon-eye-close"></i></div>
             <div class="modal-body">
-                <div class="title title__2">Оставьте заявку на ремонт в день обращения</div>
+                <div class="title title__2">Получить комерческое предложение</div>
                 
                 <?php
 
@@ -25,13 +25,13 @@ $form = ActiveForm::begin([
                     'name' => 'phone',
                     'mask' => '+7 (999) 999-99-99',
                     'options' => [
-                        'placeholder' => 'Введите телефон',
+                        'placeholder' => 'E-mail',
                         'type' => 'tel',
                         'size' => 40,
                     ],
                 ])->label('')
                 ?>
-                <button type="submit">Отправить</button>
+                <button type="submit">Получить</button>
                 <?php ActiveForm::end() ?>
                 <p class="ps">Нажимая на кнопку «Перезвоните мне», вы подтверждаете своё совершеннолетие и соглашаетесь на обработку персональных данных в соответствии с <a href="/conf-inform">условиями</a>.</p>
             </div>

@@ -28,7 +28,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                                <a href="/brands">Бренды</a>
                                <a href="/contacts">Контакты</a>
                                <a href="/about">О нас</a>
-                               <a href="" class="open">Комерческое преложение</a>
+                               <a href="" class="open-email">Комерческое преложение</a>
                             </nav>
                         </div>
                         <div class="col-lg-8 col-md-24 col-sm-24 hidden-xs">
