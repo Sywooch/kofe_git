@@ -8,6 +8,7 @@ array_pop($url);
 if (!empty($url))
     $prefUrl = implode('/', $url);
 ?>
+<?php if($b == 'Bosch'): ?>sdfsdf<?php endif; ?>
 <section class="popular-services hidden-sm">
     <div class="container">
         <div class="row">
