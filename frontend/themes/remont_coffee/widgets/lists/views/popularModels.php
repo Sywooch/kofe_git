@@ -5,7 +5,7 @@
             <?php foreach ($rows as $row): ?>
                 <div class="item">
                     <div class="img"><img src="/uploads/images/<?= $row['image']; ?>" alt=""></div>
-                    <div class="name"><?= $row['brand_title'] . ' ' . $row['title']; ?></div>                
+                    <div class="name"><?= $row['title']; ?></div>                
                 </div>
             <?php endforeach; ?>
         </div>
