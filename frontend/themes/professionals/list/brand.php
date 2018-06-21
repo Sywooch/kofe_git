@@ -32,6 +32,9 @@ $breadcrumbs = [
         </div>
     </div>
 </section>
+
+<?= professionals\widgets\lists\PopularFaults::widget(['limit' => 5, 'title' => 'Услуги которые мы предоставляем: ', 'is_popular' => true, 'type' => 1, 'view' => 'popular-services', 'form' => false]); ?>
+
 <?php if (!empty($pageInfo['full_description'])): ?>
     <section class="our-masters" style="padding-top: 0px;">
         <div class="container">        
