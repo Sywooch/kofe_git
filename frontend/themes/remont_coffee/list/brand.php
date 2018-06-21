@@ -3,7 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 $breadcrumbs = [
-    'Ремонт кофемашин ' . $pageInfo['title'],
+    $pageInfo['title'],
 ];
 ?>
 <?= remont_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
