@@ -9885,3 +9885,114 @@ a.mybtn:hover {
         margin-right: 2%;
     }
 }
+
+
+.halil .table>tbody {
+    display: block;
+}
+.halil .table>tbody>tr {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px ! important;
+}
+.halil .why-we {
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+.halil .title.light {
+    font-size: 24px;
+}
+.halil .advantage {
+    display: flex;
+    align-items: center;
+}
+.halil .advantage_pic {
+    min-width: 100px;
+    max-width: 100px;
+}
+.halil .advantage_txt {
+    min-height: auto;
+}
+@media screen and (max-width: 992px) {
+    .halil .advantage_txt {
+        margin-left: 0rem;
+    }
+    .why-we {
+        min-height: auto;
+    }
+}
+
+.halil .container {
+    width: auto ! important;
+}
+.halil .col-lg-8.col-md-9.col-sm-11,
+.halil .col-lg-9.col-lg-offset-7.col-md-11.col-md-offset-4.col-sm-13 {
+    width: 100% ! important;
+    margin: 0px;
+    padding: 0px;
+}
+.halil .flip-clock-wrapper{
+    margin:2rem auto 5rem;
+    max-width:30rem
+}
+.halil .flip-clock-wrapper ul{
+    width:2.7rem
+}
+.halil .flip-clock-wrapper ul li a div div.inn{
+    font-size:3.2rem
+}
+.halil .flip-clock-divider{
+    width:.8rem
+}
+.halil .flip-clock-divider .flip-clock-label{
+    right:-5rem
+}
+.halil .flip-clock-divider.minutes .flip-clock-label,.flip-clock-divider.seconds .flip-clock-label{
+    right:-5.5rem
+}
+.halil .flip-clock-dot{
+    left:.2rem
+}
+.halil .promo {
+    background-size: auto 100%;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+.halil .title.title__2.vd-title {
+    font-size: 24px;
+    line-height: 1.428571429;
+}
+.halil .title.title__2.vd-title br {
+    display: none;
+}
+.halil .form__inline ul {
+    margin: 0px;
+    width: 100%;
+}
+.halil .promo .form button[type=submit] {
+    width: 100% ! important;
+}
+
+.halil .col-md-17.col-sm-24 {
+    display: none ! important;
+}
+.halil .col-md-7.col-sm-24 {
+    width: 100% ! important;
+    margin: 0px;
+    padding: 0px;
+}
+.halil .faults .col-xs-24 {
+    display: none ! important;
+}
+.halil .faults {
+    padding: 0px;
+    margin: 0px;
+    background: #fff;
+}
+.halil .form-block__request {
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+.halil .form-block__request {
+    background-position: bottom left;
+}
