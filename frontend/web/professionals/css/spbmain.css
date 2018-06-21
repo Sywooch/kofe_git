@@ -8746,7 +8746,7 @@ nav.cl-effect-14 a:focus {
     color: #bfa16a;
 }
 .cl-effect-14 a {
-    padding: 0 20px;
+    padding: 0 8px;
     height: 45px;
     line-height: 45px;
 }
@@ -9876,4 +9876,12 @@ a.mybtn:hover {
 
 .roistat-lh-copyright {
     display: none ! important;
+}
+
+@media (min-width: 768px) {
+    .advantages .form-group.field-askform4-phone.required {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
 }
