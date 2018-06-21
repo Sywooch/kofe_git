@@ -75,7 +75,7 @@ $form = ActiveForm::begin([
                         ]);
                         ?>
                         <ul>
-                            
+
                             <li>
                                 <label for="id_phone">Телефон</label>
                                 <?=

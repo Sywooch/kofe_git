@@ -3405,8 +3405,7 @@ return [
             'order-title' => 'nasa',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
-        ],
-        
+        ],        
         'new-site' => [
             'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
@@ -3416,7 +3415,7 @@ return [
             'sitePrefix' => 'saeco',
             'category_id' => 7,
             'order-title' => 'МСК Войковская',
-            'theme' => 'ofitsial',
+            'theme' => 'sservice',
         ],
         'profi' => [
             'phone-1' => '8 (495) 323-90-09',

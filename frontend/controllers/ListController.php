@@ -649,7 +649,7 @@ class ListController extends CController {
                 $metaDesc = 'Срочный и честный ремонт кофемашин ' . $pageInfo['title'] . ' без посредников в сервисном центре и с выездом на дом или офис. Диагностика 0 руб. ·Оставьте заявку на сайте. ·  Гарантия 1 год · Работаем 24/7 без выходных · Работаем в СПБ и Лен. области.';
             }
         } elseif ($siteConfig['id'] == 49) {
-            $title = 'Ищете ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '? ✔️ Официальный сервис' . ' ' . $rName;
+            $title = 'Ищете ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '? Официальный сервис' . ' ' . $rName;
             $metaDesc = 'Кофемашина ' . $pageInfo['title'] . ' не включается или не делает кофе? Устраним и наладим! Отремантируем и дадим гарантию! Низкие цены, комфортное расположение СЦ!';
         } elseif (in_array($siteConfig['id'], [146, 147])) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Лучшие мастера!';
