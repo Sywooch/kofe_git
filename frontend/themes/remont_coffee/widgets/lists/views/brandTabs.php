@@ -18,7 +18,7 @@
             <br>
         </div>
     </div>
-    <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable']); ?>
+    <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable', 'limit' => 12]); ?>
     <?php if (!empty($error['description'])): ?>
         <div id="tab-text-2" class="full-text tab_content">
             <div class="container">
