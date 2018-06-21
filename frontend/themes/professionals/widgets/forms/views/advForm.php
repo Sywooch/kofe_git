@@ -30,7 +30,7 @@ $form = ActiveForm::begin([
                         ],
                     ])->label('')
                     ?>
-                    <button type="submit">Перезвоните мне</button>
+                    <button type="submit" class="col-sm-12">Перезвоните мне</button>
                     <?php ActiveForm::end() ?>                
                 </div>
             </div>
