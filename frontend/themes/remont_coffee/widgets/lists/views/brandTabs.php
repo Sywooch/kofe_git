@@ -9,7 +9,7 @@
             <div class="tab-b" rel="tab-text-2"<?= empty($error['description']) ? ' style="display: none;"' : ''; ?>>Коды ошибок</div>
         </div>
     </div>
-    <?= remont_coffee\widgets\lists\Neispravnost::widget(['title' => 'Типовые  <span>неисправности</span> ' . $pageInfo['title']]); ?>
+    <?= remont_coffee\widgets\lists\Neispravnost::widget(['title' => 'Типовые  <span>неисправности</span> ' . $pageInfo['title'], 'limit' => 12]); ?>
     <div id="tab-text-1" class="full-text tab_content">
         <div class="container">
             <?php if (!empty($pageInfo['full_description'])): ?>
@@ -18,7 +18,7 @@
             <br>
         </div>
     </div>
-    <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable', 'limit' => 12]); ?>
+    <?= remont_coffee\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => true, 'title' => 'Оказываемые услуги', 'view' => 'neispravnostTable']); ?>
     <?php if (!empty($error['description'])): ?>
         <div id="tab-text-2" class="full-text tab_content">
             <div class="container">
