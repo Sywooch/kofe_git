@@ -8,7 +8,7 @@ $breadcrumbs = [
 ?>
 <header class="header header__brand">
     <?= professionals\widgets\menu\MainMenu::widget(); ?>
-    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']), 'page' => $pageInfo]); ?>
+    <?= professionals\widgets\forms\MainPageForm::widget(['pageInfo' => (!empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Закажите ремонт кофемашины ' . $pageInfo['title'] . ' прямо сейчас'), 'page' => $pageInfo]); ?>
 </header>
 <section>
     <div class="container">
