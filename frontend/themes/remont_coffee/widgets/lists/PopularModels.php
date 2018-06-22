@@ -11,19 +11,13 @@ class PopularModels extends Widget {
 		public $parent = 0;
 
     public function run() {
-        $sql = 'SELECT p.image, p.url, b.title as brand_title, p.title        
+        $sql = 'SELECT image, title        
                     FROM
-                        `yu_specs` s
-                    LEFT JOIN yu_pages p ON p.id = s.model_id
-                    LEFT JOIN yu_pages b ON b.id = p.parent
+                        `yu_pages`                    
                     WHERE
-                        s.spec_name LIKE \'%Тип%\'
-                    AND s.spec_value LIKE \'%эспрессо%\'
-                    AND s.spec_value LIKE \'%автоматическое%\'
-                    AND s.spec_value NOT LIKE \'%полуавтоматическое%\'                    
-                    AND p.active = 1 ' . ($this->parent > 0 ? ' AND p.parent = ' . (int) $this->parent : '') . '   
+                        AND active = 1 ' . ($this->parent > 0 ? ' AND parent = ' . (int) $this->parent : '') . '   
                     ORDER BY
-                            p.sort LIMIT 10';
+                            sort LIMIT 10';
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
         return $this->render('popularModels', ['rows' => $rows]);
     }
