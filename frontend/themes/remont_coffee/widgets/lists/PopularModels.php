@@ -15,7 +15,7 @@ class PopularModels extends Widget {
                     FROM
                         `yu_pages`                    
                     WHERE
-                        AND active = 1 ' . ($this->parent > 0 ? ' AND parent = ' . (int) $this->parent : '') . '   
+                        active = 1 ' . ($this->parent > 0 ? ' AND parent = ' . (int) $this->parent : '') . '   
                     ORDER BY
                             sort LIMIT 10';
         $rows = \Yii::$app->db->createCommand($sql)->queryAll();
