@@ -27,11 +27,5 @@
             </div>
         </div>
     <?php endif; ?>
-    <?= remont_coffee\widgets\lists\PopularModels::widget(['parent' => $pageInfo['id']]); ?>
-    <div class="button-section">
-        <div class="container">
-            <a class="button opan-all-models" href="#">Все модели <?= $pageInfo['title']; ?></a>
-        </div>
-    </div>
-    <?= remont_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
+    <?= remont_coffee\widgets\lists\PopularModels::widget(['parent' => $pageInfo['id']]); ?>    
 </div>
