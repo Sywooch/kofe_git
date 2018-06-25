@@ -289,7 +289,7 @@ class ListController extends CController {
                             17 => 'Кофемашина делает напиток слишком холодным\горячим',
                         ];
                         //$title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
-                        $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '? Быстрое устранение неисправностей';
+                        $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '? Быстрое устранение неисправностей в ' . Yii::$app->session['region']['titleRod'];
                         $metaDesc = 'Авторизованный сервисный центр ' . $page['title'] . ' выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера в ' . Yii::$app->session['region']['titleRod'];
                     }
 
@@ -479,7 +479,7 @@ class ListController extends CController {
                         $p = 'Кофемашина ' . mb_strtolower($pageInfo['title'], 'utf-8');
                     }
                     $title = $p . '? Устраняем проблемы быстро и качественно в ' . Yii::$app->session['region']['titleRod'] . '.';
-                    $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику!';
+                    $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику в ' . Yii::$app->session['region']['titleRod'] . '!';
                 } elseif ($siteConfig['id'] == 48) {
                     $neisp = mb_strtolower($pageInfo['title'], 'utf-8');
                     \Yii::$app->view->registerMetaTag([
