@@ -2,8 +2,8 @@
     <p class="section-title">Почему именно мы?</p>
     <ul class="benefits-items">
         <li class="benefits-item">
-            <span class="benefits-item--thumb"><img src="<?= $assets . $siteConfig['theme']; ?>/images/icons/benefit1.png" alt="Работаем в Москве" height="54" class="benefits-item--image"></span>
-            <p class="benefits-item--description">Работаем по ВСЕЙ Москве и ближайшему Подмосковью</p>
+            <span class="benefits-item--thumb"><img src="<?= $assets . $siteConfig['theme']; ?>/images/icons/benefit1.png" height="54" class="benefits-item--image"></span>
+            <p class="benefits-item--description">Работаем по <?= isset($siteConfig['spb']) ? 'ВСЕМУ Санкт-Петербургу и Ленинградской области' : 'ВСЕЙ Москве и ближайшему Подмосковью'; ?> </p>
         </li>
         <li class="benefits-item">
             <span class="benefits-item--thumb"><img src="<?= $assets . $siteConfig['theme']; ?>/images/icons/benefit2.png" alt="Выезд день в день" height="54" class="benefits-item--image"></span>
