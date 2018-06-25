@@ -38,7 +38,7 @@ $breadcrumbs = [
         <h3></h3>
         <p class="gl-text">Все <span>бренды</span>:</p>
         <div class="search-bm">
-            <span>Поиск модели </span>
+            <span>Поиск </span>
         <?=
         yii\jui\AutoComplete::widget([
             'name' => 'models',

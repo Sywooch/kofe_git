@@ -55,17 +55,17 @@ $js = app\components\CController::$js;
                 <div class="top_head saeco_head">
                     <div class="menu_link"></div>
                     <div class="logo">
-                        <a href="#"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.png" alt=""></a>
+                        <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.png" alt=""></a>
                     </div>
                     <ul class="menu">
-                        <li ><a href="#">Все модели</a></li>
-                        <li ><a href="#">Прайс</a></li>
-                        <li ><a href="#">О компании</a></li>
-                        <li ><a href="#">Контакты</a></li>
+                        <li><a href="#">Все модели</a></li>
+                        <li><a href="#">Прайс</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
                     <span href="#zakaz" class="zakaz inline">заказать звонок</span>
                     <div class="right">
-                        <a href="tel:+74951203624" class="tel">+7 (495) 120-36-24</a>
+                        <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="tel"><?= Yii::$app->session['region']['phone']; ?></a>
                         <div class="clr"></div>
                         <p class="time">ПН-ВC c 9.00 до 22.00</p>
                     </div>
@@ -81,7 +81,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="right">
                         <div class="form">
-                            <form action="">
+                            <form>
                                 <div class="h3">ВЫЗВАТЬ МАСТЕРА НА ДОМ</div>
                                 <ul>
                                     <li>Диагностика - 1500р 0р</li>
@@ -374,7 +374,7 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="item">
                     <span>Телефон</span>
-                    <a href="tel:+74951203624">+7 (495) 120-36-24</a>
+                    <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                 </div>
                 <h3>5% скидка на работы + запчасти при заявке с сайта</h3>
                 <form action="#" method="post" class="zayavka_footer ajax_form">
@@ -385,11 +385,11 @@ $js = app\components\CController::$js;
         </div>
         <footer>
             <div class="wrap2 saeco_footer">
-                <a href="index.html" class="logo saeco">
+                <a href="/" class="logo saeco">
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/logo.png" alt="saecoservice24.ru">
                 </a>
                 <div class="line"></div>
-                <a href="tel:+74951203624" class="tel">+7 (495) 120-36-24</a>
+                <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="tel"><?= Yii::$app->session['region']['phone']; ?></a>
             </div>
         </footer>
         <div style="display: none">
