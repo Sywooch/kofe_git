@@ -2796,8 +2796,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-delonghi-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13292,
@@ -2809,8 +2809,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-saeco-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13332,
@@ -2822,8 +2822,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-philips-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13238,
@@ -2835,8 +2835,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-jura-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13202,
@@ -2848,8 +2848,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bosch-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13182,
@@ -2861,8 +2861,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-melitta-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13231,
@@ -2874,8 +2874,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nivona-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13682,
@@ -2887,8 +2887,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-siemens-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13777,
@@ -2900,8 +2900,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-la-cimbali-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13607,
@@ -2913,8 +2913,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-miele-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13650,
@@ -2926,8 +2926,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-nuova-simonelli-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13670,
@@ -2939,8 +2939,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'remont-bork-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 643-62-53',
+            'phone-2' => '8 (812) 643-62-53',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13368,
