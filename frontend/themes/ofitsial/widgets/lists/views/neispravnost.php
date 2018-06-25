@@ -16,7 +16,7 @@ $c = count($rows);
                     <?php foreach ($rows as $key => $row): ?>
                         <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
                             <div class="img">
-                                <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.png" class="img-responsive">
+                                <img alt="" src="/<?= $siteConfig['theme']; ?>/img/services/<?= $row['image']; ?>.jpg" class="img-responsive">
                             </div>
                             <span><?= $row['title']; ?></span>
                         </a>                    
