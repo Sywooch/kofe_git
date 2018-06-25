@@ -122,7 +122,7 @@ $js = app\components\CController::$js;
                             <li><a href="/about">О нас</a></li>
                             <li><a href="/prices">Прайс</a></li>
                             <li><a href="/models">Модели</a></li>
-                            <li class="active"><a href="/guarantee">Гарантия</a><li>
+                            <li class="active"><a href="/guarantee">Гарантия</a></li>
                             <li class="last"><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div>
