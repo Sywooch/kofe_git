@@ -73,7 +73,9 @@ $js = app\components\CController::$js;
                                 <div class="header-block header-phone">
                                     <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="header-block--thumb"></a>
                                     <p class="header-block--title"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
-                                    <p class="header-block--description">г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
+                                    <p class="header-block--description">
+                                        <?= isset($siteConfig['spb']) ? 'Санкт-Петербург, м. Горьковская, Каменноостровский просп., 15' : 'г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15'; ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +121,7 @@ $js = app\components\CController::$js;
                         <li class="mobile-nav-phone">
                             <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>" class="mobile-nav-phone--thumb"></a>
                             <p class="mobile-nav-phone--title"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
-                            <p class="mobile-nav-phone--description">г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
+                            <p class="mobile-nav-phone--description"><?= isset($siteConfig['spb']) ? 'Санкт-Петербург, м. Горьковская, Каменноостровский просп., 15' : 'г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15'; ?></p>
                         </li>
                         <li class="mobile-nav-item"><a href="/prices">Цены и услуги</a></li>
                         <li class="mobile-nav-item"><a href="/models">Все модели</a></li>
@@ -146,7 +148,7 @@ $js = app\components\CController::$js;
                             </div>
                             <div class="footer-contacts">
                                 <p class="footer-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-mobile" aria-hidden="true"></i><?= Yii::$app->session['region']['phone']; ?></a></p>
-                                <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i>г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15</p>
+                                <p class="footer-contacts--email"><i class="fa fa-map-marker" aria-hidden="true"></i><?= isset($siteConfig['spb']) ? 'Санкт-Петербург, м. Горьковская, Каменноостровский просп., 15' : 'г. Москва, м. Курская, Нижний Сусальный пер., 5, стр. 15'; ?></p>
                                 <noindex><div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,viber,whatsapp,telegram"></div></noindex>
 
                             </div>
