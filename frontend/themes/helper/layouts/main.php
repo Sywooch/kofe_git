@@ -67,7 +67,7 @@ $js = app\components\CController::$js;
                                 <a href="/" class="header-logo--url">
                                     <img src="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>logo.svg" class="header-logo--image img-responsive" alt="Ремонт кофемашин в Москве.">
                                 </a>
-                                <span class="header-logo--slogan">Ремонт кофемашин в Москве. <br> Качество, гарантия, надёжность!</span>
+                                <span class="header-logo--slogan">Ремонт кофемашин в <?= isset($siteConfig['spb']) ? 'Санкт-Петербурге' : 'Москве'; ?>. <br> Качество, гарантия, надёжность!</span>
                             </div>
                             <div class="pull-right">
                                 <div class="header-block header-phone">
@@ -144,7 +144,7 @@ $js = app\components\CController::$js;
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div class="footer-logo">
                                 <a href="/" class="footer-logo--url"><img src="<?= $assets . $siteConfig['theme']; ?>/images/brends/<?= $siteConfig['sitePrefix']; ?>/<?= $siteConfig['sitePrefix']; ?>logo.svg" class="header-logo--image img-responsive" alt="Ремонт кофемашин в Москве."></a>
-                                <span class="footer-logo--slogan">Ремонт кофемашин в Москве. Качество, гарантия, надёжность!</span>
+                                <span class="footer-logo--slogan">Ремонт кофемашин в <?= isset($siteConfig['spb']) ? 'Санкт-Петербурге' : 'Москве'; ?>. Качество, гарантия, надёжность!</span>
                             </div>
                             <div class="footer-contacts">
                                 <p class="footer-contacts--phone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><i class="fa fa-mobile" aria-hidden="true"></i><?= Yii::$app->session['region']['phone']; ?></a></p>
@@ -198,7 +198,7 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-sm-12 col-xs-12">
-                            <p class="footer-copyright">Ремонт кофемашин в Москве. Сервисный центр №1 © <?= date('Y'); ?>. Все права защищены.</p>
+                            <p class="footer-copyright">Ремонт кофемашин в <?= isset($siteConfig['spb']) ? 'Санкт-Петербурге' : 'Москве'; ?>. Сервисный центр №1 © <?= date('Y'); ?>. Все права защищены.</p>
                         </div>
                     </div>
                     <div class="js-content-width"></div>
