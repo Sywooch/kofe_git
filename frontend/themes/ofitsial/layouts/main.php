@@ -59,7 +59,7 @@ $js = app\components\CController::$js;
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-7 col-md-7 hidden-sm">
-                            <span class="headeradress">Адрес: г. Москва, м. Шелепиха, ул. Большая филевская, д.1</span>
+                            <span class="headeradress">Адрес: г. Москва, м. Электрозаводская, Барабанный переулок, 4с4</span>
                         </div>
                         <div class="col-xl-4 col-lg-3 col-md-3 col-xs-6 text-right  p-left-reset preheaderphone_block">
                             <span class="headerphone_container">
@@ -113,7 +113,7 @@ $js = app\components\CController::$js;
                             Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?> в Москве
                         </p>
                         <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Сервисный центр работает без выходных и праздников</p>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Москва ул. Октябрьская, д. 80, офис 303</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Москва, м. Электрозаводская, Барабанный переулок, 4с4</p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i> Тел.: <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                         <p><i class="fa fa-clock-o" aria-hidden="true"></i> с 09:00 до 21:00</p>
                     </div>

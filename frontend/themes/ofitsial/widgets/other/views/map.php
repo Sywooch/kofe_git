@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-md-8 p-all-reset col-md-offset-2">
-                <p class="apm_description">Наш сервисный центр готов забрать кофемашину из любой точки города Москвы. Доставка предоставляется бесплатно!<br> <br> <b>Телефон: <a class="offm" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></b> <br> <b>Адрес: г. Москва, м. Электрозаводская, Барабанный пер., 4, стр. 4</b></p>
+                <p class="apm_description">Наш сервисный центр готов забрать кофемашину из любой точки города Москвы. Доставка предоставляется бесплатно!<br> <br> <b>Телефон: <a class="offm" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></b> <br> <b>Адрес: г. Москва, м. Электрозаводская, Барабанный переулок, 4с4</b></p>
             </div>
         </div>
     </div>
