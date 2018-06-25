@@ -864,6 +864,9 @@ return [
             'theme' => 'remont_coffee',
             'order-title' => 'remont_coffee_spb',
             'spb' => true,
+            'sitemap' => [
+                'modelsPage' => false,
+            ]
         ],
         'bosch.service-center.repair' => [
             'phone-1' => '8 (812) 603-57-77',
