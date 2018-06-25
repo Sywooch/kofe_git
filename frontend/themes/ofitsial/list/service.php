@@ -14,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             <div class="col-md-3 col-xs-12 leftside_container">
                 <div class="img-big">
                     <span>Стоимость: <br>от <?= round($pageInfo['price']); ?> р.</span>
-                    <img src="/<?= $siteConfig['theme']; ?>/img/services/<?= $pageInfo['image']; ?>.png" alt="">
+                    <img src="/<?= $siteConfig['theme']; ?>/img/<?= $pageInfo['image']; ?>.jpg" alt="">
                 </div>
                 <p class="gl">Заказать звонок</p>
                 <?= ofitsial\widgets\forms\Left::widget(); ?>
