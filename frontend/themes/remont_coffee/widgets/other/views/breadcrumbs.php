@@ -19,7 +19,7 @@ $brand = app\components\CController::$monoBrand;
                 <?php else: ?>
                     <?php if ('/' . $brand['url'] != $url): ?>
                         <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a class="breadcrumbs-link" itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="<?= $url; ?>"><span itemprop="name"><?= $title; ?></span></a>
+                            <a class="breadcrumbs-link" itemscope itemtype="http://schema.org/Thing" itemprop="item"  href="<?= $url; ?>"><span itemprop="name"><?= str_replace('Ремонт кофемашин ', '', $title); ?></span></a>
                             <meta itemprop="position" content="<?= $a; ?>" />
                         </li>
                         <?php $a++; ?>
