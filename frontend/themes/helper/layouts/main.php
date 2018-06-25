@@ -189,7 +189,7 @@ $js = app\components\CController::$js;
                                     <div class="footer-menu">
                                         <p class="footer-menu--title">Мы на карте</p>
                                         <div class="footer-map">
-                                            <?= isset($siteConfig['spb']) ? '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac364f553419142c8fa2bff16cf7b959fc03ea4bf2d16ff4f2307776cae2fb24b&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>' : '<iframe width="100%" height="200" frameborder="0" style="border:0"  src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb2ded5f272819fb79a4659404800c497bb1cfa37f63795fc64d301c80c28cf&amp;source=constructor" allowfullscreen=""></iframe>'; ?>
+                                            <?= isset($siteConfig['spb']) ? '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac364f553419142c8fa2bff16cf7b959fc03ea4bf2d16ff4f2307776cae2fb24b&amp;source=constructor" width="100%" height="200" frameborder="0"></iframe>' : '<iframe width="100%" height="200" frameborder="0" style="border:0"  src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cb2ded5f272819fb79a4659404800c497bb1cfa37f63795fc64d301c80c28cf&amp;source=constructor" allowfullscreen=""></iframe>'; ?>
                                             					
                                         </div>
                                     </div>
