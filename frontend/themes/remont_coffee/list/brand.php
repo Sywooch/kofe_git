@@ -46,3 +46,4 @@ $breadcrumbs = [
     </div>
 
 <?= remont_coffee\widgets\lists\BrandTabs::widget(['pageInfo' => $pageInfo]); ?>
+<?= remont_coffee\widgets\lists\AllBrands::widget(); ?>
