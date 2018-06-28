@@ -32,6 +32,7 @@ class CController extends \yii\web\Controller {
         'nasa' => ['name' => 'MSKS5', 'OID' => 2207167052000],
         'ofitsial' => ['name' => 'MSKS6', 'OID' => 2207167059000],
         'landing' => ['name' => 'MSKM7', 'OID' => 2207167017000],
+        'spb_helper' => ['name' => 'SPBS5', 'OID' => 2207167017000],
     ];
 
     public static function replaceJS($js) {

@@ -2804,7 +2804,7 @@ return [
             'id' => 173,
             'sitePrefix' => 'delonghi',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2817,7 +2817,7 @@ return [
             'id' => 174,
             'sitePrefix' => 'saeco',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2830,7 +2830,7 @@ return [
             'id' => 175,
             'sitePrefix' => 'philips',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2843,7 +2843,7 @@ return [
             'id' => 176,
             'sitePrefix' => 'jura',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2856,7 +2856,7 @@ return [
             'id' => 177,
             'sitePrefix' => 'bosch',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2869,7 +2869,7 @@ return [
             'id' => 178,
             'sitePrefix' => 'melitta',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2882,7 +2882,7 @@ return [
             'id' => 179,
             'sitePrefix' => 'nivona',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2895,7 +2895,7 @@ return [
             'id' => 180,
             'sitePrefix' => 'siemens',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2908,7 +2908,7 @@ return [
             'id' => 181,
             'sitePrefix' => 'cimbali',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2921,7 +2921,7 @@ return [
             'id' => 182,
             'sitePrefix' => 'miele',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2934,7 +2934,7 @@ return [
             'id' => 183,
             'sitePrefix' => 'simonelli',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -2947,7 +2947,7 @@ return [
             'id' => 184,
             'sitePrefix' => 'bork',
             'category_id' => 7,
-            'order-title' => 'helper',
+            'order-title' => 'spb_helper',
             'theme' => 'helper',
             'sitemap' => ['disableServicePage' => true]
         ],
