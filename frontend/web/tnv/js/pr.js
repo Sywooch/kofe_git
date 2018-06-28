@@ -1,4 +1,4 @@
-$(document).ready(function(){$(".program--sliders-full").slick({fade:!0,infinite:!1,asNavFor:".program--sliders-short",prevArrow:'<span class="slick-arrow slick-prev"><i class="icon-left"></i></span>',nextArrow:'<span class="slick-arrow slick-next"><i class="icon-right"></i></span>',infinite:!0}),$(".program--sliders-short").slick({arrows:!1,variableWidth:!0,infinite:!1,focusOnSelect:!0,asNavFor:".program--sliders-full"})});
+//$(document).ready(function(){$(".program--sliders-full").slick({fade:!0,infinite:!1,asNavFor:".program--sliders-short",prevArrow:'<span class="slick-arrow slick-prev"><i class="icon-left"></i></span>',nextArrow:'<span class="slick-arrow slick-next"><i class="icon-right"></i></span>',infinite:!0}),$(".program--sliders-short").slick({arrows:!1,variableWidth:!0,infinite:!1,focusOnSelect:!0,asNavFor:".program--sliders-full"})});
 
 
 
@@ -121,22 +121,6 @@ function move() {
         }, 1700);
     }
 }
-
-left.onmousedown = () => {
-    leftSlide();
-};
-
-right.onmousedown = () => {
-    rightSlide();
-};
-
-document.onkeydown = e => {
-    if (e.keyCode == 37) {
-        leftSlide();
-    } else if (e.keyCode == 39) {
-        rightSlide();
-    }
-};
 
 //for codepen header
 setTimeout(() => {

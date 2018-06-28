@@ -2193,7 +2193,7 @@ if (+function (a) {
         function ($) {
             FormValidation.Base = function (form, options, namespace) {
                 this.$form = $(form), this.options = $.extend({}, $.fn.formValidation.DEFAULT_OPTIONS, options), this._namespace = namespace || "fv", this.$invalidFields = $([]), this.$submitButton = null, this.$hiddenButton = null, this.STATUS_NOT_VALIDATED = "NOT_VALIDATED", this.STATUS_VALIDATING = "VALIDATING", this.STATUS_INVALID = "INVALID", this.STATUS_VALID = "VALID", this.STATUS_IGNORED = "IGNORED", this.DEFAULT_MESSAGE = $.fn.formValidation.DEFAULT_MESSAGE, this._ieVersion = function () {
-                    for (var v = 3, div = document.createElement("div"), a = div.all || []; div.innerHTML = "<!--[if gt IE " + ++v + "]><br><![endif]-->", a[0]; )
+                    for (var v = 3, div = document.createElement("div"), a = div.all || []; div.innerHTML = "<!--[if gt IE " + (++v) + "]><br><![endif]-->", a[0]; )
                         ;
                     return v > 4 ? v : document.documentMode
                 }();

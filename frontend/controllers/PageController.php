@@ -58,7 +58,7 @@ class PageController extends CController {
         if (!$replace) {
             return JSMin::minify(file_get_contents($jsPath));
         }
-        $fileContent = '';
+        $fileContent = null;
         $fp = fopen($jsPath, "r") or die("не удалось прочесть");
         while (!feof($fp)) {
             $line = fgets($fp);
@@ -87,7 +87,7 @@ class PageController extends CController {
         if (empty($files) || empty($path) || empty($replaceFiles))
             return false;
         $siteConfig = self::getSiteConfig();
-        $fileContent = '';
+        $fileContent = null;
         if (strpos($files, ',') !== false) {
             $files = explode(',', $files);
             $replaceFiles = explode(',', $replaceFiles);

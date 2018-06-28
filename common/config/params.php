@@ -3421,17 +3421,17 @@ return [
             'theme' => 'sservice',
         ],
         'profi' => [
-            'phone-1' => '8 (495) 323-90-09',
-            'phone-2' => '8 (812) 643-21-07',
-            'stickyMenu' => true,
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
             'mono' => false,
-            'id' => 222,
-            'sitePrefix' => 'professionals',
+            'id' => 146,
+            'sitePrefix' => 'tnv',
             'region-sel' => true,
             'category_id' => 7,
-            'theme' => 'professionals',
-            'order-title' => 'МСК Заречная',
+            'theme' => 'tnv',
+            'order-title' => 'tnv',
             'sitemap' => ['disableServicePage' => true]
         ],
+        
     ]
 ];

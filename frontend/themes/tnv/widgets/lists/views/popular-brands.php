@@ -23,7 +23,7 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
         </div>
         <div class="wide-slider--container">
-            <div class="wide-slider--scroller">
+            <div class="wide-slider--scroller slick-slider">
                 <?php foreach ($rows as $key => $row): ?>
                     <?php if ($key == 0 || ($key % 2) == 0): ?><div class="channel-link--grid"><?php endif; ?>
                         <a href="/<?= $row['url']; ?>" class="channel-link">

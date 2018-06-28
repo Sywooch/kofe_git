@@ -13,6 +13,7 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
+<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>    
     <head>
@@ -23,9 +24,8 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" />
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css" />
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font.css" />
+
+            <link type="text/css" href="/all-css?files=main.css,stile.css,font.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=0,1,2&cache=0" rel="stylesheet" media="all" />
     </head>
     <body>
         <?php
@@ -225,8 +225,8 @@ $js = app\components\CController::$js;
                             <div class="footer--call-title">Поделиться</div>
                             <div class="footer--call-chats">
                                 <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
-<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
+                                <script src="//yastatic.net/share2/share.js"></script>
+                                <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
                             </div>
                         </div>
                     </div>
@@ -234,16 +234,8 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= tnv\widgets\forms\PopupForm::widget(); ?>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/pr.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />        
+        <script src="/jsAction?files=jquery-1.11.3.min.js,yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js,slick.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         $roistat_n = 1;
@@ -270,26 +262,29 @@ $js = app\components\CController::$js;
 </html>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();</script>';
+    echo '<script>$("#spasibo").addClass("' . $siteConfig['sitePrefix'] . 'in");$("#spasibo").show();</script>';
 }
 ?>
-
 <script>
     $("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
     });
-
-    $("#spasibo .modal--close").click(function(){
+    $(".<?= $siteConfig['sitePrefix']; ?>slick-slider").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+    $("#spasibo .<?= $siteConfig['sitePrefix']; ?>modal--close").click(function () {
         $("#spasibo").removeClass("in");
         $("#spasibo").hide();
     });
-
     $('body').on("keyup", "input[type=tel]", function () {
-            var v = $(this).val().substring(4, 6);
-            if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
-                $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
-            }
-        });
-    </script>
+        var v = $(this).val().substring(4, 6);
+        if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+            $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+        }
+    });
+</script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
+<?php \app\widgets\other\Replace::end(); ?>

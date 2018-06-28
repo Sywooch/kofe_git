@@ -7,6 +7,7 @@ use yii\base\Widget;
 class Replace extends Widget {
 
     public $params = [];
+    private $almashtirma = ['ya-share2'];
 
     public function init() {
         ob_start();
@@ -36,8 +37,10 @@ class Replace extends Widget {
             foreach ($res as $attr) {
                 $value = explode(' ', $attr->value);
                 foreach ($value as &$set) {
-                    if (strpos($set, 'owl') === false)
-                        $set = $this->params['sitePrefix'] . trim($set);
+                    if (strpos($set, 'owl') === false) {
+                        if (!in_array($set, $this->almashtirma))
+                            $set = $this->params['sitePrefix'] . trim($set);
+                    }
                 }
                 unset($set);
                 $attr->value = implode(' ', $value);
