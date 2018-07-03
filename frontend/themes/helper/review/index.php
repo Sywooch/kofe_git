@@ -12,7 +12,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
         <h1 class="section-title"><?= $pageInfo['meta_h1'] ?></h1>
         <div class="row">            
             <?php foreach ($rows as $row): ?>
-            <?php if($row['email'] != $siteConfig['sitePrefix']) continue; ?>
+                <?php if ($row['email'] != $siteConfig['sitePrefix']) continue; ?>
                 <div class="col-md-3 col-sm-4 col-xs-12">
                     <div class="review-item" data-review>
                         <div class="review-item--title">
@@ -23,7 +23,8 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                             <div class="review-item--content">
                                 <p><span><?= $row['message']; ?></span></p>
                             </div>
-                        </div>                        
+                        </div>   
+                        <span class="review-item--toggle hidden" data-titles="Показать полностью,Скрыть отзыв">Показать полностью</span>
                     </div>
                 </div>
             <?php endforeach; ?>   
