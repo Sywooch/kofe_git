@@ -5340,10 +5340,10 @@ $(function(){
 	/*reviews*/
 	function buildReviewsCards(){
 		$('[data-review]').each(function(){
-			$this = $(this);
-			$overflow = $(this).find('.review-item--overflow');
-			$content = $(this).find('.review-item--content');
-			$toggle = $(this).find('.review-item--toggle');
+			var $this = $(this);
+			var $overflow = $(this).find('.review-item--overflow');
+			var $content = $(this).find('.review-item--content');
+			var $toggle = $(this).find('.review-item--toggle');
 			$this.removeClass('review-item--active review-item--isopen');
 			$toggle.html($toggle.data('titles').split(',')[0]).addClass('hidden');
 			if($content.height() > $overflow.height()){
