@@ -63,7 +63,7 @@ class PageController extends CController {
         while (!feof($fp)) {
             $line = fgets($fp);
             $line = preg_replace_callback(
-                    '/\$\(\"([^\"]+)\"/', function ($matches) use($siteConfig) {
+                    '/\$\(\"|\'([^\"]+)\"|\'/', function ($matches) use($siteConfig) {
                 $l = [];
                 if (isset($matches[1])) {
                     $ms = explode(' ', $matches[1]);
