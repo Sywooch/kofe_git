@@ -5341,9 +5341,9 @@ $(function(){
 	function buildReviewsCards(){
 		$('[data-review]').each(function(){
 			$this = $(this);
-			$overflow = $('.review-item--overflow', $this);
-			$content = $('.review-item--content', $this);
-			$toggle = $('.review-item--toggle', $this);
+			$overflow = $(this).find('.review-item--overflow');
+			$content = $(this).find('.review-item--content');
+			$toggle = $(this).find('.review-item--toggle');
 			$this.removeClass('review-item--active review-item--isopen');
 			$toggle.html($toggle.data('titles').split(',')[0]).addClass('hidden');
 			if($content.height() > $overflow.height()){
