@@ -5341,14 +5341,14 @@ $(function(){
 	function buildReviewsCards(){
 		$('[data-review]').each(function(){
 			var $this = $(this);
-			var $overflow = $this.find(".review-item--overflow");
-			var $content = $this.find(".review-item--content");
-			var $toggle = $this.find(".review-item--toggle");
-			$this.removeClass("review-item--active review-item--isopen");
+			var $overflow = $(this).find('.review-item--overflow');
+			var $content = $(this).find('.review-item--content');
+			var $toggle = $(this).find('.review-item--toggle');
+			$this.removeClass('review-item--active review-item--isopen');
 			$toggle.html($toggle.data('titles').split(',')[0]).addClass('hidden');
 			if($content.height() > $overflow.height()){
-				$this.addClass("review-item--active");
-				$toggle.removeClass("hidden");
+				$this.addClass('review-item--active');
+				$toggle.removeClass('hidden');
 			}
 		});
 	}
