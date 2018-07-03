@@ -24,7 +24,7 @@ $this->title = str_replace('#brand_en#', \app\components\CController::$monoBrand
                                 <p><span><?= $row['message']; ?></span></p>
                             </div>
                         </div>   
-                        <span class="review-item--toggle hidden" data-titles="Показать полностью,Скрыть отзыв">Показать полностью</span>
+                        <span class="review-item--toggle" data-titles="Показать полностью,Скрыть отзыв">Показать полностью</span>
                     </div>
                 </div>
             <?php endforeach; ?>   
