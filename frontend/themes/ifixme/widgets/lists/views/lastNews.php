@@ -9,7 +9,17 @@ $assets = Yii::getAlias('@web');
         <?php foreach ($rows as $row): ?>
             <a href="/<?= $row['url']; ?>" class="item">
                 <div class="img">
-                    <img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>">
+                    <?php
+                    $w = 75;
+                    $h = 75;
+                    $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
+                    $file = $path . $row['image'];
+                    if (!is_file($path . 'thumbs/' . $w . $h . $row['image']) && is_file($file)) {
+                        $image = Yii::$app->image->load($file);
+                        $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . $h . $model['image'], 60);
+                    }
+                    ?>
+                    <img src="<?= $assets ?>/uploads/images/thumbs/<?= $w . $h . $row['image']; ?>">
                 </div>
                 <div class="info">
                     <p><?= $row['title']; ?></p>

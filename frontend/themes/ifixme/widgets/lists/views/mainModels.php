@@ -14,7 +14,17 @@ $assets = Yii::getAlias('@web');
                         <div class="frame" id="<?= $row['icon']; ?>">
                             <div class="clearfix">
                                 <?php foreach ($row['children'] as $model): ?>
-                                    <a href="/<?= $model['url']; ?>"><img src="<?= $assets ?>/ifixme/uploads/images/<?= $model['image']; ?>"><?= $model['title']; ?></a>
+                                    <?php
+                                    $w = 160;
+                                    $h = 160;
+                                    $path = Yii::getAlias('@frontend') . '/web/ifixme/uploads/images/';
+                                    $file = $path . $model['image'];
+                                    if (!is_file($path . 'thumbs/' . $w . $h . $model['image']) && is_file($file)) {
+                                        $image = Yii::$app->image->load($file);
+                                        $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . $h . $model['image'], 60);
+                                    }
+                                    ?>
+                                    <a href="/<?= $model['url']; ?>"><img src="/ifixme/uploads/images/thumbs/<?= $w . $h . $model['image']; ?>"><?= $model['title']; ?></a>
                                 <?php endforeach; ?>
                             </div>
                         </div>
