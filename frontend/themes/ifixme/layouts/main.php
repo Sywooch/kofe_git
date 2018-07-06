@@ -172,7 +172,7 @@ $js = app\components\CController::$js;
                         <span>Мы в социальных сетях</span>
                         <ul>
                             <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/ifixme.ru/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             <!--<li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>-->
