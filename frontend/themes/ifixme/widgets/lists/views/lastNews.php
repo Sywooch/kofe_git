@@ -16,7 +16,7 @@ $assets = Yii::getAlias('@web');
                     $file = $path . $row['image'];
                     if (!is_file($path . 'thumbs/' . $w . $h . $row['image']) && is_file($file)) {
                         $image = Yii::$app->image->load($file);
-                        $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . $h . $model['image'], 60);
+                        $image->resize($w, $h)->background('#fff', 100)->save($path . 'thumbs/' . $w . $h . $row['image'], 60);
                     }
                     ?>
                     <img src="<?= $assets ?>/uploads/images/thumbs/<?= $w . $h . $row['image']; ?>">
