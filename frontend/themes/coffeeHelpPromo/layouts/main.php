@@ -265,6 +265,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <script src="/jsAction?files=<?= base64_encode('yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js'); ?>&path=<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
+        <script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});$('body').on("keyup", "input[type=tel]", function () {if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {$.post("/order-send", {phone: $(this).val(), title: $("h1").text()});}});</script>
     </body>
 </html>
 <?php $this->endBody() ?>    
