@@ -291,6 +291,11 @@ class ListController extends CController {
                         //$title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . $page['title'] . '! Выполняем ремонт кофемашин по всей ' . Yii::$app->session['region']['titleRod'];
                         $title = 'Кофемашина ' . $page['title'] . ' - ' . $pageInfo['title'] . '? Быстрое устранение неисправностей в ' . Yii::$app->session['region']['titleRod'];
                         $metaDesc = 'Авторизованный сервисный центр ' . $page['title'] . ' выполнит ремонт и устранит неисправность - ' . $pageInfo['title'] . ' - и предоставит фирменную гарантию! Выезд курьера в ' . Yii::$app->session['region']['titleRod'];
+                    } elseif ($siteConfig['id'] == 221) {
+                        $rName = '';
+                        if (isset(Yii::$app->params['brandRussianNames'][$page['title']]))
+                            $rName = Yii::$app->params['brandRussianNames'][$page['title']];
+                        $metaDesc = 'Ответьте на 7 вопросов и узнайте стоимость устранения неисправности - ' . $pageInfo['title'] . '. Ответьте на вопросы и получите скидку на ремонт кофемашины ' . $rName;
                     }
 
                     $seoText = '<p>Если ' . CController::$category['1_title'] . ' ' . $page['title'] . ' ' . $pageInfo['title'] . ', специалисты нашего сервисного центра проведут бесплатную диагностику, выявят неисправность и сделают ремонт по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '. Для ремонта  ' . CController::$category['3_title'] . ' ' . $page['title'] . ' мы используем только качественные фирменные комплектующие и современное диагностическое оборудование. Также специалист может выехать для проведения ремонта к вам на дом или в офис. Ремонтируем все модели ' . CController::$category['3_title'] . '  производства ' . $page['title'] . '.</p>';
@@ -346,6 +351,11 @@ class ListController extends CController {
                     } elseif (in_array($siteConfig['id'], [146, 147])) {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' кофемашин ' . $page['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Гарантия! Качество!';
                         $metaDesc = 'Наш сервисный центр по ремонту кофемашин ' . $page['title'] . ' выполнит услугу - ' . $pageInfo['title'] . ' - быстро и качественно! Выезд курьера в ' . Yii::$app->session['region']['titleRod'] . '.';
+                    } elseif ($siteConfig['id'] == 221) {
+                        $rName = '';
+                        if (isset(Yii::$app->params['brandRussianNames'][$page['title']]))
+                            $rName = Yii::$app->params['brandRussianNames'][$page['title']];
+                        $metaDesc = 'Ответьте на 7 вопросов и узнайте стоимость услуги - ' . $pageInfo['title'] . '. Ответьте на вопросы и получите скидку на ремонт кофемашины ' . $rName;
                     } else {
                         $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . '. Ремонт ' . CController::$category['3_title'] . ' в СЦ';
                         $metaDesc = 'Качественная ' . $pageInfo['title'] . ' ' . CController::$category['3_title'] . ' ' . $page['title'] . ' в официальном сервисном центре по самой низкой цене в ' . Yii::$app->session['region']['titleRod'] . '.';
@@ -654,6 +664,8 @@ class ListController extends CController {
         } elseif (in_array($siteConfig['id'], [146, 147])) {
             $title = 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '! Лучшие мастера!';
             $metaDesc = 'Авторизованный сервисный центр проводит ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . '. Наш сервисный центр является лидером по обслуживанию кофемашин. Доверяя ремонт нам - вы получите восстановленную кофемашину. Гарантия на все виды работ!';
+        } elseif ($siteConfig['id'] == 221) {
+            $metaDesc = 'Ответьте на 7 вопросов и узнайте стоимость ремонта кофемашины ' . $pageInfo['title'] . ' в Москве. Ответьте на вопросы и получите скидку на ремонт кофемашины ' . $rName;
         }
 
         if (!empty($pageInfo['meta_title']))

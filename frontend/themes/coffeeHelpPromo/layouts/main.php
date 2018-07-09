@@ -13,9 +13,8 @@ $siteConfig = app\components\CController::getSiteConfig();
 <html xmlns="https://www.w3.org/1999/xhtml" class="no-js">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        
-        <title>Узнать стоимость ремонт кофемашин в Москве - Сервисный центр Coffee-Help</title>
-        <meta name="description" content="Ответьте на 7 вопросов и узнайте стоимость ремонта кофемашины в Москве. Ответьте на вопросы и получите скидку на ремонт кофемашины">
+        <?= Html::csrfMetaTags() ?>
+        <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico"/>
@@ -30,19 +29,17 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/kava.mp4" type="video/mp4">
             </video>
         </div>
-
         <div class="header">
             <div class="logo">
-                <a href="#"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/logo.svg" alt=""></a>
+                <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/logo.svg" alt=""></a>
             </div>
             <div class="number">
-                <a href="tel:+84951520707">8 (495) 152-07-07</a>
+                <a href="tel:+74951520707">8 (495) 152-07-07</a>
                 <span>Работаем с 9:00 до 20:00</span>
             </div>
         </div>
-
         <div class="body">
-            <h1>Ремонт кофемашин в Москве</h1>
+            <?= $content; ?>
             <div class="big-text">
                 Ответьте на 7 вопросов и узнайте стоимость ремонта
             </div>
@@ -54,7 +51,6 @@ $siteConfig = app\components\CController::getSiteConfig();
             </div>
             <div class="open-b">Узнать стоимость</div>
         </div>
-
         <div id="popup" class="popup">
             <div class="bg close"></div>
             <div class="content">
@@ -63,7 +59,6 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <i class="mdi mdi-checkbox-multiple-marked-outline mdi-24px"></i> 
                     <span>Ответьте на 7 вопросов и узнайте стоимость ремонта не выходя из дома</span>
                 </div>
-
                 <section id="one" class="tabcontent" style="display: block;">
                     <div class="title-question">Какой кофе используется в кофемашине?</div>
                     <div class="progress__label">Готово:<span>0%</span> <div class="vasha-skidka">Ваша скидка: <span>0%</span></div></div>
