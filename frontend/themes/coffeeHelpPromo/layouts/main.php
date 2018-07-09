@@ -96,6 +96,14 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <option value="Jura">Jura</option>
                             <option value="Bork">Bork</option>
                             <option value="Bosch">Bosch</option>
+                            <option value="Miele">Miele</option>
+                            <option value="Nivona">Nivona</option>
+                            <option value="Nuova Simonelli">Nuova Simonelli</option>
+                            <option value="Melitta">Melitta</option>
+                            <option value="Siemens">Siemens</option>
+                            <option value="Bork">Bork</option>
+                            <option value="La Cimbali">La Cimbali</option>
+                            <option value="Philips">Philips</option>
                         </select>
                     </div>
                     <div class="footer-popup">
