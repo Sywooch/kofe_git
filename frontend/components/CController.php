@@ -28,12 +28,20 @@ class CController extends \yii\web\Controller {
         'remont_coffee_spb' => ['name' => 'SPBM5', 'OID' => 2207167073000],
         'tnv' => ['name' => 'MSKM5', 'OID' => 2207167008000],
         'tnv_spb' => ['name' => 'SPB2', 'OID' => 2207167076000],
-        'helper' => ['name' => 'MSKS4', 'OID' => 2207167051000],        
+        'helper' => ['name' => 'MSKS4', 'OID' => 2207167051000],
         'nasa' => ['name' => 'MSKS5', 'OID' => 2207167052000],
         'ofitsial' => ['name' => 'MSKS6', 'OID' => 2207167059000],
         'landing' => ['name' => 'MSKM7', 'OID' => 2207167017000],
         'spb_helper' => ['name' => 'SPBS5', 'OID' => 2207167017000],
     ];
+
+    function isBase64Encoded($data) {
+        if (preg_match('%^[a-zA-Z0-9/+]*={0,2}$%', $data)) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
 
     public static function replaceJS($js) {
         return str_replace(['https://mc.yandex.ru/metrika/watch.js'], [Yii::$app->request->hostInfo . '/uploads/js/watch.js'], $js);
@@ -243,7 +251,7 @@ class CController extends \yii\web\Controller {
             ])->execute();
             $p = strip_tags(Yii::$app->session['region']['phone']);
             $p = '7' . substr($p, 1, strlen($p));
-            
+
             if (isset($_COOKIE['roistat_visit']) && $visit_id == 0) {
                 $visit_id = $_COOKIE['roistat_visit'];
             }

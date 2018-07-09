@@ -86,6 +86,9 @@ class PageController extends CController {
     public function actionGetJs($files, $path, $replaceFiles, $cache = 0) {
         if (empty($files) || empty($path) || empty($replaceFiles))
             return false;
+        if($this->isBase64Encoded($files)) {
+            $files = base64_decode($files);
+        }
         $siteConfig = self::getSiteConfig();
         $fileContent = null;
         if (strpos($files, ',') !== false) {

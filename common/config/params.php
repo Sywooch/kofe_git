@@ -3408,7 +3408,18 @@ return [
             'order-title' => 'nasa',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
-        ],        
+        ],
+        'promo.coffee-help' => [
+            'phone-1' => '8 (495) 323-90-09',
+            'phone-2' => '8 (812) 643-21-07',
+            'mono' => false,
+            'id' => 221,
+            'sitePrefix' => 'coffeeHelpPromo',
+            'category_id' => 7,
+            'theme' => 'coffeeHelpPromo',
+            'order-title' => 'help',
+            'sitemap' => ['disableServicePage' => true]
+        ],
         'new-site' => [
             'phone-1' => '8 (495) 152-00-02',
             'phone-2' => '8 (812) 643-21-07',
