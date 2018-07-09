@@ -13,7 +13,10 @@ $siteConfig = app\components\CController::getSiteConfig();
 <html xmlns="https://www.w3.org/1999/xhtml" class="no-js">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Вадим Kviz</title>
+        
+        <title>Узнать стоимость ремонт кофемашин в Москве - Сервисный центр Coffee-Help</title>
+        <meta name="description" content="Ответьте на 7 вопросов и узнайте стоимость ремонта кофемашины в Москве. Ответьте на вопросы и получите скидку на ремонт кофемашины">
+        <?php $this->head() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico"/>
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/materialdesignicons.min.css" rel="stylesheet" media="screen" />
@@ -21,6 +24,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <link type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" rel="stylesheet" media="screen" />
     </head>
     <body>
+        <?php $this->beginBody() ?>
         <div class="video-bg">
             <video playsinline autoplay muted loop>
                 <source src="<?= $assets . $siteConfig['theme'] . '/'; ?>video/kava.mp4" type="video/mp4">
@@ -38,7 +42,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
 
         <div class="body">
-            <h1>ДЕКАЛЬЦИНАЦИЯ КОФЕМАШИН DELONGHI</h1>
+            <h1>Ремонт кофемашин в Москве</h1>
             <div class="big-text">
                 Ответьте на 7 вопросов и узнайте стоимость ремонта
             </div>
@@ -268,3 +272,5 @@ $siteConfig = app\components\CController::getSiteConfig();
         <script src="/jsAction?files=<?= base64_encode('yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js'); ?>&path=<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
     </body>
 </html>
+<?php $this->endBody() ?>    
+<?php $this->endPage() ?>
