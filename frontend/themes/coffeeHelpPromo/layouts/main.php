@@ -265,6 +265,6 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
-        <script src="/jsAction?files=<?= base64_encode('yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js'); ?>&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
+        <script src="/jsAction?files=<?= base64_encode('yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js'); ?>&path=<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
     </body>
 </html>
