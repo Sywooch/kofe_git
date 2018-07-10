@@ -3097,8 +3097,8 @@ return [
         ],
         
         'delonghispb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13292,
@@ -3110,8 +3110,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'saecopro' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13332,
@@ -3123,8 +3123,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'philipsspb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13238,
@@ -3136,8 +3136,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'juratech' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13202,
@@ -3149,8 +3149,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'bosch-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13182,
@@ -3162,8 +3162,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'melitta-remont-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13231,
@@ -3175,8 +3175,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'nivona-remont-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13682,
@@ -3188,8 +3188,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'fix-siemens' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13777,
@@ -3201,8 +3201,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'la-cimbali-master' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13607,
@@ -3214,8 +3214,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'miele-service-remont' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13650,
@@ -3227,8 +3227,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'nuova-simonelli-master' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13670,
@@ -3240,8 +3240,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'bork-remont-spb' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 612-74-84',
+            'phone-2' => '8 (812) 612-74-84',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13368,
