@@ -23,7 +23,7 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon" />
 
             <link type="text/css" href="/all-css?files=main.css,stile.css,font.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=0,1,2&cache=0" rel="stylesheet" media="all" />
     </head>
