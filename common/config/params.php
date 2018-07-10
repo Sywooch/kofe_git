@@ -3254,8 +3254,8 @@ return [
         ],
         
         'delonghi-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13292,
@@ -3267,8 +3267,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'saeco-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'spb' => true,
             'mono' => true,
             'brand-id' => 13332,
@@ -3280,8 +3280,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'philips-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13238,
@@ -3293,8 +3293,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'jura-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13202,
@@ -3306,8 +3306,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'bosch-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13182,
@@ -3319,8 +3319,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'melitta-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13231,
@@ -3332,8 +3332,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'nivona-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13682,
@@ -3345,8 +3345,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'siemens-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13777,
@@ -3358,8 +3358,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'la-cimbali-repair' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13607,
@@ -3371,8 +3371,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'miele-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13650,
@@ -3384,8 +3384,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'nuova-simonelli-repair' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13670,
@@ -3397,8 +3397,8 @@ return [
             'sitemap' => ['disableServicePage' => true]
         ],
         'bork-repair-coffee' => [
-            'phone-1' => '8 (499) 372-29-92',
-            'phone-2' => '8 (812) 643-21-07',
+            'phone-1' => '8 (812) 649-75-55',
+            'phone-2' => '8 (812) 649-75-55',
             'mono' => true,
             'spb' => true,
             'brand-id' => 13368,
