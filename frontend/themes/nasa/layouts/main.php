@@ -85,7 +85,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                                 <span><?= Yii::$app->session['region']['phone']; ?></span>
                             </a>
                         </div>
-                        <div class="header__schedule">Ежедневно с 07:00 до 24:00</div>
+                        <div class="header__schedule">Ежедневно с 07:00 до 22:00</div>
                     </div>
                     <div class="col-12 d-block d-md-none">
                         <ul class="collapse header__nav-mobile">
@@ -149,8 +149,10 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                             <div class="footer__phone"><a rel="nofollow" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><span><?= Yii::$app->session['region']['phone']; ?></span></a> </div>
                         </noindex>
                         <ul>
-                            <li>г. Москва, м. Окружная, Гостиничная ул., 9</li>
-                            <li>Ежедневно с 07:00 до 24:00</li>
+                            <li>
+                                <?= Yii::$app->session['region']['id'] == 1 ? 'г. Москва, м. Окружная, Гостиничная ул., 9' : 'г. Санкт-Петербург, м. Звенигородская, ул. Марата, 82'; ?>
+                            </li>
+                            <li>Ежедневно с 07:00 до 22:00</li>
                         </ul>
                     </div>
                 </div>

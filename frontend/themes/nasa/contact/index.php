@@ -19,14 +19,15 @@ $siteConfig = app\components\CController::getSiteConfig();
                     </div>
                     <div class="col-md-6">
                         <h5 class="mb-3">График работы: </h5>
-                        <p>Ежедневно с 07:00 до 24:00</p>
+                        <p>Ежедневно с 07:00 до 22:00</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-xl-5 offset-xl-1"><img alt="" class="d-lg-block d-none img-fluid rounded" src="/<?=$siteConfig['theme']; ?>/img/contacts__image.jpg"> </div>
         </div><br>
         <div class="h3">Наши мастера работают по всему городу</div>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0e0243c875a25bd7b744995853bc4d0a730b4c8a717f73b2bfa08c858cdb637&amp;source=constructor" frameborder="0"></iframe>
+        <?= Yii::$app->session['region']['id'] == 1 ? '<iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0e0243c875a25bd7b744995853bc4d0a730b4c8a717f73b2bfa08c858cdb637&amp;source=constructor" frameborder="0"></iframe>' : '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab4bf4c54f0f6966fd9a26c7516af28df3fc98e0657ffca122c86a90163906b84&amp;source=constructor" frameborder="0"></iframe>'; ?>
+        
         <div class="callback">
             <div class="align-items-center row">
                 <div class="col-lg-6 col-md-8 col-xl-5 offset-lg-5 offset-md-3 offset-xl-6">

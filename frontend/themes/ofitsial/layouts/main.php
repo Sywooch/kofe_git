@@ -55,11 +55,13 @@ $js = app\components\CController::$js;
                     <div class="row">
                         <div class="col-xl-3 col-lg-2 col-md-2 col-xs-6">
                             <div class="changecity_container">
-                                <span>Ваш город <span class="curcity gl-current-select">Москва</span></span>
+                                <span>Ваш город <span class="curcity gl-current-select"><?= Yii::$app->session['region']['id'] == 1 ? 'Москва' : 'Санкт-Петербург'; ?></span></span>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-7 col-md-7 hidden-sm">
-                            <span class="headeradress">Адрес: г. Москва, м. Электрозаводская, Барабанный переулок, 4с4</span>
+                            <span class="headeradress">
+                                Адрес: <?= Yii::$app->session['region']['id'] == 1 ? 'г. Москва, м. Электрозаводская, Барабанный переулок, 4с4' : 'г. Санкт-Петербург, м. Чкаловская, Большая Разночинная ул., 14'; ?>
+                            </span>
                         </div>
                         <div class="col-xl-4 col-lg-3 col-md-3 col-xs-6 text-right  p-left-reset preheaderphone_block">
                             <span class="headerphone_container">
@@ -110,10 +112,10 @@ $js = app\components\CController::$js;
                 <div class="row">
                     <div class="col-md-3 col-sm-5 mobi-padding">
                         <p class="footerlogo_descr">
-                            Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?> в Москве
+                            Ремонт кофемашин <?= app\components\CController::$monoBrand['title']; ?> в <?= Yii::$app->session['region']['id'] == 1 ? 'Москве' : 'Санкт-Петербурге'; ?>
                         </p>
                         <p><i class="fa fa-calendar-o" aria-hidden="true"></i> Сервисный центр работает без выходных и праздников</p>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: г. Москва, м. Электрозаводская, Барабанный переулок, 4с4</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес: <?= Yii::$app->session['region']['id'] == 1 ? 'г. Москва, м. Электрозаводская, Барабанный переулок, 4с4' : 'г. Санкт-Петербург, м. Чкаловская, Большая Разночинная ул., 14'; ?></p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i> Тел.: <a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></p>
                         <p><i class="fa fa-clock-o" aria-hidden="true"></i> с 09:00 до 21:00</p>
                     </div>

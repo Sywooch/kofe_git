@@ -33,6 +33,8 @@ class CController extends \yii\web\Controller {
         'ofitsial' => ['name' => 'MSKS6', 'OID' => 2207167059000],
         'landing' => ['name' => 'MSKM7', 'OID' => 2207167017000],
         'spb_helper' => ['name' => 'SPBS5', 'OID' => 2207167017000],
+        'nasa_spb' => ['name' => 'SPBS5', 'OID' => 2207167085000],
+        'ofitsial_spb' => ['name' => 'SPBS6', 'OID' => 2207167087000],
     ];
 
     function isBase64Encoded($data) {

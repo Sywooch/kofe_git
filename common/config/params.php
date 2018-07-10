@@ -3105,7 +3105,7 @@ return [
             'id' => 197,
             'sitePrefix' => 'delonghi',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3118,7 +3118,7 @@ return [
             'id' => 198,
             'sitePrefix' => 'saeco',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3131,7 +3131,7 @@ return [
             'id' => 199,
             'sitePrefix' => 'philips',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3144,7 +3144,7 @@ return [
             'id' => 200,
             'sitePrefix' => 'jura',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3157,7 +3157,7 @@ return [
             'id' => 201,
             'sitePrefix' => 'bosch',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3170,7 +3170,7 @@ return [
             'id' => 202,
             'sitePrefix' => 'melitta',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3183,7 +3183,7 @@ return [
             'id' => 203,
             'sitePrefix' => 'nivona',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3196,7 +3196,7 @@ return [
             'id' => 204,
             'sitePrefix' => 'siemens',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3209,7 +3209,7 @@ return [
             'id' => 205,
             'sitePrefix' => 'cimbali',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3222,7 +3222,7 @@ return [
             'id' => 206,
             'sitePrefix' => 'miele',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3235,7 +3235,7 @@ return [
             'id' => 207,
             'sitePrefix' => 'simonelli',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3248,7 +3248,7 @@ return [
             'id' => 208,
             'sitePrefix' => 'bork',
             'category_id' => 7,
-            'order-title' => 'ofitsial',
+            'order-title' => 'ofitsial_spb',
             'theme' => 'ofitsial',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3262,7 +3262,7 @@ return [
             'id' => 209,
             'sitePrefix' => 'delonghi',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3275,7 +3275,7 @@ return [
             'id' => 210,
             'sitePrefix' => 'saeco',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3288,7 +3288,7 @@ return [
             'id' => 211,
             'sitePrefix' => 'philips',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3301,7 +3301,7 @@ return [
             'id' => 212,
             'sitePrefix' => 'jura',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3314,7 +3314,7 @@ return [
             'id' => 213,
             'sitePrefix' => 'bosch',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3327,7 +3327,7 @@ return [
             'id' => 214,
             'sitePrefix' => 'melitta',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3340,7 +3340,7 @@ return [
             'id' => 215,
             'sitePrefix' => 'nivona',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3353,7 +3353,7 @@ return [
             'id' => 216,
             'sitePrefix' => 'siemens',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3366,7 +3366,7 @@ return [
             'id' => 217,
             'sitePrefix' => 'cimbali',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3379,7 +3379,7 @@ return [
             'id' => 218,
             'sitePrefix' => 'miele',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3392,7 +3392,7 @@ return [
             'id' => 219,
             'sitePrefix' => 'simonelli',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
@@ -3405,7 +3405,7 @@ return [
             'id' => 220,
             'sitePrefix' => 'bork',
             'category_id' => 7,
-            'order-title' => 'nasa',
+            'order-title' => 'nasa_spb',
             'theme' => 'nasa',
             'sitemap' => ['disableServicePage' => true]
         ],
