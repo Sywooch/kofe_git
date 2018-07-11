@@ -170,17 +170,15 @@ $js = app\components\CController::$js;
                 <div class="footer">
                     <div class="left">
                         <span>Мы в социальных сетях</span>
-                        <ul>
-                            <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.instagram.com/ifixme.ru/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <!--<li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>-->
-                            <li><a href="#" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-                        </ul>
+                        <noindex>
+                            <ul>
+                                <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/ifixme.ru/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>                            
+                            </ul>
+                        </noindex>
                     </div>
                     <div class="right">
-                        <span>© <?= date('Y'); ?> <?= ucfirst($_SERVER['HTTP_HOST']); ?></span>
+                        <span><a href="https://ifixme.ru/#top">Ремонт Apple</a> в СЦ iFixMe © <?= date('Y'); ?></span>
                     </div>
                 </div>
             </div>
@@ -223,7 +221,7 @@ $js = app\components\CController::$js;
             </div>
             <div class="close"></div>
         </div>
-<?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
     </body>
 </html>
 <script src="<?= $assets ?>/ifixme/js/jquery-1.11.3.min.js"></script>
