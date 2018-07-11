@@ -34,7 +34,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <a href="/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>img/logo.svg" alt=""></a>
             </div>
             <div class="number">
-                <a href="tel:+74951520707">8 (495) 152-07-07</a>
+                <a class="phone-h-msk" href="tel:+74951520707">8 (495) 152-07-07</a>
                 <span>Работаем с 9:00 до 20:00</span>
             </div>
         </div>
