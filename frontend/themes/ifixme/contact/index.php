@@ -74,7 +74,7 @@ $this->title = $pageInfo['meta_title'];
             <div class="clear"></div>-->
         </div>
         <div class="bigmap">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A568d550a67da292f568b62bc28287c8c6a51a4ceb047d5bb37c0c72efbaaf9c5&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
     </div>
 </section>

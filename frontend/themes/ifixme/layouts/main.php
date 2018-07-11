@@ -161,7 +161,7 @@ $js = app\components\CController::$js;
                                         <span>Ежедневно с 08:00 до 22:00</span>
                                     </div>
                                 </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A358a732ce1cfd772cada2862a2006f87e07a650943bfc4a6be752ce1ae0dbcff&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A568d550a67da292f568b62bc28287c8c6a51a4ceb047d5bb37c0c72efbaaf9c5&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
                             </div>
                         </div>
                     </div>
