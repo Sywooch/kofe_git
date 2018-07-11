@@ -270,10 +270,29 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </section>
             </div>
         </div>
+        <script>
+            (function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', 'a751498bec56950d63818d2d7d2c52d9');
+        </script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <script src="/jsAction?files=<?= base64_encode('yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js'); ?>&path=<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
-        <script>$("form").each(function () {$(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});$('body').on("keyup", "input[type=tel]", function () {if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {$.post("/order-send", {phone: $(this).val(), title: $("h1").text()});}});</script>
+        <script>$("form").each(function () {
+                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")});$('body').on("keyup", "input[type=tel]", function () {
+                if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                    $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+                }
+            });</script>
     </body>
 </html>
 <?php $this->endBody() ?>    
