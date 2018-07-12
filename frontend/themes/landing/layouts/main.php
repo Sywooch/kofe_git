@@ -76,7 +76,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                         <div class="phone">
                             <div class="phone__item">
-                                <span class="call_phone_1"><a class="phone__nr roistat" href="tel:74951323202">+7 495 132-32-02</a></span>
+                                <span class="call_phone_1"><a class="phone__nr" href="tel:74951323202">+7 495 132-32-02</a></span>
                                 <div class="phone__desc">Есть вопросы? Звоните!
                                 </div>
                             </div>
