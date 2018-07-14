@@ -661,6 +661,8 @@ video {
     width: 100%;
     margin-bottom: 15px;
     max-width: 100%;
+    position: relative;
+    overflow: hidden;
 	}
 	.footer-popup {
 		padding: 10px 15px;
@@ -682,6 +684,9 @@ video {
 	}
 	#eight .popup-body {
 		padding: 10px 0px;
+	}
+	#img-question > div img {
+		margin-top: -170px;
 	}
 }
 @media (max-width: 570px) {
