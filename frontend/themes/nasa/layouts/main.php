@@ -127,7 +127,7 @@ elseif($isServicesPage || $isModelsPage || $isContactPage || $isPage)
                     </div>
                     <div class="col-lg-3 col-md-4">
                         <ul>
-                            <li><a href="/protekaet-voda">Протекает вода</a></li>
+                            <li><a href="/protekaet">Протекает вода</a></li>
                             <li><a href="/ploho-techet-kofe">Плохо течет кофе</a></li>
                             <li><a href="/ne-nagrevaet-vodu">Не нагревает воду</a></li>
                             <li><a href="/ne-rabotaet">Не включается</a></li>
