@@ -60,7 +60,7 @@ class MainUrlRule extends UrlRule {
             }
         }
         $hostname = Yii::$app->request->hostInfo;
-        if (in_array($siteConfig['id'], [49]) && strpos($hostname, 'https://') === false) {
+        if (in_array($siteConfig['id'], [49, 48]) && strpos($hostname, 'https://') === false) {
             $this->redirect(str_replace('http', 'https', $hostname . (!empty($pathInfo) ? '/' . $pathInfo : '')));
         }
         if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'multicatX' && strpos($pathInfo, 'remont-') !== false && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {
