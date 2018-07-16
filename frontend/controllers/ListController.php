@@ -496,7 +496,7 @@ class ListController extends CController {
                         'name' => 'keywords',
                         'content' => 'apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp
                     ]);
-                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '? Что делать (инструкция) — iFixMe';
+                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '? Что делать — СЦ iFixMe';
                     $metaDesc = 'Подробно рассказываем и показываем, что делать если Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '.';
                     $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
                 } else {
