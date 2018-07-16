@@ -36,7 +36,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </h1>
                 <div class="d-lg-block intro__description">                    
                     <?php if (!empty($pageInfo['description'])): ?>
-                        <?= $pageInfo['description']; ?>
+                        <?= str_replace('#model_en#', $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
                     <?php else: ?>
                         <p>
                             <?= app\components\CController::$category['rod_title']; ?> <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в короткие сроки. Устраняем неисправности любой сложности с гарантией качества комплектующих и выполненных работ.               
