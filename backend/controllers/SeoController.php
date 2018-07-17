@@ -48,20 +48,21 @@ class SeoController extends Controller {
         $siteCOnfig = self::getSiteConfig($domain);
         $file = Yii::getAlias('@common') . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'redirects.php';
         $redirects = require($file);
-        $redirects = $redirects[$siteCOnfig['id']];
+        $siteRedirects = isset($redirects[$siteCOnfig['id']]) ? $redirects[$siteCOnfig['id']] : [];
         if (isset($_POST['save'])) {
             $from = $_POST['from'];
             $to = $_POST['to'];
             $site = $_POST['site'];
-            $b = ['http://kofe03.lc/test' => 'http://kofe03.lc/test2'];
-            file_put_contents('filename.txt', var_export($b, true));
+            $redirects[$site] = $siteRedirects + [$from => $to];
+            //chmod($file, 0644);
+            file_put_contents($file . '-cache.php', '<?php return ' . var_export($redirects, true));            
         }
         $sites = [];
         foreach (Yii::$app->params['siteConfigs'] as $title => $config) {
             $sites[$config['id']] = $title . '.ru';
         }
         return $this->render('redirects', [
-                    'sites' => $sites, 'redirects' => $redirects,
+                    'sites' => $sites, 'redirects' => $siteRedirects,
         ]);
     }
 
