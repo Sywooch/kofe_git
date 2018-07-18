@@ -476,7 +476,7 @@ class ListController extends CController {
                             92 => 'Поломка манометра у кофемашины',
                             91 => 'Кофемашина не показывает наличие воды',
                         ];
-                        $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' - Узнать стоимость ремонта ' . CController::$monoBrand['title'] . ' в Москве';
+                        $title = (isset($seoH1[$pageInfo['id']]) ? $seoH1[$pageInfo['id']] : $this->mb_ucfirst($pageInfo['title'], 'UTF-8')) . ' - Узнать стоимость ремонта ' . CController::$monoBrand['title'] . ' в ' . Yii::$app->session['region']['titleRod'];
                         $metaDesc = 'Выполним ремонт кофемашины ' . CController::$monoBrand['title'] . ' и найдём причины по которым ' . (isset($seoH1[$pageInfo['id']]) ? mb_strtolower($seoH1[$pageInfo['id']], 'utf8') : mb_strtolower($pageInfo['title'], 'UTF-8')) . ' - Гарантия до 1 года.';
                     }
                 } elseif ($siteConfig['id'] == 49) {
