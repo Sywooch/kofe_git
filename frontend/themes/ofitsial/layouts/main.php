@@ -55,7 +55,7 @@ $js = app\components\CController::$js;
                     <div class="row">
                         <div class="col-xl-3 col-lg-2 col-md-2 col-xs-6">
                             <div class="changecity_container">
-                                <span>Ваш город <span class="curcity gl-current-select"><?= Yii::$app->session['region']['id'] == 1 ? 'Москва' : 'Санкт-Петербург'; ?></span></span>
+                                <span>Город <span class="curcity gl-current-select"><?= Yii::$app->session['region']['id'] == 1 ? 'Москва' : 'Санкт-Петербург'; ?></span></span>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-7 col-md-7 hidden-sm">
