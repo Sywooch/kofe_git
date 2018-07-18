@@ -63,7 +63,7 @@ class MainUrlRule extends UrlRule {
         if (in_array($siteConfig['id'], [49, 48]) && strpos($hostname, 'https://') === false) {
             $this->redirect(str_replace('http', 'https', $hostname . (!empty($pathInfo) ? '/' . $pathInfo : '')));
         }
-        if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'multicatX' && strpos($pathInfo, 'remont-') !== false && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {
+        if (isset($siteConfig['theme']) && in_array($siteConfig['theme'], ['multicatX', 'multicat']) && strpos($pathInfo, 'remont-') !== false && !empty($arrayUrl[0]) && strpos($pathInfo, 'kofemashin') === false) {
             $this->redirect('/');
         }
         if ($siteConfig['mono']) {
