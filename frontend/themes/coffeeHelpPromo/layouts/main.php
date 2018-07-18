@@ -104,6 +104,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <option value="Bork">Bork</option>
                             <option value="La Cimbali">La Cimbali</option>
                             <option value="Philips">Philips</option>
+                            <option value="Другой">Другой</option>
                         </select>
                     </div>
                     <div class="footer-popup">
@@ -161,6 +162,12 @@ $siteConfig = app\components\CController::getSiteConfig();
                             </div>
                             <div class="radio-question">
                                 <i class="mdi mdi-checkbox-blank"></i><i class="mdi mdi-checkbox-marked"></i><span>Не включается</span>
+                            </div>
+                            <div class="radio-question">
+                                <i class="mdi mdi-checkbox-blank"></i><i class="mdi mdi-checkbox-marked"></i><span>Не делает пену</span>
+                            </div>
+                            <div class="radio-question">
+                                <i class="mdi mdi-checkbox-blank"></i><i class="mdi mdi-checkbox-marked"></i><span>Другая неисправность</span>
                             </div>
                         </div>
                     </div>
