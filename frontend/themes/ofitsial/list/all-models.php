@@ -26,8 +26,8 @@ $breadcrumbs = [
                     <div class="inner_tabs">
                         <div class="tabs-wrapper">
                             <div class="tabs t-33">
-                                <a href="remont-noutbukov-apple.html#tab1" data-target="tab1" class="tab-heading active">Все модели</a>
-                                <a href="remont-noutbukov-apple.html#tab3" data-target="tab3" class="tab-heading ">Описание</a>
+                                <a href="#tab1" data-target="tab1" class="tab-heading active">Все модели</a>
+                                <a href="#tab3" data-target="tab3" class="tab-heading ">Описание</a>
                             </div>
                             <div class="row">
                                 <div class="tab active col-md-12" id="tab1">
