@@ -183,21 +183,21 @@ a{
      background:#148c81 
 }
 .callback{
-    background-image: url("../../../img/brands/cimbali/callback-bg.png"), url("../../../img/about-bg.png");
+    background-image: url("../../../img/brands/siemens/callback-bg.png"), url("../../../img/about-bg.png");
 }
 .content__fault-image,
 .content__service-image{
-    background-image :url("../../../img/brands/cimbali/fault__image.png");
+    background-image :url("../../../img/brands/siemens/fault__image.png");
 }
 .faults__item.item-first{
-    background-image:url("../../../img/brands/cimbali/faults__item-first.jpg");
+    background-image:url("../../../img/brands/siemens/faults__item-first.jpg");
 }
 .intro__preview{
-    background-image:url("../../../img/brands/cimbali/intro__model.png");
+    background-image:url("../../../img/brands/siemens/intro__model.png");
 }
 .promo{
-    background-image:url("../../../img/brands/cimbali/promo-bg.jpg");
+    background-image:url("../../../img/brands/siemens/promo-bg.jpg");
 }
 .warranty__image:after{
-    background-image:url("../../../img/brands/cimbali/warranty-bg.png");
+    background-image:url("../../../img/brands/siemens/warranty-bg.png");
 }
