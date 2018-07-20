@@ -81,12 +81,12 @@ $js = app\components\CController::$js;
         <div class="menu menu_shadow">
             <div class="page-wrap">
                 <nav>
-                    <a href="#" title="#" alt="#">Прайс-Лист</a>
-                    <a href="#" title="#" alt="#">Все бренды</a>
-                    <a href="#" title="#" alt="#">О компании</a>
-                    <a href="#" title="#" alt="#">Диагностика</a>
-                    <a href="#" title="#" alt="#">Гарантия</a>
-                    <a href="#" title="#" alt="#">Контакты</a>
+                    <a href="/stoimost-remonta" title="#">Прайс-Лист</a>
+                    <a href="/vse-obsluzhivaemye-brendy">Все бренды</a>
+                    <a href="#">О компании</a>
+                    <a href="#">Диагностика</a>
+                    <a href="#">Гарантия</a>
+                    <a href="#">Контакты</a>
                 </nav>
             </div>
         </div>
