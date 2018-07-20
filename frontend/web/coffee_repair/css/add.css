@@ -1,0 +1,154 @@
+.icon-services-box {
+    margin: 35px 0 45px
+}
+
+.content1 p {
+    width: 610px
+}
+
+.photo-remont-box {
+    margin: 35px 0 0
+}
+
+.content4 .item span {
+    line-height: 140%
+}
+
+.content8 .result .item {
+    border-bottom: 1px solid #efefef
+}
+
+.content4 {
+    margin-bottom: 40px
+}
+
+.on_line > span.line:after {
+    display: none
+}
+
+.on_line > span.line i {
+    width: 7px;
+    height: 7px;
+    background: #07dc44;
+    border-radius: 50%;
+    position: absolute;
+    right: -14px;
+    top: 9px
+}
+
+.content3 ul {
+    width: 660px;
+    margin-top: 25px;
+    margin-left: 25px;
+    color: #070503
+}
+
+.content3 ul li {
+    color: #070503;
+    line-height: 150%
+}
+
+.left-block {
+    min-height: 0px
+}
+
+.hide_desktop {
+    display: none
+}
+
+.content5 .right {
+    height: 344px
+}
+
+.content5 .flowplayer {
+    display: block
+}
+
+.footer {
+    padding-top: 0
+}
+
+.address-offices__addresses p span {
+    text-decoration: none;
+    color: #fff;
+    display: inline
+}
+
+.breadcrumbs a {
+    color: #c57004
+}
+
+.content2 + .preliminary-order, .content2 + .price-list {
+    margin-top: 45px
+}
+
+.parent-title {
+    padding-top: 45px
+}
+
+.text li {
+    font: 300 16px/20px "Roboto", sans-serif;
+    color: #636363
+}
+
+.content8 .item h3 {
+    color: #333
+}
+
+.content8 .result .item:last-child {
+    border-top: none
+}
+
+.price-list ul {
+    height: auto
+}
+
+
+.box-links-img-full-strings h2 {
+    font: 38px/38px "NeuronExtraBold";
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.content_type_polomka .item {
+    max-width: 450px
+}
+
+.box-links-img-full-strings li a {
+    border-top: none;
+    margin: 0;
+    padding: 0
+}
+
+.box-links-img-full-strings li a img {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+@media screen and (max-width: 767px) {
+
+    .price-list .price-list__button {
+        display: inline-block
+    }
+
+    .hide_desktop {
+        display: block
+    }
+
+    .hide_mobile {
+        display: none
+    }
+
+    .content1 p, .content3 p, .content3 ul {
+        width: 100%
+    }
+
+    .content3 ul {
+        text-align: left
+    }
+
+    .content5 .right {
+        height: auto
+    }
+}

@@ -3431,16 +3431,16 @@ return [
             'order-title' => 'МСК Войковская',
             'theme' => 'sservice',
         ],
-        'profi' => [
+        'coffee-repair' => [
             'phone-1' => '8 (495) 431-57-77',
             'phone-2' => '8 (495) 431-57-77',
             'mono' => false,
-            'id' => 0,
-            'sitePrefix' => 'tnv',
+            'id' => 222,
+            'sitePrefix' => 'coffee_repair',
             'region-sel' => true,
             'category_id' => 7,
-            'theme' => 'tnv',
-            'order-title' => 'tnv',
+            'theme' => 'coffee_repair',
+            'order-title' => 'coffee_repair',
             'sitemap' => ['disableServicePage' => true]
         ],
         
