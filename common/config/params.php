@@ -734,7 +734,7 @@ return [
             'category_id' => 5,
             'order-title' => 'МСК ЗАРЕЧНАЯ',
         ],
-        'ifixme' => [
+        'iremonts' => [
             'phone-1' => '8 (495) 132-12-22',
             'phone-2' => '8 (495) 132-12-22',
             'stickyMenu' => false,
