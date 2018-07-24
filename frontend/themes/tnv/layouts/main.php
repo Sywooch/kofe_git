@@ -24,8 +24,9 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon" />
-
-            <link type="text/css" href="/all-css?files=main.css,stile.css,font.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=0,1,2&cache=0" rel="stylesheet" media="all" />
+        <script src="/<?= $siteConfig['theme']; ?>/css/owl.carousel.min.js"></script>
+        <script src="/<?= $siteConfig['theme']; ?>/css/owl.theme.default.min.js"></script>
+        <link type="text/css" href="/all-css?files=main.css,stile.css,font.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=0,1,2&cache=0" rel="stylesheet" media="all" />
     </head>
     <body>
         <?php
@@ -236,28 +237,9 @@ $js = app\components\CController::$js;
         <?= tnv\widgets\forms\PopupForm::widget(); ?>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />        
         <script src="/jsAction?files=jquery-1.11.3.min.js,yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js,slick.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
-        <?= !empty($js['content']) ? $js['content'] : ''; ?>
-        <?php
-        $roistat_n = 1;
-        $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
-        if (isset($siteConfig['spb'])) {
-            $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
-            $roistat_n = 1;
-        }
-        ?>
-        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
-            (function (w, d, s, h, id) {
-                w.roistatProjectId = id;
-                w.roistatHost = h;
-                var p = d.location.protocol == "https:" ? "https://" : "http://";
-                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
-                var js = d.createElement(s);
-                js.charset = "UTF-8";
-                js.async = 1;
-                js.src = p + h + u;
-                var js2 = d.getElementsByTagName(s)[0];
-                js2.parentNode.insertBefore(js, js2);
-            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
+
+        <script src="/<?= $siteConfig['theme']; ?>/js/owl.carousel.min.js"></script>
+        <script src="/<?= $siteConfig['theme']; ?>/js/main.js"></script>
     </body>
 </html>
 <?php
@@ -266,14 +248,6 @@ if (Yii::$app->session->getFlash('success')) {
 }
 ?>
 <script>
-    $("form").each(function () {
-        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
-    });
-    $(".<?= $siteConfig['sitePrefix']; ?>slick-slider").slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
     $("#spasibo .<?= $siteConfig['sitePrefix']; ?>modal--close").click(function () {
         $("#spasibo").removeClass("in");
         $("#spasibo").hide();

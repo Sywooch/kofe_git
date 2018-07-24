@@ -15,25 +15,16 @@ $siteConfig = app\components\CController::getSiteConfig();
         </div>
     </div>
     <div class="wide-slider--content">
-        <div class="wide-slider--control clearfix">
-            <h3 class="wide-slider--stitle float--left">Бренды</h3>
-            <div class="wide-slider--buttons float--right">
-                <a href="#" data-toggle="left" class="wide-slider--button prev"><i class="icon-left"></i></a>
-                <a href="#" data-toggle="right" class="wide-slider--button next"><i class="icon-right"></i></a>
-            </div>
-        </div>
-        <div class="wide-slider--container">
-            <div class="wide-slider--scroller slick-slider">
-                <?php foreach ($rows as $key => $row): ?>
-                    <?php if ($key == 0 || ($key % 2) == 0): ?><div class="channel-link--grid"><?php endif; ?>
-                        <a href="/<?= $row['url']; ?>" class="channel-link">
-                            <span class="channel-link--image">
-                                <img src="/uploads/images/<?= $row['image']; ?>" data-src="/uploads/images/<?= $row['image']; ?>" class="lazyload" />
-                            </span>
-                        </a>
-                        <?php if (($key % 2) == 1): ?></div><?php endif; ?>
-                <?php endforeach; ?>
-            </div>
+        <div class="wide-slider--scroller slick-slider">
+            <?php foreach ($rows as $key => $row): ?>
+                <?php if ($key == 0 || ($key % 2) == 0): ?><div class="channel-link--grid"><?php endif; ?>
+                    <a href="/<?= $row['url']; ?>" class="channel-link">
+                        <span class="channel-link--image">
+                            <img src="/uploads/images/<?= $row['image']; ?>" data-src="/uploads/images/<?= $row['image']; ?>" class="lazyload" />
+                        </span>
+                    </a>
+                    <?php if (($key % 2) == 1): ?></div><?php endif; ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

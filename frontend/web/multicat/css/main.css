@@ -1229,6 +1229,9 @@ nav .container > ul > li > ul li a span {
 		background-size: 0%;
 	}
 }
+#number-5 a {
+	text-decoration: none;
+}
 #number-5 .container {
 	min-height: 550px;
 	position: relative;
