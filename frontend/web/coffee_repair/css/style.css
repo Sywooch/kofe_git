@@ -1485,6 +1485,12 @@ a, span, b {
     vertical-align: middle;
     position: relative
 }
+.content_type_polomka .item a {
+    color: #fff;
+}
+.content_type_polomka .item a:hover {
+    color: #dfa81b;
+}
 
 .content_type_polomka .item p:first-of-type span {
     color: #fff;
@@ -1635,6 +1641,12 @@ a, span, b {
 .price-list ul li div {
     display: table;
     width: 100%
+}
+.price-list ul li div a {
+    color: #fff;
+}
+.price-list ul li div a:hover {
+    color: #ebb21c;
 }
 
 .price-list ul li div > p, .price-list ul li div > span {
@@ -2187,6 +2199,7 @@ body > div, body > header, body > footer {
     min-width: 960px
 }
 
+input[type=tel],
 input[type=text] {
     border: 1px solid #ececec;
     width: 100%;
@@ -2198,48 +2211,56 @@ input[type=text] {
     font-size: 14px
 }
 
-input[type=text]::-webkit-input-placeholder {
+input[type=tel]::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder{
     opacity: 1;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]::-moz-placeholder,
 input[type=text]::-moz-placeholder {
     opacity: 1;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:-moz-placeholder,
 input[type=text]:-moz-placeholder {
     opacity: 1;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:-ms-input-placeholder,
 input[type=text]:-ms-input-placeholder {
     opacity: 1;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:focus::-webkit-input-placeholder,
 input[type=text]:focus::-webkit-input-placeholder {
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:focus::-moz-placeholder,
 input[type=text]:focus::-moz-placeholder {
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:focus:-moz-placeholder,
 input[type=text]:focus:-moz-placeholder {
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease
 }
 
+input[type=tel]:focus:-ms-input-placeholder,
 input[type=text]:focus:-ms-input-placeholder {
     opacity: 0;
     -webkit-transition: opacity .3s ease;

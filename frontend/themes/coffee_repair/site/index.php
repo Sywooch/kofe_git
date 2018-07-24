@@ -6,7 +6,7 @@ $this->title = !empty($page['meta_title']) ? $page['meta_title'] : \app\componen
 <div class="banner-remont-kofemashin js-modal-block">
     <div class="page-wrap">
         <div class="banner-remont-kofemashin-wrap">
-            <h1 style="font: 50px/50px 'NeuronExtraBold';margin-bottom: 38px;"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
+            <h1 style="font: 45px/45px 'NeuronExtraBold';margin-bottom: 38px;"><?= !empty($page['meta_h1']) ? $page['meta_h1'] : \app\components\CController::$category['full_title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
             <ul>
                 <li><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/icons/free-time.png" alt=""/>Выезжаем в течении 30 минут</li>
                 <li><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/icons/guarantee.png" alt=""/>Гарантия до 1 года на все услуги</li>
