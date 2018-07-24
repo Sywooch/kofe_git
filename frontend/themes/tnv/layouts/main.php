@@ -13,7 +13,6 @@ $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->act
 $siteConfig = app\components\CController::getSiteConfig();
 $js = app\components\CController::$js;
 ?>
-<?php \app\widgets\other\Replace::begin(['params' => $siteConfig]); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>    
     <head>
@@ -23,10 +22,10 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon" />
-        <script src="/<?= $siteConfig['theme']; ?>/css/owl.carousel.min.js"></script>
-        <script src="/<?= $siteConfig['theme']; ?>/css/owl.theme.default.min.js"></script>
-        <link type="text/css" href="/all-css?files=main.css,stile.css,font.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=0,1,2&cache=0" rel="stylesheet" media="all" />
+        <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font.css" />
     </head>
     <body>
         <?php
@@ -236,19 +235,50 @@ $js = app\components\CController::$js;
         </footer>
         <?= tnv\widgets\forms\PopupForm::widget(); ?>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />        
-        <script src="/jsAction?files=jquery-1.11.3.min.js,yii.activeForm.js,yii.js,jquery.inputmask.bundle.js,yii.validation.js,slick.js&path=/<?= $siteConfig['theme']; ?>/js&replaceFiles=-1&cache=1"></script>
-
-        <script src="/<?= $siteConfig['theme']; ?>/js/owl.carousel.min.js"></script>
-        <script src="/<?= $siteConfig['theme']; ?>/js/main.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/pr.js"></script>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        $roistat_n = 1;
+        $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
+        if (isset($siteConfig['spb'])) {
+            $roistatid = 'fa9a445cebb18eed323b9ac9c7ef96be';
+            $roistat_n = 1;
+        }
+        ?>
+        <script>window.roistatCalltrackingScripts = [<?= $roistat_n; ?>];
+            (function (w, d, s, h, id) {
+                w.roistatProjectId = id;
+                w.roistatHost = h;
+                var p = d.location.protocol == "https:" ? "https://" : "http://";
+                var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+                var js = d.createElement(s);
+                js.charset = "UTF-8";
+                js.async = 1;
+                js.src = p + h + u;
+                var js2 = d.getElementsByTagName(s)[0];
+                js2.parentNode.insertBefore(js, js2);
+            })(window, document, 'script', 'cloud.roistat.com', '<?= $roistatid; ?>');</script>
     </body>
 </html>
 <?php
 if (Yii::$app->session->getFlash('success')) {
-    echo '<script>$("#spasibo").addClass("' . $siteConfig['sitePrefix'] . 'in");$("#spasibo").show();</script>';
+    echo '<script>$("#spasibo").addClass("in");$("#spasibo").show();</script>';
 }
 ?>
 <script>
-    $("#spasibo .<?= $siteConfig['sitePrefix']; ?>modal--close").click(function () {
+    $("form").each(function () {
+        $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+    });
+
+    $("#spasibo .modal--close").click(function(){
         $("#spasibo").removeClass("in");
         $("#spasibo").hide();
     });
@@ -261,4 +291,3 @@ if (Yii::$app->session->getFlash('success')) {
 </script>
 <?php $this->endBody() ?>    
 <?php $this->endPage() ?>
-<?php \app\widgets\other\Replace::end(); ?>

@@ -11,13 +11,19 @@
         </div>
     </div>
     <div class="wide-slider--content">
-        <div id="slider-model-my" class="owl-carousel owl-theme">
-            <?php foreach ($rows as $row): ?>
-                <a href="/<?= $row['url']; ?>" class="film-box">
-                    <div class="film-box--img-cont"><img src="/uploads/images/<?= $row['image']; ?>" alt=""></div>
-                    <div class="tag green"><?= $row['brand_title'] . ' ' . $row['title']; ?></div>
-                </a>
-            <?php endforeach; ?>
+        <div class="wide-slider--control clearfix">
+            <h3 class="wide-slider--stitle float--left"><span class="">Ремонт кофемашин</span></h3>
+            <div class="wide-slider--buttons float--right"><a href="#" data-toggle="left" class="wide-slider--button prev"><i class="icon-left"></i></a><a href="#" data-toggle="right" class="wide-slider--button next"><i class="icon-right"></i></a></div>
+        </div>
+        <div class="wide-slider--container">
+            <div class="wide-slider--scroller">
+                <?php foreach ($rows as $row): ?>
+                    <a href="/<?= $row['url']; ?>" class="film-box">
+                        <div class="film-box--img-cont"><img src="/uploads/images/<?= $row['image']; ?>" alt=""></div>
+                        <div class="tag green"><?= $row['brand_title'] . ' ' . $row['title']; ?></div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 </div>
