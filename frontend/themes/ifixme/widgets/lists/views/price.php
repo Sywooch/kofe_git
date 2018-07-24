@@ -1,6 +1,6 @@
 <section id="number-12">
     <div class="container">
-        <div class="title">Сколько стоит ремонт <?= $model['title']; ?>?</div>
+        <h2 class="title">Цены на ремонт <?= $model['title']; ?> в Москве</h2>
         <div class="head">
             <p>Популярные услуги</p>
             <p>Стоимость</p>

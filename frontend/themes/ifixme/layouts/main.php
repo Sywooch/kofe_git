@@ -139,33 +139,35 @@ $js = app\components\CController::$js;
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="body">
-                    <div class="left">
-                        <span>Сэкономьте <br>свое время</span>
-                        <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
-                        <a class="btn out-icon open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
-                        <img src="<?= $assets ?>/ifixme/images/master.png">
-                    </div>
-                    <div class="right">
-                        <div class="title">Наш сервисный центр</div>
-                        <div class="content">
-                            <ul class="footer-map-menu">
-                                <li class="active"><a onclick="return false;" href="#" data-tab="local1">На Багратионовской </a></li>
-                            </ul>
-                            <div id="local1" class="footer-map active">
-                                <div class="info">
-                                    <div class="img"><img src="<?= $assets ?>/ifixme/images/contact.jpg" alt=""></div>
-                                    <div class="text">
-                                        <p>Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</p>
-                                        <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
-                                        <span>Ежедневно с 08:00 до 22:00</span>
+                <noindex>
+                    <div class="body">
+                        <div class="left">
+                            <span>Сэкономьте <br>свое время</span>
+                            <p>Вызовите мастера на дом<br> или офис абсолютно<br> бесплатно.</p>
+                            <a class="btn out-icon open-popup" data-tab="popup1" onclick="return false;" href="#">Вызвать мастера</a>
+                            <img src="<?= $assets ?>/ifixme/images/master.png">
+                        </div>
+                        <div class="right">
+                            <div class="title">Наш сервисный центр</div>
+                            <div class="content">
+                                <ul class="footer-map-menu">
+                                    <li class="active"><a onclick="return false;" href="#" data-tab="local1">На Багратионовской </a></li>
+                                </ul>
+                                <div id="local1" class="footer-map active">
+                                    <div class="info">
+                                        <div class="img"><img src="<?= $assets ?>/ifixme/images/contact.jpg" alt=""></div>
+                                        <div class="text">
+                                            <p>Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</p>
+                                            <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
+                                            <span>Ежедневно с 08:00 до 22:00</span>
+                                        </div>
                                     </div>
+                                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A568d550a67da292f568b62bc28287c8c6a51a4ceb047d5bb37c0c72efbaaf9c5&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
                                 </div>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A568d550a67da292f568b62bc28287c8c6a51a4ceb047d5bb37c0c72efbaaf9c5&amp;width=780&amp;height=255&amp;lang=ru_RU&amp;scroll=true"></script>
                             </div>
                         </div>
                     </div>
-                </div>
+                </noindex>
                 <div class="clear"></div>
                 <div class="footer">
                     <div class="left">
