@@ -86,12 +86,12 @@ $js = app\components\CController::$js;
                     <a href="#">О компании</a>
                     <a href="#">Диагностика</a>
                     <a href="#">Гарантия</a>
-                    <a href="#">Контакты</a>
+                    <a href="/kontakty">Контакты</a>
                 </nav>
             </div>
         </div>
         <?= $content; ?>
-        <?= coffee_repair\widgets\forms\Footer::widget(); ?>
+        <?= isset($_GET['data']['action']) && $_GET['data']['action'] != 'contact/index' ? coffee_repair\widgets\forms\Footer::widget() : ''; ?>
         <footer class="footer">
             <div class="top_footer">
                 <div class="page-wrap">
@@ -134,18 +134,41 @@ $js = app\components\CController::$js;
         </footer>
         <?= coffee_repair\widgets\forms\Popup::widget(); ?>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>assets/components/minifyx/cache/scripts_d6ee746bd1.min.js"></script>
-<!--        <script>
-            if ($("#player_1").length > 0) {
-                flowplayer('#player_1', {
-                    aspectRatio: "16:9",
-                    splash: 'img/op-splash.png',
-                    clip: {
-                        sources: [
-                            {type: 'video/mp4', src: '/videos/remont_kofemashin.mp4'}
-                        ]
-                    }
-                });
-            }
-        </script>-->
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+        <?= !empty($js['content']) ? $js['content'] : ''; ?>
+        <?php
+        if (Yii::$app->session->getFlash('success')) {
+            echo '<script>$("#popup-send").toggle();</script>';
+        }
+        ?>
+        <script>
+            $("form").each(function () {
+                $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+            });
+            $('body').on("keyup", "input[type=tel]", function () {
+                var v = $(this).val().substring(4, 6);
+                if ($(this).val().length >= 18 && $(this).val().indexOf("_") == -1) {
+                    $.post("/order-send", {phone: $(this).val(), title: $("h1").text()});
+                }
+            });
+        </script>
+    <!--        <script>
+                if ($("#player_1").length > 0) {
+                    flowplayer('#player_1', {
+                        aspectRatio: "16:9",
+                        splash: 'img/op-splash.png',
+                        clip: {
+                            sources: [
+                                {type: 'video/mp4', src: '/videos/remont_kofemashin.mp4'}
+                            ]
+                        }
+                    });
+                }
+            </script>-->
     </body>
+    <?php $this->endBody() ?>
 </html>
+<?php $this->endPage() ?>
