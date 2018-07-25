@@ -26,7 +26,7 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="icon" type="image/x-icon" href="<?= $assets ?>/favicon.ico">
-        <link type="text/css" href="/all-css?files=main.css,animate.css,owl.carousel.min.css,owl.theme.default.min.css,font-awesome.css,horizontal.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=-1&cache=1" rel="stylesheet" media="all" />
+        <link type="text/css" href="/all-css?files=main.css,animate.css,owl.carousel.min.css,owl.theme.default.min.css,font-awesome.css,horizontal.css&path=<?= $siteConfig['theme'] . '/css'; ?>&replaceFiles=-1&cache=1&v=11" rel="stylesheet" media="all" />
         <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
