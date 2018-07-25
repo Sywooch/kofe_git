@@ -21,7 +21,6 @@ $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $titl
 <section id="number-13">
     <div class="container">
         <?= ifixme\widgets\lists\LastReviews::widget(); ?>
-        <?= ifixme\widgets\lists\LastNews::widget(); ?>
         <span class="clear"></span>
     </div>
 </section>

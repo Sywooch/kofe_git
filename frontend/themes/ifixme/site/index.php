@@ -21,7 +21,6 @@ $this->title = $page['meta_title'];
 <section id="number-13">
     <div class="container">
         <?= ifixme\widgets\lists\LastReviews::widget(); ?>
-        <?= ifixme\widgets\lists\LastNews::widget(); ?>
         <span class="clear"></span>
     </div>
 </section>
@@ -35,3 +34,4 @@ $this->title = $page['meta_title'];
         </ul>
     </div>
 </section>
+<a id="gotop" class="gotop" href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>

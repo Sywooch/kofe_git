@@ -59,9 +59,7 @@ $js = app\components\CController::$js;
                                 <div class="container">
                                     <li><a href="/o-nas">О нас</a></li>
                                     <li><a href="/uslugi">Услуги</a></li>
-                                    <li><a href="/novosti">Новости</a></li>
                                     <li><a href="/akcii">Акции</a></li>
-                                    <li><a href="/vakansii">Вакансии</a></li>
                                     <li><a href="/otzyvy">Отзывы</a></li>
                                     <li><a href="/kontakty">Контакты</a></li>
                                 </div>
@@ -113,32 +111,6 @@ $js = app\components\CController::$js;
         <?= $content; ?>
         <footer>
             <div class="container">
-                <div class="bottom-menu">
-                    <div class="logo">
-                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
-                    </div>
-                    <div class="nav">
-                        <div class="menu-toggle">
-                            <div class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="cross">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <ul>
-                            <li><a href="/o-nas">О нас</a></li>
-                            <li><a href="/uslugi">Услуги</a></li>
-                            <li><a href="/novosti">Новости</a></li>
-                            <li><a href="/kontakty">Контакты</a></li>
-                        </ul>
-                        <a href="#" class="btn green open-popup" data-tab="popup2" onclick="return false;">Отправить заявку</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
                 <noindex>
                     <div class="body">
                         <div class="left">
@@ -169,19 +141,33 @@ $js = app\components\CController::$js;
                     </div>
                 </noindex>
                 <div class="clear"></div>
-                <div class="footer">
-                    <div class="left">
-                        <span>Мы в социальных сетях</span>
-                        <noindex>
-                            <ul>
-                                <li><a class="draw meet" href="https://vk.com/ifixme" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.instagram.com/ifixme.ru/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>                            
-                            </ul>
-                        </noindex>
+
+                <div class="bottom-menu">
+                    <div class="logo">
+                        <a href="/"><img alt="Сервисный центр Apple" src="<?= $assets ?>/ifixme/images/logo-b.svg"></a>
                     </div>
-                    <div class="right">
-                        <span><a href="https://ifixme.ru/#top">Ремонт Apple</a> в СЦ iFixMe © <?= date('Y'); ?></span>
+
+                    <div class="nav">
+                        <div class="menu-toggle">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="/o-nas">О нас</a></li>
+                            <li><a href="/uslugi">Услуги</a></li>
+                            <li><a href="/kontakty">Контакты</a></li>
+                            <li><a href="/kontakty">Пользовательское соглашение</a></li>
+                        </ul>
+                        <span class="footer-text">Ремонт техники Apple в Москве</span>
                     </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </footer>
