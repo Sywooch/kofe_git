@@ -123,8 +123,11 @@ class ListController extends CController {
 
             $arrayUrl = $url;
             array_pop($url);
-            if ($siteConfig['mono'] && $siteConfig['theme'] != 'hepler') {
-                $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
+            if ($siteConfig['mono']) {
+                if (isset($siteConfig['theme']) && $siteConfig['theme'] != 'hepler') {
+                    
+                } else
+                    $url = self::$monoBrand['url'] . '/' . str_replace(Yii::$app->params['replace-url'], '', implode('/', $url));
             }
             $page = (new \yii\db\Query())
                     ->select(['title', 'url', 'id', 'type', 'parent', 'image', 'full_title'])
