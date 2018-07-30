@@ -1,0 +1,212 @@
+/* MAP-CONFIGURATOR */
+
+.wrapper__order-map {
+    position: relative;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.order-map {
+    min-height: 460px;
+    padding-top: 6.5vh;
+    padding-bottom: 6.5vh;
+    background: url(../images/background/map.png) 98% center no-repeat;
+}
+
+.order-map__title {
+    margin-bottom: 20px;
+    font: 36px/45px "ProximaNovaBold", sans-serif;
+    color: #585858;
+}
+
+.order-map__phone {
+    margin-bottom: 40px;
+}
+
+.order-map__phone a {
+    font: 48px "ProximaNovaSemibold", sans-serif;
+    color: #c37b7b;
+}
+.order-map__phone a:hover {
+    color: #a24b4b;
+    transition: all 0.2s linear;
+}
+
+.order-map__column {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.order-map__column:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.map-column__title {
+    margin-bottom: 2px;
+    font: 18px "ProximaNovaBold", sans-serif;
+    color: #585858;
+}
+
+.map-column__description {
+    font-size: 15px;
+}
+
+.map-column__description span {
+    margin-right: 3px;
+    font: 15px "ProximaNovaBold", sans-serif;
+}
+
+.order-map .request {
+    padding: 0;
+    margin-top: 30px;
+}
+.order-map .request__form {
+    padding-left: 5px;
+}
+.order-map .request-form {
+    margin-top: 2px;
+}
+
+.order-map .request ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.order-map .request-form input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.order-map label {
+    display: none;
+}
+
+.order-map_type_svao {
+    background: url(../images/maps/svao.png) right -75px center no-repeat;
+}
+
+.order-map_type_cao {
+    background: url(../images/maps/cao.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_sao {
+    background: url(../images/maps/sao.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_vao {
+    background: url(../images/maps/vao.png) right -25px center no-repeat;
+}
+
+.order-map_type_yuvao {
+    background: url(../images/maps/yuvao.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_yuao {
+    background: url(../images/maps/yuao.png) right -75px center no-repeat;
+}
+
+.order-map_type_yuzao {
+    background: url(../images/maps/yuzao.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_zao {
+    background: url(../images/maps/zao.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_szao {
+    background: url(../images/maps/szao.png) right -50px center no-repeat;
+}
+
+
+.order-map_type_mytishchi {
+    background: url(../images/maps/mytishchi.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_dolgoprudnyj {
+    background: url(../images/maps/dolgoprudnyj.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_balashiha {
+    background: url(../images/maps/balashiha.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_krasnogorsk {
+    background: url(../images/maps/krasnogorsk.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_moskovsij {
+    background: url(../images/maps/moskovsij.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_korolev {
+    background: url(../images/maps/korolev.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_ivanteevka {
+    background: url(../images/maps/ivanteevka.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_reutov {
+    background: url(../images/maps/reutov.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_zheleznodorozhnyj {
+    background: url(../images/maps/zheleznodorozhnyj.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_lyubercy {
+    background: url(../images/maps/lyubercy.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_dzerzhinskij {
+    background: url(../images/maps/dzerzhinskij.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_lytkarino {
+    background: url(../images/maps/lytkarino.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_shcherbinka {
+    background: url(../images/maps/shcherbinka.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_odincovo {
+    background: url(../images/maps/odincovo.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_himki {
+    background: url(../images/maps/himki.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_lobnya {
+    background: url(../images/maps/lobnya.png) right center no-repeat;
+    background-size: 350px;
+}
+
+.order-map_type_vidnoe {
+    background: url(../images/maps/vidnoe.png) right center no-repeat;
+    background-size: 350px;
+}
+
+/* MAP-CONFIGURATOR end */

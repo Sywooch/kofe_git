@@ -1,0 +1,192 @@
+/* BRANDS ADVANTAGES */
+
+.brand-advantages {
+    padding-top: 7vh;
+    min-height: 200px;
+}
+.brand-advantages__item {
+    margin-top: 7px;
+
+}
+.brand-advantages__item div {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.brand-item__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+
+}
+.brand-item__text {
+    max-width: 86%;
+    margin-top: -3px;
+    font-size: 15px;
+    color: #000000;
+    line-height: normal;
+}
+
+
+/* BRANDS ADVANTAGES end */
+
+/* GUARANTEE ADVANTAGES */
+
+.guarantee-advantages {
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    background-color: #fdf7ef;
+}
+.guarantee-advantages__item {
+    margin-top: 20px;
+}
+
+.guarantee-advantages__icon,
+.guarantee-advantages__description {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.guarantee-advantages__icon {
+    margin-right: 20px;
+}
+
+.guarantee-advantages__description {
+    max-width: 80%;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #000000;
+}
+
+
+/* GUARANTEE ADVANTAGES end */
+
+
+
+
+/* ADVANTAGES */
+
+.advantages {
+    padding: 8.5vh 0;
+    background: #ffffff;
+}
+.advantages-text__title {
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+.advantages__item:nth-of-type(2) .advantages-text__title {
+    max-width: 95%;
+}
+.advantages-text__description p {
+    font: 18px "ProximaNovaRegular", sans-serif;
+    color: #000000;
+}
+.advantages__item:first-child .advantages-item__text {
+    margin-bottom: 10vh;
+}
+.advantages__item:last-child .advantages-item__image {
+    margin-bottom: 2vh;
+}
+
+/* ADVANTAGES end */
+
+/* ADVANTAGES */
+
+.guarantee {
+    padding: 9vh 0;
+}
+.guarantee__title {
+    margin-bottom: 7vh;
+    text-align: center;
+}
+.guarantee-item__title {
+    margin-bottom: 40px;
+    font: 25px "ProximaNovaBold", sans-serif;
+    color: #2c2c2c;
+    text-align: center;
+}
+.guarantee__item-cell {
+    min-height: 115px;
+}
+.guarantee__item-cell:nth-child(1) {
+    margin-bottom: 20px;
+
+}
+.guarantee__item-cell div {
+    display: inline-block;
+    vertical-align: top;
+}
+.guarantee-item__icon {
+    margin-right: 25px;
+
+}
+.guarantee-item__text {
+    max-width: 83%;
+    margin-top: -3px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+/* ADVANTAGES end*/
+
+/* ADVANTAGES-MASTERS */
+
+.advantages-masters {
+    position: relative;
+    background-color: #fcf8f1;
+}
+.advantages-masters__text {
+    min-height: 458px;
+}
+.advantages-masters__title {
+    margin-top: 5vh;
+    margin-bottom: 30px;
+}
+
+.advantages-masters__row:first-child {
+    margin-bottom: 40px;
+}
+.advantages-masters__row div {
+    display: inline-block;
+    vertical-align: top;
+    color: #000000;
+}
+.advantages-masters__icon {
+    margin-right: 25px;
+
+}
+.advantages-masters__description {
+    max-width: 85%;
+    margin-top: -3px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.advantages-masters__image {
+    position: relative;
+    min-height: 458px;
+}
+.advantages-masters__image img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+}
+
+.masters-image__description {
+    float: right;
+    padding-right: 0;
+    margin-top: 5vh;
+    font-size: 18px;
+    color: #000000;
+}
+.masters-image__description div:first-child {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ADVANTAGES-MASTERS end */

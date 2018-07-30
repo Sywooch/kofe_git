@@ -1,0 +1,560 @@
+/* PROMO */
+
+.promo-block--order {
+    padding-bottom: 20px;
+}
+
+.promo {
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.wrapper__header-block--fault .promo-block {
+    padding-bottom: 0;
+}
+
+.promo--price {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background: none;
+    color: #281c12;
+}
+
+.promo--testimonials {
+    padding-bottom: 0;
+    padding-top: 35px;
+}
+
+.promo--testimonials .promo-logo__city,
+.promo--testimonials .promo-phone__time {
+    color: #004466;
+
+}
+
+.promo-logo__city {
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.promo__advantage {
+    text-align: center;
+}
+
+.promo-advantage__description {
+    margin: 0 auto 16px;
+    font: 15px "ProximaNovaLight", sans-serif;
+}
+
+.promo-advantage__time {
+    width: 160px;
+    height: 42px;
+    margin: 0 auto;
+    border: 1px dashed #fff;
+    border-radius: 10px;
+}
+
+.promo-advantage__time img {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.advantage-time__minutes {
+    vertical-align: middle;
+    margin-left: 10px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-size: 30px;
+}
+
+.promo__phone {
+    text-align: right;
+}
+
+.promo-phone__time {
+    font-size: 15px;
+    font-family: ProximaNovaLight, sans-serif;
+}
+
+.promo-phone__time span {
+    font-family: ProximaNovaBold, sans-serif;
+
+}
+
+.promo-phone__number {
+    display: block;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-size: 29px;
+    color: #ffffff;
+}
+
+.promo-phone__number:hover {
+    color: #f1c4c4;
+    transition: all 0.2s linear;
+}
+
+.promo-phone__number--blue {
+    color: #7c291e;
+}
+
+.promo-image--wash {
+    margin-top: 10vh;
+}
+
+.promo-image--wash img {
+    margin-left: -20px;
+}
+
+.promo__text {
+    margin-top: 10vh;
+}
+
+.promo__text h1 {
+    margin: 0 0 35px 20px;
+    line-height: 50px;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 48px;
+}
+
+.promo-text__title {
+    margin: 0 0 35px 20px;
+    line-height: 50px;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 48px;
+}
+
+.promo-text__description {
+    line-height: 30px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-size: 24px;
+}
+
+.promo__form-block {
+    margin: 20px 0 50px 0;
+    color: #000000;
+}
+
+.promo-form-img {
+    position: absolute;
+    display: block;
+    top: -50%;
+    left: 0;
+}
+
+.promo-form {
+    position: relative;
+    padding: 20px 0;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15px;
+    background-color: #81332c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.promo-form::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    bottom: auto;
+    right: 0;
+    margin: 0 auto;
+    width: 97%;
+    height: 30px;
+    border-radius: 60%/50%;
+    background: #81332c;
+}
+
+.promo-form::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+    width: 97%;
+    height: 30px;
+    border-radius: 60%/50%;
+    background: #81332c;
+}
+
+.promo-form__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 24px;
+}
+
+.promo-form input[type="text"] {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    width: 230px;
+    padding: 16px 0 16px 17px;
+    margin: 0 17px 0 0;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    background: #ffffff;
+    color: #000000;
+}
+
+.promo-form label {
+    display: none;
+}
+
+.promo-form ul {
+    display: inline-block;
+}
+
+.promo-form input[type="text"]::-webkit-input-placeholder,
+.promo-form input[type="text"]:-ms-input-placeholder,
+.promo-form input[type="text"]::-moz-placeholder {
+    color: #d8d8d8;
+    font-size: 15px;
+}
+
+.promo-form input[type="submit"] {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    width: 270px;
+    padding: 11px 0 10px 0;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    background-color: #ff9701;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: ProximaNovaSemibold, sans-serif;
+}
+
+.promo-form input[type="submit"]:hover {
+    color: #ffffff;
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+
+.promo-form input[type="submit"]:active,
+.promo-form input[type="submit"]:focus {
+    color: #0070aa;
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+
+.promo-form__description {
+    position: relative;
+    z-index: 2;
+    margin-top: 17px;
+    font-size: 15px;
+    color: #d8d8d8;
+}
+
+.promo-form__price {
+    position: relative;
+    z-index: 1;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 24px;
+    color: #00307f;
+}
+
+.fa.fa-rub {
+    font-size: 0.85em;
+}
+
+.wrapper__header-block--brand {
+    background-position: center 80%;
+}
+
+.promo--brand-page {
+    padding-top: 4vh;
+    background: none;
+}
+
+.promo-service {
+    margin-top: 6vh;
+    overflow: hidden;
+}
+
+.promo-service h1 {
+    color: #b78b4c;
+    font-weight: 700;
+}
+
+.promo--testimonials .promo-service {
+    margin-top: 3vh;
+}
+
+.breadcrumbs {
+    margin-bottom: 15px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadcrumbs li a {
+    font: 15px "ProximaNovaBold", sans-serif;
+    color: #ff9701;
+}
+
+.breadcrumbs li:hover a {
+    color: #dc860a;
+    transition: all 0.2s linear;
+}
+
+.breadcrumbs li:not(:last-child) a::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 7px;
+    margin-top: -2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    background: url(../images/icons/arrow_crumbs.png) center center no-repeat;
+}
+
+.breadcrumbs li:last-child a {
+    pointer-events: none;
+    color: #ffffff;
+}
+
+.promo-service__title {
+    margin-bottom: 25px;
+}
+
+.promo-service__title h1 {
+    line-height: 50px;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 48px;
+}
+
+.promo-service__title--price {
+    margin-bottom: 0;
+}
+
+.promo-service__price {
+    font: 24px/60px "ProximaNovaBold", sans-serif;
+}
+
+.promo-service__description {
+    font-size: 24px;
+}
+
+.promo-service__button {
+    cursor: pointer;
+}
+
+.promo-button__text {
+    display: block;
+    max-width: 270px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font: 24px "ProximaNovaSemibold", sans-serif;
+    color: #fff;
+    background: #ff9701;
+}
+
+.promo-button__text:hover {
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+
+.promo-button__text:active,
+.promo-button__text:focus {
+    background: #50aad9;
+    transition: all 0.2s linear;
+}
+
+.promo-service__advantages {
+    margin-top: 35px;
+}
+
+.service__advantages__row {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.service__advantages__row:last-child {
+    margin-bottom: 0;
+}
+
+.service__advantages__icon {
+    float: left;
+    margin-right: 18px;
+}
+
+.service__advantages__icon img {
+    margin-top: 3px;
+}
+
+.service__advantages__text {
+    font: 24px "ProximaNovaBold", sans-serif;
+}
+
+.promo-testimonials__button {
+    float: right;
+    margin-bottom: 22px;
+}
+
+.promo-testimonials__button a {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font: 18px "ProximaNovaSemibold", sans-serif;
+    color: #ffffff;
+    background: #008cd4;
+}
+
+.promo-testimonials__button a:hover {
+    background: #0070aa;
+    transition: all 0.2s linear;
+}
+
+.promo-testimonials__button a:active,
+.promo-testimonials__button a:focus {
+    background: #50aad9;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+
+.promo_scroll {
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    max-width: 160px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.promo-scroll__icon {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.promo_scroll:hover .promo-scroll__icon span {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: block;
+    width: 8px;
+    height: 9px;
+    border-top-left-radius: 10px;
+    background: #fff;
+    transition: all 0.2s linear;
+}
+
+.promo-scroll__description {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #ffffff;
+}
+
+.service-price {
+    padding: 4vh 0 7vh;
+    overflow: hidden;
+    color: #000000;
+}
+
+.service-price__text {
+    font-size: 15px;
+}
+
+.service-price__list {
+    min-height: 130px;
+    margin-top: 2px;
+    padding: 14px 0 14px 20px;
+    border: 3px solid #7c291e;
+}
+
+.service-price__title {
+    margin-bottom: 20px;
+    font: 15px "ProximaNovaBold", sans-serif;
+}
+
+.service-price__image {
+    position: absolute;
+    top: 26vh;
+    left: calc(42% - 328px);
+}
+
+/* PROMO end */
+
+/* PAGE PRICE */
+
+.page-price__list {
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+    background-color: #f0e6d8;
+}
+
+.page-price__item {
+    overflow: hidden;
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+
+.page-price__item:last-child {
+    margin-bottom: 0;
+}
+
+.page-price__title {
+    margin-bottom: 25px;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #000000;
+    transition: all 0.2s linear;
+}
+
+.page-price__title:hover {
+    color: #585656;
+}
+
+.service-price__list.white {
+    background: #fef6f1;
+}
+
+.page-price__description div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.price__description__image {
+    margin-right: 20px;
+}
+
+.page-price__description {
+    font-size: 18px;
+    color: #464038;
+}
+
+.price__description__text {
+    max-width: 70%;
+}
+
+/* PAGE PRICE end */
+

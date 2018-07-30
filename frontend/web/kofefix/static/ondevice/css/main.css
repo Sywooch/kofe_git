@@ -1,0 +1,1036 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: ProximaNovaRegular, sans-serif;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a[data-fancybox]:focus,
+a[data-fancybox]:visited {
+    outline: none;
+}
+
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url('../fonts/Proxima%20Nova%20Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: ProximaNovaSemibold;
+    src: url('../fonts/Proxima%20Nova%20Semibold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('../fonts/Proxima%20Nova%20Bold.otf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ProximaNovaBoldItalic;
+    src: url('../fonts/Proxima%20Nova%20Bold%20Italic.otf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url('../fonts/Proxima%20Nova%20Light.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url('../fonts/Proxima%20Nova%20Regular.otf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ProximaNovaBlack;
+    src: url('../fonts/Proxima%20Nova%20Black.otf') format('truetype');
+    font-weight: normal;
+}
+
+.price-nowrap {
+    white-space: nowrap;
+}
+
+.price-nowrap i {
+    font-style: normal;
+}
+
+/* GUARANTEE CONTENT */
+
+.guarantee-content {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.guarantee-content__title {
+    margin-bottom: 25px;
+    font: 36px/40px "ProximaNovaBold", sans-serif;
+    color: #1a1a1a;
+}
+
+.guarantee-content__description {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.content-document__text {
+    max-width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9c9c9c;
+}
+
+.guarantee-content__footer {
+    overflow: hidden;
+}
+
+.guarantee-footer__title {
+    margin: 4vh 0 5vh;
+}
+
+.guarantee-footer__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+/* GUARANTEE CONTENT end */
+
+/* ABOUT-MASTERS */
+
+.about-masters {
+    padding: 7vh 0;
+}
+
+.about-masters__title {
+    font: 36px/45px "ProximaNovaBold", sans-serif;
+    color: #7c291e;
+}
+
+.about-masters__description {
+    font: 24px/30px "ProximaNovaBold", sans-serif;
+    color: #010101;
+}
+
+.masters-profile__title {
+    float: none;
+    margin-bottom: 40px;
+    font: 18px/20px "ProximaNovaBold", sans-serif;
+    color: #004466;
+}
+
+.masters_profile__item {
+    text-align: center;
+    color: #000000;
+}
+
+.masters_profile__photo {
+    margin-bottom: 20px;
+}
+
+.masters-profile__name {
+    font: 18px "ProximaNovaBold", sans-serif;
+}
+
+.masters-profile__experience {
+    font-size: 18px;
+}
+
+/* ABOUT-MASTERS end */
+
+/* REQUEST */
+
+.wrapper__request {
+    background-color: #f5eee9;
+}
+
+.request {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vh 0;
+}
+
+.request__title {
+    font: 18px/20px "ProximaNovaBold", sans-serif;
+    color: #585858;
+}
+
+.request__form input[type="text"] {
+    width: 240px;
+    height: 40px;
+    padding-left: 17px;
+    margin-right: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 9px;
+    font-size: 15px;
+    background: #ffffff;
+    outline: none;
+}
+
+.request__form input[type="submit"] {
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    text-align: center;
+    background: #ff9701;
+    color: #ffffff;
+    font: 18px "ProximaNovaSemibold", sans-serif;
+}
+
+.request__form input[type="submit"]:hover {
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+
+.request__form input[type="submit"]:active,
+.request__form input[type="submit"]:focus {
+    background: #11414f;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+
+.request__description {
+    font-size: 15px;
+    color: #000000;
+}
+
+/* REQUEST end */
+
+/* SCHEME */
+
+.scheme {
+    padding: 9vh 0 5vh;
+}
+
+.scheme__title {
+    margin-bottom: 9vh;
+}
+
+.scheme__guarantee {
+    padding: 0 13px;
+}
+
+.scheme-guarantee__image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.scheme-guarantee__title {
+    margin-bottom: 25px;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #373737;
+}
+
+.scheme-guarantee__link:hover .scheme-link__text {
+    color: #7c291e;
+    transition: all 0.2s linear;
+}
+
+.scheme-guarantee__link span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scheme-link__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin-right: 13px;
+    border-radius: 100%;
+    text-align: center;
+    background: #f1f5fe;
+}
+
+.scheme-link__icon img {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.scheme-link__text {
+    max-width: 75%;
+    font: 18px/20px "ProximaNovaBold", sans-serif;
+    color: #a28168;
+}
+
+.scheme-steps__title {
+    padding: 0;
+}
+
+.scheme-steps__title div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scheme-steps__item {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.scheme-steps__text p {
+    margin-top: 5px;
+    max-width: 90%;
+}
+
+.scheme-steps__icon {
+    width: 25px;
+    height: 25px;
+    padding: 1.8px 0 0 3px;
+    margin-right: 10px;
+    text-align: center;
+    background: url(../images/icons/scheme_item.png) center no-repeat;
+    font: 18px "ProximaNovaBlack", sans-serif;
+    color: #ffffff;
+}
+
+.scheme-steps__text {
+    max-width: 80%;
+    margin-top: -3px;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #2f2f2f;
+}
+
+.scheme-steps__description {
+    margin-top: -3px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.scheme-steps__link {
+    cursor: pointer;
+    color: #b78b4c;
+    text-decoration: underline;
+}
+
+.scheme-steps__link:hover {
+    color: #b78b4c;
+    text-decoration: none;
+    transition: all 0.2s linear;
+
+}
+
+.scheme-steps__tel-link {
+    color: #000;
+    cursor: pointer;
+}
+
+.scheme-steps__tel-link:hover {
+    color: #000;
+}
+
+.finish_img {
+    padding-top: 3px;
+    margin-bottom: 10px;
+}
+
+.steps-description__contract {
+    margin-top: 20px;
+    color: #9c9c9c;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.steps-description__contract--special {
+    margin-top: 20px;
+    color: #9c9c9c;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.steps-contract__item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* SCHEME end */
+
+/* BRANDS */
+
+.brands {
+    padding: 6vh 0 6vh;
+}
+
+.page-title {
+    float: none;
+    text-align: left;
+    font: 46px/50px "ProximaNovaBold", sans-serif;
+    color: #7c291e;
+}
+
+.brands-header__title {
+    float: left;
+}
+
+.brands-header__description {
+    font-size: 18px;
+}
+
+.brands__header {
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+
+.brands__content {
+    overflow: hidden;
+}
+
+.brands-content__title {
+    float: none;
+    margin-bottom: 40px;
+    font: 18px/25px "ProximaNovaBold", sans-serif;
+    color: #0e0e0e;
+}
+
+.brands-content__list {
+    overflow: hidden;
+}
+
+.brands-list__item {
+    position: relative;
+    height: 108px;
+    text-align: center;
+    border: 1px solid #f8f8f8;
+}
+
+.brands-list__item:hover {
+    background: #f8f8f8;
+    transition: all 0.2s linear;
+}
+
+.brands-list__link {
+    display: block;
+    height: 100%;
+}
+
+.brands-list__link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.brands__all-services {
+    display: block;
+    margin-top: 30px;
+}
+
+.brands__all-services .all-services__text {
+    max-width: 80%;
+}
+
+.brands__all-services:hover .all-services__text {
+    color: #004466;
+    transition: all 0.2s linear;
+}
+
+/* BRANDS end */
+
+/* ABOUT COMPANY */
+
+.about-company {
+    padding: 9vh 0 6vh;
+    color: #000000;
+}
+
+.about-company__title {
+    margin-bottom: 45px;
+
+}
+
+.about-company__director {
+    overflow: hidden;
+    margin-bottom: 8vh;
+}
+
+.about-director__face {
+    text-align: center;
+}
+
+.about-director__photo {
+    margin-bottom: 20px;
+}
+
+.about-director__name {
+    font: 18px "ProximaNovaBold", sans-serif;
+}
+
+.about-director__position,
+.about-director__quote {
+    font-size: 18px;
+}
+
+.about-director__advantage {
+    padding-right: 10px;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #c4a08c;
+}
+
+.company-advantages-title {
+    margin-bottom: 25px;
+}
+
+.company-advantages-description {
+    font-size: 18px;
+}
+
+.company-advantages__image img {
+    width: 100%;
+}
+
+.company__all-services {
+    margin-top: 20px;
+}
+
+.company__all-services .all-services__text {
+    max-width: 70%;
+    color: #242424;
+}
+
+.company__all-services:hover .all-services__text {
+    color: #004466;
+    transition: all 0.2s linear;
+}
+
+/* ABOUT COMPANY end*/
+
+/* FAQ */
+
+.wrapper__faq-block {
+    background-color: #faece6;
+}
+
+.faq-block {
+    padding: 9vh 0 11vh;
+}
+
+.faq-block__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font: 48px/50px "ProximaNovaBold", sans-serif;
+    color: #7c291e;
+}
+
+.faq__accordion {
+    float: none;
+}
+
+.faq-accordion__item {
+    margin-bottom: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.faq-accordion__item:hover .faq-accordion__title {
+    color: #7c291e;
+    transition: all 0.2s linear;
+}
+
+.faq-accordion__title {
+    padding: 20px 10px 20px 20px;
+    border-radius: 2px;
+    background: #fff;
+    font: 24px "ProximaNovaBold", sans-serif;
+    color: #4f4f4f;
+    outline: none;
+}
+
+.faq-accordion__description {
+    display: none;
+    float: none;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #fff;
+    font-size: 18px;
+}
+
+.faq-accordion__description--active {
+    display: block;
+}
+
+.ui-accordion-header-icon {
+    float: right;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin-right: 13px;
+    border-radius: 100%;
+    text-align: center;
+    background: #f1f5fe url(../images/icons/arrow-down.png) center center no-repeat;
+    transition: all 0.2s linear;
+}
+
+.ui-accordion-header-active > .ui-accordion-header-icon {
+    transform: rotate(180deg);
+    transition: all 0.3s linear;
+}
+
+.faq-accordion__item:hover .ui-accordion-header-active {
+    color: #7c291e;
+}
+
+/* FAQ end */
+
+/* ABOUT PAGE */
+
+.promo-block--about {
+    padding-bottom: 0;
+}
+
+.promo-about {
+    position: relative;
+    background: #002743 url(../images/background/promo-about.png) center center no-repeat;
+    background-size: cover;
+}
+
+.about-title__text {
+    position: relative;
+    max-width: 650px;
+    padding: 15% 0 10% 60px;
+    font: 48px/55px "ProximaNovaBold", sans-serif;
+    color: #fff;
+}
+
+.promo-about__description {
+    min-height: 260px;
+}
+
+.about-advantages {
+    overflow: hidden;
+}
+
+.about-advantages__items {
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+
+.about-description__text {
+    margin-top: -7vh;
+    margin-left: 20px;
+    padding: 30px 40px;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #ff9701;
+    color: #ffffff;
+}
+
+.about-description__advantages {
+    margin-top: 20px;
+    font: 24px/30px "ProximaNovaBold", sans-serif;
+    color: #010101;
+}
+
+.advantages-item__number {
+    font: 108px "ProximaNovaBold", sans-serif;
+    color: #281c12;
+}
+
+.advantages-item__text {
+    font: 24px/30px "ProximaNovaBold", sans-serif;
+    color: #8e775a;
+}
+
+.about-advantages__item:last-child .advantages-item__number {
+    margin-left: -10px;
+}
+
+.about-advantages__footer {
+    margin-bottom: 45px;
+    overflow: hidden;
+}
+
+.advantages-footer__title {
+    float: left;
+}
+
+.advantages-footer__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.about-chart {
+    padding: 40px 0 30px;
+    background-color: #f9f1e6;
+}
+
+.about-chart__title {
+    max-width: 50%;
+    font: 24px/30px "ProximaNovaBold", sans-serif;
+    color: #000000;
+}
+
+.about-chart__image img {
+    max-width: 100%;
+}
+
+.about-company__advantages--page-about {
+    margin-top: 9vh;
+    overflow: hidden;
+}
+
+.about-structure {
+    margin-top: 7vh;
+    overflow: hidden;
+}
+
+.about-structure__title {
+    margin-bottom: 50px;
+}
+
+.about-structure__items {
+    overflow: hidden;
+}
+
+.about-structure__item {
+    min-height: 250px;
+}
+
+.structure-item__header {
+    margin-bottom: 30px;
+}
+
+.structure-item__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+}
+
+.structure-item__title {
+    max-width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 36px/35px "ProximaNovaBold", sans-serif;
+    color: #000000;
+}
+
+.structure-item__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.about-quality {
+    margin: 6vh 0 10vh;
+    overflow: hidden;
+
+}
+
+.about-quality__title {
+    margin-bottom: 30px;
+}
+
+.about-quality__description {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.quality-description__link {
+    color: #b78b4c;
+}
+
+.quality-description__link:hover {
+    color: #b78b4c;
+    text-decoration: underline;
+    transition: all 0.2s linear;
+}
+
+/* ABOUT PAGE end */
+
+.request__form ul {
+    width: 50%;
+    float: left;
+}
+
+.request__form label {
+    display: none;
+}
+
+.ny-banner {
+    display: none;
+    min-height: 66px;
+    background: #7e3632 url(../images/ny-banner.jpg) no-repeat 50%;
+}
+
+.ny-banner .text {
+    display: none;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+
+.ny-banner .text span {
+    color: #ff9701;
+}
+
+#contacts {
+    background: #febd7a;
+}
+
+.contacts-heading {
+    text-align: center;
+    font: 22px/20px "ProximaNovaBold", sans-serif;
+    color: #7c291e;
+    padding: 20px 0;
+}
+
+.contacts-map {
+    min-height: 400px;
+    background: url(../images/map.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.promo-countdown {
+    min-height: 34rem;
+    padding: 5rem 0 2rem;
+    background: url(../images/background/promo-bg.png) no-repeat,linear-gradient(to bottom,#902417 0,#902417 100%);
+        background-position-x: 0%, 0%;
+        background-position-y: 0%, 0%;
+    background-position: 47% 100%,50% 50%;
+}
+
+.promo-countdown .title {
+    color: #FFF;
+}
+
+.title.title__2 {
+    display: inline-block;
+    position: relative;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    margin-bottom: 4rem;
+    margin-top: 0;
+    font-family: ProximaNovaBlack, sans-serif;
+    text-transform: uppercase;
+}
+
+.promo_gift {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+p.form-policy {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    color: rgba(0,0,0,.25);
+}
+
+.promo-countdown p.form-policy {
+    color: rgba(0,0,0,.7);
+}
+
+.countdown-title {
+    margin-bottom: .5rem;
+    color: #FFF;
+}
+
+.flip-clock-wrapper {
+    margin: 0 0 4rem;
+}
+
+.flip-clock-divider {
+    width: 1.1rem;
+    height: 5.8rem;
+}
+
+.flip-clock-wrapper ul {
+    padding: 0;
+    margin: .3rem;
+    width: 10%;
+    height: 5rem;
+    font-weight: 400;
+    border-radius: .5rem;
+}
+
+.flip-clock-wrapper ul li {
+    line-height: 5.2rem;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+    border-radius: .5rem;
+    font-size: 4.2rem;
+}
+
+.form input {
+    height: 5rem;
+    width: 100%;
+    padding: 1.3rem 1.5rem;
+    border-radius: 0;
+    border: 0;
+}
+
+.form__inline ul {
+    width: 48%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form__inline ul li {
+    display: block;
+    vertical-align: top;
+}
+
+.form ul li {
+    margin-bottom: 2rem;
+}
+
+.form label {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.promo-countdown .form input[type="submit"] {
+    background: #000;
+}
+
+.form input[type="submit"] {
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+    border: 2px solid #000;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #e66429;
+    transition: all .3s ease;
+}
+
+.form__inline input[type="submit"] {
+    display: inline-block;
+    width: 48% !important;
+}
+
+.response-message {
+    margin: 0;
+    font-size: 1.3rem !important;
+    line-height: 1.5rem !important;
+}
+
+p.form-policy a, p.form-policy a:hover {
+    color: #e66429;
+}
+
+.flip-clock-dot.top {
+    top: 1.8rem;
+}
+
+.flip-clock-dot.bottom {
+    bottom: 1.8rem;
+}
+
+.flip-clock-dot {
+    width: .5rem;
+    height: .5rem;
+    left: .3rem;
+}
+
+.flip-clock-divider .flip-clock-label {
+    font-size: 1.4rem;
+    top: auto;
+    right: -6.5rem;
+    bottom: -1.8rem;
+    color: #FFF;
+}
+
+.flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label {
+    right: -6.8rem;
+}
+
+@media screen and (max-width:767px) {
+    .promo-countdown {
+        background: linear-gradient(to bottom,#902417 0,#902417 100%);
+        background-position: 47% 100%,50% 50%;
+    }
+    .flip-clock-wrapper ul {
+        width: 2.5rem;
+    }
+    .promo-countdown .title {
+        text-align: center;
+    }
+    .countdown-title {
+        text-align: center;
+    }
+    .flip-clock-wrapper {
+        margin: 2rem auto 5rem;
+        max-width: 30rem;
+    }
+    .promo-countdown .title br {
+        display: none;
+    }
+    .promo_gift {
+        text-align: center;
+    }
+    .promo_gift br {
+        display: none;
+    }
+    .form__inline ul {
+        width: 100%;
+    }
+    .form__inline input[type="submit"] {
+        width: 100% !important;
+    }
+    .flip-clock-divider {
+        width: 1rem;
+    }
+    .flip-clock-divider .flip-clock-label {
+        right: -5rem;
+    }
+    .flip-clock-divider.minutes .flip-clock-label, .flip-clock-divider.seconds .flip-clock-label {
+        right: -5rem;
+    }
+    .title.title__2 {
+        margin-bottom: 0rem;
+    }
+}

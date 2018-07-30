@@ -1,0 +1,910 @@
+@media only screen and (min-width: 768px) {
+    .vis-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .faults-teasers__item {
+        min-height: 110px;
+    }
+    .promo__text h1 {
+        line-height: 1.2;
+        font-size: 38px;
+    }
+    .advantages-item__image {
+        text-align: center;
+    }
+
+    .vis-desctop {
+        display: none;
+    }
+
+    .advantages__item__image {
+        text-align: center;
+    }
+
+    .page-header__navigation {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        float: none;
+        width: 100%;
+        background: #004466;
+    }
+
+    .header-navigation__list {
+        max-width: 180px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .navigation__item {
+        display: block;
+        margin: 15px auto 0;
+        text-align: center;
+    }
+
+    .navigation__item:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header__mobile-button {
+        position: absolute;
+        top: 22px;
+        display: block;
+        right: 20px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    .mobile-button__item--first {
+        opacity: 0.1;
+        transition: all 0.4s linear;
+    }
+
+    .mobile-button__item--second {
+        opacity: 0.4;
+        transition: all 0.4s linear;
+    }
+
+    .mobile-button__item--third {
+        opacity: 0.8;
+        transition: all 0.4s linear;
+    }
+
+    .mobile-button__item {
+        display: block;
+        height: 6px;
+        margin-bottom: 4px;
+        border-radius: 3px;
+        background: #ffffff;
+    }
+
+    .promo {
+        z-index: auto;
+        padding-top: 4vh;
+        background: none;
+    }
+
+    .promo-block {
+        padding-bottom: 5vh;
+    }
+
+    .promo__advantage {
+        display: none;
+    }
+
+    .promo__logo {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .promo-logo__city {
+        margin-top: 10px;
+
+    }
+
+    .promo__phone {
+        float: none;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .promo-image--wash {
+        display: none;
+    }
+
+    .promo__text {
+        margin-top: 8vh;
+    }
+
+    .promo__text {
+        font-size: 35px;
+        line-height: 1.1;
+    }
+
+    .page-title {
+        font: 22px/normal "ProximaNovaBold", sans-serif;
+    }
+
+    .promo-text__title {
+        margin-left: 0;
+        margin-bottom: 30px;
+        font: 28px/normal "ProximaNovaBold", sans-serif;
+    }
+
+    .promo-service__title {
+        font: 28px/normal "ProximaNovaBold", sans-serif;
+    }
+
+    .promo-service__title--fault {
+        margin-bottom: 0;
+    }
+
+    .service__advantages__text {
+        float: left;
+        max-width: 85%;
+        font: 20px "ProximaNovaBold", sans-serif;
+    }
+
+    .service-price__text {
+        margin-bottom: 20px;
+    }
+
+    .promo-text__description {
+        margin-bottom: 50px;
+        font: 19px/30px "ProximaNovaRegular", sans-serif;
+    }
+
+    .promo-service__button {
+        margin-top: 20px;
+
+    }
+
+    .promo__form-block {
+        float: none;
+        max-width: 374px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .promo-form::before {
+        top: -8px;
+    }
+
+    .promo-form::after {
+        bottom: -8px;
+    }
+
+    .promo_scroll {
+        margin: 1vh auto 0;
+    }
+
+    div.page-price__description {
+        display: none;
+    }
+
+    .brand-advantages__item {
+        margin-top: 20px;
+    }
+
+    .brand-advantages__item:last-child {
+        margin-bottom: 20px;
+    }
+
+    .brand-item__text {
+        max-width: 80%;
+    }
+
+    .wrapper__faults {
+        background: #eeede8;
+    }
+
+    .faults__title {
+        margin-bottom: 6vh;
+    }
+
+    .faults-teasers__items {
+        margin-bottom: 20px;
+    }
+
+    .faults-price__item {
+        margin-bottom: 40px;
+    }
+
+    .faults-price__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .faults__list {
+        margin-top: 20px;
+        padding: 0 20px 0 40px;
+    }
+
+    .all-services__text {
+        display: inline-block;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .advantages-item__image img {
+        width: 80%;
+    }
+
+    .advantages__item:first-child .advantages-item__text {
+        margin-bottom: 3vh;
+    }
+
+    .advantages__item:first-child {
+        margin-bottom: 15vh;
+    }
+
+    .order-map {
+        background: none;
+    }
+
+    .order-map__title {
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .order-map__phone {
+        padding: 0 20px 0 10px;
+        margin-bottom: 30px;
+    }
+
+    .order-map__column {
+        margin-bottom: 15px;
+    }
+
+    .order-map__phone a {
+        font-size: 35px;
+    }
+
+    .order-map .request__form {
+        padding-left: 20px;
+    }
+
+    /*.map {*/
+    /*position: static;*/
+    /*width: 100%;*/
+    /*pointer-events: none;*/
+    /*}*/
+    /*.map-configurator__button {*/
+    /*margin-top: 20px;*/
+    /*font: 20px "ProximaNovaSemibold", sans-serif;*/
+    /*}*/
+    /*.map-configurator__form input[type="text"]:first-child {*/
+    /*width: 90%;*/
+    /*}*/
+    /*.map-configurator__form input[type="submit"] {*/
+    /*width: 90%;*/
+    /*margin-top: 20px;*/
+    /*font-size: 20px;*/
+    /*}*/
+    /*.configurator-link__text {*/
+    /*max-width: 80%;*/
+    /*}*/
+    .guarantee__item:nth-child(2) {
+        margin-bottom: 10vh;
+    }
+
+    .guarantee-item__text {
+        max-width: 75%;
+    }
+
+    .advantages-masters__image {
+        display: none;
+    }
+
+    .advantages-masters__description {
+        max-width: 75%;
+    }
+
+    .about-masters__title {
+        margin-bottom: 30px;
+        font: 25px/35px "ProximaNovaBold", sans-serif;
+    }
+
+    .about-masters__description {
+        margin-bottom: 30px;
+        font: 20px/30px "ProximaNovaBold", sans-serif;
+    }
+
+    .masters_profile__item {
+        margin-bottom: 40px;
+    }
+
+    .about-director__face {
+        margin-bottom: 30px;
+    }
+
+    .request-form__field {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .request__form input[type="text"] {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .request__form input[type="submit"] {
+        margin-bottom: 20px;
+    }
+
+    .order-request__form input[type="submit"] {
+        float: none;
+    }
+
+    .request-form__button {
+        margin-bottom: 20px;
+    }
+
+    .scheme-steps__title {
+        margin-bottom: 20px;
+    }
+
+    .steps-description__contract {
+        display: none;
+    }
+
+    .steps-description__contract--special {
+        display: none;
+    }
+
+    .brands-list__link img {
+        width: 80%;
+    }
+
+    .company-advantages__image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-director__advantage {
+        margin-top: 20px;
+    }
+
+    .faq-accordion__title {
+        font: 20px "ProximaNovaBold", sans-serif;
+    }
+
+    .order-request__title {
+        max-width: 100%;
+    }
+
+    .order-request__title.page-title {
+        font: 30px/normal "ProximaNovaBold", sans-serif;
+    }
+
+    .order-request__row {
+        overflow: hidden;
+    }
+
+    .order-request__submit {
+        float: none;
+    }
+
+    .order-request__text {
+        float: none;
+        margin-top: 20px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .order-phone__title {
+        max-width: 100%;
+    }
+
+    .order-phone__number {
+        font: 35px "ProximaNovaSemibold", sans-serif;
+    }
+
+    .wrapper__page-footer--special {
+        position: static;
+        width: auto;
+    }
+
+    .page-footer__navigation {
+        display: none;
+    }
+
+    .page-footer__contacts {
+        text-align: center;
+    }
+
+    .footer-contacts__logo,
+    .footer-contacts__copyright,
+    .footer-contacts__address {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .promo-block--testimonials {
+        padding-bottom: 2vh;
+    }
+
+    .promo-testimonials__button {
+        margin-top: 30px;
+    }
+
+    .testimonials-item__header {
+        display: block;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .testimonials-header__title {
+        margin-bottom: 30px;
+    }
+
+    .testimonials-title__text {
+        padding-right: 0;
+        font: 16px/25px "ProximaNovaBoldItalic", sans-serif;
+    }
+
+    .testimonials-header__audio {
+        margin-bottom: 20px;
+    }
+
+    .testimonials-content__description {
+        padding-left: 20px;
+    }
+
+    .testimonials-content__master {
+        margin: 20px 0;
+    }
+
+    .content__master__document {
+        display: none;
+    }
+
+    .testimonials-pagination__title {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .pagination li {
+        display: inline-block;
+        vertical-align: middle;
+        height: 26px;
+        margin-right: 9px;
+    }
+
+    .pagination li a {
+        font: 16px "ProximaNovaBold", sans-serif;
+    }
+
+    .form-header__row label {
+        margin-bottom: 10px;
+    }
+
+    .textarea-description {
+        padding-right: 0;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .clients-form__textarea label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .textarea-good,
+    .textarea-bad,
+    .textarea-suggestions {
+        padding-left: 0;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .form-estimate__radio {
+        margin-top: 40px;
+    }
+
+    .client-form__estimate {
+        margin-bottom: 30px;
+    }
+
+    .client-form__upload--wrapper {
+        margin-bottom: 30px;
+    }
+
+    .form-upload__text {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .form-upload__button {
+        float: none;
+        margin: 20px auto;
+    }
+
+    .promo-block--about {
+        padding-bottom: 0;
+    }
+
+    .about-title__text {
+        padding: 60px 20px;
+        font: 25px/30px "ProximaNovaBold", sans-serif;
+    }
+
+    .about-description__text {
+        margin-top: -7vh;
+        margin-left: 0;
+        padding: 30px 20px;
+        font-size: 16px;
+        line-height: 25px;
+
+    }
+
+    .about-description__advantages {
+        font: 20px/25px "ProximaNovaBold", sans-serif;
+    }
+
+    .about-advantages__items {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .advantages-item__number {
+        font: 80px "ProximaNovaBold", sans-serif;
+    }
+
+    .advantages-footer__title {
+        margin-bottom: 15px;
+    }
+
+    .about-chart {
+        display: none;
+    }
+
+    .structure-item__icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .structure-item__icon img {
+        width: 50px;
+    }
+
+    .structure-item__title {
+        max-width: 60%;
+        font: 30px/30px "ProximaNovaBold", sans-serif;
+    }
+
+    .structure-item__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .about-quality__description {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .promo__form-block form {
+        text-align: center;
+    }
+
+    .promo-form ul {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+
+    .promo-form ul li {
+        display: block;
+    }
+
+    .promo-form input[type="text"],
+    .promo-form input[type="submit"] {
+        display: block;
+        width: 250px;
+        margin: 0 auto 15px auto;
+    }
+
+    .order__request--special,
+    .order__phone--special {
+        padding-bottom: 30px;
+    }
+
+    .promo-block {
+        padding-bottom: 3vh !important;
+    }
+
+    .guarantee-advantages__image {
+        text-align: center;
+    }
+
+    .guarantee-advantages__description {
+        font-size: 20px;
+    }
+
+    .guarantee-content__title {
+        font-size: 30px;
+    }
+
+    .testimonials-content__like,
+    .testimonials-content__dislike,
+    .testimonials-content__suggestion {
+        padding-left: 20px;
+    }
+
+    .testimonials-answer {
+        padding-left: 0;
+    }
+
+    .about-advantages__item {
+        margin-bottom: 20px;
+    }
+
+    .scheme-steps__text img {
+        display: none;
+    }
+
+    .request__form ul {
+        width: 100%;
+    }
+
+    .ny-banner {
+        min-height: 42px;
+        background-image: none;
+    }
+
+    .ny-banner .text {
+        display: block;
+    }
+    
+    .wrapper__order .order__request {
+        background: #f1cfd1;
+    }
+    
+    .wrapper__order .order__phone {
+        background: #81332c;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+
+    .header-navigation__list .navigation__item:nth-child(3) {
+        display: none;
+    }
+
+    .navigation__item {
+        margin-right: 10px;
+    }
+
+    .promo-block {
+        padding-bottom: 0;
+    }
+
+    .promo-text__title {
+        font: 35px/normal "ProximaNovaBold", sans-serif;
+
+    }
+
+    .promo-image--wash img {
+        max-width: 110%;
+    }
+
+    .promo-text__description {
+        font-size: 19px;
+    }
+
+    .brand-item__text {
+        max-width: 80%;
+    }
+
+    .page-title {
+        font: 35px/normal "ProximaNovaBold", sans-serif;
+    }
+
+    .wrapper__faults {
+        background-position: 200% bottom !important;
+    }
+
+    .promo-form input[type="text"] {
+        width: 270px;
+        margin: 0 0 20px 0;
+    }
+
+    .promo__phone {
+        float: right;
+    }
+
+    .advantages-item__image img {
+        max-width: 110%;
+    }
+
+    .advantages-masters__image img {
+        max-width: 80%;
+    }
+
+    .faults-teasers__name {
+        max-width: 100%;
+        font: 20px/20px "ProximaNovaBold", sans-serif;
+    }
+
+    .guarantee-item__text,
+    .advantages-masters__description {
+        max-width: 78%;
+    }
+
+    .map-configurator__button {
+        font: 22px "ProximaNovaSemibold", sans-serif;
+    }
+
+    .request-form__button {
+        text-align: center;
+        font: 16px "ProximaNovaSemibold", sans-serif;
+    }
+
+    .scheme-steps__text {
+        max-width: 75%;
+        font: 20px/25px "ProximaNovaBold", sans-serif;
+    }
+
+    .scheme-guarantee__title {
+        font: 20px/25px "ProximaNovaBold", sans-serif;
+    }
+
+    .scheme-link__text {
+        max-width: 70%;
+    }
+
+    .steps-description__contract {
+        display: none;
+    }
+
+    .steps-description__contract--special {
+        display: none;
+    }
+
+    .finish_img {
+        width: 100%;
+    }
+
+    .brands-list__link img {
+        width: 80%;
+    }
+
+    .order-request__title,
+    .order-phone__title {
+        max-width: 95%;
+    }
+
+    .order-phone__number {
+        margin-top: 30px;
+        font: 40px "ProximaNovaSemibold", sans-serif;
+    }
+
+    .page-price__description {
+        font-size: 16px;
+    }
+
+    .price__description__text {
+        max-width: 60%;
+    }
+
+    .order-request__title.page-title {
+        font: 40px/50px "ProximaNovaBold", sans-serif;
+    }
+
+    .order-phone__description p:last-child {
+        display: none;
+    }
+
+    .testimonials-content__like,
+    .testimonials-content__dislike,
+    .testimonials-content__suggestion {
+        padding-left: 30px;
+    }
+
+    .form-estimate__title {
+        font-size: 17px;
+    }
+
+    .client-form__upload--wrapper {
+        padding: 15px 10px 15px 0;
+    }
+
+    .form-upload__button {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-advantages {
+        margin-top: 30px;
+    }
+
+    .advantages-item__number {
+        font-size: 90px;
+    }
+
+    .about-structure__item {
+        margin-bottom: 40px;
+    }
+
+    .structure-item__title {
+        max-width: 60%;
+        font: 33px/30px "ProximaNovaBold", sans-serif;
+    }
+
+    .structure-item__icon {
+        margin-right: 15px;
+    }
+
+    .map-configurator__form input[type="text"]:first-child {
+        width: 250px;
+    }
+
+    .map-configurator__form input[type="submit"] {
+        width: 300px;
+        font-size: 22px;
+    }
+
+    .request__form input[type="text"] {
+        width: 190px;
+    }
+
+    .request__form input[type="submit"] {
+        width: 170px;
+    }
+
+    .order-request__form input[type="text"] {
+        width: 190px;
+    }
+
+    .order-request__form input[type="submit"] {
+        width: 165px;
+    }
+
+    .promo-testimonials__button {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+    .service-price__image {
+        left: calc(37% - 280px);
+    }
+    .wrapper__faults {
+        background-position: 119%;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .service-price__image {
+        left: calc(33% - 280px);
+    }
+
+    .wrapper__faults {
+        background-size: 60%;
+        background-position: 170% bottom;
+    }
+
+    .wrapper__faults--brand {
+        background-position: 120% bottom;
+        background-size: 30%;
+    }
+
+}
+
+
+
+
+

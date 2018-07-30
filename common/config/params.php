@@ -3440,9 +3440,18 @@ return [
             'region-sel' => true,
             'category_id' => 7,
             'theme' => 'coffee_repair',
-            'order-title' => 'coffee_repair',
-            'sitemap' => ['disableServicePage' => true]
+            'order-title' => 'coffee_repair',            
         ],
-        
+        'kofefix' => [
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
+            'mono' => false,
+            'id' => 223,
+            'sitePrefix' => 'kofefix',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'kofefix',
+            'order-title' => 'kofefix',            
+        ],
     ]
 ];

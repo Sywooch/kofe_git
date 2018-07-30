@@ -1,0 +1,440 @@
+/* TESTIMONIAL */
+
+.testimonials {
+    padding: 40px 0;
+    background-color: #edede4;
+}
+.testimonials-items {
+    overflow: hidden;
+}
+.testimonials-item {
+    position: relative;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
+
+.testimonials-item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 130px;
+    background-color: rgba(255, 248, 240, 0.5);
+}
+.testimonials-title__rating img {
+    margin-top: 8px;
+}
+.testimonials-title__text {
+    font: 18px/25px "ProximaNovaBoldItalic", sans-serif;
+    color: #000000;
+}
+
+.testimonials-player__btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.play {
+    background-image: url(../images/icons/play.png);
+    background-position: 58% center;
+    background-repeat: no-repeat;
+}
+
+.pause {
+    background-image: url(../images/icons/pause.png);
+    background-position: 53% center;
+    background-repeat: no-repeat;
+}
+
+.testimonials-player__btn:hover {
+    background-color: #dcdddd;
+    transition: all 0.2s linear;
+}
+.testimonials-player__description {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    font: 18px/20px "ProximaNovaBoldItalic", sans-serif;
+    color: #004466;
+}
+.testimonials-content {
+    padding: 30px 0;
+    overflow: hidden;
+    background: #ffffff;
+    color: #000000;
+}
+.testimonials-content__master {
+    position: static;
+}
+
+.testimonials-content__description {
+    padding-left: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.testimonials-content__description p:first-child {
+    margin-top: 0;
+}
+.content-master__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #004466;
+}
+.content-master__text {
+    font-size: 15px;
+    color: #555555;
+}
+.testimonials-content__like,
+.testimonials-content__dislike,
+.testimonials-content__suggestion {
+    padding-left: 0;
+}
+.content-like__title,
+.content-dislike__title,
+.content-suggestion__title {
+    margin-bottom: 4px;
+    font: 15px "ProximaNovaBold", sans-serif;
+}
+.content-like__text,
+.content-dislike__text,
+.content-suggestion__text {
+    margin-bottom: 20px;
+    font-size: 15px;
+
+}
+.testimonials-answer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #cce8ff;
+
+}
+.testimonials-answer__title {
+    font: 18px/25px "ProximaNovaBoldItalic", sans-serif;
+    color: #008cd4;
+}
+.testimonials-answer__text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+.content__master__document {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #555555;
+}
+.image__popup {
+    position: absolute;
+    top: 20px;
+    right: 15%;
+    display: block;
+    cursor: pointer;
+}
+.image__popup--big {
+    width: 300px;
+    height: 300px;
+    transition: all 0.8s linear;
+}
+
+.testimonials-pagination {
+
+}
+
+.testimonials-pagination__title {
+    float: left;
+    margin-right: 20px;
+    font: 15px "ProximaNovaBold", sans-serif;
+    color: #001b61;
+}
+.pagination {
+
+}
+.pagination li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 26px;
+    margin-right: 18px;
+}
+
+.pagination li a {
+    font: 18px "ProximaNovaBold", sans-serif;
+    color: #ffffff;
+}
+
+.pagination li:hover a {
+    color: #008cd4;
+    transition: all 0.2s linear;
+}
+
+.pagination li.active {
+    font: 18px "ProximaNovaBold", sans-serif;
+    color: #008cd4;
+}
+.page-link {
+    vertical-align: middle;
+}
+.page-link.prev,
+.current.prev {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin-top: -3px;
+    margin-right: 3px;
+    border-radius: 10px;
+    text-indent: -1000px;
+    background: #fff url(../images/icons/arrow-left.png) 48% center no-repeat;
+}
+.page-link.next,
+.current.next{
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin-top: -3px;
+    margin-left: 3px;
+    border-radius: 10px;
+    text-indent: -10000px;
+    background: #fff url(../images/icons/arrow-right.png) 52% center no-repeat;
+}
+.page-link.prev:hover,
+.current.prev:hover,
+.page-link.next:hover,
+.current.next:hover {
+    background-color: #b6b6b6;
+    transition: all 0.2s linear;
+}
+.ellipse.clickable {
+    vertical-align: middle;
+    font: 18px "ProximaNovaBold", sans-serif;
+    color: #ffffff;
+}
+
+.clients-form__block {
+    color: #000000;
+}
+.clients-form {
+    padding: 6vh 0 9vh;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.clients-form__title {
+    margin-bottom: 35px;
+}
+.clients-form__header--wrapper {
+    padding: 35px 0;
+    background: #e9efee;
+}
+.clients-form__header  label {
+    padding: 0;
+    font-size: 18px;
+}
+
+.form-header__row {
+    padding: 0;
+}
+.form-header__row label,
+.form-header__row input {
+    float: none;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.form-header__field {
+    height: 40px;
+    padding: 0 0 0 10px;
+    margin-bottom: 25px;
+    border: 1px solid #d8d8d8;
+    border-radius: 9px;
+    background: #fff;
+    font-size: 15px;
+    outline: none;
+
+}
+
+.form-header__field--date {
+    height: auto;
+    padding: 8px 0 8px 10px;
+
+}
+
+.form-header__row:last-child .form-header__field {
+    margin-bottom: 0;
+}
+
+.clients-form__textarea {
+    margin: 35px 0 8vh;
+}
+
+.textarea-description {
+    padding-left: 0;
+}
+.textarea-good,
+.textarea-bad,
+.textarea-suggestions {
+    padding-right: 0;
+}
+.textarea-description__title,
+.textarea-good__title,
+.textarea-bad__title,
+.textarea-suggestions__title {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.textarea-description__field {
+    max-width: 460px;
+    height: 40vh;
+    max-height: 400px;
+    padding-top: 20px;
+    border: 1px solid #008cd4;
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+}
+
+.textarea-good__field,
+.textarea-bad__field,
+.textarea-suggestions__field {
+    max-width: 460px;
+    height: 90px;
+    max-height: 90px;
+    padding-top: 20px;
+    border: 1px solid #008cd4;
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+}
+.textarea-bad,
+.textarea-suggestions {
+    margin-top: 28px;
+}
+
+.form-estimate__title {
+    float: left;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #000000;
+}
+.radio-mark {
+    display: none;
+}
+.form-estimate__label {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.label--up {
+    margin-top: -12px;
+    margin-right: 30px;
+    background: #fff url(../images/icons/finger_up_opacity.png) center center no-repeat;
+}
+
+.label--down {
+    background: #fff url(../images/icons/finger_down_opacity.png) center center no-repeat;
+}
+
+.good__mark:checked + label {
+    background: url(../images/icons/finger_up.html) center center no-repeat;
+}
+.bad__mark:checked + label {
+    background: url(../images/icons/finger_down.html) center center no-repeat;
+}
+
+.client-form__upload--wrapper {
+    padding: 20px 20px 20px 0;
+    background: #e9efee;
+    overflow: hidden;
+}
+.form-upload__text {
+    line-height: 22px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.form-upload {
+    position: relative;
+    overflow: hidden;
+}
+.button-hidden {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 80px;
+    opacity: 0;
+    cursor: pointer;
+}
+.form-upload__button {
+    position: static;
+    float: right;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font: 18px "ProximaNovaSemibold", sans-serif;
+    color: #ffffff;
+    background: #008cd4;
+    outline: none;
+}
+.button-hidden:hover + .form-upload__button {
+    background: #0070aa;
+    transition: all 0.2s linear;
+}
+.button-hidden:active + .form-upload__button,
+.button-hidden:focus + .form-upload__button {
+    background: #50aad9;
+    transition: all 0.2s linear;
+}
+
+.client-contacts__text {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.form-mail__field {
+    height: 40px;
+    margin-bottom: 30px;
+    border: 1px solid #008cd4;
+    border-radius: 9px;
+    background: #ffffff;
+    outline: none;
+    font-size: 18px;
+
+}
+.form-submit__button {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font: 24px "ProximaNovaSemibold", sans-serif;
+    color: #ffffff;
+    background: #008cd4;
+    outline: none;
+}
+.form-submit__button:hover {
+    background: #0070aa;
+    transition: all 0.2s linear;
+}
+.form-submit__button:active,
+.form-submit__button:focus {
+    background: #50aad9;
+    transition: all 0.2s linear;
+}
+
+/* TESTIMONIAL end */

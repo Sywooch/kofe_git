@@ -1,0 +1,34 @@
+/* FOOTER */
+
+.wrapper__page-footer {
+    background-color: #260f09;
+    color: #ffffff;
+    font: 15px/22px "ProximaNovaLight", sans-serif;
+}
+
+.wrapper__footer__navigation {
+    background-color: #372422;
+}
+.page-footer__navigation {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    min-height: 70px;
+    overflow: hidden;
+}
+.navigation__item--footer {
+    margin-left: 5vw;
+}
+.page-footer__contacts {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    overflow: hidden;
+}
+.footer-contacts__address {
+    padding-right: 10px;
+}
+
+
+
+/* FOOTER end */

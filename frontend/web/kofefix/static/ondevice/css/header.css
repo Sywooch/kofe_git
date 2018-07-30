@@ -1,0 +1,107 @@
+/* HEADER */
+
+
+.wrapper__header-block {
+    position: relative;
+    /*background: url(/static/ondevice/images/background/night-time-background.jpg) center no-repeat;*/
+    background: url(../images/background/hero-bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.nightpromo__header{
+    position: relative;
+    background: url(../images/background/night-time-background.jpg) center no-repeat;
+    background-size: cover;
+}
+.wrapper__header-block--price {
+    background-color: #030101;
+}
+
+.wrapper_page-header {
+    background: rgba(0,0,0,0.5);
+}
+
+.wrapper__header-block--height {
+    padding-bottom: 70px;
+}
+
+.wrapper__header-block-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .85;
+    background-color: #000;
+    background-size: 0.2em 0.2em;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    min-height: 70px;
+    overflow: hidden;
+}
+
+.navigation__item {
+    float: none;
+    display: inline-block;
+    margin-right: 18px;
+}
+.navigation__item:last-child {
+    margin-right: 0;
+}
+
+.navigation__link {
+    font-size: 15px;
+    font-family: ProximaNovaLight, sans-serif;
+    color: #ffffff;
+}
+.navigation__link:hover {
+    color: #ce736b;
+    transition: all 0.2s linear;
+}
+
+.navigation__link--active {
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.page-header__button a {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: ProximaNovaSemibold, sans-serif;
+    color: #ffffff;
+    background: #ff9701;
+}
+.page-header__button a:hover {
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+.page-header__button a:active,
+.page-header__button a:focus {
+    background: #dc860a;
+    transition: all 0.2s linear;
+}
+.page-header__button--price a {
+    color: #fff;
+    background: #008cd4;
+}
+.page-header__button--price a:hover {
+    background: #0070aa;
+    transition: all 0.2s linear;
+}
+.page-header__button--price a:active,
+.page-header__button--price a:focus {
+    background: #50aad9;
+    transition: all 0.2s linear;
+}
+.header__mobile-button {
+    display: none;
+}
+
+/* HEADER end */

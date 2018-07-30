@@ -1,0 +1,215 @@
+/* FAULTS */
+.wrapper__faults--main {
+    background-image: url(../images/background/coffeemachine.png);
+}
+.wrapper__faults--brand {
+    min-height: 810px;
+    padding-bottom: 8vh;
+    background-position: 120% 50%;
+}
+.wrapper__faults--delonghi {
+    background-image: url(../images/background/delonghi.png);
+}
+.wrapper__faults--jura {
+    background-image: url(../images/background/jura.png);
+}
+.wrapper__faults--gaggia {
+    background-image: url(../images/background/gaggia.png);
+}
+.wrapper__faults {
+    padding-bottom: 3vh;
+    background-color: #f2f2f2;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.faults {
+    padding-top: 7vh;
+    overflow: hidden;
+}
+
+.faults__title {
+    margin-bottom: 6vh;
+}
+
+.faults-teasers__title {
+    float: none;
+    margin-bottom: 23px;
+    color: #000000;
+    font: 26px "ProximaNovaBold", sans-serif;
+}
+
+.faults-teasers__item {
+    display: block;
+    min-height: 130px;
+    padding: 10px 0 15px 20px;
+    background-color: #fef6f1;
+    border: 3px solid #a28168;
+}
+.faults-teasers__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.faults-teasers__item:hover {
+    border-color: #7c291e;
+    transition: all 0.2s linear;
+}
+.faults-teasers__item:hover .faults-teasers__name {
+    transition: all 0.2s linear;
+}
+.faults-teasers__item:hover .faults-teasers__cost {
+    transition: all 0.2s linear;
+}
+.faults-teasers__name {
+    display: block;
+    max-width: 85%;
+    margin-bottom: 25px;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #222222;
+}
+.faults-teasers__cost {
+    display: block;
+    font: 24px/25px "ProximaNovaBold", sans-serif;
+    color: #7f7878;
+}
+.faults__list {
+    margin-top: -5px;
+}
+.faults-list-item {
+    display: block;
+    margin-bottom: 21px;
+}
+.faults-list-item:last-child {
+    margin-bottom: 0;
+}
+.faults-list-item:hover .faults-list__name {
+    opacity: .8;
+    transition: all 0.2s linear;
+}
+
+.faults-list__name {
+    display: block;
+    max-width: 85%;
+    font: 21px "ProximaNovaBold", sans-serif;
+    color: #000000;
+}
+.faults-list__cost {
+    display: block;
+    font: 18px/22px "ProximaNovaBold", sans-serif;
+    color: #7f7878;
+}
+
+.faults__price {
+    margin-top: 28px;
+    overflow: hidden;
+}
+.faults__price--padding {
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+}
+.faults-price__title {
+    float: none;
+    margin-bottom: 23px;
+    color: #000000;
+    font: 26px "ProximaNovaBold", sans-serif;
+}
+.faults-price__row {
+    display: block;
+    overflow: hidden;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.faults-price__row:hover .faults-price__cost {
+    color: #004466;
+    transition: all 0.2s linear;
+}
+.faults-price__name {
+    float: left;
+    display: block;
+    max-width: 68%;
+    font-size: 15px;
+    color: #000000;
+    padding-right: 5px;
+}
+.faults-price__cost {
+    float: right;
+    display: block;
+    color: #000000;
+    font: 15px "ProximaNovaBold", sans-serif;
+}
+.faults__all-services {
+    display: block;
+    margin-top: 1vh;
+}
+.faults__all-services:hover .all-services__text {
+    color: #7c291e;
+    transition: all 0.2s linear;
+}
+.all-services__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    margin-right: 13px;
+    border-radius: 100%;
+    text-align: center;
+    background: #f1f5fe;
+}
+.all-services__icon img {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+}
+.all-services__text {
+    display: inline-block;
+    height: 27px;
+    margin-top: 2px;
+    vertical-align: middle;
+    font: 18px "ProximaNovaBold", sans-serif;
+    color: #a28168;
+}
+
+.f-kitchenaid {
+   background-image: url(../images/background/kitchenaid.png);
+}
+.f-vitek {
+    background-image: url(../images/background/vitek.png);
+}
+.f-magnifica {
+    background-image: url(../images/background/magnifica.png);
+}
+.f-miele {
+    background-image: url(../images/background/miele.png);
+}
+.f-oursson {
+    background-image: url(../images/background/oursson.png);
+}
+.f-siemens {
+    background-image: url(../images/background/siemens.png);
+}
+.f-nivona {
+    background-image: url(../images/background/nivona.png);
+}
+.f-nespresso {
+    background-image: url(../images/background/nespresso.png);
+}
+.f-krups {
+    background-image: url(../images/background/krups.png);
+}
+.f-philips {
+    background-image: url(../images/background/philips.png);
+}
+.f-melitta {
+    background-image: url(../images/background/melitta.png);
+}
+.f-bosch {
+    background-image: url(../images/background/bosch.png);
+}
+
+
+/* FAULTS end */
