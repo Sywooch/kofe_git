@@ -54,22 +54,22 @@ $js = app\components\CController::$js;
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="garantii/index.html">
+                                    <a class="navigation__link" href="/garantiya">
                                         Гарантия
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="otzyvy/index.html">
+                                    <a class="navigation__link" href="/otzyvy">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="o-nas/index.html">
+                                    <a class="navigation__link" href="/o-nas">
                                         О сервис-центре
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a class="navigation__link" href="#contacts">
+                                    <a class="navigation__link" href="/kontakty">
                                         Контакты
                                     </a>
                                 </li>
