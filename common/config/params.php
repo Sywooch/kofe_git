@@ -3454,5 +3454,17 @@ return [
             'theme' => 'coffee_repair',
             'order-title' => 'repair-coffee',            
         ],
+        'koferem' => [
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
+            'mono' => false,
+            'spb' => true,
+            'id' => 225,
+            'sitePrefix' => 'kofefix',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'kofefix',
+            'order-title' => 'kofefix',            
+        ],
     ]
 ];
