@@ -11,7 +11,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <div class="icon"><img src="/<?= $siteConfig['theme'] . '/'; ?>images/icons/<?= $row['image']; ?>" alt="<?= $row['title']; ?>"></div>
                     <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
                         <p><span><?= $row['title']; ?></span></p>
-                        <p><?= $row['price']; ?> <span>руб.</span></p>
+                        <p>от <?= $row['price']; ?> <span>руб.</span></p>
                     </a>
                 </li>
             <?php endforeach; ?>

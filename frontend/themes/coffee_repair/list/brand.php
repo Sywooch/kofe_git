@@ -20,6 +20,9 @@ $breadcrumbs = [
 <div class="content3">
     <div class="page-wrap">
         <div class="left-block">
+            <?php if (!empty($pageInfo['full_description'])): ?>
+                <?= $pageInfo['full_description']; ?>
+            <?php endif; ?>
         </div>
     </div>
 </div>

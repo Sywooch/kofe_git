@@ -14,7 +14,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                             <a href="/<?= !empty($prefUrl) ? $prefUrl . '/' : ''; ?><?= $row['url']; ?>">
                                 <p class="price-list__service"><span><?= $row['title']; ?></span></p>
                             </a>
-                            <span class="price-list__price"><?= $row['price']; ?> руб.</span> 
+                            <span class="price-list__price">от <?= $row['price']; ?> руб.</span> 
                         </div>
                     </li>
                 <?php endforeach; ?>
