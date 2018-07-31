@@ -3419,18 +3419,7 @@ return [
             'theme' => 'coffeeHelpPromo',
             'order-title' => 'help',
             'sitemap' => ['disableServicePage' => true]
-        ],
-        'new-site' => [
-            'phone-1' => '8 (495) 152-00-02',
-            'phone-2' => '8 (812) 643-21-07',
-            'mono' => true,
-            'brand-id' => 13332,
-            'id' => 0,
-            'sitePrefix' => 'saeco',
-            'category_id' => 7,
-            'order-title' => 'МСК Войковская',
-            'theme' => 'sservice',
-        ],
+        ],        
         'coffee-repair' => [
             'phone-1' => '8 (495) 431-57-77',
             'phone-2' => '8 (495) 431-57-77',
@@ -3441,7 +3430,7 @@ return [
             'category_id' => 7,
             'theme' => 'coffee_repair',
             'order-title' => 'coffee_repair',            
-        ],
+        ],        
         'kofefix' => [
             'phone-1' => '8 (495) 431-57-77',
             'phone-2' => '8 (495) 431-57-77',
@@ -3452,6 +3441,18 @@ return [
             'category_id' => 7,
             'theme' => 'kofefix',
             'order-title' => 'kofefix',            
+        ],
+        'repair-coffee' => [
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
+            'mono' => false,
+            'spb' => true,
+            'id' => 224,
+            'sitePrefix' => 'coffee_repair',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'coffee_repair',
+            'order-title' => 'repair-coffee',            
         ],
     ]
 ];
