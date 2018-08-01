@@ -24,9 +24,9 @@ $js = app\components\CController::$js;
         <?php $this->head() ?>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" /> 
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css?v=222" />
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css?v=222" />
-        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font.css?v=222" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/font.css" />
     </head>
     <body>
         <?php
@@ -235,14 +235,14 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= tnv\widgets\forms\PopupForm::widget(); ?>       
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js?v=222"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js?v=222"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js?v=222"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js?v=222"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js?v=222"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js?v=222"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
 
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js?v=222"></script>
+        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         $roistat_n = 1;
