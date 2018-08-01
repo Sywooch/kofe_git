@@ -22,6 +22,7 @@ $js = app\components\CController::$js;
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" /> 
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" />
         <link rel="stylesheet" type="text/css" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/stile.css" />
@@ -125,7 +126,7 @@ $js = app\components\CController::$js;
                         <div class="header--faq-t">Есть вопрос?</div>
                         <a class="header--faq-l" href="/vio">Найти ответ</a>
                     </div>
-                    <div class="header--user no-auth float--right"><a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a></div>
+                    <div class="header--user no-auth float--right"><a href="#" onclick="return false;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a></div>
                 </div>
             </div>
             <div class="header--info-line visible-xs">
@@ -233,17 +234,15 @@ $js = app\components\CController::$js;
                 </div>
             </div>
         </footer>
-        <?= tnv\widgets\forms\PopupForm::widget(); ?>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic" />        
+        <?= tnv\widgets\forms\PopupForm::widget(); ?>       
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-1.11.3.min.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery-ui.js"></script>
+
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/slick.js"></script>
-        <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/pr.js"></script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         $roistat_n = 1;

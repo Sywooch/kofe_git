@@ -42,6 +42,7 @@ $breadcrumbs = [
             <?php if (!empty($pageInfo['description'])): ?>
                 <?= str_replace(['#brand_en#', '#model_en#'], $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
             <?php endif; ?>
+            
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 2, 'url' => false, 'title' => 'Цены по неисправностям', 'is_popular' => true]); ?>
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 1, 'url' => false, 'title' => 'Цены по услугам', 'is_popular' => true]); ?>
             <?= tnv\widgets\lists\Neispravnost::widget(['type' => 1, 'title' => 'Цены по прочим услугам', 'is_popular' => false]); ?>

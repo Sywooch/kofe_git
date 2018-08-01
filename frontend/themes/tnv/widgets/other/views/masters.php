@@ -12,7 +12,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                         <div class="main-waist--text">
                             <p>Инженеры сервисного центра, которые за 2017 год провели наибольший ремонт кофемашин. Каждый инженер имеет сертификат международного образца, который позволяет ремонтировать кофемашины всех брендов!</p>
                         </div>
-                        <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a>
+                        <a href="#" onclick="return false;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Онлайн заявка</a>
                     </div>
                 </div>
             </div>

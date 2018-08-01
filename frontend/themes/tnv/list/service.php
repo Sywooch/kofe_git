@@ -33,7 +33,7 @@ $this->title = $title;
                         
                      </div>
                      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
-                        <div class="con-equipment--btn"><a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy">Заказать</a></div>
+                        <div class="con-equipment--btn"><a href="#" onclick="return false;" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#online-zayavkamy" >Заказать</a></div>
                      </div>
                   </div>
                </div>
