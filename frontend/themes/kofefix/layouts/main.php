@@ -37,6 +37,25 @@ $js = app\components\CController::$js;
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>static/ondevice/css/responsive.css">
     </head>
     <body>
+        <?php
+        if (!Yii::$app->user->isGuest) {
+            echo '<div style="float: left; z-index: 99999;position: absolute;" class="container">';
+            $domain = $_SERVER['SERVER_NAME'];
+            if (isset($_GET['data']['is_service'])) {
+                if (count(explode('/', Yii::$app->request->pathInfo)) > 1) {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a>';
+                } else {
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/services/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+                }
+            } else {
+                echo '<a target="_blank" href="http://admin.' . $domain . '/seo/create/?url=' . Yii::$app->request->pathInfo . '&site_id=' . $siteConfig['id'] . '">Ред. эту страницу.</a><br>';
+                if (!empty($_GET['data']))
+                    echo '<a target="_blank" href="http://admin.' . $domain . '/page/update/' . $_GET['data']['id'] . '">Ред. глобальную страницу</a>';
+            }
+            echo '</div>';
+        }
+        ?>
         <div class="wrapper_page-header">
             <div class="container">
                 <div class="row">
