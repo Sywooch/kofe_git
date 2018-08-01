@@ -2497,24 +2497,86 @@ nav .container > ul > li > ul li a span {
 }
 /*----------------------------------------------------*/
 #number-14 {
-	height: 815px;
 	display: block;
 	width: 100%;
-	padding-top: 115px;
+	padding-top: 80px;
 	background: url(../images/footer.jpg) center bottom no-repeat;
 	background-size: 100%;
 	text-align: center;
+	padding-bottom: 22%;
+}
+#number-14 .container {
+	max-width: 960px;
+	min-width: 960px;
+}
+@media screen and (max-width: 1030px) {
+	#number-14 .container {
+		max-width: 800px;
+		min-width: 800px;
+	}
+}
+@media screen and (max-width: 830px) {
+	#number-14 .container {
+		max-width: 650px;
+		min-width: 650px;
+	}
+}
+@media screen and (max-width: 680px) {
+	#number-14 .container {
+		max-width: 500px;
+		min-width: 500px;
+	}
+}
+@media screen and (max-width: 540px) {
+	#number-14 .container {
+		max-width: 300px;
+		min-width: 300px;
+	}
+}
+.full-description {
+    position: relative;
+    overflow: hidden;
+    max-height: 355px;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.full-description.active {
+	max-height: 3000px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+#number-14 .btn.active {
+	display: none ! important;
+}
+.full-description:after {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	content: '';
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+1,0.64+53,1+82,1+82 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,0.64) 53%, rgba(255,255,255,1) 82%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.64) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0.64) 53%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.full-description.active:after {
+	display: none;
 }
 @media screen and (max-width: 1030px) {
 	#number-14 {
 		padding-top: 50px;
-		height: 635px;
 	}
 }
 @media screen and (max-width: 680px) {
 	#number-14 {
 		padding-top: 25px;
-		height: 500px;
 	}
 }
 #number-14 .title {
@@ -2526,7 +2588,6 @@ nav .container > ul > li > ul li a span {
 	}
 }
 #number-14 p {
-	max-width: 700px;
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 24px;
@@ -2542,6 +2603,7 @@ nav .container > ul > li > ul li a span {
 }
 #number-14 ul {
 	display: inline-flex;
+	counter-reset: section; 
 }
 @media screen and (max-width: 540px) {
 	#number-14 ul {
@@ -2553,12 +2615,53 @@ nav .container > ul > li > ul li a span {
 }
 #number-14 ul a {
 	color: #8ec000;
-	font-size: 18px;
-	text-decoration: none;
-	border-bottom: 1px solid #8ec000;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #fff;
+  border-bottom: 1px solid #8ec000;
+}
+@media screen and (max-width: 540px) {
+	#number-14 ul li {
+		height: 60px;
+		display: block;
+	}
 }
 #number-14 ul a:hover {
 	border-bottom: 0px;
+}
+
+.full-description ul li {
+	font-weight: 600;
+	position: relative;
+
+     text-align: left;
+    padding-left: 30px;
+        height: auto !important;
+    padding-left: 30px;
+    line-height: 15px;
+}
+.full-description ul li:before {
+	content: counters(section,".") " ";
+	counter-increment: section; 
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #90bf00;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+}
+@media screen and (max-width: 540px) {
+	.full-description ul li {
+		margin-bottom: 12px ! important;
+	}
 }
 /*----------------------------------------------------*/
 #number-15 {

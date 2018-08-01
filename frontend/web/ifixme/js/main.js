@@ -12,6 +12,10 @@ $(document).ready(function () {
     $(".bottom-btn").click(function () {
         $('#number-15').removeClass('active');
     });
+    $("#number-14 .btn").click(function () {
+        $('.full-description').addClass('active');
+        $(this).addClass('active');
+    });
 
 
     $('.owl-carousel.slider-center').owlCarousel({
