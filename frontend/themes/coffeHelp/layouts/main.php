@@ -89,7 +89,11 @@ $js = app\components\CController::$js;
                                 <li><a href="/repair-status">Статус ремонта</a></li>
                                 <li><a href="/contacts">Контакты</a></li>
                                 <?php if ($siteConfig['id'] == 51) : ?>
-                                    <li class="vk"><a target="_blank" href="https://vk.com/remontkofemashin_coffeehelp">Мы в: <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/vk.svg" alt=""></a><a target="_blank" href="https://www.instagram.com/coffee_help/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/instagram.svg" alt=""></a></li>
+                                    <li class="vk">
+                                        <a target="_blank" href="https://vk.com/remontkofemashin_coffeehelp">Мы в: <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/vk.svg" alt=""></a>
+                                        <a target="_blank" href="https://www.instagram.com/coffee_help/"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/instagram.svg" alt=""></a>
+                                        <a target="_blank" href="https://t.me/coffee_help"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/telegram.svg" alt=""></a>
+                                    </li>
                                 <?php endif; ?>
                             </ul>
                             <div class="top_menu_right_info"> Ваш регион: <?= Yii::$app->session['region']['title']; ?></div>
