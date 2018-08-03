@@ -1,4 +1,5 @@
 <div data-slider-step="571" class="wide-slider clearfix">
+    <div class="container">
     <div class="wide-slider--desc mb133">
         <div class="wide-slider--desc-content">
             <div class="lg-pr">
@@ -78,5 +79,6 @@ $form = ActiveForm::begin([
                 <?php endforeach; ?>
             </div>
         </div>
+    </div>
     </div>
 </div>

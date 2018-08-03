@@ -1,4 +1,5 @@
 <div data-slider-step="225" class="wide-slider clearfix">
+    <div class="container">
     <div class="wide-slider--desc mb133">
         <div class="wide-slider--desc-content">
             <div class="lg-pr">
@@ -25,5 +26,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
+    </div>
     </div>
 </div>

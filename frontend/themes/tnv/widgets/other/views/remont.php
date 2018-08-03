@@ -3,6 +3,7 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 ?>
 <div data-slider-step="392" class="wide-slider bg clearfix">
+    <div class="container">
     <div class="wide-slider--desc mb133">
         <div class="wide-slider--desc-content">
             <div class="lg-pr">
@@ -52,5 +53,6 @@ $siteConfig = app\components\CController::getSiteConfig();
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>

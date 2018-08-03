@@ -2,6 +2,7 @@
 $assets = Yii::getAlias('@web');
 ?>
 <div data-slider-step="392" class="wide-slider bg clearfix">
+    <div class="container">
     <div class="wide-slider--desc mb133">
         <div class="wide-slider--desc-content">
             <div class="lg-pr">
@@ -36,5 +37,6 @@ $assets = Yii::getAlias('@web');
                 <?php endforeach; ?>
             </div>
         </div>
+    </div>
     </div>
 </div>
