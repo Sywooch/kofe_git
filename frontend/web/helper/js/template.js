@@ -5379,24 +5379,24 @@ $(function(){
 	/*---*/
 	
 	/*mobile menu*/
-	$('.js-mobile-menu--toggle').on('click',function(e){
+	$(".js-mobile-menu--toggle").on('click',function(e){
 		e.preventDefault();
-		$('html').toggleClass('locked');
-		$('.mobile-menu--toggle').toggleClass('active');
-		$('.mobile-nav').toggleClass('active');
-		$('.mobile-nav-shade').toggleClass('active');
+		$('html').toggleClass("locked");
+		$(".mobile-menu--toggle").toggleClass("active");
+		$(".mobile-nav").toggleClass("active");
+		$(".mobile-nav-shade").toggleClass("active");
 	});
-	$('.js-mobile-nav--close').on('click',function(e){
+	$(".js-mobile-nav--close").on('click',function(e){
 		e.preventDefault();
-		$('html').removeClass('locked');
-		$('.mobile-menu--toggle').removeClass('active');
-		$('.mobile-nav').removeClass('active');
-		$('.mobile-nav-shade').removeClass('active');
+		$('html').removeClass("locked");
+		$(".mobile-menu--toggle").removeClass("active");
+		$(".mobile-nav").removeClass("active");
+		$(".mobile-nav-shade").removeClass("active");
 		didScroll = true;
 	});
-	$('.js-mobile-nav--sub-toggle').on('click',function(e){
+	$(".js-mobile-nav--sub-toggle").on('click',function(e){
 		e.preventDefault();
-		$(this).toggleClass('active');
+		$(this).toggleClass("active");
 		$(this).next().slideToggle(200);
 	});
 	/*---*/
@@ -5404,7 +5404,7 @@ $(function(){
 	/*window resize events*/
 	$(window).on('resize load', function(){
 		//background pattern
-		$('.js-background-pattern').css('width', ($(window).width()-$('.js-content-width').width()-60)/2).fadeIn();
+		$(".js-background-pattern").css('width', ($(window).width()-$(".js-content-width").width()-60)/2).fadeIn();
 		//reviews cards
 		buildReviewsCards();
 	});
