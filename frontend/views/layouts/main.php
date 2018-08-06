@@ -33,9 +33,11 @@ $js = app\components\CController::$js;
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
         .<?= $siteConfig['sitePrefix']; ?>call-back {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
+  width: 80px;
+  height: 80px;
 }
 .<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button {
   display: block;
@@ -56,6 +58,7 @@ $js = app\components\CController::$js;
 .<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button img {
   -webkit-animation: anim 10s infinite ease-in-out;
           animation: anim 10s infinite ease-in-out;
+          width: 60%;
 }
 .<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-input {
   display: block;
