@@ -495,9 +495,9 @@ class ListController extends CController {
                     $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику в ' . Yii::$app->session['region']['titleRod'] . '!';
                 } elseif ($siteConfig['id'] == 48) {
                     $neisp = mb_strtolower($pageInfo['title'], 'utf-8');
-                    $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' —  быстрый и качественный ремонт';
+                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' —  быстрый и качественный ремонт';
                     
-                    $metaDesc = 'Определим причину и устраним неисправность - ' . mb_strtolower($pageInfo['title'], 'UTF-8') . ' в кратчайшие сроки по доступной цене в ' . Yii::$app->session['region']['titleRod'] . '. Опытные мастера. Свой склад запчастей. Гарантия на ремонт.';
+                    $metaDesc = 'Определим причину и устраним неисправность - ' . 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . mb_strtolower($pageInfo['title'], 'UTF-8') . ' в кратчайшие сроки по доступной цене в ' . Yii::$app->session['region']['titleRod'] . '. Опытные мастера. Свой склад запчастей. Гарантия на ремонт.';
                     $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
                 } else {
                     if (isset(CController::$category['1_title'])) {
