@@ -6536,3 +6536,63 @@ div.for-parallax {
         display: none ! important;
     }
 }
+
+.call-animation {
+  background: #009900;
+  text-align: center;
+  line-height: 115px;
+  width: 85px;
+  height: 85px;
+  position: fixed;
+  border-radius: 100%;
+  border: solid 5px #fff;
+  animation: play 2s ease infinite;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  cursor: pointer;
+  right:30px;
+  bottom:30px;
+}
+.call-animation img {
+  width: 50%;
+}
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+  25% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4),
+      0 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.roistat-lh-popup {
+    border-radius: 15px ! important;
+}
+.roistat-lh-title {
+}
+.roistat-lh-copyright {
+    display: none ! important;
+}
+.roistat-lh-form .roistat-lh-submit {
+    background: #5c5c5c ! important;
+    border: 0px ! important;
+    border-radius: 3px ! important;
+}
+.roistat-lh-form .roistat-lh-submit:hover {
+    background: #333 ! important;
+    border: 0px ! important;
+    border-radius: 3px ! important;
+}
+.roistat-lh-form input[type=text] {
+    border-radius: 3px ! important;
+}
