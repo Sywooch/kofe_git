@@ -5053,22 +5053,22 @@ $(function(){
 	/*--*/
 	
 	/*toggle blocks*/
-	$('.js-block-toggle').on('click', function(e){
+	$(".js-block-toggle").on('click', function(e){
 		e.preventDefault();
 		$objItem = '.'+$(this).data('object')+'-menu-item--toggle';
 		$objContent = '.'+$(this).data('object')+'-content-item--toggle';
 		$objTarget = '#'+$(this).data('target');
 		$objTargetInner = '#inner-'+$(this).data('target');
 		//if($(document).width() > 991){
-			$($objItem+'.active').removeClass('active');
+			$($objItem+'.active').removeClass("active");
 			$($objContent+'.active').fadeOut(200, function(){
-				$(this).removeClass('active')
+				$(this).removeClass("active")
 				$($objTarget).fadeIn(200, function(){
-					$(this).addClass('active');
+					$(this).addClass("active");
 				});
 			});
 			
-			$(this).addClass('active');
+			$(this).addClass("active");
 		//}else{
 			$(this).toggleClass('m-active');
 			$($objTargetInner).toggleClass('active');
@@ -5077,15 +5077,55 @@ $(function(){
 	/*---*/
 	
 
+<<<<<<< Updated upstream
+=======
+	function hasScrolled(){
+		var st = $(this).scrollTop();
+		if(Math.abs(lastScrollTop - st) <= delta)
+			return;
+		if(st > lastScrollTop && st > navbarHeight){
+			$(".mobile-menu").removeClass("mobile-menu--down").addClass("mobile-menu--up");
+		}else{
+			if(st + $(window).height() < $(document).height()){
+				$(".mobile-menu").removeClass("mobile-menu--up").addClass("mobile-menu--down");
+			}
+		}
+		lastScrollTop = st;
+	}
+	/*---*/
+	
+	/*mobile menu*/
+	$(".js-mobile-menu--toggle").on('click',function(e){
+		e.preventDefault();
+		$('html').toggleClass("locked");
+		$(".mobile-menu--toggle").toggleClass("active");
+		$(".mobile-nav").toggleClass("active");
+		$(".mobile-nav-shade").toggleClass("active");
+	});
+	$(".js-mobile-nav--close").on('click',function(e){
+		e.preventDefault();
+		$('html').removeClass("locked");
+		$(".mobile-menu--toggle").removeClass("active");
+		$(".mobile-nav").removeClass('active');
+		$(".mobile-nav-shade").removeClass("active");
+		didScroll = true;
+	});
+	$(".js-mobile-nav--sub-toggle").on('click',function(e){
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).next().slideToggle(200);
+	});
+	/*---*/
+>>>>>>> Stashed changes
 	
 	/*cart*/
 	function cartHeaderUpdate(data){
-		$('.js-header-cart--count').html(data.items_count);
-		$('.js-cart--items-price').html(InSales.formatMoney(data.items_price, cv_currency_format));
+		$(".js-header-cart--count").html(data.items_count);
+		$(".js-cart--items-price").html(InSales.formatMoney(data.items_price, cv_currency_format));
 		if(data.items_count > 0){
-			$('.js-header-cart--description').html(data.items_count+' '+ProductsCount(data.items_count)+' на сумму: <span>'+InSales.formatMoney(data.items_price, cv_currency_format)+'</span>');
+			$(".js-header-cart--description").html(data.items_count+' '+ProductsCount(data.items_count)+' на сумму: <span>'+InSales.formatMoney(data.items_price, cv_currency_format)+'</span>');
 		}else{
-			$('.js-header-cart--description').html('В Вашей коризне пока пусто');
+			$(".js-header-cart--description").html('В Вашей коризне пока пусто');
 		}
 	}
 	
