@@ -32,6 +32,29 @@ $js = app\components\CController::$js;
 <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
+        .roistat-lh-popup {
+            border-radius: 15px ! important;
+        }
+        .roistat-lh-title {
+            font-family: "NeuronExtraBold",cursive ! important;
+        }
+        .roistat-lh-copyright {
+            display: none ! important;
+        }
+        .roistat-lh-form .roistat-lh-submit {
+            background: #333 ! important;
+            border: 0px ! important;
+            border-radius: 3px ! important;
+        }
+        .roistat-lh-form .roistat-lh-submit:hover {
+            background: #333 ! important;
+            border: 0px ! important;
+            border-radius: 3px ! important;
+            opacity: 0.7 ! important;
+        }
+        .roistat-lh-form input[type=text] {
+            border-radius: 3px ! important;
+        }
         .<?= $siteConfig['sitePrefix']; ?>call-back {
   position: fixed;
   bottom: 20px;
