@@ -3,7 +3,7 @@ $assets = Yii::getAlias('@web');
 $breadcrumbs = [
     $page['full_title'],
 ];
-$this->title = $page['meta_title'];
+$this->title = str_replace('#number#', Yii::$app->session['region']['phone'], $page['meta_title']);
 ?>
 <?= ifixme\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <section id="number-5" style="background-image: url(<?= $assets ?>/ifixme/images/upload/<?= strtolower(str_replace('Ремонт ', '', $page['title'])); ?>.png)">

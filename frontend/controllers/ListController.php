@@ -495,7 +495,7 @@ class ListController extends CController {
                     $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику в ' . Yii::$app->session['region']['titleRod'] . '!';
                 } elseif ($siteConfig['id'] == 48) {
                     $neisp = mb_strtolower($pageInfo['title'], 'utf-8');
-                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' —  быстрый и качественный ремонт';
+                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . ' —  быстрый и качественный ремонт';
                     
                     $metaDesc = 'Определим причину и устраним неисправность - ' . 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . mb_strtolower($pageInfo['title'], 'UTF-8') . ' в кратчайшие сроки по доступной цене в ' . Yii::$app->session['region']['titleRod'] . '. Опытные мастера. Свой склад запчастей. Гарантия на ремонт.';
                     $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
@@ -808,12 +808,8 @@ class ListController extends CController {
             $title = $categorySEO[self::$category['id']]['title'];
         }
         if (isset($siteConfig['theme']) && $siteConfig['theme'] == 'ifixme') {
-            \Yii::$app->view->registerMetaTag([
-                'name' => 'keywords',
-                'content' => 'ремонт ' . $pageInfo['title']
-            ]);
-            $title = 'Ремонт ' . $pageInfo['title'] . ' в Москве с гарантией 1 год — iFixMe ';
-            $metaDesc = 'Безупречный ремонт ' . $pageInfo['title'] . ' в Москве. Специализируемся только на ремонте Apple. Выдаём гарантию на 12 месяцев. Отзывы клиентов. Звоните ☎ ' . Yii::$app->session['region']['phone'] . '.';
+            $title = 'Качественный ремонт ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod'] . ' с гарантией ☎️ ' . Yii::$app->session['region']['phone'];
+            $metaDesc = 'Выполним ремонт любых неисправностей ' . $pageInfo['title'] . '. Опытные мастера. Гарантия качества. Оригинальные комплектующие. Бесплатная диагностика. Выезд курьера или мастера к заказчику.';
         }
         if ($siteConfig['id'] == 50) {
             $title = 'Ремонт кофемашины ' . $brand['title'] . ' ' . $pageInfo['title'] . ' недорого, быстро, качественно!';
