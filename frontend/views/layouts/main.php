@@ -32,6 +32,167 @@ $js = app\components\CController::$js;
 <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
         <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
         <style>
+        .<?= $siteConfig['sitePrefix']; ?>call-back {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 80px;
+  height: 80px;
+  background: #009900;
+  border: none;
+  border-radius: 50%;
+  font-size: 57px;
+  line-height: 83px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button img {
+  -webkit-animation: anim 10s infinite ease-in-out;
+          animation: anim 10s infinite ease-in-out;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-input {
+  display: block;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-input input {
+  height: 70px;
+  font-size: 30px;
+  line-height: 30px;
+  border: 2px solid #009900;
+  box-sizing: border-box;
+  width: 0;
+  padding: 0;
+  margin-right: 40px;
+  border-radius: 35px 0 0 35px;
+  transition: width 0.3s ease;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button:hover {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button:hover:after {
+  border-width: 50px;
+  transition: all 0.4s ease 0.2s;
+  border-color: transparent;
+}
+.<?= $siteConfig['sitePrefix']; ?>call-back .<?= $siteConfig['sitePrefix']; ?>call-button:after {
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  content: "";
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  1% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  2% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  3% {
+    -webkit-transform: rotate(16deg);
+            transform: rotate(16deg);
+  }
+  4% {
+    -webkit-transform: rotate(-14deg);
+            transform: rotate(-14deg);
+  }
+  5% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  6% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  7% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  8% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  9% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  1% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  2% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  3% {
+    -webkit-transform: rotate(16deg);
+            transform: rotate(16deg);
+  }
+  4% {
+    -webkit-transform: rotate(-14deg);
+            transform: rotate(-14deg);
+  }
+  5% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  6% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  7% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  8% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  9% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
             <?= file_get_contents(Yii::getAlias('@frontend') . '/web/' . $siteConfig['sitePrefix'] . 'css/' . $siteConfig['sitePrefix'] . 'all.css'); ?>
             #banner ul {list-style-type: disc;
                         padding-left: 20px;
@@ -294,6 +455,13 @@ $js = app\components\CController::$js;
                     <div class="close">OK</div>
                 </div>
             </div>
+
+            <div class="call-back">
+                <button class="call-button" onclick="window.roistatLeadHunterShow();">
+                    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMi4wMDYgNTEyLjAwNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAwNiA1MTIuMDA2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTUwMi4wNSw0MDcuMTI3bC01Ni43NjEtMzcuODQ0TDM5NC44MywzMzUuNjVjLTkuNzM4LTYuNDc5LTIyLjgyNS00LjM1NS0zMC4wMTQsNC44NzNsLTMxLjIyMyw0MC4xMzkgICAgIGMtNi43MDcsOC43MS0xOC43NzIsMTEuMjEzLTI4LjM5LDUuODg4Yy0yMS4xODYtMTEuNzg1LTQ2LjIzOS0yMi44ODEtMTAxLjUxNy03OC4yM2MtNTUuMjc4LTU1LjM0OS02Ni40NDUtODAuMzMxLTc4LjIzLTEwMS41MTcgICAgIGMtNS4zMjUtOS42MTgtMi44MjItMjEuNjgzLDUuODg4LTI4LjM4OWw0MC4xMzktMzEuMjIzYzkuMjI3LTcuMTg4LDExLjM1Mi0yMC4yNzUsNC44NzMtMzAuMDE0bC0zMi42LTQ4LjkwNUwxMDQuODc5LDkuOTU2ICAgICBDOTguMjYyLDAuMDMsODUuMDE2LTIuOTUsNzQuNzg2LDMuMTg1TDI5Ljk1LDMwLjA4M0MxNy44MzMsMzcuMjIyLDguOTI2LDQ4Ljc1LDUuMDc0LDYyLjI3NyAgICAgQy03LjE4NywxMDYuOTgtOS42NTksMjA1LjU5MywxNDguMzgxLDM2My42MzNzMjU2LjY0NCwxNTUuNTYsMzAxLjM0NywxNDMuMjk4YzEzLjUyNy0zLjg1MSwyNS4wNTUtMTIuNzU4LDMyLjE5NC0yNC44NzYgICAgIGwyNi44OTgtNDQuODM1QzUxNC45NTYsNDI2Ljk4OSw1MTEuOTc2LDQxMy43NDQsNTAyLjA1LDQwNy4xMjd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJCTxwYXRoIGQ9Ik0yOTEuMzA5LDc5LjQ0N2M4Mi44NDIsMC4wOTIsMTQ5Ljk3Nyw2Ny4yMjYsMTUwLjA2OSwxNTAuMDY5YzAsNC44NzUsMy45NTIsOC44MjgsOC44MjgsOC44MjggICAgIGM0Ljg3NSwwLDguODI4LTMuOTUyLDguODI4LTguODI4Yy0wLjEwMi05Mi41ODktNzUuMTM1LTE2Ny42MjItMTY3LjcyNC0xNjcuNzI0Yy00Ljg3NSwwLTguODI4LDMuOTUyLTguODI4LDguODI4ICAgICBDMjgyLjQ4MSw3NS40OTQsMjg2LjQzMyw3OS40NDcsMjkxLjMwOSw3OS40NDd6IiBmaWxsPSIjRkZGRkZGIi8+CgkJCTxwYXRoIGQ9Ik0yOTEuMzA5LDEzMi40MTJjNTMuNjAzLDAuMDYzLDk3LjA0LDQzLjUwMSw5Ny4xMDMsOTcuMTAzYzAsNC44NzUsMy45NTIsOC44MjgsOC44MjgsOC44MjggICAgIGM0Ljg3NSwwLDguODI4LTMuOTUyLDguODI4LTguODI4Yy0wLjA3My02My4zNDktNTEuNDA5LTExNC42ODYtMTE0Ljc1OS0xMTQuNzU5Yy00Ljg3NSwwLTguODI4LDMuOTUyLTguODI4LDguODI4ICAgICBDMjgyLjQ4MSwxMjguNDYsMjg2LjQzMywxMzIuNDEyLDI5MS4zMDksMTMyLjQxMnoiIGZpbGw9IiNGRkZGRkYiLz4KCQkJPHBhdGggZD0iTTI5MS4zMDksMTg1LjM3OGMyNC4zNjUsMC4wMjksNDQuMTA5LDE5Ljc3Myw0NC4xMzgsNDQuMTM4YzAsNC44NzUsMy45NTIsOC44MjgsOC44MjgsOC44MjggICAgIGM0Ljg3NSwwLDguODI4LTMuOTUyLDguODI4LTguODI4Yy0wLjAzOS0zNC4xMTEtMjcuNjgyLTYxLjc1NC02MS43OTMtNjEuNzkzYy00Ljg3NSwwLTguODI4LDMuOTUyLTguODI4LDguODI4ICAgICBDMjgyLjQ4MSwxODEuNDI2LDI4Ni40MzMsMTg1LjM3OCwyOTEuMzA5LDE4NS4zNzh6IiBmaWxsPSIjRkZGRkZGIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                </button>
+            </div>
+
             <?= \app\widgets\forms\Order::widget(); ?>
             <?php $this->registerJsFile($assets . '/' . $siteConfig['sitePrefix'] . 'js/' . $siteConfig['sitePrefix'] . 'all.js?v=17'); ?>
             <?php $this->endBody() ?>    
