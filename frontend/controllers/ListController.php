@@ -495,10 +495,6 @@ class ListController extends CController {
                     $metaDesc = $p . '? Позвоните нам и мы бесплатно доставим ваше устройство в наш сервисный центр и проведём бесплатную диагностику в ' . Yii::$app->session['region']['titleRod'] . '!';
                 } elseif ($siteConfig['id'] == 48) {
                     $neisp = mb_strtolower($pageInfo['title'], 'utf-8');
-                    \Yii::$app->view->registerMetaTag([
-                        'name' => 'keywords',
-                        'content' => 'apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp
-                    ]);
                     $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' —  быстрый и качественный ремонт';
                     $metaDesc = 'Определим причину и устраним ' . $pageInfo['title'] . ' в кротчайшие сроки по доступной цене в ' . Yii::$app->session['region']['titleRod'] . '. Опытные мастера. Свой склад запчастей. Гарантия на ремонт.';
                     $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
