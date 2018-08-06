@@ -499,8 +499,8 @@ class ListController extends CController {
                         'name' => 'keywords',
                         'content' => 'apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp
                     ]);
-                    $title = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '? Что делать — СЦ iFixMe';
-                    $metaDesc = 'Подробно рассказываем и показываем, что делать если Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp . '.';
+                    $title = $this->mb_ucfirst($pageInfo['title'], 'UTF-8') . ' —  быстрый и качественный ремонт';
+                    $metaDesc = 'Определим причину и устраним ' . $pageInfo['title'] . ' в кротчайшие сроки по доступной цене в ' . Yii::$app->session['region']['titleRod'] . '. Опытные мастера. Свой склад запчастей. Гарантия на ремонт.';
                     $h1 = 'Apple ' . strtolower(str_replace('Ремонт ', '', CController::$category['title'])) . ' ' . $neisp;
                 } else {
                     if (isset(CController::$category['1_title'])) {
