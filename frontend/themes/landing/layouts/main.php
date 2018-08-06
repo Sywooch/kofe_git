@@ -325,28 +325,28 @@ $domain = str_replace('admin.', '', $domain);
                     <div class="top__slider">
                         <div class="owl-carousel">
                             <div class="item">
-                                <div class="cirle">Разбился<br/>экран</div>
+                                <div class="cirle">Перестала <br/>включаться</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Разряжается<br/>быстро</div>
+                                <div class="cirle">Не варит <br/>кофе</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Телефон<br/>“утонул”</div>
+                                <div class="cirle">Начала <br/>протекать</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Не работает<br/>динамик или <br/>микрофон</div>
+                                <div class="cirle">Больше не  <br/>молит зерна</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Перестал<br/>заряжаться</div>
+                                <div class="cirle">Ошибку <br/>выдает</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Не работает<br/>кнопка домой</div>
+                                <div class="cirle">Кофе какой-то <br/>не вкусный</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Не работает<br/>связь или wi-fi</div>
+                                <div class="cirle">Кофе делает какой-то<br/> очень горячий <br/>или холодный</div>
                             </div>
                             <div class="item">
-                                <div class="cirle">Не<br/>включается</div>
+                                <div class="cirle">Не хочет <br/>наливать кофе</div>
                             </div>
                         </div>
                     </div>
