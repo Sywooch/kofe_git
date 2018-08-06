@@ -5076,62 +5076,7 @@ $(function(){
 	});
 	/*---*/
 	
-	/*show/hide menu*/
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 10;
-	var navbarHeight = 64;
-	
-	$(window).on('scroll', function(){
-		if($(window).width() < 768){
-			didScroll = true;
-		}
-	});
-	
-	setInterval(function(){
-		if(didScroll){
-			hasScrolled();
-			didScroll = false;
-		}
-	}, 250);
 
-	function hasScrolled(){
-		var st = $(this).scrollTop();
-		if(Math.abs(lastScrollTop - st) <= delta)
-			return;
-		if(st > lastScrollTop && st > navbarHeight){
-			$('.mobile-menu').removeClass('mobile-menu--down').addClass('mobile-menu--up');
-		}else{
-			if(st + $(window).height() < $(document).height()){
-				$('.mobile-menu').removeClass('mobile-menu--up').addClass('mobile-menu--down');
-			}
-		}
-		lastScrollTop = st;
-	}
-	/*---*/
-	
-	/*mobile menu*/
-	$('.js-mobile-menu--toggle').on('click',function(e){
-		e.preventDefault();
-		$('html').toggleClass('locked');
-		$('.mobile-menu--toggle').toggleClass('active');
-		$('.mobile-nav').toggleClass('active');
-		$('.mobile-nav-shade').toggleClass('active');
-	});
-	$('.js-mobile-nav--close').on('click',function(e){
-		e.preventDefault();
-		$('html').removeClass('locked');
-		$('.mobile-menu--toggle').removeClass('active');
-		$('.mobile-nav').removeClass('active');
-		$('.mobile-nav-shade').removeClass('active');
-		didScroll = true;
-	});
-	$('.js-mobile-nav--sub-toggle').on('click',function(e){
-		e.preventDefault();
-		$(this).toggleClass('active');
-		$(this).next().slideToggle(200);
-	});
-	/*---*/
 	
 	/*cart*/
 	function cartHeaderUpdate(data){
@@ -5399,6 +5344,62 @@ $(function(){
 		setPhoneMask();
 	});
 	
+		/*show/hide menu*/
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 10;
+	var navbarHeight = 64;
+	
+	$(window).on('scroll', function(){
+		if($(window).width() < 768){
+			didScroll = true;
+		}
+	});
+	
+	setInterval(function(){
+		if(didScroll){
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled(){
+		var st = $(this).scrollTop();
+		if(Math.abs(lastScrollTop - st) <= delta)
+			return;
+		if(st > lastScrollTop && st > navbarHeight){
+			$('.mobile-menu').removeClass('mobile-menu--down').addClass('mobile-menu--up');
+		}else{
+			if(st + $(window).height() < $(document).height()){
+				$('.mobile-menu').removeClass('mobile-menu--up').addClass('mobile-menu--down');
+			}
+		}
+		lastScrollTop = st;
+	}
+	/*---*/
+	
+	/*mobile menu*/
+	$('.js-mobile-menu--toggle').on('click',function(e){
+		e.preventDefault();
+		$('html').toggleClass('locked');
+		$('.mobile-menu--toggle').toggleClass('active');
+		$('.mobile-nav').toggleClass('active');
+		$('.mobile-nav-shade').toggleClass('active');
+	});
+	$('.js-mobile-nav--close').on('click',function(e){
+		e.preventDefault();
+		$('html').removeClass('locked');
+		$('.mobile-menu--toggle').removeClass('active');
+		$('.mobile-nav').removeClass('active');
+		$('.mobile-nav-shade').removeClass('active');
+		didScroll = true;
+	});
+	$('.js-mobile-nav--sub-toggle').on('click',function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).next().slideToggle(200);
+	});
+	/*---*/
 		
 	/*window resize events*/
 	$(window).on('resize load', function(){
