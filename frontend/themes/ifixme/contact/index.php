@@ -12,7 +12,7 @@ $this->title = $pageInfo['meta_title'];
                 <h1>Контакты</h1>
                 <div class="adress one">
                     <span>Адрес</span>
-                    <p>г. Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</p>
+                    <p>г. Москва, Багратионовский пр-д, 70К20В</p>
                 </div>
                 <div class="tel">
                     <span>Телефон</span>
@@ -36,45 +36,17 @@ $this->title = $pageInfo['meta_title'];
                     </div>
                     <div class="mashina info">
                         <span>На  машине</span>
-                        <p>При движении в область по Кутузовскому проспекту, съезжаем на улицу Барклая и едем приблизительно 1 км до ТЦ "Горбушка". Наш сервисный центр находится на 1 этаже, павильон 104.</p>
+                        <p>При движении в область по Кутузовскому проспекту, съезжаем на улицу Барклая и едем приблизительно 1 км до ТЦ "Горбушка", следов поворачиваем на Багратионовский пр-д. Наш Сервис находится в здании 70К20В</p>
                     </div>
                     <div class="peshkom info">
                         <span>Пешком</span>
-                        <p>Последний вагон из центра, выходим на улицу и двигаемся по ул. Барклая в сторону ТЦ "Горбушка". Заходим внутрь. Наш сервисный центр находится на 1 этаже, павильон 104.</p>
+                        <p>Последний вагон из центра, выходим на улицу и двигаемся по ул. Барклая в сторону ТЦ "Горбушка". Не доходя БЗ "Рубин" поворачиваем налево и проходим 200м. Наш сервисный центр находится в здании 70К20В.</p>
                     </div>
                 </div>
             </div>
-<!--            <div class="right content-foto">
-                <div class="adress">
-                    <div class="titles">
-                        Фото офиса
-                    </div>
-                    <div class="galaleriya">
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg" class="img fancybox">
-                            <img src="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png" class="img fancybox">
-                            <img src="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg" class="img fancybox">
-                            <img src="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg" class="img fancybox">
-                            <img src="https://image.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png" class="img fancybox">
-                            <img src="http://www.searchermag.net/wp-content/uploads/2017/09/responsive-web-design.png">
-                        </a>
-                        <a rel="group" title="Lorem ipsum dolor sit amet" href="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg" class="img fancybox">
-                            <img src="http://www.i4uinc.com/templates/i4uinc_20170909a/images/designer/791358511aab60a3bb722e21efbd9ea5_webdesigndpc866542291200x608.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>-->
         </div>
         <div class="bigmap">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A568d550a67da292f568b62bc28287c8c6a51a4ceb047d5bb37c0c72efbaaf9c5&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8937a2b71b799acf4e8b3ab763e000285abaf36901fab05e78a52c08fe18f261&amp;max-width=1920&amp;height=525&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
     </div>
 </section>

@@ -72,7 +72,7 @@ $js = app\components\CController::$js;
                     <div class="boxcontact">
                         <div class="left">
                             <span class="name">Сервисный центр</span>
-                            <a href="/kontakty">Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</a>
+                            <a href="/kontakty">г. Москва, Багратионовский пр-д, 70К20В</a>
                             <span class="times">Ежедневно с 08:00 до 22:00</span>
                         </div>
                         <div class="right">
@@ -129,7 +129,7 @@ $js = app\components\CController::$js;
                                     <div class="info">
                                         <div class="img"><img src="<?= $assets ?>/ifixme/images/contact.jpg" alt=""></div>
                                         <div class="text">
-                                            <p>Москва, ул. Барклая 8, ТЦ "Горбушка", этаж 1, пав. 104</p>
+                                            <p>г. Москва, Багратионовский пр-д, 70К20В</p>
                                             <a class="fix-tel" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>
                                             <span>Ежедневно с 08:00 до 22:00</span>
                                         </div>
