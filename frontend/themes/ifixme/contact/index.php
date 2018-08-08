@@ -20,7 +20,7 @@ $this->title = $pageInfo['meta_title'];
                 </div>
                 <div class="email">
                     <span>Почта</span>
-                    <a href="#">info@ifixme.ru</a>
+                    <a href="#">info@iremonts.ru</a>
                 </div>
                 <div class="adress">
                     <span>Режим работы</span>

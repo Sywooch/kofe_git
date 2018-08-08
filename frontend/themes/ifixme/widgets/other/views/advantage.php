@@ -1,7 +1,8 @@
 <?php
 $assets = Yii::getAlias('@web');
+$isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
 ?>
-<noindex>
+<?php if (!$isHome): ?><noindex><?php endif; ?>
     <section id="number-7">
         <div class="container">
             <div class="item">
@@ -35,4 +36,4 @@ $assets = Yii::getAlias('@web');
             <div class="clear"></div>
         </div>
     </section>
-</noindex>
+    <?php if (!$isHome): ?></noindex><?php endif; ?>

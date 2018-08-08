@@ -53,20 +53,21 @@ $js = app\components\CController::$js;
                             <span></span>
                         </div>
                     </div>
-                    <ul>
-                        <li class="menu-child"><span>О нас <i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                            <ul>
-                                <div class="container">
-                                    <li><a href="/o-nas">О нас</a></li>
-                                    <li><a href="/uslugi">Услуги</a></li>
-                                    <li><a href="/akcii">Акции</a></li>
-                                    <li><a href="/otzyvy">Отзывы</a></li>
-                                    <li><a href="/kontakty">Контакты</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li><a href="/kontakty">Контакты</a></li>
-                    </ul>
+                    <noindex>
+                        <ul>
+                            <li class="menu-child"><span>О нас <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                <ul>
+                                    <div class="container">
+                                        <li><a href="/o-nas">О нас</a></li>
+                                        <li><a href="/uslugi">Услуги</a></li>
+                                        <li><a href="/akcii">Акции</a></li>
+                                        <li><a href="/otzyvy">Отзывы</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a href="/kontakty">Контакты</a></li>
+                        </ul>
+                    </noindex>
                 </div>
                 <div class="topcontactinfo">
                     <div class="boxcontact">
@@ -159,19 +160,21 @@ $js = app\components\CController::$js;
                                 <span></span>
                             </div>
                         </div>
-                        <ul>
-                            <li><a href="/o-nas">О нас</a></li>
-                            <li><a href="/uslugi">Услуги</a></li>
-                            <li><a href="/kontakty">Контакты</a></li>
-                            <li><a href="/kontakty">Пользовательское соглашение</a></li>
-                        </ul>
+                        <noindex>
+                            <ul>
+                                <li><a href="/o-nas">О нас</a></li>
+                                <li><a href="/uslugi">Услуги</a></li>
+                                <li><a href="/kontakty">Контакты</a></li>
+                                <li><a href="/politika-konf-info">Пользовательское соглашение</a></li>
+                            </ul>
+                        </noindex>
                         <span class="footer-text">Ремонт техники Apple в Москве</span>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
         </footer>
-
+    <noindex>
         <div class="popup">
             <div id="popup1" class="inner">
                 <div class="left" style="background-image: url(<?= $assets ?>/ifixme/images/popupbgmaster.jpg);"></div>
@@ -209,8 +212,9 @@ $js = app\components\CController::$js;
             </div>
             <div class="close"></div>
         </div>
-        <?= !empty($js['content']) ? $js['content'] : ''; ?>
-    </body>
+    </noindex>
+    <?= !empty($js['content']) ? $js['content'] : ''; ?>
+</body>
 </html>
 <script src="<?= $assets ?>/ifixme/js/jquery-1.11.3.min.js"></script>
 <script src="<?= $assets ?>/ifixme/js/jquery.sticky.js"></script>
@@ -225,7 +229,7 @@ $js = app\components\CController::$js;
 <script src="<?= $assets ?>/ifixme/js/yii.js"></script>
 <script src="<?= $assets ?>/ifixme/js/yii.validation.js"></script>
 <script>
-                                    new WOW().init();
+                                        new WOW().init();
 </script>
 <script>$("form").each(function () {
         $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")

@@ -3466,5 +3466,16 @@ return [
             'theme' => 'kofefix',
             'order-title' => 'kofefix',            
         ],
+        'mr-coffee' => [
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
+            'mono' => false,
+            'id' => 226,
+            'sitePrefix' => 'mr_coffee',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'mr_coffee',
+            'order-title' => 'mr_coffee',            
+        ],
     ]
 ];
