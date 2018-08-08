@@ -53,23 +53,19 @@ $js = app\components\CController::$js;
                             <span></span>
                         </div>
                     </div>
-
                     <ul>
-                        <noindex>
-                            <li class="menu-child"><span>О нас <i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                <ul>
-                                    <div class="container">
-                                        <li><a href="/o-nas">О нас</a></li>
-                                        <li><a href="/uslugi">Услуги</a></li>
-                                        <li><a href="/akcii">Акции</a></li>
-                                        <li><a href="/otzyvy">Отзывы</a></li>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li><a href="/kontakty">Контакты</a></li>
-                        </noindex>
+                        <li class="menu-child"><span>О нас <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul>
+                                <div class="container">
+                                    <li><noindex><a href="/o-nas">О нас</a></noindex></li>
+                                    <li><noindex><a href="/uslugi">Услуги</a></noindex></li>
+                                    <li><noindex><a href="/akcii">Акции</a></noindex></li>
+                                    <li><noindex><a href="/otzyvy">Отзывы</a></noindex></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><noindex><a href="/kontakty">Контакты</a></noindex></li>
                     </ul>
-
                 </div>
                 <div class="topcontactinfo">
                     <div class="boxcontact">
