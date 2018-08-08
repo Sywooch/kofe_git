@@ -4,6 +4,7 @@ namespace ifixme\widgets\lists;
 
 use yii\base\Widget;
 use app\components\CController;
+use Yii;
 
 class LastReviews extends Widget {
 
