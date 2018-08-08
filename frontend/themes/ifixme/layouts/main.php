@@ -53,8 +53,9 @@ $js = app\components\CController::$js;
                             <span></span>
                         </div>
                     </div>
-                    <noindex>
-                        <ul>
+
+                    <ul>
+                        <noindex>
                             <li class="menu-child"><span>О нас <i class="fa fa-angle-down" aria-hidden="true"></i></span>
                                 <ul>
                                     <div class="container">
@@ -66,8 +67,9 @@ $js = app\components\CController::$js;
                                 </ul>
                             </li>
                             <li><a href="/kontakty">Контакты</a></li>
-                        </ul>
-                    </noindex>
+                        </noindex>
+                    </ul>
+
                 </div>
                 <div class="topcontactinfo">
                     <div class="boxcontact">
