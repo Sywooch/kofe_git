@@ -3,7 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\widgets\MaskedInput;
-
+if(!isset($yandex))
+    $yandex = '';
 $form = ActiveForm::begin([
             'id' => $id,
             'options' => ['class' => 'form default'],
@@ -12,9 +13,11 @@ $form = ActiveForm::begin([
                 'template' => '{input}',
             ],
         ]);
+$validatejs = "$('#$id').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter49912222.reachGoal(\"$yandex\");}});";
+$this->registerJs($validatejs, \yii\web\View::POS_END);
 ?>
-<?php if(!empty($title)): ?><div class="form__title"><?= $title; ?></div><?php endif; ?>
-<?php if(!empty($sub_title)): ?><div class="form__subtitle"><?= $sub_title; ?></div><?php endif; ?>
+<?php if (!empty($title)): ?><div class="form__title"><?= $title; ?></div><?php endif; ?>
+<?php if (!empty($sub_title)): ?><div class="form__subtitle"><?= $sub_title; ?></div><?php endif; ?>
 <div class="form__field">
     <?=
     $form->field($model, 'phone')->widget(MaskedInput::className(), [

@@ -12,6 +12,7 @@ class Form1 extends Widget {
     public $id = '';
     public $model;
     public $button = '';
+    public $yandex;
 
     public function run() {
         $class = "\\frontend\\models\\" . $this->model;
@@ -22,7 +23,7 @@ class Form1 extends Widget {
             \app\components\CController::sendToRoistat($model->phone);
             Yii::$app->getSession()->setFlash('success', 'seccess');
         }
-        return $this->render('form1', ['model' => $model, 'title' => $this->title, 'sub_title' => $this->sub_title, 'id' => $this->id, 'button' => $this->button]);
+        return $this->render('form1', ['model' => $model, 'title' => $this->title, 'sub_title' => $this->sub_title, 'id' => $this->id, 'button' => $this->button, 'yandex' => $this->yandex]);
     }
 
 }

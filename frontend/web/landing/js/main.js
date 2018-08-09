@@ -242,6 +242,6 @@ $('#photo .item').click(function () {
         title = $(this).find(".titlecopy").html();
         subtitle = "xsvf dsfdfg dfg";
     }
-    $("#newModal .form__title").html(title);
-    $("#newModal .form__subtitle").html(subtitle);
+    $("#newModal2 .form__title").html(title);
+    $("#newModal2 .form__subtitle").html(subtitle);
 });

@@ -351,7 +351,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="top__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'id' => 'form2', 'model' => 'AskForm2', 'button' => 'Заказать бесплатную диагностику']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины.', 'yandex' => 'TopNeispr_Diag', 'id' => 'form2', 'model' => 'AskForm2', 'button' => 'Заказать бесплатную диагностику']); ?>
                     </div>
                 </div>
                 <div class="parBox" id="parBox">
@@ -442,7 +442,7 @@ $domain = str_replace('admin.', '', $domain);
                         </div>
                     </div>
                     <div class="free__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины' . (isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : '') . '.', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Вызовите нашего инженера для бесплатной диагностики кофемашины' . (isset($_GET['param2']) ? ' ' . ucfirst(strip_tags(str_replace(['"', "'"], '', $_GET['param2']))) : '') . '.', 'yandex' => 'RealFreeDiag', 'id' => 'form1', 'model' => 'AskForm', 'button' => 'Вызвать мастера']); ?>
                     </div>
                 </div>
             </div>
@@ -797,7 +797,7 @@ $domain = str_replace('admin.', '', $domain);
                         <div class="end__subtitle">Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.</div>
                     </div>
                     <div class="end__form">
-                        <?= landing\widgets\forms\Form1::widget(['title' => 'Мы работаем и в выходные,<br/>позвоните нам и курьер сразу-же приедет!', 'sub_title' => 'Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.', 'id' => 'form3', 'model' => 'CallBackForm', 'button' => 'Вызвать курьера']); ?>
+                        <?= landing\widgets\forms\Form1::widget(['title' => 'Мы работаем и в выходные,<br/>позвоните нам и курьер сразу-же приедет!', 'sub_title' => 'Курьер приедет в строго оговоренное время и заберёт кофемашину для проведения диагностики.', 'yandex' => 'Footer', 'id' => 'form3', 'model' => 'CallBackForm', 'button' => 'Вызвать курьера']); ?>
                     </div>
                 </div>
             </div>
@@ -837,28 +837,31 @@ $domain = str_replace('admin.', '', $domain);
             <div class="up-wrap"><a class="up" href="#header"></a>
             </div>
             <div class="modal" id="mainModal" style="display: none;" >
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и мы Вам', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form4', 'model' => 'CallBackTopForm', 'button' => 'Жду звонка']); ?>                
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и мы Вам', 'yandex' => 'First', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form4', 'model' => 'CallBackTopForm', 'button' => 'Жду звонка']); ?>                
             </div>
             <div class="modal" id="masterModal" style="display: none;" >
                 <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку на <br/>вызов мастера', 'sub_title' => 'Перезвоним за 27 секунд', 'id' => 'form5', 'model' => 'OrderForm', 'button' => 'Вызвать мастера']); ?>
             </div>
             <div class="modal" id="cashbackModal" style="display: none;" >
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>15% кэшбэк на первый ремонт', 'sub_title' => 'Перезвоним за 27 секунд', 'button' => 'Получить 15% кэшбэк', 'id' => 'form6', 'model' => 'OrderForm2']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и получи<br/>15% кэшбэк на первый ремонт', 'yandex' => 'CashBack15', 'sub_title' => 'Перезвоним за 27 секунд', 'button' => 'Получить 15% кэшбэк', 'id' => 'form6', 'model' => 'OrderForm2']); ?>
             </div>
             <div class="modal" id="glassModal" style="display: none;">
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку сейчас и получите скидку 50% на комплексную чистку кофемашину', 'sub_title' => 'Перезвоним за 7 секунд', 'button' => 'Получить 50% скидку', 'id' => 'form7', 'model' => 'ServiceForm']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку сейчас и получите скидку 50% на комплексную чистку кофемашину', 'yandex' => 'Spec_50', 'sub_title' => 'Перезвоним за 7 секунд', 'button' => 'Получить 50% скидку', 'id' => 'form7', 'model' => 'ServiceForm']); ?>
             </div>
             <div class="modal" id="studentModal" style="display: none;" >
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставь заявку и получи <br/>30% скидку на комплексную профилактику', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form8', 'model' => 'AskForm3', 'button' => 'Получить скидку 30%']); ?>                
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставь заявку и получи <br/>30% скидку на комплексную профилактику', 'yandex' => 'Spec_30', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form8', 'model' => 'AskForm3', 'button' => 'Получить скидку 30%']); ?>                
             </div>
             <div class="modal" id="repairModal" style="display: none;">
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm4', 'button' => 'Записаться на ремонт']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'yandex' => 'KakRabotaem_Zakaz', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm4', 'button' => 'Записаться на ремонт']); ?>
             </div>
             <div class="modal" id="newModal" style="display: none;">
-                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm5', 'button' => 'ЗАКАЗАТЬ ДИАГНОСТИКУ']); ?>
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'yandex' => 'Neispravnost_Diag_Popup', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm5', 'button' => 'ЗАКАЗАТЬ ДИАГНОСТИКУ']); ?>
+            </div>
+            <div class="modal" id="newModal2" style="display: none;">
+                <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'yandex' => 'Brands_Diag', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form10', 'model' => 'KomForm', 'button' => 'ЗАКАЗАТЬ ДИАГНОСТИКУ']); ?>
             </div>
         </div>
-        <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49912222 = new Ya.Metrika2({ id:49912222, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49912222" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49912222 = new Ya.Metrika2({ id:49912222, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49912222" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
         <script>
             (function (w, d, s, h, id) {
                 w.roistatProjectId = id;

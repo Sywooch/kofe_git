@@ -12,6 +12,8 @@ $form = ActiveForm::begin([
                 'template' => '{input}',
             ],
         ]);
+        $validatejs = "$('#other3-form').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter49912222.reachGoal(\"FAQ_posovetovatsya\");}});";
+        $this->registerJs($validatejs, \yii\web\View::POS_END);
 ?>
 <div class="form__field">
     <div class="form-group field-askform2-phone required has-error">

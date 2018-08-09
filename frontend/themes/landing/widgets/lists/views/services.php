@@ -70,6 +70,8 @@ $form = ActiveForm::begin([
                                 'template' => '{input}',
                             ],
                 ]);
+$validatejs = "$('#landing-form1').on('afterValidateAttribute', function(event, attribute, messages) {if(messages.length == 0){yaCounter49912222.reachGoal(\"Neispravnost_Skidka30\");}});";
+$this->registerJs($validatejs, \yii\web\View::POS_END);
                 ?>
 
                 <div class="form__title">Заказать ремонт кофемашины по акции</div>
