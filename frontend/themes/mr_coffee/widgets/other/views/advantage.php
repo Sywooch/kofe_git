@@ -23,7 +23,7 @@
         <div class="phone-info">
             <div class="phone-img"><img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/decorative/phone.svg" alt="phone"></div>
             <p class="phone-info__number">
-                <span class="text-bold"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"></a>, </span>
+                <span class="text-bold"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a>, </span>
                 <span class="phone-info__text">Принимаем звонки с 08:00 до 22:00</span>
             </p>
         </div>

@@ -858,6 +858,7 @@ $domain = str_replace('admin.', '', $domain);
                 <?= landing\widgets\forms\Form1::widget(['title' => 'Оставьте заявку и запишитесь <br/>на ремонт', 'sub_title' => 'Перезвоним за 7 секунд', 'id' => 'form9', 'model' => 'AskForm5', 'button' => 'ЗАКАЗАТЬ ДИАГНОСТИКУ']); ?>
             </div>
         </div>
+        <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49912222 = new Ya.Metrika2({ id:49912222, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49912222" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
         <script>
             (function (w, d, s, h, id) {
                 w.roistatProjectId = id;
