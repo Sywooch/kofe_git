@@ -4,7 +4,6 @@ $this->title = $page['meta_title'];
 ?>
 <section id="number-4">
     <div class="container">
-        <span>Сервисный  центр Apple Repair:</span>
         <h1><?= $page['meta_h1']; ?></h1>
         <?= $page['description']; ?>
         <img src="<?= $assets ?>/ifixme/images/gl-master.png" alt="">
