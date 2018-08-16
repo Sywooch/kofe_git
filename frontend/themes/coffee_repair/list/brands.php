@@ -30,7 +30,6 @@ $breadcrumbs = [
                     );
                     $path = Yii::getAlias('@frontend') . '/web/uploads/images/';
                     ?>
-                    <span>Поиск брендов</span>
                 </div>
             </div>
         </div>

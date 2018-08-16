@@ -34,7 +34,7 @@ $form = ActiveForm::begin([
                 'mask' => '+7 (999) 999-99-99',
                 'options' => [
                     'placeholder' => 'Введите номер',
-                    'class' => 'phone js-validate-phone', 'type' => 'tel'
+                    'class' => 'phone', 'type' => 'tel'
                 ],
             ])->label('')
             ?>

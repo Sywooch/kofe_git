@@ -17,7 +17,7 @@
     <hr>
     <div class="right-block__contacts-order">
         <span class="right-block__contacts-order-title">Круглосуточный прием заявок</span>
-        <span class="right-block__contacts-order-phone">+7 (495) 215-52-37</span>
+        <span class="right-block__contacts-order-phone"><a href="#">+7 (495) 215-52-37</a></span>
         <?php
 
         use yii\helpers\Html;
@@ -39,7 +39,7 @@ $form = ActiveForm::begin([
             'mask' => '+7 (999) 999-99-99',
             'options' => [
                 'placeholder' => 'Номер телефона',
-                'class' => 'phone js-validate-phone', 'type' => 'tel'
+                'class' => 'phone', 'type' => 'tel'
             ],
         ])->label('')
         ?>

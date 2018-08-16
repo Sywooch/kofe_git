@@ -23,8 +23,9 @@ $js = app\components\CController::$js;
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
         <link rel="shortcut icon" href="<?= $assets . $siteConfig['theme'] . '/'; ?>favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>assets/components/minifyx/cache/styles_737d4a9c58.min.css" type="text/css" />
-        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/style.css" type="text/css" />
+
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/slider.css" type="text/css" />
+        <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/main.css" type="text/css" />
         <link rel="stylesheet" href="<?= $assets . $siteConfig['theme'] . '/'; ?>css/add.css" type="text/css" />
     </head>
     <body class="other">
@@ -56,22 +57,21 @@ $js = app\components\CController::$js;
                 <div class="menu_link"></div>
                 <div class="header_left">
                     <div class="free-masters">
-                        <span class="free-masters__count">2</span>
+                        <span class="free-masters__count masters" id=""></span>
                         <span class="free-masters__text">Свободных мастера</span>
                     </div>
                     <div class="busy-masters">
-                        <span class="free-masters__count">9</span>
+                        <span class="free-masters__count mastersgo" id=""></span>
                         <span class="free-masters__text">Мастеров на выезде</span>
                     </div>
                 </div>
                 <div class="header__right">
                     <div class="on_line">
-                        <span class="line"><span>2<i></i></span>
+                        <span class="line"><span class="linya"><i></i></span>
                             свободные линии</span>
                         <span class="zvn">Звоните, сейчас!</span>
                     </div>
                     <div class="time-work-telephone">
-                        <span class="time-work">c 08.30 до 22.00</span>
                         <span class="telephone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span>
                     </div>
                     <span href="#zvonok" class="zvonok inline">Обратный звонок</span>
@@ -83,9 +83,9 @@ $js = app\components\CController::$js;
                 <nav>
                     <a href="/stoimost-remonta" title="#">Прайс-Лист</a>
                     <a href="/vse-obsluzhivaemye-brendy">Все бренды</a>
-                    <a href="#">О компании</a>
-                    <a href="#">Диагностика</a>
-                    <a href="#">Гарантия</a>
+                    <a href="/company">О компании</a>
+                    <a href="/diagnostika-kofe">Диагностика</a>
+                    <a href="/garanty">Гарантия</a>
                     <a href="/kontakty">Контакты</a>
                 </nav>
             </div>
@@ -101,11 +101,10 @@ $js = app\components\CController::$js;
                     <span class="adress">Адрес: г. Москва, Октябрьская улица, дом 9/1</span>
                     <div class="header__right">
                         <div class="on_line">
-                            <span class="line"><span>2<i></i></span>
+                            <span class="line"><span class="linya">2<i></i></span>
                                 свободные линии</span>
                         </div>
                         <div class="time-work-telephone">
-                            <span class="time-work">c 08.30 до 22.00</span>
                             <span class="telephone"><a href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span>
                         </div>
                     </div>
@@ -118,11 +117,11 @@ $js = app\components\CController::$js;
                 </div>
                 <div class="free-masters">
                     <img class="free-masters__icon" src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/icons/operator.png" alt="Иконка оператора">
-                    <span class="free-masters__count">2</span>
-                    <span class="free-masters__text">Свободных мастера</span>
+                    <span class="free-masters__count masters">2</span>
+                    <span class="free-masters__text ">Свободных мастера</span>
                 </div>
                 <div class="busy-masters">
-                    <span class="free-masters__count">9</span>
+                    <span class="free-masters__count mastersgo">9</span>
                     <span class="free-masters__text">Мастеров на выезде:</span>
                 </div>
                 <div class="online_stat">
@@ -133,7 +132,7 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= coffee_repair\widgets\forms\Popup::widget(); ?>
-        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>assets/components/minifyx/cache/scripts_d6ee746bd1.min.js"></script>
+        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>

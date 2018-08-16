@@ -18,14 +18,14 @@ $siteConfig = app\components\CController::getSiteConfig();
                         ],
             ]);
             ?>
-            <span>Форма заявки</span>
+            <span>Вызвать мастера и получить скидку</span>
             <?=
             $form->field($model, 'phone')->widget(MaskedInput::className(), [
                 'name' => 'phone',
                 'mask' => '+7 (999) 999-99-99',
                 'options' => [
                     'placeholder' => 'Ваш телефон',
-                    'class' => 'js-validate-phone', 'type' => 'tel'
+                    'class' => ' ', 'type' => 'tel'
                 ],
             ])->label('')
             ?>

@@ -26,7 +26,7 @@ $form = ActiveForm::begin([
             'mask' => '+7 (999) 999-99-99',
             'options' => [
                 'placeholder' => 'Введите номер телефона для связи',
-                'class' => 'js-validate-phone', 'type' => 'tel'
+                'class' => ' ', 'type' => 'tel'
             ],
         ])->label('')
         ?>

@@ -3,8 +3,8 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
 ?>
-<?= coffee_repair\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
 <div class="service-information js-modal-block">
+    <?= coffee_repair\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
     <div class="page-wrap">
         <?= coffee_repair\widgets\forms\Aside::widget(); ?>
         <div class="left-block left-block__sticky">

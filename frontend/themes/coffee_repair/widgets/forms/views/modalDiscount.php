@@ -20,14 +20,13 @@ $form = ActiveForm::begin([
         <p>Постоянная скидка <span class="regular-discount">5%</span> на плановую чистку и промывку механизмов подачи кофе</p>
         <hr/>
         <p>Скидка закрепляется за номером телефона клиента</p>
-        <?= $form->field($model, 'name')->textInput()->label(''); ?>
         <?=
         $form->field($model, 'phone')->widget(MaskedInput::className(), [
             'name' => 'phone',
             'mask' => '+7 (999) 999-99-99',
             'options' => [
                 'placeholder' => 'Номер телефона',
-                'class' => 'js-validate-phone', 'type' => 'tel'
+                'class' => ' ', 'type' => 'tel'
             ],
         ])->label('')
         ?>

@@ -17,13 +17,11 @@
                 обслуживание
             </li>
             <li>
-                <a href="chistka-kofemashin" style="color: #412515;">
-                    <div class="img">
-                        <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/repair/op-cleaning-rinsing2.png" alt="Чистка кофемашин от накипи и засоров механизмов." />
-                    </div>
-                    Чистка<br>
-                    кофемашин
-                </a>
+                <div class="img">
+                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>images/repair/op-cleaning-rinsing2.png" alt="Чистка кофемашин от накипи и засоров механизмов." />
+                </div>
+                Чистка<br>
+                кофемашин
             </li>
             <li>
                 <div class="img">

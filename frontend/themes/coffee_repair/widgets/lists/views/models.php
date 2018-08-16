@@ -18,7 +18,6 @@ $siteConfig = app\components\CController::getSiteConfig();
                         ]
                 );
                 ?>
-                <a href="#"><span>Все модели <?= $brand2; ?></span></a>
             </div>
         </div>
         <div class="result">

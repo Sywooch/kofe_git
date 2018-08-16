@@ -8,7 +8,7 @@ use frontend\assets\AppAsset;
 //use ifixme\Test;
 
 AppAsset::register($this);
-$assets = Yii::getAlias('@web');
+$assets = Yii::getAlias('@web'); 
 $isHome = Yii::$app->controller->id == 'site' && Yii::$app->controller->action->id == 'index' ? true : false;
 $isModelPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'model' ? true : false;
 $isBrandPage = Yii::$app->controller->id == 'list' && Yii::$app->controller->action->id == 'brand' ? true : false;
