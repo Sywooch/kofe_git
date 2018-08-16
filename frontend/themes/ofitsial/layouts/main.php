@@ -170,7 +170,7 @@ $js = app\components\CController::$js;
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
-            echo '<script>$(".' . $siteConfig['sitePrefix'] . 'popup.' . $siteConfig['sitePrefix'] . 'good").addClass("' . $siteConfig['sitePrefix'] . 'active");</script>';
+            echo '<script>alert("Ваша заявка отправлена, наш менеджер свяжется с вами в течении 5 минут");</script>';
         }
         ?>
         <?php $this->endBody() ?>
