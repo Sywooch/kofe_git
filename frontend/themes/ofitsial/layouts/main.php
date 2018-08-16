@@ -162,6 +162,11 @@ $js = app\components\CController::$js;
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/jquery.inputmask.bundle.js"></script>
         <script src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.validation.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme']; ?>/js/main.js"></script>
+        <script>
+        $("form").each(function () {
+            $(this).append("<input type=\"hidden\" name=\"h1\" value=\"" + $("h1").text() + "\">")
+        });
+        </script>
         <?= !empty($js['content']) ? $js['content'] : ''; ?>
         <?php
         if (Yii::$app->session->getFlash('success')) {
