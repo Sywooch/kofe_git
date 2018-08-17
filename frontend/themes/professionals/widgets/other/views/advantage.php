@@ -5,9 +5,12 @@ $siteConfig = app\components\CController::getSiteConfig();
 <section class="about">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm">
-                <div class="coffeemachine-pic" style="margin-top: 50px;">
-                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>media/coffeemachine_DL97icb.png" alt="Кофемашина">
+            <div class="col-lg-12 col-md-12 video-block">
+                <div class="coffeemachine-video">
+                    <iframe src="https://www.youtube.com/embed/KJODcf2SpcE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="video-after">
+                    <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/video/2.png" alt="">
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-24 ">
