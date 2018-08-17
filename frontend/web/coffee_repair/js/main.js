@@ -420,9 +420,39 @@ function hideTitles() {
 if ($('#all_models').length > 0) {
     hideTitles();
 }
-
-$(".masters").text(Math.floor(Math.random() * 4) + 2);
-
-$(".mastersgo").text(Math.floor(Math.random() * 5) + 4);
-
-$(".linya").text(Math.floor(Math.random() * 3) + 2);
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function randomIntFromInterval(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+function setRandom() {
+	var masters = $(".masters");
+	var mastersgo = $(".mastersgo");
+	var linya = $(".linya");
+	var master1 = getCookie("master1");
+	var master2 = getCookie("master2");
+	var line = getCookie("line");
+	if(master1 == "")
+		setCookie("master1", randomIntFromInterval(1, 6));
+	if(master2 == "")
+		setCookie("master2", randomIntFromInterval(1, 10));
+}

@@ -1488,6 +1488,7 @@ a, span, b {
 }
 .content_type_polomka .item a {
     color: #fff;
+    text-decoration: none;
 }
 .content_type_polomka .item a:hover {
     color: #dfa81b;
@@ -1645,6 +1646,7 @@ a, span, b {
 }
 .price-list ul li div a {
     color: #fff;
+    text-decoration: none;
 }
 .price-list ul li div a:hover {
     color: #ebb21c;
@@ -2136,7 +2138,6 @@ a, span, b {
 
 .right-block__contacts-order .btn {
     width: 100%;
-    margin-bottom: 40px
 }
 
 .right-block__contacts-order form.success {

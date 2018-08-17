@@ -1,4 +1,4 @@
-<div class="right-block js-sticky-block">
+<div class="right-block">
     <div class="right-block__price-this-service">
         <p>Обслуживание <span>рожковых кофемашин</span></p>
         <ul>
@@ -7,12 +7,6 @@
             <li>Бесплатная доставка в сервис</li>
             <li>Гарантия до 3-х лет</li>
         </ul>
-    </div>
-    <hr>
-    <div class="right-block__address">
-        <p class="right-block__address-name">Компания "КофеРемонт"</p>
-        <p class="right-block__address-mail">info@KofeRemont.ru</p>
-        <address>г. Москва, Октябрьская улица, дом 9/1</address>
     </div>
     <hr>
     <div class="right-block__contacts-order">
