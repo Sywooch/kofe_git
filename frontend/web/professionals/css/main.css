@@ -10026,7 +10026,7 @@ a.mybtn:hover {
     -webkit-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.36);
     -moz-box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.36);
     box-shadow: 0px 0px 43px -10px rgba(0,0,0,0.36);
-    opacity: 0.7;
+    opacity: 0.3;
     position: absolute;
     width: 95%;
     top: 50%;
