@@ -132,6 +132,7 @@ $js = app\components\CController::$js;
             </div>
         </footer>
         <?= coffee_repair\widgets\forms\Popup::widget(); ?>
+        <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/lib.js"></script>
         <script type="text/javascript" src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/main.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.activeForm.js"></script>
         <script defer src="<?= $assets . $siteConfig['theme'] . '/'; ?>js/yii.js"></script>
