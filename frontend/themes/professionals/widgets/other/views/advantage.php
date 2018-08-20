@@ -7,7 +7,7 @@ $siteConfig = app\components\CController::getSiteConfig();
         <div class="row">
             <div class="col-lg-12 col-md-12 video-block">
                 <div class="coffeemachine-video">
-                    <iframe src="https://www.youtube.com/embed/KJODcf2SpcE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'https://www.youtube.com/embed/3H1rLzcSQZU?rel=0' : 'https://www.youtube.com/embed/KJODcf2SpcE?rel=0' ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="video-after">
                     <img src="<?= $assets . $siteConfig['theme'] . '/'; ?>/images/video/2.png" alt="">
