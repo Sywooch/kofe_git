@@ -118,7 +118,6 @@ a {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    /*Р Р€Р В±Р С‘РЎР‚Р В°Р ВµРЎвЂљ Р С–РЎР‚Р В°Р Р…Р С‘РЎвЂ РЎС“ Р Р†Р С•Р С”РЎР‚РЎС“Р С– РЎРѓРЎРѓРЎвЂ№Р В»Р С•Р С”*/
     outline: none;
 }
 
@@ -169,7 +168,6 @@ textarea {
 }
 
 img {
-    /*Р Р€Р В±Р С‘РЎР‚Р В°Р ВµРЎвЂљ Р Р…Р ВµР С—Р С•Р Р…РЎРЏРЎвЂљР Р…РЎвЂ№Р в„– Р С•РЎвЂљРЎРѓРЎвЂљРЎС“Р С— РЎРѓР Р…Р С‘Р В·РЎС“ РЎС“ Р С‘Р В·Р С•Р В±РЎР‚Р В°Р В¶Р ВµР Р…Р С‘Р в„–*/
     vertical-align: bottom;
 }
 
@@ -231,16 +229,6 @@ button {
     text-decoration: underline;
 }
 
-/* Р вЂќР В»РЎРЏ РЎРѓРЎРѓРЎвЂ№Р В»Р С•Р С” Р Р† Р В±Р В»Р С•Р С”Р Вµ Р вЂњР вЂўР С› + Р С”Р В°РЎР‚РЎвЂљР В° РЎРЏРЎв‚¬Р С‘
-.address-offices__addresses a[href] {
-  color: #dfa81b;
-  font: 18px/18px 'NeuronLight';
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-bottom: 2px;
-}
-*/
-
 .address-offices__addresses address {
     font: 13px/13px 'Roboto', sans-serif;
     margin-bottom: 23px;
@@ -262,8 +250,7 @@ button {
 
 .banner-remont-kofemashin {
     color: #fff;
-    background: #201607;
-    /*background: #201607 url(../images/bg/coffee-machine.png) bottom center no-repeat;*/
+    background: #201607 url(../images/bg/coffee-machine.png) bottom center no-repeat;
     position: relative;
 }
 
@@ -3778,7 +3765,7 @@ ul.free-best-services {
 }
 
 .content4 .item p:first-of-type {
-    font: 300 30px/30px "Roboto", sans-serif;
+    font: 300 26px/30px "Roboto", sans-serif;
     display: table;
     position: relative;
     padding: 50px 0 0;
