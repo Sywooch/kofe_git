@@ -3,64 +3,65 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 ?>
-<main class="Lay-cont" role="main">
-    <header class="layout__head">
-        <div class="layout__inner">
-            <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="//kofe03.ru">
-                            <span itemprop="name">Ремонт кофемашин</span>
-                        </a>
-                        <meta itemprop="position" content="0" />
-                    </li>
-                </ul>
-                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name">Контакты</span></span> <meta itemprop="position" content="1" /></span>
-            </nav>
-        </div>
-    </header>
-    <div class="content">
-        <div class="content__inner">
-            <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $pageInfo['url']]); ?>
-            <main class="content__main" role="main">
-                <article class="post" style="width: 100%;">
-                    <header class="post__header">
-                        <h1>Контакты</h1>
-                    </header>
-                    <div class="post__content">
-                        <p>Сервисный центр "<?= ucfirst($_SERVER['HTTP_HOST']) ?>"</p>
-                        <p>Телефон:&nbsp;&nbsp;<span class="cnct_ph cnct_ph-a"><a class="<?= isset($siteConfig['spb']) && $siteConfig['spb'] ? 'telfix' : 'tel03' ?>" href="tel:<?= preg_replace("/\D/", "", Yii::$app->session['region']['phone']); ?>"><?= Yii::$app->session['region']['phone']; ?></a></span></p>
-                        <p>Email: <a href="mailto:<?= $siteConfig['id'] == 52 ? 'info@fixkofe.ru' : 'info@kofe03.ru'; ?>"><?= $siteConfig['id'] == 52 ? ' info@fixkofe.ru' : 'info@kofe03.ru'; ?></a></p>
-                        <ul>
-                            <li><?= $siteConfig['id'] == 52 ? 'г. Санкт-Петербург, ул. Набережная канала Грибоедова, д.59' : 'г. Москва, ул. Студенческая, д. 35'; ?></li>
-                        </ul>
-						<?php if ($siteConfig['id'] != 52): ?>
-							<p><b>Сервисный центр Kofe03 работает в каждом округе Москвы:</b></p>
-							<p>г. Москва, улица Покрышкина, 7</p>
-							<p>г. Москва, улица Орджоникидзе, 11</p>
-							<p>г. Москва, Автомобильный проезд 1</p>
-							<p>г. Москва, Ясный проезд, 26к4</p>
-							<p>г. Москва, Графский переулок, 12</p>
-							<p>г. Москва, Ленинградское шоссе, 58с7</p>
-							<p>г. Москва, улица Демьяна Бедного, 15к1</p>
-							<p>г. Москва, улица Генерала Дорохова, 6</p>
-							<p>г. Москва, микрорайон Северное Чертаново, 1А</p>
-							<p>г. Москва, улица Казакова, 3</p>
-						<?php endif; ?>
-                        <p>Время работы: 09:00 &ndash; 20:00</p>
-                        <div class="post__maps">
-                            <?php if ($siteConfig['id'] == 52): ?>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8bc8dddb5cd960ef78d0265dc216cc11458dce981fd0009d2212ac2608f36d78&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
-                            <?php else: ?>
-                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74a289016bc936231c10ba32999ea08b8a00f71559d332652008120540ce8abd&amp;width=100%&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
-                            <?php endif; ?>
+<main class="main shadow">
+    <div class="row">
+        <div class="col-12 content">
+            <div class="main-col">
+                <div class="breadcrumbs"><a href="/" class="breadcrumbs__item" title="Главная">Главная</a><span class="breadcrumbs__item-current">Контакты</span></div>
+                <h1 class="mt10 mb10">Контакты</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="curved-lines-container clearfix">
+                            <div class="f16">
+                                Наш график работы:<br />
+                                Выезд мастеров: <span class="text-blue">Понедельник - Воскресенье 8:00 - 23:00. </span><br />
+                                <span class="text-blue">Звонки принимаются с 8:00 до 24:00 </span>по тел. 8 (499) 408-60-59, 8 (909) 151-19-22 без выходных<br/>
+                                Офис: <span class="text-blue">Понедельник - Пятница 9:00 - 18:00. </span> Суббота и
+                                воскресенье выходной<br />
+                            </div>
                         </div>
-                        <?= $pageInfo['description']; ?>
+                        <div class="map-container">
+                            <div class="sub-caption">
+                                Наш сервисный центр располагается по адресу 115193, Россия, город Москва, 7 Кожуховская, д. 18
+                            </div>
+                            <div id="map" class="map-yandex"></div>
+                        </div>
                     </div>
-                </article>
-            </main>
+                </div>
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                <script type="text/javascript">
+                    ymaps.ready(init);
+                    var myMap;
+
+                    function init() {
+                        myMap = new ymaps.Map("map", {
+                            center: [55.709753, 37.677259],
+                            zoom: 15
+                        });
+                        var myPlacemark = new ymaps.Placemark([55.70985, 37.677259], {content: 'Mr-Master!', balloonContent: '115193, Россия, город Москва, 7 Кожуховская, д. 18'});
+                        /*var myPlacemark = new ymaps.GeoObject({
+                         geometry: {
+                         type: "Point",
+                         coordinates: [55.709753, 37.677259]
+                         }});*/
+                        myMap.geoObjects.add(myPlacemark);
+                    }
+                </script>
+            </div>
+            <div class="side-col hide-for-tablet">
+                <aside>
+                    <?= mr_coffee\widgets\forms\Side1::widget(); ?>
+                    <?= mr_coffee\widgets\forms\Side2::widget(); ?>
+                    <?= mr_coffee\widgets\lists\PopularBrands::widget(); ?>
+                    <a href="/faq" class="panel-top panel link--reset mb40">
+                        <h4 class="panel__caption">Задайте вопрос специалисту</h4>
+                        <div class="panel-top__advice">Или найдите свой ответ в разделе FAQ</div>
+                    </a>
+                    <?= mr_coffee\widgets\lists\LastNews::widget(); ?>
+                    <?= mr_coffee\widgets\other\Ht::widget(['view' => 'faq']); ?>                    
+                    <?= mr_coffee\widgets\other\Ht::widget(['view' => 'advice']); ?>
+                </aside>
+            </div>
         </div>
     </div>
-    <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>
