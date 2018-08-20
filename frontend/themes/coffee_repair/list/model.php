@@ -8,10 +8,10 @@ $breadcrumbs = [
 ];
 ?>
 <?= coffee_repair\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
-<div class="content1">
+<div class="content1 model_info">
     <div class="page-wrap">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
-        <img src="/uploads/images/<?= $pageInfo['image']; ?>" Title="Ремонт и обслуживание кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в сервисе и на дому" alt="Ремонт кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> с выездом мастера на дом или офис клиента"/>
+        <div class="img"><img src="/uploads/images/<?= $pageInfo['image']; ?>" Title="Ремонт и обслуживание кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в сервисе и на дому" alt="Ремонт кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> с выездом мастера на дом или офис клиента"/></div>
         <?php if (!empty($pageInfo['description'])): ?>            
             <h2><?= 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h2>
             <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>

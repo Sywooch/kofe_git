@@ -25,8 +25,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <?php foreach ($sortedBrands as $latter => $brands): ?>
                     <?php foreach ($brands as $brand): ?>
                         <a href="/<?= $brand['url'] ?>" class="item hd hit" title="<?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?>">
-                            <img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?>">
-                            <span><?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?></span>
+                            <div class="img"><img src="/uploads/images/<?= $brand['image'] ?>" alt="<?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?>"></div>
+                            <span><b><?= $brand2 . ' ' . str_replace('/', ' / ', $brand['title']); ?></b></span>
                         </a>
                     <?php endforeach; ?>
                 <?php endforeach; ?>

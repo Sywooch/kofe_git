@@ -10,7 +10,8 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <li class="lslide">
                         <span class="clients-order">Номер заказа: <?= $row['email']; ?></span>
                         <span class="client-name"><?= $row['username']; ?></span>
-                        <?= $row['message']; ?>
+
+                        <p><?= $row['message']; ?></p>
                         <img src="/<?= $siteConfig['theme'] . '/'; ?>img/rating/<?= $row['rating']; ?>.png" alt="рейтинг <?= $row['rating']; ?>">
                     </li>
                 <?php endforeach; ?>

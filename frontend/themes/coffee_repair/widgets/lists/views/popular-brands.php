@@ -10,7 +10,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                 <li>
                     <a href="/<?= $row['url']; ?>" title="Ремонт кофемашин <?= $row['title']; ?>">
                         <img src="<?= $assets ?>/uploads/images/<?= $row['image']; ?>" alt="Ремонт кофемашин <?= $row['title']; ?>"/>
-                        <?= $row['title']; ?>
+                        <b><?= $row['title']; ?></b>
                     </a>
                 </li>
             <?php endforeach; ?>

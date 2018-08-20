@@ -10,20 +10,18 @@ $breadcrumbs = [
 <div class="content1">
     <div class="page-wrap">
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
-        <img src="/uploads/images/<?= $pageInfo['image']; ?>" alt="Ремонт кофемашин <?= $pageInfo['title'] ?>" title="Обслуживание кофемашин <?= $pageInfo['title'] ?>"/>
+        <div class="img"><img src="/uploads/images/<?= $pageInfo['image']; ?>" alt="Ремонт кофемашин <?= $pageInfo['title'] ?>" title="Обслуживание кофемашин <?= $pageInfo['title'] ?>"/></div>
         <?php if (!empty($pageInfo['description'])): ?>            
             <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
         <?php endif; ?>
     </div>
 </div>
 <?= coffee_repair\widgets\forms\Discount::widget(); ?>
-<div class="content3">
+<div class="main-text">
     <div class="page-wrap">
-        <div class="left-block">
-            <?php if (!empty($pageInfo['full_description'])): ?>
-                <?= $pageInfo['full_description']; ?>
-            <?php endif; ?>
-        </div>
+        <?php if (!empty($pageInfo['full_description'])): ?>
+            <?= $pageInfo['full_description']; ?>
+        <?php endif; ?>
     </div>
 </div>
 <?= coffee_repair\widgets\lists\Neispravnost::widget(['type' => 1, 'is_popular' => 1, 'view' => 'services']); ?>
