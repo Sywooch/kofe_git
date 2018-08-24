@@ -2033,6 +2033,17 @@ a, span, b {
     margin-bottom: 50px
 }
 
+@media (max-width: 680px) {
+    .service-infoblock h1 {
+        font: 26px/26px "NeuronExtraBold";
+    }
+    .service-infoblock__right {
+        display: table;
+            margin: 0 auto;
+    padding-top: 20px;
+    }
+}
+
 .service-infoblock img {
     float: left;
     margin-right: 30px
@@ -6817,4 +6828,11 @@ ul.free-best-services {
     border: 14px solid transparent; 
     border-bottom: 14px solid #eba74a;
 }
+}
+
+.servicessss .content_type_polomka {
+    background: #fbf5ef;
+}
+.servicessss .content_type_polomka h2 {
+    color: #1e4832;
 }
