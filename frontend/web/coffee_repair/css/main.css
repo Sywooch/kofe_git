@@ -185,18 +185,18 @@ button {
 
 
 .address-offices {
-    background-color: #372110;
+    background-color: #102b1d;
     color: #fff;
     position: relative;
     overflow: hidden;
 }
 
 .address-offices__addresses {
-    background: #372110;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #372110), color-stop(41%, #442815), color-stop(100%, #352010));
-    background: -webkit-linear-gradient(left, #372110 0%, #442815 41%, #352010 100%);
-    background: linear-gradient(to right, #372110 0%, #442815 41%, #352010 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#372110', endColorstr='#352010', GradientType=1);
+    background: #102b1d;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #102b1d), color-stop(41%, #1e4832), color-stop(100%, #102b1d));
+    background: -webkit-linear-gradient(left, #102b1d 0%, #1e4832 41%, #102b1d 100%);
+    background: linear-gradient(to right, #102b1d 0%, #1e4832 41%, #102b1d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#102b1d', endColorstr='#102b1d', GradientType=1);
     padding-top: 70px;
     padding-bottom: 55px;
     width: 45%;
@@ -250,8 +250,18 @@ button {
 
 .banner-remont-kofemashin {
     color: #fff;
-    background: #201607 url(../images/bg/coffee-machine.png) bottom center no-repeat;
+    background: #1e4832 url(../images/bg/coffee-machine.png) bottom center no-repeat;
     position: relative;
+    background-size: 100%;
+}
+
+@media (max-width: 680px) {
+    .banner-remont-kofemashin {
+        color: #fff;
+        background: #1e4832 url(../images/bg/coffee-machine.png) bottom center no-repeat;
+        position: relative;
+        background-size: auto 100%;
+    }
 }
 
 .banner-remont-kofemashin a {
@@ -295,7 +305,7 @@ button {
 
 .banner-remont-kofemashin .page-wrap button {
     width: 100%;
-    box-shadow: 0px 6px 16px 0px rgba(37, 20, 9, 0.8);
+    box-shadow: 0px 6px 16px 0px rgba(37, 20, 9, 0.1);
 }
 
 @font-face {
@@ -420,7 +430,7 @@ button {
 
 .contacts-info__title {
     display: block;
-    color: #09ca3f;
+    color: #eba74a;
     font: 500 24px/24px 'Roboto', sans-serif;
     margin-bottom: 40px;
 }
@@ -503,7 +513,7 @@ button {
 
 .header,
 .footer {
-    background-color: #1f1708;
+    background-color: #1e4832;
     color: #fff;
 }
 
@@ -789,7 +799,7 @@ button {
     display: block;
     width: 94px;
     height: 2px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     bottom: -34px;
     left: 0;
 }
@@ -822,7 +832,7 @@ button {
     position: absolute;
     left: 0px;
     top: 50%;
-    background: #09ca3f;
+    background: #eba74a;
     border-radius: 50%;
     margin-top: -3px;
     content: '';
@@ -834,7 +844,7 @@ button {
 
 .prosto-stranici-text h1 {
     display: block;
-    color: #301d0f;
+    color: #1e4832;
     font: 44px/46px 'NeuronExtraBold';
     margin-bottom: 40px;
 }
@@ -872,12 +882,13 @@ button {
 .menu {
     position: relative;
     z-index: 10;
+    background: #102b1d;
 }
 .menu nav {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: justify;
-    font-size: 0;
+    font-size: 0px;
 }
 
 .menu nav:after {
@@ -886,15 +897,11 @@ button {
     display: inline-block;
 }
 
-.menu nav a {
-    display: inline-block;
-    color: #2c211f;
-    text-decoration: none;
-    font: 16px/14px 'Roboto', sans-serif;
-}
+
 
 .menu nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #102b1d;
 }
 
 .menu-brands-and-models ul {
@@ -944,12 +951,12 @@ button {
 .breadcrumbs ul li {
     display: inline;
     font: 14px/14px "Roboto", sans-serif;
-    color: #301d0f
+    color: #1e4832
 }
 
 .breadcrumbs ul li a {
     text-decoration: none;
-    color: #301d0f
+    color: #1e4832
 }
 
 .breadcrumbs ul li a:hover {
@@ -958,7 +965,7 @@ button {
 
 .breadcrumbs span.sale-remont {
     float: right;
-    background: #09ca3f none repeat scroll 0 0;
+    background: #eba74a none repeat scroll 0 0;
     box-shadow: 2px 2px 4px #676666;
     color: #fff;
     display: inline-block;
@@ -1069,7 +1076,7 @@ button {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     top: 8px;
     bottom: 0
@@ -1080,7 +1087,7 @@ button {
 }
 
 .order-form .first-discount {
-    color: #09ca3f
+    color: #eba74a
 }
 
 .order-form .regular-discount {
@@ -1101,7 +1108,7 @@ button {
     text-align: center;
     margin-bottom: 120px;
     text-transform: uppercase;
-    color: #301d0f
+    color: #1e4832
 }
 
 .ordering-process__telephone-contact img {
@@ -1123,7 +1130,7 @@ button {
     display: block;
     width: 54px;
     height: 1px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     bottom: -22px
 }
@@ -1141,7 +1148,7 @@ button {
     display: block;
     width: 54px;
     height: 1px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     bottom: -22px
 }
@@ -1229,13 +1236,17 @@ button {
     display: block;
     width: 54px;
     height: 1px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     bottom: -22px
 }
 
 .preliminary-order {
-    background: url("../images/bg/preliminary-order-bg.png") no-repeat center;
+    background: #102b1d;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #102b1d), color-stop(41%, #1e4832), color-stop(100%, #102b1d));
+    background: -webkit-linear-gradient(left, #102b1d 0%, #1e4832 41%, #102b1d 100%);
+    background: linear-gradient(to right, #102b1d 0%, #1e4832 41%, #102b1d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#102b1d', endColorstr='#102b1d', GradientType=1);
     background-size: cover;
     overflow: hidden
 }
@@ -1274,7 +1285,7 @@ a, span, b {
     padding: 33px 40px 40px;
     border-radius: 3px;
     position: relative;
-    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, .8);
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.42);
 }
 
 .preliminary-order form:before {
@@ -1358,7 +1369,7 @@ a, span, b {
 
 .content_type .zag .tip {
     font-size: 28px;
-    color: #412515;
+    color: #102b1d;
     font-weight: 500;
     font-family: "RobotoMedium", sans-serif;
     display: inline-block;
@@ -1411,7 +1422,7 @@ a, span, b {
 .content_type .table .td {
     font-size: 14px;
     font-family: "RobotoMedium", sans-serif;
-    color: #301d0f;
+    color: #1e4832;
     float: left
 }
 
@@ -1435,12 +1446,12 @@ a, span, b {
 
 .content_type_polomka {
     padding: 65px 0 60px;
-    background: #412614
+    background: #1e4832
 }
 
 .content_type_polomka .items {
     padding: 30px 70px;
-    background: #180e07;
+    background: #102b1d;
     border-radius: 20px;
     display: inline-block;
     vertical-align: top;
@@ -1469,7 +1480,7 @@ a, span, b {
     position: absolute;
     left: 0;
     margin-top: -27px;
-    background: #180e07;
+    background: #102b1d;
     z-index: 88;
     top: 50%
 }
@@ -1496,7 +1507,7 @@ a, span, b {
     color: #fff;
     font: 500 16px/22px "Roboto", sans-serif;
     position: relative;
-    background: #180e07;
+    background: #102b1d;
     z-index: 99
 }
 
@@ -1519,7 +1530,7 @@ a, span, b {
     vertical-align: bottom;
     text-align: right;
     color: #ebb21c;
-    background: #180e07;
+    background: #102b1d;
     padding: 0 0 0 4px;
     overflow: hidden;
     display: table-cell;
@@ -1568,7 +1579,7 @@ a, span, b {
 }
 
 .price-list__prices {
-    background-color: #311d0f;
+    background-color: #102b1d;
     border-radius: 10px;
     padding: 46px 70px 15px;
     margin-bottom: 88px;
@@ -1576,7 +1587,7 @@ a, span, b {
 }
 
 .price-list__prices {
-    background-color: #311d0f;
+    background-color: #102b1d;
     border-radius: 10px;
     padding: 46px 70px 15px;
     margin-bottom: 88px;
@@ -1663,13 +1674,21 @@ a, span, b {
 }
 
 .price-list ul li div > p span {
-    background-color: #311d0f
+    background-color: #102b1d
 }
 
 .price-list ul li div > span {
     width: 1%;
     vertical-align: bottom;
-    background-color: #311d0f
+    background-color: #102b1d;
+        font-family: "NeuronBold", sans-serif;
+}
+.price-list ul li div a p > span {
+    color: #fff;
+    font: 500 16px/22px "Roboto", sans-serif;
+    position: relative;
+    background: #102b1d;
+    z-index: 99;
 }
 
 .price-list__service {
@@ -1820,7 +1839,7 @@ a, span, b {
     display: block;
     width: 54px;
     height: 1px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     bottom: -21px
 }
@@ -1875,7 +1894,7 @@ a, span, b {
     font: 48px/48px "NeuronExtraBold";
     display: block;
     text-align: center;
-    color: #301d0f;
+    color: #1e4832;
     position: relative;
     margin-bottom: 86px
 }
@@ -1886,7 +1905,7 @@ a, span, b {
     display: block;
     width: 94px;
     height: 2px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     bottom: -34px;
     left: 0;
     right: 0;
@@ -1908,7 +1927,7 @@ a, span, b {
     text-align: center;
     display: inline-block;
     vertical-align: top;
-    color: #412515;
+    color: #102b1d;
     font: 16px/18px "Roboto", sans-serif
 }
 
@@ -1917,7 +1936,7 @@ a, span, b {
 }
 
 .service-centers ul li a {
-    color: #412515;
+    color: #102b1d;
     font-weight: 600
 }
 
@@ -2009,7 +2028,7 @@ a, span, b {
 
 .service-infoblock h1 {
     display: block;
-    color: #301d0f;
+    color: #1e4832;
     font: 44px/46px "NeuronExtraBold";
     margin-bottom: 50px
 }
@@ -2038,7 +2057,7 @@ a, span, b {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     top: 8px;
     bottom: 0
@@ -2066,7 +2085,7 @@ a, span, b {
 }
 
 .right-block__price-this-service p span {
-    color: #09ca3f;
+    color: #eba74a;
     font-weight: 900;
     font-family: "NeuronExtraBold"
 }
@@ -2090,7 +2109,7 @@ a, span, b {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     top: 0;
     bottom: 0;
@@ -2139,7 +2158,7 @@ a, span, b {
 }
 
 .right-block__contacts-order form.success {
-    border: 1px solid #09ca3f;
+    border: 1px solid #eba74a;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 7px
@@ -2336,7 +2355,7 @@ textarea.error {
 .btn {
     display: block;
     padding: 0 30px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     height: 50px;
     border-radius: 30px;
     font: 500 16px "Roboto", sans-serif;
@@ -2347,7 +2366,7 @@ textarea.error {
 }
 
 .btn:hover {
-    background-color: #1adb50
+    background-color: #102b1d
 }
 
 .btn:active {
@@ -2357,11 +2376,11 @@ textarea.error {
 .btn-transparent {
     padding: 0 20px;
     background-color: transparent;
-    border: 1px solid #09ca3f;
+    border: 1px solid #eba74a;
     height: 50px;
     border-radius: 30px;
     font: 500 16px "Roboto", sans-serif;
-    color: #09ca3f;
+    color: #eba74a;
     cursor: pointer
 }
 
@@ -2374,7 +2393,7 @@ textarea.error {
     font: 48px/48px "NeuronExtraBold";
     position: relative;
     margin-bottom: 86px;
-    color: #301d0f
+    color: #1e4832
 }
 
 .text-block h2:before {
@@ -2383,7 +2402,7 @@ textarea.error {
     display: block;
     width: 94px;
     height: 2px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     bottom: -34px;
     left: 0
 }
@@ -2652,7 +2671,7 @@ textarea.error {
 
 .img_right .left .text h2 {
     font-size: 28px;
-    color: #301d0f;
+    color: #1e4832;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     line-height: 34px
@@ -2677,7 +2696,7 @@ textarea.error {
 
 .img_left .right .text h2 {
     font-size: 28px;
-    color: #301d0f;
+    color: #1e4832;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     line-height: 34px
@@ -2756,7 +2775,7 @@ textarea.error {
 
 .vagno .block .text h3 {
     font-size: 28px;
-    color: #301d0f;
+    color: #1e4832;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
     line-height: 34px
@@ -2894,7 +2913,7 @@ textarea.error {
     display: block;
     width: 54px;
     height: 1px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     bottom: -21px
 }
@@ -3199,7 +3218,7 @@ textarea.error {
 
 .models-list__link {
     font: 500 16px "Roboto", sans-serif;
-    color: #412515
+    color: #102b1d
 }
 
 .main-content-models {
@@ -3212,7 +3231,7 @@ textarea.error {
 
 .main-content-models h1 {
     display: block;
-    color: #301d0f;
+    color: #1e4832;
     font: 44px/46px "NeuronExtraBold";
     margin-bottom: 50px
 }
@@ -3261,7 +3280,7 @@ textarea.error {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     left: 0;
     top: 0;
     bottom: 0;
@@ -3412,7 +3431,7 @@ ul.free-best-services {
     vertical-align: top;
     margin: 0;
     padding: 0;
-    color: #412515
+    color: #102b1d
 }
 
 .icon-services-box ul li:before {
@@ -3463,7 +3482,7 @@ ul.free-best-services {
     display: block;
     width: 94px;
     height: 2px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     bottom: -12px;
     left: 0
 }
@@ -3483,7 +3502,7 @@ ul.free-best-services {
 }
 
 .content1 h2 {
-    color: #301d0f;
+    color: #1e4832;
     font: 22px/22px "Roboto";
     font-weight: 500;
     padding: 15px 0 0
@@ -3527,7 +3546,7 @@ ul.free-best-services {
 
 .content2 .left_block h2 {
     font-size: 40px;
-    color: #09ca3f;
+    color: #eba74a;
     font-family: "NeuronBold", sans-serif
 }
 
@@ -3616,7 +3635,7 @@ ul.free-best-services {
     padding: 60px 65px 60px;
     float: left;
     width: 400px;
-    background: #1f1708;
+    background: #1e4832;
     overflow: hidden
 }
 
@@ -3646,7 +3665,7 @@ ul.free-best-services {
 .content2 .right_block form button {
     display: block;
     padding: 0 30px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     height: 50px;
     border-radius: 30px;
     font: 500 16px "Roboto", sans-serif;
@@ -3658,7 +3677,7 @@ ul.free-best-services {
 }
 
 .content2 .right_block form button:hover {
-    background-color: #1adb50
+    background-color: #102b1d
 }
 
 .content3 {
@@ -3667,7 +3686,7 @@ ul.free-best-services {
 
 .content3 h2 {
     font-size: 28px;
-    color: #301d0f;
+    color: #1e4832;
     font-family: "Roboto", sans-serif;
     font-weight: 600
 }
@@ -3717,7 +3736,7 @@ ul.free-best-services {
 
 .content3 .tip {
     font-size: 24px;
-    color: #412515;
+    color: #102b1d;
     font-family: "NeuronBold", sans-serif;
     display: inline-block;
     vertical-align: middle;
@@ -3769,7 +3788,7 @@ ul.free-best-services {
     display: table;
     position: relative;
     padding: 50px 0 0;
-    color: #4d4c4c
+    color: #4d4c4c;
 }
 
 .content4 .item p:first-of-type:after {
@@ -3833,7 +3852,7 @@ ul.free-best-services {
 .content5 .video > span .play {
     width: 140px;
     height: 140px;
-    border: 2px solid #09ca3f;
+    border: 2px solid #eba74a;
     margin: 0 auto;
     display: block;
     border-radius: 50%;
@@ -3885,7 +3904,7 @@ ul.free-best-services {
     margin: 105px 80px 0 0;
     text-align: center;
     font-size: 18px;
-    color: #412515;
+    color: #102b1d;
     font-family: "Neuron", sans-serif;
     line-height: 18px
 }
@@ -3948,7 +3967,7 @@ ul.free-best-services {
 
 .content5 .right .txt p {
     font-size: 28px;
-    color: #301d0f;
+    color: #1e4832;
     font-family: "Roboto", sans-serif;
     font-weight: 600
 }
@@ -3964,7 +3983,7 @@ ul.free-best-services {
 
 .content5 .right .txt span {
     font-size: 16px;
-    color: #301d0f;
+    color: #1e4832;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     line-height: 24px
@@ -4065,7 +4084,7 @@ ul.free-best-services {
 .content7 h2 {
     font: 43px/48px "NeuronExtraBold";
     text-align: left;
-    color: #301d0f;
+    color: #1e4832;
     text-transform: uppercase
 }
 
@@ -4135,13 +4154,13 @@ ul.free-best-services {
 .content8 h2 {
     font: 43px/48px "NeuronExtraBold";
     text-align: left;
-    color: #301d0f;
+    color: #1e4832;
     text-transform: uppercase
 }
 
 .content8 .page-wrap > p {
     font-size: 22px;
-    color: #301d0f;
+    color: #1e4832;
     font-weight: 600;
     line-height: 32px;
     padding: 20px 0 0
@@ -4205,8 +4224,8 @@ ul.free-best-services {
 }
 
 .content8 .search .model_title span:hover {
-    background: #09ca3f;
-    border-color: #09ca3f;
+    background: #eba74a;
+    border-color: #eba74a;
     color: #fff;
     -webkit-box-shadow: 0px 2px 32px 0px rgba(216, 216, 216, .72);
     -moz-box-shadow: 0px 2px 32px 0px rgba(216, 216, 216, .72);
@@ -4214,8 +4233,8 @@ ul.free-best-services {
 }
 
 .content8 .search .model_title span.active {
-    background: #09ca3f;
-    border-color: #09ca3f;
+    background: #eba74a;
+    border-color: #eba74a;
     color: #fff;
     -webkit-box-shadow: 0px 2px 32px 0px rgba(216, 216, 216, .72);
     -moz-box-shadow: 0px 2px 32px 0px rgba(216, 216, 216, .72);
@@ -4228,14 +4247,14 @@ ul.free-best-services {
 
 .content8 .result p {
     font-size: 22px;
-    color: #301d0f;
+    color: #1e4832;
     font-weight: 600;
     padding: 45px 0 0;
     font-family: "Roboto", sans-serif
 }
 
 .content8 .result p span {
-    color: #09ca3f
+    color: #eba74a
 }
 
 .content8 .result p span.bold {
@@ -4290,7 +4309,7 @@ ul.free-best-services {
 }
 
 .top_footer {
-    background: #191206
+    background: #102b1d
 }
 
 .online_stat {
@@ -4306,7 +4325,7 @@ ul.free-best-services {
 
 #zvonok {
     width: 400px;
-    background: #1f1708;
+    background: #1e4832;
     padding: 60px 65px 60px
 }
 
@@ -4324,7 +4343,7 @@ ul.free-best-services {
 
 #thanks {
     width: 400px;
-    background: #1f1708;
+    background: #1e4832;
     padding: 60px 65px 60px
 }
 
@@ -4343,7 +4362,7 @@ ul.free-best-services {
 #zvonok button[type=submit] {
     display: block;
     padding: 0 30px;
-    background-color: #09ca3f;
+    background-color: #eba74a;
     height: 50px;
     border-radius: 30px;
     font: 500 16px "Roboto", sans-serif;
@@ -4355,7 +4374,7 @@ ul.free-best-services {
 }
 
 #zvonok button[type=submit]:hover {
-    background-color: #1adb50
+    background-color: #102b1d
 }
 
 .fancybox-close-small:before {
@@ -5715,7 +5734,7 @@ ul.free-best-services {
     .price-list ul li p, .price-list ul li span {
         position: relative;
         z-index: 1;
-        background-color: #311d0f;
+        background-color: #102b1d;
         vertical-align: bottom
     }
 
@@ -6238,7 +6257,7 @@ ul.free-best-services {
     .price-list ul li p, .price-list ul li span {
         position: relative;
         z-index: 1;
-        background-color: #311d0f;
+        background-color: #102b1d;
         vertical-align: bottom
     }
 
@@ -6339,7 +6358,7 @@ ul.free-best-services {
     }
 
     .address-offices__addresses .center div {
-        padding: 30px 70px 24px 30px;
+        padding: 20px 20px 0px 20px;
         background-position: right 15px center;
         font: 16px/20px "Neuron";
         margin-bottom: 10px
@@ -6482,7 +6501,8 @@ ul.free-best-services {
 
     .other footer .on_line {
         float: none;
-        display: inline-block
+        display: inline-block;
+        margin: 0 auto;
     }
 
     .menu_link {
@@ -6605,7 +6625,7 @@ ul.free-best-services {
 
     #zvonok {
         width: 300px;
-        background: #1f1708;
+        background: #1e4832;
         padding: 30px 20px 30px;
         text-align: center
     }
@@ -6713,4 +6733,88 @@ ul.free-best-services {
         width: 100%;
         height: 150px;
     }
+}
+
+@media (min-width: 768px) {
+    .menu nav {
+        padding: 0px;
+    text-align: justify;
+    font-size: 0;
+    margin: 0px -25px;
+}
+    .menu nav a {
+    display: inline-block;
+    color: #fbf5ef;
+    text-decoration: none;
+    font: 16px/14px 'Roboto', sans-serif;
+    padding: 30px 25px;
+    position: relative;
+}
+/*
+.menu nav a:before {
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    top: 0px;
+    content: '';
+    border: 14px solid transparent; 
+    border-top: 14px solid #1e4832;
+}
+*/
+.menu nav a:before {
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.menu nav a:hover:before {
+    position: absolute;
+    opacity: 1;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: 3px solid #eba74a;
+    background: #fbf5ef;
+    box-sizing: border-box;
+    z-index: -9;
+    -moz-box-shadow:    inset 0 0 5px rgba(8, 8, 8, 0.09);
+   -webkit-box-shadow: inset 0 0 5px rgba(8, 8, 8, 0.09);
+   box-shadow:         inset 0 0 5px rgba(8, 8, 8, 0.09);
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu nav a:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    bottom: 2px;
+    content: '';
+    border: 14px solid transparent; 
+    border-bottom: 0px solid #eba74a;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu nav a:hover:after {
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    bottom: 2px;
+    content: '';
+    border: 14px solid transparent; 
+    border-bottom: 14px solid #eba74a;
+}
 }
