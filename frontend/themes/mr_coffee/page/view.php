@@ -3,38 +3,34 @@ $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
 ?>
-<main class="Lay-cont" role="main">
-    <header class="layout__head">
-        <div class="layout__inner">
-            <nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" itemscope itemtype="http://schema.org/Thing" itemprop="item" rel="Ремонт кофемашин" href="//kofe03.ru">
-                            <span itemprop="name">Ремонт кофемашин</span>
-                        </a>
-                        <meta itemprop="position" content="0" />
-                    </li>
-                </ul>
-                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumbs__current"><span itemscope itemtype="http://schema.org/Thing" itemprop="item"><span itemprop="name"><?= $model['title']; ?></span></span> <meta itemprop="position" content="1" /></span>
-            </nav>
-        </div>
-    </header>
-    <div class="content">
-        <div class="content__inner">
-            <?= kofe03\widgets\menu\LeftMenu::widget(['curUrl' => $model['url']]); ?>
-            <main class="content__main" role="main">
-                <article class="post" style="width: 100%;">
-                    <header class="post__header">
-                        <h1><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title']; ?></h1>
-                    </header>
-                    <div class="post__content">
-                        <?= $model['description']; ?>
+<main class="main shadow">
+    <div class="row">
+        <div class="col-12 content">
+            <div class="main-col">
+                <div class="breadcrumbs"><a href="../index.html" class="breadcrumbs__item" title="Главная">Главная</a><span class="breadcrumbs__item-current">Полезные советы</span></div>
+                <h1 class="mt10 mb10">Полезные советы</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="questions-section">
+                            <?= $model['description']; ?>   
+                        </div>
                     </div>
-                </article>
-                
-            </main>
+                </div>
+            </div>
+            <div class="side-col hide-for-tablet">
+                <aside>
+                    <?= mr_coffee\widgets\forms\Side1::widget(); ?>
+                    <?= mr_coffee\widgets\forms\Side2::widget(); ?>
+                    <?= mr_coffee\widgets\lists\PopularBrands::widget(); ?>
+                    <a href="/faq" class="panel-top panel link--reset mb40">
+                        <h4 class="panel__caption">Задайте вопрос специалисту</h4>
+                        <div class="panel-top__advice">Или найдите свой ответ в разделе FAQ</div>
+                    </a>
+                    <?= mr_coffee\widgets\lists\LastNews::widget(); ?>
+                    <?= mr_coffee\widgets\other\Ht::widget(['view' => 'faq']); ?>                    
+                    <?= mr_coffee\widgets\other\Ht::widget(['view' => 'advice']); ?>
+                </aside>
+            </div>
         </div>
     </div>
-    <?= kofe03\widgets\other\Feedback::widget(); ?>
-    <?= kofe03\widgets\lists\PopularBrands::widget(); ?>
 </main>

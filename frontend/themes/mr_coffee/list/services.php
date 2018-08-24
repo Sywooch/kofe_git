@@ -1,7 +1,7 @@
 <?php
-$assets = Yii::getAlias('@web');
+$assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
-$this->title = $title;
+$this->title = !empty($pageInfo['meta_title']) ? $pageInfo['meta_title'] : $pageInfo['title'];
 $breadcrumbs = [
     $pageInfo['title'],
 ];
@@ -13,49 +13,30 @@ $breadcrumbs = [
                 <div class="breadcrumbs">
                     <?= mr_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
                 </div>
-                <h1 class="mt10 mb10"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $pageInfo['title']; ?></h1>
+                <h1 class="mt10 mb10"><?= !empty($model['meta_h1']) ? $pageInfo['meta_h1'] : $pageInfo['title']; ?></h1>
                 <div class="row works">
                     <div class="col-12">
-                        <div class="banner banner--small" style="background-image: url('/<?= $siteConfig['theme']; ?>/images/remont-i-servis-kofemashin-kopiya.jpg');">
-                            <div class="banner--small__content">
-                                <h3 class="banner__title">Гарантия на все виды работ <br>от 6 месяцев</h3>
-                                <a class="button button--send js-popup" href="#" data-container="#popup">ЗАКАЗАТЬ РЕМОНТ</a>
-                            </div>
-                            <div class="brend-logo">
-                                <img src="<?= $assets . '/'; ?>uploads/images/<?= $pageInfo['image']; ?>" />
-                            </div>
-                        </div>
-                        <?= mr_coffee\widgets\other\Ht::widget(); ?>                        
                         <section class="section make-order">
                             <div class="row">
-                                <div class="col-12">                                    
+                                <div class="col-12">
                                     <div class="view-more">
                                         <div class="view-more__content view-more__content--make-order">
-                                            <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
+                                            <?= $pageInfo['description']; ?>
                                         </div>
                                         <a class="view-more__link" href="#">Открыть еще</a>
                                     </div>
-                                    <a class="button button--send js-popup" href="#" data-container="#popup">Заказать ремонт</a>
+                                    <a class="button button--send js-popup" href="#" data-container="#popup" data-content="../../include/popup9c81.html?ref=www.mr-master.ru%2Fservice%2Fremont-stiralnih-mashin%2F">Заказать ремонт</a>
                                 </div>
                             </div>
                         </section>
                         <div class="hide-moretablet side-block--mobile side-block--small-tablet mb35"></div>
+                        <?= mr_coffee\widgets\lists\Neispravnost::widget(['is_popular' => true, 'type' => 2]); ?>
                         <?= mr_coffee\widgets\lists\Neispravnost::widget(['is_popular' => true, 'type' => 1]); ?>
-                        <?= mr_coffee\widgets\lists\Models::widget(['parent' => $pageInfo['id'], 'brand' => $pageInfo['title']]); ?>
+                        <?= mr_coffee\widgets\lists\Neispravnost::widget(['is_popular' => false, 'type' => 1]); ?>
                         <?= mr_coffee\widgets\other\Ht::widget(['view' => 'adv']); ?>
-                        <div class="hide-moretablet side-block--mobile mb0 mt25"></div>
                         <?= mr_coffee\widgets\other\Ht::widget(['view' => 'order']); ?>
-                        <div class="hide-moretablet side-block--mobile mt30"></div>
                         <?= mr_coffee\widgets\lists\LastReviews::widget(); ?>                    
-                        <?= mr_coffee\widgets\lists\Map::widget(); ?>
-                        <section class="section-margin">                            
-                            <div class="view-more">
-                                <div class="view-more__content view-more__content--addition-company">
-                                    <?= $pageInfo['full_description']; ?>
-                                </div>
-                                <a class="view-more__link" href="#">Открыть еще</a>
-                            </div>
-                        </section>
+                        <?= mr_coffee\widgets\lists\Map::widget(); ?>                        
                         <div class="hide-moretablet side-block--mobile side-block--small-tablet"></div>
                     </div>
                 </div>

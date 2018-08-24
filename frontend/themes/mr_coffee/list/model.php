@@ -2,14 +2,17 @@
 $assets = Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = $title;
+$breadcrumbs = [
+    '/' . $brand['url'] => 'Ремонт кофемашин ' . $brand['title'],
+    'Ремонт ' . $brand['title'] . ' ' . $pageInfo['title'],
+];
 ?>
 <main class="main shadow">
     <div class="row">
         <div class="col-12 content">
             <div class="main-col">
                 <div class="breadcrumbs">
-                    <a href="#" class="breadcrumbs__item" title="Главная">Ремонт кофемашин</a>
-                    <span class="breadcrumbs__item-current">FRANKE</span>
+                    <?= mr_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
                 </div>
                 <h1 class="mt10 mb10"><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : app\components\CController::$category['full_title'] . ' ' . $brand['title'] . ' ' . $pageInfo['title']; ?></h1>
                 <div class="row works">

@@ -13,7 +13,7 @@ $breadcrumbs = [
         <h1><?= !empty($pageInfo['meta_h1']) ? $pageInfo['meta_h1'] : 'Ремонт кофемашин ' . $brand['title'] . ' ' . $pageInfo['title'] . ' в ' . Yii::$app->session['region']['titleRod']; ?></h1>
         <div class="img"><img src="/uploads/images/<?= $pageInfo['image']; ?>" Title="Ремонт и обслуживание кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> в сервисе и на дому" alt="Ремонт кофемашины <?= $brand['title'] . ' ' . $pageInfo['title']; ?> с выездом мастера на дом или офис клиента"/></div>
         <?php if (!empty($pageInfo['description'])): ?>
-            <?= str_replace('#brand_en#', $pageInfo['title'], $pageInfo['description']); ?>
+            <?= str_replace('#model_en#', $brand['title'] . ' ' . $pageInfo['title'], $pageInfo['description']); ?>
         <?php endif; ?>
     </div>
 </div>
