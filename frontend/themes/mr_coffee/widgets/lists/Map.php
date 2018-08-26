@@ -7,7 +7,7 @@ use yii\base\Widget;
 class Map extends Widget {
 
     public function run() {
-        $q = 'SELECT title, url FROM {{%pages}} WHERE active = 1 AND type = \'zone2\' ORDER BY title ';
+        $q = 'SELECT title, url FROM {{%pages}} WHERE active = 1 AND type = \'zone\' ORDER BY title ';
         $rows = \Yii::$app->db->createCommand($q)->queryAll();
         if (!empty($rows)) {
             $sortedCities = [];

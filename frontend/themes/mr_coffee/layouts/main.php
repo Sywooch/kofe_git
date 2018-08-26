@@ -63,12 +63,12 @@ $js = app\components\CController::$js;
                         </div>
                         <div class="col-10 col-md-12 header-top__item">
                             <nav class="nav">
-                                <a class="nav__item" href="#">Цены</a>
-                                <a class="nav__item" href="#">Вопрос-ответ</a>
-                                <a class="nav__item" href="#">Отзывы</a>
-                                <a class="nav__item" href="#">Карта ремонта</a>
-                                <a class="nav__item" href="#">Вакансии</a>
-                                <a class="nav__item" href="#">Контакты</a>
+                                <a class="nav__item" href="/prices">Цены</a>
+                                <a class="nav__item" href="/faq">Вопрос-ответ</a>
+                                <a class="nav__item" href="/reviews">Отзывы</a>
+                                <a class="nav__item" href="/map">Карта ремонта</a>
+                                <a class="nav__item" href="/vacancies">Вакансии</a>
+                                <a class="nav__item" href="/kontakty">Контакты</a>
                             </nav>
                         </div>
                     </div>

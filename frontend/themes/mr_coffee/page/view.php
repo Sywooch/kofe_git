@@ -2,13 +2,18 @@
 $assets = '/' . Yii::getAlias('@web');
 $siteConfig = app\components\CController::getSiteConfig();
 $this->title = !empty($model['meta_title']) ? $model['meta_title'] : $model['title'];
+$breadcrumbs = [
+    $model['title'],
+];
 ?>
 <main class="main shadow">
     <div class="row">
         <div class="col-12 content">
             <div class="main-col">
-                <div class="breadcrumbs"><a href="../index.html" class="breadcrumbs__item" title="Главная">Главная</a><span class="breadcrumbs__item-current">Полезные советы</span></div>
-                <h1 class="mt10 mb10">Полезные советы</h1>
+                <div class="breadcrumbs">
+                    <?= mr_coffee\widgets\other\Breadcrumbs::widget(['data' => $breadcrumbs]); ?>
+                </div>
+                <h1 class="mt10 mb10"><?= !empty($model['meta_h1']) ? $model['meta_h1'] : $model['title'] ?></h1>
                 <div class="row">
                     <div class="col-12">
                         <div class="questions-section">
