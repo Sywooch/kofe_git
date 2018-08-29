@@ -20,7 +20,7 @@ $siteConfig = app\components\CController::getSiteConfig();
                     <tbody>
                         <?php foreach ($rows as $key => $row): ?>
                             <tr class="table-info__item">
-                                <td class="table-info__cell table-info__cell--service"><?= $row['title']; ?></td>
+                                <td class="table-info__cell table-info__cell--service"><?= $row['is_popular'] == 1 ? '<a href="/' . $row['url'] . '">' . $row['title'] . '</a>' : $row['title']; ?></td>
                                 <td class="table-info__cell table-info__cell--time"><?= $row['time']; ?></td>
                                 <td class="table-info__cell table-info__cell--price text-blue">от <?= number_format($row['price'], 0, ' ', ' '); ?> р</td>
                             </tr>
