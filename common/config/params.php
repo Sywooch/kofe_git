@@ -3477,5 +3477,17 @@ return [
             'theme' => 'mr_coffee',
             'order-title' => 'mr_coffee',            
         ],
+        'mr-coffee-spb' => [
+            'phone-1' => '8 (495) 431-57-77',
+            'phone-2' => '8 (495) 431-57-77',
+            'mono' => false,
+            'spb' => true,
+            'id' => 227,
+            'sitePrefix' => 'mr_coffee',
+            'region-sel' => true,
+            'category_id' => 7,
+            'theme' => 'mr_coffee',
+            'order-title' => 'mr_coffee',            
+        ],
     ]
 ];
